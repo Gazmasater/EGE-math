@@ -1,0 +1,5 @@
+added-history.json
+*.new
+*.log
+.DS_Store
+Thumbs.db

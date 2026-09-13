@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<html XMLNS:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><LINK href="../../styles.css" rel="STYLESHEET" type="text/css">
+<LINK href="../../xmodules/os/img/_styles.css?v=1.04" rel="STYLESHEET" type="text/css">
+<script type="text/javascript" src="../../lib/mml/mathjax-4-config.js"></script><script type="text/javascript" src="../../lib/mml/mathjax-4/mml-chtml.js"></script><script type="text/javascript" src="../../lib/t3utils.js?v=2.04"></script><script type="text/javascript">var home_directory="../../";</script><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<META NAME="Document-state" CONTENT="Dynamic"><META HTTP-EQUIV="pragma" CONTENT="no-cache"><META HTTP-EQUIV="expires" CONTENT="0"><meta http-equiv="X-UA-Compatible" content="IE=10"/><link rel='shortcut icon' href='img/icon.png'><style>@media print {.noprint {display:none !important;}}</style><title>Открытый банк тестовых заданий</title>
+</head>
+<body class='questions-container' style='font-size:11pt'>
+		<script language="javascript">
+        var abort_answer_senging;
+		function onButtonClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+            abort_answer_senging = false;
+            if (formid)
+                eval('setAnswer'+formid+'(aform);');
+            else
+			    setAnswer(aform);
+            if (abort_answer_senging) return;
+			;
+			//aform.submit();
+            if (aform.setBtn)
+                aform.setBtn.disabled=true;
+		}
+		function onResetClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+			var aEl = document.createElement('input');
+			aEl.type = 'hidden';
+			aEl.name = 'reset';
+			aEl.value = 1;
+			aform.appendChild(aEl);
+			
+;
+			aform.submit();
+		}
+
+		function noAction()
+		{
+		}
+
+		</script>
+        <style type="text/css">
+			.img_scroll_container { height: 400px; overflow-y: scroll; text-align: center; width:100%;}
+			.img_scroll_container img { width: 700px }
+            .printbody .img_scroll_container { height: auto; overflow-y: hidden; }
+            .printbody .img_scroll_container img { width: 650px }
+            .active-distractor:hover{cursor:pointer; background-color: #f2f2f2;}
+            .active-distractor.checked-distractor{background-color: #e8e8e8;}
+		</style>
+		<script language="javascript">
+		var qguid='';
+		var qfiles_location='../../';
+
+		function ShowPictureQ(s,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			document.write('<IMG SRC="'+qfiles_location+s+'" ALIGN=ABSMIDDLE alt="'+hint+'" border="0"> ');
+		}
+
+		function ShowPictureQBL(s,hint,h,bl)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			var vspace=h/2-bl;
+			if (vspace<0) vspace=-vspace;
+			document.write('<IMG SRC="'+qfiles_location+s+'" ALIGN=MIDDLE border="0" alt="'+hint+'" VSPACE='+(vspace)+' STYLE="position:relative; top:'+(h/2-bl)+'px;">');
+		}
+
+
+		
+		function ShowPictureQ2WH(s,s2,hint,w,h)
+		{
+            if (s.indexOf('.flv')>0 ||s.indexOf('.mp4')>0 ||s.indexOf('.swf')>0)
+                s='../../show_media.php?m='+encodeURIComponent(s)+'&w='+w+'&h='+h;
+
+			w=w+40;
+			h=h+30;
+
+						document.write('<a href="javascript:var wnd=window.open(\''+qfiles_location+s+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+s2+'" ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'"></a> ');
+			//alert('вставил картинку!');
+		}
+
+		function ShowPictureQ3WH(s,s2,s3,hint,w,h)
+		{
+			ShowPictureQ2WH(s,s2,hint,w,h);
+		}
+
+		function ShowPictureQ2(s,s2,hint)
+		{
+			ShowPictureQ2WH(s,s2,hint,600,400);
+		};
+
+		function invertImage(img, s, s2)
+		{
+			if (img.src.indexOf(s)>0) img.src=qfiles_location+s2; else img.src=qfiles_location+s;
+		}
+
+		function ShowPictureQ3(s,s2,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+            var onclick=(s.indexOf('.jpg')>0||s.indexOf('.png')>0||s.indexOf('.gif')>0 ?'onclick="invertImage(this, \''+s+'\', \''+s2+'\')"':'');
+			document.write('<IMG SRC="'+qfiles_location+s2+'" '+onclick+' ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'" border="0"> ');
+		};
+
+		function showXGraphic(xml)
+		{
+			document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=1><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+		/*
+function ShowPictureQGX2(img,xml)
+{
+w=500;
+h=400;
+document.write('<IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE>');
+}
+*/
+		function ShowPictureQGX2(img,xml)
+		{
+			w=500;
+			h=400;
+			document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?qguid='+qguid+'&xml='+xml+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}
+
+		</script>
+		<script language='JavaScript'>
+var files_location='';
+var files_abs_location='';
+var space_after_img=true;
+function ShowPicture(s)
+{document.write('<IMG SRC="'+files_location+s+'" ALIGN=absmiddle border=0>'+(space_after_img?' ':''));}
+function ShowPicture2(s,s2,w,h)
+{if (w>800) w=800;
+ if (h>600) h=600;
+ align='ABSMIDDLE'; 
+document.write('<a href="javascript:var wnd=window.open(\''+files_location+s+'\',\'_blank\',\'resizable=1,menubar=0,scrollbars=1,width='+(w+40)+',height='+(h+20)+',left='+((screen.width-w-40)/2)+',top='+((screen.height-h-20)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+s2+'" ALIGN='+align+'></a>'+(space_after_img?' ':''));}
+function ShowPicture2S(objsrc,imgsrc,datasrc,w,h)
+{ShowPicture2(objsrc,imgsrc,w,h);}
+function ShowPictureBL(s,bl)
+{document.write('<IMG SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+bl+' STYLE="position:relative; top:-'+(bl)+'px;" border=0>');}
+function ShowPictureBL2(s,bl,h)
+{ var vspace=h/2-bl;
+  		if (vspace<0) vspace=-vspace;
+document.write('<IMG SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+((vspace))+' STYLE="position:relative; top:'+(h/2-bl-1)+'px;" border=0>');}
+function ShowPictureGX(img,xml)
+		{
+		w=500;
+		h=400;
+		document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?xml='+files_abs_location+xml+'\',\'\',\',status=1,resizable=1,menubar=1,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}function TraceLink(indx,n)
+{ if (n.charAt(0)=='{')
+  		{
+			var guid=n.substring(1,9)+n.substring(10,14)+n.substring(15,19)+n.substring(20,24)+n.substring(25,37);
+			showdocbyguid(guid);
+  		}
+  		else
+  		{var wnd=window.open('../../tracelink.php?project_guid=AC437B34557F88EA4115D2F374B0A07B&cdf='+n,'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+ }
+}
+function showdocbyguid(guid)
+{var wnd=window.open('../../tracelink.php?project_guid=AC437B34557F88EA4115D2F374B0A07B&doc_guid='+guid.toUpperCase(),'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+}
+function delFile(fguid)
+{
+if (confirm('Удалить файл?'))
+  location.href='delete.php?proj=AC437B34557F88EA4115D2F374B0A07B&md=qprint&fguid='+fguid}
+function ShowFlash(url)
+{
+			w='100%'; h='100%';
+			url='../../'+files_location+url;
+			document.write('<object tabindex=0 ID=ilFlash classid=CLSID:D27CDB6E-AE6D-11cf-96B8-444553540000 width='+w+' height='+h+' codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0">'+
+		'<param name=movie value="'+url+'"><PARAM play=true><PARAM SWLIVECONNECT=true><PARAM MENU=true><PARAM LOOP=false>'+
+		'<PARAM NAME=scale VALUE=noScale><embed src="'+url+'" quality=high bgcolor=#FFFFFF  width='+w+' height='+h+' scale=noScale type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockWaveFlash"></embed></object>');}
+	function showXGraphic(xml)
+		{
+		//alert("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+	</script><script type='text/javascript'>
+	var solvedQst = localStorage.getItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED");
+	solvedQst = solvedQst ? new Set(solvedQst.split(",")): new Set();
+	var favQst = localStorage.getItem("OS:AC437B34557F88EA4115D2F374B0A07B:FAV");
+	favQst = favQst ? new Set(favQst.split(",")): new Set();
+
+
+
+var request = createAJAXRequest();
+
+function toggleQFavour(qblock) {    var fvbtn = document.getElementById(qblock).getElementsByClassName('favorite-button');
+    toggleFavour(fvbtn[0]);
+}
+
+function toggleFavour(btn) {	btn.classList.toggle('is-favorite');
+    btn.title = btn.classList.contains('is-favorite')?'В Избранном':'Добавить в Избранное';}
+
+function setToStr(set) {	if (browser.isIE) {		let str = '';
+		set.forEach(function(elem){
+		    str += elem + (str?",":"")
+ 	 	});
+ 	 	return str;	} else {		return Array.from(set).join(",")	}}
+
+
+function changeFavour(btn, qst) {	if (btn.classList.contains('is-favorite'))
+	    favQst.delete(qst);
+    else
+        favQst.add(qst);
+    localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:FAV", setToStr(favQst));
+	toggleFavour(btn);}
+
+function changeStatus(qst, panel){
+    let answer = solvedQst.has(qst)? '0': '1';
+	if (answer == '0')		solvedQst.delete(qst);
+    else
+        solvedQst.add(qst);
+    localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED", setToStr(solvedQst));
+    setQSolved(panel, answer)
+}
+
+
+
+function checkButtonClick(form, setanswer, panel) {
+	form = document.getElementById(form);
+	setanswer(form);
+    if (!request.inProcess) {
+        request.open('POST', 'solve.php', true);
+        request.onreadystatechange = checkSolutionDone;
+        request.inProcess = true;
+        request.panel = panel;
+
+        var formData = new FormData(form);
+        formData.append("ajax", "1");
+        formData.append("proj", "AC437B34557F88EA4115D2F374B0A07B")
+
+		if (browser.isIE)
+			request.qst = form.guid.value;
+		else
+	        request.qst = formData.get("guid");
+
+        request.send(formData);
+
+        panel.getElementsByClassName('task-status')[0].innerHTML = "<img class='loader' src='img/loading_spinner.gif'>";    }
+}
+
+function checkSolutionDone() {    if (request.readyState==4)  {
+        request.inProcess = false;
+        answer = "0";
+        if (request.status==200) {
+            answer = request.responseText;
+        }
+        if (answer!='1' && answer!='2' && answer!='3') {
+        	answer = "0";
+        }
+        qst = request.qst;
+
+        if (answer == '0' || answer == '2')
+    		solvedQst.delete(qst);
+        else
+            solvedQst.add(qst);
+        localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED", setToStr(solvedQst));
+        setQSolved(request.panel, answer);
+    }
+}
+
+function setQSolved(block, answer) {	if (typeof(block) === 'string')
+	    block = document.getElementById(block);
+	var statusNode = block.getElementsByClassName('task-status')[0];
+    statusNode.className= "task-status task-status-" + answer ;
+    if (answer=='1')
+        statusNode.innerHTML = "РЕШЕНО";
+    else if (answer=='2')
+        statusNode.innerHTML = "НЕВЕРНО";
+    else if (answer=='3')
+        statusNode.innerHTML = "ВЕРНО";
+    else
+        statusNode.innerHTML = "НЕ РЕШЕНО";}
+
+</script>
+
+ <div class="qblock hide-form" id='qD9AF4A'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformD9AF4A' id='checkformD9AF4A' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="0799B1164213B19C4C7AB0D599A483C1">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2016 года планируется взять кредит в банке на три года <br /> в размере <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>S</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;млн&nbsp;рублей, где <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>S</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;<m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;<b >целое</b> число. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг увеличивается на 30<span >&nbsp;</span>% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;в июле каждого года долг должен составлять часть кредита в соответствии <br /> со следующей таблицей.</p> <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="100%"> <tr > <td width="25%"> <p class="MsoNormal">Месяц и год</p> </td> <td width="18%"> <p class="MsoNormal">Июль 2016</p> </td> <td width="18%"> <p class="MsoNormal">Июль 2017</p> </td> <td width="18%"> <p class="MsoNormal">Июль 2018</p> </td> <td width="18%"> <p class="MsoNormal">Июль 2019</p> </td> </tr> <tr > <td width="25%"> <p class="MsoNormal">Долг</p> <p class="MsoNormal">(в млн&nbsp;рублей)</p> </td> <td width="18%"> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>S</m:mi>  </m:semantics> </m:mstyle></m:math></p> </td> <td width="18%"> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mn>0,6</m:mn><m:mi>S</m:mi> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> </td> <td width="18%"> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mn>0,25</m:mn><m:mi>S</m:mi> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> </td> <td width="18%"> <p class="MsoNormal" align="center">0</p> </td> </tr> </table> <p class="MsoNormal">Найдите наибольшее значение <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>S</m:mi>  </m:semantics> </m:mstyle></m:math>, при котором каждая из выплат будет меньше 5&nbsp;млн&nbsp;рублей.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iD9AF4A'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">D9AF4A</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'0799B1164213B19C4C7AB0D599A483C1')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('0799B1164213B19C4C7AB0D599A483C1',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("0799B1164213B19C4C7AB0D599A483C1"))
+	            toggleQFavour('iD9AF4A');
+	        if (solvedQst.has("0799B1164213B19C4C7AB0D599A483C1"))
+	            setQSolved('iD9AF4A', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q5FCD16'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform5FCD16' id='checkform5FCD16' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="58DA17E76FD3B16D44DFDDDC672DDA1A">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2016 года планируется взять кредит в банке на три года <br /> в размере <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>S</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;млн&nbsp;рублей, где <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>S</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;<m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;<b >целое</b> число. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг увеличивается на 15<span >&nbsp;</span>% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;в июле каждого года долг должен составлять часть кредита в соответствии <br /> со следующей таблицей.</p> <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="100%"> <tr > <td width="25%"> <p class="MsoNormal">Месяц и год</p> </td> <td width="18%"> <p class="MsoNormal">Июль 2016</p> </td> <td width="18%"> <p class="MsoNormal">Июль 2017</p> </td> <td width="18%"> <p class="MsoNormal">Июль 2018</p> </td> <td width="18%"> <p class="MsoNormal">Июль 2019</p> </td> </tr> <tr > <td width="25%"> <p class="MsoNormal">Долг</p> <p class="MsoNormal">(в млн&nbsp;рублей)</p> </td> <td width="18%"> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>S</m:mi>  </m:semantics> </m:mstyle></m:math></p> </td> <td width="18%"> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mn>0,8</m:mn><m:mi>S</m:mi> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> </td> <td width="18%"> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mn>0,5</m:mn><m:mi>S</m:mi> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> </td> <td width="18%"> <p class="MsoNormal" align="center">0</p> </td> </tr> </table> <p class="MsoNormal">Найдите наибольшее значение <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>S</m:mi>  </m:semantics> </m:mstyle></m:math>, при котором каждая из выплат будет меньше 4&nbsp;млн&nbsp;рублей.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i5FCD16'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">5FCD16</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'58DA17E76FD3B16D44DFDDDC672DDA1A')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('58DA17E76FD3B16D44DFDDDC672DDA1A',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("58DA17E76FD3B16D44DFDDDC672DDA1A"))
+	            toggleQFavour('i5FCD16');
+	        if (solvedQst.has("58DA17E76FD3B16D44DFDDDC672DDA1A"))
+	            setQSolved('i5FCD16', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q1F03D1'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform1F03D1' id='checkform1F03D1' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="75521E4229A6B0F14002668424BC9BC1">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Планируется выдать льготный кредит на <b >целое </b>число миллионов рублей на пять лет. В середине каждого года действия кредита долг заёмщика возрастает на 20&nbsp;% по сравнению с началом года. В конце 1-го, 2-го и 3-го годов заёмщик выплачивает только проценты по кредиту, оставляя долг неизменно равным первоначальному. В конце 4-го и 5-го годов заёмщик выплачивает одинаковые суммы, погашая весь долг полностью. Найдите наибольший размер кредита, при котором общая сумма выплат заёмщика будет меньше 7<span >&nbsp;</span>млн рублей.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i1F03D1'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">1F03D1</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'75521E4229A6B0F14002668424BC9BC1')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('75521E4229A6B0F14002668424BC9BC1',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("75521E4229A6B0F14002668424BC9BC1"))
+	            toggleQFavour('i1F03D1');
+	        if (solvedQst.has("75521E4229A6B0F14002668424BC9BC1"))
+	            setQSolved('i1F03D1', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q1187D1'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform1187D1' id='checkform1187D1' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="755F53D7919D9E924B06C193A47B4A54">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Планируется выдать льготный кредит на <b >целое </b>число миллионов рублей на пять лет. В середине каждого года действия кредита долг заёмщика возрастает на 10&nbsp;% по сравнению с началом года. В конце 1-го, 2-го и 3-го годов заёмщик выплачивает только проценты по кредиту, оставляя долг неизменно равным первоначальному. В конце 4-го и 5-го годов заёмщик выплачивает одинаковые суммы, погашая весь долг полностью. Найдите наибольший размер кредита, при котором общая сумма выплат заёмщика будет меньше 6<span >&nbsp;</span>млн рублей.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i1187D1'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">1187D1</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'755F53D7919D9E924B06C193A47B4A54')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('755F53D7919D9E924B06C193A47B4A54',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("755F53D7919D9E924B06C193A47B4A54"))
+	            toggleQFavour('i1187D1');
+	        if (solvedQst.has("755F53D7919D9E924B06C193A47B4A54"))
+	            setQSolved('i1187D1', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q686BE7'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform686BE7' id='checkform686BE7' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="CD3DF44AA638AB7147C09901EA89CAF1">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле планируется взять кредит в банке на сумму 7 млн рублей на срок <br /> 10 лет. Условия возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math><span >&nbsp;</span>каждый январь долг возрастает на <i ><span >r</span></i><span >&nbsp;</span>% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math><span >&nbsp;</span>с февраля по июнь необходимо выплатить часть долга так, чтобы на начало июля каждого года долг уменьшался на одну и ту же сумму по сравнению с предыдущим июлем.</p> <p class="MsoNormal">Найдите наименьшую возможную ставку <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math>, если известно, что последний платёж будет не менее 0,819 млн рублей.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i686BE7'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">686BE7</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'CD3DF44AA638AB7147C09901EA89CAF1')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('CD3DF44AA638AB7147C09901EA89CAF1',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("CD3DF44AA638AB7147C09901EA89CAF1"))
+	            toggleQFavour('i686BE7');
+	        if (solvedQst.has("CD3DF44AA638AB7147C09901EA89CAF1"))
+	            setQSolved('i686BE7', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q67736B'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform67736B' id='checkform67736B' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="DD433E17C2EFB1DE4CE2180D857AAC9C">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле планируется взять кредит в банке на сумму 8 млн рублей на срок <br /> 10 лет. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math><span >&nbsp;</span>каждый январь долг возрастает на <i ><span >r</span></i><span >&nbsp;</span>% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math><span >&nbsp;</span>с февраля по июнь необходимо выплатить часть долга так, чтобы на начало июля каждого года долг уменьшался на одну и ту же сумму по сравнению с предыдущим июлем.</p> <p class="MsoNormal">Найдите наименьшую возможную ставку <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math>, если известно, что последний платёж будет не менее 0,92 млн рублей.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i67736B'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">67736B</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'DD433E17C2EFB1DE4CE2180D857AAC9C')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('DD433E17C2EFB1DE4CE2180D857AAC9C',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("DD433E17C2EFB1DE4CE2180D857AAC9C"))
+	            toggleQFavour('i67736B');
+	        if (solvedQst.has("DD433E17C2EFB1DE4CE2180D857AAC9C"))
+	            setQSolved('i67736B', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q60FD4D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform60FD4D' id='checkform60FD4D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="0D7127990E81A99E4AAFF8DEC94B8AD2">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">15-го декабря планируется взять кредит в банке на сумму 1<span>&nbsp;</span>000<span>&nbsp;</span>000 рублей <br /> на <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;месяц. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;1-го числа каждого месяца долг возрастает на <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math> % по сравнению с концом предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа каждого месяца с 1-го по <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>n</m:mi>  </m:semantics> </m:mstyle></m:math> -й долг должен быть на 40 тысяч рублей меньше долга на 15-е число предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>n</m:mi>  </m:semantics> </m:mstyle></m:math> -го месяца долг составит 200 тысяч рублей;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;к 15-му числу <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math> -го месяца кредит должен быть полностью погашен.</p> <p class="MsoNormal">Найдите <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math>, если известно, что общая сумма выплат после полного погашения кредита составит 1378 тысяч рублей.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i60FD4D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">60FD4D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'0D7127990E81A99E4AAFF8DEC94B8AD2')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('0D7127990E81A99E4AAFF8DEC94B8AD2',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("0D7127990E81A99E4AAFF8DEC94B8AD2"))
+	            toggleQFavour('i60FD4D');
+	        if (solvedQst.has("0D7127990E81A99E4AAFF8DEC94B8AD2"))
+	            setQSolved('i60FD4D', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q36614C'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform36614C' id='checkform36614C' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="0EADD5DCBB9ABA414A0FFA503A2F616A">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">15-го декабря планируется взять кредит в банке на 11 месяцев. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;1-го числа каждого месяца долг возрастает на 1% по сравнению с концом предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа каждого месяца с 1-го по 10-й долг должен быть на одну и ту же сумму меньше долга на 15-е число предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа 10-го месяца долг составит 300 тысяч рублей;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;к 15-му числу 11-го месяца кредит должен быть полностью погашен.</p> <p class="MsoNormal">Какую сумму планируется взять в кредит, если общая сумма выплат после полного его погашения составит 1388 тысяч рублей?</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i36614C'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">36614C</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'0EADD5DCBB9ABA414A0FFA503A2F616A')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('0EADD5DCBB9ABA414A0FFA503A2F616A',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("0EADD5DCBB9ABA414A0FFA503A2F616A"))
+	            toggleQFavour('i36614C');
+	        if (solvedQst.has("0EADD5DCBB9ABA414A0FFA503A2F616A"))
+	            setQSolved('i36614C', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q552BFD'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform552BFD' id='checkform552BFD' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="187684E81A52A92D488291092069AD7C">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Пенсионный фонд владеет ценными бумагами, которые стоят <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msup> <m:mi>t</m:mi> <m:mn>2</m:mn> </m:msup> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;тыс.&nbsp;рублей в конце года <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>t</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;( <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>2</m:mn><m:mo>;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x2026;</m:mo> </m:mrow>  </m:semantics> </m:mstyle></m:math> ). В конце любого года пенсионный фонд может продать ценные бумаги и положить деньги на счёт в банке, при этом в конце каждого следующего года сумма на счёте будет увеличиваться на 10%. <span ><br /> </span>В конце какого года пенсионному фонду следует продать ценные бумаги, чтобы в конце двадцать пятого года сумма на его счёте была наибольшей?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i552BFD'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">552BFD</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'187684E81A52A92D488291092069AD7C')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('187684E81A52A92D488291092069AD7C',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("187684E81A52A92D488291092069AD7C"))
+	            toggleQFavour('i552BFD');
+	        if (solvedQst.has("187684E81A52A92D488291092069AD7C"))
+	            setQSolved('i552BFD', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q29E10A'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform29E10A' id='checkform29E10A' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="269CB59F12CEA8BE4FF7D47173A239D8">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле планируется взять кредит в банке на сумму 10&nbsp;млн&nbsp;рублей <br /> на некоторый срок (целое число лет). Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг возрастает на 10% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;в июле каждого года долг должен быть на одну и ту же сумму меньше долга на июль предыдущего года.</p> <p class="MsoNormal">На сколько лет планируется взять кредит, если известно, что общая сумма выплат после его полного погашения составит 15 млн&nbsp;рублей?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i29E10A'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">29E10A</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'269CB59F12CEA8BE4FF7D47173A239D8')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('269CB59F12CEA8BE4FF7D47173A239D8',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("269CB59F12CEA8BE4FF7D47173A239D8"))
+	            toggleQFavour('i29E10A');
+	        if (solvedQst.has("269CB59F12CEA8BE4FF7D47173A239D8"))
+	            setQSolved('i29E10A', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q53A300'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform53A300' id='checkform53A300' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="2829EEB02DB6B7B946C9950B49941F36">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2020 года планируется взять кредит в банке на некоторую сумму. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг увеличивается на 10% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга.</p> <p class="MsoNormal">Сколько рублей планируется взять в банке, если известно, что кредит будет полностью погашен четырьмя равными платежами (то есть за четыре года) <br /> и банку будет выплачено 292&nbsp;820 рублей?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i53A300'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">53A300</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'2829EEB02DB6B7B946C9950B49941F36')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('2829EEB02DB6B7B946C9950B49941F36',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("2829EEB02DB6B7B946C9950B49941F36"))
+	            toggleQFavour('i53A300');
+	        if (solvedQst.has("2829EEB02DB6B7B946C9950B49941F36"))
+	            setQSolved('i53A300', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qCD6602'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformCD6602' id='checkformCD6602' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="2A6D7D423FCB978E46B6CA359CC24D42">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2026 года планируется взять кредит на три года в размере 800&nbsp;тыс.&nbsp;рублей. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;каждый январь долг будет возрастать на 10&nbsp;% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;платежи в 2027 и 2028 годах должны быть равными;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;к июлю 2029 года долг должен быть выплачен полностью.</p> <p class="MsoNormal">Известно, что платёж в 2029 году составит 833,8&nbsp;тыс.&nbsp;рублей. Сколько рублей составит платёж 2027 года?</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iCD6602'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">CD6602</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'2A6D7D423FCB978E46B6CA359CC24D42')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('2A6D7D423FCB978E46B6CA359CC24D42',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("2A6D7D423FCB978E46B6CA359CC24D42"))
+	            toggleQFavour('iCD6602');
+	        if (solvedQst.has("2A6D7D423FCB978E46B6CA359CC24D42"))
+	            setQSolved('iCD6602', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qBFFA71'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformBFFA71' id='checkformBFFA71' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="34511912854D8EB645DFD14120C31248">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2025 года планируется взять кредит на десять лет. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;каждый январь долг будет возрастать на 30&nbsp;% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;с февраля по июнь каждого года необходимо оплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;в июле 2026, 2027, 2028, 2029 и 2030 годов долг должен быть на какую-то одну и ту же величину меньше долга на июль предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;в июле 2030 года долг должен составить 500 тыс.&nbsp;рублей;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;в июле 2031, 2032, 2033, 2034 и 2035 годов долг должен быть на другую одну и ту же величину меньше долга на июль предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;к июлю 2035 года долг должен быть выплачен полностью.</p> <p class="MsoNormal">Известно, что сумма всех платежей после полного погашения кредита будет равна 2080 тыс. рублей. Сколько рублей составит платёж в 2026 году?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iBFFA71'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">BFFA71</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'34511912854D8EB645DFD14120C31248')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('34511912854D8EB645DFD14120C31248',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("34511912854D8EB645DFD14120C31248"))
+	            toggleQFavour('iBFFA71');
+	        if (solvedQst.has("34511912854D8EB645DFD14120C31248"))
+	            setQSolved('iBFFA71', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qD63B7C'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformD63B7C' id='checkformD63B7C' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="37AED427E474895544BCCC088096F982">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">15-го декабря планируется взять кредит в банке на 21 месяц. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;1-го числа каждого месяца долг возрастает на 3% по сравнению с концом предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа каждого месяца с 1-го по 20-й долг должен быть на 30 тысяч рублей меньше долга на 15-е число предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;к 15-му числу 21-го месяца кредит должен быть полностью погашен.</p> <p class="MsoNormal">Какую сумму планируется взять в кредит, если общая сумма выплат после полного его погашения составит 1604 тысячи рублей?</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iD63B7C'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">D63B7C</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'37AED427E474895544BCCC088096F982')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('37AED427E474895544BCCC088096F982',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("37AED427E474895544BCCC088096F982"))
+	            toggleQFavour('iD63B7C');
+	        if (solvedQst.has("37AED427E474895544BCCC088096F982"))
+	            setQSolved('iD63B7C', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q89F37B'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform89F37B' id='checkform89F37B' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="3F41BECC5C07BCD04E677D8DCC402B73">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Пенсионный фонд владеет ценными бумагами, которые стоят <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msup> <m:mi>t</m:mi> <m:mn>2</m:mn> </m:msup> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;тыс.&nbsp;рублей в конце года <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>t</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;( <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>2</m:mn><m:mo>;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x2026;</m:mo> </m:mrow>  </m:semantics> </m:mstyle></m:math> ). В конце любого года пенсионный фонд может продать ценные бумаги и положить деньги на счёт в банке, при этом в конце каждого следующего года сумма на счёте будет увеличиваться в <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>r</m:mi> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;раз. Пенсионный фонд хочет продать ценные бумаги в конце такого года, чтобы <br /> в конце двадцать пятого года сумма на его счёте была наибольшей. Расчёты показали, что для этого ценные бумаги нужно продавать строго в конце двадцать первого года. При каких положительных значениях <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;это возможно?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i89F37B'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">89F37B</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'3F41BECC5C07BCD04E677D8DCC402B73')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('3F41BECC5C07BCD04E677D8DCC402B73',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("3F41BECC5C07BCD04E677D8DCC402B73"))
+	            toggleQFavour('i89F37B');
+	        if (solvedQst.has("3F41BECC5C07BCD04E677D8DCC402B73"))
+	            setQSolved('i89F37B', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q4221BE'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform4221BE' id='checkform4221BE' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="40C665B80FAAAA24455F725DCBC533B2">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Вклад планируется открыть на четыре года. Первоначальный вклад составляет <b>целое</b> число миллионов рублей. В конце каждого года вклад увеличивается на 10% по сравнению с его размером в начале года. <br> Кроме этого, в начале третьего и четвёртого годов вклад ежегодно пополняется на 3&nbsp;млн&nbsp;рублей. Найдите наименьший размер первоначального вклада, при котором через четыре года вклад будет больше 20&nbsp;млн&nbsp;рублей.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i4221BE'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">4221BE</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'40C665B80FAAAA24455F725DCBC533B2')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('40C665B80FAAAA24455F725DCBC533B2',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("40C665B80FAAAA24455F725DCBC533B2"))
+	            toggleQFavour('i4221BE');
+	        if (solvedQst.has("40C665B80FAAAA24455F725DCBC533B2"))
+	            setQSolved('i4221BE', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qFE4FB7'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformFE4FB7' id='checkformFE4FB7' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="4130C19736D498CF47A0D2182387544D">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">15-го декабря планируется взять кредит в банке на сумму 900 тысяч рублей <br /> на 11 месяцев. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;1-го числа каждого месяца долг возрастает на <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math> % по сравнению с концом предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа каждого месяца с 1-го по 10-й долг должен быть на одну и ту же сумму меньше долга на 15-е число предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа 10-го месяца долг составит 200 тысяч рублей;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;к 15-му числу 11-го месяца кредит должен быть полностью погашен.</p> <p class="MsoNormal">Найдите <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math>, если известно, что общая сумма выплат после полного погашения кредита составит 1021 тысячу рублей.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iFE4FB7'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">FE4FB7</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'4130C19736D498CF47A0D2182387544D')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('4130C19736D498CF47A0D2182387544D',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("4130C19736D498CF47A0D2182387544D"))
+	            toggleQFavour('iFE4FB7');
+	        if (solvedQst.has("4130C19736D498CF47A0D2182387544D"))
+	            setQSolved('iFE4FB7', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q7A1CB0'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform7A1CB0' id='checkform7A1CB0' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="43259A4208BE953141DD6E1249EA2F83">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле планируется взять кредит в банке на сумму 5&nbsp;млн&nbsp;рублей <br /> на некоторый срок (целое число лет). Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг возрастает на 20% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;в июле каждого года долг должен быть на одну и ту же сумму меньше долга на июль предыдущего года.</p> <p class="MsoNormal">На сколько лет планируется взять кредит, если известно, что общая сумма выплат после его полного погашения составит 7,5 млн&nbsp;рублей?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i7A1CB0'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">7A1CB0</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'43259A4208BE953141DD6E1249EA2F83')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('43259A4208BE953141DD6E1249EA2F83',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("43259A4208BE953141DD6E1249EA2F83"))
+	            toggleQFavour('i7A1CB0');
+	        if (solvedQst.has("43259A4208BE953141DD6E1249EA2F83"))
+	            setQSolved('i7A1CB0', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q29A6B4'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform29A6B4' id='checkform29A6B4' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="4609BD104CCBB10D42D4D7BBDFF6AA54">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2026 года планируется взять кредит на три года. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;каждый январь долг будет возрастать на 20&nbsp;% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;платежи в 2027 и в 2028 годах должны быть по 500&nbsp;тыс.&nbsp;рублей;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;к июлю 2029 года долг должен быть выплачен полностью.</p> <p class="MsoNormal">Известно, что сумма всех платежей после полного погашения кредита равна 1235,2&nbsp;тыс.&nbsp;рублей. Какую сумму планируется взять в кредит?</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i29A6B4'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">29A6B4</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'4609BD104CCBB10D42D4D7BBDFF6AA54')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('4609BD104CCBB10D42D4D7BBDFF6AA54',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("4609BD104CCBB10D42D4D7BBDFF6AA54"))
+	            toggleQFavour('i29A6B4');
+	        if (solvedQst.has("4609BD104CCBB10D42D4D7BBDFF6AA54"))
+	            setQSolved('i29A6B4', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q22FEBB'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform22FEBB' id='checkform22FEBB' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="46416C34142581BD4F8A4F90A0A350CC">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2026 года планируется взять кредит на три года. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;каждый январь долг будет возрастать на 20&nbsp;% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;платежи в 2027 и в 2028 годах должны быть по 300&nbsp;тыс.&nbsp;рублей;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;к июлю 2029 года долг должен быть выплачен полностью.</p> <p class="MsoNormal">Известно, что платёж в 2029 году будет равен 417,6&nbsp;тыс.&nbsp;рублей. Какую сумму планируется взять в кредит?</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i22FEBB'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">22FEBB</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'46416C34142581BD4F8A4F90A0A350CC')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('46416C34142581BD4F8A4F90A0A350CC',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("46416C34142581BD4F8A4F90A0A350CC"))
+	            toggleQFavour('i22FEBB');
+	        if (solvedQst.has("46416C34142581BD4F8A4F90A0A350CC"))
+	            setQSolved('i22FEBB', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q8B91B1'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform8B91B1' id='checkform8B91B1' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="4F5B452F2170B0964CEB17B716BF6D52">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2020 года планируется взять кредит в банке на некоторую сумму. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг увеличивается на 10% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга.</p> <p class="MsoNormal">Сколько рублей планируется взять в банке, если известно, что кредит будет полностью погашен тремя равными платежами (то есть за три года) и общая сумма выплат после полного погашения кредита на 40&nbsp;980 рублей больше суммы, взятой в кредит?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i8B91B1'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">8B91B1</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'4F5B452F2170B0964CEB17B716BF6D52')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('4F5B452F2170B0964CEB17B716BF6D52',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("4F5B452F2170B0964CEB17B716BF6D52"))
+	            toggleQFavour('i8B91B1');
+	        if (solvedQst.has("4F5B452F2170B0964CEB17B716BF6D52"))
+	            setQSolved('i8B91B1', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q257120'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform257120' id='checkform257120' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="66238552136994FC446439803924D96E">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В июле 2025 года планируется взять кредит на десять лет в размере <br> 1400 тыс. рублей. Условия его возврата таковы:</p> <p class=MsoNormal>—&nbsp;каждый январь долг будет возрастать на 10&nbsp;% по сравнению с концом предыдущего года;</p> <p class=MsoNormal>— с февраля по июнь каждого года необходимо оплатить одним платежом часть долга;</p> <p class=MsoNormal>—&nbsp;в июле 2026, 2027, 2028, 2029 и 2030 годов долг должен быть на какую-то одну и ту же величину меньше долга на июль предыдущего года;</p> <p class=MsoNormal>—&nbsp;в июле 2031, 2032, 2033, 2034 и 2035 годов долг должен быть на другую одну и ту же величину меньше долга на июль предыдущего года;</p> <p class=MsoNormal>—&nbsp;к июлю 2035 года долг должен быть выплачен полностью.</p> <p class=MsoNormal>Известно, что сумма всех платежей после полного погашения кредита будет равна 2120 тыс. рублей. Сколько рублей составит платёж в 2026 году?</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i257120'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">257120</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'66238552136994FC446439803924D96E')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('66238552136994FC446439803924D96E',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("66238552136994FC446439803924D96E"))
+	            toggleQFavour('i257120');
+	        if (solvedQst.has("66238552136994FC446439803924D96E"))
+	            setQSolved('i257120', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q6FE223'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform6FE223' id='checkform6FE223' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="6DEC16D78152B7274C18CE0E471FC03D">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В июле 2026 года планируется взять кредит в банке на пять лет <br> в размере <span><m:math><m:mstyle displaystyle="true"> <m:mi>S</m:mi> </m:mstyle></m:math></span>&nbsp;тыс.&nbsp;рублей. Условия его возврата таковы:</p> <p class=MsoNormal>—&nbsp;каждый январь долг возрастает на 30% по сравнению с концом предыдущего года;</p> <p class=MsoNormal>—&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class=MsoNormal>—&nbsp;в июле 2027, 2028 и 2029 годов долг остаётся равным <span><m:math><m:mstyle displaystyle="true"> <m:mi>S</m:mi> </m:mstyle></m:math></span>&nbsp;тыс.&nbsp;рублей;</p> <p class=MsoNormal>—&nbsp;выплаты в 2030 и 2031 годах равны по 338&nbsp;тыс.&nbsp;рублей;</p> <p class=MsoNormal>—&nbsp;к июлю 2031 года долг будет выплачен полностью.</p> <p class=MsoNormal>Найдите общую сумму выплат за пять лет.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i6FE223'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">6FE223</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'6DEC16D78152B7274C18CE0E471FC03D')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('6DEC16D78152B7274C18CE0E471FC03D',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("6DEC16D78152B7274C18CE0E471FC03D"))
+	            toggleQFavour('i6FE223');
+	        if (solvedQst.has("6DEC16D78152B7274C18CE0E471FC03D"))
+	            setQSolved('i6FE223', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q4DD4D9'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform4DD4D9' id='checkform4DD4D9' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="70B770F4A4089894423B876A516D816E">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2025 года планируется взять кредит на десять лет. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;каждый январь долг будет возрастать на 20&nbsp;% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;с февраля по июнь каждого года необходимо оплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;в июле 2026, 2027, 2028, 2029 и 2030 годов долг должен быть на какую-то одну и ту же величину меньше долга на июль предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;в июле 2030 года долг должен составить 600 тыс.&nbsp;рублей;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;в июле 2031, 2032, 2033, 2034 и 2035 годов долг должен быть на другую одну и ту же величину меньше долга на июль предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;к июлю 2035 года долг должен быть выплачен полностью.</p> <p class="MsoNormal">Известно, что сумма всех платежей после полного погашения кредита будет равна 2360 тыс. рублей. Какую сумму планируется взять в кредит?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i4DD4D9'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">4DD4D9</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'70B770F4A4089894423B876A516D816E')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('70B770F4A4089894423B876A516D816E',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("70B770F4A4089894423B876A516D816E"))
+	            toggleQFavour('i4DD4D9');
+	        if (solvedQst.has("70B770F4A4089894423B876A516D816E"))
+	            setQSolved('i4DD4D9', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q71B1D1'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform71B1D1' id='checkform71B1D1' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="7354552BB410B7FB4B2A0C042FAF341C">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В июле 2026 года планируется взять кредит на пять лет в размере 1050&nbsp;тыс.&nbsp;рублей. Условия его возврата таковы:</p> <p class=MsoNormal>—&nbsp;каждый январь долг возрастает на 10% по сравнению с концом предыдущего года;</p> <p class=MsoNormal>—&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class=MsoNormal>—&nbsp;в июле 2027, 2028 и 2029 годов долг остаётся равным 1050&nbsp;тыс.&nbsp;рублей;</p> <p class=MsoNormal>—&nbsp;выплаты в 2030 и 2031 годах равны;</p> <p class=MsoNormal>—&nbsp;к июлю 2031 года долг будет выплачен полностью.</p> <p class=MsoNormal>На сколько рублей последняя выплата будет больше первой?</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i71B1D1'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">71B1D1</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'7354552BB410B7FB4B2A0C042FAF341C')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('7354552BB410B7FB4B2A0C042FAF341C',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("7354552BB410B7FB4B2A0C042FAF341C"))
+	            toggleQFavour('i71B1D1');
+	        if (solvedQst.has("7354552BB410B7FB4B2A0C042FAF341C"))
+	            setQSolved('i71B1D1', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q8C8AD4'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform8C8AD4' id='checkform8C8AD4' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="7F0FA955C2E082C24B154A0B7619C182">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">15-го декабря планируется взять кредит в банке на сумму 600 тысяч рублей <br /> на <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;месяц. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;1-го числа каждого месяца долг возрастает на 3% по сравнению с концом предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа каждого месяца с 1-го по <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>n</m:mi>  </m:semantics> </m:mstyle></m:math> -й долг должен быть на одну и ту же сумму меньше долга на 15-е число предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>n</m:mi>  </m:semantics> </m:mstyle></m:math> -го месяца долг составит 200 тысяч рублей;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;к 15-му числу <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math> -го месяца кредит должен быть полностью погашен.</p> <p class="MsoNormal">Найдите <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>n</m:mi>  </m:semantics> </m:mstyle></m:math>, если известно, что общая сумма выплат после полного погашения кредита составит 852 тысячи рублей.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i8C8AD4'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">8C8AD4</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'7F0FA955C2E082C24B154A0B7619C182')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('7F0FA955C2E082C24B154A0B7619C182',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("7F0FA955C2E082C24B154A0B7619C182"))
+	            toggleQFavour('i8C8AD4');
+	        if (solvedQst.has("7F0FA955C2E082C24B154A0B7619C182"))
+	            setQSolved('i8C8AD4', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qF6F358'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformF6F358' id='checkformF6F358' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="81F1DED83ECF9D5E4C3AD18E9CBC255A">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2020 года планируется взять кредит в банке на некоторую сумму. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг увеличивается на 25% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга.</p> <p class="MsoNormal">Сколько рублей будет выплачено банку, если известно, что кредит будет полностью погашен тремя равными платежами (то есть за три года) и общая сумма выплат после полного погашения кредита на 104&nbsp;800 рублей больше суммы, взятой в кредит?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iF6F358'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">F6F358</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'81F1DED83ECF9D5E4C3AD18E9CBC255A')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('81F1DED83ECF9D5E4C3AD18E9CBC255A',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("81F1DED83ECF9D5E4C3AD18E9CBC255A"))
+	            toggleQFavour('iF6F358');
+	        if (solvedQst.has("81F1DED83ECF9D5E4C3AD18E9CBC255A"))
+	            setQSolved('iF6F358', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q7A0F52'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform7A0F52' id='checkform7A0F52' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="836291EA8D28B5994B8A8212E33A8015">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2026 года планируется взять кредит на три года в размере 900&nbsp;тыс.&nbsp;рублей. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;каждый январь долг будет возрастать на 30&nbsp;% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;платежи в 2027 и 2028 годах должны быть равными;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;к июлю 2029 года долг должен быть выплачен полностью.</p> <p class="MsoNormal">Известно, что сумма всех платежей после полного погашения кредита будет равна 1482,3&nbsp;тыс.&nbsp;рублей. Сколько рублей составит платёж 2029 года?</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i7A0F52'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">7A0F52</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'836291EA8D28B5994B8A8212E33A8015')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('836291EA8D28B5994B8A8212E33A8015',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("836291EA8D28B5994B8A8212E33A8015"))
+	            toggleQFavour('i7A0F52');
+	        if (solvedQst.has("836291EA8D28B5994B8A8212E33A8015"))
+	            setQSolved('i7A0F52', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qFB11A1'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformFB11A1' id='checkformFB11A1' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="9155455EFCD293144CE5B4B7C66D8A51">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В июле 2025 года планируется взять кредит на десять лет в размере <br> 800 тыс. рублей. Условия его возврата таковы:</p> <p class=MsoNormal>—&nbsp;каждый январь долг будет возрастать на <span class=mml><m:math><m:mstyle displaystyle="true"><m:mi>r</m:mi></m:mstyle></m:math></span>&nbsp;% по сравнению с концом предыдущего года (<span class=mml><m:math><m:mstyle displaystyle="true"><m:mi>r</m:mi></m:mstyle></m:math></span><span> </span>— целое число);</p> <p class=MsoNormal>— с февраля по июнь каждого года необходимо оплатить одним платежом часть долга;</p> <p class=MsoNormal>—&nbsp;в июле 2026, 2027, 2028, 2029 и 2030 годов долг должен быть на какую-то одну и ту же величину меньше долга на июль предыдущего года;</p> <p class=MsoNormal>—&nbsp;в июле 2030 года долг должен составить 200 тыс.&nbsp;рублей;</p> <p class=MsoNormal>—&nbsp;в июле 2031, 2032, 2033, 2034 и 2035 годов долг должен быть на другую одну и ту же величину меньше долга на июль предыдущего года;</p> <p class=MsoNormal>—&nbsp;к июлю 2035 года долг должен быть выплачен полностью.</p> <p class=MsoNormal>Известно, что сумма всех платежей после полного погашения кредита будет равна 1480 тыс. рублей. Найдите <span class=mml><m:math><m:mstyle displaystyle="true"><m:mi>r</m:mi></m:mstyle></m:math></span>.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iFB11A1'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">FB11A1</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'9155455EFCD293144CE5B4B7C66D8A51')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('9155455EFCD293144CE5B4B7C66D8A51',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("9155455EFCD293144CE5B4B7C66D8A51"))
+	            toggleQFavour('iFB11A1');
+	        if (solvedQst.has("9155455EFCD293144CE5B4B7C66D8A51"))
+	            setQSolved('iFB11A1', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qC17CAC'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformC17CAC' id='checkformC17CAC' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="9AA35ACBEDAB9140439CF448A7BB46A2">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В июле 2025 года планируется взять кредит на десять лет в размере <br> 1300 тыс. рублей. Условия его возврата таковы:</p> <p class=MsoNormal>—&nbsp;каждый январь долг будет возрастать на 20&nbsp;% по сравнению с концом предыдущего года;</p> <p class=MsoNormal>— с февраля по июнь каждого года необходимо оплатить одним платежом часть долга;</p> <p class=MsoNormal>—&nbsp;в июле 2026, 2027, 2028, 2029 и 2030 годов долг должен быть на какую-то одну и ту же величину меньше долга на июль предыдущего года;</p> <p class=MsoNormal>—&nbsp;в июле 2031, 2032, 2033, 2034 и 2035 годов долг должен быть на другую одну и ту же величину меньше долга на июль предыдущего года;</p> <p class=MsoNormal>—&nbsp;к июлю 2035 года долг должен быть выплачен полностью.</p> <p class=MsoNormal>Известно, что сумма всех платежей после полного погашения кредита будет равна 2580 тыс. рублей. Сколько рублей составит долг в июле 2030 года?</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iC17CAC'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">C17CAC</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'9AA35ACBEDAB9140439CF448A7BB46A2')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('9AA35ACBEDAB9140439CF448A7BB46A2',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("9AA35ACBEDAB9140439CF448A7BB46A2"))
+	            toggleQFavour('iC17CAC');
+	        if (solvedQst.has("9AA35ACBEDAB9140439CF448A7BB46A2"))
+	            setQSolved('iC17CAC', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qDBAB97'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformDBAB97' id='checkformDBAB97' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="B739449F9B08935B45BB78C0B0869636">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2026 года планируется взять кредит на три года в размере 900&nbsp;тыс.&nbsp;рублей. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;каждый январь долг будет возрастать на 20&nbsp;% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;платежи в 2027 и 2028 годах должны быть равными;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;к июлю 2029 года долг должен быть выплачен полностью.</p> <p class="MsoNormal">Известно, что платёж в 2029 году составит 1027,2&nbsp;тыс.&nbsp;рублей. Найдите сумму всех платежей после полного погашения кредита.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iDBAB97'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">DBAB97</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'B739449F9B08935B45BB78C0B0869636')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('B739449F9B08935B45BB78C0B0869636',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("B739449F9B08935B45BB78C0B0869636"))
+	            toggleQFavour('iDBAB97');
+	        if (solvedQst.has("B739449F9B08935B45BB78C0B0869636"))
+	            setQSolved('iDBAB97', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qE8199D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformE8199D' id='checkformE8199D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="BC75FBD5A0E99B9B4DC9762CE1FDA7F9">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2025 года планируется взять кредит в банке на некоторую сумму. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;каждый январь долг увеличивается на 25&nbsp;% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;с февраля по июнь каждого года необходимо оплатить одним платежом часть долга.</p> <p class="MsoNormal">Сколько рублей планируется взять в банке, если известно, что кредит будет полностью погашен четырьмя равными платежами (то есть за четыре года) <br /> и банку будет выплачено 375&nbsp;000 рублей?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iE8199D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">E8199D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'BC75FBD5A0E99B9B4DC9762CE1FDA7F9')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('BC75FBD5A0E99B9B4DC9762CE1FDA7F9',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("BC75FBD5A0E99B9B4DC9762CE1FDA7F9"))
+	            toggleQFavour('iE8199D');
+	        if (solvedQst.has("BC75FBD5A0E99B9B4DC9762CE1FDA7F9"))
+	            setQSolved('iE8199D', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qEA6D9D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformEA6D9D' id='checkformEA6D9D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="BC7D97EC63B3853C430B7E70CA2E4D81">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2020 года планируется взять кредит в банке на некоторую сумму. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг увеличивается на 10% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга.</p> <p class="MsoNormal">Сколько рублей будет выплачено банку, если известно, что кредит будет полностью погашен тремя равными платежами (то есть за три года) и общая сумма выплат после полного погашения кредита на 34&nbsp;150 рублей больше суммы, взятой в кредит?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iEA6D9D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">EA6D9D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'BC7D97EC63B3853C430B7E70CA2E4D81')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('BC7D97EC63B3853C430B7E70CA2E4D81',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("BC7D97EC63B3853C430B7E70CA2E4D81"))
+	            toggleQFavour('iEA6D9D');
+	        if (solvedQst.has("BC7D97EC63B3853C430B7E70CA2E4D81"))
+	            setQSolved('iEA6D9D', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qDFEFEE'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformDFEFEE' id='checkformDFEFEE' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="C7CC1159A12CBC154D5362604C408598">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Пенсионный фонд владеет ценными бумагами, которые стоят <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msup> <m:mi>t</m:mi> <m:mn>2</m:mn> </m:msup> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;тыс.&nbsp;рублей в конце года <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>t</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;( <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>2</m:mn><m:mo>;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x2026;</m:mo> </m:mrow>  </m:semantics> </m:mstyle></m:math> ). В конце любого года пенсионный фонд может продать ценные бумаги и положить деньги на счёт в банке, при этом в конце каждого следующего года сумма на счёте будет увеличиваться на 25%. <span ><br /> </span>В конце какого года пенсионному фонду следует продать ценные бумаги, чтобы в конце двадцатого года сумма на его счёте была наибольшей?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iDFEFEE'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">DFEFEE</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'C7CC1159A12CBC154D5362604C408598')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('C7CC1159A12CBC154D5362604C408598',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("C7CC1159A12CBC154D5362604C408598"))
+	            toggleQFavour('iDFEFEE');
+	        if (solvedQst.has("C7CC1159A12CBC154D5362604C408598"))
+	            setQSolved('iDFEFEE', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q65F0E4'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform65F0E4' id='checkform65F0E4' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="CD0182603069A3A94B2A67D07B2569F8">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2020 года планируется взять кредит в банке на некоторую сумму. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг увеличивается на <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math> % по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга.</p> <p class="MsoNormal">Если ежегодно выплачивать по 58&nbsp;564 рубля, то кредит будет полностью погашен за 4 года, а если ежегодно выплачивать по 106&nbsp;964 рубля, то кредит будет полностью погашен за 2 года. Найдите <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math>.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i65F0E4'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">65F0E4</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'CD0182603069A3A94B2A67D07B2569F8')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('CD0182603069A3A94B2A67D07B2569F8',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("CD0182603069A3A94B2A67D07B2569F8"))
+	            toggleQFavour('i65F0E4');
+	        if (solvedQst.has("CD0182603069A3A94B2A67D07B2569F8"))
+	            setQSolved('i65F0E4', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qB4B56D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformB4B56D' id='checkformB4B56D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="D47408EE385ABF644E9886489982A7CC">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">15-го декабря планируется взять кредит в банке на сумму 1100 тысяч рублей на 31 месяц. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;1-го числа каждого месяца долг возрастает на 2% по сравнению с концом предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа каждого месяца с 1-го по 30-й долг должен быть на одну и ту же сумму меньше долга на 15-е число предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;к 15-му числу 31-го месяца кредит должен быть полностью погашен.</p> <p class="MsoNormal">Какой долг будет 15-го числа 30-го месяца, если общая сумма выплат после полного погашения кредита составит 1503 тысячи рублей?</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iB4B56D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">B4B56D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'D47408EE385ABF644E9886489982A7CC')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('D47408EE385ABF644E9886489982A7CC',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("D47408EE385ABF644E9886489982A7CC"))
+	            toggleQFavour('iB4B56D');
+	        if (solvedQst.has("D47408EE385ABF644E9886489982A7CC"))
+	            setQSolved('iB4B56D', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qDBAF65'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformDBAF65' id='checkformDBAF65' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="D78941715D8DB96E43105BAD14819F2B">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Пенсионный фонд владеет ценными бумагами, которые стоят <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msup> <m:mi>t</m:mi> <m:mn>2</m:mn> </m:msup> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;тыс.&nbsp;рублей в конце года <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>t</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;( <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>2</m:mn><m:mo>;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x2026;</m:mo> </m:mrow>  </m:semantics> </m:mstyle></m:math> ). В конце любого года пенсионный фонд может продать ценные бумаги и положить деньги на счёт в банке, при этом в конце каждого следующего года сумма на счёте будет увеличиваться в <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>r</m:mi> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;раз. Пенсионный фонд хочет продать ценные бумаги в конце такого года, чтобы <br /> в конце двадцатого года сумма на его счёте была наибольшей. Расчёты показали, что для этого ценные бумаги нужно продавать строго в конце девятого года. При каких положительных значениях <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>r</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;это возможно?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iDBAF65'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.6 Иррациональные неравенства</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">DBAF65</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'D78941715D8DB96E43105BAD14819F2B')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('D78941715D8DB96E43105BAD14819F2B',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("D78941715D8DB96E43105BAD14819F2B"))
+	            toggleQFavour('iDBAF65');
+	        if (solvedQst.has("D78941715D8DB96E43105BAD14819F2B"))
+	            setQSolved('iDBAF65', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q686E6E'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform686E6E' id='checkform686E6E' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="DDCDFC48EDEE9DA74856ACC2925050AC">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=MsoNormal>В июле 2020 года планируется взять кредит в банке на сумму 200&nbsp;000 рублей. Условия его возврата таковы:</P>
+<P class=MsoNormal><?xml:namespace prefix = m ns = "http://www.w3.org/1998/Math/MathML" /><m:math><m:mstyle displaystyle="true"><m:semantics><m:mo>—</m:mo> </m:semantics></m:mstyle></m:math>&nbsp;каждый январь долг увеличивается на <m:math><m:mstyle displaystyle="true"><m:semantics><m:mi>r</m:mi> </m:semantics></m:mstyle></m:math>% по сравнению с концом предыдущего года;</P>
+<P class=MsoNormal><m:math><m:mstyle displaystyle="true"><m:semantics><m:mo>—</m:mo> </m:semantics></m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга.</P>
+<P class=MsoNormal>Найдите <m:math><m:mstyle displaystyle="true"><m:semantics><m:mi>r</m:mi> </m:semantics></m:mstyle></m:math>, если известно, что кредит будет полностью погашен за два года, причём в первый год будет выплачено 130&nbsp;000 рублей, а во второй год <m:math><m:mstyle displaystyle="true"><m:semantics><m:mo>—</m:mo> </m:semantics></m:mstyle></m:math>&nbsp;150&nbsp;000 рублей.</P></TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i686E6E'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">686E6E</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'DDCDFC48EDEE9DA74856ACC2925050AC')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('DDCDFC48EDEE9DA74856ACC2925050AC',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("DDCDFC48EDEE9DA74856ACC2925050AC"))
+	            toggleQFavour('i686E6E');
+	        if (solvedQst.has("DDCDFC48EDEE9DA74856ACC2925050AC"))
+	            setQSolved('i686E6E', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q4C1D36'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform4C1D36' id='checkform4C1D36' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E0D5A7CD5D739A544D5ABE7D0F034AD1">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">15 декабря планируется взять кредит в банке на сумму 1100 тысяч рублей <br /> на 16 месяцев. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;1-го числа каждого месяца долг будет возрастать на <m:math> <m:semantics> <m:mi>r</m:mi> </m:semantics> </m:math>&nbsp;% по сравнению с&nbsp;концом предыдущего месяца ( <m:math> <m:semantics> <m:mi>r</m:mi> </m:semantics> </m:math><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;целое число);</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;со 2-го по 14-е число каждого месяца необходимо выплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;15-го числа каждого месяца с 1-го по 15-й долг должен быть на одну и ту же сумму меньше долга на 15-е число предыдущего месяца;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;15-го числа 15-го месяца долг должен быть равен 500 тысяч рублей;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;к 15-му числу 16-го месяца кредит должен быть полностью погашен.</p> <p class="MsoNormal">Найдите <m:math> <m:semantics> <m:mrow> <m:mi>r</m:mi><m:mo>,</m:mo> </m:mrow> </m:semantics> </m:math>&nbsp;если известно, что сумма всех платежей после полного погашения кредита будет составлять 1228 тысяч рублей.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i4C1D36'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">4C1D36</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E0D5A7CD5D739A544D5ABE7D0F034AD1')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E0D5A7CD5D739A544D5ABE7D0F034AD1',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E0D5A7CD5D739A544D5ABE7D0F034AD1"))
+	            toggleQFavour('i4C1D36');
+	        if (solvedQst.has("E0D5A7CD5D739A544D5ABE7D0F034AD1"))
+	            setQSolved('i4C1D36', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qFE9D85'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformFE9D85' id='checkformFE9D85' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F18BC7F85961B8F84F31450271E03265">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2020 года планируется взять кредит в банке на сумму 419&nbsp;375 рублей. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;каждый январь долг увеличивается на 20% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга.</p> <p class="MsoNormal">Сколько рублей будет выплачено банку, если известно, что кредит будет полностью погашен четырьмя равными платежами (то есть за четыре года)?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iFE9D85'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">FE9D85</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F18BC7F85961B8F84F31450271E03265')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F18BC7F85961B8F84F31450271E03265',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F18BC7F85961B8F84F31450271E03265"))
+	            toggleQFavour('iFE9D85');
+	        if (solvedQst.has("F18BC7F85961B8F84F31450271E03265"))
+	            setQSolved('iFE9D85', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qBA898B'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformBA898B' id='checkformBA898B' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F44F9B414EF386B54B2607EA4E1BF534">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В июле 2025 года планируется взять кредит на десять лет в размере <br> 500 тыс. рублей. Условия его возврата таковы:</p> <p class=MsoNormal>—&nbsp;каждый январь долг будет возрастать на 30&nbsp;% по сравнению с концом предыдущего года;</p> <p class=MsoNormal>— с февраля по июнь каждого года необходимо оплатить одним платежом часть долга;</p> <p class=MsoNormal>—&nbsp;в июле 2026, 2027, 2028, 2029 и 2030 годов долг должен быть на какую-то одну и ту же величину меньше долга на июль предыдущего года;</p> <p class=MsoNormal>—&nbsp;в июле 2031, 2032, 2033, 2034 и 2035 годов долг должен быть на другую одну и ту же величину меньше долга на июль предыдущего года;</p> <p class=MsoNormal>—&nbsp;к июлю 2035 года долг должен быть выплачен полностью.</p> <p class=MsoNormal>Известно, что сумма всех платежей после полного погашения кредита будет равна 1250 тыс. рублей. Сколько рублей составит платёж в 2035 году?</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iBA898B'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">BA898B</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F44F9B414EF386B54B2607EA4E1BF534')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F44F9B414EF386B54B2607EA4E1BF534',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F44F9B414EF386B54B2607EA4E1BF534"))
+	            toggleQFavour('iBA898B');
+	        if (solvedQst.has("F44F9B414EF386B54B2607EA4E1BF534"))
+	            setQSolved('iBA898B', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qDB5D8C'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformDB5D8C' id='checkformDB5D8C' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F7A847904FB6919241F1DD9EF5C90C51">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">15-го декабря планируется взять кредит в банке на 11 месяцев. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;1-го числа каждого месяца долг возрастает на 3% по сравнению с концом предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;со 2-го по 14-е число каждого месяца необходимо выплатить часть долга;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;15-го числа каждого месяца с 1-го по 10-й долг должен быть на 80 тысяч рублей меньше долга на 15-е число предыдущего месяца;</p> <p class="MsoNormal"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;к 15-му числу 11-го месяца кредит должен быть полностью погашен.</p> <p class="MsoNormal">Какой долг будет 15-го числа 10-го месяца, если общая сумма выплат после полного погашения кредита составит 1198 тысяч рублей?</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iDB5D8C'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">DB5D8C</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F7A847904FB6919241F1DD9EF5C90C51')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F7A847904FB6919241F1DD9EF5C90C51',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F7A847904FB6919241F1DD9EF5C90C51"))
+	            toggleQFavour('iDB5D8C');
+	        if (solvedQst.has("F7A847904FB6919241F1DD9EF5C90C51"))
+	            setQSolved('iDB5D8C', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qA06889'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformA06889' id='checkformA06889' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F9BD2F0A16479EE84484F461552E544F">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В июле 2026 года планируется взять кредит на три года в размере 800&nbsp;тыс.&nbsp;рублей. Условия его возврата таковы:</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;каждый январь долг будет возрастать на 20&nbsp;% по сравнению с концом предыдущего года;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;платежи в 2027 и 2028 годах должны быть равными;</p> <p class="MsoNormal"><m:math> <m:semantics> <m:mo>&#x2014;</m:mo> </m:semantics> </m:math>&nbsp;к июлю 2029 года долг должен быть выплачен полностью.</p> <p class="MsoNormal">Известно, что сумма всех платежей после полного погашения кредита будет равна 1254,4&nbsp;тыс.&nbsp;рублей. Сколько рублей составит платёж 2027 года?</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iA06889'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">A06889</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F9BD2F0A16479EE84484F461552E544F')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F9BD2F0A16479EE84484F461552E544F',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F9BD2F0A16479EE84484F461552E544F"))
+	            toggleQFavour('iA06889');
+	        if (solvedQst.has("F9BD2F0A16479EE84484F461552E544F"))
+	            setQSolved('iA06889', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qE7FA88'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformE7FA88' id='checkformE7FA88' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="FCF139817EA6BFD245B3B482A108C9E9">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В июле 2026 года планируется взять кредит на пять лет в размере 825&nbsp;тыс.&nbsp;рублей. Условия его возврата таковы:</p> <p class=MsoNormal>—&nbsp;каждый январь долг возрастает на 20% по сравнению с концом предыдущего года;</p> <p class=MsoNormal>—&nbsp;с февраля по июнь каждого года необходимо выплатить одним платежом часть долга;</p> <p class=MsoNormal>—&nbsp;в июле 2027, 2028 и 2029 годов долг остаётся равным 825&nbsp;тыс.&nbsp;рублей;</p> <p class=MsoNormal>—&nbsp;выплаты в 2030 и 2031 годах равны;</p> <p class=MsoNormal>—&nbsp;к июлю 2031 года долг будет выплачен полностью.</p> <p class=MsoNormal>Найдите общую сумму выплат за пять лет.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iE7FA88'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div><div>2.1 Целые и дробно-рациональные уравнения</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">E7FA88</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'FCF139817EA6BFD245B3B482A108C9E9')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('FCF139817EA6BFD245B3B482A108C9E9',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("FCF139817EA6BFD245B3B482A108C9E9"))
+	            toggleQFavour('iE7FA88');
+	        if (solvedQst.has("FCF139817EA6BFD245B3B482A108C9E9"))
+	            setQSolved('iE7FA88', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q37B190'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform37B190' id='checkform37B190' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="BE2435DDB75286CB4173843A3D770EDA">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Маша и Наташа делали фотографии в течение некоторого количества подряд идущих дней. В первый день Маша сделала <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>m</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;фотографий, а Наташа <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2014;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;<br /> <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>n</m:mi>  </m:semantics> </m:mstyle></m:math>&nbsp;фотографий. В каждый следующий день каждая из девочек делала на одну фотографию больше, чем в предыдущий день. Известно, что Наташа за всё время сделала суммарно на 1001 фотографию больше, чем Маша, и что фотографировали они больше одного дня.</p> <p class="MsoNormal">а)&nbsp;Могли ли они фотографировать в течение 7 дней?</p> <p class="MsoNormal">б)&nbsp;Могли ли они фотографировать в течение 8 дней?</p> <p class="MsoNormal">в)&nbsp;Какое наибольшее суммарное число фотографий могла сделать Наташа <br /> за все дни фотографирования, если известно, что в последний день Маша сделала меньше 40 фотографий?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i37B190'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>3.8 Арифметическая и геометрическая прогрессии. Формула сложных процентов</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">37B190</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'BE2435DDB75286CB4173843A3D770EDA')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('BE2435DDB75286CB4173843A3D770EDA',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("BE2435DDB75286CB4173843A3D770EDA"))
+	            toggleQFavour('i37B190');
+	        if (solvedQst.has("BE2435DDB75286CB4173843A3D770EDA"))
+	            setQSolved('i37B190', '1');
+	    </script>
+	    
+<div id='bottom_marker'></div>
+
+<script type='text/javascript'>
+function setSize() {  if (window.parent) {
+    window.parent.setQCount(45);
+    //var rect = document.body.getBoundingClientRect();
+    //window.parent.setContainerSize(rect.bottom - rect.top);
+    //window.parent.setContainerSize(Math.max(
+    //      document.body.offsetHeight, document.documentElement.offsetHeight,
+    //      document.body.clientHeight, document.documentElement.clientHeight)
+    //);
+    resizeContainer();
+  }
+}
+
+var cWidth = document.body.offsetWidth;
+
+function resizeContainer(){
+    var rect = document.getElementById('bottom_marker').getBoundingClientRect(); //document.body.lastChild.getBoundingClientRect();
+    window.parent.setContainerSize(rect.bottom);}
+
+function windowResize() {
+    if (cWidth != document.body.offsetWidth) {    	cWidth = document.body.offsetWidth;
+    	resizeContainer();
+    }}
+
+if (window.parent) {
+    window.parent.setQCount(45, 1, 100);
+    
+    if (MathJax) {
+        MathJax.Hub.Register.StartupHook("End",function () { setSize(); setTimeout(resizeContainer, 1000) });
+    }
+
+	if (window.addEventListener)
+        window.addEventListener('resize', windowResize);
+    else if (window.attachEvent)
+        window.attachEvent('onresize', windowResize);
+}
+
+</script>
+<SCRIPT language=JavaScript src="../../lib/bdetect.js" type=text/javascript></SCRIPT>
+
+<script language='JavaScript'>
+var crtm="1789339405";
+function SubmitForm(aform,pgname)
+{
+var aEl = document.createElement('input');
+if (!browser.isMac || !browser.isIE)
+  aEl.type = 'hidden';
+aEl.style.display = 'none';
+aEl.name = 'crtm';
+aEl.value = crtm;
+aform.appendChild(aEl);
+aform.action=pgname;
+aform.submit();
+
+}
+function GetPageName(pgname,extparams){
+if (pgname=='') pgname='/bank/questions.php';
+if (extparams=='')
+	pgname=pgname+"?crtm="+crtm;
+else	pgname=pgname+"?crtm="+crtm+"&"+extparams;
+return pgname;}
+function ShowPage(pgname,extparams,wndname,wndparam){
+if (wndname=='') {
+
+  location.href=GetPageName(pgname,extparams);
+
+  }
+  else
+ {if (wndparam=='')
+wnd=window.open(GetPageName(pgname,extparams),wndname);
+else wnd=window.open(GetPageName(pgname,extparams),wndname,wndparam);
+wnd.focus();}
+}
+</script>
+<script language='javascript'>
+                function onXS3DocumectLoad() {setSize();
+ }
+
+		if (window.addEventListener)
+            window.addEventListener('load', onXS3DocumectLoad);
+        else if (window.attachEvent)
+            window.attachEvent('onload', onXS3DocumectLoad);
+        else
+            window.onload = onXS3DocumectLoad;
+ </script><script language='javascript'>
+                function onXS3DocumectUnload(e) {
+			    	document.cookie = "md_auto=qprint; path=/; SameSite=Lax";
+			   		//return false;
+		    }
+		if (window.addEventListener)
+            window.addEventListener('beforeunload', onXS3DocumectUnload);
+        else if (window.attachEvent)
+            window.attachEvent('onbeforeunload', onXS3DocumectUnload);
+        else
+            window.onbeforeunload = onXS3DocumectUnload;
+        </script></body>
+</html>

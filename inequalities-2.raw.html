@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html XMLNS:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><LINK href="../../styles.css" rel="STYLESHEET" type="text/css">
+<LINK href="../../xmodules/os/img/_styles.css?v=1.04" rel="STYLESHEET" type="text/css">
+<script type="text/javascript" src="../../lib/mml/mathjax-4-config.js"></script><script type="text/javascript" src="../../lib/mml/mathjax-4/mml-chtml.js"></script><script type="text/javascript" src="../../lib/t3utils.js?v=2.04"></script><script type="text/javascript">var home_directory="../../";</script><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<META NAME="Document-state" CONTENT="Dynamic"><META HTTP-EQUIV="pragma" CONTENT="no-cache"><META HTTP-EQUIV="expires" CONTENT="0"><meta http-equiv="X-UA-Compatible" content="IE=10"/><link rel='shortcut icon' href='img/icon.png'><style>@media print {.noprint {display:none !important;}}</style><title>Открытый банк тестовых заданий</title>
+</head>
+<body class='questions-container' style='font-size:11pt'>
+		<script language="javascript">
+        var abort_answer_senging;
+		function onButtonClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+            abort_answer_senging = false;
+            if (formid)
+                eval('setAnswer'+formid+'(aform);');
+            else
+			    setAnswer(aform);
+            if (abort_answer_senging) return;
+			;
+			//aform.submit();
+            if (aform.setBtn)
+                aform.setBtn.disabled=true;
+		}
+		function onResetClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+			var aEl = document.createElement('input');
+			aEl.type = 'hidden';
+			aEl.name = 'reset';
+			aEl.value = 1;
+			aform.appendChild(aEl);
+			
+;
+			aform.submit();
+		}
+
+		function noAction()
+		{
+		}
+
+		</script>
+        <style type="text/css">
+			.img_scroll_container { height: 400px; overflow-y: scroll; text-align: center; width:100%;}
+			.img_scroll_container img { width: 700px }
+            .printbody .img_scroll_container { height: auto; overflow-y: hidden; }
+            .printbody .img_scroll_container img { width: 650px }
+            .active-distractor:hover{cursor:pointer; background-color: #f2f2f2;}
+            .active-distractor.checked-distractor{background-color: #e8e8e8;}
+		</style>
+		<script language="javascript">
+		var qguid='';
+		var qfiles_location='../../';
+
+		function ShowPictureQ(s,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			document.write('<IMG SRC="'+qfiles_location+s+'" ALIGN=ABSMIDDLE alt="'+hint+'" border="0"> ');
+		}
+
+		function ShowPictureQBL(s,hint,h,bl)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			var vspace=h/2-bl;
+			if (vspace<0) vspace=-vspace;
+			document.write('<IMG SRC="'+qfiles_location+s+'" ALIGN=MIDDLE border="0" alt="'+hint+'" VSPACE='+(vspace)+' STYLE="position:relative; top:'+(h/2-bl)+'px;">');
+		}
+
+
+		
+		function ShowPictureQ2WH(s,s2,hint,w,h)
+		{
+            if (s.indexOf('.flv')>0 ||s.indexOf('.mp4')>0 ||s.indexOf('.swf')>0)
+                s='../../show_media.php?m='+encodeURIComponent(s)+'&w='+w+'&h='+h;
+
+			w=w+40;
+			h=h+30;
+
+						document.write('<a href="javascript:var wnd=window.open(\''+qfiles_location+s+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+s2+'" ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'"></a> ');
+			//alert('вставил картинку!');
+		}
+
+		function ShowPictureQ3WH(s,s2,s3,hint,w,h)
+		{
+			ShowPictureQ2WH(s,s2,hint,w,h);
+		}
+
+		function ShowPictureQ2(s,s2,hint)
+		{
+			ShowPictureQ2WH(s,s2,hint,600,400);
+		};
+
+		function invertImage(img, s, s2)
+		{
+			if (img.src.indexOf(s)>0) img.src=qfiles_location+s2; else img.src=qfiles_location+s;
+		}
+
+		function ShowPictureQ3(s,s2,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+            var onclick=(s.indexOf('.jpg')>0||s.indexOf('.png')>0||s.indexOf('.gif')>0 ?'onclick="invertImage(this, \''+s+'\', \''+s2+'\')"':'');
+			document.write('<IMG SRC="'+qfiles_location+s2+'" '+onclick+' ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'" border="0"> ');
+		};
+
+		function showXGraphic(xml)
+		{
+			document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=1><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+		/*
+function ShowPictureQGX2(img,xml)
+{
+w=500;
+h=400;
+document.write('<IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE>');
+}
+*/
+		function ShowPictureQGX2(img,xml)
+		{
+			w=500;
+			h=400;
+			document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?qguid='+qguid+'&xml='+xml+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}
+
+		</script>
+		<script language='JavaScript'>
+var files_location='';
+var files_abs_location='';
+var space_after_img=true;
+function ShowPicture(s)
+{document.write('<IMG SRC="'+files_location+s+'" ALIGN=absmiddle border=0>'+(space_after_img?' ':''));}
+function ShowPicture2(s,s2,w,h)
+{if (w>800) w=800;
+ if (h>600) h=600;
+ align='ABSMIDDLE'; 
+document.write('<a href="javascript:var wnd=window.open(\''+files_location+s+'\',\'_blank\',\'resizable=1,menubar=0,scrollbars=1,width='+(w+40)+',height='+(h+20)+',left='+((screen.width-w-40)/2)+',top='+((screen.height-h-20)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+s2+'" ALIGN='+align+'></a>'+(space_after_img?' ':''));}
+function ShowPicture2S(objsrc,imgsrc,datasrc,w,h)
+{ShowPicture2(objsrc,imgsrc,w,h);}
+function ShowPictureBL(s,bl)
+{document.write('<IMG SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+bl+' STYLE="position:relative; top:-'+(bl)+'px;" border=0>');}
+function ShowPictureBL2(s,bl,h)
+{ var vspace=h/2-bl;
+  		if (vspace<0) vspace=-vspace;
+document.write('<IMG SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+((vspace))+' STYLE="position:relative; top:'+(h/2-bl-1)+'px;" border=0>');}
+function ShowPictureGX(img,xml)
+		{
+		w=500;
+		h=400;
+		document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?xml='+files_abs_location+xml+'\',\'\',\',status=1,resizable=1,menubar=1,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}function TraceLink(indx,n)
+{ if (n.charAt(0)=='{')
+  		{
+			var guid=n.substring(1,9)+n.substring(10,14)+n.substring(15,19)+n.substring(20,24)+n.substring(25,37);
+			showdocbyguid(guid);
+  		}
+  		else
+  		{var wnd=window.open('../../tracelink.php?project_guid=AC437B34557F88EA4115D2F374B0A07B&cdf='+n,'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+ }
+}
+function showdocbyguid(guid)
+{var wnd=window.open('../../tracelink.php?project_guid=AC437B34557F88EA4115D2F374B0A07B&doc_guid='+guid.toUpperCase(),'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+}
+function delFile(fguid)
+{
+if (confirm('Удалить файл?'))
+  location.href='delete.php?proj=AC437B34557F88EA4115D2F374B0A07B&md=qprint&fguid='+fguid}
+function ShowFlash(url)
+{
+			w='100%'; h='100%';
+			url='../../'+files_location+url;
+			document.write('<object tabindex=0 ID=ilFlash classid=CLSID:D27CDB6E-AE6D-11cf-96B8-444553540000 width='+w+' height='+h+' codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0">'+
+		'<param name=movie value="'+url+'"><PARAM play=true><PARAM SWLIVECONNECT=true><PARAM MENU=true><PARAM LOOP=false>'+
+		'<PARAM NAME=scale VALUE=noScale><embed src="'+url+'" quality=high bgcolor=#FFFFFF  width='+w+' height='+h+' scale=noScale type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockWaveFlash"></embed></object>');}
+	function showXGraphic(xml)
+		{
+		//alert("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+	</script><script type='text/javascript'>
+	var solvedQst = localStorage.getItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED");
+	solvedQst = solvedQst ? new Set(solvedQst.split(",")): new Set();
+	var favQst = localStorage.getItem("OS:AC437B34557F88EA4115D2F374B0A07B:FAV");
+	favQst = favQst ? new Set(favQst.split(",")): new Set();
+
+
+
+var request = createAJAXRequest();
+
+function toggleQFavour(qblock) {    var fvbtn = document.getElementById(qblock).getElementsByClassName('favorite-button');
+    toggleFavour(fvbtn[0]);
+}
+
+function toggleFavour(btn) {	btn.classList.toggle('is-favorite');
+    btn.title = btn.classList.contains('is-favorite')?'В Избранном':'Добавить в Избранное';}
+
+function setToStr(set) {	if (browser.isIE) {		let str = '';
+		set.forEach(function(elem){
+		    str += elem + (str?",":"")
+ 	 	});
+ 	 	return str;	} else {		return Array.from(set).join(",")	}}
+
+
+function changeFavour(btn, qst) {	if (btn.classList.contains('is-favorite'))
+	    favQst.delete(qst);
+    else
+        favQst.add(qst);
+    localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:FAV", setToStr(favQst));
+	toggleFavour(btn);}
+
+function changeStatus(qst, panel){
+    let answer = solvedQst.has(qst)? '0': '1';
+	if (answer == '0')		solvedQst.delete(qst);
+    else
+        solvedQst.add(qst);
+    localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED", setToStr(solvedQst));
+    setQSolved(panel, answer)
+}
+
+
+
+function checkButtonClick(form, setanswer, panel) {
+	form = document.getElementById(form);
+	setanswer(form);
+    if (!request.inProcess) {
+        request.open('POST', 'solve.php', true);
+        request.onreadystatechange = checkSolutionDone;
+        request.inProcess = true;
+        request.panel = panel;
+
+        var formData = new FormData(form);
+        formData.append("ajax", "1");
+        formData.append("proj", "AC437B34557F88EA4115D2F374B0A07B")
+
+		if (browser.isIE)
+			request.qst = form.guid.value;
+		else
+	        request.qst = formData.get("guid");
+
+        request.send(formData);
+
+        panel.getElementsByClassName('task-status')[0].innerHTML = "<img class='loader' src='img/loading_spinner.gif'>";    }
+}
+
+function checkSolutionDone() {    if (request.readyState==4)  {
+        request.inProcess = false;
+        answer = "0";
+        if (request.status==200) {
+            answer = request.responseText;
+        }
+        if (answer!='1' && answer!='2' && answer!='3') {
+        	answer = "0";
+        }
+        qst = request.qst;
+
+        if (answer == '0' || answer == '2')
+    		solvedQst.delete(qst);
+        else
+            solvedQst.add(qst);
+        localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED", setToStr(solvedQst));
+        setQSolved(request.panel, answer);
+    }
+}
+
+function setQSolved(block, answer) {	if (typeof(block) === 'string')
+	    block = document.getElementById(block);
+	var statusNode = block.getElementsByClassName('task-status')[0];
+    statusNode.className= "task-status task-status-" + answer ;
+    if (answer=='1')
+        statusNode.innerHTML = "РЕШЕНО";
+    else if (answer=='2')
+        statusNode.innerHTML = "НЕВЕРНО";
+    else if (answer=='3')
+        statusNode.innerHTML = "ВЕРНО";
+    else
+        statusNode.innerHTML = "НЕ РЕШЕНО";}
+
+</script>
+
+ <div class="qblock hide-form" id='q88E530'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform88E530' id='checkform88E530' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="EF2CF8390526A4234D3E2ED346D393C2">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Решите неравенство  <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mfrac> <m:mrow> <m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>4</m:mn> </m:msub> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mn>16</m:mn><m:msup> <m:mi>x</m:mi> <m:mn>4</m:mn> </m:msup> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>11</m:mn> </m:mrow> <m:mrow> <m:msubsup> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>4</m:mn> <m:mn>2</m:mn> </m:msubsup> <m:mi>x</m:mi><m:mo>&#x2212;</m:mo><m:mn>9</m:mn> </m:mrow> </m:mfrac> <m:mo>&#x2265;</m:mo><m:mo>&#x2212;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>1</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i88E530'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.7 Показательные и логарифмические неравенства</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">88E530</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'EF2CF8390526A4234D3E2ED346D393C2')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('EF2CF8390526A4234D3E2ED346D393C2',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("EF2CF8390526A4234D3E2ED346D393C2"))
+	            toggleQFavour('i88E530');
+	        if (solvedQst.has("EF2CF8390526A4234D3E2ED346D393C2"))
+	            setQSolved('i88E530', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qDA4C80'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformDA4C80' id='checkformDA4C80' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F7209A4057A69C52462D96337E0DEA13">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Решите неравенство <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>7</m:mn> </m:msub> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mn>2</m:mn><m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:mn>12</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>7</m:mn> </m:msub> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>&#x2212;</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>&#x2265;</m:mo><m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>7</m:mn> </m:msub> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mn>2</m:mn><m:mo>&#x2212;</m:mo><m:mfrac> <m:mn>1</m:mn> <m:mi>x</m:mi> </m:mfrac> </m:mrow> <m:mo>)</m:mo></m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math>.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iDA4C80'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.7 Показательные и логарифмические неравенства</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">DA4C80</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F7209A4057A69C52462D96337E0DEA13')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F7209A4057A69C52462D96337E0DEA13',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F7209A4057A69C52462D96337E0DEA13"))
+	            toggleQFavour('iDA4C80');
+	        if (solvedQst.has("F7209A4057A69C52462D96337E0DEA13"))
+	            setQSolved('iDA4C80', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q51D289'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform51D289' id='checkform51D289' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F8B7560C8D08849E472165F177DACE91">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">а)&nbsp;Решите уравнение</p> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mn>27</m:mn><m:mo>&#x22C5;</m:mo><m:msup> <m:mrow> <m:mn>81</m:mn> </m:mrow> <m:mrow> <m:mi>sin</m:mi><m:mi>x</m:mi> </m:mrow> </m:msup> <m:mtext>&#x200B;</m:mtext><m:mo>&#x2212;</m:mo><m:mn>12</m:mn><m:mo>&#x22C5;</m:mo><m:msup> <m:mn>9</m:mn> <m:mrow> <m:mi>sin</m:mi><m:mi>x</m:mi> </m:mrow> </m:msup> <m:mtext>&#x200B;</m:mtext><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>.</p> <p class="MsoNormal">б)&nbsp;Укажите корни этого уравнения, принадлежащие отрезку <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>[</m:mo> <m:mrow> <m:mfrac> <m:mrow> <m:mtext>3&#x03C0;</m:mtext> </m:mrow> <m:mn>2</m:mn> </m:mfrac> <m:mtext>&#x2009;</m:mtext><m:mo>;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>3</m:mn><m:mtext>&#x03C0;</m:mtext> </m:mrow> <m:mo>]</m:mo></m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math>.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i51D289'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>2.3 Тригонометрические уравнения</div><div>2.4 Показательные и логарифмические уравнения</div><div>2.9 Системы и совокупности уравнений и неравенств</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">51D289</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F8B7560C8D08849E472165F177DACE91')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F8B7560C8D08849E472165F177DACE91',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F8B7560C8D08849E472165F177DACE91"))
+	            toggleQFavour('i51D289');
+	        if (solvedQst.has("F8B7560C8D08849E472165F177DACE91"))
+	            setQSolved('i51D289', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q93D58F'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform93D58F' id='checkform93D58F' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="FB17E8C1710094E64EDD19B0E53FF1B3">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Решите неравенство <m:math> <m:semantics> <m:mrow> <m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>8</m:mn> </m:msub> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:msup> <m:mi>x</m:mi> <m:mn>3</m:mn> </m:msup> <m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>&#x2265;</m:mo><m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>2</m:mn> </m:msub> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>&#x2212;</m:mo><m:mn>1</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>5.</m:mn> </m:mrow> </m:semantics> </m:math><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i93D58F'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.7 Показательные и логарифмические неравенства</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">93D58F</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'FB17E8C1710094E64EDD19B0E53FF1B3')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('FB17E8C1710094E64EDD19B0E53FF1B3',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("FB17E8C1710094E64EDD19B0E53FF1B3"))
+	            toggleQFavour('i93D58F');
+	        if (solvedQst.has("FB17E8C1710094E64EDD19B0E53FF1B3"))
+	            setQSolved('i93D58F', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q80648E'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform80648E' id='checkform80648E' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="FFCD20B58FCEBD29404885ECA1B34D50">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Решите неравенство <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mfrac> <m:mrow> <m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>4</m:mn> </m:msub> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mn>64</m:mn><m:mi>x</m:mi> </m:mrow> <m:mo>)</m:mo></m:mrow> </m:mrow> <m:mrow> <m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>4</m:mn> </m:msub> <m:mi>x</m:mi><m:mo>&#x2212;</m:mo><m:mn>3</m:mn> </m:mrow> </m:mfrac> <m:mo>+</m:mo><m:mfrac> <m:mrow> <m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>4</m:mn> </m:msub> <m:mi>x</m:mi><m:mo>&#x2212;</m:mo><m:mn>3</m:mn> </m:mrow> <m:mrow> <m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>4</m:mn> </m:msub> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mn>64</m:mn><m:mi>x</m:mi> </m:mrow> <m:mo>)</m:mo></m:mrow> </m:mrow> </m:mfrac> <m:mo>&#x2265;</m:mo><m:mfrac> <m:mrow> <m:msub> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>4</m:mn> </m:msub> <m:msup> <m:mi>x</m:mi> <m:mn>4</m:mn> </m:msup> <m:mo>+</m:mo><m:mn>16</m:mn> </m:mrow> <m:mrow> <m:msubsup> <m:mrow> <m:mi>log</m:mi> </m:mrow> <m:mn>4</m:mn> <m:mn>2</m:mn> </m:msubsup> <m:mi>x</m:mi><m:mo>&#x2212;</m:mo><m:mn>9</m:mn> </m:mrow> </m:mfrac> </m:mrow>  </m:semantics> </m:mstyle></m:math>.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i80648E'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.7 Показательные и логарифмические неравенства</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">80648E</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'FFCD20B58FCEBD29404885ECA1B34D50')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('FFCD20B58FCEBD29404885ECA1B34D50',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("FFCD20B58FCEBD29404885ECA1B34D50"))
+	            toggleQFavour('i80648E');
+	        if (solvedQst.has("FFCD20B58FCEBD29404885ECA1B34D50"))
+	            setQSolved('i80648E', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qCF1240'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformCF1240' id='checkformCF1240' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="0A2516804DCB9A684A35733E17F6D4AF">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=Basis>Найдите все значения <SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/294BCDE22C9A8CB14671721D9D4F0FAE(copy1)/innerimg0.png","");</script></SPAN>, при каждом из которых система уравнений</P>
+<P class=Basis align=center><SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/294BCDE22C9A8CB14671721D9D4F0FAE(copy1)/innerimg1.png","");</script></SPAN></P>
+<P class=Basis>имеет ровно два различных решения.</P> </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iCF1240'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.9 Системы и совокупности уравнений и неравенств</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">CF1240</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'0A2516804DCB9A684A35733E17F6D4AF')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('0A2516804DCB9A684A35733E17F6D4AF',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("0A2516804DCB9A684A35733E17F6D4AF"))
+	            toggleQFavour('iCF1240');
+	        if (solvedQst.has("0A2516804DCB9A684A35733E17F6D4AF"))
+	            setQSolved('iCF1240', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qEE054F'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformEE054F' id='checkformEE054F' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="0C12C8CAB727AD744CD7DFC7AEA19EDB">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите все значения <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>a</m:mi>  </m:semantics> </m:mstyle></m:math>, при каждом из которых система уравнений</p> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>{</m:mo> <m:mtable columnalign='left'> <m:mtr> <m:mtd> <m:msup> <m:mi>x</m:mi> <m:mn>4</m:mn> </m:msup> <m:mo>+</m:mo><m:msup> <m:mi>y</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>=</m:mo><m:msup> <m:mi>a</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>,</m:mo> </m:mtd> </m:mtr> <m:mtr> <m:mtd> <m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow> <m:mn>2</m:mn><m:mi>a</m:mi><m:mo>&#x2212;</m:mo><m:mn>4</m:mn> </m:mrow> <m:mo>|</m:mo></m:mrow> </m:mtd> </m:mtr> </m:mtable> </m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> <p class="MsoNormal">имеет ровно четыре различных решения.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iEE054F'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">EE054F</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'0C12C8CAB727AD744CD7DFC7AEA19EDB')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('0C12C8CAB727AD744CD7DFC7AEA19EDB',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("0C12C8CAB727AD744CD7DFC7AEA19EDB"))
+	            toggleQFavour('iEE054F');
+	        if (solvedQst.has("0C12C8CAB727AD744CD7DFC7AEA19EDB"))
+	            setQSolved('iEE054F', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qCDB8F3'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformCDB8F3' id='checkformCDB8F3' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="1AE47FBFA517ACBD45545A551AE7B847">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите все значения <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>a</m:mi>  </m:semantics> </m:mstyle></m:math>, при каждом из которых система уравнений</p> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>{</m:mo> <m:mtable columnalign='left'> <m:mtr> <m:mtd> <m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:msup> <m:mi>y</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>&#x2212;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo> <m:mrow> <m:mi>a</m:mi><m:mo>+</m:mo><m:mn>1</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mi>x</m:mi><m:mo>&#x2212;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:msup> <m:mi>a</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:mn>8</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0,</m:mn> </m:mtd> </m:mtr> <m:mtr> <m:mtd> <m:msup> <m:mi>y</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>=</m:mo><m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> </m:mtd> </m:mtr> </m:mtable> </m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> <p class="MsoNormal">имеет ровно четыре различных решения.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iCDB8F3'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.9 Системы и совокупности уравнений и неравенств</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">CDB8F3</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'1AE47FBFA517ACBD45545A551AE7B847')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('1AE47FBFA517ACBD45545A551AE7B847',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("1AE47FBFA517ACBD45545A551AE7B847"))
+	            toggleQFavour('iCDB8F3');
+	        if (solvedQst.has("1AE47FBFA517ACBD45545A551AE7B847"))
+	            setQSolved('iCDB8F3', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q45927B'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform45927B' id='checkform45927B' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="304B86698B12934F4EAA8479C260E093">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите все значения <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>a</m:mi>  </m:semantics> </m:mstyle></m:math>, при каждом из которых система уравнений</p> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>{</m:mo> <m:mtable columnalign='left'> <m:mtr> <m:mtd> <m:mi>a</m:mi><m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:mi>a</m:mi><m:msup> <m:mi>y</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo> <m:mrow> <m:mn>2</m:mn><m:mi>a</m:mi><m:mo>&#x2212;</m:mo><m:mn>5</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0,</m:mn> </m:mtd> </m:mtr> <m:mtr> <m:mtd> <m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>x</m:mi> </m:mtd> </m:mtr> </m:mtable> </m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> <p class="MsoNormal">имеет ровно четыре различных решения.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i45927B'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.9 Системы и совокупности уравнений и неравенств</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">45927B</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'304B86698B12934F4EAA8479C260E093')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('304B86698B12934F4EAA8479C260E093',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("304B86698B12934F4EAA8479C260E093"))
+	            toggleQFavour('i45927B');
+	        if (solvedQst.has("304B86698B12934F4EAA8479C260E093"))
+	            setQSolved('i45927B', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qD5CA79'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformD5CA79' id='checkformD5CA79' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="37BA89FA6E889E4D4F37F191F1A38C3D">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите все значения <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>a</m:mi>  </m:semantics> </m:mstyle></m:math>, при каждом из которых система уравнений</p> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>{</m:mo> <m:mtable columnalign='left'> <m:mtr> <m:mtd> <m:mrow><m:mo>(</m:mo> <m:mrow> <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>y</m:mi><m:mo>&#x2212;</m:mo><m:mn>5</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo> <m:mrow> <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>y</m:mi><m:mo>&#x2212;</m:mo><m:mn>5</m:mn><m:mi>a</m:mi> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0,</m:mn> </m:mtd> </m:mtr> <m:mtr> <m:mtd> <m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:msup> <m:mi>y</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>=</m:mo><m:mn>16</m:mn> </m:mtd> </m:mtr> </m:mtable> </m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> <p class="MsoNormal">имеет ровно четыре различных решения.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iD5CA79'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">D5CA79</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'37BA89FA6E889E4D4F37F191F1A38C3D')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('37BA89FA6E889E4D4F37F191F1A38C3D',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("37BA89FA6E889E4D4F37F191F1A38C3D"))
+	            toggleQFavour('iD5CA79');
+	        if (solvedQst.has("37BA89FA6E889E4D4F37F191F1A38C3D"))
+	            setQSolved('iD5CA79', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q07CC1C'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform07CC1C' id='checkform07CC1C' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="52AA3A546D058F11442F8895FB6A43AC">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите все значения <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>a</m:mi>  </m:semantics> </m:mstyle></m:math>, при каждом из которых система уравнений</p> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>{</m:mo> <m:mtable columnalign='left'> <m:mtr> <m:mtd> <m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo> <m:mrow> <m:mi>a</m:mi><m:mo>+</m:mo><m:mn>2</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow><m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>&#x2212;</m:mo><m:mn>2,</m:mn> </m:mtd> </m:mtr> <m:mtr> <m:mtd> <m:msup> <m:mi>y</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>=</m:mo><m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> </m:mtd> </m:mtr> </m:mtable> </m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> <p class="MsoNormal">имеет ровно четыре различных решения.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i07CC1C'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.9 Системы и совокупности уравнений и неравенств</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">07CC1C</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'52AA3A546D058F11442F8895FB6A43AC')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('52AA3A546D058F11442F8895FB6A43AC',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("52AA3A546D058F11442F8895FB6A43AC"))
+	            toggleQFavour('i07CC1C');
+	        if (solvedQst.has("52AA3A546D058F11442F8895FB6A43AC"))
+	            setQSolved('i07CC1C', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qD354DE'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformD354DE' id='checkformD354DE' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="77C8E0E8F883B8B84A9CFCB662C3B56C">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=Basis>Найдите все значения <SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/D94CFB45E7AF80EC4E02459818F0B604(copy1)/innerimg0.png","");</script></SPAN>, при каждом из которых система уравнений</P>
+<P class=Basis align=center><SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/D94CFB45E7AF80EC4E02459818F0B604(copy1)/innerimg1.png","");</script></SPAN></P>
+<P class=Basis>имеет ровно два различных решения.</P> </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iD354DE'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.9 Системы и совокупности уравнений и неравенств</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">D354DE</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'77C8E0E8F883B8B84A9CFCB662C3B56C')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('77C8E0E8F883B8B84A9CFCB662C3B56C',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("77C8E0E8F883B8B84A9CFCB662C3B56C"))
+	            toggleQFavour('iD354DE');
+	        if (solvedQst.has("77C8E0E8F883B8B84A9CFCB662C3B56C"))
+	            setQSolved('iD354DE', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qDADE95'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformDADE95' id='checkformDADE95' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="B7879C4E91C9A2804ACE137BC1368F1E">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=Basis>Найдите все значения <SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/443E7EEE5A21ABAD406236C6E4BC8260(copy1)/innerimg0.png","");</script></SPAN>, при каждом из которых система уравнений</P>
+<P class=Basis align=center><SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/443E7EEE5A21ABAD406236C6E4BC8260(copy1)/innerimg1.png","");</script></SPAN></P>
+<P class=Basis>имеет ровно два различных решения.</P> </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iDADE95'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.9 Системы и совокупности уравнений и неравенств</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">DADE95</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'B7879C4E91C9A2804ACE137BC1368F1E')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('B7879C4E91C9A2804ACE137BC1368F1E',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("B7879C4E91C9A2804ACE137BC1368F1E"))
+	            toggleQFavour('iDADE95');
+	        if (solvedQst.has("B7879C4E91C9A2804ACE137BC1368F1E"))
+	            setQSolved('iDADE95', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qFF3CE9'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformFF3CE9' id='checkformFF3CE9' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="C1BE1A1AD51DA94142AF32C7E2C14562">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=Basis>Найдите все значения <SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/03A67CA84BAAA6E64310B2B117B5B92F(copy1)/innerimg0.png","");</script></SPAN>, при каждом из которых система уравнений</P>
+<P class=Basis align=center><SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/03A67CA84BAAA6E64310B2B117B5B92F(copy1)/innerimg1.png","");</script></SPAN></P>
+<P class=Basis>имеет ровно два различных решения.</P> </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iFF3CE9'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.9 Системы и совокупности уравнений и неравенств</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">FF3CE9</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'C1BE1A1AD51DA94142AF32C7E2C14562')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('C1BE1A1AD51DA94142AF32C7E2C14562',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("C1BE1A1AD51DA94142AF32C7E2C14562"))
+	            toggleQFavour('iFF3CE9');
+	        if (solvedQst.has("C1BE1A1AD51DA94142AF32C7E2C14562"))
+	            setQSolved('iFF3CE9', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qD5A8E6'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformD5A8E6' id='checkformD5A8E6' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="C7D98F7F6EAF8D774A922C3DDDCFE2D2">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите все значения <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>a</m:mi>  </m:semantics> </m:mstyle></m:math>, при каждом из которых система уравнений</p> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>{</m:mo> <m:mtable columnalign='left'> <m:mtr> <m:mtd> <m:mi>a</m:mi><m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:mi>a</m:mi><m:msup> <m:mi>y</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo> <m:mrow> <m:mi>a</m:mi><m:mo>+</m:mo><m:mn>2</m:mn> </m:mrow> <m:mo>)</m:mo></m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0,</m:mn> </m:mtd> </m:mtr> <m:mtr> <m:mtd> <m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi> </m:mtd> </m:mtr> </m:mtable> </m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> <p class="MsoNormal">имеет ровно четыре различных решения.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iD5A8E6'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1 Целые и дробно-рациональные уравнения</div><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.9 Системы и совокупности уравнений и неравенств</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">D5A8E6</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'C7D98F7F6EAF8D774A922C3DDDCFE2D2')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('C7D98F7F6EAF8D774A922C3DDDCFE2D2',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("C7D98F7F6EAF8D774A922C3DDDCFE2D2"))
+	            toggleQFavour('iD5A8E6');
+	        if (solvedQst.has("C7D98F7F6EAF8D774A922C3DDDCFE2D2"))
+	            setQSolved('iD5A8E6', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qE156E1'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformE156E1' id='checkformE156E1' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="CC585DC13719B84F4DF6883B294AD8D8">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите все значения <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mi>a</m:mi>  </m:semantics> </m:mstyle></m:math>, при каждом из которых система уравнений</p> <p class="MsoNormal" align="center"><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mrow><m:mo>{</m:mo> <m:mtable columnalign='left'> <m:mtr> <m:mtd> <m:msup> <m:mi>x</m:mi> <m:mn>4</m:mn> </m:msup> <m:mo>&#x2212;</m:mo><m:msup> <m:mi>y</m:mi> <m:mn>4</m:mn> </m:msup> <m:mo>=</m:mo><m:mn>12</m:mn><m:mi>a</m:mi><m:mo>&#x2212;</m:mo><m:mn>28,</m:mn> </m:mtd> </m:mtr> <m:mtr> <m:mtd> <m:msup> <m:mi>x</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>+</m:mo><m:msup> <m:mi>y</m:mi> <m:mn>2</m:mn> </m:msup> <m:mo>=</m:mo><m:mi>a</m:mi> </m:mtd> </m:mtr> </m:mtable> </m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math></p> <p class="MsoNormal">имеет ровно четыре различных решения.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iE156E1'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.5 Целые и дробно-рациональные неравенства</div><div>2.9 Системы и совокупности уравнений и неравенств</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">E156E1</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'CC585DC13719B84F4DF6883B294AD8D8')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('CC585DC13719B84F4DF6883B294AD8D8',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("CC585DC13719B84F4DF6883B294AD8D8"))
+	            toggleQFavour('iE156E1');
+	        if (solvedQst.has("CC585DC13719B84F4DF6883B294AD8D8"))
+	            setQSolved('iE156E1', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q8F61E2'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform8F61E2' id='checkform8F61E2' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="CF6D154F65289B4B45C6AC2F0A964F91">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Найдите все значения <span><script language='javascript'> ShowPictureQ('docs/AC437B34557F88EA4115D2F374B0A07B/questions/DABDB931E0509D79498B3CAEA0622E06(copy1)/xs3qstsrcDABDB931E0509D79498B3CAEA0622E06_1_1581757994.gif');</script></span>, при каждом из которых система уравнений</p> <p class=MsoNormal align=center><span><script language='javascript'> ShowPictureQ('docs/AC437B34557F88EA4115D2F374B0A07B/questions/DABDB931E0509D79498B3CAEA0622E06(copy1)/xs3qstsrcDABDB931E0509D79498B3CAEA0622E06_2_1581757994.gif');</script></span></p> <p class=MsoNormal>имеет ровно два различных решения.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i8F61E2'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.9 Системы и совокупности уравнений и неравенств</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">8F61E2</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'CF6D154F65289B4B45C6AC2F0A964F91')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('CF6D154F65289B4B45C6AC2F0A964F91',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("CF6D154F65289B4B45C6AC2F0A964F91"))
+	            toggleQFavour('i8F61E2');
+	        if (solvedQst.has("CF6D154F65289B4B45C6AC2F0A964F91"))
+	            setQSolved('i8F61E2', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q3D7367'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform3D7367' id='checkform3D7367' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="DE337E39439BAA1B4916876E7DDBD77B">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=Basis>Найдите все значения <SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/8DEF234DD38CBED141A7FE8C4C764EA0(copy1)/innerimg0.png","");</script></SPAN>, при каждом из которых система уравнений</P>
+<P class=Basis align=center><SPAN><script language="JavaScript">ShowPictureQ("docs/AC437B34557F88EA4115D2F374B0A07B/questions/8DEF234DD38CBED141A7FE8C4C764EA0(copy1)/innerimg1.png","");</script></SPAN></P>
+<P class=Basis>имеет ровно два различных решения.</P> </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i3D7367'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.9 Системы и совокупности уравнений и неравенств</div><div>2.10 Уравнения, неравенства и системы с параметрами</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">3D7367</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'DE337E39439BAA1B4916876E7DDBD77B')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('DE337E39439BAA1B4916876E7DDBD77B',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("DE337E39439BAA1B4916876E7DDBD77B"))
+	            toggleQFavour('i3D7367');
+	        if (solvedQst.has("DE337E39439BAA1B4916876E7DDBD77B"))
+	            setQSolved('i3D7367', '1');
+	    </script>
+	    
+<div id='bottom_marker'></div>
+
+<script type='text/javascript'>
+function setSize() {  if (window.parent) {
+    window.parent.setQCount(118);
+    //var rect = document.body.getBoundingClientRect();
+    //window.parent.setContainerSize(rect.bottom - rect.top);
+    //window.parent.setContainerSize(Math.max(
+    //      document.body.offsetHeight, document.documentElement.offsetHeight,
+    //      document.body.clientHeight, document.documentElement.clientHeight)
+    //);
+    resizeContainer();
+  }
+}
+
+var cWidth = document.body.offsetWidth;
+
+function resizeContainer(){
+    var rect = document.getElementById('bottom_marker').getBoundingClientRect(); //document.body.lastChild.getBoundingClientRect();
+    window.parent.setContainerSize(rect.bottom);}
+
+function windowResize() {
+    if (cWidth != document.body.offsetWidth) {    	cWidth = document.body.offsetWidth;
+    	resizeContainer();
+    }}
+
+if (window.parent) {
+    window.parent.setQCount(118, 2, 100);
+    
+    if (MathJax) {
+        MathJax.Hub.Register.StartupHook("End",function () { setSize(); setTimeout(resizeContainer, 1000) });
+    }
+
+	if (window.addEventListener)
+        window.addEventListener('resize', windowResize);
+    else if (window.attachEvent)
+        window.attachEvent('onresize', windowResize);
+}
+
+</script>
+<SCRIPT language=JavaScript src="../../lib/bdetect.js" type=text/javascript></SCRIPT>
+
+<script language='JavaScript'>
+var crtm="1789339403";
+function SubmitForm(aform,pgname)
+{
+var aEl = document.createElement('input');
+if (!browser.isMac || !browser.isIE)
+  aEl.type = 'hidden';
+aEl.style.display = 'none';
+aEl.name = 'crtm';
+aEl.value = crtm;
+aform.appendChild(aEl);
+aform.action=pgname;
+aform.submit();
+
+}
+function GetPageName(pgname,extparams){
+if (pgname=='') pgname='/bank/questions.php';
+if (extparams=='')
+	pgname=pgname+"?crtm="+crtm;
+else	pgname=pgname+"?crtm="+crtm+"&"+extparams;
+return pgname;}
+function ShowPage(pgname,extparams,wndname,wndparam){
+if (wndname=='') {
+
+  location.href=GetPageName(pgname,extparams);
+
+  }
+  else
+ {if (wndparam=='')
+wnd=window.open(GetPageName(pgname,extparams),wndname);
+else wnd=window.open(GetPageName(pgname,extparams),wndname,wndparam);
+wnd.focus();}
+}
+</script>
+<script language='javascript'>
+                function onXS3DocumectLoad() {setSize();
+ }
+
+		if (window.addEventListener)
+            window.addEventListener('load', onXS3DocumectLoad);
+        else if (window.attachEvent)
+            window.attachEvent('onload', onXS3DocumectLoad);
+        else
+            window.onload = onXS3DocumectLoad;
+ </script><script language='javascript'>
+                function onXS3DocumectUnload(e) {
+			    	document.cookie = "md_auto=qprint; path=/; SameSite=Lax";
+			   		//return false;
+		    }
+		if (window.addEventListener)
+            window.addEventListener('beforeunload', onXS3DocumectUnload);
+        else if (window.attachEvent)
+            window.attachEvent('onbeforeunload', onXS3DocumectUnload);
+        else
+            window.onbeforeunload = onXS3DocumectUnload;
+        </script></body>
+</html>
