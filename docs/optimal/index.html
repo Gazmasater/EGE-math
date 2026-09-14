@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html XMLNS:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><LINK href="/EGE-math/fipi/styles.css" rel="STYLESHEET" type="text/css">
+<LINK href="/EGE-math/fipi/xmodules/os/img/_styles.css?v=1.04" rel="STYLESHEET" type="text/css">
+<script type="text/javascript" src="/EGE-math/fipi/lib/t3utils.js?v=2.04"></script><script type="text/javascript">var home_directory="/fipi/";</script><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<META NAME="Document-state" CONTENT="Dynamic"><META HTTP-EQUIV="pragma" CONTENT="no-cache"><META HTTP-EQUIV="expires" CONTENT="0"><meta http-equiv="X-UA-Compatible" content="IE=10"/><link rel='shortcut icon' href='img/icon.png'><style>@media print {.noprint {display:none !important;}}</style><title>Оптимальный выбор — задания второй части</title>
+<script>document.documentElement.classList.add('page-loading');</script>
+  <style>
+    html.added-loading .task-header-panel,
+    html.added-loading .qblock { display: none !important; }
+    html.page-loading .task-header-panel,
+    html.page-loading .qblock,
+    html.page-loading .local-pager { visibility: hidden !important; }
+    html.page-loading body::after { content: 'Подготовка заданий…'; display: block; margin: 36px auto; text-align: center;
+      color: #526273; font: 15px Arial, sans-serif; }
+    math { font-family: 'Cambria Math', 'STIX Two Math', serif; }
+    body.questions-container { max-width: 1000px; margin: 0 auto; padding: 24px; background: #f4f6f8; }
+    body.questions-container > table { background: white; box-shadow: 0 2px 14px #00000018; }
+    .local-header { position: sticky; top: 0; z-index: 50; margin: -24px -24px 20px; padding: 14px 24px;
+      background: #183153; color: white; font: 600 16px/1.35 Arial, sans-serif; box-shadow: 0 2px 8px #0003; }
+    .local-header small { display: block; margin-top: 3px; font-weight: 400; opacity: .82; }
+    .local-menu { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+    .local-menu a { padding: 7px 8px; border: 1px solid #ffffff70; border-radius: 6px; color: white; text-decoration: none;
+      font-weight: 500; text-align: center; white-space: normal; }
+    .local-menu a:hover { background: #ffffff18; }
+    .local-menu a.active { background: white; color: #183153; }
+    .local-menu form { margin: 0; min-width: 0; }
+    .local-menu button { padding: 7px 11px; border: 1px solid #ffffff70; border-radius: 6px; color: white;
+      background: transparent; font: 500 14px Arial, sans-serif; cursor: pointer; width: 100%; height: 100%; white-space: normal; }
+    .local-menu button:hover { background: #ffffff18; }
+    .local-pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 7px;
+      margin: 18px 0; padding: 12px; background: white; border-radius: 8px; box-shadow: 0 1px 7px #00000015;
+      font: 14px Arial, sans-serif; }
+    .local-pager button { min-width: 38px; padding: 8px 11px; border: 1px solid #b8c3d1; border-radius: 6px;
+      background: white; color: #183153; cursor: pointer; }
+    .local-pager button:hover:not(:disabled) { background: #eaf1f8; }
+    .local-pager button.active { border-color: #183153; background: #183153; color: white; }
+    .local-pager button:disabled { cursor: default; opacity: .4; }
+    .local-page-label { margin: 0 6px; color: #4b5968; }
+    .local-task-hidden { display: none !important; }
+    @media print { .local-header { position: static; margin: 0 0 16px; } body.questions-container { background: white; padding: 0; } }
+  </style></head>
+<body class='questions-container' style='font-size:11pt'><div class="local-header">Оптимальный выбор — задания второй части
+    <small>ФИПИ · задачи на оптимальный выбор · развёрнутый ответ · 2 задания</small>
+    <nav class="local-menu">
+      <a href="/EGE-math/equations/" class="">Уравнения</a>
+      <a href="/EGE-math/" class="">Стереометрия</a>
+      <a href="/EGE-math/inequalities/" class="">Неравенства</a>
+      <a href="/EGE-math/finance/" class="">Финансовая математика</a>
+      <a href="/EGE-math/optimal/" class="active">Оптимальный выбор</a>
+      <a href="/EGE-math/planimetry/" class="">Планиметрия</a>
+      <a href="/EGE-math/parameters/" class="">Задачи с параметром</a>
+      <a href="/EGE-math/numbers/" class="">Числа и их свойства</a>
+      <a href="/EGE-math/added/" class="">Добавленные задачи</a>
+      <span class="local-page-label" style="color:white">Update is available locally</span>
+    </nav></div>
+		<script language="javascript">
+        var abort_answer_senging;
+		function onButtonClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+            abort_answer_senging = false;
+            if (formid)
+                eval('setAnswer'+formid+'(aform);');
+            else
+			    setAnswer(aform);
+            if (abort_answer_senging) return;
+			;
+			//aform.submit();
+            if (aform.setBtn)
+                aform.setBtn.disabled=true;
+		}
+		function onResetClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+			var aEl = document.createElement('input');
+			aEl.type = 'hidden';
+			aEl.name = 'reset';
+			aEl.value = 1;
+			aform.appendChild(aEl);
+			
+;
+			aform.submit();
+		}
+
+		function noAction()
+		{
+		}
+
+		</script>
+        <style type="text/css">
+			.img_scroll_container { height: 400px; overflow-y: scroll; text-align: center; width:100%;}
+			.img_scroll_container img { width: 700px }
+            .printbody .img_scroll_container { height: auto; overflow-y: hidden; }
+            .printbody .img_scroll_container img { width: 650px }
+            .active-distractor:hover{cursor:pointer; background-color: #f2f2f2;}
+            .active-distractor.checked-distractor{background-color: #e8e8e8;}
+		</style>
+		<script language="javascript">
+		var qguid='';
+		var qfiles_location='/EGE-math/fipi/';
+
+		function ShowPictureQ(s,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			document.write('<IMG loading="lazy" SRC="'+qfiles_location+s+'" ALIGN=ABSMIDDLE alt="'+hint+'" border="0"> ');
+		}
+
+		function ShowPictureQBL(s,hint,h,bl)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			var vspace=h/2-bl;
+			if (vspace<0) vspace=-vspace;
+			document.write('<IMG loading="lazy" SRC="'+qfiles_location+s+'" ALIGN=MIDDLE border="0" alt="'+hint+'" VSPACE='+(vspace)+' STYLE="position:relative; top:'+(h/2-bl)+'px;">');
+		}
+
+
+		
+		function ShowPictureQ2WH(s,s2,hint,w,h)
+		{
+            if (s.indexOf('.flv')>0 ||s.indexOf('.mp4')>0 ||s.indexOf('.swf')>0)
+                s='../../show_media.php?m='+encodeURIComponent(s)+'&w='+w+'&h='+h;
+
+			w=w+40;
+			h=h+30;
+
+						document.write('<a href="javascript:var wnd=window.open(\''+qfiles_location+s+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+s2+'" ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'"></a> ');
+			//alert('вставил картинку!');
+		}
+
+		function ShowPictureQ3WH(s,s2,s3,hint,w,h)
+		{
+			ShowPictureQ2WH(s,s2,hint,w,h);
+		}
+
+		function ShowPictureQ2(s,s2,hint)
+		{
+			ShowPictureQ2WH(s,s2,hint,600,400);
+		};
+
+		function invertImage(img, s, s2)
+		{
+			if (img.src.indexOf(s)>0) img.src=qfiles_location+s2; else img.src=qfiles_location+s;
+		}
+
+		function ShowPictureQ3(s,s2,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+            var onclick=(s.indexOf('.jpg')>0||s.indexOf('.png')>0||s.indexOf('.gif')>0 ?'onclick="invertImage(this, \''+s+'\', \''+s2+'\')"':'');
+			document.write('<IMG loading="lazy" SRC="'+qfiles_location+s2+'" '+onclick+' ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'" border="0"> ');
+		};
+
+		function showXGraphic(xml)
+		{
+			document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=1><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+		/*
+function ShowPictureQGX2(img,xml)
+{
+w=500;
+h=400;
+document.write('<IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE>');
+}
+*/
+		function ShowPictureQGX2(img,xml)
+		{
+			w=500;
+			h=400;
+			document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?qguid='+qguid+'&xml='+xml+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}
+
+		</script>
+		<script language='JavaScript'>
+var files_location='';
+var files_abs_location='';
+var space_after_img=true;
+function ShowPicture(s)
+{document.write('<IMG loading="lazy" SRC="'+files_location+s+'" ALIGN=absmiddle border=0>'+(space_after_img?' ':''));}
+function ShowPicture2(s,s2,w,h)
+{if (w>800) w=800;
+ if (h>600) h=600;
+ align='ABSMIDDLE'; 
+document.write('<a href="javascript:var wnd=window.open(\''+files_location+s+'\',\'_blank\',\'resizable=1,menubar=0,scrollbars=1,width='+(w+40)+',height='+(h+20)+',left='+((screen.width-w-40)/2)+',top='+((screen.height-h-20)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+s2+'" ALIGN='+align+'></a>'+(space_after_img?' ':''));}
+function ShowPicture2S(objsrc,imgsrc,datasrc,w,h)
+{ShowPicture2(objsrc,imgsrc,w,h);}
+function ShowPictureBL(s,bl)
+{document.write('<IMG loading="lazy" SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+bl+' STYLE="position:relative; top:-'+(bl)+'px;" border=0>');}
+function ShowPictureBL2(s,bl,h)
+{ var vspace=h/2-bl;
+  		if (vspace<0) vspace=-vspace;
+document.write('<IMG loading="lazy" SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+((vspace))+' STYLE="position:relative; top:'+(h/2-bl-1)+'px;" border=0>');}
+function ShowPictureGX(img,xml)
+		{
+		w=500;
+		h=400;
+		document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?xml='+files_abs_location+xml+'\',\'\',\',status=1,resizable=1,menubar=1,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}function TraceLink(indx,n)
+{ if (n.charAt(0)=='{')
+  		{
+			var guid=n.substring(1,9)+n.substring(10,14)+n.substring(15,19)+n.substring(20,24)+n.substring(25,37);
+			showdocbyguid(guid);
+  		}
+  		else
+  		{var wnd=window.open('../../tracelink.php?project_guid=AC437B34557F88EA4115D2F374B0A07B&cdf='+n,'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+ }
+}
+function showdocbyguid(guid)
+{var wnd=window.open('../../tracelink.php?project_guid=AC437B34557F88EA4115D2F374B0A07B&doc_guid='+guid.toUpperCase(),'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+}
+function delFile(fguid)
+{
+if (confirm('Удалить файл?'))
+  location.href='delete.php?proj=AC437B34557F88EA4115D2F374B0A07B&md=qprint&fguid='+fguid}
+function ShowFlash(url)
+{
+			w='100%'; h='100%';
+			url='../../'+files_location+url;
+			document.write('<object tabindex=0 ID=ilFlash classid=CLSID:D27CDB6E-AE6D-11cf-96B8-444553540000 width='+w+' height='+h+' codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0">'+
+		'<param name=movie value="'+url+'"><PARAM play=true><PARAM SWLIVECONNECT=true><PARAM MENU=true><PARAM LOOP=false>'+
+		'<PARAM NAME=scale VALUE=noScale><embed src="'+url+'" quality=high bgcolor=#FFFFFF  width='+w+' height='+h+' scale=noScale type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockWaveFlash"></embed></object>');}
+	function showXGraphic(xml)
+		{
+		//alert("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+	</script><script type='text/javascript'>
+	var solvedQst = localStorage.getItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED");
+	solvedQst = solvedQst ? new Set(solvedQst.split(",")): new Set();
+	var favQst = localStorage.getItem("OS:AC437B34557F88EA4115D2F374B0A07B:FAV");
+	favQst = favQst ? new Set(favQst.split(",")): new Set();
+
+
+
+var request = createAJAXRequest();
+
+function toggleQFavour(qblock) {    var fvbtn = document.getElementById(qblock).getElementsByClassName('favorite-button');
+    toggleFavour(fvbtn[0]);
+}
+
+function toggleFavour(btn) {	btn.classList.toggle('is-favorite');
+    btn.title = btn.classList.contains('is-favorite')?'В Избранном':'Добавить в Избранное';}
+
+function setToStr(set) {	if (browser.isIE) {		let str = '';
+		set.forEach(function(elem){
+		    str += elem + (str?",":"")
+ 	 	});
+ 	 	return str;	} else {		return Array.from(set).join(",")	}}
+
+
+function changeFavour(btn, qst) {	if (btn.classList.contains('is-favorite'))
+	    favQst.delete(qst);
+    else
+        favQst.add(qst);
+    localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:FAV", setToStr(favQst));
+	toggleFavour(btn);}
+
+function changeStatus(qst, panel){
+    let answer = solvedQst.has(qst)? '0': '1';
+	if (answer == '0')		solvedQst.delete(qst);
+    else
+        solvedQst.add(qst);
+    localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED", setToStr(solvedQst));
+    setQSolved(panel, answer)
+}
+
+
+
+function checkButtonClick(form, setanswer, panel) {
+	form = document.getElementById(form);
+	setanswer(form);
+    if (!request.inProcess) {
+        request.open('POST', 'solve.php', true);
+        request.onreadystatechange = checkSolutionDone;
+        request.inProcess = true;
+        request.panel = panel;
+
+        var formData = new FormData(form);
+        formData.append("ajax", "1");
+        formData.append("proj", "AC437B34557F88EA4115D2F374B0A07B")
+
+		if (browser.isIE)
+			request.qst = form.guid.value;
+		else
+	        request.qst = formData.get("guid");
+
+        request.send(formData);
+
+        panel.getElementsByClassName('task-status')[0].innerHTML = "<img class='loader' src='img/loading_spinner.gif'>";    }
+}
+
+function checkSolutionDone() {    if (request.readyState==4)  {
+        request.inProcess = false;
+        answer = "0";
+        if (request.status==200) {
+            answer = request.responseText;
+        }
+        if (answer!='1' && answer!='2' && answer!='3') {
+        	answer = "0";
+        }
+        qst = request.qst;
+
+        if (answer == '0' || answer == '2')
+    		solvedQst.delete(qst);
+        else
+            solvedQst.add(qst);
+        localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED", setToStr(solvedQst));
+        setQSolved(request.panel, answer);
+    }
+}
+
+function setQSolved(block, answer) {	if (typeof(block) === 'string')
+	    block = document.getElementById(block);
+	var statusNode = block.getElementsByClassName('task-status')[0];
+    statusNode.className= "task-status task-status-" + answer ;
+    if (answer=='1')
+        statusNode.innerHTML = "РЕШЕНО";
+    else if (answer=='2')
+        statusNode.innerHTML = "НЕВЕРНО";
+    else if (answer=='3')
+        statusNode.innerHTML = "ВЕРНО";
+    else
+        statusNode.innerHTML = "НЕ РЕШЕНО";}
+
+</script>
+
+ <div class="qblock hide-form" id='qE1812B'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformE1812B' id='checkformE1812B' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="6C4F55A29FB0B83F48D9E9CC24C519C0">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Строительство нового завода стоит 78 млн&nbsp;рублей. Затраты на производство <span class=mml><math><mstyle displaystyle="true"><mi>x</mi></mstyle></math></span> тыс. единиц продукции на таком заводе равны <span class=mml><math><mstyle displaystyle="true"><mrow><mfenced><mrow><mn>0,5</mn><msup><mi>x</mi><mn>2</mn></msup><mtext>&#x200B;</mtext><mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></mfenced></mrow></mstyle></math></span> млн&nbsp;рублей в год. Если продукцию завода продавать по цене <span class=mml><math><mstyle displaystyle="true"><mi>p</mi></mstyle></math></span> тыс.&nbsp;рублей за единицу, то прибыль фирмы (в млн&nbsp; рублей) за один год составит <span class=mml><math><mstyle displaystyle="true"><mrow><mi>p</mi><mi>x</mi><mo>&#x2212;</mo><mfenced><mrow><mn>0,5</mn><msup><mi>x</mi><mn>2</mn></msup><mtext>&#x200B;</mtext><mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></mfenced></mrow></mstyle></math></span>. Когда завод будет построен, каждый год фирма будет выпускать продукцию в таком количестве, чтобы прибыль была наибольшей. При каком наименьшем значении <span class=mml><math><mstyle displaystyle="true"><mi>p</mi></mstyle></math></span> строительство завода окупится не больше чем за 3 года?</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iE1812B'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3.2 Область определения и множество значений функции. Нули функции. Промежутки знакопостоянства. Промежутки монотонности функции. Максимумы и минимумы функции. Наибольшее и наименьшее значение функции на промежутке</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">E1812B</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'6C4F55A29FB0B83F48D9E9CC24C519C0')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('6C4F55A29FB0B83F48D9E9CC24C519C0',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("6C4F55A29FB0B83F48D9E9CC24C519C0"))
+	            toggleQFavour('iE1812B');
+	        if (solvedQst.has("6C4F55A29FB0B83F48D9E9CC24C519C0"))
+	            setQSolved('iE1812B', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q262AEA'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform262AEA' id='checkform262AEA' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="C696D900E5428AEE4C8BBD4621227A34">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal><a name="_GoBack"></a>Вадим является владельцем двух заводов в разных городах. На заводах производятся абсолютно одинаковые товары при использовании одинаковых технологий. Если рабочие на одном из заводов трудятся суммарно <span class=mml><math><mstyle displaystyle="true"><mrow><msup><mi>t</mi><mn>2</mn></msup></mrow></mstyle></math></span> часов в<span lang=EN-US>&nbsp;</span>неделю, то за эту неделю они производят <span class=mml><math><mstyle displaystyle="true"><mi>t</mi></mstyle></math></span> единиц товара.</p> <p class=MsoNormal><span>За каждый час работы на заводе, расположенном в первом городе, </span>Вадим <span>платит </span>рабочему 200 рублей, а на заводе, расположенном во втором городе, — 300<span lang=EN-US>&nbsp;</span>рублей.</p> <p class=MsoNormal>Вадим готов выделять 1<span lang=EN-US>&nbsp;</span>200<span lang=EN-US>&nbsp;</span>000 рублей в неделю на оплату труда рабочих. Какое наибольшее количество единиц товара можно произвести за неделю на<span lang=EN-US>&nbsp;</span>этих двух заводах?</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i262AEA'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.1 Натуральные и целые числа. Признаки делимости целых чисел</div><div>1.2 Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">262AEA</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'C696D900E5428AEE4C8BBD4621227A34')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('C696D900E5428AEE4C8BBD4621227A34',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("C696D900E5428AEE4C8BBD4621227A34"))
+	            toggleQFavour('i262AEA');
+	        if (solvedQst.has("C696D900E5428AEE4C8BBD4621227A34"))
+	            setQSolved('i262AEA', '1');
+	    </script>
+	      <script>
+  window.addEventListener('DOMContentLoaded', function () {
+    let currentPage = 1;
+    let resizeTimer;
+    let pages = [];
+    const headers = Array.from(document.querySelectorAll('.task-header-panel')).map(el => el.parentElement);
+    const allowedIds = null;
+    const section = "optimal";
+    function relevant(task) {
+      const text = (task.content?.innerText || task.content?.textContent || '').replace(/\s+/g, ' ').toLowerCase();
+      const meta = (task.header.innerText || task.header.textContent || '').replace(/\s+/g, ' ').toLowerCase();
+      if (section === 'equations') {
+        return /решите (?:данное )?(?:уравнение|систему уравнений)|найдите (?:все )?(?:корни|решения) уравнения/.test(text);
+      }
+      if (section === 'inequalities') {
+        return /решите (?:данное )?(?:неравенство|систему неравенств|совокупность неравенств)|найдите (?:все )?решения неравенства/.test(text);
+      }
+      if (section === 'parameters') {
+        // Метка КЭС 2.10 уже однозначно обозначает задачи с параметром.
+        return true;
+      }
+      if (section === 'optimal') {
+        const optimization = /(наибольш|наименьш|максимальн|минимальн).*(прибыл|выруч|затрат|окуп|производств|завод|фирм|предприят)|(?:прибыл|выруч|затрат|окуп|производств|завод|фирм|предприят).*(наибольш|наименьш|максимальн|минимальн)/.test(text);
+        const financial = /кредит|банк|вклад|за[её]м|долг|плат[её]ж/.test(text);
+        return optimization && !financial;
+      }
+      if (section === 'numbers') {
+        const numberTopic = /натуральн|цел(?:ое|ых|ые|ыми)|делит|кратн|прост(?:ое|ых|ые)|остат|цифр|числ|дроб/.test(text);
+        const unrelated = /кредит|банк|вклад|рубл|заём|прибыл|производств|пирами|призм|тетраэдр/.test(text);
+        return numberTopic && !unrelated;
+      }
+      if (section === 'finance') {
+        return /кредит|банк|вклад|заём|долг|плат[её]ж|процентн.{0,20}ставк|ценн.{0,10}бумаг|пенсионн.{0,10}фонд/.test(text);
+      }
+      if (section === 'planimetry') {
+        return !/7\.2 прямые и плоскости в пространстве|7\.3 многогранники|7\.4 тела и поверхности вращения/.test(meta);
+      }
+      if (section === 'stereometry') {
+        return /7\.2 прямые и плоскости в пространстве|7\.3 многогранники|7\.4 тела и поверхности вращения/.test(meta);
+      }
+      return true;
+    }
+    const tasks = headers.map(header => {
+      const id = header.id.replace(/^i/, '');
+      return { header, content: document.getElementById('q' + id) };
+    }).filter(task => {
+      const id = task.header.id.replace(/^i/, '');
+      const keep = (!allowedIds || allowedIds.includes(id)) && relevant(task);
+      if (!keep) {
+        task.header.classList.add('local-task-hidden');
+        if (task.content) task.content.classList.add('local-task-hidden');
+      }
+      return keep;
+    });
+    document.documentElement.classList.remove('added-loading');
+    const bottom = document.createElement('div');
+    bottom.id = 'local-pager-bottom';
+    bottom.className = 'local-pager';
+    document.body.appendChild(bottom);
+    if (!tasks.length) {
+      bottom.textContent = 'Новых задач после последнего обновления нет.';
+      document.documentElement.classList.remove('page-loading');
+      return;
+    }
+
+    function drawPager(container, current) {
+      const pageCount = pages.length;
+      container.replaceChildren();
+      const add = (label, page, disabled, active) => {
+        const button = document.createElement('button');
+        button.textContent = label;
+        button.disabled = disabled;
+        if (active) button.className = 'active';
+        button.addEventListener('click', () => showPage(page, true));
+        container.appendChild(button);
+      };
+      add('← Назад', current - 1, current === 1, false);
+      for (let page = 1; page <= pageCount; page++) add(String(page), page, false, page === current);
+      add('Вперёд →', current + 1, current === pageCount, false);
+      const label = document.createElement('span');
+      label.className = 'local-page-label';
+      label.textContent = 'Страница ' + current + ' из ' + pageCount + ' · на этой странице: ' + pages[current - 1].length + ' · всего: ' + tasks.length;
+      container.appendChild(label);
+    }
+
+    function showPage(page, scroll) {
+      const pageCount = pages.length;
+      page = Math.max(1, Math.min(pageCount, page));
+      currentPage = page;
+      const visible = new Set(pages[page - 1]);
+      tasks.forEach((task, index) => {
+        const hidden = !visible.has(index);
+        task.header.classList.toggle('local-task-hidden', hidden);
+        if (task.content) task.content.classList.toggle('local-task-hidden', hidden);
+      });
+      drawPager(bottom, page);
+      history.replaceState(null, '', '#page=' + page);
+      if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function measureAndBuildPages(anchorTask) {
+      // Сначала показываем все блоки, чтобы измерить их фактическую высоту
+      // при текущей ширине окна и масштабе браузера.
+      tasks.forEach(task => {
+        task.header.classList.remove('local-task-hidden');
+        if (task.content) task.content.classList.remove('local-task-hidden');
+      });
+
+      const chromeHeight = document.querySelector('.local-header').getBoundingClientRect().height
+        + bottom.getBoundingClientRect().height + 120;
+      const available = Math.max(320, window.innerHeight - chromeHeight);
+      const heights = tasks.map(task => {
+        const headerRect = task.header.getBoundingClientRect();
+        const contentRect = task.content ? task.content.getBoundingClientRect() : headerRect;
+        return Math.max(headerRect.height + contentRect.height, contentRect.bottom - headerRect.top) + 28;
+      });
+
+      pages = [];
+      let page = [];
+      let used = 0;
+      heights.forEach((height, index) => {
+        if (page.length && used + height > available) {
+          pages.push(page);
+          page = [];
+          used = 0;
+        }
+        page.push(index);
+        used += height;
+      });
+      if (page.length) pages.push(page);
+
+      const nextPage = Math.max(0, pages.findIndex(group => group.includes(anchorTask))) + 1;
+      showPage(nextPage, false);
+    }
+
+    function adaptToViewport() {
+      const anchorTask = pages[currentPage - 1]?.[0] || 0;
+      measureAndBuildPages(anchorTask);
+    }
+
+    const initial = Number((location.hash.match(/page=(\d+)/) || [])[1]) || 1;
+    measureAndBuildPages(0);
+    showPage(initial, false);
+    // Показываем интерфейс сразу, не ожидая загрузки всех ресурсов скрытых страниц.
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        document.documentElement.classList.remove('page-loading');
+      });
+    });
+    // После загрузки видимых картинок незаметно уточняем разбиение.
+    window.addEventListener('load', function () {
+      adaptToViewport();
+    }, { once: true });
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(adaptToViewport, 160);
+    });
+  });
+  </script></body></html> </body></html>
