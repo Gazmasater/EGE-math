@@ -1878,12 +1878,13 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '') {
   if (!fragment) return null;
   const info = sectionInfo(entry.section);
   const pathname = `/tasks/${entry.taskId}`;
-  const title = `Задание ${entry.taskId} по ${info.topic} — ЕГЭ профиль`;
   const condition = truncateText(cleanPlainText(fragment), 150);
   const publishedSolution = getPublishedSolution.get(entry.taskId);
   const hasPublishedSolution = Boolean(publishedSolution);
+  const sectionSeoName = info.name.toLocaleLowerCase('ru-RU');
+  const title = `${entry.taskId} — задание ЕГЭ профиль: ${sectionSeoName}, ${hasPublishedSolution ? 'ответ и решение' : 'условие'} | ФИПИ`;
   const description = truncateText(
-    `Задание ${entry.taskId} по ${info.topic} из открытого банка ФИПИ. ${condition}${hasPublishedSolution ? ' Ответ и подробное решение.' : ''}`,
+    `${entry.taskId} — задание ЕГЭ профиль по теме «${sectionSeoName}» из открытого банка ФИПИ. ${condition}${hasPublishedSolution ? ' Ответ и подробное решение.' : ''}`,
     250
   );
   const structuredData = {
