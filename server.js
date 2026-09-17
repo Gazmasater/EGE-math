@@ -2539,6 +2539,16 @@ http.createServer(async (req, res) => {
       }
       const query = normalizeSearchQuery(requestUrl.searchParams.get('q'));
       const search = await searchTasks(query);
+      const requestedTaskId = query.replace(/[\s-]+/g, '').toUpperCase();
+      const exactTask = isValidTaskId(requestedTaskId)
+        ? search.items.find((task) => task.taskId === requestedTaskId)
+        : undefined;
+      // A number in the search box is an address, not a text query: open the
+      // task immediately so the visitor sees the answer and full solution.
+      if (exactTask) {
+        res.writeHead(302, { location: `/tasks/${exactTask.taskId}`, 'cache-control': 'no-store' });
+        return res.end();
+      }
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(renderSearchPage(query, search));
     }
