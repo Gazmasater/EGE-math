@@ -1200,6 +1200,9 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .task-solution-jump { display: inline-flex; margin-top: 9px; padding: 7px 10px; border-radius: 6px; background: #e8f5e9;
       color: #1d5e2d; font: 700 14px Arial, sans-serif; text-decoration: none; }
     .task-solution-jump:hover { background: #d8f0db; color: #12451f; }
+    .task-feedback-jump { display: inline-flex; margin: 9px 0 0 8px; padding: 7px 10px; border: 1px solid #f4d18a; border-radius: 6px; background: #fff5db;
+      color: #704900; font: 700 14px Arial, sans-serif; text-decoration: none; }
+    .task-feedback-jump:hover { background: #ffedbd; color: #563700; }
     .local-menu { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
     .local-menu a { padding: 7px 8px; border: 1px solid #ffffff70; border-radius: 6px; color: white; text-decoration: none;
       font-weight: 500; text-align: center; white-space: normal; }
@@ -1264,6 +1267,9 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .solution-discussion-link { display: inline-flex; align-items: center; min-height: 38px; margin-left: 10px; color: #183153;
       font: 600 14px Arial, sans-serif; text-decoration: underline; text-underline-offset: 2px; }
     .solution-discussion-link:hover { color: #254a79; }
+    .solution-feedback-link { display: inline-flex; align-items: center; min-height: 38px; margin-left: 2px; color: #704900;
+      font: 600 14px Arial, sans-serif; text-decoration: underline; text-underline-offset: 2px; }
+    .solution-feedback-link:hover { color: #563700; }
     .solution-result { margin-top: 12px; padding: 14px 16px; border-radius: 6px; background: #eef4fa; color: #243447; }
     .solution-result[hidden] { display: none; }
     .solution-result p { margin: 0 0 10px; }
@@ -1434,6 +1440,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const header = `<div class="local-header"><h1>${escapeHtml(headerTitle)}</h1>
     <small>${subtitle}</small>
     ${hasTaskSolution ? `<a class="task-solution-jump" href="#solution-${escapeHtml(taskIdFromPath)}">Решение опубликовано — перейти к ответу ↓</a>` : ''}
+    ${taskIdFromPath ? `<a class="task-feedback-jump" href="#feedback">Ошибка или пожелание ↓</a>` : ''}
     <form class="site-search-form" action="/search" method="get" role="search">
       <label class="visually-hidden" for="site-search-query">Поиск по заданиям</label>
       <input id="site-search-query" name="q" type="search" value="${escapeHtml(seoOverride?.searchQuery || '')}" placeholder="Поиск по номеру или условию" autocomplete="off">
@@ -1728,13 +1735,17 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
         discussionLink.className = 'solution-discussion-link';
         discussionLink.href = '/tasks/' + encodeURIComponent(taskId) + '#comments';
         discussionLink.textContent = 'Комментарии к решению';
+        const feedbackLink = document.createElement('a');
+        feedbackLink.className = 'solution-feedback-link';
+        feedbackLink.href = '/tasks/' + encodeURIComponent(taskId) + '#feedback';
+        feedbackLink.textContent = 'Ошибка или пожелание';
         if (hasPublishedSolution) {
           const badge = document.createElement('span');
           badge.className = 'solution-published-badge';
           badge.textContent = '✓ Решение опубликовано';
           controls.append(badge);
         }
-        controls.append(button, discussionLink, result);
+        controls.append(button, discussionLink, feedbackLink, result);
         task.content.appendChild(controls);
 
         button.addEventListener('click', async function () {
