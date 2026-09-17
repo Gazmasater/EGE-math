@@ -21,6 +21,7 @@ const ADMIN_SESSION_TTL_SECONDS = 8 * 60 * 60;
 const USER_SESSION_COOKIE = 'ege_math_user';
 const USER_SESSION_TTL_SECONDS = 30 * 24 * 60 * 60;
 const MAX_COMMENT_LENGTH = 2_000;
+const MAX_FEEDBACK_LENGTH = 2_000;
 const COMMENTS_WIDGET_LIMIT = 100;
 const SITE_ORIGIN = 'https://ege-fipi.ru';
 const TELEGRAM_CHANNEL_URL = 'https://t.me/leon_358';
@@ -86,6 +87,14 @@ solutionsDb.exec(`
   );
   CREATE INDEX IF NOT EXISTS solution_comments_task_created_idx ON solution_comments (task_id, created_at ASC);
   CREATE INDEX IF NOT EXISTS solution_comments_user_created_idx ON solution_comments (user_id, created_at DESC);
+  CREATE TABLE IF NOT EXISTS site_feedback (
+    id INTEGER PRIMARY KEY,
+    task_id TEXT NOT NULL,
+    kind TEXT NOT NULL CHECK (kind IN ('suggestion', 'issue')),
+    body TEXT NOT NULL,
+    created_at TEXT NOT NULL
+  );
+  CREATE INDEX IF NOT EXISTS site_feedback_created_idx ON site_feedback (created_at DESC, id DESC);
 `);
 const solutionColumns = new Set(solutionsDb.prepare('PRAGMA table_info(solutions)').all().map(column => column.name));
 if (!solutionColumns.has('diagram_svg')) {
@@ -194,6 +203,16 @@ const getCommentForUser = solutionsDb.prepare(`
 const deleteCommentForUser = solutionsDb.prepare(`
   DELETE FROM solution_comments
   WHERE id = ? AND user_id = ?
+`);
+const createFeedback = solutionsDb.prepare(`
+  INSERT INTO site_feedback (task_id, kind, body, created_at)
+  VALUES (?, ?, ?, ?)
+`);
+const listFeedbackForAdmin = solutionsDb.prepare(`
+  SELECT id, task_id, kind, body, created_at
+  FROM site_feedback
+  ORDER BY created_at DESC, id DESC
+  LIMIT 100
 `);
 
 const cache = new Map();
@@ -531,6 +550,16 @@ function addCommentForUser(taskId, user, rawBody) {
   return { comment: serializeComment(comment) };
 }
 
+function addSiteFeedback(taskId, rawKind, rawBody) {
+  const kind = rawKind === 'suggestion' || rawKind === 'issue' ? rawKind : '';
+  const body = String(rawBody || '').replace(/\r\n?/g, '\n').trim().replace(/\n{3,}/g, '\n\n');
+  if (!kind) return { error: 'Выберите тип сообщения.' };
+  if (body.length < 2) return { error: 'Опишите пожелание или неточность хотя бы двумя символами.' };
+  if (body.length > MAX_FEEDBACK_LENGTH) return { error: `Сообщение не должно превышать ${MAX_FEEDBACK_LENGTH} символов.` };
+  createFeedback.run(taskId, kind, body, new Date().toISOString());
+  return {};
+}
+
 function readForm(req, maxBytes = 512 * 1024) {
   return new Promise((resolve, reject) => {
     const chunks = [];
@@ -581,6 +610,10 @@ function renderAdminShell(title, content) {
     .solution-list { width: 100%; border-collapse: collapse; }
     .solution-list th, .solution-list td { padding: 10px 8px; border-top: 1px solid #e1e7ee; text-align: left; vertical-align: top; }
     .solution-list th { color: #526273; font-size: 13px; }
+    .feedback-list { width: 100%; border-collapse: collapse; }
+    .feedback-list th, .feedback-list td { padding: 10px 8px; border-top: 1px solid #e1e7ee; text-align: left; vertical-align: top; }
+    .feedback-list th { color: #526273; font-size: 13px; }
+    .feedback-list .feedback-body { min-width: 260px; white-space: pre-wrap; }
     .status { font-size: 14px; }
     .status.public { color: #176a3a; }
     .status.draft { color: #8a5a00; }
@@ -589,6 +622,7 @@ function renderAdminShell(title, content) {
       main { padding: 18px 12px 32px; }
       .card { padding: 18px; }
       .solution-list th:nth-child(2), .solution-list td:nth-child(2), .solution-list th:nth-child(4), .solution-list td:nth-child(4) { display: none; }
+      .feedback-list th:nth-child(2), .feedback-list td:nth-child(2) { display: none; }
     }
   </style>
 </head>
@@ -645,6 +679,12 @@ function renderAdminDashboard() {
     <td><span class="status ${record.published ? 'public' : 'draft'}">${record.published ? 'Опубликовано' : 'Черновик'}</span></td>
     <td>${escapeHtml(new Date(record.updated_at).toLocaleString('ru-RU'))}</td>
   </tr>`).join('') || '<tr><td colspan="4" class="muted">Решений пока нет.</td></tr>';
+  const feedbackRows = listFeedbackForAdmin.all().map(record => `<tr>
+    <td>${record.kind === 'issue' ? 'Неточность' : 'Пожелание'}</td>
+    <td><a href="/tasks/${encodeURIComponent(record.task_id)}#feedback">${escapeHtml(record.task_id)}</a></td>
+    <td class="feedback-body">${escapeHtml(record.body)}</td>
+    <td>${escapeHtml(formatDateTime(record.created_at))}</td>
+  </tr>`).join('') || '<tr><td colspan="4" class="muted">Сообщений пока нет.</td></tr>';
   return renderAdminShell('Решения', `<section class="card">
       <h1>Решения</h1>
       <p>Введите номер задания из карточки, чтобы создать решение или изменить существующее. После публикации ответ и решение будут доступны всем посетителям по кнопке «Решение».</p>
@@ -659,6 +699,13 @@ function renderAdminDashboard() {
       <table class="solution-list">
         <thead><tr><th>Задание</th><th>Ответ</th><th>Статус</th><th>Изменено</th></tr></thead>
         <tbody>${rows}</tbody>
+      </table>
+    </section>
+    <section class="card">
+      <h2>Пожелания и найденные неточности</h2>
+      <table class="feedback-list">
+        <thead><tr><th>Тип</th><th>Задание</th><th>Сообщение</th><th>Получено</th></tr></thead>
+        <tbody>${feedbackRows}</tbody>
       </table>
     </section>`);
 }
@@ -870,6 +917,30 @@ function renderUnavailableCommentSection(taskId) {
   return `<section class="solution-comments" id="comments" aria-labelledby="comments-${escapeHtml(taskId)}">
     <h2 id="comments-${escapeHtml(taskId)}">Комментарии к решению</h2>
     <p class="solution-comments-public">Обсуждение станет доступно после публикации решения к этой задаче.</p>
+  </section>`;
+}
+
+function renderFeedbackSection(taskId, notice = '') {
+  const message = notice === 'created'
+    ? '<p class="site-feedback-notice">Спасибо! Сообщение отправлено команде сайта.</p>'
+    : (notice === 'rate'
+      ? '<p class="site-feedback-error">Слишком много сообщений. Повторите немного позже.</p>'
+      : (notice === 'error' ? '<p class="site-feedback-error">Проверьте тип и текст сообщения.</p>' : ''));
+  return `<section class="site-feedback" id="feedback" aria-labelledby="feedback-${escapeHtml(taskId)}">
+    <h2 id="feedback-${escapeHtml(taskId)}">Помочь улучшить сайт</h2>
+    <p>Напишите пожелание к сайту или решению либо сообщите о найденной неточности в задании ${escapeHtml(taskId)}.</p>
+    <p class="site-feedback-private">Сообщение увидит только команда сайта: на странице оно не публикуется.</p>
+    ${message}
+    <form class="site-feedback-form" method="post" action="/tasks/${encodeURIComponent(taskId)}/feedback">
+      <label for="feedback-kind-${escapeHtml(taskId)}">Тип сообщения</label>
+      <select id="feedback-kind-${escapeHtml(taskId)}" name="kind" required>
+        <option value="suggestion">Пожелание по сайту или решению</option>
+        <option value="issue">Неточность или ошибка</option>
+      </select>
+      <label for="feedback-body-${escapeHtml(taskId)}">Ваше сообщение</label>
+      <textarea id="feedback-body-${escapeHtml(taskId)}" name="body" maxlength="${MAX_FEEDBACK_LENGTH}" minlength="2" required placeholder="Например: в шаге 2 не хватает пояснения…"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
   </section>`;
 }
 
@@ -1255,6 +1326,22 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       color: #fff; font: 600 14px Arial, sans-serif; cursor: pointer; }
     .solution-comment-form button:hover:not(:disabled) { background: #254a79; }
     .solution-comment-form .comment-error { margin: 9px 0 0; color: #8c241b; }
+    .site-feedback { margin: 20px 0; padding: 20px; border: 1px solid #bad4c0; border-radius: 8px; background: #f5fbf6;
+      color: #243447; font-family: Arial, sans-serif; }
+    .site-feedback h2 { margin: 0 0 10px; color: #183153; font-size: 21px; }
+    .site-feedback > p { margin: 0 0 8px; }
+    .site-feedback-private { color: #526273; font-size: 14px; }
+    .site-feedback-notice, .site-feedback-error { margin: 12px 0 !important; padding: 10px 12px; border-radius: 6px; }
+    .site-feedback-notice { background: #e8f5e9; color: #1d5e2d; }
+    .site-feedback-error { background: #fbe9e8; color: #8c241b; }
+    .site-feedback-form { margin-top: 16px; }
+    .site-feedback-form label { display: block; margin: 12px 0 6px; font-weight: 700; }
+    .site-feedback-form select, .site-feedback-form textarea { display: block; width: 100%; padding: 10px 12px; border: 1px solid #afbdcd; border-radius: 6px;
+      color: #243447; background: #fff; font: 16px/1.45 Arial, sans-serif; }
+    .site-feedback-form textarea { min-height: 100px; resize: vertical; }
+    .site-feedback-form button { margin-top: 10px; padding: 9px 14px; border: 1px solid #183153; border-radius: 6px; background: #183153;
+      color: #fff; font: 600 14px Arial, sans-serif; cursor: pointer; }
+    .site-feedback-form button:hover { background: #254a79; }
     .seo-task-solution { margin: 20px 0; padding: 20px; border: 1px solid #cbd7e4; border-radius: 8px; background: #eef4fa;
       color: #243447; font-family: Arial, sans-serif; }
     .seo-task-solution h2 { margin: 0 0 12px; color: #183153; font-size: 21px; }
@@ -2061,7 +2148,7 @@ function renderPublishedSolution(taskId) {
   </section>`;
 }
 
-function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '') {
+function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feedbackNotice = '') {
   const fragment = extractTaskFragment(sourceHtml, entry.sourceTaskId || entry.taskId);
   if (!fragment) return null;
   const info = sectionInfo(entry.section);
@@ -2124,7 +2211,8 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '') {
   const comments = publishedSolution
     ? renderCommentSection(entry.taskId, user, commentNotice)
     : renderUnavailableCommentSection(entry.taskId);
-  return page.replace('</body>', `${solution}${comments}</body>`);
+  const feedback = renderFeedbackSection(entry.taskId, feedbackNotice);
+  return page.replace('</body>', `${solution}${feedback}${comments}</body>`);
 }
 
 async function renderSitemap() {
@@ -2338,7 +2426,7 @@ http.createServer(async (req, res) => {
   try {
     const requestUrl = new URL(req.url, `http://${req.headers.host}`);
     const pathname = requestUrl.pathname;
-    if (pathname.startsWith('/admin') || pathname.startsWith('/api/') || pathname.startsWith('/account') || pathname === '/update' || /^\/tasks\/[A-Za-z0-9]+\/comments$/.test(pathname)) {
+    if (pathname.startsWith('/admin') || pathname.startsWith('/api/') || pathname.startsWith('/account') || pathname === '/update' || /^\/tasks\/[A-Za-z0-9]+\/(?:comments|feedback)$/.test(pathname)) {
       res.setHeader('X-Robots-Tag', 'noindex, nofollow');
     }
     if (pathname === '/yandex_bb9d4153ffc40087.html') {
@@ -2529,6 +2617,32 @@ http.createServer(async (req, res) => {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(renderPrivacyPage(getCurrentUser(req)));
     }
+    const taskFeedbackMatch = pathname.match(/^\/tasks\/([A-Za-z0-9]+)\/feedback$/);
+    if (taskFeedbackMatch) {
+      if (req.method !== 'POST') {
+        res.writeHead(405, { allow: 'POST' });
+        return res.end();
+      }
+      const taskId = normalizeTaskId(taskFeedbackMatch[1]);
+      const redirect = status => {
+        res.writeHead(303, { location: `/tasks/${encodeURIComponent(taskId)}?feedback=${status}#feedback` });
+        return res.end();
+      };
+      if (!isTrustedOrigin(req)) {
+        res.writeHead(403, { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store' });
+        return res.end('Недопустимый источник запроса.');
+      }
+      const task = (await getTaskDirectory()).find(entry => entry.taskId === taskId);
+      if (!task) {
+        res.writeHead(404, { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store' });
+        return res.end('Задание не найдено.');
+      }
+      if (isRateLimited(req, 'feedback', 5, 60 * 60 * 1000)) return redirect('rate');
+      const form = await readForm(req, 32 * 1024);
+      const result = addSiteFeedback(taskId, form.get('kind'), form.get('body'));
+      if (result.error) return redirect('error');
+      return redirect('created');
+    }
     const taskCommentMatch = pathname.match(/^\/tasks\/([A-Za-z0-9]+)\/comments$/);
     if (taskCommentMatch) {
       if (req.method !== 'POST') {
@@ -2578,11 +2692,13 @@ http.createServer(async (req, res) => {
         return res.end(renderNotFoundPage());
       }
       const commentStatus = requestUrl.searchParams.get('comment');
+      const feedbackStatus = requestUrl.searchParams.get('feedback');
       const taskPage = renderTaskPage(
         task,
         await loadSourceHtml(task.section),
         getCurrentUser(req),
-        commentStatus === 'created' || commentStatus === 'deleted' ? commentStatus : ''
+        commentStatus === 'created' || commentStatus === 'deleted' ? commentStatus : '',
+        feedbackStatus === 'created' || feedbackStatus === 'rate' || feedbackStatus === 'error' ? feedbackStatus : ''
       );
       if (!taskPage) {
         res.writeHead(404, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
