@@ -944,6 +944,91 @@ function renderFeedbackSection(taskId, notice = '') {
   </section>`;
 }
 
+function renderFeedbackModal() {
+  return `<section class="feedback-modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title">
+    <div class="feedback-modal-dialog">
+      <header class="feedback-modal-header">
+        <h2 id="feedback-modal-title">Сообщить об ошибке или пожелании</h2>
+        <button class="feedback-modal-close" type="button" aria-label="Закрыть форму">×</button>
+      </header>
+      <form class="feedback-modal-form" method="post">
+        <p class="feedback-modal-task"></p>
+        <p class="feedback-modal-private">Сообщение не публикуется: его увидит только команда сайта.</p>
+        <label for="feedback-modal-kind">Тип сообщения</label>
+        <select id="feedback-modal-kind" name="kind" required>
+          <option value="suggestion">Пожелание по сайту или решению</option>
+          <option value="issue">Неточность или ошибка</option>
+        </select>
+        <label for="feedback-modal-body">Ваше сообщение</label>
+        <textarea id="feedback-modal-body" name="body" maxlength="${MAX_FEEDBACK_LENGTH}" minlength="2" required placeholder="Например: в шаге 2 не хватает пояснения…"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+    <style>
+      .feedback-modal { position: fixed; inset: 0; z-index: 1100; display: grid; place-items: center; padding: 20px; background: #10243c99; font-family: Arial, sans-serif; }
+      .feedback-modal[hidden] { display: none; }
+      .feedback-modal-dialog { width: min(560px, 100%); max-height: calc(100dvh - 40px); overflow: auto; border-radius: 10px; background: #fff; color: #243447; box-shadow: 0 12px 40px #0008; }
+      .feedback-modal-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 18px; border-bottom: 1px solid #cbd7e4; }
+      .feedback-modal-header h2 { margin: 0; color: #183153; font: 700 18px/1.35 Arial, sans-serif; }
+      .feedback-modal-close { display: grid; width: 38px; height: 38px; place-items: center; padding: 0; border: 1px solid #183153; border-radius: 6px; background: #fff; color: #183153; font: 700 22px/1 Arial, sans-serif; cursor: pointer; }
+      .feedback-modal-close:hover { background: #eaf1f8; }
+      .feedback-modal-form { padding: 18px; }
+      .feedback-modal-form p { margin: 0 0 10px; }
+      .feedback-modal-task { color: #183153; font-weight: 700; }
+      .feedback-modal-private { color: #526273; font-size: 14px; }
+      .feedback-modal-form label { display: block; margin: 14px 0 6px; font-weight: 700; }
+      .feedback-modal-form select, .feedback-modal-form textarea { display: block; width: 100%; padding: 10px 12px; border: 1px solid #afbdcd; border-radius: 6px; color: #243447; background: #fff; font: 16px/1.45 Arial, sans-serif; }
+      .feedback-modal-form textarea { min-height: 120px; resize: vertical; }
+      .feedback-modal-form > button { margin-top: 12px; padding: 9px 14px; border: 1px solid #183153; border-radius: 6px; background: #183153; color: #fff; font: 600 14px Arial, sans-serif; cursor: pointer; }
+      .feedback-modal-form > button:hover { background: #254a79; }
+      .feedback-modal-close:focus-visible, .feedback-modal-form select:focus-visible, .feedback-modal-form textarea:focus-visible, .feedback-modal-form > button:focus-visible { outline: 3px solid #f0b429; outline-offset: 3px; }
+      @media (max-width: 700px) { .feedback-modal { padding: 12px; } .feedback-modal-form { padding: 16px; } }
+    </style>
+    <script>
+      (function () {
+        const modal = document.querySelector('.feedback-modal');
+        if (!modal) return;
+        const form = modal.querySelector('.feedback-modal-form');
+        const task = modal.querySelector('.feedback-modal-task');
+        const closeButton = modal.querySelector('.feedback-modal-close');
+        const field = modal.querySelector('#feedback-modal-body');
+        let opener = null;
+
+        function closeModal() {
+          modal.hidden = true;
+          modal.setAttribute('aria-hidden', 'true');
+          if (opener) opener.focus({ preventScroll: true });
+          opener = null;
+        }
+
+        function openModal(taskId, source) {
+          if (!/^[A-Z0-9]{4,32}$/i.test(taskId || '')) return;
+          opener = source;
+          task.textContent = 'Задание ' + taskId.toUpperCase();
+          form.action = '/tasks/' + encodeURIComponent(taskId.toUpperCase()) + '/feedback';
+          modal.hidden = false;
+          modal.setAttribute('aria-hidden', 'false');
+          field.focus({ preventScroll: true });
+        }
+
+        document.addEventListener('click', function (event) {
+          const source = event.target.closest?.('[data-feedback-modal-open]');
+          if (!source) return;
+          event.preventDefault();
+          openModal(source.dataset.taskId, source);
+        });
+        closeButton.addEventListener('click', closeModal);
+        modal.addEventListener('click', function (event) {
+          if (event.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && !modal.hidden) closeModal();
+        });
+      })();
+    </script>
+  </section>`;
+}
+
 function renderCommentsWidget() {
   return `<aside class="comments-widget" aria-label="Комментарии сайта">
     <button class="comments-widget-trigger" type="button" aria-expanded="false" aria-controls="comments-widget-panel">
@@ -1268,7 +1353,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       font: 600 14px Arial, sans-serif; text-decoration: underline; text-underline-offset: 2px; }
     .solution-discussion-link:hover { color: #254a79; }
     .solution-feedback-link { display: inline-flex; align-items: center; min-height: 38px; margin-left: 2px; color: #704900;
-      font: 600 14px Arial, sans-serif; text-decoration: underline; text-underline-offset: 2px; }
+      padding: 0; border: 0; background: transparent; font: 600 14px Arial, sans-serif; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
     .solution-feedback-link:hover { color: #563700; }
     .solution-result { margin-top: 12px; padding: 14px 16px; border-radius: 6px; background: #eef4fa; color: #243447; }
     .solution-result[hidden] { display: none; }
@@ -1440,7 +1525,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const header = `<div class="local-header"><h1>${escapeHtml(headerTitle)}</h1>
     <small>${subtitle}</small>
     ${hasTaskSolution ? `<a class="task-solution-jump" href="#solution-${escapeHtml(taskIdFromPath)}">Решение опубликовано — перейти к ответу ↓</a>` : ''}
-    ${taskIdFromPath ? `<a class="task-feedback-jump" href="#feedback">Ошибка или пожелание ↓</a>` : ''}
+    ${taskIdFromPath ? `<a class="task-feedback-jump" href="#feedback" data-feedback-modal-open data-task-id="${escapeHtml(taskIdFromPath)}">Ошибка или пожелание</a>` : ''}
     <form class="site-search-form" action="/search" method="get" role="search">
       <label class="visually-hidden" for="site-search-query">Поиск по заданиям</label>
       <input id="site-search-query" name="q" type="search" value="${escapeHtml(seoOverride?.searchQuery || '')}" placeholder="Поиск по номеру или условию" autocomplete="off">
@@ -1735,9 +1820,11 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
         discussionLink.className = 'solution-discussion-link';
         discussionLink.href = '/tasks/' + encodeURIComponent(taskId) + '#comments';
         discussionLink.textContent = 'Комментарии к решению';
-        const feedbackLink = document.createElement('a');
+        const feedbackLink = document.createElement('button');
         feedbackLink.className = 'solution-feedback-link';
-        feedbackLink.href = '/tasks/' + encodeURIComponent(taskId) + '#feedback';
+        feedbackLink.type = 'button';
+        feedbackLink.dataset.feedbackModalOpen = '';
+        feedbackLink.dataset.taskId = taskId;
         feedbackLink.textContent = 'Ошибка или пожелание';
         if (hasPublishedSolution) {
           const badge = document.createElement('span');
@@ -1940,7 +2027,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .replace(/<head([^>]*)>/i, `<head$1>${YANDEX_METRIKA_HEAD}${viewportMeta}`)
     .replace(/<title>[\s\S]*?<\/title>/i, pageTitle)
     .replace('</head>', `${loadingGuard}${localStyle}${pageSeo}</head>`)
-    .replace(/<body([^>]*)>/i, `<body$1>${YANDEX_METRIKA_NOSCRIPT}${header}${taskPager}${renderTelegramBanner()}${renderCommentsWidget()}`)
+    .replace(/<body([^>]*)>/i, `<body$1>${YANDEX_METRIKA_NOSCRIPT}${header}${taskPager}${renderTelegramBanner()}${renderCommentsWidget()}${renderFeedbackModal()}`)
     .replace('</body>', `${pagerScript}</body>`);
 }
 
