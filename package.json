@@ -4,6 +4,8 @@
   "type": "commonjs",
   "scripts": {
     "audit:solutions": "node scripts/audit-published-solutions.js",
+    "expand:finance": "node scripts/expand-finance-solutions.js",
+    "audit:finance": "node scripts/expand-finance-solutions.js --check",
     "publish:optimal": "node scripts/publish-optimal-solutions.js",
     "publish:inequalities": "node scripts/publish-inequality-solutions.js",
     "add:equation-graphs": "node scripts/add-equation-graphs.js",
