@@ -1,10 +1,16 @@
 const path = require('node:path');
+const fs = require('node:fs');
 const { execFileSync } = require('node:child_process');
 const { DatabaseSync } = require('node:sqlite');
 const { collectEquationDefinitions } = require('./audit-equation-roots');
 
 const databaseFile = path.join(__dirname, '..', 'storage', 'solutions.sqlite');
 const db = new DatabaseSync(databaseFile);
+const parameterTaskIds = new Set(Array.from(
+  new TextDecoder('windows-1251').decode(fs.readFileSync(path.join(__dirname, '..', 'parameters.raw.html')))
+    .matchAll(/<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"]\s+id=['"]q([A-Z0-9]+)['"][^>]*>/gi),
+  match => match[1].toUpperCase()
+));
 const rows = db.prepare(`
   SELECT task_id, answer, solution, diagram_svg, diagram_caption
   FROM solutions
@@ -104,7 +110,7 @@ for (const [taskId, requiredParts] of Object.entries(intervalProofChecks)) {
 }
 
 const domainTaskIds = rows
-  .filter(row => /Область допустимых значений|ОДЗ/.test(row.solution))
+  .filter(row => !parameterTaskIds.has(row.task_id) && /Область допустимых значений|ОДЗ/.test(row.solution))
   .map(row => row.task_id)
   .sort();
 const expectedDomainTaskIds = ['638272', 'A6BC58', 'B2FAAF', 'FDA042'];
