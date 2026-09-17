@@ -21,6 +21,7 @@ const ADMIN_SESSION_TTL_SECONDS = 8 * 60 * 60;
 const USER_SESSION_COOKIE = 'ege_math_user';
 const USER_SESSION_TTL_SECONDS = 30 * 24 * 60 * 60;
 const MAX_COMMENT_LENGTH = 2_000;
+const COMMENTS_WIDGET_LIMIT = 100;
 const SITE_ORIGIN = 'https://ege-fipi.ru';
 const TELEGRAM_CHANNEL_URL = 'https://t.me/leon_358';
 const TELEGRAM_USERNAME = '@leon_358';
@@ -164,6 +165,20 @@ const countCommentsForUser = solutionsDb.prepare(`
   SELECT COUNT(*) AS total
   FROM solution_comments
   WHERE user_id = ?
+`);
+const countPublicComments = solutionsDb.prepare(`
+  SELECT COUNT(*) AS total
+  FROM solution_comments
+  JOIN solutions ON solutions.task_id = solution_comments.task_id AND solutions.published = 1
+`);
+const listRecentPublicComments = solutionsDb.prepare(`
+  SELECT solution_comments.id, solution_comments.task_id, solution_comments.user_id, solution_comments.body, solution_comments.created_at,
+         users.full_name, users.city
+  FROM solution_comments
+  JOIN users ON users.id = solution_comments.user_id
+  JOIN solutions ON solutions.task_id = solution_comments.task_id AND solutions.published = 1
+  ORDER BY solution_comments.created_at DESC, solution_comments.id DESC
+  LIMIT ${COMMENTS_WIDGET_LIMIT}
 `);
 const createComment = solutionsDb.prepare(`
   INSERT INTO solution_comments (task_id, user_id, body, created_at)
@@ -858,6 +873,178 @@ function renderUnavailableCommentSection(taskId) {
   </section>`;
 }
 
+function renderCommentsWidget() {
+  return `<aside class="comments-widget" aria-label="Комментарии сайта">
+    <button class="comments-widget-trigger" type="button" aria-expanded="false" aria-controls="comments-widget-panel">
+      <span class="comments-widget-icon" aria-hidden="true">💬</span>
+      <span>Комментарии</span>
+      <strong class="comments-widget-count" aria-live="polite">…</strong>
+    </button>
+    <section class="comments-widget-panel" id="comments-widget-panel" hidden aria-labelledby="comments-widget-title">
+      <header class="comments-widget-header">
+        <h2 id="comments-widget-title">Комментарии</h2>
+        <button class="comments-widget-close" type="button" aria-label="Закрыть комментарии">×</button>
+      </header>
+      <div class="comments-widget-content" aria-live="polite"><p>Загружаем комментарии…</p></div>
+    </section>
+    <style>
+      .comments-widget { position: fixed; right: 20px; bottom: 20px; z-index: 900; font-family: Arial, sans-serif; }
+      .comments-widget-trigger { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 10px 14px; border: 1px solid #183153;
+        border-radius: 23px; background: #183153; color: #fff; box-shadow: 0 4px 16px #10243c38; font: 700 14px/1 Arial, sans-serif; cursor: pointer; }
+      .comments-widget-trigger:hover { background: #254a79; }
+      .comments-widget-trigger:focus-visible, .comments-widget-close:focus-visible, .comments-widget-item a:focus-visible { outline: 3px solid #f0b429; outline-offset: 3px; }
+      .comments-widget-icon { font-size: 18px; line-height: 1; }
+      .comments-widget-count { display: inline-grid; min-width: 22px; min-height: 22px; place-items: center; padding: 2px 6px; border-radius: 11px; background: #fff; color: #183153; font-size: 13px; }
+      .comments-widget-panel { position: absolute; right: 0; bottom: calc(100% + 10px); width: min(390px, calc(100vw - 24px)); max-height: min(620px, calc(100dvh - 92px));
+        overflow: auto; border: 1px solid #cbd7e4; border-radius: 10px; background: #fff; color: #243447; box-shadow: 0 12px 34px #10243c38; }
+      .comments-widget-header { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border-bottom: 1px solid #d8e1eb; background: #fff; }
+      .comments-widget-header h2 { margin: 0; color: #183153; font: 700 18px/1.3 Arial, sans-serif; }
+      .comments-widget-close { display: grid; width: 32px; height: 32px; place-items: center; padding: 0; border: 1px solid #afbdcd; border-radius: 6px; background: #fff; color: #183153; font: 700 21px/1 Arial, sans-serif; cursor: pointer; }
+      .comments-widget-close:hover { background: #eaf1f8; }
+      .comments-widget-content { padding: 14px 16px 16px; }
+      .comments-widget-content > p { margin: 0; color: #526273; font: 14px/1.45 Arial, sans-serif; }
+      .comments-widget-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+      .comments-widget-item { padding: 12px; border: 1px solid #d8e1eb; border-radius: 7px; background: #f8fafc; }
+      .comments-widget-item header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 8px; }
+      .comments-widget-item strong { color: #183153; }
+      .comments-widget-item .comments-widget-city, .comments-widget-item time { color: #526273; font-size: 12px; }
+      .comments-widget-item time { margin-left: auto; }
+      .comments-widget-item p { margin: 8px 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+      .comments-widget-item a { color: #183153; font-size: 13px; font-weight: 700; }
+      .comments-widget-meta { margin: 0 0 10px !important; }
+      @media (max-width: 700px) {
+        .comments-widget { right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); }
+        .comments-widget-trigger { min-height: 44px; padding: 9px 12px; }
+      }
+      @media print { .comments-widget { display: none; } }
+    </style>
+    <script>
+      (function () {
+        const widget = document.querySelector('.comments-widget');
+        if (!widget) return;
+        const trigger = widget.querySelector('.comments-widget-trigger');
+        const panel = widget.querySelector('.comments-widget-panel');
+        const closeButton = widget.querySelector('.comments-widget-close');
+        const content = widget.querySelector('.comments-widget-content');
+        const count = widget.querySelector('.comments-widget-count');
+
+        function closePanel() {
+          panel.hidden = true;
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+
+        function setCount(total) {
+          const value = Number(total) || 0;
+          count.textContent = String(value);
+          count.setAttribute('aria-label', 'Всего комментариев: ' + value);
+        }
+
+        function dateText(value) {
+          const date = new Date(value);
+          return Number.isNaN(date.getTime()) ? '' : date.toLocaleString('ru-RU', { dateStyle: 'medium', timeStyle: 'short' });
+        }
+
+        function renderComments(payload) {
+          const total = Number(payload.total) || 0;
+          const comments = Array.isArray(payload.comments) ? payload.comments : [];
+          setCount(total);
+          content.replaceChildren();
+          const meta = document.createElement('p');
+          meta.className = 'comments-widget-meta';
+          meta.textContent = payload.hasMore ? 'Показаны последние ' + comments.length + ' из ' + total + '.' : 'Всего комментариев: ' + total + '.';
+          content.appendChild(meta);
+          if (!comments.length) {
+            const empty = document.createElement('p');
+            empty.textContent = 'Комментариев пока нет. Будьте первым в обсуждении задачи.';
+            content.appendChild(empty);
+            return;
+          }
+          const list = document.createElement('ol');
+          list.className = 'comments-widget-list';
+          comments.forEach(function (comment) {
+            const item = document.createElement('li');
+            item.className = 'comments-widget-item';
+            const header = document.createElement('header');
+            const author = document.createElement('strong');
+            author.textContent = comment.fullName;
+            const city = document.createElement('span');
+            city.className = 'comments-widget-city';
+            city.textContent = comment.city;
+            const time = document.createElement('time');
+            time.dateTime = comment.createdAt;
+            time.textContent = dateText(comment.createdAt);
+            const body = document.createElement('p');
+            body.textContent = comment.body;
+            const link = document.createElement('a');
+            link.href = '/tasks/' + encodeURIComponent(comment.taskId) + '#comments';
+            link.textContent = 'Перейти к заданию ' + comment.taskId;
+            header.append(author, city, time);
+            item.append(header, body, link);
+            list.appendChild(item);
+          });
+          content.appendChild(list);
+        }
+
+        async function loadComments() {
+          content.replaceChildren();
+          const loading = document.createElement('p');
+          loading.textContent = 'Загружаем комментарии…';
+          content.appendChild(loading);
+          try {
+            const response = await fetch('/api/comments', { headers: { Accept: 'application/json' } });
+            const payload = await response.json().catch(function () { return {}; });
+            if (!response.ok) throw new Error(payload.error || 'Не удалось загрузить комментарии.');
+            renderComments(payload);
+          } catch (error) {
+            content.replaceChildren();
+            const message = document.createElement('p');
+            message.textContent = error.message || 'Не удалось загрузить комментарии.';
+            content.appendChild(message);
+          }
+        }
+
+        trigger.addEventListener('click', function () {
+          if (!panel.hidden) {
+            closePanel();
+            return;
+          }
+          panel.hidden = false;
+          trigger.setAttribute('aria-expanded', 'true');
+          loadComments();
+          closeButton.focus({ preventScroll: true });
+        });
+        closeButton.addEventListener('click', function () {
+          closePanel();
+          trigger.focus({ preventScroll: true });
+        });
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && !panel.hidden) {
+            closePanel();
+            trigger.focus({ preventScroll: true });
+          }
+        });
+        document.addEventListener('click', function (event) {
+          if (!panel.hidden && !widget.contains(event.target)) closePanel();
+        });
+        function refreshCount() {
+          fetch('/api/comments', { headers: { Accept: 'application/json' } })
+            .then(function (response) { return response.ok ? response.json() : null; })
+            .then(function (payload) { if (payload) setCount(payload.total); })
+            .catch(function () { count.textContent = '—'; });
+        }
+        document.addEventListener('comments:changed', function () {
+          if (!panel.hidden) {
+            loadComments();
+            return;
+          }
+          refreshCount();
+        });
+        refreshCount();
+      })();
+    </script>
+  </aside>`;
+}
+
 function taskIds(html) {
   return new Set(Array.from(html.matchAll(/<div\s+class=['"][^'"]*qblock[^'"]*['"]\s+id=['"]q([A-Z0-9]+)['"]/gi), match => match[1]));
 }
@@ -1363,6 +1550,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
           solution.comments.push(payload.comment);
           list.querySelector('.solution-comments-empty')?.remove();
           list.appendChild(modalCommentElement(payload.comment, taskId));
+          document.dispatchEvent(new Event('comments:changed'));
           field.value = '';
         } catch (requestError) {
           error.textContent = requestError.message || 'Не удалось отправить комментарий.';
@@ -1654,7 +1842,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .replace(/<head([^>]*)>/i, `<head$1>${YANDEX_METRIKA_HEAD}${viewportMeta}`)
     .replace(/<title>[\s\S]*?<\/title>/i, pageTitle)
     .replace('</head>', `${loadingGuard}${localStyle}${pageSeo}</head>`)
-    .replace(/<body([^>]*)>/i, `<body$1>${YANDEX_METRIKA_NOSCRIPT}${header}${taskPager}${renderTelegramBanner()}`)
+    .replace(/<body([^>]*)>/i, `<body$1>${YANDEX_METRIKA_NOSCRIPT}${header}${taskPager}${renderTelegramBanner()}${renderCommentsWidget()}`)
     .replace('</body>', `${pagerScript}</body>`);
 }
 
@@ -2140,6 +2328,7 @@ function renderAboutPage() {
       <p>Все задания на сайте взяты из открытого банка ФИПИ и систематизированы по темам. Выберите нужный раздел, чтобы целенаправленно отрабатывать нужный тип задач.</p>
     </section>
   </main>
+  ${renderCommentsWidget()}
 </body>
 </html>`;
 }
@@ -2401,6 +2590,16 @@ http.createServer(async (req, res) => {
       }
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(taskPage);
+    }
+    if (pathname === '/api/comments') {
+      if (req.method !== 'GET') {
+        res.writeHead(405, { allow: 'GET' });
+        return res.end();
+      }
+      const total = Number(countPublicComments.get().total || 0);
+      const comments = listRecentPublicComments.all().map(serializeComment);
+      res.writeHead(200, { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' });
+      return res.end(JSON.stringify({ total, comments, hasMore: total > comments.length }));
     }
     const publicSolutionMatch = pathname.match(/^\/api\/solutions\/([A-Za-z0-9]+)$/);
     if (publicSolutionMatch) {
