@@ -1,0 +1,13 @@
+{
+  "name": "ege-math",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "audit:solutions": "node scripts/audit-published-solutions.js",
+    "publish:optimal": "node scripts/publish-optimal-solutions.js",
+    "publish:inequalities": "node scripts/publish-inequality-solutions.js",
+    "add:equation-graphs": "node scripts/add-equation-graphs.js",
+    "fix:6cedb3": "node scripts/fix-6cedb3-root.js",
+    "add:f4d70d-diagram": "node scripts/add-f4d70d-payment-diagram.js"
+  }
+}
