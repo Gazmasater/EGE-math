@@ -1773,6 +1773,18 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     ? ''
     : '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">';
   const headerTitle = seoOverride?.heading || title;
+  const sectionMenu = isPhysics
+    ? `<a href="/physics" class="active">Физика</a><a href="/added?section=physics" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>`
+    : `<a href="/equations" class="${isEquations ? 'active' : ''}">Уравнения</a>
+      <a href="/" class="${!isPlane && !isParameters && !isEquations && !isInequalities && !isOptimal && !isNumbers && !isFinance && !isSearch ? 'active' : ''}">Стереометрия</a>
+      <a href="/inequalities" class="${isInequalities ? 'active' : ''}">Неравенства</a>
+      <a href="/finance" class="${isFinance ? 'active' : ''}">Финансовая математика</a>
+      <a href="/optimal" class="${isOptimal ? 'active' : ''}">Оптимальный выбор</a>
+      <a href="/planimetry" class="${isPlane ? 'active' : ''}">Планиметрия</a>
+      <a href="/parameters" class="${isParameters ? 'active' : ''}">Задачи с параметром</a>
+      <a href="/numbers" class="${isNumbers ? 'active' : ''}">Числа и их свойства</a>
+      <a href="/physics">Физика</a>
+      <a href="/added?section=${section}" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>`;
   const header = `<div class="local-header"><a class="physics-top-button" href="/physics">Физика</a><h1>${escapeHtml(headerTitle)}</h1>
     <small>${subtitle}</small>
     ${hasTaskSolution ? `<a class="task-solution-jump" href="#solution-${escapeHtml(taskIdFromPath)}">Решение опубликовано — перейти к ответу ↓</a>` : ''}
@@ -1782,17 +1794,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       <input id="site-search-query" name="q" type="search" value="${escapeHtml(seoOverride?.searchQuery || '')}" placeholder="Поиск по номеру или условию" autocomplete="off">
       <button type="submit">Найти</button>
     </form>
-    <nav class="local-menu">
-      <a href="/equations" class="${isEquations ? 'active' : ''}">Уравнения</a>
-      <a href="/" class="${!isPlane && !isParameters && !isEquations && !isInequalities && !isOptimal && !isNumbers && !isFinance && !isSearch ? 'active' : ''}">Стереометрия</a>
-      <a href="/inequalities" class="${isInequalities ? 'active' : ''}">Неравенства</a>
-      <a href="/finance" class="${isFinance ? 'active' : ''}">Финансовая математика</a>
-      <a href="/optimal" class="${isOptimal ? 'active' : ''}">Оптимальный выбор</a>
-      <a href="/planimetry" class="${isPlane ? 'active' : ''}">Планиметрия</a>
-      <a href="/parameters" class="${isParameters ? 'active' : ''}">Задачи с параметром</a>
-      <a href="/numbers" class="${isNumbers ? 'active' : ''}">Числа и их свойства</a>
-      <a href="/physics" class="${isPhysics ? 'active' : ''}">Физика</a>
-      <a href="/added?section=${section}" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>
+    <nav class="local-menu">${sectionMenu}
       <a href="/account">Личный кабинет</a>
       <a href="/about">О проекте</a>
       <form method="post" action="/update?section=${section}"><button type="submit">↻ Обновить из ФИПИ</button></form>
