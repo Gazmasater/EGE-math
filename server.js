@@ -26,6 +26,9 @@ const COMMENTS_WIDGET_LIMIT = 100;
 const SITE_ORIGIN = 'https://ege-fipi.ru';
 const TELEGRAM_CHANNEL_URL = 'https://t.me/leon_358';
 const TELEGRAM_USERNAME = '@leon_358';
+const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY || '';
+const TURNSTILE_SITE_KEY = process.env.TURNSTILE_SITE_KEY || '';
+const TURNSTILE_HOSTNAMES = new Set(['ege-fipi.ru', 'www.ege-fipi.ru']);
 const PUBLIC_SECTIONS = ['stereometry', 'planimetry', 'parameters', 'equations', 'inequalities', 'optimal', 'numbers', 'finance'];
 const SECTION_INFO = {
   stereometry: { name: 'Стереометрия', path: '/', topic: 'стереометрии', description: 'Задачи по стереометрии из открытого банка ФИПИ: условия, ответы и подробные решения.' },
@@ -50,6 +53,8 @@ const YANDEX_METRIKA_HEAD = `<!-- Yandex.Metrika counter -->
 </script>
 <!-- /Yandex.Metrika counter -->`;
 const YANDEX_METRIKA_NOSCRIPT = `<noscript><div><img src="https://mc.yandex.ru/watch/112561663" style="position:absolute; left:-9999px;" alt="" /></div></noscript>`;
+const SITE_ICON_HEAD = '<link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg">';
+const SITE_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="ЕГЭ ФИПИ"><rect width="192" height="192" rx="38" fill="#183153"/><path fill="#f0b429" d="M38 42h116v24H65v29h75v23H65v32h89v24H38z"/><text x="96" y="87" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="700">ЕГЭ</text></svg>`;
 
 fsSync.mkdirSync(STORAGE_ROOT, { recursive: true });
 const solutionsDb = new DatabaseSync(SOLUTIONS_DB_FILE);
@@ -350,6 +355,7 @@ function renderStructuredData(data) {
 function renderSeoMetadata({ title, description, pathname, robots = 'index,follow', structuredData = null, type = 'website' }) {
   const url = absoluteUrl(pathname);
   return `
+  ${SITE_ICON_HEAD}
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="robots" content="${escapeHtml(robots)}">
   <link rel="canonical" href="${escapeHtml(url)}">
@@ -578,6 +584,53 @@ function readForm(req, maxBytes = 512 * 1024) {
   });
 }
 
+async function verifyTurnstile(form) {
+  if (!TURNSTILE_SECRET_KEY) return { ok: false, status: 503, error: 'Проверка формы временно недоступна. Попробуйте позже.' };
+
+  const responseToken = String(form.get('cf-turnstile-response') || '').trim();
+  if (!responseToken) return { ok: false, status: 400, error: 'Подтвердите, что вы не робот.' };
+
+  try {
+    const body = new URLSearchParams({ secret: TURNSTILE_SECRET_KEY, response: responseToken });
+    const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'content-type': 'application/x-www-form-urlencoded' },
+      body,
+      signal: AbortSignal.timeout(7_000),
+    });
+    const result = await response.json();
+    if (response.ok && result?.success && TURNSTILE_HOSTNAMES.has(result.hostname || '')) return { ok: true };
+  } catch {
+    return { ok: false, status: 503, error: 'Не удалось выполнить проверку. Попробуйте ещё раз.' };
+  }
+  return { ok: false, status: 400, error: 'Проверка не пройдена. Попробуйте ещё раз.' };
+}
+
+function renderTurnstileWidget() {
+  if (!TURNSTILE_SITE_KEY) return '<p class="turnstile-error" role="alert">Проверка формы временно недоступна. Попробуйте позже.</p>';
+  return `<div class="turnstile-field" data-turnstile-widget data-turnstile-sitekey="${escapeHtml(TURNSTILE_SITE_KEY)}"></div>`;
+}
+
+function renderTurnstileScript() {
+  if (!TURNSTILE_SITE_KEY) return '';
+  return `<script>
+    (function () {
+      function renderAll() {
+        if (!window.turnstile) return;
+        document.querySelectorAll('[data-turnstile-widget]').forEach(function (container) {
+          if (container.dataset.turnstileReady) return;
+          container.dataset.turnstileReady = 'true';
+          window.turnstile.render(container, { sitekey: container.dataset.turnstileSitekey });
+        });
+      }
+      window.egeTurnstileLoaded = renderAll;
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderAll, { once: true });
+      else renderAll();
+    })();
+  </script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=egeTurnstileLoaded&render=explicit" async defer></script>`;
+}
+
 function renderAdminShell(title, content) {
   return `<!doctype html>
 <html lang="ru">
@@ -666,8 +719,10 @@ function renderAdminLogin(error = '') {
     ${message}
     <label for="password">Пароль</label>
     <input id="password" name="password" type="password" autocomplete="current-password" required autofocus>
+    ${renderTurnstileWidget()}
     <button type="submit">Войти</button>
   </form>
+  ${renderTurnstileScript()}
 </body>
 </html>`;
 }
@@ -796,6 +851,7 @@ function renderAccountShell(title, content, user = null) {
     <nav class="top" aria-label="Навигация"><a href="/">Задания ЕГЭ</a>${accountLink}</nav>
     ${content}
   </main>
+  ${renderTurnstileScript()}
 </body>
 </html>`;
 }
@@ -818,6 +874,7 @@ function renderRegistrationPage(error = '', values = {}, next = '/') {
         <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="200" required>
         <label class="checkbox"><input name="consent" type="checkbox" value="1"${values.consent ? ' checked' : ''} required> <span>Соглашаюсь на обработку указанных данных для работы личного кабинета и комментариев.</span></label>
         <p class="muted">Какие данные используются: <a href="/privacy">информация для пользователей</a>.</p>
+        ${renderTurnstileWidget()}
         <p><button type="submit">Создать аккаунт</button></p>
       </form>
       <p>Уже есть аккаунт? <a href="/account/login?next=${encodeURIComponent(safeNextPath(next))}">Войти</a>.</p>
@@ -835,6 +892,7 @@ function renderLoginPage(error = '', next = '/') {
         <input id="email" name="email" type="email" autocomplete="email" required autofocus>
         <label for="password">Пароль</label>
         <input id="password" name="password" type="password" autocomplete="current-password" required>
+        ${renderTurnstileWidget()}
         <p><button type="submit">Войти</button></p>
       </form>
       <p>Нет аккаунта? <a href="/account/register?next=${encodeURIComponent(safeNextPath(next))}">Зарегистрироваться</a>.</p>
@@ -898,12 +956,15 @@ function renderCommentSection(taskId, user, notice = '') {
     ? `<form class="solution-comment-form" method="post" action="/tasks/${encodeURIComponent(taskId)}/comments">
         <label for="comment-${escapeHtml(taskId)}">Ваш комментарий</label>
         <textarea id="comment-${escapeHtml(taskId)}" name="body" maxlength="${MAX_COMMENT_LENGTH}" required placeholder="Напишите вопрос или дополнение к решению"></textarea>
+        ${renderTurnstileWidget()}
         <button type="submit">Отправить комментарий</button>
       </form>`
     : `<p class="solution-comments-login">Чтобы оставить комментарий, <a href="/account/login?next=${encodeURIComponent(next)}">войдите</a> или <a href="/account/register?next=${encodeURIComponent(next)}">зарегистрируйтесь</a>.</p>`;
   const message = notice === 'created'
     ? '<p class="solution-comments-notice">Комментарий опубликован.</p>'
-    : (notice === 'deleted' ? '<p class="solution-comments-notice">Комментарий удалён.</p>' : '');
+    : (notice === 'deleted'
+      ? '<p class="solution-comments-notice">Комментарий удалён.</p>'
+      : (notice === 'error' ? '<p class="solution-comments-notice">Подтвердите, что вы не робот, и отправьте комментарий ещё раз.</p>' : ''));
   return `<section class="solution-comments" id="comments" aria-labelledby="comments-${escapeHtml(taskId)}">
     <h2 id="comments-${escapeHtml(taskId)}">Комментарии к решению</h2>
     <p class="solution-comments-public">Комментарии видны всем посетителям сайта.</p>
@@ -925,7 +986,9 @@ function renderFeedbackSection(taskId, notice = '') {
     ? '<p class="site-feedback-notice">Спасибо! Сообщение отправлено команде сайта.</p>'
     : (notice === 'rate'
       ? '<p class="site-feedback-error">Слишком много сообщений. Повторите немного позже.</p>'
-      : (notice === 'error' ? '<p class="site-feedback-error">Проверьте тип и текст сообщения.</p>' : ''));
+      : (notice === 'captcha'
+        ? '<p class="site-feedback-error">Подтвердите, что вы не робот, и отправьте сообщение ещё раз.</p>'
+        : (notice === 'error' ? '<p class="site-feedback-error">Проверьте тип и текст сообщения.</p>' : '')));
   return `<section class="site-feedback" id="feedback" aria-labelledby="feedback-${escapeHtml(taskId)}">
     <h2 id="feedback-${escapeHtml(taskId)}">Помочь улучшить сайт</h2>
     <p>Напишите пожелание к сайту или решению либо сообщите о найденной неточности в задании ${escapeHtml(taskId)}.</p>
@@ -939,6 +1002,7 @@ function renderFeedbackSection(taskId, notice = '') {
       </select>
       <label for="feedback-body-${escapeHtml(taskId)}">Ваше сообщение</label>
       <textarea id="feedback-body-${escapeHtml(taskId)}" name="body" maxlength="${MAX_FEEDBACK_LENGTH}" minlength="2" required placeholder="Например: в шаге 2 не хватает пояснения…"></textarea>
+      ${renderTurnstileWidget()}
       <button type="submit">Отправить</button>
     </form>
   </section>`;
@@ -961,6 +1025,7 @@ function renderFeedbackModal() {
         </select>
         <label for="feedback-modal-body">Ваше сообщение</label>
         <textarea id="feedback-modal-body" name="body" maxlength="${MAX_FEEDBACK_LENGTH}" minlength="2" required placeholder="Например: в шаге 2 не хватает пояснения…"></textarea>
+        <div class="feedback-modal-turnstile"></div>
         <button type="submit">Отправить</button>
       </form>
     </div>
@@ -992,11 +1057,14 @@ function renderFeedbackModal() {
         const task = modal.querySelector('.feedback-modal-task');
         const closeButton = modal.querySelector('.feedback-modal-close');
         const field = modal.querySelector('#feedback-modal-body');
+        const turnstileField = modal.querySelector('.feedback-modal-turnstile');
+        const turnstileMarkup = ${JSON.stringify(renderTurnstileWidget())};
         let opener = null;
 
         function closeModal() {
           modal.hidden = true;
           modal.setAttribute('aria-hidden', 'true');
+          turnstileField.textContent = '';
           if (opener) opener.focus({ preventScroll: true });
           opener = null;
         }
@@ -1008,6 +1076,8 @@ function renderFeedbackModal() {
           form.action = '/tasks/' + encodeURIComponent(taskId.toUpperCase()) + '/feedback';
           modal.hidden = false;
           modal.setAttribute('aria-hidden', 'false');
+          turnstileField.innerHTML = turnstileMarkup;
+          if (window.egeTurnstileLoaded) window.egeTurnstileLoaded();
           field.focus({ preventScroll: true });
         }
 
@@ -1205,6 +1275,78 @@ function taskIds(html) {
   return new Set(Array.from(html.matchAll(/<div\s+class=['"][^'"]*qblock[^'"]*['"]\s+id=['"]q([A-Z0-9]+)['"]/gi), match => match[1]));
 }
 
+function sourceTaskEntries(html) {
+  const starts = Array.from(html.matchAll(/<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"]\s+id=['"]q([A-Z0-9]+)['"][^>]*>/gi));
+  const bodyEnd = html.search(/<\/body\s*>/i);
+  const lastEnd = bodyEnd >= 0 ? bodyEnd : html.length;
+  return starts.map((match, index) => {
+    const start = match.index;
+    const end = starts[index + 1]?.index ?? lastEnd;
+    const fragment = html.slice(start, end);
+    const headerPattern = new RegExp(`<div\\s+id=['"]i${match[1]}['"][^>]*>`, 'i');
+    const headerOffset = fragment.search(headerPattern);
+    const contentHtml = headerOffset >= 0 ? fragment.slice(0, headerOffset) : fragment;
+    const metaHtml = headerOffset >= 0 ? fragment.slice(headerOffset) : '';
+    return {
+      id: normalizeTaskId(match[1]),
+      start,
+      end,
+      fragment,
+      text: cleanPlainText(contentHtml).toLocaleLowerCase('ru-RU'),
+      meta: cleanPlainText(metaHtml).toLocaleLowerCase('ru-RU')
+    };
+  });
+}
+
+function isNumberPropertiesTask(text) {
+  const numberTopic = /натуральн|цел(?:ое|ых|ые|ыми)|делит|кратн|прост(?:ое|ых|ые)|остат|цифр|числ|дроб/.test(text);
+  const unrelated = /кредит|банк|вклад|рубл|заём|прибыл|производств|пирами|призм|тетраэдр/.test(text);
+  return numberTopic && !unrelated;
+}
+
+function isSectionTaskRelevant(section, task) {
+  const { text, meta } = task;
+  if (section === 'equations') {
+    return /решите (?:данное )?(?:уравнение|систему уравнений)|найдите (?:все )?(?:корни|решения) уравнения/.test(text);
+  }
+  if (section === 'inequalities') {
+    return /решите (?:данное )?(?:неравенство|систему неравенств|совокупность неравенств)|найдите (?:все )?решения неравенства/.test(text);
+  }
+  if (section === 'parameters') {
+    // Числовые задачи с дополнительной меткой 2.10 относятся к разделу «Числа».
+    return !isNumberPropertiesTask(text);
+  }
+  if (section === 'optimal') {
+    const optimization = /(наибольш|наименьш|максимальн|минимальн).*(прибыл|выруч|затрат|окуп|производств|завод|фирм|предприят)|(?:прибыл|выруч|затрат|окуп|производств|завод|фирм|предприят).*(наибольш|наименьш|максимальн|минимальн)/.test(text);
+    return optimization && !/кредит|банк|вклад|за[её]м|долг|плат[её]ж/.test(text);
+  }
+  if (section === 'numbers') return isNumberPropertiesTask(text);
+  if (section === 'finance') {
+    return /кредит|банк|вклад|заём|долг|плат[её]ж|процентн.{0,20}ставк|ценн.{0,10}бумаг|пенсионн.{0,10}фонд/.test(text);
+  }
+  if (section === 'planimetry') {
+    return !/7\.2 прямые и плоскости в пространстве|7\.3 многогранники|7\.4 тела и поверхности вращения/.test(meta);
+  }
+  if (section === 'stereometry') {
+    return /7\.2 прямые и плоскости в пространстве|7\.3 многогранники|7\.4 тела и поверхности вращения/.test(meta);
+  }
+  return true;
+}
+
+function filterSectionHtml(html, section) {
+  const tasks = sourceTaskEntries(html);
+  if (!tasks.length) return html;
+  const prefix = html.slice(0, tasks[0].start);
+  const suffix = html.slice(tasks[tasks.length - 1].end);
+  const selectedIds = new Set();
+  const selected = tasks.filter(task => {
+    if (!isSectionTaskRelevant(section, task) || selectedIds.has(task.id)) return false;
+    selectedIds.add(task.id);
+    return true;
+  });
+  return `${prefix}${selected.map(task => task.fragment).join('')}${suffix}`;
+}
+
 function filterOptimalHtml(html) {
   const chunks = html.split(/(?=<div\s+class=['"]qblock)/i);
   const prefix = chunks.shift() || '';
@@ -1246,10 +1388,10 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     : (isEquations
     ? 'ФИПИ · темы 2.1–2.4 и 2.9 · развёрнутый ответ · проверенная подборка'
     : (isParameters
-    ? 'ФИПИ · тема 2.10 · развёрнутый ответ · 64 задания'
+    ? 'ФИПИ · тема 2.10 · развёрнутый ответ · проверенная подборка'
     : (isPlane
-      ? 'ФИПИ · тема 7.1 · развёрнутый ответ · 92 задания'
-      : 'ФИПИ · темы 7.2–7.5 · развёрнутый ответ · 66 заданий')))))));
+      ? 'ФИПИ · тема 7.1 · развёрнутый ответ · проверенная подборка'
+      : 'ФИПИ · темы 7.2–7.5 · развёрнутый ответ · проверенная подборка')))))));
   const fixed = normalizeFipiHtml(html)
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="ru"$1>')
     .replace(/(<div class="id-text">[\s\S]*?<span class="canselect">)([A-Z0-9]{4,32})(<\/span>)/gi, '$1<a class="task-permalink" href="/tasks/$2">$2</a>$3');
@@ -1293,6 +1435,8 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       font-weight: 500; text-align: center; white-space: normal; }
     .local-menu a:hover { background: #ffffff18; }
     .local-menu a.active { background: white; color: #183153; }
+    .physics-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #f0b429; border-radius: 8px; background: #f0b429; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
+    .physics-top-button:hover { background: #ffd166; border-color: #ffd166; color: #183153; }
     .local-menu form { margin: 0; min-width: 0; }
     .local-menu button { padding: 7px 11px; border: 1px solid #ffffff70; border-radius: 6px; color: white;
       background: transparent; font: 500 14px Arial, sans-serif; cursor: pointer; width: 100%; height: 100%; white-space: normal; }
@@ -1444,6 +1588,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     @media (max-width: 700px) {
       body.questions-container { padding: 12px; overflow-x: hidden; }
       .local-header { position: static; margin: -12px -12px 14px; padding: 14px 12px; font-size: 15px; }
+      .physics-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
       .local-header small { font-size: 12px; line-height: 1.35; }
       .telegram-banner { align-items: stretch; flex-direction: column; gap: 12px; margin-bottom: 14px; padding: 16px; }
       .telegram-banner-copy strong { font-size: 16px; }
@@ -1522,7 +1667,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     ? ''
     : '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">';
   const headerTitle = seoOverride?.heading || title;
-  const header = `<div class="local-header"><h1>${escapeHtml(headerTitle)}</h1>
+  const header = `<div class="local-header"><a class="physics-top-button" href="/physics">Физика</a><h1>${escapeHtml(headerTitle)}</h1>
     <small>${subtitle}</small>
     ${hasTaskSolution ? `<a class="task-solution-jump" href="#solution-${escapeHtml(taskIdFromPath)}">Решение опубликовано — перейти к ответу ↓</a>` : ''}
     ${taskIdFromPath ? `<a class="task-feedback-jump" href="#feedback" data-feedback-modal-open data-task-id="${escapeHtml(taskIdFromPath)}">Ошибка или пожелание</a>` : ''}
@@ -1558,41 +1703,6 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     let pages = [];
     const allowedIds = ${JSON.stringify(onlyAdded)};
     const publishedSolutionIds = new Set(${JSON.stringify(publishedSolutionIds)});
-    const section = ${JSON.stringify(section)};
-    function relevant(task) {
-      const text = (task.content?.innerText || task.content?.textContent || '').replace(/\\s+/g, ' ').toLowerCase();
-      const meta = (task.header.innerText || task.header.textContent || '').replace(/\\s+/g, ' ').toLowerCase();
-      if (section === 'equations') {
-        return /решите (?:данное )?(?:уравнение|систему уравнений)|найдите (?:все )?(?:корни|решения) уравнения/.test(text);
-      }
-      if (section === 'inequalities') {
-        return /решите (?:данное )?(?:неравенство|систему неравенств|совокупность неравенств)|найдите (?:все )?решения неравенства/.test(text);
-      }
-      if (section === 'parameters') {
-        // Метка КЭС 2.10 уже однозначно обозначает задачи с параметром.
-        return true;
-      }
-      if (section === 'optimal') {
-        const optimization = /(наибольш|наименьш|максимальн|минимальн).*(прибыл|выруч|затрат|окуп|производств|завод|фирм|предприят)|(?:прибыл|выруч|затрат|окуп|производств|завод|фирм|предприят).*(наибольш|наименьш|максимальн|минимальн)/.test(text);
-        const financial = /кредит|банк|вклад|за[её]м|долг|плат[её]ж/.test(text);
-        return optimization && !financial;
-      }
-      if (section === 'numbers') {
-        const numberTopic = /натуральн|цел(?:ое|ых|ые|ыми)|делит|кратн|прост(?:ое|ых|ые)|остат|цифр|числ|дроб/.test(text);
-        const unrelated = /кредит|банк|вклад|рубл|заём|прибыл|производств|пирами|призм|тетраэдр/.test(text);
-        return numberTopic && !unrelated;
-      }
-      if (section === 'finance') {
-        return /кредит|банк|вклад|заём|долг|плат[её]ж|процентн.{0,20}ставк|ценн.{0,10}бумаг|пенсионн.{0,10}фонд/.test(text);
-      }
-      if (section === 'planimetry') {
-        return !/7\\.2 прямые и плоскости в пространстве|7\\.3 многогранники|7\\.4 тела и поверхности вращения/.test(meta);
-      }
-      if (section === 'stereometry') {
-        return /7\\.2 прямые и плоскости в пространстве|7\\.3 многогранники|7\\.4 тела и поверхности вращения/.test(meta);
-      }
-      return true;
-    }
     // Старый HTML банка неидеален. Собираем пары по устойчивому идентификатору
     // самого задания, а не по родительскому элементу панели: мобильные браузеры
     // могут по-разному восстанавливать вложенность такой разметки.
@@ -1601,7 +1711,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       const header = id ? document.getElementById('i' + id) : null;
       return header ? { id, header, content } : null;
     }).filter(Boolean).filter(task => {
-      const keep = (!allowedIds || allowedIds.includes(task.id)) && relevant(task);
+      const keep = !allowedIds || allowedIds.includes(task.id);
       if (!keep) {
         task.header.classList.add('local-task-hidden');
         if (task.content) task.content.classList.add('local-task-hidden');
@@ -2025,10 +2135,11 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   </script>` : '';
   return fixed
     .replace(/<head([^>]*)>/i, `<head$1>${YANDEX_METRIKA_HEAD}${viewportMeta}`)
+    .replace(/<link\b(?=[^>]*\brel\s*=\s*["'](?:shortcut\s+)?icon["'])[^>]*>\s*/gi, '')
     .replace(/<title>[\s\S]*?<\/title>/i, pageTitle)
     .replace('</head>', `${loadingGuard}${localStyle}${pageSeo}</head>`)
     .replace(/<body([^>]*)>/i, `<body$1>${YANDEX_METRIKA_NOSCRIPT}${header}${taskPager}${renderTelegramBanner()}${renderCommentsWidget()}${renderFeedbackModal()}`)
-    .replace('</body>', `${pagerScript}</body>`);
+    .replace('</body>', `${pagerScript}${renderTurnstileScript()}</body>`);
 }
 
 async function loadSourceHtml(section) {
@@ -2044,7 +2155,21 @@ async function loadSourceHtml(section) {
       html = html.replace('</body>', `${body}</body>`);
     }
     html = filterOptimalHtml(html);
-    html = filterOptimalHtml(html);
+  } else if (section === 'finance') {
+    const [financeBytes, equationsFirstBytes, equationsSecondBytes, numbersBytes] = await Promise.all([
+      fs.readFile(path.join(__dirname, 'finance.raw.html')),
+      fs.readFile(path.join(__dirname, 'equations-1.raw.html')),
+      fs.readFile(path.join(__dirname, 'equations-2.raw.html')),
+      fs.readFile(path.join(__dirname, 'numbers.raw.html'))
+    ]);
+    const decode = bytes => new TextDecoder('windows-1251').decode(bytes);
+    html = decode(financeBytes);
+    const equationsSecondBody = (decode(equationsSecondBytes).match(/<body[^>]*>([\s\S]*?)<\/body>/i) || ['', ''])[1];
+    const equationsHtml = decode(equationsFirstBytes).replace('</body>', `${equationsSecondBody}</body>`);
+    for (const extra of [equationsHtml, decode(numbersBytes)]) {
+      const extraBody = (extra.match(/<body[^>]*>([\s\S]*?)<\/body>/i) || ['', ''])[1];
+      html = html.replace('</body>', `${extraBody}</body>`);
+    }
   } else if (section === 'equations' || section === 'inequalities') {
     const prefix = section === 'equations' ? 'equations' : 'inequalities';
     const first = new TextDecoder('windows-1251').decode(await fs.readFile(path.join(__dirname, `${prefix}-1.raw.html`)));
@@ -2052,13 +2177,13 @@ async function loadSourceHtml(section) {
     const secondBody = (second.match(/<body[^>]*>([\s\S]*?)<\/body>/i) || ['', ''])[1];
     html = first.replace('</body>', `${secondBody}</body>`);
   } else {
-    const filename = section === 'finance' ? 'finance.raw.html'
-      : (section === 'numbers' ? 'numbers.raw.html'
-        : (section === 'parameters' ? 'parameters.raw.html'
-          : (section === 'planimetry' ? 'planimetry.raw.html' : 'questions.raw.html')));
+    const filename = section === 'numbers' ? 'numbers.raw.html'
+      : (section === 'parameters' ? 'parameters.raw.html'
+          : (section === 'planimetry' ? 'planimetry.raw.html' : 'questions.raw.html'));
     const bytes = await fs.readFile(path.join(__dirname, filename));
     html = new TextDecoder('windows-1251').decode(bytes);
   }
+  html = filterSectionHtml(html, section);
   sourceCache.set(section, html);
   return html;
 }
@@ -2458,6 +2583,8 @@ function renderAboutPage() {
       font-weight: 500; text-align: center; white-space: normal; }
     .local-menu a:hover { background: #ffffff18; }
     .local-menu a.active { background: #fff; color: #183153; }
+    .physics-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #f0b429; border-radius: 8px; background: #f0b429; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
+    .physics-top-button:hover { background: #ffd166; border-color: #ffd166; color: #183153; }
     .telegram-banner { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 0 0 20px; padding: 18px 20px;
       border: 1px solid #6f9cd0; border-radius: 10px; background: linear-gradient(120deg, #e7f3ff, #f6fbff); color: #183153;
       box-shadow: 0 2px 10px #18315312; }
@@ -2476,6 +2603,7 @@ function renderAboutPage() {
     @media (max-width: 700px) {
       .page { padding: 12px; }
       .local-header { position: static; margin: -12px -12px 14px; padding: 14px 12px; font-size: 15px; }
+      .physics-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
       .local-header small { font-size: 12px; line-height: 1.35; }
       .telegram-banner { align-items: stretch; flex-direction: column; gap: 12px; margin-bottom: 14px; padding: 16px; }
       .telegram-banner-copy strong { font-size: 16px; }
@@ -2491,7 +2619,7 @@ function renderAboutPage() {
 <body>
   ${YANDEX_METRIKA_NOSCRIPT}
   <main class="page">
-    <header class="local-header">Задания профильного ЕГЭ по математике
+    <header class="local-header"><a class="physics-top-button" href="/physics">Физика</a>Задания профильного ЕГЭ по математике
       <small>Каталог заданий второй части</small>
       <nav class="local-menu" aria-label="Разделы сайта">
         <a href="/equations">Уравнения</a>
@@ -2519,11 +2647,29 @@ function renderAboutPage() {
 </html>`;
 }
 
+function renderPhysicsPage() {
+  const topics = [
+    ['qualitative', 'Качественная задача', 'Задание 27: объяснение физического явления с опорой на законы и причинно-следственные связи'],
+    ['mechanics', 'Механика', 'Задание 28: расчётная задача высокого уровня — кинематика, динамика и законы сохранения'],
+    ['molecular', 'Молекулярная физика и термодинамика', 'Задание 29: расчёты по МКТ, газовым законам, теплообмену и термодинамике'],
+    ['electrodynamics', 'Электродинамика', 'Задание 30: расчётная задача высокого уровня — электрические цепи, поле, магнитные явления и индукция']
+  ];
+  return `<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ЕГЭ по физике — типы задач и подробные решения</title><meta name="description" content="Типы задач ЕГЭ по физике: механика, молекулярная физика, электродинамика, оптика, квантовая физика и задания с развёрнутым ответом."><style>
+    *{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:#334155;font:16px/1.5 Arial,sans-serif}.page{max-width:1000px;margin:0 auto;padding:24px}.local-header{position:sticky;top:0;z-index:50;margin:-24px -24px 20px;padding:14px 24px;background:#183153;color:#fff;box-shadow:0 2px 8px #0003}.local-header h1{margin:0;font-size:26px}.local-header small{display:block;margin-top:3px;opacity:.82}.physics-top-button{position:absolute;top:12px;right:24px;display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:9px 22px;border:2px solid #f0b429;border-radius:8px;background:#f0b429;color:#183153;font-size:21px;font-weight:800;text-decoration:none;box-shadow:0 3px 8px #0005}.physics-top-button:hover{background:#ffd166}.local-menu{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:14px}.local-menu a{padding:8px;border:1px solid #ffffff70;border-radius:6px;color:#fff;text-decoration:none;text-align:center}.local-menu a:hover{background:#ffffff18}.local-menu .active{background:#fff;color:#183153}.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.topic-card{display:block;padding:20px;border:1px solid #d8e1eb;border-radius:10px;background:#fff;color:#183153;text-decoration:none;box-shadow:0 1px 7px #00000012}.topic-card:hover{border-color:#f0b429;box-shadow:0 3px 12px #18315320;transform:translateY(-1px)}.topic-card h2{margin:0 0 8px;font-size:20px}.topic-card p{margin:0;color:#526273}.intro{margin:0 0 18px}.note{margin-top:20px;padding:14px 16px;border-left:4px solid #f0b429;background:#fff;color:#526273}@media(max-width:700px){.page{padding:12px}.local-header{margin:-12px -12px 14px;padding:14px 12px}.physics-top-button{position:static;margin:0 0 10px auto;min-height:42px;padding:8px 18px;font-size:19px}.local-menu,.card-grid{grid-template-columns:1fr}.local-menu a{min-height:42px;display:grid;place-items:center}}
+  </style></head><body><main class="page"><header class="local-header"><a class="physics-top-button" href="/physics">Физика</a><h1>ЕГЭ по физике</h1><small>Задания с развёрнутым ответом</small><nav class="local-menu" aria-label="Навигация"><a href="/">Математика</a><a href="/physics" class="active">Физика</a><a href="/about">О проекте</a><a href="/account">Личный кабинет</a></nav></header><p class="intro">Меню содержит только типы заданий с развёрнутым ответом: №27–30. Для каждого типа публикуются решения с обоснованием, формулами и проверкой результата.</p><section class="card-grid">${topics.map(([id,name,description]) => `<a class="topic-card" id="${id}" href="#${id}"><h2>${name}</h2><p>${description}</p></a>`).join('')}</section><p class="note">Такой формат соответствует тематическим блокам заданий с развёрнутым ответом, используемым в «Решу ЕГЭ — физика»: качественная задача, механика, молекулярная физика и термодинамика, электродинамика.</p></main></body></html>`;
+}
+
 http.createServer(async (req, res) => {
-  if (req.url === '/favicon.ico') { res.writeHead(204); return res.end(); }
   try {
     const requestUrl = new URL(req.url, `http://${req.headers.host}`);
     const pathname = requestUrl.pathname;
+    if (pathname === '/favicon.svg' || pathname === '/favicon.ico') {
+      res.writeHead(200, {
+        'content-type': 'image/svg+xml; charset=utf-8',
+        'cache-control': 'public, max-age=31536000, immutable',
+      });
+      return res.end(SITE_ICON_SVG);
+    }
     if (pathname.startsWith('/admin') || pathname.startsWith('/api/') || pathname.startsWith('/account') || pathname === '/update' || /^\/tasks\/[A-Za-z0-9]+\/(?:comments|feedback)$/.test(pathname)) {
       res.setHeader('X-Robots-Tag', 'noindex, nofollow');
     }
@@ -2605,6 +2751,11 @@ http.createServer(async (req, res) => {
           res.writeHead(422, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
           return res.end(renderRegistrationPage(result.error, values, formNext));
         }
+        const turnstile = await verifyTurnstile(form);
+        if (!turnstile.ok) {
+          res.writeHead(turnstile.status, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
+          return res.end(renderRegistrationPage(turnstile.error, values, formNext));
+        }
         if (getUserByEmail.get(result.email)) {
           res.writeHead(409, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
           return res.end(renderRegistrationPage('Этот адрес уже зарегистрирован. Войдите в личный кабинет.', values, formNext));
@@ -2639,6 +2790,11 @@ http.createServer(async (req, res) => {
           return res.end(renderLoginPage('Слишком много попыток. Повторите позже.', next));
         }
         const form = await readForm(req);
+        const turnstile = await verifyTurnstile(form);
+        if (!turnstile.ok) {
+          res.writeHead(turnstile.status, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
+          return res.end(renderLoginPage(turnstile.error, safeNextPath(form.get('next'))));
+        }
         const email = normalizeEmail(form.get('email'));
         const user = getUserByEmail.get(email);
         const formNext = safeNextPath(form.get('next'));
@@ -2737,6 +2893,8 @@ http.createServer(async (req, res) => {
       }
       if (isRateLimited(req, 'feedback', 5, 60 * 60 * 1000)) return redirect('rate');
       const form = await readForm(req, 32 * 1024);
+      const turnstile = await verifyTurnstile(form);
+      if (!turnstile.ok) return redirect('captcha');
       const result = addSiteFeedback(taskId, form.get('kind'), form.get('body'));
       if (result.error) return redirect('error');
       return redirect('created');
@@ -2754,7 +2912,7 @@ http.createServer(async (req, res) => {
           res.writeHead(status, { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' });
           return res.end(JSON.stringify({ error }));
         }
-        res.writeHead(303, { location: `/tasks/${encodeURIComponent(taskId)}#comments` });
+        res.writeHead(303, { location: `/tasks/${encodeURIComponent(taskId)}?comment=error#comments` });
         return res.end();
       };
       if (!isTrustedOrigin(req)) return sendCommentError(403, 'Недопустимый источник запроса.');
@@ -2768,6 +2926,8 @@ http.createServer(async (req, res) => {
       if (!task || !getPublishedSolution.get(taskId)) return sendCommentError(404, 'Опубликованное решение не найдено.');
       if (isRateLimited(req, `comment:${user.id}`, 12, 10 * 60 * 1000)) return sendCommentError(429, 'Слишком много комментариев. Повторите позже.');
       const form = await readForm(req, 32 * 1024);
+      const turnstile = await verifyTurnstile(form);
+      if (!turnstile.ok) return sendCommentError(turnstile.status, turnstile.error);
       const result = addCommentForUser(taskId, user, form.get('body'));
       if (result.error) return sendCommentError(422, result.error);
       if (wantsJson) {
@@ -2795,8 +2955,8 @@ http.createServer(async (req, res) => {
         task,
         await loadSourceHtml(task.section),
         getCurrentUser(req),
-        commentStatus === 'created' || commentStatus === 'deleted' ? commentStatus : '',
-        feedbackStatus === 'created' || feedbackStatus === 'rate' || feedbackStatus === 'error' ? feedbackStatus : ''
+        commentStatus === 'created' || commentStatus === 'deleted' || commentStatus === 'error' ? commentStatus : '',
+        feedbackStatus === 'created' || feedbackStatus === 'rate' || feedbackStatus === 'captcha' || feedbackStatus === 'error' ? feedbackStatus : ''
       );
       if (!taskPage) {
         res.writeHead(404, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
@@ -2865,6 +3025,11 @@ http.createServer(async (req, res) => {
       }
       if (req.method === 'POST') {
         const form = await readForm(req);
+        const turnstile = await verifyTurnstile(form);
+        if (!turnstile.ok) {
+          res.writeHead(turnstile.status, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
+          return res.end(renderAdminLogin(turnstile.error));
+        }
         if (!secureEqual(form.get('password') || '', adminPassword)) {
           res.writeHead(401, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
           return res.end(renderAdminLogin('Неверный пароль.'));
@@ -2942,6 +3107,9 @@ http.createServer(async (req, res) => {
       res.writeHead(405, { allow: 'GET, POST' });
       return res.end();
     }
+    if (pathname === '/physics') {
+      return res.end(renderPhysicsPage());
+    }
     if (pathname === '/about') {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(renderAboutPage());
@@ -2966,7 +3134,9 @@ http.createServer(async (req, res) => {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(renderSearchPage(query, search));
     }
-    const requestedSection = requestUrl.searchParams.get('section');
+    const requestedSection = (pathname === '/added' || pathname === '/update')
+      ? requestUrl.searchParams.get('section')
+      : '';
     const section = pathname === '/finance' || requestedSection === 'finance'
       ? 'finance'
       : (pathname === '/numbers' || requestedSection === 'numbers'

@@ -8,6 +8,10 @@
     "audit:finance": "node scripts/expand-finance-solutions.js --check",
     "publish:optimal": "node scripts/publish-optimal-solutions.js",
     "publish:inequalities": "node scripts/publish-inequality-solutions.js",
+    "expand:planimetry": "node scripts/expand-planimetry-solutions.js",
+    "check:planimetry": "node scripts/expand-planimetry-solutions.js --check",
+    "clarify:planes": "node scripts/clarify-plane-equation-derivations.js",
+    "check:planes": "node scripts/clarify-plane-equation-derivations.js --check",
     "add:equation-graphs": "node scripts/add-equation-graphs.js",
     "fix:6cedb3": "node scripts/fix-6cedb3-root.js",
     "add:f4d70d-diagram": "node scripts/add-f4d70d-payment-diagram.js"
