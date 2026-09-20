@@ -1808,10 +1808,11 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const physicsCounts = {};
   if (isPhysics && !isSearch) {
     const taskBlocks = [...fixed.matchAll(/<div[^>]+class=["'][^"']*qblock[^"']*["'][^>]*>[\s\S]*?(?=<div[^>]+class=["'][^"']*qblock[^"']*["'][^>]*>|<\/body>|$)/gi)].map(match => match[0]);
+    const primaryCodes = taskBlocks.map(block => block.match(/\b([1-5]\.[0-9]+(?:\.[0-9]+)*)\b/)?.[1] || '').filter(Boolean);
     for (const group of PHYSICS_TOPICS) {
       for (const [code] of [[group.code, group.name], ...group.children]) {
-        const codePattern = new RegExp(`\\b${code.replace('.', '\\.')}(?:\\.[0-9]+)*\\b`, 'g');
-        physicsCounts[code] = taskBlocks.filter(block => codePattern.test(block)).length;
+        const codePattern = new RegExp(`^${code.replace('.', '\\.')}(?:\\.[0-9]+)*$`);
+        physicsCounts[code] = primaryCodes.filter(primary => codePattern.test(primary)).length;
       }
     }
   }
