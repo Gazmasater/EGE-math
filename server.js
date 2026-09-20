@@ -1458,7 +1458,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const taskIdFromPath = seoOverride?.pathname?.match(/^\/tasks\/([A-Z0-9]+)$/i)?.[1] || '';
   const hasTaskSolution = taskIdFromPath && publishedSolutionIds.includes(taskIdFromPath);
   const taskNavigation = seoOverride?.taskNavigation || null;
-  const useCataloguePager = !seoOverride?.disableCataloguePager;
+  const useCataloguePager = !seoOverride?.disableCataloguePager && !(isPhysics && physicsTopic);
   const title = onlyAdded ? `Добавленные задачи — ${baseTitle.toLowerCase()}` : (isPhysics
     ? (physicsTopic ? `${physicsTopic.name} — задачи ЕГЭ по физике` : 'Физика — задания с развёрнутым ответом')
     : `${baseTitle} — задания второй части`);
