@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync('storage/solutions.sqlite');
+const row=db.prepare('select diagram_svg from solutions where task_id=?').get('DEAB32');
+if(!row) throw new Error('DEAB32 not found');
+let svg=row.diagram_svg;
+svg=svg.replace(/<path d="M130 20[^"]+"/,'<path d="M130 20v45l-10 15 20 15-20 15 20 15-20 15 20 15-10 10v15"');
+svg=svg.replace(/<path d="M360 20[^"]+"/,'<path d="M380 20v45l-10 15 20 15-20 15 20 15-20 15 20 15-10 10v15"');
+svg=svg.replace('x1="360" y1="80" x2="360" y2="35"','x1="380" y1="80" x2="380" y2="35"');
+svg=svg.replace('x="390" y="30"','x="390" y="30"');
+db.prepare('update solutions set diagram_svg=?,updated_at=? where task_id=?').run(svg,new Date().toISOString(),'DEAB32');
+console.log('DEAB32 force lines aligned with springs');
