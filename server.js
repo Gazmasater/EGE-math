@@ -1458,7 +1458,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const taskIdFromPath = seoOverride?.pathname?.match(/^\/tasks\/([A-Z0-9]+)$/i)?.[1] || '';
   const hasTaskSolution = taskIdFromPath && publishedSolutionIds.includes(taskIdFromPath);
   const taskNavigation = seoOverride?.taskNavigation || null;
-  const useCataloguePager = !seoOverride?.disableCataloguePager && !(isPhysics && physicsTopic);
+  const useCataloguePager = !seoOverride?.disableCataloguePager;
   const title = onlyAdded ? `Добавленные задачи — ${baseTitle.toLowerCase()}` : (isPhysics
     ? (physicsTopic ? `${physicsTopic.name} — задачи ЕГЭ по физике` : 'Физика — задания с развёрнутым ответом')
     : `${baseTitle} — задания второй части`);
@@ -1828,7 +1828,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     const physicsTopic = ${JSON.stringify(physicsTopic?.code || '')};
     function relevant(task) {
       const text = (task.content?.innerText || task.content?.textContent || '').replace(/\\s+/g, ' ').toLowerCase();
-      const meta = (task.header.innerText || task.header.textContent || '').replace(/\\s+/g, ' ').toLowerCase();
+      const meta = (task.header.querySelector('.task-info-content')?.innerText || task.header.innerText || task.header.textContent || '').replace(/\\s+/g, ' ').toLowerCase();
       if (section === 'equations') {
         return /решите (?:данное )?(?:уравнение|систему уравнений)|найдите (?:все )?(?:корни|решения) уравнения/.test(text);
       }
@@ -1853,8 +1853,8 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
         return /кредит|банк|вклад|заём|долг|плат[её]ж|процентн.{0,20}ставк|ценн.{0,10}бумаг|пенсионн.{0,10}фонд/.test(text);
       }
       if (section === 'physics' && physicsTopic) {
-        const code = (meta + ' ' + text).match(/\b([1-5]\.[0-9]+(?:\.[0-9]+)*)\b/)?.[1] || '';
-        return code === physicsTopic || code.startsWith(physicsTopic + '.');
+        const codes = meta.match(/\b[1-5]\.[0-9]+(?:\.[0-9]+)*\b/g) || [];
+        return codes.some(code => code === physicsTopic || code.startsWith(physicsTopic + '.'));
       }
       if (section === 'planimetry') {
         return !/7\\.2 прямые и плоскости в пространстве|7\\.3 многогранники|7\\.4 тела и поверхности вращения/.test(meta);
