@@ -1853,7 +1853,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
         return /кредит|банк|вклад|заём|долг|плат[её]ж|процентн.{0,20}ставк|ценн.{0,10}бумаг|пенсионн.{0,10}фонд/.test(text);
       }
       if (section === 'physics' && physicsTopic) {
-        const code = meta.match(/\b([1-5]\.[0-9]+(?:\.[0-9]+)*)\b/)?.[1] || '';
+        const code = (meta + ' ' + text).match(/\b([1-5]\.[0-9]+(?:\.[0-9]+)*)\b/)?.[1] || '';
         return code === physicsTopic || code.startsWith(physicsTopic + '.');
       }
       if (section === 'planimetry') {
