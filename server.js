@@ -1807,9 +1807,11 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   </nav>` : '';
   const physicsCounts = {};
   if (isPhysics && !isSearch) {
+    const taskBlocks = [...fixed.matchAll(/<div[^>]+class=["'][^"']*qblock[^"']*["'][^>]*>[\s\S]*?(?=<div[^>]+class=["'][^"']*qblock[^"']*["'][^>]*>|<\/body>|$)/gi)].map(match => match[0]);
     for (const group of PHYSICS_TOPICS) {
       for (const [code] of [[group.code, group.name], ...group.children]) {
-        physicsCounts[code] = (fixed.match(new RegExp(`\\b${code.replace('.', '\\.')}(?:\\.[0-9]+)*\\b`, 'g')) || []).length;
+        const codePattern = new RegExp(`\\b${code.replace('.', '\\.')}(?:\\.[0-9]+)*\\b`, 'g');
+        physicsCounts[code] = taskBlocks.filter(block => codePattern.test(block)).length;
       }
     }
   }
