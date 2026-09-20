@@ -14,6 +14,7 @@
     "check:planes": "node scripts/clarify-plane-equation-derivations.js --check",
     "add:equation-graphs": "node scripts/add-equation-graphs.js",
     "fix:6cedb3": "node scripts/fix-6cedb3-root.js",
-    "add:f4d70d-diagram": "node scripts/add-f4d70d-payment-diagram.js"
+    "add:f4d70d-diagram": "node scripts/add-f4d70d-payment-diagram.js",
+    "fetch:physics": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/fetch-physics-full.ps1"
   }
 }
