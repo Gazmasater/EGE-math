@@ -1842,7 +1842,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
         return /кредит|банк|вклад|заём|долг|плат[её]ж|процентн.{0,20}ставк|ценн.{0,10}бумаг|пенсионн.{0,10}фонд/.test(text);
       }
       if (section === 'physics' && physicsTopic) {
-        const code = meta.match(/кэс:\s*([0-9]+(?:\.[0-9]+)*)/)?.[1] || '';
+        const code = meta.match(/\b([1-5]\.[0-9]+(?:\.[0-9]+)*)\b/)?.[1] || '';
         return code === physicsTopic || code.startsWith(physicsTopic + '.');
       }
       if (section === 'planimetry') {
@@ -1866,7 +1866,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
         const topic = link.dataset.physicsTopic;
         const count = allTasks.filter(task => {
           const meta = (task.header.innerText || task.header.textContent || '').replace(/\s+/g, ' ').toLowerCase();
-          const code = meta.match(/кэс:\s*([0-9]+(?:\.[0-9]+)*)/)?.[1] || '';
+          const code = meta.match(/\b([1-5]\.[0-9]+(?:\.[0-9]+)*)\b/)?.[1] || '';
           return code === topic || code.startsWith(topic + '.');
         }).length;
         const badge = link.querySelector('.physics-topic-count');
