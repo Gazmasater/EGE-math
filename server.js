@@ -1869,18 +1869,6 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       const header = id ? document.getElementById('i' + id) : null;
       return header ? { id, header, content } : null;
     }).filter(Boolean);
-    if (section === 'physics') {
-      document.querySelectorAll('[data-physics-topic]').forEach(link => {
-        const topic = link.dataset.physicsTopic;
-        const count = allTasks.filter(task => {
-          const meta = (task.header.innerText || task.header.textContent || '').replace(/\s+/g, ' ').toLowerCase();
-          const code = meta.match(/\b([1-5]\.[0-9]+(?:\.[0-9]+)*)\b/)?.[1] || '';
-          return code === topic || code.startsWith(topic + '.');
-        }).length;
-        const badge = link.querySelector('.physics-topic-count');
-        if (badge) badge.textContent = '— ' + count;
-      });
-    }
     const tasks = allTasks.filter(task => {
       const keep = (!allowedIds || allowedIds.includes(task.id)) && relevant(task);
       if (!keep) {
