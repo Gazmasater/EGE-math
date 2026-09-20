@@ -1774,7 +1774,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     : '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">';
   const headerTitle = seoOverride?.heading || title;
   const sectionMenu = isPhysics
-    ? `<a href="/physics" class="active">Физика</a><a href="/added?section=physics" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>`
+    ? `<a href="/" class="math-top-link">Математика</a><a href="/physics" class="active">Физика</a><a href="/added?section=physics" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>`
     : `<a href="/equations" class="${isEquations ? 'active' : ''}">Уравнения</a>
       <a href="/" class="${!isPlane && !isParameters && !isEquations && !isInequalities && !isOptimal && !isNumbers && !isFinance && !isSearch ? 'active' : ''}">Стереометрия</a>
       <a href="/inequalities" class="${isInequalities ? 'active' : ''}">Неравенства</a>
