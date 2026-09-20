@@ -1819,6 +1819,16 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const physicsTopicMenu = isPhysics && !isSearch ? renderPhysicsTopicMenu(physicsTopic?.code || '', physicsCounts) : '';
   const pagerScript = useCataloguePager ? `<script>
   window.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-physics-topic]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        sessionStorage.setItem('physics-menu-scroll-y', String(window.scrollY));
+      });
+    });
+    const savedPhysicsScroll = sessionStorage.getItem('physics-menu-scroll-y');
+    if (savedPhysicsScroll !== null) {
+      sessionStorage.removeItem('physics-menu-scroll-y');
+      window.scrollTo(0, Number(savedPhysicsScroll) || 0);
+    }
     let currentPage = 1;
     let resizeTimer;
     let pages = [];
