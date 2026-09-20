@@ -1526,8 +1526,8 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .local-menu a.active { background: white; color: #183153; }
     .physics-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #f0b429; border-radius: 8px; background: #f0b429; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
     .physics-top-button:hover { background: #ffd166; border-color: #ffd166; color: #183153; }
-    .math-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #8fc5f2; border-radius: 8px; background: #e7f3ff; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
-    .math-top-button:hover { background: #fff; border-color: #fff; }
+    .math-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #f0b429; border-radius: 8px; background: #f0b429; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
+    .math-top-button:hover { background: #ffd166; border-color: #ffd166; }
     .local-menu form { margin: 0; min-width: 0; }
     .local-menu button { padding: 7px 11px; border: 1px solid #ffffff70; border-radius: 6px; color: white;
       background: transparent; font: 500 14px Arial, sans-serif; cursor: pointer; width: 100%; height: 100%; white-space: normal; }
