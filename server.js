@@ -1750,7 +1750,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       window.MathJax = { Hub: { Register: { StartupHook: function () {} } } };
     }
     // Если внешний HTML задания нарушит работу скрипта, каталог всё равно не останется скрытым.
-    ${useCataloguePager ? "window.setTimeout(function () { document.documentElement.classList.remove('page-loading', 'added-loading'); }, 2500);" : ''}
+    ${useCataloguePager && !physicsTopic ? "window.setTimeout(function () { document.documentElement.classList.remove('page-loading', 'added-loading'); }, 2500);" : ''}
   </script>`;
   const documentTitle = seoOverride?.title || title;
   const pageTitle = `<title>${escapeHtml(documentTitle)}</title>`;
