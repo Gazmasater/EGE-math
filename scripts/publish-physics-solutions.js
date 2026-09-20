@@ -1,8 +1,12 @@
 const path = require('node:path');
+const fs = require('node:fs');
 const { DatabaseSync } = require('node:sqlite');
 
 const db = new DatabaseSync(path.join(__dirname, '..', 'storage', 'solutions.sqlite'));
 const now = new Date().toISOString();
+const sourceImageRoot = path.join(__dirname, '..', 'fipi-assets/docs/BA1F39653304A5B041B656915DC36B38/questions');
+const sourceImageDir = path.join(sourceImageRoot, fs.readdirSync(sourceImageRoot).find(name => name.startsWith('FF10CC')));
+const sourceImage = fs.readFileSync(path.join(sourceImageDir, fs.readdirSync(sourceImageDir).find(name => name.toLowerCase().includes('d05f53')))).toString('base64');
 const records = {
   '418761': {
     answer: '0,35',
@@ -27,6 +31,7 @@ for (const record of Object.values(records)) {
   record.diagramSvg = record.diagramSvg.replace('x1="355" y1="190" x2="425" y2="125"', 'x1="355" y1="190" x2="355" y2="100"').replace('x1="355" y1="190" x2="310" y2="190"', 'x1="355" y1="190" x2="355" y2="145"');
   record.diagramSvg = record.diagramSvg.replace('x1="455" y1="148" x2="455" y2="220"', 'x1="503" y1="100" x2="600" y2="100"').replace('x="434" y="220" width="42" height="80"', 'x="580" y="100" width="42" height="80"').replace('x="440" y="325"', 'x="586" y="205"').replace('x1="455" y1="220" x2="455" y2="175"', 'x1="600" y1="100" x2="600" y2="55"').replace('x="465" y="185"', 'x="610" y="62"').replace('x1="455" y1="300" x2="455" y2="345"', 'x1="600" y1="180" x2="600" y2="225"').replace('x="465" y="342"', 'x="610" y="222"');
   record.diagramSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 258" role="img" aria-label="Исходная схема ФИПИ с силами"><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="#c62828"/></marker></defs><image href="/fipi/docs/BA1F39653304A5B041B656915DC36B38/questions/FF10CC0B706688B8458A477CFD59F94B(copy1)/xs3qstsrcd05f53a86d244229b187747c6669580b_7_1759927351.png" x="0" y="0" width="354" height="258"/><line x1="238" y1="181" x2="238" y2="125" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/><text x="242" y="130" fill="#c62828" font-size="13" font-family="Arial">T₁</text><line x1="310" y1="180" x2="310" y2="145" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/><text x="314" y="150" fill="#c62828" font-size="13" font-family="Arial">T₂</text><line x1="310" y1="214" x2="310" y2="250" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/><text x="314" y="247" fill="#c62828" font-size="13" font-family="Arial">mg</text><line x1="125" y1="159" x2="125" y2="125" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/><text x="129" y="130" fill="#c62828" font-size="13" font-family="Arial">N</text><line x1="175" y1="202" x2="175" y2="235" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/><text x="179" y="232" fill="#c62828" font-size="13" font-family="Arial">Mg</text></svg>';
+  record.diagramSvg = record.diagramSvg.replace('href="/fipi/docs/BA1F39653304A5B041B656915DC36B38/questions/FF10CC0B706688B845A477CFD59F94B(copy1)/xs3qstsrcd05f53a86d244229b187747c6669580b_7_1759927351.png"', 'href="data:image/png;base64,' + sourceImage + '"');
 }
 
 const save = db.prepare(`INSERT INTO solutions (task_id, answer, solution, diagram_svg, diagram_caption, published, created_at, updated_at)
