@@ -1871,7 +1871,6 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
         }).length;
         const badge = link.querySelector('.physics-topic-count');
         if (badge) badge.textContent = '— ' + count;
-        if (!count) link.classList.add('local-task-hidden');
       });
     }
     const tasks = allTasks.filter(task => {
