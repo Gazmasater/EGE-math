@@ -344,10 +344,10 @@ function physicsTopicInfo(code) {
   return null;
 }
 
-function renderPhysicsTopicMenu(activeCode = '') {
+function renderPhysicsTopicMenu(activeCode = '', counts = {}) {
   const groups = PHYSICS_TOPICS.map(group => `<section class="physics-topic-group">
-    <a class="physics-topic-major ${activeCode === group.code ? 'active' : ''}" href="/physics?topic=${group.code}" data-physics-topic="${group.code}">${group.code}. ${escapeHtml(group.name)} <span class="physics-topic-count"></span></a>
-    <div class="physics-topic-children">${group.children.map(([code, name]) => `<a class="${activeCode === code ? 'active' : ''}" href="/physics?topic=${code}" data-physics-topic="${code}">${code} ${escapeHtml(name)} <span class="physics-topic-count"></span></a>`).join('')}</div>
+    <a class="physics-topic-major ${activeCode === group.code ? 'active' : ''}" href="/physics?topic=${group.code}" data-physics-topic="${group.code}">${group.code}. ${escapeHtml(group.name)} <span class="physics-topic-count">— ${counts[group.code] || 0}</span></a>
+    <div class="physics-topic-children">${group.children.map(([code, name]) => `<a class="${activeCode === code ? 'active' : ''}" href="/physics?topic=${code}" data-physics-topic="${code}">${code} ${escapeHtml(name)} <span class="physics-topic-count">— ${counts[code] || 0}</span></a>`).join('')}</div>
   </section>`).join('');
   return `<section class="physics-topics" aria-labelledby="physics-topics-title">
     <div class="physics-topics-heading"><h2 id="physics-topics-title">Типы задач по физике</h2><a class="${activeCode ? '' : 'active'}" href="/physics">Все 538 задач</a></div>
@@ -1805,7 +1805,15 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     <a href="${escapeHtml(taskNavigation.sectionPath)}">Все задания раздела</a>
     ${taskNavigation.next ? `<a href="/tasks/${escapeHtml(taskNavigation.next)}">Следующее →</a>` : '<span class="task-sequence-pager-disabled">Следующее →</span>'}
   </nav>` : '';
-  const physicsTopicMenu = isPhysics && !isSearch ? renderPhysicsTopicMenu(physicsTopic?.code || '') : '';
+  const physicsCounts = {};
+  if (isPhysics && !isSearch) {
+    for (const group of PHYSICS_TOPICS) {
+      for (const [code] of [[group.code, group.name], ...group.children]) {
+        physicsCounts[code] = (fixed.match(new RegExp(`\\b${code.replace('.', '\\.')}(?:\\.[0-9]+)*\\b`, 'g')) || []).length;
+      }
+    }
+  }
+  const physicsTopicMenu = isPhysics && !isSearch ? renderPhysicsTopicMenu(physicsTopic?.code || '', physicsCounts) : '';
   const pagerScript = useCataloguePager ? `<script>
   window.addEventListener('DOMContentLoaded', function () {
     let currentPage = 1;
