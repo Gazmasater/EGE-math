@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync('storage/solutions.sqlite');
+const row=db.prepare('select diagram_svg from solutions where task_id=?').get('7018C7');
+if(!row) throw new Error('7018C7 not found');
+let svg=row.diagram_svg;
+const marker='<text x="405" y="92" fill="#183153" font-family="Arial, sans-serif" font-size="30" font-weight="700">B</text>';
+const addition=marker+'\n  <text x="398" y="475" fill="#183153" font-family="Arial, sans-serif" font-size="30" font-weight="700">C</text>\n  <line x1="405" y1="110" x2="405" y2="448" stroke="#183153" stroke-width="2" stroke-dasharray="7 6"/>';
+if(!svg.includes(marker)) throw new Error('B marker not found');
+svg=svg.replace(marker,addition);
+db.prepare('update solutions set diagram_svg=?,updated_at=? where task_id=?').run(svg,new Date().toISOString(),'7018C7');
+console.log('7018C7 point C added to SVG');
