@@ -22,6 +22,9 @@ const records = {
 Ответ: 0,35.`
   }
 };
+for (const record of Object.values(records)) {
+  record.diagramSvg = record.diagramSvg.replace('</svg>', '<line x1="600" y1="180" x2="600" y2="225" stroke="#183153" stroke-width="2" marker-end="url(#arrow)"/><text x="610" y="222" font-family="Arial" font-size="16">mg</text></svg>');
+}
 
 const save = db.prepare(`INSERT INTO solutions (task_id, answer, solution, diagram_svg, diagram_caption, published, created_at, updated_at)
   VALUES (?, ?, ?, '', '', 1, ?, ?)
