@@ -2220,7 +2220,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       });
       pagers.forEach(pager => drawPager(pager, page));
       history.replaceState(null, '', '#page=' + page);
-      if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Переключение страницы не должно менять вертикальную позицию пользователя.
     }
 
     function measureAndBuildPages(anchorTask) {
