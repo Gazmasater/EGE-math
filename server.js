@@ -1526,6 +1526,8 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .local-menu a.active { background: white; color: #183153; }
     .physics-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #f0b429; border-radius: 8px; background: #f0b429; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
     .physics-top-button:hover { background: #ffd166; border-color: #ffd166; color: #183153; }
+    .math-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #8fc5f2; border-radius: 8px; background: #e7f3ff; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
+    .math-top-button:hover { background: #fff; border-color: #fff; }
     .local-menu form { margin: 0; min-width: 0; }
     .local-menu button { padding: 7px 11px; border: 1px solid #ffffff70; border-radius: 6px; color: white;
       background: transparent; font: 500 14px Arial, sans-serif; cursor: pointer; width: 100%; height: 100%; white-space: normal; }
@@ -1692,6 +1694,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       body.questions-container { padding: 12px; overflow-x: hidden; }
       .local-header { position: static; margin: -12px -12px 14px; padding: 14px 12px; font-size: 15px; }
       .physics-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
+      .math-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
       .local-header small { font-size: 12px; line-height: 1.35; }
       .telegram-banner { align-items: stretch; flex-direction: column; gap: 12px; margin-bottom: 14px; padding: 16px; }
       .telegram-banner-copy strong { font-size: 16px; }
@@ -1774,7 +1777,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     : '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">';
   const headerTitle = seoOverride?.heading || title;
   const sectionMenu = isPhysics
-    ? `<a href="/" class="math-top-link">Математика</a><a href="/physics" class="active">Физика</a><a href="/added?section=physics" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>`
+    ? `<a href="/physics" class="active">Физика</a><a href="/added?section=physics" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>`
     : `<a href="/equations" class="${isEquations ? 'active' : ''}">Уравнения</a>
       <a href="/" class="${!isPlane && !isParameters && !isEquations && !isInequalities && !isOptimal && !isNumbers && !isFinance && !isSearch ? 'active' : ''}">Стереометрия</a>
       <a href="/inequalities" class="${isInequalities ? 'active' : ''}">Неравенства</a>
@@ -1785,7 +1788,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       <a href="/numbers" class="${isNumbers ? 'active' : ''}">Числа и их свойства</a>
       <a href="/physics">Физика</a>
       <a href="/added?section=${section}" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>`;
-  const header = `<div class="local-header"><a class="physics-top-button" href="/physics">Физика</a><h1>${escapeHtml(headerTitle)}</h1>
+  const header = `<div class="local-header"><a class="${isPhysics ? 'math-top-button' : 'physics-top-button'}" href="${isPhysics ? '/' : '/physics'}">${isPhysics ? 'Математика' : 'Физика'}</a><h1>${escapeHtml(headerTitle)}</h1>
     <small>${subtitle}</small>
     ${hasTaskSolution ? `<a class="task-solution-jump" href="#solution-${escapeHtml(taskIdFromPath)}">Решение опубликовано — перейти к ответу ↓</a>` : ''}
     ${taskIdFromPath ? `<a class="task-feedback-jump" href="#feedback" data-feedback-modal-open data-task-id="${escapeHtml(taskIdFromPath)}">Ошибка или пожелание</a>` : ''}
