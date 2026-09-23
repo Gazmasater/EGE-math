@@ -33,21 +33,23 @@ const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY || '';
 const TURNSTILE_SITE_KEY = process.env.TURNSTILE_SITE_KEY || '';
 const TURNSTILE_HOSTNAMES = new Set(['ege-fipi.ru', 'www.ege-fipi.ru']);
 const MATH_SECTIONS = ['stereometry', 'planimetry', 'parameters', 'equations', 'inequalities', 'optimal', 'numbers', 'finance'];
-const PUBLIC_SECTIONS = [...MATH_SECTIONS, 'physics'];
+const PUBLIC_SECTIONS = [...MATH_SECTIONS, 'mathematics', 'physics'];
 const FIPI_PAGE_SIZE = 100;
 const FIPI_SOURCES = {
-  stereometry: { firstFile: 'questions.raw.html', extraPrefix: 'questions', theme: '7.2,7.3,7.4,7.5' },
-  planimetry: { firstFile: 'planimetry.raw.html', extraPrefix: 'planimetry', theme: '7.1' },
-  parameters: { firstFile: 'parameters.raw.html', extraPrefix: 'parameters', theme: '2.10' },
-  equations: { firstFile: 'equations-1.raw.html', extraPrefix: 'equations', theme: '2.1,2.2,2.3,2.4,2.9' },
-  inequalities: { firstFile: 'inequalities-1.raw.html', extraPrefix: 'inequalities', theme: '2.5,2.6,2.7,2.8,2.9' },
-  optimal: { firstFile: 'optimal-all-1.raw.html', extraPrefix: 'optimal-all', theme: '' },
-  numbers: { firstFile: 'numbers.raw.html', extraPrefix: 'numbers', theme: '1.1' },
-  finance: { firstFile: 'finance.raw.html', extraPrefix: 'finance', theme: '3.8' },
+  stereometry: { firstFile: 'questions.raw.html', extraPrefix: 'questions', theme: '7.2,7.3,7.4,7.5', answerKind: 'ILI_STD_FULL' },
+  planimetry: { firstFile: 'planimetry.raw.html', extraPrefix: 'planimetry', theme: '7.1', answerKind: 'ILI_STD_FULL' },
+  parameters: { firstFile: 'parameters.raw.html', extraPrefix: 'parameters', theme: '2.10', answerKind: 'ILI_STD_FULL' },
+  equations: { firstFile: 'equations-1.raw.html', extraPrefix: 'equations', theme: '2.1,2.2,2.3,2.4,2.9', answerKind: 'ILI_STD_FULL' },
+  inequalities: { firstFile: 'inequalities-1.raw.html', extraPrefix: 'inequalities', theme: '2.5,2.6,2.7,2.8,2.9', answerKind: 'ILI_STD_FULL' },
+  optimal: { firstFile: 'optimal-all-1.raw.html', extraPrefix: 'optimal-all', theme: '', answerKind: 'ILI_STD_FULL' },
+  numbers: { firstFile: 'numbers.raw.html', extraPrefix: 'numbers', theme: '1.1', answerKind: 'ILI_STD_FULL' },
+  finance: { firstFile: 'finance.raw.html', extraPrefix: 'finance', theme: '3.8', answerKind: 'ILI_STD_FULL' },
+  mathematics: { firstFile: 'mathematics-1.raw.html', extraPrefix: 'mathematics', theme: '' },
   physics: { firstFile: 'physics-1.raw.html', extraPrefix: 'physics', theme: '', project: PHYSICS_PROJECT }
 };
 const SECTION_INFO = {
-  stereometry: { name: 'Стереометрия', path: '/', topic: 'стереометрии', description: 'Задачи по стереометрии из открытого банка ФИПИ: условия, ответы и подробные решения.' },
+  mathematics: { name: 'Профильная математика', path: '/', topic: 'профильной математике', description: 'Все типы заданий ЕГЭ по профильной математике из открытого банка ФИПИ: задания с кратким и развёрнутым ответом по всем доступным темам КЭС.' },
+  stereometry: { name: 'Стереометрия', path: '/stereometry', topic: 'стереометрии', description: 'Задачи по стереометрии из открытого банка ФИПИ: условия, ответы и подробные решения.' },
   planimetry: { name: 'Планиметрия', path: '/planimetry', topic: 'планиметрии', description: 'Задачи по планиметрии из открытого банка ФИПИ: условия, ответы и подробные решения.' },
   parameters: { name: 'Задачи с параметром', path: '/parameters', topic: 'задачам с параметром', description: 'Задачи с параметром из открытого банка ФИПИ: условия, ответы и подробные решения.' },
   equations: { name: 'Уравнения', path: '/equations', topic: 'уравнениям', description: 'Уравнения профильного ЕГЭ из открытого банка ФИПИ: условия, ответы и подробные решения.' },
@@ -55,8 +57,65 @@ const SECTION_INFO = {
   optimal: { name: 'Оптимальный выбор', path: '/optimal', topic: 'задачам на оптимальный выбор', description: 'Задачи на оптимальный выбор из открытого банка ФИПИ: условия, ответы и подробные решения.' },
   numbers: { name: 'Числа и их свойства', path: '/numbers', topic: 'числам и их свойствам', description: 'Задачи по числам и их свойствам из открытого банка ФИПИ: условия, ответы и подробные решения.' },
   finance: { name: 'Финансовая математика', path: '/finance', topic: 'финансовой математике', description: 'Финансовые задачи профильного ЕГЭ из открытого банка ФИПИ: условия, ответы и подробные решения.' },
-  physics: { name: 'Физика', path: '/physics', topic: 'физике', description: 'Все задания ЕГЭ по физике с развёрнутым ответом из открытого банка ФИПИ.' }
+  physics: { name: 'Физика', path: '/physics', topic: 'физике', description: 'Все типы заданий ЕГЭ по физике из открытого банка ФИПИ: краткий ответ, выбор ответа, установление соответствия и развёрнутый ответ по всем доступным темам КЭС.' }
 };
+const MATH_TOPICS = [
+  { code: '1', name: 'Числа и вычисления', children: [
+    ['1.1', 'Натуральные и целые числа. Признаки делимости целых чисел'],
+    ['1.2', 'Рациональные числа. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби'],
+    ['1.3', 'Арифметический корень натуральной степени. Действия с арифметическими корнями натуральной степени'],
+    ['1.4', 'Степень с целым показателем. Степень с рациональным показателем. Свойства степени'],
+    ['1.5', 'Синус, косинус и тангенс числового аргумента. Арксинус, арккосинус, арктангенс числового аргумента'],
+    ['1.6', 'Логарифм числа. Десятичные и натуральные логарифмы'],
+    ['1.7', 'Действительные числа. Приближённые вычисления, округление, прикидка и оценка результата'],
+    ['1.8', 'Преобразование выражений'],
+    ['1.9', 'Комплексные числа']
+  ] },
+  { code: '2', name: 'Уравнения и неравенства', children: [
+    ['2.1', 'Целые и дробно-рациональные уравнения'],
+    ['2.2', 'Иррациональные уравнения'],
+    ['2.3', 'Тригонометрические уравнения'],
+    ['2.4', 'Показательные и логарифмические уравнения'],
+    ['2.5', 'Целые и дробно-рациональные неравенства'],
+    ['2.6', 'Иррациональные неравенства'],
+    ['2.7', 'Показательные и логарифмические неравенства'],
+    ['2.8', 'Тригонометрические неравенства'],
+    ['2.9', 'Системы и совокупности уравнений и неравенств'],
+    ['2.10', 'Уравнения, неравенства и системы с параметрами'],
+    ['2.11', 'Матрица системы линейных уравнений. Определитель матрицы']
+  ] },
+  { code: '3', name: 'Функции и графики', children: [
+    ['3.1', 'Функция, способы задания функции. График функции'],
+    ['3.2', 'Область определения и множество значений. Нули, монотонность, экстремумы и наибольшее значение функции'],
+    ['3.3', 'Степенная функция и корень n-й степени: свойства и графики'],
+    ['3.4', 'Тригонометрические функции, их свойства и графики'],
+    ['3.5', 'Показательная и логарифмическая функции, их свойства и графики'],
+    ['3.6', 'Точки разрыва. Асимптоты. Свойства функций, непрерывных на отрезке'],
+    ['3.7', 'Последовательности, способы задания последовательностей'],
+    ['3.8', 'Арифметическая и геометрическая прогрессии. Формула сложных процентов']
+  ] },
+  { code: '4', name: 'Начала математического анализа', children: [
+    ['4.1', 'Производная функции. Производные элементарных функций'],
+    ['4.2', 'Применение производной к исследованию функций, нахождению экстремумов и наибольшего значения'],
+    ['4.3', 'Первообразная. Интеграл']
+  ] },
+  { code: '5', name: 'Множества и логика', children: [
+    ['5.1', 'Множество, операции над множествами. Диаграммы Эйлера — Венна'],
+    ['5.2', 'Логика']
+  ] },
+  { code: '6', name: 'Вероятность и статистика', children: [
+    ['6.1', 'Описательная статистика'],
+    ['6.2', 'Вероятность'],
+    ['6.3', 'Комбинаторика']
+  ] },
+  { code: '7', name: 'Геометрия', children: [
+    ['7.1', 'Фигуры на плоскости'],
+    ['7.2', 'Прямые и плоскости в пространстве'],
+    ['7.3', 'Многогранники'],
+    ['7.4', 'Тела и поверхности вращения'],
+    ['7.5', 'Координаты и векторы']
+  ] }
+];
 const YANDEX_METRIKA_HEAD = `<!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -275,7 +334,7 @@ const cache = new Map();
 const sourceCache = new Map();
 let taskDirectoryPromise = null;
 let taskSearchIndexPromise = null;
-const added = { stereometry: [], planimetry: [], parameters: [], equations: [], inequalities: [], optimal: [], numbers: [], finance: [], physics: [] };
+const added = { stereometry: [], planimetry: [], parameters: [], equations: [], inequalities: [], optimal: [], numbers: [], finance: [], mathematics: [], physics: [] };
 try {
   const saved = JSON.parse(fsSync.readFileSync(ADDED_FILE, 'utf8'));
   for (const section of Object.keys(added)) {
@@ -320,17 +379,77 @@ function renderTelegramBanner() {
 }
 
 function sectionInfo(section) {
-  return SECTION_INFO[section] || SECTION_INFO.stereometry;
+  return SECTION_INFO[section] || SECTION_INFO.mathematics;
 }
 
-function renderPhysicsTopicMenu(activeCode = '', counts = {}, total = 0) {
-  const groups = PHYSICS_TOPICS.map(group => `<section class="physics-topic-group">
-    <a class="physics-topic-major ${activeCode === group.code ? 'active' : ''}" href="/physics?topic=${group.code}" data-physics-topic="${group.code}">${group.code}. ${escapeHtml(group.name)} <span class="physics-topic-count">— ${counts[group.code] || 0}</span></a>
-    <div class="physics-topic-children">${group.children.map(([code, name]) => `<a class="${activeCode === code ? 'active' : ''}" href="/physics?topic=${code}" data-physics-topic="${code}">${code} ${escapeHtml(name)} <span class="physics-topic-count">— ${counts[code] || 0}</span></a>`).join('')}</div>
-  </section>`).join('');
+function mathTopicInfo(code) {
+  if (!code) return null;
+  if (code === 'all') return { code, name: 'Все задания' };
+  for (const group of MATH_TOPICS) {
+    if (group.code === code) return { code, name: group.name };
+    const child = group.children.find(([childCode]) => childCode === code);
+    if (child) return { code, name: child[1] };
+  }
+  return null;
+}
+
+function catalogPhysicsTopicInfo(code) {
+  if (!code) return null;
+  if (code === 'all') return { code, name: 'Все задания' };
+  if (code === 'unclassified') return { code, name: 'Без указанной темы КЭС' };
+  return physicsTopicInfo(code);
+}
+
+function renderMathTopicMenu(activeCode = '', counts = {}, total = 0) {
+  const groups = MATH_TOPICS.map(group => {
+    const groupCount = counts[group.code] || 0;
+    const groupIsActive = activeCode === group.code || activeCode.startsWith(`${group.code}.`);
+    const groupLink = groupCount
+      ? `<a class="math-topic-major ${activeCode === group.code ? 'active' : ''}" href="/?topic=${group.code}">Все задания раздела <span class="math-topic-count">${groupCount}</span></a>`
+      : '<span class="math-topic-major disabled" aria-disabled="true">В банке пока нет заданий</span>';
+    const children = group.children.map(([code, name]) => {
+      const count = counts[code] || 0;
+      return count
+        ? `<a class="${activeCode === code ? 'active' : ''}" href="/?topic=${code}"><strong>${code}</strong> ${escapeHtml(name)} <span class="math-topic-count">${count}</span></a>`
+        : `<span class="disabled" aria-disabled="true"><strong>${code}</strong> ${escapeHtml(name)} <span class="math-topic-count">0</span></span>`;
+    }).join('');
+    return `<details class="math-topic-group" ${groupIsActive ? 'open' : ''}>
+      <summary><span>${group.code}. ${escapeHtml(group.name)}</span><span class="math-topic-count">${groupCount}</span></summary>
+      <div class="math-topic-children">${groupLink}${children}</div>
+    </details>`;
+  }).join('');
+  return `<section class="math-topics" aria-labelledby="math-topics-title">
+    <div class="math-topics-heading">
+      <div><h2 id="math-topics-title">Все типы задач по математике</h2><p>Темы и разделы КЭС приведены по открытому банку ФИПИ.</p></div>
+      <a class="math-all-link ${activeCode === 'all' ? 'active' : ''}" href="/?topic=all">Все задания <span>${total}</span></a>
+    </div>
+    <div class="math-topic-grid">${groups}</div>
+  </section>`;
+}
+
+function renderPhysicsTopicMenu(activeCode = '', counts = {}, total = 0, unclassified = 0) {
+  const groups = PHYSICS_TOPICS.map(group => {
+    const groupCount = counts[group.code] || 0;
+    const groupLink = groupCount
+      ? `<a class="physics-topic-major ${activeCode === group.code ? 'active' : ''}" href="/physics?topic=${group.code}">${group.code}. ${escapeHtml(group.name)} <span class="physics-topic-count">${groupCount}</span></a>`
+      : `<span class="physics-topic-major disabled" aria-disabled="true">${group.code}. ${escapeHtml(group.name)} <span class="physics-topic-count">0</span></span>`;
+    const children = group.children.map(([code, name]) => {
+      const count = counts[code] || 0;
+      return count
+        ? `<a class="${activeCode === code ? 'active' : ''}" href="/physics?topic=${code}"><strong>${code}</strong> ${escapeHtml(name)} <span class="physics-topic-count">${count}</span></a>`
+        : `<span class="disabled" aria-disabled="true"><strong>${code}</strong> ${escapeHtml(name)} <span class="physics-topic-count">0</span></span>`;
+    }).join('');
+    return `<section class="physics-topic-group">${groupLink}<div class="physics-topic-children">${children}</div></section>`;
+  }).join('');
+  const unclassifiedLink = unclassified
+    ? `<a class="physics-unclassified ${activeCode === 'unclassified' ? 'active' : ''}" href="/physics?topic=unclassified">Без указанной темы КЭС <span class="physics-topic-count">${unclassified}</span></a>`
+    : '';
   return `<section class="physics-topics" aria-labelledby="physics-topics-title">
-    <div class="physics-topics-heading"><h2 id="physics-topics-title">Типы задач по физике</h2><a class="${activeCode ? '' : 'active'}" href="/physics">Все задачи: ${total}</a></div>
-    <div class="physics-topic-grid">${groups}</div>
+    <div class="physics-topics-heading">
+      <div><h2 id="physics-topics-title">Все типы задач по физике</h2><p>Разделы и темы КЭС приведены по открытому банку ФИПИ.</p></div>
+      <a class="physics-all-link ${activeCode === 'all' ? 'active' : ''}" href="/physics?topic=all">Все задания <span>${total}</span></a>
+    </div>
+    <div class="physics-topic-grid">${groups}</div>${unclassifiedLink}
   </section>`;
 }
 
@@ -1513,6 +1632,56 @@ function sourceTaskEntries(html) {
   });
 }
 
+const MATH_TOPIC_CODES = new Set(MATH_TOPICS.flatMap(group => group.children.map(([code]) => code)));
+
+function mathTaskTopicCodes(task) {
+  return Array.from(new Set((task.meta.match(/\b[1-7]\.\d+(?:\.\d+)*\b/g) || [])
+    .filter(code => MATH_TOPIC_CODES.has(code))));
+}
+
+function mathTaskMatchesTopic(task, topicCode) {
+  if (topicCode === 'all') return true;
+  const codes = mathTaskTopicCodes(task);
+  if (/^[1-7]$/.test(topicCode)) return codes.some(code => code.startsWith(`${topicCode}.`));
+  return codes.includes(topicCode);
+}
+
+function mathTopicStats(html) {
+  const tasks = sourceTaskEntries(html);
+  const counts = Object.fromEntries(MATH_TOPICS.flatMap(group => [
+    [group.code, 0],
+    ...group.children.map(([code]) => [code, 0])
+  ]));
+  for (const task of tasks) {
+    const codes = mathTaskTopicCodes(task);
+    for (const group of MATH_TOPICS) {
+      if (codes.some(code => code.startsWith(`${group.code}.`))) counts[group.code] += 1;
+      for (const [code] of group.children) {
+        if (codes.includes(code)) counts[code] += 1;
+      }
+    }
+  }
+  return { total: tasks.length, counts };
+}
+
+function filterMathTopicHtml(html, topicCode) {
+  const tasks = sourceTaskEntries(html);
+  if (!tasks.length || topicCode === 'all') return html;
+  const prefix = html.slice(0, tasks[0].start);
+  const suffix = html.slice(tasks[tasks.length - 1].end);
+  const selected = topicCode
+    ? tasks.filter(task => mathTaskMatchesTopic(task, topicCode))
+    : [];
+  return `${prefix}${selected.map(task => task.fragment).join('')}${suffix}`;
+}
+
+function taskMatchesPhysicsCatalogTopic(task, topicCode) {
+  if (topicCode === 'all') return true;
+  const classification = physicsClassification(task);
+  if (topicCode === 'unclassified') return classification.topicCodes.length === 0;
+  return taskMatchesTopic(task, topicCode);
+}
+
 function isNumberPropertiesTask(text) {
   const numberTopic = /натуральн|цел(?:ое|ых|ые|ыми)|делит|кратн|прост(?:ое|ых|ые)|остат|цифр|числ|дроб/.test(text);
   const unrelated = /кредит|банк|вклад|рубл|заём|прибыл|производств|пирами|призм|тетраэдр/.test(text);
@@ -1556,7 +1725,7 @@ function filterSectionHtml(html, section, options = {}) {
   const selectedIds = new Set();
   const selected = tasks.filter(task => {
     if (!isSectionTaskRelevant(section, task) || selectedIds.has(task.id)) return false;
-    if (section === 'physics' && options.physicsTopic && !taskMatchesTopic(task, options.physicsTopic)) return false;
+    if (section === 'physics' && options.physicsTopic && !taskMatchesPhysicsCatalogTopic(task, options.physicsTopic)) return false;
     if (options.allowedIds && !options.allowedIds.has(task.id)) return false;
     selectedIds.add(task.id);
     return true;
@@ -1571,7 +1740,8 @@ function physicsCatalog(html) {
     const tasks = sourceTaskEntries(html);
     const topics = PHYSICS_TOPICS.flatMap(group => [{code: group.code, name: group.name}, ...group.children.map(([code, name]) => ({code, name}))]);
     const counts = Object.fromEntries(topics.map(topic => [topic.code, tasks.filter(task => taskMatchesTopic(task, topic.code)).length]));
-    physicsCatalogData = {tasks, topics, counts, total: tasks.length};
+    const unclassified = tasks.filter(task => physicsClassification(task).topicCodes.length === 0).length;
+    physicsCatalogData = {tasks, topics, counts, total: tasks.length, unclassified};
     physicsCatalogSource = html;
   }
   return physicsCatalogData;
@@ -1602,6 +1772,8 @@ function filterOptimalHtml(html) {
 }
 
 function decorate(html, section, onlyAdded = null, seoOverride = null) {
+  const isMathematics = section === 'mathematics';
+  const isStereometry = section === 'stereometry';
   const isPlane = section === 'planimetry';
   const isParameters = section === 'parameters';
   const isEquations = section === 'equations';
@@ -1611,22 +1783,43 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const isFinance = section === 'finance';
   const isPhysics = section === 'physics';
   const isSearch = Boolean(seoOverride?.isSearch);
-  const physicsTopic = isPhysics ? physicsTopicInfo(seoOverride?.physicsTopic) : null;
-  const physicsCounts = seoOverride?.physicsCounts || {};
-  const physicsTotal = seoOverride?.physicsTotal || 0;
+  const mathTopic = isMathematics ? mathTopicInfo(seoOverride?.mathTopic) : null;
+  const mathStats = seoOverride?.mathStats || { total: 0, counts: {} };
+  const isMathCatalogue = Boolean(seoOverride?.mathCatalogue);
+  const physicsTopic = isPhysics ? catalogPhysicsTopicInfo(seoOverride?.physicsTopic) : null;
+  const physicsStats = seoOverride?.physicsStats || {
+    total: seoOverride?.physicsTotal || 0,
+    counts: seoOverride?.physicsCounts || {},
+    unclassified: seoOverride?.physicsUnclassified || 0
+  };
+  const isPhysicsCatalogue = Boolean(seoOverride?.physicsCatalogue);
   const { name: baseTitle, path: sectionPath, description: sectionDescription } = sectionInfo(section);
   const publishedSolutionIds = listPublishedSolutionIds.all().map(record => record.task_id);
   const taskIdFromPath = seoOverride?.pathname?.match(/^\/tasks\/([A-Z0-9]+)$/i)?.[1] || '';
   const hasTaskSolution = taskIdFromPath && publishedSolutionIds.includes(taskIdFromPath);
   const taskNavigation = seoOverride?.taskNavigation || null;
-  const useCataloguePager = !seoOverride?.disableCataloguePager;
-  const title = onlyAdded ? `Добавленные задачи — ${baseTitle.toLowerCase()}` : (isPhysics
-    ? (physicsTopic ? `${physicsTopic.name} — задачи ЕГЭ по физике` : 'ЕГЭ по физике — задачи из банка ФИПИ')
-    : `${baseTitle} — ЕГЭ по математике, профильный уровень`);
+  const useCataloguePager = !seoOverride?.disableCataloguePager
+    && !(isMathematics && isMathCatalogue && !mathTopic && !onlyAdded)
+    && !(isPhysics && isPhysicsCatalogue && !physicsTopic && !onlyAdded);
+  const title = onlyAdded ? `Добавленные задачи — ${baseTitle.toLowerCase()}` : (isMathematics
+    ? (mathTopic?.code === 'all'
+      ? 'Все задания ЕГЭ по профильной математике'
+      : (mathTopic ? `${mathTopic.name} — задания ЕГЭ по профильной математике` : 'Профильная математика — все типы заданий ЕГЭ'))
+    : (isPhysics
+    ? (physicsTopic?.code === 'all'
+      ? 'Все задания ЕГЭ по физике'
+      : (physicsTopic ? `${physicsTopic.name} — задания ЕГЭ по физике` : 'Физика — все типы заданий ЕГЭ'))
+    : `${baseTitle} — задания второй части`));
   const subtitle = isSearch
     ? 'Поиск по номеру и тексту условий открытого банка ФИПИ'
+    : (isMathematics
+    ? (mathTopic && mathTopic.code !== 'all'
+      ? `ФИПИ · КЭС ${mathTopic.code} · краткий и развёрнутый ответ · ${mathStats.counts[mathTopic.code] || 0} заданий`
+      : `ФИПИ · все темы КЭС · краткий и развёрнутый ответ · ${mathStats.total || 0} заданий`)
     : (isPhysics
-    ? (physicsTopic ? `ФИПИ · тема сайта ${physicsTopic.code} · ${physicsTopic.name} · развёрнутый ответ` : `ФИПИ · все разделы ЕГЭ по физике · заданий: ${physicsTotal}`)
+    ? (physicsTopic && physicsTopic.code !== 'all'
+      ? `ФИПИ · ${physicsTopic.code === 'unclassified' ? physicsTopic.name : `КЭС ${physicsTopic.code} · ${physicsTopic.name}`} · все форматы ответа · ${physicsTopic.code === 'unclassified' ? physicsStats.unclassified : (physicsStats.counts[physicsTopic.code] || 0)} заданий`
+      : `ФИПИ · все темы КЭС · все форматы ответа · ${physicsStats.total || 0} заданий`)
     : (isFinance
     ? 'ФИПИ · сложные проценты и прогрессии · развёрнутый ответ · проверенная подборка'
     : (isNumbers
@@ -1641,7 +1834,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     ? 'ФИПИ · тема 2.10 · развёрнутый ответ · проверенная подборка'
     : (isPlane
       ? 'ФИПИ · тема 7.1 · развёрнутый ответ · проверенная подборка'
-      : 'ФИПИ · темы 7.2–7.5 · развёрнутый ответ · проверенная подборка'))))))));
+      : 'ФИПИ · темы 7.2–7.5 · развёрнутый ответ · проверенная подборка')))))))));
   const fixed = normalizeFipiHtml(html)
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="ru"$1>')
     .replace(/(<div class="id-text">[\s\S]*?<span class="canselect">)([A-Z0-9]{4,32})(<\/span>)/gi,
@@ -1649,6 +1842,8 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
 
   const localStyle = `
   <style>
+    html { width: 100%; max-width: 100%; min-width: 0 !important; overflow-x: hidden; }
+    *, *::before, *::after { box-sizing: border-box; }
     html.added-loading .task-header-panel,
     html.added-loading .qblock { display: none !important; }
     html.page-loading .task-header-panel,
@@ -1659,12 +1854,12 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     math { font-family: 'Cambria Math', 'STIX Two Math', serif; }
     /* В исходных стилях ФИПИ для этого body задан overflow: hidden.
        Без переопределения длинные условия и опубликованные решения не прокручиваются на телефонах. */
-    body.questions-container { max-width: 1000px; margin: 0 auto; padding: 24px; overflow-x: hidden; overflow-y: auto !important; background: #f4f6f8; }
+    body.questions-container { width: 100%; max-width: 1000px; min-width: 0 !important; margin: 0 auto; padding: 24px; overflow-x: hidden; overflow-y: auto !important; background: #f4f6f8; }
     body.questions-container > table { background: white; box-shadow: 0 2px 14px #00000018; }
     .local-header { position: sticky; top: 0; z-index: 50; margin: -24px -24px 20px; padding: 14px 24px;
       background: #183153; color: white; font: 600 16px/1.35 Arial, sans-serif; box-shadow: 0 2px 8px #0003; }
     .local-header small { display: block; margin-top: 3px; font-weight: 400; opacity: .82; }
-    .local-header h1 { margin: 0; font: inherit; color: inherit; }
+    .local-header h1 { margin: 0; color: #fff; font: inherit; white-space: normal !important; overflow-wrap: anywhere; }
     .seo-breadcrumbs { margin: 0 0 16px; color: #40566d; font: 14px/1.5 Arial, sans-serif; }
     .seo-breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 6px 10px; margin: 0; padding: 0; list-style: none; }
     .seo-breadcrumbs li { min-width: 0; overflow-wrap: anywhere; }
@@ -1678,9 +1873,9 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .telegram-banner-copy { display: grid; gap: 4px; }
     .telegram-banner-copy strong { font-size: 18px; line-height: 1.25; }
     .telegram-banner-copy span { color: #40566d; font-size: 14px; line-height: 1.4; }
-    .telegram-banner-action { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 7px; min-height: 42px;
+    .telegram-banner a.telegram-banner-action { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 7px; min-height: 42px;
       padding: 10px 14px; border-radius: 7px; background: #229ed9; color: #fff; font: 700 14px/1.2 Arial, sans-serif; text-align: center; text-decoration: none; }
-    .telegram-banner-action:hover { background: #168ac2; color: #fff; }
+    .telegram-banner a.telegram-banner-action:hover { background: #168ac2; color: #fff; }
     .telegram-banner-action span { font-weight: 500; }
     .task-solution-jump { display: inline-flex; margin-top: 9px; padding: 7px 10px; border-radius: 6px; background: #e8f5e9;
       color: #1d5e2d; font: 700 14px Arial, sans-serif; text-decoration: none; }
@@ -1701,20 +1896,61 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .local-menu button { padding: 7px 11px; border: 1px solid #ffffff70; border-radius: 6px; color: white;
       background: transparent; font: 500 14px Arial, sans-serif; cursor: pointer; width: 100%; height: 100%; white-space: normal; }
     .local-menu button:hover { background: #ffffff18; }
+    .math-topics { margin: 0 0 20px; padding: 20px; border: 1px solid #cbd7e4; border-radius: 10px;
+      background: #fff; color: #243447; font-family: Arial, sans-serif; box-shadow: 0 2px 10px #18315312; }
+    .math-topics-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 16px; }
+    .math-topics-heading h2 { margin: 0; color: #183153; font-size: 23px; }
+    .math-topics-heading p { margin: 5px 0 0; color: #526273; font-size: 14px; }
+    a.math-all-link { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 10px 13px; border: 1px solid #1769aa;
+      border-radius: 7px; color: #1769aa; font-weight: 700; text-decoration: none; }
+    .math-all-link span { display: inline-grid; min-width: 30px; place-items: center; padding: 2px 6px; border-radius: 12px; background: #e7f1fb; }
+    a.math-all-link:hover, a.math-all-link.active { background: #1769aa; color: #fff; }
+    .math-all-link:hover span, .math-all-link.active span { background: #ffffff2b; }
+    .math-topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+    .math-topic-group { overflow: hidden; border: 1px solid #d8e1eb; border-radius: 8px; background: #fbfdff; }
+    .math-topic-group summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 14px;
+      background: #eef4fa; color: #183153; font-weight: 700; cursor: pointer; }
+    .math-topic-group summary > span:first-child { min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+    .math-topic-group summary:hover { background: #e3edf7; }
+    .math-topic-group[open] summary { border-bottom: 1px solid #d8e1eb; }
+    .math-topic-count { flex: 0 0 auto; color: #526273; font-weight: 600; }
+    .math-topic-children { display: grid; gap: 4px; padding: 8px; }
+    .math-topic-children a, .math-topic-children > span { display: block; padding: 8px 10px; border-radius: 6px; color: #1769aa;
+      font-size: 14px; line-height: 1.35; text-decoration: none; }
+    .math-topic-children a:hover { background: #eaf3fb; }
+    .math-topic-children a.active { background: #1769aa; color: #fff; }
+    .math-topic-children a.active .math-topic-count { color: inherit; }
+    .math-topic-children .math-topic-major { margin-bottom: 3px; background: #eef4fa; color: #183153; font-weight: 700; }
+    .math-topic-children .disabled { color: #8492a3; background: #f5f7f9; cursor: not-allowed; }
+    .math-topic-children a .math-topic-count, .math-topic-children > span .math-topic-count { float: right; margin-left: 8px; }
+    .math-topic-prompt { margin: 0 0 20px; padding: 18px 20px; border-left: 4px solid #f0b429; border-radius: 7px;
+      background: #fff9e8; color: #40566d; font: 15px/1.5 Arial, sans-serif; }
+    .math-topic-prompt strong { color: #183153; }
     .physics-topics { margin: 0 0 20px; padding: 18px; border: 1px solid #cbd7e4; border-radius: 10px;
       background: #fff; color: #243447; font-family: Arial, sans-serif; box-shadow: 0 2px 10px #18315312; }
-    .physics-topics-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
-    .physics-topics h2 { margin: 0; color: #183153; font-size: 21px; }
+    .physics-topics-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 14px; }
+    .physics-topics h2 { margin: 0; color: #183153; font-size: 23px; }
+    .physics-topics-heading p { margin: 5px 0 0; color: #526273; font-size: 14px; }
     .physics-topics a { color: #1769aa; text-decoration: none; }
     .physics-topics a:hover { text-decoration: underline; }
     .physics-topics a.active { color: #fff; background: #1769aa; }
-    .physics-topics-heading > a, .physics-topic-major, .physics-topic-children a { display: block; padding: 8px 10px; border-radius: 6px; }
+    a.physics-all-link { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 10px 13px; border: 1px solid #1769aa; border-radius: 7px; font-weight: 700; }
+    .physics-all-link span { display: inline-grid; min-width: 30px; place-items: center; padding: 2px 6px; border-radius: 12px; background: #e7f1fb; }
+    a.physics-all-link:hover, a.physics-all-link.active { color: #fff; background: #1769aa; text-decoration: none; }
+    .physics-all-link:hover span, .physics-all-link.active span { background: #ffffff2b; }
+    .physics-topic-major, .physics-topic-children a, .physics-topic-children > span { display: block; padding: 8px 10px; border-radius: 6px; }
     .physics-topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
     .physics-topic-group { overflow: hidden; border: 1px solid #d8e1eb; border-radius: 8px; }
-    .physics-topic-major { font-weight: 700; background: #eef4fa; }
+    .physics-topic-major { display: flex; justify-content: space-between; gap: 10px; font-weight: 700; background: #eef4fa; }
     .physics-topic-children { display: grid; gap: 2px; padding: 6px; }
-    .physics-topic-count { color: #526273; font-weight: 400; }
+    .physics-topic-children a .physics-topic-count, .physics-topic-children > span .physics-topic-count { float: right; margin-left: 8px; }
+    .physics-topic-count { flex: 0 0 auto; color: #526273; font-weight: 600; }
     .physics-topics a.active .physics-topic-count { color: inherit; }
+    .physics-topics .disabled { color: #8492a3; background: #f5f7f9; cursor: not-allowed; }
+    a.physics-unclassified { display: flex; justify-content: space-between; gap: 10px; margin-top: 12px; padding: 10px 12px; border: 1px dashed #afbdcd; border-radius: 7px; }
+    .physics-topic-prompt { margin: 0 0 20px; padding: 18px 20px; border-left: 4px solid #f0b429; border-radius: 7px;
+      background: #fff9e8; color: #40566d; font: 15px/1.5 Arial, sans-serif; }
+    .physics-topic-prompt strong { color: #183153; }
     .site-search-form { display: flex; align-items: stretch; gap: 7px; margin-top: 10px; font-family: Arial, sans-serif; }
     .site-search-form input { min-width: 0; flex: 1 1 230px; padding: 8px 10px; border: 1px solid #afbdcd; border-radius: 6px;
       color: #183153; background: #fff; font: 14px/1.2 Arial, sans-serif; }
@@ -1862,18 +2098,25 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     @media (max-width: 700px) {
       body.questions-container { padding: 12px; overflow-x: hidden; }
       .local-header { position: static; margin: -12px -12px 14px; padding: 14px 12px; font-size: 15px; }
+      .math-topics, .telegram-banner, .local-pager { max-width: 100%; }
       .physics-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
       .math-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
       .local-header small { font-size: 12px; line-height: 1.35; }
       .telegram-banner { align-items: stretch; flex-direction: column; gap: 12px; margin-bottom: 14px; padding: 16px; }
       .telegram-banner-copy strong { font-size: 16px; }
       .telegram-banner-action { width: 100%; }
-      .local-menu { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 12px; }
+      .local-menu { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 12px; }
       .local-menu a, .local-menu button { display: grid; place-items: center; min-height: 46px; padding: 6px 4px;
         font-size: 12px; line-height: 1.2; overflow-wrap: anywhere; }
       .physics-topics { padding: 14px 12px; }
       .physics-topics-heading { align-items: flex-start; flex-direction: column; }
+      .physics-all-link { width: 100%; justify-content: center; }
       .physics-topic-grid { grid-template-columns: 1fr; }
+      .math-topics { padding: 15px 12px; }
+      .math-topics-heading { flex-direction: column; }
+      .math-topics-heading h2, .math-topics-heading p { white-space: normal; overflow-wrap: anywhere; }
+      .math-all-link { width: 100%; justify-content: center; }
+      .math-topic-grid { grid-template-columns: 1fr; }
       .qblock { margin-top: 8px; padding: 14px 16px; }
       .qblock, .qblock p, .qblock .hint { font-size: 17px; line-height: 1.48; text-align: left; }
       .qblock > form table[align="right"] { float: none; margin: 12px auto; max-width: 100%; }
@@ -1923,20 +2166,30 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   </script>`;
   const documentTitle = seoOverride?.title || title;
   const pageTitle = `<title>${escapeHtml(documentTitle)}</title>`;
+  const cataloguePathname = isMathematics && isMathCatalogue && mathTopic
+    ? `/?topic=${encodeURIComponent(mathTopic.code)}`
+    : (isPhysics && isPhysicsCatalogue && physicsTopic
+      ? `/physics?topic=${encodeURIComponent(physicsTopic.code)}`
+      : sectionPath);
   const pageDescription = seoOverride?.description || (onlyAdded
     ? `Новые задания раздела «${baseTitle}» из открытого банка ФИПИ.`
-    : sectionDescription);
+    : (isMathematics && mathTopic && mathTopic.code !== 'all'
+      ? truncateText(`Задания ЕГЭ по профильной математике по теме КЭС ${mathTopic.code} «${mathTopic.name}» из открытого банка ФИПИ. Задания с кратким и развёрнутым ответом.`, 250)
+      : (isPhysics && physicsTopic && physicsTopic.code !== 'all'
+        ? truncateText(`${physicsTopic.code === 'unclassified' ? 'Задания ЕГЭ по физике без указанной темы КЭС' : `Задания ЕГЭ по физике по теме КЭС ${physicsTopic.code} «${physicsTopic.name}»`} из открытого банка ФИПИ. Все форматы ответа.`, 250)
+        : sectionDescription)));
+  const seoPathname = seoOverride?.pathname || cataloguePathname;
   const pageSeo = renderSeoMetadata({
     title: documentTitle,
     description: pageDescription,
-    pathname: seoOverride?.pathname || sectionPath,
+    pathname: seoPathname,
     robots: onlyAdded ? 'noindex,follow' : 'index,follow',
     structuredData: {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: title,
       description: pageDescription,
-      url: absoluteUrl(sectionPath),
+      url: absoluteUrl(seoPathname),
       inLanguage: 'ru',
       isPartOf: { '@type': 'WebSite', name: 'ЕГЭ ФИПИ — математика и физика', url: SITE_ORIGIN }
     },
@@ -1948,16 +2201,17 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const headerTitle = seoOverride?.heading || title;
   const sectionMenu = isPhysics
     ? `<a href="/math">Математика</a>
+      <a href="/physics" class="${!onlyAdded ? 'active' : ''}">Все типы физики</a>
       <a href="/added?section=physics" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>`
-    : `<a href="/math">Математика</a>
-      <a href="/equations" class="${isEquations ? 'active' : ''}">Уравнения</a>
-      <a href="/" class="${!isPlane && !isParameters && !isEquations && !isInequalities && !isOptimal && !isNumbers && !isFinance && !isSearch ? 'active' : ''}">Стереометрия</a>
-      <a href="/inequalities" class="${isInequalities ? 'active' : ''}">Неравенства</a>
-      <a href="/finance" class="${isFinance ? 'active' : ''}">Финансовая математика</a>
-      <a href="/optimal" class="${isOptimal ? 'active' : ''}">Оптимальный выбор</a>
-      <a href="/planimetry" class="${isPlane ? 'active' : ''}">Планиметрия</a>
-      <a href="/parameters" class="${isParameters ? 'active' : ''}">Задачи с параметром</a>
-      <a href="/numbers" class="${isNumbers ? 'active' : ''}">Числа и их свойства</a>
+    : `<a href="/" class="${isMathematics && !onlyAdded ? 'active' : ''}">Все типы математики</a>
+      <a href="/equations" class="${isEquations && !onlyAdded ? 'active' : ''}">Уравнения</a>
+      <a href="/stereometry" class="${isStereometry && !onlyAdded ? 'active' : ''}">Стереометрия</a>
+      <a href="/inequalities" class="${isInequalities && !onlyAdded ? 'active' : ''}">Неравенства</a>
+      <a href="/finance" class="${isFinance && !onlyAdded ? 'active' : ''}">Финансовая математика</a>
+      <a href="/optimal" class="${isOptimal && !onlyAdded ? 'active' : ''}">Оптимальный выбор</a>
+      <a href="/planimetry" class="${isPlane && !onlyAdded ? 'active' : ''}">Планиметрия</a>
+      <a href="/parameters" class="${isParameters && !onlyAdded ? 'active' : ''}">Задачи с параметром</a>
+      <a href="/numbers" class="${isNumbers && !onlyAdded ? 'active' : ''}">Числа и их свойства</a>
       <a href="/physics">Физика</a>
       <a href="/added?section=${section}" class="${onlyAdded ? 'active' : ''}">Добавленные задачи</a>`;
   const header = `<div class="local-header"><a class="${isPhysics ? 'math-top-button' : 'physics-top-button'}" href="${isPhysics ? '/math' : '/physics'}">${isPhysics ? 'Математика' : 'Физика'}</a><h1>${escapeHtml(headerTitle)}</h1>
@@ -1980,7 +2234,18 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     <a href="${escapeHtml(taskNavigation.sectionPath)}">Все задания раздела</a>
     ${taskNavigation.next ? `<a href="/tasks/${escapeHtml(taskNavigation.next)}">Следующее →</a>` : '<span class="task-sequence-pager-disabled">Следующее →</span>'}
   </nav>` : '';
-  const physicsTopicMenu = isPhysics && !isSearch ? renderPhysicsTopicMenu(physicsTopic?.code || '', physicsCounts, physicsTotal) : '';
+  const physicsTopicMenu = isPhysics && !isSearch
+    ? renderPhysicsTopicMenu(physicsTopic?.code || '', physicsStats.counts, physicsStats.total, physicsStats.unclassified)
+    : '';
+  const physicsTopicPrompt = isPhysics && isPhysicsCatalogue && !onlyAdded && !physicsTopic
+    ? '<p class="physics-topic-prompt"><strong>Выберите раздел или тему КЭС.</strong> Можно открыть тематическую подборку либо сразу весь банк заданий по физике.</p>'
+    : '';
+  const mathTopicMenu = isMathematics && isMathCatalogue && !onlyAdded
+    ? renderMathTopicMenu(mathTopic?.code || '', mathStats.counts, mathStats.total)
+    : '';
+  const mathTopicPrompt = isMathematics && isMathCatalogue && !onlyAdded && !mathTopic
+    ? '<p class="math-topic-prompt"><strong>Выберите раздел или тему КЭС.</strong> Можно открыть отдельный тип задач либо сразу весь банк профильной математики.</p>'
+    : '';
   const pagerScript = useCataloguePager ? `<script>
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   window.addEventListener('DOMContentLoaded', function () {
@@ -1988,6 +2253,9 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     let resizeTimer;
     let pages = [];
     const publishedSolutionIds = new Set(${JSON.stringify(publishedSolutionIds)});
+    const emptyCatalogueMessage = ${JSON.stringify(onlyAdded
+      ? 'Новых задач после последнего обновления нет.'
+      : 'По выбранной теме заданий в банке ФИПИ пока нет.')};
     // Состав раздела уже отфильтрован сервером; браузер только разбивает его на страницы.
     // Старый HTML банка неидеален. Собираем пары по устойчивому идентификатору
     // самого задания, а не по родительскому элементу панели: мобильные браузеры
@@ -2287,7 +2555,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     document.body.appendChild(bottom);
     const pagers = [top, bottom];
     if (!tasks.length) {
-      pagers.forEach(pager => { pager.textContent = 'Новых задач после последнего обновления нет.'; });
+      pagers.forEach(pager => { pager.textContent = emptyCatalogueMessage; });
       document.documentElement.classList.remove('page-loading');
       return;
     }
@@ -2422,7 +2690,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .replace(/<link\b(?=[^>]*\brel\s*=\s*["'](?:shortcut\s+)?icon["'])[^>]*>\s*/gi, '')
     .replace(/<title>[\s\S]*?<\/title>/i, pageTitle)
     .replace('</head>', `${loadingGuard}${localStyle}${pageSeo}</head>`)
-    .replace(/<body([^>]*)>/i, `<body$1>${YANDEX_METRIKA_NOSCRIPT}${header}${seoOverride?.breadcrumbs ? renderBreadcrumbs(seoOverride.breadcrumbs) : ''}${taskPager}${physicsTopicMenu}${seoOverride?.intro || ''}${renderTelegramBanner()}${renderCommentsWidget()}${renderFeedbackModal()}`)
+    .replace(/<body([^>]*)>/i, `<body$1>${YANDEX_METRIKA_NOSCRIPT}${header}${seoOverride?.breadcrumbs ? renderBreadcrumbs(seoOverride.breadcrumbs) : ''}${taskPager}${mathTopicMenu}${mathTopicPrompt}${physicsTopicMenu}${physicsTopicPrompt}${seoOverride?.intro || ''}${renderTelegramBanner()}${renderCommentsWidget()}${renderFeedbackModal()}`)
     .replace('</body>', `${pagerScript}${renderTurnstileScript()}</body>`);
 }
 
@@ -2454,7 +2722,7 @@ async function loadSourceHtml(section) {
       const extraBody = (extra.match(/<body[^>]*>([\s\S]*?)<\/body>/i) || ['', ''])[1];
       html = html.replace('</body>', `${extraBody}</body>`);
     }
-  } else if (section === 'physics') {
+  } else if (section === 'physics' || section === 'mathematics') {
     const filenames = await sourceFilenames(section);
     const parts = await Promise.all(filenames.map(filename => fs.readFile(path.join(__dirname, filename))));
     const decoded = parts.map(bytes => new TextDecoder('windows-1251').decode(bytes));
@@ -2496,31 +2764,63 @@ async function sourceFilenames(section) {
 }
 
 async function loadQuestions(section, onlyAdded = false, options = {}) {
-  const physicsTopic = section === 'physics' ? physicsTopicInfo(options.physicsTopic)?.code || '' : '';
-  const cacheKey = `${section}:${onlyAdded ? 'added' : 'all'}:${physicsTopic}`;
+  const physicsTopic = section === 'physics' ? catalogPhysicsTopicInfo(options.physicsTopic)?.code || '' : '';
+  const mathTopic = section === 'mathematics' ? mathTopicInfo(options.mathTopic)?.code || '' : '';
+  const cacheKey = `${section}:${onlyAdded ? 'added' : 'all'}:${physicsTopic}:${mathTopic}`;
   if (cache.has(cacheKey)) return cache.get(cacheKey);
-  const source = await loadSourceHtml(section);
+  const sourceHtml = await loadSourceHtml(section);
   const info = sectionInfo(section);
-  const catalog = section === 'physics' ? physicsCatalog(source) : null;
-  const topic = physicsTopicInfo(physicsTopic);
-  const html = filterSectionHtml(source, section, {
-    physicsTopic, allowedIds: onlyAdded ? new Set(added[section].map(normalizeTaskId)) : null
-  });
+  const mathStats = section === 'mathematics' ? mathTopicStats(sourceHtml) : null;
+  const catalog = section === 'physics' ? physicsCatalog(sourceHtml) : null;
+  const topic = section === 'mathematics' ? mathTopicInfo(mathTopic) : catalogPhysicsTopicInfo(physicsTopic);
+  const allowedIds = onlyAdded ? new Set(added[section].map(normalizeTaskId)) : null;
+  let html;
+  if (section === 'mathematics') {
+    html = onlyAdded
+      ? filterSectionHtml(sourceHtml, section, { allowedIds })
+      : filterMathTopicHtml(sourceHtml, mathTopic);
+  } else if (section === 'physics') {
+    html = onlyAdded
+      ? filterSectionHtml(sourceHtml, section, { allowedIds })
+      : (physicsTopic
+        ? filterSectionHtml(sourceHtml, section, { physicsTopic })
+        : filterSectionHtml(sourceHtml, section, { allowedIds: new Set() }));
+  } else {
+    html = filterSectionHtml(sourceHtml, section, { allowedIds });
+  }
   const ids = Array.from(taskIds(html), normalizeTaskId);
   const published = new Set(listPublishedSolutionIds.all().map(row => row.task_id));
   const solved = ids.filter(id => published.has(id)).length;
-  const pathname = onlyAdded ? `/added?section=${section}` : topic ? `/physics?topic=${topic.code}` : info.path;
+  const pathname = onlyAdded
+    ? `/added?section=${section}`
+    : (topic
+      ? `${section === 'mathematics' ? '/' : '/physics'}?topic=${encodeURIComponent(topic.code)}`
+      : info.path);
   const name = topic?.name || info.name;
+  const catalogueTotal = section === 'mathematics' ? mathStats.total : (section === 'physics' ? catalog.total : ids.length);
+  const describedCount = !topic && !onlyAdded && (section === 'mathematics' || section === 'physics') ? catalogueTotal : ids.length;
   const description = onlyAdded ? `Новые задания раздела «${name}» из открытого банка ФИПИ.`
-    : `${name}: задания ЕГЭ по ${section === 'physics' ? 'физике' : 'математике профильного уровня'} из банка ФИПИ. Заданий: ${ids.length}${solved ? `; с ответами и подробными решениями: ${solved}` : ''}. Условия${solved ? ', схемы и разборы' : ' для самостоятельной подготовки'}.`;
+    : `${name}: задания ЕГЭ по ${section === 'physics' ? 'физике' : 'математике профильного уровня'} из банка ФИПИ. Заданий: ${describedCount}${solved ? `; с ответами и подробными решениями: ${solved}` : ''}. Условия${solved ? ', схемы и разборы' : ' для самостоятельной подготовки'}.`;
   const breadcrumbs = [{name: 'Задания ЕГЭ', path: '/'}];
-  if (topic) breadcrumbs.push({name: 'Физика', path: '/physics'});
+  if (section === 'physics' && topic) breadcrumbs.push({name: 'Физика', path: '/physics'});
+  if (section === 'mathematics' && topic) breadcrumbs.push({name: 'Профильная математика', path: '/'});
   if (pathname !== '/') breadcrumbs.push({name: onlyAdded ? `Добавленные задачи: ${name}` : name, path: pathname});
-  const title = onlyAdded ? `Добавленные задачи — ${name}` : `${name} — ${section === 'physics' ? 'задачи ЕГЭ по физике' : 'ЕГЭ по математике, профильный уровень'}`;
+  const title = onlyAdded
+    ? `Добавленные задачи — ${name}`
+    : (section === 'physics'
+      ? `${name} — задания ЕГЭ по физике`
+      : (section === 'mathematics'
+        ? `${name} — задания ЕГЭ по профильной математике`
+        : `${name} — ЕГЭ по математике, профильный уровень`));
   const page = decorate(html, section, onlyAdded ? added[section] : null, {
-    physicsTopic, physicsCounts: catalog?.counts, physicsTotal: catalog?.total,
+    mathCatalogue: section === 'mathematics',
+    mathTopic,
+    mathStats: mathStats || undefined,
+    physicsCatalogue: section === 'physics',
+    physicsTopic,
+    physicsStats: catalog ? { counts: catalog.counts, total: catalog.total, unclassified: catalog.unclassified } : undefined,
     title, description, pathname, breadcrumbs,
-    robots: onlyAdded || !ids.length ? 'noindex,follow' : 'index,follow',
+    robots: onlyAdded || (topic && !ids.length) ? 'noindex,follow' : 'index,follow',
     intro: `<section class="catalog-summary"><p>${escapeHtml(description)}</p></section>`,
     structuredData: {'@context': 'https://schema.org', '@graph': [
       {'@type': 'CollectionPage', name: title, description, url: absoluteUrl(pathname), inLanguage: 'ru',
@@ -2704,7 +3004,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
   const sourceTask = catalog?.tasks.find(task => task.id === entry.taskId);
   const topic = sourceTask ? taskPhysicsTopic(sourceTask) : null;
   const classification = sourceTask ? physicsClassification(sourceTask) : null;
-  const taskTopics = classification?.topicCodes.map(physicsTopicInfo) || [];
+  const taskTopics = classification?.topicCodes.map(physicsTopicInfo).filter(Boolean) || [];
   const publishedSolution = getPublishedSolution.get(entry.taskId);
   const hasPublishedSolution = Boolean(publishedSolution);
   const topicName = topic?.name || info.name;
@@ -2749,7 +3049,9 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     next: taskPosition >= 0 && taskPosition < sectionTasks.length - 1 ? sectionTasks[taskPosition + 1] : '',
     position: taskPosition + 1,
     total: sectionTasks.length,
-    sectionPath: topic ? `/physics?topic=${topic.code}` : info.path
+    sectionPath: topic
+      ? `/physics?topic=${topic.code}`
+      : (entry.section === 'mathematics' ? '/?topic=all' : info.path)
   };
   const page = decorate(taskDocument(sourceHtml, fragment), entry.section, null, {
     title,
@@ -2761,8 +3063,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     taskNavigation,
     breadcrumbs,
     physicsTopic: topic?.code,
-    physicsCounts: catalog?.counts,
-    physicsTotal: catalog?.total,
+    physicsStats: catalog ? { counts: catalog.counts, total: catalog.total, unclassified: catalog.unclassified } : undefined,
     intro: classification?.reviewStatus === 'reviewed'
       ? `<section class="catalog-summary physics-task-topics"><p>Темы сайта: ${taskTopics.map((item, index) => `<a href="/physics?topic=${item.code}">${escapeHtml(item.name)}</a>${index === 0 ? ' (основная)' : ''}`).join('; ')}.</p><p>Исходные метки ФИПИ сохранены в свойствах задания.</p></section>`
       : ''
@@ -2777,14 +3078,21 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
 
 async function renderSitemap() {
   const publishedDates = new Map(listPublishedSolutionDates.all().map(record => [record.task_id, record.updated_at]));
+  const sectionPaths = Array.from(new Set(PUBLIC_SECTIONS.map(section => sectionInfo(section).path)));
+  const mathStats = mathTopicStats(await loadSourceHtml('mathematics'));
+  const mathTopicCodes = MATH_TOPICS.flatMap(group => [group.code, ...group.children.map(([code]) => code)])
+    .filter(code => (mathStats.counts[code] || 0) > 0);
+  const catalog = physicsCatalog(await loadSourceHtml('physics'));
   const staticPages = [
     { pathname: '/math', priority: '0.95' },
-    { pathname: '/', priority: '1.0' },
-    ...PUBLIC_SECTIONS.filter(section => section !== 'stereometry').map(section => ({ pathname: sectionInfo(section).path, priority: '0.9' })),
+    ...sectionPaths.map(pathname => ({ pathname, priority: pathname === '/' ? '1.0' : '0.9' })),
+    { pathname: '/?topic=all', priority: '0.9' },
+    ...mathTopicCodes.map(code => ({ pathname: `/?topic=${encodeURIComponent(code)}`, priority: '0.8' })),
+    { pathname: '/physics?topic=all', priority: '0.9' },
+    ...(catalog.unclassified ? [{ pathname: '/physics?topic=unclassified', priority: '0.7' }] : []),
     { pathname: '/about', priority: '0.5' }
   ];
   const tasks = await getTaskDirectory();
-  const catalog = physicsCatalog(await loadSourceHtml('physics'));
   const topicPages = catalog.topics.filter(topic => catalog.counts[topic.code] > 0).map(topic => ({
     pathname: `/physics?topic=${topic.code}`, priority: '0.8',
     updatedAt: catalog.tasks.filter(task => taskMatchesTopic(task, topic.code)).map(task => publishedDates.get(task.id)).filter(Boolean).sort().at(-1)
@@ -2817,10 +3125,10 @@ async function refreshSection(section) {
     const body = new URLSearchParams({
       search: '1',
       pagesize: String(FIPI_PAGE_SIZE),
-      proj: source.project || PROJECT,
-      qkind: 'ILI_STD_FULL'
+      proj: source.project || PROJECT
     });
     if (source.theme) body.set('theme', source.theme);
+    if (source.answerKind) body.set('qkind', source.answerKind);
     if (page > 0) body.set('page', String(page));
     const bytes = await requestFipi(FIPI_ENDPOINT, { method: 'POST', body });
     const html = new TextDecoder('windows-1251').decode(bytes);
@@ -2876,6 +3184,7 @@ async function cacheFipiAssets() {
 }
 
 async function refreshAll() {
+  await refreshSection('mathematics');
   await refreshSection('stereometry');
   await refreshSection('planimetry');
   await refreshSection('parameters');
@@ -2903,7 +3212,7 @@ function renderAboutPage() {
   <title>О проекте — задания ЕГЭ по математике и физике</title>
   ${renderSeoMetadata({
     title: 'О проекте — задания ЕГЭ по математике и физике',
-    description: 'Каталог заданий ЕГЭ по профильной математике и физике из открытого банка ФИПИ.',
+    description: 'Все типы заданий ЕГЭ по профильной математике и физике из открытого банка ФИПИ по разделам и темам КЭС.',
     pathname: '/about',
     structuredData: {
       '@context': 'https://schema.org',
@@ -2951,7 +3260,7 @@ function renderAboutPage() {
       .telegram-banner { align-items: stretch; flex-direction: column; gap: 12px; margin-bottom: 14px; padding: 16px; }
       .telegram-banner-copy strong { font-size: 16px; }
       .telegram-banner-action { width: 100%; }
-      .local-menu { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 12px; }
+      .local-menu { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 12px; }
       .local-menu a { display: grid; place-items: center; min-height: 46px; padding: 6px 4px; font-size: 12px;
         line-height: 1.2; overflow-wrap: anywhere; }
       .about-card { padding: 20px; }
@@ -2963,10 +3272,11 @@ function renderAboutPage() {
   ${YANDEX_METRIKA_NOSCRIPT}
   <main class="page">
     <header class="local-header"><a class="physics-top-button" href="/physics">Физика</a>Задания ЕГЭ по математике и физике
-      <small>Каталог заданий с развёрнутым ответом</small>
+      <small>Все типы заданий по профильной математике и физике</small>
       <nav class="local-menu" aria-label="Разделы сайта">
+        <a href="/">Все типы математики</a>
         <a href="/equations">Уравнения</a>
-        <a href="/">Стереометрия</a>
+        <a href="/stereometry">Стереометрия</a>
         <a href="/inequalities">Неравенства</a>
         <a href="/finance">Финансовая математика</a>
         <a href="/optimal">Оптимальный выбор</a>
@@ -2974,7 +3284,7 @@ function renderAboutPage() {
         <a href="/parameters">Задачи с параметром</a>
         <a href="/numbers">Числа и их свойства</a>
         <a href="/physics">Физика</a>
-        <a href="/added?section=stereometry">Добавленные задачи</a>
+        <a href="/added?section=mathematics">Добавленные задачи</a>
         <a href="/account">Личный кабинет</a>
         <a href="/about" class="active" aria-current="page">О проекте</a>
       </nav>
@@ -2983,24 +3293,13 @@ function renderAboutPage() {
     <section class="about-card" aria-labelledby="about-title">
       <h1 id="about-title">О проекте</h1>
       <p>Это каталог заданий ЕГЭ по профильной математике и физике для системной подготовки к экзамену.</p>
-      <p>Все задания на сайте взяты из открытого банка ФИПИ и систематизированы по темам. Выберите нужный раздел, чтобы целенаправленно отрабатывать нужный тип задач.</p>
+      <p>В математическом разделе собраны все доступные в открытом банке ФИПИ типы заданий с кратким и развёрнутым ответом. Полная классификация повторяет разделы и темы КЭС ФИПИ; отдельные подборки второй части сохранены для углублённой подготовки.</p>
+      <p>В физическом разделе собраны все задания открытого банка ФИПИ: с кратким и развёрнутым ответом, выбором ответа и установлением соответствия. Каталог охватывает все четыре раздела и 16 крупных тем КЭС.</p>
     </section>
   </main>
   ${renderCommentsWidget()}
 </body>
 </html>`;
-}
-
-function renderPhysicsPage() {
-  const topics = [
-    ['qualitative', 'Качественная задача', 'Задание 27: объяснение физического явления с опорой на законы и причинно-следственные связи'],
-    ['mechanics', 'Механика', 'Задание 28: расчётная задача высокого уровня — кинематика, динамика и законы сохранения'],
-    ['molecular', 'Молекулярная физика и термодинамика', 'Задание 29: расчёты по МКТ, газовым законам, теплообмену и термодинамике'],
-    ['electrodynamics', 'Электродинамика', 'Задание 30: расчётная задача высокого уровня — электрические цепи, поле, магнитные явления и индукция']
-  ];
-  return `<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ЕГЭ по физике — типы задач и подробные решения</title><meta name="description" content="Типы задач ЕГЭ по физике: механика, молекулярная физика, электродинамика, оптика, квантовая физика и задания с развёрнутым ответом."><style>
-    *{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:#334155;font:16px/1.5 Arial,sans-serif}.page{max-width:1000px;margin:0 auto;padding:24px}.local-header{position:sticky;top:0;z-index:50;margin:-24px -24px 20px;padding:14px 24px;background:#183153;color:#fff;box-shadow:0 2px 8px #0003}.local-header h1{margin:0;font-size:26px}.local-header small{display:block;margin-top:3px;opacity:.82}.physics-top-button{position:absolute;top:12px;right:24px;display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:9px 22px;border:2px solid #f0b429;border-radius:8px;background:#f0b429;color:#183153;font-size:21px;font-weight:800;text-decoration:none;box-shadow:0 3px 8px #0005}.physics-top-button:hover{background:#ffd166}.local-menu{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:14px}.local-menu a{padding:8px;border:1px solid #ffffff70;border-radius:6px;color:#fff;text-decoration:none;text-align:center}.local-menu a:hover{background:#ffffff18}.local-menu .active{background:#fff;color:#183153}.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.topic-card{display:block;padding:20px;border:1px solid #d8e1eb;border-radius:10px;background:#fff;color:#183153;text-decoration:none;box-shadow:0 1px 7px #00000012}.topic-card:hover{border-color:#f0b429;box-shadow:0 3px 12px #18315320;transform:translateY(-1px)}.topic-card h2{margin:0 0 8px;font-size:20px}.topic-card p{margin:0;color:#526273}.intro{margin:0 0 18px}.note{margin-top:20px;padding:14px 16px;border-left:4px solid #f0b429;background:#fff;color:#526273}@media(max-width:700px){.page{padding:12px}.local-header{margin:-12px -12px 14px;padding:14px 12px}.physics-top-button{position:static;margin:0 0 10px auto;min-height:42px;padding:8px 18px;font-size:19px}.local-menu,.card-grid{grid-template-columns:1fr}.local-menu a{min-height:42px;display:grid;place-items:center}}
-  </style></head><body><main class="page"><header class="local-header"><a class="physics-top-button" href="/physics">Физика</a><h1>ЕГЭ по физике</h1><small>Задания с развёрнутым ответом</small><nav class="local-menu" aria-label="Навигация"><a href="/">Математика</a><a href="/physics" class="active">Физика</a><a href="/about">О проекте</a><a href="/account">Личный кабинет</a></nav></header><p class="intro">Меню содержит только типы заданий с развёрнутым ответом: №27–30. Для каждого типа публикуются решения с обоснованием, формулами и проверкой результата.</p><section class="card-grid">${topics.map(([id,name,description]) => `<a class="topic-card" id="${id}" href="#${id}"><h2>${name}</h2><p>${description}</p></a>`).join('')}</section><p class="note">Такой формат соответствует тематическим блокам заданий с развёрнутым ответом, используемым в «Решу ЕГЭ — физика»: качественная задача, механика, молекулярная физика и термодинамика, электродинамика.</p></main></body></html>`;
 }
 
 http.createServer(async (req, res) => {
@@ -3491,21 +3790,10 @@ http.createServer(async (req, res) => {
     const requestedSection = (pathname === '/added' || pathname === '/update')
       ? requestUrl.searchParams.get('section')
       : '';
-    const section = pathname === '/physics' || requestedSection === 'physics'
-      ? 'physics'
-      : (pathname === '/finance' || requestedSection === 'finance'
-      ? 'finance'
-      : (pathname === '/numbers' || requestedSection === 'numbers'
-        ? 'numbers'
-        : (pathname === '/optimal' || requestedSection === 'optimal'
-        ? 'optimal'
-        : (pathname === '/inequalities' || requestedSection === 'inequalities'
-        ? 'inequalities'
-        : (pathname === '/equations' || requestedSection === 'equations'
-          ? 'equations'
-          : (pathname === '/parameters' || requestedSection === 'parameters'
-            ? 'parameters'
-            : (pathname === '/planimetry' || requestedSection === 'planimetry' ? 'planimetry' : 'stereometry')))))));
+    const routeSection = PUBLIC_SECTIONS.find(name => sectionInfo(name).path === pathname);
+    const section = PUBLIC_SECTIONS.includes(requestedSection)
+      ? requestedSection
+      : (routeSection || 'mathematics');
     if (pathname === '/update' && req.method === 'POST') {
       await refreshAll();
       res.writeHead(303, { location: `/added?section=${section}` });
@@ -3515,17 +3803,18 @@ http.createServer(async (req, res) => {
       res.writeHead(405, { allow: 'POST' });
       return res.end();
     }
-    const publicPaths = new Set(['/', '/added', ...PUBLIC_SECTIONS.filter(name => name !== 'stereometry').map(name => sectionInfo(name).path)]);
+    const publicPaths = new Set(['/added', ...PUBLIC_SECTIONS.map(name => sectionInfo(name).path)]);
     if (!publicPaths.has(pathname)) {
       res.writeHead(404, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(renderNotFoundPage());
     }
     const physicsTopic = section === 'physics' ? requestUrl.searchParams.get('topic') : '';
-    if (physicsTopic && !physicsTopicInfo(physicsTopic)) {
+    const mathTopic = section === 'mathematics' ? requestUrl.searchParams.get('topic') : '';
+    if ((physicsTopic && !catalogPhysicsTopicInfo(physicsTopic)) || (mathTopic && !mathTopicInfo(mathTopic))) {
       res.writeHead(404, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(renderNotFoundPage());
     }
-    const page = await loadQuestions(section, pathname === '/added', { physicsTopic });
+    const page = await loadQuestions(section, pathname === '/added', { physicsTopic, mathTopic });
     res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
     res.end(page);
   } catch (error) {
@@ -3533,7 +3822,7 @@ http.createServer(async (req, res) => {
     res.end(`<h1>Не удалось загрузить задания ФИПИ</h1><pre>${String(error.message)}</pre>`);
   }
 }).listen(PORT, '127.0.0.1', async () => {
-  console.log(`Стереометрия ФИПИ: http://localhost:${PORT}`);
+  console.log(`ЕГЭ ФИПИ: http://localhost:${PORT}`);
   const sections = PUBLIC_SECTIONS;
   await Promise.all(sections.map(section => loadQuestions(section).catch(() => null)));
 });

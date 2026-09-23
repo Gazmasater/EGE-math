@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html XMLNS:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><LINK href="../../styles.css" rel="STYLESHEET" type="text/css">
+<LINK href="../../xmodules/os/img/_styles.css?v=1.04" rel="STYLESHEET" type="text/css">
+<script type="text/javascript" src="../../lib/mml/mathjax-4-config.js"></script><script type="text/javascript" src="../../lib/mml/mathjax-4/mml-chtml.js"></script><script type="text/javascript" src="../../lib/t3utils.js?v=2.04"></script><script type="text/javascript">var home_directory="../../";</script><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<META NAME="Document-state" CONTENT="Dynamic"><META HTTP-EQUIV="pragma" CONTENT="no-cache"><META HTTP-EQUIV="expires" CONTENT="0"><meta http-equiv="X-UA-Compatible" content="IE=10"/><link rel='shortcut icon' href='img/icon.png'><style>@media print {.noprint {display:none !important;}}</style><title>Открытый банк тестовых заданий</title>
+</head>
+<body class='questions-container' style='font-size:11pt'>
+		<script language="javascript">
+        var abort_answer_senging;
+		function onButtonClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+            abort_answer_senging = false;
+            if (formid)
+                eval('setAnswer'+formid+'(aform);');
+            else
+			    setAnswer(aform);
+            if (abort_answer_senging) return;
+			;
+			//aform.submit();
+            if (aform.setBtn)
+                aform.setBtn.disabled=true;
+		}
+		function onResetClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+			var aEl = document.createElement('input');
+			aEl.type = 'hidden';
+			aEl.name = 'reset';
+			aEl.value = 1;
+			aform.appendChild(aEl);
+			
+;
+			aform.submit();
+		}
+
+		function noAction()
+		{
+		}
+
+		</script>
+        <style type="text/css">
+			.img_scroll_container { height: 400px; overflow-y: scroll; text-align: center; width:100%;}
+			.img_scroll_container img { width: 700px }
+            .printbody .img_scroll_container { height: auto; overflow-y: hidden; }
+            .printbody .img_scroll_container img { width: 650px }
+            .active-distractor:hover{cursor:pointer; background-color: #f2f2f2;}
+            .active-distractor.checked-distractor{background-color: #e8e8e8;}
+		</style>
+		<script language="javascript">
+		var qguid='';
+		var qfiles_location='../../';
+
+		function ShowPictureQ(s,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			document.write('<IMG SRC="'+qfiles_location+s+'" ALIGN=ABSMIDDLE alt="'+hint+'" border="0"> ');
+		}
+
+		function ShowPictureQBL(s,hint,h,bl)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			var vspace=h/2-bl;
+			if (vspace<0) vspace=-vspace;
+			document.write('<IMG SRC="'+qfiles_location+s+'" ALIGN=MIDDLE border="0" alt="'+hint+'" VSPACE='+(vspace)+' STYLE="position:relative; top:'+(h/2-bl)+'px;">');
+		}
+
+
+		
+		function ShowPictureQ2WH(s,s2,hint,w,h)
+		{
+            if (s.indexOf('.flv')>0 ||s.indexOf('.mp4')>0 ||s.indexOf('.swf')>0)
+                s='../../show_media.php?m='+encodeURIComponent(s)+'&w='+w+'&h='+h;
+
+			w=w+40;
+			h=h+30;
+
+						document.write('<a href="javascript:var wnd=window.open(\''+qfiles_location+s+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+s2+'" ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'"></a> ');
+			//alert('вставил картинку!');
+		}
+
+		function ShowPictureQ3WH(s,s2,s3,hint,w,h)
+		{
+			ShowPictureQ2WH(s,s2,hint,w,h);
+		}
+
+		function ShowPictureQ2(s,s2,hint)
+		{
+			ShowPictureQ2WH(s,s2,hint,600,400);
+		};
+
+		function invertImage(img, s, s2)
+		{
+			if (img.src.indexOf(s)>0) img.src=qfiles_location+s2; else img.src=qfiles_location+s;
+		}
+
+		function ShowPictureQ3(s,s2,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+            var onclick=(s.indexOf('.jpg')>0||s.indexOf('.png')>0||s.indexOf('.gif')>0 ?'onclick="invertImage(this, \''+s+'\', \''+s2+'\')"':'');
+			document.write('<IMG SRC="'+qfiles_location+s2+'" '+onclick+' ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'" border="0"> ');
+		};
+
+		function showXGraphic(xml)
+		{
+			document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=1><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+		/*
+function ShowPictureQGX2(img,xml)
+{
+w=500;
+h=400;
+document.write('<IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE>');
+}
+*/
+		function ShowPictureQGX2(img,xml)
+		{
+			w=500;
+			h=400;
+			document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?qguid='+qguid+'&xml='+xml+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}
+
+		</script>
+		<script language='JavaScript'>
+var files_location='';
+var files_abs_location='';
+var space_after_img=true;
+function ShowPicture(s)
+{document.write('<IMG SRC="'+files_location+s+'" ALIGN=absmiddle border=0>'+(space_after_img?' ':''));}
+function ShowPicture2(s,s2,w,h)
+{if (w>800) w=800;
+ if (h>600) h=600;
+ align='ABSMIDDLE'; 
+document.write('<a href="javascript:var wnd=window.open(\''+files_location+s+'\',\'_blank\',\'resizable=1,menubar=0,scrollbars=1,width='+(w+40)+',height='+(h+20)+',left='+((screen.width-w-40)/2)+',top='+((screen.height-h-20)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+s2+'" ALIGN='+align+'></a>'+(space_after_img?' ':''));}
+function ShowPicture2S(objsrc,imgsrc,datasrc,w,h)
+{ShowPicture2(objsrc,imgsrc,w,h);}
+function ShowPictureBL(s,bl)
+{document.write('<IMG SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+bl+' STYLE="position:relative; top:-'+(bl)+'px;" border=0>');}
+function ShowPictureBL2(s,bl,h)
+{ var vspace=h/2-bl;
+  		if (vspace<0) vspace=-vspace;
+document.write('<IMG SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+((vspace))+' STYLE="position:relative; top:'+(h/2-bl-1)+'px;" border=0>');}
+function ShowPictureGX(img,xml)
+		{
+		w=500;
+		h=400;
+		document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?xml='+files_abs_location+xml+'\',\'\',\',status=1,resizable=1,menubar=1,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}function TraceLink(indx,n)
+{ if (n.charAt(0)=='{')
+  		{
+			var guid=n.substring(1,9)+n.substring(10,14)+n.substring(15,19)+n.substring(20,24)+n.substring(25,37);
+			showdocbyguid(guid);
+  		}
+  		else
+  		{var wnd=window.open('../../tracelink.php?project_guid=BA1F39653304A5B041B656915DC36B38&cdf='+n,'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+ }
+}
+function showdocbyguid(guid)
+{var wnd=window.open('../../tracelink.php?project_guid=BA1F39653304A5B041B656915DC36B38&doc_guid='+guid.toUpperCase(),'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+}
+function delFile(fguid)
+{
+if (confirm('Удалить файл?'))
+  location.href='delete.php?proj=BA1F39653304A5B041B656915DC36B38&md=qprint&fguid='+fguid}
+function ShowFlash(url)
+{
+			w='100%'; h='100%';
+			url='../../'+files_location+url;
+			document.write('<object tabindex=0 ID=ilFlash classid=CLSID:D27CDB6E-AE6D-11cf-96B8-444553540000 width='+w+' height='+h+' codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0">'+
+		'<param name=movie value="'+url+'"><PARAM play=true><PARAM SWLIVECONNECT=true><PARAM MENU=true><PARAM LOOP=false>'+
+		'<PARAM NAME=scale VALUE=noScale><embed src="'+url+'" quality=high bgcolor=#FFFFFF  width='+w+' height='+h+' scale=noScale type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockWaveFlash"></embed></object>');}
+	function showXGraphic(xml)
+		{
+		//alert("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+	</script><script type='text/javascript'>
+	var solvedQst = localStorage.getItem("OS:BA1F39653304A5B041B656915DC36B38:SOLVED");
+	solvedQst = solvedQst ? new Set(solvedQst.split(",")): new Set();
+	var favQst = localStorage.getItem("OS:BA1F39653304A5B041B656915DC36B38:FAV");
+	favQst = favQst ? new Set(favQst.split(",")): new Set();
+
+
+
+var request = createAJAXRequest();
+
+function toggleQFavour(qblock) {    var fvbtn = document.getElementById(qblock).getElementsByClassName('favorite-button');
+    toggleFavour(fvbtn[0]);
+}
+
+function toggleFavour(btn) {	btn.classList.toggle('is-favorite');
+    btn.title = btn.classList.contains('is-favorite')?'В Избранном':'Добавить в Избранное';}
+
+function setToStr(set) {	if (browser.isIE) {		let str = '';
+		set.forEach(function(elem){
+		    str += elem + (str?",":"")
+ 	 	});
+ 	 	return str;	} else {		return Array.from(set).join(",")	}}
+
+
+function changeFavour(btn, qst) {	if (btn.classList.contains('is-favorite'))
+	    favQst.delete(qst);
+    else
+        favQst.add(qst);
+    localStorage.setItem("OS:BA1F39653304A5B041B656915DC36B38:FAV", setToStr(favQst));
+	toggleFavour(btn);}
+
+function changeStatus(qst, panel){
+    let answer = solvedQst.has(qst)? '0': '1';
+	if (answer == '0')		solvedQst.delete(qst);
+    else
+        solvedQst.add(qst);
+    localStorage.setItem("OS:BA1F39653304A5B041B656915DC36B38:SOLVED", setToStr(solvedQst));
+    setQSolved(panel, answer)
+}
+
+
+
+function checkButtonClick(form, setanswer, panel) {
+	form = document.getElementById(form);
+	setanswer(form);
+    if (!request.inProcess) {
+        request.open('POST', 'solve.php', true);
+        request.onreadystatechange = checkSolutionDone;
+        request.inProcess = true;
+        request.panel = panel;
+
+        var formData = new FormData(form);
+        formData.append("ajax", "1");
+        formData.append("proj", "BA1F39653304A5B041B656915DC36B38")
+
+		if (browser.isIE)
+			request.qst = form.guid.value;
+		else
+	        request.qst = formData.get("guid");
+
+        request.send(formData);
+
+        panel.getElementsByClassName('task-status')[0].innerHTML = "<img class='loader' src='img/loading_spinner.gif'>";    }
+}
+
+function checkSolutionDone() {    if (request.readyState==4)  {
+        request.inProcess = false;
+        answer = "0";
+        if (request.status==200) {
+            answer = request.responseText;
+        }
+        if (answer!='1' && answer!='2' && answer!='3') {
+        	answer = "0";
+        }
+        qst = request.qst;
+
+        if (answer == '0' || answer == '2')
+    		solvedQst.delete(qst);
+        else
+            solvedQst.add(qst);
+        localStorage.setItem("OS:BA1F39653304A5B041B656915DC36B38:SOLVED", setToStr(solvedQst));
+        setQSolved(request.panel, answer);
+    }
+}
+
+function setQSolved(block, answer) {	if (typeof(block) === 'string')
+	    block = document.getElementById(block);
+	var statusNode = block.getElementsByClassName('task-status')[0];
+    statusNode.className= "task-status task-status-" + answer ;
+    if (answer=='1')
+        statusNode.innerHTML = "РЕШЕНО";
+    else if (answer=='2')
+        statusNode.innerHTML = "НЕВЕРНО";
+    else if (answer=='3')
+        statusNode.innerHTML = "ВЕРНО";
+    else
+        statusNode.innerHTML = "НЕ РЕШЕНО";}
+
+</script>
+
+ <div class="qblock hide-form" id='qCFC86C'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformCFC86C' id='checkformCFC86C' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="DAAA1F4E6633BA044522BE87828FDE57">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=right> <tr> <td width=163 valign=top> <p class=MsoNormal><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/968D0E0C7CDA8DF84B90BD4C44172527(copy4)/xs3qstsrcDAAA1F4E6633BA044522BE87828FDE57_2_1759321088.jpg');</script></p> </td> </tr> </table>  <p class=MsoNormal>Цилиндр массой <i>m</i> = 1&nbsp;кг и радиусом <i>R</i> = 20&nbsp;см, на который намотана нерастяжимая невесомая нить, положили на неподвижную наклонную плоскость, а конец нити прикрепили к вертикальной стенке. Нить не скользит по цилиндру, параллельна наклонной плоскости и перпендикулярна оси цилиндра (см.&nbsp;рисунок). Коэффициент трения между цилиндром и плоскостью &#956; = 0,5. При каком максимальном угле<i> </i>наклона плоскости к горизонту &#945; цилиндр находится в равновесии? Сделайте схематический рисунок с указанием сил, действующих на цилиндр.</p> <p class=MsoNormal><b><i>Обоснуйте применимость законов, используемых для решения задачи.</i></b></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iCFC86C'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.3.3 Условия равновесия твёрдого тела в ИСО</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">CFC86C</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'DAAA1F4E6633BA044522BE87828FDE57')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('DAAA1F4E6633BA044522BE87828FDE57',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("DAAA1F4E6633BA044522BE87828FDE57"))
+	            toggleQFavour('iCFC86C');
+	        if (solvedQst.has("DAAA1F4E6633BA044522BE87828FDE57"))
+	            setQSolved('iCFC86C', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q9F9E6D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform9F9E6D' id='checkform9F9E6D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="DB7B1C59830490214448DD169CCCA443">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="224" valign="top"> <p class="MsoNormal" ><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/3140EA6FE0D08F01491A720F1039507C(copy1)/xs3qstsrc3140EA6FE0D08F01491A720F1039507C_1_1486039016.png');</script></p> </td> </tr> </table>  <p class="MsoNormal">На шероховатой наклонной плоскости, образующей с горизонтом угол <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mtext>&#x03B1;</m:mtext><m:mo>=</m:mo><m:mn>30</m:mn><m:mi>&#x00B0;</m:mi><m:mo>,</m:mo> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;лежит маленькая шайба массой <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>m</m:mi><m:mo>=</m:mo><m:mn>500</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;г. Коэффициент трения шайбы о плоскость <span class="MPEntity">&#956;</span>&nbsp;=&nbsp;0,7. Какую минимальную силу <i ><span >F</span></i><sub><span >min</span></sub> в горизонтальном направлении вдоль плоскости надо приложить к шайбе, чтобы она сдвинулась с места?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i9F9E6D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Динамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">9F9E6D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'DB7B1C59830490214448DD169CCCA443')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('DB7B1C59830490214448DD169CCCA443',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("DB7B1C59830490214448DD169CCCA443"))
+	            toggleQFavour('i9F9E6D');
+	        if (solvedQst.has("DB7B1C59830490214448DD169CCCA443"))
+	            setQSolved('i9F9E6D', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qE6CD64'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformE6CD64' id='checkformE6CD64' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="DC0AD774E159B44F4765F42A07B875FB">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="236" valign="top"> <p class="MsoNormal" align="center"><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/5CE3BC9CB1358FDE4A295D12CE00EC1A(copy1)/xs3qstsrc5CE3BC9CB1358FDE4A295D12CE00EC1A_1_1643276439.png');</script></p> </td> </tr> </table> <p class="MsoNormal">Точечный источник света <m:math> <m:semantics> <m:mi>S</m:mi> </m:semantics> </m:math>&nbsp;расположен <br /> на расстоянии 40 см от оптического центра тонкой собирающей линзы с фокусным расстоянием 0,2&nbsp;м на её главной оптической оси <i ><span >AB</span></i>. При повороте линзы на угол &alpha; относительно оси, перпендикулярной плоскости рисунка и проходящей через её оптический центр, изображение источника сместилось вдоль прямой <i ><span >AB</span></i> на 10 см. Определите угол поворота линзы. Сделайте пояснительный чертёж, указав ход лучей в линзе для обоих случаев её расположения.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iE6CD64'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3.6.7 Формула тонкой линзы</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">E6CD64</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'DC0AD774E159B44F4765F42A07B875FB')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('DC0AD774E159B44F4765F42A07B875FB',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("DC0AD774E159B44F4765F42A07B875FB"))
+	            toggleQFavour('iE6CD64');
+	        if (solvedQst.has("DC0AD774E159B44F4765F42A07B875FB"))
+	            setQSolved('iE6CD64', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q340D69'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform340D69' id='checkform340D69' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="DEB207FE388F9EC440EC97D2A926E874">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=Basis2>Замкнутый контур из тонкой проволоки помещён в магнитное поле. Плоскость контура перпендикулярна вектору магнитной индукции поля. Площадь контура <I>S</I>&nbsp;=&nbsp;2<FONT class=xsymbol>·</FONT>10<SUP><?import namespace = m urn = "http://www.w3.org/1998/Math/MathML" implementation = "#MathPlayer" declareNamespace />&ndash;3</SUP>&nbsp;м<SUP>2</SUP>. В контуре возникают колебания тока с амплитудой <I>i</I><SUB>м</SUB>&nbsp;=&nbsp;35&nbsp;мА, если магнитная индукция поля меняется с течением времени в соответствии с формулой <I>B&nbsp;</I>=&nbsp;<I>a</I>cos(<I>bt</I>)<I>, </I>где<I> а&nbsp;=</I>&nbsp;6<FONT class=xsymbol>·</FONT>10<SUP>&ndash;3</SUP>&nbsp;Тл, <I>b</I>&nbsp;=&nbsp;3500&nbsp;с<SUP>&ndash;1</SUP>. Чему равно электрическое сопротивление контура <I>R</I>?</P></TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i340D69'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3 Электродинамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">340D69</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'DEB207FE388F9EC440EC97D2A926E874')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('DEB207FE388F9EC440EC97D2A926E874',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("DEB207FE388F9EC440EC97D2A926E874"))
+	            toggleQFavour('i340D69');
+	        if (solvedQst.has("DEB207FE388F9EC440EC97D2A926E874"))
+	            setQSolved('i340D69', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q88406D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform88406D' id='checkform88406D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="DF70F210A2F58739453DF62E84987C14">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal"><span>Снаряд массой 2 кг разорвался в полёте на две равные части, одна из которых продолжила движение в направлении движения снаряда, а другая <m:math> <m:semantics> <m:mo>&#x2013;</m:mo> </m:semantics> </m:math>&nbsp;<br /> в противоположную сторону. В момент разрыва суммарная кинетическая энергия осколков увеличилась за счёт энергии взрыва на величину </span><span class="MPEntity">&#916;</span><i><span>E</span></i><span>. Модуль скорости осколка, летящего по направлению движения снаряда, равен 900 м/с, а модуль скорости второго осколка <m:math> <m:semantics> <m:mo>&#x2013;</m:mo> </m:semantics> </m:math>&nbsp;100&nbsp;м/с. Найдите <br /> величину </span><span class="MPEntity">&#916;</span><i><span>E</span></i><span>. Обоснуйте применимость законов, используемых для решения задачи.</span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i88406D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.4.1 Импульс материальной точки</div><div>1.4.2 Импульс системы тел </div><div>1.4.3 Закон изменения и сохранения импульса</div><div>1.4.4 Работа силы на малом перемещении</div><div>1.4.5 Мощность силы</div><div>1.4.6 Кинетическая энергия материальной точки. Закон изменения кинетической энергии системы материальных точек</div><div>1.4.7 Потенциальная энергия для потенциальных сил. Потенциальная энергия материальной точки в однородном поле тяжести. Потенциальная энергия упруго деформированного тела</div><div>1.4.8 Закон изменения и сохранения механической энергии</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">88406D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'DF70F210A2F58739453DF62E84987C14')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('DF70F210A2F58739453DF62E84987C14',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("DF70F210A2F58739453DF62E84987C14"))
+	            toggleQFavour('i88406D');
+	        if (solvedQst.has("DF70F210A2F58739453DF62E84987C14"))
+	            setQSolved('i88406D', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q01DB3F'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform01DB3F' id='checkform01DB3F' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E217548173E1A0454E9C09423D78794C">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="241" valign="top"> <p class="MsoNormal" ><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/7A1787E8423394F948FE907B2CC83F2F(copy1)/xs3qstsrc7A1787E8423394F948FE907B2CC83F2F_1_1486739937.png');</script></p> </td> </tr> </table>  <p class="MsoNormal">Небольшой кубик массой <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>m</m:mi><m:mo>=</m:mo><m:mn>1</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math><span >&nbsp;</span>кг начинает скользить с нулевой начальной скоростью по гладкой горке, переходящей в &laquo;мёртвую петлю&raquo; радиусом <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>R</m:mi><m:mo>=</m:mo><m:mn>2</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math><span >&nbsp;</span>м (см.&nbsp;рисунок). С какой высоты <i >Н</i> был отпущен кубик, если на высоте <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>h</m:mi><m:mo>=</m:mo><m:mn>2,5</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;м от нижней точки петли сила давления кубика на стенку петли <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>F</m:mi><m:mo>=</m:mo><m:mn>5</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;Н? Сделайте рисунок с указанием сил, поясняющий решение.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i01DB3F'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.4.1 Импульс материальной точки</div><div>1.4.2 Импульс системы тел </div><div>1.4.3 Закон изменения и сохранения импульса</div><div>1.4.4 Работа силы на малом перемещении</div><div>1.4.5 Мощность силы</div><div>1.4.6 Кинетическая энергия материальной точки. Закон изменения кинетической энергии системы материальных точек</div><div>1.4.7 Потенциальная энергия для потенциальных сил. Потенциальная энергия материальной точки в однородном поле тяжести. Потенциальная энергия упруго деформированного тела</div><div>1.4.8 Закон изменения и сохранения механической энергии</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">01DB3F</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E217548173E1A0454E9C09423D78794C')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E217548173E1A0454E9C09423D78794C',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E217548173E1A0454E9C09423D78794C"))
+	            toggleQFavour('i01DB3F');
+	        if (solvedQst.has("E217548173E1A0454E9C09423D78794C"))
+	            setQSolved('i01DB3F', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q002D3A'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform002D3A' id='checkform002D3A' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E2962757899C95D546041BBE8FBC664C">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Электромагнитное излучение с длиной волны 3,3<m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x22C5;</m:mo>  </m:semantics> </m:mstyle></m:math>10<sup><m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2013;</m:mo>  </m:semantics> </m:mstyle></m:math>7</sup>&nbsp;м используется для нагревания воды. Какую массу воды можно нагреть за 70 с на 10 &deg;С, если источник излучает 10<sup>20</sup> фотонов за 1 с? Считать, что излучение полностью поглощается водой, а теплопотерь в окружающую среду нет.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i002D3A'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>4.1 Корпускулярно-волновой дуализм</div><div>4.1.1 Гипотеза М. Планка о квантах. Формула Планка</div><div>4.1.2 Фотоны. Энергия фотона. Импульс фотона</div><div>4.1.3 Фотоэффект. Опыты А.Г. Столетова. Законы фотоэффекта</div><div>4.1.4 Уравнение Эйнштейна для фотоэффекта </div><div>4.1.5 Давление света. Давление света на полностью отражающую поверхность и на полностью поглощающую поверхность</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">002D3A</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E2962757899C95D546041BBE8FBC664C')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E2962757899C95D546041BBE8FBC664C',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E2962757899C95D546041BBE8FBC664C"))
+	            toggleQFavour('i002D3A');
+	        if (solvedQst.has("E2962757899C95D546041BBE8FBC664C"))
+	            setQSolved('i002D3A', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qB3F130'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformB3F130' id='checkformB3F130' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E421E55B3B18AC7E4DC88FD89C253DD6">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right" width="316"> <tr> <td valign="top"> <p class="MsoNormal" ><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/18B009804059AF85497414A00A32C98C(copy1)/xs3qstsrc18B009804059AF85497414A00A32C98C_1_1486739939.png');</script></p> </td> </tr> </table> <p class="MsoNormal">В запаянной с одного конца длинной горизонтальной стеклянной трубке постоянного сечения (см. рисунок) находится столбик воздуха длиной <i ><span >l</span></i><sub>1</sub><i >&nbsp;=&nbsp;</i>30,7&nbsp;см, запертый столбиком ртути. Если трубку поставить вертикально отверстием вверх, то длина воздушного столбика под ртутью будет равна <i ><span >l</span></i><sub>2</sub><i > = </i>23,8 см. Какова длина ртутного столбика? Атмосферное давление 747 мм рт. ст. Температуру воздуха в трубке считать постоянной.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iB3F130'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1.1 Модели строения газов, жидкостей и твердых тел </div><div>2.1.2 Тепловое движение атомов и молекул вещества </div><div>2.1.3 Взаимодействие частиц вещества</div><div>2.1.4 Диффузия. Броуновское движение</div><div>2.1.5 Модель идеального газа в МКТ</div><div>2.1.6 Связь между давлением и средней кинетической энергией посту-пательного теплового движения молекул идеального газа (основное уравнение МКТ)</div><div>2.1.7 Абсолютная температура</div><div>2.1.8 Связь температуры газа со средней кинетической энергией поступательного теплового движения его молекул</div><div>2.1.9 Уравнение p=nkT</div><div>2.1.10 Модель идеального газа в термодинамике</div><div>2.1.11 Закон Дальтона для давления смеси разреженных газов</div><div>2.1.12 Изопроцессы в разреженном газе с постоянным числом молекул N (с постоянным количеством вещества &#957;)</div><div>2.1.13 Насыщенные и ненасыщенные пары. Качественная зависимость плотности и давления насыщенного пара от температуры, их независимость от объёма насыщенного пара</div><div>2.1.14 Влажность воздуха </div><div>2.1.15 Изменение агрегатных состояний вещества: испарение и конденсация, кипение жидкости </div><div>2.1.16 Изменение агрегатных состояний вещества: плавление и кристаллизация</div><div>2.1.17 Преобразование энергии в фазовых переходах </div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">B3F130</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E421E55B3B18AC7E4DC88FD89C253DD6')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E421E55B3B18AC7E4DC88FD89C253DD6',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E421E55B3B18AC7E4DC88FD89C253DD6"))
+	            toggleQFavour('iB3F130');
+	        if (solvedQst.has("E421E55B3B18AC7E4DC88FD89C253DD6"))
+	            setQSolved('iB3F130', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q1B6B32'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform1B6B32' id='checkform1B6B32' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="e56d44a57315489fa80d4042dd745a8a">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Плоская горизонтальная фигура площадью <i>S</i>&nbsp;=&nbsp;0,1&nbsp;м<sup>2</sup>, ограниченная замкнутым проводящим контуром с сопротивлением <i>R</i> =&nbsp;5&nbsp;Ом, находится в&nbsp;однородном магнитном поле. Какой заряд протечёт по контуру за большой промежуток времени, пока проекция магнитной индукции на вертикальную ось <i><span lang=EN-US>Oz</span></i> медленно и равномерно меняется с <i>B</i><sub>1<i>z</i></sub>&nbsp;=&nbsp;0,2&nbsp;Тл до <i>B</i><sub>2<i>z</i></sub>&nbsp;=&nbsp;–0,2&nbsp;Тл? </p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i1B6B32'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3.4.3 Закон электромагнитной индукции Фарадея  </div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">1B6B32</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'e56d44a57315489fa80d4042dd745a8a')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('e56d44a57315489fa80d4042dd745a8a',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("e56d44a57315489fa80d4042dd745a8a"))
+	            toggleQFavour('i1B6B32');
+	        if (solvedQst.has("e56d44a57315489fa80d4042dd745a8a"))
+	            setQSolved('i1B6B32', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q126E35'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform126E35' id='checkform126E35' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E58D6C8DFCF0825B4C586D52FE2426C1">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="228" valign="top"> <p class="MsoNormal" ><span><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/E58D6C8DFCF0825B4C586D52FE2426C1/xs3qstsrcA9F71A399A20AA15463ADD4A3C32080A_1_1454757984.png');</script></span></p> </td> </tr> </table> <p class="MsoNormal">Главная оптическая ось тонкой собирающей линзы с фокусным расстоянием <i ><span >F</span></i> = 20 см и точечный источник света <i ><span >S</span></i> находятся в плоскости рисунка. Точка <i ><span >S</span></i> находится на расстоянии <i ><span >b</span></i> = 70 см от плоскости линзы и на расстоянии <i ><span >H</span></i> = 5 см от её главной оптической оси. В левой фокальной плоскости линзы лежит тонкий непрозрачный экран с малым отверстием <i ><span >A</span></i>, находящимся в плоскости рисунка на расстоянии <i ><span >h</span></i> = 4 см от главной оптической оси линзы. На каком расстоянии <i ><span >x</span></i> от плоскости линзы луч <i ><span >SA</span></i> от точечного источника, пройдя через отверстие в экране и линзу, пересечет её главную оптическую ось? Дифракцией света пренебречь. Постройте рисунок, показывающий ход луча через линзу.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i126E35'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3 Электродинамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">126E35</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E58D6C8DFCF0825B4C586D52FE2426C1')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E58D6C8DFCF0825B4C586D52FE2426C1',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E58D6C8DFCF0825B4C586D52FE2426C1"))
+	            toggleQFavour('i126E35');
+	        if (solvedQst.has("E58D6C8DFCF0825B4C586D52FE2426C1"))
+	            setQSolved('i126E35', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q211F34'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform211F34' id='checkform211F34' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E60551974D28BC0B417D0527B52AA40D">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=MsoNormal>В комнате размерами 4&#215;5&#215;3 м, в которой воздух имеет температуру 10 °C и относительную влажность 30%, включили увлажнитель воздуха производительностью 0,2 л/ч. Чему станет равна относительная влажность воздуха в комнате через 1,5 ч? Давление насыщенного водяного пара при температуре 10 °C равно&nbsp;1,23 кПа. Комнату считать герметичным сосудом.</P></TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i211F34'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1.1 Модели строения газов, жидкостей и твердых тел </div><div>2.1.2 Тепловое движение атомов и молекул вещества </div><div>2.1.3 Взаимодействие частиц вещества</div><div>2.1.4 Диффузия. Броуновское движение</div><div>2.1.5 Модель идеального газа в МКТ</div><div>2.1.6 Связь между давлением и средней кинетической энергией посту-пательного теплового движения молекул идеального газа (основное уравнение МКТ)</div><div>2.1.7 Абсолютная температура</div><div>2.1.8 Связь температуры газа со средней кинетической энергией поступательного теплового движения его молекул</div><div>2.1.9 Уравнение p=nkT</div><div>2.1.10 Модель идеального газа в термодинамике</div><div>2.1.11 Закон Дальтона для давления смеси разреженных газов</div><div>2.1.12 Изопроцессы в разреженном газе с постоянным числом молекул N (с постоянным количеством вещества &#957;)</div><div>2.1.13 Насыщенные и ненасыщенные пары. Качественная зависимость плотности и давления насыщенного пара от температуры, их независимость от объёма насыщенного пара</div><div>2.1.14 Влажность воздуха </div><div>2.1.15 Изменение агрегатных состояний вещества: испарение и конденсация, кипение жидкости </div><div>2.1.16 Изменение агрегатных состояний вещества: плавление и кристаллизация</div><div>2.1.17 Преобразование энергии в фазовых переходах </div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">211F34</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E60551974D28BC0B417D0527B52AA40D')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E60551974D28BC0B417D0527B52AA40D',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E60551974D28BC0B417D0527B52AA40D"))
+	            toggleQFavour('i211F34');
+	        if (solvedQst.has("E60551974D28BC0B417D0527B52AA40D"))
+	            setQSolved('i211F34', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q244A3F'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform244A3F' id='checkform244A3F' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E610096DD47E819F499996BF56FC9A67">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td valign="top"> <p class="MsoNormal" ><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/E610096DD47E819F499996BF56FC9A67/xs3qstsrcE5D929BF081E813647C230F8E45E010C_1_1454759105.png');</script></p> </td> </tr> </table>  <p class="MsoNormal">Конденсатор <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mi>C</m:mi> <m:mn>1</m:mn> </m:msub> <m:mo>=</m:mo><m:mn>1</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;мкФ заряжен до напряжения <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>U</m:mi><m:mo>=</m:mo><m:mn>300</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;В и включён в последовательную цепь из резистора <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>R</m:mi><m:mo>=</m:mo><m:mn>300</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;Ом, незаряженного конденсатора <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mi>C</m:mi> <m:mn>2</m:mn> </m:msub> <m:mo>=</m:mo><m:mn>2</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;мкФ и разомкнутого ключа К (см. рисунок). Какое количество теплоты выделится в цепи после замыкания ключа, пока ток в цепи не прекратится?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i244A3F'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3 Электродинамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">244A3F</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E610096DD47E819F499996BF56FC9A67')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E610096DD47E819F499996BF56FC9A67',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E610096DD47E819F499996BF56FC9A67"))
+	            toggleQFavour('i244A3F');
+	        if (solvedQst.has("E610096DD47E819F499996BF56FC9A67"))
+	            setQSolved('i244A3F', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q21A630'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform21A630' id='checkform21A630' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E6295D37B35C9DA442304689371981CB">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="Basis2">Относительная влажность воздуха при <i ><span >t</span></i> = 36 <sup><span >o</span></sup><span >C</span> составляет 80%. Давление насыщенного пара при этой температуре <i ><span >p</span></i><sub>н</sub> = 5945 Па. Какая масса пара содержится в 1 м<sup>3</sup> этого воздуха?</p> </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i21A630'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2 Молекулярная физика.  Термодинамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">21A630</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E6295D37B35C9DA442304689371981CB')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E6295D37B35C9DA442304689371981CB',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E6295D37B35C9DA442304689371981CB"))
+	            toggleQFavour('i21A630');
+	        if (solvedQst.has("E6295D37B35C9DA442304689371981CB"))
+	            setQSolved('i21A630', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q27AA31'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform27AA31' id='checkform27AA31' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E659396269BABDA14EB3C8694859A0D5">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">В комнате размерами 6&nbsp;м &times;&nbsp;5&nbsp;м &times;&nbsp;3&nbsp;м, в которой воздух имеет температуру <br /> 20 &deg;C и относительную влажность 35%, включили увлажнитель воздуха производительностью 0,36 кг/ч. Сколько времени необходимо работать увлажнителю, чтобы относительная влажность воздуха в комнате стала равна 70%? Давление насыщенного водяного пара при температуре 20 &deg;C равно&nbsp;2,33 кПа. Комнату считать герметичным сосудом.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i27AA31'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1.1 Модели строения газов, жидкостей и твердых тел </div><div>2.1.2 Тепловое движение атомов и молекул вещества </div><div>2.1.3 Взаимодействие частиц вещества</div><div>2.1.4 Диффузия. Броуновское движение</div><div>2.1.5 Модель идеального газа в МКТ</div><div>2.1.6 Связь между давлением и средней кинетической энергией посту-пательного теплового движения молекул идеального газа (основное уравнение МКТ)</div><div>2.1.7 Абсолютная температура</div><div>2.1.8 Связь температуры газа со средней кинетической энергией поступательного теплового движения его молекул</div><div>2.1.9 Уравнение p=nkT</div><div>2.1.10 Модель идеального газа в термодинамике</div><div>2.1.11 Закон Дальтона для давления смеси разреженных газов</div><div>2.1.12 Изопроцессы в разреженном газе с постоянным числом молекул N (с постоянным количеством вещества &#957;)</div><div>2.1.13 Насыщенные и ненасыщенные пары. Качественная зависимость плотности и давления насыщенного пара от температуры, их независимость от объёма насыщенного пара</div><div>2.1.14 Влажность воздуха </div><div>2.1.15 Изменение агрегатных состояний вещества: испарение и конденсация, кипение жидкости </div><div>2.1.16 Изменение агрегатных состояний вещества: плавление и кристаллизация</div><div>2.1.17 Преобразование энергии в фазовых переходах </div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">27AA31</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E659396269BABDA14EB3C8694859A0D5')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E659396269BABDA14EB3C8694859A0D5',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E659396269BABDA14EB3C8694859A0D5"))
+	            toggleQFavour('i27AA31');
+	        if (solvedQst.has("E659396269BABDA14EB3C8694859A0D5"))
+	            setQSolved('i27AA31', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q203B35'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform203B35' id='checkform203B35' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E68E243D5B28AE05497D074F6DF343F3">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td valign="top"> <p class="MsoNormal" ><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/E68E243D5B28AE05497D074F6DF343F3/xs3qstsrc474B19FF492482764E051FC8814E5F2D_1_1454761984.png');</script></p> </td> </tr> </table>  <p class="MsoNormal">Протон влетает в электрическое поле конденсатора параллельно его пластинам в точке, находящейся посередине между пластинами (см. рисунок). Найдите минимальную скорость <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>&#x03C5;</m:mi><m:mo>,</m:mo> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;с которой протон должен влететь в конденсатор, чтобы затем вылететь из него. Длина пластин конденсатора 5&nbsp;см, расстояние между пластинами 1&nbsp;см, напряжённость электрического поля конденсатора 5000&nbsp;В/м. Поле внутри конденсатора считать однородным, силой тяжести пренебречь.</p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i203B35'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3 Электродинамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">203B35</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E68E243D5B28AE05497D074F6DF343F3')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E68E243D5B28AE05497D074F6DF343F3',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E68E243D5B28AE05497D074F6DF343F3"))
+	            toggleQFavour('i203B35');
+	        if (solvedQst.has("E68E243D5B28AE05497D074F6DF343F3"))
+	            setQSolved('i203B35', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qDEAB32'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformDEAB32' id='checkformDEAB32' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E769C4CE91B19F4A4BD027B5F7487A1B">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=right> <tr> <td width=236 valign=top> <p class=MsoNormal><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/A93F141D15F5BF094DBBDB6B77766A4F(copy1)/xs3qstsrcE769C4CE91B19F4A4BD027B5F7487A1B_1_1772109721.gif');</script></p> </td> </tr> </table> <p class=MsoNormal>К двум вертикально расположенным пружинам одинаковой длины подвесили однородный стержень массой <i><span lang=EN-US>M</span></i>&nbsp;=&nbsp;2&nbsp;кг и длиной <i><span lang=EN-US>L</span></i><span lang=EN-US>&nbsp;</span>=<span lang=EN-US>&nbsp;</span>40<span lang=EN-US>&nbsp;</span>см. Если к этому стержню подвесить груз на расстоянии <i><span lang=EN-US>d</span>&nbsp;=&nbsp;</i>5&nbsp;см от правой пружины, то стержень будет расположен горизонтально, а растяжения обеих пружин будут одинаковы (см. рисунок). Жёсткость левой пружины в 3 раза меньше, чем у правой. Чему равна масса <i><span lang=EN-US>m</span></i> подвешенного груза? Сделайте рисунок с указанием сил, использованных в решении задачи.</p> <p class=MsoNormal>&nbsp;</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iDEAB32'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.3 Статика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">DEAB32</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E769C4CE91B19F4A4BD027B5F7487A1B')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E769C4CE91B19F4A4BD027B5F7487A1B',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E769C4CE91B19F4A4BD027B5F7487A1B"))
+	            toggleQFavour('iDEAB32');
+	        if (solvedQst.has("E769C4CE91B19F4A4BD027B5F7487A1B"))
+	            setQSolved('iDEAB32', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q5D4738'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform5D4738' id='checkform5D4738' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E8F0737BCB6583584CFE47A357D40FDF">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="322" valign="top"> <p class="MsoNormal"><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/A2F5225036C78D514E1654B158E52DA0(copy2)/xs3qstsrcA2F5225036C78D514E1654B158E52DA0_2_1579521170.png');</script></p> </td> </tr> </table>  <p class="MsoNormal"><span>Грузы массами <m:math> <m:semantics> <m:mrow> <m:mi>M</m:mi><m:mo>=</m:mo><m:mn>1</m:mn> </m:mrow> </m:semantics> </m:math>&nbsp;кг и </span><i ><span>m</span></i><span><br /> связаны лёгкой нерастяжимой нитью, </span><span>переброшенной через невесомый блок, вращающийся без трения (см. рисунок).</span><span> Груз массой </span><i ><span>M</span></i><span> покоится на шероховатой наклонной </span><span>плоскости (угол наклона плоскости к&nbsp; горизонту <m:math> <m:semantics> <m:mrow> <m:mtext>&#x03B1;</m:mtext><m:mo>=</m:mo><m:mn>30</m:mn><m:mi>&#x00B0;</m:mi><m:mo>,</m:mo> </m:mrow> </m:semantics> </m:math>&nbsp;коэффициент трения <m:math> <m:semantics> <m:mrow> <m:mi>&#x03BC;</m:mi><m:mo>=</m:mo><m:mn>0,3</m:mn> </m:mrow> </m:semantics> </m:math> ).</span> Чему равно минимальное значение массы <i ><span >m</span></i>, при котором система грузов остаётся в состоянии покоя? Сделайте рисунок с указанием сил, действующих на грузы.<span> <span></span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i5D4738'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Динамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">5D4738</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E8F0737BCB6583584CFE47A357D40FDF')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E8F0737BCB6583584CFE47A357D40FDF',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E8F0737BCB6583584CFE47A357D40FDF"))
+	            toggleQFavour('i5D4738');
+	        if (solvedQst.has("E8F0737BCB6583584CFE47A357D40FDF"))
+	            setQSolved('i5D4738', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qAE2D32'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformAE2D32' id='checkformAE2D32' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E966C7D2CEFEBA014633A0B901A2B3EF">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В горизонтальном цилиндрическом сосуде, закрытом поршнем, находится одноатомный идеальный газ. Первоначальное давление газа <i><span lang=EN-US>p</span></i><sub>1</sub><span lang=EN-US>&nbsp;</span>=<span lang=EN-US>&nbsp;</span>4·10<sup>5</sup><span lang=EN-US>&nbsp;</span>Па. Расстояние от дна сосуда до поршня <i><span lang=EN-US>L</span></i><span lang=EN-US>&nbsp;</span>=<span lang=EN-US>&nbsp;</span>30<span lang=EN-US>&nbsp;</span>см. Площадь поперечного сечения поршня <i><span lang=EN-US>S</span></i><span lang=EN-US>&nbsp;</span>=<span lang=EN-US>&nbsp;</span>25<span lang=EN-US>&nbsp;</span>см<sup>2</sup>. В результате медленного нагревания газа поршень некоторое время покоился, а затем медленно сдвинулся <br> на расстояние <i><span lang=EN-US>x</span></i>&nbsp;=&nbsp;10&nbsp;см. При движении поршня на него со стороны стенок сосуда действует сила трения величиной <i><span lang=EN-US>F</span></i><sub>тр</sub><span lang=EN-US>&nbsp;</span>=&nbsp;3·10<sup>3</sup> Н. Какое количество теплоты получил газ в этом процессе? Считать, что сосуд находится <br> в вакууме.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iAE2D32'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2.7 Первый закон термодинамики</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">AE2D32</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E966C7D2CEFEBA014633A0B901A2B3EF')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E966C7D2CEFEBA014633A0B901A2B3EF',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E966C7D2CEFEBA014633A0B901A2B3EF"))
+	            toggleQFavour('iAE2D32');
+	        if (solvedQst.has("E966C7D2CEFEBA014633A0B901A2B3EF"))
+	            setQSolved('iAE2D32', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qA10C3D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformA10C3D' id='checkformA10C3D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E9725A5FF807B151496D4FADA893A22E">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="Basis">Полый конус с углом при вершине 2<i ><span class="MPEntity">&#945;</span></i> вращается с угловой скоростью <span class="MPEntity">&#969;</span>&nbsp;&nbsp;вокруг вертикальной оси, совпадающей с его осью симметрии. Вершина конуса обращена вверх. На внешней поверхности конуса находится небольшая шайба, коэффициент трения которой о поверхность конуса равен <i ><span class="MPEntity">&#956;</span></i>. При каком максимальном расстоянии <i ><span >L</span></i> от вершины шайба будет неподвижна относительно конуса? Сделайте схематический рисунок с указанием сил, действующих на шайбу.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iA10C3D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1 Механика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">A10C3D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E9725A5FF807B151496D4FADA893A22E')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E9725A5FF807B151496D4FADA893A22E',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E9725A5FF807B151496D4FADA893A22E"))
+	            toggleQFavour('iA10C3D');
+	        if (solvedQst.has("E9725A5FF807B151496D4FADA893A22E"))
+	            setQSolved('iA10C3D', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qAB0739'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformAB0739' id='checkformAB0739' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E9B24358E7659E9B482426277668584E">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Под действием постоянной горизонтальной силы <span class=mml><m:math><m:mstyle displaystyle="true"><m:mover accent='true'><m:mi>F</m:mi><m:mo>&#x2192;</m:mo></m:mover></m:mstyle></m:math></span> клин массой <i><span lang=EN-US>M</span></i><span lang=EN-US>&nbsp;</span>=&nbsp;1&nbsp;кг движется по гладкой горизонтальной поверхности стола. По шероховатой поверхности клина, составляющей угол &#945;&nbsp;=&nbsp;30°<span lang=EN-US>&nbsp;</span>с горизонтом, равномерно (относительно клина) скользит вниз брусок массой <i><span lang=EN-US>m</span></i>&nbsp;=&nbsp;0,2&nbsp;кг. Коэффициент трения между бруском и клином µ&nbsp;=&nbsp;0,6. Найдите модуль ускорения клина. Сопротивлением воздуха пренебречь. Сделайте рисунок с указанием сил, действующих на брусок. <b><i><span>Обоснуйте применимость законов, используемых для решения задачи.</span></i></b></p> <p class=MsoNormal><b><i><span>&nbsp;</span></i></b></p>  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0> <tr> <td valign=top> <p class=MsoNormal><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/565254772DABBBF04A6CA51DF26F1A57(copy1)/xs3qstsrc565254772DABBBF04A6CA51DF26F1A57_3_1704886146.png');</script></p> </td> </tr> </table>  <p class=MsoNormal><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iAB0739'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Динамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">AB0739</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E9B24358E7659E9B482426277668584E')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E9B24358E7659E9B482426277668584E',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E9B24358E7659E9B482426277668584E"))
+	            toggleQFavour('iAB0739');
+	        if (solvedQst.has("E9B24358E7659E9B482426277668584E"))
+	            setQSolved('iAB0739', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qACC239'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformACC239' id='checkformACC239' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E9BAA617750082674BCA87D5AB1A87D9">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=right> <tr> <td width=184 valign=top> <p class=MsoNormal><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/C0D6E77F8F34A5BC4FA20127A79CDF4A(copy1)/xs3qstsrcE9BAA617750082674BCA87D5AB1A87D9_4_1772111129.png');</script></p> </td> </tr> </table> <p class=MsoNormal>Сосуд с воздухом, отделённым от атмосферы поршнем, поместили в сосуд с водой и прикрепили ко дну кастрюли нитью, не дающей сосуду всплыть на поверхность. Начальная температура воздуха в сосуде и воды в кастрюле <i><span lang=EN-US>t</span></i><sub>1</sub><i> =</i>18 °С. Кастрюлю помещают в холодильник. Ниже какой температуры <i><span lang=EN-US>t</span><sub>2</sub></i> должна охладиться вода, чтобы сосуд опустился на дно кастрюли? Начальный объём воздуха в сосуде <i><span lang=EN-US>V</span></i><sub>1</sub><i> =</i> 2 дм<sup>3</sup>. Масса сосуда с поршнем <i><span lang=EN-US>m</span> = </i>2,2 кг. Сосуд и поршень изготовлены из стали, плотность которой &#961;<i> = </i>7800 кг/м<sup>3</sup>.  Поршень может скользить без трения со стенками сосуда. Считать массу воздуха в сосуде намного меньшей, чем масса сосуда с&nbsp;поршнем.</p> <p class=MsoNormal><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iACC239'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1.12 Изопроцессы в разреженном газе с постоянным числом молекул N (с постоянным количеством вещества &#957;)</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">ACC239</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E9BAA617750082674BCA87D5AB1A87D9')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E9BAA617750082674BCA87D5AB1A87D9',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E9BAA617750082674BCA87D5AB1A87D9"))
+	            toggleQFavour('iACC239');
+	        if (solvedQst.has("E9BAA617750082674BCA87D5AB1A87D9"))
+	            setQSolved('iACC239', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qA2EA39'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformA2EA39' id='checkformA2EA39' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="E9BC6937BB5BBF6F4EBE9243E0506BEE">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=MsoNormal><FONT class=Basis2>В вертикальном цилиндрическом сосуде с площадью поперечного сечения </FONT><?import namespace = m urn = "http://www.w3.org/1998/Math/MathML" implementation = "#MathPlayer" declareNamespace /><m:math><m:mstyle displaystyle="true"><m:semantics><m:mrow><m:mi>S</m:mi><m:mo>=</m:mo><m:mn>5</m:mn> </m:mrow></m:semantics></m:mstyle></m:math><FONT class=Basis2>&nbsp;см<SUP>2</SUP>, ограниченном сверху подвижным поршнем массой </FONT><m:math><m:mstyle displaystyle="true"><m:semantics><m:mrow><m:mi>M</m:mi><m:mo>=</m:mo><m:mn>1</m:mn> </m:mrow></m:semantics></m:mstyle></m:math><FONT class=Basis2>&nbsp;кг, находится воздух при комнатной температуре. Первоначально поршень находился на высоте </FONT><m:math><m:mstyle displaystyle="true"><m:semantics><m:mrow><m:mi>H</m:mi><m:mo>=</m:mo><m:mn>13</m:mn> </m:mrow></m:semantics></m:mstyle></m:math><FONT class=Basis2>&nbsp;см от дна сосуда. На какой высоте <I>h</I> от дна сосуда окажется поршень, если на него положить груз массой </FONT><m:math><m:mstyle displaystyle="true"><m:semantics><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>0,5</m:mn> </m:mrow></m:semantics></m:mstyle></m:math><FONT class=Basis2>&nbsp;кг? (Воздух считать идеальным газом, а его температуру –</FONT><FONT class=Basis2>&nbsp;неизменной. Атмосферное давление принять равным 10<SUP>5</SUP> Па.) Трение между стенками сосуда и поршнем не учитывать.</FONT></P></TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iA2EA39'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2 Молекулярная физика.  Термодинамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">A2EA39</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'E9BC6937BB5BBF6F4EBE9243E0506BEE')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('E9BC6937BB5BBF6F4EBE9243E0506BEE',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("E9BC6937BB5BBF6F4EBE9243E0506BEE"))
+	            toggleQFavour('iA2EA39');
+	        if (solvedQst.has("E9BC6937BB5BBF6F4EBE9243E0506BEE"))
+	            setQSolved('iA2EA39', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qAB0c38'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformAB0c38' id='checkformAB0c38' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="e9f24a4c39114efea5263d28f4e1fb0b">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=right> <tr> <td width=228 valign=top> <p class=MsoNormal><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/6643FFE7B757A4954EA579CB5D80610F(copy1)/xs3qstsrce9f24a4c39114efea5263d28f4e1fb0b_8_1777384527.png');</script></p> </td> </tr> </table> <p class=MsoNormal>Брусок массой <i>М</i>&nbsp;=&nbsp;600&nbsp;г соединён невесомой и нерастяжимой нитью, перекинутой через гладкий невесомый блок, с грузом массой <i><span lang=EN-US>m</span></i>&nbsp;=&nbsp;200&nbsp;г. К этому грузу на лёгкой пружине подвешен второй такой же груз. Длина нерастянутой пружины <i><span lang=EN-US>l</span></i><span lang=EN-US>&nbsp;</span>=<span lang=EN-US>&nbsp;</span>12<span lang=EN-US>&nbsp;</span>см, коэффициент трения бруска о поверхность стола <span>m</span>&nbsp;=&nbsp;0,2. Определите жёсткость <i><span lang=EN-US>k</span></i> пружины, если при движении грузов длина пружины <i><span lang=EN-US>L</span></i> постоянна и равна 14 см. Сделайте рисунок с указанием сил, действующих на брусок и грузы. Трением в оси блока и трением о воздух пренебречь.</p> <p class=MsoNormal><b><i>Обоснуйте применимость законов, используемых для решения задачи.</i></b></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iAB0c38'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Динамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">AB0c38</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'e9f24a4c39114efea5263d28f4e1fb0b')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('e9f24a4c39114efea5263d28f4e1fb0b',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("e9f24a4c39114efea5263d28f4e1fb0b"))
+	            toggleQFavour('iAB0c38');
+	        if (solvedQst.has("e9f24a4c39114efea5263d28f4e1fb0b"))
+	            setQSolved('iAB0c38', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q93393A'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform93393A' id='checkform93393A' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="eb9eebefa81a40b09520ef2ddc691b7a">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="283" valign="top"> <p class="MsoNormal" ><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/AF3EA1F5DC438E2A4650395652D35149(copy1)/xs3qstsrcAF3EA1F5DC438E2A4650395652D35149_1_1770192598.png');</script></p> </td> </tr> </table> <p class="MsoNormal">На горизонтальном неподвижном столе лежит доска. На доске находится маленький брусок массой <i ><span >m</span></i><span >&nbsp;</span>=<span >&nbsp;</span>200<span >&nbsp;</span>г <br /> (см. рисунок). Брусок и доска связаны невесомой нерастяжимой нитью, перекинутой через невесомый блок, закреплённый на стене (отрезки нити, не лежащие на блоке, горизонтальны <br /> и параллельны друг другу). Коэффициент трения между бруском и доской <span class="MPEntity">&#956;</span><sub>1</sub>&nbsp;=&nbsp;0,5, между столом и доской <span class="MPEntity">&#956;</span><sub>2</sub>&nbsp;=&nbsp;0,3. Доску тянут вправо с постоянной горизонтальной силой, модуль которой <i ><span >F</span></i><span >&nbsp;</span>=<span >&nbsp;</span>6&nbsp;Н. Чему равна масса доски&nbsp;<i ><span >M</span></i>, если модуль ускорения бруска относительно стола <i >а</i>&nbsp;=&nbsp;1&nbsp;м/с<sup>2</sup>? Трением в оси блока и сопротивлением воздуха пренебречь. Сделайте рисунок с указанием сил, действующих на тела. </p> <p class="MsoNormal"><b ><i >Обоснуйте применимость законов, используемых для решения задачи.</i></b><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i93393A'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Динамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">93393A</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'eb9eebefa81a40b09520ef2ddc691b7a')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('eb9eebefa81a40b09520ef2ddc691b7a',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("eb9eebefa81a40b09520ef2ddc691b7a"))
+	            toggleQFavour('i93393A');
+	        if (solvedQst.has("eb9eebefa81a40b09520ef2ddc691b7a"))
+	            setQSolved('i93393A', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q9C8F39'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform9C8F39' id='checkform9C8F39' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="EBBFA1ACEB6693A04242CB9424F6C413">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'> <P class=Basis2>Уровни энергии электрона в атоме водорода задаются формулой <?import namespace = m urn = "http://www.w3.org/1998/Math/MathML" implementation = "#MathPlayer" declareNamespace /><m:math style="DISPLAY: inline-block; CURSOR: pointer"><m:semantics><m:mrow><m:msub><m:mi>E</m:mi> <m:mi>n</m:mi> </m:msub><m:mo>=</m:mo><m:mo>&#8722;</m:mo><m:mfrac> <m:mrow><m:mn>13,6</m:mn> </m:mrow><m:mrow><m:msup><m:mi>n</m:mi> <m:mn>2</m:mn> </m:msup></m:mrow></m:mfrac></m:mrow> </m:semantics></m:math>эВ, где <I>n</I> = 1, 2, 3, … . При переходе атома из состояния <I>Е</I><SUB>2</SUB> в состояние <I>Е</I><SUB>1</SUB> атом испускает фотон. Попав на поверхность фотокатода, фотон выбивает фотоэлектрон. Длина волны света, соответствующая красной границе фотоэффекта для материала поверхности фотокатода, <FONT class=MPEntity>&#955;</FONT><SUB>кр</SUB>&nbsp;=&nbsp;300&nbsp;нм. Чему равна максимально возможная кинетическая энергия фотоэлектрона?</P></TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i9C8F39'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>4 Квантовая физика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">9C8F39</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'EBBFA1ACEB6693A04242CB9424F6C413')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('EBBFA1ACEB6693A04242CB9424F6C413',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("EBBFA1ACEB6693A04242CB9424F6C413"))
+	            toggleQFavour('i9C8F39');
+	        if (solvedQst.has("EBBFA1ACEB6693A04242CB9424F6C413"))
+	            setQSolved('i9C8F39', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q6F2B31'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform6F2B31' id='checkform6F2B31' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="ED561411760798DB4E77D914194F1D1F">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Металлическая пластина облучается монохроматическим электромагнитным излучением. Работа выхода электронов из данного металла равна 4,7&nbsp;эВ. Вылетающие из пластины фотоэлектроны попадают в однородное электрическое поле напряжённостью 100&nbsp;В/м. Вектор напряжённости <span class=mml><m:math><m:mstyle displaystyle="true"><m:mover accent='true'><m:mi>&#x0415;</m:mi><m:mo>&#x2192;</m:mo></m:mover></m:mstyle></m:math></span> поля направлен к пластине перпендикулярно её поверхности. Измерения показали, что на расстоянии 20&nbsp;см от пластины максимальная кинетическая энергия фотоэлектронов равна 21,9&nbsp;эВ. Определите частоту падающего на пластину электромагнитного излучения.</p> <p class=MsoNormal>&nbsp;</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i6F2B31'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>4.1.2 Фотоны. Энергия фотона. Импульс фотона</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">6F2B31</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'ED561411760798DB4E77D914194F1D1F')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('ED561411760798DB4E77D914194F1D1F',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("ED561411760798DB4E77D914194F1D1F"))
+	            toggleQFavour('i6F2B31');
+	        if (solvedQst.has("ED561411760798DB4E77D914194F1D1F"))
+	            setQSolved('i6F2B31', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q678A39'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform678A39' id='checkform678A39' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="edbf39f93f3749cfa22ea3bda1a5025f">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Чему была равна относительная влажность воздуха в комнате размерами <span>5&nbsp;м&nbsp;&times;&nbsp;7&nbsp;м&nbsp;&times;&nbsp;3&nbsp;м, если после 2&nbsp;ч работы увлажнителя воздуха <br /> с производительностью</span> водяного пара 0,2 кг/ч она стала равна 70&nbsp;%? Температура воздуха в комнате постоянна и равна 15&nbsp;&deg;C. Давление насыщенного водяного пара при температуре 15&nbsp;&deg;C равно&nbsp;1,71&nbsp;кПа. Комнату считать герметичным сосудом.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i678A39'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1.14 Влажность воздуха </div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">678A39</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'edbf39f93f3749cfa22ea3bda1a5025f')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('edbf39f93f3749cfa22ea3bda1a5025f',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("edbf39f93f3749cfa22ea3bda1a5025f"))
+	            toggleQFavour('i678A39');
+	        if (solvedQst.has("edbf39f93f3749cfa22ea3bda1a5025f"))
+	            setQSolved('i678A39', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q888D31'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform888D31' id='checkform888D31' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="EF5FF7054E85A1264E7D0FEECA407250">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Брусок массой <i >m</i> скользит по горизонтальной поверхности стола и нагоняет брусок массой 4<i >m</i>, скользящий по столу в том же направлении. В результате неупругого соударения бруски слипаются. Их скорости перед ударом: <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mi>&#x03C5;</m:mi> <m:mn>0</m:mn> </m:msub> <m:mo>=</m:mo><m:mn>5</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;м/с и <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mfrac> <m:mrow> <m:msub> <m:mi>&#x03C5;</m:mi> <m:mn>0</m:mn> </m:msub> </m:mrow> <m:mn>2</m:mn> </m:mfrac> <m:mo>.</m:mo> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;Коэффициент трения скольжения между брусками и столом <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mtext>&#x03BC;</m:mtext><m:mo>=</m:mo><m:mn>0,5.</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;На какое расстояние от места соударения переместятся слипшиеся бруски к моменту, когда их скорость станет равна <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mfrac> <m:mn>2</m:mn> <m:mn>5</m:mn> </m:mfrac> <m:msub> <m:mi>&#x03C5;</m:mi> <m:mn>0</m:mn> </m:msub> <m:mtext>&#x200B;</m:mtext><m:mo>?</m:mo> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;Влиянием силы трения со стороны стола на столкновение брусков пренебречь.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i888D31'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.4.1 Импульс материальной точки</div><div>1.4.2 Импульс системы тел </div><div>1.4.3 Закон изменения и сохранения импульса</div><div>1.4.4 Работа силы на малом перемещении</div><div>1.4.5 Мощность силы</div><div>1.4.6 Кинетическая энергия материальной точки. Закон изменения кинетической энергии системы материальных точек</div><div>1.4.7 Потенциальная энергия для потенциальных сил. Потенциальная энергия материальной точки в однородном поле тяжести. Потенциальная энергия упруго деформированного тела</div><div>1.4.8 Закон изменения и сохранения механической энергии</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">888D31</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'EF5FF7054E85A1264E7D0FEECA407250')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('EF5FF7054E85A1264E7D0FEECA407250',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("EF5FF7054E85A1264E7D0FEECA407250"))
+	            toggleQFavour('i888D31');
+	        if (solvedQst.has("EF5FF7054E85A1264E7D0FEECA407250"))
+	            setQSolved('i888D31', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q8E6D33'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform8E6D33' id='checkform8E6D33' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="EFEDC7435BC6BA6A4894849DF8CC2F3C">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Ядро покоящегося нейтрального атома, находясь в однородном магнитном поле с индукцией <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mover accent='true'> <m:mi>B</m:mi> <m:mo>&#x2192;</m:mo> </m:mover> <m:mo>,</m:mo> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;испытывает <span class="MPEntity">&#945;</span>-распад. При этом рождаются <span class="MPEntity">&#945;</span>-частица и тяжёлый ион нового элемента. Масса <span class="MPEntity">&#945;</span>-частицы равна <i ><span >m</span></i><sub><span class="MPEntity">&#945;</span></sub>, её заряд равен <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mi>e</m:mi> <m:mo>|</m:mo></m:mrow> </m:mrow>  </m:semantics> </m:mstyle></m:math>, масса тяжёлого иона равна <i ><span >M</span></i>. Выделившаяся при <span class="MPEntity">&#945;</span>-распаде энергия <span class="MPEntity">&#916;</span><i ><span >E</span></i> целиком переходит в кинетическую энергию продуктов реакции. Трек <br /> <span class="MPEntity">&#945;</span>-частицы находится в плоскости, перпендикулярной направлению магнитного поля. Начальная часть трека напоминает дугу окружности. Найдите радиус этой окружности.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i8E6D33'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3.3.4 Сила Лоренца, её направление и величина. Движение заряженной частицы в однородном магнитном поле</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">8E6D33</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'EFEDC7435BC6BA6A4894849DF8CC2F3C')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('EFEDC7435BC6BA6A4894849DF8CC2F3C',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("EFEDC7435BC6BA6A4894849DF8CC2F3C"))
+	            toggleQFavour('i8E6D33');
+	        if (solvedQst.has("EFEDC7435BC6BA6A4894849DF8CC2F3C"))
+	            setQSolved('i8E6D33', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qF74783'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformF74783' id='checkformF74783' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="f1e033d477534692bcae4672ef8aa192">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=right> <tr> <td width=315 valign=top> <p class=MsoNormal><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/EBC7BA6A4BEBBDE04BF5EA821DD1BEAD(copy1)/xs3qstsrcf1e033d477534692bcae4672ef8aa192_7_1759322519.png');</script></p> </td> </tr> </table> <p class=MsoNormal>Во время опыта объём сосуда с разреженным аргоном не менялся, и аргон перешёл из состояния 1 в состояние 2 (см. рисунок). Кран у сосуда был закрыт неплотно, и сквозь него мог просачиваться аргон. Определите отношение <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>N</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>N</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:mstyle></m:math></span> числа молекул газа в сосуде в конце и в начале опыта.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iF74783'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1.10 Модель идеального газа в термодинамике</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">F74783</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'f1e033d477534692bcae4672ef8aa192')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('f1e033d477534692bcae4672ef8aa192',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("f1e033d477534692bcae4672ef8aa192"))
+	            toggleQFavour('iF74783');
+	        if (solvedQst.has("f1e033d477534692bcae4672ef8aa192"))
+	            setQSolved('iF74783', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q075E84'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform075E84' id='checkform075E84' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F2083CC0FB6DBDB340F71C3C76B1FBAC">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Два одинаковых теплоизолированных сосуда соединены короткой трубкой <br /> с краном. В первом сосуде находится <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mtext>&#x03BD;</m:mtext> <m:mn>1</m:mn> </m:msub> <m:mo>=</m:mo><m:mn>2</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;моль гелия при температуре <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mi>T</m:mi> <m:mn>1</m:mn> </m:msub> <m:mo>=</m:mo><m:mn>400</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math><span >&nbsp;</span>К; во втором <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2013;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;<m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mtext>&#x03BD;</m:mtext> <m:mn>2</m:mn> </m:msub> <m:mo>=</m:mo><m:mn>3</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;моль аргона при температуре <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mi>T</m:mi> <m:mn>2</m:mn> </m:msub> <m:mo>=</m:mo><m:mn>300</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math><span >&nbsp;</span>К. Кран открывают. В установившемся равновесном состоянии давление в сосудах становится <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>p</m:mi><m:mo>=</m:mo><m:mn>5,4</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;кПа. Определите объём <i ><span >V</span></i><span> </span>одного сосуда. Объёмом трубки пренебречь.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i075E84'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2.1 Тепловое равновесие и температура</div><div>2.2.2 Внутренняя энергия</div><div>2.2.3 Теплопередача как способ изменения внутренней энергии без совершения работы. Конвекция, теплопроводность, излучение</div><div>2.2.4 Количество теплоты. Удельная теплоемкость вещества</div><div>2.2.5 Удельная теплота парообразования. Удельная теплота плавления.  Удельная теплота сгорания топлива</div><div>2.2.6 Элементарная работа в термодинамике. Вычисление работы по графику процесса на pV-диаграмме</div><div>2.2.7 Первый закон термодинамики</div><div>2.2.8 Второй закон термодинамики. Необратимые процессы</div><div>2.2.9 Принципы действия тепловых машин. КПД</div><div>2.2.10 Максимальное значение КПД. Цикл Карно</div><div>2.2.11 Уравнение теплового баланса</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">075E84</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F2083CC0FB6DBDB340F71C3C76B1FBAC')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F2083CC0FB6DBDB340F71C3C76B1FBAC',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F2083CC0FB6DBDB340F71C3C76B1FBAC"))
+	            toggleQFavour('i075E84');
+	        if (solvedQst.has("F2083CC0FB6DBDB340F71C3C76B1FBAC"))
+	            setQSolved('i075E84', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q0E0D8F'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform0E0D8F' id='checkform0E0D8F' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F212C74ADA07964C426BA4F3E8B466C3">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Пластилиновый шарик в момент <i ><span >t</span></i> = 0 бросают с горизонтальной поверхности Земли с начальной скоростью <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mover accent='true'> <m:mi>&#x03C5;</m:mi> <m:mo>&#x2192;</m:mo> </m:mover> <m:mn>0</m:mn> </m:msub> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;под углом &alpha; к горизонту. Одновременно с некоторой высоты над поверхностью Земли начинает падать из состояния покоя другой такой же шарик. Шарики абсолютно неупруго сталкиваются в воздухе. Сразу после столкновения скорость шариков направлена горизонтально. В какой момент времени &tau; шарики упадут на Землю? Сопротивлением воздуха пренебречь.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i0E0D8F'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1 Механика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">0E0D8F</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F212C74ADA07964C426BA4F3E8B466C3')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F212C74ADA07964C426BA4F3E8B466C3',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F212C74ADA07964C426BA4F3E8B466C3"))
+	            toggleQFavour('i0E0D8F');
+	        if (solvedQst.has("F212C74ADA07964C426BA4F3E8B466C3"))
+	            setQSolved('i0E0D8F', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q733486'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform733486' id='checkform733486' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="f3dee004402b49dcbd682734ff15e660">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=right> <tr> <td width=343 valign=top> <p class=MsoNormal><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/F2E56371626F974B4E9EEFF197898459(copy1)/xs3qstsrcf3dee004402b49dcbd682734ff15e660_7_1759321443.png');</script></p> </td> </tr> </table> <p class=MsoNormal>Во время опыта объём сосуда <br> с разреженным газом увеличился в 6 раз, и газ перешёл из состояния 1 в состояние 2 (см. рисунок). Кран у сосуда был закрыт неплотно, и сквозь него <span>мог просачиваться газ. Определите</span> отношение <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>N</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>N</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:mstyle></m:math></span> числа молекул газа в сосуде в конце и в начале опыта. Газ считать идеальным.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i733486'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1.10 Модель идеального газа в термодинамике</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">733486</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'f3dee004402b49dcbd682734ff15e660')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('f3dee004402b49dcbd682734ff15e660',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("f3dee004402b49dcbd682734ff15e660"))
+	            toggleQFavour('i733486');
+	        if (solvedQst.has("f3dee004402b49dcbd682734ff15e660"))
+	            setQSolved('i733486', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qB8648F'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformB8648F' id='checkformB8648F' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F41DF0E4DC00857D4B52DB78E8306DBF">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Ион с зарядом <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>3,2</m:mn><m:mo>&#x22C5;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>19</m:mn></m:mrow></m:msup><m:mtext>&#x2004;</m:mtext><m:mtext>&#x041A;&#x043B;</m:mtext></m:mrow></m:mstyle></m:math></span> и массой <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>1,5</m:mn><m:mo>&#x22C5;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>25</m:mn></m:mrow></m:msup><m:mtext>&#x2004;</m:mtext><m:mtext>&#x043A;&#x0433;</m:mtext></m:mrow></m:mstyle></m:math></span> проходит ускоряющую разность потенциалов <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mi>U</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:msup><m:mtext>&#x2004;</m:mtext><m:mtext>&#x0412;</m:mtext></m:mrow></m:mstyle></m:math></span> и после этого попадает в однородное магнитное поле, в котором движется по окружности радиусом <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>0,3</m:mn></m:mrow></m:mstyle></m:math></span>&nbsp;м. Определите модуль индукции <i><span lang=EN-US>B</span><span lang=EN-US> </span></i>магнитного поля. Считать, что установка находится в вакууме. Силой тяжести и скоростью иона до прохождения ускоряющей разности потенциалов пренебречь.</p> <p class=MsoNormal><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iB8648F'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3.4 Электромагнитная индукция</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">B8648F</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F41DF0E4DC00857D4B52DB78E8306DBF')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F41DF0E4DC00857D4B52DB78E8306DBF',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F41DF0E4DC00857D4B52DB78E8306DBF"))
+	            toggleQFavour('iB8648F');
+	        if (solvedQst.has("F41DF0E4DC00857D4B52DB78E8306DBF"))
+	            setQSolved('iB8648F', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q28EA8D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform28EA8D' id='checkform28EA8D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F67CF95C70B4BDFE48079353E182C4AF">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">С идеальным одноатомным газом, который находится в сосуде с поршнем, провели два опыта. В первом опыте газу сообщили, закрепив поршень, количество теплоты <i ><span >Q</span></i><sub>1</sub>, в результате чего его температура повысилась на <span class="MPEntity">&#916;</span><i >Т&nbsp;=&nbsp;</i>1&nbsp;К. Во втором опыте, предоставив газу возможность изобарно расширяться, сообщили ему количество теплоты <i ><span >Q</span></i><sub>2</sub>, которое на 208 Дж больше, чем <i ><span >Q</span></i><sub>1</sub>. В результате температура газа повысилась, как и в первом случае, на <span class="MPEntity">&#916;</span><i >Т</i>. Какова, по данным этих двух опытов, молярная масса газа, если его масса <i ><span >m</span>&nbsp;=&nbsp;</i>1&nbsp;кг?<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i28EA8D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2.1 Тепловое равновесие и температура</div><div>2.2.2 Внутренняя энергия</div><div>2.2.3 Теплопередача как способ изменения внутренней энергии без совершения работы. Конвекция, теплопроводность, излучение</div><div>2.2.4 Количество теплоты. Удельная теплоемкость вещества</div><div>2.2.5 Удельная теплота парообразования. Удельная теплота плавления.  Удельная теплота сгорания топлива</div><div>2.2.6 Элементарная работа в термодинамике. Вычисление работы по графику процесса на pV-диаграмме</div><div>2.2.7 Первый закон термодинамики</div><div>2.2.8 Второй закон термодинамики. Необратимые процессы</div><div>2.2.9 Принципы действия тепловых машин. КПД</div><div>2.2.10 Максимальное значение КПД. Цикл Карно</div><div>2.2.11 Уравнение теплового баланса</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">28EA8D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F67CF95C70B4BDFE48079353E182C4AF')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F67CF95C70B4BDFE48079353E182C4AF',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F67CF95C70B4BDFE48079353E182C4AF"))
+	            toggleQFavour('i28EA8D');
+	        if (solvedQst.has("F67CF95C70B4BDFE48079353E182C4AF"))
+	            setQSolved('i28EA8D', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q27EF85'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform27EF85' id='checkform27EF85' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F68C31F5DA72B6A2483ABDC28A4153AE">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=right> <tr> <td width=249 valign=top> <p class=MsoNormal><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/17FCB5F340F6B35C46294AB0F166C306(copy3)/xs3qstsrc17FCB5F340F6B35C46294AB0F166C306_7_1670579184.png');</script></p> </td> </tr> </table>  <p class=MsoNormal>Невесомый стержень <i>АВ</i> с двумя малыми грузиками массами <i><span lang=EN-US>m</span></i><sub>1</sub>&nbsp;=&nbsp;100&nbsp;г и <i><span lang=EN-US>m</span></i><sub>2</sub>&nbsp;=&nbsp;200&nbsp;г, расположенными в точках <i><span lang=EN-US>C</span></i> и <i><span lang=EN-US>B</span></i><span lang=EN-US> </span><span>соответственно, шарнирно закреплён в точке&nbsp;<i>А</i>.</span> Груз массой <i><span lang=EN-US>M</span></i>&nbsp;=<i>&nbsp;</i>200&nbsp;г подвешен <br> к идеальному блоку за невесомую <br> и нерастяжимую нить, другой конец которой соединён с нижним концом стержня, как показано на рисунке. Вся система находится в равновесии, если стержень отклонён <br> от вертикали на угол <span>a</span><span lang=EN-US>&nbsp;</span>=&nbsp;45<span>°</span>, а нить составляет угол с вертикалью, равный <span>b</span>&nbsp;=&nbsp;15<span>°</span>. Расстояние <i>АС</i><span lang=EN-US>&nbsp;</span>=<span lang=EN-US>&nbsp;<i>b</i>&nbsp;</span>=&nbsp;25&nbsp;см. Определите длину <i><span lang=EN-US>l</span><span lang=EN-US> </span></i>стержня <i>АВ</i>, пренебрегая трением в шарнире. <span>Сделайте рисунок с указанием сил, действующих на груз </span><i><span lang=EN-US>M</span><span lang=EN-US> </span></i><span>и стержень.</span></p> <p class=MsoNormal>Обоснуйте применимость законов, используемых для решения задачи.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i27EF85'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.3.3 Условия равновесия твёрдого тела в ИСО</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">27EF85</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F68C31F5DA72B6A2483ABDC28A4153AE')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F68C31F5DA72B6A2483ABDC28A4153AE',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F68C31F5DA72B6A2483ABDC28A4153AE"))
+	            toggleQFavour('i27EF85');
+	        if (solvedQst.has("F68C31F5DA72B6A2483ABDC28A4153AE"))
+	            setQSolved('i27EF85', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q2F6B86'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform2F6B86' id='checkform2F6B86' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F6DD1494B3FB99CD4E5B61A68762D129">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Монохроматическое рентгеновское излучение с длиной волны <span class="MPEntity">&#955;</span>&nbsp;= 1,1&middot;10<sup><m:math> <m:semantics> <m:mo>&#x2013;</m:mo> </m:semantics> </m:math>10</sup> м падает по нормали на пластинку и создаёт давление <i >Р</i> = 1,26&middot;10<sup><m:math> <m:semantics> <m:mo>&#x2013;</m:mo> </m:semantics> </m:math>6</sup> Па. При этом 70% фотонов отражается, а остальные проходят сквозь пластинку. Определите концентрацию фотонов в пучке падающего излучения. Рассеянием и поглощением излучения пренебречь. Считать, что фотоны<br /> в пучке распределены равномерно.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i2F6B86'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>4.1 Корпускулярно-волновой дуализм</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">2F6B86</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F6DD1494B3FB99CD4E5B61A68762D129')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F6DD1494B3FB99CD4E5B61A68762D129',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F6DD1494B3FB99CD4E5B61A68762D129"))
+	            toggleQFavour('i2F6B86');
+	        if (solvedQst.has("F6DD1494B3FB99CD4E5B61A68762D129"))
+	            setQSolved('i2F6B86', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q587384'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform587384' id='checkform587384' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F803FE7F2D20B1F34671DBF549AB2D2B">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="199" valign="top"> <p class="MsoNormal" ><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/3D446464920E9F13410FDFF872642DC6(copy1)/xs3qstsrc3D446464920E9F13410FDFF872642DC6_1_1510922485.png');</script></p> </td> </tr> </table>  <p class="MsoNormal">Маленький шарик массой <i ><span >m&nbsp;</span></i>=&nbsp;0,5&nbsp;кг подвешен на лёгкой нерастяжимой нити длиной <i ><span >l&nbsp;</span></i>=&nbsp;0,8&nbsp;м, которая разрывается при силе натяжения <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mi>T</m:mi> <m:mn>0</m:mn> </m:msub> <m:mo>=</m:mo><m:mn>8,6</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;Н. Шарик отведён от положения равновесия (оно показано на рисунке пунктиром) и отпущен. Когда шарик проходит положение равновесия, нить обрывается, и шарик тут же абсолютно неупруго сталкивается с бруском, лежащим неподвижно на гладкой горизонтальной поверхности стола. Скорость бруска после удара <i ><span >u&nbsp;</span></i>=&nbsp;0,4&nbsp;м/с. Какова масса <i ><span >M</span></i> бруска? Считать, что брусок после удара движется поступательно.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i587384'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.4.1 Импульс материальной точки</div><div>1.4.2 Импульс системы тел </div><div>1.4.3 Закон изменения и сохранения импульса</div><div>1.4.4 Работа силы на малом перемещении</div><div>1.4.5 Мощность силы</div><div>1.4.6 Кинетическая энергия материальной точки. Закон изменения кинетической энергии системы материальных точек</div><div>1.4.7 Потенциальная энергия для потенциальных сил. Потенциальная энергия материальной точки в однородном поле тяжести. Потенциальная энергия упруго деформированного тела</div><div>1.4.8 Закон изменения и сохранения механической энергии</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">587384</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F803FE7F2D20B1F34671DBF549AB2D2B')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F803FE7F2D20B1F34671DBF549AB2D2B',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F803FE7F2D20B1F34671DBF549AB2D2B"))
+	            toggleQFavour('i587384');
+	        if (solvedQst.has("F803FE7F2D20B1F34671DBF549AB2D2B"))
+	            setQSolved('i587384', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qA08C82'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformA08C82' id='checkformA08C82' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F96F2AE46DE482F9466E32C8E3F74B6F">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="180" valign="top"> <p class="MsoNormal" ><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/E47DBB44F6AEB35D453026595CB08BDE(copy1)/xs3qstsrcE47DBB44F6AEB35D453026595CB08BDE_1_1485418286.png');</script></p> </td> </tr> </table>  <p class="MsoNormal">Квадратная рамка со стороной <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>L</m:mi><m:mo>=</m:mo><m:mn>10</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;см подключена <br /> к источнику постоянного тока серединами своих сторон так, как показано на рисунке. На участке <i >АС</i> течёт ток <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>I</m:mi><m:mo>=</m:mo><m:mn>2</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math><span >&nbsp;</span>А. Сопротивление всех сторон рамки одинаково. Найдите полную силу Ампера, которая будет действовать на рамку в однородном магнитном поле, вектор индукции которого направлен перпендикулярно плоскости рамки и по модулю <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>0,2</m:mn> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;Тл. Сделайте рисунок, на котором укажите силы, действующие на рамку.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iA08C82'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3.3.3 Сила Ампера, её направление и величина</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">A08C82</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F96F2AE46DE482F9466E32C8E3F74B6F')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F96F2AE46DE482F9466E32C8E3F74B6F',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F96F2AE46DE482F9466E32C8E3F74B6F"))
+	            toggleQFavour('iA08C82');
+	        if (solvedQst.has("F96F2AE46DE482F9466E32C8E3F74B6F"))
+	            setQSolved('iA08C82', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qAF318D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformAF318D' id='checkformAF318D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F97E15A96ACE8D4A439D34850DAD1512">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=right> <tr> <td valign=top> <p class=MsoNormal></p> </td> </tr> </table> <p class=MsoNormal>Два шарика подвешены на вертикальных тонких нитях так, что они находятся на одной высоте. Между шариками  находится сжатая и связанная нитью пружина. При пережигании связывающей нити пружина распрямляется, расталкивает шарики и падает вниз. <br> В результате нити отклоняются в разные стороны на одинаковые углы. Во сколько раз одна  нить длиннее другой, если отношение масс <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:mstyle></m:math></span>&nbsp;=&nbsp;1,5? Считать величину сжатия пружины во много раз меньше длин нитей.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iAF318D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.4 Законы сохранения в механике</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">AF318D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F97E15A96ACE8D4A439D34850DAD1512')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F97E15A96ACE8D4A439D34850DAD1512',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F97E15A96ACE8D4A439D34850DAD1512"))
+	            toggleQFavour('iAF318D');
+	        if (solvedQst.has("F97E15A96ACE8D4A439D34850DAD1512"))
+	            setQSolved('iAF318D', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qA9E186'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformA9E186' id='checkformA9E186' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F9DCB5C08351B61A483D76DEEFA410D2">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>   <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="216" valign="top"> <p class="MsoNormal" ><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/FB94CFEB9079851F43324CBC9A543841(copy2)/xs3qstsrcFB94CFEB9079851F43324CBC9A543841_2_1569831722.png');</script></p> </td> </tr> </table>  <p class="MsoNormal"><span>В вольфрамовом цилиндре под поршнем водород при атмосферном давлении и температуре 300&nbsp;К занимает объём 0,1&nbsp;л. При нагревании водорода <br /> в цилиндре при постоянном давлении часть молекул распадается согласно реакции <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:msub> <m:mtext>H</m:mtext> <m:mn>2</m:mn> </m:msub> <m:mo>&#x2194;</m:mo><m:mtext>H</m:mtext><m:mo>+</m:mo><m:mtext>H</m:mtext><m:mtext>,</m:mtext> </m:mrow>  </m:semantics> </m:mstyle></m:math>&nbsp;причём процент &alpha; распавшихся молекул увеличивается с&nbsp;ростом температуры </span><i ><span>T</span></i><span>, как показано на рисунке<br /> (&alpha; <m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mo>&#x2013;</m:mo>  </m:semantics> </m:mstyle></m:math>&nbsp;отношение числа распавшихся молекул к&nbsp;первоначальному числу молекул, выраженное в процентах). Какой объём занимает смесь газов в цилиндре при температуре&nbsp;3000 К?</span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iA9E186'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1.10 Модель идеального газа в термодинамике</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">A9E186</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F9DCB5C08351B61A483D76DEEFA410D2')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F9DCB5C08351B61A483D76DEEFA410D2',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F9DCB5C08351B61A483D76DEEFA410D2"))
+	            toggleQFavour('iA9E186');
+	        if (solvedQst.has("F9DCB5C08351B61A483D76DEEFA410D2"))
+	            setQSolved('iA9E186', '1');
+	    </script>
+	     <div class="qblock hide-form" id='qC0FF8E'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformC0FF8E' id='checkformC0FF8E' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="FAC121440D5C9F8D4DFAB3E2A335CB93">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Два теплоизолированных сосуда, объёмы которых <i><span lang=EN-US>V</span></i><sub>1 </sub>= 2<i><span lang=EN-US>V</span></i> и <i><span lang=EN-US>V</span></i><sub>2 </sub>= <i><span lang=EN-US>V</span></i>, соединены между собой трубкой с вентилем. Вентиль закрыт. Сосуды содержат соответственно разреженный аргон и разреженный криптон в количествах <span>n</span><sub>1</sub> и <span>n</span><sub>2</sub> = 2<span>n</span><sub>1</sub> при температурах <i>Т</i><sub>1</sub> и <i>Т</i><sub>2</sub>&nbsp;=&nbsp;2<i>Т</i><sub>1</sub> соответственно. Каким будет давление в сосудах, если вентиль открыть?</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='iC0FF8E'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.1.1 Модели строения газов, жидкостей и твердых тел </div><div>2.1.2 Тепловое движение атомов и молекул вещества </div><div>2.1.3 Взаимодействие частиц вещества</div><div>2.1.4 Диффузия. Броуновское движение</div><div>2.1.5 Модель идеального газа в МКТ</div><div>2.1.6 Связь между давлением и средней кинетической энергией посту-пательного теплового движения молекул идеального газа (основное уравнение МКТ)</div><div>2.1.7 Абсолютная температура</div><div>2.1.8 Связь температуры газа со средней кинетической энергией поступательного теплового движения его молекул</div><div>2.1.9 Уравнение p=nkT</div><div>2.1.10 Модель идеального газа в термодинамике</div><div>2.1.11 Закон Дальтона для давления смеси разреженных газов</div><div>2.1.12 Изопроцессы в разреженном газе с постоянным числом молекул N (с постоянным количеством вещества &#957;)</div><div>2.1.13 Насыщенные и ненасыщенные пары. Качественная зависимость плотности и давления насыщенного пара от температуры, их независимость от объёма насыщенного пара</div><div>2.1.14 Влажность воздуха </div><div>2.1.15 Изменение агрегатных состояний вещества: испарение и конденсация, кипение жидкости </div><div>2.1.16 Изменение агрегатных состояний вещества: плавление и кристаллизация</div><div>2.1.17 Преобразование энергии в фазовых переходах </div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">C0FF8E</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'FAC121440D5C9F8D4DFAB3E2A335CB93')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('FAC121440D5C9F8D4DFAB3E2A335CB93',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("FAC121440D5C9F8D4DFAB3E2A335CB93"))
+	            toggleQFavour('iC0FF8E');
+	        if (solvedQst.has("FAC121440D5C9F8D4DFAB3E2A335CB93"))
+	            setQSolved('iC0FF8E', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q82C08B'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform82C08B' id='checkform82C08B' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="FF4A620FCDFBA21540E2D70BCD8265CC">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="Basis2">Два тела подвешены за нерастяжимую и невесомую нить к идеальному блоку, как показано на рисунке. При этом первое тело массой <i ><span >m</span></i><sub>1</sub>&nbsp;=&nbsp;500&nbsp;г движется из состояния покоя вниз с ускорением <i >а</i>. Если <span>первое тело опустить в воду с плотностью <span class="MPEntity">&#961;</span>&nbsp;=&nbsp;1000 кг/м<sup>3</sup>, находящуюся в большом объёме, система будет находиться в равновесии. При этом объём погруженной в в</span>оду части тела равен <i ><span >V&nbsp;</span></i>=<span >&nbsp;<m:math><m:mstyle displaystyle="true"> <m:semantics> <m:mrow> <m:mn>1,5</m:mn><m:mo>&#x22C5;</m:mo><m:msup> <m:mrow> <m:mn>10</m:mn> </m:mrow> <m:mrow> <m:mo>&#x2212;</m:mo><m:mn>4</m:mn> </m:mrow> </m:msup> <m:msup> <m:mtext>&#x043C;</m:mtext> <m:mn>3</m:mn> </m:msup> </m:mrow>  </m:semantics> </m:mstyle></m:math></span>. Сделайте рисунки с указанием сил, действующих на тела в обоих случаях. Определите ускорение <i >а </i>первого тела.</p> <p class="MsoNormal">&nbsp;</p>  <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0"> <tr > <td width="320" valign="top"> <p class="MsoNormal"><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/7D97AA533BE083C84447CD7D3862E211(copy1)/xs3qstsrc7D97AA533BE083C84447CD7D3862E211_1_1516196253.png');</script></p> </td> </tr> </table>  <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i82C08B'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1.2 Динамика</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">82C08B</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'FF4A620FCDFBA21540E2D70BCD8265CC')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('FF4A620FCDFBA21540E2D70BCD8265CC',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("FF4A620FCDFBA21540E2D70BCD8265CC"))
+	            toggleQFavour('i82C08B');
+	        if (solvedQst.has("FF4A620FCDFBA21540E2D70BCD8265CC"))
+	            setQSolved('i82C08B', '1');
+	    </script>
+	     <div class="qblock hide-form" id='q895A8D'> 	    <div id="hint" class="hint" name="hint">Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform895A8D' id='checkform895A8D' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="FF78B921A8E6A8D9481FB111AE8194E2">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="right"> <tr > <td width="282" valign="top"> <p class="MsoNormal" align="right">&nbsp;</p> <p class="MsoNormal" align="right"><script language='javascript'> ShowPictureQ('docs/BA1F39653304A5B041B656915DC36B38/questions/072B6B77E651A6624D976E5F2BD568F0(copy3)/xs3qstsrc072B6B77E651A6624D976E5F2BD568F0_1_1640261808.jpg');</script></p> </td> </tr> </table> <p class="MsoNormal"><span>Груз на пружине совершает гармонические колебания перпендикулярно главной оптической оси собирающей</span><span> линзы с&nbsp;</span>оптической силой 5&nbsp;дптр (см. рисунок). С&nbsp;помощью этой линзы получено чёткое изображение груза на экране, находящемся на расстоянии 0,5 м от <span>линзы. Амплитуда колебаний изображения</span> равна 0,1 м, максимальная скорость изображения равна 1 м/с. Определите максимальное ускорение груза, считая размеры груза пренебрежимо малыми по сравнению с фокусным расстоянием линзы.<span></span></p> <p class="MsoNormal"><span>&nbsp;</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i895A8D'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3.6.7 Формула тонкой линзы</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">895A8D</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'FF78B921A8E6A8D9481FB111AE8194E2')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('FF78B921A8E6A8D9481FB111AE8194E2',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("FF78B921A8E6A8D9481FB111AE8194E2"))
+	            toggleQFavour('i895A8D');
+	        if (solvedQst.has("FF78B921A8E6A8D9481FB111AE8194E2"))
+	            setQSolved('i895A8D', '1');
+	    </script>
+	    
+<div id='bottom_marker'></div>
+
+<script type='text/javascript'>
+function setSize() {  if (window.parent) {
+    window.parent.setQCount(2344);
+    //var rect = document.body.getBoundingClientRect();
+    //window.parent.setContainerSize(rect.bottom - rect.top);
+    //window.parent.setContainerSize(Math.max(
+    //      document.body.offsetHeight, document.documentElement.offsetHeight,
+    //      document.body.clientHeight, document.documentElement.clientHeight)
+    //);
+    resizeContainer();
+  }
+}
+
+var cWidth = document.body.offsetWidth;
+
+function resizeContainer(){
+    var rect = document.getElementById('bottom_marker').getBoundingClientRect(); //document.body.lastChild.getBoundingClientRect();
+    window.parent.setContainerSize(rect.bottom);}
+
+function windowResize() {
+    if (cWidth != document.body.offsetWidth) {    	cWidth = document.body.offsetWidth;
+    	resizeContainer();
+    }}
+
+if (window.parent) {
+    window.parent.setQCount(2344, 24, 100);
+    
+    if (MathJax) {
+        MathJax.Hub.Register.StartupHook("End",function () { setSize(); setTimeout(resizeContainer, 1000) });
+    }
+
+	if (window.addEventListener)
+        window.addEventListener('resize', windowResize);
+    else if (window.attachEvent)
+        window.attachEvent('onresize', windowResize);
+}
+
+</script>
+<SCRIPT language=JavaScript src="../../lib/bdetect.js" type=text/javascript></SCRIPT>
+
+<script language='JavaScript'>
+var crtm="1790179741";
+function SubmitForm(aform,pgname)
+{
+var aEl = document.createElement('input');
+if (!browser.isMac || !browser.isIE)
+  aEl.type = 'hidden';
+aEl.style.display = 'none';
+aEl.name = 'crtm';
+aEl.value = crtm;
+aform.appendChild(aEl);
+aform.action=pgname;
+aform.submit();
+
+}
+function GetPageName(pgname,extparams){
+if (pgname=='') pgname='/bank/questions.php';
+if (extparams=='')
+	pgname=pgname+"?crtm="+crtm;
+else	pgname=pgname+"?crtm="+crtm+"&"+extparams;
+return pgname;}
+function ShowPage(pgname,extparams,wndname,wndparam){
+if (wndname=='') {
+
+  location.href=GetPageName(pgname,extparams);
+
+  }
+  else
+ {if (wndparam=='')
+wnd=window.open(GetPageName(pgname,extparams),wndname);
+else wnd=window.open(GetPageName(pgname,extparams),wndname,wndparam);
+wnd.focus();}
+}
+</script>
+<script language='javascript'>
+                function onXS3DocumectLoad() {setSize();
+ }
+
+		if (window.addEventListener)
+            window.addEventListener('load', onXS3DocumectLoad);
+        else if (window.attachEvent)
+            window.attachEvent('onload', onXS3DocumectLoad);
+        else
+            window.onload = onXS3DocumectLoad;
+ </script><script language='javascript'>
+                function onXS3DocumectUnload(e) {
+			    	document.cookie = "md_auto=qprint; path=/; SameSite=Lax";
+			   		//return false;
+		    }
+		if (window.addEventListener)
+            window.addEventListener('beforeunload', onXS3DocumectUnload);
+        else if (window.attachEvent)
+            window.attachEvent('onbeforeunload', onXS3DocumectUnload);
+        else
+            window.onbeforeunload = onXS3DocumectUnload;
+        </script></body>
+</html>

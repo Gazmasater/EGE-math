@@ -10,7 +10,7 @@ New-Item -ItemType Directory -Path $docsDir -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $projectDir 'fipi-assets') -Destination (Join-Path $docsDir 'fipi') -Recurse
 New-Item -ItemType File -Path (Join-Path $docsDir '.nojekyll') -Force | Out-Null
 
-$sections = @('', 'equations', 'inequalities', 'finance', 'optimal', 'planimetry', 'parameters', 'numbers', 'physics')
+$sections = @('', 'equations', 'stereometry', 'inequalities', 'finance', 'optimal', 'planimetry', 'parameters', 'numbers', 'physics')
 foreach ($section in $sections) {
     $url = if ($section) { "http://localhost:8765/$section" } else { 'http://localhost:8765/' }
     $html = (Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 60).Content
