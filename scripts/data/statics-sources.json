@@ -1,0 +1,213 @@
+{
+  "0CDBF9": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/F50C5D632DF7A4DD4D5C259BD9CAD4E7(copy2)/xs3qstsrcF50C5D632DF7A4DD4D5C259BD9CAD4E7_1_1454765789.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25746",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "1F1FD6": {
+    "image": null,
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25382",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "27EF85": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/17FCB5F340F6B35C46294AB0F166C306(copy3)/xs3qstsrc17FCB5F340F6B35C46294AB0F166C306_7_1670579184.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=39273",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "29960D": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/A554002CD8B88B9F457A16B8357B9DE8(copy1)/xs3qstsrcA554002CD8B88B9F457A16B8357B9DE8_5_1703673517.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50847",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "2A7ADB": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/C4976AFBEE73855C46D8BAF3B68B3516(copy1)/xs3qstsrc76439942f8a047d197e0458b4bb66fba_4_1758620002.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25722",
+    "comparison": "Вариант: в источнике заданы масса 1 кг и угол 45°, здесь заданы реакция 15 Н и угол 60°. Сверена общая формула F=mg√(1+ctg²α/4), выполнен обратный расчёт массы для ФИПИ.",
+    "checkedAt": "2026-09-21"
+  },
+  "2E71C0": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/A65B70F449CC93AB4D2BF48AF47449A7(copy2)/xs3qstsrcA65B70F449CC93AB4D2BF48AF47449A7_2_1579519478.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=26733",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "328102": {
+    "image": null,
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9328",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "36135B": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/283AAABB8EDBA89946C2F02DDFE404EB(copy1)/xs3qstsrc283AAABB8EDBA89946C2F02DDFE404EB_1_1611730659.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=51276",
+    "comparison": "Вариант с другими числами и искомым: сверено N=mg(L−x)tgα/L, где x отсчитывается от верхнего левого конца. Для L=3 м, x=1 м, m=3 кг, α=45° получено 20 Н. Старые 10 Н относятся к другому плечу.",
+    "checkedAt": "2026-09-21"
+  },
+  "418761": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/FF10CC0B706688B8458A477CFD59F94B(copy1)/xs3qstsrcd05f53a86d244229b187747c6669580b_7_1759927351.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=30005",
+    "comparison": "Вариант: в источнике m=1 кг, r=5 см, R=10 см, требуется M_min; в ФИПИ r=7 см, R=10 см, требуется (m/M)_max. Сверены предельный контакт в A и соотношение T₁r=T₂R, получено 0,35.",
+    "checkedAt": "2026-09-21"
+  },
+  "62CDEC": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/E97EE0325846A0F64156439ED0667533(copy1)/xs3qstsrcCDAA673B3756884A42743C4191D57BC7_2_1721208372.jpg",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38619",
+    "comparison": "Обратный процесс: источник погружает систему, ФИПИ удаляет жидкость. Модуль ΔT=ρgV=0,9 Н совпадает, при удалении жидкости натяжение увеличивается.",
+    "checkedAt": "2026-09-21"
+  },
+  "652146": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/B9B1019DC44B8E3742280B1D5AA5D9EE(copy2)/xs3qstsrcB9B1019DC44B8E3742280B1D5AA5D9EE_7_1670845924.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25744",
+    "comparison": "Обратная задача: источник задаёт CD=0,6 м и ищет L=1 м. В ФИПИ задано L=1 м; те же уравнения сил и моментов дают CD=0,6 м.",
+    "checkedAt": "2026-09-21"
+  },
+  "6AB9E6": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/F31C39C7D3029891488E0CD648F34DBB(copy2)/xs3qstsrcF31C39C7D3029891488E0CD648F34DBB_1_1548163485.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19660",
+    "comparison": "На «Решу ЕГЭ» найден аналог с погружённым шаром у шероховатой стенки; точный числовой вариант там не найден. Точное условие и рисунок дополнительно сверены со статьёй В. В. Филиппова и О. А. Манаенковой «Методические аспекты выполнения заданий ЕГЭ по физике: раздел „Механика“», «Физика в школе», № 8, 2022, с. 13. Расхождение условий аналога проверено вручную: у ФИПИ трения нет, N_y=0; T cos30°+ρ_вmg/ρ_ж=mg, T≈25,17 Н, ответ после округления 25 Н.",
+    "checkedAt": "2026-09-21",
+    "additionalSource": "https://xn--d1aish.xn--p1ai/wp-content/uploads/%D0%A4%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0-%D0%B2-%D1%88%D0%BA%D0%BE%D0%BB%D0%B5-%E2%84%9682022.pdf#page=16"
+  },
+  "7018C7": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/E4DED5A9BFB1975A4BD24B77A0D578E7(copy5)/xs3qstsrcE4DED5A9BFB1975A4BD24B77A0D578E7_9_1669966628.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33076",
+    "comparison": "Обратная задача к 33076: ФИПИ m=1,8 г и N=0,008 Н, требуется h; источник m=0,9 г, h=4 см, N=0,004 Н. Сверены сила Архимеда, её плечо и N=(mgR/H)(1−0,75(h/H)²).",
+    "checkedAt": "2026-09-21"
+  },
+  "7733A6": {
+    "image": null,
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29999",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "7823C1": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/267DA2511D44BCE14A3C225723EDD4BE(copy2)/xs3qstsrc267DA2511D44BCE14A3C225723EDD4BE_1_1542970602.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33076",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "904771": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/DFD54162F7F3A503448CC9A56B190223(copy1)/xs3qstsrcDFD54162F7F3A503448CC9A56B190223_1_1454762928.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25722",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "A1B57A": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/08B5E536F86C89954DE8423483489250(copy1)/xs3qstsrc08B5E536F86C89954DE8423483489250_1_1758807436.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=24607",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "A48FB7": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/AF3A2FC9F49390FA4E6D53322329349B(copy1)/xs3qstsrcAF3A2FC9F49390FA4E6D53322329349B_6_1766480634.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50851",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "A69E10": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/AA4C9D37CCC4A99F455F80FB3FD1601A(copy2)/xs3qstsrcAA4C9D37CCC4A99F455F80FB3FD1601A_1_1454765516.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25745",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "B468EB": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/4D4735798A498B32441F2F7FAFDC0292(copy1)/xs3qstsrcc44d0fc9210d48eead5d92d67544aa02_2_1759322578.jpg",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43077",
+    "comparison": "Те же показания 1,6 Н, 45°, массы и плечи; обозначение оси источника D заменено исходным ФИПИ O. В источнике округление 156 г; точный расчёт даёт 155,228 г, здесь 0,16 кг. Для угла с вертикалью плечо OA cosα; при 45° sinα=cosα.",
+    "checkedAt": "2026-09-21"
+  },
+  "B938AE": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/10E53BDFDFC3A863476D019FA0B084BD(copy1)/xs3qstsrc10E53BDFDFC3A863476D019FA0B084BD_1_1605862532.gif",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25401",
+    "comparison": "Вариант: источник l=90 см и спрашивает дополнительный сдвиг. ФИПИ l=60 см и спрашивает полный вылет. Сверена масса линейки 250 г и баланс моментов; полный вылет 20 см, дополнительный сдвиг 5 см.",
+    "checkedAt": "2026-09-21"
+  },
+  "BBC367": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/D261BF908A36A0EF49DB584F41E7DDE9(copy2)/xs3qstsrcD261BF908A36A0EF49DB584F41E7DDE9_1_1579680117.gif",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=20039",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "CFC86C": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/968D0E0C7CDA8DF84B90BD4C44172527(copy4)/xs3qstsrcDAAA1F4E6633BA044522BE87828FDE57_2_1759321088.jpg",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35252",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "D59EAC": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/03DE934E4B409C1142CC80B4CB6DF958(copy4)/xs3qstsrc97AB8C81CDBC9DAC44BDC9D87402557D_7_1759321843.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25930",
+    "comparison": "Обратная задача: источник задаёт m=1 кг и ищет F≈0,9 Н, ФИПИ задаёт F=2 Н и ищет m. По сверенной формуле F=μmg/[2(1+μtgα)] получено m≈2,23094 кг.",
+    "checkedAt": "2026-09-21"
+  },
+  "DB692A": {
+    "image": null,
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29874",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "DEAB32": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/A93F141D15F5BF094DBBDB6B77766A4F(copy1)/xs3qstsrcE769C4CE91B19F4A4BD027B5F7487A1B_1_1772109721.gif",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=42803",
+    "comparison": "Зеркальный вариант: источник размещает груз у левой, более жёсткой пружины; ФИПИ у правой. После зеркального соответствия силы и моменты совпадают, m=ML/(L−4d)=4 кг.",
+    "checkedAt": "2026-09-21"
+  },
+  "E9B775": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/8357088B03179A33440D7EC9556BBB55(copy2)/xs3qstsrc8357088B03179A33440D7EC9556BBB55_1_1514212298.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7125",
+    "comparison": "Обратный вариант с водой: источник m=2 кг, T=13 Н, требует V=0,7 л. Сверен баланс T=mg−ρgV; в ФИПИ ρ=700 кг/м³, V=1 л, поэтому тот же ответ 13 Н.",
+    "checkedAt": "2026-09-21"
+  },
+  "EB0004": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/512678740C12815947368D1DE4D29754(copy1)/xs3qstsrc512678740C12815947368D1DE4D29754_1_1483022402.jpg",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25407",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "F5E61D": {
+    "image": null,
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=51478",
+    "comparison": "Сверены условие, физическая модель, законы, основные преобразования и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "F9BE3E": {
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/A6C8571C882DA7714BB31E1275702F0A(copy2)/xs3qstsrcA6C8571C882DA7714BB31E1275702F0A_1_1511449555.png",
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=51276",
+    "comparison": "Вариант с другими числами: сверено N=mg·BC·tgα/L. В ФИПИ BC=1 м, L=3 м, m=3 кг, α=45°, ответ 10 Н; горизонтальные реакции стенок равны.",
+    "checkedAt": "2026-09-21"
+  }
+}

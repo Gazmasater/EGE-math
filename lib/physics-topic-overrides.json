@@ -1,0 +1,395 @@
+{
+  "E24F06": {
+    "primaryTopic": "1.2",
+    "secondaryTopics": [
+      "1.3"
+    ],
+    "reason": "Сила трения на наклонной доске определяется равновесием и законом трения; одной кинематики здесь нет.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "1.1"
+    ],
+    "conditionSha256": "c4320be397c80e98a32ec076a19d77ff78f63e9dc22de3cfda041beda33ca02a"
+  },
+  "963FCF": {
+    "primaryTopic": "3.4",
+    "secondaryTopics": [],
+    "reason": "Движение проводящего стержня создаёт ЭДС индукции; механических колебаний нет.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "e6ff7d1332a812a722b674daa0b0966b76127b910241cd00ffea84c68494acc7"
+  },
+  "BE3A9E": {
+    "primaryTopic": "1.3",
+    "secondaryTopics": [],
+    "reason": "Неподвижный стержень на опорах: равновесие сил и моментов, а не изменение энергии или импульса.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "1.4"
+    ],
+    "conditionSha256": "adeba5b90d31c74f392609362edc7c40708456de2cbe3b78802117c5f623c5b1"
+  },
+  "DA269B": {
+    "primaryTopic": "1.3",
+    "secondaryTopics": [],
+    "reason": "Условия покоя гантели в выемке, моменты сил и предельное трение.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "1.4"
+    ],
+    "conditionSha256": "e9aaf268b022d39cc84a98a845d151e91a2bfbe997cf228293aa83a13b393ec7"
+  },
+  "030E68": {
+    "primaryTopic": "3.3",
+    "secondaryTopics": [
+      "3.1"
+    ],
+    "reason": "Ускорение иона напряжением и движение в магнитном поле; ядерной реакции и мощности силы в условии нет.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "1.4.5",
+      "4.3"
+    ],
+    "conditionSha256": "427704a12dcf6fb467b147813227db3402e478aa86947ba0449c0ba9d01f9b07"
+  },
+  "D6F721": {
+    "primaryTopic": "4.3",
+    "secondaryTopics": [
+      "2.1"
+    ],
+    "reason": "Радиоактивный альфа-распад полония и период полураспада; давление образовавшегося газа — дополнительная тема.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "2d6fb83b7f0dda8c9d7a2b8c9fd0fb1e2d745cb91d6c6fc1fd51349331a0aa33"
+  },
+  "EBB156": {
+    "primaryTopic": "4.3",
+    "secondaryTopics": [
+      "1.4"
+    ],
+    "reason": "Синтез ядер и распределение энергии продуктов реакции; не электронные уровни атома.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "29be2e7cd0c1baed81c945912344e4d981e59e6f0c097ead25e58a7a6c5662a4"
+  },
+  "FEB0F6": {
+    "primaryTopic": "3.2",
+    "secondaryTopics": [],
+    "reason": "Цепь с резисторами и идеальными диодами, смена полярности; магнитного поля нет.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "3.3.1",
+      "3.3.2",
+      "3.3.3",
+      "3.3.4"
+    ],
+    "conditionSha256": "4c633454dc4723e422b1365d8f212b2e83a63e0cbc0118c6fc1a4564a38f193a"
+  },
+  "B920BD": {
+    "primaryTopic": "3.4",
+    "secondaryTopics": [
+      "3.2"
+    ],
+    "reason": "Изменение тока катушки при размыкании ключа определяется самоиндукцией.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "3.3.1",
+      "3.3.2",
+      "3.3.3",
+      "3.3.4"
+    ],
+    "conditionSha256": "24ef0abafbf71109226ea763f4284c2a440312caad9533ac864e6643bc210efe"
+  },
+  "71DCC4": {
+    "primaryTopic": "3.4",
+    "secondaryTopics": [
+      "3.1"
+    ],
+    "reason": "Заряд конденсатора возникает из-за меняющегося магнитного потока через кольцо.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "3204cfb7f52f4dd4093a806dcfbfd06a2674c9d95979fc917b31dae263453f66"
+  },
+  "B8648F": {
+    "primaryTopic": "3.3",
+    "secondaryTopics": [
+      "3.1"
+    ],
+    "reason": "Движение иона под действием силы Лоренца в постоянном магнитном поле, без электромагнитной индукции.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "3.4"
+    ],
+    "conditionSha256": "03b66115115ef7fba94aa70a4380dbea9937ead9ff813dd92cc3f960b30e7253"
+  },
+  "1D4573": {
+    "primaryTopic": "2.2",
+    "secondaryTopics": [
+      "2.1"
+    ],
+    "reason": "Нагрев идеального газа до выталкивания пробки; квантовых процессов в условии нет.",
+    "kind": "wrong_topic",
+    "sourceCodes": [
+      "4"
+    ],
+    "conditionSha256": "41dc7be11987b5bb812bde4ee4f22b45d4ca7f1ae8336e19aeccec4d7ba28cb1"
+  },
+  "D76E33": {
+    "primaryTopic": "2.2",
+    "secondaryTopics": [
+      "2.1"
+    ],
+    "reason": "Искомый знак теплоты определяется первым законом термодинамики, а не только уравнением состояния.",
+    "kind": "primary_topic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "319eb6dd4cdac5a3c450bb9dbedc3b7dd101516acd1e0a55e423143747dda2ea"
+  },
+  "63AF96": {
+    "primaryTopic": "2.2",
+    "secondaryTopics": [
+      "2.1"
+    ],
+    "reason": "Работа при адиабатическом расширении требует изменения внутренней энергии.",
+    "kind": "primary_topic",
+    "sourceCodes": [
+      "2.1.12"
+    ],
+    "conditionSha256": "38543e2911a98f0d92c57e5d9ed58cdaf622b3f30d26ad85387e77e81baef583"
+  },
+  "FD2DC6": {
+    "primaryTopic": "2.2",
+    "secondaryTopics": [
+      "2.1"
+    ],
+    "reason": "Искомый КПД теплового двигателя и теплота участков цикла — термодинамика.",
+    "kind": "primary_topic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "1ded80b659f0c8a46bdf4350765774f5a2f0b392fdbc1f4ef810c7b3fe6c4813"
+  },
+  "8A1211": {
+    "primaryTopic": "2.2",
+    "secondaryTopics": [
+      "2.1"
+    ],
+    "reason": "Доля подведённой теплоты, переходящая в работу при парообразовании; согласовать с аналогами 96017E и 9A11AE.",
+    "kind": "primary_topic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "109372dc9519392d09ba2fe97e2099b15d7236dd32afe65f8f4cc25d34d83c94"
+  },
+  "A0D359": {
+    "primaryTopic": "2.2",
+    "secondaryTopics": [
+      "2.1"
+    ],
+    "reason": "Доля теплоты, превращённая в работу при испарении бензола; такая же модель 96017E уже в 2.2.",
+    "kind": "primary_topic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "fdd9fca88fa94a58b5bc84c28ac6d89a71edc602af5e30b0b3b83ade7d34449f"
+  },
+  "C0FF8E": {
+    "primaryTopic": "2.2",
+    "secondaryTopics": [
+      "2.1"
+    ],
+    "reason": "Смешение разных газов в теплоизолированных сосудах: конечная температура определяется сохранением внутренней энергии.",
+    "kind": "primary_topic",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "e6826b3fb0a553de8c9a7e8123607ad5368e6410886e3792c543863d519b7edc"
+  },
+  "33447A": {
+    "primaryTopic": "2.1",
+    "secondaryTopics": [
+      "1.3"
+    ],
+    "reason": "Изотермическое расширение пузырька и гидростатическое давление, без расчёта теплоты; аналог 430514 уже в 2.1.",
+    "kind": "primary_topic",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "e8883977c9a162ef7b73be0a9641267881043862e07beabb05d176079c34f3c4"
+  },
+  "2D0E11": {
+    "primaryTopic": "2.1",
+    "secondaryTopics": [
+      "1.3"
+    ],
+    "reason": "При неизменной температуре воздух закачивается до открытия рычажного клапана; нужны уравнение состояния и моменты сил, не тепловой баланс 2.2.11.",
+    "kind": "primary_topic",
+    "sourceCodes": [
+      "2.2.11"
+    ],
+    "conditionSha256": "62494374c422055a7693474bbec946b994dd776968bd154aeceb2209e6d73ecd"
+  },
+  "5A1F95": {
+    "primaryTopic": "2.1",
+    "secondaryTopics": [],
+    "reason": "Относительная влажность, насыщенный пар и газовые законы; теплота и работа не спрашиваются.",
+    "kind": "primary_topic",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "257a3c9f364b93cbdb28c6e8e6afe2a277b3653d1ea3335876b489bb8409a036"
+  },
+  "F6CC25": {
+    "primaryTopic": "3.4",
+    "secondaryTopics": [],
+    "reason": "Взаимная индукция в катушках на общем сердечнике.",
+    "kind": "missing_topic",
+    "sourceCodes": [],
+    "conditionSha256": "d875d5e7c696a7298b59463782efe38d3206765e3c632c40f28a230233e5ea3e"
+  },
+  "6DAEA0": {
+    "primaryTopic": "3.4",
+    "secondaryTopics": [],
+    "reason": "Индукционный ток в рамке при уменьшении магнитного поля.",
+    "kind": "missing_topic",
+    "sourceCodes": [],
+    "conditionSha256": "70ed2ab4dff5f346cb69d9346fc48beda85c3afc99d893a55f32ea8fbb646be2"
+  },
+  "3A5D9D": {
+    "primaryTopic": "3.4",
+    "secondaryTopics": [],
+    "reason": "Связь самоиндукции и напряжения на лампочке с производной тока.",
+    "kind": "missing_topic",
+    "sourceCodes": [],
+    "conditionSha256": "83f910a8f941b6e9571b4cc4f2ff9475aabb2910a50e9e84cd9db60d4410ceff"
+  },
+  "0A9533": {
+    "primaryTopic": "2.1",
+    "secondaryTopics": [
+      "2.2"
+    ],
+    "reason": "Перестроение графика U(p) в p(V) через уравнения идеального газа; дополнительная тема 2.2.",
+    "kind": "missing_topic",
+    "sourceCodes": [],
+    "conditionSha256": "e50cf2fa518a33b6066ae67a8ab0f74ae461861d32fd9017c4ffe32c267fde70"
+  },
+  "27370F": {
+    "primaryTopic": "3.6",
+    "secondaryTopics": [],
+    "reason": "Скорость изображения точечного источника в собирающей линзе.",
+    "kind": "missing_topic",
+    "sourceCodes": [],
+    "conditionSha256": "52fc1dac609c4d5a1b6ce896fdca0403d8f3b36a7725a3cccd26e6c5a8add9d5"
+  },
+  "ABDBC2": {
+    "primaryTopic": "1.4",
+    "secondaryTopics": [],
+    "reason": "Неупругий удар пули и бруска, изменение механической энергии на наклонной плоскости.",
+    "kind": "missing_topic",
+    "sourceCodes": [],
+    "conditionSha256": "479ef84b099774a7215785cd153e4e86632558318ae0e0843077e7fc5821ed2b"
+  },
+  "904AED": {
+    "primaryTopic": "3.4",
+    "secondaryTopics": [
+      "3.3",
+      "3.1"
+    ],
+    "reason": "В условии одновременно ЭДС движения, сила Ампера и конденсатор. Добавить индукцию, не объявляя магнитную составляющую ошибочной.",
+    "kind": "mixed_topic",
+    "sourceCodes": [
+      "3.3.1",
+      "3.3.2",
+      "3.3.3",
+      "3.3.4"
+    ],
+    "conditionSha256": "818990b8507526978d89e616d17f2f980c7290b49edadbc85cd37f21d5a4a952"
+  },
+  "61B7ED": {
+    "primaryTopic": "3.4",
+    "secondaryTopics": [
+      "3.3",
+      "1.2"
+    ],
+    "reason": "Относительная скорость стержней определяет ЭДС контура; дополнительно нужны сила Ампера и трение.",
+    "kind": "mixed_topic",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "79598799e1744bceb6d29d718f7f0d49cfcb95fa4bf42c8b8a3b84c4129eaa8b"
+  },
+  "73F72D": {
+    "primaryTopic": "3.4",
+    "secondaryTopics": [
+      "3.2"
+    ],
+    "reason": "Обе текущие метки обоснованы, но заголовок сейчас выбирается по первой (3.2). Основная модель — индукционный ток и нагрев рамки.",
+    "kind": "mixed_topic",
+    "sourceCodes": [
+      "3.2.4",
+      "3.2.8",
+      "3.4.3"
+    ],
+    "conditionSha256": "8ee972020e886de0cb8c5fe24d6e9aabad05fc4930db784ebf666c531c24e3f3"
+  },
+  "3ECDA4": {
+    "primaryTopic": "1.5",
+    "secondaryTopics": [
+      "1.4",
+      "1.2"
+    ],
+    "reason": "Неупругий удар и время взаимодействия с пружиной: добавить колебания и импульс; наличие динамики само по себе не ошибка.",
+    "kind": "mixed_topic",
+    "sourceCodes": [
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.2.4",
+      "1.2.5",
+      "1.2.6"
+    ],
+    "conditionSha256": "0e583cfd559e8b268bd79a7b394c0510a3a7e7793081e11dcf91f6ca0b8b43cd"
+  },
+  "F717A0": {
+    "primaryTopic": "1.5",
+    "secondaryTopics": [
+      "2.1",
+      "1.2"
+    ],
+    "reason": "После открытия сосуда изменение давления воздуха нарушает равновесие поршня; сила упругости вызывает движение и колебания. Колебания остаются основной темой, молекулярная физика и динамика добавлены по согласованию с пользователем.",
+    "kind": "mixed_topic",
+    "sourceCodes": [
+      "1.5.1",
+      "1.5.2",
+      "1.5.3",
+      "1.5.4",
+      "1.5.5"
+    ],
+    "conditionSha256": "70566ff33f0c4fb8e1ea63e0553e00e307a2ca78b888df85ef01958478941c3f"
+  }
+}

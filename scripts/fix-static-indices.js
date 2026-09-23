@@ -1,7 +1,7 @@
 const {DatabaseSync}=require('node:sqlite');const db=new DatabaseSync('storage/solutions.sqlite');const now=new Date().toISOString();
 const fixes={
 DEAB32:['F_л:F_пр','F_пр+F_л','F_пр=⟦3¦4⟧','F_прL','F_пр=','F_л'],
-F5e61D:['ρ_воды'],
+F5E61D:['ρ_воды'],
 DB692A:['F_А','ρ_воды'],
 '62CDEC':['F_А','ρ_ж','T_жидк','T_возд']
 };

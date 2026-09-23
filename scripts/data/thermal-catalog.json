@@ -1,0 +1,1989 @@
+[
+  {
+    "id": "003B51",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "a76d89e53cabdf34cb438adfce53e899eabb0ef10e85bc38be6f793e8ea77e89",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "05A6DD",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "40597a292895737318e993079c8270859e0b9bd9012e8066d9d615d59e0f6337",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "060CB2",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "af97a662f5978a8971a2e40cb709071caec959ff47157e8d0ab9015885abe4ea",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "06521E",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "9c9b3bdb95245aa352f4b985898adc400ba32d3b1fc11756fa931f83fb1989bc",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В кастрюле находится 0,5 кг воды при температуре 10 ^(о)С. Сколько потребуется времени, чтобы при помощи кипятильника с постоянной потребляемой мощностью 400 Вт превратить в пар 15 % воды из кастрюли? Потерями тепла и теплоёмкостью кастрюли пренебречь."
+  },
+  {
+    "id": "075E84",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "0550b5e947d8a45e6266f8c322503ffda201cdc8063d2d02c93ea7a85e33c5cb",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "0A9533",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [],
+    "conditionSha256": "e50cf2fa518a33b6066ae67a8ab0f74ae461861d32fd9017c4ffe32c267fde70",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DA8CE7A3C327A96544E3FCC7FC4C80C1(copy1)/xs3qstsrcDA8CE7A3C327A96544E3FCC7FC4C80C1_1_1513176056.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DA8CE7A3C327A96544E3FCC7FC4C80C1(copy1)/xs3qstsrcDA8CE7A3C327A96544E3FCC7FC4C80C1_2_1513176056.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "0EEB94",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "2c2bb72214748e6ef04ebcef61468a8ec982b8e6fc9e3ffbc82aa79b9f53cead",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "0F5292",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "76d2a2c468a10350614921f10912aabda5393393c0fd3d0fd2025ceece69886a",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A390BBD3F078B38E41409CCEE489457C(copy1)/xs3qstsrcA390BBD3F078B38E41409CCEE489457C_1_1511881020.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "104DB0",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "a5b6a7a2efb970a8c7a68dbe202478c91676520076d0bab40fb63fad69e1866f",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В теплоизолированный сосуд, в котором находится 1 кг льда при температуре –20 °С, налили 0,2 кг воды при температуре 10 °С. Определите массу льда в сосуде после установления теплового равновесия. Теплоёмкостью сосуда и потерями тепла пренебречь."
+  },
+  {
+    "id": "148A9F",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "5a74dbe67c37ddd08e6ebc129b2b6c18a59d320625c3399c99b27c92659652ff",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/140157_28copy1_29/xs3qstsrcB585D80D57C984FB47F3AE24087B592E_1_1355401669.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "158BDB",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "3050ae4cf0053004ddd85b7e58c7e5fe0f747219ae0db190e4397708bb3eee05",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "18E99E",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "2949f35b75cd3e42ecbf2cb6844ab8ea54da4f59d067c008736f5e7c0a09ae4b",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "19CDFF",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "ab7de24b2f2915e81c63e5a70aec66afc95662dceb770b59ee26ce2ff2fadaee",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "1A51B6",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "033f1a900d3042ad6ace6d86755016b8b586251de6f3b260d76d47ceaaa34d8e",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/140155_28copy1_29/xs3qstsrc110851567EAE8BE94764334B60A81842_1_1355401582.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "1ABA07",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "cc365f0c8642651f35cf1e37627a8a4afa8ec40b87b4b9098483f7f95f82e717",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7E2C9C1B48A9928F4BA7D714481A428F(copy1)/xs3qstsrc7E2C9C1B48A9928F4BA7D714481A428F_1_1534762052.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "1D4573",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "4"
+    ],
+    "conditionSha256": "41dc7be11987b5bb812bde4ee4f22b45d4ca7f1ae8336e19aeccec4d7ba28cb1",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "1DAC06",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "b398c10e5d061d37757abb0a37f97b2d9345f7a296aa93ed05761eddf6404d14",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/29A78928CC808044484467165386C2DD(copy1)/xs3qstsrc25D97AD7D014ADA64E2416E12EC608C5_8_1721208247.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "2118C2",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "b526a53f75cf84519e60748abc8038eab920c89445bf939c9196cccbab91d195",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "211F34",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "b97febe8875a9484196ce5c16bf71d257e01d8a2af19451fd290bd80967923b2",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "21A630",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "849bc9860a540c81c1d14e8b9157788ef3c22118036928691bc4d7a5c9bcc385",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "225695",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.1.14"
+    ],
+    "conditionSha256": "b7732188535dc1e9e0ed4123ab26a432141a7ae99d21210953b529f7059a5d4f",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E7FE36957E7A83EC4FCFF38163BAEF9B(copy2)/xs3qstsrcb6886d88e8134e018c5c85220adaff0b_4_1758619807.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "2272AF",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.2.6"
+    ],
+    "conditionSha256": "e3d72081324c958ce5eaf10c5cb383c943e0c01a9ecc45b9e1f8a878ec24c878",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D1B8403DCD3A87364BAB870A44CB9C72(copy1)/xs3qstsrc9613664fb3b441edbaaa38e53c203101_7_1759324153.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "236F6A",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "cd5dd562310ff060799e9a8b63e7e2bfd270554a57f0425d9a78534578fdf1f3",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C5073F8BE17AB1D74C2CF1CD7773E100(copy1)/xs3qstsrcD69DE165F51688E644C15729A28EAD1E_6_1721208578.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "258D41",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "f9a046695007fb320aeb5380d4fe4589fbc33b3b3c9c3169dbda227ac4387a41",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "27AA31",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "186bc0b5cf7f925f82b6844a1e735a8258ea187bbe686ba08bc28ca836a67b67",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "28EA8D",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "baa8fa647398edf8ed27294ccd4522a646ef8611e6bd5c1ff889cf4d10f7d140",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "29A5D5",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "75ab74108e304febccc732776c7e8d48180c21980a54465ad90a8bb95b456eba",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "2B6BC2",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "dea171322f1d8527ab3e86712f3dc4a59497c4d55c44e9a800ee66eb519aaee1",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/408BD2F83BB2AF9B463029304A7D1D28(copy1)/xs3qstsrc408BD2F83BB2AF9B463029304A7D1D28_1_1518782631.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "2C751A",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "e7abe5ea0300d528140b574eaf1b47b6c09909a0ef8c7d10da3070ff2fcfdbca",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "2D0E11",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2.11"
+    ],
+    "conditionSha256": "62494374c422055a7693474bbec946b994dd776968bd154aeceb2209e6d73ecd",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C361E5825A46A4A74393CE1E408C60DA(copy3)/xs3qstsrcC361E5825A46A4A74393CE1E408C60DA_2_1670398760.jpg"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "2D1417",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "b96584b35198274accddcd3b86c8ea0c23043850485340c315080b17de0a727f",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "2F460C",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1.10"
+    ],
+    "conditionSha256": "a4f6d22726756fe5b0798389fc68d5918ea0485d64ca51af3c8dd49dbd7c7498",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "3023D1",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "8f829e89eabfdd4037b344ff30b112f10752bb2271159eba8b47cf73e3306367",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E13.C3.21_28copy1_29/xs3qstsrcCE52EB762F578D3E45FB7B9CABA8F317_1_1355402554.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "30CF4D",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "dc0c67634f24608c3104560d1fb0d16d3df57d95bab2d6c2684dd4e6b1d381fb",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1683D779F4F0A4C445C67ED5758D8954(copy1)/xs3qstsrc1683D779F4F0A4C445C67ED5758D8954_5_1704787966.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "31CB91",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "5d1911ab88982543f4ff30df2ca6f2be5d29b29f0261779d452c4387cfb0c3a3",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В сосуде лежит кусок льда. Температура льда t₁=0 °C. Если сообщить ему количество теплоты Q=50 кДж, то 3/4 льда растает. Какое количество теплоты q надо после этого сообщить содержимому сосуда дополнительно, чтобы весь лёд растаял и образовавшаяся вода нагрелась до температуры t₂=20 °C? Тепловыми потерями на нагрев сосуда пренебречь."
+  },
+  {
+    "id": "33447A",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "e8883977c9a162ef7b73be0a9641267881043862e07beabb05d176079c34f3c4",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "34B425",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "c56df6d2a97c2cce4bc73046e7245d3c586b9213643c8d9cc3a1aa2f4a172db6",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/ACC4C238CCD1BBA3409DA85F4A556D9E(copy1)/xs3qstsrcACC4C238CCD1BBA3409DA85F4A556D9E_1_1483022404.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "399D49",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "1c3fc01e6395e3d1b5e2d384af9db987642f6052e7ef533d9fd974b3197620fa",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "3B1100",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1.14"
+    ],
+    "conditionSha256": "dbdab5620c8e60ce09bd9f1c4b4e2cf0995fd9d5dfaa88c303b54149d6eeff7f",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C116877D38319416491851F95FD9C0E7(copy1)/xs3qstsrc2e25454bcd104d05ab31a29a005fd2b9_7_1759927272.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "42D686",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "cd2e18ab92e388959d67930ab88e09144d81a947b1f8addcdf57ccf7f16652dc",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/50F99C3BE0E2999A4C0E20C5AD35A41B(copy1)/xs3qstsrc50F99C3BE0E2999A4C0E20C5AD35A41B_1_1768222479.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "430514",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "6930f3f366ff8431dd6655e3f1e54513134a0c881641384194da6ebf57f4e519",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "438E2E",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "0ab9e263ba4134060b50a645c08cc9bb41d49dd9fd14f5527593e12870bdae1a",
+    "images": [],
+    "status": "batch-1",
+    "condition": "Кусок льда опустили в термос с водой. Начальная температура льда равна 0 °С, начальная температура воды равна 15 °С. Исходная масса воды 1100 г. Теплоёмкостью термоса можно пренебречь. При достижении теплового равновесия в воде остаётся плавать кусочек льда. Какая масса льда растаяла в процессе перехода к тепловому равновесию?"
+  },
+  {
+    "id": "43F9B1",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "8e56844e8c60607221c0b1516106d6821cb780a68f3245308bbbb03ff03be2ce",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C63D4ACB505CADEF45894A08D3CC6F02(copy1)/xs3qstsrcC63D4ACB505CADEF45894A08D3CC6F02_1_1481023779.gif"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "45F3AF",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "f3f3b3c11f34d01b02ea186ad93be0e8aa36019d5687c5a3aeaf21f33dd3f155",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "47ED8E",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "e84b5e64bd4cbce98e4c988d0d5f37e0f34cd2943c300bdbe530f6a7777c5d2b",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AA1A12FB1483A1084F2C99885FF1BBEE(copy1)/xs3qstsrcAA1A12FB1483A1084F2C99885FF1BBEE_8_1765454572.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "4DE1A3",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "3eab7adc4e84e54ff3b8949cbd7b46c42919398b4128b40d7342f6430c318fbe",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "4E7BA7",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.2.9"
+    ],
+    "conditionSha256": "2dbec7c6c649cd9fcb6746791f6e97795f5267c0286dafca10257ec77f212fcf",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C32F164F77AD9C2A450CF58AB5C003D1(copy2)/xs3qstsrcC32F164F77AD9C2A450CF58AB5C003D1_1_1681904772.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C32F164F77AD9C2A450CF58AB5C003D1(copy2)/xs3qstsrcC32F164F77AD9C2A450CF58AB5C003D1_2_1681904772.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C32F164F77AD9C2A450CF58AB5C003D1(copy2)/xs3qstsrcC32F164F77AD9C2A450CF58AB5C003D1_3_1681904772.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "504520",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.2.9"
+    ],
+    "conditionSha256": "1502bab405e854a55b9d1cd5aea7117807bcb1404ba565fc46f758ec5f5cf0c4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FB31143B78FE85F94B2546178C7BD18B(copy1)/xs3qstsrc6820282f99664d3ab8327f5f19f11d47_4_1758619849.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "5A1F95",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "257a3c9f364b93cbdb28c6e8e6afe2a277b3653d1ea3335876b489bb8409a036",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "5A6DA8",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "0bfdfecf304f720189be5ac401d347dd1ee287ba6f496a41c4f3627d0aebea6b",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7E36E70FC92890C14DB5A221C0862670(copy1)/xs3qstsrc7E36E70FC92890C14DB5A221C0862670_1_1511344934.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "5BD8FB",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "4b307e2d1521c5ce541a7257bc640ac0dbd62da78d9ba08bfc3547cee8facfdf",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "5C871A",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2.7"
+    ],
+    "conditionSha256": "6722a3a1cad9dbffe26bfe52265830e557d7fb229ebf42a5bc1a7b1d48bb74ae",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D20B8FA12488B2754CEB3F7213E973C9(copy3)/xs3qstsrcD20B8FA12488B2754CEB3F7213E973C9_7_1671182181.jpg"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "5CBF60",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "9a777624acb263f9ea50f6a22bf0bfbe0fa64392611b0f811573daecdf0c4507",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C78A40AD97DCA9624B23ED1B07FD7D49(copy1)/xs3qstsrcC78A40AD97DCA9624B23ED1B07FD7D49_2_1643266760.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "5D4F68",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "563a3a63aee801123d560b6983116aa2190161f37d178d2f228df96b71ef6b29",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В стакан калориметра, содержащего 450 г воды, опустили кусок льда при температуре 0 °С. Начальная температура калориметра с водой 45 °С. Когда наступило тепловое равновесие, температура калориметра с водой стала равной 5 °С. Определите массу куска льда. Теплоёмкостью калориметра и теплообменом с окружающей средой пренебречь."
+  },
+  {
+    "id": "5F6B76",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "1a526d350354309ff16ac7c3ba4378c3cd114d20eab8e9ef7b4fe7acc62014c7",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "603BFB",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "4221e6274c9dff4647551551b53a982de8950fdb527d20efbd90c4bdd2abe9c7",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "61D26E",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "c4acb31e1cf5970f397cf9e39cb7eeee78daee284a61d8ef02851c1ce67baa68",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5CA4F0942D1D82534695706F24DA5339(copy2)/xs3qstsrc5CA4F0942D1D82534695706F24DA5339_1_1548163443.gif"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "63AF96",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.1.12"
+    ],
+    "conditionSha256": "38543e2911a98f0d92c57e5d9ed58cdaf622b3f30d26ad85387e77e81baef583",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "641415",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "6c67479d6b1d3242f11b08858dfc1f1e11cd70dbce4afd4e6f487812191f49cc",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/729BCA1162BC9BCB48EB97CE7265A6F6(copy1)/xs3qstsrc729BCA1162BC9BCB48EB97CE7265A6F6_1_1486991192.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "64CBA9",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "a588a1d99ae23cad6afbe58f6cb776bfb8dc94db8ddd41bfa3af47e3df7b6c91",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3489AA9E7064A7284B8466D5ADEDD1BE(copy1)/xs3qstsrc9DBA04E2F8B382D94513A5229E0094B8_6_1721208512.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "655A2B",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "f837829a798c430d12a4175dc3065de50a902bb998cc62a63a5c2aca63603b4d",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В стакан с водой, нагретой до температуры t₁=50 °C, положили металлический шарик, имеющий температуру t₂=10 °C. После установления теплового равновесия температура воды стала t₃=40 °C. Определите температуру воды t₄ после того, как в стакан положили ещё один такой же шарик температурой t₂ (первый шарик остался в стакане). Теплообменом с окружающей средой пренебречь."
+  },
+  {
+    "id": "65677A",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2.11"
+    ],
+    "conditionSha256": "367a78342b51899351222c228f938f373237b0c46006a5ef7bab6d4f9fb40ef8",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В теплоизолированный сосуд, в котором находится 1 кг льда при температуре –20 °С, налили 0,5 кг воды при температуре 5 °С. Определите массу воды в сосуде после установления теплового равновесия. Теплоёмкостью сосуда и потерями тепла пренебречь."
+  },
+  {
+    "id": "678A39",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.1.14"
+    ],
+    "conditionSha256": "859d068d9b0652037ede5905a5e5a7ba454c9028327f17b60e1010c097c05236",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "68CF7C",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "108a87ea1d8ed3dcb8bfcc124b2e403a11a72278c0a7de8435f402b107687f69",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В школьном физическом кружке изучали уравнение теплового баланса. В одном из опытов использовали два калориметра. В первом калориметре находилось 300 г воды, во втором – 200 г льда и 200 г воды при 0 °С. Какой была первоначальная температура воды в первом калориметре, если после добавления в него всего содержимого второго в первом калориметре установилась температура 2 °C? Теплоёмкостью калориметров пренебречь."
+  },
+  {
+    "id": "733486",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.1.10"
+    ],
+    "conditionSha256": "d37d52e9206eba13ff795d1640ae16977427e07f439c2a8ad103172486650984",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F2E56371626F974B4E9EEFF197898459(copy1)/xs3qstsrcf3dee004402b49dcbd682734ff15e660_7_1759321443.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "75CD1B",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2.11"
+    ],
+    "conditionSha256": "55fbf50cdd5d9b4077990226d6a29c35c2f0595c136c4432cd367bd12d52ffbb",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В калориметре находился лёд при температуре −10 °С. Какой была масса льда, если после добавления в калориметр 30 г воды, имевшей температуру 20 °С, и установления теплового равновесия температура содержимого калориметра оказалась равной −4 °С? Теплообменом с окружающей средой и теплоёмкостью калориметра пренебречь."
+  },
+  {
+    "id": "7CF1D3",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "68ab9cff319939cf9e712ce1d406ea3aec39dea106a04e4bd72e307dab3394ad",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "7DC495",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "e81ec0d905c2418d37d1eb99be25e95de362e875675406e170b21e77cd62b314",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B38A702B1399A4EE42E4D0F2259FB835/xs3qstsrcE58FC32565279E9048132BABD603E9AA_1_1454757976.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "830FF9",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "a3ad465a6d18f19a3b0d494e61131d4230690a9b6508180157e181fa74631f6e",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "86A1AA",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.1.10"
+    ],
+    "conditionSha256": "1fd7812d1a4cdab968319729872d3add152d5eae6e0b483d597e6b85787930aa",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "88341F",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.2.4"
+    ],
+    "conditionSha256": "8a49308c44d3e9d015a738391c72eae178c738fd0fb937214460bff8b2c840bc",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "8A1211",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "109372dc9519392d09ba2fe97e2099b15d7236dd32afe65f8f4cc25d34d83c94",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "8A5182",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "3083e3933c95896863baf941c4f41c7e644be90467abc295e6f6571590014723",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/842F75B6BF2AA6AB4E193EA5E5430F78(copy2)/xs3qstsrc842F75B6BF2AA6AB4E193EA5E5430F78_1_1577693881.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "8AC878",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "921f91226462a491a2644e6f16cb3f32ad972c30c37b6289107ff1af9f8f8c56",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/50454310BADCB9BC47B74E94C2FEAC86(copy1)/xs3qstsrc3FFA9FF11E498AE045AFB3412131F6FB_6_1721208321.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "8BF94A",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "723532cc51eeb7b0e5da5113e3d09ae38ceb7fa0abf9a5a90c5c16fa7284f405",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "9360C8",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "c4da7ae51592353c3c268dbebb506e6a765d1e3128664f956ad4d09e35c29c26",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E13.C3.22_28copy1_29/xs3qstsrcF79D37B56E2BA209461F16167279437C_1_1355402536.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "96017E",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "c83f09d38d26a909c8216432c8fbd941a53e3d53741549605ef453d248508c14",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "97B0CB",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "938e406d08a9fa6b4f3f9aa3e45149fe3e579409ca5211f5a897461aca6d7488",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/30795B04820385F74063FF8D0D2EA7FA_28copy1_29/xs3qstsrc30795B04820385F74063FF8D0D2EA7FA_1_1328253715.jpg",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/30795B04820385F74063FF8D0D2EA7FA_28copy1_29/xs3qstsrc30795B04820385F74063FF8D0D2EA7FA_3_1328253715.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "97E7BE",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "1332817787f939fdc76a11ea421a3ae2f71afdb53d5b84f820c28d5d050c6ca0",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "98EA22",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.1.12"
+    ],
+    "conditionSha256": "5e1d3544c965ba94288de2415972302a7efa2857b39a3bc678784eabd31e0cb8",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D37A28DEC445B6E645DF084BE5B262FA(copy2)/xs3qstsrcD37A28DEC445B6E645DF084BE5B262FA_1_1577113738.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D37A28DEC445B6E645DF084BE5B262FA(copy2)/xs3qstsrcD37A28DEC445B6E645DF084BE5B262FA_2_1577113738.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "9A11AE",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "1205ac2c510f1a49dbfe48a81e9493dad54eecaae21c2baf1dede5eed6dc174a",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "9F56D5",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "aad242745f6bd07c84748c3e4bb8c1c873286d285dba6462214dbec788b557dc",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7B881DB849ACB36B4CE81B3DCBA0B885/xs3qstsrc35ABC85A14129ECC4046E96B61768FEF_2_1450774207.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "9FA9FA",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "95f4c52d65caef75f77e169823eb0e33117ff8f2140262da94c652feef429fd0",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D134E41F5F8B854641E827B72EBD69AC(copy1)/xs3qstsrcD134E41F5F8B854641E827B72EBD69AC_2_1454763606.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "9FBACA",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "5c0393f5de97f3793cca0935a45e7f53ce76c548d18019d0cb2e123eccb40e26",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F01262083357B3384E093B1D96AD52D9(copy1)/xs3qstsrcF01262083357B3384E093B1D96AD52D9_1_1487249864.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "A099EB",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.1.14"
+    ],
+    "conditionSha256": "2ce2925000acfd73df54c3222d361b126b99740a338ec2fa917f1124c537081c",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "A0D359",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "fdd9fca88fa94a58b5bc84c28ac6d89a71edc602af5e30b0b3b83ade7d34449f",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "A2199F",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "c4e30138bd26260688a1e0af56662628da6a13f8a235110634a6197deb9c5fe6",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "A2EA39",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "92da9ff900808ad489df7e17f9cbdf0b4bb102a5ed6d138507d5724a344c88ef",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "A3959A",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.1.14"
+    ],
+    "conditionSha256": "f5ee2cbe37c6387d313246e9cea37f65e14c9ad18184fa47dce2654ed2e13cd6",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "A40A56",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "7c69d2ec05a37bce3cefab43081683744e1092c583189f3b2eb35ac5be48ac0d",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6542B57F201C8546461B59A1593F63B8(copy2)/xs3qstsrc6542B57F201C8546461B59A1593F63B8_1_1577189927.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "A521EA",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "23ea4313dcd2478c246c0777471539c2aae6b48222eaa1b669bc1f3b05517115",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "A7474D",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.1.10"
+    ],
+    "conditionSha256": "08a0c0786ab841c8c5098be813310362d4a3403ab95357cbda3b039d150c24d1",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "A84BF1",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "85ae9dd0d4004b7b0cdbdf160378628c6d9cae99ee8da11cccba63ca06e5c32a",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "A9E186",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.1.10"
+    ],
+    "conditionSha256": "932ecff4c337023369786bfd70eec7e7a84de931c1d77c4e797a842b2580d94b",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FB94CFEB9079851F43324CBC9A543841(copy2)/xs3qstsrcFB94CFEB9079851F43324CBC9A543841_2_1569831722.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "ACC239",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.1.12"
+    ],
+    "conditionSha256": "94d16142ecdb82779b0ee7e6507d14d4ad923aadf0d715aa298c4382f7fd4175",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C0D6E77F8F34A5BC4FA20127A79CDF4A(copy1)/xs3qstsrcE9BAA617750082674BCA87D5AB1A87D9_4_1772111129.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "AE2D32",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.2.7"
+    ],
+    "conditionSha256": "c1cb2ac59e0b999b993745e2b07cbbef5e87422b6fd47c6a72b6948d9cc19be0",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "AE8A4A",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "40ef5d01c6c5941e3fc228f1788d090fb0cb93a09a8dd2e433b43e2e88eff91b",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "B01805",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1.13"
+    ],
+    "conditionSha256": "50ab56ad68ea65ba22b1c2d9cbbf1319439876dbdd99082a842cbede4e1bf812",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "B27AE1",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "10c2a424e86e422a2db5f3af19479c05b5e309d2803f821a705afaccb298f4ad",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/69D0CBF5F8C29AC1461E4AEF8D75BBA8(copy1)/xs3qstsrc69D0CBF5F8C29AC1461E4AEF8D75BBA8_2_1640266985.jpg"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "B3F130",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "03c1468b122e6254971724860f5b958d3f95985a635fa7cf46717c22e16ba63a",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/18B009804059AF85497414A00A32C98C(copy1)/xs3qstsrc18B009804059AF85497414A00A32C98C_1_1486739939.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "B42929",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "e377a3224bcb417f1a947dd24b82ac5e76dc40db850ba39ae6447d3d8c72a701",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8476BA84B9FE9F2546E122F90C9B2C1E(copy1)/xs3qstsrc64b60b733b6c429c9c752dd50610e88d_1_1785933929.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "B4511B",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "ca78f4d9e001513e2a49d7d382b113d9a120a4b9c9ee2d24f6ed437e496b1f34",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9C88A26590839D5744606402D48A1AAA(copy1)/xs3qstsrc5448055DE25AA4DA4540E29D9526F7EE_1_1772109592.gif"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "B4D4B9",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2.4"
+    ],
+    "conditionSha256": "b0050e36762257bb2ccb5dfdd43e12483057ce2f7448d188727803fad60c5141",
+    "images": [],
+    "status": "batch-1",
+    "condition": "Препарат активностью 2,4⋅10¹¹ частиц в секунду помещён в медный контейнер. За 1,5 ч температура контейнера повысилась на 12 °С. Известно, что данный препарат испускает α-частицы энергией 5,3 МэВ, причём энергия всех α-частиц полностью переходит во внутреннюю энергию контейнера. Найдите массу контейнера. Теплоёмкостью препарата и теплообменом с окружающей средой пренебречь."
+  },
+  {
+    "id": "BA06BC",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1.12"
+    ],
+    "conditionSha256": "89e4ef5192a156bc5f31f26427785e0e9015b6955ae3c7c1c53be0df5f4eee7f",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "BB2FF8",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "48920d2539ca52ba81f699e2633f3d78d85cb2d6acd3b239b154b414e591ad7e",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/14F6411956EFB0F3488F4D9D0DF8140B/xs3qstsrcA2E5B6C0E35596034D0EFD3B16C377C9_2_1450774496.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "BB79C3",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "517bd90b8bd42c7b60b636f5efca770367b8851b8f3934b01816bc80a5e3a4c0",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "BEDE43",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "a7aa95e44e2554275d4c55e5b44c16f10b308f840a656aa7d679272c49ab5a96",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "C07219",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "1cb6f895b7e8fb861676e85925e5483cdca640356c9e2fa9e70239aaf3247749",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В стакан калориметра, содержащий 250 г воды, опустили кусок льда массой 140 г, имевшего температуру 0 °С. После того как наступило тепловое равновесие, весь лед растаял, и температура воды стала равной 0 °С. Определите начальную температуру воды. Теплоёмкостью калориметра и теплообменом с окружающей средой пренебречь."
+  },
+  {
+    "id": "C0CDD7",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "0c51c16d1cd632a90ea4ade9251763b339ca148aedd7b8456b2341708257a53d",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A2DF2DD94273AC004A2979C7383AB84F(copy1)/xs3qstsrcA2DF2DD94273AC004A2979C7383AB84F_1_1643189088.jpg"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "C0FF8E",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.1.12",
+      "2.1.13",
+      "2.1.14",
+      "2.1.15",
+      "2.1.16",
+      "2.1.17"
+    ],
+    "conditionSha256": "e6826b3fb0a553de8c9a7e8123607ad5368e6410886e3792c543863d519b7edc",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "CA089F",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "fc79aea7142141fbdc6afd90f5a7f9833a9ae67d01e211d4cd76bf7e4fd7f840",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/PHIS.E12.C1.28_28copy1_29/xs3qstsrcF10F0386F67996C74130F96E3F937605_1_1328252697.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "CDD746",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "5b2563e18301205c16776f614a63b436676bbe00abfd2740d1be739b9784a6e9",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4621A1BC1986BC044BB6E99F9E7ABBCD(copy1)/xs3qstsrc4621A1BC1986BC044BB6E99F9E7ABBCD_1_1511344994.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "D0DE05",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "765f335553ea60c1a478701f1cb40c2ce9c3dc3b5fe753b5c9d137cce0c932da",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "D38EE5",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "0e7787d123d3222b0bae1852215205b5dc789262022da86c205e0b36c7c719f2",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B552D84CC3AC951B43615DFD1663893C(copy1)/xs3qstsrcB552D84CC3AC951B43615DFD1663893C_7_1701340794.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B552D84CC3AC951B43615DFD1663893C(copy1)/xs3qstsrcB552D84CC3AC951B43615DFD1663893C_8_1701340794.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "D6F721",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "2d6fb83b7f0dda8c9d7a2b8c9fd0fb1e2d745cb91d6c6fc1fd51349331a0aa33",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "D76E33",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "319eb6dd4cdac5a3c450bb9dbedc3b7dd101516acd1e0a55e423143747dda2ea",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D96CB35218C18F974DE293886E23628F(copy1)/xs3qstsrcE7ED3C4B22F2A1024BE778C84F7B1724_8_1714997950.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "D9720D",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.1.8",
+      "2.1.10",
+      "2.1.12"
+    ],
+    "conditionSha256": "8d3048d6a4187901eb256f3eaea6122cb3ddcf4b8287d36b56f1960b7178f6cc",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B817D93DE1F9844340D94C27186540E3(copy1)/xs3qstsrcB817D93DE1F9844340D94C27186540E3_1_1769782726.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "DA1E75",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "f868c6ea4b606d1c2ea504cb8a59ff9cbff3a229af806050c0202fa8b9171c57",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C7E1BD04E19AA50D48FAB9D66A223DFA(copy1)/xs3qstsrcC7E1BD04E19AA50D48FAB9D66A223DFA_1_1485260901.gif"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "E1E2F6",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "2bb6c7db18fa4509a198b76dbeb89172ef59766d4cdda137c53e9b79e2e681f7",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9EBA3C2F8D7685EE410A5DDD3B63D657(copy1)/xs3qstsrc1cdc563866114f0abd8cddbd5494fa4a_8_1777384433.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "E20CAC",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "98c381dcfc6c51bfce843498383b71b3d48b77588826c351f49a0b826518d46c",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В стакан с водой, нагретой до температуры t₁=50 °C, положили металлический шарик, имеющий температуру t₂=10 °C. После установления теплового равновесия температура воды стала равной t₃. Затем, не вынимая первого шарика, в стакан положили ещё один такой же шарик температурой t₂. Конечная температура в стакане оказалась t₄=34 °C. Определите температуру воды t₃ после того, как в стакан положили первый шарик. Теплообменом с окружающей средой пренебречь."
+  },
+  {
+    "id": "E61774",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "fe14b6b7fa5bc066f5f3f6aabcd220062a92637b0cce0bccfb4266ebca1648df",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/61F21D9A11A38D054F689B0AAEFDA440(copy2)/xs3qstsrc61F21D9A11A38D054F689B0AAEFDA440_1_1545211654.gif"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "E69926",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.1.10"
+    ],
+    "conditionSha256": "a02e64902d2d6f765f308d3b4ddec69e0041732388601e68f5681c5b84e2295f",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "E886CF",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "71624a017dc279d84e6cb22f8d7097615b929f7af4ab3df99320b91680074d3c",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/05ADD22CEC25B1A74A23F91FD3A2182F(copy1)/xs3qstsrc05ADD22CEC25B1A74A23F91FD3A2182F_1_1766489630.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "E936E1",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "4fe92acbfc2273581ba438adb661466fe73793c716b3c4ad36edfd0a4f121fba",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "EBA1C7",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "1056e00bfa79b4317a763a89713d5fb3e019202c2fc760f6b5c185c0eea52561",
+    "images": [],
+    "status": "batch-1",
+    "condition": "Какую массу воды можно нагреть до кипения при сжигании в костре 1,8 кг сухих дров, если в окружающую среду рассеивается 95% тепла от их сжигания? Начальная температура воды 10 °С, удельная теплота сгорания сухих дров λ = 8,3 ·10⁶ Дж/кг."
+  },
+  {
+    "id": "EFA43A",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.2.11"
+    ],
+    "conditionSha256": "6b3ceca4298fa9a76d9baa077d4bea9b9c12546e2ef6ddf700436e8c8bc966da",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В калориметре находятся в тепловом равновесии вода и лёд. После опускания в калориметр болта, имеющего массу 165 г и температуру –40 °С, 20% воды превратилось в лёд. Удельная теплоёмкость материала болта равна 500 Дж/(кг ⋅ К). Какая масса воды первоначально находилась в калориметре? Теплоёмкостью калориметра пренебречь."
+  },
+  {
+    "id": "F17C45",
+    "file": "physics-2.raw.html",
+    "sourceCodes": [
+      "2.2.4"
+    ],
+    "conditionSha256": "502ed05257a5d21e6757dfb43d81395b6591510deff4ba7f2427017902f63989",
+    "images": [],
+    "status": "batch-1",
+    "condition": "Лазер излучает световые импульсы с энергией 0,1 Дж и частотой повторения 10 Гц. КПД лазера, определяемый отношением излучаемой энергии к потребляемой, составляет 1%. Какую массу воды необходимо прокачать за 1 ч через охлаждающую систему лазера, чтобы вода нагрелась на 10 ^(о)С?"
+  },
+  {
+    "id": "F1C0D8",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "7627a37875a948f46088a709643aeb33ee67100fa4b31ed018391603eea06e08",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "F2CED0",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "c58c7d482a1f532f0edc06bb18beb11963f741391f400fad6c8b9db7273d91e4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9E3240FB5087946A495626ADD78EF00F(copy1)/xs3qstsrc9E3240FB5087946A495626ADD78EF00F_1_1454766881.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "F3B223",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "f2d352de165bf467f55e836d28b46a763346190eb83be7f015f7e42fbec3d8c4",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "F555AF",
+    "file": "physics-4.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "e1fd135e20f0b61578a56ea7153c091e3695666372918cc8dcadfca67fd87f70",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/07C6D2D682068A534B43DDB55E5DAE33(copy1)/xs3qstsrc911888B3CFD6ACCB493F62E503CBAB4A_3_1772110946.jpg"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "F690E5",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.2.9",
+      "2.2.10",
+      "2.2.11"
+    ],
+    "conditionSha256": "5e8768267efc24d8c9ca775b6a367442f60ef540ffcc0877b2ec55f0d3cd7fe7",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/23D28C0C7D94A3FB42C1A425EDE508D1(copy1)/xs3qstsrc23D28C0C7D94A3FB42C1A425EDE508D1_1_1513176385.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "F717A0",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "1.5.1",
+      "1.5.2",
+      "1.5.3",
+      "1.5.4",
+      "1.5.5"
+    ],
+    "conditionSha256": "70566ff33f0c4fb8e1ea63e0553e00e307a2ca78b888df85ef01958478941c3f",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/652100B331ACB3ED4021A141EB178950(copy1)/xs3qstsrc652100B331ACB3ED4021A141EB178950_1_1640259603.png"
+    ],
+    "status": "published-waves"
+  },
+  {
+    "id": "F74783",
+    "file": "physics-6.raw.html",
+    "sourceCodes": [
+      "2.1.10"
+    ],
+    "conditionSha256": "ebd744ed90d9297c37f7f550762dce123b7e6dd1e2a1bec341618fc834b70178",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/EBC7BA6A4BEBBDE04BF5EA821DD1BEAD(copy1)/xs3qstsrcf1e033d477534692bcae4672ef8aa192_7_1759322519.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "F85410",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "32d53732972dca4e0e58f329ea1f5097aaccc71def9da08d16c9b65e8549d7aa",
+    "images": [],
+    "status": "batch-1",
+    "condition": "В стакан налили 30 г заварки температурой 20^(о)С и добавили 170 г горячей воды температурой 80 ^(о)С. Чему равна температура получившегося чая? Теплоёмкостью стакана и потерями тепла в окружающую среду пренебречь. Удельную теплоёмкость заварки считать равной удельной теплоёмкости воды."
+  },
+  {
+    "id": "FA180A",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "3d6dc15618506cd77c9b416dc27645c75cdef3e8bbb05568aff6fa9d0f6af865",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "FAFA17",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.1.10"
+    ],
+    "conditionSha256": "ccc8ef0d2ee56d0a935de66d9db30ee6cffff01d5a96ce71165163a903e9de3e",
+    "images": [],
+    "status": "completion"
+  },
+  {
+    "id": "FBCEF2",
+    "file": "physics-1.raw.html",
+    "sourceCodes": [
+      "2"
+    ],
+    "conditionSha256": "03602bd5fd9352bb4efe15c035dc9425374a44c6fdb9a0c47a4ff370c4034339",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/116A4C5C0843B15A47C58D478555019D/xs3qstsrc68C387D8ED9C95DD481E519E97C8FA87_2_1423920380.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/116A4C5C0843B15A47C58D478555019D/xs3qstsrc68C387D8ED9C95DD481E519E97C8FA87_3_1423920380.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "FD2DC6",
+    "file": "physics-5.raw.html",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "1ded80b659f0c8a46bdf4350765774f5a2f0b392fdbc1f4ef810c7b3fe6c4813",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D2037507C0B9931E4C21EF726DEF83E9(copy1)/xs3qstsrca1d6778066da4bb6bac5c79ba0716a81_7_1759927329.png"
+    ],
+    "status": "completion"
+  },
+  {
+    "id": "FFF4F8",
+    "file": "physics-3.raw.html",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "9923c01757353be7d8e7702913119e82f7839a50e940a9f4dbf99509eb1bb858",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C27397EC285B93AF4072B5181E4052A4(copy1)/xs3qstsrcC27397EC285B93AF4072B5181E4052A4_1_1763730455.png"
+    ],
+    "status": "completion"
+  }
+]

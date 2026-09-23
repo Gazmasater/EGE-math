@@ -1,0 +1,111 @@
+{
+  "083006": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": null,
+    "conditionSha256": "46d0ff855f8c3d89bc32785b99c4f066288cc5162530b443555756b04271d7b3",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35210",
+    "comparison": "Точного числового варианта на «Решу ЕГЭ» не найдено. Сверена модель равноускоренного старта из покоя и закон v=at по задаче 35210; собственное равенство a(t₁+2)=3at₁ проверено вручную и обратной подстановкой, t₁=1 с.",
+    "checkedAt": "2026-09-21"
+  },
+  "34E52A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": null,
+    "conditionSha256": "90a7b1bfa624645789de9ebe10b78de9f4ae94a8d6d36140c4ab65b82598b730",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25400",
+    "comparison": "Вариант с обратным изменением скорости: источник задаёт уменьшение в 3 раза и получает начальную скорость 15 м·с⁻¹. В ФИПИ скорость увеличивается в 3 раза; при тех же 20 м и 2 с начальная скорость 5 м·с⁻¹. Сверено s=(v₀+v)τ/2 и выполнен независимый пересчёт.",
+    "checkedAt": "2026-09-21"
+  },
+  "3848C6": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "image": null,
+    "conditionSha256": "663f421259be10d2d304e73137e4da97930cd4ef70aee894163946b7e3cb14f1",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35155",
+    "comparison": "Сверены условие, кинематическая модель, уравнения и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "3D4BAC": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "image": null,
+    "conditionSha256": "49e57729d7e2b84c3f021d6d5b3f0d407d61db9c522eb03442cc71fbb78c11d8",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=11568",
+    "comparison": "Сверены условие, кинематическая модель, уравнения и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "77E11B": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/B5B37EA08DE3906B4EEB63FC11479E26(copy1)/xs3qstsrcB5B37EA08DE3906B4EEB63FC11479E26_7_1671711428.png",
+    "conditionSha256": "0201678fa1e0e93dec6cbf5ea4a7a54af2215df5ac4c6ad564102eddb1dd99d8",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=32266",
+    "comparison": "Сверены условие, кинематическая модель, уравнения и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "854BA3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "image": null,
+    "conditionSha256": "f08223ea9a724da3487b0b038fc98ec4ad3ad267cf95c29d1495f533839c14d4",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35210",
+    "comparison": "Обратный числовой вариант: источник задаёт скорость бегуна 4 м·с⁻¹ и получает скорость велосипедиста при встрече 8 м·с⁻¹. Сверены равенство координат и V=2u. В ФИПИ дано V=4 м·с⁻¹, поэтому u=2 м·с⁻¹; ускорение сокращается.",
+    "checkedAt": "2026-09-21"
+  },
+  "9AC6EF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": null,
+    "conditionSha256": "f8a472ed88e9248af082e5755dfb9bf099ae618ca1b6b6ea3fb2c8fc97d4d287",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25383",
+    "comparison": "Сверены условие, кинематическая модель, уравнения и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "9AC70F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": null,
+    "conditionSha256": "b243579ae9f96a9cc6f114d5b028d6c5c198f641504a49b56f0c25d0a16e0682",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25400",
+    "comparison": "Те же данные торможения: 20 м, 2 с, конечная скорость втрое меньше начальной. Источник ищет v₀=15 м·с⁻¹; в ФИПИ требуется модуль ускорения. Из v=5 м·с⁻¹ получено a_x=−5 м·с⁻², модуль 5 м·с⁻².",
+    "checkedAt": "2026-09-21"
+  },
+  "B9584F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": null,
+    "conditionSha256": "587abdc102ff48e856df4969d85697005dbf53d1111369c78646a07e212bbcf5",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25044",
+    "comparison": "Сверены условие, кинематическая модель, уравнения и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "D01BEA": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "image": null,
+    "conditionSha256": "1f29d7b0dffa93141e6514036b78beb5acf42a18b19d0411795c3851110a4980",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38204",
+    "comparison": "Сверены условие, кинематическая модель, уравнения и численный ответ. Решение составлено самостоятельно.",
+    "checkedAt": "2026-09-21"
+  },
+  "E24F06": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": null,
+    "conditionSha256": "e8884e38057f25ca1772fe65edba7cd822d751d91597537f365cd87cd31e7a67",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43203",
+    "comparison": "Вариант с другими коэффициентом и порядком опытов: источник использует μ=0,5 и высоты 78, затем 50 см. В ФИПИ μ=0,8 и порядок 50, затем 78 см. Ручная проверка tgα₁=5/12<0,8, tgα₂=0,75<0,8 показывает покой в обоих опытах. F_тр=mg sinα возрастает в 1,56 раза. Точное условие и разграничение трения покоя и скольжения подтверждены методическими рекомендациями ФИПИ 2025, пример 15, с. 18–19.",
+    "checkedAt": "2026-09-21",
+    "additionalSource": "https://phys-ege.sdamgia.ru/doc/analytics_2025/fi_mr_2025.pdf#page=18"
+  },
+  "E3DCE5": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "image": null,
+    "conditionSha256": "fda6f0752a0d77e1ba8ca9c3f645aaa1edb184e9a140f6c26bcea16a52c0c5ae",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25349",
+    "comparison": "Обратная задача: источник задаёт последний километр и время 200 с, ищет изменение скорости 10 м·с⁻¹. ФИПИ задаёт изменение скорости; по тому же балансу площади треугольника получено 200 с.",
+    "checkedAt": "2026-09-21"
+  }
+}

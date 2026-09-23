@@ -1,0 +1,1783 @@
+{
+  "225695": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E7FE36957E7A83EC4FCFF38163BAEF9B(copy2)/xs3qstsrcb6886d88e8134e018c5c85220adaff0b_4_1758619807.png"
+    ],
+    "conditionSha256": "b7732188535dc1e9e0ed4123ab26a432141a7ae99d21210953b529f7059a5d4f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=42650",
+    "match": "method-analogue",
+    "comparison": "Методический аналог использования графика насыщения и уравнения состояния. Для охлаждения жёсткого сосуда отдельно решено pн(t)=ρR(t+273)÷M. По оригинальному графику пересечение около 22 °C; начальное давление 30 гПа ошибочно не фиксировалось.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "430514": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "6930f3f366ff8431dd6655e3f1e54513134a0c881641384194da6ebf57f4e519",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50821",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант пузырька: вместо нахождения начального объёма ищем H. Сверены закон Бойля — Мариотта и полное гидростатическое давление; 165·2=110·3, H=6,5 м.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "504520": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FB31143B78FE85F94B2546178C7BD18B(copy1)/xs3qstsrc6820282f99664d3ab8327f5f19f11d47_4_1758619849.png"
+    ],
+    "conditionSha256": "1502bab405e854a55b9d1cd5aea7117807bcb1404ba565fc46f758ec5f5cf0c4",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43206",
+    "match": "exact",
+    "comparison": "Точное совпадение. Проверены изобарная полученная теплота, изохорная отданная теплота и адиабата; η=1−3·548÷(5·400)=0,178.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "641415": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/729BCA1162BC9BCB48EB97CE7265A6F6(copy1)/xs3qstsrc729BCA1162BC9BCB48EB97CE7265A6F6_1_1486991192.png"
+    ],
+    "conditionSha256": "6c67479d6b1d3242f11b08858dfc1f1e11cd70dbce4afd4e6f487812191f49cc",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=8022",
+    "match": "method-analogue",
+    "comparison": "Методический аналог анализа состояния газа по концентрации. Для иной оси E самостоятельно применена связь E=3kT÷2, затем p=2NE÷(3V); направления и постоянные величины сверены по исходному рисунку ФИПИ.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "733486": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F2E56371626F974B4E9EEFF197898459(copy1)/xs3qstsrcf3dee004402b49dcbd682734ff15e660_7_1759321443.png"
+    ],
+    "conditionSha256": "d37d52e9206eba13ff795d1640ae16977427e07f439c2a8ad103172486650984",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=1206",
+    "match": "variant",
+    "comparison": "Числовой вариант негерметичного сосуда. В отличие от источника меняется и объём; все три отношения p,V,T взяты из ФИПИ: 2,6,3. Проверено N₂÷N₁=4.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "06521E": {
+    "file": "physics-1.raw.html",
+    "conditionSha256": "9c9b3bdb95245aa352f4b985898adc400ba32d3b1fc11756fa931f83fb1989bc",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38577",
+    "match": "exact",
+    "comparison": "Совпадают 0,5 кг, 10 °C, 400 Вт и 15%; два этапа, c=4200, L=2,3e6; 903,75 с, округление 904 с.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "104DB0": {
+    "file": "physics-3.raw.html",
+    "conditionSha256": "a5b6a7a2efb970a8c7a68dbe202478c91676520076d0bab40fb63fad69e1866f",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=3290",
+    "match": "method-analogue",
+    "comparison": "Источник имеет другие массы и температуры и спрашивает температуру, см. 65677A. Проверен тот же баланс и фазовый критерий. Для ФИПИ: 1 кг льда −20 °C, 0,2 кг воды 10 °C; дефицит 42000−8400=33600 Дж; замерзает 0,101818182 кг <0,2; итог 1,101818182 кг льда при 0 °C.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "31CB91": {
+    "file": "physics-5.raw.html",
+    "conditionSha256": "5d1911ab88982543f4ff30df2ca6f2be5d29b29f0261779d452c4387cfb0c3a3",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=3805",
+    "match": "method-analogue",
+    "comparison": "Источник использует энергию полного плавления+нагревания и проверяет неполное плавление при меньшей подводимой энергии (200/120 кДж, 10 °C). У нас 50 кДж плавят 3/4 льда, далее нужен нагрев до 20 °C. Проверены обе стадии отдельно: масса=0,202020202 кг; дополнительно 16666,667+16969,697=33636,364 Дж. Не смешивать дополнительную энергию с полной 83636,364 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "438E2E": {
+    "file": "physics-1.raw.html",
+    "conditionSha256": "0ab9e263ba4134060b50a645c08cc9bb41d49dd9fd14f5527593e12870bdae1a",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=41579",
+    "match": "exact",
+    "comparison": "Совпадают 1100 г, 15 °C и оставшийся лёд; конечная 0 °C, 69300 Дж, растаяло 210 г.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "5D4F68": {
+    "file": "physics-2.raw.html",
+    "conditionSha256": "563a3a63aee801123d560b6983116aa2190161f37d178d2f228df96b71ef6b29",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=5376",
+    "match": "variant",
+    "comparison": "В источнике 150 г воды при 55 °C, в ФИПИ 450 г при 45 °C; лёд 0 °C, равновесие 5 °C в обоих. Проверены плавление и нагрев талой воды. Символьная дробь источника искажена, но численная подстановка соответствует m=mcΔt/(λ+ct). Ручной пересчёт ФИПИ: 75600/351000=0,215384615 кг вместо 90 г аналога.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "655A2B": {
+    "file": "physics-4.raw.html",
+    "conditionSha256": "f837829a798c430d12a4175dc3065de50a902bb998cc62a63a5c2aca63603b4d",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25416",
+    "match": "inverse",
+    "comparison": "Источник задаёт t₂=10,t₃=40,t₄=34 и ищет t₁=50 °C. ФИПИ задаёт t₁=50,t₂=10,t₃=40, ищет t₄. Одинаковые два последовательных баланса, первый шарик остаётся. C/B=3, t₄=(4·40+10)/5=34 °C; проверка второго этапа 4·6=24.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "65677A": {
+    "file": "physics-3.raw.html",
+    "conditionSha256": "367a78342b51899351222c228f938f373237b0c46006a5ef7bab6d4f9fb40ef8",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=3290",
+    "match": "method-analogue",
+    "comparison": "Не точный числовой вариант: источник 100 г воды при 0 °C, 20 г льда при −5 °C, ищется температура. Совпадает режим частичного замерзания и проверка достаточности теплоты кристаллизации. В ФИПИ 1 кг льда −20 °C и 0,5 кг воды 5 °C. Ручной расчёт: 42000−10500=31500 Дж, замерзает 0,095454545 кг <0,5; остаётся 0,404545455 кг воды при 0 °C. Численный ответ ФИПИ проверен отдельно, не выдаётся за совпадение с аналогом.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "68CF7C": {
+    "file": "physics-3.raw.html",
+    "conditionSha256": "108a87ea1d8ed3dcb8bfcc124b2e403a11a72278c0a7de8435f402b107687f69",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38961",
+    "match": "variant",
+    "comparison": "В источнике первый сосуд 400 г, второй 300 г льда+200 г воды, итог 3 °C (≈66 °C). У нас 300 г, 200+200 г, итог 2 °C. Проверены плавление и нагрев всей массы второго сосуда. Опечатка источника «t₁=0» заменена физически верным t₀=0 для смеси. Наш баланс: 1260(t₁−2)=66000+3360, t₁=57,047619 °C.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "75CD1B": {
+    "file": "physics-3.raw.html",
+    "conditionSha256": "55fbf50cdd5d9b4077990226d6a29c35c2f0595c136c4432cd367bd12d52ffbb",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=6749",
+    "match": "variant",
+    "comparison": "Совпадает исходный лёд −10 °C и конечная отрицательная температура. Источник: 50 г воды при 30 °C, итог −2 °C, ≈1,37 кг. ФИПИ: 30 г при 20 °C, итог −4 °C. Проверены три отдаваемых количества теплоты и нагрев исходного льда: (2520+9900+252)/12600=1,005714286 кг.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "B4D4B9": {
+    "file": "physics-3.raw.html",
+    "conditionSha256": "b0050e36762257bb2ccb5dfdd43e12483057ce2f7448d188727803fad60c5141",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33058",
+    "match": "variant",
+    "comparison": "Источник: железный контейнер c=460, нагрев 16 К, ответ ≈0,15 кг. ФИПИ: медный контейнер c=380, нагрев 12 К. A,E,τ совпадают. Пересчитано Q=1099,008 Дж, m=1099,008/(380·12)=0,241010526 кг. Значение c меди=380 дополнительно проверено по задаче 25242.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "C07219": {
+    "file": "physics-1.raw.html",
+    "conditionSha256": "1cb6f895b7e8fb861676e85925e5483cdca640356c9e2fa9e70239aaf3247749",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35343",
+    "match": "exact",
+    "comparison": "250 г воды и 140 г льда при 0 °C; весь лёд растаял, конечная 0 °C. λ=3,3e5, баланс 46200 Дж, ответ 44 °C.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "E20CAC": {
+    "file": "physics-5.raw.html",
+    "conditionSha256": "98c381dcfc6c51bfce843498383b71b3d48b77588826c351f49a0b826518d46c",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25416",
+    "match": "inverse",
+    "comparison": "Источник ищет t₁=50 при t₂=10,t₃=40,t₄=34; ФИПИ ищет t₃ при остальных тех же данных. По общему балансу C/B=2·24/16=3, затем t₃=(3·50+10)/4=40 °C; проверены оба погружения.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "EBA1C7": {
+    "file": "physics-5.raw.html",
+    "conditionSha256": "1056e00bfa79b4317a763a89713d5fb3e019202c2fc760f6b5c185c0eea52561",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=46133",
+    "match": "method-analogue",
+    "comparison": "Источник о сгорании дров и полезной доле 1−η, но нагревает и плавит лёд −30 °C: 2 кг топлива, q=8e6, потери 80%, ответ 3,94 кг. В ФИПИ только вода 10→100 °C, топлива 1,8 кг, λ=8,3e6, потери 95%. Ручная проверка отличий: не нужны плавление и испарение; 747000/(4200·90)=1,976190476 кг.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "EFA43A": {
+    "file": "physics-2.raw.html",
+    "conditionSha256": "6b3ceca4298fa9a76d9baa077d4bea9b9c12546e2ef6ddf700436e8c8bc966da",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=20038",
+    "match": "exact",
+    "comparison": "Совпадают масса болта 165 г, −40 °C, c=500 и замерзание 20%; баланс 3300 Дж даёт 50 г исходной воды.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "F17C45": {
+    "file": "physics-2.raw.html",
+    "conditionSha256": "502ed05257a5d21e6757dfb43d81395b6591510deff4ba7f2427017902f63989",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33074",
+    "match": "inverse",
+    "comparison": "В источнике дана масса воды 8,5 кг и спрашивается КПД ≈1%; у нас задан КПД 1% и требуется масса. Остальные данные совпадают. Проверен баланс потребления, излучения и охлаждения: 360000=3600+356400 Дж; обратная задача даёт 8,485714 кг.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "F85410": {
+    "file": "physics-1.raw.html",
+    "conditionSha256": "32d53732972dca4e0e58f329ea1f5097aaccc71def9da08d16c9b65e8549d7aa",
+    "images": [],
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38723",
+    "match": "exact",
+    "comparison": "Совпадают массы 30/170 г, температуры 20/80 °C, одинаковые удельные теплоёмкости; баланс даёт 71 °C. В источнике слово «теплоёмкость» употреблено вместо удельной; исходное ФИПИ однозначно.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipi": "Сохранённое исходное условие; запрос открытого банка 21.09.2026 завершился Internal Error. Изображения в этих 16 условиях отсутствуют."
+  },
+  "003B51": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "conditionSha256": "a76d89e53cabdf34cb438adfce53e899eabb0ef10e85bc38be6f793e8ea77e89",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7164",
+    "match": "exact",
+    "comparison": "Точное совпадение условия и последовательности кранов. Независимо проверены промежуточные давления 2p и 1,5p и сохранение полного числа частиц.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "075E84": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "0550b5e947d8a45e6266f8c322503ffda201cdc8063d2d02c93ea7a85e33c5cb",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7956",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант: источник ищет p при V=1 м³, ν₁=1 моль и T₁=450 К. Здесь ν₁=2 и T₁=400: вручную пересчитаны T=340 К и V=1,308 м³ по тому же балансу энергии.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "AE8A4A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "conditionSha256": "40ef5d01c6c5941e3fc228f1788d090fb0cb93a09a8dd2e433b43e2e88eff91b",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7935",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены сохранение энергии двух одноатомных газов, объём 2V и результат T₂≈300 К; не перепутаны начальная и конечная температуры.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A84BF1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "85ae9dd0d4004b7b0cdbdf160378628c6d9cae99ee8da11cccba63ca06e5c32a",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38955",
+    "match": "variant",
+    "comparison": "Числовой вариант: в источнике V₂=4V₁ и p₂=2p₀, ответ 1,8p₀. Здесь V₂=2V₁, p₂=4p₀; энергетический баланс пересчитан и даёт 3p₀.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "C0FF8E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "e6826b3fb0a553de8c9a7e8123607ad5368e6410886e3792c543863d519b7edc",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7956",
+    "match": "method-analogue",
+    "comparison": "Методический аналог смешивания двух одноатомных газов в теплоизолированных жёстких сосудах. Иные объёмы и символические данные: вручную получены T=5T₁÷3 и p=5n₁RT₁÷(3V); аргон и криптон имеют ту же молярную теплоёмкость.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "86A1AA": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "1fd7812d1a4cdab968319729872d3add152d5eae6e0b483d597e6b85787930aa",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=11812",
+    "match": "exact",
+    "comparison": "Точное совпадение всех данных. Проверены суммарные ν=3 моль, V=30 л, абсолютная температура 301 К и давление около 250 кПа.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "F3B223": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "f2d352de165bf467f55e836d28b46a763346190eb83be7f015f7e42fbec3d8c4",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7201",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены равенство парциальных давлений He, сохранение T для идеальных одноатомных газов и U слева÷U справа=1÷3; полные давления не уравниваются.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "29A5D5": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "75ab74108e304febccc732776c7e8d48180c21980a54465ad90a8bb95b456eba",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43100",
+    "match": "exact",
+    "comparison": "Точное совпадение. Проверены трактовка среднеквадратичной скорости, переход от m₀n к плотности и p=100 кПа.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "28EA8D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "baa8fa647398edf8ed27294ccd4522a646ef8611e6bd5c1ff889cf4d10f7d140",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=2976",
+    "match": "method-analogue",
+    "comparison": "Методический обратный вариант: источник рассматривает азот, известные Q₁=742 и Q₂=1039 Дж и ищет ΔT. Разность теплот в обоих случаях равна νRΔT; здесь одноатомный газ и ищется M≈0,040 кг·моль⁻¹.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "4DE1A3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "3eab7adc4e84e54ff3b8949cbd7b46c42919398b4128b40d7342f6430c318fbe",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19928",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант: источник даёт 5 моль и Q=3 кДж, ищет допустимую разность давлений. Здесь 0,5 моль и абсолютный предел 9pₐ; вручную проверены p₁=120495 Па и Q=11692,575 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "88341F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "8a49308c44d3e9d015a738391c72eae178c738fd0fb937214460bff8b2c840bc",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43024",
+    "match": "variant",
+    "comparison": "Обратная задача: источник по отданным 7,5 кДж ищет M≈0,004 кг·моль⁻¹. Здесь M задано; независимый расчёт даёт T₂=200 К, |Q|=7479 Дж, согласованно с округлением источника.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "603BFB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "4221e6274c9dff4647551551b53a982de8950fdb527d20efbd90c4bdd2abe9c7",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=4755",
+    "match": "exact",
+    "comparison": "Точное совпадение физического процесса и чисел соответствующего варианта. Независимо пересчитаны V₂=2V₁, T₂=300 К, ΔU=−3739,5 Дж; знаки Q и A проверены первым законом, округления выполнены только в конце.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "97E7BE": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "1332817787f939fdc76a11ea421a3ae2f71afdb53d5b84f820c28d5d050c6ca0",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=5175",
+    "match": "exact",
+    "comparison": "Точное совпадение физического процесса и чисел соответствующего варианта. Независимо пересчитаны V₂=2V₁, T₂=300 К, ΔU=−3739,5 Дж; знаки Q и A проверены первым законом, округления выполнены только в конце.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "F1C0D8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "7627a37875a948f46088a709643aeb33ee67100fa4b31ed018391603eea06e08",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=4790",
+    "match": "exact",
+    "comparison": "Точное совпадение физического процесса и чисел соответствующего варианта. Независимо пересчитаны V₂=2V₁, T₂=300 К, ΔU=−3739,5 Дж; знаки Q и A проверены первым законом, округления выполнены только в конце.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "FA180A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "3d6dc15618506cd77c9b416dc27645c75cdef3e8bbb05568aff6fa9d0f6af865",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=5560",
+    "match": "exact",
+    "comparison": "Точное совпадение физического процесса и чисел соответствующего варианта. Независимо пересчитаны V₂=2V₁, T₂=300 К, ΔU=−3739,5 Дж; знаки Q и A проверены первым законом, округления выполнены только в конце.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A2199F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "c4e30138bd26260688a1e0af56662628da6a13f8a235110634a6197deb9c5fe6",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=5315",
+    "match": "exact",
+    "comparison": "Точное совпадение физического процесса и чисел соответствующего варианта. Независимо пересчитаны V₂=2V₁, T₂=300 К, ΔU=−3739,5 Дж; знаки Q и A проверены первым законом, округления выполнены только в конце.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "63AF96": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "38543e2911a98f0d92c57e5d9ed58cdaf622b3f30d26ad85387e77e81baef583",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=11953",
+    "match": "exact",
+    "comparison": "Точное совпадение условия. Сверены разные соглашения о работе A₁ внешних сил и A₂ газа, связь A₁=3νRT₂ и A₂=A₁÷4=600 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "BB79C3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "517bd90b8bd42c7b60b636f5efca770367b8851b8f3934b01816bc80a5e3a4c0",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=4154",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены площадь трапеции, ΔU и Q=2νRT₁(α²−1). Источник округляет T₁ до 400 К; здесь указано 401 К при R=8,31, что согласуется с ним.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "E936E1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "4fe92acbfc2273581ba438adb661466fe73793c716b3c4ad36edfd0a4f121fba",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=8556",
+    "match": "exact",
+    "comparison": "Точное совпадение. Из системы масс и количеств вещества получено отношение 1,5284; источник округляет до 1,5. Несогласованную вложенную дробь в отображении источника не копировали, массы проверены отдельно.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "FAFA17": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "ccc8ef0d2ee56d0a935de66d9db30ee6cffff01d5a96ce71165163a903e9de3e",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=24609",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены массы 1,2 и 0,8 г, количества 0,6 и 0,2 моль и температура 300,84 К; не смешаны массовое и молярное отношения.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "D6F721": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "2d6fb83b7f0dda8c9d7a2b8c9fd0fb1e2d745cb91d6c6fc1fd51349331a0aa33",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25422",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант: источник ищет массу Po при 80 мл и 130 кПа. Здесь 1 г, 50 мл и требуется давление. Вручную пересчитаны доля распада 1−2^(−1÷4), νHe и 140042 Па. Опечатку источника pHe−p₀ заменили корректной разностью полного давления p−p₀.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "211F34": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "b97febe8875a9484196ce5c16bf71d257e01d8a2af19451fd290bd80967923b2",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9329",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены масса 0,3 кг, объём 60 м³, приращение парциального давления и конечная влажность около 83%; насыщение не достигнуто.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "27AA31": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "186bc0b5cf7f925f82b6844a1e735a8258ea187bbe686ba08bc28ca836a67b67",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9329",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант задачи об увлажнителе: здесь иные V, T, pн и j, ищется время. Баланс массы и закон идеального пара сверены; вручную получено 1,507 ч при Δm=0,54259 кг.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "678A39": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "859d068d9b0652037ede5905a5e5a7ba454c9028327f17b60e1010c097c05236",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9329",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант: требуется исходная влажность при V=105 м³, T=288 К, добавленных 0,4 кг. Независимо проверен знак вычитания и результат 40,379%.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "21A630": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "849bc9860a540c81c1d14e8b9157788ef3c22118036928691bc4d7a5c9bcc385",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9329",
+    "match": "method-analogue",
+    "comparison": "Методический аналог определения массы ненасыщенного пара через φpнV=M⁻¹mRT. В источнике рассчитывается прирост массы при увлажнении; здесь одно состояние при 309 К, расчёт 33,339 г выполнен отдельно.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "830FF9": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "a3ad465a6d18f19a3b0d494e61131d4230690a9b6508180157e181fa74631f6e",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19871",
+    "match": "variant",
+    "comparison": "Числовой вариант: в источнике 15 л·мин⁻¹, здесь 5 л·мин⁻¹. При тех же температурах и влажностях потеря втрое меньше: 9,1848 г вместо 27,5545 г.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "BEDE43": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "conditionSha256": "a7aa95e44e2554275d4c55e5b44c16f10b308f840a656aa7d679272c49ab5a96",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19871",
+    "match": "variant",
+    "comparison": "Совпадение чисел и модели, формулировка о нагрузке эквивалентна. Вычислено 27,5545 г, в источнике округлено до 28 г; отдельно проверены массы вдохнутого и выдохнутого пара.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "7CF1D3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "68ab9cff319939cf9e712ce1d406ea3aec39dea106a04e4bd72e307dab3394ad",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=39267",
+    "match": "exact",
+    "comparison": "Точное совпадение. Проверено взвешивание по объёмам: (0,6+3·0,7)÷4=0,675. Температура и давление насыщения одинаковы, конденсации нет.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "D0DE05": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "765f335553ea60c1a478701f1cb40c2ce9c3dc3b5fe753b5c9d137cce0c932da",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=6911",
+    "match": "exact",
+    "comparison": "Точное совпадение. Проверены сохранение массы пара и средневзвешенная влажность 36%, а не простое среднее 35%.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "258D41": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "conditionSha256": "f9a046695007fb320aeb5380d4fe4589fbc33b3b3c9c3169dbda227ac4387a41",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=39267",
+    "match": "variant",
+    "comparison": "Обратный вариант смешивания при том же отношении объёмов 3. Здесь заданы 80% и итоговые 50%, а не 60% и 70%; вручную решено уравнение 4·0,50=0,80+3φ₂ и получено 40%.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "2D1417": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "b96584b35198274accddcd3b86c8ea0c23043850485340c315080b17de0a727f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50825",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант: в источнике V=2 л и φ=30%, ищется пустой объём. Здесь V₁=2 л, V₂=3 л; сохранение всей воды даёт 60%, отдельно проверено полное испарение жидкости.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "5BD8FB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "4b307e2d1521c5ce541a7257bc640ac0dbd62da78d9ba08bfc3547cee8facfdf",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=45492",
+    "match": "variant",
+    "comparison": "Числовой вариант: источник даёт 100 л, 120 °C, 6 кПа; здесь 0,5 л, 150 °C, 8 кПа. Пересчитаны обе массы пара и 11,242 мг конденсата. Опечатка источника 292 К для 20 °C исправлена на 293 К.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A099EB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "2ce2925000acfd73df54c3222d361b126b99740a338ec2fa917f1124c537081c",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=32268",
+    "match": "exact",
+    "comparison": "Точное совпадение. Проверены начальное давление пара 33,11 кПа, достижение насыщения и полное конечное давление 307,97 кПа.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "5A1F95": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "257a3c9f364b93cbdb28c6e8e6afe2a277b3653d1ea3335876b489bb8409a036",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25414",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены насыщение при сжатии, p₂=200 кПа и альтернативный изохорный нагрев из исходного состояния с T₃÷T₁=2.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "8BF94A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "723532cc51eeb7b0e5da5113e3d09ae38ceb7fa0abf9a5a90c5c16fa7284f405",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=32268",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант с конденсацией: здесь заданы k=4 и рост полного давления n=3 при 100 °C. Сверена схема закона Дальтона; ручной расчёт даёт φ=0,70 и конечные 540 кПа.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "B01805": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "50ab56ad68ea65ba22b1c2d9cbbf1319439876dbdd99082a842cbede4e1bf812",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=32562",
+    "match": "method-analogue",
+    "comparison": "Методический числовой вариант определения состава влажного воздуха через общую массу и давление. Источник ищет влажность при 30 л и 45 г; здесь 10 л и 18 г, масса пара пересчитана как 2,89976 г, парциальное давление проверено.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A3959A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "conditionSha256": "f5ee2cbe37c6387d313246e9cea37f65e14c9ad18184fa47dce2654ed2e13cd6",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38946",
+    "match": "variant",
+    "comparison": "Эквивалентный качественный вариант: источник связывает рост pп с увлажнителем, здесь с влажной уборкой. Одинаковы фиксированная T, определение φ и уравнение ρ=pпM÷RT; оба вывода совпадают.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A521EA": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "conditionSha256": "23ea4313dcd2478c246c0777471539c2aae6b48222eaa1b669bc1f3b05517115",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=24377",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены постоянные масса и объём, увеличение pп в 323÷303 раза и уменьшение φ вследствие роста плотности насыщения.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "8A1211": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "109372dc9519392d09ba2fe97e2099b15d7236dd32afe65f8f4cc25d34d83c94",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19857",
+    "match": "exact",
+    "comparison": "Точное совпадение: спирт при 78 °C, L=846 кДж·кг⁻¹, M=46 г·моль⁻¹. Доля работы 0,07495 согласована с 0,075 в источнике.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A0D359": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "fdd9fca88fa94a58b5bc84c28ac6d89a71edc602af5e30b0b3b83ade7d34449f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19857",
+    "match": "variant",
+    "comparison": "Числовой и вещественный вариант: вместо спирта дан бензол при 80 °C с иными M и L. Формулы Q=LΔm и A=ΔmRT÷M сверены; независимо получена доля работы 0,09497.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "96017E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "c83f09d38d26a909c8216432c8fbd941a53e3d53741549605ef453d248508c14",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19865",
+    "match": "variant",
+    "comparison": "Вариант для бензола вместо ацетона: требуется доля увеличения внутренней энергии, 1−RT÷ML. При 353 К, M=0,078 и L=396000 пересчитано 0,90503.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "9A11AE": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "1205ac2c510f1a49dbfe48a81e9493dad54eecaae21c2baf1dede5eed6dc174a",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19865",
+    "match": "variant",
+    "comparison": "Дополнительная к источнику величина: там для тех же данных спрашивают ΔU÷Q≈0,91, здесь A÷Q≈0,09. Проверено, что две доли в сумме дают единицу.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "05A6DD": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "40597a292895737318e993079c8270859e0b9bd9012e8066d9d615d59e0f6337",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29777",
+    "match": "variant",
+    "comparison": "Точное физическое совпадение: 1 моль с каждой стороны, отношение верхнего и нижнего объёмов 2→3, откачка снизу. Разность давлений и Δν=7÷24 моль проверены обратной подстановкой.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "0EEB94": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "2c2bb72214748e6ef04ebcef61468a8ec982b8e6fc9e3ffbc82aa79b9f53cead",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29749",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены вакуум сверху, начальный перепад νRT÷(2V), расширение нижнего газа до 2V и отношение верхнего объёма к нижнему 0,5.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A2EA39": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "92da9ff900808ad489df7e17f9cbdf0b4bb102a5ed6d138507d5724a344c88ef",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33044",
+    "match": "variant",
+    "comparison": "Обратная задача к источнику с теми же массами и высотами: площадь 5 см² задана, найдена высота 12 см. Силовой баланс и p₁h₁=p₂h₂ совпадают.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "BA06BC": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "89e4ef5192a156bc5f31f26427785e0e9015b6955ae3c7c1c53be0df5f4eee7f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33044",
+    "match": "variant",
+    "comparison": "Обратный вариант относительно источника: там груз кладут и ищут S, здесь снимают при исходной высоте 13 см. Отдельно получены h₂=14,083 см и Δh=1,083 см.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A40A56": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6542B57F201C8546461B59A1593F63B8(copy2)/xs3qstsrc6542B57F201C8546461B59A1593F63B8_1_1577189927.png"
+    ],
+    "conditionSha256": "7c69d2ec05a37bce3cefab43081683744e1092c583189f3b2eb35ac5be48ac0d",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19877",
+    "match": "exact",
+    "comparison": "Точное совпадение данных и рисунка. Записан второй закон в земной инерциальной системе, а не равновесие ускоряющегося тела. Проверены p₀=18 кПа и отношение 38÷40=0,95.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "19CDFF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "ab7de24b2f2915e81c63e5a70aec66afc95662dceb770b59ee26ce2ff2fadaee",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38662",
+    "match": "variant",
+    "comparison": "Обратная символическая задача к источнику: там по φ находят массу песка, здесь по m находят φ. Сверены силовой баланс, момент первого насыщения и эквивалентность двух формул.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "18E99E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "2949f35b75cd3e42ecbf2cb6844ab8ea54da4f59d067c008736f5e7c0a09ae4b",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43101",
+    "match": "variant",
+    "comparison": "Обратное точное соответствие чисел: источник по горизонтальной силе 1 Н получает порог 9 Дж. Здесь решено обратное уравнение. Опечатка источника о давлении в момент вылета не использована: баланс составлен непосредственно перед сдвигом.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "1D4573": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "41dc7be11987b5bb812bde4ee4f22b45d4ca7f1ae8336e19aeccec4d7ba28cb1",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=5385",
+    "match": "variant",
+    "comparison": "Совпадение чисел и модели. Независимый источник явно оговаривает пренебрежение массой пробки; в сохранённом условии масса не дана. Это допущение раскрыто, проверены s=2 см² и избыток давления 500 кПа.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "9F56D5": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7B881DB849ACB36B4CE81B3DCBA0B885/xs3qstsrc35ABC85A14129ECC4046E96B61768FEF_2_1450774207.png"
+    ],
+    "conditionSha256": "aad242745f6bd07c84748c3e4bb8c1c873286d285dba6462214dbec788b557dc",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7875",
+    "match": "exact",
+    "comparison": "Точное совпадение условия и рисунка с источником 7875. Сверены нулевая начальная деформация, линейное p(V), работа против атмосферы и пружины, полный Q.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "5CBF60": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C78A40AD97DCA9624B23ED1B07FD7D49(copy1)/xs3qstsrcC78A40AD97DCA9624B23ED1B07FD7D49_2_1643266760.png"
+    ],
+    "conditionSha256": "9a777624acb263f9ea50f6a22bf0bfbe0fa64392611b0f811573daecdf0c4507",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7875",
+    "match": "variant",
+    "comparison": "Обратная символическая задача к 7875: по Q и смещению требуется S. Вручную решено каноническое равенство 2Q=5p₀Sb+3kbL+4kb²; проверена размерность площади.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "BB2FF8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/14F6411956EFB0F3488F4D9D0DF8140B/xs3qstsrcA2E5B6C0E35596034D0EFD3B16C377C9_2_1450774496.png"
+    ],
+    "conditionSha256": "48920d2539ca52ba81f699e2633f3d78d85cb2d6acd3b239b154b414e591ad7e",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7875",
+    "match": "variant",
+    "comparison": "Обратная символическая задача к 7875: по Q, S и b ищется k. Проверено выделение k, знаменатель b(3L+4b) и обратная подстановка в исходное энергетическое равенство.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "9FA9FA": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D134E41F5F8B854641E827B72EBD69AC(copy1)/xs3qstsrcD134E41F5F8B854641E827B72EBD69AC_2_1454763606.png"
+    ],
+    "conditionSha256": "95f4c52d65caef75f77e169823eb0e33117ff8f2140262da94c652feef429fd0",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33046",
+    "match": "exact",
+    "comparison": "Точное совпадение условия и схемы 33046. Сверены два этапа, наличие реакции выступов до отрыва и Q=2,5p₀S(H−h)+Mg(2,5H−h).",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "5C871A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D20B8FA12488B2754CEB3F7213E973C9(copy3)/xs3qstsrcD20B8FA12488B2754CEB3F7213E973C9_7_1671182181.jpg"
+    ],
+    "conditionSha256": "6722a3a1cad9dbffe26bfe52265830e557d7fb229ebf42a5bc1a7b1d48bb74ae",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33046",
+    "match": "variant",
+    "comparison": "Обратный символический вариант источника 33046: требуется площадь S. Два этапа сохранены; вручную проверены Q₁=1,5Mgh, Q₂=2,5(p₀S+Mg)(H−h) и выражение S.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "399D49": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "conditionSha256": "1c3fc01e6395e3d1b5e2d384af9db987642f6052e7ef533d9fd974b3197620fa",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38957",
+    "match": "variant",
+    "comparison": "Числовой вариант: в источнике 50 Дж и 20 см, здесь 75 Дж и 10 см. Формула S=2|Q|÷(5px) сверена, пересчёт даёт 30 см²; проверены отрицательные A и ΔU.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "AE2D32": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "c1cb2ac59e0b999b993745e2b07cbbef5e87422b6fd47c6a72b6948d9cc19be0",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7129",
+    "match": "variant",
+    "comparison": "Обратная задача к источнику с теми же числовыми данными: там Q=1,65 кДж задана и ищется L=0,3 м. Здесь L задана; проверены оба этапа и Q=1650 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "5F6B76": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "1a526d350354309ff16ac7c3ba4378c3cd114d20eab8e9ef7b4fe7acc62014c7",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38954",
+    "match": "variant",
+    "comparison": "Числовой вариант: источник использует 600 К для He и получает 1,2; здесь 300 К. Пересчитаны отношение количеств 3, конечная T=450 К и множитель объёма 1,5.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "0F5292": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A390BBD3F078B38E41409CCEE489457C(copy1)/xs3qstsrcA390BBD3F078B38E41409CCEE489457C_1_1511881020.png"
+    ],
+    "conditionSha256": "76d2a2c468a10350614921f10912aabda5393393c0fd3d0fd2025ceece69886a",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=30001",
+    "match": "method-analogue",
+    "comparison": "Методический аналог 30001: то же вертикальное положение отверстием вниз, p₂=p₀−ρgl и закон Бойля—Мариотта; там ищется влажность, здесь длина ртути. Числа 30,7; 43,2; 747 пересчитаны, l=216,146 мм.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "B3F130": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/18B009804059AF85497414A00A32C98C(copy1)/xs3qstsrc18B009804059AF85497414A00A32C98C_1_1486739939.png"
+    ],
+    "conditionSha256": "03c1468b122e6254971724860f5b958d3f95985a635fa7cf46717c22e16ba63a",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=2986",
+    "match": "method-analogue",
+    "comparison": "Методический аналог 2986: запертый воздух под ртутью, p₂=p₀+ρgl. В источнике изменяется T при прежнем объёме, здесь T постоянна и меняется длина. Отдельно получено l=216,567 мм.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "060CB2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "af97a662f5978a8971a2e40cb709071caec959ff47157e8d0ab9015885abe4ea",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=30001",
+    "match": "exact",
+    "comparison": "Точное совпадение условия. Сверены направления сил при отверстии вниз, уменьшение полного и парциального давлений в 0,9 раза и влажность 72%.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "E69926": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "a02e64902d2d6f765f308d3b4ddec69e0041732388601e68f5681c5b84e2295f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=2986",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант: в источнике l=15 см и ΔT=60 К, ищется T₁=300 К. Здесь l=7,5 см и задано T₁=300 К; формула ΔT=T₁l÷H даёт 30 К.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "C0CDD7": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A2DF2DD94273AC004A2979C7383AB84F(copy1)/xs3qstsrcA2DF2DD94273AC004A2979C7383AB84F_1_1643189088.jpg"
+    ],
+    "conditionSha256": "0c51c16d1cd632a90ea4ade9251763b339ca148aedd7b8456b2341708257a53d",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29750",
+    "match": "variant",
+    "comparison": "Обратная форма того же набора данных: источник спрашивает множитель температуры ≈1,4, здесь конечную T₂. По исходной геометрии проверено направление к оси; точный пересчёт множителя даёт 381,435 К.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "158BDB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "3050ae4cf0053004ddd85b7e58c7e5fe0f747219ae0db190e4397708bb3eee05",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9248",
+    "match": "variant",
+    "comparison": "Числовой вариант: источник имеет 27 °C, здесь 28 °C. Тот же баланс Архимедовой силы и веса, но T=301 К; пересчитано 4002,096, дано округление около 4000 и оговорено целочисленное округление вверх. Опечатку ρHe в записи силы Архимеда источника исправили на ρ воздуха.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "2118C2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "b526a53f75cf84519e60748abc8038eab920c89445bf939c9196cccbab91d195",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9289",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены 5000 шаров, масса 60 кг, T=300 К, вес гелия и объём 0,0119664 м³≈12 л.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "2F460C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "a4f6d22726756fe5b0798389fc68d5918ea0485d64ca51af3c8dd49dbd7c7498",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43027",
+    "match": "variant",
+    "comparison": "Обратный вариант изменения нагрузки при тех же исходных массах 100, 400 и 225 кг. Источник добавляет пассажира и гелий; здесь потеря 4 кг He. Проверено полезное изменение нагрузки (7,25−1)·4=25 кг.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "45F3AF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "f3f3b3c11f34d01b02ea186ad93be0e8aa36019d5687c5a3aeaf21f33dd3f155",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29747",
+    "match": "variant",
+    "comparison": "Числовой обратный вариант горячего шара. Источник ищет нагрев внутреннего воздуха при других V и T₀; здесь наружная плотность задана. Проверены равенство давлений, баланс масс 3000=2400+600 и порог 280 К.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "5A6DA8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7E36E70FC92890C14DB5A221C0862670(copy1)/xs3qstsrc7E36E70FC92890C14DB5A221C0862670_1_1511344934.png"
+    ],
+    "conditionSha256": "0bfdfecf304f720189be5ac401d347dd1ee287ba6f496a41c4f3627d0aebea6b",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7165",
+    "match": "variant",
+    "comparison": "Обратная задача с теми же параметрами: источник задаёт наружные 0 °C и находит внутренние 265 °C. Обратный расчёт при округлённом T=538 К даёт 272,832 К≈0 °C; расхождение 0,17 К — округление.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "B27AE1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/69D0CBF5F8C29AC1461E4AEF8D75BBA8(copy1)/xs3qstsrc69D0CBF5F8C29AC1461E4AEF8D75BBA8_2_1640266985.jpg"
+    ],
+    "conditionSha256": "10c2a424e86e422a2db5f3af19479c05b5e309d2803f821a705afaccb298f4ad",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7165",
+    "match": "variant",
+    "comparison": "Символический вариант того же баланса горячего шара. Вместо абсолютных чисел дано T=2T₀; вручную выведены ρ₀=2ρ и порог M÷m=1, отдельно различены равновесие и положительное ускорение.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A7474D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "conditionSha256": "08a0c0786ab841c8c5098be813310362d4a3403ab95357cbda3b039d150c24d1",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=48535",
+    "match": "variant",
+    "comparison": "Обратная задача: источник при p₂=6,6 кПа находит общую массу 20 кг. Здесь m=20 кг задана; силовые балансы и плотности пересчитаны, p₂=6609,2 Па. Не вводили необоснованную модель герметичного эластичного шара.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "ACC239": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C0D6E77F8F34A5BC4FA20127A79CDF4A(copy1)/xs3qstsrcE9BAA617750082674BCA87D5AB1A87D9_4_1772111129.png"
+    ],
+    "conditionSha256": "94d16142ecdb82779b0ee7e6507d14d4ad923aadf0d715aa298c4382f7fd4175",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29463",
+    "match": "exact",
+    "comparison": "Точное совпадение данных и рисунка. Проверены объём стали, порог Fн=0 и изобарное приближение неглубокой кастрюли. Опечатку промежуточной формулы T₂ в источнике исправили: T₂=T₁V₂÷V₁, ответ около 6 °C.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "2D0E11": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C361E5825A46A4A74393CE1E408C60DA(copy3)/xs3qstsrcC361E5825A46A4A74393CE1E408C60DA_2_1670398760.jpg"
+    ],
+    "conditionSha256": "62494374c422055a7693474bbec946b994dd776968bd154aeceb2209e6d73ecd",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=2974",
+    "match": "variant",
+    "comparison": "Обратная задача: источник по времени 580 с находит длину около 0,5 м. Здесь длина ровно 0,5 м задана; проверены моменты, избыточное давление 200 кПа и время 581,63 с.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "33447A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "e8883977c9a162ef7b73be0a9641267881043862e07beabb05d176079c34f3c4",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50821",
+    "match": "variant",
+    "comparison": "Числовой вариант пузырька: H=20 м, h=1 м и V₁=1 мм³. По тому же закону с учётом атмосферного давления пересчитано V₂=30÷11 мм³.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "34B425": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/ACC4C238CCD1BBA3409DA85F4A556D9E(copy1)/xs3qstsrcACC4C238CCD1BBA3409DA85F4A556D9E_1_1483022404.png"
+    ],
+    "conditionSha256": "c56df6d2a97c2cce4bc73046e7245d3c586b9213643c8d9cc3a1aa2f4a172db6",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9042",
+    "match": "exact",
+    "comparison": "Точное совпадение. Независимо сверены неупругий удар 10 г о 90 г, скорость 400 м·с⁻¹, последующая энергия 80 Дж и количество He 0,1003 моль при ΔT=64 К.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "F555AF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/07C6D2D682068A534B43DDB55E5DAE33(copy1)/xs3qstsrc911888B3CFD6ACCB493F62E503CBAB4A_3_1772110946.jpg"
+    ],
+    "conditionSha256": "e1fd135e20f0b61578a56ea7153c091e3695666372918cc8dcadfca67fd87f70",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9042",
+    "match": "variant",
+    "comparison": "Числовой обратный вариант: скорость пули 300 вместо 400 м·с⁻¹, заданы p₀,V₀,T₀. Отдельно пересчитаны импульс, оставшиеся после удара 45 Дж и нагрев на 90 К; ответ 390 К.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "8AC878": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/50454310BADCB9BC47B74E94C2FEAC86(copy1)/xs3qstsrc3FFA9FF11E498AE045AFB3412131F6FB_6_1721208321.png"
+    ],
+    "conditionSha256": "921f91226462a491a2644e6f16cb3f32ad972c30c37b6289107ff1af9f8f8c56",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=41545",
+    "match": "exact",
+    "comparison": "Точное совпадение, в отличие от F717A0 с растянутой пружиной. Сверены повышенное начальное давление справа, выход воздуха и движение вправо. Различены новое равновесное положение и колебания без мгновенной остановки.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "1DAC06": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/29A78928CC808044484467165386C2DD(copy1)/xs3qstsrc25D97AD7D014ADA64E2416E12EC608C5_8_1721208247.png"
+    ],
+    "conditionSha256": "b398c10e5d061d37757abb0a37f97b2d9345f7a296aa93ed05761eddf6404d14",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38570",
+    "match": "variant",
+    "comparison": "Совпадают все три участка p–T: изохорное нагревание, изобарное нагревание, изотермическое сжатие. Сетка ФИПИ дополнительно проверена отношениями p,T,V; использована формула одноатомного газа из условия.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "43F9B1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C63D4ACB505CADEF45894A08D3CC6F02(copy1)/xs3qstsrcC63D4ACB505CADEF45894A08D3CC6F02_1_1481023779.gif"
+    ],
+    "conditionSha256": "8e56844e8c60607221c0b1516106d6821cb780a68f3245308bbbb03ff03be2ce",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50865",
+    "match": "variant",
+    "comparison": "Графический вариант задачи p–ρ: первый участок совпадает, второй в ФИПИ направлен к большей плотности, а в источнике — к меньшей. Поэтому здесь на 2–3 охлаждение и сжатие, а не нагревание и расширение.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "47ED8E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AA1A12FB1483A1084F2C99885FF1BBEE(copy1)/xs3qstsrcAA1A12FB1483A1084F2C99885FF1BBEE_8_1765454572.png"
+    ],
+    "conditionSha256": "e84b5e64bd4cbce98e4c988d0d5f37e0f34cd2943c300bdbe530f6a7777c5d2b",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=8022",
+    "match": "method-analogue",
+    "comparison": "Методический аналог в координатах p–n. В ФИПИ три иных участка; каждый независимо проверен через p=nkT и V=N÷n. Числа сетки 3:2:1 не заимствовались из графика источника.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "D9720D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B817D93DE1F9844340D94C27186540E3(copy1)/xs3qstsrcB817D93DE1F9844340D94C27186540E3_1_1769782726.png"
+    ],
+    "conditionSha256": "8d3048d6a4187901eb256f3eaea6122cb3ddcf4b8287d36b56f1960b7178f6cc",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=8022",
+    "match": "method-analogue",
+    "comparison": "Методический аналог анализа состояния газа по концентрации. Для иной оси E самостоятельно применена связь E=3kT÷2, затем p=2NE÷(3V); направления и постоянные величины сверены по исходному рисунку ФИПИ.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "B42929": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8476BA84B9FE9F2546E122F90C9B2C1E(copy1)/xs3qstsrc64b60b733b6c429c9c752dd50610e88d_1_1785933929.png"
+    ],
+    "conditionSha256": "e377a3224bcb417f1a947dd24b82ac5e76dc40db850ba39ae6447d3d8c72a701",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38570",
+    "match": "variant",
+    "comparison": "Вариант анализа трёх изопроцессов с другими осями и направлениями. По рисунку V–T ФИПИ проверены изохорное охлаждение, изобарное нагревание и изотермическое расширение; первый ответ p↓, а не p↑.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "E886CF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/05ADD22CEC25B1A74A23F91FD3A2182F(copy1)/xs3qstsrc05ADD22CEC25B1A74A23F91FD3A2182F_1_1766489630.png"
+    ],
+    "conditionSha256": "71624a017dc279d84e6cb22f8d7097615b929f7af4ab3df99320b91680074d3c",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38570",
+    "match": "method-analogue",
+    "comparison": "Методический аналог p–T анализа. Вместо изопроцессов дан наклонный отрезок с T↓ и p↑; отдельно проверены V∝T÷p и ρ=m÷V, а по сетке V₂÷V₁=1÷15.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "7DC495": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B38A702B1399A4EE42E4D0F2259FB835/xs3qstsrcE58FC32565279E9048132BABD603E9AA_1_1454757976.png"
+    ],
+    "conditionSha256": "e81ec0d905c2418d37d1eb99be25e95de362e875675406e170b21e77cd62b314",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=8022",
+    "match": "exact",
+    "comparison": "Точное совпадение графика p–n: изохорное нагревание и изобарное расширение. Сверены постоянство числа частиц, знаки работы и изменения внутренней энергии; оба Q положительны.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "42D686": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/50F99C3BE0E2999A4C0E20C5AD35A41B(copy1)/xs3qstsrc50F99C3BE0E2999A4C0E20C5AD35A41B_1_1768222479.png"
+    ],
+    "conditionSha256": "cd2e18ab92e388959d67930ab88e09144d81a947b1f8addcdf57ccf7f16652dc",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50867",
+    "match": "variant",
+    "comparison": "Вариант трёх процессов p–V с другим порядком и направлениями, не точное совпадение рисунка. Независимо проверены изохорное охлаждение, изотермическое и изобарное расширения; знаки Q: −,+,+.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "D76E33": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D96CB35218C18F974DE293886E23628F(copy1)/xs3qstsrcE7ED3C4B22F2A1024BE778C84F7B1724_8_1714997950.png"
+    ],
+    "conditionSha256": "319eb6dd4cdac5a3c450bb9dbedc3b7dd101516acd1e0a55e423143747dda2ea",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=8022",
+    "match": "method-analogue",
+    "comparison": "Методический аналог определения знака теплоты. Для осей U–p применены U=3νRT÷2 и V=2U÷(3p). Рисунок ФИПИ проверен отдельно: первый участок изотермическое сжатие, второй изохорное нагревание.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "F2CED0": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9E3240FB5087946A495626ADD78EF00F(copy1)/xs3qstsrc9E3240FB5087946A495626ADD78EF00F_1_1454766881.png"
+    ],
+    "conditionSha256": "c58c7d482a1f532f0edc06bb18beb11963f741391f400fad6c8b9db7273d91e4",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=8022",
+    "match": "method-analogue",
+    "comparison": "Методический аналог определения знака теплоты. Для осей U–p применены U=3νRT÷2 и V=2U÷(3p). Рисунок ФИПИ проверен отдельно: первый участок изотермическое сжатие, второй изобарное охлаждение.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "148A9F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/140157_28copy1_29/xs3qstsrcB585D80D57C984FB47F3AE24087B592E_1_1355401669.png"
+    ],
+    "conditionSha256": "5a74dbe67c37ddd08e6ebc129b2b6c18a59d320625c3399c99b27c92659652ff",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=4823",
+    "match": "variant",
+    "comparison": "У источника те же слова, но оси V–T; в ФИПИ T–V. Поэтому ответ противоположный: наклон T(V)=p÷(νR), νI<νII. Перестановка осей подтверждена непосредственным просмотром исходного PNG.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "1A51B6": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/140155_28copy1_29/xs3qstsrc110851567EAE8BE94764334B60A81842_1_1355401582.png"
+    ],
+    "conditionSha256": "033f1a900d3042ad6ace6d86755016b8b586251de6f3b260d76d47ceaaa34d8e",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=4753",
+    "match": "exact",
+    "comparison": "Точное совпадение осей p–T и одинаковых объёмов. Сверены наклон νR÷V, большее количество вещества и большая масса одной и той же разновидности газа в сосуде I.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "0A9533": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DA8CE7A3C327A96544E3FCC7FC4C80C1(copy1)/xs3qstsrcDA8CE7A3C327A96544E3FCC7FC4C80C1_1_1513176056.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DA8CE7A3C327A96544E3FCC7FC4C80C1(copy1)/xs3qstsrcDA8CE7A3C327A96544E3FCC7FC4C80C1_2_1513176056.png"
+    ],
+    "conditionSha256": "e50cf2fa518a33b6066ae67a8ab0f74ae461861d32fd9017c4ffe32c267fde70",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=10452",
+    "match": "method-analogue",
+    "comparison": "Методический аналог перестроения изохоры и изотермы в p–V. В ФИПИ исходная ось U, а не n; использовано U=3pV÷2. Проверены исходная сетка и конечные точки (6,2), (6,4), (3,8).",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "98EA22": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D37A28DEC445B6E645DF084BE5B262FA(copy2)/xs3qstsrcD37A28DEC445B6E645DF084BE5B262FA_1_1577113738.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D37A28DEC445B6E645DF084BE5B262FA(copy2)/xs3qstsrcD37A28DEC445B6E645DF084BE5B262FA_2_1577113738.png"
+    ],
+    "conditionSha256": "5e1d3544c965ba94288de2415972302a7efa2857b39a3bc678784eabd31e0cb8",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=39264",
+    "match": "method-analogue",
+    "comparison": "Методический аналог построения p–V по иной паре переменных. Для U–V отдельно выведено p=2U÷(3V), сверены клетки (2,4), (4,2), (8,2) и ветвь изотермы, затем изобара.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "D38EE5": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B552D84CC3AC951B43615DFD1663893C(copy1)/xs3qstsrcB552D84CC3AC951B43615DFD1663893C_7_1701340794.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B552D84CC3AC951B43615DFD1663893C(copy1)/xs3qstsrcB552D84CC3AC951B43615DFD1663893C_8_1701340794.png"
+    ],
+    "conditionSha256": "0e7787d123d3222b0bae1852215205b5dc789262022da86c205e0b36c7c719f2",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=39264",
+    "match": "exact",
+    "comparison": "Точное совпадение задачи перестроения n–p в p–V. Вручную проверены оба удвоения давления, уменьшение V вдвое и координаты на предоставленной ФИПИ сетке.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "2C751A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "conditionSha256": "e7abe5ea0300d528140b574eaf1b47b6c09909a0ef8c7d10da3070ff2fcfdbca",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19923",
+    "match": "variant",
+    "comparison": "Обратное направление варианта: в источнике объёмы увеличиваются, в ФИПИ уменьшаются вдвое. Сверены постоянное давление насыщенного пара и гипербола сухого воздуха; пересчитано конечное p воздуха 2p₀.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "CA089F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/PHIS.E12.C1.28_28copy1_29/xs3qstsrcF10F0386F67996C74130F96E3F937605_1_1328252697.png"
+    ],
+    "conditionSha256": "fc79aea7142141fbdc6afd90f5a7f9833a9ae67d01e211d4cd76bf7e4fd7f840",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=4148",
+    "match": "exact",
+    "comparison": "Точное совпадение. Проверены исходное отношение масс 2:1, полное испарение при 3V₀, непрерывное соединение горизонтального участка с гиперболой и конечное давление p₀÷2.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "FBCEF2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/116A4C5C0843B15A47C58D478555019D/xs3qstsrc68C387D8ED9C95DD481E519E97C8FA87_2_1423920380.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/116A4C5C0843B15A47C58D478555019D/xs3qstsrc68C387D8ED9C95DD481E519E97C8FA87_3_1423920380.png"
+    ],
+    "conditionSha256": "03602bd5fd9352bb4efe15c035dc9425374a44c6fdb9a0c47a4ff370c4034339",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7199",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены силы до и после отрыва, первый изохорный этап до 2T₀, следующий изобарный до 4T₀ и конечные координаты. Реакция упоров явно включена в начальный баланс.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "2272AF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D1B8403DCD3A87364BAB870A44CB9C72(copy1)/xs3qstsrc9613664fb3b441edbaaa38e53c203101_7_1759324153.png"
+    ],
+    "conditionSha256": "e3d72081324c958ce5eaf10c5cb383c943e0c01a9ecc45b9e1f8a878ec24c878",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43826",
+    "match": "exact",
+    "comparison": "Точное совпадение p–T цикла. Исправлена арифметическая опечатка нижней оценки в источнике: 3p₀(2V₀−V₀)=3p₀V₀, не 2p₀V₀. Сравнение работ от этого не меняется.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "B4511B": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9C88A26590839D5744606402D48A1AAA(copy1)/xs3qstsrc5448055DE25AA4DA4540E29D9526F7EE_1_1772109592.gif"
+    ],
+    "conditionSha256": "ca78f4d9e001513e2a49d7d382b113d9a120a4b9c9ee2d24f6ed437e496b1f34",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43826",
+    "match": "variant",
+    "comparison": "Графический вариант цикла: оси V–T и конечный объём 3V₀ вместо 2V₀. Состояния пересчитаны самостоятельно; получены p₃=2p₀, p₄=p₀, сравнение работ подтверждено площадями.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "E1E2F6": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9EBA3C2F8D7685EE410A5DDD3B63D657(copy1)/xs3qstsrc1cdc563866114f0abd8cddbd5494fa4a_8_1777384433.png"
+    ],
+    "conditionSha256": "2bb6c7db18fa4509a198b76dbeb89172ef59766d4cdda137c53e9b79e2e681f7",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=48532",
+    "match": "variant",
+    "comparison": "Тот же трёхэтапный цикл изохоры, изотермы и изобары, но источник использует p–T и другие номера вершин. По V–T ФИПИ восстановлены состояния и строгое сравнение площадей без ненужного вычисления логарифма.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "61D26E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5CA4F0942D1D82534695706F24DA5339(copy2)/xs3qstsrc5CA4F0942D1D82534695706F24DA5339_1_1548163443.gif"
+    ],
+    "conditionSha256": "c4acb31e1cf5970f397cf9e39cb7eeee78daee284a61d8ef02851c1ce67baa68",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=11950",
+    "match": "exact",
+    "comparison": "Точное совпадение. Проверены четыре состояния V–T, прямоугольный цикл p–V, одинаковые изменения объёма и отношение изобарных работ 3.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "1ABA07": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7E2C9C1B48A9928F4BA7D714481A428F(copy1)/xs3qstsrc7E2C9C1B48A9928F4BA7D714481A428F_1_1534762052.png"
+    ],
+    "conditionSha256": "cc365f0c8642651f35cf1e37627a8a4afa8ec40b87b4b9098483f7f95f82e717",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25384",
+    "match": "exact",
+    "comparison": "Точное совпадение температур и процессов. Вычислено без преждевременного округления: η=1÷12=8,333… %, тогда как источник округляет до 8 %. Сверены обе теплоты и работа 207,75 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "236F6A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C5073F8BE17AB1D74C2CF1CD7773E100(copy1)/xs3qstsrcD69DE165F51688E644C15729A28EAD1E_6_1721208578.png"
+    ],
+    "conditionSha256": "cd5dd562310ff060799e9a8b63e7e2bfd270554a57f0425d9a78534578fdf1f3",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50819",
+    "match": "variant",
+    "comparison": "Обратная задача того же цикла: дан η=20 %, требуется отношение работ. Из проверенной формулы η=(2÷5)(1−1÷x) независимо получено x=2.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "FFF4F8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C27397EC285B93AF4072B5181E4052A4(copy1)/xs3qstsrcC27397EC285B93AF4072B5181E4052A4_1_1763730455.png"
+    ],
+    "conditionSha256": "9923c01757353be7d8e7702913119e82f7839a50e940a9f4dbf99509eb1bb858",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50819",
+    "match": "exact",
+    "comparison": "Точное совпадение цикла и заданного отношения работ 2. Сверены Qн=2,5A₁₂, нулевая работа изохоры и отрицательная работа газа на адиабате; КПД 20 %.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "DA1E75": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C7E1BD04E19AA50D48FAB9D66A223DFA(copy1)/xs3qstsrcC7E1BD04E19AA50D48FAB9D66A223DFA_1_1485260901.gif"
+    ],
+    "conditionSha256": "f868c6ea4b606d1c2ea504cb8a59ff9cbff3a229af806050c0202fa8b9171c57",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=24380",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены T₃=4T₁, Qн=6,5νRT₁ и работа νRT₁. Указан неокруглённый КПД 2÷13≈15,38 %; источник округляет до 15 %.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "E61774": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/61F21D9A11A38D054F689B0AAEFDA440(copy2)/xs3qstsrc61F21D9A11A38D054F689B0AAEFDA440_1_1545211654.gif"
+    ],
+    "conditionSha256": "fe14b6b7fa5bc066f5f3f6aabcd220062a92637b0cce0bccfb4266ebca1648df",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=24380",
+    "match": "variant",
+    "comparison": "Числовой вариант с T₂=T₄=3T₁ вместо 2T₁. Отдельно получены T₃=9T₁, Qн=18νRT₁, работа 4νRT₁ и КПД 2÷9.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "3023D1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E13.C3.21_28copy1_29/xs3qstsrcCE52EB762F578D3E45FB7B9CABA8F317_1_1355402554.png"
+    ],
+    "conditionSha256": "8f829e89eabfdd4037b344ff30b112f10752bb2271159eba8b47cf73e3306367",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=4510",
+    "match": "variant",
+    "comparison": "Обратный вариант того же p–V цикла: задана работа сжатия 370 Дж, требуется теплота холодильника. По независимо проверенному балансу |Qх|=3A₁₂+b=3370 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "9360C8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E13.C3.22_28copy1_29/xs3qstsrcF79D37B56E2BA209461F16167279437C_1_1355402536.png"
+    ],
+    "conditionSha256": "c4da7ae51592353c3c268dbebb506e6a765d1e3128664f956ad4d09e35c29c26",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=4510",
+    "match": "exact",
+    "comparison": "Точное совпадение условия и p–V рисунка. Сверены ΔU₁₂=3A₁₂, тепло нагревателя 4000 Дж и работа внешних сил 3370−3000=370 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "4E7BA7": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C32F164F77AD9C2A450CF58AB5C003D1(copy2)/xs3qstsrcC32F164F77AD9C2A450CF58AB5C003D1_1_1681904772.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C32F164F77AD9C2A450CF58AB5C003D1(copy2)/xs3qstsrcC32F164F77AD9C2A450CF58AB5C003D1_2_1681904772.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C32F164F77AD9C2A450CF58AB5C003D1(copy2)/xs3qstsrcC32F164F77AD9C2A450CF58AB5C003D1_3_1681904772.png"
+    ],
+    "conditionSha256": "2dbec7c6c649cd9fcb6746791f6e97795f5267c0286dafca10257ec77f212fcf",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35344",
+    "match": "exact",
+    "comparison": "Точное совпадение рисунка и данных, включая две формульные растровые вставки ν=4 и Qн=120 кДж. Проверены 24p₀V₀ и температура 300,842 К.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "64CBA9": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3489AA9E7064A7284B8466D5ADEDD1BE(copy1)/xs3qstsrc9DBA04E2F8B382D94513A5229E0094B8_6_1721208512.png"
+    ],
+    "conditionSha256": "a588a1d99ae23cad6afbe58f6cb776bfb8dc94db8ddd41bfa3af47e3df7b6c91",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38621",
+    "match": "variant",
+    "comparison": "Обратный числовой вариант того же треугольного цикла. В источнике Qн задана, здесь A₁₂=5 кДж. Сверены коэффициенты Qн=11,5p₀V₀ и A₁₂=4p₀V₀; пересчитано 14,375 кДж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "8A5182": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/842F75B6BF2AA6AB4E193EA5E5430F78(copy2)/xs3qstsrc842F75B6BF2AA6AB4E193EA5E5430F78_1_1577693881.png"
+    ],
+    "conditionSha256": "3083e3933c95896863baf941c4f41c7e644be90467abc295e6f6571590014723",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=24380",
+    "match": "method-analogue",
+    "comparison": "Методический аналог прямоугольного цикла. Здесь Qн уже дана и не задана одноатомность: использованы только площади p–V. Проверены отношение работ 3:1, A=0,8 кДж и η=8÷33.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "FD2DC6": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D2037507C0B9931E4C21EF726DEF83E9(copy1)/xs3qstsrca1d6778066da4bb6bac5c79ba0716a81_7_1759927329.png"
+    ],
+    "conditionSha256": "1ded80b659f0c8a46bdf4350765774f5a2f0b392fdbc1f4ef810c7b3fe6c4813",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=42652",
+    "match": "exact",
+    "comparison": "Точное совпадение. Сверены относительные координаты (1,1), (1,4), (2,5;8), площади трапеций и треугольника, Qн=37,5p₁V₁ и КПД 6 %.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "F690E5": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/23D28C0C7D94A3FB42C1A425EDE508D1(copy1)/xs3qstsrc23D28C0C7D94A3FB42C1A425EDE508D1_1_1513176385.png"
+    ],
+    "conditionSha256": "5e8768267efc24d8c9ca775b6a367442f60ef540ffcc0877b2ec55f0d3cd7fe7",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38956",
+    "match": "variant",
+    "comparison": "Обратная задача с теми же двумя путями. Источник по тепловому отношению 5 находит отношение работ 2; здесь наоборот. Сверены Qизоб=2,5Aизоб и |ΔUадиаб|=Aадиаб, получено 5.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "F74783": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/EBC7BA6A4BEBBDE04BF5EA821DD1BEAD(copy1)/xs3qstsrcf1e033d477534692bcae4672ef8aa192_7_1759322519.png"
+    ],
+    "conditionSha256": "ebd744ed90d9297c37f7f550762dce123b7e6dd1e2a1bec341618fc834b70178",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=1206",
+    "match": "variant",
+    "comparison": "Числовой вариант негерметичного сосуда постоянного объёма. Вручную прочитана промежуточная отметка T₁=450 К на графике ФИПИ, не 300 К; отношение частиц (1÷2)·(450÷900)=1÷4.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "2B6BC2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/408BD2F83BB2AF9B463029304A7D1D28(copy1)/xs3qstsrc408BD2F83BB2AF9B463029304A7D1D28_1_1518782631.png"
+    ],
+    "conditionSha256": "dea171322f1d8527ab3e86712f3dc4a59497c4d55c44e9a800ee66eb519aaee1",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=10440",
+    "match": "variant",
+    "comparison": "Совпадает расчёт изохорного нагревания 1 моль от 300 до 900 К. Отдельно проверено направление первой изотермы ФИПИ; оно не меняет T₂. Точный расчёт 7479 Дж, округлённый 7480 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "30CF4D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1683D779F4F0A4C445C67ED5758D8954(copy1)/xs3qstsrc1683D779F4F0A4C445C67ED5758D8954_5_1704787966.png"
+    ],
+    "conditionSha256": "dc0c67634f24608c3104560d1fb0d16d3df57d95bab2d6c2684dd4e6b1d381fb",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=10440",
+    "match": "variant",
+    "comparison": "Совпадает искомая теплота при трёхкратном росте давления после изотермы 300 К. На ФИПИ изображено изотермическое сжатие; сверены T₂=300 К, ΔT=600 К и Q=7479 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "9FBACA": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F01262083357B3384E093B1D96AD52D9(copy1)/xs3qstsrcF01262083357B3384E093B1D96AD52D9_1_1487249864.png"
+    ],
+    "conditionSha256": "5c0393f5de97f3793cca0935a45e7f53ce76c548d18019d0cb2e123eccb40e26",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=10440",
+    "match": "method-analogue",
+    "comparison": "Методический вариант двух процессов с обратным направлением теплообмена. По собственной V–p диаграмме сначала найдено T₂=T₃÷3=100 К, затем изохорное охлаждение от 300 К; модуль Q=2493 Дж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "CDD746": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4621A1BC1986BC044BB6E99F9E7ABBCD(copy1)/xs3qstsrc4621A1BC1986BC044BB6E99F9E7ABBCD_1_1511344994.png"
+    ],
+    "conditionSha256": "5b2563e18301205c16776f614a63b436676bbe00abfd2740d1be739b9784a6e9",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=10440",
+    "match": "method-analogue",
+    "comparison": "Методический вариант после изотермы 300 К: в ФИПИ второй участок изобарный, а не изохорный. Поэтому пересчитано с коэффициентом 5÷2 и добавлены 2500 Дж первого участка; баланс ΔU+A проверен отдельно.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "A9E186": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FB94CFEB9079851F43324CBC9A543841(copy2)/xs3qstsrcFB94CFEB9079851F43324CBC9A543841_2_1569831722.png"
+    ],
+    "conditionSha256": "932ecff4c337023369786bfd70eec7e7a84de931c1d77c4e797a842b2580d94b",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=11644",
+    "match": "method-analogue",
+    "comparison": "Методический вариант диссоциации двухатомного газа. Сверен подсчёт N₂=(1+f)N₁; здесь f=0,20 прочитан с ФИПИ графика и p постоянна. Опечатка 1,2ν в источнике при его f=0,4 не использована.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "3B1100": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C116877D38319416491851F95FD9C0E7(copy1)/xs3qstsrc2e25454bcd104d05ab31a29a005fd2b9_7_1759927272.png"
+    ],
+    "conditionSha256": "dbdab5620c8e60ce09bd9f1c4b4e2cf0995fd9d5dfaa88c303b54149d6eeff7f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=42650",
+    "match": "exact",
+    "comparison": "Точное совпадение. В источнике используется округлённое считывание графика 20 гПа при 16 °C; здесь явно отмечена приблизительность. Сверены масса 0,030 г, наличие остатка жидкости и доля 0,0075.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  },
+  "97B0CB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/30795B04820385F74063FF8D0D2EA7FA_28copy1_29/xs3qstsrc30795B04820385F74063FF8D0D2EA7FA_1_1328253715.jpg",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/30795B04820385F74063FF8D0D2EA7FA_28copy1_29/xs3qstsrc30795B04820385F74063FF8D0D2EA7FA_3_1328253715.png"
+    ],
+    "conditionSha256": "938e406d08a9fa6b4f3f9aa3e45149fe3e579409ca5211f5a897461aca6d7488",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38947",
+    "match": "exact",
+    "comparison": "Точное совпадение, включая колокол насоса и график. Сверены условие кипения с пренебрежимо малым гидростатическим добавлением и считывание 70 гПа=7 кПа при 40 °C.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21",
+    "fipiAccess": "Проверены сохранённое условие ФИПИ и исходные растры. Онлайн-банк при повторной проверке завершился тайм-аутом; исходный состав не менялся."
+  }
+}

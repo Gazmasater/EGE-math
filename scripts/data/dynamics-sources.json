@@ -1,0 +1,462 @@
+{
+  "873381": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/30C90DA1C4D9B40B4BF3AEE17E9E4044(copy4)/xs3qstsrc30C90DA1C4D9B40B4BF3AEE17E9E4044_1_1516441780.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/30C90DA1C4D9B40B4BF3AEE17E9E4044(copy4)/xs3qstsrc30C90DA1C4D9B40B4BF3AEE17E9E4044_1_1516441780.png"
+    ],
+    "conditionSha256": "bcb6fe3002ad4bda3d06b7839904e51c2bce5db3c7e7c9f3fd7e06d9e16e4d4a",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=16869",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "04DCB4": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/FE00F2C9A8CCABA44239883A3A84BF63(copy1)/xs3qstsrcFE00F2C9A8CCABA44239883A3A84BF63_1_1646997107.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FE00F2C9A8CCABA44239883A3A84BF63(copy1)/xs3qstsrcFE00F2C9A8CCABA44239883A3A84BF63_1_1646997107.png"
+    ],
+    "conditionSha256": "b7f9e2c1c6b9b1310d8c7c7ccd3fdcf1098f7aa2085c21e5781d5cc53cca05b8",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=41585",
+    "comparison": "Символическое условие ФИПИ сопоставлено с числовым вариантом M=2 кг, m=0,75 кг, F=10 Н. Кинематическая связь b=2a и общий ответ F/(M+4m) совпадают; символическая обратная проверка выполнена.",
+    "checkedAt": "2026-09-21"
+  },
+  "087023": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/526E61066ECF852845C9DE4D773C4387(copy1)/xs3qstsrc62E3F2BB956BBCC6425DE08F47892823_3_1772109762.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/526E61066ECF852845C9DE4D773C4387(copy1)/xs3qstsrc62E3F2BB956BBCC6425DE08F47892823_3_1772109762.png"
+    ],
+    "conditionSha256": "b2903ebc2f0480e619f4c68c1b4e51ce43895cfd18e1ba5ef25f54508de19c88",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=41585",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "0DDE03": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "image": null,
+    "images": [],
+    "conditionSha256": "5fd3ec32a4bddbe7fb96c87b8900a409cfb922695005cccb8a861ba0caf6efe4",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19856",
+    "comparison": "В источнике k=100 Н/м, ν=1,5 Гц, μ=0,25; в ФИПИ k=30 Н/м, ν=1 Гц, μ=0,3. Направление предельного трения наружу и общий знаменатель k−mω² сверены. Пересчёт ФИПИ вручную: rmax=6,6/(30−0,8π²)=0,298588 м.",
+    "checkedAt": "2026-09-21"
+  },
+  "170B54": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/B34AA189C6A48E344607336992028112(copy2)/xs3qstsrcB34AA189C6A48E344607336992028112_1_1577430131.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B34AA189C6A48E344607336992028112(copy2)/xs3qstsrcB34AA189C6A48E344607336992028112_1_1577430131.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B34AA189C6A48E344607336992028112(copy2)/xs3qstsrcB34AA189C6A48E344607336992028112_2_1577430131.png"
+    ],
+    "conditionSha256": "cb560f36a166b5a5b9c622ec0e3de4d5790e8a86550d5b00598b9e817485861f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=20037",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "1A1FBB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/8FFFF500B546AE844E1A6CF47F2901A3(copy2)/xs3qstsrc8FFFF500B546AE844E1A6CF47F2901A3_7_1670849153.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8FFFF500B546AE844E1A6CF47F2901A3(copy2)/xs3qstsrc8FFFF500B546AE844E1A6CF47F2901A3_7_1670849153.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8FFFF500B546AE844E1A6CF47F2901A3(copy2)/xs3qstsrc8FFFF500B546AE844E1A6CF47F2901A3_8_1670849153.png"
+    ],
+    "conditionSha256": "f639257d423256fd73c983f6b604da091ca9b494a0b969fcbced445050b53cce",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33037",
+    "comparison": "Источник использует воду; ФИПИ — глицерин плотнее дерева. Сила Архимеда до падения больше mg в обоих вариантах. Пружина 1 удлиняется, 2 укорачивается. Уточнено: естественная длина — новое равновесие, переход не мгновенный.",
+    "checkedAt": "2026-09-21"
+  },
+  "24D9C3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/608B1E4F6A0ABCEF4E1FAF2E00BB9350(copy1)/xs3qstsrc608B1E4F6A0ABCEF4E1FAF2E00BB9350_5_1703673899.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/608B1E4F6A0ABCEF4E1FAF2E00BB9350(copy1)/xs3qstsrc608B1E4F6A0ABCEF4E1FAF2E00BB9350_5_1703673899.png"
+    ],
+    "conditionSha256": "0b90d06f40988e9090bc885b7a1bdcb5275379ddb8ad1a7c195c6aa445ebf0c4",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35348",
+    "comparison": "Источник спрашивает скорость после подъёма на 32 см; ФИПИ спрашивает время подъёма на 40 см. Сверены три проекции Ньютона и a=0,762819 м/с². Вручную найдено t=sqrt(0,8/a)=1,024 с.",
+    "checkedAt": "2026-09-21"
+  },
+  "2593A8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/C4A851E4BD2488D1466367CE0FE01698(copy1)/xs3qstsrcC4A851E4BD2488D1466367CE0FE01698_1_1646997118.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C4A851E4BD2488D1466367CE0FE01698(copy1)/xs3qstsrcC4A851E4BD2488D1466367CE0FE01698_1_1646997118.png"
+    ],
+    "conditionSha256": "d6e26cd41ab45866151ed5eb1fa885c2974a6369cd651e68a6935d91a959855c",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38973",
+    "comparison": "Общая задача ФИПИ сопоставлена с числовым вариантом источника о керосине. Исключение m2=m1−ρV и формула a=ρVg/(2m1−ρV) проверены символически при m1>ρV.",
+    "checkedAt": "2026-09-21"
+  },
+  "309C22": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/40BE3F1D6035B34E4AEFBFDCA3167C29(copy1)/xs3qstsrc6E6B2AA0DA7AB4AA4A9CCFAD18DCC383_6_1721208849.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/40BE3F1D6035B34E4AEFBFDCA3167C29(copy1)/xs3qstsrc6E6B2AA0DA7AB4AA4A9CCFAD18DCC383_6_1721208849.png"
+    ],
+    "conditionSha256": "64391e53cc5f3becb2722c2dd8630368b12dab3683184b7b1fab3869d6c1dc06",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38623",
+    "comparison": "Источник задаёт M=9m и спрашивает a=2 м/с². ФИПИ задаёт M=450 г, a=2 м/с² и спрашивает m. Из тех же уравнений вручную найдено m=Ma/(2g−a)=50 г.",
+    "checkedAt": "2026-09-21"
+  },
+  "36B168": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/8060FF21333D9C59492E989184AA9687(copy3)/xs3qstsrc8060FF21333D9C59492E989184AA9687_7_1666950669.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8060FF21333D9C59492E989184AA9687(copy3)/xs3qstsrc8060FF21333D9C59492E989184AA9687_7_1666950669.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8060FF21333D9C59492E989184AA9687(copy3)/xs3qstsrc8060FF21333D9C59492E989184AA9687_8_1666950669.png"
+    ],
+    "conditionSha256": "9ad053b72ab1a45445307c67d925ee737bec874b50d06d9b1e83a3e27130a1a0",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=20037",
+    "comparison": "В источнике масса 0,4 кг, в ФИПИ 0,3 кг. Вручную перенесена граница отрыва с 4 Н на 3 Н, N=max(3 Н−F,0).",
+    "checkedAt": "2026-09-21"
+  },
+  "3B6EAD": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/85C885618F6082F147C73BC098AE379C(copy1)/xs3qstsrc85C885618F6082F147C73BC098AE379C_1_1763731747.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/85C885618F6082F147C73BC098AE379C(copy1)/xs3qstsrc85C885618F6082F147C73BC098AE379C_1_1763731747.png"
+    ],
+    "conditionSha256": "46704ed7bb955c5069b84c2c320e785037f9368f676811bfa82e8afbf64ffc48",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50800",
+    "comparison": "Источник задаёт M=500 г и ищет давление груза 100 г. В ФИПИ задано давление 0,8 Н и требуется M. Вручную обращена формула P=2Mmg/(2M+m), получено M=200 г.",
+    "checkedAt": "2026-09-21"
+  },
+  "3ECDA4": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/6A6DD5AED219A0AB453518098264F69B(copy2)/xs3qstsrc6A6DD5AED219A0AB453518098264F69B_1_1547643145.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6A6DD5AED219A0AB453518098264F69B(copy2)/xs3qstsrc6A6DD5AED219A0AB453518098264F69B_1_1547643145.png"
+    ],
+    "conditionSha256": "43a0c7d581eebee30062861cd17dc1142116ccfb6549ecb89950c5f8fb6d61bf",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38979",
+    "comparison": "Источник: υ=3 м/с, L=15 см; ФИПИ: υ=2 м/с, L=10 см. Общая формула t=6L/υ+πsqrt(3m/k) совпадает; отношение L/υ одинаково, ответ 0,614 с проверен вручную.",
+    "checkedAt": "2026-09-21"
+  },
+  "45157D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": null,
+    "images": [],
+    "conditionSha256": "2563dbe63e54494d49020dc1c11bd5e0d71ce2c88be6927c6801ba033fb66c60",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43124",
+    "comparison": "В источнике r=60 см, μ=0,3, ω=2 и 2,5 рад/с: второй опыт со скольжением. ФИПИ r=80 см, μ=0,4, ω=2 и 1,5 рад/с. Вручную: 3,2 и 1,8 м/с² меньше μg=4 м/с², скольжения нет в обоих опытах при медленном раскручивании.",
+    "checkedAt": "2026-09-21"
+  },
+  "45D010": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/27F9052002C0860A46CDD0D041E93D03(copy1)/xs3qstsrc27F9052002C0860A46CDD0D041E93D03_1_1604566405.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/27F9052002C0860A46CDD0D041E93D03(copy1)/xs3qstsrc27F9052002C0860A46CDD0D041E93D03_1_1604566405.png"
+    ],
+    "conditionSha256": "8cbc8d545ef55931b79fadf12ff3a087bf922ba171d45c86f6772344e416d270",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9239",
+    "comparison": "Источник спрашивает силу при μ=0,7 и получает 1,7 Н. В ФИПИ задана F=1,7 Н и требуется μ. Вручную обращена формула векторного порога трения: μ=sqrt(F²+(mg sinα)²)/(mg cosα)=0,698188.",
+    "checkedAt": "2026-09-21"
+  },
+  "48129F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/AEAB50832F5696AD45FD7F14615FB7BA(copy1)/xs3qstsrcAEAB50832F5696AD45FD7F14615FB7BA_1_1486043856.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AEAB50832F5696AD45FD7F14615FB7BA(copy1)/xs3qstsrcAEAB50832F5696AD45FD7F14615FB7BA_1_1486043856.png"
+    ],
+    "conditionSha256": "4ba9a617184ac6d9fb74e8abbf6d772f1f2c71465cf9298e7e5f193be354b5f4",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=24379",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "4F0963": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/298972BF398B810443743A2B5D5B5465(copy2)/xs3qstsrc298972BF398B810443743A2B5D5B5465_1_1573739041.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/298972BF398B810443743A2B5D5B5465(copy2)/xs3qstsrc298972BF398B810443743A2B5D5B5465_1_1573739041.png"
+    ],
+    "conditionSha256": "c975bdcce28dfc1cbed70c7e0f0ca30566f4bfa9b0842090d481ba22fb37a88b",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=17673",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "566D54": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/C38BF3F6CA8694D342D8658956567C51(copy1)/xs3qstsrcC38BF3F6CA8694D342D8658956567C51_8_1766579652.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C38BF3F6CA8694D342D8658956567C51(copy1)/xs3qstsrcC38BF3F6CA8694D342D8658956567C51_8_1766579652.png"
+    ],
+    "conditionSha256": "9a9e15ffb50cb6edae529d1fa09bec35c4b1d6a65c98762797e9fba0f7ad64fd",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=10483",
+    "comparison": "Точного варианта в источнике не найдено. Аналог 10483: M=1 кг, F=10 Н, груз ускоряется вверх; ФИПИ m=0,25 кг, F=1 Н, груз ускоряется вниз. Все знаки сил перепроверены по рисунку ФИПИ, трение на столе влево. Вручную M=[m(g−a)−F]/(a+μg)=0,25 кг; T=2 Н, трение 0,5 Н.",
+    "checkedAt": "2026-09-21"
+  },
+  "582E9A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/48E71FE221A1862446E0AC4DCFD35220(copy1)/xs3qstsrc48E71FE221A1862446E0AC4DCFD35220_1_1476712128.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/48E71FE221A1862446E0AC4DCFD35220(copy1)/xs3qstsrc48E71FE221A1862446E0AC4DCFD35220_1_1476712128.png"
+    ],
+    "conditionSha256": "f7a4dbc8cdc819ddca4b9cfe3fb22e4d307a261cd92d9886a14193ef6b6ffc19",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25772",
+    "comparison": "Источник: R=0,16 м, h=0,20 м, требуется давление внизу. ФИПИ: R=0,14 м, h=0,18 м, требуется начальная энергия. Сверены N=0, v²=g(h−R) и сохранение энергии. Вручную E0=mg(3h−R)/2=0,020 Дж. Исходная схема ФИПИ сохранена; функция ShowPictureQ здесь имеет второй аргумент. В решении α отсчитывается от горизонтали к радиусу, проведённому в A; O на исходном рисунке — нижняя точка старта, а не центр окружности.",
+    "checkedAt": "2026-09-21"
+  },
+  "5D4738": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/A2F5225036C78D514E1654B158E52DA0(copy2)/xs3qstsrcA2F5225036C78D514E1654B158E52DA0_2_1579521170.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A2F5225036C78D514E1654B158E52DA0(copy2)/xs3qstsrcA2F5225036C78D514E1654B158E52DA0_2_1579521170.png"
+    ],
+    "conditionSha256": "0792a94b01a736f6cf01dbb69e0fca60252a7cafa7e02566774a2d4f5efd6251",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19927",
+    "comparison": "В источнике фиксирована подвешенная масса m=1 кг, ищется минимальная M при μ=0,2. В ФИПИ фиксирована M=1 кг, ищется минимальная m при μ=0,3. Направление предельного трения изменено согласно возможному сползанию вниз. Вручную mmin=M(sinα−μcosα)=0,240192 кг, проверен полный интервал покоя.",
+    "checkedAt": "2026-09-21"
+  },
+  "6E569C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": null,
+    "images": [],
+    "conditionSha256": "4a252b14b919c711a4a4d02c2a1c3df28b5fd57db934a6e521efebabd57e7ee0",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43023",
+    "comparison": "Источник спрашивает дальность по горизонтали при α<30°, ФИПИ — высоту при любом остром α. Сверены уравнения свободного полёта и энергия на склоне. Вручную h1=v0²sin²α/(2g), h2=v0²/(2g), h2>h1.",
+    "checkedAt": "2026-09-21"
+  },
+  "6F1007": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/0F897E4A92D18CE34205170EA00256EC(copy1)/xs3qstsrc2d3512ccbbd04256ab700e548f91c8bd_7_1759927251.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0F897E4A92D18CE34205170EA00256EC(copy1)/xs3qstsrc2d3512ccbbd04256ab700e548f91c8bd_7_1759927251.png"
+    ],
+    "conditionSha256": "bff8145dc69b547e6956b313806230e2d7d86b1b983daf3efb110f217b5c2b9f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=42649",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "6F7274": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/F372DBA8A722801B4AA261A0E3EF88D2(copy1)/xs3qstsrcF372DBA8A722801B4AA261A0E3EF88D2_1_1643100749.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F372DBA8A722801B4AA261A0E3EF88D2(copy1)/xs3qstsrcF372DBA8A722801B4AA261A0E3EF88D2_1_1643100749.png"
+    ],
+    "conditionSha256": "2e9ab74bde935de8a527fe736869dfcf868718ad230b2e33a0f985981bf95036",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=49646",
+    "comparison": "Источник задаёт M=600 г, m=200 г и ищет k=72 Н/м. ФИПИ задаёт M=800 г, m=400 г, k=80 Н/м, l=10 см и ищет L. Из тех же трёх уравнений вручную a=4 м/с², Fупр=2,4 Н, L=13 см.",
+    "checkedAt": "2026-09-21"
+  },
+  "746AB3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/66F7FF344E5A8C344FA2C8E960777E8D(copy2)/xs3qstsrc66F7FF344E5A8C344FA2C8E960777E8D_1_1581600231.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/66F7FF344E5A8C344FA2C8E960777E8D(copy2)/xs3qstsrc66F7FF344E5A8C344FA2C8E960777E8D_1_1581600231.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/66F7FF344E5A8C344FA2C8E960777E8D(copy2)/xs3qstsrc66F7FF344E5A8C344FA2C8E960777E8D_2_1581600231.png"
+    ],
+    "conditionSha256": "1e0255daed603de0821cc7d361dccf50e96f91efc35972cf303987ee753c8d3b",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=33037",
+    "comparison": "Совпадают жидкость, геометрия, направления изменения длины. Самостоятельно уточнён переходный процесс: в момент отпускания длина непрерывна, при отсутствии затухания возможны колебания около естественной длины.",
+    "checkedAt": "2026-09-21"
+  },
+  "7DEBA4": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/E2430F2D94A78FFA4710FAF18A34AD5F(copy1)/xs3qstsrcE2430F2D94A78FFA4710FAF18A34AD5F_1_1643266706.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E2430F2D94A78FFA4710FAF18A34AD5F(copy1)/xs3qstsrcE2430F2D94A78FFA4710FAF18A34AD5F_1_1643266706.png"
+    ],
+    "conditionSha256": "f5518263cdce3909dd588f40ea34df980481c2745514430c111491d5c70498e5",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=6352",
+    "comparison": "Точное условие с порогом 18 Н в независимом источнике не найдено. Аналог 6352 описывает те же два тела на гладкой плоскости с силой только на первом; сверены a=F/(M1+M2), T=M2a. Вручную подставлен порог T=10 Н при F=18 Н, M1=2 кг: a=4 м/с², M2=2,5 кг.",
+    "checkedAt": "2026-09-21"
+  },
+  "82C08B": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/7D97AA533BE083C84447CD7D3862E211(copy1)/xs3qstsrc7D97AA533BE083C84447CD7D3862E211_1_1516196253.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7D97AA533BE083C84447CD7D3862E211(copy1)/xs3qstsrc7D97AA533BE083C84447CD7D3862E211_1_1516196253.png"
+    ],
+    "conditionSha256": "af9ea9c35ba825ded56637f4f90d3caea3c2c66e60670d84acf106435926b9b3",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38973",
+    "comparison": "Источник: m1=400 г, керосин, V=2·10⁻⁴ м³. ФИПИ: 500 г, вода 1000 кг/м³, V=1,5·10⁻⁴ м³. Вручную получены m2=350 г и a=30/17 м/с²; равновесие в воде и оба уравнения в воздухе проверены.",
+    "checkedAt": "2026-09-21"
+  },
+  "89181B": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/91A90B59FA6AA4A4425C45E8990F6AB8(copy1)/xs3qstsrc91A90B59FA6AA4A4425C45E8990F6AB8_1_1454761980.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/91A90B59FA6AA4A4425C45E8990F6AB8(copy1)/xs3qstsrc91A90B59FA6AA4A4425C45E8990F6AB8_1_1454761980.png"
+    ],
+    "conditionSha256": "dde0e5ebac5be303978d0f49e5e39ffddcf56345c634f4c597bcf0a2fe68476c",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38623",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "8CF4D1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/14C2CB3607F0A2EF4E72A329F45CDE10(copy1)/xs3qstsrc14C2CB3607F0A2EF4E72A329F45CDE10_4_1644926126.jpg",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/14C2CB3607F0A2EF4E72A329F45CDE10(copy1)/xs3qstsrc14C2CB3607F0A2EF4E72A329F45CDE10_4_1644926126.jpg"
+    ],
+    "conditionSha256": "d62ef7902b1329f7ad8c79de172a43d413426d84eed937de32fbd6fcc12c984f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35348",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "8D9256": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/9163DFF2A9C6951E4D1394A7FB212E05(copy1)/xs3qstsrc9163DFF2A9C6951E4D1394A7FB212E05_2_1640251726.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9163DFF2A9C6951E4D1394A7FB212E05(copy1)/xs3qstsrc9163DFF2A9C6951E4D1394A7FB212E05_2_1640251726.png"
+    ],
+    "conditionSha256": "ed6a162335bc10d698cbe7a67f10f2ef384e0c62c8c57e1f504c4dc82f0b9a53",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29466",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "93393A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/AF3EA1F5DC438E2A4650395652D35149(copy1)/xs3qstsrcAF3EA1F5DC438E2A4650395652D35149_1_1770192598.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AF3EA1F5DC438E2A4650395652D35149(copy1)/xs3qstsrcAF3EA1F5DC438E2A4650395652D35149_1_1770192598.png"
+    ],
+    "conditionSha256": "725a8ee30dcfa3019912ad57f5e582d3e48484c59207404e200301ba42a93160",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43833",
+    "comparison": "Источник задаёт M=0,8 кг и ищет F=6 Н. ФИПИ задаёт F=6 Н и ищет M. Вручную обращена формула F=(M+m)(a+μ2g)+2μ1mg; M=0,8 кг.",
+    "checkedAt": "2026-09-21"
+  },
+  "9F9E6D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/3140EA6FE0D08F01491A720F1039507C(copy1)/xs3qstsrc3140EA6FE0D08F01491A720F1039507C_1_1486039016.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3140EA6FE0D08F01491A720F1039507C(copy1)/xs3qstsrc3140EA6FE0D08F01491A720F1039507C_1_1486039016.png"
+    ],
+    "conditionSha256": "bcfcf49489dd029ecee48b3e9990dea2fab54126e0944e1c37ef9bf2673954de",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=9239",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "A0A0B3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "image": null,
+    "images": [],
+    "conditionSha256": "5437570807e73c319a0faab450cc6791522d24420cad986b857573ad8e371a57",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7984",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "AB0739": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/565254772DABBBF04A6CA51DF26F1A57(copy1)/xs3qstsrc565254772DABBBF04A6CA51DF26F1A57_3_1704886146.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/565254772DABBBF04A6CA51DF26F1A57(copy1)/xs3qstsrc565254772DABBBF04A6CA51DF26F1A57_3_1704886146.png"
+    ],
+    "conditionSha256": "4919902cbf2de9b4ab192a7cf6783cef5a361bbc5f43f1b4e244c5756c946907",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38208",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "AB0C38": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/6643FFE7B757A4954EA579CB5D80610F(copy1)/xs3qstsrce9f24a4c39114efea5263d28f4e1fb0b_8_1777384527.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6643FFE7B757A4954EA579CB5D80610F(copy1)/xs3qstsrce9f24a4c39114efea5263d28f4e1fb0b_8_1777384527.png"
+    ],
+    "conditionSha256": "4d3aec95183b7bdde13305a81f26958c6a1feddf7fec036c585293d8edc2c06d",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=49646",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "AB3A90": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": null,
+    "images": [],
+    "conditionSha256": "e1b333743993478a678ef5f41832a41f22599aab7c29dcc73595869de9afd12e",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25045",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "C6A611": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/94BC84962FA993AF47D00BDA6498ED70(copy1)/xs3qstsrc94BC84962FA993AF47D00BDA6498ED70_1_1704801836.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/94BC84962FA993AF47D00BDA6498ED70(copy1)/xs3qstsrc94BC84962FA993AF47D00BDA6498ED70_1_1704801836.png"
+    ],
+    "conditionSha256": "679af5db0ff8cbca113105ec5aa95de673bbe98b37db380c5df2016c1ee97cd7",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43833",
+    "comparison": "Точный вариант с временем схода не найден. Аналог 43833 имеет ту же неподвижную систему блока и противоположные ускорения доски и бруска, но силу на доске и шероховатый стол. В ФИПИ сила на бруске, стол гладкий: направления трения проверены заново. Вручную a=(F−2μmg)/(M+m)=1/3 м/с², aотн=2a, t=sqrt(L/a)=sqrt(1,5) с.",
+    "checkedAt": "2026-09-21"
+  },
+  "C961A9": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "image": null,
+    "images": [],
+    "conditionSha256": "91dcffc9203aac84398cc0d91cb1b4f8be532505e998fb4f185bee0da00e32e6",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35249",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "DB33E7": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/0CED6D8445FF9BD04346F97D7F579000(copy1)/xs3qstsrcC73E4E2578A68ADA4D5E926C712FC48C_6_1721208744.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0CED6D8445FF9BD04346F97D7F579000(copy1)/xs3qstsrcC73E4E2578A68ADA4D5E926C712FC48C_6_1721208744.png"
+    ],
+    "conditionSha256": "3a1b74aa88d298a2796967d14e99f744ddfeee4d90413d44f34c46935711b3a8",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43833",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "E068D9": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/40E805D15512B9904E1D8788AA3A1A4A(copy1)/xs3qstsrc40E805D15512B9904E1D8788AA3A1A4A_7_1643613088.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/40E805D15512B9904E1D8788AA3A1A4A(copy1)/xs3qstsrc40E805D15512B9904E1D8788AA3A1A4A_7_1643613088.png"
+    ],
+    "conditionSha256": "aa65cd33a35afba100416224680e0261af7173fa18b86c670c418f86a6f4af67",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50800",
+    "comparison": "Сверены условие, рисунок, законы, существенные шаги и ответ; самостоятельный вывод и независимая обратная подстановка выполнены.",
+    "checkedAt": "2026-09-21"
+  },
+  "FBCBC5": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/282079D40A9EB22F4DC104122A8D0F38(copy1)/xs3qstsrc282079D40A9EB22F4DC104122A8D0F38_6_1766480721.png",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/282079D40A9EB22F4DC104122A8D0F38(copy1)/xs3qstsrc282079D40A9EB22F4DC104122A8D0F38_6_1766480721.png"
+    ],
+    "conditionSha256": "78276ff450ca815e0cb58618010fd18cd0922b6fb8be35e0e3afeff13c2c8c57",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29466",
+    "comparison": "Источник задаёт L=15 см и получает l=12 см. ФИПИ задаёт l=15 см и спрашивает L. Удлинение остаётся 3 см, вручную получено L=18 см.",
+    "checkedAt": "2026-09-21"
+  }
+}

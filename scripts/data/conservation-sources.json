@@ -1,0 +1,428 @@
+{
+  "587384": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3D446464920E9F13410FDFF872642DC6(copy1)/xs3qstsrc3D446464920E9F13410FDFF872642DC6_1_1510922485.png"
+    ],
+    "conditionSha256": "7b8e66eada7733a4dff045061168df510f2e5a62d9495ccecef4ef1ea70b2a96",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25935",
+    "match": "variant",
+    "comparison": "Сверены m=0,5 кг, l=0,8 м, натяжение 8,6 Н и u=0,4 м·с⁻¹. В ФИПИ перед ударом нить обрывается; при обрыве скорость непрерывна. Радиальное уравнение даёт 2,4 м·с⁻¹, импульс — M=2,5 кг.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "E17A4E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "conditionSha256": "a25fcdc208bf58020a513ede932833d3cfb3c040c17e8b22b444560c04957148",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19875",
+    "match": "analog",
+    "comparison": "На «Решу ЕГЭ» встречный удар с отношением масс 3:1 и заданной конечной скоростью. В ФИПИ массы 10 и 20 г, начальная скорость 4,5 м·с⁻¹. Формула импульса та же; ответ 1,5 м·с⁻¹ пересчитан и проверен вручную.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "17257D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/05A73B153DC48DFE4B278F6716CDB45A(copy1)/xs3qstsrc05A73B153DC48DFE4B278F6716CDB45A_1_1643194364.png"
+    ],
+    "conditionSha256": "bf83a7e97fd2215949f43d97942eb9a8ba8d9704e948d20b6fd149e2dab9c8d7",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35912",
+    "match": "variant",
+    "comparison": "Совпадает график с участком 4–5 мин, 900–300 м. Независимая масса 1500 кг, в ФИПИ 1700 кг; энергия пересчитана с 75 до 85 кДж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "136E1B": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "conditionSha256": "5782d0174932dc0cc4148e089811e82b063a3ae9c577e0b958f24cf9a2452008",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29741",
+    "match": "variant",
+    "comparison": "В независимом варианте мальчик прыгает навстречу тележке (ответ 0,5 м·с⁻¹). В ФИПИ мальчик догоняет её: импульсы складываются, ответ 1,5 м·с⁻¹. Направления и обратная подстановка проверены вручную.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "63FE2B": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C27542733204AAC94199C2B70A1B618D(copy1)/xs3qstsrcC27542733204AAC94199C2B70A1B618D_3_1704879718.png"
+    ],
+    "conditionSha256": "6a4f9a3a648a128cea38a51e968376a4da20f2cad94f6feeade140434992931e",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=39265",
+    "match": "exact",
+    "comparison": "Сверены масса 1750 кг, участок 2–3 мин с координатами 300–900 м, скорость 10 м·с⁻¹ и ответ 87,5 кДж.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "3B9FD0": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "conditionSha256": "2520387215f1ff6c7eda18d7a313f290af6662d2a785c267df6f44f84d01af3a",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=19875",
+    "match": "exact",
+    "comparison": "Сверены отношение масс 3:1, встречные одинаковые скорости, конечная скорость 0,5 м·с⁻¹, уравнение 2mu=4mv и ответ 1 м·с⁻¹.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "49A293": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/593C677F8198BC354DA831A459DC9642(copy3)/xs3qstsrc593C677F8198BC354DA831A459DC9642_12_1671182155.png"
+    ],
+    "conditionSha256": "f6e0e4c86c1d90cc07c2c453c24adddbac4b8ac455a9dc19ab7e55de523b0d8e",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=2927",
+    "match": "variant",
+    "comparison": "Сверены энергетическая модель, Eп(A)=2 Дж, Eк(A)=2 Дж и выход справа. Координата A=50 см и оба барьера проверены непосредственно по графику ФИПИ; правый барьер ниже 4 Дж, левый выше.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "FA79E4": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "conditionSha256": "bc1a3722f055afb30f1f716141b35f7765aef363868a160b2ebfa15a3f218022",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=45489",
+    "match": "variant",
+    "comparison": "В независимом варианте задана конечная скорость 5 м·с⁻¹ и ищется начальная; индексы быстрых и медленных шариков переставлены. Для ФИПИ 2 и 1 м·с⁻¹ независимо проверены компоненты общей скорости 1 и 0,5 м·с⁻¹. В тексте независимого решения есть описки индексов и слово «упругого»; проверено вручную по векторному импульсу.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "2177EF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "conditionSha256": "e2b04af11aaae65f09d47aadafd2937bab7e8eb4d9bcffbef6c43502c8575c4d",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=49642",
+    "match": "exact",
+    "comparison": "Сверены массы 0,03 и 120 кг, скорость 360 м·с⁻¹, баланс горизонтального импульса и отдача 0,09 м·с⁻¹.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "24CD61": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0860F98592A8B0324CA3A4EE9CA20A0D(copy1)/xs3qstsrc0860F98592A8B0324CA3A4EE9CA20A0D_1_1640264222.png"
+    ],
+    "conditionSha256": "5584855af8f71facb1aa7c54d5566c5a920968380c8dfb2902eacff80a030aac",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29461",
+    "match": "exact",
+    "comparison": "Сверены k=20 кН·м⁻¹, m=20 г, скорость 10 м·с⁻¹, равенство энергий и сжатие 1 см.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "C594F9": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9D855C1F3D18B00E4EE43069D38BE910(copy3)/xs3qstsrc9D855C1F3D18B00E4EE43069D38BE910_1_1658302618.png"
+    ],
+    "conditionSha256": "33508a555307ba6ed9ebb6fba1d224d2788136c3d642234047b74f488afd6d2f",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=35160",
+    "match": "variant",
+    "comparison": "В независимом условии дополнительно дана масса пули 10 г; для изменения импульса она сокращается. Сверены M=1 кг, l=90 см, углы 60° и 39°, скорости шара 3 и 2 м·с⁻¹, ответ 1 кг·м·с⁻¹.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "338EF9": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "dff5899fd685152474d320d0882dc9bd77e343d695e40e135aee5110d24bc662",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=39269",
+    "match": "exact",
+    "comparison": "Проверена относящаяся к шарикам ветвь решения: t₁=v₀sinα·(2g)⁻¹, h=3v₀²sin²α·(8g)⁻¹, τ=√3·t₁. На странице есть посторонние альтернативные решения других задач; они исключены вручную. τ в ФИПИ — время после удара.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "3D2308": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "669903204677484d4a64e65db4feda5de0b2a618e8d03f02ff807eb1267f6b57",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25942",
+    "match": "variant",
+    "comparison": "Независимый вариант: v₀=100 м·с⁻¹, h=0,7 м, ищется R. ФИПИ: v₀=200 м·с⁻¹, R=1 м, ищется h. Сохранение импульса, энергия и N=0 сверены; u=2 м·с⁻¹ и h=0,8 м проверены вручную.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "A5F07E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "c54a8eb3bf2ef8861e05299ef87d132167b7d028cda8b52fb940ed7b7843ae33",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=50796",
+    "match": "variant",
+    "comparison": "В независимом варианте те же v₀ и угол, но другие массы и задана скорость первого осколка; ищется дальность второго. В ФИПИ M=6 кг, m₁=2 кг, S₁=7 км от взрыва. Независимо проверены H=1500 м, t=10√3 с, u₁≈404,145 м·с⁻¹ и u₂ₓ≈−52,073 м·с⁻¹. Описка cos вместо sin в вертикальной проекции источника выявлена вручную.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "2C62B8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8078B0B0D4F3A83D44B65A47965B5ACC(copy2)/xs3qstsrc8078B0B0D4F3A83D44B65A47965B5ACC_1_1581065723.png"
+    ],
+    "conditionSha256": "283eb344d9afdcc0de73e8b932d0e978d58834b1022d4d98f3a89f4b5a28b27e",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25948",
+    "match": "variant",
+    "comparison": "Независимый вариант имеет M=0,05 кг, L=0,4 м, T=0,5 Н и скорость 10 м·с⁻¹; ищется масса пробки. ФИПИ M=0,04 кг, m=0,01 кг, v=4 м·с⁻¹, T₀=0,3 Н. Уравнения Mu=mv и 2T−Mg=Mu²·L⁻¹ сверены, граница L=0,20 м пересчитана.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "60B2BE": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "conditionSha256": "2394e1d7da55579b9d4e35abe16c69de01acd4d31900b75797a65309af3de95d",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25945",
+    "match": "exact",
+    "comparison": "Сверены высота 5 м, дальность 600 м, m=10 кг, k=6000 Н·м⁻¹, x=1 м и η=1/6. Импульс и доля энергии отдачи дают M=1000 кг.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "5BCC1F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/74F529F310759D1A4A2435759AC531C8(copy1)/xs3qstsrc74F529F310759D1A4A2435759AC531C8_1_1486991195.png"
+    ],
+    "conditionSha256": "f2a3d199bb944af0e1c612d8b2e6d34d45931978d19ff6ccd9a619e047841c68",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25758",
+    "match": "variant",
+    "comparison": "В независимом варианте μ=0,2 и ищется R≈0,3 м. В ФИПИ R=0,4 м и ищется μ. Уравнения работы трения и vB²=gRcosα сверены; точный пересчёт даёт μ=(√3−1)/5≈0,146410.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "E7211F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "ec815ac617cbbc3624e0a8c5245b5f096660de39794745aa018620db00086c4a",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25899",
+    "match": "exact",
+    "comparison": "Сверены масса снаряда 4 кг, скорость 400 м·с⁻¹, прирост 0,5 МДж и скорости осколков +900 и −100 м·с⁻¹.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "B46C29": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/38AA2F23ADC4BBAD447859B654424209(copy2)/xs3qstsrc38AA2F23ADC4BBAD447859B654424209_1_1545910274.png"
+    ],
+    "conditionSha256": "92130d9ee9a390f1c3f4ce4db788499027061cc3dd426211dd77efe588994d8b",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=38860",
+    "match": "variant",
+    "comparison": "Обратный вариант: источник задаёт α=30° и ищет H=2 м, ФИПИ задаёт H=2 м и ищет α. Сверены упругое отражение, угол 2α и высоты 1 и 1,25 м; положительная вертикальная скорость выбирает α=30°.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "58AC2F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "eebc6b954fd2f617a372a4a18f9659be9621cc14929e9a273de8d4ffa5d3eff8",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25945",
+    "match": "variant",
+    "comparison": "Обратный вариант: в ФИПИ задана масса ствола 1000 кг и ищется масса снаряда. Скорость 600 м·с⁻¹, отдача 6 м·с⁻¹, энергия 18000 Дж и масса 10 кг проверены вручную.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "B8E9D0": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E420F78DF4C7BA00485F8D7DB2427CB3(copy1)/xs3qstsrc742CFBB2A4459F2C4541A0E09BB1DFA0_8_1773146512.png"
+    ],
+    "conditionSha256": "dd83e3959b302e8f56138315d992bdac54a76a1da74fe41c6983883ba86ee82a",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25969",
+    "match": "variant",
+    "comparison": "В источнике L=1 м и ищется b≈0,485 м; ФИПИ b=0,5 м и ищется L. Не заменять ответ округлённым значением обратного варианта: при E=0,41 Дж точное L=0,57√3 м≈0,987269 м.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "FDD351": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "e5846fd25cf16a09dffe55ec32fbd2a4fcb9b3697062b564c42c6508a0da7bf1",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25720",
+    "match": "variant",
+    "comparison": "Источник ищет полное время от броска. Для ФИПИ после общей кинематической части отдельно вычислено d=uτ, где u=v₀cosα/2 и τ=√3·v₀sinα/(2g); путь до удара не включён.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "037654": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "36b1c27c8f9a38339cbeab04cf462f0cf8a67f01ecd1b832d1368222dc6900ad",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25899",
+    "match": "variant",
+    "comparison": "Обратный вариант задачи E7211F: заданы модули 900 и 100 м·с⁻¹, прирост энергии 0,5 МДж. По импульсу v₀=400 м·с⁻¹, по энергии M=4 кг.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "0EA255": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "e18f2eca53e6646ae29500a62a1336b87d87ecf095530ebe1e08e9db77b432cc",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=30004",
+    "match": "exact",
+    "comparison": "Сверены M=230 г, l=50 см, минимальная скорость пули 120 м·с⁻¹, условие Tверх=0, скорость после удара 5 м·с⁻¹ и масса пули 10 г.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "7CF459": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5998A2EF380690004B8175EEFBEE412B(copy1)/xs3qstsrc5998A2EF380690004B8175EEFBEE412B_1_1647002571.png"
+    ],
+    "conditionSha256": "488a449390482fdbf73b378589dfbf3574ea0a209e4c0875cdac3469d1800bc5",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25969",
+    "match": "variant",
+    "comparison": "Числовой обратный вариант пружинного ружья использован для независимой сверки двух общих уравнений E=mv²/2+mgb sinα и L=v²sin2α/g. Символическая масса из условия ФИПИ выведена и проверена обратной подстановкой.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "29FE54": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "conditionSha256": "ac9407d1fa340d237dbdac61bb4986857d5e998b06da5bdb785ee7d3dc48a239",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29761",
+    "match": "variant",
+    "comparison": "Совпадают R=2,5 м и скольжение с вершины; источник ищет скорость отрыва. Для ФИПИ дополнительно решено падение с h=2R/3 и начальной вертикальной скоростью вниз v√5/3. Время после отрыва ≈0,348340 с проверено подстановкой в y(t)=0.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "BE3A9E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7CD05A9AB453AFBE4BFEC391BADAD89C(copy2)/xs3qstsrc7CD05A9AB453AFBE4BFEC391BADAD89C_1_1548154819.png"
+    ],
+    "conditionSha256": "c2d86f6b370542b7433b6c03be1aa0d26935a0617a29f57b07dd65e97ce77bc0",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25744",
+    "match": "exact",
+    "comparison": "Сверены массы 0,2 и 0,3 кг, CD=0,6 м, AC=0,2 м, отношение реакций 2 и равновесие моментов; L=1 м.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "DA269B": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DE752C75A889BAEC437D2FA328B8FF46(copy1)/xs3qstsrcDE752C75A889BAEC437D2FA328B8FF46_1_1658317091.gif"
+    ],
+    "conditionSha256": "24cf1e34ccddc2a6aae57632b1cadf39324692bfa6c3dc9fedaae4b76a4d3a54",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=32271",
+    "match": "exact",
+    "comparison": "Сверены геометрия гантели, m=60 г, μ=0,3, горизонтальная реакция верхней стенки, трение покоя и граница M≥140 г.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "30E296": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "628c0fb1a0eb1bad052371bc8587dee1b9bd4083c1dfef79596ab95f89f6e9bc",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=29741",
+    "match": "variant",
+    "comparison": "ФИПИ задаёт обе скорости слева направо; независимый вариант задаёт встречный прыжок. Знак импульса мальчика изменён по ФИПИ; получено 1,5 м·с⁻¹.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "EDA6E2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "b02cc17260e41d2d0399a665cd2b9b62ec6ce1658343b60f3e6db1d51068feb1",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25938",
+    "match": "exact",
+    "comparison": "Сверены M=250 г, m=10 г, l=50 см, сохранение горизонтального импульса на ударе, энергия после удара, минимальное натяжение вверху и v₀=130 м·с⁻¹.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "049666": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8B48C32ACFA7AEA64677E2C79846AB2C(copy1)/xs3qstsrc8B48C32ACFA7AEA64677E2C79846AB2C_1_1646997093.png"
+    ],
+    "conditionSha256": "9ce0de6fffaf829773eeec32bbed27416626bedfddec41292502ed7c48e9ae61",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=7128",
+    "match": "variant",
+    "comparison": "Те же массы и отклонение левого шарика на 90°, но в источнике задано Q=1 Дж и ищется длина нити. Из проверенных уравнений удара независимо получено отношение Q/Eк=M/m=2; длина и скорость сокращаются.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "030E68": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "5a9136f19418f6e38b95a3070ed6479a565e514573b16eeda551db12160791db",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=43076",
+    "match": "variant",
+    "comparison": "Совпадают q=3,2·10⁻¹⁹ Кл, m=1,5·10⁻²⁵ кг и модель электрического разгона с магнитным поворотом. Источник U=1000 В, B=0,2 Тл; ФИПИ U=2000 В, B=0,5 Тл. Пересчёт R²=2mU/(qB²) даёт 0,0075 м².",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "88406D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [],
+    "conditionSha256": "4e71e43602977765446da45a6500f36056cbeec2f0501d07baf0fe2e8daee772",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25899",
+    "match": "variant",
+    "comparison": "В ФИПИ масса снаряда 2 кг и ищется энергия; нельзя переносить 0,5 МДж из варианта с M=4 кг. Прямой баланс 410000−160000=250000 Дж проверен.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "01DB3F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7A1787E8423394F948FE907B2CC83F2F(copy1)/xs3qstsrc7A1787E8423394F948FE907B2CC83F2F_1_1486739937.png"
+    ],
+    "conditionSha256": "c6bf4e7eb71141fdc75505bc2142cc4dbd4bf8814425df649aba9f4dd9cba22a",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25773",
+    "match": "exact",
+    "comparison": "Сверены m=1 кг, R=2 м, h=2,5 м, N=F=5 Н, радиальная проекция Ньютона и энергия. H=3,25 м; заданная точка достижима до отрыва, полный оборот не требуется.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "888D31": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "e0c8e731af12998a4fd230d8884238993ee3944c7c5b1f9a67b1d29b3c8c58a9",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25909",
+    "match": "analog",
+    "comparison": "Независимый аналог содержит встречное движение пластилина и бруска, другие скорости и трение. Сверена последовательность «импульс на ударе — работа трения после». Для ФИПИ сонаправленные скорости 5 и 2,5 м·с⁻¹ дают u=3 м·с⁻¹, конечная скорость 2 м·с⁻¹ и s=0,5 м.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  },
+  "AF318D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "conditionSha256": "db079389cd87b1f263d75fd44cef82c260768584762345983a0a68ac18cc3e58",
+    "reshu": "https://phys-ege.sdamgia.ru/problem?id=25756",
+    "match": "variant",
+    "comparison": "Источник даёт символическое отношение длин. ФИПИ задаёт m₂/m₁=1,5. Сверены равенство противоположных импульсов, энергия подъёма и l₁/l₂=(m₂/m₁)²=2,25.",
+    "manuallyChecked": true,
+    "checkedAt": "2026-09-21"
+  }
+}

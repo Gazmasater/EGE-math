@@ -1,4 +1,4 @@
 const {DatabaseSync}=require('node:sqlite');const db=new DatabaseSync('storage/solutions.sqlite');const now=new Date().toISOString();
-const ids=['418761','29960D','A48FB7','DB692A','62CDEC','652146','B468eB','DEAB32','F5e61D','E9B775','1F1FD6','7733A6','B938AE','EB0004'];
+const ids=['418761','29960D','A48FB7','DB692A','62CDEC','652146','B468EB','DEAB32','F5E61D','E9B775','1F1FD6','7733A6','B938AE','EB0004'];
 const replacements=[['Fкер','F<tspan baseline-shift="sub" font-size="70%">кер</tspan>'],['Fв','F<tspan baseline-shift="sub" font-size="70%">в</tspan>'],['FА','F<tspan baseline-shift="sub" font-size="70%">А</tspan>'],['Fл','F<tspan baseline-shift="sub" font-size="70%">л</tspan>'],['Fпр','F<tspan baseline-shift="sub" font-size="70%">пр</tspan>']];
 for(const id of ids){const row=db.prepare('select diagram_svg from solutions where task_id=?').get(id);if(!row||!row.diagram_svg)continue;let svg=row.diagram_svg;for(const [a,b] of replacements)svg=svg.split(a).join(b);db.prepare('update solutions set diagram_svg=?,updated_at=? where task_id=?').run(svg,now,id)}console.log('Исправлены индексы на SVG-схемах');
