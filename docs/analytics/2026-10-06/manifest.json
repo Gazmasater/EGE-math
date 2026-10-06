@@ -1,0 +1,35 @@
+{
+  "source": "Yandex Metrika counter 112561663; Yandex Webmaster ege-fipi.ru",
+  "timezone": "Europe/Moscow",
+  "main_periods": [
+    "2026-09-23/2026-09-28",
+    "2026-09-30/2026-10-05"
+  ],
+  "daily_update_days": [
+    "2026-10-04",
+    "2026-10-05",
+    "2026-10-06"
+  ],
+  "aggregate_reports": 266,
+  "files": {
+    "README.md": "542179ff839b466f0b3bde39937b670f7e665a855ff289cf7dcc30c35c5c7da2",
+    "analysis.json": "ed0e69c4c615fdb769bae689ab72ddf441bdcde43389cdbc7c3ca7855c8a7de6",
+    "charts/daily.png": "32687ce4b707e627f07343bb8f44e73365a65811fccff7844c385d0c14192455",
+    "charts/daily.svg": "9d9d27839d305abd25a7fb201a2377bd7b13be099f4939e2bab98a5bc5880503",
+    "charts/landings.png": "bf4006032db431e3d064b3687c8ba62800664b2224e4cece67c270492996c827",
+    "charts/landings.svg": "cb13f4ff8a2828996fcfd36eea17935d2dc16a072861accc07e7ce02b5b372bd",
+    "charts/practice.png": "f10056ddc38c9967f2aa51bf06f5ca7b22bc2c5886c7a454fc638ade1d8140a8",
+    "charts/practice.svg": "f6db8dd4dab0104a142afc2d230ae1a461b5a245ddc0a8544bcc942b9c36db43",
+    "daily-comparison.json": "317322bded48635a22683214fb14b63094897c04fb4f4b76c03efff558dcb184",
+    "ege-fipi-metrika-audit-20261006.zip": "1e566726304d4d7d081b492b3861405376a131601675c58bcfa4ab7de3c87a3d",
+    "landing-comparison.csv": "0788585e9f34fedf9f23f617e928a02509673c7b398f6409ea1484eded375263",
+    "report.html": "c0379d6b4c579045b6ebf46a4c45747fb8eab54a5fbb32028205dd8d056fc0cd",
+    "segment-comparison.csv": "92713c08772f1932f4dc5b2e4ae30c92b598b13d71f9339abdf18b9562255c39"
+  },
+  "excludes": [
+    "OAuth credentials",
+    "raw Logs API visit and hit exports",
+    "visitID/watchID/clientID identifiers",
+    "application code and production database"
+  ]
+}

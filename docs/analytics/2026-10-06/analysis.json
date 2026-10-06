@@ -1,0 +1,6889 @@
+{
+  "generated_utc": "2026-10-06T21:27:59.783220+00:00",
+  "counter": 112561663,
+  "timezone": "Europe/Moscow",
+  "periods": {
+    "baseline6": [
+      "2026-09-23",
+      "2026-09-28"
+    ],
+    "current6": [
+      "2026-09-30",
+      "2026-10-05"
+    ],
+    "goals_before4": [
+      "2026-09-25",
+      "2026-09-28"
+    ],
+    "goals_after4": [
+      "2026-10-02",
+      "2026-10-05"
+    ]
+  },
+  "post_window_msk": [
+    "2026-10-06 19:34:00",
+    "2026-10-06 23:40:00"
+  ],
+  "report_counts": {
+    "reports": 163,
+    "supplement": 24,
+    "landings": 70
+  },
+  "traffic": {
+    "all": {
+      "before": {
+        "visits": 945.0,
+        "users": 829.0,
+        "pageviews": 2094.0,
+        "bounce_rate": 39.15343915,
+        "depth": 2.21587302,
+        "duration": 151.84444444,
+        "solution_visits": 219.0,
+        "next_visits": 128.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 669.0,
+        "users": 543.0,
+        "pageviews": 3004.0,
+        "bounce_rate": 29.74588939,
+        "depth": 4.49028401,
+        "duration": 297.06875934,
+        "solution_visits": 351.0,
+        "next_visits": 113.0,
+        "registration_visits": 1.0
+      },
+      "visits_delta": -276.0,
+      "visits_change_pct": -29.206349206349202
+    },
+    "public": {
+      "before": {
+        "visits": 855.0,
+        "users": 744.0,
+        "pageviews": 1629.0,
+        "bounce_rate": 36.49122807,
+        "depth": 1.90526316,
+        "duration": 158.74502924,
+        "solution_visits": 216.0,
+        "next_visits": 128.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 622.0,
+        "users": 497.0,
+        "pageviews": 1400.0,
+        "bounce_rate": 26.8488746,
+        "depth": 2.25080386,
+        "duration": 312.60932476,
+        "solution_visits": 331.0,
+        "next_visits": 113.0,
+        "registration_visits": 1.0
+      },
+      "visits_delta": -233.0,
+      "visits_change_pct": -27.251461988304094
+    },
+    "technical": {
+      "before": {
+        "visits": 90.0,
+        "users": 85.0,
+        "pageviews": 465.0,
+        "bounce_rate": 64.44444444,
+        "depth": 5.16666667,
+        "duration": 86.28888889,
+        "solution_visits": 3.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 47.0,
+        "users": 46.0,
+        "pageviews": 1604.0,
+        "bounce_rate": 68.08510638,
+        "depth": 34.12765957,
+        "duration": 91.40425532,
+        "solution_visits": 20.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -43.0,
+      "visits_change_pct": -47.77777777777777
+    },
+    "search": {
+      "before": {
+        "visits": 772.0,
+        "users": 687.0,
+        "pageviews": 1358.0,
+        "bounce_rate": 35.3626943,
+        "depth": 1.75906736,
+        "duration": 150.98834197,
+        "solution_visits": 195.0,
+        "next_visits": 121.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 506.0,
+        "users": 428.0,
+        "pageviews": 863.0,
+        "bounce_rate": 25.49407115,
+        "depth": 1.7055336,
+        "duration": 245.9486166,
+        "solution_visits": 278.0,
+        "next_visits": 91.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -266.0,
+      "visits_change_pct": -34.4559585492228
+    },
+    "mobile_search": {
+      "before": {
+        "visits": 325.0,
+        "users": 288.0,
+        "pageviews": 605.0,
+        "bounce_rate": 40.30769231,
+        "depth": 1.86153846,
+        "duration": 165.25846154,
+        "solution_visits": 79.0,
+        "next_visits": 50.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 210.0,
+        "users": 177.0,
+        "pageviews": 374.0,
+        "bounce_rate": 30.47619048,
+        "depth": 1.78095238,
+        "duration": 213.8952381,
+        "solution_visits": 121.0,
+        "next_visits": 37.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -115.0,
+      "visits_change_pct": -35.38461538461538
+    }
+  },
+  "landings": {
+    "math_catalogs": {
+      "label": "Каталоги математики",
+      "before": {
+        "visits": 205.0,
+        "users": 189.0,
+        "pageviews": 427.0,
+        "bounce_rate": 37.07317073,
+        "depth": 2.08292683,
+        "duration": 238.29756098,
+        "solution_visits": 42.0,
+        "next_visits": 66.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 112.0,
+        "users": 101.0,
+        "pageviews": 168.0,
+        "bounce_rate": 34.82142857,
+        "depth": 1.5,
+        "duration": 237.33035714,
+        "solution_visits": 35.0,
+        "next_visits": 50.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -93.0,
+      "visits_change_pct": -45.36585365853658
+    },
+    "physics_catalogs": {
+      "label": "Каталоги физики",
+      "before": {
+        "visits": 252.0,
+        "users": 235.0,
+        "pageviews": 391.0,
+        "bounce_rate": 50.79365079,
+        "depth": 1.5515873,
+        "duration": 80.57142857,
+        "solution_visits": 10.0,
+        "next_visits": 41.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 94.0,
+        "users": 91.0,
+        "pageviews": 158.0,
+        "bounce_rate": 42.55319149,
+        "depth": 1.68085106,
+        "duration": 112.60638298,
+        "solution_visits": 22.0,
+        "next_visits": 18.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -158.0,
+      "visits_change_pct": -62.698412698412696
+    },
+    "task_pages": {
+      "label": "Отдельные задания",
+      "before": {
+        "visits": 266.0,
+        "users": 227.0,
+        "pageviews": 407.0,
+        "bounce_rate": 19.92481203,
+        "depth": 1.53007519,
+        "duration": 147.44736842,
+        "solution_visits": 136.0,
+        "next_visits": 5.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 239.0,
+        "users": 189.0,
+        "pageviews": 462.0,
+        "bounce_rate": 14.22594142,
+        "depth": 1.93305439,
+        "duration": 297.60669456,
+        "solution_visits": 197.0,
+        "next_visits": 5.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -27.0,
+      "visits_change_pct": -10.15037593984962
+    },
+    "physics_part2": {
+      "label": "Физика, часть 2",
+      "before": {
+        "visits": 20.0,
+        "users": 20.0,
+        "pageviews": 41.0,
+        "bounce_rate": 35.0,
+        "depth": 2.05,
+        "duration": 216.4,
+        "solution_visits": 4.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 40.0,
+        "users": 38.0,
+        "pageviews": 47.0,
+        "bounce_rate": 22.5,
+        "depth": 1.175,
+        "duration": 352.3,
+        "solution_visits": 16.0,
+        "next_visits": 16.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 20.0,
+      "visits_change_pct": 100.0
+    },
+    "math_part2": {
+      "label": "Математика, часть 2",
+      "before": {
+        "visits": 17.0,
+        "users": 14.0,
+        "pageviews": 36.0,
+        "bounce_rate": 41.17647059,
+        "depth": 2.11764706,
+        "duration": 133.41176471,
+        "solution_visits": 1.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 17.0,
+        "users": 15.0,
+        "pageviews": 18.0,
+        "bounce_rate": 41.17647059,
+        "depth": 1.05882353,
+        "duration": 110.41176471,
+        "solution_visits": 5.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 0.0,
+      "visits_change_pct": 0.0
+    },
+    "subject_hubs": {
+      "label": "Предметные страницы",
+      "before": {
+        "visits": 9.0,
+        "users": 9.0,
+        "pageviews": 36.0,
+        "bounce_rate": 22.22222222,
+        "depth": 4.0,
+        "duration": 152.11111111,
+        "solution_visits": 2.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 3.0,
+        "users": 3.0,
+        "pageviews": 8.0,
+        "bounce_rate": 0.0,
+        "depth": 2.66666667,
+        "duration": 45.33333333,
+        "solution_visits": 2.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -6.0,
+      "visits_change_pct": -66.66666666666667
+    },
+    "bare_root": {
+      "label": "Главная без параметров",
+      "before": {
+        "visits": 3.0,
+        "users": 3.0,
+        "pageviews": 20.0,
+        "bounce_rate": 0.0,
+        "depth": 6.66666667,
+        "duration": 74.0,
+        "solution_visits": 0.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 2.0,
+        "bounce_rate": 0.0,
+        "depth": 2.0,
+        "duration": 51.0,
+        "solution_visits": 1.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -2.0,
+      "visits_change_pct": -66.66666666666667
+    }
+  },
+  "engagement": {
+    "math_catalogs": {
+      "label": "Каталоги математики",
+      "before": {
+        "visits": 152.0,
+        "users": 142.0,
+        "pageviews": 313.0,
+        "bounce_rate": 36.84210526,
+        "depth": 2.05921053,
+        "duration": 288.49342105,
+        "solution_visits": 35.0,
+        "next_visits": 55.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 50.0,
+        "users": 45.0,
+        "pageviews": 57.0,
+        "bounce_rate": 36.0,
+        "depth": 1.14,
+        "duration": 155.8,
+        "solution_visits": 14.0,
+        "next_visits": 19.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -102.0,
+      "visits_change_pct": -67.10526315789474
+    },
+    "physics_catalogs": {
+      "label": "Каталоги физики",
+      "before": {
+        "visits": 186.0,
+        "users": 173.0,
+        "pageviews": 295.0,
+        "bounce_rate": 50.53763441,
+        "depth": 1.58602151,
+        "duration": 96.08064516,
+        "solution_visits": 9.0,
+        "next_visits": 38.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 50.0,
+        "users": 50.0,
+        "pageviews": 76.0,
+        "bounce_rate": 40.0,
+        "depth": 1.52,
+        "duration": 113.8,
+        "solution_visits": 13.0,
+        "next_visits": 10.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -136.0,
+      "visits_change_pct": -73.11827956989248
+    },
+    "task_pages": {
+      "label": "Отдельные задания",
+      "before": {
+        "visits": 175.0,
+        "users": 150.0,
+        "pageviews": 250.0,
+        "bounce_rate": 17.14285714,
+        "depth": 1.42857143,
+        "duration": 145.17142857,
+        "solution_visits": 115.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 160.0,
+        "users": 124.0,
+        "pageviews": 356.0,
+        "bounce_rate": 13.75,
+        "depth": 2.225,
+        "duration": 398.7875,
+        "solution_visits": 129.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -15.0,
+      "visits_change_pct": -8.571428571428575
+    },
+    "physics_part2": {
+      "label": "Физика, часть 2",
+      "before": {
+        "visits": 14.0,
+        "users": 14.0,
+        "pageviews": 34.0,
+        "bounce_rate": 21.42857143,
+        "depth": 2.42857143,
+        "duration": 275.57142857,
+        "solution_visits": 3.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 31.0,
+        "users": 30.0,
+        "pageviews": 37.0,
+        "bounce_rate": 22.58064516,
+        "depth": 1.19354839,
+        "duration": 419.83870968,
+        "solution_visits": 12.0,
+        "next_visits": 10.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 17.0,
+      "visits_change_pct": 121.42857142857144
+    },
+    "math_part2": {
+      "label": "Математика, часть 2",
+      "before": {
+        "visits": 10.0,
+        "users": 8.0,
+        "pageviews": 15.0,
+        "bounce_rate": 30.0,
+        "depth": 1.5,
+        "duration": 17.5,
+        "solution_visits": 0.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 12.0,
+        "users": 11.0,
+        "pageviews": 13.0,
+        "bounce_rate": 41.66666667,
+        "depth": 1.08333333,
+        "duration": 152.58333333,
+        "solution_visits": 4.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 2.0,
+      "visits_change_pct": 19.999999999999996
+    },
+    "subject_hubs": {
+      "label": "Предметные страницы",
+      "before": {
+        "visits": 9.0,
+        "users": 9.0,
+        "pageviews": 36.0,
+        "bounce_rate": 22.22222222,
+        "depth": 4.0,
+        "duration": 152.11111111,
+        "solution_visits": 2.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 2.0,
+        "users": 2.0,
+        "pageviews": 7.0,
+        "bounce_rate": 0.0,
+        "depth": 3.5,
+        "duration": 58.0,
+        "solution_visits": 2.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -7.0,
+      "visits_change_pct": -77.77777777777779
+    },
+    "bare_root": {
+      "label": "Главная без параметров",
+      "before": {
+        "visits": 3.0,
+        "users": 3.0,
+        "pageviews": 20.0,
+        "bounce_rate": 0.0,
+        "depth": 6.66666667,
+        "duration": 74.0,
+        "solution_visits": 0.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -3.0,
+      "visits_change_pct": -100.0
+    }
+  },
+  "engines": {
+    "yandex": {
+      "before": {
+        "visits": 756.0,
+        "users": 673.0,
+        "pageviews": 1317.0,
+        "bounce_rate": 35.58201058,
+        "depth": 1.74206349,
+        "duration": 151.96428571,
+        "solution_visits": 190.0,
+        "next_visits": 118.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 488.0,
+        "users": 410.0,
+        "pageviews": 838.0,
+        "bounce_rate": 25.6147541,
+        "depth": 1.71721311,
+        "duration": 251.81967213,
+        "solution_visits": 268.0,
+        "next_visits": 89.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -268.0,
+      "visits_change_pct": -35.449735449735456
+    },
+    "google": {
+      "before": {
+        "visits": 13.0,
+        "users": 11.0,
+        "pageviews": 26.0,
+        "bounce_rate": 30.76923077,
+        "depth": 2.0,
+        "duration": 91.84615385,
+        "solution_visits": 5.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 12.0,
+        "users": 12.0,
+        "pageviews": 14.0,
+        "bounce_rate": 16.66666667,
+        "depth": 1.16666667,
+        "duration": 103.25,
+        "solution_visits": 9.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -1.0,
+      "visits_change_pct": -7.692307692307687
+    },
+    "bing": {
+      "before": {
+        "visits": 2.0,
+        "users": 2.0,
+        "pageviews": 10.0,
+        "bounce_rate": 0.0,
+        "depth": 5.0,
+        "duration": 82.0,
+        "solution_visits": 0.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 5.0,
+        "users": 5.0,
+        "pageviews": 8.0,
+        "bounce_rate": 40.0,
+        "depth": 1.6,
+        "duration": 59.8,
+        "solution_visits": 1.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 3.0,
+      "visits_change_pct": 150.0
+    },
+    "duckduckgo": {
+      "before": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 5.0,
+        "bounce_rate": 0.0,
+        "depth": 5.0,
+        "duration": 320.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 3.0,
+        "bounce_rate": 0.0,
+        "depth": 3.0,
+        "duration": 24.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 0.0,
+      "visits_change_pct": 0.0
+    }
+  },
+  "task_subjects": {
+    "math": {
+      "before": {
+        "visits": 88.0,
+        "users": 68.0,
+        "pageviews": 139.0,
+        "bounce_rate": 9.09090909,
+        "depth": 1.57954545,
+        "duration": 234.68181818,
+        "solution_visits": 80.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 70.0,
+        "users": 49.0,
+        "pageviews": 211.0,
+        "bounce_rate": 11.42857143,
+        "depth": 3.01428571,
+        "duration": 586.78571429,
+        "solution_visits": 62.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -18.0,
+      "visits_change_pct": -20.45454545454546
+    },
+    "physics": {
+      "before": {
+        "visits": 87.0,
+        "users": 82.0,
+        "pageviews": 111.0,
+        "bounce_rate": 25.28735632,
+        "depth": 1.27586207,
+        "duration": 54.63218391,
+        "solution_visits": 35.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 90.0,
+        "users": 75.0,
+        "pageviews": 145.0,
+        "bounce_rate": 15.55555556,
+        "depth": 1.61111111,
+        "duration": 252.56666667,
+        "solution_visits": 67.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 3.0,
+      "visits_change_pct": 3.4482758620689724
+    }
+  },
+  "new_returning": {
+    "new": {
+      "before": {
+        "visits": 678.0,
+        "users": 678.0,
+        "pageviews": 1130.0,
+        "bounce_rate": 36.87315634,
+        "depth": 1.66666667,
+        "duration": 127.0619469,
+        "solution_visits": 158.0,
+        "next_visits": 109.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 388.0,
+        "users": 388.0,
+        "pageviews": 640.0,
+        "bounce_rate": 26.80412371,
+        "depth": 1.64948454,
+        "duration": 228.76030928,
+        "solution_visits": 209.0,
+        "next_visits": 77.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -290.0,
+      "visits_change_pct": -42.772861356932154
+    },
+    "returning": {
+      "before": {
+        "visits": 94.0,
+        "users": 63.0,
+        "pageviews": 228.0,
+        "bounce_rate": 24.46808511,
+        "depth": 2.42553191,
+        "duration": 323.56382979,
+        "solution_visits": 37.0,
+        "next_visits": 12.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 118.0,
+        "users": 79.0,
+        "pageviews": 223.0,
+        "bounce_rate": 21.18644068,
+        "depth": 1.88983051,
+        "duration": 302.46610169,
+        "solution_visits": 69.0,
+        "next_visits": 14.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 24.0,
+      "visits_change_pct": 25.531914893617014
+    }
+  },
+  "daily": [
+    {
+      "date": "2026-09-23",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 53.0,
+        "users": 48.0,
+        "pageviews": 102.0,
+        "bounce_rate": 32.0754717,
+        "depth": 1.9245283,
+        "duration": 124.62264151,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 49.0,
+        "users": 44.0,
+        "pageviews": 92.0,
+        "bounce_rate": 32.65306122,
+        "depth": 1.87755102,
+        "duration": 132.51020408,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 19.0,
+        "users": 18.0,
+        "pageviews": 19.0,
+        "bounce_rate": 57.89473684,
+        "depth": 1.0,
+        "duration": 10.21052632,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 190.0,
+        "users": 174.0,
+        "pageviews": 368.0,
+        "bounce_rate": 40.52631579,
+        "depth": 1.93684211,
+        "duration": 119.67368421,
+        "solution_visits": 34.0,
+        "next_visits": 19.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 174.0,
+        "users": 163.0,
+        "pageviews": 303.0,
+        "bounce_rate": 39.65517241,
+        "depth": 1.74137931,
+        "duration": 99.53448276,
+        "solution_visits": 31.0,
+        "next_visits": 18.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 66.0,
+        "users": 61.0,
+        "pageviews": 138.0,
+        "bounce_rate": 36.36363636,
+        "depth": 2.09090909,
+        "duration": 99.65151515,
+        "solution_visits": 11.0,
+        "next_visits": 10.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-09-25",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 185.0,
+        "users": 171.0,
+        "pageviews": 414.0,
+        "bounce_rate": 41.62162162,
+        "depth": 2.23783784,
+        "duration": 209.27027027,
+        "solution_visits": 44.0,
+        "next_visits": 38.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 171.0,
+        "users": 162.0,
+        "pageviews": 300.0,
+        "bounce_rate": 40.35087719,
+        "depth": 1.75438596,
+        "duration": 213.11695906,
+        "solution_visits": 41.0,
+        "next_visits": 37.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 83.0,
+        "users": 77.0,
+        "pageviews": 180.0,
+        "bounce_rate": 48.19277108,
+        "depth": 2.1686747,
+        "duration": 310.51807229,
+        "solution_visits": 17.0,
+        "next_visits": 15.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 130.0,
+        "users": 116.0,
+        "pageviews": 261.0,
+        "bounce_rate": 35.38461538,
+        "depth": 2.00769231,
+        "duration": 194.9,
+        "solution_visits": 38.0,
+        "next_visits": 25.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 119.0,
+        "users": 109.0,
+        "pageviews": 241.0,
+        "bounce_rate": 34.45378151,
+        "depth": 2.02521008,
+        "duration": 200.01680672,
+        "solution_visits": 35.0,
+        "next_visits": 25.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 58.0,
+        "users": 53.0,
+        "pageviews": 111.0,
+        "bounce_rate": 41.37931034,
+        "depth": 1.9137931,
+        "duration": 220.05172414,
+        "solution_visits": 14.0,
+        "next_visits": 12.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 171.0,
+        "users": 157.0,
+        "pageviews": 293.0,
+        "bounce_rate": 31.57894737,
+        "depth": 1.71345029,
+        "duration": 149.32163743,
+        "solution_visits": 59.0,
+        "next_visits": 28.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 147.0,
+        "users": 137.0,
+        "pageviews": 252.0,
+        "bounce_rate": 29.25170068,
+        "depth": 1.71428571,
+        "duration": 138.81632653,
+        "solution_visits": 50.0,
+        "next_visits": 26.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 54.0,
+        "users": 49.0,
+        "pageviews": 91.0,
+        "bounce_rate": 29.62962963,
+        "depth": 1.68518519,
+        "duration": 129.2962963,
+        "solution_visits": 22.0,
+        "next_visits": 9.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 126.0,
+        "users": 122.0,
+        "pageviews": 191.0,
+        "bounce_rate": 32.53968254,
+        "depth": 1.51587302,
+        "duration": 133.31746032,
+        "solution_visits": 41.0,
+        "next_visits": 18.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 112.0,
+        "users": 110.0,
+        "pageviews": 170.0,
+        "bounce_rate": 31.25,
+        "depth": 1.51785714,
+        "duration": 108.03571429,
+        "solution_visits": 38.0,
+        "next_visits": 15.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 45.0,
+        "users": 44.0,
+        "pageviews": 66.0,
+        "bounce_rate": 35.55555556,
+        "depth": 1.46666667,
+        "duration": 31.55555556,
+        "solution_visits": 15.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "partial": false,
+      "outage": true,
+      "public": {
+        "visits": 9.0,
+        "users": 9.0,
+        "pageviews": 22.0,
+        "bounce_rate": 33.33333333,
+        "depth": 2.44444444,
+        "duration": 642.88888889,
+        "solution_visits": 4.0,
+        "next_visits": 3.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 9.0,
+        "users": 9.0,
+        "pageviews": 22.0,
+        "bounce_rate": 33.33333333,
+        "depth": 2.44444444,
+        "duration": 642.88888889,
+        "solution_visits": 4.0,
+        "next_visits": 3.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 3.0,
+        "users": 3.0,
+        "pageviews": 10.0,
+        "bounce_rate": 33.33333333,
+        "depth": 3.33333333,
+        "duration": 1313.66666667,
+        "solution_visits": 2.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 131.0,
+        "users": 119.0,
+        "pageviews": 414.0,
+        "bounce_rate": 26.71755725,
+        "depth": 3.16030534,
+        "duration": 276.26717557,
+        "solution_visits": 65.0,
+        "next_visits": 34.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 111.0,
+        "users": 106.0,
+        "pageviews": 202.0,
+        "bounce_rate": 24.32432432,
+        "depth": 1.81981982,
+        "duration": 200.23423423,
+        "solution_visits": 59.0,
+        "next_visits": 30.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 45.0,
+        "users": 41.0,
+        "pageviews": 101.0,
+        "bounce_rate": 33.33333333,
+        "depth": 2.24444444,
+        "duration": 181.4,
+        "solution_visits": 25.0,
+        "next_visits": 10.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 109.0,
+        "users": 99.0,
+        "pageviews": 145.0,
+        "bounce_rate": 34.86238532,
+        "depth": 1.33027523,
+        "duration": 115.73394495,
+        "solution_visits": 51.0,
+        "next_visits": 21.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 90.0,
+        "users": 83.0,
+        "pageviews": 115.0,
+        "bounce_rate": 33.33333333,
+        "depth": 1.27777778,
+        "duration": 110.84444444,
+        "solution_visits": 45.0,
+        "next_visits": 17.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 41.0,
+        "users": 37.0,
+        "pageviews": 59.0,
+        "bounce_rate": 31.70731707,
+        "depth": 1.43902439,
+        "duration": 81.04878049,
+        "solution_visits": 21.0,
+        "next_visits": 9.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 89.0,
+        "users": 77.0,
+        "pageviews": 186.0,
+        "bounce_rate": 24.71910112,
+        "depth": 2.08988764,
+        "duration": 226.52808989,
+        "solution_visits": 49.0,
+        "next_visits": 9.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 70.0,
+        "users": 62.0,
+        "pageviews": 105.0,
+        "bounce_rate": 24.28571429,
+        "depth": 1.5,
+        "duration": 264.78571429,
+        "solution_visits": 43.0,
+        "next_visits": 8.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 26.0,
+        "users": 23.0,
+        "pageviews": 40.0,
+        "bounce_rate": 34.61538462,
+        "depth": 1.53846154,
+        "duration": 220.26923077,
+        "solution_visits": 19.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-10-03",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 78.0,
+        "users": 70.0,
+        "pageviews": 178.0,
+        "bounce_rate": 25.64102564,
+        "depth": 2.28205128,
+        "duration": 340.93589744,
+        "solution_visits": 37.0,
+        "next_visits": 15.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 57.0,
+        "users": 54.0,
+        "pageviews": 96.0,
+        "bounce_rate": 24.56140351,
+        "depth": 1.68421053,
+        "duration": 259.61403509,
+        "solution_visits": 25.0,
+        "next_visits": 8.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 22.0,
+        "users": 20.0,
+        "pageviews": 42.0,
+        "bounce_rate": 31.81818182,
+        "depth": 1.90909091,
+        "duration": 357.81818182,
+        "solution_visits": 13.0,
+        "next_visits": 3.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-10-04",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 85.0,
+        "users": 71.0,
+        "pageviews": 205.0,
+        "bounce_rate": 24.70588235,
+        "depth": 2.41176471,
+        "duration": 569.0,
+        "solution_visits": 46.0,
+        "next_visits": 12.0,
+        "registration_visits": 1.0
+      },
+      "search": {
+        "visits": 66.0,
+        "users": 55.0,
+        "pageviews": 102.0,
+        "bounce_rate": 21.21212121,
+        "depth": 1.54545455,
+        "duration": 366.0,
+        "solution_visits": 37.0,
+        "next_visits": 10.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 27.0,
+        "users": 21.0,
+        "pageviews": 45.0,
+        "bounce_rate": 18.51851852,
+        "depth": 1.66666667,
+        "duration": 226.7037037,
+        "solution_visits": 15.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-10-05",
+      "partial": false,
+      "outage": false,
+      "public": {
+        "visits": 130.0,
+        "users": 114.0,
+        "pageviews": 272.0,
+        "bounce_rate": 23.84615385,
+        "depth": 2.09230769,
+        "duration": 388.6,
+        "solution_visits": 83.0,
+        "next_visits": 22.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 112.0,
+        "users": 103.0,
+        "pageviews": 243.0,
+        "bounce_rate": 24.10714286,
+        "depth": 2.16964286,
+        "duration": 310.34821429,
+        "solution_visits": 69.0,
+        "next_visits": 18.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 49.0,
+        "users": 43.0,
+        "pageviews": 87.0,
+        "bounce_rate": 30.6122449,
+        "depth": 1.7755102,
+        "duration": 279.83673469,
+        "solution_visits": 28.0,
+        "next_visits": 9.0,
+        "registration_visits": 0.0
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "partial": true,
+      "outage": false,
+      "public": {
+        "visits": 142.0,
+        "users": 125.0,
+        "pageviews": 289.0,
+        "bounce_rate": 28.16901408,
+        "depth": 2.03521127,
+        "duration": 336.57042254,
+        "solution_visits": 75.0,
+        "next_visits": 41.0,
+        "registration_visits": 0.0
+      },
+      "search": {
+        "visits": 124.0,
+        "users": 114.0,
+        "pageviews": 232.0,
+        "bounce_rate": 27.41935484,
+        "depth": 1.87096774,
+        "duration": 345.25806452,
+        "solution_visits": 67.0,
+        "next_visits": 33.0,
+        "registration_visits": 0.0
+      },
+      "mobile_search": {
+        "visits": 46.0,
+        "users": 43.0,
+        "pageviews": 82.0,
+        "bounce_rate": 21.73913043,
+        "depth": 1.7826087,
+        "duration": 218.02173913,
+        "solution_visits": 26.0,
+        "next_visits": 13.0,
+        "registration_visits": 0.0
+      }
+    }
+  ],
+  "selected_urls": [
+    {
+      "url": "/?topic=7.5",
+      "before": {
+        "visits": 29.0,
+        "users": 28.0,
+        "pageviews": 45.0,
+        "bounce_rate": 44.82758621,
+        "depth": 1.55172414,
+        "duration": 139.13793103,
+        "solution_visits": 3.0,
+        "next_visits": 8.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 1.0,
+        "bounce_rate": 0.0,
+        "depth": 1.0,
+        "duration": 17.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -28.0,
+      "visits_change_pct": -96.55172413793103
+    },
+    {
+      "url": "/physics?topic=kinematics",
+      "before": {
+        "visits": 25.0,
+        "users": 24.0,
+        "pageviews": 30.0,
+        "bounce_rate": 48.0,
+        "depth": 1.2,
+        "duration": 21.04,
+        "solution_visits": 1.0,
+        "next_visits": 3.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 3.0,
+        "users": 3.0,
+        "pageviews": 5.0,
+        "bounce_rate": 33.33333333,
+        "depth": 1.66666667,
+        "duration": 131.0,
+        "solution_visits": 1.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -22.0,
+      "visits_change_pct": -88.0
+    },
+    {
+      "url": "/physics?topic=1.1",
+      "before": {
+        "visits": 27.0,
+        "users": 27.0,
+        "pageviews": 53.0,
+        "bounce_rate": 44.44444444,
+        "depth": 1.96296296,
+        "duration": 104.51851852,
+        "solution_visits": 1.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 7.0,
+        "users": 7.0,
+        "pageviews": 11.0,
+        "bounce_rate": 0.0,
+        "depth": 1.57142857,
+        "duration": 176.71428571,
+        "solution_visits": 3.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -20.0,
+      "visits_change_pct": -74.07407407407408
+    },
+    {
+      "url": "/physics",
+      "before": {
+        "visits": 28.0,
+        "users": 27.0,
+        "pageviews": 93.0,
+        "bounce_rate": 3.57142857,
+        "depth": 3.32142857,
+        "duration": 236.0,
+        "solution_visits": 4.0,
+        "next_visits": 10.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 13.0,
+        "users": 13.0,
+        "pageviews": 27.0,
+        "bounce_rate": 46.15384615,
+        "depth": 2.07692308,
+        "duration": 32.0,
+        "solution_visits": 2.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -15.0,
+      "visits_change_pct": -53.57142857142857
+    },
+    {
+      "url": "/physics?topic=measurement.direct",
+      "before": {
+        "visits": 14.0,
+        "users": 13.0,
+        "pageviews": 19.0,
+        "bounce_rate": 71.42857143,
+        "depth": 1.35714286,
+        "duration": 126.85714286,
+        "solution_visits": 0.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 1.0,
+        "bounce_rate": 100.0,
+        "depth": 1.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -13.0,
+      "visits_change_pct": -92.85714285714286
+    },
+    {
+      "url": "/?topic=1.3",
+      "before": {
+        "visits": 14.0,
+        "users": 10.0,
+        "pageviews": 27.0,
+        "bounce_rate": 21.42857143,
+        "depth": 1.92857143,
+        "duration": 113.28571429,
+        "solution_visits": 3.0,
+        "next_visits": 5.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 1.0,
+        "bounce_rate": 100.0,
+        "depth": 1.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -13.0,
+      "visits_change_pct": -92.85714285714286
+    },
+    {
+      "url": "/?topic=2.3",
+      "before": {
+        "visits": 12.0,
+        "users": 10.0,
+        "pageviews": 42.0,
+        "bounce_rate": 41.66666667,
+        "depth": 3.5,
+        "duration": 1628.25,
+        "solution_visits": 4.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 1.0,
+        "bounce_rate": 100.0,
+        "depth": 1.0,
+        "duration": 13.0,
+        "solution_visits": 0.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -11.0,
+      "visits_change_pct": -91.66666666666666
+    },
+    {
+      "url": "/?topic=plane.triangles",
+      "before": {
+        "visits": 11.0,
+        "users": 11.0,
+        "pageviews": 13.0,
+        "bounce_rate": 45.45454545,
+        "depth": 1.18181818,
+        "duration": 83.63636364,
+        "solution_visits": 2.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 2.0,
+        "users": 2.0,
+        "pageviews": 2.0,
+        "bounce_rate": 0.0,
+        "depth": 1.0,
+        "duration": 35.5,
+        "solution_visits": 1.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -9.0,
+      "visits_change_pct": -81.81818181818181
+    },
+    {
+      "url": "/?topic=all",
+      "before": {
+        "visits": 13.0,
+        "users": 13.0,
+        "pageviews": 43.0,
+        "bounce_rate": 23.07692308,
+        "depth": 3.30769231,
+        "duration": 149.76923077,
+        "solution_visits": 2.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 4.0,
+        "users": 4.0,
+        "pageviews": 15.0,
+        "bounce_rate": 25.0,
+        "depth": 3.75,
+        "duration": 618.5,
+        "solution_visits": 1.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -9.0,
+      "visits_change_pct": -69.23076923076923
+    },
+    {
+      "url": "/physics?topic=dynamics.forces",
+      "before": {
+        "visits": 14.0,
+        "users": 13.0,
+        "pageviews": 19.0,
+        "bounce_rate": 71.42857143,
+        "depth": 1.35714286,
+        "duration": 40.57142857,
+        "solution_visits": 0.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 6.0,
+        "users": 6.0,
+        "pageviews": 7.0,
+        "bounce_rate": 33.33333333,
+        "depth": 1.16666667,
+        "duration": 44.5,
+        "solution_visits": 1.0,
+        "next_visits": 3.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -8.0,
+      "visits_change_pct": -57.14285714285714
+    },
+    {
+      "url": "/stereometry",
+      "before": {
+        "visits": 10.0,
+        "users": 7.0,
+        "pageviews": 17.0,
+        "bounce_rate": 40.0,
+        "depth": 1.7,
+        "duration": 54.8,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 2.0,
+        "users": 2.0,
+        "pageviews": 2.0,
+        "bounce_rate": 0.0,
+        "depth": 1.0,
+        "duration": 140.5,
+        "solution_visits": 1.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -8.0,
+      "visits_change_pct": -80.0
+    },
+    {
+      "url": "/?topic=2.1",
+      "before": {
+        "visits": 9.0,
+        "users": 9.0,
+        "pageviews": 11.0,
+        "bounce_rate": 66.66666667,
+        "depth": 1.22222222,
+        "duration": 9.33333333,
+        "solution_visits": 0.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 1.0,
+        "bounce_rate": 0.0,
+        "depth": 1.0,
+        "duration": 55.0,
+        "solution_visits": 1.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -8.0,
+      "visits_change_pct": -88.88888888888889
+    },
+    {
+      "url": "/physics/part-2",
+      "before": {
+        "visits": 15.0,
+        "users": 15.0,
+        "pageviews": 34.0,
+        "bounce_rate": 33.33333333,
+        "depth": 2.26666667,
+        "duration": 264.2,
+        "solution_visits": 3.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 8.0,
+        "users": 8.0,
+        "pageviews": 10.0,
+        "bounce_rate": 25.0,
+        "depth": 1.25,
+        "duration": 248.375,
+        "solution_visits": 3.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -7.0,
+      "visits_change_pct": -46.666666666666664
+    },
+    {
+      "url": "/physics?topic=3.2",
+      "before": {
+        "visits": 7.0,
+        "users": 7.0,
+        "pageviews": 8.0,
+        "bounce_rate": 57.14285714,
+        "depth": 1.14285714,
+        "duration": 9.71428571,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -7.0,
+      "visits_change_pct": -100.0
+    },
+    {
+      "url": "/physics?topic=magnetism.induction",
+      "before": {
+        "visits": 9.0,
+        "users": 9.0,
+        "pageviews": 11.0,
+        "bounce_rate": 66.66666667,
+        "depth": 1.22222222,
+        "duration": 237.66666667,
+        "solution_visits": 0.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 3.0,
+        "users": 3.0,
+        "pageviews": 5.0,
+        "bounce_rate": 66.66666667,
+        "depth": 1.66666667,
+        "duration": 14.66666667,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -6.0,
+      "visits_change_pct": -66.66666666666667
+    },
+    {
+      "url": "/physics?topic=kinematics.motion",
+      "before": {
+        "visits": 6.0,
+        "users": 6.0,
+        "pageviews": 7.0,
+        "bounce_rate": 33.33333333,
+        "depth": 1.16666667,
+        "duration": 27.83333333,
+        "solution_visits": 2.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -6.0,
+      "visits_change_pct": -100.0
+    },
+    {
+      "url": "/?topic=4.1",
+      "before": {
+        "visits": 5.0,
+        "users": 5.0,
+        "pageviews": 6.0,
+        "bounce_rate": 40.0,
+        "depth": 1.2,
+        "duration": 103.0,
+        "solution_visits": 2.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -5.0,
+      "visits_change_pct": -100.0
+    },
+    {
+      "url": "/tasks/5FCD16",
+      "before": {
+        "visits": 6.0,
+        "users": 6.0,
+        "pageviews": 11.0,
+        "bounce_rate": 16.66666667,
+        "depth": 1.83333333,
+        "duration": 92.83333333,
+        "solution_visits": 4.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 1.0,
+        "bounce_rate": 100.0,
+        "depth": 1.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -5.0,
+      "visits_change_pct": -83.33333333333334
+    },
+    {
+      "url": "/?topic=solid.polyhedra",
+      "before": {
+        "visits": 7.0,
+        "users": 7.0,
+        "pageviews": 12.0,
+        "bounce_rate": 14.28571429,
+        "depth": 1.71428571,
+        "duration": 127.28571429,
+        "solution_visits": 0.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 3.0,
+        "users": 3.0,
+        "pageviews": 3.0,
+        "bounce_rate": 66.66666667,
+        "depth": 1.0,
+        "duration": 8.0,
+        "solution_visits": 1.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -4.0,
+      "visits_change_pct": -57.14285714285714
+    },
+    {
+      "url": "/ege/physics",
+      "before": {
+        "visits": 5.0,
+        "users": 5.0,
+        "pageviews": 24.0,
+        "bounce_rate": 20.0,
+        "depth": 4.8,
+        "duration": 227.6,
+        "solution_visits": 1.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 3.0,
+        "bounce_rate": 0.0,
+        "depth": 3.0,
+        "duration": 29.0,
+        "solution_visits": 1.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -4.0,
+      "visits_change_pct": -80.0
+    },
+    {
+      "url": "/physics?topic=3.4",
+      "before": {
+        "visits": 12.0,
+        "users": 12.0,
+        "pageviews": 14.0,
+        "bounce_rate": 41.66666667,
+        "depth": 1.16666667,
+        "duration": 17.66666667,
+        "solution_visits": 0.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 9.0,
+        "users": 8.0,
+        "pageviews": 17.0,
+        "bounce_rate": 44.44444444,
+        "depth": 1.88888889,
+        "duration": 106.77777778,
+        "solution_visits": 1.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -3.0,
+      "visits_change_pct": -25.0
+    },
+    {
+      "url": "/tasks/6F97FE",
+      "before": {
+        "visits": 8.0,
+        "users": 6.0,
+        "pageviews": 10.0,
+        "bounce_rate": 12.5,
+        "depth": 1.25,
+        "duration": 315.125,
+        "solution_visits": 3.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 7.0,
+        "users": 6.0,
+        "pageviews": 9.0,
+        "bounce_rate": 28.57142857,
+        "depth": 1.28571429,
+        "duration": 15.14285714,
+        "solution_visits": 6.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -1.0,
+      "visits_change_pct": -12.5
+    },
+    {
+      "url": "/?topic=2.2",
+      "before": {
+        "visits": 5.0,
+        "users": 5.0,
+        "pageviews": 20.0,
+        "bounce_rate": 0.0,
+        "depth": 4.0,
+        "duration": 522.0,
+        "solution_visits": 1.0,
+        "next_visits": 3.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 5.0,
+        "users": 5.0,
+        "pageviews": 9.0,
+        "bounce_rate": 0.0,
+        "depth": 1.8,
+        "duration": 321.0,
+        "solution_visits": 2.0,
+        "next_visits": 5.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 0.0,
+      "visits_change_pct": 0.0
+    },
+    {
+      "url": "/?topic=basic-equations.logarithms",
+      "before": {
+        "visits": 3.0,
+        "users": 3.0,
+        "pageviews": 3.0,
+        "bounce_rate": 33.33333333,
+        "depth": 1.0,
+        "duration": 12.0,
+        "solution_visits": 0.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 6.0,
+        "users": 6.0,
+        "pageviews": 7.0,
+        "bounce_rate": 33.33333333,
+        "depth": 1.16666667,
+        "duration": 29.83333333,
+        "solution_visits": 1.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 3.0,
+      "visits_change_pct": 100.0
+    },
+    {
+      "url": "/?topic=6",
+      "before": {
+        "visits": 19.0,
+        "users": 18.0,
+        "pageviews": 74.0,
+        "bounce_rate": 57.89473684,
+        "depth": 3.89473684,
+        "duration": 238.36842105,
+        "solution_visits": 5.0,
+        "next_visits": 5.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 24.0,
+        "users": 23.0,
+        "pageviews": 26.0,
+        "bounce_rate": 41.66666667,
+        "depth": 1.08333333,
+        "duration": 108.70833333,
+        "solution_visits": 4.0,
+        "next_visits": 8.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 5.0,
+      "visits_change_pct": 26.315789473684205
+    },
+    {
+      "url": "/physics?topic=mechanics-change.changes",
+      "before": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 5.0,
+        "users": 5.0,
+        "pageviews": 15.0,
+        "bounce_rate": 40.0,
+        "depth": 3.0,
+        "duration": 106.8,
+        "solution_visits": 3.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 5.0,
+      "visits_change_pct": null
+    },
+    {
+      "url": "/physics?topic=mechanics-analysis.graphs",
+      "before": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 1.0,
+        "bounce_rate": 100.0,
+        "depth": 1.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 7.0,
+        "users": 7.0,
+        "pageviews": 7.0,
+        "bounce_rate": 85.71428571,
+        "depth": 1.0,
+        "duration": 12.28571429,
+        "solution_visits": 1.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 6.0,
+      "visits_change_pct": 600.0
+    },
+    {
+      "url": "/physics/part-2?topic=1.1",
+      "before": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 6.0,
+        "users": 6.0,
+        "pageviews": 6.0,
+        "bounce_rate": 16.66666667,
+        "depth": 1.0,
+        "duration": 761.5,
+        "solution_visits": 1.0,
+        "next_visits": 2.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 6.0,
+      "visits_change_pct": null
+    },
+    {
+      "url": "/tasks/F717A0",
+      "before": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 6.0,
+        "users": 1.0,
+        "pageviews": 6.0,
+        "bounce_rate": 0.0,
+        "depth": 1.0,
+        "duration": 15.5,
+        "solution_visits": 1.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 6.0,
+      "visits_change_pct": null
+    },
+    {
+      "url": "/tasks/E09B75",
+      "before": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 6.0,
+        "users": 2.0,
+        "pageviews": 6.0,
+        "bounce_rate": 16.66666667,
+        "depth": 1.0,
+        "duration": 12.33333333,
+        "solution_visits": 2.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 6.0,
+      "visits_change_pct": null
+    },
+    {
+      "url": "/?topic=vectors",
+      "before": {
+        "visits": 10.0,
+        "users": 9.0,
+        "pageviews": 13.0,
+        "bounce_rate": 10.0,
+        "depth": 1.3,
+        "duration": 123.5,
+        "solution_visits": 2.0,
+        "next_visits": 5.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 17.0,
+        "users": 15.0,
+        "pageviews": 45.0,
+        "bounce_rate": 29.41176471,
+        "depth": 2.64705882,
+        "duration": 408.94117647,
+        "solution_visits": 8.0,
+        "next_visits": 11.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 7.0,
+      "visits_change_pct": 70.0
+    },
+    {
+      "url": "/tasks/80AEFA",
+      "before": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 1.0,
+        "bounce_rate": 100.0,
+        "depth": 1.0,
+        "duration": 4.0,
+        "solution_visits": 1.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 8.0,
+        "users": 5.0,
+        "pageviews": 8.0,
+        "bounce_rate": 0.0,
+        "depth": 1.0,
+        "duration": 24.375,
+        "solution_visits": 5.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 7.0,
+      "visits_change_pct": 700.0
+    },
+    {
+      "url": "/?topic=solid",
+      "before": {
+        "visits": 1.0,
+        "users": 1.0,
+        "pageviews": 2.0,
+        "bounce_rate": 0.0,
+        "depth": 2.0,
+        "duration": 102.0,
+        "solution_visits": 1.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 8.0,
+        "users": 8.0,
+        "pageviews": 8.0,
+        "bounce_rate": 50.0,
+        "depth": 1.0,
+        "duration": 60.875,
+        "solution_visits": 2.0,
+        "next_visits": 3.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 7.0,
+      "visits_change_pct": 700.0
+    },
+    {
+      "url": "/physics/part-2?topic=all",
+      "before": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 7.0,
+        "users": 7.0,
+        "pageviews": 9.0,
+        "bounce_rate": 28.57142857,
+        "depth": 1.28571429,
+        "duration": 856.0,
+        "solution_visits": 3.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 7.0,
+      "visits_change_pct": null
+    },
+    {
+      "url": "/tasks/E24F06",
+      "before": {
+        "visits": 0.0,
+        "users": 0.0,
+        "pageviews": 0.0,
+        "bounce_rate": 0.0,
+        "depth": 0.0,
+        "duration": 0.0,
+        "solution_visits": 0.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 7.0,
+        "users": 5.0,
+        "pageviews": 8.0,
+        "bounce_rate": 42.85714286,
+        "depth": 1.14285714,
+        "duration": 93.85714286,
+        "solution_visits": 4.0,
+        "next_visits": 0.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 7.0,
+      "visits_change_pct": null
+    }
+  ],
+  "decomposition": {
+    "method": "Symmetric Kitagawa decomposition by seven mutually exclusive landing groups; descriptive, not causal. For a disappearing group, its missing rate is set to the observed baseline rate.",
+    "rows": [
+      {
+        "group": "bare_root",
+        "visits_before": 3.0,
+        "visits_after": 0.0,
+        "weight_before": 0.00546448087431694,
+        "weight_after": 0.0,
+        "solution_open": {
+          "rate_before": 0.0,
+          "rate_after": 0.0,
+          "within_pp": 0.0,
+          "mix_pp": -0.0
+        },
+        "next_task": {
+          "rate_before": 0.3333333333333333,
+          "rate_after": 0.3333333333333333,
+          "within_pp": 0.0,
+          "mix_pp": -0.18214936247723132
+        }
+      },
+      {
+        "group": "math_catalogs",
+        "visits_before": 152.0,
+        "visits_after": 50.0,
+        "weight_before": 0.2768670309653916,
+        "weight_after": 0.16393442622950818,
+        "solution_open": {
+          "rate_before": 0.23026315789473684,
+          "rate_after": 0.28,
+          "within_pp": 1.0962036238136332,
+          "mix_pp": -2.8812673760904994
+        },
+        "next_task": {
+          "rate_before": 0.3618421052631579,
+          "rate_after": 0.38,
+          "within_pp": 0.4002013229795799,
+          "mix_pp": -4.188908062505991
+        }
+      },
+      {
+        "group": "physics_catalogs",
+        "visits_before": 186.0,
+        "visits_after": 50.0,
+        "weight_before": 0.33879781420765026,
+        "weight_after": 0.16393442622950818,
+        "solution_open": {
+          "rate_before": 0.04838709677419355,
+          "rate_after": 0.26,
+          "within_pp": 5.319231447206064,
+          "mix_pp": -2.696280627533933
+        },
+        "next_task": {
+          "rate_before": 0.20430107526881722,
+          "rate_after": 0.2,
+          "within_pp": -0.10811446030906638,
+          "mix_pp": -3.5348727892355605
+        }
+      },
+      {
+        "group": "physics_part2",
+        "visits_before": 14.0,
+        "visits_after": 31.0,
+        "weight_before": 0.025500910746812388,
+        "weight_after": 0.10163934426229508,
+        "solution_open": {
+          "rate_before": 0.21428571428571427,
+          "rate_after": 0.3870967741935484,
+          "within_pp": 1.0985621112538086,
+          "mix_pp": 2.289416030822694
+        },
+        "next_task": {
+          "rate_before": 0.14285714285714285,
+          "rate_after": 0.3225806451612903,
+          "within_pp": 1.142504595703961,
+          "mix_pp": 1.77188520393174
+        }
+      },
+      {
+        "group": "math_part2",
+        "visits_before": 10.0,
+        "visits_after": 12.0,
+        "weight_before": 0.018214936247723135,
+        "weight_after": 0.03934426229508197,
+        "solution_open": {
+          "rate_before": 0.0,
+          "rate_after": 0.3333333333333333,
+          "within_pp": 0.9593199757134183,
+          "mix_pp": 0.35215543412264727
+        },
+        "next_task": {
+          "rate_before": 0.1,
+          "rate_after": 0.08333333333333333,
+          "within_pp": -0.047965998785670955,
+          "mix_pp": 0.193685488767456
+        }
+      },
+      {
+        "group": "subject_hubs",
+        "visits_before": 9.0,
+        "visits_after": 2.0,
+        "weight_before": 0.01639344262295082,
+        "weight_after": 0.006557377049180328,
+        "solution_open": {
+          "rate_before": 0.2222222222222222,
+          "rate_after": 1.0,
+          "within_pp": 0.8925318761384335,
+          "mix_pp": -0.6010928961748635
+        },
+        "next_task": {
+          "rate_before": 0.2222222222222222,
+          "rate_after": 0.0,
+          "within_pp": -0.25500910746812383,
+          "mix_pp": -0.1092896174863388
+        }
+      },
+      {
+        "group": "task_pages",
+        "visits_before": 175.0,
+        "visits_after": 160.0,
+        "weight_before": 0.31876138433515483,
+        "weight_after": 0.5245901639344263,
+        "solution_open": {
+          "rate_before": 0.6571428571428571,
+          "rate_after": 0.80625,
+          "within_pp": 6.287486989331252,
+          "mix_pp": 15.060418293000263
+        },
+        "next_task": {
+          "rate_before": 0.022857142857142857,
+          "rate_after": 0.025,
+          "within_pp": 0.09035909445745517,
+          "mix_pp": 0.49251886546968526
+        }
+      }
+    ],
+    "solution_open": {
+      "rate_before": 0.2987249544626594,
+      "rate_after": 0.5704918032786885,
+      "within_pp": 15.65333602345661,
+      "mix_pp": 11.523348858146308
+    },
+    "next_task": {
+      "rate_before": 0.18761384335154827,
+      "rate_after": 0.14426229508196722,
+      "within_pp": 1.2219754465781352,
+      "mix_pp": -5.55713027353624
+    }
+  },
+  "journeys": {
+    "raw_visits": 1644,
+    "raw_hits": 16567,
+    "unmatched_hits": 115,
+    "params_errors": 0,
+    "method": "Logs exclude headlesschrome and traffic_kind=technical; standard isRobot is unavailable in Logs. These cohorts can exceed the official public report; do not silently mix denominators.",
+    "periods": {
+      "baseline6": {
+        "public_without_technical": {
+          "visits": 900,
+          "pageviews": 1678,
+          "bounce_visits": 347,
+          "duration_median_seconds": 15.0,
+          "duration_average_seconds": 151.06,
+          "duration_over_10min": 67,
+          "duration_under_15s": 364,
+          "one_page_visits": 682,
+          "opened_solution": 219,
+          "next_goal": 128,
+          "both_goals": 43,
+          "open_then_next_strict": 35,
+          "next_without_open": 85,
+          "open_next_open_strict": 31,
+          "two_distinct_solution_tasks": 58,
+          "two_distinct_task_pages": 44,
+          "multiple_task_pages_without_next_goal": 38,
+          "next_task_page_clicks": 6,
+          "next_task_page_target_loaded": 6,
+          "goal_placements": {
+            "663176353:task_page": 230,
+            "663176353:dialog": 515,
+            "663176354:catalogue": 1944,
+            "663176354:task_page": 6
+          },
+          "entry_subjects": {
+            "physics": 481,
+            "math": 414,
+            "other": 5
+          },
+          "exit_classes": {
+            "physics_catalogs": 278,
+            "math_catalogs": 200,
+            "task_pages": 322,
+            "physics_part2": 29,
+            "other": 6,
+            "bare_root": 22,
+            "math_part2": 32,
+            "subject_hubs": 11
+          },
+          "additional_task_referrers": {
+            "external_search": 59,
+            "internal:task_pages": 35,
+            "no_referrer": 78,
+            "internal:other": 3
+          },
+          "visits_with_additional_task_referrer": {
+            "external_search": 31,
+            "internal:task_pages": 14,
+            "no_referrer": 1,
+            "internal:other": 3
+          },
+          "additional_task_referrers_without_next_goal": {
+            "external_search": 56,
+            "internal:task_pages": 28,
+            "no_referrer": 78,
+            "internal:other": 3
+          }
+        },
+        "search_without_technical": {
+          "visits": 784,
+          "pageviews": 1374,
+          "bounce_visits": 276,
+          "duration_median_seconds": 15.0,
+          "duration_average_seconds": 148.94770408163265,
+          "duration_over_10min": 56,
+          "duration_under_15s": 290,
+          "one_page_visits": 587,
+          "opened_solution": 195,
+          "next_goal": 121,
+          "both_goals": 41,
+          "open_then_next_strict": 33,
+          "next_without_open": 80,
+          "open_next_open_strict": 29,
+          "two_distinct_solution_tasks": 53,
+          "two_distinct_task_pages": 40,
+          "multiple_task_pages_without_next_goal": 34,
+          "next_task_page_clicks": 6,
+          "next_task_page_target_loaded": 6,
+          "goal_placements": {
+            "663176353:task_page": 205,
+            "663176353:dialog": 480,
+            "663176354:catalogue": 1851,
+            "663176354:task_page": 6
+          },
+          "entry_subjects": {
+            "physics": 413,
+            "math": 367,
+            "other": 4
+          },
+          "exit_classes": {
+            "physics_catalogs": 250,
+            "math_catalogs": 191,
+            "task_pages": 265,
+            "physics_part2": 27,
+            "other": 6,
+            "bare_root": 8,
+            "math_part2": 29,
+            "subject_hubs": 8
+          },
+          "additional_task_referrers": {
+            "external_search": 59,
+            "internal:task_pages": 28,
+            "internal:other": 2
+          },
+          "visits_with_additional_task_referrer": {
+            "external_search": 31,
+            "internal:task_pages": 11,
+            "internal:other": 2
+          },
+          "additional_task_referrers_without_next_goal": {
+            "external_search": 56,
+            "internal:task_pages": 21,
+            "internal:other": 2
+          }
+        },
+        "landings": {
+          "bare_root": {
+            "visits": 3,
+            "pageviews": 20,
+            "bounce_visits": 0,
+            "duration_median_seconds": 32,
+            "duration_average_seconds": 74,
+            "duration_over_10min": 0,
+            "duration_under_15s": 0,
+            "one_page_visits": 1,
+            "opened_solution": 0,
+            "next_goal": 1,
+            "both_goals": 0,
+            "open_then_next_strict": 0,
+            "next_without_open": 1,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 0,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 6
+            },
+            "entry_subjects": {
+              "math": 3
+            },
+            "exit_classes": {
+              "bare_root": 2,
+              "physics_catalogs": 1
+            }
+          },
+          "math_catalogs": {
+            "visits": 209,
+            "pageviews": 434,
+            "bounce_visits": 76,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 234.32535885167465,
+            "duration_over_10min": 20,
+            "duration_under_15s": 80,
+            "one_page_visits": 153,
+            "opened_solution": 42,
+            "next_goal": 66,
+            "both_goals": 31,
+            "open_then_next_strict": 24,
+            "next_without_open": 35,
+            "open_next_open_strict": 22,
+            "two_distinct_solution_tasks": 22,
+            "two_distinct_task_pages": 3,
+            "multiple_task_pages_without_next_goal": 1,
+            "next_task_page_clicks": 3,
+            "next_task_page_target_loaded": 3,
+            "goal_placements": {
+              "663176354:catalogue": 1183,
+              "663176353:dialog": 344,
+              "663176353:task_page": 14,
+              "663176354:task_page": 3
+            },
+            "entry_subjects": {
+              "math": 209
+            },
+            "exit_classes": {
+              "math_catalogs": 190,
+              "other": 2,
+              "bare_root": 5,
+              "math_part2": 8,
+              "task_pages": 1,
+              "physics_catalogs": 1,
+              "subject_hubs": 2
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 11,
+              "internal:other": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 3,
+              "internal:other": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "internal:task_pages": 8,
+              "internal:other": 1
+            }
+          },
+          "math_part2": {
+            "visits": 18,
+            "pageviews": 37,
+            "bounce_visits": 8,
+            "duration_median_seconds": 15.5,
+            "duration_average_seconds": 126,
+            "duration_over_10min": 1,
+            "duration_under_15s": 8,
+            "one_page_visits": 15,
+            "opened_solution": 1,
+            "next_goal": 2,
+            "both_goals": 1,
+            "open_then_next_strict": 1,
+            "next_without_open": 1,
+            "open_next_open_strict": 1,
+            "two_distinct_solution_tasks": 1,
+            "two_distinct_task_pages": 1,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 26,
+              "663176353:dialog": 12,
+              "663176353:task_page": 2
+            },
+            "entry_subjects": {
+              "math": 18
+            },
+            "exit_classes": {
+              "math_part2": 18
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 1
+            }
+          },
+          "physics_catalogs": {
+            "visits": 258,
+            "pageviews": 398,
+            "bounce_visits": 129,
+            "duration_median_seconds": 9.5,
+            "duration_average_seconds": 79.04263565891473,
+            "duration_over_10min": 9,
+            "duration_under_15s": 134,
+            "one_page_visits": 195,
+            "opened_solution": 10,
+            "next_goal": 41,
+            "both_goals": 3,
+            "open_then_next_strict": 2,
+            "next_without_open": 38,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 0,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:dialog": 10,
+              "663176354:catalogue": 384,
+              "663176353:task_page": 4
+            },
+            "entry_subjects": {
+              "physics": 258
+            },
+            "exit_classes": {
+              "physics_catalogs": 243,
+              "physics_part2": 7,
+              "task_pages": 6,
+              "other": 2
+            }
+          },
+          "physics_part2": {
+            "visits": 20,
+            "pageviews": 41,
+            "bounce_visits": 7,
+            "duration_median_seconds": 15.0,
+            "duration_average_seconds": 216.4,
+            "duration_over_10min": 2,
+            "duration_under_15s": 7,
+            "one_page_visits": 14,
+            "opened_solution": 4,
+            "next_goal": 4,
+            "both_goals": 3,
+            "open_then_next_strict": 3,
+            "next_without_open": 1,
+            "open_next_open_strict": 3,
+            "two_distinct_solution_tasks": 3,
+            "two_distinct_task_pages": 1,
+            "multiple_task_pages_without_next_goal": 1,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:task_page": 4,
+              "663176353:dialog": 9,
+              "663176354:catalogue": 116
+            },
+            "entry_subjects": {
+              "physics": 20
+            },
+            "exit_classes": {
+              "physics_part2": 19,
+              "task_pages": 1
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 4
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "internal:task_pages": 4
+            }
+          },
+          "subject_hubs": {
+            "visits": 10,
+            "pageviews": 37,
+            "bounce_visits": 3,
+            "duration_median_seconds": 35.0,
+            "duration_average_seconds": 136.9,
+            "duration_over_10min": 1,
+            "duration_under_15s": 3,
+            "one_page_visits": 4,
+            "opened_solution": 2,
+            "next_goal": 2,
+            "both_goals": 0,
+            "open_then_next_strict": 0,
+            "next_without_open": 2,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 1,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 91,
+              "663176353:dialog": 3
+            },
+            "entry_subjects": {
+              "physics": 6,
+              "other": 4
+            },
+            "exit_classes": {
+              "subject_hubs": 6,
+              "physics_part2": 1,
+              "bare_root": 1,
+              "physics_catalogs": 1,
+              "math_part2": 1
+            }
+          },
+          "task_pages": {
+            "visits": 266,
+            "pageviews": 407,
+            "bounce_visits": 53,
+            "duration_median_seconds": 17.0,
+            "duration_average_seconds": 147.44736842105263,
+            "duration_over_10min": 23,
+            "duration_under_15s": 58,
+            "one_page_visits": 205,
+            "opened_solution": 136,
+            "next_goal": 5,
+            "both_goals": 3,
+            "open_then_next_strict": 3,
+            "next_without_open": 2,
+            "open_next_open_strict": 3,
+            "two_distinct_solution_tasks": 26,
+            "two_distinct_task_pages": 35,
+            "multiple_task_pages_without_next_goal": 32,
+            "next_task_page_clicks": 3,
+            "next_task_page_target_loaded": 3,
+            "goal_placements": {
+              "663176353:task_page": 181,
+              "663176353:dialog": 102,
+              "663176354:task_page": 3,
+              "663176354:catalogue": 45
+            },
+            "entry_subjects": {
+              "math": 137,
+              "physics": 129
+            },
+            "exit_classes": {
+              "task_pages": 257,
+              "other": 2,
+              "physics_catalogs": 4,
+              "math_catalogs": 1,
+              "math_part2": 2
+            },
+            "additional_task_referrers": {
+              "external_search": 59,
+              "internal:task_pages": 12,
+              "internal:other": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 31,
+              "internal:task_pages": 6,
+              "internal:other": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 56,
+              "internal:task_pages": 9,
+              "internal:other": 1
+            }
+          }
+        },
+        "subjects": {
+          "math": {
+            "visits": 367,
+            "pageviews": 739,
+            "bounce_visits": 101,
+            "duration_median_seconds": 16,
+            "duration_average_seconds": 230.17438692098094,
+            "duration_over_10min": 41,
+            "duration_under_15s": 107,
+            "one_page_visits": 266,
+            "opened_solution": 140,
+            "next_goal": 72,
+            "both_goals": 35,
+            "open_then_next_strict": 28,
+            "next_without_open": 37,
+            "open_next_open_strict": 26,
+            "two_distinct_solution_tasks": 49,
+            "two_distinct_task_pages": 34,
+            "multiple_task_pages_without_next_goal": 29,
+            "next_task_page_clicks": 5,
+            "next_task_page_target_loaded": 5,
+            "goal_placements": {
+              "663176353:task_page": 160,
+              "663176354:catalogue": 1241,
+              "663176353:dialog": 439,
+              "663176354:task_page": 5
+            },
+            "entry_subjects": {
+              "math": 367
+            },
+            "exit_classes": {
+              "math_catalogs": 191,
+              "task_pages": 135,
+              "other": 2,
+              "bare_root": 7,
+              "math_part2": 28,
+              "physics_catalogs": 2,
+              "subject_hubs": 2
+            },
+            "additional_task_referrers": {
+              "external_search": 56,
+              "internal:task_pages": 21,
+              "internal:other": 2
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 28,
+              "internal:task_pages": 7,
+              "internal:other": 2
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 53,
+              "internal:task_pages": 15,
+              "internal:other": 2
+            }
+          },
+          "physics": {
+            "visits": 413,
+            "pageviews": 623,
+            "bounce_visits": 174,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 77.65133171912834,
+            "duration_over_10min": 15,
+            "duration_under_15s": 182,
+            "one_page_visits": 320,
+            "opened_solution": 54,
+            "next_goal": 49,
+            "both_goals": 6,
+            "open_then_next_strict": 5,
+            "next_without_open": 43,
+            "open_next_open_strict": 3,
+            "two_distinct_solution_tasks": 4,
+            "two_distinct_task_pages": 6,
+            "multiple_task_pages_without_next_goal": 5,
+            "next_task_page_clicks": 1,
+            "next_task_page_target_loaded": 1,
+            "goal_placements": {
+              "663176353:task_page": 45,
+              "663176353:dialog": 40,
+              "663176354:catalogue": 610,
+              "663176354:task_page": 1
+            },
+            "entry_subjects": {
+              "physics": 413
+            },
+            "exit_classes": {
+              "physics_catalogs": 248,
+              "physics_part2": 27,
+              "task_pages": 130,
+              "other": 4,
+              "subject_hubs": 3,
+              "math_part2": 1
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 7,
+              "external_search": 3
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 4,
+              "external_search": 3
+            },
+            "additional_task_referrers_without_next_goal": {
+              "internal:task_pages": 6,
+              "external_search": 3
+            }
+          }
+        },
+        "devices": {
+          "1": {
+            "visits": 427,
+            "pageviews": 716,
+            "bounce_visits": 135,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 137.12646370023418,
+            "duration_over_10min": 32,
+            "duration_under_15s": 140,
+            "one_page_visits": 321,
+            "opened_solution": 111,
+            "next_goal": 66,
+            "both_goals": 19,
+            "open_then_next_strict": 17,
+            "next_without_open": 47,
+            "open_next_open_strict": 15,
+            "two_distinct_solution_tasks": 25,
+            "two_distinct_task_pages": 20,
+            "multiple_task_pages_without_next_goal": 17,
+            "next_task_page_clicks": 3,
+            "next_task_page_target_loaded": 3,
+            "goal_placements": {
+              "663176353:task_page": 130,
+              "663176353:dialog": 132,
+              "663176354:catalogue": 1144,
+              "663176354:task_page": 3
+            },
+            "entry_subjects": {
+              "physics": 234,
+              "math": 191,
+              "other": 2
+            },
+            "exit_classes": {
+              "physics_catalogs": 147,
+              "math_catalogs": 101,
+              "physics_part2": 19,
+              "task_pages": 137,
+              "bare_root": 7,
+              "math_part2": 9,
+              "other": 3,
+              "subject_hubs": 4
+            },
+            "additional_task_referrers": {
+              "external_search": 30,
+              "internal:task_pages": 19,
+              "internal:other": 2
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 16,
+              "internal:task_pages": 6,
+              "internal:other": 2
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 27,
+              "internal:task_pages": 16,
+              "internal:other": 2
+            }
+          },
+          "2": {
+            "visits": 335,
+            "pageviews": 617,
+            "bounce_visits": 134,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 160.67462686567166,
+            "duration_over_10min": 21,
+            "duration_under_15s": 143,
+            "one_page_visits": 250,
+            "opened_solution": 79,
+            "next_goal": 50,
+            "both_goals": 20,
+            "open_then_next_strict": 15,
+            "next_without_open": 30,
+            "open_next_open_strict": 13,
+            "two_distinct_solution_tasks": 26,
+            "two_distinct_task_pages": 17,
+            "multiple_task_pages_without_next_goal": 15,
+            "next_task_page_clicks": 3,
+            "next_task_page_target_loaded": 3,
+            "goal_placements": {
+              "663176353:task_page": 69,
+              "663176353:dialog": 330,
+              "663176354:catalogue": 661,
+              "663176354:task_page": 3
+            },
+            "entry_subjects": {
+              "math": 162,
+              "physics": 171,
+              "other": 2
+            },
+            "exit_classes": {
+              "task_pages": 119,
+              "physics_catalogs": 99,
+              "math_catalogs": 86,
+              "other": 3,
+              "math_part2": 15,
+              "physics_part2": 8,
+              "bare_root": 1,
+              "subject_hubs": 4
+            },
+            "additional_task_referrers": {
+              "external_search": 27,
+              "internal:task_pages": 8
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 13,
+              "internal:task_pages": 4
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 27,
+              "internal:task_pages": 5
+            }
+          },
+          "3": {
+            "visits": 22,
+            "pageviews": 41,
+            "bounce_visits": 7,
+            "duration_median_seconds": 16.5,
+            "duration_average_seconds": 199.8181818181818,
+            "duration_over_10min": 3,
+            "duration_under_15s": 7,
+            "one_page_visits": 16,
+            "opened_solution": 5,
+            "next_goal": 5,
+            "both_goals": 2,
+            "open_then_next_strict": 1,
+            "next_without_open": 3,
+            "open_next_open_strict": 1,
+            "two_distinct_solution_tasks": 2,
+            "two_distinct_task_pages": 3,
+            "multiple_task_pages_without_next_goal": 2,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:task_page": 6,
+              "663176354:catalogue": 46,
+              "663176353:dialog": 18
+            },
+            "entry_subjects": {
+              "physics": 8,
+              "math": 14
+            },
+            "exit_classes": {
+              "task_pages": 9,
+              "physics_catalogs": 4,
+              "math_catalogs": 4,
+              "math_part2": 5
+            },
+            "additional_task_referrers": {
+              "external_search": 2,
+              "internal:task_pages": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 2,
+              "internal:task_pages": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 2
+            }
+          }
+        }
+      },
+      "current6": {
+        "public_without_technical": {
+          "visits": 644,
+          "pageviews": 1422,
+          "bounce_visits": 187,
+          "duration_median_seconds": 16.0,
+          "duration_average_seconds": 301.9968944099379,
+          "duration_over_10min": 83,
+          "duration_under_15s": 198,
+          "one_page_visits": 481,
+          "opened_solution": 337,
+          "next_goal": 113,
+          "both_goals": 67,
+          "open_then_next_strict": 52,
+          "next_without_open": 46,
+          "open_next_open_strict": 46,
+          "two_distinct_solution_tasks": 95,
+          "two_distinct_task_pages": 52,
+          "multiple_task_pages_without_next_goal": 46,
+          "next_task_page_clicks": 77,
+          "next_task_page_target_loaded": 77,
+          "goal_placements": {
+            "663176353:task_page": 422,
+            "663176353:dialog": 668,
+            "663176354:catalogue": 1400,
+            "663176354:task_page": 77
+          },
+          "entry_subjects": {
+            "physics": 326,
+            "math": 314,
+            "other": 4
+          },
+          "exit_classes": {
+            "physics_catalogs": 125,
+            "task_pages": 282,
+            "math_part2": 29,
+            "subject_hubs": 9,
+            "physics_part2": 50,
+            "bare_root": 14,
+            "math_catalogs": 133,
+            "other": 2
+          },
+          "additional_task_referrers": {
+            "external_search": 80,
+            "internal:task_pages": 105,
+            "internal:other": 1,
+            "no_referrer": 157,
+            "internal:physics_catalogs": 1
+          },
+          "visits_with_additional_task_referrer": {
+            "external_search": 35,
+            "internal:task_pages": 16,
+            "internal:other": 1,
+            "no_referrer": 4,
+            "internal:physics_catalogs": 1
+          },
+          "additional_task_referrers_without_next_goal": {
+            "external_search": 72,
+            "internal:task_pages": 28,
+            "internal:other": 1,
+            "no_referrer": 137,
+            "internal:physics_catalogs": 1
+          }
+        },
+        "search_without_technical": {
+          "visits": 510,
+          "pageviews": 867,
+          "bounce_visits": 131,
+          "duration_median_seconds": 17.0,
+          "duration_average_seconds": 244.08235294117648,
+          "duration_over_10min": 60,
+          "duration_under_15s": 138,
+          "one_page_visits": 396,
+          "opened_solution": 278,
+          "next_goal": 91,
+          "both_goals": 50,
+          "open_then_next_strict": 37,
+          "next_without_open": 41,
+          "open_next_open_strict": 31,
+          "two_distinct_solution_tasks": 72,
+          "two_distinct_task_pages": 45,
+          "multiple_task_pages_without_next_goal": 40,
+          "next_task_page_clicks": 77,
+          "next_task_page_target_loaded": 77,
+          "goal_placements": {
+            "663176353:task_page": 367,
+            "663176354:catalogue": 1145,
+            "663176353:dialog": 426,
+            "663176354:task_page": 77
+          },
+          "entry_subjects": {
+            "physics": 265,
+            "math": 244,
+            "other": 1
+          },
+          "exit_classes": {
+            "task_pages": 239,
+            "math_part2": 18,
+            "physics_part2": 42,
+            "physics_catalogs": 91,
+            "math_catalogs": 110,
+            "subject_hubs": 6,
+            "other": 2,
+            "bare_root": 2
+          },
+          "additional_task_referrers": {
+            "external_search": 79,
+            "internal:task_pages": 94,
+            "no_referrer": 1,
+            "internal:physics_catalogs": 1
+          },
+          "visits_with_additional_task_referrer": {
+            "external_search": 34,
+            "internal:task_pages": 13,
+            "no_referrer": 1,
+            "internal:physics_catalogs": 1
+          },
+          "additional_task_referrers_without_next_goal": {
+            "external_search": 71,
+            "internal:task_pages": 17,
+            "no_referrer": 1,
+            "internal:physics_catalogs": 1
+          }
+        },
+        "landings": {
+          "bare_root": {
+            "visits": 2,
+            "pageviews": 3,
+            "bounce_visits": 0,
+            "duration_median_seconds": 34.0,
+            "duration_average_seconds": 34,
+            "duration_over_10min": 0,
+            "duration_under_15s": 0,
+            "one_page_visits": 1,
+            "opened_solution": 1,
+            "next_goal": 0,
+            "both_goals": 0,
+            "open_then_next_strict": 0,
+            "next_without_open": 0,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 0,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:dialog": 1
+            },
+            "entry_subjects": {
+              "math": 2
+            },
+            "exit_classes": {
+              "bare_root": 1,
+              "math_catalogs": 1
+            }
+          },
+          "math_catalogs": {
+            "visits": 113,
+            "pageviews": 169,
+            "bounce_visits": 39,
+            "duration_median_seconds": 17,
+            "duration_average_seconds": 235.36283185840708,
+            "duration_over_10min": 12,
+            "duration_under_15s": 39,
+            "one_page_visits": 94,
+            "opened_solution": 35,
+            "next_goal": 50,
+            "both_goals": 27,
+            "open_then_next_strict": 21,
+            "next_without_open": 23,
+            "open_next_open_strict": 19,
+            "two_distinct_solution_tasks": 20,
+            "two_distinct_task_pages": 1,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 1,
+            "next_task_page_target_loaded": 1,
+            "goal_placements": {
+              "663176353:dialog": 180,
+              "663176354:catalogue": 450,
+              "663176353:task_page": 5,
+              "663176354:task_page": 1
+            },
+            "entry_subjects": {
+              "math": 113
+            },
+            "exit_classes": {
+              "math_catalogs": 109,
+              "math_part2": 1,
+              "task_pages": 2,
+              "bare_root": 1
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 1
+            }
+          },
+          "math_part2": {
+            "visits": 17,
+            "pageviews": 18,
+            "bounce_visits": 7,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 110.41176470588235,
+            "duration_over_10min": 1,
+            "duration_under_15s": 7,
+            "one_page_visits": 16,
+            "opened_solution": 5,
+            "next_goal": 2,
+            "both_goals": 2,
+            "open_then_next_strict": 2,
+            "next_without_open": 0,
+            "open_next_open_strict": 2,
+            "two_distinct_solution_tasks": 2,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:dialog": 21,
+              "663176354:catalogue": 2
+            },
+            "entry_subjects": {
+              "math": 17
+            },
+            "exit_classes": {
+              "math_part2": 17
+            }
+          },
+          "physics_catalogs": {
+            "visits": 96,
+            "pageviews": 160,
+            "bounce_visits": 42,
+            "duration_median_seconds": 15.0,
+            "duration_average_seconds": 110.26041666666667,
+            "duration_over_10min": 6,
+            "duration_under_15s": 43,
+            "one_page_visits": 76,
+            "opened_solution": 22,
+            "next_goal": 18,
+            "both_goals": 7,
+            "open_then_next_strict": 4,
+            "next_without_open": 11,
+            "open_next_open_strict": 2,
+            "two_distinct_solution_tasks": 7,
+            "two_distinct_task_pages": 1,
+            "multiple_task_pages_without_next_goal": 1,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 224,
+              "663176353:dialog": 48,
+              "663176353:task_page": 5
+            },
+            "entry_subjects": {
+              "physics": 96
+            },
+            "exit_classes": {
+              "physics_catalogs": 89,
+              "other": 2,
+              "physics_part2": 1,
+              "task_pages": 3,
+              "subject_hubs": 1
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 2
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "internal:task_pages": 2
+            }
+          },
+          "physics_part2": {
+            "visits": 40,
+            "pageviews": 47,
+            "bounce_visits": 9,
+            "duration_median_seconds": 21.0,
+            "duration_average_seconds": 352.3,
+            "duration_over_10min": 6,
+            "duration_under_15s": 11,
+            "one_page_visits": 34,
+            "opened_solution": 16,
+            "next_goal": 16,
+            "both_goals": 10,
+            "open_then_next_strict": 6,
+            "next_without_open": 6,
+            "open_next_open_strict": 4,
+            "two_distinct_solution_tasks": 4,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 467,
+              "663176353:dialog": 39
+            },
+            "entry_subjects": {
+              "physics": 40
+            },
+            "exit_classes": {
+              "physics_part2": 40
+            }
+          },
+          "subject_hubs": {
+            "visits": 3,
+            "pageviews": 8,
+            "bounce_visits": 0,
+            "duration_median_seconds": 29,
+            "duration_average_seconds": 45.333333333333336,
+            "duration_over_10min": 0,
+            "duration_under_15s": 0,
+            "one_page_visits": 1,
+            "opened_solution": 2,
+            "next_goal": 0,
+            "both_goals": 0,
+            "open_then_next_strict": 0,
+            "next_without_open": 0,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 0,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:task_page": 2
+            },
+            "entry_subjects": {
+              "math": 1,
+              "physics": 1,
+              "other": 1
+            },
+            "exit_classes": {
+              "subject_hubs": 3
+            }
+          },
+          "task_pages": {
+            "visits": 239,
+            "pageviews": 462,
+            "bounce_visits": 34,
+            "duration_median_seconds": 18,
+            "duration_average_seconds": 297.60669456066944,
+            "duration_over_10min": 35,
+            "duration_under_15s": 38,
+            "one_page_visits": 174,
+            "opened_solution": 197,
+            "next_goal": 5,
+            "both_goals": 4,
+            "open_then_next_strict": 4,
+            "next_without_open": 1,
+            "open_next_open_strict": 4,
+            "two_distinct_solution_tasks": 39,
+            "two_distinct_task_pages": 43,
+            "multiple_task_pages_without_next_goal": 39,
+            "next_task_page_clicks": 76,
+            "next_task_page_target_loaded": 76,
+            "goal_placements": {
+              "663176353:task_page": 355,
+              "663176353:dialog": 137,
+              "663176354:task_page": 76,
+              "663176354:catalogue": 2
+            },
+            "entry_subjects": {
+              "physics": 128,
+              "math": 111
+            },
+            "exit_classes": {
+              "task_pages": 234,
+              "subject_hubs": 2,
+              "physics_catalogs": 2,
+              "physics_part2": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 79,
+              "internal:task_pages": 91,
+              "no_referrer": 1,
+              "internal:physics_catalogs": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 34,
+              "internal:task_pages": 11,
+              "no_referrer": 1,
+              "internal:physics_catalogs": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 71,
+              "internal:task_pages": 15,
+              "no_referrer": 1,
+              "internal:physics_catalogs": 1
+            }
+          }
+        },
+        "subjects": {
+          "math": {
+            "visits": 244,
+            "pageviews": 461,
+            "bounce_visits": 59,
+            "duration_median_seconds": 19.0,
+            "duration_average_seconds": 302.4016393442623,
+            "duration_over_10min": 35,
+            "duration_under_15s": 60,
+            "one_page_visits": 186,
+            "opened_solution": 141,
+            "next_goal": 55,
+            "both_goals": 32,
+            "open_then_next_strict": 26,
+            "next_without_open": 23,
+            "open_next_open_strict": 24,
+            "two_distinct_solution_tasks": 50,
+            "two_distinct_task_pages": 31,
+            "multiple_task_pages_without_next_goal": 27,
+            "next_task_page_clicks": 76,
+            "next_task_page_target_loaded": 76,
+            "goal_placements": {
+              "663176353:task_page": 234,
+              "663176353:dialog": 272,
+              "663176354:catalogue": 452,
+              "663176354:task_page": 76
+            },
+            "entry_subjects": {
+              "math": 244
+            },
+            "exit_classes": {
+              "math_part2": 18,
+              "task_pages": 113,
+              "math_catalogs": 110,
+              "subject_hubs": 1,
+              "bare_root": 2
+            },
+            "additional_task_referrers": {
+              "external_search": 58,
+              "no_referrer": 1,
+              "internal:task_pages": 84
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 25,
+              "no_referrer": 1,
+              "internal:task_pages": 7
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 55,
+              "no_referrer": 1,
+              "internal:task_pages": 8
+            }
+          },
+          "physics": {
+            "visits": 265,
+            "pageviews": 402,
+            "bounce_visits": 72,
+            "duration_median_seconds": 16,
+            "duration_average_seconds": 190.97735849056605,
+            "duration_over_10min": 25,
+            "duration_under_15s": 78,
+            "one_page_visits": 210,
+            "opened_solution": 136,
+            "next_goal": 36,
+            "both_goals": 18,
+            "open_then_next_strict": 11,
+            "next_without_open": 18,
+            "open_next_open_strict": 7,
+            "two_distinct_solution_tasks": 22,
+            "two_distinct_task_pages": 14,
+            "multiple_task_pages_without_next_goal": 13,
+            "next_task_page_clicks": 1,
+            "next_task_page_target_loaded": 1,
+            "goal_placements": {
+              "663176353:task_page": 132,
+              "663176354:catalogue": 693,
+              "663176353:dialog": 154,
+              "663176354:task_page": 1
+            },
+            "entry_subjects": {
+              "physics": 265
+            },
+            "exit_classes": {
+              "task_pages": 126,
+              "physics_part2": 42,
+              "physics_catalogs": 91,
+              "subject_hubs": 4,
+              "other": 2
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 10,
+              "external_search": 21,
+              "internal:physics_catalogs": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 6,
+              "external_search": 9,
+              "internal:physics_catalogs": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "internal:task_pages": 9,
+              "external_search": 16,
+              "internal:physics_catalogs": 1
+            }
+          }
+        },
+        "devices": {
+          "1": {
+            "visits": 286,
+            "pageviews": 403,
+            "bounce_visits": 63,
+            "duration_median_seconds": 16.0,
+            "duration_average_seconds": 254.48951048951048,
+            "duration_over_10min": 32,
+            "duration_under_15s": 66,
+            "one_page_visits": 236,
+            "opened_solution": 155,
+            "next_goal": 51,
+            "both_goals": 26,
+            "open_then_next_strict": 19,
+            "next_without_open": 25,
+            "open_next_open_strict": 16,
+            "two_distinct_solution_tasks": 41,
+            "two_distinct_task_pages": 26,
+            "multiple_task_pages_without_next_goal": 25,
+            "next_task_page_clicks": 1,
+            "next_task_page_target_loaded": 1,
+            "goal_placements": {
+              "663176354:catalogue": 767,
+              "663176353:dialog": 233,
+              "663176353:task_page": 182,
+              "663176354:task_page": 1
+            },
+            "entry_subjects": {
+              "math": 139,
+              "physics": 147
+            },
+            "exit_classes": {
+              "math_part2": 11,
+              "physics_catalogs": 48,
+              "physics_part2": 28,
+              "task_pages": 137,
+              "math_catalogs": 59,
+              "subject_hubs": 2,
+              "bare_root": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 48,
+              "no_referrer": 1,
+              "internal:physics_catalogs": 1,
+              "internal:task_pages": 11
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 20,
+              "no_referrer": 1,
+              "internal:physics_catalogs": 1,
+              "internal:task_pages": 6
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 48,
+              "no_referrer": 1,
+              "internal:physics_catalogs": 1,
+              "internal:task_pages": 10
+            }
+          },
+          "2": {
+            "visits": 213,
+            "pageviews": 377,
+            "bounce_visits": 66,
+            "duration_median_seconds": 19,
+            "duration_average_seconds": 210.96244131455398,
+            "duration_over_10min": 27,
+            "duration_under_15s": 70,
+            "one_page_visits": 153,
+            "opened_solution": 121,
+            "next_goal": 37,
+            "both_goals": 23,
+            "open_then_next_strict": 17,
+            "next_without_open": 14,
+            "open_next_open_strict": 14,
+            "two_distinct_solution_tasks": 30,
+            "two_distinct_task_pages": 18,
+            "multiple_task_pages_without_next_goal": 15,
+            "next_task_page_clicks": 7,
+            "next_task_page_target_loaded": 7,
+            "goal_placements": {
+              "663176353:task_page": 118,
+              "663176353:dialog": 193,
+              "663176354:catalogue": 370,
+              "663176354:task_page": 7
+            },
+            "entry_subjects": {
+              "physics": 112,
+              "math": 100,
+              "other": 1
+            },
+            "exit_classes": {
+              "task_pages": 99,
+              "physics_part2": 12,
+              "math_catalogs": 49,
+              "physics_catalogs": 41,
+              "math_part2": 6,
+              "subject_hubs": 3,
+              "other": 2,
+              "bare_root": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 28,
+              "internal:task_pages": 14
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 13,
+              "internal:task_pages": 6
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 23,
+              "internal:task_pages": 7
+            }
+          },
+          "3": {
+            "visits": 11,
+            "pageviews": 87,
+            "bounce_visits": 2,
+            "duration_median_seconds": 16,
+            "duration_average_seconds": 614.8181818181819,
+            "duration_over_10min": 1,
+            "duration_under_15s": 2,
+            "one_page_visits": 7,
+            "opened_solution": 2,
+            "next_goal": 3,
+            "both_goals": 1,
+            "open_then_next_strict": 1,
+            "next_without_open": 2,
+            "open_next_open_strict": 1,
+            "two_distinct_solution_tasks": 1,
+            "two_distinct_task_pages": 1,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 69,
+            "next_task_page_target_loaded": 69,
+            "goal_placements": {
+              "663176353:task_page": 67,
+              "663176354:task_page": 69,
+              "663176354:catalogue": 8
+            },
+            "entry_subjects": {
+              "physics": 6,
+              "math": 5
+            },
+            "exit_classes": {
+              "physics_part2": 2,
+              "math_catalogs": 2,
+              "physics_catalogs": 2,
+              "task_pages": 3,
+              "math_part2": 1,
+              "subject_hubs": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 3,
+              "internal:task_pages": 69
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 1,
+              "internal:task_pages": 1
+            }
+          }
+        }
+      },
+      "goals_before4": {
+        "public_without_technical": {
+          "visits": 650,
+          "pageviews": 1199,
+          "bounce_visits": 247,
+          "duration_median_seconds": 15.0,
+          "duration_average_seconds": 163.89538461538461,
+          "duration_over_10min": 53,
+          "duration_under_15s": 259,
+          "one_page_visits": 493,
+          "opened_solution": 185,
+          "next_goal": 109,
+          "both_goals": 35,
+          "open_then_next_strict": 30,
+          "next_without_open": 74,
+          "open_next_open_strict": 27,
+          "two_distinct_solution_tasks": 48,
+          "two_distinct_task_pages": 32,
+          "multiple_task_pages_without_next_goal": 28,
+          "next_task_page_clicks": 5,
+          "next_task_page_target_loaded": 5,
+          "goal_placements": {
+            "663176353:task_page": 191,
+            "663176353:dialog": 463,
+            "663176354:catalogue": 1696,
+            "663176354:task_page": 5
+          },
+          "entry_subjects": {
+            "math": 291,
+            "physics": 355,
+            "other": 4
+          },
+          "exit_classes": {
+            "math_catalogs": 148,
+            "physics_part2": 20,
+            "physics_catalogs": 208,
+            "task_pages": 222,
+            "other": 5,
+            "bare_root": 17,
+            "math_part2": 21,
+            "subject_hubs": 9
+          },
+          "additional_task_referrers": {
+            "external_search": 45,
+            "internal:task_pages": 26,
+            "no_referrer": 78,
+            "internal:other": 2
+          },
+          "visits_with_additional_task_referrer": {
+            "external_search": 22,
+            "internal:task_pages": 11,
+            "no_referrer": 1,
+            "internal:other": 2
+          },
+          "additional_task_referrers_without_next_goal": {
+            "external_search": 42,
+            "internal:task_pages": 21,
+            "no_referrer": 78,
+            "internal:other": 2
+          }
+        },
+        "search_without_technical": {
+          "visits": 559,
+          "pageviews": 975,
+          "bounce_visits": 190,
+          "duration_median_seconds": 15,
+          "duration_average_seconds": 166.16100178890878,
+          "duration_over_10min": 43,
+          "duration_under_15s": 199,
+          "one_page_visits": 417,
+          "opened_solution": 164,
+          "next_goal": 103,
+          "both_goals": 34,
+          "open_then_next_strict": 29,
+          "next_without_open": 69,
+          "open_next_open_strict": 26,
+          "two_distinct_solution_tasks": 44,
+          "two_distinct_task_pages": 28,
+          "multiple_task_pages_without_next_goal": 24,
+          "next_task_page_clicks": 5,
+          "next_task_page_target_loaded": 5,
+          "goal_placements": {
+            "663176353:task_page": 168,
+            "663176353:dialog": 432,
+            "663176354:catalogue": 1619,
+            "663176354:task_page": 5
+          },
+          "entry_subjects": {
+            "math": 256,
+            "physics": 299,
+            "other": 4
+          },
+          "exit_classes": {
+            "math_catalogs": 140,
+            "physics_part2": 20,
+            "physics_catalogs": 184,
+            "task_pages": 177,
+            "other": 5,
+            "bare_root": 7,
+            "math_part2": 18,
+            "subject_hubs": 8
+          },
+          "additional_task_referrers": {
+            "external_search": 45,
+            "internal:task_pages": 19,
+            "internal:other": 1
+          },
+          "visits_with_additional_task_referrer": {
+            "external_search": 22,
+            "internal:task_pages": 8,
+            "internal:other": 1
+          },
+          "additional_task_referrers_without_next_goal": {
+            "external_search": 42,
+            "internal:task_pages": 14,
+            "internal:other": 1
+          }
+        },
+        "landings": {
+          "bare_root": {
+            "visits": 3,
+            "pageviews": 20,
+            "bounce_visits": 0,
+            "duration_median_seconds": 32,
+            "duration_average_seconds": 74,
+            "duration_over_10min": 0,
+            "duration_under_15s": 0,
+            "one_page_visits": 1,
+            "opened_solution": 0,
+            "next_goal": 1,
+            "both_goals": 0,
+            "open_then_next_strict": 0,
+            "next_without_open": 1,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 0,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 6
+            },
+            "entry_subjects": {
+              "math": 3
+            },
+            "exit_classes": {
+              "bare_root": 2,
+              "physics_catalogs": 1
+            }
+          },
+          "math_catalogs": {
+            "visits": 155,
+            "pageviews": 317,
+            "bounce_visits": 56,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 283.19354838709677,
+            "duration_over_10min": 18,
+            "duration_under_15s": 58,
+            "one_page_visits": 116,
+            "opened_solution": 35,
+            "next_goal": 55,
+            "both_goals": 27,
+            "open_then_next_strict": 23,
+            "next_without_open": 28,
+            "open_next_open_strict": 22,
+            "two_distinct_solution_tasks": 21,
+            "two_distinct_task_pages": 3,
+            "multiple_task_pages_without_next_goal": 1,
+            "next_task_page_clicks": 3,
+            "next_task_page_target_loaded": 3,
+            "goal_placements": {
+              "663176354:catalogue": 1040,
+              "663176353:dialog": 336,
+              "663176353:task_page": 14,
+              "663176354:task_page": 3
+            },
+            "entry_subjects": {
+              "math": 155
+            },
+            "exit_classes": {
+              "math_catalogs": 140,
+              "other": 2,
+              "bare_root": 4,
+              "math_part2": 6,
+              "task_pages": 1,
+              "subject_hubs": 2
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 11,
+              "internal:other": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 3,
+              "internal:other": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "internal:task_pages": 8,
+              "internal:other": 1
+            }
+          },
+          "math_part2": {
+            "visits": 10,
+            "pageviews": 15,
+            "bounce_visits": 3,
+            "duration_median_seconds": 16.0,
+            "duration_average_seconds": 17.5,
+            "duration_over_10min": 0,
+            "duration_under_15s": 3,
+            "one_page_visits": 9,
+            "opened_solution": 0,
+            "next_goal": 1,
+            "both_goals": 0,
+            "open_then_next_strict": 0,
+            "next_without_open": 1,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 0,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 19
+            },
+            "entry_subjects": {
+              "math": 10
+            },
+            "exit_classes": {
+              "math_part2": 10
+            }
+          },
+          "physics_catalogs": {
+            "visits": 192,
+            "pageviews": 302,
+            "bounce_visits": 95,
+            "duration_median_seconds": 11.5,
+            "duration_average_seconds": 93.54166666666667,
+            "duration_over_10min": 7,
+            "duration_under_15s": 99,
+            "one_page_visits": 144,
+            "opened_solution": 9,
+            "next_goal": 38,
+            "both_goals": 3,
+            "open_then_next_strict": 2,
+            "next_without_open": 35,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 0,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:dialog": 9,
+              "663176354:catalogue": 378,
+              "663176353:task_page": 4
+            },
+            "entry_subjects": {
+              "physics": 192
+            },
+            "exit_classes": {
+              "physics_catalogs": 180,
+              "physics_part2": 6,
+              "task_pages": 5,
+              "other": 1
+            }
+          },
+          "physics_part2": {
+            "visits": 14,
+            "pageviews": 34,
+            "bounce_visits": 3,
+            "duration_median_seconds": 16.5,
+            "duration_average_seconds": 275.57142857142856,
+            "duration_over_10min": 2,
+            "duration_under_15s": 3,
+            "one_page_visits": 9,
+            "opened_solution": 3,
+            "next_goal": 2,
+            "both_goals": 2,
+            "open_then_next_strict": 2,
+            "next_without_open": 0,
+            "open_next_open_strict": 2,
+            "two_distinct_solution_tasks": 2,
+            "two_distinct_task_pages": 1,
+            "multiple_task_pages_without_next_goal": 1,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:task_page": 4,
+              "663176353:dialog": 6,
+              "663176354:catalogue": 63
+            },
+            "entry_subjects": {
+              "physics": 14
+            },
+            "exit_classes": {
+              "physics_part2": 13,
+              "task_pages": 1
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 4
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "internal:task_pages": 4
+            }
+          },
+          "subject_hubs": {
+            "visits": 10,
+            "pageviews": 37,
+            "bounce_visits": 3,
+            "duration_median_seconds": 35.0,
+            "duration_average_seconds": 136.9,
+            "duration_over_10min": 1,
+            "duration_under_15s": 3,
+            "one_page_visits": 4,
+            "opened_solution": 2,
+            "next_goal": 2,
+            "both_goals": 0,
+            "open_then_next_strict": 0,
+            "next_without_open": 2,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 1,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 91,
+              "663176353:dialog": 3
+            },
+            "entry_subjects": {
+              "physics": 6,
+              "other": 4
+            },
+            "exit_classes": {
+              "subject_hubs": 6,
+              "physics_part2": 1,
+              "bare_root": 1,
+              "physics_catalogs": 1,
+              "math_part2": 1
+            }
+          },
+          "task_pages": {
+            "visits": 175,
+            "pageviews": 250,
+            "bounce_visits": 30,
+            "duration_median_seconds": 18,
+            "duration_average_seconds": 145.17142857142858,
+            "duration_over_10min": 15,
+            "duration_under_15s": 33,
+            "one_page_visits": 134,
+            "opened_solution": 115,
+            "next_goal": 4,
+            "both_goals": 2,
+            "open_then_next_strict": 2,
+            "next_without_open": 2,
+            "open_next_open_strict": 2,
+            "two_distinct_solution_tasks": 20,
+            "two_distinct_task_pages": 24,
+            "multiple_task_pages_without_next_goal": 22,
+            "next_task_page_clicks": 2,
+            "next_task_page_target_loaded": 2,
+            "goal_placements": {
+              "663176353:task_page": 146,
+              "663176353:dialog": 78,
+              "663176354:task_page": 2,
+              "663176354:catalogue": 22
+            },
+            "entry_subjects": {
+              "physics": 87,
+              "math": 88
+            },
+            "exit_classes": {
+              "task_pages": 170,
+              "other": 2,
+              "physics_catalogs": 2,
+              "math_part2": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 45,
+              "internal:task_pages": 4
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 22,
+              "internal:task_pages": 4
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 42,
+              "internal:task_pages": 2
+            }
+          }
+        },
+        "subjects": {
+          "math": {
+            "visits": 256,
+            "pageviews": 491,
+            "bounce_visits": 67,
+            "duration_median_seconds": 16.0,
+            "duration_average_seconds": 253.6875,
+            "duration_over_10min": 31,
+            "duration_under_15s": 70,
+            "one_page_visits": 189,
+            "opened_solution": 115,
+            "next_goal": 59,
+            "both_goals": 29,
+            "open_then_next_strict": 25,
+            "next_without_open": 30,
+            "open_next_open_strict": 24,
+            "two_distinct_solution_tasks": 41,
+            "two_distinct_task_pages": 22,
+            "multiple_task_pages_without_next_goal": 19,
+            "next_task_page_clicks": 4,
+            "next_task_page_target_loaded": 4,
+            "goal_placements": {
+              "663176353:task_page": 127,
+              "663176354:catalogue": 1068,
+              "663176353:dialog": 396,
+              "663176354:task_page": 4
+            },
+            "entry_subjects": {
+              "math": 256
+            },
+            "exit_classes": {
+              "math_catalogs": 140,
+              "task_pages": 88,
+              "other": 2,
+              "bare_root": 6,
+              "math_part2": 17,
+              "subject_hubs": 2,
+              "physics_catalogs": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 42,
+              "internal:task_pages": 12,
+              "internal:other": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 19,
+              "internal:task_pages": 4,
+              "internal:other": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 39,
+              "internal:task_pages": 8,
+              "internal:other": 1
+            }
+          },
+          "physics": {
+            "visits": 299,
+            "pageviews": 472,
+            "bounce_visits": 122,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 92.67224080267559,
+            "duration_over_10min": 12,
+            "duration_under_15s": 128,
+            "one_page_visits": 227,
+            "opened_solution": 48,
+            "next_goal": 44,
+            "both_goals": 5,
+            "open_then_next_strict": 4,
+            "next_without_open": 39,
+            "open_next_open_strict": 2,
+            "two_distinct_solution_tasks": 3,
+            "two_distinct_task_pages": 6,
+            "multiple_task_pages_without_next_goal": 5,
+            "next_task_page_clicks": 1,
+            "next_task_page_target_loaded": 1,
+            "goal_placements": {
+              "663176353:task_page": 41,
+              "663176353:dialog": 35,
+              "663176354:catalogue": 551,
+              "663176354:task_page": 1
+            },
+            "entry_subjects": {
+              "physics": 299
+            },
+            "exit_classes": {
+              "physics_part2": 20,
+              "physics_catalogs": 183,
+              "task_pages": 89,
+              "other": 3,
+              "subject_hubs": 3,
+              "math_part2": 1
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 7,
+              "external_search": 3
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 4,
+              "external_search": 3
+            },
+            "additional_task_referrers_without_next_goal": {
+              "internal:task_pages": 6,
+              "external_search": 3
+            }
+          }
+        },
+        "devices": {
+          "1": {
+            "visits": 295,
+            "pageviews": 498,
+            "bounce_visits": 88,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 151.12881355932203,
+            "duration_over_10min": 24,
+            "duration_under_15s": 90,
+            "one_page_visits": 222,
+            "opened_solution": 93,
+            "next_goal": 59,
+            "both_goals": 18,
+            "open_then_next_strict": 16,
+            "next_without_open": 41,
+            "open_next_open_strict": 14,
+            "two_distinct_solution_tasks": 20,
+            "two_distinct_task_pages": 15,
+            "multiple_task_pages_without_next_goal": 12,
+            "next_task_page_clicks": 3,
+            "next_task_page_target_loaded": 3,
+            "goal_placements": {
+              "663176353:task_page": 105,
+              "663176353:dialog": 109,
+              "663176354:catalogue": 1041,
+              "663176354:task_page": 3
+            },
+            "entry_subjects": {
+              "math": 129,
+              "physics": 164,
+              "other": 2
+            },
+            "exit_classes": {
+              "math_catalogs": 73,
+              "physics_part2": 13,
+              "task_pages": 94,
+              "physics_catalogs": 98,
+              "bare_root": 6,
+              "other": 2,
+              "math_part2": 5,
+              "subject_hubs": 4
+            },
+            "additional_task_referrers": {
+              "external_search": 25,
+              "internal:task_pages": 12,
+              "internal:other": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 12,
+              "internal:task_pages": 5,
+              "internal:other": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 22,
+              "internal:task_pages": 9,
+              "internal:other": 1
+            }
+          },
+          "2": {
+            "visits": 249,
+            "pageviews": 459,
+            "bounce_visits": 98,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 188.97590361445782,
+            "duration_over_10min": 18,
+            "duration_under_15s": 105,
+            "one_page_visits": 182,
+            "opened_solution": 68,
+            "next_goal": 40,
+            "both_goals": 15,
+            "open_then_next_strict": 13,
+            "next_without_open": 25,
+            "open_next_open_strict": 12,
+            "two_distinct_solution_tasks": 23,
+            "two_distinct_task_pages": 12,
+            "multiple_task_pages_without_next_goal": 11,
+            "next_task_page_clicks": 2,
+            "next_task_page_target_loaded": 2,
+            "goal_placements": {
+              "663176353:task_page": 60,
+              "663176353:dialog": 318,
+              "663176354:catalogue": 539,
+              "663176354:task_page": 2
+            },
+            "entry_subjects": {
+              "physics": 129,
+              "math": 118,
+              "other": 2
+            },
+            "exit_classes": {
+              "physics_catalogs": 82,
+              "task_pages": 79,
+              "math_catalogs": 63,
+              "other": 3,
+              "math_part2": 10,
+              "physics_part2": 7,
+              "bare_root": 1,
+              "subject_hubs": 4
+            },
+            "additional_task_referrers": {
+              "external_search": 19,
+              "internal:task_pages": 7
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 9,
+              "internal:task_pages": 3
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 19,
+              "internal:task_pages": 5
+            }
+          },
+          "3": {
+            "visits": 15,
+            "pageviews": 18,
+            "bounce_visits": 4,
+            "duration_median_seconds": 16,
+            "duration_average_seconds": 83.06666666666666,
+            "duration_over_10min": 1,
+            "duration_under_15s": 4,
+            "one_page_visits": 13,
+            "opened_solution": 3,
+            "next_goal": 4,
+            "both_goals": 1,
+            "open_then_next_strict": 0,
+            "next_without_open": 3,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 1,
+            "two_distinct_task_pages": 1,
+            "multiple_task_pages_without_next_goal": 1,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:task_page": 3,
+              "663176354:catalogue": 39,
+              "663176353:dialog": 5
+            },
+            "entry_subjects": {
+              "physics": 6,
+              "math": 9
+            },
+            "exit_classes": {
+              "task_pages": 4,
+              "physics_catalogs": 4,
+              "math_catalogs": 4,
+              "math_part2": 3
+            },
+            "additional_task_referrers": {
+              "external_search": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 1
+            }
+          }
+        }
+      },
+      "goals_after4": {
+        "public_without_technical": {
+          "visits": 399,
+          "pageviews": 858,
+          "bounce_visits": 110,
+          "duration_median_seconds": 16,
+          "duration_average_seconds": 365.0726817042607,
+          "duration_over_10min": 61,
+          "duration_under_15s": 120,
+          "one_page_visits": 288,
+          "opened_solution": 220,
+          "next_goal": 58,
+          "both_goals": 36,
+          "open_then_next_strict": 30,
+          "next_without_open": 22,
+          "open_next_open_strict": 26,
+          "two_distinct_solution_tasks": 63,
+          "two_distinct_task_pages": 38,
+          "multiple_task_pages_without_next_goal": 34,
+          "next_task_page_clicks": 75,
+          "next_task_page_target_loaded": 75,
+          "goal_placements": {
+            "663176353:task_page": 322,
+            "663176353:dialog": 443,
+            "663176354:catalogue": 985,
+            "663176354:task_page": 75
+          },
+          "entry_subjects": {
+            "physics": 214,
+            "math": 181,
+            "other": 4
+          },
+          "exit_classes": {
+            "physics_catalogs": 70,
+            "task_pages": 190,
+            "math_part2": 21,
+            "subject_hubs": 8,
+            "physics_part2": 36,
+            "bare_root": 11,
+            "math_catalogs": 63
+          },
+          "additional_task_referrers": {
+            "external_search": 67,
+            "internal:task_pages": 98,
+            "internal:other": 1,
+            "no_referrer": 21,
+            "internal:physics_catalogs": 1
+          },
+          "visits_with_additional_task_referrer": {
+            "external_search": 28,
+            "internal:task_pages": 10,
+            "internal:other": 1,
+            "no_referrer": 2,
+            "internal:physics_catalogs": 1
+          },
+          "additional_task_referrers_without_next_goal": {
+            "external_search": 59,
+            "internal:task_pages": 23,
+            "internal:other": 1,
+            "internal:physics_catalogs": 1,
+            "no_referrer": 1
+          }
+        },
+        "search_without_technical": {
+          "visits": 307,
+          "pageviews": 548,
+          "bounce_visits": 73,
+          "duration_median_seconds": 17,
+          "duration_average_seconds": 300.53745928338765,
+          "duration_over_10min": 43,
+          "duration_under_15s": 79,
+          "one_page_visits": 232,
+          "opened_solution": 174,
+          "next_goal": 44,
+          "both_goals": 24,
+          "open_then_next_strict": 20,
+          "next_without_open": 20,
+          "open_next_open_strict": 16,
+          "two_distinct_solution_tasks": 45,
+          "two_distinct_task_pages": 33,
+          "multiple_task_pages_without_next_goal": 30,
+          "next_task_page_clicks": 75,
+          "next_task_page_target_loaded": 75,
+          "goal_placements": {
+            "663176353:task_page": 275,
+            "663176354:catalogue": 762,
+            "663176353:dialog": 224,
+            "663176354:task_page": 75
+          },
+          "entry_subjects": {
+            "physics": 173,
+            "math": 133,
+            "other": 1
+          },
+          "exit_classes": {
+            "task_pages": 157,
+            "math_part2": 12,
+            "physics_part2": 32,
+            "physics_catalogs": 50,
+            "math_catalogs": 50,
+            "subject_hubs": 5,
+            "bare_root": 1
+          },
+          "additional_task_referrers": {
+            "external_search": 66,
+            "internal:task_pages": 88,
+            "internal:physics_catalogs": 1
+          },
+          "visits_with_additional_task_referrer": {
+            "external_search": 27,
+            "internal:task_pages": 8,
+            "internal:physics_catalogs": 1
+          },
+          "additional_task_referrers_without_next_goal": {
+            "external_search": 58,
+            "internal:task_pages": 13,
+            "internal:physics_catalogs": 1
+          }
+        },
+        "landings": {
+          "bare_root": {
+            "visits": 1,
+            "pageviews": 1,
+            "bounce_visits": 0,
+            "duration_median_seconds": 17,
+            "duration_average_seconds": 17,
+            "duration_over_10min": 0,
+            "duration_under_15s": 0,
+            "one_page_visits": 1,
+            "opened_solution": 0,
+            "next_goal": 0,
+            "both_goals": 0,
+            "open_then_next_strict": 0,
+            "next_without_open": 0,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 0,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {},
+            "entry_subjects": {
+              "math": 1
+            },
+            "exit_classes": {
+              "bare_root": 1
+            }
+          },
+          "math_catalogs": {
+            "visits": 50,
+            "pageviews": 57,
+            "bounce_visits": 18,
+            "duration_median_seconds": 19.0,
+            "duration_average_seconds": 155.8,
+            "duration_over_10min": 2,
+            "duration_under_15s": 18,
+            "one_page_visits": 44,
+            "opened_solution": 14,
+            "next_goal": 19,
+            "both_goals": 10,
+            "open_then_next_strict": 8,
+            "next_without_open": 9,
+            "open_next_open_strict": 6,
+            "two_distinct_solution_tasks": 6,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:dialog": 56,
+              "663176354:catalogue": 170
+            },
+            "entry_subjects": {
+              "math": 50
+            },
+            "exit_classes": {
+              "math_catalogs": 50
+            }
+          },
+          "math_part2": {
+            "visits": 12,
+            "pageviews": 13,
+            "bounce_visits": 5,
+            "duration_median_seconds": 15.0,
+            "duration_average_seconds": 152.58333333333334,
+            "duration_over_10min": 1,
+            "duration_under_15s": 5,
+            "one_page_visits": 11,
+            "opened_solution": 4,
+            "next_goal": 1,
+            "both_goals": 1,
+            "open_then_next_strict": 1,
+            "next_without_open": 0,
+            "open_next_open_strict": 1,
+            "two_distinct_solution_tasks": 1,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:dialog": 7,
+              "663176354:catalogue": 1
+            },
+            "entry_subjects": {
+              "math": 12
+            },
+            "exit_classes": {
+              "math_part2": 12
+            }
+          },
+          "physics_catalogs": {
+            "visits": 51,
+            "pageviews": 77,
+            "bounce_visits": 21,
+            "duration_median_seconds": 15,
+            "duration_average_seconds": 111.56862745098039,
+            "duration_over_10min": 3,
+            "duration_under_15s": 22,
+            "one_page_visits": 41,
+            "opened_solution": 13,
+            "next_goal": 10,
+            "both_goals": 4,
+            "open_then_next_strict": 2,
+            "next_without_open": 6,
+            "open_next_open_strict": 2,
+            "two_distinct_solution_tasks": 4,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 147,
+              "663176353:dialog": 38,
+              "663176353:task_page": 2
+            },
+            "entry_subjects": {
+              "physics": 51
+            },
+            "exit_classes": {
+              "physics_catalogs": 48,
+              "task_pages": 2,
+              "subject_hubs": 1
+            }
+          },
+          "physics_part2": {
+            "visits": 31,
+            "pageviews": 37,
+            "bounce_visits": 7,
+            "duration_median_seconds": 19,
+            "duration_average_seconds": 419.83870967741933,
+            "duration_over_10min": 5,
+            "duration_under_15s": 8,
+            "one_page_visits": 26,
+            "opened_solution": 12,
+            "next_goal": 10,
+            "both_goals": 6,
+            "open_then_next_strict": 6,
+            "next_without_open": 4,
+            "open_next_open_strict": 4,
+            "two_distinct_solution_tasks": 4,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 442,
+              "663176353:dialog": 35
+            },
+            "entry_subjects": {
+              "physics": 31
+            },
+            "exit_classes": {
+              "physics_part2": 31
+            }
+          },
+          "subject_hubs": {
+            "visits": 2,
+            "pageviews": 7,
+            "bounce_visits": 0,
+            "duration_median_seconds": 58.0,
+            "duration_average_seconds": 58,
+            "duration_over_10min": 0,
+            "duration_under_15s": 0,
+            "one_page_visits": 0,
+            "opened_solution": 2,
+            "next_goal": 0,
+            "both_goals": 0,
+            "open_then_next_strict": 0,
+            "next_without_open": 0,
+            "open_next_open_strict": 0,
+            "two_distinct_solution_tasks": 0,
+            "two_distinct_task_pages": 0,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176353:task_page": 2
+            },
+            "entry_subjects": {
+              "physics": 1,
+              "other": 1
+            },
+            "exit_classes": {
+              "subject_hubs": 2
+            }
+          },
+          "task_pages": {
+            "visits": 160,
+            "pageviews": 356,
+            "bounce_visits": 22,
+            "duration_median_seconds": 18.0,
+            "duration_average_seconds": 398.7875,
+            "duration_over_10min": 32,
+            "duration_under_15s": 26,
+            "one_page_visits": 109,
+            "opened_solution": 129,
+            "next_goal": 4,
+            "both_goals": 3,
+            "open_then_next_strict": 3,
+            "next_without_open": 1,
+            "open_next_open_strict": 3,
+            "two_distinct_solution_tasks": 30,
+            "two_distinct_task_pages": 33,
+            "multiple_task_pages_without_next_goal": 30,
+            "next_task_page_clicks": 75,
+            "next_task_page_target_loaded": 75,
+            "goal_placements": {
+              "663176353:task_page": 271,
+              "663176353:dialog": 88,
+              "663176354:task_page": 75,
+              "663176354:catalogue": 2
+            },
+            "entry_subjects": {
+              "physics": 90,
+              "math": 70
+            },
+            "exit_classes": {
+              "task_pages": 155,
+              "subject_hubs": 2,
+              "physics_catalogs": 2,
+              "physics_part2": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 66,
+              "internal:task_pages": 88,
+              "internal:physics_catalogs": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 27,
+              "internal:task_pages": 8,
+              "internal:physics_catalogs": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 58,
+              "internal:task_pages": 13,
+              "internal:physics_catalogs": 1
+            }
+          }
+        },
+        "subjects": {
+          "math": {
+            "visits": 133,
+            "pageviews": 282,
+            "bounce_visits": 31,
+            "duration_median_seconds": 19,
+            "duration_average_seconds": 381.30075187969925,
+            "duration_over_10min": 24,
+            "duration_under_15s": 32,
+            "one_page_visits": 99,
+            "opened_solution": 80,
+            "next_goal": 22,
+            "both_goals": 13,
+            "open_then_next_strict": 11,
+            "next_without_open": 9,
+            "open_next_open_strict": 9,
+            "two_distinct_solution_tasks": 28,
+            "two_distinct_task_pages": 23,
+            "multiple_task_pages_without_next_goal": 21,
+            "next_task_page_clicks": 74,
+            "next_task_page_target_loaded": 74,
+            "goal_placements": {
+              "663176353:dialog": 105,
+              "663176353:task_page": 177,
+              "663176354:catalogue": 171,
+              "663176354:task_page": 74
+            },
+            "entry_subjects": {
+              "math": 133
+            },
+            "exit_classes": {
+              "math_part2": 12,
+              "math_catalogs": 50,
+              "task_pages": 70,
+              "bare_root": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 48,
+              "internal:task_pages": 81
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 20,
+              "internal:task_pages": 4
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 45,
+              "internal:task_pages": 7
+            }
+          },
+          "physics": {
+            "visits": 173,
+            "pageviews": 262,
+            "bounce_visits": 42,
+            "duration_median_seconds": 16,
+            "duration_average_seconds": 239.68208092485548,
+            "duration_over_10min": 19,
+            "duration_under_15s": 47,
+            "one_page_visits": 133,
+            "opened_solution": 93,
+            "next_goal": 22,
+            "both_goals": 11,
+            "open_then_next_strict": 9,
+            "next_without_open": 11,
+            "open_next_open_strict": 7,
+            "two_distinct_solution_tasks": 17,
+            "two_distinct_task_pages": 10,
+            "multiple_task_pages_without_next_goal": 9,
+            "next_task_page_clicks": 1,
+            "next_task_page_target_loaded": 1,
+            "goal_placements": {
+              "663176353:task_page": 97,
+              "663176354:catalogue": 591,
+              "663176353:dialog": 119,
+              "663176354:task_page": 1
+            },
+            "entry_subjects": {
+              "physics": 173
+            },
+            "exit_classes": {
+              "task_pages": 87,
+              "physics_part2": 32,
+              "physics_catalogs": 50,
+              "subject_hubs": 4
+            },
+            "additional_task_referrers": {
+              "internal:task_pages": 7,
+              "external_search": 18,
+              "internal:physics_catalogs": 1
+            },
+            "visits_with_additional_task_referrer": {
+              "internal:task_pages": 4,
+              "external_search": 7,
+              "internal:physics_catalogs": 1
+            },
+            "additional_task_referrers_without_next_goal": {
+              "internal:task_pages": 6,
+              "external_search": 13,
+              "internal:physics_catalogs": 1
+            }
+          }
+        },
+        "devices": {
+          "1": {
+            "visits": 171,
+            "pageviews": 246,
+            "bounce_visits": 34,
+            "duration_median_seconds": 16,
+            "duration_average_seconds": 304.4970760233918,
+            "duration_over_10min": 20,
+            "duration_under_15s": 36,
+            "one_page_visits": 141,
+            "opened_solution": 97,
+            "next_goal": 23,
+            "both_goals": 11,
+            "open_then_next_strict": 9,
+            "next_without_open": 12,
+            "open_next_open_strict": 7,
+            "two_distinct_solution_tasks": 25,
+            "two_distinct_task_pages": 17,
+            "multiple_task_pages_without_next_goal": 17,
+            "next_task_page_clicks": 0,
+            "next_task_page_target_loaded": 0,
+            "goal_placements": {
+              "663176354:catalogue": 576,
+              "663176353:task_page": 122,
+              "663176353:dialog": 120
+            },
+            "entry_subjects": {
+              "math": 76,
+              "physics": 95
+            },
+            "exit_classes": {
+              "math_part2": 7,
+              "physics_catalogs": 28,
+              "task_pages": 86,
+              "physics_part2": 21,
+              "math_catalogs": 28,
+              "subject_hubs": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 38,
+              "internal:physics_catalogs": 1,
+              "internal:task_pages": 6
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 15,
+              "internal:physics_catalogs": 1,
+              "internal:task_pages": 2
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 38,
+              "internal:physics_catalogs": 1,
+              "internal:task_pages": 6
+            }
+          },
+          "2": {
+            "visits": 126,
+            "pageviews": 216,
+            "bounce_visits": 37,
+            "duration_median_seconds": 20.5,
+            "duration_average_seconds": 265.468253968254,
+            "duration_over_10min": 22,
+            "duration_under_15s": 41,
+            "one_page_visits": 85,
+            "opened_solution": 75,
+            "next_goal": 18,
+            "both_goals": 12,
+            "open_then_next_strict": 10,
+            "next_without_open": 6,
+            "open_next_open_strict": 8,
+            "two_distinct_solution_tasks": 19,
+            "two_distinct_task_pages": 15,
+            "multiple_task_pages_without_next_goal": 13,
+            "next_task_page_clicks": 6,
+            "next_task_page_target_loaded": 6,
+            "goal_placements": {
+              "663176353:task_page": 86,
+              "663176353:dialog": 104,
+              "663176354:catalogue": 178,
+              "663176354:task_page": 6
+            },
+            "entry_subjects": {
+              "physics": 72,
+              "math": 53,
+              "other": 1
+            },
+            "exit_classes": {
+              "task_pages": 68,
+              "physics_part2": 9,
+              "math_catalogs": 21,
+              "physics_catalogs": 20,
+              "math_part2": 4,
+              "subject_hubs": 3,
+              "bare_root": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 25,
+              "internal:task_pages": 13
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 11,
+              "internal:task_pages": 5
+            },
+            "additional_task_referrers_without_next_goal": {
+              "external_search": 20,
+              "internal:task_pages": 7
+            }
+          },
+          "3": {
+            "visits": 10,
+            "pageviews": 86,
+            "bounce_visits": 2,
+            "duration_median_seconds": 18.0,
+            "duration_average_seconds": 674.7,
+            "duration_over_10min": 1,
+            "duration_under_15s": 2,
+            "one_page_visits": 6,
+            "opened_solution": 2,
+            "next_goal": 3,
+            "both_goals": 1,
+            "open_then_next_strict": 1,
+            "next_without_open": 2,
+            "open_next_open_strict": 1,
+            "two_distinct_solution_tasks": 1,
+            "two_distinct_task_pages": 1,
+            "multiple_task_pages_without_next_goal": 0,
+            "next_task_page_clicks": 69,
+            "next_task_page_target_loaded": 69,
+            "goal_placements": {
+              "663176353:task_page": 67,
+              "663176354:task_page": 69,
+              "663176354:catalogue": 8
+            },
+            "entry_subjects": {
+              "physics": 6,
+              "math": 4
+            },
+            "exit_classes": {
+              "physics_part2": 2,
+              "physics_catalogs": 2,
+              "task_pages": 3,
+              "math_part2": 1,
+              "subject_hubs": 1,
+              "math_catalogs": 1
+            },
+            "additional_task_referrers": {
+              "external_search": 3,
+              "internal:task_pages": 69
+            },
+            "visits_with_additional_task_referrer": {
+              "external_search": 1,
+              "internal:task_pages": 1
+            }
+          }
+        }
+      }
+    },
+    "reconciliation": [
+      {
+        "period": "baseline6",
+        "cohort": "public",
+        "logs_visits": 900,
+        "official_visits": 855,
+        "logs_goal_open_visits": 219,
+        "official_goal_open_visits": 216,
+        "logs_next_visits": 128,
+        "official_next_visits": 128
+      },
+      {
+        "period": "baseline6",
+        "cohort": "search",
+        "logs_visits": 784,
+        "official_visits": 772,
+        "logs_goal_open_visits": 195,
+        "official_goal_open_visits": 195,
+        "logs_next_visits": 121,
+        "official_next_visits": 121
+      },
+      {
+        "period": "current6",
+        "cohort": "public",
+        "logs_visits": 644,
+        "official_visits": 622,
+        "logs_goal_open_visits": 337,
+        "official_goal_open_visits": 331,
+        "logs_next_visits": 113,
+        "official_next_visits": 113
+      },
+      {
+        "period": "current6",
+        "cohort": "search",
+        "logs_visits": 510,
+        "official_visits": 506,
+        "logs_goal_open_visits": 278,
+        "official_goal_open_visits": 278,
+        "logs_next_visits": 91,
+        "official_next_visits": 91
+      },
+      {
+        "period": "goals_before4",
+        "cohort": "public",
+        "logs_visits": 650,
+        "official_visits": 612,
+        "logs_goal_open_visits": 185,
+        "official_goal_open_visits": 182,
+        "logs_next_visits": 109,
+        "official_next_visits": 109
+      },
+      {
+        "period": "goals_before4",
+        "cohort": "search",
+        "logs_visits": 559,
+        "official_visits": 549,
+        "logs_goal_open_visits": 164,
+        "official_goal_open_visits": 164,
+        "logs_next_visits": 103,
+        "official_next_visits": 103
+      },
+      {
+        "period": "goals_after4",
+        "cohort": "public",
+        "logs_visits": 399,
+        "official_visits": 382,
+        "logs_goal_open_visits": 220,
+        "official_goal_open_visits": 215,
+        "logs_next_visits": 58,
+        "official_next_visits": 58
+      },
+      {
+        "period": "goals_after4",
+        "cohort": "search",
+        "logs_visits": 307,
+        "official_visits": 305,
+        "logs_goal_open_visits": 174,
+        "official_goal_open_visits": 174,
+        "logs_next_visits": 44,
+        "official_next_visits": 44
+      }
+    ],
+    "next_event_concentration_after4": [
+      {
+        "day": "2026-10-02",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 189,
+        "duration_seconds": 629,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          8,
+          3,
+          4,
+          5,
+          1,
+          3,
+          7,
+          9,
+          8,
+          10,
+          6,
+          2,
+          12,
+          2,
+          3,
+          1,
+          3,
+          6,
+          20,
+          2,
+          4,
+          3,
+          1,
+          5,
+          7,
+          55,
+          8,
+          8,
+          15,
+          11,
+          3,
+          4,
+          81,
+          12,
+          20,
+          11,
+          3,
+          3,
+          5,
+          5,
+          3,
+          2,
+          11,
+          5,
+          5,
+          1,
+          3,
+          2,
+          17,
+          2,
+          13,
+          2,
+          42,
+          5,
+          2,
+          42,
+          2,
+          10,
+          1,
+          12,
+          20,
+          3,
+          2,
+          1,
+          15,
+          4,
+          2,
+          4135,
+          53,
+          3,
+          1,
+          36,
+          2,
+          23,
+          3,
+          1,
+          2,
+          3,
+          1,
+          1,
+          2,
+          2,
+          2,
+          1,
+          4,
+          2,
+          1,
+          3,
+          2,
+          3,
+          50,
+          1,
+          1,
+          2,
+          2,
+          2,
+          1,
+          3,
+          1,
+          15,
+          24,
+          2,
+          1,
+          1,
+          1,
+          12,
+          2,
+          1,
+          3,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          18,
+          3,
+          1,
+          2,
+          7,
+          1,
+          2,
+          1,
+          1,
+          14,
+          5,
+          1,
+          7,
+          3,
+          1,
+          16,
+          1,
+          5,
+          4,
+          1,
+          7,
+          3,
+          6,
+          2,
+          2,
+          1,
+          2,
+          2,
+          5,
+          2,
+          3,
+          5,
+          3,
+          12,
+          7,
+          1,
+          4,
+          7,
+          2,
+          0,
+          2,
+          1,
+          5,
+          5,
+          2,
+          9,
+          2,
+          3,
+          1,
+          1,
+          14,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          3,
+          20,
+          7,
+          2,
+          2,
+          3,
+          1,
+          1,
+          11,
+          28,
+          609
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "1",
+        "browser": "chrome",
+        "next_events": 106,
+        "duration_seconds": 4013,
+        "pageviews": 2,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          19,
+          17,
+          16,
+          12,
+          1,
+          4,
+          6,
+          5,
+          5,
+          7,
+          3,
+          2,
+          111,
+          6,
+          11,
+          2,
+          8,
+          5,
+          13,
+          4,
+          11,
+          3,
+          1,
+          6,
+          2,
+          5,
+          1,
+          8,
+          2,
+          8,
+          1549,
+          4,
+          3,
+          2,
+          3,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          3,
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1702,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          2,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "day": "2026-10-03",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 75,
+        "duration_seconds": 327,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          76,
+          22,
+          4,
+          16,
+          8,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          3,
+          1,
+          3,
+          1,
+          1,
+          0,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          2,
+          1,
+          1,
+          65,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          5,
+          1,
+          1,
+          2,
+          8,
+          1,
+          3,
+          1,
+          3,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "task_pages",
+        "subject": "math",
+        "device": "3",
+        "browser": "yandex_browser",
+        "next_events": 69,
+        "duration_seconds": 6399,
+        "pageviews": 74,
+        "distinct_task_pages": 73,
+        "next_target_intervals_seconds": [
+          12,
+          121,
+          38,
+          47,
+          90,
+          20,
+          48,
+          185,
+          43,
+          41,
+          16,
+          27,
+          92,
+          7,
+          104,
+          253,
+          65,
+          63,
+          39,
+          45,
+          42,
+          43,
+          106,
+          37,
+          108,
+          33,
+          31,
+          47,
+          35,
+          41,
+          30,
+          19,
+          92,
+          44,
+          54,
+          27,
+          190,
+          25,
+          39,
+          33,
+          40,
+          74,
+          39,
+          56,
+          47,
+          3,
+          6,
+          4,
+          173,
+          44,
+          221,
+          174,
+          177,
+          68,
+          556,
+          219,
+          80,
+          115,
+          158,
+          56,
+          101,
+          105,
+          47,
+          33,
+          93,
+          155,
+          68,
+          23
+        ]
+      },
+      {
+        "day": "2026-10-03",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "2",
+        "browser": "yandex_browser",
+        "next_events": 53,
+        "duration_seconds": 1920,
+        "pageviews": 7,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          167,
+          3,
+          8,
+          116,
+          1,
+          0,
+          4,
+          68,
+          1,
+          1,
+          0,
+          1,
+          213,
+          195,
+          65,
+          55,
+          5,
+          305,
+          130,
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          2,
+          134,
+          39,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3,
+          33,
+          2,
+          21,
+          27
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "2",
+        "browser": "yasearchapp",
+        "next_events": 37,
+        "duration_seconds": 1428,
+        "pageviews": 10,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          0,
+          6,
+          8,
+          359,
+          1,
+          1,
+          0,
+          1,
+          218,
+          33,
+          0,
+          0,
+          1,
+          1,
+          0,
+          147,
+          106,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          3,
+          335,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          41,
+          5,
+          13
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "2",
+        "browser": "yandex_browser",
+        "next_events": 29,
+        "duration_seconds": 118,
+        "pageviews": 2,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          3,
+          2,
+          1,
+          5,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          84,
+          1
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "1",
+        "browser": "chrome",
+        "next_events": 29,
+        "duration_seconds": 70,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          4,
+          4,
+          1,
+          1,
+          2,
+          5,
+          1,
+          2,
+          1,
+          1,
+          4,
+          2,
+          2,
+          3,
+          3,
+          0,
+          4,
+          1,
+          4,
+          2,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 26,
+        "duration_seconds": 3148,
+        "pageviews": 2,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          388,
+          636,
+          44,
+          238,
+          333,
+          20,
+          414,
+          262,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          255,
+          218,
+          0,
+          1,
+          0,
+          1,
+          157
+        ]
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 25,
+        "duration_seconds": 1483,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          34,
+          6,
+          1071,
+          5,
+          4,
+          6,
+          5,
+          3,
+          5,
+          3,
+          4,
+          2,
+          1,
+          3,
+          2,
+          2,
+          50,
+          15,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "day": "2026-10-03",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "1",
+        "browser": "edge",
+        "next_events": 24,
+        "duration_seconds": 265,
+        "pageviews": 3,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          5,
+          11,
+          17,
+          10,
+          6,
+          6,
+          4,
+          61,
+          4,
+          4,
+          5,
+          14,
+          2,
+          26,
+          2,
+          13,
+          25,
+          3,
+          3,
+          0,
+          9,
+          4,
+          14
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "2",
+        "browser": "safari_mobile",
+        "next_events": 20,
+        "duration_seconds": 291,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          5,
+          66,
+          2,
+          3,
+          3,
+          1,
+          26,
+          3,
+          3,
+          1,
+          2,
+          2,
+          3,
+          4,
+          20,
+          2,
+          1,
+          2,
+          7
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "opera",
+        "next_events": 19,
+        "duration_seconds": 70,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          309,
+          3,
+          1,
+          320,
+          2,
+          3,
+          0,
+          1,
+          1459,
+          2,
+          2,
+          1,
+          219,
+          346,
+          3,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 18,
+        "duration_seconds": 20,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          5,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          2
+        ]
+      },
+      {
+        "day": "2026-10-02",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 15,
+        "duration_seconds": 31,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          5,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "2",
+        "browser": "safari_mobile",
+        "next_events": 13,
+        "duration_seconds": 528,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          329,
+          4,
+          1,
+          10,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "2",
+        "browser": "chromemobile",
+        "next_events": 10,
+        "duration_seconds": 568,
+        "pageviews": 3,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          129,
+          9,
+          17,
+          1,
+          0,
+          0,
+          1,
+          4,
+          0
+        ]
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 9,
+        "duration_seconds": 4501,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          1228,
+          1263,
+          6,
+          351,
+          444,
+          284,
+          363,
+          7
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "firefox",
+        "next_events": 9,
+        "duration_seconds": 46,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          9,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "edge",
+        "next_events": 8,
+        "duration_seconds": 417,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          1,
+          29,
+          2,
+          145,
+          10,
+          9,
+          212
+        ]
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 8,
+        "duration_seconds": 13,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          2,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "task_pages",
+        "subject": "math",
+        "device": "2",
+        "browser": "yandex_browser",
+        "next_events": 5,
+        "duration_seconds": 707,
+        "pageviews": 6,
+        "distinct_task_pages": 6,
+        "next_target_intervals_seconds": [
+          94,
+          24,
+          33,
+          12
+        ]
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "3",
+        "browser": "yandex_browser",
+        "next_events": 5,
+        "duration_seconds": 215,
+        "pageviews": 2,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          10,
+          4,
+          1,
+          194
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "2",
+        "browser": "yasearchapp",
+        "next_events": 4,
+        "duration_seconds": 68,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          25,
+          4,
+          3
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 3,
+        "duration_seconds": 360,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          22,
+          8
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "3",
+        "browser": "yandex_browser",
+        "next_events": 3,
+        "duration_seconds": 21,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          1,
+          6
+        ]
+      },
+      {
+        "day": "2026-10-02",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 3,
+        "duration_seconds": 174,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          7,
+          2
+        ]
+      },
+      {
+        "day": "2026-10-02",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "2",
+        "browser": "yandexsearch",
+        "next_events": 3,
+        "duration_seconds": 86,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          1,
+          0
+        ]
+      },
+      {
+        "day": "2026-10-02",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "opera",
+        "next_events": 2,
+        "duration_seconds": 55,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          6
+        ]
+      },
+      {
+        "day": "2026-10-03",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "2",
+        "browser": "yandexsearch",
+        "next_events": 2,
+        "duration_seconds": 14,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          4
+        ]
+      },
+      {
+        "day": "2026-10-03",
+        "landing": "task_pages",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 2,
+        "duration_seconds": 123,
+        "pageviews": 7,
+        "distinct_task_pages": 1,
+        "next_target_intervals_seconds": [
+          2
+        ]
+      },
+      {
+        "day": "2026-10-03",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 2,
+        "duration_seconds": 19,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": [
+          1
+        ]
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_part2",
+        "subject": "math",
+        "device": "2",
+        "browser": "chromemobile",
+        "next_events": 1,
+        "duration_seconds": 86,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "2",
+        "browser": "yandex_browser",
+        "next_events": 1,
+        "duration_seconds": 4,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "2",
+        "browser": "safari_mobile",
+        "next_events": 1,
+        "duration_seconds": 54,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-02",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 1,
+        "duration_seconds": 30,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "physics_catalogs",
+        "subject": "physics",
+        "device": "2",
+        "browser": "yasearchapp",
+        "next_events": 1,
+        "duration_seconds": 12,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-02",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 1,
+        "duration_seconds": 9,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-03",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "2",
+        "browser": "chromemobile",
+        "next_events": 1,
+        "duration_seconds": 22,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "physics_part2",
+        "subject": "physics",
+        "device": "2",
+        "browser": "yandex_browser",
+        "next_events": 1,
+        "duration_seconds": 74,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-03",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "yandex_browser",
+        "next_events": 1,
+        "duration_seconds": 25,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-02",
+        "landing": "task_pages",
+        "subject": "physics",
+        "device": "2",
+        "browser": "yandexsearch",
+        "next_events": 1,
+        "duration_seconds": 2039,
+        "pageviews": 8,
+        "distinct_task_pages": 7,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-05",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "2",
+        "browser": "chromemobile",
+        "next_events": 1,
+        "duration_seconds": 31,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      },
+      {
+        "day": "2026-10-04",
+        "landing": "math_catalogs",
+        "subject": "math",
+        "device": "1",
+        "browser": "opera",
+        "next_events": 1,
+        "duration_seconds": 28,
+        "pageviews": 1,
+        "distinct_task_pages": 0,
+        "next_target_intervals_seconds": []
+      }
+    ]
+  },
+  "post_journeys": {
+    "window_msk": [
+      "2026-10-06 19:34:00",
+      "2026-10-06 23:40:00"
+    ],
+    "raw_visits_day": 148,
+    "post_public_without_technical": {
+      "visits": 30,
+      "pageviews": 76,
+      "bounce_visits": 6,
+      "duration_median_seconds": 55.5,
+      "duration_average_seconds": 276.9,
+      "duration_over_10min": 2,
+      "duration_under_15s": 6,
+      "one_page_visits": 13,
+      "opened_solution": 20,
+      "next_goal": 8,
+      "both_goals": 7,
+      "open_then_next_strict": 7,
+      "next_without_open": 1,
+      "open_next_open_strict": 7,
+      "two_distinct_solution_tasks": 10,
+      "two_distinct_task_pages": 5,
+      "multiple_task_pages_without_next_goal": 3,
+      "next_task_page_clicks": 2,
+      "next_task_page_target_loaded": 2,
+      "goal_placements": {
+        "663176353:task_page": 23,
+        "663176354:catalogue": 26,
+        "663176353:dialog": 37,
+        "663176354:catalogue_dialog": 2,
+        "663176354:task_page": 2
+      },
+      "entry_subjects": {
+        "math": 16,
+        "physics": 14
+      },
+      "exit_classes": {
+        "physics_part2": 3,
+        "physics_catalogs": 4,
+        "task_pages": 17,
+        "math_catalogs": 6
+      },
+      "additional_task_referrers": {
+        "internal:task_pages": 2,
+        "external_search": 5
+      },
+      "visits_with_additional_task_referrer": {
+        "internal:task_pages": 2,
+        "external_search": 4
+      },
+      "additional_task_referrers_without_next_goal": {
+        "external_search": 3
+      }
+    },
+    "post_search_without_technical": {
+      "visits": 25,
+      "pageviews": 62,
+      "bounce_visits": 6,
+      "duration_median_seconds": 21,
+      "duration_average_seconds": 265.04,
+      "duration_over_10min": 2,
+      "duration_under_15s": 6,
+      "one_page_visits": 12,
+      "opened_solution": 17,
+      "next_goal": 5,
+      "both_goals": 5,
+      "open_then_next_strict": 5,
+      "next_without_open": 0,
+      "open_next_open_strict": 5,
+      "two_distinct_solution_tasks": 8,
+      "two_distinct_task_pages": 5,
+      "multiple_task_pages_without_next_goal": 3,
+      "next_task_page_clicks": 2,
+      "next_task_page_target_loaded": 2,
+      "goal_placements": {
+        "663176353:dialog": 30,
+        "663176353:task_page": 21,
+        "663176354:task_page": 2,
+        "663176354:catalogue": 3,
+        "663176354:catalogue_dialog": 1
+      },
+      "entry_subjects": {
+        "physics": 11,
+        "math": 14
+      },
+      "exit_classes": {
+        "physics_catalogs": 3,
+        "task_pages": 16,
+        "math_catalogs": 5,
+        "physics_part2": 1
+      },
+      "additional_task_referrers": {
+        "internal:task_pages": 2,
+        "external_search": 5
+      },
+      "visits_with_additional_task_referrer": {
+        "internal:task_pages": 2,
+        "external_search": 4
+      },
+      "additional_task_referrers_without_next_goal": {
+        "external_search": 3
+      }
+    },
+    "catalogue_dialog": [
+      {
+        "landing": "bare_root",
+        "subject": "math",
+        "device": "2",
+        "source": "direct",
+        "click_count": 1,
+        "open_after_next_count": 1,
+        "details": [
+          {
+            "target_task": "45157D",
+            "next_goal_time_msk": "2026-10-06 22:01:26",
+            "following_solution_goal": true,
+            "seconds_to_following_solution": 4.0
+          }
+        ]
+      },
+      {
+        "landing": "bare_root",
+        "subject": "math",
+        "device": "2",
+        "source": "organic",
+        "click_count": 1,
+        "open_after_next_count": 1,
+        "details": [
+          {
+            "target_task": "8EC711",
+            "next_goal_time_msk": "2026-10-06 20:50:32",
+            "following_solution_goal": true,
+            "seconds_to_following_solution": 3.0
+          }
+        ]
+      }
+    ],
+    "yesterday_public_without_technical": {
+      "visits": 39,
+      "pageviews": 57,
+      "bounce_visits": 14,
+      "duration_median_seconds": 15,
+      "duration_average_seconds": 172.97435897435898,
+      "duration_over_10min": 2,
+      "duration_under_15s": 15,
+      "one_page_visits": 31,
+      "opened_solution": 18,
+      "next_goal": 4,
+      "both_goals": 1,
+      "open_then_next_strict": 1,
+      "next_without_open": 3,
+      "open_next_open_strict": 1,
+      "two_distinct_solution_tasks": 6,
+      "two_distinct_task_pages": 4,
+      "multiple_task_pages_without_next_goal": 4,
+      "next_task_page_clicks": 0,
+      "next_task_page_target_loaded": 0,
+      "goal_placements": {
+        "663176353:task_page": 24,
+        "663176353:dialog": 17,
+        "663176354:catalogue": 52
+      },
+      "entry_subjects": {
+        "math": 20,
+        "physics": 19
+      },
+      "exit_classes": {
+        "math_part2": 3,
+        "math_catalogs": 9,
+        "task_pages": 14,
+        "physics_catalogs": 9,
+        "bare_root": 2,
+        "physics_part2": 2
+      },
+      "additional_task_referrers": {
+        "external_search": 8,
+        "internal:task_pages": 5
+      },
+      "visits_with_additional_task_referrer": {
+        "external_search": 3,
+        "internal:task_pages": 1
+      },
+      "additional_task_referrers_without_next_goal": {
+        "external_search": 8,
+        "internal:task_pages": 5
+      }
+    },
+    "yesterday_search_without_technical": {
+      "visits": 31,
+      "pageviews": 48,
+      "bounce_visits": 8,
+      "duration_median_seconds": 16,
+      "duration_average_seconds": 216.19354838709677,
+      "duration_over_10min": 2,
+      "duration_under_15s": 8,
+      "one_page_visits": 24,
+      "opened_solution": 15,
+      "next_goal": 4,
+      "both_goals": 1,
+      "open_then_next_strict": 1,
+      "next_without_open": 3,
+      "open_next_open_strict": 1,
+      "two_distinct_solution_tasks": 5,
+      "two_distinct_task_pages": 4,
+      "multiple_task_pages_without_next_goal": 4,
+      "next_task_page_clicks": 0,
+      "next_task_page_target_loaded": 0,
+      "goal_placements": {
+        "663176353:task_page": 22,
+        "663176353:dialog": 15,
+        "663176354:catalogue": 52
+      },
+      "entry_subjects": {
+        "math": 14,
+        "physics": 17
+      },
+      "exit_classes": {
+        "math_part2": 1,
+        "math_catalogs": 8,
+        "task_pages": 12,
+        "physics_catalogs": 8,
+        "physics_part2": 2
+      },
+      "additional_task_referrers": {
+        "external_search": 8,
+        "internal:task_pages": 5
+      },
+      "visits_with_additional_task_referrer": {
+        "external_search": 3,
+        "internal:task_pages": 1
+      },
+      "additional_task_referrers_without_next_goal": {
+        "external_search": 8,
+        "internal:task_pages": 5
+      }
+    }
+  },
+  "post": {
+    "public": {
+      "before": {
+        "visits": 35.0,
+        "users": 33.0,
+        "pageviews": 53.0,
+        "bounce_rate": 28.57142857,
+        "depth": 1.51428571,
+        "duration": 192.65714286,
+        "solution_visits": 17.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 30.0,
+        "users": 28.0,
+        "pageviews": 76.0,
+        "bounce_rate": 20.0,
+        "depth": 2.53333333,
+        "duration": 276.9,
+        "solution_visits": 20.0,
+        "next_visits": 8.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -5.0,
+      "visits_change_pct": -14.28571428571429
+    },
+    "search": {
+      "before": {
+        "visits": 31.0,
+        "users": 29.0,
+        "pageviews": 48.0,
+        "bounce_rate": 25.80645161,
+        "depth": 1.5483871,
+        "duration": 216.19354839,
+        "solution_visits": 15.0,
+        "next_visits": 4.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 25.0,
+        "users": 23.0,
+        "pageviews": 62.0,
+        "bounce_rate": 24.0,
+        "depth": 2.48,
+        "duration": 265.04,
+        "solution_visits": 17.0,
+        "next_visits": 5.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -6.0,
+      "visits_change_pct": -19.354838709677423
+    },
+    "mobile_search": {
+      "before": {
+        "visits": 14.0,
+        "users": 13.0,
+        "pageviews": 28.0,
+        "bounce_rate": 28.57142857,
+        "depth": 2.0,
+        "duration": 417.42857143,
+        "solution_visits": 5.0,
+        "next_visits": 3.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 8.0,
+        "users": 7.0,
+        "pageviews": 30.0,
+        "bounce_rate": 12.5,
+        "depth": 3.75,
+        "duration": 626.0,
+        "solution_visits": 7.0,
+        "next_visits": 1.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -6.0,
+      "visits_change_pct": -42.85714285714286
+    }
+  },
+  "today": {
+    "public": {
+      "before": {
+        "visits": 128.0,
+        "users": 112.0,
+        "pageviews": 268.0,
+        "bounce_rate": 23.4375,
+        "depth": 2.09375,
+        "duration": 391.1015625,
+        "solution_visits": 81.0,
+        "next_visits": 22.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 142.0,
+        "users": 125.0,
+        "pageviews": 289.0,
+        "bounce_rate": 28.16901408,
+        "depth": 2.03521127,
+        "duration": 336.57042254,
+        "solution_visits": 75.0,
+        "next_visits": 41.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 14.0,
+      "visits_change_pct": 10.9375
+    },
+    "search": {
+      "before": {
+        "visits": 110.0,
+        "users": 101.0,
+        "pageviews": 239.0,
+        "bounce_rate": 23.63636364,
+        "depth": 2.17272727,
+        "duration": 311.83636364,
+        "solution_visits": 67.0,
+        "next_visits": 18.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 124.0,
+        "users": 114.0,
+        "pageviews": 232.0,
+        "bounce_rate": 27.41935484,
+        "depth": 1.87096774,
+        "duration": 345.25806452,
+        "solution_visits": 67.0,
+        "next_visits": 33.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": 14.0,
+      "visits_change_pct": 12.72727272727272
+    },
+    "mobile_search": {
+      "before": {
+        "visits": 47.0,
+        "users": 41.0,
+        "pageviews": 83.0,
+        "bounce_rate": 29.78723404,
+        "depth": 1.76595745,
+        "duration": 282.0212766,
+        "solution_visits": 26.0,
+        "next_visits": 9.0,
+        "registration_visits": 0.0
+      },
+      "after": {
+        "visits": 46.0,
+        "users": 43.0,
+        "pageviews": 82.0,
+        "bounce_rate": 21.73913043,
+        "depth": 1.7826087,
+        "duration": 218.02173913,
+        "solution_visits": 26.0,
+        "next_visits": 13.0,
+        "registration_visits": 0.0
+      },
+      "visits_delta": -1.0,
+      "visits_change_pct": -2.127659574468088
+    }
+  },
+  "aliases": {
+    "vectors": {
+      "urls": [
+        "/?topic=7.5",
+        "/?topic=vectors"
+      ],
+      "visits_before": 39.0,
+      "visits_after": 18.0
+    },
+    "trigonometry": {
+      "urls": [
+        "/?topic=2.3",
+        "/?topic=applied.trigonometry"
+      ],
+      "visits_before": 12.0,
+      "visits_after": 1.0
+    }
+  },
+  "webmaster": {
+    "summary": {
+      "sqi": 10,
+      "excluded_pages_count": 18,
+      "searchable_pages_count": 3618,
+      "site_problems": {
+        "RECOMMENDATION": 2
+      }
+    },
+    "recrawl": {
+      "DONE": 16,
+      "IN_PROGRESS": 1
+    },
+    "in_progress": [
+      "https://ege-fipi.ru/physics?topic=kinematics"
+    ]
+  },
+  "validation": {
+    "all_unsampled": true,
+    "technical_partition_matches": true,
+    "landing_partition_matches": true,
+    "daily_visit_sums_match": true,
+    "task_subjects_match": true,
+    "task_journeys_match_official": true,
+    "post_journeys_match_official": true,
+    "errors": [],
+    "logs_pageview_counts_match_per_visit": true,
+    "watch_id_crosscheck_no_conflicts": true,
+    "journey_goal_time_sensitivity_no_change": true
+  }
+}

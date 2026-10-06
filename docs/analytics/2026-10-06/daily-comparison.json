@@ -1,0 +1,93 @@
+{
+  "checked_utc": "2026-10-06T21:36:13.395579+00:00",
+  "timezone": "Europe/Moscow",
+  "days": {
+    "2026-10-04": {
+      "all": {
+        "visits": 94.0,
+        "users": 80.0,
+        "pageviews": 214.0
+      },
+      "public": {
+        "visits": 85.0,
+        "users": 71.0,
+        "pageviews": 205.0
+      },
+      "search": {
+        "visits": 66.0,
+        "users": 55.0,
+        "pageviews": 102.0
+      }
+    },
+    "2026-10-05": {
+      "all": {
+        "visits": 137.0,
+        "users": 121.0,
+        "pageviews": 279.0
+      },
+      "public": {
+        "visits": 130.0,
+        "users": 114.0,
+        "pageviews": 272.0
+      },
+      "search": {
+        "visits": 112.0,
+        "users": 103.0,
+        "pageviews": 243.0
+      }
+    },
+    "2026-10-06": {
+      "all": {
+        "visits": 148.0,
+        "users": 131.0,
+        "pageviews": 295.0
+      },
+      "public": {
+        "visits": 143.0,
+        "users": 126.0,
+        "pageviews": 290.0
+      },
+      "search": {
+        "visits": 125.0,
+        "users": 115.0,
+        "pageviews": 233.0
+      }
+    }
+  },
+  "changes": {
+    "2026-10-05": {
+      "all": {
+        "visits": 45.74,
+        "users": 51.25,
+        "pageviews": 30.37
+      },
+      "public": {
+        "visits": 52.94,
+        "users": 60.56,
+        "pageviews": 32.68
+      },
+      "search": {
+        "visits": 69.7,
+        "users": 87.27,
+        "pageviews": 138.24
+      }
+    },
+    "2026-10-06": {
+      "all": {
+        "visits": 8.03,
+        "users": 8.26,
+        "pageviews": 5.73
+      },
+      "public": {
+        "visits": 10.0,
+        "users": 10.53,
+        "pageviews": 6.62
+      },
+      "search": {
+        "visits": 11.61,
+        "users": 11.65,
+        "pageviews": -4.12
+      }
+    }
+  }
+}
