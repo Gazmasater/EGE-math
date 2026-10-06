@@ -1,0 +1,320 @@
+{
+  "369826": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/171BF0BD9225AC2244E9B36FEF6F55E8(copy2)/xs3qvrsrcD11BBFD394EFA1EF447126BD0C8B1F56_1_1486655754.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/171BF0BD9225AC2244E9B36FEF6F55E8(copy2)/xs3qvrsrc2617CA881657B61744188D97F136D67E_1_1486655756.png"
+    ],
+    "sourceHash": "bbe1ae6a528bbf04f0f0c60721a6720db7c7c7dabdace48bcead62540f88bef4",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=11944",
+    "match": "variant",
+    "comparison": "Формулировка и законы совпадают, но варианты переставлены: длина волны теперь 2, частота 1. Гипербола Eλ=hc и порог K=hν−A дают 21 вместо 14. Ниже порога нет фотоэлектронов, а не электронов с нулевой энергией. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "21",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "667358": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-18.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E81EE242D44E917642A627399E390117(copy1)/xs3qstsrc01AA6F9D6B9DB735402D7C3EA8B7FB20_1_1483025013.png"
+    ],
+    "sourceHash": "80f975cb510cdc4f083ebacab794185db3dfcda96f3a9f825dc567d5b77ed5fa",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=20031",
+    "match": "variant",
+    "comparison": "Варианты заданы переходами E0→E1,E0→E2,E3→E0,E4→E0. Максимальная λ в обоих процессах означает минимальные положительные разности; выбираются варианты 1,3: 13. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "13",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "7D7448": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "sourceHash": "1c3fffff9565e4bf9eee5c45e07c937c0ef7d502bcc42a52a7871c1b56b3d3ac",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=4787",
+    "match": "variant",
+    "comparison": "Источник ищет λ и E, ФИПИ — λ и ν. Закон pλ=h даёт вариант 2; E=hν даёт ν=E/h и вариант 4. Код 24 вместо 23. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "24",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "64FC99": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-11.raw.html",
+    "images": [],
+    "sourceHash": "38199e94ed91818826b135606221c49302f942a0949a68746abf8e3d1fa48855",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=2808",
+    "match": "variant",
+    "comparison": "Иные величины и формулы вариантов: из λν=c и p=E/c получены ν=c/λ (3), p=h/λ (1). Размерности и обратные подстановки проверены. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "31",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "BD7F43": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "sourceHash": "756799c3a278b163dbf9aa5faa5313f2c2e20e184cdbd5827ad279d3d4764a9d",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=28123",
+    "match": "variant",
+    "comparison": "Порядок и изотопы реакций отличаются. ФИПИ α: Ac227→Fr223+He4 (3); β−: Np238→Pu238+e− (2). Оба баланса и отсутствие налетающей частицы проверены; 32. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "32",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "FA06DF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [],
+    "sourceHash": "f1da9e56daecce806e6e0f2d196869f4199d83d38807e87caa13cfd6bbe60f2a",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=17666",
+    "match": "variant",
+    "comparison": "Те же типы и четыре реакции, но переставлены столбцы и варианты. ФИПИ α Pu239→U235 (1), электронный β− C11→N11 (3), ответ 13. Позитрон из варианта 4 исключён по знаку заряда. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "13",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "93EDA9": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [],
+    "sourceHash": "25d57ca0b3fedda03245d3de4786d5e9e41c0c4eac07379570c1a41b3b6dafc1",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=28123",
+    "match": "variant",
+    "comparison": "Отличаются набор и порядок реакций. В ФИПИ α Ac227→Fr223 (3), электронный β− C11→N11 (1). Варианты 2,4 являются реакциями с налетающей частицей; 31. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "31",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "FF6C82": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-20.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B5776DC518AE86E745049B5D26EBF54C(copy1)/xs3qvrsrcfc5aaf5ed5aa4ebd8b14c9c40326a387_1_1782306620.png"
+    ],
+    "sourceHash": "f5c00ad08b80b55e4f4b17177ef9cb976128439269b60a7cdf279d92b9ba9ac0",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=28123",
+    "match": "variant",
+    "comparison": "Иные ядра и позиции. ФИПИ α Ir176→Re172 (1); β− Lu178→Hf178 (4, прочитано с исходного растра). Проверены ΔA=−4,ΔZ=−2 и ΔA=0,ΔZ=+1; 14. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "14",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "D4FFF9": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D8D02D606B8F9A6A45592BA5DF354A21(copy3)/xs3qvrsrcF5FF3D46568BA50446910C8C828F9699_2_1678370010.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D8D02D606B8F9A6A45592BA5DF354A21(copy3)/xs3qvrsrcF3E8ECCEE2D784FB4D5CFF0FB96CEE0E_12_1671181987.png"
+    ],
+    "sourceHash": "9b95ab20ca883d5e49f2fbc694a3821465f2e6c201a60c091e3ef7ae841ff86e",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=11944",
+    "match": "variant",
+    "comparison": "Тот же метод распознавания обратной зависимости E(λ) и линейной K(ν) с порогом, но другие варианты ответов. В ФИПИ это 2 и 3. Близкий по тексту №7867 имеет другой график радиоактивности и не использован как точный эталон. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "23",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "F926FD": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E7A9EC23101B95904A559EB335FE69C7(copy1)/xs3qstsrcE7A9EC23101B95904A559EB335FE69C7_1_1768296469.png"
+    ],
+    "sourceHash": "1def8126dcf395f8287e57222bebccc6bfe5d2dc6efa637f3feb8fcfb654ebb3",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38819",
+    "match": "variant",
+    "comparison": "Внешний вариант имеет другие стрелки и ответ 24. Рисунок ФИПИ прочитан независимо: вверх 0→4,0→2, вниз 1→0,3→0. Минимальная λ поглощения даёт E4−E0, минимальная ν излучения E1−E0: 41. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "41",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "AB5BFF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F57C560029D6A35A4EB88B648FD808A7(copy2)/xs3qstsrcF57C560029D6A35A4EB88B648FD808A7_2_1545917509.jpg"
+    ],
+    "sourceHash": "c6277026a89fecb800678c56b577b979d423b8756abe11012c91d862b98066f8",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10479",
+    "match": "variant",
+    "comparison": "В ФИПИ стрелки 1:0→3,2:2→0,3:0→1,4:4→0; нумерация отличается от источника. Минимальная частота поглощения — 3, максимальная частота излучения — 4: 34. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "34",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "F37670": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A18093E87296B1D74AE61D0BAF08134F(copy1)/xs3qstsrcA18093E87296B1D74AE61D0BAF08134F_1_1509450036.png"
+    ],
+    "sourceHash": "db8b03fecbed0ff8d9499c4d0d959d01c40c2cde6095a9ce3558fe87617de99e",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10479",
+    "match": "variant",
+    "comparison": "Условия и результат соответствуют: вверх 3:0→3,4:0→4; вниз 1:1→0,2:2→0. Минимум ν поглощения — 3, максимум ν излучения — 2. Растр ФИПИ отдельно прочитан, побайтовое совпадение картинок не заявляется. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "32",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "90AF7F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/ABA0177675EF94FC4AC98F8AEDE16833(copy1)/xs3qstsrc3b192149751f41539bb1332af23681fb_7_1759321660.png"
+    ],
+    "sourceHash": "185d337bbd883d872ca4fc93ababed1072d3bd0c44fda6d623a6ed52747b7b2a",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38819",
+    "match": "variant",
+    "comparison": "Иные стрелки: вверх 0→2,0→3; вниз 1→0,4→0. Минимум λ поглощения выбирает E3−E0, минимум ν излучения E1−E0: 31 вместо внешнего 24. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "31",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "6BBB75": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A9669F28BAB2901E4E125155D5F921CD(copy1)/xs3qstsrcA9669F28BAB2901E4E125155D5F921CD_1_1640604748.gif"
+    ],
+    "sourceHash": "fb7708e272458279f068c0aa6a08138f41384988f8cb58d48eed1427484fe44c",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10479",
+    "match": "variant",
+    "comparison": "Одинаковая схема направлений, иной запрос: максимум λ излучения означает наименьший спад (1), минимум энергии поглощения — меньший подъём (3). Ответ 13. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "13",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "BE27DA": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E9083D6B9870A561490A80AE29A528A6(copy1)/xs3qstsrc7496C3BB5B46B56F4AC062D4BE167C47_6_1758622959.png"
+    ],
+    "sourceHash": "8a764c19248a252239fc447219f891247ff309afba865f9a46f434e79d0c2af8",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10479",
+    "match": "variant",
+    "comparison": "Иной запрос при стрелках вниз 1,2 и вверх 3,4: максимум ν поглощения даёт 4, минимум ν излучения даёт 1. Ответ 41, оба сравнения разностей проверены. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "41",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "4AE2AE": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5F00D8BC2A0C98A74C77D31EEF7503EE(copy1)/xs3qstsrc90cc963d8ead4b19b928d35b49836fa3_7_1759927168.png"
+    ],
+    "sourceHash": "4dbc157962499a2b9f10135137be98db9ad355166026b2a8e54fa58e08e77deb",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=42645",
+    "match": "variant",
+    "comparison": "Законы и ответ 21 совпали; рисунок ФИПИ прочитан отдельно: вверх к E2,E3, вниз с E1,E4. Максимум λ поглощения — меньший подъём к E2, минимум энергии излучения — спад с E1. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "21",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "5B1FA7": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5E445DC98E94B62E4D3F016AD0C9C5AC(copy1)/xs3qstsrc5E445DC98E94B62E4D3F016AD0C9C5AC_1_1514211744.png"
+    ],
+    "sourceHash": "933ea5123b4f1c88a5f22d8c1ecfc548270e7df2623c77a164b01c9528bdba95",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38819",
+    "match": "variant",
+    "comparison": "Другие стрелки: вверх к E3,E4, вниз с E2,E1. Минимальная λ поглощения означает подъём к E4, минимальная ν излучения — спад с E1. Получено 41; внешний код 24 не переносится. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "41",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "BE82C1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C78E95CA7FDEA78143529F0412532824(copy1)/xs3qstsrcC78E95CA7FDEA78143529F0412532824_1_1705045381.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C78E95CA7FDEA78143529F0412532824(copy1)/innerimg1.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C78E95CA7FDEA78143529F0412532824(copy1)/innerimg2.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C78E95CA7FDEA78143529F0412532824(copy1)/innerimg3.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C78E95CA7FDEA78143529F0412532824(copy1)/innerimg4.gif"
+    ],
+    "sourceHash": "4a23f12c0174c7f507e61e3306d1ea684960540f792d707b77c3488c2553dadf",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=42645",
+    "match": "variant",
+    "comparison": "В ФИПИ вверх к E2,E4, вниз с E1,E3. Поглощение максимальной λ: E2−E0 (2); испускание минимальной ν: E1−E0 (1). Все четыре формулы в растрах вручную прочитаны. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "21",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "41596C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-12.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E3DF29ED8C38B1494A53A63002E105EA(copy1)/xs3qstsrcD0A85BAB3BBCBCB447C766661BA6B379_3_1707817393.png"
+    ],
+    "sourceHash": "174b6ac0ba0f420b8a5b5f22b09f44099d6528fd47e43380d784d5c7c43fb959",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=20031",
+    "match": "variant",
+    "comparison": "ФИПИ спрашивает минимум ν поглощения вместо максимума λ: это тот же минимум энергии. Вверх 1,2, вниз 3,4; выбираются 1 и 3, ответ 13. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "13",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "9F8E6C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0AE1344DF15B89424471048E780A16A4(copy2)/xs3qstsrcDBAF1CE158E2B7DF4AB99400E268913A_3_1707817583.png"
+    ],
+    "sourceHash": "94c808edbd875d1ba68a6ce89e85888acc771006454d179bb0b6c779a0cf74fb",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=20031",
+    "match": "variant",
+    "comparison": "Условия и выбор 1,3 соответствуют: максимум λ поглощения — переход 0→1, минимум энергии излучения — 3→0. Рисунок ФИПИ просмотрен отдельно; его тождество внешнему растру не утверждается. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "13",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "6A3D3F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/40CB907126A6A8B041321400E6D2DFA0(copy1)/xs3qstsrcED1E97720CEA968E4DCB0B9DC52CE6DD_3_1707817670.png"
+    ],
+    "sourceHash": "a036d4f6f699f41a1226ab3450db0e4a6269a94397198c902a20bcdf5c43b406",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=20031",
+    "match": "variant",
+    "comparison": "Иной запрос: максимум ν поглощения даёт больший подъём 2, минимум ν излучения — меньший спад 3. Ответ 23 вместо 13. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "23",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "8DC935": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6B7A251AE6809F8848416CDE88A9E2E3(copy3)/xs3qstsrc6B7A251AE6809F8848416CDE88A9E2E3_7_1666785937.png"
+    ],
+    "sourceHash": "d29a88f011062962fc30e8a92f39ed8a57866fed8606c12b83e6cb81568eb303",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10479",
+    "match": "variant",
+    "comparison": "Совпадают направления и искомые экстремумы. Стрелка 3 поглощает меньшую энергию, 2 излучает большую. Получено 32; локальный рисунок самостоятельно прочитан. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "32",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "9AC530": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-20.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E40B9513F7C4BD9747BC5DBCE45EFB76(copy1)/xs3qstsrc3B70CC3A5B5A92604D0B8BC8488DB982_1_1484054864.png"
+    ],
+    "sourceHash": "b7766395409e589998b03c8a8432229314a0731532768cfdd04405890e782ce2",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=46777",
+    "match": "variant",
+    "comparison": "В ФИПИ максимум λ поглощения вместо минимума энергии, это эквивалентно. Излучение минимальной λ требует максимального спада. По своим стрелкам и списку переходов получено 1,4. Полное внешнее решение прочитано; различия вариантов проверены вручную. Текст разбора составлен самостоятельно.",
+    "expectedAnswer": "14",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  }
+}

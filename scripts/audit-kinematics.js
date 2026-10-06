@@ -43,11 +43,12 @@ function verifyContent() {
   assert.deepEqual(ids,Object.keys(diagrams).sort(),'Полнота схем');
   assert.deepEqual(ids,Object.keys(sources).sort(),'Полнота сверки источников');
   const catalog=new Map();
+  const longIds=new Set(require('./lib/physics-catalog').readPhysicsCatalog().keys());
   for(const file of fs.readdirSync(root).filter(f=>/^physics-\d+\.raw\.html$/.test(f))) {
     const html=new TextDecoder('windows-1251').decode(fs.readFileSync(path.join(root,file)));
     for(const block of html.split(/(?=<div\s+class=["'][^"']*\bqblock\b)/i)) {
       const match=block.match(/id=['"]q([A-Fa-f0-9]+)['"]/);
-      if(match && /<div>1\.1(?:\.|\s)/.test(block)) {
+      if(match && longIds.has(match[1].toUpperCase()) && /<div>1\.1(?:\.|\s)/.test(block)) {
         const id=match[1].toUpperCase();catalog.set(id,true);
         assert.equal(createHash('sha256').update(block).digest('hex'),sources[id]?.conditionSha256,`${id}: изменено условие ФИПИ; требуется новая сверка`);
       }

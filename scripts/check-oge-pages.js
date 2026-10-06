@@ -14,7 +14,7 @@ const output = path.resolve(process.env.OGE_BROWSER_REPORT || `storage/${section
 const chrome = process.env.CHROME_BIN || (process.platform === 'win32' ? 'C:/Program Files/Google/Chrome/Application/chrome.exe' : '/opt/google/chrome/chrome');
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'oge-browser-'));
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-const processChrome = spawn(chrome, ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', '--disable-background-networking', '--disable-sync', '--remote-debugging-port=0', `--user-data-dir=${profile}`, 'about:blank'], { stdio: 'ignore', windowsHide: true });
+const processChrome = spawn(chrome, ['--headless=new', ...(process.getuid?.() === 0 ? ['--no-sandbox'] : []), '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', '--disable-background-networking', '--disable-sync', '--remote-debugging-port=0', `--user-data-dir=${profile}`, 'about:blank'], { stdio: 'ignore', windowsHide: true });
 let launchError;
 processChrome.on('error', error => { launchError = error; });
 let socket;
@@ -50,7 +50,7 @@ async function main() {
     return response.result.value;
   };
   await call('Page.enable'); await call('Network.enable');
-  await call('Network.setBlockedURLs', { urls: ['*mc.yandex*', '*challenges.cloudflare*'] });
+  await call('Network.setBlockedURLs', { urls: ['*mc.yandex*', '*challenges.cloudflare*', '*an.yandex*', '*yandex.ru/ads/system/*'] });
   const waitForPage = async url => {
     let ready = false;
     for (let i = 0; i < 150; i++) {
@@ -95,8 +95,9 @@ async function main() {
             return rect.width > 0 && (rect.right > bounds.right + 1 || rect.left < bounds.left - 1 || element.scrollWidth > element.clientWidth + 1);
           }).map(element => ({ task: task.id, tag: element.tagName, width: element.clientWidth, scrollWidth: element.scrollWidth }));
         }),
+        hiddenCondition: Array.from(document.querySelectorAll('.qblock .cell_0 p')).filter(p => p.textContent.trim() && !p.checkVisibility()).map(p => p.textContent.trim()),
         hidden: document.documentElement.classList.contains('page-loading') })`);
-      if (info.h1 !== 1 || info.hidden || info.tasks !== info.controls || info.scrollWidth > width + 1 || info.broken.length || info.clipped.length) report.errors.push({ url, width, info });
+      if (info.h1 !== 1 || info.hidden || info.tasks !== info.controls || info.scrollWidth > width + 1 || info.broken.length || info.clipped.length || info.hiddenCondition.length) report.errors.push({ url, width, info });
       report.pages.push({ url, width, ...info });
       if (url === bank.path || url === `/tasks/${picture.id}` || (shared && url === `/tasks/${shared.id}`)) {
         if (url.startsWith('/tasks/')) await evaluate(`(() => {

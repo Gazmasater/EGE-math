@@ -1,0 +1,431 @@
+[
+  {
+    "id": "C36A4C",
+    "kind": "pendulum",
+    "target": "frequency-ratio",
+    "lengthRatio": 9,
+    "massRatio": 0.25,
+    "answer": "3",
+    "unit": "",
+    "images": []
+  },
+  {
+    "id": "A784FF",
+    "kind": "sound-distance",
+    "v": 340,
+    "t": 8,
+    "d": 2720,
+    "answer": "2720",
+    "unit": "м",
+    "images": []
+  },
+  {
+    "id": "3F1DFE",
+    "kind": "echo-time",
+    "v": 340,
+    "d": 170,
+    "t": 1,
+    "shaft": true,
+    "answer": "1",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "B86809",
+    "kind": "spring",
+    "target": "stiffness",
+    "k": 400,
+    "k2": 1600,
+    "periodRatio": 0.5,
+    "vertical": true,
+    "answer": "1600",
+    "unit": "Н·м⁻¹",
+    "images": []
+  },
+  {
+    "id": "58600D",
+    "kind": "pendulum",
+    "target": "period-ratio",
+    "lengthRatio": 0.1111111111111111,
+    "massRatio": 0.25,
+    "answer": "3",
+    "unit": "",
+    "images": []
+  },
+  {
+    "id": "62230B",
+    "kind": "energy-time",
+    "T": 1,
+    "phase": "sin",
+    "target": "kinetic-zero",
+    "fraction": 0.25,
+    "answer": "0,25",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "582672",
+    "kind": "energy-time",
+    "T": 0.8,
+    "phase": "cos",
+    "target": "potential-zero",
+    "fraction": 0.25,
+    "horizontal": true,
+    "answer": "0,2",
+    "unit": "с",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9A715E6CB12F96DF4CE7C9AFFCE85574(copy4)/xs3qstsrc9A715E6CB12F96DF4CE7C9AFFCE85574_7_1669965450.png"
+    ]
+  },
+  {
+    "id": "6DEE76",
+    "kind": "spring",
+    "target": "period",
+    "T": 0.5,
+    "massRatio": 2,
+    "stiffnessRatio": 0.5,
+    "answer": "1",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "1B36B0",
+    "kind": "spring",
+    "target": "mass",
+    "m": 0.4,
+    "m2": 0.1,
+    "periodRatio": 0.5,
+    "vertical": true,
+    "answer": "0,1",
+    "unit": "кг",
+    "images": []
+  },
+  {
+    "id": "1BF6BB",
+    "kind": "spring",
+    "target": "frequency",
+    "nu": 4,
+    "massRatio": 4,
+    "stiffnessRatio": 1,
+    "answer": "2",
+    "unit": "Гц",
+    "images": []
+  },
+  {
+    "id": "A29DBB",
+    "kind": "wave-period-image",
+    "v": 12,
+    "lam": 6,
+    "T": 0.5,
+    "answer": "0,5",
+    "unit": "с",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E9D7EDED55C0A75D4B2A4375206EA47A(copy2)/xs3qstsrcE9D7EDED55C0A75D4B2A4375206EA47A_1_1545210371.png"
+    ]
+  },
+  {
+    "id": "86B9BA",
+    "kind": "energy-time",
+    "T": 2,
+    "phase": "sin",
+    "target": "kinetic-zero",
+    "fraction": 0.25,
+    "answer": "0,5",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "184319",
+    "kind": "echo-distance",
+    "v": 340,
+    "t": 0.5,
+    "d": 85,
+    "shaft": true,
+    "answer": "85",
+    "unit": "м",
+    "images": []
+  },
+  {
+    "id": "991714",
+    "kind": "wave-ratio",
+    "nu1": 60,
+    "nu2": 6000,
+    "answer": "100",
+    "unit": "",
+    "images": []
+  },
+  {
+    "id": "925813",
+    "kind": "echo-time",
+    "v": 340,
+    "d": 850,
+    "t": 5,
+    "answer": "5",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "E77512",
+    "kind": "energy-time",
+    "T": 2,
+    "phase": "sin",
+    "target": "kinetic-zero",
+    "fraction": 0.25,
+    "answer": "0,5",
+    "unit": "с",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/2060F9109A1DA181425039A877724AB0(copy1)/innerimg0.gif"
+    ]
+  },
+  {
+    "id": "E92D12",
+    "kind": "wave",
+    "target": "period",
+    "v": 1000,
+    "lam": 5,
+    "T": 0.005,
+    "answer": "0,005",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "E17F18",
+    "kind": "graph-frequency",
+    "T": 0.008,
+    "nu": 125,
+    "answer": "125",
+    "unit": "Гц",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3A28E16EDC1990BC47646DDFF45407C4(copy1)/xs3qstsrc5cf351a552894cf4be8522f350550d3e_3_1758619052.png"
+    ]
+  },
+  {
+    "id": "4D1A28",
+    "kind": "graph-ratio",
+    "T1": 4,
+    "T2": 2,
+    "target": "2:1",
+    "answer": "2",
+    "unit": "",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/03276D736A8EB46D41DFB67BE6B264C4(copy3)/xs3qstsrc03276D736A8EB46D41DFB67BE6B264C4_3_1673431079.png"
+    ]
+  },
+  {
+    "id": "04652B",
+    "kind": "spring",
+    "target": "mass",
+    "m": 0.16,
+    "m2": 0.04,
+    "periodRatio": 0.5,
+    "vertical": true,
+    "answer": "0,04",
+    "unit": "кг",
+    "images": []
+  },
+  {
+    "id": "581129",
+    "kind": "wave",
+    "target": "frequency",
+    "v": 5000,
+    "lam": 1.25,
+    "nu": 4000,
+    "answer": "4000",
+    "unit": "Гц",
+    "images": []
+  },
+  {
+    "id": "4E8F5A",
+    "kind": "wave",
+    "target": "wavelength",
+    "v": 340,
+    "nu": 2000,
+    "lam": 0.17,
+    "answer": "0,17",
+    "unit": "м",
+    "images": []
+  },
+  {
+    "id": "AEAD5B",
+    "kind": "sound-time",
+    "v": 340,
+    "d": 510,
+    "t": 1.5,
+    "answer": "1,5",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "C480A8",
+    "kind": "spring",
+    "target": "mass-ratio",
+    "periodRatio": 1.5,
+    "massRatio": 2.25,
+    "vertical": true,
+    "answer": "2,25",
+    "unit": "",
+    "images": []
+  },
+  {
+    "id": "C95CC8",
+    "kind": "pendulum-path",
+    "T": 1.6,
+    "fraction": 0.25,
+    "answer": "0,4",
+    "unit": "с",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3335F7F64F49AE724C019DCF21290A3D(copy2)/xs3qstsrc3335F7F64F49AE724C019DCF21290A3D_1_1544447023.gif"
+    ]
+  },
+  {
+    "id": "FF9DEF",
+    "kind": "energy-time",
+    "T": 1,
+    "phase": "cos",
+    "target": "potential-half",
+    "fraction": 0.125,
+    "answer": "0,125",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "85F7E0",
+    "kind": "wave",
+    "target": "frequency",
+    "v": 1500,
+    "lam": 0.75,
+    "nu": 2000,
+    "answer": "2000",
+    "unit": "Гц",
+    "images": []
+  },
+  {
+    "id": "0A7D69",
+    "kind": "wave",
+    "target": "frequency",
+    "v": 340,
+    "lam": 0.68,
+    "nu": 500,
+    "answer": "500",
+    "unit": "Гц",
+    "images": []
+  },
+  {
+    "id": "9DE065",
+    "kind": "pendulum",
+    "target": "period-ratio",
+    "lengthRatio": 0.1111111111111111,
+    "massRatio": 1,
+    "answer": "3",
+    "unit": "",
+    "images": []
+  },
+  {
+    "id": "66AE6D",
+    "kind": "energy-time",
+    "T": 1.8,
+    "phase": "sin",
+    "target": "kinetic-zero",
+    "fraction": 0.25,
+    "answer": "0,45",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "8FA66F",
+    "kind": "spring",
+    "target": "stiffness",
+    "k": 50,
+    "k2": 200,
+    "periodRatio": 0.5,
+    "vertical": true,
+    "answer": "200",
+    "unit": "Н·м⁻¹",
+    "images": []
+  },
+  {
+    "id": "407C39",
+    "kind": "wave-ratio",
+    "nu1": 80,
+    "nu2": 320,
+    "answer": "4",
+    "unit": "",
+    "images": []
+  },
+  {
+    "id": "F7403B",
+    "kind": "spring",
+    "target": "period",
+    "T": 2,
+    "massRatio": 4,
+    "stiffnessRatio": 1,
+    "answer": "4",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "584536",
+    "kind": "graph-ratio",
+    "T1": 2,
+    "T2": 4,
+    "target": "1:2",
+    "answer": "2",
+    "unit": "",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9FE2AEB859F485BA430C3378685E3F48(copy1)/xs3qstsrc9FE2AEB859F485BA430C3378685E3F48_7_1638359055.png"
+    ]
+  },
+  {
+    "id": "D2EF85",
+    "kind": "spring",
+    "target": "mass-frequency",
+    "m": 0.16,
+    "m2": 0.64,
+    "frequencyRatio": 0.5,
+    "vertical": true,
+    "answer": "0,64",
+    "unit": "кг",
+    "images": []
+  },
+  {
+    "id": "C33B81",
+    "kind": "spring",
+    "target": "mass",
+    "m": 100,
+    "m2": 400,
+    "periodRatio": 2,
+    "vertical": true,
+    "grams": true,
+    "answer": "400",
+    "unit": "г",
+    "images": []
+  },
+  {
+    "id": "39CA85",
+    "kind": "echo-lightning",
+    "answer": "3",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "8C8B86",
+    "kind": "pendulum",
+    "target": "period",
+    "lengthRatio": 1,
+    "massRatio": 4,
+    "T": 1.6,
+    "answer": "1,6",
+    "unit": "с",
+    "images": []
+  },
+  {
+    "id": "BC821C",
+    "kind": "spring-path",
+    "A": 0.1,
+    "path": 0.2,
+    "t": 0.25,
+    "answer": "2",
+    "unit": "Гц",
+    "images": []
+  }
+]

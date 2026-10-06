@@ -31,3 +31,20 @@ test('Вложенные корни, короткий корень и незак
  assert.equal(context.renderMathText('√(a + (b)'), '√(a + (b)');
  assert.ok(context.renderMathText('√((x) + <script>)').includes('&lt;script&gt;'));
 });
+test('Десятичные и дробные показатели степени',()=>{
+ assert.equal(context.renderMathText('5^(0,06) + 7^(−2x+4)'), '5<sup>0,06</sup> + 7<sup>−2x+4</sup>');
+ const result=context.renderMathText('4^(⟦1¦5⟧)');
+ assert.ok(result.startsWith('4<sup><span class="math-fraction">'));
+ assert.ok(result.endsWith('</span></sup>'));
+ assert.equal(context.renderMathText('2^(<script>)'),'2<sup>&lt;script&gt;</sup>');
+ assert.equal(context.renderMathText('2^(x+1'), '2^(x+1');
+});
+test('Вложенные скобки и степени внутри показателя',()=>{
+ assert.equal(context.renderMathText('3^(log₃(log₃x))'), '3<sup>log₃(log₃x)</sup>');
+ assert.equal(context.renderMathText('2^(x^(2)+1)'), '2<sup>x<sup>2</sup>+1</sup>');
+ const result=context.renderMathText('3^(log₃(⟦a¦b⟧))');
+ assert.ok(result.startsWith('3<sup>log₃(<span class="math-fraction">'));
+ assert.ok(result.endsWith('</span>)</sup>'));
+ assert.equal(context.renderMathText('2^(x\n+1)'), '2^(x\n+1)');
+ assert.equal(context.renderMathText('3^(log₃(<script>))'), '3<sup>log₃(&lt;script&gt;)</sup>');
+});

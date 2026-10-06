@@ -1,0 +1,310 @@
+[
+  {
+    "id": "2CB64F",
+    "kind": "a-ratio",
+    "a0": 0.6,
+    "rf": 0.5,
+    "rm": 2,
+    "reference": "5425",
+    "answer": "0,15",
+    "images": [],
+    "unit": "м·с⁻²"
+  },
+  {
+    "id": "2622F3",
+    "kind": "F-ratio",
+    "F0": 16,
+    "rm": 0.5,
+    "ra": 0.25,
+    "reference": "29976",
+    "answer": "2",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "242172",
+    "kind": "F-ratio",
+    "F0": 16,
+    "rm": 4,
+    "ra": 0.5,
+    "reference": "29976",
+    "answer": "32",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "249978",
+    "kind": "mass-fixed-force",
+    "m0": 8,
+    "a0": 5,
+    "a": 4,
+    "reference": "37139",
+    "answer": "10",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "1E061B",
+    "kind": "vectors",
+    "reference": "20012",
+    "answer": "3",
+    "vectors": [
+      [
+        -3,
+        -2
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DEDB5CB2843BB1CB44BA28CDFCC229B8(copy1)/xs3qstsrcDEDB5CB2843BB1CB44BA28CDFCC229B8_7_1638358467.png"
+    ],
+    "unit": "Н"
+  },
+  {
+    "id": "19872D",
+    "kind": "F-numeric",
+    "F0": 70,
+    "m0": 10,
+    "m": 9,
+    "ra": 1,
+    "reference": "37139",
+    "answer": "63",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "41AB52",
+    "kind": "mass-numeric",
+    "F0": 9,
+    "m0": 3,
+    "F": 18,
+    "ra": 4,
+    "reference": "50695",
+    "answer": "1,5",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "414B58",
+    "kind": "F-numeric",
+    "F0": 50,
+    "m0": 5,
+    "m": 9,
+    "ra": 2,
+    "reference": "37139",
+    "answer": "180",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "EC6256",
+    "kind": "mass-factor",
+    "rf": 0.5,
+    "ra": 3,
+    "reference": "50695",
+    "answer": "6",
+    "images": [],
+    "unit": "раз"
+  },
+  {
+    "id": "C6B6AB",
+    "kind": "F-numeric",
+    "F0": 50,
+    "m0": 5,
+    "m": 8,
+    "ra": 1,
+    "reference": "37139",
+    "answer": "80",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "64F9A6",
+    "kind": "F-acceleration",
+    "F0": 100,
+    "a0": 10,
+    "a": 7,
+    "reference": "37139",
+    "answer": "70",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "9B55C6",
+    "kind": "vectors",
+    "reference": "8419",
+    "answer": "5",
+    "vectors": [
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AA1D8C54A70EA7CA484BC0AA4EFB7EB1(copy3)/xs3qstsrcAA1D8C54A70EA7CA484BC0AA4EFB7EB1_1_1663056829.png"
+    ],
+    "unit": "Н"
+  },
+  {
+    "id": "82C6CD",
+    "kind": "mass-ratio",
+    "m0": 3,
+    "rf": 0.5,
+    "ra": 0.25,
+    "reference": "50695",
+    "answer": "6",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "4D1B9A",
+    "kind": "graph",
+    "reference": "32874",
+    "answer": "24",
+    "F": [
+      6
+    ],
+    "a": [
+      0.25
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/93DD6A16F1FABDB14245DA3BC7447787(copy4)/xs3qstsrc93DD6A16F1FABDB14245DA3BC7447787_1_1663141297.jpg"
+    ],
+    "unit": "кг"
+  },
+  {
+    "id": "F65695",
+    "kind": "mass-numeric",
+    "F0": 50,
+    "m0": 5,
+    "F": 60,
+    "ra": 1,
+    "reference": "37139",
+    "answer": "6",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "12E192",
+    "kind": "vectors",
+    "reference": "319",
+    "answer": "2",
+    "vectors": [
+      [
+        -2,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        -3
+      ],
+      [
+        4,
+        0
+      ]
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0639EE1A7C3188C445F0446293E9C52B(copy1)/xs3qstsrc0639EE1A7C3188C445F0446293E9C52B_1_1513172138.png"
+    ],
+    "unit": "Н"
+  },
+  {
+    "id": "C644EA",
+    "kind": "mass-ratio",
+    "m0": 4,
+    "rf": 0.5,
+    "ra": 4,
+    "reference": "50695",
+    "answer": "0,5",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "19F564",
+    "kind": "a-fixed-force",
+    "m0": 5,
+    "a0": 3,
+    "m": 7.5,
+    "reference": "38778",
+    "answer": "2",
+    "images": [],
+    "unit": "м·с⁻²"
+  },
+  {
+    "id": "E24869",
+    "kind": "a-fixed-force",
+    "m0": 8,
+    "a0": 5,
+    "m": 5,
+    "reference": "38778",
+    "answer": "8",
+    "images": [],
+    "unit": "м·с⁻²"
+  },
+  {
+    "id": "5E2935",
+    "kind": "vectors",
+    "reference": "20012",
+    "answer": "3",
+    "vectors": [
+      [
+        3,
+        2
+      ],
+      [
+        0,
+        -2
+      ]
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/658A30E54F1EAF154F0694FDDEE3967A(copy2)/xs3qstsrc658A30E54F1EAF154F0694FDDEE3967A_1_1581064752.gif"
+    ],
+    "unit": "Н"
+  },
+  {
+    "id": "973C3C",
+    "kind": "a-ratio",
+    "a0": 4,
+    "rf": 2,
+    "rm": 0.5,
+    "reference": "50700",
+    "answer": "16",
+    "images": [],
+    "unit": "м·с⁻²"
+  },
+  {
+    "id": "1DEB4C",
+    "kind": "rope",
+    "reference": "5480",
+    "answer": "1",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/2F5CA79A0217BEEA42DEF1A4DEE8B172(copy1)/xs3qstsrc2F5CA79A0217BEEA42DEF1A4DEE8B172_1_1509452090.png"
+    ],
+    "unit": "кг"
+  },
+  {
+    "id": "150AE7",
+    "kind": "atwood",
+    "reference": "17673",
+    "answer": "6",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/815EC052D1DEAF8C41F9C0B7AD87FD22(copy2)/xs3qstsrc815EC052D1DEAF8C41F9C0B7AD87FD22_1_1542630069.png"
+    ],
+    "unit": "Н"
+  }
+]

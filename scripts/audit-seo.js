@@ -64,6 +64,8 @@ async function run() {
   }
   const db = new DatabaseSync(path.join(root, 'storage/solutions.sqlite'), {readOnly: true});
   const published = new Set(db.prepare('SELECT task_id FROM solutions WHERE published=1').all().map(row => row.task_id));db.close();
+  const fullMathIds = new Set(fs.readdirSync(root).filter(name => /^mathematics-\d+\.raw\.html$/.test(name))
+    .flatMap(name => idsIn(new TextDecoder('windows-1251').decode(fs.readFileSync(path.join(root, name))))));
   const physics = readPhysicsCatalog(root);
   for (const task of physics.values()) check(physicsClassification(task).reviewStatus !== 'stale', `${task.id}: классификация требует повторной проверки источника`);
   const expectedSections = {'/':66, '/planimetry':75, '/parameters':57, '/equations':67, '/inequalities':63, '/optimal':2, '/numbers':51, '/finance':64, '/physics':538};
@@ -77,11 +79,13 @@ async function run() {
   const mathHubData = checkPage('/math', mathHub.html, mathHub.status);
   check(mathHubData.title.includes('Решения задач по математике ФИПИ'), '/math: title под широкий запрос');
   check(mathHub.html.match(/class="math-hub-card"/g)?.length === 8, '/math: восемь математических разделов');
-  check(mathHub.html.includes('445 заданий') && mathHub.html.includes('445 подробных решений'), '/math: сводное число заданий и решений');
+  const mathSolved = [...fullMathIds].filter(id => published.has(id)).length;
+  check(mathHub.html.includes(`${fullMathIds.size} заданий · ${mathSolved} подробных решений`), '/math: полный каталог и опубликованные решения');
+  check(mathHub.html.includes('class="math-hub-all" href="/?topic=all"'), '/math: переход ко всем заданиям');
   const mathHubList = mathHubData.graph.find(graph => graph['@type'] === 'CollectionPage')?.mainEntity;
   check(mathHubList?.numberOfItems === 8, '/math: JSON-LD ItemList');
   check(JSON.stringify((mathHubList?.itemListElement || []).map(item => item.url).sort()) === JSON.stringify([
-    '/', '/planimetry', '/parameters', '/equations', '/inequalities', '/optimal', '/numbers', '/finance'
+    '/stereometry', '/planimetry', '/parameters', '/equations', '/inequalities', '/optimal', '/numbers', '/finance'
   ].map(url => canonicalOrigin + url).sort()), '/math: ссылки JSON-LD');
   check(urlSet.has(canonicalOrigin + '/math'), 'sitemap: раздел математики');
   const catalogPaths = [...Object.keys(expectedSections), ...topicCodes.map(code => `/physics?topic=${code}`)];

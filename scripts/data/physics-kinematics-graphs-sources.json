@@ -1,0 +1,1060 @@
+{
+  "008243": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7FBC73255DABB9F240266CEC37D83C63(copy1)/xs3qstsrc7FBC73255DABB9F240266CEC37D83C63_1_1472732562.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции скорости тела υ_(x) от времени t. Определите путь тела за первые 5 секунд движения. м",
+    "sourceHash": "28941dbc425aaedb5b9866b726de69d90167246c3f77b5d7b833ce13825d097c",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=35233",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. График со скоростями 5 при 0–3 с, 15 при 5 с, −10 при 10–12 с и 5 при 18–20 с. Внешний путь 12–18 с: нуль при 16, площади 20+5=25. Первые 5 с дают другую сумму 15+20=35. Собственный ответ по ФИПИ: 35. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "35",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "BBFB41": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1C0E9F3C22FF8E4748DF8B2A59AB0AAA(copy1)/xs3qstsrc1C0E9F3C22FF8E4748DF8B2A59AB0AAA_1_1508844151.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости от времени для проекции υ_(x) скорости тела. Какова проекция a_(x) ускорения этого тела в интервале времени от 5 до 6 c? м/с²",
+    "sourceHash": "62e2a36b2fbcfd0967338109c59c225ad1b32040368e6f709065d434cd697f0c",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10459",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график: (0,12),(2,4),(3,−12),(4,−12),(5,0),(6,−8); внешний вопрос о 5–6 с даёт −8. Каждый иной интервал ФИПИ рассчитан отдельно. Собственный ответ по ФИПИ: −8. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−8",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "277542": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B13A1D5A3DD4BAD24A787EC738F87078(copy1)/xs3qstsrc06633852E570AFA547036D2D419E2707_5_1721205631.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в момент времени 2 c? м/с²",
+    "sourceHash": "82e948e19a4f63d75289ed99f25e68085167a56b7ca2e34ed54e778ce9150614",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50694",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график имеет плато v=2 на1,5–2,5с; в момент2с ускорение0. Совпали интервал постоянной скорости и ответ. Собственный ответ по ФИПИ: 0. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "0",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "6EC247": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/08BC3CE1EB5D84FD42E0FF2F20D0DB3D(copy1)/xs3qstsrc08BC3CE1EB5D84FD42E0FF2F20D0DB3D_4_1698052394.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля скорости υ тела от времени t. Найдите путь, пройденный телом за время от 0 до 12 с. м",
+    "sourceHash": "83c29e1ccbc8329fa1588ae556e3851c2ed1fac9edcaa63865d5d2b401ddc8dd",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=39244",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний модуль скорости растёт 0–4 с от 0 до 15, затем постоянен до 12; путь 30+120=150. В другом рисунке ФИПИ есть плато20 до4 и торможение до12: путь80+80=160. Собственный ответ по ФИПИ: 150. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "150",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "38F045": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/629607F42334B8C34F7BF981FE34C433(copy1)/xs3qstsrc629607F42334B8C34F7BF981FE34C433_1_1606731157.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Из двух городов навстречу друг другу с постоянной скоростью движутся два автомобиля. На графике показано изменение расстояния между автомобилями с течением времени. С какой скоростью едет по дороге второй автомобиль, если скорость первого автомобиля равна 15 м/с? м/с",
+    "sourceHash": "438792379b51215f622b7ac7d6a070b2a19e577e0f2608bc3f9147ac8fdf1495",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=11924",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Расстояние 144 км сокращается до нуля за 60 мин, относительная скорость 40 м·с⁻¹. В варианте с известной скоростью первого автомобиля 15 требуется ещё вычесть её из суммы: второй автомобиль 25. Эти вопросы различаются. Собственный ответ по ФИПИ: 25. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-likes=11924.html"
+  },
+  "428CFB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/293566A556FF8AC14E82271157AD2BED(copy1)/xs3qstsrc104f6a5ad4ca437a93dd579a22dd700b_2_1758618935.jpg"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения тела в интервале времени от 0 до 10 c? Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "d7075db882b03976e2c17d2773af27c223c21384a21914540507d13e85680eb0",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43052",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя прямая (0,−15)–(20,15) даёт a=1,5. В ФИПИ другие начальные и конечные скорости и интервал0–10: ускорение считается по своему рисунку, совпадение ответа1,5 в одном варианте случайно. Собственный ответ по ФИПИ: 2. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "2",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "41FCF3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/622D881C69A5BDA24D3462C05E05090E(copy2)/xs3qstsrc622D881C69A5BDA24D3462C05E05090E_1_1573735292.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите путь, пройденный телом в интервале времени от 0 до 5 с. м",
+    "sourceHash": "35eb3638b68e29a3a02010b18f28eefc0fa36426de598ef683e2bd54080098f0",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=16842",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний путь 0–5 с при скорости от 15 через нуль в 3 с до −10: суммы модулей треугольных площадей 22,5+10=32,5. Вариант ФИПИ с другим временем использует свои границы; вопрос об ускорении сравнивает наклон −5 вместо площади. Собственный ответ по ФИПИ: 32,5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "32,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "B51AF2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0C4975776E28A9034BC17EF6DECF03C7(copy1)/xs3qstsrc1465895F1B4E9B334C5BC641702856E4_1_1772108635.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости координаты тела x от времени t при его прямолинейном движении вдоль оси Ox. Определите проекцию скорости этого тела на ось Ox в промежутке времени от 4 до 6 с. м/с",
+    "sourceHash": "741ecc44f68e7ae10f42d555d665d9abebae81b4992f0620968f2ce1ae0deda1",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=37857",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Координаты (4,−10),(8,10),(14,−5). Внешняя скорость 4–8 с равна 5. Для 4–6 с та же прямая; для 8–12 с другая прямая и ответ −2,5. Собственный ответ по ФИПИ: 5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "EDB1FA": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8D3F896E00BABBC24BBC0D60E4DF8FED(copy1)/xs3qstsrc8D3F896E00BABBC24BBC0D60E4DF8FED_1_1763717627.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x)ускорения этого тела в интервале времени от 0 до 2 с. Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "f3751f5bee28158ae3c3931498f52bfe0faa85e27b099ae8a4c156680f9ed52f",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38835",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний вопрос на 2–3 с: v от 0 до 4,5, a=4,5; при t=0 внешняя скорость −3. В ФИПИ первый участок начинается с −9, вопрос о 0–2 с, a=4,5. Числа ответов совпали при различных исходных точках и интервалах. Собственный ответ по ФИПИ: 4,5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "4,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "259807": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/69EF9C47F373B8B34B836760BA102835(copy1)/xs3qstsrc69EF9C47F373B8B34B836760BA102835_1_1485418130.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости от времени для проекции υ_(x) скорости тела. Какова проекция a_(x) ускорения этого тела в интервале времени от 4 до 8 c? м/с²",
+    "sourceHash": "b41d3d9e7bac6b2891bdb2eeb0bcea546aa3e7d4953552bfb5d142b25ee35fac",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=9301",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. На 4–8 с скорость меняется от 12 до 4, ускорение −2; совпали интервал, отсчёты, закон и ответ. Собственный ответ по ФИПИ: −2. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−2",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "E01406": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1E7285AE12D09F794F5ACC85ABBA229F(copy1)/xs3qstsrc1E7285AE12D09F794F5ACC85ABBA229F_1_1677751658.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции скорости υ_(x) от времени t для тела, движущегося прямолинейно вдоль оси Ox. Определите проекцию a_(x) ускорения тела. м/с²",
+    "sourceHash": "93e1ccfa933516ef28fc389851ab60e68483df88cb825c221492fcf0e635856e",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=4549",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя прямая идёт от −40 при t=0 до 0 при t=5: ускорение 8. ФИПИ имеет другие отсчёты; вычислен собственный наклон. Собственный ответ по ФИПИ: 5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "F5E57D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E1D36491382B94EA4117FF162BDE11A6(copy1)/xs3qstsrc317c8818c7664fe88ce386f1b7356786_1_1758618919.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Тело движется вдоль оси Ox. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите путь, пройденный телом в интервале времени от 0 до 20 с. м",
+    "sourceHash": "e6bd1a97f65fb28c0410a44a4f272a7c14bedd77716075799948b6cd494887a0",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43002",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя ломаная (0,15),(10,5),(20,20),(30,0),(40,25); внешний вопрос о 20–40 с даёт225. В ФИПИ интервалы0–20 или0–30, собственные суммы100+125=225 и100+125+100=325. Собственный ответ по ФИПИ: 225. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "225",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "081272": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6FA933F509F297784827E35F8A3524FB(copy1)/xs3qstsrc6FA933F509F297784827E35F8A3524FB_1_1605166130.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведены графики зависимости проекции скорости от времени для легкового автомобиля (I) и микроавтобуса (II), движущихся по прямой дороге, вдоль которой и направлена ось Ох. Определите отношение модулей ускорений (a_(I)) ÷ (a_(II)).",
+    "sourceHash": "cf09758925bf6160a6708ba0a27ee002d1cd3aa10b96bc81b133ca3b4aa4e94f",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=104",
+    "match": "method",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний пример выбирает наибольший модуль наклона одного ломаного графика: ускорения −1,5; 2; −1; 0,5, максимум 2. В ФИПИ два графика, требуется отношение модулей 5 и 2,5, равное 2; совпадение числа не означает совпадение задачи. Собственный ответ по ФИПИ: 2. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "2",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "78FE70": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C096764C77A5A9BF4EEAE901EDD273A1(copy1)/xs3qstsrc3321fcaf1f644c298cc8abc61baa8700_7_1759926961.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения тела в интервале времени от 0 до 2 с. Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "f4215b929e02e1e3ca479cf42ce655354e17c7fe71aba2da6148c9379ab37075",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=42629",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешние точки (0,20),(3,−10),(11,10); на 0–2 с a=−10. Другая задача ФИПИ имеет точки (0,−10),(5,10), ускорение4; внешний график не переносится. Собственный ответ по ФИПИ: −10. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−10",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "7FDF75": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/2F698BD56859B1CA4D1EED37122DDD0A(copy1)/xs3qstsrc3387114FBC13960D4ED16B3BFA436DC9_5_1714997527.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения этого тела в интервале времени от 40 до 60 с. Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "675998e58729c25c8b9f14001f8bd3bb41372931fbbc5ab7500741fd1c5031cf",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43806",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешние скорости20 при10с и10 при20с дают−1. Другая ФИПИ-задача имеет скорости−25 при40с и−35 при60с, результат−0,5; данные различаются. Собственный ответ по ФИПИ: −0,5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−0,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "D5307D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6D3571519B8B99754915AB50F3D69143(copy2)/xs3qstsrc6D3571519B8B99754915AB50F3D69143_1_1568119887.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите путь, пройденный телом в интервале времени от 15 до 19 с. м",
+    "sourceHash": "99489068c75320cfae6138ab795851fd55a50c6008e4c156b684f9bd2c424b41",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=17646",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. На 15–19 с скорость линейно меняется от 5 до −5, нуль при 17 с, путь 5+5=10, перемещение 0. Совпали существенные данные и расчёт. Собственный ответ по ФИПИ: 10. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "10",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "65EA74": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D21A5C1A0EFAA68B41721CF79A7E8DE6(copy2)/xs3qstsrcD21A5C1A0EFAA68B41721CF79A7E8DE6_1_1548161521.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Из двух городов навстречу друг другу с постоянной скоростью движутся два автомобиля. На графике показано изменение расстояния между автомобилями с течением времени. Какова скорость первого автомобиля в системе отсчёта, связанной со вторым автомобилем? м/с",
+    "sourceHash": "a770c227f6a93e02521c97bf8b09f1a640f948bb23a460536dbad2972cae575f",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=11924",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Расстояние 144 км сокращается до нуля за 60 мин, относительная скорость 40 м·с⁻¹. В варианте с известной скоростью первого автомобиля 15 требуется ещё вычесть её из суммы: второй автомобиль 25. Эти вопросы различаются. Собственный ответ по ФИПИ: 40. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "40",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-likes=11924.html"
+  },
+  "C013BD": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/596016C3BB60AFA24387BD444AA3C2D4(copy2)/xs3qstsrc596016C3BB60AFA24387BD444AA3C2D4_1_1511446258.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 3 до 4 c? м/с²",
+    "sourceHash": "82bf3a90bb50c553703169220d6c8260f394a1523456518d264725d0942e1472",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=51005",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя ломаная (0,8),(1,0),(2,12),(3,12),(4,−4),(6,−12); внешний вопрос3–4с даёт−16. Иные интервалы ФИПИ1–2 и4–6 дают12 и−4 соответственно. Собственный ответ по ФИПИ: −16. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−16",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "C5B0B3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A47C0F1F6B7BA6C249B8F8FEE8D762D6(copy2)/xs3qstsrcA47C0F1F6B7BA6C249B8F8FEE8D762D6_1_1571303421.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 4 до 6 c? м/с²",
+    "sourceHash": "ee1cc008750867402df05bdf1819cb190175d7f13c3eb671ffa6f4e66449189e",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50693",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя ломаная (0,−8),(1,0),(2,−12),(3,−12),(4,4),(6,12). Вопрос4–6с даёт4; вопрос ФИПИ3–4с использует другой участок и даёт16. Собственный ответ по ФИПИ: 4. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "4",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "E0C5B4": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0CD2492C7FEF825A413F6987D517D9A7(copy1)/xs3qstsrc0CD2492C7FEF825A413F6987D517D9A7_1_1486991082.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Автомобиль движется по прямой улице, параллельной оси Ox. На графике представлена зависимость проекции его скорости υ_(x) от времени t. Определите проекцию ускорения автомобиля a_(x) в интервале времени от 0 до 10 с. м/с²",
+    "sourceHash": "4a470c187efd6964293184a2700a12a9e527a660a1302dd404fbb1a1b8921156",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43104",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график на0–10 с от20 до0, a=−2; совпали вопрос, рисунок и ответ. Собственный ответ по ФИПИ: −2. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−2",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "E650BC": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8C55A4F9A3A09B5344F2836E60467947(copy1)/xs3qstsrc8C55A4F9A3A09B5344F2836E60467947_1_1516191783.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 2 до 3 c? м/с²",
+    "sourceHash": "ca14c7ea1a7b0a1372b7a881488e042a7e7ae197092b1c6db0efc5aaad4819bf",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38598",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Во внешнем графике начальный участок (0,−12)–(2,−4) даёт 4; далее плато 2–4 с и подъём после 4 с. В ФИПИ после 2 с другая ломаная: (3,12),(4,12),(5,0),(6,8); её наклоны пересчитаны, внешний рисунок не подставлялся. Собственный ответ по ФИПИ: 16. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "16",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "424A13": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3CCAAB9AC974BC4440B7368B228A35CB(copy2)/xs3qstsrc3CCAAB9AC974BC4440B7368B228A35CB_1_1577429593.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Из населённого пункта одновременно в одном направлении выезжают грузовой автомобиль и бульдозер и движутся по дороге с постоянными скоростями. На графике показана зависимость расстояния между грузовиком и бульдозером от времени. Скорость грузовика равна 25 м/с, а скорость бульдозера меньше. С какой скоростью движется бульдозер? м/с",
+    "sourceHash": "9be8178d866c72d72d5b00d57b4b6617a3adcaccf91bcf412c3461ef849ad0e6",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=3867",
+    "match": "method",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Во внешнем примере две координаты изменяются со скоростями −14 и 4, относительная скорость 18. В ФИПИ дано расстояние при попутном движении: его рост 54 км за 60 мин даёт 15 м·с⁻¹, бульдозер движется со скоростью 25−15=10. Совпадает метод относительного движения, исходные данные и ответы различаются. Собственный ответ по ФИПИ: 10. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "10",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=202.html"
+  },
+  "B61411": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D4C7DB7AA8E191374CA4328AA9F16691(copy1)/xs3qstsrc5455d09b64dd4e1593e258eca0134f67_8_1777384205.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 2 до 3 c? Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "3b645c218e04ddb5c56f4e920eb813a8f225dd9eb4d1e984413825056fda1cda",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10459",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график: (0,12),(2,4),(3,−12),(4,−12),(5,0),(6,−8); внешний вопрос о 5–6 с даёт −8. Каждый иной интервал ФИПИ рассчитан отдельно. Собственный ответ по ФИПИ: −16. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−16",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "2A0F1F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/76CC5DDBCB4DA5E14638B438431DCC11(copy1)/xs3qstsrc561291F5B1378CE6491E4DD27BECA7AE_5_1721205767.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 0 до 2 c? Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "c31c94785b3269cc17e99d923f1ab26f5fafbc0d267ca35ae7fd8e5a25a57d81",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38598",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Во внешнем графике начальный участок (0,−12)–(2,−4) даёт 4; далее плато 2–4 с и подъём после 4 с. В ФИПИ после 2 с другая ломаная: (3,12),(4,12),(5,0),(6,8); её наклоны пересчитаны, внешний рисунок не подставлялся. Собственный ответ по ФИПИ: 4. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "4",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "ECE218": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/2E6A66B3B57B9BA8448B78F591BAB4BA(copy1)/xs3qstsrc2E6A66B3B57B9BA8448B78F591BAB4BA_1_1763717644.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля υ скорости тела от времени t. Найдите путь, пройденный телом за время от 0 до 12 с. м",
+    "sourceHash": "3e7cc1025543fdbe9c4e1133c44e6b3b003cbff3f84b2415c2e0e448512686fa",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=39244",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний модуль скорости растёт 0–4 с от 0 до 15, затем постоянен до 12; путь 30+120=150. В другом рисунке ФИПИ есть плато20 до4 и торможение до12: путь80+80=160. Собственный ответ по ФИПИ: 160. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "160",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "371718": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/494FAE0B5451AE0B4E5085556C64ED02(copy3)/xs3qstsrc494FAE0B5451AE0B4E5085556C64ED02_7_1672305447.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/494FAE0B5451AE0B4E5085556C64ED02(copy3)/xs3qstsrc494FAE0B5451AE0B4E5085556C64ED02_8_1672305447.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции скорости тела от времени t. Определите проекцию a_(x) ускорения этого тела в интервале времени от 20 до 30 с. м/с²",
+    "sourceHash": "1c38b945a2e655aafd6cf624164053a0e4ec309052f6c05bc151694de974af08",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50690",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний вопрос о25с на прямой (20,20)–(30,0) даёт−2. В ФИПИ ломаная (0,15),(10,−15),(15,10),(30,−20): на20–30с тоже−2, на10–15с +5. Отсчёты первичного графика проверены отдельно. Собственный ответ по ФИПИ: −2. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−2",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "BD0C23": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6C08C51C7E1E9A9544E3A256812704CE(copy1)/xs3qstsrc6C08C51C7E1E9A9544E3A256812704CE_1_1606731019.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля скорости u прямолинейно движущегося тела от времени t. Определите по графику путь, пройденный телом в интервале времени от 1 до 5 с. м",
+    "sourceHash": "9dd98652fc66731de9567dc3976df8b6752a87f880a594d4abfdf29cdbad25de",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38709",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя трапеция скорости имеет вершины (0,0),(1,10),(3,10),(5,0), полный путь 35. ФИПИ спрашивает другие интервалы: нужны соответствующие части этой фигуры. Собственный ответ по ФИПИ: 30. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "30",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "EA992E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C3EEF91BA283BA16488C05214DF9C126(copy2)/xs3qstsrcC3EEF91BA283BA16488C05214DF9C126_1_1542625795.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Тело движется по прямой, параллельной оси Ox. На графике представлена зависимость проекции υ_(x) его скорости от времени t. Определите проекцию a_(x) ускорения тела в интервале времени от 0 до 5 с. м/с²",
+    "sourceHash": "80f35f1e1f729e3d83e99a38c88360c5db4682ff4cbf349d3f2f0e85b6f1c399",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=16842",
+    "match": "method",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний путь 0–5 с при скорости от 15 через нуль в 3 с до −10: суммы модулей треугольных площадей 22,5+10=32,5. Вариант ФИПИ с другим временем использует свои границы; вопрос об ускорении сравнивает наклон −5 вместо площади. Собственный ответ по ФИПИ: −5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "4DDEDB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B27F60EE6BBE97EF42F7B5BF2E92F1CD(copy3)/xs3qstsrcB27F60EE6BBE97EF42F7B5BF2E92F1CD_1_1598260617.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения этого тела в интервале времени от 8 до 10 с. м/с²",
+    "sourceHash": "39cb534a70d4179d89e511894f1de3a07d850e96fafe0ecc00efaa61267841d8",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=35318",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. На 8–10 с v от 0 до −10, a=−5. На соседнем участке 5–8 с той же прямой наклон прежний; изменён интервал вопроса. Собственный ответ по ФИПИ: −5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "715DD2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/75352E36A40EBF9D47D7209C60967CBD(copy4)/xs3qstsrc75352E36A40EBF9D47D7209C60967CBD_1_1543998825.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Тело движется вдоль оси Оx. По графику зависимости проекции скорости тела υ_(x) от времени t установите модуль перемещения тела за время от t₁ = 6 c до t₂ = 10 c. м",
+    "sourceHash": "1020a6406f69639faab194ee71fe4393fe0fab12996059e162e3aaa8b48ae763",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=11783",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний вопрос о модуле перемещения на 6–10 с: площади −5 и +5 взаимно уничтожаются, ответ 0. Для 2–6 с порядок знаков обратный, результат также 0. Путь в обоих случаях 10. Неточная внешняя фраза о строго положительном пути заменена на неотрицательность. Собственный ответ по ФИПИ: 0. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "0",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "B9A0DF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F0939EBFB450A9514AF04D32E87B2E3F(copy1)/xs3qstsrc7419B20E24239FF745AF14608263AD7F_5_1721205840.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения этого тела в интервале времени от 20 до 25 с. Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "fe4286d0a51f77f4dc976837ffd12c58998d956a7613f36325c0089daecd3c5a",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=41536",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя восходящая прямая проходит через (20,−15),(35,15), ускорение в 30 с равно2. Первичный вопрос о 20–25 с той же прямой даёт2 по точкам −15 и −5. Собственный ответ по ФИПИ: 2. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "2",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "2336DF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0858251E63A292134BC1D8A8E4E96DF1(copy1)/xs3qstsrc0858251E63A292134BC1D8A8E4E96DF1_1_1508339954.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости от времени для проекции υ_(x) скорости тела. Какова проекция a_(x) ускорения этого тела в интервале времени от 3 до 4 c? м/с²",
+    "sourceHash": "0307b76e8d79d197e76d82e370ca357ec32863a5ff74885523d111421cd78350",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50693",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя ломаная (0,−8),(1,0),(2,−12),(3,−12),(4,4),(6,12). Вопрос4–6с даёт4; вопрос ФИПИ3–4с использует другой участок и даёт16. Собственный ответ по ФИПИ: 16. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "16",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "DAA0DF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3E4136E4A53393974B342F4361A3F187(copy2)/xs3qstsrc3E4136E4A53393974B342F4361A3F187_1_1571315467.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите путь, пройденный телом в интервале времени от 5 до 10 с. м",
+    "sourceHash": "c1578dca24d2d3d458432d797ff435b1bb8f6236f068b388c52256d0b1c6d73b",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=16842",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний путь 0–5 с при скорости от 15 через нуль в 3 с до −10: суммы модулей треугольных площадей 22,5+10=32,5. Вариант ФИПИ с другим временем использует свои границы; вопрос об ускорении сравнивает наклон −5 вместо площади. Собственный ответ по ФИПИ: 32,5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "32,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "D109D1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FC9FE54E5F7FAE104E464B0DE526CDE9(copy1)/xs3qstsrc7169DDDA9EB4829B45DF7692132D21BC_1_1486739806.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля скорости υ автомобиля от времени t. Определите по графику путь, пройденный автомобилем в интервале времени от t₁=20 с до t₂=50 с. м",
+    "sourceHash": "62dfe910ca55c96af7b06bc05b27ccea43c4d04a26062137ba6875133e94eb61",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=5459",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график: разгон 0–10 с до 10, плато до 30 с, торможение до нуля при 50 с. Внешний вопрос о пути 30–50 с: треугольник площадью 100. Для другого интервала ФИПИ добавлены только попадающие в него площади. Собственный ответ по ФИПИ: 200. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "200",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "DA7AD2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1C877A2EB61EBBB74266AAD931C3BC11(copy2)/xs3qstsrc1C877A2EB61EBBB74266AAD931C3BC11_1_1574154052.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 1 до 2 c? м/с²",
+    "sourceHash": "7054fae9cc3552ab6e8577c693840c5b05d7a33e00c6c3b181263702685e0234",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=51005",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя ломаная (0,8),(1,0),(2,12),(3,12),(4,−4),(6,−12); внешний вопрос3–4с даёт−16. Иные интервалы ФИПИ1–2 и4–6 дают12 и−4 соответственно. Собственный ответ по ФИПИ: 12. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "12",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "AA3BD8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1B1EEFAB455DB4104659DF4E4437DCB5(copy2)/xs3qstsrc1B1EEFAB455DB4104659DF4E4437DCB5_1_1542628104.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения этого тела в интервале времени от 10 до 15 с. м/с²",
+    "sourceHash": "e7a83b2c3c0d5c0bd719e1f0ccda2faa9438bed020ec3d73a9f4a4a5d9d99d64",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43484",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешние скорости5 при3с и15 при5с, a=5. В варианте ФИПИ10–15с скорости−10 и15 также дают5, но график и время другие. Собственный ответ по ФИПИ: 5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "C297D4": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3A20750594C28C16448DBEC22596F8F0(copy2)/xs3qstsrc3A20750594C28C16448DBEC22596F8F0_1_1540300439.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Тело движется вдоль оси Оx. По графику зависимости проекции скорости тела υ_(x) от времени t установите модуль перемещения тела за время от t₁ = 2 c до t₂ = 6 c. м",
+    "sourceHash": "33cb0eb7ce3261b0337e788bbb4576b6fa9e9939b742f64cc2652ba17f04d91f",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=11783",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний вопрос о модуле перемещения на 6–10 с: площади −5 и +5 взаимно уничтожаются, ответ 0. Для 2–6 с порядок знаков обратный, результат также 0. Путь в обоих случаях 10. Неточная внешняя фраза о строго положительном пути заменена на неотрицательность. Собственный ответ по ФИПИ: 0. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "0",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "6ADAD4": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4594E1E47763BEF54BA363F4A22EA138(copy1)/xs3qstsrc1CEBEF053483B3E54DF25946161F0A9B_1_1486740187.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля скорости υ автомобиля от времени t. Определите по графику путь, пройденный автомобилем в интервале времени от 0 до 40 с после начала движения. м",
+    "sourceHash": "67d04dfe20756566ca88968c521d4ccc3ca0e358b4fa50dfaa70a435b29b5a1d",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=51329",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график20→0 на0–20с и0→10 на20–30с даёт путь250. ФИПИ имеет другой график модуля скорости0→10 на0–10с, плато10–20с, спад20–40с, путь50+100+100=250. Совпадение числа не означает совпадение графика. Собственный ответ по ФИПИ: 250. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "250",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "FDE15C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-8.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/87E86D013481A6C642B1C4EB09531244(copy1)/xs3qstsrc81ac750925904e0a81b4a7e2a0b139cb_3_1758618986.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения тела в интервале времени от 10 до 20 с. Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "392da95704a9215d2ace0e58c1d7248eea355ec90645f78dc976a0f9679ca649",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43806",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешние скорости20 при10с и10 при20с дают−1. Другая ФИПИ-задача имеет скорости−25 при40с и−35 при60с, результат−0,5; данные различаются. Собственный ответ по ФИПИ: −1. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−1",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "2E3953": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-8.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/399EBDE816BBAEB94DC40B8F6A783413(copy1)/xs3qstsrc399EBDE816BBAEB94DC40B8F6A783413_1_1772623734.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x)ускорения этого тела в интервале времени от 2 до 4 с. Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "35adc88d63ad5a69ebd335917b6bc1d98b65ff773e94483e254b146e2c6460f0",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=51452",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешнее плато6 до2с, затем спад до−4 при4с; a=−5 на2–4с. Совпали существенные данные и ответ. Собственный ответ по ФИПИ: −5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "A24553": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-8.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4C783B03E04BA96849DE33BB7568DC68(copy1)/xs3qstsrcB713B2FCA7B6B9754BD03602A5232735_1_1486740005.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля скорости υ автомобиля от времени t. Определите по графику путь, пройденный автомобилем в интервале времени от t₁=10 с до t₂=50 от начала движения. м",
+    "sourceHash": "846c3a5fe68e2ec9916b7e785dde26d5f18d5bb3e01f6b9525c5526b87076fc0",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=5459",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график: разгон 0–10 с до 10, плато до 30 с, торможение до нуля при 50 с. Внешний вопрос о пути 30–50 с: треугольник площадью 100. Для другого интервала ФИПИ добавлены только попадающие в него площади. Собственный ответ по ФИПИ: 300. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "300",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "CC405D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-8.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B68B2791F4E7B08348A60FE25F143CEC(copy2)/xs3qstsrcB68B2791F4E7B08348A60FE25F143CEC_1_1547641724.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости скорости υ прямолинейно движущегося тела от времени t. Определите по графику путь, пройденный телом в интервале времени от 0 до 3 с после начала движения. м",
+    "sourceHash": "c1c39fe68fe406e734b2aee52d8b8d66b07b76852490d5817e6c8e5384f0dc0e",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38709",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя трапеция скорости имеет вершины (0,0),(1,10),(3,10),(5,0), полный путь 35. ФИПИ спрашивает другие интервалы: нужны соответствующие части этой фигуры. Собственный ответ по ФИПИ: 25. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "788CAE": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6A98E08D3A7088654CE6C679461FF6A5(copy1)/xs3qstsrc93CFFAC5E99BBFCA4B1162AA0254CAD0_3_1772110312.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения этого тела в интервале времени от 20 до 30 с. м/с²",
+    "sourceHash": "645d99d152df760e6c06ced08264473a0a4e7efae808c8d3366496b78af25954",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=25017",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. На 20–30 с скорость от −10 до 20; ускорение 3. Совпали данные и расчёт. Собственный ответ по ФИПИ: 3. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "3",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "D359AA": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B8E2015660D0A38C48DF628ECE82380E(copy1)/xs3qstsrcB8E2015660D0A38C48DF628ECE82380E_7_1638358494.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля скорости υ автомобиля от времени t. Найдите путь, пройденный автомобилем за время от 30 до 50 с. м",
+    "sourceHash": "a48ad8801edb538d8a03aa06a5df07fcb5587aec1e024ee514bb2292197a2058",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=5459",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график: разгон 0–10 с до 10, плато до 30 с, торможение до нуля при 50 с. Внешний вопрос о пути 30–50 с: треугольник площадью 100. Для другого интервала ФИПИ добавлены только попадающие в него площади. Собственный ответ по ФИПИ: 100. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "100",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "FCB3C2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0FFC348747B2BE764279F32877E7E004(copy1)/xs3qstsrc0FFC348747B2BE764279F32877E7E004_1_1487249748.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции скорости тела υ_(x) от времени t. Определите проекцию ускорения этого тела a_(x) в интервале времени от 10 до 15 с. м/с²",
+    "sourceHash": "55836245e825feed85c0e3d110f7d6a2b31fc624230cb7424a38372af0750d2d",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50690",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний вопрос о25с на прямой (20,20)–(30,0) даёт−2. В ФИПИ ломаная (0,15),(10,−15),(15,10),(30,−20): на20–30с тоже−2, на10–15с +5. Отсчёты первичного графика проверены отдельно. Собственный ответ по ФИПИ: 5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "09B5CD": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/21D568C5AD31AEB245F85536750D9AF7(copy1)/xs3qstsrc21D568C5AD31AEB245F85536750D9AF7_1_1639480588.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 1,5 до 2 c? м/с²",
+    "sourceHash": "a81ac85011ba7ce7296e834a32899b31b7ac2fdd21e3f5f4c1106ed63436b5f3",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=29439",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. На 1,5–2 с скорость меняется от 2 до 6, наклон 8. Совпали данные и результат. Собственный ответ по ФИПИ: 8. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "8",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "0E7CCE": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E96E964C9A06B35B46687DD0094ED0F6(copy1)/xs3qstsrcE96E964C9A06B35B46687DD0094ED0F6_2_1606731261.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции скорости υ_(x) от времени t для тела, движущегося прямолинейно вдоль оси Оx. Определите проекцию a_(x) ускорения тела. м/с²",
+    "sourceHash": "8992b9ff014fa605e06d5d8b20601a00547a43fa66292bc9818c343a0d0e79f7",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=25355",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя прямая пересекает v=0 при t=1; v₀=−25 по пяти делениям по 5, ускорение 25. В первичном рисунке дополнительно использована точка (2,25); это та же линейная зависимость. Собственный ответ по ФИПИ: 25. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "3F1CCC": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5EE4223FD21EB805490AE5614F33F6F6(copy3)/xs3qstsrc5EE4223FD21EB805490AE5614F33F6F6_1_1667980667.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5EE4223FD21EB805490AE5614F33F6F6(copy3)/xs3qstsrc5EE4223FD21EB805490AE5614F33F6F6_2_1667980667.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Тело движется вдоль оси Ox. На рисунке приведён график зависимости проекции скорости тела от времени t. Определите путь, пройденный телом в интервале времени от 12 до 18 с. м",
+    "sourceHash": "baf9bfd70f47d85b9c5a775bb476bd13d0f3e8c8cb1bed6fa5197a2d9a1a61c1",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=35233",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. График со скоростями 5 при 0–3 с, 15 при 5 с, −10 при 10–12 с и 5 при 18–20 с. Внешний путь 12–18 с: нуль при 16, площади 20+5=25. Первые 5 с дают другую сумму 15+20=35. Собственный ответ по ФИПИ: 25. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "F9D994": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AE4DC3FDF32AB8774E938F29C43FA8B8(copy2)/xs3qstsrcAE4DC3FDF32AB8774E938F29C43FA8B8_1_1544431408.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения этого тела в интервале времени от 5 до 8 с. м/с²",
+    "sourceHash": "0cb801b881868f44a49ecf23136cdfbe8dccf3cfab5a992082b752e648681cf7",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=35318",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. На 8–10 с v от 0 до −10, a=−5. На соседнем участке 5–8 с той же прямой наклон прежний; изменён интервал вопроса. Собственный ответ по ФИПИ: −5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "D5639B": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-11.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/950D76F87B38A70C4EEE6071686B6DD7(copy1)/xs3qstsrc950D76F87B38A70C4EEE6071686B6DD7_1_1486043747.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции скорости тела υ_(x) от времени. Определите проекцию ускорения этого тела a_(x) в интервале времени от 3 до 5 с. м/с²",
+    "sourceHash": "d11d901cf5d400dde7831c4e3524c835e35a5707b2faf3e6f50df01f452f3759",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43484",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешние скорости5 при3с и15 при5с, a=5. В варианте ФИПИ10–15с скорости−10 и15 также дают5, но график и время другие. Собственный ответ по ФИПИ: 5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "87FF90": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-11.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/569C4873A92A947D49CCED3AB655CF6A(copy1)/xs3qstsrc569C4873A92A947D49CCED3AB655CF6A_7_1638358480.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 1 до 1,5 c? м/с²",
+    "sourceHash": "5530deac38181c65f99f340b39e5f81f77539f834138c6d31b6cef68629bb19f",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=29975",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. На 1–1,5 с скорость меняется от 6 до 2, наклон −8. Совпали данные и результат. Собственный ответ по ФИПИ: −8. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−8",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "F97EE2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-11.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D03DE6CF7427844A41ADAA282A0B47F9(copy1)/xs3qstsrcD03DE6CF7427844A41ADAA282A0B47F9_1_1763717662.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля скорости υ автомобиля от времени t. Найдите путь, пройденный автомобилем за время от 0 до 50 с. м",
+    "sourceHash": "8aa1b68149305c07980ec9acde4ebb23854d09b77980241750ea35cc4afce47e",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=5459",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график: разгон 0–10 с до 10, плато до 30 с, торможение до нуля при 50 с. Внешний вопрос о пути 30–50 с: треугольник площадью 100. Для другого интервала ФИПИ добавлены только попадающие в него площади. Собственный ответ по ФИПИ: 350. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "350",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "2818ED": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-11.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/866FE36106D590304E28B6001162A5EB(copy1)/xs3qstsrc866FE36106D590304E28B6001162A5EB_1_1509196998.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 3 до 4 c? м/с²",
+    "sourceHash": "46db95f184f602283f47fb12b613868626058d583be42f6a44f8d5c3865f4cc9",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38598",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Во внешнем графике начальный участок (0,−12)–(2,−4) даёт 4; далее плато 2–4 с и подъём после 4 с. В ФИПИ после 2 с другая ломаная: (3,12),(4,12),(5,0),(6,8); её наклоны пересчитаны, внешний рисунок не подставлялся. Собственный ответ по ФИПИ: 0. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "0",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "EF04E1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-12.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/74C3F42A59BBA251472393F75089CB70(copy1)/xs3qstsrc74C3F42A59BBA251472393F75089CB70_1_1772623271.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 0 до 0,5 c? Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "8a543806d59380dfed0c383eb54ee5ead741cec2d1944112b343d29d774f1ddd",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38486",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний первый участок от −6 до 2 за 0,5 с даёт 16. Начальный участок ФИПИ совпал; последующие изломы различаются и не используются. Собственный ответ по ФИПИ: 16. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "16",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "06B062": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-12.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B674543CA0EE9CD549118DFE52AA45BC(copy2)/xs3qstsrcB674543CA0EE9CD549118DFE52AA45BC_1_1485521887.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости скорости υ тела от времени t. Определите по графику путь, пройденный телом в интервале времени от 0 до 1 с после начала движения. м",
+    "sourceHash": "1b7728d1de673ee71cac2f36d60c641336fca7a1250bf8f4f5e524c8e3642b0c",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38709",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя трапеция скорости имеет вершины (0,0),(1,10),(3,10),(5,0), полный путь 35. ФИПИ спрашивает другие интервалы: нужны соответствующие части этой фигуры. Собственный ответ по ФИПИ: 5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "535663": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-12.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/76A1286F22DDBE674A32E76B77ED5827(copy1)/xs3qstsrc76A1286F22DDBE674A32E76B77ED5827_4_1607356377.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения этого тела в интервале времени от 0 до 5 с. м/с²",
+    "sourceHash": "e81cb0d9a1c10b1ba545771e100d510c9127e9cf6324c9f8b27db93e47aa6243",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=42629",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешние точки (0,20),(3,−10),(11,10); на 0–2 с a=−10. Другая задача ФИПИ имеет точки (0,−10),(5,10), ускорение4; внешний график не переносится. Собственный ответ по ФИПИ: 4. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "4",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "CE6D67": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6DB205ADD25D940A4DFA754545DF4FF5(copy1)/xs3qstsrcda3dc7926e7c4be8bfb63af228aff4dc_1_1758618967.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Тело движется вдоль оси Ox. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите путь, пройденный телом в интервале времени от 0 до 30 с. м",
+    "sourceHash": "cb2f5e4ea5752830ddba20f9f2ecf839ef0ee74c36486e3729e4ec6b1770d8a1",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43002",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя ломаная (0,15),(10,5),(20,20),(30,0),(40,25); внешний вопрос о 20–40 с даёт225. В ФИПИ интервалы0–20 или0–30, собственные суммы100+125=225 и100+125+100=325. Собственный ответ по ФИПИ: 325. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "325",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "89DC6C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B5E2A8D8B83AAF384F0187C59FD99DF5(copy3)/xs3qstsrcB5E2A8D8B83AAF384F0187C59FD99DF5_7_1670934561.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости координаты тела x от времени t при прямолинейном движении тела вдоль оси Ox. Определите проекцию скорости этого тела на ось Ox в промежутке времени от 8 до 12 с. м/с",
+    "sourceHash": "29f9ead65c6c5bfa1584dc8a802354b3847752c88d42cbb84fd543edbb1b28f3",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=37857",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Координаты (4,−10),(8,10),(14,−5). Внешняя скорость 4–8 с равна 5. Для 4–6 с та же прямая; для 8–12 с другая прямая и ответ −2,5. Собственный ответ по ФИПИ: −2,5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−2,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "7CFB3E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/70CB8C5BA88EABE94B0AD59DBBB0FA4D(copy2)/xs3qstsrc70CB8C5BA88EABE94B0AD59DBBB0FA4D_1_1579518777.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Материальная точка движется прямолинейно с постоянным ускорением вдоль оси Ох. График зависимости её координаты от времени x=x(t) изображён на рисунке. Определите проекцию а_(х) ускорения этого тела. м/с²",
+    "sourceHash": "2573f38710ea09154822886ae726fc0ce49d4fabd3d7586940637e42ec4da9a3",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=20011",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Координатная парабола с вершиной (0,0) проходит через (2,2). Поэтому x₀=0, v₀=0 и a=2x/t²=1. Совпали график, закон и результат. Собственный ответ по ФИПИ: 1. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "1",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-likes=20011.html"
+  },
+  "58C03A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F3BD0291D8169421424A0E90122B4D0E(copy1)/xs3qstsrcE89AF2BB7027BEC347BD38458E208CCC_5_1721205802.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 4 до 5 c? Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "f792d95552e15d5e953bdd1d5aa77a19647f3d908322a5d8dbc372c5cfba1db2",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10459",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график: (0,12),(2,4),(3,−12),(4,−12),(5,0),(6,−8); внешний вопрос о 5–6 с даёт −8. Каждый иной интервал ФИПИ рассчитан отдельно. Собственный ответ по ФИПИ: 12. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "12",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "C85E34": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/705A7B0D220FA15648EB734E18D0CCEF(copy1)/xs3qstsrc705A7B0D220FA15648EB734E18D0CCEF_1_1485260294.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции скорости υ_(x) от времени t для тела, движущегося прямолинейно по оси x. Определите проекцию ускорения тела a_(x). м/с²",
+    "sourceHash": "5584703a37b072b33a624be9963e3437967cb9691e5e4966e1f130db30b9a7ad",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=4549",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя прямая идёт от −40 при t=0 до 0 при t=5: ускорение 8. ФИПИ имеет другие отсчёты; вычислен собственный наклон. Собственный ответ по ФИПИ: 7,5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "7,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "61A437": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/143E7A9BE1D3B19B4BAC0E74CFA25D0A(copy1)/xs3qstsrc143E7A9BE1D3B19B4BAC0E74CFA25D0A_1_1514208624.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Из двух городов навстречу друг другу с постоянной скоростью движутся два автомобиля. На графике показана зависимость расстояния между автомобилями от времени. Скорость первого автомобиля 15 м/с. С какой скоростью движется второй автомобиль? м/с",
+    "sourceHash": "130dff62b4dad2c310225c1b2b374d1be472331d9cbc7838e400cc987d1d1adc",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=11924",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Расстояние 144 км сокращается до нуля за 60 мин, относительная скорость 40 м·с⁻¹. В варианте с известной скоростью первого автомобиля 15 требуется ещё вычесть её из суммы: второй автомобиль 25. Эти вопросы различаются. Собственный ответ по ФИПИ: 25. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-likes=11924.html"
+  },
+  "873033": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F8CF1F7197F59C154193BDE0DC5466D6(copy1)/xs3qstsrcF8CF1F7197F59C154193BDE0DC5466D6_1_1483022275.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции скорости тела υ_(x) от времени. Определите проекцию ускорения этого тела a_(x) в интервале времени от 15 до 20 с. м/с²",
+    "sourceHash": "cc0a368e7d89952eb51496ccb86bbfc0fd3de9bbc1c7a6cbab28aef094d4472d",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=9014",
+    "match": "exact",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график: (0,−20), (15,10), (20,−10), (30,20); на 15–20 с ускорение −4. В другом варианте ФИПИ используется первая прямая, её ускорение +2. Собственный ответ по ФИПИ: −4. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−4",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "F1008A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0AFFC084D13BA14F4BA4B66C54773ED7(copy1)/xs3qstsrcf1925283ebd143b2a76c8d1c8fcf5f85_3_1758619008.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости от времени t проекции υ_(x) скорости тела, движущегося прямолинейно вдоль оси Оx. Определите проекцию a_(x) ускорения этого тела. Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "2be52e73d13f41e3406226bdf9e3afb85e55a61a6aaf20c35d660994de005e37",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=9014",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешний график: (0,−20), (15,10), (20,−10), (30,20); на 15–20 с ускорение −4. В другом варианте ФИПИ используется первая прямая, её ускорение +2. Собственный ответ по ФИПИ: 2. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "2",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=204.html"
+  },
+  "7D4E89": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C4856DC7CF40845E4A4E11622D7E0BEF(copy1)/xs3qstsrcC4856DC7CF40845E4A4E11622D7E0BEF_1_1508418569.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке показан график зависимости проекции υ_(x) скорости тела от времени t. Какова проекция a_(x) ускорения этого тела в интервале времени от 4 до 6 c? м/с²",
+    "sourceHash": "e65398c5d97de277cac6f458d86c4d119d1db984ee7db6c4573ac34c45a05c1f",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=51005",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя ломаная (0,8),(1,0),(2,12),(3,12),(4,−4),(6,−12); внешний вопрос3–4с даёт−16. Иные интервалы ФИПИ1–2 и4–6 дают12 и−4 соответственно. Собственный ответ по ФИПИ: −4. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "−4",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  },
+  "D1B58A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7A72E3611D14BB1649148D72C1F3EC59(copy1)/xs3qstsrcf79458de27f84b1ba76e62f5417e311d_3_1758618953.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости проекции υ_(x) скорости тела от времени t. Определите проекцию a_(x) ускорения тела в интервале времени от 0 до 10 с. Ответ запишите с учётом знака проекции. м/с²",
+    "sourceHash": "195218701b9d5e16a4f32bb68a5ccc35dc367e858d0de8c42b649d5c43784dad",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43052",
+    "match": "variant",
+    "comparison": "Прочитаны первичный график, условие и полное внешнее решение с рисунком. Внешняя прямая (0,−15)–(20,15) даёт a=1,5. В ФИПИ другие начальные и конечные скорости и интервал0–10: ускорение считается по своему рисунку, совпадение ответа1,5 в одном варианте случайно. Собственный ответ по ФИПИ: 1,5. Закон, масштаб, границы и знак независимо проверены.",
+    "expectedAnswer": "1,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-kinematics-graphs-20260930/references/reference-category_id=203.html"
+  }
+}

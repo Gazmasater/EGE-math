@@ -1,0 +1,307 @@
+[
+  {
+    "id": "1CCC46",
+    "kind": "ratio-x",
+    "F0": 9,
+    "x0": 4.5,
+    "F": 6,
+    "reference": "38184",
+    "answer": "3",
+    "images": [],
+    "unit": "см"
+  },
+  {
+    "id": "FA9DFC",
+    "kind": "graph",
+    "reference": "19914",
+    "answer": "70",
+    "graph": {
+      "x": [
+        0.3,
+        0.6
+      ],
+      "F": [
+        21,
+        42
+      ],
+      "unit": "м"
+    },
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BCC8352765B1B70944B83D985731A2EC(copy2)/xs3qstsrcBCC8352765B1B70944B83D985731A2EC_1_1487061271.png"
+    ],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "BFF6B7",
+    "kind": "mass-half",
+    "reference": "6482",
+    "answer": "1,25",
+    "images": [],
+    "unit": "см"
+  },
+  {
+    "id": "D8CCBB",
+    "kind": "graph",
+    "reference": "7134",
+    "answer": "200",
+    "graph": {
+      "x": [
+        10,
+        20
+      ],
+      "F": [
+        20,
+        40
+      ],
+      "unit": "см"
+    },
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/474AFA1ECDDB92AF4B694E741DF8F5E4/xs3qstsrc474AFA1ECDDB92AF4B694E741DF8F5E4_2_1700664437.png"
+    ],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "ABF5BF",
+    "kind": "graph",
+    "reference": "19914",
+    "answer": "250",
+    "graph": {
+      "x": [
+        0.2,
+        0.4
+      ],
+      "F": [
+        50,
+        100
+      ],
+      "unit": "м"
+    },
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7E03E9D301C799F144D4F0B7EB9DEA1A(copy2)/xs3qstsrc7E03E9D301C799F144D4F0B7EB9DEA1A_1_1423727950.png"
+    ],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "1FB423",
+    "kind": "weight-k",
+    "m": 2,
+    "x": 0.04,
+    "reference": "32578",
+    "answer": "500",
+    "images": [],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "702454",
+    "kind": "series",
+    "F": 9,
+    "k1": 300,
+    "k2": 600,
+    "reference": "734",
+    "answer": "3",
+    "note": "Последовательная цепь: стена, k1, кубик, k2, сила9Н; обе пружины передают9Н, k1=300.",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C787AB026C7FBBF34E92E4468F017554(copy1)/xs3qstsrcC787AB026C7FBBF34E92E4468F017554_1_1507641480.png"
+    ],
+    "unit": "см"
+  },
+  {
+    "id": "C97E5E",
+    "kind": "table",
+    "forces": [
+      2.5,
+      5,
+      10,
+      12.5
+    ],
+    "extensions": [
+      0.01,
+      0.02,
+      0.04,
+      0.05
+    ],
+    "reference": "50701",
+    "answer": "250",
+    "images": [],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "909F5C",
+    "kind": "graph",
+    "reference": "35162",
+    "answer": "100",
+    "graph": {
+      "x": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "F": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "unit": "10⁻² м"
+    },
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8217AABDDAC78A8F449B01F6961910C7(copy1)/xs3qstsrc8bab21bb31e94b5aabc4cc3dd3f1f690_1_1758618882.png"
+    ],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "986AAC",
+    "kind": "graph",
+    "reference": "7134",
+    "answer": "250",
+    "graph": {
+      "x": [
+        2,
+        4,
+        6
+      ],
+      "F": [
+        5,
+        10,
+        15
+      ],
+      "unit": "см"
+    },
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/482C57A1CD889D634139CDB99A44BD5F(copy1)/xs3qstsrc482C57A1CD889D634139CDB99A44BD5F_1_1763717961.png"
+    ],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "6CCCA0",
+    "kind": "ratio-x",
+    "F0": 4,
+    "x0": 6,
+    "F": 6,
+    "vertical": true,
+    "reference": "38184",
+    "answer": "9",
+    "images": [],
+    "unit": "см"
+  },
+  {
+    "id": "59C0CD",
+    "kind": "mass-half",
+    "reference": "6482",
+    "answer": "1,25",
+    "images": [],
+    "unit": "см"
+  },
+  {
+    "id": "A155CE",
+    "kind": "stiffness",
+    "F": 15,
+    "x": 0.05,
+    "reference": "50698",
+    "answer": "300",
+    "images": [],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "401B9F",
+    "kind": "extension",
+    "F": 400,
+    "k": 20000,
+    "reference": "11784",
+    "answer": "2",
+    "images": [],
+    "unit": "см"
+  },
+  {
+    "id": "453892",
+    "kind": "compressed",
+    "k1": 600,
+    "x1": 0.04,
+    "x2": 0.03,
+    "reference": "6755",
+    "answer": "800",
+    "note": "Кубик между двумя сжатыми пружинами; k1x1=k2x2, 600*4/3=800.",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DB727F3D7C8C88A74A00E69CAD145760(copy1)/xs3qstsrcDB727F3D7C8C88A74A00E69CAD145760_1_1483022277.png"
+    ],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "26769F",
+    "kind": "ratio-F",
+    "F0": 6,
+    "x0": 3,
+    "x": 4.5,
+    "reference": "38184",
+    "answer": "9",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "8CF69C",
+    "kind": "dynamometer",
+    "reference": "41566",
+    "answer": "75",
+    "readings": {
+      "zero": 0,
+      "F1": 0.5,
+      "x1_cm": 5,
+      "F2": 1,
+      "x2_cm": 10,
+      "target_x_cm": 7.5
+    },
+    "note": "k=10Н/м, F=.75Н, m=.075кг=75г",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5DCECB3D834FA8814DABE687DE7C5323(copy1)/xs3qstsrcBFA1AD41EEA5B07D47F9083B4FA69851_5_1721206170.png"
+    ],
+    "unit": "г"
+  },
+  {
+    "id": "18D1E8",
+    "kind": "graph",
+    "reference": "3785",
+    "answer": "1500",
+    "graph": {
+      "x": [
+        2,
+        4,
+        6
+      ],
+      "F": [
+        30,
+        60,
+        90
+      ],
+      "unit": "см"
+    },
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3BB2520D5CA1AE0D43CBDCAE64850842(copy2)/xs3qstsrc3BB2520D5CA1AE0D43CBDCAE64850842_1_1539958055.png"
+    ],
+    "unit": "Н на метр"
+  },
+  {
+    "id": "377A36",
+    "kind": "ratio-F",
+    "F0": 5,
+    "x0": 2,
+    "x": 6,
+    "reference": "38184",
+    "answer": "15",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "89A46D",
+    "kind": "lift",
+    "m": 0.2,
+    "k": 100,
+    "s": 5,
+    "t": 2,
+    "reference": "9037",
+    "answer": "1,5",
+    "note": "a=2s/t²=2.5 вниз, T=m(g-a)=1.5Н, x=.015м=1.5см",
+    "images": [],
+    "unit": "см"
+  }
+]

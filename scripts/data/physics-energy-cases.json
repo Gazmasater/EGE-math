@@ -1,0 +1,452 @@
+[
+  {
+    "id": "ADA046",
+    "kind": "spring-change",
+    "E1": 6,
+    "x1": 0.03,
+    "x2": 0.06,
+    "ref": "42631",
+    "answer": "18",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "E9E545",
+    "kind": "loss-height",
+    "m": 0.1,
+    "K": 6,
+    "Q": 1,
+    "ref": "24353",
+    "answer": "7",
+    "images": [],
+    "unit": "м"
+  },
+  {
+    "id": "A9DBFB",
+    "kind": "ascent-energy",
+    "m": 1,
+    "h": 20,
+    "ref": "4518",
+    "answer": "200",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "992AF2",
+    "kind": "drop-energy",
+    "m": 0.3,
+    "h": 10,
+    "ref": "4553",
+    "answer": "30",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "3484FF",
+    "kind": "ascent-height",
+    "m": 0.2,
+    "K": 20,
+    "ref": "528",
+    "answer": "10",
+    "images": [],
+    "unit": "м"
+  },
+  {
+    "id": "006900",
+    "kind": "drop-height",
+    "m": 0.2,
+    "K": 24,
+    "ref": "43486",
+    "answer": "12",
+    "images": [],
+    "unit": "м"
+  },
+  {
+    "id": "02CE71",
+    "kind": "hill-energy",
+    "m": 0.03,
+    "h": 0.2,
+    "ref": "50705",
+    "answer": "0,06",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "B34015",
+    "kind": "slope-length",
+    "v": 10,
+    "alpha": 30,
+    "ref": "17648",
+    "answer": "10",
+    "images": [],
+    "unit": "м"
+  },
+  {
+    "id": "CF941A",
+    "kind": "kinetic",
+    "m": 0.28,
+    "v": 18,
+    "ref": "43080",
+    "answer": "45,36",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "97E216",
+    "kind": "drop-energy",
+    "m": 0.05,
+    "h": 3,
+    "ref": "4553",
+    "answer": "1,5",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "DFF32B",
+    "kind": "kinetic",
+    "m": 1000,
+    "v": 20,
+    "kilo": true,
+    "ref": "4798",
+    "answer": "200",
+    "images": [],
+    "unit": "кДж"
+  },
+  {
+    "id": "6F9C25",
+    "kind": "hill-height",
+    "m": 0.01,
+    "K": 0.04,
+    "ref": "50705",
+    "answer": "0,4",
+    "images": [],
+    "unit": "м"
+  },
+  {
+    "id": "7998DB",
+    "kind": "mass-ratio",
+    "ratio": 0.25,
+    "ref": "9016",
+    "answer": "0,25",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "77CDD1",
+    "kind": "slope-speed",
+    "L": 10,
+    "alpha": 30,
+    "ref": "16844",
+    "answer": "10",
+    "images": [],
+    "unit": "м·с⁻¹"
+  },
+  {
+    "id": "A700D9",
+    "kind": "hill-height",
+    "m": 0.02,
+    "K": 0.16,
+    "ref": "50705",
+    "answer": "0,8",
+    "images": [],
+    "unit": "м"
+  },
+  {
+    "id": "CF0AD6",
+    "kind": "ascent-height",
+    "m": 1.5,
+    "K": 300,
+    "ref": "528",
+    "answer": "20",
+    "images": [],
+    "unit": "м"
+  },
+  {
+    "id": "354CDE",
+    "kind": "closed-work",
+    "m": 0.1,
+    "r": 1,
+    "ref": "37557",
+    "answer": "0",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "BD865C",
+    "kind": "down-speed",
+    "h": 0.8,
+    "ref": "50702",
+    "answer": "4",
+    "images": [],
+    "unit": "м·с⁻¹"
+  },
+  {
+    "id": "1C4DA4",
+    "kind": "spring-ratio",
+    "k1": 20,
+    "k2": 40,
+    "x1": 0.02,
+    "x2": 0.01,
+    "ref": "537",
+    "answer": "0,5",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "1F9FAE",
+    "kind": "spring-energy",
+    "k": 7500,
+    "x": 0.04,
+    "ref": "537",
+    "answer": "6",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "B41DCC",
+    "kind": "potential-mass",
+    "m1": 4500,
+    "ratio": 3,
+    "ref": "46763",
+    "answer": "1500",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "225EC6",
+    "kind": "traction-work",
+    "A": 1000,
+    "s": 50,
+    "horizontal": false,
+    "ref": "25019",
+    "answer": "20",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "DB66C7",
+    "kind": "kinetic",
+    "m": 1000,
+    "v": 10,
+    "kilo": true,
+    "ref": "4798",
+    "answer": "50",
+    "images": [],
+    "unit": "кДж"
+  },
+  {
+    "id": "D593C1",
+    "kind": "spring-change",
+    "E1": 2,
+    "x1": 0.02,
+    "x2": 0.015,
+    "ref": "29977",
+    "answer": "0,875",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "343CC0",
+    "kind": "hill-energy",
+    "m": 0.04,
+    "h": 0.2,
+    "ref": "50705",
+    "answer": "0,08",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "415D9E",
+    "kind": "loss-energy",
+    "m": 0.1,
+    "h": 100,
+    "Q": 20,
+    "ref": "10461",
+    "answer": "80",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "2C8C91",
+    "kind": "drop-height",
+    "m": 1,
+    "K": 200,
+    "ref": "43486",
+    "answer": "20",
+    "images": [],
+    "unit": "м"
+  },
+  {
+    "id": "C36B96",
+    "kind": "kinetic",
+    "m": 0.05,
+    "v": 10,
+    "ref": "536",
+    "answer": "2,5",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "A437EB",
+    "kind": "loss-mass",
+    "h": 10,
+    "K": 50,
+    "Q": 10,
+    "ref": "24353",
+    "answer": "0,6",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "ACEFE9",
+    "kind": "hill-mass-v",
+    "v": 2,
+    "U": 0.2,
+    "ref": "50706",
+    "answer": "0,1",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "CCF8E4",
+    "kind": "hill-mass",
+    "K": 450,
+    "h": 3,
+    "ref": "50706",
+    "answer": "15",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "6C32ED",
+    "kind": "traction-work",
+    "A": 500,
+    "s": 50,
+    "horizontal": true,
+    "ref": "43808",
+    "answer": "10",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "4C1063",
+    "kind": "ascent-energy",
+    "m": 0.6,
+    "h": 8,
+    "ref": "35320",
+    "answer": "48",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "BBF36E",
+    "kind": "kinetic",
+    "m": 0.2,
+    "v": 3,
+    "ref": "4728",
+    "answer": "0,9",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "525C6A",
+    "kind": "potential-change",
+    "m": 0.1,
+    "h1": 1,
+    "h2": 2.5,
+    "ref": "46763",
+    "answer": "1,5",
+    "images": [],
+    "unit": "Дж"
+  },
+  {
+    "id": "59B436",
+    "kind": "gravity-ratio",
+    "forceRatio": 2.88,
+    "massRatio": 18,
+    "ref": "6884",
+    "answer": "0,4",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "E88C88",
+    "kind": "kinetic",
+    "m": 500,
+    "v": 10,
+    "kilo": true,
+    "ref": "4798",
+    "answer": "25",
+    "images": [],
+    "unit": "кДж"
+  },
+  {
+    "id": "F1AFB8",
+    "kind": "stop-force",
+    "m": 50,
+    "h": 10,
+    "F": 100,
+    "ref": "7175",
+    "answer": "50",
+    "images": [],
+    "unit": "м"
+  },
+  {
+    "id": "36EBB6",
+    "kind": "cart-energy",
+    "m": 6,
+    "M": 18,
+    "v": 8,
+    "alpha": 60,
+    "ref": "3351",
+    "answer": "12",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/079D9B5452E7A400455F8C6A4FF8E3BE(copy1)/xs3qstsrc079D9B5452E7A400455F8C6A4FF8E3BE_1_1487249842.png"
+    ],
+    "unit": "Дж"
+  },
+  {
+    "id": "B3B917",
+    "kind": "gun-k",
+    "m": 0.1,
+    "h": 2,
+    "x": 0.05,
+    "ref": "742",
+    "answer": "1600",
+    "images": [],
+    "unit": "Н·м⁻¹"
+  },
+  {
+    "id": "72C721",
+    "kind": "spring-launch-mass",
+    "k": 2000,
+    "x": 0.01,
+    "v": 10,
+    "ref": "29461",
+    "answer": "2",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/96D37326997B8EBB40C22CEA006AF8D3(copy1)/xs3qstsrc96D37326997B8EBB40C22CEA006AF8D3_1_1510133713.png"
+    ],
+    "unit": "г"
+  },
+  {
+    "id": "2785A3",
+    "kind": "stop-mu",
+    "h": 10,
+    "s": 50,
+    "ref": "7175",
+    "answer": "0,2",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "AD1398",
+    "kind": "stop-distance",
+    "h": 10,
+    "mu": 0.2,
+    "ref": "7175",
+    "answer": "50",
+    "images": [],
+    "unit": "м"
+  }
+]

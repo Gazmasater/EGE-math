@@ -1,0 +1,1221 @@
+[
+  {
+    "id": "FC855A",
+    "kind": "lc-table",
+    "claims": [
+      [
+        "T",
+        8
+      ],
+      [
+        "f",
+        250
+      ],
+      [
+        "Imax@2",
+        true
+      ],
+      [
+        "Wlmax@8",
+        true
+      ],
+      [
+        "Wcmin@4",
+        true
+      ]
+    ],
+    "answer": "13",
+    "sourceHash": "4b6314109bc0de74daeebaf7b0021d4382299b14d3351a52f81e9eeb2f4929d6",
+    "images": [],
+    "quantity": "q",
+    "amplitude": 1,
+    "T": 8
+  },
+  {
+    "id": "415C45",
+    "kind": "lc-table",
+    "claims": [
+      [
+        "Imax@2",
+        true
+      ],
+      [
+        "amplitude",
+        4
+      ],
+      [
+        "T",
+        16
+      ],
+      [
+        "Izero@4",
+        true
+      ],
+      [
+        "Wcmax@6",
+        true
+      ]
+    ],
+    "answer": "14",
+    "sourceHash": "8c177285cce35ce7718b40eb79b79e8ef4e241412cfd870fd5dbdf827224d133",
+    "images": [],
+    "quantity": "q",
+    "amplitude": 2,
+    "T": 8
+  },
+  {
+    "id": "67371F",
+    "kind": "lc-table",
+    "claims": [
+      [
+        "Wcmin@4",
+        true
+      ],
+      [
+        "amplitude",
+        4
+      ],
+      [
+        "T",
+        8
+      ],
+      [
+        "Izero@2",
+        true
+      ],
+      [
+        "Wcmin@6",
+        true
+      ]
+    ],
+    "answer": "35",
+    "sourceHash": "3202577769870e138d481fabf6410d0197b67777f0ddad3228358c223505db55",
+    "images": [],
+    "quantity": "q",
+    "amplitude": 2,
+    "T": 8
+  },
+  {
+    "id": "18FD53",
+    "kind": "lc-table",
+    "claims": [
+      [
+        "Izero@6",
+        true
+      ],
+      [
+        "Wcmin@4",
+        true
+      ],
+      [
+        "Imax@2",
+        true
+      ],
+      [
+        "T",
+        8
+      ],
+      [
+        "f",
+        25
+      ]
+    ],
+    "answer": "34",
+    "sourceHash": "fa272a00c52801a07e836498ba39fdf82da01547dcc78b4146651b1fa1b69686",
+    "images": [],
+    "quantity": "q",
+    "amplitude": 2,
+    "T": 8
+  },
+  {
+    "id": "76BB93",
+    "kind": "lc-table",
+    "claims": [
+      [
+        "Wlmax@8",
+        true
+      ],
+      [
+        "Umin@1",
+        true
+      ],
+      [
+        "f",
+        125
+      ],
+      [
+        "Wcmax@4",
+        true
+      ],
+      [
+        "Izero@2",
+        true
+      ]
+    ],
+    "answer": "34",
+    "sourceHash": "675e71677bb9a17c468ef05dca4ccb2d8a5a56c6bcdd0ea6874a33c53c4d3b0a",
+    "images": [],
+    "quantity": "q",
+    "amplitude": 2,
+    "T": 8
+  },
+  {
+    "id": "C8E57E",
+    "kind": "lc-table",
+    "claims": [
+      [
+        "Wlmin@8",
+        true
+      ],
+      [
+        "Umax@2",
+        true
+      ],
+      [
+        "f",
+        25
+      ],
+      [
+        "Wcmin@4",
+        true
+      ],
+      [
+        "qzero@2",
+        true
+      ]
+    ],
+    "answer": "15",
+    "sourceHash": "f84d80e1ab353a14b66db8321a8af9e55ff684b8b23faf0487687ea07aab3e0c",
+    "images": [],
+    "quantity": "I",
+    "amplitude": 3,
+    "T": 8
+  },
+  {
+    "id": "22830F",
+    "kind": "lc-table",
+    "claims": [
+      [
+        "T",
+        32
+      ],
+      [
+        "f",
+        3.25
+      ],
+      [
+        "Imax@32",
+        true
+      ],
+      [
+        "Wlmin@16",
+        true
+      ],
+      [
+        "Wcmax@8",
+        true
+      ]
+    ],
+    "answer": "135",
+    "sourceHash": "e90f1f09d1363209ab99b12c2fdb0146413af5492d25a36717c7d484d8888707",
+    "images": [],
+    "quantity": "U",
+    "amplitude": 8,
+    "T": 32
+  },
+  {
+    "id": "0CDA83",
+    "kind": "capacitor",
+    "claims": [
+      [
+        "Cconstant",
+        true
+      ],
+      [
+        "qconstant",
+        true
+      ],
+      [
+        "Wdecreases",
+        true
+      ],
+      [
+        "Econstant",
+        true
+      ],
+      [
+        "Udecreases",
+        true
+      ]
+    ],
+    "answer": "24",
+    "sourceHash": "12676fa6adda4dcd76a3bf678a1dfb89da43b27b88b8a5f5e659101191d663bf",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D8BE9088F6DEBCF34783930BD4F6CBAC(copy1)/xs3qstsrcf2e7a9b1b03c471bbf0e6dec1b293827_1_1758619485.gif"
+    ],
+    "connected": false,
+    "ratio": 4
+  },
+  {
+    "id": "675443",
+    "kind": "capacitor",
+    "claims": [
+      [
+        "qincreases",
+        true
+      ],
+      [
+        "WuniformDecreases",
+        true
+      ],
+      [
+        "Econstant",
+        true
+      ],
+      [
+        "Cratio",
+        5
+      ],
+      [
+        "Edecreases",
+        true
+      ]
+    ],
+    "answer": "14",
+    "sourceHash": "0b6ca19574f09fce4165d9a951f95e49a5cef9218aeeec74a8fb48829797fda9",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/19D9FEC2713E98504A94EE8055C4A711(copy2)/xs3qstsrc19D9FEC2713E98504A94EE8055C4A711_1_1548165682.png"
+    ],
+    "connected": true,
+    "ratio": 0.2
+  },
+  {
+    "id": "F72547",
+    "kind": "frame",
+    "claims": [
+      [
+        "max@0",
+        true
+      ],
+      [
+        "plateauFlux",
+        2
+      ],
+      [
+        "min@0",
+        true
+      ],
+      [
+        "emf@2",
+        3
+      ],
+      [
+        "max@3",
+        true
+      ]
+    ],
+    "answer": "14",
+    "sourceHash": "a0597266eb4a1597551fd04ecf284ad8662e41cd7a58b207c09788bfd4623fa2",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/05ACA81FBEEBB90A499AC870742A39B5(copy2)/xs3qstsrc05ACA81FBEEBB90A499AC870742A39B5_2_1545908416.png"
+    ],
+    "area": 30,
+    "t": [
+      0,
+      1,
+      3,
+      4,
+      6
+    ],
+    "b": [
+      0,
+      2,
+      2,
+      1,
+      -2
+    ]
+  },
+  {
+    "id": "2B1C7A",
+    "kind": "frame",
+    "claims": [
+      [
+        "max@1",
+        true
+      ],
+      [
+        "plateauFlux",
+        6
+      ],
+      [
+        "min@0",
+        true
+      ],
+      [
+        "emf@3",
+        12
+      ],
+      [
+        "max@0",
+        true
+      ]
+    ],
+    "answer": "45",
+    "sourceHash": "1a9456ce38ea59272881f88f73d155c9b08a03ef935ebcbd6d2a7c38130a0f6f",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/604568BC8893A1AA4C088C7EB9E57AC7(copy1)/xs3qstsrc604568BC8893A1AA4C088C7EB9E57AC7_1_1606375399.png"
+    ],
+    "area": 60,
+    "t": [
+      0,
+      1,
+      2,
+      4,
+      6
+    ],
+    "b": [
+      -2,
+      1,
+      2,
+      2,
+      -2
+    ]
+  },
+  {
+    "id": "FE341D",
+    "kind": "frame",
+    "claims": [
+      [
+        "emf@3",
+        4
+      ],
+      [
+        "same@0:3",
+        true
+      ],
+      [
+        "minDelta@1",
+        true
+      ],
+      [
+        "max@0",
+        true
+      ],
+      [
+        "nonzeroOnly@0:3",
+        true
+      ]
+    ],
+    "answer": "24",
+    "sourceHash": "b25d4f23f4b125027f3e26b19b6c56c7a121e65d9298ae4bfacbce70ca8c8694",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/38C03E3FE50EBDA34E8FB036EEF01711(copy1)/xs3qstsrc517ec0a6ab104d1ab0f96619524557e7_6_1759222000.png"
+    ],
+    "area": 50,
+    "t": [
+      0,
+      2,
+      4,
+      5,
+      8
+    ],
+    "b": [
+      -2,
+      2,
+      -1,
+      -1,
+      3
+    ]
+  },
+  {
+    "id": "C584F9",
+    "kind": "rod",
+    "claims": [
+      [
+        "current@20:40",
+        true
+      ],
+      [
+        "max@2",
+        true
+      ],
+      [
+        "leftForce@10",
+        true
+      ],
+      [
+        "max@2",
+        true
+      ],
+      [
+        "noForce",
+        true
+      ]
+    ],
+    "answer": "24",
+    "sourceHash": "46472acf5dbd887b74870b16d2ffd6416e4b5973d9fb58d06665e034507a5f42",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5405F7CE5BA987094D27DCCF3CAAC490(copy1)/xs3qstsrc5405F7CE5BA987094D27DCCF3CAAC490_1_1770192443.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5405F7CE5BA987094D27DCCF3CAAC490(copy1)/xs3qstsrc5405F7CE5BA987094D27DCCF3CAAC490_2_1770192443.png"
+    ],
+    "t": [
+      0,
+      20,
+      40,
+      50
+    ],
+    "s": [
+      0.2,
+      0.8,
+      0.8,
+      0.2
+    ],
+    "unit": "м²"
+  },
+  {
+    "id": "698775",
+    "kind": "rod",
+    "claims": [
+      [
+        "current@0:6",
+        true
+      ],
+      [
+        "same@0:6",
+        true
+      ],
+      [
+        "current@4:6",
+        true
+      ],
+      [
+        "rightForce@3",
+        true
+      ],
+      [
+        "max@0",
+        true
+      ]
+    ],
+    "answer": "35",
+    "sourceHash": "089133ad252c27b2c61e5dfac49091f71f488875bae338483b09f669d14e6f58",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B6D93DEE0EA98C324DA376517A2A583F(copy1)/xs3qstsrcB6D93DEE0EA98C324DA376517A2A583F_1_1511439523.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B6D93DEE0EA98C324DA376517A2A583F(copy1)/xs3qstsrcB6D93DEE0EA98C324DA376517A2A583F_2_1511439523.png"
+    ],
+    "t": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "s": [
+      1,
+      5,
+      5,
+      3
+    ],
+    "unit": "м²",
+    "lamp": true
+  },
+  {
+    "id": "86F713",
+    "kind": "rod",
+    "claims": [
+      [
+        "current@0:6",
+        true
+      ],
+      [
+        "leftForce@2",
+        true
+      ],
+      [
+        "same@6:12",
+        true
+      ],
+      [
+        "bright@0",
+        true
+      ],
+      [
+        "max@1",
+        true
+      ]
+    ],
+    "answer": "35",
+    "sourceHash": "5b4b7d0fea7ac9aaef6b903e7b7bd2a88525c454a48b0509bac58cb62bc32fb4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4C3DA83DA97CBC7F45E7FED8CC3561C9(copy1)/xs3qstsrc4C3DA83DA97CBC7F45E7FED8CC3561C9_1_1637667553.jpg",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4C3DA83DA97CBC7F45E7FED8CC3561C9(copy1)/xs3qstsrc4C3DA83DA97CBC7F45E7FED8CC3561C9_3_1637667553.png"
+    ],
+    "t": [
+      0,
+      4,
+      8,
+      14
+    ],
+    "s": [
+      800,
+      800,
+      400,
+      100
+    ],
+    "unit": "см²",
+    "lamp": true
+  },
+  {
+    "id": "2AD122",
+    "kind": "rod",
+    "claims": [
+      [
+        "current@0:15",
+        true
+      ],
+      [
+        "same@10:20",
+        true
+      ],
+      [
+        "max@1",
+        true
+      ],
+      [
+        "leftForce@3",
+        true
+      ],
+      [
+        "max@2",
+        true
+      ]
+    ],
+    "answer": "25",
+    "sourceHash": "3b5cbf3c685b5b74737db431a1661ce2a25cfb7c2b8fc0a287bfdeaaca64f511",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F4376C0DC4FEBFEF46EE470E8EFFA181(copy2)/xs3qstsrcF4376C0DC4FEBFEF46EE470E8EFFA181_1_1579772449.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F4376C0DC4FEBFEF46EE470E8EFFA181(copy2)/xs3qstsrcF4376C0DC4FEBFEF46EE470E8EFFA181_2_1579772449.png"
+    ],
+    "t": [
+      0,
+      5,
+      15,
+      20
+    ],
+    "s": [
+      0.1,
+      0.1,
+      0.4,
+      0.7
+    ],
+    "unit": "м²",
+    "lamp": true
+  },
+  {
+    "id": "62A5E0",
+    "kind": "rod",
+    "claims": [
+      [
+        "current@0:15",
+        true
+      ],
+      [
+        "max@1",
+        true
+      ],
+      [
+        "current@15:25",
+        true
+      ],
+      [
+        "max@2",
+        true
+      ],
+      [
+        "noForce",
+        true
+      ]
+    ],
+    "answer": "34",
+    "sourceHash": "098ad04a2e615710a5a53a6f35d0b8c38c0d77810c02670dd6c59232e8e9db39",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/32B19A923B38A1A94F9DC940D0505EA3(copy2)/xs3qstsrc32B19A923B38A1A94F9DC940D0505EA3_1_1547642556.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/32B19A923B38A1A94F9DC940D0505EA3(copy2)/xs3qstsrc32B19A923B38A1A94F9DC940D0505EA3_2_1547642556.png"
+    ],
+    "t": [
+      0,
+      10,
+      30,
+      40
+    ],
+    "s": [
+      0.8,
+      0.8,
+      0.65,
+      0.2
+    ],
+    "unit": "м²",
+    "approxMiddle": true
+  },
+  {
+    "id": "C9D8FE",
+    "kind": "coils",
+    "claims": [
+      [
+        "rightDifferent",
+        true
+      ],
+      [
+        "leftPlateauNonzero",
+        true
+      ],
+      [
+        "firstStronger",
+        true
+      ],
+      [
+        "BminimumWholeFirst",
+        true
+      ],
+      [
+        "leftFirstIncreases",
+        true
+      ]
+    ],
+    "answer": "13",
+    "sourceHash": "27404d36e1ad3b1541e1d07b7d37b7b89c72da7dd019f9f49fe233c5fa19116f",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1C16C6CA44488EF8408A1AD49B0E8E7E(copy1)/xs3qstsrc1C16C6CA44488EF8408A1AD49B0E8E7E_1_1486739887.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1C16C6CA44488EF8408A1AD49B0E8E7E(copy1)/xs3qstsrc1C16C6CA44488EF8408A1AD49B0E8E7E_2_1486739887.png"
+    ],
+    "t": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "i": [
+      -4,
+      4,
+      4,
+      0
+    ]
+  },
+  {
+    "id": "F4BE25",
+    "kind": "coils",
+    "claims": [
+      [
+        "leftOuterSame",
+        true
+      ],
+      [
+        "leftPlateauZero",
+        true
+      ],
+      [
+        "leftOuterEqual",
+        true
+      ],
+      [
+        "BzeroWholeFirst",
+        true
+      ],
+      [
+        "firstStronger",
+        true
+      ]
+    ],
+    "answer": "25",
+    "sourceHash": "2302f6cf91b3214fd79068fb39ab9ea9c57379e7f1b7963e247ec4639795e8ed",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A240B0B3BA1DAD804B2907B236A61294(copy3)/xs3qstsrcA240B0B3BA1DAD804B2907B236A61294_12_1671003490.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A240B0B3BA1DAD804B2907B236A61294(copy3)/xs3qstsrcA240B0B3BA1DAD804B2907B236A61294_13_1671003490.png"
+    ],
+    "t": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "i": [
+      -4,
+      4,
+      4,
+      0
+    ]
+  },
+  {
+    "id": "5C7F5B",
+    "kind": "coils",
+    "claims": [
+      [
+        "leftFirstSame",
+        true
+      ],
+      [
+        "leftPlateauZero",
+        true
+      ],
+      [
+        "leftOuterEqual",
+        true
+      ],
+      [
+        "BzeroWholeFirst",
+        true
+      ],
+      [
+        "leftLastDecreases",
+        true
+      ]
+    ],
+    "answer": "12",
+    "sourceHash": "35bf5fb84db4ff874c186ac0d6b68f611d479511927dbc04dcd97cc2edb6533f",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D79B1931956C98E84A9F3A484FBA43EA(copy2)/xs3qstsrcD79B1931956C98E84A9F3A484FBA43EA_1_1486740068.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D79B1931956C98E84A9F3A484FBA43EA(copy2)/xs3qstsrcD79B1931956C98E84A9F3A484FBA43EA_2_1486740068.png"
+    ],
+    "t": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "i": [
+      -4,
+      4,
+      4,
+      0
+    ]
+  },
+  {
+    "id": "D86ED7",
+    "kind": "coils",
+    "claims": [
+      [
+        "leftOuterSame",
+        true
+      ],
+      [
+        "leftPlateauZero",
+        true
+      ],
+      [
+        "BplateauZero",
+        true
+      ],
+      [
+        "leftAlwaysNonzero",
+        true
+      ],
+      [
+        "leftOuterEqual",
+        true
+      ]
+    ],
+    "answer": "25",
+    "sourceHash": "d776b743d24c98b0497d2d8e2568f12aad16b5134b3cc1a475b46418d080fbfd",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D31F46B7563BB7F840315284D3C276D4(copy1)/xs3qstsrc773dfcbec7bd4ac4a976645dffe2ffc8_7_1759322872.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D31F46B7563BB7F840315284D3C276D4(copy1)/xs3qstsrc773dfcbec7bd4ac4a976645dffe2ffc8_8_1759322872.png"
+    ],
+    "t": [
+      0,
+      1,
+      2,
+      4,
+      5
+    ],
+    "i": [
+      0,
+      2,
+      2,
+      -2,
+      -2
+    ]
+  },
+  {
+    "id": "E51107",
+    "kind": "lc-graph",
+    "claims": [
+      [
+        "T",
+        2
+      ],
+      [
+        "Wmax",
+        5.4
+      ],
+      [
+        "qzero@5",
+        true
+      ],
+      [
+        "Wlmin@3",
+        true
+      ],
+      [
+        "maximaCount",
+        2
+      ]
+    ],
+    "answer": "23",
+    "sourceHash": "e030e9443c170b4e76ea06bce8f39a1d06b642fffe4b1d61f480f90988ec8ff7",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8D5F85C9B00FAAD14B64DFB6CFFA4F28(copy2)/xs3qstsrc8D5F85C9B00FAAD14B64DFB6CFFA4F28_1_1545211363.png"
+    ],
+    "T": 4,
+    "L": 0.3,
+    "amplitude": 6
+  },
+  {
+    "id": "D624D6",
+    "kind": "lc-graph",
+    "claims": [
+      [
+        "T",
+        6
+      ],
+      [
+        "Wmax",
+        5.4
+      ],
+      [
+        "qzero@4",
+        true
+      ],
+      [
+        "Wlmin@2",
+        true
+      ],
+      [
+        "maximaCount",
+        3
+      ]
+    ],
+    "answer": "245",
+    "sourceHash": "3be08554d1b8652a07ad12648fa8e7d72c15c6199c3e13e2f2294b7685cc37af",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D8FED6645004877F43EB0702D91AFE15(copy1)/xs3qstsrcD8FED6645004877F43EB0702D91AFE15_2_1643893383.png"
+    ],
+    "T": 4,
+    "L": 0.3,
+    "amplitude": 6
+  },
+  {
+    "id": "9CFC20",
+    "kind": "self",
+    "claims": [
+      [
+        "max@0",
+        true
+      ],
+      [
+        "Wplateau",
+        40
+      ],
+      [
+        "emf@2",
+        10
+      ],
+      [
+        "min@2",
+        true
+      ],
+      [
+        "max@3",
+        true
+      ]
+    ],
+    "answer": "35",
+    "sourceHash": "6b409255be89c466f15ac044b390e8c5ce1964d6b9ea61b634f383ea0eb7c872",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8361B87C914F86BC43F0792754103C56(copy1)/xs3qstsrc8361B87C914F86BC43F0792754103C56_1_1539763676.png"
+    ],
+    "L": 20,
+    "t": [
+      0,
+      2,
+      3,
+      5,
+      6
+    ],
+    "i": [
+      0,
+      4,
+      4,
+      3,
+      0
+    ]
+  },
+  {
+    "id": "B7CA51",
+    "kind": "self",
+    "claims": [
+      [
+        "max@0",
+        true
+      ],
+      [
+        "Wplateau",
+        12
+      ],
+      [
+        "emf@3",
+        9
+      ],
+      [
+        "min@2",
+        true
+      ],
+      [
+        "max@3",
+        true
+      ]
+    ],
+    "answer": "13",
+    "sourceHash": "8e56a16abf70ae16725f053818bbf8a381b9889103f467f90eb39bfb32ee4c61",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/87D27BAFA75A9EEF49DB145B736C10C3(copy1)/xs3qstsrc87D27BAFA75A9EEF49DB145B736C10C3_1_1454762907.png"
+    ],
+    "L": 6,
+    "t": [
+      0,
+      1,
+      3,
+      4,
+      6
+    ],
+    "i": [
+      0,
+      4,
+      4,
+      3,
+      0
+    ]
+  },
+  {
+    "id": "B0F0EB",
+    "kind": "self",
+    "claims": [
+      [
+        "max@0",
+        true
+      ],
+      [
+        "Wplateau",
+        32
+      ],
+      [
+        "min@3",
+        true
+      ],
+      [
+        "emf@2",
+        2
+      ],
+      [
+        "max@3",
+        true
+      ]
+    ],
+    "answer": "12",
+    "sourceHash": "f422150fdc6a29ef86fdd05084a681aa6d0f3044bcb4305b2fce53b616a8f049",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/53FD6EB3B61ABF8E4F51227444CF6FA3(copy3)/xs3qstsrc53FD6EB3B61ABF8E4F51227444CF6FA3_1_1667380809.png"
+    ],
+    "L": 4,
+    "t": [
+      0,
+      1,
+      3,
+      4,
+      6
+    ],
+    "i": [
+      0,
+      4,
+      4,
+      3,
+      0
+    ]
+  },
+  {
+    "id": "209C4E",
+    "kind": "refraction",
+    "claims": [
+      [
+        "incident",
+        70
+      ],
+      [
+        "index",
+        1.47
+      ],
+      [
+        "refracted",
+        50
+      ],
+      [
+        "tir",
+        true
+      ],
+      [
+        "reflected",
+        20
+      ]
+    ],
+    "answer": "12",
+    "sourceHash": "39de0888e1bc98323a77f162881407bf86a235e352762b63cd345cee8c1059f5",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1C452B808501AE434F005DFE439A7EC7(copy1)/xs3qstsrc1C452B808501AE434F005DFE439A7EC7_1_1485260633.png"
+    ]
+  },
+  {
+    "id": "5171D2",
+    "kind": "refraction",
+    "claims": [
+      [
+        "incident",
+        20
+      ],
+      [
+        "index",
+        1.47
+      ],
+      [
+        "refracted",
+        40
+      ],
+      [
+        "tir",
+        true
+      ],
+      [
+        "reflected",
+        20
+      ]
+    ],
+    "answer": "23",
+    "sourceHash": "2ca40802d1b23cd197d5fefa3d14717d74bfba54545f7c82f23cb9aed633157f",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A78A6752318CA53F4E31ED33016442B0(copy2)/xs3qstsrcA78A6752318CA53F4E31ED33016442B0_1_1548173888.png"
+    ]
+  },
+  {
+    "id": "5D79D1",
+    "kind": "lamp",
+    "claims": [
+      [
+        "TproportionalP",
+        true
+      ],
+      [
+        "R100",
+        50
+      ],
+      [
+        "Rconstant",
+        true
+      ],
+      [
+        "T120Under3600",
+        true
+      ],
+      [
+        "TgrowsI",
+        true
+      ]
+    ],
+    "answer": "25",
+    "sourceHash": "f57761811a585b85416406b2de382b7dae5071058f313ee9f8aa9903bf4565e4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7E7B4D664CD49C6449DAE20177B23B25(copy1)/xs3qstsrc7E7B4D664CD49C6449DAE20177B23B25_1_1486991148.png"
+    ]
+  },
+  {
+    "id": "C0BD6C",
+    "kind": "lamp",
+    "claims": [
+      [
+        "TproportionalP",
+        true
+      ],
+      [
+        "Iat3000",
+        2
+      ],
+      [
+        "Rconstant",
+        true
+      ],
+      [
+        "T100Above3400",
+        true
+      ],
+      [
+        "TgrowsU",
+        true
+      ]
+    ],
+    "answer": "45",
+    "sourceHash": "692792677fce3051ded571010a5e9971507745897b84c12f869a0492fa391b8d",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/587D18DBA11680B641EC167CBC431ACF(copy3)/xs3qstsrc587D18DBA11680B641EC167CBC431ACF_1_1568375051.png"
+    ]
+  },
+  {
+    "id": "C22D32",
+    "kind": "rl",
+    "claims": [
+      [
+        "ULmaxAt3",
+        true
+      ],
+      [
+        "WminAt6",
+        true
+      ],
+      [
+        "emf",
+        20
+      ],
+      [
+        "UR5",
+        18
+      ],
+      [
+        "self0",
+        18
+      ]
+    ],
+    "answer": "45",
+    "sourceHash": "d16a64e127f0bf9b6588ba8d85617bad155ade07fc9f6e8ec8d5598e086db1c8",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/120D3F80C4C18DEC4922C70CD882FF8A(copy1)/xs3qstsrc120D3F80C4C18DEC4922C70CD882FF8A_1_1592383123.png"
+    ],
+    "R": 60,
+    "t": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "i": [
+      0,
+      0.12,
+      0.19,
+      0.23,
+      0.26,
+      0.28,
+      0.29,
+      0.3,
+      0.3
+    ]
+  }
+]

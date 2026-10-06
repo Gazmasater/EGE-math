@@ -1,0 +1,643 @@
+[
+  {
+    "id": "4EAC46",
+    "sourceHash": "7b4f5efef4a5637bad8840216afd2a94ea880992f822ccc38674dfcf2fd77f02",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/87DD87B23C5F9FED4694392491262892(copy1)/xs3qstsrc87DD87B23C5F9FED4694392491262892_7_1640604723.png"
+    ],
+    "kind": "circuit",
+    "answer": "14",
+    "pair": [
+      "I",
+      "VR"
+    ]
+  },
+  {
+    "id": "15274C",
+    "sourceHash": "69ec20e32539d60cb451a54ac915e917aecf345f015a85f8990bb3728acbedcf",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FFAC6DA8D40DBCD74310497EE065B6A9(copy1)/xs3qstsrcFFAC6DA8D40DBCD74310497EE065B6A9_1_1483022363.png"
+    ],
+    "kind": "switch",
+    "answer": "41",
+    "pair": [
+      "closed",
+      "open"
+    ]
+  },
+  {
+    "id": "FDFAF7",
+    "sourceHash": "6f0b95746bceb8ffbff05bb4a5dc171d185b4e1ddd10ff4dc2a06846d7226715",
+    "images": [],
+    "kind": "lens",
+    "answer": "32",
+    "pair": [
+      "conv",
+      "conc"
+    ],
+    "near": true
+  },
+  {
+    "id": "E435F2",
+    "sourceHash": "6568c13f7ce096d8b197fb000f7d27bc30aec5ef609adf013cb027179d8265cc",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/877102108B86B96B4B7589529271A145(copy1)/xs3qvrsrcF446D77F4634883B4D68415DB0E2F952_2_1736422817.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/877102108B86B96B4B7589529271A145(copy1)/xs3qvrsrc5499DDEF0CE298A24B48B4F0A69A70F2_2_1736422822.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "12",
+    "pair": [
+      "i",
+      "WL"
+    ],
+    "leftSign": 1,
+    "mode": "voltage",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "5A6679",
+    "sourceHash": "cede4e23fafc91c945d7f0743349073b7cca8e63df6e9739c1752ea1e20575f3",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A437CFED5FC5938D404F93AA35B878FF(copy1)/xs3qstsrcA437CFED5FC5938D404F93AA35B878FF_7_1640597473.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A437CFED5FC5938D404F93AA35B878FF(copy1)/xs3qvrsrcC8BFBCE42A3999A744AF07ABC31BDB58_1_1576580460.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A437CFED5FC5938D404F93AA35B878FF(copy1)/xs3qvrsrc261C26FA8315B02A4B17AC7AB7FFC513_1_1487250056.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "42",
+    "pair": [
+      "WL",
+      "WC"
+    ],
+    "leftSign": 1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "695D7E",
+    "sourceHash": "f78b6bf2166da45b7ac40520c602eaf740cc4afcd5cbbdbfc5d6bacf74b910b6",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/23B60EFFD404A54E471480AB86E341CB(copy1)/xs3qstsrc3DC8B747EE7ABF9C43524FB704CF9861_1_1737456422.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/23B60EFFD404A54E471480AB86E341CB(copy1)/xs3qvrsrc95F1CD9F83A0BBB846995CFCB09BE4E7_1_1411463572.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/23B60EFFD404A54E471480AB86E341CB(copy1)/xs3qvrsrc560BFBBE0729AFA24165B4AB02BE4D9A_1_1411463639.gif"
+    ],
+    "kind": "lc-graph",
+    "answer": "23",
+    "pair": [
+      "WL",
+      "qright"
+    ],
+    "leftSign": -1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "BD62B3",
+    "sourceHash": "69dbd741ff47c59544b1f6d3a983c220874273abca33abdc865ebb20a645842e",
+    "images": [],
+    "kind": "ohm",
+    "answer": "32",
+    "pair": [
+      "IfromUR",
+      "RfromUP"
+    ],
+    "powerSymbol": "P"
+  },
+  {
+    "id": "0FA319",
+    "sourceHash": "bd9eb0377e8385bcb553088995c815c80fecf2c81b447ab506cac8bbfb0dad92",
+    "images": [],
+    "kind": "lens",
+    "answer": "12",
+    "pair": [
+      "conv",
+      "conc"
+    ],
+    "near": false
+  },
+  {
+    "id": "81AD11",
+    "sourceHash": "f16344bcf5f2b570f36a01c85b8def9c140b21badda03c6e89b9a2fb8f4bda2d",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D36345C3CAC08834445EFF3C86EA4A2D(copy5)/xs3qstsrcD36345C3CAC08834445EFF3C86EA4A2D_1_1576578581.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D36345C3CAC08834445EFF3C86EA4A2D(copy5)/xs3qvrsrc33113365AC08B0024962B20164901DA6_1_1576587950.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D36345C3CAC08834445EFF3C86EA4A2D(copy5)/xs3qvrsrc73FE63CE18629956472CF517C2C3764B_1_1579765345.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "42",
+    "pair": [
+      "WC",
+      "i"
+    ],
+    "leftSign": 1,
+    "mode": "charged",
+    "currentDirection": "dischargeLeft"
+  },
+  {
+    "id": "0A5E21",
+    "sourceHash": "512326e55af83c8fcd874b8ff3ce3870fac98d02f0dd0a8379095c891222b184",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4022C9B2F90AAAE6461051807204399F(copy1)/xs3qstsrc62589cc947274ff7b44784e981e8a673_7_1759322061.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4022C9B2F90AAAE6461051807204399F(copy1)/xs3qvrsrc91DC141443DC8BA542031E25FED547F6_1_1576587997.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4022C9B2F90AAAE6461051807204399F(copy1)/xs3qvrsrcA05265D488EB8A8349D74DA241FFE444_1_1580886479.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "14",
+    "pair": [
+      "WC",
+      "qleft"
+    ],
+    "leftSign": -1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "10C527",
+    "sourceHash": "ce1a1e9182ede5ee93ce6821f968325c7bf6c955eb5547eded64b0e3fb9d3cb2",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0F99810E89B280E9414E78D7DD67FF3B(copy1)/xs3qstsrc0F99810E89B280E9414E78D7DD67FF3B_1_1610439278.png"
+    ],
+    "kind": "parallel-power",
+    "answer": "14",
+    "pair": [
+      "Pone",
+      "Psource"
+    ]
+  },
+  {
+    "id": "1FA129",
+    "sourceHash": "8adda9d9ce53f2eaa5db423a3861a44c1c09a14b8558f84666d0e34a8b07174b",
+    "images": [],
+    "kind": "lc-formula",
+    "answer": "21",
+    "pair": [
+      "u",
+      "WC"
+    ]
+  },
+  {
+    "id": "D71C20",
+    "sourceHash": "0b11c02c19269d472697987b31dc3568ffd7a0bbc6a8eb9f482deacb0d364d97",
+    "images": [],
+    "kind": "lc-formula",
+    "answer": "21",
+    "pair": [
+      "i",
+      "WL"
+    ]
+  },
+  {
+    "id": "DDF127",
+    "sourceHash": "467ae288b4ce31e3925249437fc97b9e26b77ee19cf66d36d3b6669a490a8b4c",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/276A3A8D2CB8BD354659D978FA83E920(copy1)/xs3qstsrc6731753D122D978A43F65FE9244F7586_3_1707817096.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/276A3A8D2CB8BD354659D978FA83E920(copy1)/xs3qstsrc6731753D122D978A43F65FE9244F7586_4_1707817096.png"
+    ],
+    "kind": "trajectory",
+    "answer": "41",
+    "pair": [
+      "electric",
+      "magnetic"
+    ]
+  },
+  {
+    "id": "626E20",
+    "sourceHash": "2a34de115ab1608c5f3a124637b706b351b7bf6d87d33c1d98c4a795279bdbcb",
+    "images": [],
+    "kind": "light",
+    "answer": "14",
+    "pair": [
+      "frequency",
+      "mediumSpeed"
+    ]
+  },
+  {
+    "id": "35EB29",
+    "sourceHash": "3c3c8d064a4517a57e28b8250af79d8bdb96b815a42ea54521ab6b30a2bfa409",
+    "images": [],
+    "kind": "lc-formula",
+    "answer": "12",
+    "pair": [
+      "i",
+      "WL"
+    ]
+  },
+  {
+    "id": "663659",
+    "sourceHash": "ffe5d0ff1afce5a2205c89500cb33bf892da22da79b051746abe3e653523c759",
+    "images": [],
+    "kind": "ohm",
+    "answer": "23",
+    "pair": [
+      "RfromUI",
+      "IfromUR"
+    ],
+    "powerSymbol": "P"
+  },
+  {
+    "id": "571AAB",
+    "sourceHash": "49b0854449603354ba34d08c4d1e07357a890b62e618de4696c4f286e7ee090a",
+    "images": [],
+    "kind": "ohm",
+    "answer": "41",
+    "pair": [
+      "UfromPI",
+      "PfromUR"
+    ],
+    "powerSymbol": "P"
+  },
+  {
+    "id": "AE92AD",
+    "sourceHash": "28bac234939f8ca6fe1dd43c227ecb5c7d2971aa31fc1701dbd3a125f62dceac",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B20F5578C475A4534C9231449D847B8D(copy1)/xs3qstsrcB20F5578C475A4534C9231449D847B8D_1_1644925979.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B20F5578C475A4534C9231449D847B8D(copy1)/xs3qstsrcB20F5578C475A4534C9231449D847B8D_2_1644925979.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B20F5578C475A4534C9231449D847B8D(copy1)/xs3qstsrcB20F5578C475A4534C9231449D847B8D_3_1644925979.gif"
+    ],
+    "kind": "trajectory",
+    "answer": "12",
+    "pair": [
+      "electric",
+      "magnetic"
+    ]
+  },
+  {
+    "id": "9CDCC5",
+    "sourceHash": "4ea46504235d8a9352c660bff3330d5137c8c0e92eba5084686964aa13cd569c",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8BD14E1110C5B0F64C0BF88E1775D75F(copy2)/xs3qstsrc8BD14E1110C5B0F64C0BF88E1775D75F_1_1581065130.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8BD14E1110C5B0F64C0BF88E1775D75F(copy2)/xs3qvrsrc6D49B6C5600D9B854A1DFF87364A84E8_1_1577188698.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8BD14E1110C5B0F64C0BF88E1775D75F(copy2)/xs3qvrsrcC78F90D5ED41B3264092E8AAF4BD688F_1_1581597475.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "13",
+    "pair": [
+      "WL",
+      "qleft"
+    ],
+    "leftSign": -1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "120891",
+    "sourceHash": "837fc2a81b4923553063a8fa440d5c8948b5bb7d133c2b00b7dd65938b28d561",
+    "images": [],
+    "kind": "ohm",
+    "answer": "23",
+    "pair": [
+      "UfromIR",
+      "PfromUR"
+    ],
+    "powerSymbol": "P"
+  },
+  {
+    "id": "9EA592",
+    "sourceHash": "985551a31f7499b29e19b66a347cb1282448528f9c040d05e63efb25ff6cd6dd",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F95EAB806697AF8A45E9A23945D4AC98(copy1)/xs3qstsrcBB69C87AF8ACB00A43CAF886D65412BF_8_1773137565.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F95EAB806697AF8A45E9A23945D4AC98(copy1)/xs3qvrsrc876FBF80E06792C943BF2C637CB23301_1_1511361882.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F95EAB806697AF8A45E9A23945D4AC98(copy1)/xs3qvrsrcFCA679E42D2FA2544D3256420015F4EF_1_1772109072.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "43",
+    "pair": [
+      "WC",
+      "qright"
+    ],
+    "leftSign": 1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "646A9F",
+    "sourceHash": "f2d7d30a3e32f2888676fdd87cdcf9217d3ce692a4a8d904847b49584417d9fd",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F1517DC8C93ABC6648594B8CBE15BF6A(copy1)/xs3qstsrcF1517DC8C93ABC6648594B8CBE15BF6A_1_1644592899.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F1517DC8C93ABC6648594B8CBE15BF6A(copy1)/xs3qvrsrcFDC7AEF720A58DCA46B597111F4E449D_1_1643266563.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F1517DC8C93ABC6648594B8CBE15BF6A(copy1)/xs3qvrsrc4FD2FA9413679C6A4801A4575BFBD7B7_1_1643266567.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "42",
+    "pair": [
+      "WL",
+      "u"
+    ],
+    "leftSign": -1,
+    "mode": "current",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "CB6FE8",
+    "sourceHash": "25794d7417e64767b654546eacd250498d779e587d3b57054f588c947553ce94",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CAFD41C8C7EFA3214C450912574D9370/xs3qstsrcC25FA450B152A6E34DE75E5F64AE0DF0_1_1422275955.png"
+    ],
+    "kind": "switch",
+    "answer": "23",
+    "pair": [
+      "closed",
+      "open"
+    ]
+  },
+  {
+    "id": "EFF8E5",
+    "sourceHash": "28260b415fb8d1a3153d41d72cbb70954dad7448a14229e54cedd52e96bbf299",
+    "images": [],
+    "kind": "lens",
+    "answer": "21",
+    "pair": [
+      "conc",
+      "conv"
+    ],
+    "near": false
+  },
+  {
+    "id": "141062",
+    "sourceHash": "ebddd75987abd3db69ae650bf8638fada9171c8226f86c75f2baf64df59fb83d",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A4117B431D5E8E834E3375F1AC2B2EDB(copy1)/xs3qstsrcd56502cfe46747ff80ef9a65526f9945_7_1759321298.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A4117B431D5E8E834E3375F1AC2B2EDB(copy1)/xs3qvrsrc7c52dda796264879bac6f17b57163a50_3_1758619550.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A4117B431D5E8E834E3375F1AC2B2EDB(copy1)/xs3qvrsrcf9bbe907eccb429fa03b0bf8e4b5a24c_3_1758619561.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "32",
+    "pair": [
+      "qleft",
+      "i"
+    ],
+    "leftSign": -1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "D96868",
+    "sourceHash": "b3e67f286762cc185f8758d03b89de4d9e94400c43b207f28da92415b4e39499",
+    "images": [],
+    "kind": "ohm",
+    "answer": "14",
+    "pair": [
+      "PfromUR",
+      "UfromPR"
+    ],
+    "powerSymbol": "P"
+  },
+  {
+    "id": "5BC26A",
+    "sourceHash": "189e3f51d7a0ac014fc7ccd040476b92b6fc9ef9180cce1680deec1d6764a3fa",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/91CD18DC745CA6DC466722E0E06F160B(copy1)/xs3qstsrc91CD18DC745CA6DC466722E0E06F160B_7_1640612395.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/91CD18DC745CA6DC466722E0E06F160B(copy1)/xs3qvrsrc5B7BDF3224C0A8E94A8072679912F2C5_1_1576584660.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/91CD18DC745CA6DC466722E0E06F160B(copy1)/xs3qvrsrcAEDF4B383474994D4EF42535FF21B25B_1_1581686152.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "41",
+    "pair": [
+      "WC",
+      "WL"
+    ],
+    "leftSign": -1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "AF4F67",
+    "sourceHash": "89af59ccc1905a55905bd9af600c86b880ff4c4e72cc5d5d590e32751a8a708d",
+    "images": [],
+    "kind": "ohm",
+    "answer": "34",
+    "pair": [
+      "IfromPU",
+      "UfromPR"
+    ],
+    "powerSymbol": "W"
+  },
+  {
+    "id": "BB603A",
+    "sourceHash": "85c0ab2841ce9b2adb251a4baccf4e267fe729c26de30b7ee2d21b1ab298cab2",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/04E5365B70878BE64DA2C8BDE445C659(copy3)/xs3qstsrc04E5365B70878BE64DA2C8BDE445C659_1_1606378377.png"
+    ],
+    "kind": "parallel-power",
+    "answer": "23",
+    "pair": [
+      "Pexternal",
+      "Pinternal"
+    ]
+  },
+  {
+    "id": "14018E",
+    "sourceHash": "5937d99ec317502bb65f0f3b8518bbe5d9b3450126184d26e4769ed36852f3b1",
+    "images": [],
+    "kind": "ohm",
+    "answer": "41",
+    "pair": [
+      "UfromPI",
+      "PfromIR"
+    ],
+    "powerSymbol": "P"
+  },
+  {
+    "id": "586301",
+    "sourceHash": "338892651c6f8943f67c79495b790a24035baf0c282f77dda05f5726850ab1f2",
+    "images": [],
+    "kind": "light",
+    "answer": "43",
+    "pair": [
+      "airSpeed",
+      "mediumSpeed"
+    ]
+  },
+  {
+    "id": "AE8774",
+    "sourceHash": "7162f9c0d4b7046a2c55329de0b084f9c8c5df29df72098f00f77a2de98494b9",
+    "images": [],
+    "kind": "light",
+    "answer": "42",
+    "pair": [
+      "airWave",
+      "index"
+    ]
+  },
+  {
+    "id": "B1EDB2",
+    "sourceHash": "ab1e7d57f637e105eeb9fb5fb02583fa2860be4f6e0500555b713e67048e8395",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/857EE74A5CF2A62241F02D6FA87EBC45(copy1)/xs3qstsrc857EE74A5CF2A62241F02D6FA87EBC45_1_1510916716.png"
+    ],
+    "kind": "parallel-power",
+    "answer": "31",
+    "pair": [
+      "Pinternal",
+      "Pone"
+    ]
+  },
+  {
+    "id": "D0C61D",
+    "sourceHash": "8af82027e97cb614311794f469ca3291bd1ba43c94d499df420afc191e440eb4",
+    "images": [],
+    "kind": "cyclotron",
+    "answer": "43",
+    "pair": [
+      "acceleration",
+      "period"
+    ]
+  },
+  {
+    "id": "D1DB28",
+    "sourceHash": "7e466bc37f92df27b8b234c53b533d920b648f287fd2fc4ec0a5d774de6fa175",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/32C70EF970D6BB004B38AA6468CF8324(copy4)/xs3qstsrc32C70EF970D6BB004B38AA6468CF8324_1_1548676608.png"
+    ],
+    "kind": "circuit",
+    "answer": "31",
+    "pair": [
+      "I",
+      "Vsource"
+    ]
+  },
+  {
+    "id": "7133D6",
+    "sourceHash": "62f06d1709708052fd2f9ad5daaca50899aa9a751f385d29f6aa02c429f76a72",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CD3E49DF8238961B4CE0BCFE9DA410B6(copy1)/xs3qstsrcCD3E49DF8238961B4CE0BCFE9DA410B6_1_1511360438.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CD3E49DF8238961B4CE0BCFE9DA410B6(copy1)/xs3qvrsrc035B7AC7C7DCB2024A421F8B2E2D1091_1_1511361956.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CD3E49DF8238961B4CE0BCFE9DA410B6(copy1)/xs3qvrsrc58D0FDEEE7DBA9264143D6DA61DF695D_1_1511361959.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "21",
+    "pair": [
+      "i",
+      "WL"
+    ],
+    "leftSign": -1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "D91D57",
+    "sourceHash": "457d28adae639cda52467148b42b04a72a05d0a24bc861661c698839949e10d1",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/475B6C3F265297BF4453819CDA8F2FEA(copy2)/xs3qstsrc475B6C3F265297BF4453819CDA8F2FEA_1_1548173981.png"
+    ],
+    "kind": "induction-ring",
+    "answer": "14",
+    "pair": [
+      "approach",
+      "recede"
+    ]
+  },
+  {
+    "id": "5C7354",
+    "sourceHash": "147dd022beda79d9f56e40acb67fcaaf897b9665790c1eb89bf1c0d036487cfe",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/59144D37F41FA3D340A3AF4D00D23D67(copy2)/xs3qstsrc59144D37F41FA3D340A3AF4D00D23D67_1_1548405093.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/59144D37F41FA3D340A3AF4D00D23D67(copy2)/xs3qvrsrcEC855DA0D2A6982C491C6A2DFE742E75_1_1545310224.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/59144D37F41FA3D340A3AF4D00D23D67(copy2)/xs3qvrsrc3298C751D92DA7AC4A59C418259EBF92_1_1545310244.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "31",
+    "pair": [
+      "qleft",
+      "WC"
+    ],
+    "leftSign": -1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "CB965A",
+    "sourceHash": "fc35b0fe9ee6b167541695fc27376eb37a99650b96710435b44b832a618661d9",
+    "images": [],
+    "kind": "cyclotron",
+    "answer": "24",
+    "pair": [
+      "radius",
+      "force"
+    ]
+  },
+  {
+    "id": "92635E",
+    "sourceHash": "9dc7c3318a64dd343549ee82b0a799cb876af02a728f4ed4ad33052b35e1afbc",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F5C285F38AE49EC247833930F9394701(copy4)/xs3qstsrcF5C285F38AE49EC247833930F9394701_1_1545728176.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F5C285F38AE49EC247833930F9394701(copy4)/xs3qvrsrc31ABA8577808874547F57BFC8FB024F5_1_1548154372.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F5C285F38AE49EC247833930F9394701(copy4)/xs3qvrsrcBCC43D5ADF51827E49E4A24BCA5843DE_1_1487252445.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "31",
+    "pair": [
+      "qleft",
+      "WL"
+    ],
+    "leftSign": -1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "415292",
+    "sourceHash": "1ffab63293c01b30aa180ea50332ee8d0d402f805e0d1799a4e5bccc30ba324c",
+    "images": [],
+    "kind": "cyclotron",
+    "answer": "23",
+    "pair": [
+      "force",
+      "frequency"
+    ]
+  },
+  {
+    "id": "4B8D92",
+    "sourceHash": "77f02b0b72cc25b63b6614c09bb62b88dacb5ea96eecb668455be5df48deb1e5",
+    "images": [],
+    "kind": "ohm",
+    "answer": "24",
+    "pair": [
+      "RfromUI",
+      "UfromIR"
+    ],
+    "powerSymbol": "P"
+  },
+  {
+    "id": "73643D",
+    "sourceHash": "02221de4b99fb3469a53fa6a5a8a32e3bd3996b8dd950c9a176335bedfbe0b3d",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1951BEAA496B834843D5DAC0F5DA6B72(copy1)/xs3qstsrc1951BEAA496B834843D5DAC0F5DA6B72_1_1486991160.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1951BEAA496B834843D5DAC0F5DA6B72(copy1)/xs3qvrsrcB9A4E50127889B1B4E65671B43CDA386_1_1486991164.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1951BEAA496B834843D5DAC0F5DA6B72(copy1)/xs3qvrsrc83899285C684B789483553329039E72E_1_1486991162.png"
+    ],
+    "kind": "lc-graph",
+    "answer": "43",
+    "pair": [
+      "WC",
+      "qright"
+    ],
+    "leftSign": 1,
+    "mode": "charged",
+    "currentDirection": "chargeLeft"
+  },
+  {
+    "id": "433A84",
+    "sourceHash": "f6bae4cfe526c3f837bad94289aea5d5ac1276dbf14a0455f1f142392e51091a",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/558EF0F0CFE4B4AC429101EC8DBBC739(copy1)/xs3qstsrc558EF0F0CFE4B4AC429101EC8DBBC739_1_1510916741.png"
+    ],
+    "kind": "circuit-lamp",
+    "answer": "32",
+    "pair": [
+      "power",
+      "resistance"
+    ]
+  },
+  {
+    "id": "DF5187",
+    "sourceHash": "b9764659b3ef6b9241b92c15697e4325d608ff791c5706cb3fa4d8efeb43bc0f",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/EDE1559D53978AA54ED2F82EE92A6A11(copy1)/xs3qstsrcEDE1559D53978AA54ED2F82EE92A6A11_1_1510916721.png"
+    ],
+    "kind": "circuit-series",
+    "answer": "14",
+    "pair": [
+      "U1",
+      "emf"
+    ]
+  }
+]

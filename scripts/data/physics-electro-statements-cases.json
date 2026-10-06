@@ -1,0 +1,1490 @@
+[
+  {
+    "id": "7D9E2D",
+    "sourceHash": "5c352b7b265c874a9f42e6ad4bd5b28066231b9ebd28576c5722af5a55a2b8ca",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/85B10E933699A473407EBA6AD8133829(copy1)/xs3qstsrc637b7c43cce04a18a9a120bf6fb23560_3_1758619501.png"
+    ],
+    "kind": "beads",
+    "answer": "34",
+    "claims": [
+      [
+        "FB",
+        1
+      ],
+      [
+        "E",
+        -1
+      ],
+      [
+        "equal",
+        true
+      ],
+      [
+        "wireRepel",
+        true
+      ],
+      [
+        "glassEqual",
+        true
+      ]
+    ],
+    "qa": 3,
+    "qb": -1.5
+  },
+  {
+    "id": "E5F230",
+    "sourceHash": "6fbb53c86e5ac52509d2785ed742b70b3deb42b5f7865a1213830a72cdab2044",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4E018AEE668ABE0B48544DD79AE811B0(copy1)/xs3qstsrcF668A3460A868B454C5707FEFA881F35_1_1483022584.png"
+    ],
+    "kind": "plate",
+    "answer": "45",
+    "claims": [
+      [
+        "plate",
+        -1
+      ],
+      [
+        "phiAC",
+        -1
+      ],
+      [
+        "workABNonzero",
+        true
+      ],
+      [
+        "positiveForce",
+        1
+      ],
+      [
+        "fieldsEqual",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "F59A48",
+    "sourceHash": "39cabab087d1cd8841c93d4d283db9ad5d070a84d71534e5ad8e9ff7ad11f15f",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FDF7A2A46D81922C418F8C0965DD51CC(copy1)/xs3qstsrcFDF7A2A46D81922C418F8C0965DD51CC_1_1483022350.png"
+    ],
+    "kind": "plate",
+    "answer": "34",
+    "claims": [
+      [
+        "plate",
+        -1
+      ],
+      [
+        "phiBC",
+        -1
+      ],
+      [
+        "workABZero",
+        true
+      ],
+      [
+        "negativeForce",
+        -1
+      ],
+      [
+        "EAUnderEC",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "063141",
+    "sourceHash": "7ea100830f467a82a46bc4c16b15f4d682d9d2e299d082cba67f4bcba6405687",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8FF7D7CA645FB56F41D2A0657818E06F(copy2)/xs3qstsrc8FF7D7CA645FB56F41D2A0657818E06F_1_1576578463.png"
+    ],
+    "kind": "coils",
+    "answer": "12",
+    "claims": [
+      [
+        "I",
+        1
+      ],
+      [
+        "B",
+        1
+      ],
+      [
+        "flux",
+        -1
+      ],
+      [
+        "B2toward",
+        false
+      ],
+      [
+        "I2clockwise",
+        true
+      ]
+    ],
+    "top": true,
+    "left": true
+  },
+  {
+    "id": "56DF4A",
+    "sourceHash": "cfac1544d314c0450acbd19e0de21eb7d5f3b5714bfb60f5d300414d84aa323c",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/02B5A46B9931B1324D061DEDEE6A1D89(copy2)/xs3qstsrc02B5A46B9931B1324D061DEDEE6A1D89_1_1643205622.png"
+    ],
+    "kind": "ampere",
+    "answer": "45",
+    "claims": [
+      [
+        "R",
+        1
+      ],
+      [
+        "Bdir",
+        -1
+      ],
+      [
+        "I",
+        -1
+      ],
+      [
+        "FA",
+        1
+      ],
+      [
+        "T",
+        1
+      ]
+    ],
+    "northRight": false,
+    "left": true
+  },
+  {
+    "id": "9B8945",
+    "sourceHash": "50cf0e253d68df042364afcf96617295397a552e70b8350f63a48af1ada80a88",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/43849678DE109B104CA472D96DDE3390(copy1)/xs3qstsrc0B8F4BD8052A830645A1C78A58BA720C_6_1721207575.png"
+    ],
+    "kind": "coils",
+    "answer": "23",
+    "claims": [
+      [
+        "I",
+        -1
+      ],
+      [
+        "B",
+        1
+      ],
+      [
+        "flux",
+        1
+      ],
+      [
+        "B2toward",
+        false
+      ],
+      [
+        "I2clockwise",
+        true
+      ]
+    ],
+    "top": true,
+    "left": true
+  },
+  {
+    "id": "DE93F5",
+    "sourceHash": "262a00bf750ecd5a3cd630fb5f2f53ac40de0d682e8daf0ccb37a8a25ba1279e",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/171993AB0606998345DEDAFE35775CB5(copy1)/xs3qstsrc171993AB0606998345DEDAFE35775CB5_1_1763727260.png"
+    ],
+    "kind": "coils",
+    "answer": "245",
+    "claims": [
+      [
+        "I",
+        1
+      ],
+      [
+        "B",
+        -1
+      ],
+      [
+        "flux",
+        1
+      ],
+      [
+        "B1toward",
+        true
+      ],
+      [
+        "I2clockwise",
+        false
+      ]
+    ],
+    "top": false,
+    "left": false
+  },
+  {
+    "id": "5CA9FB",
+    "sourceHash": "4aef861581fbbdbc04e3ccaf036b6f861ba161c32bc8484bafd7a4a2866bf01e",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D96B1340470699B14A828595BA357D69(copy1)/xs3qstsrcD96B1340470699B14A828595BA357D69_10_1768554361.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D96B1340470699B14A828595BA357D69(copy1)/xs3qstsrcD96B1340470699B14A828595BA357D69_11_1768554361.png"
+    ],
+    "kind": "capacitor",
+    "answer": "134",
+    "claims": [
+      [
+        "Cr",
+        2
+      ],
+      [
+        "Ur",
+        0.25
+      ],
+      [
+        "qr",
+        2
+      ],
+      [
+        "Er",
+        2
+      ],
+      [
+        "Wr",
+        4
+      ]
+    ],
+    "connected": true,
+    "halved": true
+  },
+  {
+    "id": "BD8B0A",
+    "sourceHash": "69f290fbd99682ea90506574e6d75357ab5fb7fd14a9d37bbb4fa48ab3923278",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/297C031B0A048E194A6F52A16C96976F(copy1)/xs3qstsrc249F741111709A0648A0A80DA2AEF67C_6_1721207742.png"
+    ],
+    "kind": "ampere",
+    "answer": "35",
+    "claims": [
+      [
+        "R",
+        -1
+      ],
+      [
+        "Bdir",
+        1
+      ],
+      [
+        "I",
+        -1
+      ],
+      [
+        "FA",
+        1
+      ],
+      [
+        "T",
+        1
+      ]
+    ],
+    "northRight": true,
+    "left": false
+  },
+  {
+    "id": "2AD80D",
+    "sourceHash": "bba1b0698e0173ab852a42a71357d17b551f408b0170526e5f09c01fdc70cc75",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A9057A65B8E5B1AF4BB7D997B97506AC(copy2)/xs3qstsrcA9057A65B8E5B1AF4BB7D997B97506AC_1_1544786203.png"
+    ],
+    "kind": "coils",
+    "answer": "12",
+    "claims": [
+      [
+        "I",
+        -1
+      ],
+      [
+        "B",
+        -1
+      ],
+      [
+        "flux",
+        1
+      ],
+      [
+        "B2toward",
+        true
+      ],
+      [
+        "I2clockwise",
+        false
+      ]
+    ],
+    "top": true,
+    "left": false
+  },
+  {
+    "id": "235F0D",
+    "sourceHash": "e2d8398c18b2efd13e7142d79a9a13c12fc3ca48f06c4ed15c1745eff40c9804",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AF1018763A49B6F949742073F75B45F8(copy2)/xs3qstsrcAF1018763A49B6F949742073F75B45F8_1_1544788755.png"
+    ],
+    "kind": "coils",
+    "answer": "23",
+    "claims": [
+      [
+        "I",
+        1
+      ],
+      [
+        "B",
+        -1
+      ],
+      [
+        "flux",
+        -1
+      ],
+      [
+        "B2toward",
+        true
+      ],
+      [
+        "I2clockwise",
+        false
+      ]
+    ],
+    "top": true,
+    "left": false
+  },
+  {
+    "id": "4E567B",
+    "sourceHash": "082a8c4b299fef12d0e34284a7ddb4f1b04219263f1065ebc962ca026d8def06",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E0BCF9A3F0EE9B104B6A1112397E1DC4(copy1)/xs3qstsrc3048CDE41D9789344F49E37125AB376D_6_1721207773.png"
+    ],
+    "kind": "rings",
+    "answer": "45",
+    "claims": [
+      [
+        "I1",
+        false
+      ],
+      [
+        "I2",
+        true
+      ],
+      [
+        "attract1",
+        true
+      ],
+      [
+        "interact2",
+        false
+      ],
+      [
+        "emf1",
+        true
+      ]
+    ],
+    "approach": true
+  },
+  {
+    "id": "B6C47E",
+    "sourceHash": "f892dcd4451834a2c46d97e310a47f274691c107c4530e2d70e0d9dfc1d7125b",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4B40727837A7B16A419FE0A3D049678A(copy1)/xs3qstsrc4B40727837A7B16A419FE0A3D049678A_1_1487249803.png"
+    ],
+    "kind": "sphere",
+    "answer": "24",
+    "claims": [
+      [
+        "EB",
+        576
+      ],
+      [
+        "EC",
+        36
+      ],
+      [
+        "phiBD",
+        1
+      ],
+      [
+        "phiDF",
+        0
+      ],
+      [
+        "phiCF",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "D30076",
+    "sourceHash": "ae7a868df1fd069df25af6aa77b3b1aaf2c61f281d1fae743c6d86cc426bc05d",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7FA3913243BCBF83458886CAA019F41B(copy1)/xs3qstsrc7FA3913243BCBF83458886CAA019F41B_1_1763727269.png"
+    ],
+    "kind": "ampere",
+    "answer": "145",
+    "claims": [
+      [
+        "R",
+        -1
+      ],
+      [
+        "Bdir",
+        -1
+      ],
+      [
+        "I",
+        -1
+      ],
+      [
+        "FA",
+        1
+      ],
+      [
+        "T",
+        1
+      ]
+    ],
+    "northRight": false,
+    "left": true,
+    "northLeft": true
+  },
+  {
+    "id": "02A8BA",
+    "sourceHash": "8a289da382590eb64670c45e103406ab72a0eb9501cafe231912204d48be7f13",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C963187269ABAFF240242E456C94A72D(copy1)/xs3qstsrcC963187269ABAFF240242E456C94A72D_1_1511875703.png"
+    ],
+    "kind": "shuttle",
+    "answer": "25",
+    "claims": [
+      [
+        "chargePattern",
+        "negative-positive"
+      ],
+      [
+        "chargePattern",
+        "positive-negative"
+      ],
+      [
+        "chargePattern",
+        "positive-zero"
+      ],
+      [
+        "C",
+        -1
+      ],
+      [
+        "U",
+        -1
+      ]
+    ]
+  },
+  {
+    "id": "7402BC",
+    "sourceHash": "815e15b805c9645bc859f26d2320251dfca81fa344cb508c59504c0931000423",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A796F004E2FA892F455AC2DF65B1EB3C(copy1)/xs3qstsrc43A206A63076B3E64354184F3002D2AD_1_1721207653.gif"
+    ],
+    "kind": "coils",
+    "answer": "123",
+    "claims": [
+      [
+        "I",
+        -1
+      ],
+      [
+        "B",
+        -1
+      ],
+      [
+        "flux",
+        -1
+      ],
+      [
+        "B2toward",
+        false
+      ],
+      [
+        "I2clockwise",
+        true
+      ]
+    ],
+    "top": false,
+    "left": false
+  },
+  {
+    "id": "33EE1B",
+    "sourceHash": "d3bb9bfa1fc02873e5b30fd7accbec1d1e38ca13b712b0df6442e8b05c9eadb2",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FC2C14F1108FB6BA4E8E05085732DA90(copy1)/xs3qstsrcFC2C14F1108FB6BA4E8E05085732DA90_1_1646996918.png"
+    ],
+    "kind": "capacitor",
+    "answer": "245",
+    "claims": [
+      [
+        "CwhenDDown",
+        -1
+      ],
+      [
+        "fieldsEqual",
+        true
+      ],
+      [
+        "phiBC",
+        1
+      ],
+      [
+        "dielectricW",
+        -1
+      ],
+      [
+        "EwhenDUp",
+        0
+      ]
+    ],
+    "connected": false,
+    "staggered": true
+  },
+  {
+    "id": "3BE118",
+    "sourceHash": "1133b5c43a6ce05bb82977fa2e76e705baaa6824714477c6fc400942520c61f5",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/94FC2B8CAF9A9C1A46B6585C8114C8B8(copy2)/xs3qstsrc94FC2B8CAF9A9C1A46B6585C8114C8B8_2_1673515109.png"
+    ],
+    "kind": "plate",
+    "answer": "12",
+    "claims": [
+      [
+        "plate",
+        1
+      ],
+      [
+        "phiBC",
+        1
+      ],
+      [
+        "workABNonzero",
+        true
+      ],
+      [
+        "negativeForce",
+        1
+      ],
+      [
+        "EAUnderEC",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "242928",
+    "sourceHash": "078e15c77d57ac11a2318bd8178b3e224f3b370297b75e075302213b96b7877b",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/94BE37BD7BDEB7D94B2DC2BD4ABC6DC0(copy1)/xs3qstsrc94BE37BD7BDEB7D94B2DC2BD4ABC6DC0_1_1701771209.gif"
+    ],
+    "kind": "coils",
+    "answer": "24",
+    "claims": [
+      [
+        "I",
+        -1
+      ],
+      [
+        "B",
+        1
+      ],
+      [
+        "flux",
+        -1
+      ],
+      [
+        "B2toward",
+        false
+      ],
+      [
+        "I2clockwise",
+        false
+      ]
+    ],
+    "top": false,
+    "left": true
+  },
+  {
+    "id": "896222",
+    "sourceHash": "ec37dbf2ecd364b0265a11c6391bfc28defda167b2f9e21c796f577c3a74c4df",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/2FE6669BCC76BBA445D437085A5C85A9(copy2)/xs3qstsrc2FE6669BCC76BBA445D437085A5C85A9_1_1605791991.png"
+    ],
+    "kind": "conductor",
+    "answer": "12",
+    "claims": [
+      [
+        "insideEZero",
+        true
+      ],
+      [
+        "phiBC",
+        0
+      ],
+      [
+        "mostElectronsAtA",
+        true
+      ],
+      [
+        "positiveA",
+        true
+      ],
+      [
+        "negativeD",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "5624D7",
+    "sourceHash": "ab6dd47eabe82885ba5f0574ac29fc62b1bbf7969cd7a432e694070dba740c61",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CD3EC0C54F36AFA4415FA168500C5F87(copy2)/xs3qstsrcCD3EC0C54F36AFA4415FA168500C5F87_1_1580195433.png"
+    ],
+    "kind": "ampere",
+    "answer": "34",
+    "claims": [
+      [
+        "R",
+        1
+      ],
+      [
+        "Bdir",
+        -1
+      ],
+      [
+        "I",
+        1
+      ],
+      [
+        "FA",
+        1
+      ],
+      [
+        "T",
+        -1
+      ]
+    ],
+    "northRight": false,
+    "left": true
+  },
+  {
+    "id": "410957",
+    "sourceHash": "44185ab9bd53bf5ae87c38f47a339384fe89d8dc4ce3b8d16b68c89d27792326",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7E524EEA0ED1885B46893F990B03ABF3(copy2)/xs3qstsrc7E524EEA0ED1885B46893F990B03ABF3_1_1577189082.png"
+    ],
+    "kind": "capacitor",
+    "answer": "45",
+    "claims": [
+      [
+        "EBOverEC",
+        true
+      ],
+      [
+        "phiAB",
+        0
+      ],
+      [
+        "EwhenDUp",
+        1
+      ],
+      [
+        "qWhenDDown",
+        0
+      ],
+      [
+        "dielectricW",
+        -1
+      ]
+    ],
+    "connected": false,
+    "staggered": true
+  },
+  {
+    "id": "44CF5D",
+    "sourceHash": "d83f523816cd93bbdf08a9f1d51a3a9d2b0fa34b42009102b44408c332190cb8",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/11B6648045B6BE0D4FC7E652A05EDB5A(copy1)/xs3qstsrc11B6648045B6BE0D4FC7E652A05EDB5A_1_1644225060.png"
+    ],
+    "kind": "coils",
+    "answer": "45",
+    "claims": [
+      [
+        "I",
+        -1
+      ],
+      [
+        "B",
+        -1
+      ],
+      [
+        "flux",
+        -1
+      ],
+      [
+        "B2toward",
+        true
+      ],
+      [
+        "I2clockwise",
+        false
+      ]
+    ],
+    "top": true,
+    "left": true
+  },
+  {
+    "id": "D35251",
+    "sourceHash": "bcb85a1fa0f68f3116230d81f1115ba55e828a4782176a5182e1d929789f40f8",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5E912A5898FEB65B4C3EAFA018907C6B(copy1)/xs3qstsrc5E912A5898FEB65B4C3EAFA018907C6B_1_1763727289.png"
+    ],
+    "kind": "plate",
+    "answer": "13",
+    "claims": [
+      [
+        "plate",
+        1
+      ],
+      [
+        "phiCB",
+        1
+      ],
+      [
+        "workABZero",
+        true
+      ],
+      [
+        "positiveForce",
+        -1
+      ],
+      [
+        "EAUnderEC",
+        true
+      ]
+    ],
+    "rotated": true
+  },
+  {
+    "id": "F32AAC",
+    "sourceHash": "1ea66b5291bdde5bd690588aca78276fe0ac42174895c6edf0b808c9dac99d31",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E3C9DDDA7E1CA92142B2FD43DA0B95E2(copy3)/xs3qstsrcE3C9DDDA7E1CA92142B2FD43DA0B95E2_7_1670578252.png"
+    ],
+    "kind": "conductor",
+    "answer": "23",
+    "claims": [
+      [
+        "insideEZero",
+        false
+      ],
+      [
+        "phiAC",
+        0
+      ],
+      [
+        "mostElectronsAtB",
+        true
+      ],
+      [
+        "positiveA",
+        true
+      ],
+      [
+        "negativeD",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "BC0DA8",
+    "sourceHash": "81e4c6a82d706329937a06fed04f3d9ac227ecb66eb7049a2843556f339ce9e0",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/63896C7213E1B7AA4515FE436C5BE9CB(copy1)/xs3qstsrc63896C7213E1B7AA4515FE436C5BE9CB_1_1607602565.gif"
+    ],
+    "kind": "beads",
+    "answer": "12",
+    "claims": [
+      [
+        "FA",
+        1
+      ],
+      [
+        "E",
+        1
+      ],
+      [
+        "forceRatio",
+        2
+      ],
+      [
+        "wireRepel",
+        false
+      ],
+      [
+        "glassEqual",
+        true
+      ]
+    ],
+    "qa": 1,
+    "qb": -2
+  },
+  {
+    "id": "2786AC",
+    "sourceHash": "5ee6c6f42911021dde5db0beb8d5be15cb54561e55bceb1cce5ccdbb84017a37",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C7841AA3E012AC3C4F2A2F5A0DF1F01F(copy1)/xs3qstsrcC7841AA3E012AC3C4F2A2F5A0DF1F01F_6_1633692899.jpg"
+    ],
+    "kind": "shuttle",
+    "answer": "25",
+    "claims": [
+      [
+        "harmonic",
+        true
+      ],
+      [
+        "chargePattern",
+        "positive-negative"
+      ],
+      [
+        "chargePattern",
+        "positive-zero"
+      ],
+      [
+        "C",
+        1
+      ],
+      [
+        "Q",
+        -1
+      ]
+    ]
+  },
+  {
+    "id": "E412A6",
+    "sourceHash": "b7c75b20165dd797a62c5cc794e0c7a46a3954264ac80e59086038e79112225e",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7774D10F67E4B55348E9467FB7C745A5(copy1)/xs3qstsrc7774D10F67E4B55348E9467FB7C745A5_1_1606466618.jpg"
+    ],
+    "kind": "cubes",
+    "answer": "25",
+    "claims": [
+      [
+        "glassTotal",
+        1
+      ],
+      [
+        "polarized",
+        true
+      ],
+      [
+        "copperTotal",
+        -1
+      ],
+      [
+        "q1",
+        1
+      ],
+      [
+        "q4",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "F70AC5",
+    "sourceHash": "20b323abb1f40832896ff2de980d602b70dacbc324a581ea32bab91f57d2ad64",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FFABCB3ED9B0949D40251C36A7DA022E(copy1)/xs3qstsrcA18239AF2078A2684A40219973973B14_3_1772110494.jpg"
+    ],
+    "kind": "capacitor",
+    "answer": "45",
+    "claims": [
+      [
+        "EAUnderEC",
+        true
+      ],
+      [
+        "phiBC",
+        -1
+      ],
+      [
+        "EwhenDUp",
+        1
+      ],
+      [
+        "qWhenDDown",
+        1
+      ],
+      [
+        "dielectricW",
+        1
+      ]
+    ],
+    "connected": true
+  },
+  {
+    "id": "07A6C6",
+    "sourceHash": "525971ef77187bcd86ab2666e79aa59fc44619484b583b37f0e39f10c29573ef",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A2D93D0E5FABA68849973E34FF175E5D/xs3qstsrcA2D93D0E5FABA68849973E34FF175E5D_1_1707818084.jpg"
+    ],
+    "kind": "beads",
+    "answer": "12",
+    "claims": [
+      [
+        "equal",
+        true
+      ],
+      [
+        "wireANegative",
+        true
+      ],
+      [
+        "E",
+        -1
+      ],
+      [
+        "glassRepel",
+        true
+      ],
+      [
+        "flipRatio",
+        2
+      ]
+    ],
+    "qa": 1,
+    "qb": -3,
+    "flip": "A"
+  },
+  {
+    "id": "AFC0C2",
+    "sourceHash": "a68328e6a73c54d3fe979c9705546c9fe152ba8d0477c5ee9b4a79f7b51bbbfa",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/18DEC2DF31F2BC5C4516E3C6B116464B(copy3)/xs3qstsrc18DEC2DF31F2BC5C4516E3C6B116464B_1_1670935159.gif"
+    ],
+    "kind": "beads",
+    "answer": "23",
+    "claims": [
+      [
+        "FA",
+        -1
+      ],
+      [
+        "E",
+        1
+      ],
+      [
+        "equal",
+        true
+      ],
+      [
+        "wireRepel",
+        false
+      ],
+      [
+        "glassEqual",
+        true
+      ]
+    ],
+    "qa": 1,
+    "qb": -2
+  },
+  {
+    "id": "602ECA",
+    "sourceHash": "a9301db2cc2ad5853db700df685c2c3746e799a1887acbd0e79c7335bd36cbf8",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C665E077CCED9C4E416C56695D3CF405(copy1)/xs3qstsrcad962cc2194b414f9fed7cf7516c786f_2_1759322041.jpg"
+    ],
+    "kind": "beads",
+    "answer": "35",
+    "claims": [
+      [
+        "forceRatio",
+        2
+      ],
+      [
+        "wireRepel",
+        false
+      ],
+      [
+        "E",
+        1
+      ],
+      [
+        "glassEqual",
+        true
+      ],
+      [
+        "flipRatio",
+        3
+      ]
+    ],
+    "qa": 2,
+    "qb": 1,
+    "flip": "B"
+  },
+  {
+    "id": "3E42C2",
+    "sourceHash": "7777ed69e21818ba28cc4407a423b99e76c3208fa75e22beab28e666a4f0af36",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4E86B283EADF8718495F9276A993EA93(copy1)/xs3qstsrc4E86B283EADF8718495F9276A993EA93_1_1646996938.png"
+    ],
+    "kind": "coils",
+    "answer": "123",
+    "claims": [
+      [
+        "B2toward",
+        true
+      ],
+      [
+        "B",
+        1
+      ],
+      [
+        "I",
+        1
+      ],
+      [
+        "I2clockwise",
+        true
+      ],
+      [
+        "flux",
+        -1
+      ]
+    ],
+    "top": true,
+    "left": true
+  },
+  {
+    "id": "CCEC9D",
+    "sourceHash": "3c80545c423e3f26125f6b364eb397982fa2517c85f3a33fe95abe2cb678dcb6",
+    "images": [],
+    "kind": "lc-constants",
+    "answer": "15",
+    "claims": [
+      [
+        "period",
+        true
+      ],
+      [
+        "phase",
+        true
+      ],
+      [
+        "charge",
+        true
+      ],
+      [
+        "magneticEnergy",
+        true
+      ],
+      [
+        "voltageAmplitude",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "08ACE4",
+    "sourceHash": "6aa841f27d7618c9b5e1f544f47cd70683ecda41775b7e3e16a69e76ab5171d6",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/747AF04ABEB2A4144A36292F208BC5AC(copy1)/xs3qstsrc747AF04ABEB2A4144A36292F208BC5AC_1_1486043800.png"
+    ],
+    "kind": "cubes",
+    "answer": "25",
+    "claims": [
+      [
+        "copperTotal",
+        -1
+      ],
+      [
+        "polarized",
+        true
+      ],
+      [
+        "glassTotal",
+        -1
+      ],
+      [
+        "q2",
+        1
+      ],
+      [
+        "q3",
+        -1
+      ]
+    ]
+  },
+  {
+    "id": "56B6ED",
+    "sourceHash": "529d9ef9a122b2aaa3c13b9f912716ca70b3a54d1cc78e2516052b82215e5ce4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F3FA09F468E1A1FE4AE2BA6110A9E6BA(copy2)/xs3qstsrcF3FA09F468E1A1FE4AE2BA6110A9E6BA_1_1643276018.gif"
+    ],
+    "kind": "ampere",
+    "answer": "234",
+    "claims": [
+      [
+        "R",
+        1
+      ],
+      [
+        "Bdir",
+        1
+      ],
+      [
+        "I",
+        1
+      ],
+      [
+        "FA",
+        1
+      ],
+      [
+        "T",
+        -1
+      ]
+    ],
+    "northRight": false,
+    "left": true
+  },
+  {
+    "id": "968CE5",
+    "sourceHash": "6b456b83c604574eceac20d58d1420cf7bac42c2baa2369492250563a9e099a4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0F0BC027FE0695424211E1522450F08A(copy2)/xs3qstsrc0F0BC027FE0695424211E1522450F08A_1_1576656320.png"
+    ],
+    "kind": "sphere",
+    "answer": "35",
+    "claims": [
+      [
+        "phiBC",
+        0
+      ],
+      [
+        "phiCD",
+        1
+      ],
+      [
+        "phiDF",
+        0
+      ],
+      [
+        "EB",
+        576
+      ],
+      [
+        "EC",
+        36
+      ]
+    ]
+  },
+  {
+    "id": "B83F61",
+    "sourceHash": "66ecc3dcd7db916b09814e31d485aa4c845887dd603bce3822806250a9dec9fc",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3B22CB246C25A6844F7BAAB5DF1A1B02(copy1)/xs3qstsrc3B22CB246C25A6844F7BAAB5DF1A1B02_1_1511439433.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3B22CB246C25A6844F7BAAB5DF1A1B02(copy1)/xs3qstsrc3B22CB246C25A6844F7BAAB5DF1A1B02_2_1511439433.png"
+    ],
+    "kind": "capacitor",
+    "answer": "34",
+    "claims": [
+      [
+        "EAOverEB",
+        true
+      ],
+      [
+        "phiAC",
+        1
+      ],
+      [
+        "EwhenDUp",
+        0
+      ],
+      [
+        "qWhenDDown",
+        0
+      ],
+      [
+        "dielectricW",
+        0
+      ]
+    ],
+    "connected": false
+  },
+  {
+    "id": "BA756E",
+    "sourceHash": "4d739911739d919f28d68fbcfd7e1dca4a40c01eb833fce0fd76303c3a1f311c",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0FC68B68228CA65E4F2421DFB2563110(copy1)/xs3qstsrc0FC68B68228CA65E4F2421DFB2563110_1_1511439456.png"
+    ],
+    "kind": "capacitor",
+    "answer": "12",
+    "claims": [
+      [
+        "fieldsEqual",
+        true
+      ],
+      [
+        "phiAC",
+        1
+      ],
+      [
+        "EwhenDUp",
+        1
+      ],
+      [
+        "qWhenDDown",
+        -1
+      ],
+      [
+        "dielectricW",
+        0
+      ]
+    ],
+    "connected": true
+  },
+  {
+    "id": "937960",
+    "sourceHash": "180374487b2bc2d26633d8c55e58d093eb24677d0cf72e9dc3eba018bd1d33df",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BCF6ABE4D84182614518A22A88D6C28C(copy1)/xs3qstsrcBCF6ABE4D84182614518A22A88D6C28C_11_1632302471.png"
+    ],
+    "kind": "rings",
+    "answer": "24",
+    "claims": [
+      [
+        "I1",
+        true
+      ],
+      [
+        "I2",
+        true
+      ],
+      [
+        "repel1",
+        true
+      ],
+      [
+        "attract2",
+        true
+      ],
+      [
+        "repel2",
+        true
+      ]
+    ],
+    "approach": false
+  },
+  {
+    "id": "26CC36",
+    "sourceHash": "7a10a9a30c77c4bf295068562dda194d57fbbea50b784c3ce66a637f18891127",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6E5A9951DDA89F794220AF0B8F85FCD5(copy2)/xs3qstsrc6E5A9951DDA89F794220AF0B8F85FCD5_1_1576654812.png"
+    ],
+    "kind": "sphere",
+    "answer": "14",
+    "claims": [
+      [
+        "phiBD",
+        0
+      ],
+      [
+        "phiAF",
+        1
+      ],
+      [
+        "phiAB",
+        0
+      ],
+      [
+        "EB",
+        0
+      ],
+      [
+        "EC",
+        9
+      ]
+    ]
+  },
+  {
+    "id": "D23139",
+    "sourceHash": "d0609754a28fdc36e432391911aead77657e112f0893356d3ea71c57033e73a0",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5203D2A1F1C396A243030F1B849F9B51(copy1)/xs3qstsrc5203D2A1F1C396A243030F1B849F9B51_1_1511439595.png"
+    ],
+    "kind": "ampere",
+    "answer": "12",
+    "claims": [
+      [
+        "R",
+        1
+      ],
+      [
+        "Bdir",
+        -1
+      ],
+      [
+        "I",
+        1
+      ],
+      [
+        "FA",
+        1
+      ],
+      [
+        "T",
+        -1
+      ]
+    ],
+    "northRight": true,
+    "left": false
+  },
+  {
+    "id": "9D383A",
+    "sourceHash": "7da9ddb6ca744a97fb718153af7000aab6b4f9d0b8986c3caa7d7ea0c7e380b0",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/72E5C448A0BFBF914AEE9FFBE7B4F44A(copy2)/xs3qstsrc72E5C448A0BFBF914AEE9FFBE7B4F44A_1_1548173045.gif"
+    ],
+    "kind": "ampere",
+    "answer": "45",
+    "claims": [
+      [
+        "R",
+        -1
+      ],
+      [
+        "Bdir",
+        1
+      ],
+      [
+        "I",
+        1
+      ],
+      [
+        "FA",
+        -1
+      ],
+      [
+        "T",
+        1
+      ]
+    ],
+    "northRight": true,
+    "left": false
+  },
+  {
+    "id": "019E82",
+    "sourceHash": "be6db9458ca3fa14ad21c8a9ca59f5db24d52827f1b128981420ce1977bf0025",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AC39A4D74AC8AEFB41C7408D82B5FA6C(copy2)/xs3qstsrcAC39A4D74AC8AEFB41C7408D82B5FA6C_1_1544785543.png"
+    ],
+    "kind": "rings",
+    "answer": "12",
+    "claims": [
+      [
+        "I1",
+        false
+      ],
+      [
+        "I2",
+        true
+      ],
+      [
+        "attract1",
+        true
+      ],
+      [
+        "repel2",
+        true
+      ],
+      [
+        "observed1",
+        true
+      ]
+    ],
+    "approach": false
+  },
+  {
+    "id": "1B008A",
+    "sourceHash": "05b8c1a3d9d49fac903b8435e73f92568b7addf62f3407abf99bcf53fe8b53f8",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C673F2CED43FA5A440D3A5AAF46446A9(copy1)/xs3qstsrcC673F2CED43FA5A440D3A5AAF46446A9_1_1639480733.png"
+    ],
+    "kind": "capacitor",
+    "answer": "14",
+    "claims": [
+      [
+        "fieldsEqual",
+        true
+      ],
+      [
+        "phiAC",
+        1
+      ],
+      [
+        "EwhenDUp",
+        -1
+      ],
+      [
+        "qWhenDDown",
+        0
+      ],
+      [
+        "dielectricW",
+        1
+      ]
+    ],
+    "connected": false,
+    "staggered": true
+  },
+  {
+    "id": "1D068A",
+    "sourceHash": "7fb0a8aaabac6f57dd210850f53f2173ac6152c6d8243a21375d5fff4969dcd4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B7AE3CDB64A6AB9D472A286A565DB6BE(copy1)/xs3qstsrcB7AE3CDB64A6AB9D472A286A565DB6BE_1_1703072890.png"
+    ],
+    "kind": "beads",
+    "answer": "13",
+    "claims": [
+      [
+        "FA",
+        1
+      ],
+      [
+        "E",
+        1
+      ],
+      [
+        "equal",
+        true
+      ],
+      [
+        "wireRepel",
+        false
+      ],
+      [
+        "glassEqual",
+        true
+      ]
+    ],
+    "qa": -3,
+    "qb": 1.5
+  }
+]

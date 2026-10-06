@@ -1,0 +1,296 @@
+{
+  "0B0CF0": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BA79D3A3219780F5430E325807A8A05E(copy2)/xs3qvrsrcFB5079613FFFBFF7409D08326EB31779_1_1511353676.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BA79D3A3219780F5430E325807A8A05E(copy2)/xs3qvrsrcA632A3C0F0AFB6524C573CC47A6B4241_1_1511353678.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BA79D3A3219780F5430E325807A8A05E(copy2)/xs3qvrsrcA3F9D4DA3E569B5940810D4F4D0DDD76_1_1511353680.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BA79D3A3219780F5430E325807A8A05E(copy2)/xs3qvrsrc5F0C8E25D92D88724AC584D06478A23B_1_1511353682.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BA79D3A3219780F5430E325807A8A05E(copy2)/xs3qvrsrc0FEEDF23BED79354481E0233A8DD9091_1_1511353684.png"
+    ],
+    "sourceHash": "a415755e495899fde8dfe4e76a5372ca2eeb8c2405f66e61f9e47a3536e0d63d",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально изучить зависимость ускорения тела, скользящего по шероховатой наклонной плоскости, от коэффициента трения груза о плоскость. На всех приведённых ниже рисунках указаны массы тел, углы наклона плоскостей к горизонту, коэффициенты трения. Какие две установки следует использовать для проведения такого исследования? 1) 2) 3) 4) 5) Запишите в ответе номера выбранных установок.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=8017",
+    "match": "method-analogue",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Внешний №8017 изучает массу и выбирает 13. В ФИПИ исследуется трение; неизменны m и α в установках 4 и 5. Закон a=g(sinα−μcosα) независимо проверен проекциями сил. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "45",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=360.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-8017.png"
+  },
+  "4CC40B": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/595A477282C0944D44931934CCBD51B5(copy2)/xs3qvrsrc04CB04F569449BFD427C3B659EA382B2_1_1573735923.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/595A477282C0944D44931934CCBD51B5(copy2)/xs3qvrsrcDED91A16E126902149A3AD3D01360E63_1_1573736022.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/595A477282C0944D44931934CCBD51B5(copy2)/xs3qvrsrc00E68503626CA5874685C34FC936B585_1_1573736172.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/595A477282C0944D44931934CCBD51B5(copy2)/xs3qvrsrcE2E237817B6992364FD4DD603F2F4851_1_1573736244.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/595A477282C0944D44931934CCBD51B5(copy2)/xs3qvrsrcBE304A0566A399964C98AB9ECE28C78A_1_1573736320.png"
+    ],
+    "sourceHash": "07cf45153686b0cd7b5229be08473aa99afa2b1455cdf4aad419f7c0da4797d0",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально изучить зависимость заряда, накопленного конденсатором, от ЭДС аккумулятора. Какие две схемы следует использовать для проведения такого исследования? 1) 2) 3) 4) 5) Запишите в ответе номера выбранных схем.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=16864",
+    "match": "reviewed-variant",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Внешний 13 неприменим из-за перестановки установок: в ФИПИ только 1 и 4 сохраняют r, R, C и меняют ЭДС. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "14",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=360.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-16864.png"
+  },
+  "A88C1A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5E95AED59E7886194CEAB5BD83D782F2(copy1)/xs3qvrsrcB4B8299F142CBDDA41BE53452CC2E624_1_1766562982.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5E95AED59E7886194CEAB5BD83D782F2(copy1)/xs3qvrsrc556F5699BE32A6CA4D875AD4FE4042C0_1_1766563119.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5E95AED59E7886194CEAB5BD83D782F2(copy1)/xs3qvrsrc1B192309F91A946C4E7FC17939EDA37D_1_1766563003.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5E95AED59E7886194CEAB5BD83D782F2(copy1)/xs3qvrsrc0E4040E8ED5C91884458B8792B8434DD_1_1766562988.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5E95AED59E7886194CEAB5BD83D782F2(copy1)/xs3qvrsrc6FC158E455E49CBC44028BA41998B72E_1_1766562998.png"
+    ],
+    "sourceHash": "3981cfdd43baf5377108802a26e1bd824b0ce4cf146f8ab9a3c583cf6af9a982",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально обнаружить зависимость силы тока, протекающего в цепи, от ЭДС источника. Какие две электрические цепи, схемы которых приведены на рисунках, следует использовать для такого исследования? 1) 2) 3) 4) 5) В ответе запишите номера выбранных схем.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=51471",
+    "match": "reviewed-variant",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Внешний 24 относится к иной последовательности рисунков. В ФИПИ правильная пара 25: одинаковые r, 2R, разные 2ℰ и ℰ. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=652.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-51471.png"
+  },
+  "67CE1F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E30B1D51BF9CBDFE4275250BB6C526DF(copy1)/xs3qvrsrc3C23883398FC9D044644E97EC508817E_1_1486739925.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E30B1D51BF9CBDFE4275250BB6C526DF(copy1)/xs3qvrsrc52C9A76267EEB3B6433F291C87AA50E2_1_1486739920.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E30B1D51BF9CBDFE4275250BB6C526DF(copy1)/xs3qvrsrcC1D0F58FECCFAA6344FE19C0DFDD21D8_1_1486739922.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E30B1D51BF9CBDFE4275250BB6C526DF(copy1)/xs3qvrsrc2E31B17AB0B2B32E4AA010AC3C872887_1_1486739926.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E30B1D51BF9CBDFE4275250BB6C526DF(copy1)/xs3qvrsrcC35238E9FCFF849E4BF11208012FD20A_1_1486739923.png"
+    ],
+    "sourceHash": "1e36cf5f50e6c3a686bcf12f556e763ae344271873b60470fca2907155936d00",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально изучить зависимость электроёмкости плоского конденсатора от площади его пластин. На всех представленных ниже рисунках S – площадь пластин конденсатора, d – расстояние между пластинами конденсатора, ε – диэлектрическая проницаемость среды, заполняющей пространство между пластинами. Какие два конденсатора следует использовать для проведения такого исследования? 1) 2) 3) 4) 5) Запишите в таблицу номера выбранных установок.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43097",
+    "match": "exact-condition",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Все пять наборов ε, d, S совпадают с независимым примером; обе проверки дают 13. S₁ и S₂ являются индексами, а не множителями. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "13",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=652.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-43097.png"
+  },
+  "7D4F20": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8B670CE0D361AADB4B4016856CA18F1B(copy2)/xs3qvrsrcB528717E55F8B53F45B841DA8951E7BD_1_1573806057.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8B670CE0D361AADB4B4016856CA18F1B(copy2)/xs3qvrsrc6D2EAF34036DBAF74B260C7C6846EE8F_1_1573806097.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8B670CE0D361AADB4B4016856CA18F1B(copy2)/xs3qvrsrcD95EC008F129B79340DB5A3DAA705A30_1_1573806153.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8B670CE0D361AADB4B4016856CA18F1B(copy2)/xs3qvrsrc4A4AA58AD5228BAE413E0FF06CBF8B42_1_1573809045.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8B670CE0D361AADB4B4016856CA18F1B(copy2)/xs3qvrsrc189FB0A482E6B6C14120A15908296BF4_1_1573809039.png"
+    ],
+    "sourceHash": "dcd17254ee12add33dab237417f114a11a0dd0ce2e41c4831069752eb09d249d",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально изучить зависимость заряда, накопленного конденсатором, от сопротивления резистора. Какие две схемы следует использовать для проведения такого исследования? 1) 2) 3) 4) 5) Запишите в ответе номера выбранных схем.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=17668",
+    "match": "reviewed-variant",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Во внешнем варианте 1 и 5 имеют 2R и R; в ФИПИ наоборот. Пара 15 совпала, отношение зарядов вычислено заново. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "15",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=360.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-17668.png"
+  },
+  "BE7727": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DFF36FF34B7E91AC4DF986417A9020C2(copy1)/xs3qvrsrcF828A69E790A81984158CB3B3ED9101F_4_1698051693.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DFF36FF34B7E91AC4DF986417A9020C2(copy1)/xs3qvrsrcF655516F87AFB3184103BC37AFAACB6F_4_1698051701.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DFF36FF34B7E91AC4DF986417A9020C2(copy1)/xs3qvrsrcC9FCEDBF8D8B84A042A9689709D155F3_4_1698051709.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DFF36FF34B7E91AC4DF986417A9020C2(copy1)/xs3qvrsrc6902877BBE65A73D4AB3F10728F6B44B_4_1698051697.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DFF36FF34B7E91AC4DF986417A9020C2(copy1)/xs3qvrsrc771EDEA0F506A7EB40617FFD02EA6493_4_1698051705.png"
+    ],
+    "sourceHash": "4448714239af58f5f658c3b39a7d98c390ed366663a5037ba88d0fa7003e4bb3",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально обнаружить зависимость силы тока, протекающего в цепи, от внутреннего сопротивления источника тока. Какие две схемы следует использовать для проведения такого исследования? 1) 2) 3) 4) 5) Запишите в ответ номера выбранных схем.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50856",
+    "match": "reviewed-variant",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Внешний 14 относится к иной последовательности рисунков. В ФИПИ 24 сохраняют 3ℰ, 4R и меняют r на 2r. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "24",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=652.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-50856.png"
+  },
+  "70B4D7": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/69604724B3B9945B4122277FF1C2D45E(copy1)/innerimg0.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/69604724B3B9945B4122277FF1C2D45E(copy1)/innerimg1.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/69604724B3B9945B4122277FF1C2D45E(copy1)/innerimg2.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/69604724B3B9945B4122277FF1C2D45E(copy1)/innerimg3.gif",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/69604724B3B9945B4122277FF1C2D45E(copy1)/innerimg4.gif"
+    ],
+    "sourceHash": "f43d9fa6e137829cb6cc50a9addb4cec75ad3afe7d5073b89cac50684dd2a8e1",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Ученику необходимо обнаружить зависимость периода свободных электромагнитных колебаний в колебательном контуре от индуктивности катушки. Какие два колебательных контура он должен выбрать для проведения такого опыта? 1) 2) 3) 4) 5) Запишите в таблицу номера выбранных колебательных контуров.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50857",
+    "match": "method-analogue",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Методический аналог №50857 меняет C. Здесь меняется L: 1 и 2 сохраняют C и имеют 2L, L. Отношение периодов 1÷√2. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "12",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=652.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-50857.png"
+  },
+  "E74BD4": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4671F64FD11894DD4638C844BE3A81BD(copy1)/xs3qvrsrc3087898134BAA55E46D6E712E599E5DF_1_1542362088.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4671F64FD11894DD4638C844BE3A81BD(copy1)/xs3qvrsrcB433B493DA38B1374E42EBFE60EC27E4_1_1542362130.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4671F64FD11894DD4638C844BE3A81BD(copy1)/xs3qvrsrc67956D47E160952A49025F8D8E040FC4_1_1542362243.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4671F64FD11894DD4638C844BE3A81BD(copy1)/xs3qvrsrcD5FDFF4CB2058B79477586700A81DAAA_1_1542362299.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4671F64FD11894DD4638C844BE3A81BD(copy1)/xs3qvrsrcBFA7F59DA7279AEE4D54D95F804E5457_1_1542362858.png"
+    ],
+    "sourceHash": "8d83075ae113cfe5111cdad7dbb565cb222a34830ea8ae7984bae0c2bf91f994",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально изучить зависимость электроёмкости плоского конденсатора от расстояния между его пластинами. На всех представленных ниже рисунках S – площадь пластин конденсатора, d – расстояние между пластинами конденсатора, ε – диэлектрическая проницаемость среды, заполняющей пространство между пластинами. Какие два конденсатора следует использовать для проведения такого исследования? 1) 2) 3) 4) 5) Запишите в ответе номера выбранных конденсаторов.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=37902",
+    "match": "reviewed-variant",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Внешняя пара 15 не переносится. Здесь вертикальные пластины; в 3 и 5 одинаковы ε₂ и S₂, различны d₁ и d₂. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "35",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=652.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-37902.png"
+  },
+  "7C0D59": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-8.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CFBE7E7376A9B14F402CC04B25B07534(copy1)/xs3qvrsrc5928F2C172FA801146F770177E1EB9C3_1_1511353701.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CFBE7E7376A9B14F402CC04B25B07534(copy1)/xs3qvrsrcA2F068C7A74581604D4FAE38F7E227F5_1_1511353705.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CFBE7E7376A9B14F402CC04B25B07534(copy1)/xs3qvrsrc1F841130CCD2BE0A4130402C9ACFFAB5_1_1511353708.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CFBE7E7376A9B14F402CC04B25B07534(copy1)/xs3qvrsrc99A404D0CFCD8D964EBEF27EB6A3B4B9_1_1511353703.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CFBE7E7376A9B14F402CC04B25B07534(copy1)/xs3qvrsrc61FE4894010282234C856B699D177D26_1_1511353707.png"
+    ],
+    "sourceHash": "7d5851991272c81014840ab6e58d9266cc2557f8202edafd7a635a91f6dc6ac0",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально изучить зависимость заряда, накопленного конденсатором, от внутреннего сопротивления аккумулятора. Какие две схемы следует использовать для проведения такого исследования? 1) 2) 3) 4) 5)",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=16864",
+    "match": "method-analogue",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Методический аналог №16864 меняет ЭДС; здесь 2 и 3 сохраняют 2ℰ, 2R, C и меняют 2r на r. Учтено падение напряжения на внутреннем сопротивлении. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "23",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=360.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-16864.png"
+  },
+  "9E32CF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8D8419AB59E991DF4A7BA76C779D360A(copy1)/xs3qvrsrc45593E6B38F5A109435E464A3D1865AC_1_1513175328.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8D8419AB59E991DF4A7BA76C779D360A(copy1)/xs3qvrsrc79D9BF7D7F55BE414B04B69F46B283B3_1_1513175329.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8D8419AB59E991DF4A7BA76C779D360A(copy1)/xs3qvrsrcF78006855FE1B56D44E21CB546E2E86E_1_1513175331.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8D8419AB59E991DF4A7BA76C779D360A(copy1)/xs3qvrsrcDEB93D897F06899B44F31CC4A17835D7_1_1513175333.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8D8419AB59E991DF4A7BA76C779D360A(copy1)/xs3qvrsrc021D261E91C2AD754D99464374D89DFF_1_1513175335.png"
+    ],
+    "sourceHash": "6382426f8ebb6348078f2aea05255f54b8f4446311616d51625d729b5a68d941",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально изучить зависимость сопротивления проводника от длины проводника. Какие два проводника следует использовать для проведения такого исследования? 1) 2) 3) 4) 5)",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=8873",
+    "match": "reviewed-variant",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Внешние рисунки 2, 4, 5 отличаются по длинам и сечениям. Выбранные 1 и 3 совпадают по материалу и S₁, различаются l₁ и l₂. Совпадение ответа 13 не считается точным совпадением условия. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "13",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=360.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-8873.png"
+  },
+  "9C7FC3": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6066152DBEB4BEED4AAA5E8DFC99F0F5(copy2)/xs3qvrsrc60F90BD5CDD58EDE4411E6F7DC6DD2A0_1_1573211861.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6066152DBEB4BEED4AAA5E8DFC99F0F5(copy2)/xs3qvrsrc6F70E1B1DF558E4E4F396ADBEDF1B695_1_1576048979.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6066152DBEB4BEED4AAA5E8DFC99F0F5(copy2)/xs3qvrsrc75A674369E2DB75D41D739FA78B7060E_1_1576048928.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6066152DBEB4BEED4AAA5E8DFC99F0F5(copy2)/xs3qvrsrcA95A3CEF467D8E7C4706BED2E9D5D1CA_1_1573211863.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6066152DBEB4BEED4AAA5E8DFC99F0F5(copy2)/xs3qvrsrcAA517572CC0281E04730251A079E2DD5_1_1576048984.png"
+    ],
+    "sourceHash": "dfa98239ac2aa9fa6129cd17f75a8bb2ae9363a29c5be12728a4354022e12bb3",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально изучить зависимость электроёмкости плоского конденсатора от расстояния между его пластинами. На всех представленных ниже рисунках S – площадь пластин конденсатора, d – расстояние между пластинами конденсатора, ε – диэлектрическая проницаемость среды, заполняющей пространство между пластинами. Какие два конденсатора следует использовать для проведения такого исследования? 1) 2) 3) 4) 5) Запишите в ответе номера выбранных конденсаторов.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=37902",
+    "match": "reviewed-variant",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Порядок рисунков отличается: в ФИПИ 2 и 4 имеют ε₂, S₁ и расстояния d₂, d₁. Ответ 24 проверен отдельно. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "24",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=652.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-37902.png"
+  },
+  "72FC30": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AB1B2B0FECD08E704D833C517745D292(copy1)/xs3qvrsrcCE0F5002D911B3BA47AC8EBBD7D8E7C4_1_1518782592.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AB1B2B0FECD08E704D833C517745D292(copy1)/xs3qvrsrc719C4606E8489E4B42531CD640B5BBA1_1_1518782587.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AB1B2B0FECD08E704D833C517745D292(copy1)/xs3qvrsrc6E95E00059AEB7A44684A46C48539A55_1_1518782597.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AB1B2B0FECD08E704D833C517745D292(copy1)/xs3qvrsrcC60689044347B5FE4D546B4BFECE3430_1_1518782590.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AB1B2B0FECD08E704D833C517745D292(copy1)/xs3qvrsrcF031AEB0AA05BC0B4C2C982EFC97FF88_1_1518782594.png"
+    ],
+    "sourceHash": "77dac6d3d61d1aa212654d1234d2838b07a966426be08c10722dcddf3915cfa2",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально изучить зависимость силы Архимеда, действующей на тело, погружённое в жидкость, от плотности жидкости. Какие две установки следует использовать для проведения такого исследования? 1) 2) 3) 4) 5)",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10481",
+    "match": "exact-condition",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Совпадают материалы шариков, относительные размеры и жидкости всех пяти опытов, а также ответ 15. Сравнивается один медный шарик в воде и керосине; численные объёмы из масштаба рисунка не извлекаются. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "15",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=360.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-10481.png"
+  },
+  "CC1C3E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/94B4668E1AD99C2845B785395EFF4CC3(copy2)/xs3qvrsrc587965C2DE5BAB674B021E10A4A7ADF3_1_1511353741.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/94B4668E1AD99C2845B785395EFF4CC3(copy2)/xs3qvrsrcE4CA1FBB2979994E4D96A1250F4CF947_1_1511353745.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/94B4668E1AD99C2845B785395EFF4CC3(copy2)/xs3qvrsrc19CDC858CB53917C4FA33AD98484D67F_1_1511353748.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/94B4668E1AD99C2845B785395EFF4CC3(copy2)/xs3qvrsrc5470D1C775E4935D4BED9C1006B9AB5A_1_1511353743.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/94B4668E1AD99C2845B785395EFF4CC3(copy2)/xs3qvrsrcC78C0CFDF27AA0524250BF6CA61B3A32_1_1511353746.png"
+    ],
+    "sourceHash": "5edc13be174aa8f4f05e49ab752d76db0a6f445ac0b267037a3ced0305e621c2",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Необходимо экспериментально проверить, зависит ли сила Архимеда, действующая на тело, полностью погружённое в жидкость, от его объёма. Какие две установки следует использовать для проведения такого исследования? 1) 2) 3) 4) 5) В ответе запишите номера выбранных установок.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=20033",
+    "match": "exact-condition",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Совпадают все пять установок и ответ 24: стальные шарики разного объёма в керосине. Численное отношение объёмов рисунок не задаёт. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "24",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=360.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-20033.png"
+  },
+  "DADA8C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5F1937FF326C8993461FFD8FFE88C7ED(copy2)/xs3qvrsrcF3A96E368C9D8E944E789C8875A61146_1_1539958161.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5F1937FF326C8993461FFD8FFE88C7ED(copy2)/xs3qvrsrcD09008FC7C629AAD4502015225702831_1_1539958165.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5F1937FF326C8993461FFD8FFE88C7ED(copy2)/xs3qvrsrcE64EC9013F5F90C3441AB3D57C78322C_1_1539958169.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5F1937FF326C8993461FFD8FFE88C7ED(copy2)/xs3qvrsrc50F5A5B2CC80A0FC48A7C2C173A45879_1_1539958163.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5F1937FF326C8993461FFD8FFE88C7ED(copy2)/xs3qvrsrcE41DFAC689AC8D274DA193883A661D56_1_1539958167.png"
+    ],
+    "sourceHash": "3cfc5e32bc34c412275b6cc6c88952a308e35d0f566710fb24d8141763cb17b9",
+    "fipiCondition": "Выберите один или несколько правильных ответов. Ученику нужно обнаружить зависимость периода свободных электромагнитных колебаний в колебательном контуре от ёмкости конденсатора. Какие два колебательных контура он должен выбрать для проведения такого исследования? 1) 2) 3) 4) 5) Запишите в ответе номера выбранных колебательных контуров.",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50857",
+    "match": "reviewed-variant",
+    "comparison": "Вручную прочитаны все пять исходных рисунков ФИПИ и изображения независимого разбора. Внешний ответ 14 соответствует иной последовательности контуров. В ФИПИ 2 и 3 имеют L и ёмкости 2C, C; ответ 23. Проверены все десять пар, закон, сохраняемые параметры и обратное отношение.",
+    "expectedAnswer": "23",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-experiment-20260930/references/reference-extra_id=652.html",
+    "referenceImageReview": "/root/ege-physics-experiment-20260930/references/picture-reference-50857.png"
+  }
+}

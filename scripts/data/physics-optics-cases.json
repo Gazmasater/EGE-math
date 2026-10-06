@@ -1,0 +1,557 @@
+[
+  {
+    "id": "1732F3",
+    "images": [],
+    "answer": "60",
+    "kind": "mirror-rays",
+    "unit": "°",
+    "alpha": 30,
+    "given": "отражения"
+  },
+  {
+    "id": "2DB2F4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1663B885A70CBB5548B711AE0B817523(copy3)/xs3qstsrc1663B885A70CBB5548B711AE0B817523_1_1667981733.gif"
+    ],
+    "answer": "2",
+    "kind": "lens-object",
+    "unit": ""
+  },
+  {
+    "id": "AA77F8",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E295781C7B99867446EB7F80BA24CF5C(copy1)/xs3qstsrc19f3937872b846a286cd181d72b7ad48_6_1758622843.png"
+    ],
+    "answer": "40",
+    "kind": "mirror-rays",
+    "unit": "°",
+    "alpha": 20,
+    "given": "отражения"
+  },
+  {
+    "id": "C771F4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CBB45405B3C49C164D77835D191F004B(copy1)/xs3qstsrc8188590F131897C341B0D86A7F81EFAA_1_1486043978.png"
+    ],
+    "answer": "30",
+    "kind": "mirror-normal",
+    "unit": "°",
+    "surfaceAngle": 60,
+    "givenRay": "падающим"
+  },
+  {
+    "id": "6D59F8",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B5BF58B1F0C5A40140659A640383B942(copy1)/xs3qstsrc1df87b3ba86b4659b00f240a64240aa5_7_1759927106.png"
+    ],
+    "answer": "1",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "right",
+    "height": "above",
+    "region": "between"
+  },
+  {
+    "id": "47960C",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AE51CB73D7D99E714E9DBFD3ADD66619(copy3)/xs3qstsrcAE51CB73D7D99E714E9DBFD3ADD66619_3_1667472793.jpg"
+    ],
+    "answer": "70",
+    "kind": "mirror-rotation",
+    "unit": "°",
+    "alpha": 25,
+    "turn": 10,
+    "given": "падения"
+  },
+  {
+    "id": "4D7B06",
+    "images": [],
+    "answer": "75",
+    "kind": "mirror-surface",
+    "unit": "°",
+    "gamma": 30
+  },
+  {
+    "id": "758809",
+    "images": [],
+    "answer": "6",
+    "kind": "mirror-distance",
+    "unit": "клеток",
+    "d": 2,
+    "move": 3,
+    "what": "increase",
+    "moving": "слон"
+  },
+  {
+    "id": "19F401",
+    "images": [],
+    "answer": "44",
+    "kind": "mirror-rays",
+    "unit": "°",
+    "alpha": 22,
+    "given": "падения"
+  },
+  {
+    "id": "99C905",
+    "images": [],
+    "answer": "40",
+    "kind": "mirror-rays",
+    "unit": "°",
+    "alpha": 20,
+    "given": "падения"
+  },
+  {
+    "id": "EB6D0A",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/50E10A1160B1B02E4AF3F9E6A06B57F2(copy2)/xs3qstsrc50E10A1160B1B02E4AF3F9E6A06B57F2_1_1579771986.png"
+    ],
+    "answer": "90",
+    "kind": "mirror-rotation",
+    "unit": "°",
+    "alpha": 30,
+    "turn": 15,
+    "given": "падения"
+  },
+  {
+    "id": "8BB009",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/513C4475015D96E2468B76314968E1EE(copy2)/xs3qstsrc513C4475015D96E2468B76314968E1EE_1_1539958120.png"
+    ],
+    "answer": "3",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "left",
+    "height": "axis",
+    "region": "beyond"
+  },
+  {
+    "id": "F3157E",
+    "images": [],
+    "answer": "50",
+    "kind": "mirror-distance",
+    "unit": "см",
+    "d": 75,
+    "move": -25,
+    "what": "decrease",
+    "moving": "зеркало"
+  },
+  {
+    "id": "D43C7F",
+    "images": [],
+    "answer": "90",
+    "kind": "mirror-distance",
+    "unit": "см",
+    "d": 80,
+    "move": -35,
+    "what": "distance",
+    "moving": "предмет"
+  },
+  {
+    "id": "56A371",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/EA062D86796DA99C472C94ECC18F7F24(copy2)/xs3qstsrcEA062D86796DA99C472C94ECC18F7F24_1_1533813594.png"
+    ],
+    "answer": "4",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "right",
+    "height": "above",
+    "region": "inside"
+  },
+  {
+    "id": "36FCBB",
+    "images": [],
+    "answer": "150",
+    "kind": "mirror-distance",
+    "unit": "см",
+    "d": 30,
+    "move": 45,
+    "what": "distance",
+    "moving": "предмет"
+  },
+  {
+    "id": "49A315",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E751109774018A9542E0238B74EE9D24(copy1)/xs3qstsrcE751109774018A9542E0238B74EE9D24_3_1606731590.png"
+    ],
+    "answer": "2",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "left",
+    "height": "above",
+    "region": "beyond"
+  },
+  {
+    "id": "7BC113",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A7339B0C76EBBAFB4F13242C3B4F37A7(copy2)/xs3qstsrcA7339B0C76EBBAFB4F13242C3B4F37A7_1_1542629961.png"
+    ],
+    "answer": "6",
+    "kind": "lens-focus-grid",
+    "unit": "см",
+    "cell": 2,
+    "focusCells": 3
+  },
+  {
+    "id": "50081F",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C94057A0C1F6A973448474122FFD42C2(copy1)/xs3qstsrcC94057A0C1F6A973448474122FFD42C2_1_1487249801.png"
+    ],
+    "answer": "4",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "left",
+    "height": "above",
+    "region": "beyond"
+  },
+  {
+    "id": "C51412",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6C615F1DEB9AB160411A05F80EEF96E8(copy2)/xs3qstsrc5A6580D2DFB5939D49F6AFE655CCCBCB_8_1773142321.png"
+    ],
+    "answer": "65",
+    "kind": "mirror-normal",
+    "unit": "°",
+    "surfaceAngle": 25,
+    "givenRay": "отражённым"
+  },
+  {
+    "id": "75F429",
+    "images": [],
+    "answer": "0,4",
+    "kind": "coil-energy",
+    "unit": "мДж",
+    "L": 0.0002,
+    "I": 2
+  },
+  {
+    "id": "CCFF23",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/03158D5C2650B0794CD5A2F956C9DCE8(copy1)/xs3qstsrc03158D5C2650B0794CD5A2F956C9DCE8_1_1606375419.png"
+    ],
+    "answer": "2",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "right",
+    "height": "axis",
+    "region": "beyond"
+  },
+  {
+    "id": "FF63D6",
+    "images": [],
+    "answer": "4",
+    "kind": "mirror-distance",
+    "unit": "клеток",
+    "d": 3,
+    "move": -2,
+    "what": "decrease",
+    "moving": "ферзь"
+  },
+  {
+    "id": "D044DF",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/74C253422A658F334D5530EF9117C61B(copy3)/xs3qstsrc74C253422A658F334D5530EF9117C61B_1_1533739635.png"
+    ],
+    "answer": "40",
+    "kind": "mirror-rays",
+    "unit": "°",
+    "alpha": 20,
+    "given": "падения"
+  },
+  {
+    "id": "31B2DA",
+    "images": [],
+    "answer": "30",
+    "kind": "mirror-rays",
+    "unit": "°",
+    "alpha": 15,
+    "given": "падения"
+  },
+  {
+    "id": "330ADE",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4D95605DC5B7BF984D512003EB165922(copy1)/xs3qstsrc4D95605DC5B7BF984D512003EB165922_1_1640274742.gif"
+    ],
+    "answer": "80",
+    "kind": "mirror-rotation",
+    "unit": "°",
+    "alpha": 30,
+    "turn": 10,
+    "given": "между лучами"
+  },
+  {
+    "id": "D43150",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E812925A4DFA9B254E7ED41BA5A800E0(copy1)/xs3qstsrcE812925A4DFA9B254E7ED41BA5A800E0_5_1704787368.png"
+    ],
+    "answer": "4",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "right",
+    "height": "above",
+    "region": "beyond"
+  },
+  {
+    "id": "0439A7",
+    "images": [],
+    "answer": "0,6",
+    "kind": "mirror-factor",
+    "unit": "м",
+    "d": 1.2,
+    "factor": 2
+  },
+  {
+    "id": "BCB2C7",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/41A926A7A0DB91F94D95D7EDE3DE9A77(copy1)/xs3qstsrca434a63841e84d6980b4ae924ff19e73_3_1758619463.png"
+    ],
+    "answer": "3",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "left",
+    "height": "below",
+    "region": "between"
+  },
+  {
+    "id": "16F3CC",
+    "images": [],
+    "answer": "0,6",
+    "kind": "mirror-factor",
+    "unit": "м",
+    "d": 0.9,
+    "factor": 3
+  },
+  {
+    "id": "217B9D",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BD9C1E1F29D89A55436B0B6F4C1C3BCE(copy1)/xs3qstsrcBD9C1E1F29D89A55436B0B6F4C1C3BCE_10_1768554278.png"
+    ],
+    "answer": "1",
+    "kind": "lens-arrow",
+    "unit": ""
+  },
+  {
+    "id": "6B2A9E",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A09C94D2505E8ED84A246E1D5A519475(copy2)/xs3qstsrcA09C94D2505E8ED84A246E1D5A519475_3_1675069106.png"
+    ],
+    "answer": "3",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "right",
+    "height": "above",
+    "region": "beyond"
+  },
+  {
+    "id": "84149B",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/9159C3891D2F8ACA4B9C179490D0C8E8(copy1)/xs3qstsrc9159C3891D2F8ACA4B9C179490D0C8E8_1_1768227178.png"
+    ],
+    "answer": "50",
+    "kind": "mirror-rotation",
+    "unit": "°",
+    "alpha": 35,
+    "turn": -10,
+    "given": "между лучами"
+  },
+  {
+    "id": "1E75EB",
+    "images": [],
+    "answer": "20",
+    "kind": "mirror-rays",
+    "unit": "°",
+    "alpha": 10,
+    "given": "падения"
+  },
+  {
+    "id": "8D29EA",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8C64B10C5E30A444466DA41313285013(copy1)/xs3qstsrc330106740C2990324F02E39336040CB2_1_1486043798.png"
+    ],
+    "answer": "60",
+    "kind": "mirror-normal",
+    "unit": "°",
+    "surfaceAngle": 30,
+    "givenRay": "отражённым"
+  },
+  {
+    "id": "2F5680",
+    "images": [],
+    "answer": "68",
+    "kind": "mirror-surface",
+    "unit": "°",
+    "gamma": 44
+  },
+  {
+    "id": "9D9E8B",
+    "images": [],
+    "answer": "8",
+    "kind": "mirror-distance",
+    "unit": "см",
+    "d": 25,
+    "move": 4,
+    "what": "increase",
+    "moving": "зеркало"
+  },
+  {
+    "id": "343D86",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7D6A0D9B4EB2B74C453D9E32CB28B96F(copy2)/xs3qstsrc7D6A0D9B4EB2B74C453D9E32CB28B96F_1_1539685715.png"
+    ],
+    "answer": "2",
+    "kind": "lens-point",
+    "unit": "",
+    "side": "left",
+    "height": "below",
+    "region": "beyond"
+  },
+  {
+    "id": "507D42",
+    "images": [],
+    "answer": "90",
+    "kind": "lens-total-distance",
+    "unit": "см",
+    "D": 5,
+    "k": 2
+  },
+  {
+    "id": "5453F0",
+    "images": [],
+    "answer": "6250",
+    "kind": "grating-period",
+    "unit": "нм",
+    "wavelength": 5e-07,
+    "F": 0.2,
+    "dx": 0.016,
+    "outputScale": 1000000000.0
+  },
+  {
+    "id": "C274FA",
+    "images": [],
+    "answer": "9",
+    "kind": "grating-count",
+    "unit": "",
+    "d": 2e-06,
+    "wavelength": 4.2e-07
+  },
+  {
+    "id": "AC9F7A",
+    "images": [],
+    "answer": "24",
+    "kind": "lens-virtual-object",
+    "unit": "см",
+    "F": 40,
+    "f": 60
+  },
+  {
+    "id": "B81EB6",
+    "images": [],
+    "answer": "24",
+    "kind": "lens-diverging-focus",
+    "unit": "см",
+    "f": 16,
+    "k": 0.3333333333333333
+  },
+  {
+    "id": "6018BE",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DD6BA334DC86A6E044C49BA80088A27E(copy1)/xs3qstsrcDD6BA334DC86A6E044C49BA80088A27E_1_1604565926.png"
+    ],
+    "answer": "10",
+    "kind": "lens-focus-distances",
+    "unit": "см",
+    "d": 30,
+    "f": 15,
+    "cell": 5
+  },
+  {
+    "id": "F0FC26",
+    "images": [],
+    "answer": "36",
+    "kind": "grating-screen",
+    "unit": "мм",
+    "d": 5e-05,
+    "L": 1.5,
+    "wavelength": 6e-07,
+    "order": 2
+  },
+  {
+    "id": "402B55",
+    "images": [],
+    "answer": "3",
+    "kind": "lens-image-height",
+    "unit": "см",
+    "D": 5,
+    "H": 6,
+    "f": 30
+  },
+  {
+    "id": "AF195E",
+    "images": [],
+    "answer": "0,6",
+    "kind": "lens-object-magnification",
+    "unit": "м",
+    "F": 0.5,
+    "k": 5
+  },
+  {
+    "id": "9BA851",
+    "images": [],
+    "answer": "30",
+    "kind": "lens-object-distance",
+    "unit": "см",
+    "D": 10,
+    "f": 15
+  },
+  {
+    "id": "97F253",
+    "images": [],
+    "answer": "1,5",
+    "kind": "lens-image-distance",
+    "unit": "м",
+    "D": 1,
+    "dFactor": 3
+  },
+  {
+    "id": "B86CEB",
+    "images": [],
+    "answer": "3",
+    "kind": "grating-order",
+    "unit": "",
+    "density": 500,
+    "d": 2e-06,
+    "wavelength": 5.5e-07
+  },
+  {
+    "id": "1BA8ED",
+    "images": [],
+    "answer": "19",
+    "kind": "grating-count",
+    "unit": "",
+    "d": 4e-06,
+    "wavelength": 4.2e-07
+  },
+  {
+    "id": "078B39",
+    "images": [],
+    "answer": "4,4",
+    "kind": "grating-period",
+    "unit": "мкм",
+    "frequency": 800000000000000.0,
+    "wavelength": 3.75e-07,
+    "F": 0.21,
+    "dx": 0.018,
+    "outputScale": 1000000.0,
+    "roundDigits": 1
+  },
+  {
+    "id": "0E9287",
+    "images": [],
+    "answer": "750",
+    "kind": "grating-frequency",
+    "unit": "ТГц",
+    "d": 5e-06,
+    "F": 0.2,
+    "dx": 0.016
+  }
+]

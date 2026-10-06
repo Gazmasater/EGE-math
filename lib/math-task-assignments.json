@@ -1,0 +1,7209 @@
+{
+  "133372": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "4493a87b76f3b964835943d6ce500d63c29576735d6eb4f44681506f98d3d36e",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "135723": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "92cef2ee18bcca6a56cba34d489df41353784ead1e80e5f53535a40caeb8350c",
+    "batch": "short-geometry",
+    "family": "cylinder-area"
+  },
+  "151689": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "596ac65c345bcb2502c62e5aa845e6d1ddb34375d3425990035e336cfea7cbe5",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "162563": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "0a819760af3ed341b4b337c2a14b32735b520806b40a7a0ab544bbfa75d12534",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "166200": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "cf84f2c32a41489ee7e622558684fac43aaebbf1a4c2ce72ceb60417f540053e",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "191995": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "cdae4d968a5169bbacf809c7594d59059649a3b5169c10165326e6ab6e0b1a00",
+    "batch": "applied-formulas",
+    "family": "doppler"
+  },
+  "196238": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "a3ef549867b019460a1352360f8b4745996b9060f1c107ff3ddbeac96a77db94",
+    "batch": "function-images",
+    "family": "log"
+  },
+  "224219": {
+    "part": 1,
+    "type": "expressions.powers",
+    "sourceCodes": [
+      "1.4",
+      "1.8"
+    ],
+    "conditionSha256": "ef8545708c8c5d401aeef6a3441a95ea138ac3039a5b72ed5069be54cfef57c6",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "238861": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "9d500566cb38a7247dcf00ee13e0169b7396602d07f7eafd10a6ade2d25e21ff",
+    "batch": "vectors",
+    "family": "angle"
+  },
+  "277247": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "f20a747208018c8fb71d0fb0fc71fa2117ea6be10b0a1d2b9c442cad9176d02e",
+    "batch": "calculus",
+    "family": "trig-monotone"
+  },
+  "285552": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "6774bef167b4fb8d0026c579da06fea6c1e3ee8599058272d5dbf6009e1f3d07",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "330712": {
+    "part": 1,
+    "type": "expressions.powers",
+    "sourceCodes": [
+      "1.4",
+      "1.8"
+    ],
+    "conditionSha256": "b288b8c8b0e73307cc6f127f5df354fa1a02d61cd4540a32c42e0e35c3eaa98c",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "336660": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "69d29ee1329848da9a34b0644770f76f437446ae1e8660b7126ee4f27bcd5ad5",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "346547": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "f73cc15451c62ba2eb70062941c0322ffc16ce194747377bf835c370f34afcf7",
+    "batch": "probability",
+    "family": "coffee"
+  },
+  "369392": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "97009f7838be36ef434c34258c94a4b6c8daaaf1c09dc6ec7f1bd07a7e0d1cf8",
+    "batch": "applied-formulas",
+    "family": "volume"
+  },
+  "370392": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "97ca39e703da7cdff6e4057de05272d4eb6411bd15a2d6e18340964ba2b253e3",
+    "batch": "short-geometry",
+    "family": "prism-remainder"
+  },
+  "379055": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "08dd38e54befa27374a821d1a535f81d99d2b4d5e7549ead29e87ac19fe394c0",
+    "batch": "probability",
+    "family": "order"
+  },
+  "424680": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "ea1065ed372ff4fe8fd61410bed5a6d23b0c30210e6f500c7527fbe7787f1a1f",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "425124": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "05373445664bbb4304c59b7bb40ec3df76a2a3979b517bcbe8fd08ee3f505e29",
+    "batch": "calculus",
+    "family": "quadratic-log"
+  },
+  "498736": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "0b2d27ef5f0ead33efa127b37562c3e5955cc8d14c57beb821f345df1f378c5f",
+    "batch": "calculus",
+    "family": "trig-monotone"
+  },
+  "517970": {
+    "part": 1,
+    "type": "basic-equations.logarithms",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "09ab918d4162a78c70ef9fb67912583fbf4adbe866358386004fc891fa980177",
+    "batch": "basic-equations",
+    "family": "logarithm"
+  },
+  "530858": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "0614ac3696911d1f670b7fe90325d548fa7df7cd2e7e448a421200ff45699de6",
+    "batch": "probability",
+    "family": "two-coins"
+  },
+  "577658": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "474ca813cdabb480dd71a595c913a284dbd03272e3ff833d7a15c0aa1f5ecf9c",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "597474": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "1054f04a314d1b4771906163d8d40e79f0ee725ecef4d32afe6435887c3fad44",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "602093": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "a43f907df68c90f402e1c4ee27c9243166a633b9c2ccde24e7ac119503735532",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "622297": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "fb565f20e4454fff9a477b41f2f340825fa9b4b91e4422885490ad3dd20e9019",
+    "batch": "applied-formulas",
+    "family": "cable"
+  },
+  "667524": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "c7bf30470173079d9e01b6e850f7c1272c1d9484b9dabc021391e0ca53d418ef",
+    "batch": "word-problems",
+    "family": "cycling"
+  },
+  "692338": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "c41e1c67a79a871e5a371b5fdaa53eba56e2b185de3e8473b68d9dcc9718c080",
+    "batch": "applied-formulas",
+    "family": "volume"
+  },
+  "713053": {
+    "part": 1,
+    "type": "graphs.roots",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "d5941f634b85086e5fa039cc410f0d4cf23a501a9df13659b728e1f1ee56cbe7",
+    "batch": "function-images",
+    "family": "root"
+  },
+  "720230": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "86f492c2fe97f10bb7841a935c9390b30568789800c9d9f885918e8232fb5b48",
+    "batch": "word-problems",
+    "family": "river-round-own"
+  },
+  "768665": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "dea26d52b184d1590e220d41fedc7763a0b9fd01fce58c7767bfeea7ffcdd9e5",
+    "batch": "word-problems",
+    "family": "pipes"
+  },
+  "818625": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "4bbb84591c5392dd17ce61dd889e970fbc66f4336e3e196351e74c2052494225",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "831474": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "7679c6c4be8baa460f3f841cd4a5dcd0b09be131a3c8c44bd8da3e62b55af1e7",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "841122": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "84004dc06427deda49d8afc2107c653cb64d036463b7acaf45cff81681907394",
+    "batch": "short-geometry",
+    "family": "cone-to-cylinder"
+  },
+  "891127": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "9be74fb6eda49724440eefb25ce002828f8f5c7ba2911f2af5716a392abd6434",
+    "batch": "derivative-images",
+    "family": "extrema-count"
+  },
+  "913615": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "5a35e0aec808c8579bd5a4f9710e85176822ec08c702a9e29effa4d3da06a4c6",
+    "batch": "probability",
+    "family": "selected-tourist"
+  },
+  "944788": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "22a1d5614132cd0c95ea4fc7a3a6d429efe24535643c8b7e66ad99e33e4c20b4",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "997361": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "504de017f21dc45a151172ca095fb522d41ea17a3c12b13b4fb7a07110346e59",
+    "batch": "short-geometry",
+    "family": "bisector-ADB"
+  },
+  "00002A": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "7472d0a60f76a2ef64488aaeb8c08e5dedebd399f551356c5c3e979022fdec95",
+    "batch": "applied-formulas",
+    "family": "pressure"
+  },
+  "0005E9": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "ab7d4626ac6d8308fd7c046c57d9f52ab20cbd48f8f167caf42e37f59a6f9856",
+    "batch": "short-geometry",
+    "family": "tangent-angle"
+  },
+  "018816": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "b0a46be2dcfc7c80da9cbacc97174affb1cb327ee1e5f35b2a8dac3575432cc8",
+    "batch": "short-geometry",
+    "family": "height-median"
+  },
+  "01A05E": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "b32add9079af3c047859f7024680aa539269bc98a22b5b2c7feb069387a69977",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "01BE6F": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "8cc4cdd998fbddc9a2359b1d36baa7909ff6196c221aa6700bb0f6a30a74b613",
+    "batch": "short-geometry",
+    "family": "central"
+  },
+  "01C5CD": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "9c12da3de97c021459f9fd7390a57427ab30dd093e060e93bc7b86998c3bb53d",
+    "batch": "applied-formulas",
+    "family": "motorcycle"
+  },
+  "026E2D": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "f6e8bc03a41b34a4de27c35a5733963f4bfd66bb77dc422cce266ef0f852ca68",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "028837": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "482e4a03111c56c360415cfc876469eb07c2264b50f69a8bf70530815c29ee3a",
+    "batch": "vectors",
+    "family": "angle"
+  },
+  "02A17E": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "5ce6a8d8546eb4ab7af458eff23fff8e7cf392dabde36c08f151c4a60866c0c3",
+    "batch": "function-images",
+    "family": "hyperbola-line"
+  },
+  "02F1DB": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "cb8256f88e6c52ec21f1fda48bea9731b3582919a18e2e1a6a70ce050b8f9133",
+    "batch": "word-problems",
+    "family": "workers"
+  },
+  "033968": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "780f3c54c06b3ebf4f2862e3f18fd9468960144ddf05d51ed3cdc2b944001e13",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "042F86": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "c869bf88427acdf22b39762aa49ff813cfe8923908f49c29a021396fabe3aa63",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "0432E9": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "d0df72091b34690a1b8776220a5829d145286f21eadbcc6137075b8865aed02b",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "0444D9": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "7d9d9a5f98e6c14fca53f9092e063753cfcd8bee39fe998e67d985b0f577592b",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "0540C3": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "83d64d47aa98aa3a9c2359a87f9bff9a29500ca4fcf83439ceb500dd7f18826d",
+    "batch": "probability",
+    "family": "order"
+  },
+  "05E30D": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "9cb82dbcc2598e2a9d64997ca83ea16272f7c53e7a6c72eee6ed9d678c1b024b",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "06AF1F": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "e33e60b7a37af8eeb6545b573615671e4e05bd4309c60115032ac90c7a0ac7b0",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "06B9F5": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "36f21b7a1dcd0b1b203790bdb04db9c2bffe5f7a2fc9cba7a19bf1d62a9f4bdd",
+    "batch": "word-problems",
+    "family": "river-round-own"
+  },
+  "06D921": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "191b33e30772378df7e7c00fbf5c5feed89520ba533a75158cfaa4ca48d32c0e",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "06DEEE": {
+    "part": 1,
+    "type": "graphs.inverse",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "e3fe7402282a0aeb8c640782110c20ab46b65bc059910db1da2d0821934216ae",
+    "batch": "function-images",
+    "family": "hyperbola"
+  },
+  "06E32C": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "3fcf00bf4a4cd2bf46fa7887ce7d9ba35b9d8d52ab573561d3456c8109f1556c",
+    "batch": "short-geometry",
+    "family": "box-tetrahedron"
+  },
+  "071261": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "6454e987a0914a4285ae23a4e28dfc57b7b59db75d2a01e06f945e49e9af993d",
+    "batch": "word-problems",
+    "family": "workers"
+  },
+  "073F98": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "a09a7112c337787dca59a0f258e1f45269cf0fe6724a826dde006351184995b8",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "0762B2": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "9a39998fd78e81e6dab62ced3bf4921db629ad77c182d833fd9d9ffa7259d158",
+    "batch": "short-geometry",
+    "family": "prism-original-volume"
+  },
+  "07D66F": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "6a2a877ece06bea2a08601c674be9478f22d14157d3c6dc87bdfa2af409d8baf",
+    "batch": "probability",
+    "family": "lamps"
+  },
+  "081941": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "d6c5479bc3f7a80c37244b1efe79c372fc9f50ded727bb708099d066ceba634f",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "088ADE": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "cd6929abb57f6206167b64afac04588c13400040cc0a5d741f5bdb78ebace30a",
+    "batch": "probability",
+    "family": "order"
+  },
+  "08C3D9": {
+    "part": 1,
+    "type": "graphs.inverse",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "27b9cd5bfdae49576d3bc3636f4735a676679a0032c3419c609b9da7a87a4bbe",
+    "batch": "function-images",
+    "family": "hyperbola"
+  },
+  "093E32": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "3fa2ed75716715649d87061dc4ac7229c1fa70c757f14ea37ccfb2f2039bdad0",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "0989E5": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "397e59d777fdc72a028e154bea69b8a9164ac7d639e11d1278acc9b7cf0dcb30",
+    "batch": "short-geometry",
+    "family": "prism-original-volume"
+  },
+  "099555": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1"
+    ],
+    "conditionSha256": "79197cc0bf3d029de0b8618f56d85dbd4b7770e376c050eebf34569d6ff64722",
+    "batch": "derivative-images",
+    "family": "compare-slopes"
+  },
+  "09EF38": {
+    "part": 1,
+    "type": "graphs.roots",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "6522bfb9fb17ae23f4669c293612c4f03b0cb52be40af157a0717c45de870baf",
+    "batch": "function-images",
+    "family": "root"
+  },
+  "0A394E": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "4db9c7bce5213225dd7fd0ad7d8753f7b3c7d400492e7dff2e2406c7b5b114e1",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "0B15AC": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "43d38de3fbbb8dee4f53d6fbe1e08cc0a8686417b738c87f6960140ec065712a",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "0B2322": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "24b59aaff0188cf3cab9526f5d5d7c195835ddd35edb79d1ae25e00917c46995",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "0B236A": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "d1588a12101f599170a567606b028d8d22ec6e54f96ce191951fe3363cd6f761",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "0B62CD": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1",
+      "2.5"
+    ],
+    "conditionSha256": "00fffb50f76c52025c556fe41138703160f1463c61ec7fdcb615e2080337f4e7",
+    "batch": "applied-formulas",
+    "family": "tank"
+  },
+  "0B896F": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "d09388c53de3b6ff1b38fb2f563e4eed4650b86c27830d75071c31948a4d90e3",
+    "batch": "function-images",
+    "family": "root-line"
+  },
+  "0C303D": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "506802d1f0200a88c1b1083b5685be144017b5b60a881dbba63a5024f0493461",
+    "batch": "probability",
+    "family": "order"
+  },
+  "0C4928": {
+    "part": 1,
+    "type": "applied.trigonometry",
+    "sourceCodes": [
+      "2.3"
+    ],
+    "conditionSha256": "dd9efb877213cec55429e76acbb72e15c54f70f37a20fad53a816eb7c81f4074",
+    "batch": "applied-formulas",
+    "family": "collision"
+  },
+  "0CC4F3": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "513840ecd8ce0198f1cad72d8a71991e1bd51979fde0c74905e541525205ce2e",
+    "batch": "probability",
+    "family": "bread"
+  },
+  "0DC0A0": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "4ffd1e46fa7a8c0c2cc086cf0b0c7653be42f4027dc15cdeae372eb3536a41d6",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "0E5270": {
+    "part": 1,
+    "type": "expressions.powers",
+    "sourceCodes": [
+      "1.4",
+      "1.8"
+    ],
+    "conditionSha256": "35c60ff4d1de3bb2bb66a97c60d6eb8e982f79c3ab7e63b71c150a39081b01e3",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "0ECDD4": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "5ccabad9efa05e5e729f8e43f7fb4e0c70efaa38d6600dc1792ca8f4b62a2bc9",
+    "batch": "probability",
+    "family": "lamps"
+  },
+  "0ED279": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "16fa6487e527e94c073e567e4cb76321520698cf542e969207e09d6f49d07539",
+    "batch": "derivative-images",
+    "family": "extrema-count"
+  },
+  "0F9157": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "b2f044baa55f756ab8655baa98d839a099e7eca237f680b5b2e96995b9ce4966",
+    "batch": "probability",
+    "family": "markers"
+  },
+  "0FB969": {
+    "part": 2,
+    "type": "numbers",
+    "sourceCodes": [
+      "1.1"
+    ],
+    "conditionSha256": "0ba05a568da585602fb14d220f4b2b0186c47e47f3cc79c9a5220b13fde164d3",
+    "batch": "long-final",
+    "family": "numbers"
+  },
+  "10C0E6": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "3cc83e13e5f62d251cb43e0a16b023e10e080e27b8e6678ca5ca5cdc6741547a",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "110B03": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "c2dcd56f4ae3f774fccfe87e8fbd44c9900886c6e264f4c3448390d58ea5bada",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "11A20A": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "265db54f97adc5ece155f27c5b1469162d2c5b6abc8512c400ae1c9b03709b66",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "11CCDE": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "4241503c9671a549bf914b5c803d312d99053fb0881e5d2a04378a89277d228f",
+    "batch": "probability",
+    "family": "lamps"
+  },
+  "12736C": {
+    "part": 1,
+    "type": "graphs.quadratic",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "12af9ed15a09e2acc445e94f48c0843324b98151b348e0e41fd00dd684012a82",
+    "batch": "function-images",
+    "family": "parabola"
+  },
+  "12B3C9": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "09d3366a054976a32447680b9f57925d851a41ea453495d9579f859d2d6db7ae",
+    "batch": "basic-equations",
+    "family": "cube-root"
+  },
+  "162BAA": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "3e1adec2a4e08592bc298e2ce199cac913c7570d843816573b9d2f6455a14247",
+    "batch": "derivative-images",
+    "family": "extrema-count"
+  },
+  "16D19B": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "c1ec5274497031936848012423701a978c423e4b465e2793f81bf01d423a8cb5",
+    "batch": "probability",
+    "family": "defects"
+  },
+  "17A0D7": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "15a76cff185f5e6e75af8441b47b605983137cedd68475c6b9011fe29e97280a",
+    "batch": "word-problems",
+    "family": "river-round-own"
+  },
+  "17CF80": {
+    "part": 1,
+    "type": "basic-equations.logarithms",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "15ba7465b48700cc557c1cb93b081fc4179f111c7ecbc443e04d6906666820a2",
+    "batch": "basic-equations",
+    "family": "logarithm"
+  },
+  "1803B0": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1",
+      "2.5"
+    ],
+    "conditionSha256": "62ed8fe1b0023a449eb043d85bcd1116e00af851fd2fc30b47b244640fec04a1",
+    "batch": "applied-formulas",
+    "family": "ohm"
+  },
+  "198C47": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "45357f76c8cf94be389f042b737efd45d36e17469da691fcbd7a9d4137a993c8",
+    "batch": "probability",
+    "family": "coffee"
+  },
+  "198EC9": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "c8c97475024493ca53a06028fbe98618fb3397a061e45910dd0688dbdc3b9297",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "19DD0F": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "2f595e69cc42055167f4055a28dc8e933724ba18e9f8c5eef7cbf4d9993df501",
+    "batch": "applied-formulas",
+    "family": "distance"
+  },
+  "19E729": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "c252ce20800ed6674879de979e543c7072268d04a08beec1345ddcbfa67a95af",
+    "batch": "basic-equations",
+    "family": "cube-root"
+  },
+  "19FBCF": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "2b834705a2ce6c299358089f1ec2aca8233e1b3c1ca3fb657321730c1a298f81",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "1B431B": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "b98696cfff64f4cd04bf543113abdcde864704a04366f41406748202d1a38c85",
+    "batch": "probability",
+    "family": "remaining-order"
+  },
+  "1BFB4B": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "7064b0568d6fc6d0fd77501d4b4753c90bc62b5b2f0d74049255eb45afd5f1a3",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "1C7454": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "d3ba4c6d9c22ebb7745d23435c5560cff4a708fec3d98911e87b1b169031a78e",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "1D9551": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "a650e2380b9c4b43315a88474a9ad04aeb610d3c42fa061a228b7a97749a64ae",
+    "batch": "short-geometry",
+    "family": "sphere-from-cone"
+  },
+  "1DC3CC": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "bbee61d8e23ec19f4e209276b234220ef1e1858e9b14e6f1d79c35bc0be52fd2",
+    "batch": "function-images",
+    "family": "two-lines"
+  },
+  "1DD2E7": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "1e3efd3511f40e113f226cf51a60711b009ed2310451f7a3f0fcb615bbc4d30b",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "1DD37A": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "23c529b61659059e57c327a16a730dd1bff398e69ed9f5c319d9a0dfa003f127",
+    "batch": "short-geometry",
+    "family": "circumradius"
+  },
+  "1E16A7": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "f51db186526e28950d67299c3c45dd27a300cff618c168684c1b3b166c43ba1d",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "1E28D8": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "024513d333d97ee8e7942e716b86b869ff1036ef4441158c44e619e1c4a22c3b",
+    "batch": "short-geometry",
+    "family": "sphere-area"
+  },
+  "1E41B2": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "acc2a7c59460178c7b0b6ea881518f2a7a2b7a55e684ded96d0e22e88e463e2c",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "1E4FB8": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "25e95f05336c41a9bf0d109bab23a65abde2444606c8c1edfa4bbd6550c035c3",
+    "batch": "word-problems",
+    "family": "pipes"
+  },
+  "1E76F6": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "26dddd392b18e7b9ba84478d86dbb0160927580aedd6228ba3f0bbf98fedad53",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "1ECEE8": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "3.2",
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "588401a15dc66feeee8ccb95719158f8412c80123c8e602793513aacf5d460dc",
+    "batch": "calculus",
+    "family": "quadratic-log"
+  },
+  "1F4550": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.1",
+      "7.3"
+    ],
+    "conditionSha256": "c5a607ff3f2c4e3c5860bf7b7b47416c090d767a11e9ba8044657f761a083919",
+    "batch": "short-geometry",
+    "family": "prism-cut-area"
+  },
+  "1FE24C": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "d8af052266e36bee55eed6c9df566411169ed269ef4a7a7c2f288c6b78fa6b0f",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "1FEA81": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "0e37cd321d2a476ec3f71763f2ae1e303790bb434aed4771e9a5eac4ddb26290",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "205CF2": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "3ec458d4ac8464d4d8a3521b42f391213ef8c910f78f34e707970aef32bbcaa6",
+    "batch": "word-problems",
+    "family": "river-distance"
+  },
+  "20970C": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "56fa7971bceb44dda20da1593416c16f4ccf546402683154461a8005caa16c5c",
+    "batch": "derivative-images",
+    "family": "analytic"
+  },
+  "21628C": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "bd9b33ed78994c9de76366880144838079001f19a41d21aef1ab08cb6112b7cf",
+    "batch": "short-geometry",
+    "family": "tangent-arc"
+  },
+  "221C18": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "29baed64f2957c3e0ebb02c8b0d30b3348f4d4e54a727fcafd7821fb9f2ab001",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "222C71": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "ecdf788e56fdb56eb8f8e2bb90c5f9b27a404c5a4b2eb994c515f92def1a4fc8",
+    "batch": "applied-formulas",
+    "family": "volume"
+  },
+  "223EC5": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "b463fcbb069790b2bbb3f45350e19b59f664a0330a72167164eef17c6840b22c",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "226FB1": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "6841940adf14a41d3c8048f109df0f58bab8922b1c4376bbeaaea4d47e1da667",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "2359E0": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "85eae4480265f97ddf69741c79aef29a1781ab1fb09bc4064cce3e623aab1cf7",
+    "batch": "short-geometry",
+    "family": "prism-pyramid"
+  },
+  "23C8BB": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "793a1e027efdb2578b32fbdc5178d93eb3d3c3d7bdcb21e321ca9b04a5864713",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "24A166": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "c2c1b881624018ccd48d96c2e08e9ca46fb652f980f0ea977ee48f48a98cc30a",
+    "batch": "calculus",
+    "family": "exponential-quadratic"
+  },
+  "24E361": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "5fdf41530f5504617aa213d4598ac373dc4711f972b624281f0020d09ff43e06",
+    "batch": "word-problems",
+    "family": "river-difference-flow"
+  },
+  "24E5F8": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "45a04db7667b17cd2e6c4d083f172b0c214b05f83de7812a4919476c5d213831",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "24F9AF": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "0ca88749587fd7da174f9f4c45aea2fd7f780839e52734d18343064684f8af1b",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "26B211": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "fda66730bfd9a75b59e9e96f8d9663d6fc3829cbc06718c95ed1a025824d63e9",
+    "batch": "short-geometry",
+    "family": "cylinder-to-cone"
+  },
+  "274BE8": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "f581081c661701fe0bd41f128d2ccac7d038f4e3ba7ee723784679aef19333e5",
+    "batch": "word-problems",
+    "family": "cycling"
+  },
+  "27ACB1": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "c001e58e298bfecf086f96fc2f723da0abb927f36dac8f9a33896c42441a3bb9",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "27C71D": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "f28e1905901fd8252a904254f872598386ab15bb0f1808ed28babc34820c5cc0",
+    "batch": "probability",
+    "family": "markers"
+  },
+  "282EDC": {
+    "part": 1,
+    "type": "plane.quadrilaterals",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "569263d31606d6fa0006d44fe5368103de07cb2d7800895be35c7872ac73fb49",
+    "batch": "short-geometry",
+    "family": "para-trapezoid"
+  },
+  "28FA05": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "08944fc5819a8bb4bff756f77b26983508f5228bca4d020897fadf6e399a77c0",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "2933FB": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "d57f5b326753cdc31eb7ed0127df270ff28e78bfc9bcddc5fb8ee9b22149dd74",
+    "batch": "short-geometry",
+    "family": "isosceles-exterior"
+  },
+  "2965EA": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "ac97673257d56c439f733fc1c533f89821ff096c24179626b225c7ecd1e35792",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "296B11": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "e328422f45729b56999b4f397defe9716cd235a3c4ad80b9e95537648839bc35",
+    "batch": "word-problems",
+    "family": "return"
+  },
+  "29D730": {
+    "part": 1,
+    "type": "word-problems.percent",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "768ec93002061d5d74755f88846a4e28ebd36ec22e40b401868ba3f51021b5ec",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "29FE0E": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "441e9a1f43e4510bcdb098f1029fdc5ae795a1fa526a0653ce4b4beb76dc9108",
+    "batch": "short-geometry",
+    "family": "box-pyramid"
+  },
+  "2A4DE5": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "4c65ebc23f3fe238b3175ca364bf4c7827991aa61050dc866660275d6fb0c4bd",
+    "batch": "probability",
+    "family": "order"
+  },
+  "2A6A94": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "8a850dc07d2e946b7ecb08a319bf8923b3614e6155673814113b86e70f13fc6c",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "2ACFD0": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "8568687a8207ba99fcb1c7014682a6f5dd34e069a4448de45ea558877a915f64",
+    "batch": "short-geometry",
+    "family": "tangential-side"
+  },
+  "2AFDA9": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "2dfcd6e9947756a7312203e09014c86b1a5d33676b2a770d685d1697251ce46f",
+    "batch": "probability",
+    "family": "coffee"
+  },
+  "2B4308": {
+    "part": 2,
+    "type": "numbers",
+    "sourceCodes": [
+      "1.2"
+    ],
+    "conditionSha256": "ded96acb4f850b1971ece8042e014442b6b1d057690ed68931d7b1b11fa27b69",
+    "batch": "long-final",
+    "family": "numbers"
+  },
+  "2BDA84": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "e9ecd29545b7c28b2b7e5e792c38bbc311b8387207fc60a27d0c862f435e3b9d",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "2D0967": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "59d77e672c23e2588430ea2d9d7c827b6a34bfe6eefd3966e9e1003fd9a6483a",
+    "batch": "applied-formulas",
+    "family": "motorcycle"
+  },
+  "2D0BED": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "75075af5bf7d84e9648c6293d9d7e08e4cfc1eefdc6a97e86a0c457ee5bd86e5",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "2D494A": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "1c2225dc76eeb6eeb780495622fd768f26758b462add308a7ae3afadb425fb19",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "2D68F1": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "4c6ebe307972f53bff9c2698b11381f9913916c396a534f641731aac162e0deb",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "2D6929": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "635cc903289c11ac79e9746796a23d7f827b812529bda26ed335654139ffaf34",
+    "batch": "short-geometry",
+    "family": "box-pyramid"
+  },
+  "2D920F": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "7b2eeb37aaa043baa2a7fa125abccddfc2c540438385d22e911f625371f01746",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "2E169A": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1",
+      "2.5"
+    ],
+    "conditionSha256": "af4c138d4bb838898d7ed846639200008d74d441710b8ce4132d65ad04eb9beb",
+    "batch": "applied-formulas",
+    "family": "parallel"
+  },
+  "2E36C3": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "5853fb97f4f34d42fff85cb944aad56f5e297dd63d47c93a2427501072b201f6",
+    "batch": "function-images",
+    "family": "ultrasound"
+  },
+  "2E9992": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "42ab549dd7b715056a42b980651555503f6bff96d9e108c0214bb3105fcca8df",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "2EB7E3": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "6ed8499d80dc02d3d0a19ad7016d5a7e5d3844a771584a96bb9ec63c4b131e7a",
+    "batch": "probability",
+    "family": "order"
+  },
+  "2F945C": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "a7df394a812a922ada59aa4f625a3a8cb300ddca395af43c21f2bae00fdc31eb",
+    "batch": "probability",
+    "family": "contest-day"
+  },
+  "2F9BDB": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "bed38fffa5f6796db2ad9db577d960205f917681f0f5eeefa8c5aeda2ad0d99a",
+    "batch": "short-geometry",
+    "family": "prism-cut-area"
+  },
+  "2FB6C7": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "9e265085f7909e9464b71cb75ef176f3ddb02fca4d5cbc67aeabf5b4bfb1efd4",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "30B4E7": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "eba9431eb5c1d61dc92b3e3a4e3e53d01e80fe33c72e06529344fe50a4d947e4",
+    "batch": "short-geometry",
+    "family": "inscribed"
+  },
+  "30D3F2": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "083bcf70dbc930c70f23def2564b4d1511632df33de51d4d58f26aa707decd12",
+    "batch": "probability",
+    "family": "until-hit"
+  },
+  "30F054": {
+    "part": 1,
+    "type": "graphs.inverse",
+    "sourceCodes": [
+      "2.1",
+      "3.1"
+    ],
+    "conditionSha256": "d2f8946f9ae1c1523fb8c06b2a97a71d622304beb35d11c3057774d31d59be72",
+    "batch": "function-images",
+    "family": "hyperbola"
+  },
+  "31336D": {
+    "part": 1,
+    "type": "graphs.inverse",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "c4ed4cf7db5b09e9ec4f14665b158151c0200d431437b1a35eab221b0f3ec7bf",
+    "batch": "function-images",
+    "family": "hyperbola"
+  },
+  "315ACA": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "5efcce8fdf95e77c329d785ecdcbf4e55b3dde7c6c99be16da9d50c6eeb35c4b",
+    "batch": "probability",
+    "family": "lamps"
+  },
+  "321FCD": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "7c40e60abe72b112e593ed72c48322cb252e4ac4690150d4478ac93ac6e4fdd9",
+    "batch": "derivative-images",
+    "family": "extrema-count"
+  },
+  "32AF22": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "46794f6258c9dbdc05155f2308d0ea7497b72740c1ebba461df4e3e11cd18e54",
+    "batch": "short-geometry",
+    "family": "box-wedge"
+  },
+  "334A92": {
+    "part": 1,
+    "type": "expressions.roots",
+    "sourceCodes": [
+      "1.3",
+      "1.8"
+    ],
+    "conditionSha256": "aac13011003e9722d6dec1965b701ab8f6492e853049a0a90faae0fccc9728c5",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "338D5A": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.5"
+    ],
+    "conditionSha256": "53cac70c12d03a311c6de6a91652431e9b222511b90db1ad17778e926b6e2f25",
+    "batch": "applied-formulas",
+    "family": "lens"
+  },
+  "33B18F": {
+    "part": 1,
+    "type": "solid.round",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "75d3be01d290e1ced8649e107e27d74a358f301d06343e1e17a4a247334c986d",
+    "batch": "short-geometry",
+    "family": "cone-radius-ratio"
+  },
+  "33B385": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "b833a028f59555f9d27d5c092bffa64a963d99679fe4e71fa07021c66ab84835",
+    "batch": "word-problems",
+    "family": "return"
+  },
+  "33D8E1": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "256f2c714c66ecf6e906113530be3f2a381b7b8f85a1a6ce35f5acf92d92e049",
+    "batch": "word-problems",
+    "family": "river-difference-flow"
+  },
+  "33F1B8": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "e8a119f65ef3f2b8865270fac5e7a11b3bd679078db3b4e06ab14d2580bbfdea",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "344B7E": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1",
+      "2.5"
+    ],
+    "conditionSha256": "46b2d83e97d108c4db219497362d7e6c056fa5cf2654bd01c6f018313a068b7f",
+    "batch": "applied-formulas",
+    "family": "train"
+  },
+  "34A218": {
+    "part": 2,
+    "type": "numbers",
+    "sourceCodes": [
+      "1.1"
+    ],
+    "conditionSha256": "5e0b31683651ab347c45ec96d98a3b1be258459e9c2bed6108b977588c32161f",
+    "batch": "long-final",
+    "family": "numbers"
+  },
+  "34F395": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "431b83873230c5363b2e4d340a9893ff70b652cc470c123c980d093f35fe50dd",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "3599D1": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "4feb812881b625c9ff5ea738927d7d99d204a70cdf232c37bab987006867019a",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "35C66B": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "d84c53acb6363ecfb7a36278eabb114015db75dca56aaf142731f3a2b2a6ca2e",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "35F6F7": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "eeebadbd55635062204c0d08f88555ebd74c992d538febbaf2b37a3374917721",
+    "batch": "derivative-images",
+    "family": "analytic"
+  },
+  "366C0F": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "660a5bd07e49ff73b760354d42c171dc7a65a22d512a7a12ba11795eb0fa24cc",
+    "batch": "word-problems",
+    "family": "cycling"
+  },
+  "370EDC": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "cb575eb5f87330dc6a3ac42403449ff9b8226e13fc1fc6f6dae58d93ea1967c6",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "37164B": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "83ea23ae7f58900079e1bf266cdaef3b12d15d81ef8e0ee6d47d268ae30dfdc8",
+    "batch": "short-geometry",
+    "family": "cone-area"
+  },
+  "37EA9D": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "9e720c615de77ed1b59ecd39988593732c05f83b4809020261147ddcc5d5abe6",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "38A32C": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "55fa10ba1aa846fbebfd3814007febf646b5952b7219ff3652287d31479d6dfd",
+    "batch": "function-images",
+    "family": "exponential"
+  },
+  "396DA0": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "55d3fe04567a664bcb87e80399df0329f66853fcc7d9765876f560aa60b48dfd",
+    "batch": "derivative-images",
+    "family": "extrema-count"
+  },
+  "3975C8": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "9836883633c26cee99dd633512f4e6ee539e37c7fedf9c83b1f9fb1cfc68244f",
+    "batch": "derivative-images",
+    "family": "analytic"
+  },
+  "39F54E": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "556383aacd9c5d390ea1a7b2381d4a4c162698fbcd9e21fcd10cf535a601379a",
+    "batch": "word-problems",
+    "family": "joint-work"
+  },
+  "3A3CE8": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "619f8703330126af15f0efb28744792b93ab3fa4e4d4200adfc86ebd2e37300b",
+    "batch": "calculus",
+    "family": "exponential-linear"
+  },
+  "3A5432": {
+    "part": 1,
+    "type": "basic-equations.rational",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "0a3b88a8bc08469003306275228905387dcfd364e535f4760888e1eff16bc403",
+    "batch": "basic-equations",
+    "family": "reciprocal"
+  },
+  "3B0CD7": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "d8ecb119ceb6b2f47931ad3907ae45d4f56084db1a0d8b5248d463aaa80d8d25",
+    "batch": "applied-formulas",
+    "family": "brake"
+  },
+  "3B5E5D": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "17cbaeee3116e9b568289026e835c20d56f082a5cca27e1d2c569778efbd1dd6",
+    "batch": "short-geometry",
+    "family": "triangle-heights"
+  },
+  "3B8999": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "3f29fd986a1a63d47fc073b4e2daa6e8f840b8dbc20ccb88d3714d309f6e2590",
+    "batch": "applied-formulas",
+    "family": "distance"
+  },
+  "3C509C": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "9ab46a4645589964165775b95a0662d54c2d89be90b3b97a205485597b6870db",
+    "batch": "probability",
+    "family": "until-hit"
+  },
+  "3CF402": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "e60ec6cd940dd80adc4269929499153ab8745b1388dc332570b3246aff8ee94d",
+    "batch": "short-geometry",
+    "family": "circle-angle-sum"
+  },
+  "3D1090": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "ea426cfacab72c18857e4cdaa2c1d4dd1bf358da23d27354b835235cc85dc0d8",
+    "batch": "probability",
+    "family": "children"
+  },
+  "3D4E60": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "6b3132cfce91eea19f459396a36e03e46d53f2fbc1584e09cb2a30d906d387f2",
+    "batch": "short-geometry",
+    "family": "inscribed"
+  },
+  "3D81A7": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.5"
+    ],
+    "conditionSha256": "75b25cbdf153a0eae508c85197e2c14cdf481b5a5caf71d040a4ec655986c628",
+    "batch": "applied-formulas",
+    "family": "ball"
+  },
+  "3D9010": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "23eaeeb6a0bf872fe232f031093581d3350857ec72afc9c955d4b2c93d79df69",
+    "batch": "function-images",
+    "family": "parabola-line"
+  },
+  "3E8552": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "6155a7c3414be9e9bee847c6635fe87bdd89414215f6a3dad2f32eb27247c894",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "3EDEF2": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1",
+      "2.5"
+    ],
+    "conditionSha256": "815aa79c9e5cfca1b9eb90dc4a4f70b0b6a2f28d4faa2992c680863c0f3e0994",
+    "batch": "applied-formulas",
+    "family": "lens"
+  },
+  "3F02C4": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "f6b98b062f181cb2c03b09edcb0aa693241303a38d29f811e3e7ae7f2510ab5c",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "3F52B8": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.3",
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "bc298942b3b3635c5e577941febee266aa1cf984234f06593a3bfc6706af6a4b",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "3FF85B": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "cb721063d8333aae96183c4183c5bbb75fa034cc96d57a2b360e0311d2e33dec",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "40B442": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "f141439521c811ccc7c03ab29fb14cffb22b6fe49c2427f61be60f238658592b",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "41CD19": {
+    "part": 1,
+    "type": "expressions.powers",
+    "sourceCodes": [
+      "1.4",
+      "1.8"
+    ],
+    "conditionSha256": "63076704aaac3c4b47894d2d0dc58b0aada1bf8ce39b5a1d76f47c5c2e25b945",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "41D348": {
+    "part": 2,
+    "type": "inequalities",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "df60b50728f6a1191c71618a2dd52d1999f2865d3416271765afc6d01225ea2a",
+    "batch": "long-final",
+    "family": "inequalities"
+  },
+  "41E054": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "9f3f65accbea02b3fb4d10c83b7e70e51ab79f5a0852896be2c580a26c43e586",
+    "batch": "short-geometry",
+    "family": "cylinder-to-cone"
+  },
+  "436A74": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "5e43f150d08daa211038ed23c785498ce967cac4d5a073b18dfd069c62705545",
+    "batch": "probability",
+    "family": "conditional-dice"
+  },
+  "444D03": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "0074365b1d7f1650efeabd3cc7832bc28dd96a54c410b192b51001a762ade053",
+    "batch": "word-problems",
+    "family": "workers"
+  },
+  "44700A": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "744e58ef80702bf55febf19c399c41615dcdfca72e2cb9c8d23985ab0d478ef6",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "448E90": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "f9782303f8208642b8a91029db47610ce438678397a091e0470f7072f63e17f9",
+    "batch": "function-images",
+    "family": "root-line"
+  },
+  "456BD7": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "b5bad0f9695862e24ea1451cf7968e07266be564dc911480be5c786167dfc2b8",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "45927B": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1",
+      "2.5",
+      "2.9"
+    ],
+    "conditionSha256": "bcc34540e4094499ce773ca7ff1fa7d3cf319ae5614069f60dbb4cbd8d85d988",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "467AAF": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "c9de08e88115c377d650312cbee2ff67d3e94822b8a5c943c9cf9422f2f83ff6",
+    "batch": "short-geometry",
+    "family": "box-tetrahedron"
+  },
+  "47384A": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "671831e4954f2e216964c4d492fbf5aef4be9477b7f4f6d4db72713ca2178f90",
+    "batch": "calculus",
+    "family": "quadratic-log"
+  },
+  "47447E": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "bea2bde72a9ebe8594519c9ee87b5c1270ab908744587d612c3fbc0c02ff67d4",
+    "batch": "probability",
+    "family": "two-coins"
+  },
+  "47F68F": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "edd62252a8b4fd987adc87d22c977d96a1be180dd4a50db84f64fbd40a794e46",
+    "batch": "short-geometry",
+    "family": "sphere-radius"
+  },
+  "481BB0": {
+    "part": 2,
+    "type": "inequalities",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "4b2cac71bbcce6f4cceeef05e9e0e4d1a2dd661f2ccb25d4966530a43df011af",
+    "batch": "long-final",
+    "family": "inequalities"
+  },
+  "4849A6": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "6bc9a51179073819933f29bdc34b362dcd29c6c490aff253e7e9b3f2abb229fd",
+    "batch": "derivative-images",
+    "family": "extrema-count"
+  },
+  "485B9F": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "39094c0fb34356331a2b62f0f34245394208f8d75c7f5de7ce3f8bd48a130904",
+    "batch": "short-geometry",
+    "family": "tangential-fourth"
+  },
+  "48EB9B": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "d5db87546c5fb4d9b0a8ae00165607b10bc0c36645c8a3b97dda8829e4dc94fd",
+    "batch": "short-geometry",
+    "family": "cylinder-volume"
+  },
+  "492E2A": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "2.1",
+      "3.1",
+      "3.5"
+    ],
+    "conditionSha256": "a0c5adebe611c2e41b639edcd712b593a3460d8f4a6b492e6ddb9e91595caffb",
+    "batch": "function-images",
+    "family": "exponential"
+  },
+  "497F54": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "76ba4e1c8144b0dfbb419360a73e560e0354c798ee7753aed383121d11ececf0",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "49C3EA": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "11b9cd721f4d6a3a20eb3d3862d1a42c27a4d5a24856a02ccfbd7b4f70f78105",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "4A073E": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "8327bb2a853358a1a85664efe126b8c789d17eae955980a6427642e0ca733673",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "4A46D4": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1",
+      "2.5"
+    ],
+    "conditionSha256": "cf0326cc4362e46a0c0d9611528a13059272f64303d1d816e570f1a6f2f8eb9e",
+    "batch": "applied-formulas",
+    "family": "train"
+  },
+  "4A47C9": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "b865b6e9db7726128012d20882d274853b863a18d5eeca121278b9d70cfded5f",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "4A4AB8": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "b42f85e6ea53109154a2dc82179d1cf9632f8bdcd2fbecc63454359883dee816",
+    "batch": "word-problems",
+    "family": "river-round-own"
+  },
+  "4B165E": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "7a12abd8c6576c41c8d4be06daa428d1877fc4dcdd7e024e5238f58f424d12d9",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "4B81D5": {
+    "part": 2,
+    "type": "numbers",
+    "sourceCodes": [
+      "1.1"
+    ],
+    "conditionSha256": "c334df8b502fe5a5fa06919c01284c946fc90687bb10dbd29b8a69cf8bcf4e53",
+    "batch": "long-final",
+    "family": "numbers"
+  },
+  "4B912B": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "fdb7a479c1822750c1cca5a55c8fefa64e6d98df4164fce9848f79d0f46ce8ef",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "4BA055": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "d0e06a3e6a8a9af840d57ade2dad38c22b0fb2c7791aabdd9cb392aa240926f4",
+    "batch": "word-problems",
+    "family": "river-round-own"
+  },
+  "4C69F7": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "cac20cb5a4b3e59a777fc9b3f43ddc2aeecc15b1bf929981bedc0b7626518f5a",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "4CBD4E": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "d3b3f53077b5bc3d9c73b416f7f3f25944b504b884c5333a9f4af471981dfcfb",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "4D0B96": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "1f01a954e1d29f3ce066c1c2bc4e0953e6ee1125cc184391da524b8b2d0fa56b",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "4DB285": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "91924049b99715df9443d7dc784b0a178f38f9a388a770b5c4651c748be5e378",
+    "batch": "derivative-images",
+    "family": "endpoint"
+  },
+  "4E31DD": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "e54f954fe7a46ab433eb7165d849da1683b305b174ecd6328dfb612a780a440e",
+    "batch": "short-geometry",
+    "family": "tangential-fourth"
+  },
+  "4E7EC1": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "da6eb998bd2c81eef60af9776986af2dba64df2cc8ff301884854a326dd4b9a1",
+    "batch": "function-images",
+    "family": "hyperbola-line"
+  },
+  "4E8757": {
+    "part": 2,
+    "type": "inequalities",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "138795f8631b679cbb3c45e946615df20eba18ba59a71b4d0c2731057bcf26d1",
+    "batch": "long-final",
+    "family": "inequalities"
+  },
+  "4ECA34": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "a2e8c863cdea575de7ad9eb4e9f660f41ddc8f5a23fbc28b8088e22a86fc1c3e",
+    "batch": "word-problems",
+    "family": "chase"
+  },
+  "5085A6": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "7451376aebb2d75edea32ff60c1b03c3b9b9511f09d3576defea6ae09974bcd8",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "51B8B6": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "ae2d56b85e6bac828df188e1bc14335d462221178bd8402e5f4f0477bb7aa156",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "51EADD": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "6b995bda0dfc691caff0ccc2d9b5cb59858f9b1a022c221d4fa93972e29c673a",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "546A68": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "528578ca87448d117c67dae62532ce30863c05108a0a4c253e82e29d059de18f",
+    "batch": "probability",
+    "family": "coffee"
+  },
+  "5504F2": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "8ed3e0e5c21fd8c90bc14e4420556b2da5f68ad7881a45a20ce7fc2abfe2e44f",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "553B3F": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "885eb527c235ab83434ce4a18cbb9a0162f9a046afea484c09ff3b489658afa1",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "5540EE": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "4b58a3a379a4f10ad733a85e2840108377400dc684b1f395450f227f67193e8e",
+    "batch": "probability",
+    "family": "selected-tourist"
+  },
+  "55491F": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "dc28d4290f542f0cb1e8317516a8ef924600dd9126650b6d10a4dba3e071989d",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "55A294": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "18dac1bed650be3ed578c721d6ccf11ab984e8aac8c973412cb4e54805f76277",
+    "batch": "function-images",
+    "family": "capacitor"
+  },
+  "55EA0E": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "5c9d8f734524808aa0f4792df6e97cf16ee1ff569bd4a318d2a72dda0e695f92",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "56097B": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "a0d724c0738991c11a3fb27f73970df3f6c310995f14b644db50ef5fffaf239b",
+    "batch": "probability",
+    "family": "order"
+  },
+  "56CF6E": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "02901150fab9480aed5626aa1df8ef08a10610e5319cf8cc603649ecd0bdebd2",
+    "batch": "derivative-images",
+    "family": "analytic"
+  },
+  "56EA1A": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1"
+    ],
+    "conditionSha256": "f8778ff0727fbf4ee18f8086cb4e9baff40d143465f95f59575255aa87f0dff1",
+    "batch": "derivative-images",
+    "family": "compare-slopes"
+  },
+  "572E60": {
+    "part": 1,
+    "type": "expressions.roots",
+    "sourceCodes": [
+      "1.3",
+      "1.8"
+    ],
+    "conditionSha256": "a365dcbb4ff8ea3e71c6c194834d8584bc4c70c0421239af6e82ffebc89c07b3",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "5750FE": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "3.2",
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "b95f218ab534d8ae742d7e5a5d337dccc5163d7c6400b3f01b22515cc7e19235",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "579B74": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "b1f4edffb72b7cf88c8e12b838cf68c592ba0dfe479159a17d1d3d71b20a8a5b",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "57A7B1": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "3.2",
+      "4.2"
+    ],
+    "conditionSha256": "08e5052a6c0388ed38e2935d3e045a4bf5e18a60308d5b95fb225cfe20b9c939",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "57C40E": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "c267a3371cff055249e119e8037b0e5e3901a0d2ca37c45af7e2329745795b75",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "581F33": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "e8d42fec1bf5af2d2c910b2d5b226e90726959164a78d2f31bc12c745f377fbc",
+    "batch": "word-problems",
+    "family": "joint-work"
+  },
+  "58427F": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "e81fd5888181dd9eb3eaaf58670515a8dde50a77ae56fa38f4d5eabaab2185b5",
+    "batch": "applied-formulas",
+    "family": "temperature"
+  },
+  "586EF2": {
+    "part": 1,
+    "type": "basic-equations.logarithms",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "e699184781fea566aa49a7349324875fea32ac4641b31edad8359ed27bdee0a7",
+    "batch": "basic-equations",
+    "family": "logarithm"
+  },
+  "58ABD6": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.3",
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "e2f0147266fb386d552e1488ae9da598431a636e720d521d3c1d42198b71c47a",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "58C283": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "de85609642839122c0c1fbc3d19fe139e778c333a5441ff9d7509d37fade6e63",
+    "batch": "applied-formulas",
+    "family": "acceleration"
+  },
+  "58E4C5": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "5cf99425551e5fd7545e693606e30f894a96074a3ab964e20e85c634a1a3e53a",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "591D2E": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "98679c342599baed2b9f6dbd992b6515fe63ae69f17330e5fbf2acdc0bdef2f2",
+    "batch": "word-problems",
+    "family": "cycling"
+  },
+  "598D07": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "3804ed40f5df9abaddfc55ae041173518a64dfb597b0d6e3a7aa1ce1fced30d9",
+    "batch": "word-problems",
+    "family": "river-difference-flow"
+  },
+  "598EC6": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "937506fc6955cd131382ad5425ee303b3acd1bda4ee94e0d13d786d38ef700a2",
+    "batch": "function-images",
+    "family": "capacitor"
+  },
+  "59978F": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "68a72a05eb0a9922b070a038d653ac5898cf38ac924b25345853f32b96e5de2c",
+    "batch": "short-geometry",
+    "family": "tangential-perimeter"
+  },
+  "59D451": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "146374c144d6b72eb0ae0d1f537f81957e38d57e7b16e5ecbe78658066a967d5",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "5A70DB": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "1683c40f7ecb1b2a8cef917be16f781381aa5c7fbf1afab205df813325495c19",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "5A7C8F": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "da805c5daa53491b0b367bffed43b7aa1a7240a23b60d303255ed98bdf66da04",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "5B3F1A": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "c1f5c31f27668036f60a34ffed5751818a030947622b7a06189b567ece89c0c2",
+    "batch": "short-geometry",
+    "family": "mid-trapezoid"
+  },
+  "5B6E6D": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "2ebf91fee948b3f4f1b49a331081c06494f539b12ebe74a2a8c345251b5522a6",
+    "batch": "short-geometry",
+    "family": "height-median"
+  },
+  "5BAD91": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "d1c7de747efa683085149860e87236f58ddefcb5cf68f1b05df2dd140bb19e4c",
+    "batch": "applied-formulas",
+    "family": "voltage"
+  },
+  "5BF069": {
+    "part": 1,
+    "type": "graphs.linear",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "724d47059a110d8c9fa6a3b9b5f3fb73cb34f95806fb9034f0d89d0f35d3018b",
+    "batch": "function-images",
+    "family": "line"
+  },
+  "5C56EC": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.1",
+      "7.3"
+    ],
+    "conditionSha256": "982b8edce5f031cca28b655dca11a703b5053715b8baf83b3261236e8ee0e7d9",
+    "batch": "short-geometry",
+    "family": "prism-original-area"
+  },
+  "5C9973": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "23bc1184da9a304c61d31206547410e0fc3507550bc701bc9349f2794a0d5ea3",
+    "batch": "short-geometry",
+    "family": "prism-cut-volume"
+  },
+  "5CBA9F": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "6712881cc2c5697c3898e8bdf368923096de94c17b309dc4feec1b15ef94a8a7",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "5CE2C6": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "be0f639159497ab56e97b5f5b8c0015cabfa6e7042a05b2871bceade0cd7ffbf",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "5E53DB": {
+    "part": 2,
+    "type": "inequalities",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "38ca97e2f53873b2ef6848682ada210aefd6d1d625cd09b194ee8a1d65999e4d",
+    "batch": "long-final",
+    "family": "inequalities"
+  },
+  "5E7419": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "3.2",
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "e90c7d5b13f96cddc88b671e8361236a294761ffade2c3ce70f4b977a0da0e95",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "5E753F": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "a7d7ad800241df81e51ae5224bb67adf92f6716f9d061a01bfe9da4e95286ebb",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "5EB1A5": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "0e6e0660fb8e7190bef87f501c9abb9dee782992b557261c913c9d10168c952c",
+    "batch": "word-problems",
+    "family": "river-difference-flow"
+  },
+  "5F6C59": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "27940607218541c150ff1726651cd0135659c6d79c3e41bcc191fc517be82cad",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "5F73E5": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.5"
+    ],
+    "conditionSha256": "106e4bbf53382ed0aae08d8cd5c219847a56ea88e01304cf3a41a0ab7e0dfcbe",
+    "batch": "applied-formulas",
+    "family": "ball"
+  },
+  "5F9519": {
+    "part": 1,
+    "type": "graphs.roots",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "bd9ceeff31ae77cfe7c0d2bce6cceb066d67af1b363c35c63c2904e6f6b253e2",
+    "batch": "function-images",
+    "family": "root"
+  },
+  "5FB930": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "a486ea46d6b69296395cbb812aa1b4fd4af51cbb7e85f77c7d67b045bb9b7ea9",
+    "batch": "probability",
+    "family": "selected-tourist"
+  },
+  "60C5B8": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "b91855b1cbc677bb5ec3eeab8976e77b19dfcea1b376406a3e4c5626aead0ec9",
+    "batch": "probability",
+    "family": "order"
+  },
+  "60F7B5": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "33f9ca007e32ed384ef1530fb61b14045510c70bbae7f384a7a5dcf0b5c17e34",
+    "batch": "probability",
+    "family": "remaining-order"
+  },
+  "6169E1": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "5be9214ab33e44b14b981d743d2b47668e03ea2c2791ad3147f0f324766c038a",
+    "batch": "applied-formulas",
+    "family": "acceleration"
+  },
+  "61C181": {
+    "part": 1,
+    "type": "expressions.powers",
+    "sourceCodes": [
+      "1.4",
+      "1.8"
+    ],
+    "conditionSha256": "694c944bd2b5ca33849bc9a639e8a6ff7610dc3b120a49466ae7f2b9c62c5ba4",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "61D99A": {
+    "part": 1,
+    "type": "solid.round",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "cf8e97c81cbf67d04eb12378feb472ab4220fd67f3a30eecaa1df1b2c8426c41",
+    "batch": "short-geometry",
+    "family": "cylinder-ratio"
+  },
+  "626B77": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "fa56ceebeabc51cd87aa04dd149f09bccb237e5a9b9daeda079e6e7c50c439d7",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "62A335": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "c630f1df0839686acd65d80dd7a39b1eebae5d69c59ee21b12e8fdfe1e8a27b3",
+    "batch": "function-images",
+    "family": "exponential"
+  },
+  "62BFA4": {
+    "part": 2,
+    "type": "inequalities",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "80c3758a638df5650263faa76dd975d2b4302bfb9a4f1f40af2af140af682d13",
+    "batch": "long-final",
+    "family": "inequalities"
+  },
+  "6310FE": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "3.2",
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "818d32633dfd6cf1b5dfacd079c645e7769a439ed8480f6809687b080fbf1907",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "641D12": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "e707a381934c5014f16d04e510fa86aa1483fd58ae16f9c30428bf25fa7cbe83",
+    "batch": "word-problems",
+    "family": "chase"
+  },
+  "643EC4": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "7d98855eb315189addbc9dca129baab80095e62fc2423458156844947522a096",
+    "batch": "applied-formulas",
+    "family": "cable"
+  },
+  "6532CC": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "8756ab2281942307371cdfa835c5c52a56a5f432ba5b49af8b90a5ea5b40098b",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "65356D": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "b03111142552b434a061f7401a483f1e9a30052d413d7906d3151a27a3577825",
+    "batch": "word-problems",
+    "family": "cycling"
+  },
+  "655F85": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.1"
+    ],
+    "conditionSha256": "07c499c90ee8b97dedc3eb5e50c278957664efc22359950d73b149ab0d65865f",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "656B14": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "1.3",
+      "3.1"
+    ],
+    "conditionSha256": "0ac365b789a80552418a70ee2670148fd9bf82efb408bb39ca9e272d6c3b9e79",
+    "batch": "function-images",
+    "family": "root-line"
+  },
+  "659A4A": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "c273d83cb32bb2046955063918fecd598b49c712952b7812ded0b86e007f4908",
+    "batch": "calculus",
+    "family": "quadratic-log"
+  },
+  "65E80F": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "8facca24c25550f3b5c926456423c6e64b285733920cdb3b491474446b7b90d2",
+    "batch": "word-problems",
+    "family": "river-round-flow"
+  },
+  "66F056": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "14cfb26e5151ed55ae5fa8990978e928b160e3f45b0be95c00046342d260cdb2",
+    "batch": "probability",
+    "family": "bread"
+  },
+  "6709EE": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "41f181e872c9f13cf1004aa663a796555064b807543ed33aa90f1521a8930c65",
+    "batch": "short-geometry",
+    "family": "bisector-B"
+  },
+  "673F60": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "33aee9eede0e6e6eba21555ba26a66c83169ce38cb5014c569ce4156ce477df3",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "6796AE": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "44da4662e60ad9a0b9dcb0b70bc29a65e2a42e47724facb402cef74a2aa00ab8",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "67A21A": {
+    "part": 1,
+    "type": "graphs.roots",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "a0418f268e640381dfffb9e02ca367a6940bf5e7f069bf3e514f220219744249",
+    "batch": "function-images",
+    "family": "root"
+  },
+  "68281C": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "948159d1f8f10f10a303ff1bb9b58cc16342431be25ef96740f8c6f4923f33ee",
+    "batch": "short-geometry",
+    "family": "box-pyramid"
+  },
+  "68610A": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "a839bec9f9f61e3775af3904e625663fade0fe6e84b2f1f02309d6433db94d88",
+    "batch": "word-problems",
+    "family": "return"
+  },
+  "6888FA": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "47bd4b10c7c949a393b47a9855585a32819c59fcc5df58937c3508be7f6e6ffa",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "688D26": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "3ceab253c9f85fbcdad3840e73433a5991a387afc23610464258f257863785ad",
+    "batch": "calculus",
+    "family": "quadratic-log"
+  },
+  "68AC00": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "df3c5bff5e1774dabdf4747df42f681be50efec28fd09c65497c5cd706437e56",
+    "batch": "function-images",
+    "family": "parabola-line"
+  },
+  "68B0E4": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "8ebc51cdc583f155e5a7e2cba79f96319a3385ffae6fbdfe54a73871caae8810",
+    "batch": "probability",
+    "family": "remaining-order"
+  },
+  "68CAA2": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "e8fced0afca2c6dd7aba2422dba6d41770134dc6e466fe3dec759ec39e7c44c2",
+    "batch": "short-geometry",
+    "family": "prism-cut-volume"
+  },
+  "68CF2D": {
+    "part": 1,
+    "type": "expressions.roots",
+    "sourceCodes": [
+      "1.3",
+      "1.8"
+    ],
+    "conditionSha256": "7e212b9eaf1e634af794befb8665c4e65c5b1014a949570a656909201bf98093",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "69588C": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "a040f2c3137217d2c9702fb50294c0917b9fb20277a1c31a0e132dc6f2e52b5d",
+    "batch": "short-geometry",
+    "family": "prism-cut-volume"
+  },
+  "6976E6": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "20b96906365f0ec5a229badd237be9283470df1ebc637ad35fcf2a5b239d844c",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "697AC9": {
+    "part": 1,
+    "type": "plane.quadrilaterals",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "d504a08b9a363ee4f2aad6d88a7f31d9f19af0596c86d808d5a049484fdc4bce",
+    "batch": "short-geometry",
+    "family": "parallelogram-heights"
+  },
+  "6986C7": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "74b1b42c43dc6008115990f7617b8d41cbec36f5eedc8cebb788001d954562bd",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "699DB5": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "5fb174f7f7b89ce87a0814f03fbc68f6211dbb82cc90b02934bde0cf4294b639",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "6A487C": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "68510aa0ec2d5b7ec7cd9ee8d2fb7a6cb1ed313b74bb49b7c44b48313763219b",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "6A95F2": {
+    "part": 1,
+    "type": "basic-equations.rational",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "0406660ced6372be6e1ed1a3792dddff76481b926aaa3bd9a6f6c39acf4abe4f",
+    "batch": "basic-equations",
+    "family": "cube"
+  },
+  "6ABF35": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "ecf9416891e766f677e52b9648cf38570da16063cc525bfcefa6c92c1830dad3",
+    "batch": "word-problems",
+    "family": "pipes"
+  },
+  "6B9668": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "9071b1c55c511efab879c50716835b9140c86aac13189c119d0b91320ecda060",
+    "batch": "function-images",
+    "family": "bell"
+  },
+  "6C0AE4": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "07652266a9dd6f7d233c78359ab88a23c1364984c9081cf65bfc19026865b549",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "6C9E2A": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "385c890688ba90b6999e27f9daa92c5803599562c8f9a0b7edf23abe2efe52b3",
+    "batch": "short-geometry",
+    "family": "circle-angle-sum"
+  },
+  "6D1598": {
+    "part": 1,
+    "type": "word-problems.percent",
+    "sourceCodes": [
+      "1.1",
+      "1.2"
+    ],
+    "conditionSha256": "1250bc4c3148221e76e0b61e6229b450e3489fbb5c06e8b45d56b74dc671dbfd",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "6D24D0": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "62b64d7c0bcb3dc3f10f64347875281500c6a5c343177cb808c29ee315015f46",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "6D55BD": {
+    "part": 1,
+    "type": "word-problems.percent",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "2c23d72a666f0a7a074bb17521071990a8a74b44ff4cb3c89d7f23f077e4ac53",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "6D5AF2": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "3956f800a18504890e39acdee33c17a750d1d6382cee5cb279ff46f11fdd0a96",
+    "batch": "short-geometry",
+    "family": "cylinder-volume"
+  },
+  "6DBE38": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "cde5d55a3be0b142da2811ac6d6803eaa480a9f4b926cbf2c3919d75e63ee1a6",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "6E7D00": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "f0a98b5361ada1cff7199cf0b5805828a6e7917b47506abf7259bee7db331514",
+    "batch": "probability",
+    "family": "markers"
+  },
+  "6E8B6F": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "1.3",
+      "3.1"
+    ],
+    "conditionSha256": "ec55e8c09ef4ef61e0fab7e2ec07e33997e1bc7fd76c7044e22af16fe608d8e7",
+    "batch": "function-images",
+    "family": "root-line"
+  },
+  "6F27B9": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "9024ca80f896954e0dc7495e557a050969bbbfccc066807d7098ff9d9f498286",
+    "batch": "short-geometry",
+    "family": "prism-cut-volume"
+  },
+  "6F2D5E": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "c0771c4dcfb804d4707e67d8cac1977ceb1303e03c7bdbadc9d03ea0c504cf19",
+    "batch": "function-images",
+    "family": "hyperbola-line"
+  },
+  "6FA927": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "2.1",
+      "2.9",
+      "3.1"
+    ],
+    "conditionSha256": "fc8e64aa43309bebafe4ec4b609009a2830d044020aa8dc13672ebe748ea26e3",
+    "batch": "function-images",
+    "family": "hyperbola-line"
+  },
+  "71114A": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "87f1d9ae2b20a30fa1256ca6b15f2fbf57d88994568443e53aa97820a633b9ef",
+    "batch": "applied-formulas",
+    "family": "volume"
+  },
+  "713E60": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "1503fe2853c6af8be839e41f78e8d383f09737e4263e5145896dfa73d525e07b",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "714DA4": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "a77ec9bd656d597eabfd569b53864f42303538d31b50476a656ddad611407693",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "71A34E": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "617288cc1cd05f432bc338d01d244b0de0e0073265c45a28ec7e726a9f5117a5",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "71AC6C": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "67efda82e5f172ce8efff9732763ac344e1c7541538da74fa6579ca52cbcffed",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "71BC43": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "e750aa7dd233ca7ed651a5487a5a8b38e5ae8b8a7ee9ccfc5f711b7ad3d33983",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "72B193": {
+    "part": 1,
+    "type": "applied.trigonometry",
+    "sourceCodes": [
+      "2.3"
+    ],
+    "conditionSha256": "497f002d3bf2547822dad6aa35226b12d5216d6b1fcfe005d884f2bcf2fe2434",
+    "batch": "applied-formulas",
+    "family": "collision"
+  },
+  "732EBF": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "38a93afa9f62d78737008624da4d5b41ae5153b83efed5e21885ca3205237ae7",
+    "batch": "short-geometry",
+    "family": "circle-angle-CAD"
+  },
+  "73B69F": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "c9650897fd7ceca6679487eabb12c7f0542092979d334cff324675cee965e7f9",
+    "batch": "probability",
+    "family": "lamps"
+  },
+  "75244F": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "e4e3965194fc9a458ed73d71195b7f822bbaa1c430e7aa38dc1ca06f219a75ca",
+    "batch": "probability",
+    "family": "defects"
+  },
+  "75591A": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "9304e35c65abcaa06f3d974ca391eb3521e46fde04e3c5b7c62f552cc13f2262",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "75A66F": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "69f5460e4c50a9a8f69f181516dc13d51907b2495018e9e8c4e929ad9b8d2216",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "76054F": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "dd2f8f2dd512d6acc238dd496cd3e8d5f15b7a215efe35fe0c32a6d7d5db1482",
+    "batch": "calculus",
+    "family": "trig-monotone"
+  },
+  "76A1FD": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "08e01a752fc88bc63f265ad2abb1709c20d0562635e5de7693abbf42d6f388f3",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "783DBA": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "26e80cdbb7b157afccd1435397c9212bc0aa172806486eea86128741165b0103",
+    "batch": "function-images",
+    "family": "exponential"
+  },
+  "78E8A7": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "1ec7b7e629efddb2a9321de50c6281e299f681424ef1ec7c4ceb6bda49b0fc9c",
+    "batch": "short-geometry",
+    "family": "height-bisector"
+  },
+  "793F38": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "5dbc785ffb7138dff4f07faad2f25d4e6d20710b6f579cd56756776220523047",
+    "batch": "short-geometry",
+    "family": "box-wedge"
+  },
+  "79CEAC": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "955351e30c50f4936254c94c9c21514cec4709a77eca914fa30403c23f857575",
+    "batch": "calculus",
+    "family": "trig-monotone"
+  },
+  "79D7B4": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "622beba2772280fd4b786ac3cf71983896367236d6b0361ce5c92acc43d2c893",
+    "batch": "short-geometry",
+    "family": "opposite-angles"
+  },
+  "7AC894": {
+    "part": 1,
+    "type": "expressions.roots",
+    "sourceCodes": [
+      "1.3",
+      "1.8"
+    ],
+    "conditionSha256": "be6144450f75cc6a225de308f1519e979b1f891b6a3d4009c20dbd950003b2dc",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "7C4A3A": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "313ced503255b3ff272c185ff1e98b370abf6b6d46a02a2a69d1c4e484946dda",
+    "batch": "function-images",
+    "family": "exponential"
+  },
+  "7CD29A": {
+    "part": 1,
+    "type": "expressions.roots",
+    "sourceCodes": [
+      "1.3",
+      "1.8"
+    ],
+    "conditionSha256": "b852c3e6d600a2d38574aeb9490372c0f0a3d1c6e342d51a3234825977610cab",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "7D21DC": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "e5af2252a06ea846b2c99e53f7e4a439f7f0a8c5a5062dd1df18e3f6c6372d05",
+    "batch": "function-images",
+    "family": "two-lines"
+  },
+  "7DF0D0": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "ce79960ae03707b55eea606b0b7cfdf276f28e4370be2c21e57f2d13e544fab3",
+    "batch": "probability",
+    "family": "order"
+  },
+  "7E8850": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "c4953f3c8d1e780fe6651bcf049b4d944e3fc46c1fb45ae4d0019f8cbf6cb6b3",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "7F0767": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "a1e3c0f243cd8221a9a633770fda026b2735f08b8ec5770acf860114d73eaec3",
+    "batch": "probability",
+    "family": "order"
+  },
+  "7F208A": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "488c871e6c9ad537a0a52cd05a46ef33cc46b19b6d08d489b7cd67b09aa49946",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "7F366B": {
+    "part": 2,
+    "type": "numbers",
+    "sourceCodes": [
+      "1.2"
+    ],
+    "conditionSha256": "abe8b2c4e362e404c4db10649a2e3dc213e962e7b1b8edd00d8dcaef74506542",
+    "batch": "long-final",
+    "family": "numbers"
+  },
+  "7FA4FB": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "5b1b3364e4d1ff70cafde88ee86fa422b7819e86df8f46112cea8c2c77b2fd36",
+    "batch": "short-geometry",
+    "family": "right-sin"
+  },
+  "7FF06A": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "7287475b93fe5d41dd18e2a51a856cbabb655f68030a8bcda1ee3a4199cb7247",
+    "batch": "probability",
+    "family": "markers"
+  },
+  "8027FE": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "f0b6f4b32310f2517a7a5e7abf7c8558dd7a1cc57891c169e114320713453522",
+    "batch": "applied-formulas",
+    "family": "brake"
+  },
+  "804D11": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "922e745452632c926d691a15b16dd6c4a718759623934473a06a4b900b52efc9",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "80631B": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "0aef6c21d4815147917549b1c55cf8fdffe6e5406838db628bccb1e7dc86dff8",
+    "batch": "short-geometry",
+    "family": "cone-from-sphere"
+  },
+  "80A34C": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "337ac64b8edc49162f0ba782578bda2324e09258f05f1ea65381e994e2897089",
+    "batch": "short-geometry",
+    "family": "diameters-central"
+  },
+  "80A99C": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "da9785034167d0fab5eb86854ef97efa13425aca962fb8998d04b6f4f36f9649",
+    "batch": "probability",
+    "family": "lamps"
+  },
+  "80F70E": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "6cf069adc6257851a5b78d4285e11ec3972645f40bf80663fdab23dd7e18c83e",
+    "batch": "applied-formulas",
+    "family": "temperature"
+  },
+  "8151AA": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "a2e2e3587075073500a2d7e09304dcb96357d37952f9968d7530cc0ff42ba0b2",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "817F71": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "2d2769db91c4459b7437ba54a0cc389a3cc773602bba643594580399b9841fce",
+    "batch": "short-geometry",
+    "family": "prism-original-volume"
+  },
+  "81F510": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "3.2",
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "9dfefba6c2ffc620d6bac283310cdb90c82d6a6e4d2aab049e06c05aa7c227de",
+    "batch": "calculus",
+    "family": "quadratic-log"
+  },
+  "82DA5C": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "7162a61d30c06317566e4ba0df0f3f5db5d62d9c1dd56008e30ea59b082156a1",
+    "batch": "function-images",
+    "family": "parabola-line"
+  },
+  "82F839": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "05117c63cf5edfe63cdee566e0d610e3bbe528e9c57ae28072a50d9ba8ff7d00",
+    "batch": "short-geometry",
+    "family": "bisector-B"
+  },
+  "8371BD": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "e88766f046278b7c27c74c8f4a2cd46f80632759a3883db8436306522c958efb",
+    "batch": "applied-formulas",
+    "family": "acceleration"
+  },
+  "838C9D": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "ed699a4aaf137d6d4e9dfc57a0db143cf179eb821598f494e3e6f84c8f234dd5",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "83B485": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "411907d8020ddd73eb0a74f81bbba19ed1da19e5187ef43d256999c8ab59c1b1",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "83C4C1": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "7d65ae4a6faa06870b5027c65904e4df4ebcf9b9fc2e534715c91d7668ec5e3f",
+    "batch": "probability",
+    "family": "defects"
+  },
+  "843F31": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "fdc6d494b4a397ce4d5cfa7f5dedba6f08f9fa82c9275376171da5731b996cbf",
+    "batch": "short-geometry",
+    "family": "prism-original-volume"
+  },
+  "8476CC": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "ca4fc0924afc6b48de0f097cf4dcae57a1b8d7528853335b4b019afd32d11c46",
+    "batch": "applied-formulas",
+    "family": "pressure"
+  },
+  "847B0B": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "1d5eeb19a47cf9ac0e0c3ec4e778530971ba97667f3e908766aac5a3b240ea79",
+    "batch": "short-geometry",
+    "family": "right-cos"
+  },
+  "84E9F2": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "da1bae7c25485086c41e6bf0ba6ee41bd9462b9dcb52a98adaa2d18381a7283b",
+    "batch": "short-geometry",
+    "family": "tangent-angle"
+  },
+  "858F4B": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "25a3b8f5c8253fb0c6d2fe5942d71d6783c97ef53ed064f5e55a1d599599768a",
+    "batch": "probability",
+    "family": "bread"
+  },
+  "86811A": {
+    "part": 1,
+    "type": "basic-equations.logarithms",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "8676901e092ced7cdc1fbb11b9ce1778646aa18d41cded19dcc4c8b7b37200b9",
+    "batch": "basic-equations",
+    "family": "logarithm"
+  },
+  "87429D": {
+    "part": 1,
+    "type": "graphs.linear",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "404447815a44f109be42f7d351992014bddf388aec4b5fc8503c22f46cee8a1a",
+    "batch": "function-images",
+    "family": "line"
+  },
+  "875A8A": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "a2178260c43a7e62a4c17792abc0809e6e70994e5304b3ba7caabdaf637e4f2e",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "87FAA1": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "25efe5b92dade1892956172cafe72410c08b8a4d074361a9995cd069f009ece0",
+    "batch": "function-images",
+    "family": "hyperbola-line"
+  },
+  "885E9A": {
+    "part": 1,
+    "type": "basic-equations.rational",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "376cfd050937dd6b38df4203ff3c4300463e6c0025cd4cdec7e1de1d0ea6ead3",
+    "batch": "basic-equations",
+    "family": "cube"
+  },
+  "88E991": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "f830e41a7c3eb39d720a55d774ea475e7254defd2288d1ae16e3b9b933c15c3a",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "8ADFCC": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "0e632ea41736bfac83266702d0006f4e590f4b3c5b695a6a1c3146d6bc2173cb",
+    "batch": "function-images",
+    "family": "parabola-line"
+  },
+  "8B3972": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "86c165b10b3ed4b53ddf2d4c5577591d2ce465124c4ca01513895d3ad338c3ae",
+    "batch": "word-problems",
+    "family": "return"
+  },
+  "8B6F73": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "2e00df670d5bdb0a12e8854745956e1542264c661a8e1e169d0aff6189c6dbdd",
+    "batch": "probability",
+    "family": "nested-events"
+  },
+  "8BE0C0": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "9bd6c3386d018632eda35eecb9f5b753bacc0a69c7306e4bef0d2ffec55ac554",
+    "batch": "function-images",
+    "family": "root-line"
+  },
+  "8BE5C3": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "fef7fd17fdad0311b39996326db34ab0ea694e8468de3031e6a2398b005be048",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "8BF7C8": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "58f82c787696396ae81939093b425309cf4ddede19215c44766e477aa31f0374",
+    "batch": "function-images",
+    "family": "exponential"
+  },
+  "8C7829": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "66f223816be8b981f2a8458bfb7fb2df87137242d55fa18a247d1386982348c6",
+    "batch": "word-problems",
+    "family": "cycling"
+  },
+  "8CB50E": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "501462524ad4eacaac79d870f66d370a43307d3ef597d004e13baffb88554997",
+    "batch": "short-geometry",
+    "family": "diameters-central"
+  },
+  "8CEAA5": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "808cfc43cd6aba49595ac344335b32b6768635004feb2f757e1d4582d2b3bd41",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "8D3587": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "123334af5bcfafaf61885ddf01898a6715eb1ba9d0df62961812efd49ce1fc0e",
+    "batch": "short-geometry",
+    "family": "circumradius"
+  },
+  "8E0D68": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "f5623dd487d611c249f769c94e638e18b3c5266a72b9ca39d100cac909c513d8",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "8EC711": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "1f442c8c70e3c0bbb2db8bf277048c65cf39b0a700400180283b519a5a29a95e",
+    "batch": "probability",
+    "family": "disjoint-topics"
+  },
+  "8EF0DE": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "e8a2e0b7df1d10567aba13618e6c35ed7c8bfd4e7e328e142478de70d611735c",
+    "batch": "probability",
+    "family": "lamps"
+  },
+  "8F25EA": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "2d6e1908aa6dcdb53fd6127df3577316df8cff7b513c895035b4e845fee1ca25",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "8F3933": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "c29f3de96231f756db04828a9bab22499888c6b0e4fe44ad902e6320efc13c89",
+    "batch": "probability",
+    "family": "bus-interval"
+  },
+  "8F4718": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "62333431528bc2ee18cc3b2f3444cdf175fe4953b8db056a0a3d4dd69b084045",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "8FD6A6": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "f89c976d763d05d7d96a022e2e0cce569bc926563b5319d4768184b7901a9188",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "9017F9": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "14b55e4082310da21e7fc64fff9edbefc270b843f3325301eab19834555d5fce",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "90227A": {
+    "part": 1,
+    "type": "graphs.inverse",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "575e759a007b1050ff5e457bd90e10b7fe165405ae262d5589aae437fe3385b4",
+    "batch": "function-images",
+    "family": "hyperbola"
+  },
+  "90316E": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "5d4013ca899f22ae65fcb23a71f3e8dc2022a9ee8edf63d769691f920cfc22a5",
+    "batch": "applied-formulas",
+    "family": "distance"
+  },
+  "907C53": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "dca329813b83d2d6a53b40f1990789c2c47a5a54366c928689fe9c599ee53518",
+    "batch": "short-geometry",
+    "family": "central"
+  },
+  "913A8E": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "698397a68c2c6fd483cc4000266d09cb60f5f930f542105defdac15fe1ac8afd",
+    "batch": "function-images",
+    "family": "hyperbola-line"
+  },
+  "91B7CF": {
+    "part": 1,
+    "type": "expressions.roots",
+    "sourceCodes": [
+      "1.3",
+      "1.8"
+    ],
+    "conditionSha256": "89e6589e2e4fbc060babd30ff9bdc7ea4caa571b34fcf9d3fc7c2c2f4e5cda5a",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "91BE4D": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "6701dd00215d791ab91685dbe6ce5a20cea6ec40f0cfe4e042fb80c269451bb1",
+    "batch": "short-geometry",
+    "family": "prism-cut-area"
+  },
+  "91C2AD": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "2.1",
+      "3.1",
+      "3.5"
+    ],
+    "conditionSha256": "ea9fefe9d14bc792d85790d54bb8ed34806402821676052d547d27fbc11dc92e",
+    "batch": "function-images",
+    "family": "exponential"
+  },
+  "91CD43": {
+    "part": 1,
+    "type": "basic-equations.logarithms",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "4e134fefd2fb47cc42024499ba5d59d3a7092fc27921e9873b8c9d8f86346c01",
+    "batch": "basic-equations",
+    "family": "logarithm"
+  },
+  "91D905": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "f7d135243e5103356eb82b841d641b66cfd7eaeedacbeae7d293ba82f90f080d",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "91DFC9": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "f9c1a8c18d8c7d26cac88344de238f2e63faf005fdaf884bffcc515d2061074c",
+    "batch": "probability",
+    "family": "selected-tourist"
+  },
+  "92C1FD": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "1c2b07f5858dff5167d20f0b4e41063e5f53319f9e0c5b70ca17b17264199528",
+    "batch": "function-images",
+    "family": "hyperbola-line"
+  },
+  "9302BE": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "a9b3d9831f0fe002d23033de4ee4334908ec169c0343d1d6a5e3eff94e15f7c1",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "932DDB": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "197ef4031e2d7a4b13983f85112685f9ceddc7997c1c541568b82d6ae287740d",
+    "batch": "probability",
+    "family": "temperature"
+  },
+  "933FFF": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "6836e2b0b1b56340ca536b123ebcdf6f821427335f28d30b37ea7320a0bb2bd9",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "934EC9": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "5ac724b0d55ab66e5d0cda699f45fcb42a6a4676c1569c0d41168adc75e1bd86",
+    "batch": "applied-formulas",
+    "family": "decay"
+  },
+  "936F6F": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "521c527786983d57e1c1d49b6c9977c274375d527bf134e615e14b73d3ff9fe6",
+    "batch": "short-geometry",
+    "family": "sphere-area"
+  },
+  "93C8C8": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "01bb002afb349f348487e5b3845856efd96f9eae188a492d71ae12e0dd3c7b58",
+    "batch": "applied-formulas",
+    "family": "decay"
+  },
+  "941D07": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "96e6596cc4a837f3b264804c809e055f99618dd7f5b54c6fc58ea0a0441536ad",
+    "batch": "probability",
+    "family": "selected-tourist"
+  },
+  "94554A": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "a3564e0ab63335410f0b3f80101f1d85ebe51eeb811703f020519114ca452e87",
+    "batch": "applied-formulas",
+    "family": "horizon"
+  },
+  "95A978": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "6302c800b94bb2bb105e26668743eb50eaab1f84823bc84d49c5a7e7ed57c0aa",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "95F2C4": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "449bdd68eb10afe50bf127b028115c755bb83d205589808d034cf22ff830f5b2",
+    "batch": "probability",
+    "family": "match-tosses"
+  },
+  "95F78A": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "644c7c1933c14aed02d25040b67ae2d362ec1fb5d36438614190a9c8e4e460d8",
+    "batch": "applied-formulas",
+    "family": "brake"
+  },
+  "95FEEB": {
+    "part": 1,
+    "type": "expressions.powers",
+    "sourceCodes": [
+      "1.4",
+      "1.8"
+    ],
+    "conditionSha256": "c5366773119a6e6002133d5ae144a6094374e8311597e9ebab56e80b10857c84",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "966E26": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "7b048c709a82aa565c1e3d84659cbdd2e9f2974654505ff4ebccde903ae72c7d",
+    "batch": "derivative-images",
+    "family": "endpoint"
+  },
+  "967F93": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "a939cb30cf719fb0c990dc7380d32834d39c005ea502026ac11162b1ba6fd636",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "971AA0": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "4f45292af28e572f4c285d32737fba038467a9c37a1ee3d33eb12d9b7ae7770f",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "97AEB6": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "3f7b76bff2d01ea1cb88828904e8a99a5cf7e40b4071b18a6f09afdb2bf149e2",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "97B50F": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "127de1e45320ed18cb220e9fb6e7cb9317c9f83da77ee249ffa8921470e6c7ef",
+    "batch": "probability",
+    "family": "conditional-dice"
+  },
+  "97B55A": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "b840ef91d7cf7f212a3365b284263da0354cf6cf0ccc1ac8743a269dfd44a554",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "97C4EA": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "f7d4cf379cbe650c9d4dcfb614dd8b2bade9414718c9abeee0225d96668d2e20",
+    "batch": "function-images",
+    "family": "log"
+  },
+  "984B6C": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "ec20d27bd237eb9a55361b3e03324d4fba09c49f3c0ed95ce7192aaf79311ef2",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "98B1C6": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.5"
+    ],
+    "conditionSha256": "0aafc0ccee6422b813eaca6e6e60cbf942c35e7fa13401c6e8b8942713430394",
+    "batch": "applied-formulas",
+    "family": "heater"
+  },
+  "9945B8": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "af9bc7a1fc049ecef2589fa13643a832cfd7512233b962a17d25c0da317356e5",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "997E04": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "dba5663c590cada716759b6586e45a1cb2432527425ca68bdd18667f132c8874",
+    "batch": "probability",
+    "family": "markers"
+  },
+  "9A1329": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "2a020f95bacb7bd8650f19e844d555434e21dbced5f33eed5a7691ebd642183d",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "9B2D2B": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "33da276a79fc8c34bb6f4a143ecf016285f44339aa68fafd28f02786a49931e3",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "9B7E69": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "f95e8d879b4294636783ba22d1997f2981f6c10a231ef6ef7c0ec2eafca71cc1",
+    "batch": "short-geometry",
+    "family": "diameters-inscribed"
+  },
+  "9C6FBB": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "925dbf4454b48806f27eacdc59a2ecbfc0d00b34418e119b731f8abffab7415c",
+    "batch": "short-geometry",
+    "family": "circle-angle-ABD"
+  },
+  "9CC4E6": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "2668d145cdde8955221028b7aef1f04c1a644e63fea83c02d8e4a09519e9a434",
+    "batch": "probability",
+    "family": "remaining-order"
+  },
+  "9CC815": {
+    "part": 1,
+    "type": "graphs.linear",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "d03922d368a5421d267054814dae542af28f369e2708b6a03c74e8701639921f",
+    "batch": "function-images",
+    "family": "line"
+  },
+  "9EB534": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "a265138396bd4ea9bd1b34bb1222300aa0be0ec896043db46ae08568320b591d",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "A08F25": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "d78aecb4a48be5fb784d38bb658de6311af9aa53e59624a75bc428cc21966c3c",
+    "batch": "word-problems",
+    "family": "river-difference-own"
+  },
+  "A203F4": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "2b131fa69e74dbb1377e4242bfb3d3a88cc950e43f416cc8b89635933fba671d",
+    "batch": "probability",
+    "family": "match-tosses"
+  },
+  "A288A1": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "dc9cfd7b1f6d352067c098a01d99562aaaa5c9568aea9f9ffb3803fb08ee7a22",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "A2AE19": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "55a13778fc2698d1bce5032b0aa2e335df588db66f410fe2f85c541b56b9bec5",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "A2E26B": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "4a6f2c7bb1e828ded2397707292dbdb64708c3911b1744a7f618234a6aae397b",
+    "batch": "derivative-images",
+    "family": "compare-slopes"
+  },
+  "A33A46": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "5ec4aaefb3e234c624207716eba516b46bc7000f3257c059eb124610eba8b537",
+    "batch": "short-geometry",
+    "family": "right-cos"
+  },
+  "A3D342": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "6d10910e569a4b80ebc1fb48828a617805e9934883eb0081f63de68c21f74f9f",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "A3FD10": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "db451127a6b89e255b2b6c26df12a97b1a5410732ed0ae2afdb1f46b8401a67d",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "A42A12": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "f3fb876c2199e763efe298e41f1f16eccf8d3017b7d531b02d9046ce401395a9",
+    "batch": "word-problems",
+    "family": "river-difference-own"
+  },
+  "A467DC": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "b5f27ffe296291838a614c8aef44d2fa0e01726dc6f09b6ece84340523d0dc6c",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "A49974": {
+    "part": 1,
+    "type": "graphs.roots",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "475ea08b4fae92dba1bee73b2f2d9ce9c12e2826bb526fcfcc2d1084a1f9cf32",
+    "batch": "function-images",
+    "family": "root"
+  },
+  "A558FE": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "568825c9bf30fe3ca7159eb1feeeff3fa4dcb35711bebe1a4c74d157e8454be4",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "A628AE": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "8f7cb427a8565f8e9e4175d85e2aee063a1a9ba7d31bad57024cb399c8090916",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "A62F87": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.1"
+    ],
+    "conditionSha256": "bb6dc18f0655dc2c22a248fe1514c62abcbfceea86573408c58eaca63418429e",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "A63DC3": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "fbd74024ce1d581384447f5e2e33d3e13dcc2314757db4af5ca4c1d441a6e8f8",
+    "batch": "probability",
+    "family": "conditional-dice"
+  },
+  "A6402F": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "86c8020457d2f7f148bbbd031b4f215dd5f4778e1003e773be3e2c2b266a939a",
+    "batch": "probability",
+    "family": "conditional-dice"
+  },
+  "A65127": {
+    "part": 2,
+    "type": "numbers",
+    "sourceCodes": [
+      "1.1",
+      "1.8"
+    ],
+    "conditionSha256": "9eebcf2262811f964f96131ee693a254f56da00b973c128cba519ae8a23096d0",
+    "batch": "long-final",
+    "family": "numbers"
+  },
+  "A68E99": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "2c11c0c0248dcfb86d2b1678f35d3e898190ca288c5cf98b94d6a7ff2467104c",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "A75DDE": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "2.1",
+      "3.1",
+      "3.5"
+    ],
+    "conditionSha256": "3c6f7353d33afe4ebbd8cc29bb38fae71b8975ed8504a7556ac3eeeb4c56df1e",
+    "batch": "function-images",
+    "family": "log"
+  },
+  "A76923": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "3a023034aae32d9426169241c0dd8f40f1237f3273d66c205f6bd4f2d4bc093d",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "A7C3EB": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "58ee41b8344edc5bf9970e60b19f971ed54900ead3538e7c584f9b0405ba3439",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "A8D6AB": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "2bc49070f490421c4fb8656f768357b65d35b43eb7d62cdafc45dbfc9764d544",
+    "batch": "probability",
+    "family": "order"
+  },
+  "A92B9D": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "a74936a5b23adbdaaf3dafba3fc5a6d452324907b06e791c68cce251920c6494",
+    "batch": "probability",
+    "family": "bread"
+  },
+  "A9DCC5": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "d9917092c389297bbcd5932d80ad1a437944208de390d2779bd9e7a22b0e6eae",
+    "batch": "short-geometry",
+    "family": "opposite-angles"
+  },
+  "AA1851": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "cd92bae226c8107fb32c33a070cc9acedae6460f35fa553344e6f774104e942b",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "AA2E29": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "f379c66bc98c10cc722229d68303ef38426bc559c41990ce1a9074fae9b7aa0f",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "AA6802": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "31ed80d6a77bc7704159403c45957bc588abaf9955638135404c09fd84771368",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "AAB5B7": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "c076b60d944d1b9ab99125713094a450e49e7596f0291e530d23f761d570cbda",
+    "batch": "short-geometry",
+    "family": "tangential-perimeter"
+  },
+  "AB5ECB": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "b42e15de2b0dbe8b6c55e94b1da639c82a196e36a401607706269594f6e5c77c",
+    "batch": "word-problems",
+    "family": "individual-work"
+  },
+  "ABA2A7": {
+    "part": 1,
+    "type": "graphs.quadratic",
+    "sourceCodes": [
+      "3.1",
+      "3.3"
+    ],
+    "conditionSha256": "f99de2e76484fbc07781e68fd1ad526dcd407be089fa22ee96798c28c7f883ea",
+    "batch": "function-images",
+    "family": "parabola"
+  },
+  "ABB360": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "2.1",
+      "3.1",
+      "3.5"
+    ],
+    "conditionSha256": "da6c965194a94511c00d55cc6ecedb01a8bacf92ce5abc63013b6d99d5e6db8e",
+    "batch": "function-images",
+    "family": "log"
+  },
+  "AC8783": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "88d37f938ea53c1f04e437c2cff2fe6381c1da4455f094a63adb861fe2b1d262",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "ACB0C6": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "4f46a08b7a9ee89a9b943aa40ab872589e7bd54b1349359e0a19697c8047d0e6",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "AD55CA": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "d4d3bf02129115c64795630f344158c30640a9267558304ff6156152dcc818a4",
+    "batch": "word-problems",
+    "family": "individual-work"
+  },
+  "AD5F64": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "d167c5731d6a538882aa1b5b39b7e75f247d908fe9b5290bf65f862619b0ae3f",
+    "batch": "short-geometry",
+    "family": "diameters-inscribed"
+  },
+  "ADEDE3": {
+    "part": 1,
+    "type": "word-problems.percent",
+    "sourceCodes": [
+      "1.2",
+      "2.1",
+      "2.9"
+    ],
+    "conditionSha256": "dad6320be50cc714f8e05cb10baeb5db50f30cdc89f936688ac9fdd72d1ecc26",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "ADF4FE": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "1597ec52d624106bec063dfa8a0fb3747339195769f6b7eacccb3075531a1d9f",
+    "batch": "short-geometry",
+    "family": "box-diagonal-prism"
+  },
+  "AE14D4": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "3.2",
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "d3f9d687da22514c654f6befb9664d7ae136b2e2854b860170269dc351e011bc",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "AEA2CF": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "b9bac934d12e9dd9ff2553925d6f807376a1288e829b4f4cbef74e6d49e07285",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "AECC13": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "64b0d6843fe77e506397892b9a81313101049d99f00e50aef4e8f0f716250b5a",
+    "batch": "applied-formulas",
+    "family": "doppler"
+  },
+  "AEEC8B": {
+    "part": 1,
+    "type": "basic-equations.logarithms",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "2ad41bb6025238e62357ecfeb61120cbe1626196587f17aceb2320bdc79c023f",
+    "batch": "basic-equations",
+    "family": "logarithm"
+  },
+  "AFF75F": {
+    "part": 1,
+    "type": "graphs.inverse",
+    "sourceCodes": [
+      "2.1",
+      "3.1"
+    ],
+    "conditionSha256": "09564598e1902334f992cbc6e04b7b21bbafb79d88474ccdcc88f57c4eb43485",
+    "batch": "function-images",
+    "family": "hyperbola"
+  },
+  "B01E63": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "8ae7638c34624153c3aa64dd1391a01aa253816e472acb7c14335d58d678a5d4",
+    "batch": "applied-formulas",
+    "family": "decay"
+  },
+  "B05656": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "3972d41ef7b431934057595e390e91deeaca4295c262e63115dd0b5afcd4047d",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "B0D5E7": {
+    "part": 2,
+    "type": "inequalities",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "b7b2d09642948968229e4cccdb406b88f6f3e1a9935af0773a9b8b7e9c58b178",
+    "batch": "long-final",
+    "family": "inequalities"
+  },
+  "B0EAF8": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "e73850416c576d5ddb048253bd0c443620c76943b95ad771b8b6fd4a864d24dd",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "B1EBED": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "c13d8afcd2700bbf16874b8126bba5a325976aae79689b3213f26f8118e77fc4",
+    "batch": "short-geometry",
+    "family": "box-diagonal-prism"
+  },
+  "B224D1": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "8954ccb6e32b4535520db472dd4cafdbf1a401f70ae862e1e46c4104ed77381b",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "B28DB5": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "d89392ac8f494b6ccb686dce4d699e69d6219acc084c77bd21b59c8bd832acf7",
+    "batch": "short-geometry",
+    "family": "box-tetrahedron"
+  },
+  "B3E586": {
+    "part": 1,
+    "type": "plane.quadrilaterals",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "cd48e9be098c57595443ee5ee4b731a41213c1685eaf69790819dd1b2ec12ebe",
+    "batch": "short-geometry",
+    "family": "para-triangle"
+  },
+  "B4B4EA": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "b41b4783b901d7318aceb9523cd5fa650d813529f38f7a7e0e9573e9783414d4",
+    "batch": "calculus",
+    "family": "trig-monotone"
+  },
+  "B4C164": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "c9baf2efbe7d45baeb756680b06f33cbe5044c4a221f39b28a1fd5c7ee7e6754",
+    "batch": "word-problems",
+    "family": "river-round-flow"
+  },
+  "B4C261": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "c7ff97b8aec9ff6c841c2fb0d7dd016b2b6f6cd91788367e82d4b1f555820c30",
+    "batch": "short-geometry",
+    "family": "isosceles-apex"
+  },
+  "B4CB9F": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "6d0169c33af0757b2c59d12e4f74a12ddccfdcc69d308bbd726c450c4a93adf2",
+    "batch": "calculus",
+    "family": "cubic"
+  },
+  "B4FF85": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "86d1798b906a8e4aff32fd23b081cb3c98558e0a4b1def4e769b1f505c7029ed",
+    "batch": "short-geometry",
+    "family": "sphere-volume"
+  },
+  "B5214D": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "dec0d7a70c3e64ed99faf1d0e1d6de87f55d26339826a6315df5db9f34f9def0",
+    "batch": "probability",
+    "family": "reserve-room"
+  },
+  "B533A0": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "cc8f4d39b0c8f8fc1688b1c6ceccb7f120fc8cc51aee1359cc850adb8b1a5e6c",
+    "batch": "word-problems",
+    "family": "joint-work"
+  },
+  "B537B2": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "b5e85cdd6d53ec595df7249b7c4eef81015a8fc3dd33884a1bbed157a8976731",
+    "batch": "derivative-images",
+    "family": "endpoint"
+  },
+  "B54D55": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "f532f16d6c31be87a434cc2121f20e914fe65a9d8bd9ec2ddc5873e4d0a58264",
+    "batch": "short-geometry",
+    "family": "bisector-median"
+  },
+  "B65F3D": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "ce1bef0e51afb0e84c41af774a889e79c73c35056f1d9d779289ae751e1d9b39",
+    "batch": "derivative-images",
+    "family": "compare-slopes"
+  },
+  "B73557": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "0dbea819faa22e9493efe5d85ad7709862c3c566f97ff2c59334f94754aa8551",
+    "batch": "calculus",
+    "family": "trig-monotone"
+  },
+  "B7688E": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "55aac753668a8cf001293e9f10e81602d4744b33b18275fd335cd6f021499085",
+    "batch": "applied-formulas",
+    "family": "pressure"
+  },
+  "B77903": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "42ceaa1258abf26eb4aa8b521d1a947fa54b0e384556258c44db57646e5b2ec9",
+    "batch": "short-geometry",
+    "family": "tangential-side"
+  },
+  "B81155": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "613be86a5ba64a3ad1b9854d585242a266c0146e98e566e4b7bc467af80c6dcc",
+    "batch": "derivative-images",
+    "family": "extremum-point"
+  },
+  "B948D4": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "fa1bdc6549f10d2755c1b760b0e6296c52f5692ff38e3115d19b661798802408",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "BA4FBA": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "cc6992697a8009b6f02c63b9fa4a10338984c81cb86a006ffb6f9551291fe78a",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "BA98A1": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "e1ef4991689fa7997baef59de9894620b47f47856d0a7b48084ce120f677f655",
+    "batch": "applied-formulas",
+    "family": "distance"
+  },
+  "BAF165": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "c01b88c7435d9eafe1a75d82ec826a7db36d9fac8479b8498ab170e9a650896a",
+    "batch": "word-problems",
+    "family": "cycling"
+  },
+  "BB421B": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "32ebcc8920d06c7a4cce99851cb5e30921c9d0b7ca5d5af4d18105d25b001183",
+    "batch": "word-problems",
+    "family": "workers"
+  },
+  "BBF131": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "aaa2fe1f638dcd944e847627589aa361e8a3ce4ca67d081674fd8f56bc734a40",
+    "batch": "function-images",
+    "family": "ultrasound"
+  },
+  "BBFFF9": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "d176a2b17248c45e0a5fc668ec5434e0c86c71c98719946f2865abb01449ccc4",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "BC2487": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "34f2c86914acf25b68f7170fa3753cafd9325ba9aac37fa3bd5593924314cf9d",
+    "batch": "probability",
+    "family": "defects"
+  },
+  "BC2802": {
+    "part": 1,
+    "type": "graphs.quadratic",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "0e8abfaa1e5f4be84c81c43030f5734f5009cf5204efcc931042a099b736a823",
+    "batch": "function-images",
+    "family": "parabola"
+  },
+  "BC64EB": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "474b91cee0ad088f0b6f5d852e245ea6e7c7bb5272779b6dc73cd6ee47f41ffe",
+    "batch": "word-problems",
+    "family": "cycling"
+  },
+  "BC72B9": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "52808df3dc41dc818f16679433705081d15ce1c41864249b61be678ca897c776",
+    "batch": "short-geometry",
+    "family": "diameters-inscribed"
+  },
+  "BCABB7": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "988c3756b81d0531544c4e3ce37fd71d10d8b2625140ee1a77852137543dd38e",
+    "batch": "word-problems",
+    "family": "river-round-own"
+  },
+  "BDEF76": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "e9d7ce14aa6b337f1b632999c9ec8f36a49325ff259d3d3d9e0746e33dd93dad",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "BE03FA": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "7767624b471ff342f7824fe0c21873e32ae1be88ebb927bd4b647c331da92c38",
+    "batch": "short-geometry",
+    "family": "prism-pyramid"
+  },
+  "BE1DDB": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "aed25b14a5a003cfd05cb875aea407187de5eea7cc97d932de6915bf6de3e66f",
+    "batch": "derivative-images",
+    "family": "stationary"
+  },
+  "BE6745": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "f6b81493c255ce7222eebe0808716d0c1dd68bfbca7fa4dda558985a8542000b",
+    "batch": "applied-formulas",
+    "family": "volume"
+  },
+  "BE7D6F": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "42c32b44353d60c65f506c2ee65886b9427bfe23fbd624e3ca484c041bbcb92b",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "BEB5E7": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "b0d1d1ce3fc641038ccd85d22ae1a0324d96635bb4e44159bdb3d0b5ed794d76",
+    "batch": "derivative-images",
+    "family": "analytic"
+  },
+  "BEEFB3": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "b76b64d026c3abbfc4ae5ba3b2f77760c7da67197d7c4d5997644de35fdde932",
+    "batch": "word-problems",
+    "family": "cycling"
+  },
+  "BF9CD9": {
+    "part": 1,
+    "type": "basic-equations.logarithms",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "4f9e2c18a4a8d65e079aebb004d8a7b8380b7224f192a6259761a911c1859faf",
+    "batch": "basic-equations",
+    "family": "logarithm"
+  },
+  "BFC1FE": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "d28e4a956e94afb41a6d41068342571d590bb6a2a80203e9e7818df676619c9a",
+    "batch": "probability",
+    "family": "defects"
+  },
+  "C009C4": {
+    "part": 2,
+    "type": "numbers",
+    "sourceCodes": [
+      "1.2"
+    ],
+    "conditionSha256": "dff18b71eeeab0befef209f8e7002cb2d4d7ed96af11660673c2eb4fb4f444fc",
+    "batch": "long-final",
+    "family": "numbers"
+  },
+  "C0261C": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "347832885fd14d15ca71063d51cd716359ec3c2a2b4d0ff8ad4df4da0460e38d",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "C0F5A3": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "6039b7e65fd1aff9d8643b299f343e2ba99b720d458a90d1e5b7e7938d1b69a0",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "C1228A": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.2",
+      "1.3",
+      "1.5"
+    ],
+    "conditionSha256": "3a9c0174bd4e173e3e62c431bb434f37400cf0871b6eba8602afbdfda790b429",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "C15C1C": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "caba347ac6627e1cbe588d2f481ceac79660f9c484b64b1993399eb77fb0e3e6",
+    "batch": "applied-formulas",
+    "family": "acceleration"
+  },
+  "C1936D": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "91acf2934a63921a2dd15c66e0b0fed253244c2b1aa8d248ad599b48e4e36f8a",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "C1F1E2": {
+    "part": 1,
+    "type": "expressions.powers",
+    "sourceCodes": [
+      "1.4",
+      "1.8"
+    ],
+    "conditionSha256": "f6a705ffc1651fe379766214dc421a9ab544dcd40f9528dc557417384220c38f",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "C380E8": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "e7ea4515d47935ce0548ff627051d4141f87158d5eae36c2cab619df5e3a09c8",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "C41083": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "d870f5ef1a84341bf837c2c2fb1b1f7a32c054d66bdd26f8f794dde4572e34cd",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "C59282": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "17b3dfdc3c49864c34e776716f7ad85b633ed14924553099d59b987f8edd26a1",
+    "batch": "short-geometry",
+    "family": "cone-to-cylinder"
+  },
+  "C68B97": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "097b76cf731bec15cd62fd0592fd3bcddf3de4c4468dc143b7f86a1145bc031a",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "C6D0C4": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "84c2776c3559eadc94be8423dcbc10eb6fc3370ae32f3fc9f13945400451e3e6",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "C6EA90": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "a04c83511f1826c4d34faa89546447d9fc082266fc098cf8ef6e2bfc32570f66",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "C7666A": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "94ee5a4ec294bffb18bb9c7e856917ca84870e0a6a56fe924524baefefdf464b",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "C7D60A": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "9f03e9d5ebd548ade2c5493b3077bc43ca43ef71ffdf53a9b55446655a6d7db1",
+    "batch": "short-geometry",
+    "family": "circle-angle-ABD"
+  },
+  "C83C8C": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "ed0493ff657ded6fc28019935a34a8a7693e12901dcb777a27950845d2ad1464",
+    "batch": "probability",
+    "family": "match-tosses"
+  },
+  "C97E7E": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "ef2eb5c6c7bf7e1a36129e422f6d809a0f05c55375b5b4f5f09a211cdf103ea8",
+    "batch": "derivative-images",
+    "family": "endpoint"
+  },
+  "C9C646": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "4cf68e77bff8108a02a6ff928416dd30cd1084b7d0cfb8e0da7e5167fdd9a9e5",
+    "batch": "probability",
+    "family": "order"
+  },
+  "C9DB3D": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.5"
+    ],
+    "conditionSha256": "65d350cdc168413cf84b11b631b2448846ea50b7b02d40a8b6b9275b263aec86",
+    "batch": "applied-formulas",
+    "family": "heater"
+  },
+  "C9EE7C": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "6c2ad7f8297ced9bfa5e52140ebdb2377e411063d6d0cc415f24dddfd9596d72",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "C9F415": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "7b23c07ec4e1268a7279cbea3813c9bba252f351131565804c5448557aa14192",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "CA314B": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "6fefa9449788d5799f0f9276a1eccac05ff3f124eee8fbae1a4434339f66136d",
+    "batch": "function-images",
+    "family": "hyperbola-line"
+  },
+  "CA58AE": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "8b8dddd9d0bfb49d1a9f3e29c56c382fa642885a07e46d0b9562741c8a9e52e3",
+    "batch": "short-geometry",
+    "family": "triangle-heights"
+  },
+  "CB6359": {
+    "part": 2,
+    "type": "inequalities",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "a3f398a4a0395dff69932699bca577148148f5c264193e5c673e9a60e37dcc9d",
+    "batch": "long-final",
+    "family": "inequalities"
+  },
+  "CC3F47": {
+    "part": 2,
+    "type": "inequalities",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "efefdc4b28b8433e6075a2d4870e9d5bc0c595a20569fc9b6318fcedab7b3837",
+    "batch": "long-final",
+    "family": "inequalities"
+  },
+  "CC7A9E": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "7ca1b2c711aa920f9d4c840c08501f4523c119bfa38b99e90c075c3a7f350fd0",
+    "batch": "short-geometry",
+    "family": "tangent-arc"
+  },
+  "CCEA21": {
+    "part": 1,
+    "type": "expressions.powers",
+    "sourceCodes": [
+      "1.4",
+      "1.8"
+    ],
+    "conditionSha256": "b9ba6c3d1df4055987245c2e3cc9f343587d833fee9360a3b7b664d3b5157df0",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "CD7468": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "5719db1200db45013d8f9471bebce120050b7f351f7dfee5f79b758aad742748",
+    "batch": "short-geometry",
+    "family": "cone-area"
+  },
+  "CE4D1D": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "b569b31016a73287a1b7aa0d5b173073a549e105c3db24002a7378955d57f134",
+    "batch": "short-geometry",
+    "family": "single-opposite"
+  },
+  "CF4294": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "51fc2fb04ff1dde4fce1b9ff4a52f20370c0238d917e1a253e80880e9a888389",
+    "batch": "probability",
+    "family": "match-tosses"
+  },
+  "CF56D0": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "fade7fe2e7d9fb8bc391326d04b90e6e84e2d25d11f5d2de411b43184b2c31e6",
+    "batch": "word-problems",
+    "family": "river-difference-own"
+  },
+  "CFEAE8": {
+    "part": 1,
+    "type": "graphs.linear",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "763d8820655415731b66938e8b3372b2e91fa224df7b19592399b9115e9fac3a",
+    "batch": "function-images",
+    "family": "line"
+  },
+  "D0019C": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "81a77bd19a30448939381355bce02507ba130d1e2f453a0b5628da33a64676c7",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "D00D6F": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "d38b417f8c5ea528a389ec80f3b32688b6fedea54b7c0567a59a1083d8a067fc",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "D13540": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "f2febf0a0d1546d63336100d2727877cc1f05a6deec3a6b5648f805c7412b60d",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "D143BD": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "b57a5e720edae61a56bbe2419ef09cf5126d422cbb0d7b918020ed10464ed6a2",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "D14D52": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "e681e77e0437b8d879e718d2539f81e82093cb51c9a469641990023e5aef545f",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "D150CA": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "d0435a980558e5e5a174dcd0017dd5b321fdbc8c67ba7aeea401221193bc926d",
+    "batch": "probability",
+    "family": "reserve-room"
+  },
+  "D170BF": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "a1944bf516dddc1514e0e27103de2535bd512baeb547af1ed64aab2d2a131cf0",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "D1E7BE": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "faa8a141950f25731ba7262b9850a5c0bd591cc65be24b80b49b0af1954103a2",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "D28A54": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "b75ac2af33d7f8d226b248203419cf0f96c62903b2742324368ae19718a0d881",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "D32AC4": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "7499c7d44771642015fb91ed7b0ce68b6fca6d7b0b625c4896bdcf12e6371306",
+    "batch": "word-problems",
+    "family": "workers"
+  },
+  "D331CB": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "de68e198735abbd36a8f366d6ea99d2edd6fc4686694e3ab77c1ce32c3aeaea9",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "D3C577": {
+    "part": 2,
+    "type": "numbers",
+    "sourceCodes": [
+      "1.2"
+    ],
+    "conditionSha256": "3848e1af0c2ba41618749ede0e02bbbeb20073ea381336e77a3897aec2dd8573",
+    "batch": "long-final",
+    "family": "numbers"
+  },
+  "D3C781": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "d431665cf109f424f65ee8c23f2b8e5624a771809f2e2a427a799e9e96d61a35",
+    "batch": "probability",
+    "family": "selected-tourist"
+  },
+  "D459ED": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "903d577370c56e00ab9ffe8ddab4e71d4da9b345b9bb9d0beed4fbbea8c855df",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "D5A8E6": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1",
+      "2.5",
+      "2.9"
+    ],
+    "conditionSha256": "91506e6691e82c4989333b3c7938a4a5e290730f5ef0db4fc64807a38d7f38a0",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "D5AC0C": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "d3762800841820624e55fad082a8a335dc00a9219a67592fb152bd961437154c",
+    "batch": "short-geometry",
+    "family": "box-cylinder"
+  },
+  "D5DBD8": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "fda649101cdf8ad1e2f39fc55949f1b956dd1e67e865b5daf2c08eaf658a8ce5",
+    "batch": "function-images",
+    "family": "hyperbola-line"
+  },
+  "D5F8A3": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "14d28aefaf90e897d872b501dd9ae967bc1dc70263ad1f64afc38c0e0f56bccb",
+    "batch": "probability",
+    "family": "order"
+  },
+  "D65930": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "e52ff715d4b702a230ca0fabae278e794db97616379ce94661ce90a8fea0cec7",
+    "batch": "derivative-images",
+    "family": "extrema-count"
+  },
+  "D68789": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "5eb89244a1b3f5980a21ef74b0619049fb89156ad2fb1b35179f7286b0badebc",
+    "batch": "short-geometry",
+    "family": "bisector-median"
+  },
+  "D6A2A2": {
+    "part": 1,
+    "type": "graphs.inverse",
+    "sourceCodes": [
+      "3.1"
+    ],
+    "conditionSha256": "0bf297fe2d85aaea40d5aafc0063bd20f1c67fc7374bb06f69e38c7b66c0dee6",
+    "batch": "function-images",
+    "family": "hyperbola"
+  },
+  "D6F31D": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "14f94bcdbd39e8213ff101c650e7f2a7d9076a89c6b16cf0cd49fbb0752d4d02",
+    "batch": "applied-formulas",
+    "family": "doppler"
+  },
+  "D7423F": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "7625215ea58a1e9d2b56f8a2281f29fc5a8deafe7d5ea556e2d05b1c69232e88",
+    "batch": "short-geometry",
+    "family": "circle-angle-sum"
+  },
+  "D79C6E": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "b13ff76e290a0d703a978e11dec5edb5adc5cda1b62a56dc413045ea623442d9",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "D80A6F": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "d083d45c67767bd1b99ea743ee083d524441efa913be01530b09ce365be66547",
+    "batch": "applied-formulas",
+    "family": "voltage"
+  },
+  "D81165": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "ba1788247ae10d08c690fffc3bbf2eed2475e3e9294aca644411b5a257631864",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "D888F6": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "de6d6cb39e3b361525fc818bb95b33b8d995d03aad5906a5a2297f92ded6b554",
+    "batch": "applied-formulas",
+    "family": "adiabatic"
+  },
+  "D891F7": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "290326a1e8741d4e81f3dffd814f2e19ae29149fd3678add36da490a203591cb",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "D8F724": {
+    "part": 2,
+    "type": "numbers",
+    "sourceCodes": [
+      "1.2"
+    ],
+    "conditionSha256": "8b5bca860e07f10ba68ccf986bf12f2a753cc67ddd62e33b551c599c98d8418b",
+    "batch": "long-final",
+    "family": "numbers"
+  },
+  "D8F984": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "0a348cbfc4de025d4734003b984c47f4f16269c3c4528c8a2a2f5881f96bdab6",
+    "batch": "short-geometry",
+    "family": "cylinder-to-cone"
+  },
+  "D99158": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "8c9e88487dc96035a24ec813afa8e1d23f4804e3affe7c0fba5f5c5897fb86f9",
+    "batch": "calculus",
+    "family": "root-power"
+  },
+  "DA4F4F": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "c820060e97f680eb62c4907e4872b6b2d1079d343945e0b2c6527c0d52ae949b",
+    "batch": "function-images",
+    "family": "log"
+  },
+  "DB253E": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "6296b6d8975ab03133311b9f360d0a9bc448d4ab79d6a34c84a7b01f8dc6ed40",
+    "batch": "probability",
+    "family": "order"
+  },
+  "DB4AE5": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "b56ac7fa831ff5332c28a45c9bc87734bee226b0499036d3968a9e6ac0d17e12",
+    "batch": "short-geometry",
+    "family": "sphere-radius"
+  },
+  "DB6A39": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "de24f886062deb1a7cdfe21494d3555637ce8310d8713d44bfbbff9b9eeac5b8",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "DBC2D4": {
+    "part": 1,
+    "type": "word-problems.motion",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "8582e7a6083a6adc32e8560300382e906149a2a01a21d2d98b38d48bf368e803",
+    "batch": "word-problems",
+    "family": "chase"
+  },
+  "DBCD3E": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "50d0c75eccc76247b4f922fa41eab83d5ae7d015ced80c91a671ff5908b1a22c",
+    "batch": "probability",
+    "family": "order"
+  },
+  "DC6B69": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "38f042a86773694e26217f8c7af4463767d7a93ee56c5e4f04290b76b8ba4948",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "DC980A": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "3247280a8b0c0ba5891bd7520f2a7359d7d9dea4759b25a990ceff33d2b89765",
+    "batch": "short-geometry",
+    "family": "cone-generatrix"
+  },
+  "DCF3C4": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "f84deabd58f779c49f41e1c45d497f5f9280d78b481d91db5759c41ef6df9463",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "DCF8B1": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.5"
+    ],
+    "conditionSha256": "74620aa019c4b48c4532158aa92d67f22d558cc3af4ba1ae81344e844931c921",
+    "batch": "applied-formulas",
+    "family": "parallel"
+  },
+  "DDA73A": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "02577c2bf5d79794cd01e52a3ad5e1aa74afb0ddbfe9ffb041e8ba881d6ae279",
+    "batch": "function-images",
+    "family": "parabola-line"
+  },
+  "DDC830": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "6a4ab2f6a038ddd15bfa52825b3bb4fddc10c44f6d7dd7a2121554feee6ebc5a",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "DDFADF": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "ca3d6d6106c8f4aca587587205f6b05857c0afc861c11000f48573bd6afb21f6",
+    "batch": "word-problems",
+    "family": "joint-work"
+  },
+  "DE13F8": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "2baee4fa8a3e2f551bc153a5eaac45981decc7944d66e03e4f35c2e08b1fa0fb",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "DE509B": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "0626d70ab1fb176bf32504df976bb3c722c90e8bd4712265621d4404008babb5",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "DEC61F": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "5466de1ba50765ad431e1a4c39e03aff76bd9db81bb7b3395ee8c460d07bb052",
+    "batch": "short-geometry",
+    "family": "tangential-perimeter"
+  },
+  "DF0B44": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "25b3e8ad25f067b3496e1c759e141f5b28a0dade3e5c36d505fce3944af36c7a",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "DF1172": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "363e664b9922213bfe3f86a1af8ffb0bef20853d6642381aea6e84909b898ccb",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "DF24E0": {
+    "part": 1,
+    "type": "plane.quadrilaterals",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "4c55503c53ce88321dbcc99986026345a5f384b7741096ac15817ae664c8c0d5",
+    "batch": "short-geometry",
+    "family": "parallelogram-heights"
+  },
+  "DF872D": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "663375c8b8d6eb162524e7b1def68847d898cd2b28b5dc63e08d3014f0968cd0",
+    "batch": "calculus",
+    "family": "linear-log"
+  },
+  "DFC057": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "aeacd1b5c9438d9a92c4680953dea62d61b3296dd85419de04db232176e32cf4",
+    "batch": "short-geometry",
+    "family": "cone-to-cylinder"
+  },
+  "E02843": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "6849f74a57521b91b927c6bea3625067dcb2b091e788df9eb5d2a5f69a3e3d64",
+    "batch": "probability",
+    "family": "temperature"
+  },
+  "E032D9": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "7acd3d5e36ec547882133d974791cd99bde4e9a056690bbbeb43b1aab0a39d23",
+    "batch": "probability",
+    "family": "selected-tourist"
+  },
+  "E0767B": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "e417b68e53abf4aa4cbc68e915037b7d5c1abf2e163cfefdc00071c253b4f71f",
+    "batch": "derivative-images",
+    "family": "analytic"
+  },
+  "E09A5B": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5"
+    ],
+    "conditionSha256": "1ce18ed4e474797b4e72a5d1026a5481d25a59da1d81aed922b7e82cd44a8c05",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "E18EA6": {
+    "part": 1,
+    "type": "graphs.intersection",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "e0ae4d2ad768095ccc5333967584c66f0eab8b4a8803344df02a99c79ddba7a2",
+    "batch": "function-images",
+    "family": "parabola-line"
+  },
+  "E1E5D0": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "ea777a90df2225e3bb0ae6b7cb8a651b5af1bb5e77b542e8c8aaf9c096d8dda1",
+    "batch": "short-geometry",
+    "family": "prism-pyramid"
+  },
+  "E21E0B": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "dc8985d8e06abf6bfd7d6796bfd893e464904f3dc79064992d8115d33e2b93c4",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "E22911": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "5440b1b471aeebf0e3177b6f2b14fb86528ccf2f324c8c5b25cd55e8ccf46d32",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "E2F2DA": {
+    "part": 1,
+    "type": "graphs.roots",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "65f5c044c171c4f115cd58fe77868f1a74b5ab48681ea3ae37ca53c96010bc7d",
+    "batch": "function-images",
+    "family": "root"
+  },
+  "E3E194": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "b6995a4d6e6cba8609ed4de50c39253b5022900278963c04845846f35c08c839",
+    "batch": "short-geometry",
+    "family": "prism-original-area"
+  },
+  "E43E38": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "14eb102a79e8f31f21df66969c8b32bd0c52b57ab7b14c4ef71bb29552a3a8a2",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "E45C62": {
+    "part": 1,
+    "type": "solid.combinations",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "05020cadc3c4f2b1ec618e93c71bea60cb9eccc4ca81265abe6ae4f10acfdcd7",
+    "batch": "short-geometry",
+    "family": "cylinder-area"
+  },
+  "E4F70F": {
+    "part": 1,
+    "type": "basic-equations.logarithms",
+    "sourceCodes": [
+      "2.1",
+      "2.4"
+    ],
+    "conditionSha256": "fecf29ba7b28a1bd82b0a078a516d478f29c29b0217a30692d67bf9b6c1689c7",
+    "batch": "basic-equations",
+    "family": "logarithm"
+  },
+  "E5399A": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "d83af9a704f644ca688856075d74e5453de43ca6c263f6c4121ca93e45562f52",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "E5413A": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "99fe9919fade24c191d31def994f6f5bafda9f03607980778aeaa9b06f5e824b",
+    "batch": "short-geometry",
+    "family": "box-tetrahedron"
+  },
+  "E68A17": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "2608913a10106e6676ba0a3e442c48f45e91249c2d832eee110b6d336d5ddd9d",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "E71725": {
+    "part": 1,
+    "type": "solid.round",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "3c28345ae20e5653c0a7f9f4acd08b911e61df954662ea4239857fe3e8d9c34b",
+    "batch": "short-geometry",
+    "family": "cone-height-ratio"
+  },
+  "E74193": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "39e40f59f1f289174fb0dcd4835435e196e9edc6bd202e8a888e055f8c391ad5",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "E76FF5": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "2478131cd9a38eb0e16ef6c805dabe1e107361d1ad6c089a563fba5d2300702b",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "E88A8D": {
+    "part": 1,
+    "type": "graphs.inverse",
+    "sourceCodes": [
+      "3.3"
+    ],
+    "conditionSha256": "3b3ae60a67c679334f0e93f9b8d369caad13d9979edf3238d2a3ee893efedccf",
+    "batch": "function-images",
+    "family": "hyperbola"
+  },
+  "E9862E": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "7488778f5a495fdff6aa9e8b9e943ea5d859c2824fa5a6ec7bc0552d8fce1c9d",
+    "batch": "derivative-images",
+    "family": "analytic"
+  },
+  "EA1217": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "24aa037fd4e2853d43869f2474d399d51f0fb15d5857d1a823681c2ddca0cf6a",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "EA748E": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "23356fbb0a7c417904b82fb352288ec12086b7a9bfc5494555501ad3e7ed509d",
+    "batch": "short-geometry",
+    "family": "tangential-side"
+  },
+  "EAB432": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "6ec1d62f448f8f43bfc8c4879b5e84682a90151e214bc1e028b8f495afa77e8b",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "EAD99A": {
+    "part": 1,
+    "type": "function-study.values",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "e453868709807828af34f4b2ffe55914231b0a91cdf10392300ee0c356aad1ac",
+    "batch": "calculus",
+    "family": "trig-monotone"
+  },
+  "EB6864": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "2c09e7a54193331129eed22106ce377e0b334eaa8247fdec115893db1a672fed",
+    "batch": "probability",
+    "family": "order"
+  },
+  "EBB536": {
+    "part": 1,
+    "type": "probability-compound.events",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "412cb454b17cee4d1b99ff5e8189be52cb96f1752b6b1fe51ec3f91ab744bf72",
+    "batch": "probability",
+    "family": "coffee"
+  },
+  "EC397F": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "1e0b934a65471aefb03ec208ccfd60ca098c6c0b99d60d2f862e22f13e500465",
+    "batch": "function-images",
+    "family": "exponential"
+  },
+  "ECB413": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "6f1f03f00a4764e2b5d820279dbf398308466cdce836a5f3550535c6760cde66",
+    "batch": "function-images",
+    "family": "log"
+  },
+  "ECE840": {
+    "part": 1,
+    "type": "expressions.roots",
+    "sourceCodes": [
+      "1.3",
+      "1.8"
+    ],
+    "conditionSha256": "61e21792fd6a64ead836fe7e4cee324f463c0a0fc4309b8ea39218b55af61592",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "ED19F5": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "1241b14b9791f70f954683241ebc203c5f08922edc485eaf8f12fae135573c3f",
+    "batch": "probability",
+    "family": "remaining-order"
+  },
+  "ED6C96": {
+    "part": 1,
+    "type": "basic-equations.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "2bbad6aa4acec23b9529a9d1572e06e3618f5247eb0538a50aeecb29394554d0",
+    "batch": "basic-equations",
+    "family": "square-root"
+  },
+  "EDA4E7": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "d36bdfc65203823cbd6da7d24df5b2724e6f1dfae8b692c41f33abd1859b0fcf",
+    "batch": "probability",
+    "family": "order"
+  },
+  "EE1AA2": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "e271274405277bb6eb0c1bfce92eada2fb8b8b8027097ca13d8e8861d1b421b4",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "EE7C83": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "3d5004dc2ccdfd6c077eaee9b919166ee4776fa63148b7fe0789832df3868b2c",
+    "batch": "short-geometry",
+    "family": "mid-trapezoid"
+  },
+  "EF645A": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "09286c9eb8ff60af0a32a7e7dc6e40dc6c4deebdd7b10336fcc5526057d3c4af",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "F017B1": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "5678730460b7dbe1114796923bf3f8ee898b8e90bca349ec1a4ea03ae96c1e84",
+    "batch": "word-problems",
+    "family": "river-round-own"
+  },
+  "F12D1C": {
+    "part": 1,
+    "type": "plane.quadrilaterals",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "362f09afbdf695569cab15a12dd7b037f5b887652cc5b44a01da4258b94d7787",
+    "batch": "short-geometry",
+    "family": "para-trapezoid"
+  },
+  "F13332": {
+    "part": 1,
+    "type": "expressions.logarithms",
+    "sourceCodes": [
+      "1.3",
+      "1.6",
+      "1.8"
+    ],
+    "conditionSha256": "0a8c0a87f4238590edca2f273efc14880bf97f11245808792850af3ed7402d3c",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "F1BDF1": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "8a5ac775d7fe0b40181eeb9c68300c0414529319c542131ec14cc69c73f96c46",
+    "batch": "derivative-images",
+    "family": "compare-slopes"
+  },
+  "F23E04": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "a055ee3c962381302cf231084cbde6e90e9a82b450f8f62a8da6976c4862b65c",
+    "batch": "word-problems",
+    "family": "river-difference-flow"
+  },
+  "F25161": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "d766e39c5d42444c1052913cd1116f90bf134d954a62d7e79b218cefba53347f",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "F253DE": {
+    "part": 1,
+    "type": "probability-compound.conditional",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "4e39e619af64f52ff5fb702e625fe5a430aafbd87f9d2ef0192bec311480d331",
+    "batch": "probability",
+    "family": "battery"
+  },
+  "F277BE": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "14a744c82faa735ca999b4fb7fcd33f36c1a944863b89e1defd5db946ed66cdd",
+    "batch": "short-geometry",
+    "family": "prism-remainder"
+  },
+  "F2CCA3": {
+    "part": 1,
+    "type": "word-problems.water",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "c9ba1577f412fe9333b17aad234d32ef3ce4cd1dee501d279f27706c728d176a",
+    "batch": "word-problems",
+    "family": "river-difference-own"
+  },
+  "F34697": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "3277247ea27db71f480ca1bafd1d1c45ab3c1cb088747aa36f034eccf572010c",
+    "batch": "short-geometry",
+    "family": "mid-triangle"
+  },
+  "F3F0DF": {
+    "part": 1,
+    "type": "probability-compound.independent",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "d8d4020041dbb43d8e5523c22baa77a9aabd558058ba64e916665863535e5ff2",
+    "batch": "probability",
+    "family": "fixed-shots"
+  },
+  "F3FC26": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.3"
+    ],
+    "conditionSha256": "c5f4570429fa60f0ead3a43c71cd4acf1fceadbb8cb031fa80ffc1e39e2335a1",
+    "batch": "short-geometry",
+    "family": "cube-cut"
+  },
+  "F469FF": {
+    "part": 1,
+    "type": "graphs.exponential-log",
+    "sourceCodes": [
+      "3.5"
+    ],
+    "conditionSha256": "33f75c1da439eb2fdf4c05eafc8c9a41ce37919fde86e53f693526c4e0b355c5",
+    "batch": "function-images",
+    "family": "exponential"
+  },
+  "F4F51D": {
+    "part": 1,
+    "type": "solid.round",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "622c0dac18b9b40769d0661e14aff62de45fe61f466a47bec36b343e55654d0f",
+    "batch": "short-geometry",
+    "family": "cylinder-ratio"
+  },
+  "F51D9A": {
+    "part": 1,
+    "type": "solid.polyhedra",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "ced19f6336bd7d0ecd88e82c47aca4787d7137773bf4378bbcf4884c4ca82c6e",
+    "batch": "short-geometry",
+    "family": "cube-cut"
+  },
+  "F59F55": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "1bf676981cec094f001f36ca6bf4bdda9e035bf815ff35470e59b2499e1438ac",
+    "batch": "probability",
+    "family": "order"
+  },
+  "F6158A": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "dd89ceacc99bb6f5322a5749f7f0e8e2a1f86029a57fe54a52c3d3093438227e",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "F6942C": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "d5213b824b2d39bec462e4d3d8c7ba92bba5f8adbb79a9a6921f083d6fc1d69e",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "F69F66": {
+    "part": 1,
+    "type": "applied.exponential-log",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "c5c9949626c7d4facacd10161a918e3627df0e966aa569620a7230334fdfba34",
+    "batch": "applied-formulas",
+    "family": "decay"
+  },
+  "F6A6E0": {
+    "part": 1,
+    "type": "expressions.trigonometry",
+    "sourceCodes": [
+      "1.5",
+      "1.8"
+    ],
+    "conditionSha256": "d44a3d39775c08994eec45ae1d58223ded6fd11b997ee05c6d6d947afc0f1bdd",
+    "batch": "arithmetic",
+    "family": "arithmetic"
+  },
+  "F7E0EA": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "7cca18d50ee94d6dcad7ce7afd4ba244df879b40450397f2d81e6a50da46574b",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "F82962": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "363c5c119a47b3353f949b62960e5fd45759b806fd5932cdce413dbd1251d9fe",
+    "batch": "derivative-images",
+    "family": "analytic"
+  },
+  "F9EA20": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "b152c6fa731352f2f2c986c0c0a2c7247042e1ea84ef1727e2444afe8e35f7f3",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "FA7623": {
+    "part": 1,
+    "type": "basic-equations.exponential",
+    "sourceCodes": [
+      "2.4"
+    ],
+    "conditionSha256": "caeee960a800533d1bb46db85275aaffe01ea116b912a0e8be259f939ec2ea19",
+    "batch": "basic-equations",
+    "family": "exponential"
+  },
+  "FAC22B": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "f50bcbf01716609e3031669e6896920233f9f8cfaabed18c420b8acfc7f1de2b",
+    "batch": "word-problems",
+    "family": "pipes"
+  },
+  "FC0337": {
+    "part": 1,
+    "type": "word-problems.work",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "1cbb7f0f5b3de436b12d7a3c7cecf353c9a5e483578f5893ddcbfbeef64c176b",
+    "batch": "word-problems",
+    "family": "individual-work"
+  },
+  "FC0F78": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "d86c4f1fd045b195215d400f036b11ffdc7914090a9cc460f3f2a6b6c0ef15cc",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "FC5C6D": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "8201bebab28aa475b4e6fabd35846d97a71a770c74938030c0da1647aaf9427a",
+    "batch": "derivative-images",
+    "family": "extremum-point"
+  },
+  "FC87A4": {
+    "part": 1,
+    "type": "vectors.coordinates",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "b7aa003dc980bb6c83e4526772c9f967640ecbff196ac2998b1f547598cc1868",
+    "batch": "vectors",
+    "family": "length"
+  },
+  "FC9B35": {
+    "part": 1,
+    "type": "applied.roots",
+    "sourceCodes": [
+      "2.2"
+    ],
+    "conditionSha256": "4d96bac8e3c2356f27ebef6b6fc7231544e5411cc4062ca7469ebbd664d350b0",
+    "batch": "applied-formulas",
+    "family": "distance"
+  },
+  "FCFB97": {
+    "part": 1,
+    "type": "solid.round",
+    "sourceCodes": [
+      "7.4"
+    ],
+    "conditionSha256": "919ae062e726fe00798a8f3010be82a4d7257bd4b5740ad155d3152d97973993",
+    "batch": "short-geometry",
+    "family": "sphere-section"
+  },
+  "FD16D2": {
+    "part": 2,
+    "type": "parameters",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "b39a2f9e9d40a2079bcd62f73520ffc3729cc7ed50570a8a9365057b82a2149c",
+    "batch": "long-final",
+    "family": "parameters"
+  },
+  "FD43B9": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1",
+      "2.5"
+    ],
+    "conditionSha256": "adf8e031f97e4716d217597c9f1ba4ceede9a95530ffdb1cb21fb97585d258f6",
+    "batch": "applied-formulas",
+    "family": "motorcycle"
+  },
+  "FD5B44": {
+    "part": 1,
+    "type": "word-problems.percent",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "71443460b3de07d07d8715125444b9827aeafd4fafd5dd567813e8f9f50beb2d",
+    "batch": "word-problems",
+    "family": "misc"
+  },
+  "FDDACE": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "4f10ff496788d64679861e39ad68c23379e6b15097dd84e9faa845866f98dd78",
+    "batch": "short-geometry",
+    "family": "diameters-central"
+  },
+  "FE4362": {
+    "part": 1,
+    "type": "applied.algebraic",
+    "sourceCodes": [
+      "2.1"
+    ],
+    "conditionSha256": "33a310aefe83f5f4ed631b49b9ac892656d93ad9a8457e86b36e72634b88e884",
+    "batch": "applied-formulas",
+    "family": "motorcycle"
+  },
+  "FEE4C3": {
+    "part": 1,
+    "type": "derivative.tangent",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "e2f0d6c98d311f8a1aaabb896b3a03481966e36c78aabcfef7422d9883cc1dc5",
+    "batch": "derivative-images",
+    "family": "tangent"
+  },
+  "FF579A": {
+    "part": 1,
+    "type": "probability-basic.classical",
+    "sourceCodes": [
+      "6.2"
+    ],
+    "conditionSha256": "6486f26b5f33b3060b3812aebcf403a4bfa800aa5ec47d41e056314ee614de6c",
+    "batch": "probability",
+    "family": "tickets"
+  },
+  "FF843F": {
+    "part": 1,
+    "type": "function-study.extrema",
+    "sourceCodes": [
+      "4.1",
+      "4.2"
+    ],
+    "conditionSha256": "7fc683f4fd98bb5efc06f781f5aa8432ab3a91605e67965d22f0dfddc694b607",
+    "batch": "derivative-images",
+    "family": "analytic"
+  },
+  "FFB369": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "3.2",
+      "4.2"
+    ],
+    "conditionSha256": "0c3df0cbb747218a23380782b487c78625f346472ee85fe3f1d52604ca80e5d2",
+    "batch": "derivative-images",
+    "family": "extrema-count"
+  },
+  "FFBD0F": {
+    "part": 1,
+    "type": "plane.triangles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "711b6378ce7793e00f0df30776b1b4fa06a367e7ce06b3bf95e2ca5f3053a679",
+    "batch": "short-geometry",
+    "family": "right-sin"
+  },
+  "FFBFD7": {
+    "part": 1,
+    "type": "vectors.scalar",
+    "sourceCodes": [
+      "7.5"
+    ],
+    "conditionSha256": "78eafa7b035e677b2d8854df8b4f9732ef6015fb457f876e6f3e74c55ea0745f",
+    "batch": "vectors",
+    "family": "dot"
+  },
+  "FFE399": {
+    "part": 1,
+    "type": "plane.circles",
+    "sourceCodes": [
+      "7.1"
+    ],
+    "conditionSha256": "f8749d03fb82f4fcdc6157b0b950578a302861daea039c2f5b9c13f0f617f85c",
+    "batch": "short-geometry",
+    "family": "diameters-central"
+  },
+  "FFE757": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "c4cd5ace7b9223d6ba2f8e8c7f0889d15a20b0604e372321646c5661808046b7",
+    "batch": "derivative-images",
+    "family": "signs"
+  },
+  "FFF1E1": {
+    "part": 1,
+    "type": "derivative.graph",
+    "sourceCodes": [
+      "4.2"
+    ],
+    "conditionSha256": "77117749805b16527fbd3687eef0c1de2aab78748684dd9e6367c86cd4680f70",
+    "batch": "derivative-images",
+    "family": "stationary"
+  }
+}

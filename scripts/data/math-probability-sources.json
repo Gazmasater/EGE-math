@@ -1,0 +1,1102 @@
+{
+  "151689": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=630182",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "596ac65c345bcb2502c62e5aa845e6d1ddb34375d3425990035e336cfea7cbe5",
+    "expectedAnswer": "0,0576",
+    "sourceReportedAnswer": "0,0576",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. Параметры ФИПИ: {\"p\":0.6,\"hit\":2}. Результат независимого пересчёта: 0,0576.",
+    "checkedAt": "2026-09-23"
+  },
+  "346547": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685352",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "f73cc15451c62ba2eb70062941c0322ffc16ce194747377bf835c370f34afcf7",
+    "expectedAnswer": "0,83",
+    "sourceReportedAnswer": "0,78",
+    "comparison": "Сверено включение-исключение и дополнение к объединению; независимость автоматов не предполагается. Параметры ФИПИ: {\"p\":0.1,\"both\":0.03}. Результат независимого пересчёта: 0,83.",
+    "checkedAt": "2026-09-23"
+  },
+  "379055": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629166",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "08dd38e54befa27374a821d1a535f81d99d2b4d5e7549ead29e87ac19fe394c0",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,35",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":60,\"favorable\":24}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "530858": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=502129",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "0614ac3696911d1f670b7fe90325d548fa7df7cd2e7e448a421200ff45699de6",
+    "expectedAnswer": "0,25",
+    "sourceReportedAnswer": "0,25",
+    "comparison": "Условие, четыре равновероятных исхода и численный ответ совпадают с независимым источником. Параметры ФИПИ: {\"once\":false}. Результат независимого пересчёта: 0,25.",
+    "checkedAt": "2026-09-23"
+  },
+  "913615": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=321005",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "5a35e0aec808c8579bd5a4f9710e85176822ec08c702a9e29effa4d3da06a4c6",
+    "expectedAnswer": "0,35",
+    "sourceReportedAnswer": "0,5",
+    "comparison": "Сверена симметрия случайного отбора: вероятность участия конкретного человека равна числу выбранных мест, делённому на общее число участников. Параметры ФИПИ: {\"total\":20,\"favorable\":7}. Результат независимого пересчёта: 0,35.",
+    "checkedAt": "2026-09-23"
+  },
+  "944788": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "22a1d5614132cd0c95ea4fc7a3a6d429efe24535643c8b7e66ad99e33e4c20b4",
+    "expectedAnswer": "0,037",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.03,\"detect\":0.91,\"falseAlarm\":0.01}. Результат независимого пересчёта: 0,037.",
+    "checkedAt": "2026-09-23"
+  },
+  "75244F": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=513674",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "e4e3965194fc9a458ed73d71195b7f822bbaa1c430e7aa38dc1ca06f219a75ca",
+    "expectedAnswer": "0,92",
+    "sourceReportedAnswer": "0,88",
+    "comparison": "Сверено использование противоположного события: исправных изделий всего n−k. Параметры ФИПИ: {\"total\":50,\"favorable\":46}. Результат независимого пересчёта: 0,92.",
+    "checkedAt": "2026-09-23"
+  },
+  "B5214D": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=513418",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "dec0d7a70c3e64ed99faf1d0e1d6de87f55d26339826a6315df5db9f34f9def0",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,2",
+    "comparison": "Сначала вычтены все занятые места основных аудиторий, затем применено классическое определение. Количество основных аудиторий сверено с условием. Параметры ФИПИ: {\"total\":550,\"favorable\":220}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "C9C646": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685349",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "4cf68e77bff8108a02a6ff928416dd30cd1084b7d0cfb8e0da7e5167fdd9a9e5",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,3",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":15,\"favorable\":6}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "E02843": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=541813",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "6849f74a57521b91b927c6bea3625067dcb2b091e788df9eb5d2a5f69a3e3d64",
+    "expectedAnswer": "0,17",
+    "sourceReportedAnswer": "0,09",
+    "comparison": "Оба исходных GIF ФИПИ просмотрены: порог 36,8 °C. Сверены противоположные события, включая равенство во втором событии. Параметры ФИПИ: {\"p\":0.83}. Результат независимого пересчёта: 0,17.",
+    "checkedAt": "2026-09-23"
+  },
+  "BFC1FE": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=628231",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "d28e4a956e94afb41a6d41068342571d590bb6a2a80203e9e7818df676619c9a",
+    "expectedAnswer": "0,997",
+    "sourceReportedAnswer": "0,994",
+    "comparison": "Сверено использование противоположного события: исправных изделий всего n−k. Параметры ФИПИ: {\"total\":3000,\"favorable\":2991}. Результат независимого пересчёта: 0,997.",
+    "checkedAt": "2026-09-23"
+  },
+  "A203F4": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=321059",
+    "match": "method-analogue",
+    "reviewed": true,
+    "sourceHash": "2b131fa69e74dbb1377e4242bfb3d3a88cc950e43f416cc8b89635933fba671d",
+    "expectedAnswer": "0,125",
+    "sourceReportedAnswer": "0,125",
+    "comparison": "Сверено перечисление равновероятных последовательностей жеребьёвок. Для «не более одного» учтены ноль и одно успешное событие; для заданной последовательности учитывается только один исход. Параметры ФИПИ: {\"n\":3,\"atMost\":false}. Результат независимого пересчёта: 0,125.",
+    "checkedAt": "2026-09-23"
+  },
+  "ED19F5": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=283577",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "1241b14b9791f70f954683241ebc203c5f08922edc485eaf8f12fae135573c3f",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,18",
+    "comparison": "Число участниц искомой страны получено вычитанием двух остальных групп; правило m из n совпадает. Параметры ФИПИ: {\"total\":25,\"favorable\":10}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "05E30D": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "9cb82dbcc2598e2a9d64997ca83ea16272f7c53e7a6c72eee6ed9d678c1b024b",
+    "expectedAnswer": "0,75",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":48,\"favorable\":36}. Результат независимого пересчёта: 0,75.",
+    "checkedAt": "2026-09-23"
+  },
+  "941D07": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=656075",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "96e6596cc4a837f3b264804c809e055f99618dd7f5b54c6fc58ea0a0441536ad",
+    "expectedAnswer": "0,2",
+    "sourceReportedAnswer": "0,1",
+    "comparison": "Сверена симметрия случайного отбора: вероятность участия конкретного человека равна числу выбранных мест, делённому на общее число участников. Параметры ФИПИ: {\"total\":20,\"favorable\":4}. Результат независимого пересчёта: 0,2.",
+    "checkedAt": "2026-09-23"
+  },
+  "47447E": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=639473",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "bea2bde72a9ebe8594519c9ee87b5c1270ab908744587d612c3fbc0c02ff67d4",
+    "expectedAnswer": "0,5",
+    "sourceReportedAnswer": "0,5",
+    "comparison": "Условие, четыре равновероятных исхода и численный ответ совпадают с независимым источником. Параметры ФИПИ: {\"once\":true}. Результат независимого пересчёта: 0,5.",
+    "checkedAt": "2026-09-23"
+  },
+  "56097B": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629166",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "a0d724c0738991c11a3fb27f73970df3f6c310995f14b644db50ef5fffaf239b",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,35",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":25,\"favorable\":10}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "6A487C": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "68510aa0ec2d5b7ec7cd9ee8d2fb7a6cb1ed313b74bb49b7c44b48313763219b",
+    "expectedAnswer": "0,7",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":30,\"favorable\":21}. Результат независимого пересчёта: 0,7.",
+    "checkedAt": "2026-09-23"
+  },
+  "8B6F73": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=658906",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "2e00df670d5bdb0a12e8854745956e1542264c661a8e1e169d0aff6189c6dbdd",
+    "expectedAnswer": "0,13",
+    "sourceReportedAnswer": "0,13",
+    "comparison": "Условие и результат совпадают: из вероятности N>3 вычтена вероятность N>4. Параметры ФИПИ: {\"aboveFour\":0.73,\"aboveThree\":0.86}. Результат независимого пересчёта: 0,13.",
+    "checkedAt": "2026-09-23"
+  },
+  "60F7B5": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=283577",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "33f9ca007e32ed384ef1530fb61b14045510c70bbae7f384a7a5dcf0b5c17e34",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,18",
+    "comparison": "Число участниц искомой страны получено вычитанием двух остальных групп; правило m из n совпадает. Параметры ФИПИ: {\"total\":50,\"favorable\":20}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "60C5B8": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704600",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "b91855b1cbc677bb5ec3eeab8976e77b19dfcea1b376406a3e4c5626aead0ec9",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,2",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":15,\"favorable\":6}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "1B431B": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=283577",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "b98696cfff64f4cd04bf543113abdcde864704a04366f41406748202d1a38c85",
+    "expectedAnswer": "0,6",
+    "sourceReportedAnswer": "0,18",
+    "comparison": "Число участниц искомой страны получено вычитанием двух остальных групп; правило m из n совпадает. Параметры ФИПИ: {\"total\":50,\"favorable\":30}. Результат независимого пересчёта: 0,6.",
+    "checkedAt": "2026-09-23"
+  },
+  "A2AE19": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "55a13778fc2698d1bce5032b0aa2e335df588db66f410fe2f85c541b56b9bec5",
+    "expectedAnswer": "0,3",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":80,\"favorable\":24}. Результат независимого пересчёта: 0,3.",
+    "checkedAt": "2026-09-23"
+  },
+  "C9F415": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "7b23c07ec4e1268a7279cbea3813c9bba252f351131565804c5448557aa14192",
+    "expectedAnswer": "0,9",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":50,\"favorable\":45}. Результат независимого пересчёта: 0,9.",
+    "checkedAt": "2026-09-23"
+  },
+  "8EC711": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=699088",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "1f442c8c70e3c0bbb2db8bf277048c65cf39b0a700400180283b519a5a29a95e",
+    "expectedAnswer": "0,32",
+    "sourceReportedAnswer": "0,32",
+    "comparison": "Условие и результат совпадают; использована сумма вероятностей несовместных тем. Параметры ФИПИ: {\"a\":0.2,\"b\":0.12}. Результат независимого пересчёта: 0,32.",
+    "checkedAt": "2026-09-23"
+  },
+  "A76923": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "3a023034aae32d9426169241c0dd8f40f1237f3273d66c205f6bd4f2d4bc093d",
+    "expectedAnswer": "0,3",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":50,\"favorable\":15}. Результат независимого пересчёта: 0,3.",
+    "checkedAt": "2026-09-23"
+  },
+  "088ADE": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685349",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "cd6929abb57f6206167b64afac04588c13400040cc0a5d741f5bdb78ebace30a",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,3",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":30,\"favorable\":12}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "7DF0D0": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704600",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "ce79960ae03707b55eea606b0b7cfdf276f28e4370be2c21e57f2d13e544fab3",
+    "expectedAnswer": "0,2",
+    "sourceReportedAnswer": "0,2",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":50,\"favorable\":10}. Результат независимого пересчёта: 0,2.",
+    "checkedAt": "2026-09-23"
+  },
+  "A467DC": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "b5f27ffe296291838a614c8aef44d2fa0e01726dc6f09b6ece84340523d0dc6c",
+    "expectedAnswer": "0,35",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":20,\"favorable\":7}. Результат независимого пересчёта: 0,35.",
+    "checkedAt": "2026-09-23"
+  },
+  "932DDB": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=541813",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "197ef4031e2d7a4b13983f85112685f9ceddc7997c1c541568b82d6ae287740d",
+    "expectedAnswer": "0,09",
+    "sourceReportedAnswer": "0,09",
+    "comparison": "Оба исходных GIF ФИПИ просмотрены: порог 36,8 °C. Сверены противоположные события, включая равенство во втором событии. Параметры ФИПИ: {\"p\":0.91}. Результат независимого пересчёта: 0,09.",
+    "checkedAt": "2026-09-23"
+  },
+  "E032D9": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=656075",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "7acd3d5e36ec547882133d974791cd99bde4e9a056690bbbeb43b1aab0a39d23",
+    "expectedAnswer": "0,1",
+    "sourceReportedAnswer": "0,1",
+    "comparison": "Сверена симметрия случайного отбора: вероятность участия конкретного человека равна числу выбранных мест, делённому на общее число участников. Параметры ФИПИ: {\"total\":50,\"favorable\":5}. Результат независимого пересчёта: 0,1.",
+    "checkedAt": "2026-09-23"
+  },
+  "F59F55": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685349",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "1bf676981cec094f001f36ca6bf4bdda9e035bf815ff35470e59b2499e1438ac",
+    "expectedAnswer": "0,45",
+    "sourceReportedAnswer": "0,3",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":20,\"favorable\":9}. Результат независимого пересчёта: 0,45.",
+    "checkedAt": "2026-09-23"
+  },
+  "2F945C": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=520486",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "a7df394a812a922ada59aa4f625a3a8cb300ddca395af43c21f2bae00fdc31eb",
+    "expectedAnswer": "0,2",
+    "sourceReportedAnswer": "0,28",
+    "comparison": "Сначала оставшиеся выступления делятся на оставшиеся дни, затем результат на общее число выступлений. Номер выбранного дня среди одинаковых по численности дней на вероятность не влияет. Параметры ФИПИ: {\"total\":50,\"favorable\":10}. Результат независимого пересчёта: 0,2.",
+    "checkedAt": "2026-09-23"
+  },
+  "D5F8A3": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685349",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "14d28aefaf90e897d872b501dd9ae967bc1dc70263ad1f64afc38c0e0f56bccb",
+    "expectedAnswer": "0,6",
+    "sourceReportedAnswer": "0,3",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":10,\"favorable\":6}. Результат независимого пересчёта: 0,6.",
+    "checkedAt": "2026-09-23"
+  },
+  "A8D6AB": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629166",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "2bc49070f490421c4fb8656f768357b65d35b43eb7d62cdafc45dbfc9764d544",
+    "expectedAnswer": "0,35",
+    "sourceReportedAnswer": "0,35",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":20,\"favorable\":7}. Результат независимого пересчёта: 0,35.",
+    "checkedAt": "2026-09-23"
+  },
+  "8FD6A6": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "f89c976d763d05d7d96a022e2e0cce569bc926563b5319d4768184b7901a9188",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":60,\"favorable\":24}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "0540C3": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704600",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "83d64d47aa98aa3a9c2359a87f9bff9a29500ca4fcf83439ceb500dd7f18826d",
+    "expectedAnswer": "0,35",
+    "sourceReportedAnswer": "0,2",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":20,\"favorable\":7}. Результат независимого пересчёта: 0,35.",
+    "checkedAt": "2026-09-23"
+  },
+  "D150CA": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=513418",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "d0435a980558e5e5a174dcd0017dd5b321fdbc8c67ba7aeea401221193bc926d",
+    "expectedAnswer": "0,2",
+    "sourceReportedAnswer": "0,2",
+    "comparison": "Сначала вычтены все занятые места основных аудиторий, затем применено классическое определение. Количество основных аудиторий сверено с условием. Параметры ФИПИ: {\"total\":300,\"favorable\":60}. Результат независимого пересчёта: 0,2.",
+    "checkedAt": "2026-09-23"
+  },
+  "95F2C4": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=517150",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "449bdd68eb10afe50bf127b028115c755bb83d205589808d034cf22ff830f5b2",
+    "expectedAnswer": "0,5",
+    "sourceReportedAnswer": "0,5",
+    "comparison": "Сверено перечисление равновероятных последовательностей жеребьёвок. Для «не более одного» учтены ноль и одно успешное событие; для заданной последовательности учитывается только один исход. Параметры ФИПИ: {\"n\":3,\"atMost\":true}. Результат независимого пересчёта: 0,5.",
+    "checkedAt": "2026-09-23"
+  },
+  "91DFC9": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=656075",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "f9c1a8c18d8c7d26cac88344de238f2e63faf005fdaf884bffcc515d2061074c",
+    "expectedAnswer": "0,2",
+    "sourceReportedAnswer": "0,1",
+    "comparison": "Сверена симметрия случайного отбора: вероятность участия конкретного человека равна числу выбранных мест, делённому на общее число участников. Параметры ФИПИ: {\"total\":30,\"favorable\":6}. Результат независимого пересчёта: 0,2.",
+    "checkedAt": "2026-09-23"
+  },
+  "83C4C1": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=513674",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "7d65ae4a6faa06870b5027c65904e4df4ebcf9b9fc2e534715c91d7668ec5e3f",
+    "expectedAnswer": "0,92",
+    "sourceReportedAnswer": "0,88",
+    "comparison": "Сверено использование противоположного события: исправных изделий всего n−k. Параметры ФИПИ: {\"total\":75,\"favorable\":69}. Результат независимого пересчёта: 0,92.",
+    "checkedAt": "2026-09-23"
+  },
+  "FF579A": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "6486f26b5f33b3060b3812aebcf403a4bfa800aa5ec47d41e056314ee614de6c",
+    "expectedAnswer": "0,85",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":60,\"favorable\":51}. Результат независимого пересчёта: 0,85.",
+    "checkedAt": "2026-09-23"
+  },
+  "16D19B": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=513674",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "c1ec5274497031936848012423701a978c423e4b465e2793f81bf01d423a8cb5",
+    "expectedAnswer": "0,94",
+    "sourceReportedAnswer": "0,88",
+    "comparison": "Сверено использование противоположного события: исправных изделий всего n−k. Параметры ФИПИ: {\"total\":50,\"favorable\":47}. Результат независимого пересчёта: 0,94.",
+    "checkedAt": "2026-09-23"
+  },
+  "CF4294": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=641150",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "51fc2fb04ff1dde4fce1b9ff4a52f20370c0238d917e1a253e80880e9a888389",
+    "expectedAnswer": "0,75",
+    "sourceReportedAnswer": "0,75",
+    "comparison": "Сверено перечисление равновероятных последовательностей жеребьёвок. Для «не более одного» учтены ноль и одно успешное событие; для заданной последовательности учитывается только один исход. Параметры ФИПИ: {\"n\":2,\"atMost\":true}. Результат независимого пересчёта: 0,75.",
+    "checkedAt": "2026-09-23"
+  },
+  "3D1090": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=320169",
+    "match": "method-analogue",
+    "reviewed": true,
+    "sourceHash": "ea426cfacab72c18857e4cdaa2c1d4dd1bf358da23d27354b835235cc85dc0d8",
+    "expectedAnswer": "0,6",
+    "sourceReportedAnswer": "0,25",
+    "comparison": "Методический аналог жеребьёвки: в ФИПИ 3 благоприятных участника из 5, у независимого источника 1 из 4; перенос численного ответа исключён. Параметры ФИПИ: {\"total\":5,\"favorable\":3}. Результат независимого пересчёта: 0,6.",
+    "checkedAt": "2026-09-23"
+  },
+  "838C9D": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "ed699a4aaf137d6d4e9dfc57a0db143cf179eb821598f494e3e6f84c8f234dd5",
+    "expectedAnswer": "0,3",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":70,\"favorable\":21}. Результат независимого пересчёта: 0,3.",
+    "checkedAt": "2026-09-23"
+  },
+  "2A4DE5": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629166",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "4c65ebc23f3fe238b3175ca364bf4c7827991aa61050dc866660275d6fb0c4bd",
+    "expectedAnswer": "0,15",
+    "sourceReportedAnswer": "0,35",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":40,\"favorable\":6}. Результат независимого пересчёта: 0,15.",
+    "checkedAt": "2026-09-23"
+  },
+  "2EB7E3": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704600",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "6ed8499d80dc02d3d0a19ad7016d5a7e5d3844a771584a96bb9ec63c4b131e7a",
+    "expectedAnswer": "0,3",
+    "sourceReportedAnswer": "0,2",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":50,\"favorable\":15}. Результат независимого пересчёта: 0,3.",
+    "checkedAt": "2026-09-23"
+  },
+  "D459ED": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=286239",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "903d577370c56e00ab9ffe8ddab4e71d4da9b345b9bb9d0beed4fbbea8c855df",
+    "expectedAnswer": "0,25",
+    "sourceReportedAnswer": "0,55",
+    "comparison": "Сверено классическое определение вероятности. Если тема не должна встретиться, берётся число билетов без неё; слово «не» учтено отдельно. Параметры ФИПИ: {\"total\":52,\"favorable\":13}. Результат независимого пересчёта: 0,25.",
+    "checkedAt": "2026-09-23"
+  },
+  "5540EE": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=321005",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "4b58a3a379a4f10ad733a85e2840108377400dc684b1f395450f227f67193e8e",
+    "expectedAnswer": "0,25",
+    "sourceReportedAnswer": "0,5",
+    "comparison": "Сверена симметрия случайного отбора: вероятность участия конкретного человека равна числу выбранных мест, делённому на общее число участников. Параметры ФИПИ: {\"total\":12,\"favorable\":3}. Результат независимого пересчёта: 0,25.",
+    "checkedAt": "2026-09-23"
+  },
+  "9CC4E6": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=283577",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "2668d145cdde8955221028b7aef1f04c1a644e63fea83c02d8e4a09519e9a434",
+    "expectedAnswer": "0,3",
+    "sourceReportedAnswer": "0,18",
+    "comparison": "Число участниц искомой страны получено вычитанием двух остальных групп; правило m из n совпадает. Параметры ФИПИ: {\"total\":30,\"favorable\":9}. Результат независимого пересчёта: 0,3.",
+    "checkedAt": "2026-09-23"
+  },
+  "EDA4E7": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685349",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "d36bdfc65203823cbd6da7d24df5b2724e6f1dfae8b692c41f33abd1859b0fcf",
+    "expectedAnswer": "0,25",
+    "sourceReportedAnswer": "0,3",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":12,\"favorable\":3}. Результат независимого пересчёта: 0,25.",
+    "checkedAt": "2026-09-23"
+  },
+  "68B0E4": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=283577",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "8ebc51cdc583f155e5a7e2cba79f96319a3385ffae6fbdfe54a73871caae8810",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,18",
+    "comparison": "Число участниц искомой страны получено вычитанием двух остальных групп; правило m из n совпадает. Параметры ФИПИ: {\"total\":45,\"favorable\":18}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "7F0767": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685349",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "a1e3c0f243cd8221a9a633770fda026b2735f08b8ec5770acf860114d73eaec3",
+    "expectedAnswer": "0,3",
+    "sourceReportedAnswer": "0,3",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":10,\"favorable\":3}. Результат независимого пересчёта: 0,3.",
+    "checkedAt": "2026-09-23"
+  },
+  "EB6864": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704600",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "2c09e7a54193331129eed22106ce377e0b334eaa8247fdec115893db1a672fed",
+    "expectedAnswer": "0,3",
+    "sourceReportedAnswer": "0,2",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":30,\"favorable\":9}. Результат независимого пересчёта: 0,3.",
+    "checkedAt": "2026-09-23"
+  },
+  "0C303D": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629166",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "506802d1f0200a88c1b1083b5685be144017b5b60a881dbba63a5024f0493461",
+    "expectedAnswer": "0,2",
+    "sourceReportedAnswer": "0,35",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":75,\"favorable\":15}. Результат независимого пересчёта: 0,2.",
+    "checkedAt": "2026-09-23"
+  },
+  "DB253E": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704600",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "6296b6d8975ab03133311b9f360d0a9bc448d4ab79d6a34c84a7b01f8dc6ed40",
+    "expectedAnswer": "0,2",
+    "sourceReportedAnswer": "0,2",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":35,\"favorable\":7}. Результат независимого пересчёта: 0,2.",
+    "checkedAt": "2026-09-23"
+  },
+  "DBCD3E": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704600",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "50d0c75eccc76247b4f922fa41eab83d5ae7d015ced80c91a671ff5908b1a22c",
+    "expectedAnswer": "0,4",
+    "sourceReportedAnswer": "0,2",
+    "comparison": "Сверена равновероятность каждого участника на заданном месте. Количество участников нужной страны и общее количество пересчитаны по ФИПИ. Параметры ФИПИ: {\"total\":25,\"favorable\":10}. Результат независимого пересчёта: 0,4.",
+    "checkedAt": "2026-09-23"
+  },
+  "5FB930": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=321005",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "a486ea46d6b69296395cbb812aa1b4fd4af51cbb7e85f77c7d67b045bb9b7ea9",
+    "expectedAnswer": "0,6",
+    "sourceReportedAnswer": "0,5",
+    "comparison": "Сверена симметрия случайного отбора: вероятность участия конкретного человека равна числу выбранных мест, делённому на общее число участников. Параметры ФИПИ: {\"total\":5,\"favorable\":3}. Результат независимого пересчёта: 0,6.",
+    "checkedAt": "2026-09-23"
+  },
+  "8F3933": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=560770",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "c29f3de96231f756db04828a9bab22499888c6b0e4fe44ad902e6320efc13c89",
+    "expectedAnswer": "0,26",
+    "sourceReportedAnswer": "0,29",
+    "comparison": "Сверена разность вложенных событий. Целочисленность числа пассажиров переводит N<23 в N≤22; обе границы проверены. Параметры ФИПИ: {\"upper\":23,\"a\":0.87,\"lower\":14,\"b\":0.61}. Результат независимого пересчёта: 0,26.",
+    "checkedAt": "2026-09-23"
+  },
+  "BC2487": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=628231",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "34f2c86914acf25b68f7170fa3753cafd9325ba9aac37fa3bd5593924314cf9d",
+    "expectedAnswer": "0,994",
+    "sourceReportedAnswer": "0,994",
+    "comparison": "Сверено использование противоположного события: исправных изделий всего n−k. Параметры ФИПИ: {\"total\":2000,\"favorable\":1988}. Результат независимого пересчёта: 0,994.",
+    "checkedAt": "2026-09-23"
+  },
+  "D3C781": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=656075",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "d431665cf109f424f65ee8c23f2b8e5624a771809f2e2a427a799e9e96d61a35",
+    "expectedAnswer": "0,05",
+    "sourceReportedAnswer": "0,1",
+    "comparison": "Сверена симметрия случайного отбора: вероятность участия конкретного человека равна числу выбранных мест, делённому на общее число участников. Параметры ФИПИ: {\"total\":300,\"favorable\":15}. Результат независимого пересчёта: 0,05.",
+    "checkedAt": "2026-09-23"
+  },
+  "C83C8C": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=680503",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "ed0493ff657ded6fc28019935a34a8a7693e12901dcb777a27950845d2ad1464",
+    "expectedAnswer": "0,125",
+    "sourceReportedAnswer": "0,125",
+    "comparison": "Сверено перечисление равновероятных последовательностей жеребьёвок. Для «не более одного» учтены ноль и одно успешное событие; для заданной последовательности учитывается только один исход. Параметры ФИПИ: {\"n\":3,\"atMost\":false}. Результат независимого пересчёта: 0,125.",
+    "checkedAt": "2026-09-23"
+  },
+  "198C47": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685352",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "45357f76c8cf94be389f042b737efd45d36e17469da691fcbd7a9d4137a993c8",
+    "expectedAnswer": "0,72",
+    "sourceReportedAnswer": "0,78",
+    "comparison": "Сверено включение-исключение и дополнение к объединению; независимость автоматов не предполагается. Параметры ФИПИ: {\"p\":0.2,\"both\":0.12}. Результат независимого пересчёта: 0,72.",
+    "checkedAt": "2026-09-23"
+  },
+  "858F4B": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704603",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "25a3b8f5c8253fb0c6d2fe5942d71d6783c97ef53ed064f5e55a1d599599768a",
+    "expectedAnswer": "0,79",
+    "sourceReportedAnswer": "0,78",
+    "comparison": "Сверено пересечение двух событий с достоверным объединением; независимость не используется. Границы 790 и 810 г и оба знака строгие. Параметры ФИПИ: {\"upper\":810,\"lower\":790,\"lowP\":0.95,\"highP\":0.84}. Результат независимого пересчёта: 0,79.",
+    "checkedAt": "2026-09-23"
+  },
+  "0CC4F3": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704603",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "513840ecd8ce0198f1cad72d8a71991e1bd51979fde0c74905e541525205ce2e",
+    "expectedAnswer": "0,81",
+    "sourceReportedAnswer": "0,78",
+    "comparison": "Сверено пересечение двух событий с достоверным объединением; независимость не используется. Границы 790 и 810 г и оба знака строгие. Параметры ФИПИ: {\"upper\":810,\"lower\":790,\"lowP\":0.95,\"highP\":0.86}. Результат независимого пересчёта: 0,81.",
+    "checkedAt": "2026-09-23"
+  },
+  "B0EAF8": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "e73850416c576d5ddb048253bd0c443620c76943b95ad771b8b6fd4a864d24dd",
+    "expectedAnswer": "0,23",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.2,\"detect\":0.95,\"falseAlarm\":0.05}. Результат независимого пересчёта: 0,23.",
+    "checkedAt": "2026-09-23"
+  },
+  "30D3F2": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=508830",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "083bcf70dbc930c70f23def2564b4d1511632df33de51d4d58f26aa707decd12",
+    "expectedAnswer": "2",
+    "sourceReportedAnswer": "5",
+    "comparison": "Сверены дополнение к серии промахов, монотонность и минимальность числа патронов; проверены два соседних целых числа. Параметры ФИПИ: {\"p\":0.5,\"target\":0.7,\"n\":2}. Результат независимого пересчёта: 2.",
+    "checkedAt": "2026-09-23"
+  },
+  "AA6802": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=642365",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "31ed80d6a77bc7704159403c45957bc588abaf9955638135404c09fd84771368",
+    "expectedAnswer": "0,0064",
+    "sourceReportedAnswer": "0,103",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. В источнике другой p и есть округление до тысячных; ФИПИ здесь округления не требует, сохранён точный результат. Параметры ФИПИ: {\"p\":0.2,\"hit\":3}. Результат независимого пересчёта: 0,0064.",
+    "checkedAt": "2026-09-23"
+  },
+  "997E04": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=665293",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "dba5663c590cada716759b6586e45a1cb2432527425ca68bdd18667f132c8874",
+    "expectedAnswer": "0,15",
+    "sourceReportedAnswer": "0,15",
+    "comparison": "Сверен выбор без возвращения двух разных цветов. Собственный подсчёт неупорядоченных пар проверен независимым сложением двух порядков выбора. Параметры ФИПИ: {\"blue\":5,\"red\":9,\"other\":11}. Результат независимого пересчёта: 0,15.",
+    "checkedAt": "2026-09-23"
+  },
+  "97B50F": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=656635",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "127de1e45320ed18cb220e9fb6e7cb9317c9f83da77ee249ffa8921470e6c7ef",
+    "expectedAnswer": "0,12",
+    "sourceReportedAnswer": "0,04",
+    "comparison": "Сверено условное пространство из 25 равновероятных пар; заново перечислены все пары с нужной суммой и исключённой гранью. Параметры ФИПИ: {\"banned\":6,\"target\":8}. Результат независимого пересчёта: 0,12.",
+    "checkedAt": "2026-09-23"
+  },
+  "91D905": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "f7d135243e5103356eb82b841d641b66cfd7eaeedacbeae7d293ba82f90f080d",
+    "expectedAnswer": "0,069",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.01,\"detect\":0.96,\"falseAlarm\":0.06}. Результат независимого пересчёта: 0,069.",
+    "checkedAt": "2026-09-23"
+  },
+  "6E7D00": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=665293",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "f0a98b5361ada1cff7199cf0b5805828a6e7917b47506abf7259bee7db331514",
+    "expectedAnswer": "0,18",
+    "sourceReportedAnswer": "0,15",
+    "comparison": "Сверен выбор без возвращения двух разных цветов. Собственный подсчёт неупорядоченных пар проверен независимым сложением двух порядков выбора. Параметры ФИПИ: {\"blue\":6,\"red\":9,\"other\":10}. Результат независимого пересчёта: 0,18.",
+    "checkedAt": "2026-09-23"
+  },
+  "436A74": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=656635",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "5e43f150d08daa211038ed23c785498ce967cac4d5a073b18dfd069c62705545",
+    "expectedAnswer": "0,04",
+    "sourceReportedAnswer": "0,04",
+    "comparison": "Сверено условное пространство из 25 равновероятных пар; заново перечислены все пары с нужной суммой и исключённой гранью. Параметры ФИПИ: {\"banned\":6,\"target\":10}. Результат независимого пересчёта: 0,04.",
+    "checkedAt": "2026-09-23"
+  },
+  "DF1172": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=630182",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "363e664b9922213bfe3f86a1af8ffb0bef20853d6642381aea6e84909b898ccb",
+    "expectedAnswer": "0,0441",
+    "sourceReportedAnswer": "0,0576",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. Параметры ФИПИ: {\"p\":0.7,\"hit\":2}. Результат независимого пересчёта: 0,0441.",
+    "checkedAt": "2026-09-23"
+  },
+  "226FB1": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "6841940adf14a41d3c8048f109df0f58bab8922b1c4376bbeaaea4d47e1da667",
+    "expectedAnswer": "0,048",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.04,\"detect\":0.96,\"falseAlarm\":0.01}. Результат независимого пересчёта: 0,048.",
+    "checkedAt": "2026-09-23"
+  },
+  "D170BF": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "a1944bf516dddc1514e0e27103de2535bd512baeb547af1ed64aab2d2a131cf0",
+    "expectedAnswer": "0,059",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.01,\"detect\":0.95,\"falseAlarm\":0.05}. Результат независимого пересчёта: 0,059.",
+    "checkedAt": "2026-09-23"
+  },
+  "27C71D": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=665293",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "f28e1905901fd8252a904254f872598386ab15bb0f1808ed28babc34820c5cc0",
+    "expectedAnswer": "0,22",
+    "sourceReportedAnswer": "0,15",
+    "comparison": "Сверен выбор без возвращения двух разных цветов. Собственный подсчёт неупорядоченных пар проверен независимым сложением двух порядков выбора. Параметры ФИПИ: {\"blue\":11,\"red\":6,\"other\":8}. Результат независимого пересчёта: 0,22.",
+    "checkedAt": "2026-09-23"
+  },
+  "804D11": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=642365",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "922e745452632c926d691a15b16dd6c4a718759623934473a06a4b900b52efc9",
+    "expectedAnswer": "0,1024",
+    "sourceReportedAnswer": "0,103",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. В источнике другой p и есть округление до тысячных; ФИПИ здесь округления не требует, сохранён точный результат. Параметры ФИПИ: {\"p\":0.8,\"hit\":3}. Результат независимого пересчёта: 0,1024.",
+    "checkedAt": "2026-09-23"
+  },
+  "A6402F": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=656635",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "86c8020457d2f7f148bbbd031b4f215dd5f4778e1003e773be3e2c2b266a939a",
+    "expectedAnswer": "0,08",
+    "sourceReportedAnswer": "0,04",
+    "comparison": "Сверено условное пространство из 25 равновероятных пар; заново перечислены все пары с нужной суммой и исключённой гранью. Параметры ФИПИ: {\"banned\":6,\"target\":9}. Результат независимого пересчёта: 0,08.",
+    "checkedAt": "2026-09-23"
+  },
+  "9B2D2B": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "33da276a79fc8c34bb6f4a143ecf016285f44339aa68fafd28f02786a49931e3",
+    "expectedAnswer": "0,039",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.01,\"detect\":0.93,\"falseAlarm\":0.03}. Результат независимого пересчёта: 0,039.",
+    "checkedAt": "2026-09-23"
+  },
+  "F3F0DF": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=642398",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "d8d4020041dbb43d8e5523c22baa77a9aabd558058ba64e916665863535e5ff2",
+    "expectedAnswer": "0,0009",
+    "sourceReportedAnswer": "0,0009",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. Параметры ФИПИ: {\"p\":0.9,\"hit\":1}. Результат независимого пересчёта: 0,0009.",
+    "checkedAt": "2026-09-23"
+  },
+  "F253DE": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "4e39e619af64f52ff5fb702e625fe5a430aafbd87f9d2ef0192bec311480d331",
+    "expectedAnswer": "0,049",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.01,\"detect\":0.94,\"falseAlarm\":0.04}. Результат независимого пересчёта: 0,049.",
+    "checkedAt": "2026-09-23"
+  },
+  "0ECDD4": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=661015",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "5ccabad9efa05e5e729f8e43f7fb4e0c70efaa38d6600dc1792ca8f4b62a2bc9",
+    "expectedAnswer": "0,488",
+    "sourceReportedAnswer": "0,657",
+    "comparison": "Сверены независимость ламп и дополнение к одновременному перегоранию всех. Для четырёх ламп показатель степени равен 4, для трёх — 3. Параметры ФИПИ: {\"p\":0.8,\"n\":3}. Результат независимого пересчёта: 0,488.",
+    "checkedAt": "2026-09-23"
+  },
+  "11CCDE": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=661015",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "4241503c9671a549bf914b5c803d312d99053fb0881e5d2a04378a89277d228f",
+    "expectedAnswer": "0,875",
+    "sourceReportedAnswer": "0,657",
+    "comparison": "Сверены независимость ламп и дополнение к одновременному перегоранию всех. Для четырёх ламп показатель степени равен 4, для трёх — 3. Параметры ФИПИ: {\"p\":0.5,\"n\":3}. Результат независимого пересчёта: 0,875.",
+    "checkedAt": "2026-09-23"
+  },
+  "51EADD": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "6b995bda0dfc691caff0ccc2d9b5cb59858f9b1a022c221d4fa93972e29c673a",
+    "expectedAnswer": "0,067",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.06,\"detect\":0.96,\"falseAlarm\":0.01}. Результат независимого пересчёта: 0,067.",
+    "checkedAt": "2026-09-23"
+  },
+  "8EF0DE": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=661015",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "e8a2e0b7df1d10567aba13618e6c35ed7c8bfd4e7e328e142478de70d611735c",
+    "expectedAnswer": "0,936",
+    "sourceReportedAnswer": "0,657",
+    "comparison": "Сверены независимость ламп и дополнение к одновременному перегоранию всех. Для четырёх ламп показатель степени равен 4, для трёх — 3. Параметры ФИПИ: {\"p\":0.4,\"n\":3}. Результат независимого пересчёта: 0,936.",
+    "checkedAt": "2026-09-23"
+  },
+  "0F9157": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=665293",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "b2f044baa55f756ab8655baa98d839a099e7eca237f680b5b2e96995b9ce4966",
+    "expectedAnswer": "0,24",
+    "sourceReportedAnswer": "0,15",
+    "comparison": "Сверен выбор без возвращения двух разных цветов. Собственный подсчёт неупорядоченных пар проверен независимым сложением двух порядков выбора. Параметры ФИПИ: {\"blue\":12,\"red\":6,\"other\":7}. Результат независимого пересчёта: 0,24.",
+    "checkedAt": "2026-09-23"
+  },
+  "EF645A": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "09286c9eb8ff60af0a32a7e7dc6e40dc6c4deebdd7b10336fcc5526057d3c4af",
+    "expectedAnswer": "0,16",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.1,\"detect\":0.97,\"falseAlarm\":0.07}. Результат независимого пересчёта: 0,16.",
+    "checkedAt": "2026-09-23"
+  },
+  "66F056": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704603",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "14cfb26e5151ed55ae5fa8990978e928b160e3f45b0be95c00046342d260cdb2",
+    "expectedAnswer": "0,78",
+    "sourceReportedAnswer": "0,78",
+    "comparison": "Сверено пересечение двух событий с достоверным объединением; независимость не используется. Границы 790 и 810 г и оба знака строгие. Параметры ФИПИ: {\"upper\":810,\"lower\":790,\"lowP\":0.96,\"highP\":0.82}. Результат независимого пересчёта: 0,78.",
+    "checkedAt": "2026-09-23"
+  },
+  "2AFDA9": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685352",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "2dfcd6e9947756a7312203e09014c86b1a5d33676b2a770d685d1697251ce46f",
+    "expectedAnswer": "0,67",
+    "sourceReportedAnswer": "0,78",
+    "comparison": "Сверено включение-исключение и дополнение к объединению; независимость автоматов не предполагается. Параметры ФИПИ: {\"p\":0.2,\"both\":0.07}. Результат независимого пересчёта: 0,67.",
+    "checkedAt": "2026-09-23"
+  },
+  "A63DC3": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=656635",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "fbd74024ce1d581384447f5e2e33d3e13dcc2314757db4af5ca4c1d441a6e8f8",
+    "expectedAnswer": "0,08",
+    "sourceReportedAnswer": "0,04",
+    "comparison": "Сверено условное пространство из 25 равновероятных пар; заново перечислены все пары с нужной суммой и исключённой гранью. Параметры ФИПИ: {\"banned\":5,\"target\":9}. Результат независимого пересчёта: 0,08.",
+    "checkedAt": "2026-09-23"
+  },
+  "6532CC": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=642398",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "8756ab2281942307371cdfa835c5c52a56a5f432ba5b49af8b90a5ea5b40098b",
+    "expectedAnswer": "0,0864",
+    "sourceReportedAnswer": "0,0009",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. Параметры ФИПИ: {\"p\":0.4,\"hit\":1}. Результат независимого пересчёта: 0,0864.",
+    "checkedAt": "2026-09-23"
+  },
+  "315ACA": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=661015",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "5efcce8fdf95e77c329d785ecdcbf4e55b3dde7c6c99be16da9d50c6eeb35c4b",
+    "expectedAnswer": "0,9744",
+    "sourceReportedAnswer": "0,657",
+    "comparison": "Сверены независимость ламп и дополнение к одновременному перегоранию всех. Для четырёх ламп показатель степени равен 4, для трёх — 3. Параметры ФИПИ: {\"p\":0.4,\"n\":4}. Результат независимого пересчёта: 0,9744.",
+    "checkedAt": "2026-09-23"
+  },
+  "73B69F": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=661015",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "c9650897fd7ceca6679487eabb12c7f0542092979d334cff324675cee965e7f9",
+    "expectedAnswer": "0,271",
+    "sourceReportedAnswer": "0,657",
+    "comparison": "Сверены независимость ламп и дополнение к одновременному перегоранию всех. Для четырёх ламп показатель степени равен 4, для трёх — 3. Параметры ФИПИ: {\"p\":0.9,\"n\":3}. Результат независимого пересчёта: 0,271.",
+    "checkedAt": "2026-09-23"
+  },
+  "A92B9D": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704603",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "a74936a5b23adbdaaf3dafba3fc5a6d452324907b06e791c68cce251920c6494",
+    "expectedAnswer": "0,81",
+    "sourceReportedAnswer": "0,78",
+    "comparison": "Сверено пересечение двух событий с достоверным объединением; независимость не используется. Границы 790 и 810 г и оба знака строгие. Параметры ФИПИ: {\"upper\":810,\"lower\":790,\"lowP\":0.98,\"highP\":0.83}. Результат независимого пересчёта: 0,81.",
+    "checkedAt": "2026-09-23"
+  },
+  "3C509C": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=508830",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "9ab46a4645589964165775b95a0662d54c2d89be90b3b97a205485597b6870db",
+    "expectedAnswer": "3",
+    "sourceReportedAnswer": "5",
+    "comparison": "Сверены дополнение к серии промахов, монотонность и минимальность числа патронов; проверены два соседних целых числа. Параметры ФИПИ: {\"p\":0.5,\"target\":0.8,\"n\":3}. Результат независимого пересчёта: 3.",
+    "checkedAt": "2026-09-23"
+  },
+  "80A99C": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=661015",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "da9785034167d0fab5eb86854ef97efa13425aca962fb8998d04b6f4f36f9649",
+    "expectedAnswer": "0,992",
+    "sourceReportedAnswer": "0,657",
+    "comparison": "Сверены независимость ламп и дополнение к одновременному перегоранию всех. Для четырёх ламп показатель степени равен 4, для трёх — 3. Параметры ФИПИ: {\"p\":0.2,\"n\":3}. Результат независимого пересчёта: 0,992.",
+    "checkedAt": "2026-09-23"
+  },
+  "2965EA": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=642365",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "ac97673257d56c439f733fc1c533f89821ff096c24179626b225c7ecd1e35792",
+    "expectedAnswer": "0,0729",
+    "sourceReportedAnswer": "0,103",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. В источнике другой p и есть округление до тысячных; ФИПИ здесь округления не требует, сохранён точный результат. Параметры ФИПИ: {\"p\":0.9,\"hit\":3}. Результат независимого пересчёта: 0,0729.",
+    "checkedAt": "2026-09-23"
+  },
+  "07D66F": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=661015",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "6a2a877ece06bea2a08601c674be9478f22d14157d3c6dc87bdfa2af409d8baf",
+    "expectedAnswer": "0,657",
+    "sourceReportedAnswer": "0,657",
+    "comparison": "Сверены независимость ламп и дополнение к одновременному перегоранию всех. Для четырёх ламп показатель степени равен 4, для трёх — 3. Параметры ФИПИ: {\"p\":0.7,\"n\":3}. Результат независимого пересчёта: 0,657.",
+    "checkedAt": "2026-09-23"
+  },
+  "75A66F": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "69f5460e4c50a9a8f69f181516dc13d51907b2495018e9e8c4e929ad9b8d2216",
+    "expectedAnswer": "0,15",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.1,\"detect\":0.96,\"falseAlarm\":0.06}. Результат независимого пересчёта: 0,15.",
+    "checkedAt": "2026-09-23"
+  },
+  "7FF06A": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=665293",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "7287475b93fe5d41dd18e2a51a856cbabb655f68030a8bcda1ee3a4199cb7247",
+    "expectedAnswer": "0,1",
+    "sourceReportedAnswer": "0,15",
+    "comparison": "Сверен выбор без возвращения двух разных цветов. Собственный подсчёт неупорядоченных пар проверен независимым сложением двух порядков выбора. Параметры ФИПИ: {\"blue\":4,\"red\":3,\"other\":9}. Результат независимого пересчёта: 0,1.",
+    "checkedAt": "2026-09-23"
+  },
+  "BE7D6F": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=642365",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "42c32b44353d60c65f506c2ee65886b9427bfe23fbd624e3ca484c041bbcb92b",
+    "expectedAnswer": "0,0189",
+    "sourceReportedAnswer": "0,103",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. В источнике другой p и есть округление до тысячных; ФИПИ здесь округления не требует, сохранён точный результат. Параметры ФИПИ: {\"p\":0.3,\"hit\":3}. Результат независимого пересчёта: 0,0189.",
+    "checkedAt": "2026-09-23"
+  },
+  "D81165": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=630182",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "ba1788247ae10d08c690fffc3bbf2eed2475e3e9294aca644411b5a257631864",
+    "expectedAnswer": "0,0441",
+    "sourceReportedAnswer": "0,0576",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. Параметры ФИПИ: {\"p\":0.3,\"hit\":2}. Результат независимого пересчёта: 0,0441.",
+    "checkedAt": "2026-09-23"
+  },
+  "546A68": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685352",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "528578ca87448d117c67dae62532ce30863c05108a0a4c253e82e29d059de18f",
+    "expectedAnswer": "0,78",
+    "sourceReportedAnswer": "0,78",
+    "comparison": "Сверено включение-исключение и дополнение к объединению; независимость автоматов не предполагается. Параметры ФИПИ: {\"p\":0.2,\"both\":0.18}. Результат независимого пересчёта: 0,78.",
+    "checkedAt": "2026-09-23"
+  },
+  "553B3F": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=704601",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "885eb527c235ab83434ce4a18cbb9a0162f9a046afea484c09ff3b489658afa1",
+    "expectedAnswer": "0,0081",
+    "sourceReportedAnswer": "0,081",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. Обнаружено расхождение внутри источника №704601: поле ответа 0,081, но развёрнутое вычисление даёт 0,0081. Ручная проверка 0,9·0,9·0,1·0,1=81·0,0001=0,0081 разрешает расхождение в пользу текста решения; ответ ФИПИ-постановки 0,0081. Параметры ФИПИ: {\"p\":0.9,\"hit\":2}. Результат независимого пересчёта: 0,0081.",
+    "checkedAt": "2026-09-23"
+  },
+  "9EB534": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=642398",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "a265138396bd4ea9bd1b34bb1222300aa0be0ec896043db46ae08568320b591d",
+    "expectedAnswer": "0,0064",
+    "sourceReportedAnswer": "0,0009",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. Параметры ФИПИ: {\"p\":0.8,\"hit\":1}. Результат независимого пересчёта: 0,0064.",
+    "checkedAt": "2026-09-23"
+  },
+  "EBB536": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=685352",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "412cb454b17cee4d1b99ff5e8189be52cb96f1752b6b1fe51ec3f91ab744bf72",
+    "expectedAnswer": "0,85",
+    "sourceReportedAnswer": "0,78",
+    "comparison": "Сверено включение-исключение и дополнение к объединению; независимость автоматов не предполагается. Параметры ФИПИ: {\"p\":0.1,\"both\":0.05}. Результат независимого пересчёта: 0,85.",
+    "checkedAt": "2026-09-23"
+  },
+  "6DBE38": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=629174",
+    "match": "exact",
+    "reviewed": true,
+    "sourceHash": "cde5d55a3be0b142da2811ac6d6803eaa480a9f4b926cbf2c3919d75e63ee1a6",
+    "expectedAnswer": "0,059",
+    "sourceReportedAnswer": "0,059",
+    "comparison": "Сверены обе ветви полной вероятности: истинное обнаружение брака и ложное отклонение исправной батарейки. Параметры ФИПИ: {\"defect\":0.05,\"detect\":0.99,\"falseAlarm\":0.01}. Результат независимого пересчёта: 0,059.",
+    "checkedAt": "2026-09-23"
+  },
+  "C41083": {
+    "url": "https://math-ege.sdamgia.ru/problem?id=642398",
+    "match": "variant",
+    "reviewed": true,
+    "sourceHash": "d870f5ef1a84341bf837c2c2fb1b1f7a32c054d66bdd26f8f794dde4572e34cd",
+    "expectedAnswer": "0,0189",
+    "sourceReportedAnswer": "0,0009",
+    "comparison": "Сверена вероятность одной фиксированной последовательности независимых попаданий и промахов; множитель числа перестановок не нужен. Все четыре множителя пересчитаны по ФИПИ. Параметры ФИПИ: {\"p\":0.7,\"hit\":1}. Результат независимого пересчёта: 0,0189.",
+    "checkedAt": "2026-09-23"
+  }
+}

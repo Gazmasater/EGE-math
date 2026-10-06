@@ -4,3 +4,4 @@ added-history.json
 .DS_Store
 Thumbs.db
 storage/
+__pycache__/

@@ -1,0 +1,107 @@
+{
+  "counter": 112561663,
+  "created_at": "2026-09-24",
+  "goals": [
+    {
+      "id": 663176353,
+      "name": "Просмотр решения",
+      "type": "action",
+      "default_price": 0.0,
+      "is_retargeting": 0,
+      "goal_source": "user",
+      "is_favorite": 0,
+      "status": "Active",
+      "labels": [],
+      "conditions": [
+        {
+          "type": "exact",
+          "url": "solution_open"
+        }
+      ]
+    },
+    {
+      "id": 663176354,
+      "name": "Переход к следующему заданию",
+      "type": "action",
+      "default_price": 0.0,
+      "is_retargeting": 0,
+      "goal_source": "user",
+      "is_favorite": 0,
+      "status": "Active",
+      "labels": [],
+      "conditions": [
+        {
+          "type": "exact",
+          "url": "next_task"
+        }
+      ]
+    },
+    {
+      "id": 663176387,
+      "name": "Успешная регистрация",
+      "type": "action",
+      "default_price": 0.0,
+      "is_retargeting": 0,
+      "goal_source": "user",
+      "is_favorite": 0,
+      "status": "Active",
+      "labels": [],
+      "conditions": [
+        {
+          "type": "exact",
+          "url": "registration_success"
+        }
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "segment_id": 1008108503,
+      "counter_id": 112561663,
+      "name": "ЕГЭ — поиск без роботов и технических визитов",
+      "expression": "ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))",
+      "is_retargeting": 0,
+      "status": "active",
+      "segment_source": "api",
+      "create_time": "2026-09-24T15:00:57+03:00",
+      "raw_filter_expression": {
+        "counter_id": 112561663,
+        "owner_uid": 227850612,
+        "expression": "ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))"
+      },
+      "retargeting": false
+    },
+    {
+      "segment_id": 1008108504,
+      "counter_id": 112561663,
+      "name": "ЕГЭ — мобильный поиск без роботов",
+      "expression": "ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical')) AND ym:s:deviceCategory=='mobile'",
+      "is_retargeting": 0,
+      "status": "active",
+      "segment_source": "api",
+      "create_time": "2026-09-24T15:00:57+03:00",
+      "raw_filter_expression": {
+        "counter_id": 112561663,
+        "owner_uid": 227850612,
+        "expression": "ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical')) AND ym:s:deviceCategory=='mobile'"
+      },
+      "retargeting": false
+    },
+    {
+      "segment_id": 1008108505,
+      "counter_id": 112561663,
+      "name": "ЕГЭ — роботы и технические визиты",
+      "expression": "(ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))",
+      "is_retargeting": 0,
+      "status": "active",
+      "segment_source": "api",
+      "create_time": "2026-09-24T15:00:58+03:00",
+      "raw_filter_expression": {
+        "counter_id": 112561663,
+        "owner_uid": 227850612,
+        "expression": "(ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))"
+      },
+      "retargeting": false
+    }
+  ]
+}

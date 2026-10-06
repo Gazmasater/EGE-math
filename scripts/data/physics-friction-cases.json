@@ -1,0 +1,254 @@
+[
+  {
+    "id": "BA974A",
+    "kind": "uniform-mu",
+    "m": 10,
+    "F": 25,
+    "reference": "17647",
+    "answer": "0,25",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "498B07",
+    "kind": "table",
+    "reference": "41559",
+    "answer": "0,25",
+    "N": [
+      40,
+      60,
+      80,
+      100
+    ],
+    "F": [
+      10,
+      15,
+      20,
+      25
+    ],
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "18E7BF",
+    "kind": "graph",
+    "reference": "25018",
+    "answer": "0,5",
+    "N": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "F": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E39804DB287B81124CE84C62529A55C1(copy1)/xs3qstsrcE39804DB287B81124CE84C62529A55C1_1_1485418135.png"
+    ],
+    "unit": ""
+  },
+  {
+    "id": "932D10",
+    "kind": "graph",
+    "reference": "11545",
+    "answer": "0,125",
+    "N": [
+      4,
+      8,
+      12
+    ],
+    "F": [
+      0.5,
+      1,
+      1.5
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6BB3ABEDEECBA4364DBA2A4C9EB9FF42(copy1)/xs3qstsrc6BB3ABEDEECBA4364DBA2A4C9EB9FF42_1_1486739808.png"
+    ],
+    "unit": ""
+  },
+  {
+    "id": "328611",
+    "kind": "spring",
+    "reference": "734",
+    "answer": "16",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5B275BE4ED068ACD424BC5E73AED2198(copy1)/xs3qstsrc5e5f6d693e7944fc8ba3ba884693fe38_1_1758618901.png"
+    ],
+    "unit": "Н"
+  },
+  {
+    "id": "412F2F",
+    "kind": "graph",
+    "reference": "25018",
+    "answer": "0,5",
+    "N": [
+      4,
+      8,
+      10
+    ],
+    "F": [
+      2,
+      4,
+      5
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DEBD7CE777BEB05C4622AE555B94B6E1(copy2)/xs3qstsrc6016519D582586AB4DB3BE8E98835985_3_1772110316.png"
+    ],
+    "unit": ""
+  },
+  {
+    "id": "265725",
+    "kind": "uniform-mass",
+    "F": 35,
+    "mu": 0.25,
+    "reference": "10460",
+    "answer": "14",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "BE34D6",
+    "kind": "mass-ratio",
+    "m": 50,
+    "F": 100,
+    "factor": 1.5,
+    "reference": "42268",
+    "answer": "150",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "AF275D",
+    "kind": "graph",
+    "reference": "35135",
+    "answer": "0,5",
+    "N": [
+      2,
+      4,
+      5
+    ],
+    "F": [
+      1,
+      2,
+      2.5
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7DA0BEA3BCAC9DA74DD0231223EC6AF5(copy4)/xs3qstsrc7DA0BEA3BCAC9DA74DD0231223EC6AF5_1_1422278040.png"
+    ],
+    "unit": ""
+  },
+  {
+    "id": "7682C8",
+    "kind": "sled",
+    "m": 5,
+    "F": 6,
+    "reference": "338",
+    "answer": "0,12",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "318091",
+    "kind": "table",
+    "reference": "41559",
+    "answer": "0,4",
+    "N": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "F": [
+      0.8,
+      1.6,
+      2.4,
+      3.2
+    ],
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "4B4E62",
+    "kind": "graph",
+    "reference": "43079",
+    "answer": "0,25",
+    "N": [
+      2,
+      4
+    ],
+    "F": [
+      0.5,
+      1
+    ],
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5C32720D087286214B554F43610250AD(copy2)/xs3qstsrc5C32720D087286214B554F43610250AD_1_1485419884.png"
+    ],
+    "unit": ""
+  },
+  {
+    "id": "EAAA61",
+    "kind": "sled",
+    "m": 8,
+    "F": 16,
+    "reference": "338",
+    "answer": "0,2",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "905C3A",
+    "kind": "area-ratio",
+    "factor": 3,
+    "reference": "37556",
+    "answer": "3",
+    "images": [],
+    "unit": "раза"
+  },
+  {
+    "id": "FEBC8E",
+    "kind": "pressure",
+    "N": 40,
+    "F": 10,
+    "reference": "16843",
+    "answer": "0,25",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "5A62DB",
+    "kind": "pulley-up",
+    "reference": "10483",
+    "answer": "0,5",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B0BA241FC1A39C304214E13ADD9A238F(copy1)/xs3qstsrcB0BA241FC1A39C304214E13ADD9A238F_1_1514218748.png"
+    ],
+    "unit": "кг"
+  },
+  {
+    "id": "DB9550",
+    "kind": "pulley-down",
+    "reference": "10483",
+    "answer": "1,5",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5F77EF50673FBF2E4470CB0A6420DB60(copy2)/xs3qstsrc5F77EF50673FBF2E4470CB0A6420DB60_1_1548154656.gif"
+    ],
+    "unit": "Н"
+  },
+  {
+    "id": "C4469D",
+    "kind": "inclined-force",
+    "reference": "6484",
+    "answer": "12",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0CA02FB95006B47D4F0C7B606582BB91(copy2)/xs3qstsrc0CA02FB95006B47D4F0C7B606582BB91_1_1486655992.png"
+    ],
+    "unit": "Н"
+  }
+]

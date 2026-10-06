@@ -1,0 +1,195 @@
+[
+  {
+    "id": "9F5549",
+    "kind": "distance",
+    "answer": "80",
+    "unit": "см",
+    "reference": "9494",
+    "initial": 40,
+    "masses": [
+      2,
+      2
+    ],
+    "distance": 2,
+    "images": []
+  },
+  {
+    "id": "5E7E7C",
+    "kind": "force",
+    "answer": "0,36",
+    "unit": "пН",
+    "reference": "50696",
+    "initial": 0.16,
+    "masses": [
+      1,
+      1
+    ],
+    "distance": 0.6666666666666666,
+    "factorText": "1·1·1,5²",
+    "distanceText": "r₀ ÷ 1,5",
+    "images": []
+  },
+  {
+    "id": "3FB779",
+    "kind": "planet-mass",
+    "answer": "36",
+    "unit": "",
+    "reference": "12851",
+    "radiusRatio": 6,
+    "images": []
+  },
+  {
+    "id": "9AE31E",
+    "kind": "planet-radius",
+    "answer": "6",
+    "unit": "",
+    "reference": "7174",
+    "forceRatio": 0.027777777777777776,
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/52DC1109372C841849DA325EC5AB6E8F(copy1)/innerimg0.gif"
+    ]
+  },
+  {
+    "id": "AC8852",
+    "kind": "height",
+    "answer": "2,25",
+    "unit": "раза",
+    "reference": "6722",
+    "radii": [
+      3,
+      2
+    ],
+    "heights": [
+      2,
+      1
+    ],
+    "images": []
+  },
+  {
+    "id": "A129A4",
+    "kind": "force",
+    "answer": "0,2",
+    "unit": "пН",
+    "reference": "11925",
+    "initial": 0.2,
+    "masses": [
+      2,
+      2
+    ],
+    "distance": 2,
+    "factorText": "⟦2·2¦2²⟧",
+    "distanceText": "2r₀",
+    "images": []
+  },
+  {
+    "id": "41BBCF",
+    "kind": "force",
+    "answer": "2",
+    "unit": "нН",
+    "reference": "11925",
+    "initial": 8,
+    "masses": [
+      2,
+      0.5
+    ],
+    "distance": 2,
+    "factorText": "⟦2·0,5¦2²⟧",
+    "distanceText": "2r₀",
+    "images": []
+  },
+  {
+    "id": "FE45CD",
+    "kind": "force",
+    "answer": "48",
+    "unit": "нН",
+    "reference": "43053",
+    "initial": 12,
+    "masses": [
+      1,
+      1
+    ],
+    "distance": 0.5,
+    "factorText": "(⟦6 м¦3 м⟧)²",
+    "distanceText": "3 м",
+    "r0": "6 м",
+    "images": []
+  },
+  {
+    "id": "166494",
+    "kind": "force",
+    "answer": "40",
+    "unit": "пН",
+    "reference": "43053",
+    "initial": 10,
+    "masses": [
+      1,
+      1
+    ],
+    "distance": 0.5,
+    "factorText": "(⟦4,8 м¦2,4 м⟧)²",
+    "distanceText": "2,4 м",
+    "r0": "4,8 м",
+    "images": []
+  },
+  {
+    "id": "D9079D",
+    "kind": "force",
+    "answer": "2",
+    "unit": "нН",
+    "reference": "7102",
+    "initial": 32,
+    "masses": [
+      0.5,
+      0.5
+    ],
+    "distance": 2,
+    "factorText": "⟦0,5·0,5¦2²⟧",
+    "distanceText": "2r₀",
+    "images": []
+  },
+  {
+    "id": "379C9D",
+    "kind": "force",
+    "answer": "64",
+    "unit": "пН",
+    "reference": "11925",
+    "initial": 4,
+    "masses": [
+      2,
+      2
+    ],
+    "distance": 0.5,
+    "factorText": "⟦2·2¦0,5²⟧",
+    "distanceText": "r₀ ÷ 2",
+    "images": []
+  },
+  {
+    "id": "BA66EA",
+    "kind": "surface",
+    "answer": "30",
+    "unit": "Н",
+    "reference": "305",
+    "initial": 120,
+    "radii": [
+      1,
+      2
+    ],
+    "images": []
+  },
+  {
+    "id": "C0B561",
+    "kind": "force",
+    "answer": "2,7",
+    "unit": "пН",
+    "reference": "11925",
+    "initial": 0.3,
+    "masses": [
+      3,
+      0.3333333333333333
+    ],
+    "distance": 0.3333333333333333,
+    "factorText": "⟦3·⟦1¦3⟧¦(⟦1¦3⟧)²⟧",
+    "distanceText": "r₀ ÷ 3",
+    "images": []
+  }
+]

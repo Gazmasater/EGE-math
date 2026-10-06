@@ -4,8 +4,9 @@ const { execFileSync } = require('node:child_process');
 const { DatabaseSync } = require('node:sqlite');
 const { collectEquationDefinitions } = require('./audit-equation-roots');
 
-const databaseFile = path.join(__dirname, '..', 'storage', 'solutions.sqlite');
-const db = new DatabaseSync(databaseFile);
+const databaseArgument = process.argv.indexOf('--db');
+const databaseFile = databaseArgument < 0 ? path.join(__dirname, '..', 'storage', 'solutions.sqlite') : path.resolve(process.argv[databaseArgument + 1]);
+const db = new DatabaseSync(databaseFile, {readOnly: true});
 const parameterTaskIds = new Set(Array.from(
   new TextDecoder('windows-1251').decode(fs.readFileSync(path.join(__dirname, '..', 'parameters.raw.html')))
     .matchAll(/<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"]\s+id=['"]q([A-Z0-9]+)['"][^>]*>/gi),
@@ -109,8 +110,10 @@ for (const [taskId, requiredParts] of Object.entries(intervalProofChecks)) {
   }
 }
 
+const equationDefinitions = collectEquationDefinitions();
+const intervalEquationIds = new Set(equationDefinitions.map(definition => definition.taskId));
 const domainTaskIds = rows
-  .filter(row => !parameterTaskIds.has(row.task_id) && /Область допустимых значений|ОДЗ/.test(row.solution))
+  .filter(row => intervalEquationIds.has(row.task_id) && !parameterTaskIds.has(row.task_id) && /Область допустимых значений|ОДЗ/.test(row.solution))
   .map(row => row.task_id)
   .sort();
 const expectedDomainTaskIds = ['638272', 'A6BC58', 'B2FAAF', 'FDA042'];
@@ -157,7 +160,7 @@ const requiredIntervalLabels = {
   D1D574: ['log₇4', 'log₇16'],
   '0BD320': ['√3', 'log₂5']
 };
-for (const definition of collectEquationDefinitions()) {
+for (const definition of equationDefinitions) {
   if (definition.error) {
     errors.push(`${definition.taskId}: исходное уравнение не удалось разобрать для проверки графика.`);
     continue;

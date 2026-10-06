@@ -16,3 +16,8 @@ test('Вложенные формулы сохраняют степени, зн�
   assert.equal(seoPlainText('10<sup>–7</sup> м; h<sub>0</sub>=1,6 м; &alpha;=60&deg;'), '10⁻⁷ м; h₀=1,6 м; α=60°');
   assert.equal(seoPlainText('<math><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></math>'), 'x^(n+1)');
 });
+test('Пустой индекс MathML не сдвигает степень: квадрат скорости F4CD91', () => {
+  assert.equal(seoPlainText('<m:math><m:msubsup> <m:mi>υ</m:mi> <m:mrow></m:mrow> <m:mn>2</m:mn> </m:msubsup></m:math>'), 'υ²');
+  assert.equal(seoPlainText('<math><msubsup><mi>v</mi><mn>0</mn><mrow/></msubsup></math>'), 'v₀');
+  assert.equal(seoPlainText('<math><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></math>'), 'v₀²');
+});

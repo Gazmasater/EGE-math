@@ -1,0 +1,37 @@
+// Порядок вариантов и направлений прочитан с первичных условий и рисунков ФИПИ.
+// 2405C2 исключена: основной график отсутствует в сохранённом первоисточнике.
+const cases={
+ A53641:{kind:'heat-formula',answer:'31',quantities:['solid','fusion'],ref:'11794'},
+ '67AB41':{kind:'phase',answer:'31',segments:['CD','EF'],ref:'25028'},
+ AC1CB5:{kind:'graph',answer:'24',processes:['isoV-cool','isoT-expand'],ref:'10071'},
+ B5F219:{kind:'isothermal-formula',answer:'23',nu:.04,T:450,ref:'28083'},
+ F56923:{kind:'graph',answer:'24',processes:['isoT-compress','isoV-heat'],ref:'7183'},
+ EC8522:{kind:'graph',answer:'32',processes:['isoT-expand','isoV-cool'],ref:'19892'},
+ '5644DE':{kind:'mkt',answer:'32',mode:'energy',ref:'31885'},
+ ABA0D2:{kind:'phase',answer:'21',segments:['EF','GH'],ref:'25028'},
+ '3CD6D3':{kind:'piston',answer:'41',mode:'helium',ref:'19919'},
+ '246E59':{kind:'work-area',answer:'13',ref:'7857'},
+ A6295F:{kind:'heat-formula',answer:'32',quantities:['solid','vaporization'],ref:'11794'},
+ D67CAF:{kind:'carnot',answer:'32',mode:'hot',ref:'20022'},
+ '5EA4AD':{kind:'graph',answer:'32',processes:['isoT-expand','isoP-cool'],ref:'35237'},
+ '5A12CB':{kind:'process',answer:'24',processes:['isoT-compress','isoV-heat'],ref:'7183'},
+ '51D5C1':{kind:'phase',answer:'43',segments:['FG','HK'],ref:'25028'},
+ C371C5:{kind:'phase',answer:'23',segments:['GH','KL'],ref:'25028'},
+ '65ACC9':{kind:'piston',answer:'13',mode:'heavy',ref:'19919'},
+ '8054C4':{kind:'isochoric-formula',answer:'12',m:.160,mu:.040,V:.020,ref:'19919'},
+ '51A69B':{kind:'graph',answer:'42',processes:['isoP-cool','isoT-expand'],ref:'7183'},
+ CADC9A:{kind:'heat-formula',answer:'32',quantities:['vapor','vaporization'],ref:'11794'},
+ CC0498:{kind:'carnot',answer:'43',mode:'cold',ref:'6322'},
+ AB4AE3:{kind:'phase',answer:'43',segments:['FG','KL'],ref:'25028'},
+ E45262:{kind:'graph',answer:'34',processes:['isoP-heat','isoT-expand'],ref:'9025'},
+ '8E7C61':{kind:'heat-formula',answer:'13',quantities:['fusion','vapor'],ref:'11794'},
+ '480A88':{kind:'heat-formula',answer:'41',quantities:['liquid','fusion'],ref:'11794'},
+ '5F3087':{kind:'graph',answer:'41',processes:['pV-expand','isoV-cool'],ref:'44614'},
+ '53C38E':{kind:'piston',answer:'13',mode:'light',ref:'19919'},
+ C4EA84:{kind:'phase',answer:'12',segments:['DE','FG'],ref:'25028'},
+ CD1D80:{kind:'mkt',answer:'21',mode:'temperature',ref:'6893'},
+ '9DE484':{kind:'heat-formula',answer:'42',quantities:['liquid','vaporization'],ref:'11794'},
+ '8C6C8F':{kind:'accumulated-work',answer:'24',ref:'29116'},
+ '8B2ED3':{kind:'piston',answer:'14',mode:'argon',ref:'19919'}
+};
+module.exports={cases};

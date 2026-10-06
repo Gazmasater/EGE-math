@@ -1,0 +1,264 @@
+{
+  "6C2B39": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-20.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/EDB6A41A1218ACF846F178B5BA0EC4E1/xs3qstsrcA41C31C7F108ACC04575354530843593_1_1423664357.png"
+    ],
+    "sourceHash": "282f580e9cf319bdc7c0f1822d7daf14ec9cb89d040c946184df0dc6755707a0",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38941",
+    "match": "variant",
+    "comparison": "В источнике температуру понижают, в ФИПИ повышают. Проверены постоянное количество идеального газа, гидростатический перепад и обратное направление смещения. При нагревании слева вниз, справа вверх; монотонность нового равновесия проверена отдельно.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "В закрытом левом колене уровень ртути понизится, в открытом правом — повысится.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "8B64FD": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-21.raw.html",
+    "images": [],
+    "sourceHash": "011f1837825c97fbde6a35e66abd174a4bd9276a48c11321d513aaccf1b3ce26",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=6401",
+    "match": "variant",
+    "comparison": "Одинаковая внешняя поверхность конуса и силы; источник находит предельное L. Обе проекции Ньютона и предельное f=μN совпадают; уравнение независимо разрешено относительно ω. Проверены N>0 и μ≥ctgα.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "ω_макс = √(⟦g(μ sinα − cosα)¦L sinα(sinα + μ cosα)⟧), если μ ≥ ctgα.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "AE66B8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-21.raw.html",
+    "images": [],
+    "sourceHash": "cab44005e0bbb0f2a0bce7c2a3802c40d17a921fa38d1ef0eef1d99dff12e638",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=6401",
+    "match": "variant",
+    "comparison": "Источник спрашивает L, здесь μ. Из проверенных проекций отдельно найдены f и N; μmin=f/N. Нулевой или отрицательный N исключён. Численного ответа в условии нет; проверены предельные случаи и обе проекции.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "μ_мин = ⟦g cosα + ω²L sin²α¦sinα(g − ω²L cosα)⟧ при ω²L cosα < g.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "A10C3D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-24.raw.html",
+    "images": [],
+    "sourceHash": "a8579da8ebe2a602a3a5c6db55584b4981cefc989d7a097fe31e9159174dcb75",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=6401",
+    "match": "exact",
+    "comparison": "Совпадают наружная поверхность, угол 2α, ω и μ, искомое предельное L. Формула источника эквивалентна g(μsinα−cosα)/(ω²sinα(sinα+μcosα)); дополнены условия ненулевого вращения и удержания.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "L_макс = ⟦g(μ sinα − cosα)¦ω² sinα(sinα + μ cosα)⟧ при ω > 0 и μ > ctgα.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "14D40E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-21.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/25C7008F9B88A8FA4D8B65F5D3F71173/xs3qstsrcF8B1F24DBACCB7B94792F752E8C3AB7B_1_1423916855.png"
+    ],
+    "sourceHash": "b88f7a66d96a39e62b973df4af28ea539833eae015ee4aa6975c3dc7ec420fe8",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=9975",
+    "match": "variant",
+    "comparison": "Схема совпадает: полностью погружённый шар у гладкой вертикальной стенки, нить под 30° к вертикали. Источник: медь 5 кг в масле; ФИПИ: свинец 4 кг в воде. Пересчитаны объём, Архимедова сила и Tcosα=mg−FА: 42,1 Н вместо 52 Н.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "T ≈ 42,1 Н.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "74F8B1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-21.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/43510F2C9CCD93264E32A4E5FC3A0745/xs3qstsrc40B19931AAA2B5934B2F5576667BB3A9_1_1423920384.png"
+    ],
+    "sourceHash": "444de7817d918020c280a82190f40514dc0bfb40f43a183dfd5be33f3d0ae1b8",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=9253",
+    "match": "variant",
+    "comparison": "Источник при R=2 м, h=2,5 м, F=5 Н находит H=3,25 м. Проверены энергия и проекция к центру с cosθ=(h−R)/R. Для данных ФИПИ H=3 м, F=4 Н радиус 2,5 м; исходная схема условная, рассчитанная точка находится на уровне центра.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "R = 2,5 м.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "9847B1": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-21.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4B50F39F305C8D454E39193999970556/xs3qstsrcAEB2C593A71CA4B347F3A814E125CEDE_1_1454759101.png"
+    ],
+    "sourceHash": "8e0b102de82d6844d6e951f759daf025b27fa0da88fc81b91bbb380615c36833",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=3070",
+    "match": "variant",
+    "comparison": "Та же геометрия и v0=2, α=30°, β=60°; источник ищет расстояние AB. ФИПИ спрашивает максимальное удаление от горизонтальной плоскости. Проверены разложение скорости, ускорение −g sinα по склону и отсутствие остановки вдоль AB. Получено h=0,15 м, а не AB≈0,69 м.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "h_макс = 0,15 м = 15 см.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "B1AF16": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-21.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/2A516BFFFB11BB044CBC7DF7F61452D8_28copy1_29/xs3qstsrc2A516BFFFB11BB044CBC7DF7F61452D8_1_1355402474.png"
+    ],
+    "sourceHash": "56b3da1618e9a736fc6c809d4aec902d212a9ca7f7ba4325536e325111d76c95",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=4509",
+    "match": "exact",
+    "comparison": "Совпадают h=1655 м, 3 с, l=1700 м, начальная скорость 800 м/с и дальность. Источник отмечает избыточные данные и даёт два способа с ответом около 64 км. Ручная проверка уточнила округление: 64,222 км из наблюдения и 63,9996 км с 800 м/с; противоречие точных значений не скрыто в решении.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "Расстояние приблизительно 64 км.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "95961E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-22.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E13.C2.20_28copy1_29/xs3qstsrc0637666961F9AA6343729B35BE6091A5_2_1354110472.png"
+    ],
+    "sourceHash": "cc8c064b4935b150d00aacb2018eb2208712732460a6dde99a56502f0916ac5a",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=5384",
+    "match": "exact",
+    "comparison": "Совпадают k=100 Н/м, μ=0,2, d=15 см и искомая масса. Проверены работа трения на полном ходе d+b и граница удержания сжатой пружиной kb=μmg. m=2,5 кг; b=5 см; энергетический остаток равен нулю.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "m = 2,5 кг.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "61681E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-22.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5DCD5F4D6801A5A2402687CED1E1A88E/xs3qstsrc3B460F5DCA3FA059489ED347D6B71CC5_1_1455109820.png"
+    ],
+    "sourceHash": "1aca905054734cea6ed093e0d0948954d43d13d8f9a854acab39fbaa40f304a1",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=8023",
+    "match": "exact",
+    "comparison": "Совпадают m=0,3 кг, l=0,9 м, T0=6 Н, M=1,5 кг. В нижней точке T0−mg=mv²/l, затем горизонтальный импульс mv=(m+M)u. Скорость шарика 3 м/с, бруска 0,5 м/с; энергию при неупругом ударе не сохраняем.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "u = 0,5 м·с⁻¹.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "83BD18": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-22.raw.html",
+    "images": [],
+    "sourceHash": "ee97438600d713428ae695ef005bcfbc52fda2f9daa5682f44098e03afa60a6b",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=7874",
+    "match": "variant",
+    "comparison": "В источнике спрашивается полное время от запуска, здесь только после слипания. Проверены нулевой вертикальный импульс, t1=v0sinα/(2g), высота 3v0²sin²α/(8g). Ответ t2=√3 v0sinα/(2g), без прибавления t1.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "t = ⟦√3 · v₀ sinα¦2g⟧.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "0E0D8F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-24.raw.html",
+    "images": [],
+    "sourceHash": "473d6a6ea8854b295faa3e45f238fe62349d3f5c2842269ecbb110b674dbbba5",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=7874",
+    "match": "exact",
+    "comparison": "Совпадают два одинаковых шарика, общий старт, горизонтальная скорость после удара и искомый момент относительно старта. t1=v0sinα/(2g); t2=√3 v0sinα/(2g); τ=t1+t2. Проверены импульс и высота встречи.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "τ = ⟦(1 + √3) · v₀ sinα¦2g⟧.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "17AE25": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-22.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/123353_28copy1_29/xs3qstsrc07910BA053FFABE248915B1050C11291_1_1328252983.png"
+    ],
+    "sourceHash": "3f775acccc1c3dd4211b893cd1fb87c7fb2cfa14168199b5b93040b8ebb47fa1",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=32651",
+    "match": "method-analogue",
+    "comparison": "Точное задание на Решу ЕГЭ не найдено. Методический аналог подтверждает a=v²/R при заданном ускорении, но не ответ данной задачи. Точное условие и вывод t2/t1=π дополнительно проверены в тренировочном варианте Академии co8a.ru №220926, страница 16. Ручной расчёт через длины AB=R/2, BC=πR и средние скорости независимо даёт π.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "В π раза, то есть приблизительно в 3,14 раза.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам.",
+    "additionalSources": [
+      "https://co8a.ru/wp-content/uploads/2022/10/220926fiz.pdf"
+    ]
+  },
+  "EE2ADC": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-22.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7CA6C99F2B7B940C456A496430CC151E/xs3qstsrcAB9DC9039B7E95BF4FA02C1FB440EEA8_1_1423912680.png"
+    ],
+    "sourceHash": "6405e418510ee3fac8688806009faedf19d269aba4f4b4f9fbc20129e04cdb6d",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=7200",
+    "match": "exact",
+    "comparison": "Совпадают стержень 1 кг, движение доски влево, μ=0,2, α=30°. Проверены направления трения на двух телах и моменты относительно верхнего шарнира. F=μmg/[2(1+μtgα)]≈0,90 Н; знак перед трением положителен в знаменателе.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "F ≈ 0,90 Н.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "B2605C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-22.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/PHIS.E12.C2.15_28copy1_29/xs3qstsrc2A1F7BDCCD5EA3734D6AD532D7A8C539_1_1328252702.png",
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/PHIS.E12.C2.15_28copy1_29/xs3qstsrc2A1F7BDCCD5EA3734D6AD532D7A8C539_2_1328252702.png"
+    ],
+    "sourceHash": "15af6dec92f906560a515dcb18574d46fc1808e8b071e33bba3b8ad65093ba40",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=3813",
+    "match": "variant",
+    "comparison": "Обратный вариант: источник задаёт M=100 г и ищет m≈30 г. В ФИПИ дано m=100 г и требуется M≈330 г. Условие отрыва и энергетическое равенство совпадают, уравнение разрешено относительно другой массы. Проверены натяжение и положительная реакция до первого отрыва при θ=π/6.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "M ≈ 0,330 кг = 330 г.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "B392C4": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-23.raw.html",
+    "images": [],
+    "sourceHash": "d14aa36759fbb5a5424c9d70d53e9c0dec5a84dbca1e1264fd5fd506b078628e",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=2915",
+    "match": "variant",
+    "comparison": "Совпадает модель компенсации бокового сноса √(V²−u²). Источник сравнивает штиль и боковой ветер; ФИПИ сравнивает попутный и боковой. Данные V=328, t1=6, t2=7,5 пересчитаны самостоятельно: u=72 км/ч. Обратная проверка даёт D=2400 км в обоих полётах.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "Скорость ветра 72 км·ч⁻¹ = 20 м·с⁻¹.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "ABDBC2": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-23.raw.html",
+    "images": [],
+    "sourceHash": "479ef84b099774a7215785cd153e4e86632558318ae0e0843077e7fc5821ed2b",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=29762",
+    "match": "variant",
+    "comparison": "Источник задаёт vпули=555 м/с и находит m=5 г. ФИПИ задаёт 5 г и спрашивает скорость; остальные данные совпадают. Проверены скорости бруска 6 и 5 м/с, знаки в импульсе, два участка сохранения энергии и потеря энергии при ударе. Ответ 555 м/с.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "v = 555 м·с⁻¹.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам."
+  },
+  "3C3E97": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-23.raw.html",
+    "images": [],
+    "sourceHash": "77eec4290cf75a71963d4500af91204a9c04042ccf3ae65009de80f1b6a85d0d",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=1022",
+    "match": "method-analogue",
+    "comparison": "Точный вариант на Решу ЕГЭ не найден. Проверены F=pS и работа газа на перемещении pSΔx в выводе источника; кинетическая энергия дополнительно сверена с №9253. Точное исходное условие найдено у учителя И.А.Поповой, C2.25. Численный ответ получен независимо: площадь 0,00159043 м², энергия 2250000 Дж, средняя сила 750000 Н, давление 4,7157·10⁸ Па. Ручная проверка размерности и обратной работы выполнена; точного внешнего численного эталона не заявляем.",
+    "reviewed": true,
+    "checkedAt": "2026-09-24",
+    "expectedAnswer": "p_ср ≈ 4,7 · 10⁸ Па.",
+    "sourceAccess": "Сохранённое полное условие и рисунки ФИПИ; онлайн-банк вернул тайм-аут. Независимая сверка выполнена по доступным открытым страницам.",
+    "additionalSources": [
+      "https://phys-ege.sdamgia.ru/problem?id=9253",
+      "https://fizmatklass.ucoz.ru/index/mekhanicheskaja_ehnergija_rabota_zakon_sokhranenija_ehnergii/0-57"
+    ]
+  }
+}

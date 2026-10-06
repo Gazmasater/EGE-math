@@ -1,0 +1,272 @@
+{
+  "BA974A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Ящик массой 10 кг равномерно движется по прямой по горизонтальной поверхности под действием постоянной горизонтальной силы тяги величиной 25 Н. Каков коэффициент трения между ящиком и поверхностью?",
+    "sourceHash": "2e32a6dba6f428641eb91c3f4db3bea45aaaf8142c82be1e7f910ead404bc4df",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=17647",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение. Совпадают 10 кг, горизонтальная тяга 25 Н, равномерное прямолинейное движение и ответ 0,25. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "498B07": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. При исследовании зависимости модуля силы трения скольжения F→_(тр) от модуля нормальной составляющей силы реакции опоры N→ были получены следующие данные. F_(тр), Н 10 15 20 25 N, Н 40 60 80 100 Определите по результатам исследования коэффициент трения скольжения.",
+    "sourceHash": "7b0e70ffe632e065b2f0a97a4675a78f0ded334f450998b86c66dad161877f7b",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=41559",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Внешняя таблица содержит 0,8; 1,6; 2,4; 3,2 Н и 2; 4; 6; 8 Н и даёт 0,4. Первичная таблица содержит 10; 15; 20; 25 Н и 40; 60; 80; 100 Н. Все четыре отношения заново вычислены: 0,25. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "18E7BF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E39804DB287B81124CE84C62529A55C1(copy1)/xs3qstsrcE39804DB287B81124CE84C62529A55C1_1_1485418135.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке приведён график зависимости модуля силы трения скольжения F_(тр) бруска от модуля силы нормального давления N. Каков коэффициент трения?",
+    "sourceHash": "00e45aab2659a72a824af15ffb5c72a8dd7a4545d3b58c2a60fec9a225cc34dd",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=25018",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Совпадает наклон 0,5 и крайняя точка (10 Н; 5 Н). Первичная сетка имеет шаг 1 Н по силе трения и верхнюю границу 5 Н, внешняя — шаг 2 Н и границу 8 Н. Все первичные точки прочитаны отдельно. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "932D10": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6BB3ABEDEECBA4364DBA2A4C9EB9FF42(copy1)/xs3qstsrc6BB3ABEDEECBA4364DBA2A4C9EB9FF42_1_1486739808.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На графике приведена зависимость модуля силы трения скольжения от модуля силы нормального давления. Каков коэффициент трения?",
+    "sourceHash": "f23269db464a09f85b57cf161238078ab587fba167c3541361d08429391fb05c",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=11545",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Внешняя точка (24 Н; 3 Н) и первичные (4 Н; 0,5 Н), (8 Н; 1 Н), (12 Н; 1,5 Н) имеют одинаковое отношение 0,125. Разные шкалы не смешиваются. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,125",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "328611": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-5.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5B275BE4ED068ACD424BC5E73AED2198(copy1)/xs3qstsrc5e5f6d693e7944fc8ba3ba884693fe38_1_1758618901.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. К системе из кубика массой 2 кг и двух невесомых пружин приложена постоянная горизонтальная сила F→ (см. рисунок). Система покоится. Между кубиком и опорой трения нет. Левый край первой пружины прикреплён к стенке. Жёсткость первой пружины k₁ = 400 Н/м. Жёсткость второй пружины k₂ = 800 Н/м. Удлинение второй пружины равно 2 см. Определите модуль силы F. Н",
+    "sourceHash": "460da3dcab9d941fed080956effb082f4e3ce5dd24431a5ba473faed3ce5c1b3",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=734",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Прочитан внешний вариант двух пружин: k1=300, k2=600 Н на метр, x1=2 см, ответ F=6 Н. Здесь k1=400, k2=800 Н на метр, дано x2=2 см; F=16 Н, x1=4 см. Указанное в первичном условии отсутствие трения учтено; ошибочная тема исправляется отдельно. Исходные обе схемы просмотрены. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "16",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "412F2F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DEBD7CE777BEB05C4622AE555B94B6E1(copy2)/xs3qstsrc6016519D582586AB4DB3BE8E98835985_3_1772110316.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На графике приведена зависимость модуля силы трения скольжения от модуля нормальной составляющей силы реакции опоры. Каков коэффициент трения?",
+    "sourceHash": "51e1aeee93661120039bc31410b1f9d4e86f1d0eb9f6efa930943ac187016942",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=25018",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Совпадают точки N=4, 8, 10 Н и Fтр=2, 4, 5 Н и ответ 0,5. Первичная сетка заканчивается на 6 Н, внешняя продолжается выше до 8 Н; поэтому зафиксирован вариант рисунка. Оба рисунка просмотрены. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "265725": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. По горизонтальному полу по прямой равномерно тянут ящик, приложив к нему горизонтальную силу 35 Н. Коэффициент трения скольжения между полом и ящиком равен 0,25. Чему равна масса ящика? кг",
+    "sourceHash": "ae33b355783da599fba0310988a641c2a67f96fc5f4b7526f411474701909066",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10460",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение. Совпадают тяга 35 Н, коэффициент 0,25, равномерное движение и ответ 14 кг. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "14",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "BE34D6": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-7.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. При движении по горизонтальной поверхности на тело массой 50 кг действует сила трения скольжения, равная 100 Н. Какой станет сила трения скольжения после увеличения массы тела в 1,5 раза, если коэффициент трения не изменится? Н",
+    "sourceHash": "dc7b191c86a04ad188d92debae22b3537b715416882cf38b0ddbf660eb80361b",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=42268",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение. Совпадают масса 50 кг, сила трения 100 Н, увеличение массы в 1,5 раза и постоянство коэффициента. Результат 150 Н проверен через прежнюю и новую реакцию опоры. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "150",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "AF275D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-8.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7DA0BEA3BCAC9DA74DD0231223EC6AF5(copy4)/xs3qstsrc7DA0BEA3BCAC9DA74DD0231223EC6AF5_1_1422278040.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На графике приведена зависимость модуля силы трения скольжения от модуля силы нормального давления. Каков коэффициент трения?",
+    "sourceHash": "bde2eaef53c260aeff8e19824c6caebb282b3354c9183168f7fa3b93004a8462",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=35135",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Внешний график заканчивается в (4 Н; 2 Н); первичный продолжается до (5 Н; 2,5 Н), имеет более подробную сетку. Совпадающие точки (2 Н; 1 Н) и (4 Н; 2 Н) и первичная конечная точка дают 0,5. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "7682C8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Санки массой 5 кг скользят по горизонтальной дороге. Сила трения скольжения их полозьев о дорогу равна 6 Н. Каков коэффициент трения скольжения полозьев санок о дорогу?",
+    "sourceHash": "6986c9b76d08502a2e3922c785a408fbfa1f5ac73c23f2b011c6326257d2b2b8",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=338",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение. Совпадают масса санок 5 кг, сила трения 6 Н и ответ 0,12; g=10 м в секунду за секунду. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,12",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "318091": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-11.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. При исследовании зависимости модуля силы трения скольжения F→_(тр) от модуля нормальной составляющей силы реакции опоры N→ были получены следующие данные. F_(тр), Н 0,8 1,6 2,4 3,2 N, Н 2,0 4,0 6,0 8,0 Определите по результатам исследования коэффициент трения скольжения.",
+    "sourceHash": "d938cca9bebfbefd6d7145d3f387e50ac7eabe38195f71628fa01fa8d1607b1b",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=41559",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение. Совпадают все четыре столбца таблицы, отношение 0,4 и закон сухого скольжения. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,4",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "4B4E62": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-12.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5C32720D087286214B554F43610250AD(copy2)/xs3qstsrc5C32720D087286214B554F43610250AD_1_1485419884.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. При исследовании зависимости модуля силы трения скольжения F_(тр) бруска от модуля силы нормального давления N получен график, представленный на рисунке. Определите коэффициент трения.",
+    "sourceHash": "4f0ac5d4f6b32db8061d80f395a7f64549ed02599a152bb5faee364a091c3941",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=43079",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Первичный график содержит точки (2 Н; 0,5 Н) и (4 Н; 1 Н); внешний имеет более широкий диапазон до 14 Н. Их наклон 0,25 совпадает. Первичные пределы и деления сохранены. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "EAAA61": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Сила трения, действующая на скользящие по горизонтальной ледяной дороге стальные санки массой 8 кг, равна 16 Н. Каков коэффициент трения скольжения стали по льду?",
+    "sourceHash": "be44fb147b8cb2ce7c738ae2d6f7b2e1edae3f2321753df3d6ce6928b04918c1",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=338",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Внешние санки имеют массу 5 кг и трение 6 Н (0,12). Здесь 8 кг и 16 Н, что даёт 0,2. Условие равномерности не добавляется: N=mg следует только из отсутствия вертикального ускорения. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,2",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "905C3A": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-13.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Тело движется по горизонтальной шероховатой поверхности. Во сколько раз увеличится сила трения, действующая на тело, если его массу увеличить в 3 раза, а площадь соприкосновения тела с поверхностью увеличить в 2 раза? в раз(а)",
+    "sourceHash": "5d8529dcb691aebc8b1a7e5414f74ab91484713799531db9e524cdf28b14e521",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=37556",
+    "match": "reviewed-method-analogue",
+    "comparison": "Прочитаны первичное условие и независимое решение. Методический аналог, не точное численное совпадение: внешний брусок 0,2 кг, сила 0,3 Н, площадь 15 см² даёт коэффициент 0,15; площадь в законе Fтр=μmg не участвует. Здесь отдельно выведено отношение сил 3 при утроении массы и удвоении площади, с неизменным материалом контакта. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "3",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "FEBC8E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Тело движется по горизонтальной плоскости. Нормальная составляющая силы воздействия тела на плоскость равна 40 Н, сила трения равна 10 Н. Определите коэффициент трения скольжения.",
+    "sourceHash": "777cbf606ef61203fcac4ac85bf2083950fc422156b4ba7d0f68c03e501641fb",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=16843",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение. Совпадают нормальное давление 40 Н, трение 10 Н и ответ 0,25. По третьему закону Ньютона модуль давления равен модулю реакции опоры; силы приложены к разным телам. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/catalog-213.html"
+  },
+  "5A62DB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-17.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B0BA241FC1A39C304214E13ADD9A238F(copy1)/xs3qstsrcB0BA241FC1A39C304214E13ADD9A238F_1_1514218748.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Груз массой 1 кг, находящийся на столе, связан лёгкой нерастяжимой нитью, переброшенной через идеальный блок, с другим грузом. На первый груз действует горизонтальная постоянная сила F→, равная по модулю 10 Н (см. рисунок). Второй груз движется из состояния покоя с ускорением 2 м/с², направленным вверх. Коэффициент трения скольжения первого груза по поверхности стола равен 0,2. Чему равна масса второго груза? кг",
+    "sourceHash": "e338d5ca8ae98c1db602e1f1a653e5454f85718de298f45f1d2a7e2e5bd6a78b",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10483",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение. Совпадают схема, M=1 кг, F=10 Н влево, μ=0,2 и ускорение второго груза вверх 2 м в секунду за секунду. Ответ 0,5 кг. Равенство натяжений обосновано лёгкостью нити и идеальностью блока, равенство модулей ускорений — нерастяжимостью. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "0,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/problem-10483.html"
+  },
+  "DB9550": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-18.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5F77EF50673FBF2E4470CB0A6420DB60(copy2)/xs3qstsrc5F77EF50673FBF2E4470CB0A6420DB60_1_1548154656.gif"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Груз массой M = 1 кг, лежащий на столе, связан лёгкой нерастяжимой нитью, переброшенной через идеальный блок, с грузом массой m = 0,75 кг. На первый груз действует горизонтальная постоянная сила F→ (см. рисунок). Второй груз движется из состояния покоя с ускорением 2 м/с², направленным вниз. Коэффициент трения скольжения первого груза по поверхности стола равен 0,25. Чему равен модуль силы F→? Н",
+    "sourceHash": "938b8b4b2038bf38f7ec420572f165e9ef349567cbd0a52e938ebaf8d1f2b05e",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10483",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Внешний вариант ускоряет второй груз вверх и ищет массу при F=10 Н, μ=0,2. Здесь m=0,75 кг, μ=0,25, второй груз начинает двигаться вниз. Трение на первом грузе меняет направление: влево. Собственные уравнения дают T=6 Н, F=1,5 Н; оба ускорения обратно проверены. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "1,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/problem-10483.html"
+  },
+  "C4469D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-19.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/0CA02FB95006B47D4F0C7B606582BB91(copy2)/xs3qstsrc0CA02FB95006B47D4F0C7B606582BB91_1_1486655992.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Брусок массой m=2 кг движется поступательно по горизонтальной плоскости под действием постоянной силы, направленной под углом α=30° к горизонту (см. рисунок). Коэффициент трения между бруском и плоскостью μ=0,2. Модуль силы трения, действующей на брусок, F_(тр)=2,8 Н. Чему равен модуль силы F? Н",
+    "sourceHash": "02266e74de586f4fedbd231595d290b3e780b6a9bd8299760cf50fc6541fcc00",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=6484",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение. Внешний вариант с теми же m=2 кг, углом 30° и трением 2,8 Н задаёт F=12 Н и ищет μ=0,2. Первичная задача задаёт μ=0,2 и ищет F. Обращение формулы N=mg−Fsinα даёт 12 Н. Обе исходные схемы просмотрены. Собственные вычисления и обратная проверка выполнены.",
+    "expectedAnswer": "12",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-friction-20260930/references/problem-6484.html"
+  }
+}

@@ -7,6 +7,8 @@ const assert=require('node:assert/strict');
 const {DatabaseSync}=require('node:sqlite');
 const {readPhysicsCatalog}=require('./lib/physics-catalog');
 const {taskMatchesTopic,physicsClassification,taskPhysicsTopic}=require('../lib/physics-topics');
+const {physicsTaskPart,physicsTaskType}=require('../lib/physics-task-types');
+const {CATALOGUE_PAGE_SIZE}=require('../lib/catalogue');
 const origin=process.env.SEO_ORIGIN||'http://127.0.0.1:8765';
 const out=path.resolve(process.env.SEO_ARTIFACTS||path.join(os.tmpdir(),'ege-seo-browser'));
 fs.mkdirSync(out,{recursive:true});
@@ -17,7 +19,7 @@ const proc=spawn(chrome,['--headless','--no-sandbox','--disable-gpu','--disable-
 const serverFile=process.env.SEO_SERVER;
 const server=serverFile ? spawn(process.execPath,[serverFile],{env:{...process.env,PORT:new URL(origin).port},stdio:'ignore'}) : null;
 async function run() {
-  const physics=readPhysicsCatalog();
+  const physics=readPhysicsCatalog(undefined,{allAnswerTypes:true});
   const db=new DatabaseSync(path.resolve(__dirname,'../storage/solutions.sqlite'),{readOnly:true});
   const published=new Set(db.prepare('SELECT task_id FROM solutions WHERE published=1').all().map(row=>row.task_id));db.close();
   if(server) {
@@ -46,11 +48,15 @@ async function run() {
     if(r.exceptionDetails)throw new Error(JSON.stringify(r.exceptionDetails));return r.result.value;
   };
   await call('Page.enable');await call('Network.enable');
-  await call('Network.setBlockedURLs',{urls:['*mc.yandex*','*challenges.cloudflare*']});
+  await call('Network.setBlockedURLs',{urls:['*mc.yandex*','*challenges.cloudflare*','*yandex.ru/ads/system/*','*an.yandex*']});
   const navigate=async url=>{
     await call('Page.navigate',{url});
     for(let n=0;n<120;n++) {
-      if(await evaluate(`location.href.split('#')[0]===${JSON.stringify(url)} && document.readyState==='complete'`))break;
+      try {
+        if(await evaluate(`location.href.split('#')[0]===${JSON.stringify(url.split('#')[0])} && document.readyState==='complete'`))break;
+      } catch(error) {
+        if(!/navigated|context.*destroyed/i.test(error.message))throw error;
+      }
       await delay(100);
     }
     await evaluate('document.fonts.ready.then(()=>true)');
@@ -62,8 +68,8 @@ async function run() {
     fs.writeFileSync(path.join(out,file),Buffer.from(r.data,'base64'));
   };
   const report={origin,checkedAt:new Date().toISOString(),pages:[],noJavaScript:[],errors:[]};
-  const paths=process.env.SEO_PATHS?process.env.SEO_PATHS.split(','):['/math','/','/planimetry','/parameters','/equations','/inequalities','/optimal','/numbers','/finance',
-    '/physics?topic=1.1','/physics?topic=1.3','/physics?topic=4.3','/tasks/083006','/tasks/36135B','/tasks/002D3A','/tasks/92FD74','/tasks/F4D70D'];
+  const paths=process.env.SEO_PATHS?process.env.SEO_PATHS.split(','):['/ege','/ege/math','/ege/physics','/math','/','/?topic=plane#tasks','/?topic=word-problems.percent#tasks','/?topic=1.2#tasks','/planimetry','/parameters','/equations','/inequalities','/optimal','/numbers','/finance',
+    '/physics','/physics?topic=kinematics#tasks','/physics?topic=experiment#tasks','/physics/part-2?topic=1.1#tasks','/physics/part-2?topic=4.3#tasks','/tasks/083006','/tasks/36135B','/tasks/002D3A','/tasks/92FD74','/tasks/F4D70D'];
   for(const [name,width,height] of [['desktop',1280,960],['mobile',390,844]]) {
     await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
     for(const url of paths) {
@@ -79,11 +85,32 @@ async function run() {
       if(info.broken.length)report.errors.push(`${url} ${name}: не загружены изображения`);
       if(info.headings!==1||!info.breadcrumbs||info.hiddenByLoading)report.errors.push(`${url} ${name}: заголовок, крошки или загрузка`);
       if(info.tasks!==info.controls)report.errors.push(`${url} ${name}: задачи и кнопки решения расходятся`);
+      if(url.startsWith('/?topic=')||url.startsWith('/physics?topic=')||url.startsWith('/physics/part-2')) {
+        const catalogue=await evaluate(`(()=>{
+          const visible=Array.from(document.querySelectorAll('.qblock')).filter(t=>t.getBoundingClientRect().height>0&&getComputedStyle(t).visibility!=='hidden');
+          const first=visible[0]?.getBoundingClientRect(),header=document.querySelector('.local-header');
+          const headerBottom=getComputedStyle(header).position==='sticky'?header.getBoundingClientRect().bottom:0;
+          return {visible:visible.length,pickerOpen:document.querySelector('.math-topic-picker')?.open,
+            taskInViewport:!!first&&first.top<innerHeight-60&&first.bottom>headerBottom+60};
+        })()`);
+        info.catalogue=catalogue;
+        if(info.tasks&&!catalogue.visible)report.errors.push(`${url} ${name}: все задания скрыты`);
+        if(catalogue.pickerOpen!==false)report.errors.push(`${url} ${name}: меню тем перекрывает задания`);
+        if(url.endsWith('#tasks')&&info.tasks&&!catalogue.taskInViewport)report.errors.push(`${url} ${name}: переход к заданиям оставляет их за экраном`);
+      }
       const taskId=url.match(/^\/tasks\/([A-Z0-9]+)$/)?.[1];
-      if(taskId&&published.has(taskId)&&info.solution<500)report.errors.push(`${url}: не видно полного решения`);
+      if(taskId&&published.has(taskId)) {
+        const complete=await evaluate(`(async()=>{
+          const data=await (await fetch('/api/solutions/${taskId}')).json();
+          const expected=document.createElement('div');expected.innerHTML=data.solutionHtml;
+          const actual=document.querySelector('.seo-task-solution .formatted-solution');
+          return !!actual&&!!expected.textContent.trim()&&actual.textContent===expected.textContent;
+        })()`);
+        if(!complete)report.errors.push(`${url}: не видно полного решения`);
+      }
       if(taskId&&!published.has(taskId)&&info.solution)report.errors.push(`${url}: показано неопубликованное решение`);
       if(taskId&&physics.has(taskId)) {
-        const classification=physicsClassification(physics.get(taskId)),primary=taskPhysicsTopic(physics.get(taskId));
+        const task=physics.get(taskId),classification=physicsClassification(task),primary=physicsTaskType(task)||taskPhysicsTopic(task);
         if(!info.title.includes(`${primary?.name||'Физика'}:`))report.errors.push(`${url}: неверная основная тема после JavaScript`);
         if(classification.reviewStatus==='reviewed') {
           const links=await evaluate(`Array.from(document.querySelectorAll('.physics-task-topics a'),a=>new URL(a.href).searchParams.get('topic'))`);
@@ -93,7 +120,7 @@ async function run() {
       report.pages.push({url,viewport:name,...info});
       const file=url==='/'?'home':url.slice(1).replace(/[^A-Za-z0-9]/g,'-');
       await screenshot(`${file}-${name}.png`,{x:0,y:0,width,height:info.height,scale:1});
-      if(url==='/physics?topic=1.1') {
+      if(url.split('#')[0]==='/physics/part-2?topic=1.1') {
         await evaluate("document.querySelector('.solution-button').click()");
         for(let n=0;n<50;n++){if(await evaluate("!document.querySelector('.solution-modal').hidden"))break;await delay(100);}
         const modal=await evaluate(`(()=>{const m=document.querySelector('.solution-modal');return {open:!m.hidden,length:m.innerText.length,fractions:m.querySelectorAll('.math-fraction').length};})()`);
@@ -105,13 +132,17 @@ async function run() {
     console.log(`${name}: ${paths.length} страниц, окно решения`);
   }
   await call('Emulation.setScriptExecutionDisabled',{value:true});
-  const kinematicsCount=[...readPhysicsCatalog().values()].filter(task=>taskMatchesTopic(task,'1.1')).length;
-  for(const [url,count] of [['/physics?topic=1.1',kinematicsCount],['/numbers',51],['/tasks/083006',1]]) {
+  const kinematicsCount=[...physics.values()].filter(task=>physicsTaskPart(task)===1&&taskMatchesTopic(task,'1.1')).length;
+  for(const [url,count] of [['/physics?topic=1.1',kinematicsCount],['/physics/part-2?topic=1.1',11],['/numbers',60],['/?topic=1.2',3],['/tasks/083006',1]]) {
     await navigate(origin+url);
     const info=await evaluate(`(()=>{const tasks=Array.from(document.querySelectorAll('.qblock'));const solution=document.querySelector('.seo-task-solution');return{
       tasks:tasks.length,visible:tasks.filter(t=>t.getBoundingClientRect().height>0&&getComputedStyle(t).visibility!=='hidden').length,
-      links:document.querySelectorAll('.task-permalink').length,solution:solution?.innerText.length||0};})()`);
-    if(info.tasks!==count||info.visible!==count||info.links!==count)report.errors.push(`${url}: задачи или ссылки скрыты без JavaScript`);
+      links:document.querySelectorAll('.task-permalink').length,solution:solution?.innerText.length||0,
+      catalogue:JSON.parse(document.getElementById('catalogue-data')?.textContent||'null'),
+      next:document.querySelector('a[rel="next"]')?.getAttribute('href')};})()`);
+    const visibleCount=Math.min(count,CATALOGUE_PAGE_SIZE);
+    if(info.tasks!==visibleCount||info.visible!==visibleCount||info.links!==visibleCount)report.errors.push(`${url}: задачи или ссылки скрыты без JavaScript`);
+    if(!url.startsWith('/tasks/')&&(info.catalogue?.total!==count||(count>CATALOGUE_PAGE_SIZE&&!info.next)))report.errors.push(`${url}: неполный каталог или нет ссылки на следующую страницу без JavaScript`);
     if(url.startsWith('/tasks/')&&info.solution<500)report.errors.push(`${url}: решение скрыто без JavaScript`);
     report.noJavaScript.push({url,...info});
   }

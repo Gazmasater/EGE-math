@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "474F4B",
+    "kind": "temp",
+    "value": "45",
+    "error": "1",
+    "scale": [
+      40.0,
+      50.0,
+      10
+    ],
+    "anchor": 40.0,
+    "steps": 5,
+    "reference": "38721",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/62CDA602CBAFADCD4E409BCFD5A27030(copy1)/xs3qstsrc62CDA602CBAFADCD4E409BCFD5A27030_1_1603197877.gif",
+    "rule": "division"
+  },
+  {
+    "id": "4A99FA",
+    "kind": "V",
+    "value": "0,4",
+    "error": "0,1",
+    "scale": [
+      0.0,
+      1.0,
+      10
+    ],
+    "anchor": 0.0,
+    "steps": 4,
+    "reference": "51470",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/A82C8B35489D841241BD09F8422542DE(copy1)/xs3qstsrcA82C8B35489D841241BD09F8422542DE_1_1768216414.gif",
+    "rule": "division",
+    "range": "voltage3"
+  },
+  {
+    "id": "DD65FF",
+    "kind": "V",
+    "value": "3,8",
+    "error": "0,2",
+    "scale": [
+      2.0,
+      4.0,
+      10
+    ],
+    "anchor": 2.0,
+    "steps": 9,
+    "reference": "10081",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/666EA3972BA7B8E24A59D2E4E3200374(copy1)/xs3qstsrc171d78650bd7441dad58b7dfd3ec08d3_7_1759321382.png",
+    "rule": "division",
+    "range": "voltage6"
+  },
+  {
+    "id": "A46BFA",
+    "kind": "A",
+    "value": "0,46",
+    "error": "0,02",
+    "scale": [
+      0.2,
+      0.4,
+      10
+    ],
+    "anchor": 0.4,
+    "steps": 3,
+    "reference": "9322",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/306BC6C5E53E8680423FAE4AD87958EF(copy2)/xs3qstsrc306BC6C5E53E8680423FAE4AD87958EF_2_1670844927.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "9503F7",
+    "kind": "mA",
+    "value": "36",
+    "error": "2",
+    "scale": [
+      20.0,
+      40.0,
+      10
+    ],
+    "anchor": 20.0,
+    "steps": 8,
+    "reference": "8027",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/301E8D426855AF6D4F09136EABD796DA(copy1)/xs3qstsrc301E8D426855AF6D4F09136EABD796DA_1_1642688609.jpg",
+    "rule": "division",
+    "range": "current60m"
+  },
+  {
+    "id": "1A3704",
+    "kind": "A",
+    "value": "0,30",
+    "error": "0,05",
+    "scale": [
+      0.0,
+      0.5,
+      10
+    ],
+    "anchor": 0.0,
+    "steps": 6,
+    "reference": "8044",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/73B784170ABDA1F845F92C314D93E397(copy1)/xs3qstsrc73B784170ABDA1F845F92C314D93E397_2_1486638269.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "1F660F",
+    "kind": "temp",
+    "value": "19",
+    "error": "1",
+    "scale": [
+      10.0,
+      20.0,
+      10
+    ],
+    "anchor": 10.0,
+    "steps": 9,
+    "reference": "32300",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/64DA465944C5933F4BA0D22AA5F67649(copy3)/xs3qstsrc64DA465944C5933F4BA0D22AA5F67649_2_1707121894.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "189A00",
+    "kind": "F",
+    "value": "1,8",
+    "error": "0,1",
+    "scale": [
+      1.5,
+      2.0,
+      5
+    ],
+    "anchor": 1.5,
+    "steps": 3,
+    "reference": "25038",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/200311F165DCA91A49329FD0662AC097(copy1)/xs3qstsrc200311F165DCA91A49329FD0662AC097_2_1486043836.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "AFA401",
+    "kind": "V",
+    "value": "3,0",
+    "error": "0,2",
+    "scale": [
+      2.0,
+      4.0,
+      10
+    ],
+    "anchor": 2.0,
+    "steps": 5,
+    "reference": "10081",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/F74925A54EFC810043FC526F0EA32CC1(copy1)/xs3qstsrc295910340AC9A57447F467A61D3D9377_2_1721208135.jpg",
+    "rule": "division",
+    "range": "voltage6"
+  },
+  {
+    "id": "96260C",
+    "kind": "F",
+    "value": "3,8",
+    "error": "0,1",
+    "scale": [
+      3.5,
+      4.0,
+      5
+    ],
+    "anchor": 3.5,
+    "steps": 3,
+    "reference": "25038",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/7B01D704AD8D9922496D529D4F7EC9D9(copy2)/xs3qstsrc7B01D704AD8D9922496D529D4F7EC9D9_2_1485420057.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "E4DA0E",
+    "kind": "A",
+    "value": "0,20",
+    "error": "0,05",
+    "scale": [
+      0.0,
+      0.5,
+      10
+    ],
+    "anchor": 0.0,
+    "steps": 4,
+    "reference": "8044",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/B4D257013DE1BD434FEEE0C54F084336(copy1)/xs3qstsrcB4D257013DE1BD434FEEE0C54F084336_4_1641994413.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "396F0B",
+    "kind": "A",
+    "value": "0,20",
+    "error": "0,02",
+    "scale": [
+      0.2,
+      0.4,
+      10
+    ],
+    "anchor": 0.2,
+    "steps": 0,
+    "reference": "9322",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/DB0AFE6C2170B39D4A27D049A7482703(copy1)/xs3qstsrcDB0AFE6C2170B39D4A27D049A7482703_2_1487599929.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "725078",
+    "kind": "V",
+    "value": "4,4",
+    "error": "0,2",
+    "scale": [
+      4.0,
+      5.0,
+      5
+    ],
+    "anchor": 4.0,
+    "steps": 2,
+    "reference": "9035",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/1DD9876F38A29B6E4B129765D4554B29(copy2)/xs3qstsrc1DD9876F38A29B6E4B129765D4554B29_2_1545214010.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "699675",
+    "kind": "F",
+    "value": "1,8",
+    "error": "0,1",
+    "scale": [
+      1.0,
+      2.0,
+      10
+    ],
+    "anchor": 1.0,
+    "steps": 8,
+    "reference": "25038",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/3D8BBDF8A0A28AC342F41E87CC06A4D4/xs3qstsrc3D8BBDF8A0A28AC342F41E87CC06A4D4_1_1700664371.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "4A91B7",
+    "kind": "V",
+    "value": "3,0",
+    "error": "0,2",
+    "scale": [
+      2.0,
+      4.0,
+      10
+    ],
+    "anchor": 2.0,
+    "steps": 5,
+    "reference": "39262",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/3D4C171ED28AA4384D45C9C44CA3D6C6(copy1)/xs3qstsrc3D4C171ED28AA4384D45C9C44CA3D6C6_3_1702970978.jpg",
+    "rule": "division",
+    "range": "voltage6"
+  },
+  {
+    "id": "70C7B0",
+    "kind": "V",
+    "value": "2,2",
+    "error": "0,1",
+    "scale": [
+      2.0,
+      3.0,
+      10
+    ],
+    "anchor": 2.0,
+    "steps": 2,
+    "reference": "29458",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/3D845895DFC3BEEA47DF51C85B35E39B(copy1)/xs3qstsrc3D845895DFC3BEEA47DF51C85B35E39B_2_1640274766.jpg",
+    "rule": "division",
+    "range": "voltage3"
+  },
+  {
+    "id": "72C2B7",
+    "kind": "weight",
+    "value": "1,6",
+    "error": "0,1",
+    "scale": [
+      1.0,
+      1.5,
+      5
+    ],
+    "anchor": 1.0,
+    "steps": 6,
+    "reference": "8045",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/1E698E68E73D80EA4936AE3C31CA4805(copy1)/xs3qstsrc1E698E68E73D80EA4936AE3C31CA4805_1_1514218640.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "79D8BD",
+    "kind": "weight",
+    "value": "1,1",
+    "error": "0,1",
+    "scale": [
+      1.0,
+      1.5,
+      5
+    ],
+    "anchor": 1.0,
+    "steps": 1,
+    "reference": "8045",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/2F87CB2227C6ADB9485F838BB86C5C82(copy1)/xs3qstsrc2F87CB2227C6ADB9485F838BB86C5C82_2_1513175237.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "5CDAB8",
+    "kind": "F",
+    "value": "1,4",
+    "error": "0,1",
+    "scale": [
+      1.0,
+      2.0,
+      10
+    ],
+    "anchor": 1.0,
+    "steps": 4,
+    "reference": "11804",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/99E950C96DE6BAD5415E76FA5641E79E(copy2)/xs3qstsrc99E950C96DE6BAD5415E76FA5641E79E_2_1545382877.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "AC34BE",
+    "kind": "F",
+    "value": "3,2",
+    "error": "0,1",
+    "scale": [
+      3.0,
+      3.5,
+      5
+    ],
+    "anchor": 3.0,
+    "steps": 2,
+    "reference": "25038",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/CC454D4DB06DA06649933AF4A3CE3AE3(copy1)/xs3qstsrc49cea0a22dab402a89959e969c9de3e9_2_1759321731.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "8E40BE",
+    "kind": "F",
+    "value": "2,7",
+    "error": "0,1",
+    "scale": [
+      2.0,
+      3.0,
+      10
+    ],
+    "anchor": 2.0,
+    "steps": 7,
+    "reference": "43502",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/F54A2E1E6C428D2640D9E3A4C5C88697(copy2)/xs3qstsrcF54A2E1E6C428D2640D9E3A4C5C88697_1_1703149106.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "104711",
+    "kind": "A",
+    "value": "0,28",
+    "error": "0,03",
+    "scale": [
+      0.2,
+      0.4,
+      10
+    ],
+    "anchor": 0.2,
+    "steps": 4,
+    "reference": "10480",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/4953C70CF75DA4324B4D4419A8BC58D4(copy1)/xs3qstsrc4953C70CF75DA4324B4D4419A8BC58D4_1_1517506174.jpg",
+    "rule": "fixed",
+    "range": "current06"
+  },
+  {
+    "id": "DE5D18",
+    "kind": "V",
+    "value": "1,4",
+    "error": "0,2",
+    "scale": [
+      1.0,
+      2.0,
+      5
+    ],
+    "anchor": 1.0,
+    "steps": 2,
+    "reference": "9035",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/49DBDAC07A378ACB4BFDF3D603EF6FB3(copy1)/xs3qstsrcAC1CFF85D3459C034BBCB5A25F850A39_2_1487252459.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "E00415",
+    "kind": "man",
+    "value": "274",
+    "error": "2",
+    "scale": [
+      260.0,
+      280.0,
+      10
+    ],
+    "anchor": 260.0,
+    "steps": 7,
+    "reference": "50809",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/5A955AB705F0956B4FA870852F5E6458(copy1)/xs3qstsrc5A955AB705F0956B4FA870852F5E6458_1_1772626993.png",
+    "rule": "division"
+  },
+  {
+    "id": "665C1D",
+    "kind": "over",
+    "value": "194",
+    "error": "3",
+    "scale": [
+      180.0,
+      200.0,
+      10
+    ],
+    "anchor": 180.0,
+    "steps": 7,
+    "reference": "43824",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/A7A54DE3C390A851499196CD1D0FADFD(copy1)/xs3qstsrcA7A54DE3C390A851499196CD1D0FADFD_1_1516890016.jpg",
+    "rule": "fixed"
+  },
+  {
+    "id": "6ED11E",
+    "kind": "V",
+    "value": "3,2",
+    "error": "0,2",
+    "scale": [
+      3.0,
+      4.0,
+      5
+    ],
+    "anchor": 3.0,
+    "steps": 1,
+    "reference": "9035",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/B553BF8E651696AE4615A8D38468FB8B(copy1)/xs3qstsrcD7BB8F9EB0BB95D843851C013771F029_2_1486655765.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "67811E",
+    "kind": "kPa",
+    "value": "99,8",
+    "error": "0,1",
+    "scale": [
+      99.0,
+      100.0,
+      10
+    ],
+    "anchor": 99.0,
+    "steps": 8,
+    "reference": "8194",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/5145A1E70A09862D4BFD763E7D9CC91F(copy1)/xs3qstsrc5145A1E70A09862D4BFD763E7D9CC91F_2_1473074854.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "32781A",
+    "kind": "V",
+    "value": "2,6",
+    "error": "0,1",
+    "scale": [
+      2.0,
+      3.0,
+      5
+    ],
+    "anchor": 2.0,
+    "steps": 3,
+    "reference": "8727",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/CC419CC9F5F39C164EDC52A6E108E49F(copy1)/xs3qstsrc5e936f39afe84bd1826a1821edc110cf_7_1759322442.png",
+    "rule": "half"
+  },
+  {
+    "id": "F36627",
+    "kind": "A",
+    "value": "0,60",
+    "error": "0,02",
+    "scale": [
+      0.4,
+      0.6,
+      10
+    ],
+    "anchor": 0.6,
+    "steps": 0,
+    "reference": "9322",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/1206E0DDCFD293BA423618943D8ADE08(copy3)/xs3qstsrc1206E0DDCFD293BA423618943D8ADE08_2_1673598556.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "B12728",
+    "kind": "A",
+    "value": "0,14",
+    "error": "0,02",
+    "scale": [
+      0.0,
+      0.2,
+      10
+    ],
+    "anchor": 0.0,
+    "steps": 7,
+    "reference": "9322",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/CDD1B64F308AA9D04FFD098499820CE9(copy1)/xs3qstsrc64f65376fb234054a8e28c35888871fc_2_1759324433.jpg",
+    "rule": "division",
+    "range": "current06"
+  },
+  {
+    "id": "DC1F24",
+    "kind": "A",
+    "value": "0,75",
+    "error": "0,05",
+    "scale": [
+      0.5,
+      1.0,
+      10
+    ],
+    "anchor": 0.5,
+    "steps": 5,
+    "reference": "8044",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/318E0D4CE2B7AF444FC1A48BBD7A3795(copy1)/xs3qstsrc318E0D4CE2B7AF444FC1A48BBD7A3795_2_1486991179.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "8B7A2B",
+    "kind": "V",
+    "value": "2,20",
+    "error": "0,15",
+    "scale": [
+      2.0,
+      3.0,
+      10
+    ],
+    "anchor": 2.0,
+    "steps": 2,
+    "reference": "20032",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/80DC89A2F2F2BBD14E9BBE9FF9EED6F0(copy2)/xs3qstsrc80DC89A2F2F2BBD14E9BBE9FF9EED6F0_1_1576578633.jpg",
+    "rule": "fixed",
+    "range": "voltage3"
+  },
+  {
+    "id": "4474DD",
+    "kind": "man",
+    "value": "244",
+    "error": "2",
+    "scale": [
+      240.0,
+      260.0,
+      10
+    ],
+    "anchor": 240.0,
+    "steps": 2,
+    "reference": "50809",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/953A1C093A4A9BCF43CAF80434DD7684(copy1)/xs3qstsrc953A1C093A4A9BCF43CAF80434DD7684_1_1768222456.gif",
+    "rule": "division"
+  },
+  {
+    "id": "9BB8D9",
+    "kind": "hPa",
+    "value": "1004",
+    "error": "3",
+    "scale": [
+      1000.0,
+      1010.0,
+      10
+    ],
+    "anchor": 1000.0,
+    "steps": 4,
+    "reference": "35248",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/710A8C82DFF1A763483CCF5651D99A09(copy1)/xs3qstsrc710A8C82DFF1A763483CCF5651D99A09_2_1643194042.png",
+    "rule": "fixed"
+  },
+  {
+    "id": "868BDE",
+    "kind": "V",
+    "value": "2,0",
+    "error": "0,1",
+    "scale": [
+      2.0,
+      3.0,
+      5
+    ],
+    "anchor": 2.0,
+    "steps": 0,
+    "reference": "8033",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/A240430400A297244B522ECAE4B71EF0(copy1)/xs3qstsrcA240430400A297244B522ECAE4B71EF0_1_1510133576.jpg",
+    "rule": "half"
+  },
+  {
+    "id": "44FB55",
+    "kind": "A",
+    "value": "0,4",
+    "error": "0,1",
+    "scale": [
+      0.0,
+      1.0,
+      10
+    ],
+    "anchor": 0.0,
+    "steps": 4,
+    "reference": "26730",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/835DF79442A3B34E49C78B85394C1619(copy2)/xs3qstsrc835DF79442A3B34E49C78B85394C1619_1_1569494762.jpg",
+    "rule": "division",
+    "range": "current3"
+  },
+  {
+    "id": "781C5A",
+    "kind": "V",
+    "value": "1,6",
+    "error": "0,2",
+    "scale": [
+      1.0,
+      2.0,
+      5
+    ],
+    "anchor": 1.0,
+    "steps": 3,
+    "reference": "9035",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/3BE85420901DAC844CAC4624C749D610(copy1)/xs3qstsrc3BE85420901DAC844CAC4624C749D610_2_1544430321.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "BC985B",
+    "kind": "A",
+    "value": "0,4",
+    "error": "0,1",
+    "scale": [
+      0.0,
+      1.0,
+      10
+    ],
+    "anchor": 0.0,
+    "steps": 4,
+    "reference": "26730",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/524B31FF0EB99C284710104DA724AC0D(copy1)/xs3qstsrc524B31FF0EB99C284710104DA724AC0D_1_1508330860.jpg",
+    "rule": "division",
+    "range": "current3"
+  },
+  {
+    "id": "A82C5A",
+    "kind": "man",
+    "value": "36",
+    "error": "1",
+    "scale": [
+      20.0,
+      40.0,
+      10
+    ],
+    "anchor": 20.0,
+    "steps": 8,
+    "reference": "36040",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/83846A1294FB95BD466AB03C9B3BE566(copy1)/xs3qstsrc8996fa95275b418697e50fcf7d239faf_7_1759927205.png",
+    "rule": "half"
+  },
+  {
+    "id": "60BB56",
+    "kind": "A",
+    "value": "0,20",
+    "error": "0,02",
+    "scale": [
+      0.2,
+      0.4,
+      10
+    ],
+    "anchor": 0.2,
+    "steps": 0,
+    "reference": "9322",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/1D6294F9F51B8D9B441C00AC342021F5(copy1)/xs3qstsrc8dd424e052b84dd796e64a57ffecf537_2_1759324056.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "41B8A9",
+    "kind": "man",
+    "value": "208",
+    "error": "2",
+    "scale": [
+      200.0,
+      220.0,
+      10
+    ],
+    "anchor": 200.0,
+    "steps": 4,
+    "reference": "50809",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/197A93045967987945E0BE2CEBC470B6(copy1)/xs3qstsrc197A93045967987945E0BE2CEBC470B6_2_1768227276.png",
+    "rule": "division"
+  },
+  {
+    "id": "D56BAF",
+    "kind": "V",
+    "value": "2,6",
+    "error": "0,2",
+    "scale": [
+      2.0,
+      3.0,
+      5
+    ],
+    "anchor": 2.0,
+    "steps": 3,
+    "reference": "9035",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/056383434DECA17C4D602660D61E696E(copy1)/xs3qstsrc056383434DECA17C4D602660D61E696E_2_1486638704.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "AF97AC",
+    "kind": "mm",
+    "value": "755",
+    "error": "1",
+    "scale": [
+      750.0,
+      760.0,
+      10
+    ],
+    "anchor": 750.0,
+    "steps": 5,
+    "reference": "50843",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/DF3308C9169387244F455F308F524541(copy1)/xs3qstsrc99AB13540561973B462F264698CA263F_2_1721208152.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "35EAA7",
+    "kind": "mm",
+    "value": "744",
+    "error": "1",
+    "scale": [
+      740.0,
+      750.0,
+      10
+    ],
+    "anchor": 740.0,
+    "steps": 4,
+    "reference": "16863",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/1C9D40CA2F4B97034CF5FFC7744E9879(copy2)/xs3qstsrc1C9D40CA2F4B97034CF5FFC7744E9879_1_1576654939.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "3F9AAB",
+    "kind": "A",
+    "value": "0,6",
+    "error": "0,1",
+    "scale": [
+      0.0,
+      1.0,
+      10
+    ],
+    "anchor": 0.0,
+    "steps": 6,
+    "reference": "26730",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/25CC9EC2448B9C59458AB323EF94B94B(copy2)/xs3qstsrc25CC9EC2448B9C59458AB323EF94B94B_1_1569237835.jpg",
+    "rule": "division",
+    "range": "current3"
+  },
+  {
+    "id": "42A6C3",
+    "kind": "F",
+    "value": "4,7",
+    "error": "0,1",
+    "scale": [
+      4.5,
+      5.0,
+      5
+    ],
+    "anchor": 4.5,
+    "steps": 2,
+    "reference": "25038",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/CECF24EC527C95B54A9C5D4AC05C977D(copy2)/xs3qstsrcCECF24EC527C95B54A9C5D4AC05C977D_1_1539958156.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "001FCD",
+    "kind": "A",
+    "value": "0,96",
+    "error": "0,02",
+    "scale": [
+      0.8,
+      1.0,
+      10
+    ],
+    "anchor": 0.8,
+    "steps": 8,
+    "reference": "9322",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/3BE0FFC86200918741286D49ECAEF5D6(copy2)/xs3qstsrc3BE0FFC86200918741286D49ECAEF5D6_2_1487061367.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "EB5EC2",
+    "kind": "V",
+    "value": "3,2",
+    "error": "0,2",
+    "scale": [
+      3.0,
+      4.0,
+      5
+    ],
+    "anchor": 3.0,
+    "steps": 1,
+    "reference": "8727",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/08AC4862015C9C924AFD401F106F852F(copy1)/xs3qstsrc08AC4862015C9C924AFD401F106F852F_1_1597840706.png",
+    "rule": "division"
+  },
+  {
+    "id": "3583C0",
+    "kind": "V",
+    "value": "3,6",
+    "error": "0,2",
+    "scale": [
+      3.0,
+      4.0,
+      5
+    ],
+    "anchor": 3.0,
+    "steps": 3,
+    "reference": "9035",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/39847320A3709FEE43E23B4B99F260AF(copy1)/xs3qstsrcF348FF29F493B29F41B6135B10953F84_2_1487252676.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "BCC7EE",
+    "kind": "man",
+    "value": "36",
+    "error": "2",
+    "scale": [
+      20.0,
+      40.0,
+      10
+    ],
+    "anchor": 20.0,
+    "steps": 8,
+    "reference": "36040",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/A8BD2E5E4A0C83954D03FC0D7356F2E0(copy3)/xs3qstsrcA8BD2E5E4A0C83954D03FC0D7356F2E0_2_1678362351.png",
+    "rule": "division"
+  },
+  {
+    "id": "E11CE9",
+    "kind": "gravity",
+    "value": "1,6",
+    "error": "0,1",
+    "scale": [
+      1.5,
+      2.0,
+      5
+    ],
+    "anchor": 1.5,
+    "steps": 1,
+    "reference": "8203",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/E0D1AAB8120CA76341DC872AB4AFFF9A(copy1)/xs3qstsrcE0D1AAB8120CA76341DC872AB4AFFF9A_1_1642060435.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "EDAAE9",
+    "kind": "friction",
+    "value": "3,8",
+    "error": "0,2",
+    "scale": [
+      3.0,
+      4.0,
+      5
+    ],
+    "anchor": 3.0,
+    "steps": 4,
+    "reference": "38201",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/BDB6CB9E4552803B45BEAF74EB35CA76(copy1)/xs3qstsrcCCB9792EE749B22D4F0FA28948392ECB_6_1714997879.png",
+    "rule": "division"
+  },
+  {
+    "id": "F6EA64",
+    "kind": "gravity",
+    "value": "3,5",
+    "error": "0,1",
+    "scale": [
+      3.0,
+      3.5,
+      5
+    ],
+    "anchor": 3.0,
+    "steps": 5,
+    "reference": "8203",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/52CF414ADF2C8AD946113F179DA30E08(copy1)/xs3qstsrc52CF414ADF2C8AD946113F179DA30E08_1_1768223205.gif",
+    "rule": "division"
+  },
+  {
+    "id": "E1896D",
+    "kind": "kelvin",
+    "value": "293,0",
+    "error": "2,5",
+    "scale": [
+      10.0,
+      20.0,
+      2
+    ],
+    "anchor": 10.0,
+    "steps": 2,
+    "reference": "32738",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/08727F21BBAF8E994083C400F73D3BE6(copy2)/xs3qstsrc08727F21BBAF8E994083C400F73D3BE6_1_1576658815.jpg",
+    "rule": "half"
+  },
+  {
+    "id": "ECB765",
+    "kind": "kPa",
+    "value": "99,3",
+    "error": "0,1",
+    "scale": [
+      99.0,
+      100.0,
+      10
+    ],
+    "anchor": 99.0,
+    "steps": 3,
+    "reference": "17667",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/5BC0521F53D2B02E41752FAC7B4CCB25(copy2)/xs3qstsrc5BC0521F53D2B02E41752FAC7B4CCB25_1_1576656404.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "E92765",
+    "kind": "F",
+    "value": "3,6",
+    "error": "0,1",
+    "scale": [
+      3.5,
+      4.0,
+      5
+    ],
+    "anchor": 3.5,
+    "steps": 1,
+    "reference": "25038",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/7D5D3C5D2130A5D64968BD13EB6BA138(copy1)/xs3qstsrc7D5D3C5D2130A5D64968BD13EB6BA138_2_1485418244.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "673066",
+    "kind": "A",
+    "value": "0,18",
+    "error": "0,02",
+    "scale": [
+      0.0,
+      0.2,
+      10
+    ],
+    "anchor": 0.0,
+    "steps": 9,
+    "reference": "9322",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/1F97AECD105598CE451141469C974E6C(copy1)/xs3qstsrc1F97AECD105598CE451141469C974E6C_1_1768554754.gif",
+    "rule": "division",
+    "range": "current06"
+  },
+  {
+    "id": "88426E",
+    "kind": "A",
+    "value": "0,80",
+    "error": "0,05",
+    "scale": [
+      0.5,
+      1.0,
+      10
+    ],
+    "anchor": 0.5,
+    "steps": 6,
+    "reference": "8044",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/9AA64037B89A9ADA4A1F25FD17AF0F7A(copy2)/xs3qstsrc9AA64037B89A9ADA4A1F25FD17AF0F7A_2_1486638232.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "BA8438",
+    "kind": "kPa",
+    "value": "100,6",
+    "error": "0,1",
+    "scale": [
+      100.0,
+      101.0,
+      10
+    ],
+    "anchor": 100.0,
+    "steps": 6,
+    "reference": "8194",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/B24BD03A996093224C0726FEAF9C750C(copy2)/xs3qstsrcB24BD03A996093224C0726FEAF9C750C_1_1547640996.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "D62330",
+    "kind": "V",
+    "value": "3,2",
+    "error": "0,1",
+    "scale": [
+      3.0,
+      4.0,
+      5
+    ],
+    "anchor": 3.0,
+    "steps": 1,
+    "reference": "8727",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/EE9E2146158EBC344AC27958CDC1D94E(copy1)/xs3qstsrcEE9E2146158EBC344AC27958CDC1D94E_1_1598517978.png",
+    "rule": "half"
+  },
+  {
+    "id": "55563B",
+    "kind": "F",
+    "value": "2,2",
+    "error": "0,1",
+    "scale": [
+      2.0,
+      2.5,
+      5
+    ],
+    "anchor": 2.0,
+    "steps": 2,
+    "reference": "25038",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/825B1D234BA6A33C4436CCEDF83AA4FA(copy3)/xs3qstsrc825B1D234BA6A33C4436CCEDF83AA4FA_1_1673530333.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "A55E37",
+    "kind": "man",
+    "value": "138",
+    "error": "3",
+    "scale": [
+      120.0,
+      140.0,
+      10
+    ],
+    "anchor": 120.0,
+    "steps": 9,
+    "reference": "43824",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/21379875D15FBB334617259B301181B1(copy1)/xs3qstsrce9388c4344f549359691fb80bddf3e1e_2_1758619642.jpg",
+    "rule": "fixed"
+  },
+  {
+    "id": "A54335",
+    "kind": "mm",
+    "value": "754",
+    "error": "1",
+    "scale": [
+      750.0,
+      760.0,
+      10
+    ],
+    "anchor": 750.0,
+    "steps": 4,
+    "reference": "50843",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/6F94BA4B0415B0DB43FFB7153A90170A(copy2)/xs3qstsrc6F94BA4B0415B0DB43FFB7153A90170A_1_1545649539.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "85E23D",
+    "kind": "mm",
+    "value": "748",
+    "error": "1",
+    "scale": [
+      740.0,
+      750.0,
+      10
+    ],
+    "anchor": 740.0,
+    "steps": 8,
+    "reference": "8198",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/5652F282B084A35D4D83B1AB51942E9A(copy1)/xs3qstsrc5652F282B084A35D4D83B1AB51942E9A_2_1473074303.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "0C0F85",
+    "kind": "V",
+    "value": "4,6",
+    "error": "0,2",
+    "scale": [
+      4.0,
+      5.0,
+      5
+    ],
+    "anchor": 4.0,
+    "steps": 3,
+    "reference": "39932",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/DEE2A0B9E014B61D4B96D39B640AF545(copy1)/xs3qstsrcDEE2A0B9E014B61D4B96D39B640AF545_1_1606892904.gif",
+    "rule": "division"
+  },
+  {
+    "id": "BBF38A",
+    "kind": "V",
+    "value": "4,8",
+    "error": "0,2",
+    "scale": [
+      4.0,
+      5.0,
+      5
+    ],
+    "anchor": 4.0,
+    "steps": 4,
+    "reference": "9035",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/F4243D5DE6D6B637491FC06437FC2805(copy1)/xs3qstsrcA10907B301049F4E402F142ACB35798F_2_1486655978.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "552787",
+    "kind": "V",
+    "value": "1,6",
+    "error": "0,2",
+    "scale": [
+      1.0,
+      2.0,
+      5
+    ],
+    "anchor": 1.0,
+    "steps": 3,
+    "reference": "9035",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/FF16E59AFAE4BA5F420B9ED7FDDC0CD3(copy1)/xs3qstsrcFF16E59AFAE4BA5F420B9ED7FDDC0CD3_2_1483022385.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "A2E38D",
+    "kind": "A",
+    "value": "0,76",
+    "error": "0,02",
+    "scale": [
+      0.6,
+      0.8,
+      10
+    ],
+    "anchor": 0.6,
+    "steps": 8,
+    "reference": "9322",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/EB95DC28FC60848C43478F08AB44431A(copy3)/xs3qstsrcEB95DC28FC60848C43478F08AB44431A_2_1670578779.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "AAC78C",
+    "kind": "F",
+    "value": "2,1",
+    "error": "0,1",
+    "scale": [
+      2.0,
+      3.0,
+      10
+    ],
+    "anchor": 2.0,
+    "steps": 1,
+    "reference": "43502",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/3755A439553F8F184CD42778DC1C6FC9(copy1)/xs3qstsrc3755A439553F8F184CD42778DC1C6FC9_1_1486739915.jpg",
+    "rule": "division"
+  },
+  {
+    "id": "EC538E",
+    "kind": "V",
+    "value": "3,4",
+    "error": "0,2",
+    "scale": [
+      2.0,
+      4.0,
+      10
+    ],
+    "anchor": 2.0,
+    "steps": 7,
+    "reference": "10081",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/88574689C7FE82B84A6F28379183F546(copy1)/xs3qstsrc88574689C7FE82B84A6F28379183F546_1_1643189046.jpg",
+    "rule": "division",
+    "range": "voltage6"
+  },
+  {
+    "id": "3EB386",
+    "kind": "mm",
+    "value": "754",
+    "error": "3",
+    "scale": [
+      750.0,
+      760.0,
+      10
+    ],
+    "anchor": 750.0,
+    "steps": 4,
+    "reference": "35248",
+    "image": "docs/BA1F39653304A5B041B656915DC36B38/questions/88B136FDD733A46B40767B6C5BA1D0F8(copy3)/xs3qstsrc88B136FDD733A46B40767B6C5BA1D0F8_6_1674731174.jpg",
+    "rule": "fixed"
+  }
+]

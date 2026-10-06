@@ -66,12 +66,13 @@ function verifyContent() {
   assert.deepEqual(ids,Object.keys(diagrams).sort(),'Полнота 30 схем');
   assert.deepEqual(ids,Object.keys(sources).sort(),'Полнота источников');
   const catalog = new Set();
+  const longIds = new Set(require('./lib/physics-catalog').readPhysicsCatalog().keys());
   for(const file of fs.readdirSync(root).filter(f=>/^physics-\d+\.raw\.html$/.test(f))) {
     const html=new TextDecoder('windows-1251').decode(fs.readFileSync(path.join(root,file)));
     const blocks=html.split(/(?=<div\s+class=["'][^"']*\bqblock\b)/i);
     for(const block of blocks) {
       const id=block.match(/id=['"]q([A-Fa-f0-9]+)['"]/);
-      if(id && /<div>1\.3(?:\.[1-6])?\s/.test(block))catalog.add(id[1].toUpperCase());
+      if(id && longIds.has(id[1].toUpperCase()) && /<div>1\.3(?:\.[1-6])?\s/.test(block))catalog.add(id[1].toUpperCase());
     }
   }
   assert.deepEqual([...catalog].sort(),ids,'Каталог ФИПИ и набор решений должны совпадать');

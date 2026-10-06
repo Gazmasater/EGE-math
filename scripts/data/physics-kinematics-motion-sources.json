@@ -1,0 +1,86 @@
+{
+  "913207": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-3.raw.html",
+    "images": [],
+    "sourceHash": "773daf87e84b187a39b17c685a448e65bde1c8c5d0d4d34d9b92f9fa2f3b665f",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=35187",
+    "match": "variant",
+    "comparison": "Иной вопрос: внешний вариант меняет R и ω и находит изменение ускорения. ФИПИ сохраняет aц и увеличивает R вчетверо; сравнение u′²/(4R)=u²/R даёт u′=2u. Число 2 получено собственным расчётом, внешний ответ не перенесён. Полные внешние разборы прочитаны; собственный текст и схема подготовлены отдельно.",
+    "expectedAnswer": "2",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "8A3445": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "sourceHash": "8d2ef29812841e81ee569bbeb67d5359d2ab8768727b5a3e02b1f48082a951e2",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=6109",
+    "match": "method-analogue",
+    "comparison": "Внешний пример находит aц=v²/R по скорости на графике и радиусу 4 м. В ФИПИ обратный вопрос без графика: R=2 м, aц=2 м·с⁻². После обращения той же формулы получено v=√(aцR)=2 м·с⁻¹; обратная подстановка выполнена. Полные внешние разборы прочитаны; собственный текст и схема подготовлены отдельно.",
+    "expectedAnswer": "2",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "B5CFF9": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-2.raw.html",
+    "images": [],
+    "sourceHash": "6de79ced45965de5e5f4d307d6cfad1b1b829eecc6ea446d3aeb56a90353209c",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=35161",
+    "match": "exact",
+    "comparison": "Совпадают условие, изменения R вдвое и ω вдвое, формула aц=ω²R и ответ 2. Дополнительно проверено: линейная скорость сохраняется, поэтому удвоение радиуса уменьшает ускорение вдвое. Полные внешние разборы прочитаны; собственный текст и схема подготовлены отдельно.",
+    "expectedAnswer": "2",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "3CF615": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "sourceHash": "597c3516dedf7df73b498e0e46cadc31452e2c2a02edd50b77658801c657f3c5",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=3699",
+    "match": "variant",
+    "comparison": "Внешний закон x=2+t−t² даёт ax=−2. В ФИПИ коэффициенты 23,5,−2, поэтому ax=−4. Сопоставлен коэффициент ax/2, выполнена проверка двумя производными. Сохраняется отрицательная проекция, не модуль. Полные внешние разборы прочитаны; собственный текст и схема подготовлены отдельно.",
+    "expectedAnswer": "−4",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "5E532C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-17.raw.html",
+    "images": [],
+    "sourceHash": "df610ab18d5e9c827666577b18182d7ee24d3b2e1fe7ded003ea98a162fceab5",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=3544",
+    "match": "variant",
+    "comparison": "Внешний пример — встречное движение велосипедистов x1=2t,x2=100−8t. ФИПИ — догонка: оба знака скоростей положительные, xм=50t,xт=30+20t. Общее условие равенства координат даёт 1 ч и 50 км; знаки, единицы и обе координаты проверены вручную. Полные внешние разборы прочитаны; собственный текст и схема подготовлены отдельно.",
+    "expectedAnswer": "50",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "B5F7C7": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-18.raw.html",
+    "images": [],
+    "sourceHash": "71a00f2096147d63ab56371e9381100f545758455627c5446f81604297882124",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=4794",
+    "match": "variant",
+    "comparison": "Внешний пример связывает путь и рост скорости для постоянного ускорения, но спрашивает ускорение при 5→10 м·с⁻¹ и 25 м. В ФИПИ скорости 5→15 и путь20 м; t=2s/(v0+v)=2 с. Независимо a=(225−25)/40=5, t=(15−5)/5=2 с. Полные внешние разборы прочитаны; собственный текст и схема подготовлены отдельно.",
+    "expectedAnswer": "2",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  },
+  "A32BC5": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-18.raw.html",
+    "images": [],
+    "sourceHash": "cab22b3a7b99d599c3cd21d8be3adf3848af2d19493ce4605b1b04660942ff2a",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=10306",
+    "match": "variant",
+    "comparison": "Внешний пример находит путь за2с при росте скорости4→5. ФИПИ скорость уменьшается втрое при |a|=5. Решена система v=v0/3=v0−10: v0=15,v=5,путь20м. Проверены отсутствие остановки за2с и оба уравнения равноускоренного движения. Полные внешние разборы прочитаны; собственный текст и схема подготовлены отдельно.",
+    "expectedAnswer": "20",
+    "reviewed": true,
+    "checkedAt": "2026-09-24"
+  }
+}

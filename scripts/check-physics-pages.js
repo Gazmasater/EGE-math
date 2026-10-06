@@ -68,7 +68,7 @@ async function run() {
     if(r.exceptionDetails)throw new Error(JSON.stringify(r.exceptionDetails));return r.result.value;
   };
   await call('Page.enable');await call('Network.enable');
-  await call('Network.setBlockedURLs',{urls:['*mc.yandex*','*challenges.cloudflare*']});
+  await call('Network.setBlockedURLs',{urls:['*mc.yandex*','*challenges.cloudflare*','*yandex.ru/ads/system/*','*an.yandex*']});
   const navigate=async(url,{allImages=true}={})=>{
     await call('Page.navigate',{url});
     for(let n=0;n<120;n++) {
@@ -140,9 +140,15 @@ async function run() {
     fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(report,null,2)+'\n');
     console.log(`${name}: проверены ${ids.length} страниц и API`);
   }
-  await navigate(`${origin}/physics?topic=${topicCode}`,{allImages:false});
-  // Проверяем все отобранные сервером задачи, включая скрытые текущей страницей пагинации.
-  report.catalog=await evaluate(`Array.from(document.querySelectorAll('.qblock')).filter(q=>q.querySelector('.solution-controls')).map(q=>({id:q.id.slice(1).toUpperCase(),published:!!q.querySelector('.solution-published-badge')})).sort((a,b)=>a.id.localeCompare(b.id))`);
+  await navigate(`${origin}/physics/part-2?topic=${topicCode}`,{allImages:false});
+  // Проверяем реальные условия и отметки на каждой серверной странице.
+  const catalogue = await evaluate(`JSON.parse(document.getElementById('catalogue-data')?.textContent || 'null')`);
+  report.catalog=[];
+  for(let page=1;page<=(catalogue?.totalPages||1);page++) {
+    if(page>1)await navigate(`${origin}/physics/part-2?topic=${topicCode}&page=${page}`,{allImages:false});
+    report.catalog.push(...await evaluate(`Array.from(document.querySelectorAll('.qblock')).filter(q=>q.querySelector('.solution-controls')).map(q=>({id:q.id.slice(1).toUpperCase(),published:!!q.querySelector('.solution-published-badge')}))`));
+  }
+  report.catalog.sort((a,b)=>a.id.localeCompare(b.id));
   if(JSON.stringify(report.catalog.map(t=>t.id))!==JSON.stringify(catalogIds))report.errors.push('Каталог: набор выбранных задач расходится с проверенной темой');
   for(const item of report.catalog)if(item.published!==publishedIds.has(item.id))report.errors.push(`${item.id}: неверная отметка публикации в каталоге`);
   await screenshot('catalog-mobile.png');

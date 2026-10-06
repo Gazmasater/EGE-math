@@ -1,0 +1,469 @@
+[
+  {
+    "id": "E4EF4A",
+    "images": [],
+    "answer": "3",
+    "kind": "faraday-emf",
+    "unit": "В",
+    "phi1": 0.002,
+    "phi2": 0.008,
+    "dt": 0.002,
+    "scale": 1,
+    "given": "Φ₁=2 мВб=0,002 Вб; Φ₂=8 мВб=0,008 Вб; Δt=2 мс=0,002 с"
+  },
+  {
+    "id": "F1E9FF",
+    "images": [],
+    "answer": "4",
+    "kind": "faraday-time",
+    "unit": "с",
+    "phi1": 0.028,
+    "phi2": 0,
+    "emf": 0.007,
+    "given": "Φ₁=28 мВб=0,028 Вб; Φ₂=0; |ℰ|=7 мВ=0,007 В"
+  },
+  {
+    "id": "7FABFC",
+    "images": [],
+    "answer": "20",
+    "kind": "faraday-flux",
+    "unit": "мВб",
+    "dt": 2,
+    "emf": 0.01,
+    "scale": 1000,
+    "given": "Δt=2 с; |ℰ|=0.01 В; Φ₂=0"
+  },
+  {
+    "id": "31DAF4",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/75212478BBF5940C47D4E8E12A9103CE(copy2)/xs3qstsrc75212478BBF5940C47D4E8E12A9103CE_1_1579853655.png"
+    ],
+    "answer": "6",
+    "kind": "self-graph",
+    "unit": "мкВ",
+    "L": 0.001,
+    "I1": 0,
+    "I2": 0.03,
+    "t1": 0,
+    "t2": 5,
+    "dt": 5,
+    "scale": 1000000.0
+  },
+  {
+    "id": "458C72",
+    "images": [],
+    "answer": "1",
+    "kind": "energy-inductance",
+    "unit": "мГн",
+    "W": 0.0125,
+    "I": 5,
+    "scale": 1000
+  },
+  {
+    "id": "04487F",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CF6A8DB12C93860B43F9D017649A8C0C(copy2)/xs3qstsrcCF6A8DB12C93860B43F9D017649A8C0C_1_1538120571.gif"
+    ],
+    "answer": "2",
+    "kind": "faraday-max",
+    "unit": "",
+    "slopes": [
+      8,
+      -12,
+      0,
+      2.6666666666666665
+    ]
+  },
+  {
+    "id": "C9207F",
+    "images": [],
+    "answer": "6",
+    "kind": "flux-ratio",
+    "unit": "раз",
+    "Bratio": 2,
+    "Sratio": 3
+  },
+  {
+    "id": "D747BC",
+    "images": [],
+    "answer": "7,2",
+    "kind": "energy",
+    "unit": "Дж",
+    "L": 0.4,
+    "I": 6,
+    "scale": 1
+  },
+  {
+    "id": "9FB8B0",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8067DF7353F7A3094676E71D4D9E3CDD(copy1)/xs3qstsrc8067DF7353F7A3094676E71D4D9E3CDD_1_1539935738.png"
+    ],
+    "answer": "6",
+    "kind": "faraday-graph",
+    "unit": "В",
+    "phi1": 4,
+    "phi2": -8,
+    "t1": 2,
+    "t2": 4,
+    "dt": 2,
+    "scale": 1,
+    "given": "По графику: t₁=2 с, Φ₁=4 Вб; t₂=4 с, Φ₂=−8 Вб"
+  },
+  {
+    "id": "47DB17",
+    "images": [],
+    "answer": "12",
+    "kind": "faraday-emf",
+    "unit": "мВ",
+    "phi1": 0.024,
+    "phi2": 0,
+    "dt": 2,
+    "scale": 1000,
+    "given": "Φ₁=24 мВб=0,024 Вб; Φ₂=0; Δt=2 с"
+  },
+  {
+    "id": "A7972E",
+    "images": [],
+    "answer": "0,28",
+    "kind": "self-emf",
+    "unit": "В",
+    "L": 0.4,
+    "I1": 2.8,
+    "I2": 0,
+    "dt": 4,
+    "scale": 1
+  },
+  {
+    "id": "C38B59",
+    "images": [],
+    "answer": "0,2",
+    "kind": "rotating-field",
+    "unit": "мТл",
+    "area": 0.001,
+    "amp": 2e-07,
+    "freq": 20
+  },
+  {
+    "id": "DB72A1",
+    "images": [],
+    "answer": "12",
+    "kind": "self-emf",
+    "unit": "В",
+    "L": 0.2,
+    "I1": 2,
+    "I2": 5,
+    "dt": 0.05,
+    "scale": 1
+  },
+  {
+    "id": "567FA0",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/A38E1707259AB962428D2D9999AA2B25(copy1)/xs3qstsrcA38E1707259AB962428D2D9999AA2B25_1_1763726756.png"
+    ],
+    "answer": "4",
+    "kind": "self-graph",
+    "unit": "мВ",
+    "L": 0.004,
+    "I1": 3,
+    "I2": 1,
+    "t1": 1,
+    "t2": 3,
+    "dt": 2,
+    "scale": 1000
+  },
+  {
+    "id": "9C35AF",
+    "images": [],
+    "answer": "9",
+    "kind": "emf-ratio",
+    "unit": "мВ",
+    "emf": 0.006,
+    "Tratio": 0.3333333333333333,
+    "Bratio": 0.5
+  },
+  {
+    "id": "0C01C8",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/009B1D848543A9934DAC6BD4CD2910BF(copy1)/xs3qstsrc009B1D848543A9934DAC6BD4CD2910BF_1_1766484133.png"
+    ],
+    "answer": "22,5",
+    "kind": "self-graph",
+    "unit": "мкВ",
+    "L": 0.003,
+    "I1": 0,
+    "I2": 0.03,
+    "t1": 0,
+    "t2": 4,
+    "dt": 4,
+    "scale": 1000000.0
+  },
+  {
+    "id": "1616C4",
+    "images": [],
+    "answer": "2",
+    "kind": "rotating-field",
+    "unit": "мТл",
+    "area": 0.002,
+    "amp": 4e-06,
+    "freq": 10
+  },
+  {
+    "id": "D11DCF",
+    "images": [],
+    "answer": "0,9",
+    "kind": "energy",
+    "unit": "мДж",
+    "L": 0.0002,
+    "I": 3,
+    "scale": 1000
+  },
+  {
+    "id": "993D9E",
+    "images": [],
+    "answer": "30",
+    "kind": "energy-inductance",
+    "unit": "мГн",
+    "W": 0.54,
+    "I": 6,
+    "scale": 1000
+  },
+  {
+    "id": "E4A291",
+    "images": [],
+    "answer": "2",
+    "kind": "rotating-area",
+    "unit": "см²",
+    "B": 0.002,
+    "amp": 4e-07,
+    "freq": 100
+  },
+  {
+    "id": "49B4E8",
+    "images": [],
+    "answer": "0,4",
+    "kind": "energy-inductance",
+    "unit": "Гн",
+    "W": 3.2,
+    "I": 4,
+    "scale": 1
+  },
+  {
+    "id": "AA47E7",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/35BE0F7CCB979B3E46E87EA412D0A695(copy1)/xs3qstsrcA62526421E75BE124F64493E5DCFD6AB_1_1486045368.png"
+    ],
+    "answer": "6",
+    "kind": "self-graph",
+    "unit": "мкВ",
+    "L": 0.001,
+    "I1": 0,
+    "I2": 0.03,
+    "t1": 0,
+    "t2": 5,
+    "dt": 5,
+    "scale": 1000000.0
+  },
+  {
+    "id": "A9CEE5",
+    "images": [],
+    "answer": "0,2",
+    "kind": "energy",
+    "unit": "Дж",
+    "L": 0.1,
+    "I": 2,
+    "scale": 1
+  },
+  {
+    "id": "C453EB",
+    "images": [],
+    "answer": "8",
+    "kind": "energy-current",
+    "unit": "А",
+    "W": 0.64,
+    "L": 0.02
+  },
+  {
+    "id": "B9F965",
+    "images": [],
+    "answer": "5",
+    "kind": "energy",
+    "unit": "Дж",
+    "L": 0.4,
+    "I": 5,
+    "scale": 1
+  },
+  {
+    "id": "24F36E",
+    "images": [],
+    "answer": "32",
+    "kind": "faraday-flux",
+    "unit": "Вб",
+    "dt": 4,
+    "emf": 8,
+    "scale": 1,
+    "given": "Δt=4 с; |ℰ|=8 В; Φ₂=0"
+  },
+  {
+    "id": "515065",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/FA7908E710A8B98740519D072F3BD6B5(copy1)/xs3qstsrcd8885255cea9449aa20273856bddef08_3_1758619435.png"
+    ],
+    "answer": "0,9",
+    "kind": "self-graph",
+    "unit": "мВ",
+    "L": 0.0006,
+    "I1": 0,
+    "I2": 6,
+    "t1": 0,
+    "t2": 4,
+    "dt": 4,
+    "scale": 1000
+  },
+  {
+    "id": "C9466E",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/65AB79355D059A2D448248AA54C5F484(copy3)/xs3qstsrc65AB79355D059A2D448248AA54C5F484_1_1576584587.png"
+    ],
+    "answer": "4",
+    "kind": "self-graph",
+    "unit": "мкВ",
+    "L": 0.001,
+    "I1": 0.02,
+    "I2": 0,
+    "t1": 15,
+    "t2": 20,
+    "dt": 5,
+    "scale": 1000000.0
+  },
+  {
+    "id": "3A606B",
+    "images": [],
+    "answer": "15",
+    "kind": "faraday-flux",
+    "unit": "мВб",
+    "dt": 3,
+    "emf": 0.005,
+    "scale": 1000,
+    "given": "Δt=3 с; |ℰ|=0.005 В; Φ₂=0"
+  },
+  {
+    "id": "B8FD36",
+    "images": [],
+    "answer": "0,4",
+    "kind": "self-inductance",
+    "unit": "Гн",
+    "emf": 200,
+    "dt": 0.02,
+    "deltaI": 10
+  },
+  {
+    "id": "159D34",
+    "images": [],
+    "answer": "20",
+    "kind": "self-current",
+    "unit": "А",
+    "L": 0.001,
+    "emf": 0.2,
+    "dt": 0.1
+  },
+  {
+    "id": "1DB033",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/549DDD29B34AB1DA46B6166661B7C7C1(copy1)/xs3qstsrc549DDD29B34AB1DA46B6166661B7C7C1_1_1509198036.png"
+    ],
+    "answer": "2",
+    "kind": "self-graph",
+    "unit": "мкВ",
+    "L": 0.001,
+    "I1": 0.03,
+    "I2": 0.02,
+    "t1": 5,
+    "t2": 10,
+    "dt": 5,
+    "scale": 1000000.0
+  },
+  {
+    "id": "A72A3C",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/06C90A47A6D6BE2444BB3BA586C807B0(copy1)/xs3qstsrc8719020A532E8CDE4881C30173F581E7_1_1486045591.png"
+    ],
+    "answer": "4",
+    "kind": "self-graph",
+    "unit": "мкВ",
+    "L": 0.001,
+    "I1": 0.02,
+    "I2": 0,
+    "t1": 15,
+    "t2": 20,
+    "dt": 5,
+    "scale": 1000000.0
+  },
+  {
+    "id": "0C5C8C",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/98B11FB0C17B968C49EFCB859A83153E(copy1)/xs3qstsrcF2A8AA9A8DFE89F74A76E16EA1DCA580_1_1772108995.png"
+    ],
+    "answer": "0,1",
+    "kind": "self-graph",
+    "unit": "В",
+    "L": 0.8,
+    "I1": 0.5,
+    "I2": 1,
+    "t1": 1,
+    "t2": 5,
+    "dt": 4,
+    "scale": 1
+  },
+  {
+    "id": "615189",
+    "images": [],
+    "answer": "0,15",
+    "kind": "energy",
+    "unit": "мДж",
+    "L": 0.0003,
+    "I": 1,
+    "scale": 1000
+  },
+  {
+    "id": "4B574A",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/EA830245A9ECABBF40BF4FB787D48ACF(copy2)/xs3qstsrcEA830245A9ECABBF40BF4FB787D48ACF_1_1547023048.png"
+    ],
+    "answer": "2",
+    "kind": "rod-resistance",
+    "unit": "Ом",
+    "B": 0.1,
+    "l": 0.1,
+    "v": 2,
+    "I": 0.01,
+    "field": "от наблюдателя"
+  },
+  {
+    "id": "A704AD",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/948C8AE079B8908D4CCD8E9B0DD09E82(copy2)/xs3qstsrc948C8AE079B8908D4CCD8E9B0DD09E82_1_1580716850.png"
+    ],
+    "answer": "20",
+    "kind": "rod-current",
+    "unit": "мА",
+    "B": 0.4,
+    "l": 0.2,
+    "R": 4,
+    "v": 1,
+    "field": "к наблюдателю"
+  },
+  {
+    "id": "245ECC",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B355AE39CC598ACE48D704350A48D9B5(copy1)/xs3qstsrcB355AE39CC598ACE48D704350A48D9B5_1_1486991188.png"
+    ],
+    "answer": "2",
+    "kind": "rod-speed",
+    "unit": "м·с⁻¹",
+    "B": 0.1,
+    "l": 0.1,
+    "R": 2,
+    "I": 0.01,
+    "field": "от наблюдателя"
+  }
+]

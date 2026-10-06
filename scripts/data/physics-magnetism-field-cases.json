@@ -1,0 +1,576 @@
+[
+  {
+    "id": "C0DF4F",
+    "answer": "1",
+    "images": [],
+    "unit": "",
+    "kind": "lorentz-ratio",
+    "q1": 2,
+    "q2": 1,
+    "v1": 1,
+    "v2": 2,
+    "target": "1:2"
+  },
+  {
+    "id": "86C04F",
+    "answer": "вверх",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/272BA101D7A99E3E432482820280A48A(copy1)/xs3qstsrc272BA101D7A99E3E432482820280A48A_1_1511173643.png"
+    ],
+    "unit": "",
+    "kind": "field-wires",
+    "opposite": true
+  },
+  {
+    "id": "141EFE",
+    "answer": "0,25",
+    "images": [],
+    "unit": "",
+    "kind": "lorentz-ratio",
+    "q1": 1,
+    "q2": 2,
+    "v1": 1,
+    "v2": 2,
+    "target": "1:2"
+  },
+  {
+    "id": "D668FF",
+    "answer": "вверх",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3A451478D6C896B14D0D61F82E5188C5(copy1)/xs3qstsrc3A451478D6C896B14D0D61F82E5188C5_1_1511359997.png"
+    ],
+    "unit": "",
+    "kind": "field-wires",
+    "opposite": false
+  },
+  {
+    "id": "91A4F6",
+    "answer": "2",
+    "images": [],
+    "unit": "",
+    "kind": "ampere-ratio",
+    "lengthRatio": 3,
+    "fieldRatio": 0.16666666666666666,
+    "currentRatio": 1,
+    "target": "decrease"
+  },
+  {
+    "id": "3759F5",
+    "answer": "от наблюдателя",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/35C496338E32BAD94FC5FD85D6914126(copy2)/xs3qstsrc35C496338E32BAD94FC5FD85D6914126_1_1577189011.gif"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вниз",
+    "field": "влево",
+    "side": "cd",
+    "path": "Стрелки на рамке задают ток от d к c по правой стороне.",
+    "anchor": [
+      0.75,
+      0.5
+    ]
+  },
+  {
+    "id": "06310E",
+    "answer": "влево",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/20C4DCA31FECB8054EA1E3CECF954A8A(copy2)/xs3qstsrc20C4DCA31FECB8054EA1E3CECF954A8A_1_1577185975.png"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вверх",
+    "field": "от наблюдателя",
+    "side": "2–3",
+    "path": "Положительный полюс источника находится у точки 1; во внешней цепи ток идёт 1 → 2 → 3 → 4.",
+    "anchor": [
+      0.12,
+      0.5
+    ]
+  },
+  {
+    "id": "1B3904",
+    "answer": "2",
+    "images": [],
+    "unit": "",
+    "kind": "ampere-ratio",
+    "lengthRatio": 2,
+    "fieldRatio": 0.25,
+    "currentRatio": 1,
+    "target": "decrease"
+  },
+  {
+    "id": "D0F00F",
+    "answer": "0,4",
+    "images": [],
+    "unit": "",
+    "kind": "ampere-ratio",
+    "lengthRatio": 0.8,
+    "fieldRatio": 1,
+    "currentRatio": 0.5,
+    "target": "ratio"
+  },
+  {
+    "id": "603F0B",
+    "answer": "0,25",
+    "images": [],
+    "unit": "",
+    "kind": "lorentz-ratio",
+    "q1": 1,
+    "q2": 2,
+    "v1": 1,
+    "v2": 2,
+    "target": "1:2"
+  },
+  {
+    "id": "70F97F",
+    "answer": "к наблюдателю",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/66B2771C6EB0882D4EF70042C7D7568D(copy1)/xs3qstsrc66B2771C6EB0882D4EF70042C7D7568D_1_1606373947.png"
+    ],
+    "unit": "",
+    "kind": "lorentz-direction",
+    "charge": 1,
+    "velocity": "влево",
+    "field": "вниз",
+    "wire": false,
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "id": "BE5272",
+    "answer": "от наблюдателя",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D9CB0448627189A24DEED5E803D5FA81(copy1)/xs3qstsrcD9CB0448627189A24DEED5E803D5FA81_1_1487250268.png"
+    ],
+    "unit": "",
+    "kind": "lorentz-direction",
+    "charge": -1,
+    "velocity": "вправо",
+    "field": "вверх",
+    "wire": false,
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "id": "E37175",
+    "answer": "вниз",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/1858731E80979B24486BD2D64643DB85(copy1)/xs3qstsrc1858731E80979B24486BD2D64643DB85_1_1483022343.png"
+    ],
+    "unit": "",
+    "kind": "parallel",
+    "opposite": false,
+    "triple": false
+  },
+  {
+    "id": "8B2572",
+    "answer": "вправо",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CA96361B20BDAF624ADC2C1BD7B8CCE7(copy1)/xs3qstsrcCA96361B20BDAF624ADC2C1BD7B8CCE7_1_1485418206.png"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вверх",
+    "field": "к наблюдателю",
+    "side": "1–2",
+    "path": "Положительный полюс источника находится у точки 3; во внешней цепи ток идёт 3 → 4 → 1 → 2.",
+    "anchor": [
+      0.87,
+      0.5
+    ]
+  },
+  {
+    "id": "5A59BE",
+    "answer": "0,4",
+    "images": [],
+    "unit": "",
+    "kind": "ampere-ratio",
+    "lengthRatio": 2,
+    "fieldRatio": 0.2,
+    "currentRatio": 1,
+    "target": "ratio"
+  },
+  {
+    "id": "8F7EB6",
+    "answer": "вниз",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/567452C5664B980E405DAAD3A491DAB5(copy1)/xs3qstsrc567452C5664B980E405DAAD3A491DAB5_1_1472734159.png"
+    ],
+    "unit": "",
+    "kind": "parallel",
+    "opposite": true,
+    "triple": true
+  },
+  {
+    "id": "4C6BDE",
+    "answer": "влево",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/ADA84421B8BA992046D1850E7AA1FF25(copy2)/xs3qstsrcADA84421B8BA992046D1850E7AA1FF25_1_1539848817.png"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вниз",
+    "field": "к наблюдателю",
+    "side": "3–4",
+    "path": "Положительный полюс источника находится у точки 3; во внешней цепи ток идёт 3 → 4 → 1 → 2.",
+    "anchor": [
+      0.12,
+      0.5
+    ]
+  },
+  {
+    "id": "54F5DC",
+    "answer": "от наблюдателя",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B67F61811EEC8F41429258C7B0042EA5(copy1)/xs3qstsrcB67F61811EEC8F41429258C7B0042EA5_1_1473074275.png"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вверх",
+    "field": "вправо",
+    "side": "3–4",
+    "path": "Положительный полюс источника находится у точки 1; во внешней цепи ток идёт 1 → 2 → 3 → 4.",
+    "anchor": [
+      0.85,
+      0.5
+    ]
+  },
+  {
+    "id": "AB0ADF",
+    "answer": "к наблюдателю",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/317011A9806CB8584BC1E3D52F648FF8(copy1)/xs3qstsrc317011A9806CB8584BC1E3D52F648FF8_1_1485260571.png"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вниз",
+    "field": "вправо",
+    "side": "ab",
+    "path": "Стрелки на рамке задают ток от a к b по левой стороне.",
+    "anchor": [
+      0.25,
+      0.5
+    ]
+  },
+  {
+    "id": "A875DE",
+    "answer": "вверх",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/76BC7C75400E8C7A4E37CB367CAA385C(copy2)/xs3qstsrc76BC7C75400E8C7A4E37CB367CAA385C_1_1542626111.png"
+    ],
+    "unit": "",
+    "kind": "lorentz-direction",
+    "charge": -1,
+    "velocity": "влево",
+    "field": "от наблюдателя",
+    "wire": true,
+    "anchor": [
+      0.6,
+      0.72
+    ]
+  },
+  {
+    "id": "C6D2DF",
+    "answer": "вверх",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/254656F8D512BABE4B455E82D87FCDBE(copy1)/xs3qstsrc254656F8D512BABE4B455E82D87FCDBE_1_1551081254.png"
+    ],
+    "unit": "",
+    "kind": "parallel",
+    "opposite": true,
+    "triple": false
+  },
+  {
+    "id": "C04659",
+    "answer": "к наблюдателю",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/50C28F979B52B5DF415DF474220C19B5(copy1)/xs3qstsrc50C28F979B52B5DF415DF474220C19B5_1_1513954017.gif"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вверх",
+    "field": "влево",
+    "side": "ab",
+    "path": "Стрелки на рамке задают ток от b к a по левой стороне.",
+    "anchor": [
+      0.25,
+      0.5
+    ]
+  },
+  {
+    "id": "3EE5A8",
+    "answer": "вправо",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AD0E4C934754A2DD484B38CC8399A1BD(copy2)/xs3qstsrcAD0E4C934754A2DD484B38CC8399A1BD_1_1545728119.png"
+    ],
+    "unit": "",
+    "kind": "electric-direction"
+  },
+  {
+    "id": "BAC5C7",
+    "answer": "к наблюдателю",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CCAFE717D72BA7B442DB2D9B8FCC29D6(copy1)/xs3qstsrcCCAFE717D72BA7B442DB2D9B8FCC29D6_1_1508845617.png"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вниз",
+    "field": "вправо",
+    "side": "ab",
+    "path": "Стрелки на рамке задают ток от a к b по левой стороне.",
+    "anchor": [
+      0.25,
+      0.5
+    ]
+  },
+  {
+    "id": "C33CCA",
+    "answer": "1",
+    "images": [],
+    "unit": "",
+    "kind": "lorentz-ratio",
+    "q1": 2,
+    "q2": 1,
+    "v1": 1,
+    "v2": 2,
+    "target": "1:2"
+  },
+  {
+    "id": "9DCB92",
+    "answer": "вверх",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/91549A31423EB7654453E5E6E3F085A9(copy1)/xs3qstsrc91549A31423EB7654453E5E6E3F085A9_1_1611213070.png"
+    ],
+    "unit": "",
+    "kind": "lorentz-direction",
+    "charge": 1,
+    "velocity": "вправо",
+    "field": "от наблюдателя",
+    "wire": true,
+    "anchor": [
+      0.35,
+      0.72
+    ]
+  },
+  {
+    "id": "3CB89A",
+    "answer": "вверх",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CBC1AB83F8EF89554088D54A1A1809C7(copy4)/xs3qstsrcCBC1AB83F8EF89554088D54A1A1809C7_1_1547642506.png"
+    ],
+    "unit": "",
+    "kind": "lorentz-direction",
+    "charge": 1,
+    "velocity": "от наблюдателя",
+    "field": "влево",
+    "wire": false,
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "id": "B852E0",
+    "answer": "от наблюдателя",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B5B9E2FF039080394C7B75D8CE665130(copy2)/xs3qstsrcB5B9E2FF039080394C7B75D8CE665130_1_1577429799.png"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вверх",
+    "field": "вправо",
+    "side": "cd",
+    "path": "Стрелки на рамке задают ток от c к d по правой стороне.",
+    "anchor": [
+      0.75,
+      0.5
+    ]
+  },
+  {
+    "id": "5AF5EE",
+    "answer": "вниз",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E492F7865419867E45E579E2082E79A9(copy2)/xs3qstsrcE492F7865419867E45E579E2082E79A9_1_1539958955.png"
+    ],
+    "unit": "",
+    "kind": "lorentz-direction",
+    "charge": 1,
+    "velocity": "к наблюдателю",
+    "field": "влево",
+    "wire": false,
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "id": "3EFFE1",
+    "answer": "4",
+    "images": [],
+    "unit": "",
+    "kind": "lorentz-ratio",
+    "q1": 2,
+    "q2": 3,
+    "v1": 6,
+    "v2": 1,
+    "target": "1:2"
+  },
+  {
+    "id": "78C864",
+    "answer": "3",
+    "images": [],
+    "unit": "",
+    "kind": "lorentz-ratio",
+    "q1": 1,
+    "q2": 3,
+    "v1": 1,
+    "v2": 1,
+    "target": "2:1"
+  },
+  {
+    "id": "CC666A",
+    "answer": "0,4",
+    "images": [],
+    "unit": "Н",
+    "kind": "ampere-ratio",
+    "lengthRatio": 1,
+    "fieldRatio": 1,
+    "currentRatio": 2,
+    "target": "force",
+    "F": 0.2
+  },
+  {
+    "id": "890738",
+    "answer": "от наблюдателя",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7910892A10EFBA8141053A08E5FB60EF(copy1)/xs3qstsrc7910892A10EFBA8141053A08E5FB60EF_15_1604584801.png"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вверх",
+    "field": "вправо",
+    "side": "4–1",
+    "path": "Положительный полюс источника находится у точки 4; во внешней цепи ток идёт 4 → 1 → 2 → 3.",
+    "anchor": [
+      0.15,
+      0.5
+    ]
+  },
+  {
+    "id": "FE5581",
+    "answer": "к наблюдателю",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/4939E21EC093AC5D4D48FE936E4B4FF0(copy1)/xs3qstsrc4939E21EC093AC5D4D48FE936E4B4FF0_1_1487249797.png"
+    ],
+    "unit": "",
+    "kind": "lorentz-direction",
+    "charge": -1,
+    "velocity": "влево",
+    "field": "вверх",
+    "wire": false,
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "id": "0EDD81",
+    "answer": "вверх",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/11E82FEEC67D94DE482DB133B7340DA5(copy2)/xs3qstsrc11E82FEEC67D94DE482DB133B7340DA5_1_1579502870.jpg"
+    ],
+    "unit": "",
+    "kind": "field-wires",
+    "opposite": false
+  },
+  {
+    "id": "B94783",
+    "answer": "вправо",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/D0304E31CC73990C4D45CCC8C9A4AFA7(copy2)/xs3qstsrcD0304E31CC73990C4D45CCC8C9A4AFA7_1_1577186922.png"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вверх",
+    "field": "к наблюдателю",
+    "side": "4–1",
+    "path": "Положительный полюс источника находится у точки 2; во внешней цепи ток идёт 2 → 3 → 4 → 1.",
+    "anchor": [
+      0.87,
+      0.5
+    ]
+  },
+  {
+    "id": "C5E88B",
+    "answer": "влево",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/89CAEACB2B26AA1F498E3CBCF874EA9A(copy1)/xs3qstsrc89CAEACB2B26AA1F498E3CBCF874EA9A_1_1606208409.gif"
+    ],
+    "unit": "",
+    "kind": "ampere-direction",
+    "current": "вверх",
+    "field": "от наблюдателя",
+    "side": "3–4",
+    "path": "Направление тока показано стрелками: 1 → 2 → 3 → 4.",
+    "anchor": [
+      0.85,
+      0.5
+    ]
+  },
+  {
+    "id": "999689",
+    "answer": "2",
+    "images": [],
+    "unit": "",
+    "kind": "ampere-ratio",
+    "lengthRatio": 4,
+    "fieldRatio": 0.5,
+    "currentRatio": 1,
+    "target": "increase"
+  },
+  {
+    "id": "B65453",
+    "answer": "1",
+    "images": [],
+    "unit": "Н",
+    "kind": "ampere-force",
+    "L": 0.5,
+    "B": 0.5,
+    "I": 4,
+    "angle": 90
+  },
+  {
+    "id": "4603AF",
+    "answer": "4",
+    "images": [],
+    "unit": "",
+    "kind": "circle-radius",
+    "chargeRatio": 0.125,
+    "fieldRatio": 2
+  },
+  {
+    "id": "D798EB",
+    "answer": "2",
+    "images": [],
+    "unit": "",
+    "kind": "circle-period",
+    "massRatio": 4,
+    "radiusRatio": 0.5
+  },
+  {
+    "id": "5ED18A",
+    "answer": "2",
+    "images": [],
+    "unit": "А",
+    "kind": "ampere-current",
+    "L": 0.2,
+    "B": 0.6,
+    "F": 0.12,
+    "angle": 30
+  }
+]

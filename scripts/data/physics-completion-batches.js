@@ -1,0 +1,288 @@
+const {records}=require('./physics-remaining-long');
+const {diagrams}=require('./physics-remaining-long-diagrams');
+module.exports=[{
+ name:'final-figures',count:2,
+ sources:require('./physics-final-figures-sources.json'),
+ verify:require('./physics-final-figures').verifyPhysics,
+ records:require('./physics-final-figures').records
+},{
+ name:'recovered-figures',count:1,
+ sources:require('./physics-recovered-figures-sources.json'),
+ verify:require('./physics-recovered-figures').verifyPhysics,
+ records:require('./physics-recovered-figures').records
+},{
+ name:'electro-analysis-graphs',count:31,
+ sources:require('./physics-electro-analysis-graphs-sources.json'),
+ verify:require('./physics-electro-analysis-graphs-checks').verifyPhysics,
+ records:Object.values(require('./physics-electro-analysis-graphs').records).map(r=>({...r,
+  diagram_svg:require('./physics-electro-analysis-graphs-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'laws-graphs',count:24,
+ sources:require('./physics-laws-graphs-sources.json'),
+ verify:require('./physics-laws-graphs-checks').verifyPhysics,
+ records:Object.values(require('./physics-laws-graphs').records).map(r=>({...r,
+  diagram_svg:require('./physics-laws-graphs-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'laws-statements',count:43,
+ sources:require('./physics-laws-statements-sources.json'),
+ verify:require('./physics-laws-statements-checks').verifyPhysics,
+ records:Object.values(require('./physics-laws-statements').records).map(r=>({...r,
+  diagram_svg:require('./physics-laws-statements-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'electro-statements',count:46,
+ sources:require('./physics-electro-statements-sources.json'),
+ verify:require('./physics-electro-statements-checks').verifyPhysics,
+ records:Object.values(require('./physics-electro-statements').records).map(r=>({...r,
+  diagram_svg:require('./physics-electro-statements-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'electro-matching',count:46,
+ sources:require('./physics-electro-matching-sources.json'),
+ verify:require('./physics-electro-matching-checks').verifyPhysics,
+ records:Object.values(require('./physics-electro-matching').records).map(r=>({...r,
+  diagram_svg:require('./physics-electro-matching-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'mechanics-analysis-statements',count:20,
+ sources:require('./physics-mechanics-analysis-statements-sources.json'),
+ verify:require('./physics-mechanics-analysis-statements-checks').verifyPhysics,
+ records:Object.values(require('./physics-mechanics-analysis-statements').records).map(r=>({...r,
+  diagram_svg:require('./physics-mechanics-analysis-statements-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'mechanics-analysis-graphs',count:55,
+ sources:require('./physics-mechanics-analysis-graphs-sources.json'),
+ verify:require('./physics-mechanics-analysis-graphs-checks').verifyPhysics,
+ records:Object.values(require('./physics-mechanics-analysis-graphs').records).map(r=>({...r,
+  diagram_svg:require('./physics-mechanics-analysis-graphs-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'mechanics-matching',count:63,
+ sources:require('./physics-mechanics-matching-sources.json'),
+ verify:require('./physics-mechanics-matching-checks').verifyPhysics,
+ records:Object.values(require('./physics-mechanics-matching').records).map(r=>({...r,
+  diagram_svg:require('./physics-mechanics-matching-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'mechanics-changes',count:63,
+ sources:require('./physics-mechanics-changes-sources.json'),
+ verify:require('./physics-mechanics-changes-checks').verifyPhysics,
+ records:Object.values(require('./physics-mechanics-changes').records).map(r=>({...r,
+  diagram_svg:require('./physics-mechanics-changes-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'kinematics-graphs',count:66,
+ sources:require('./physics-kinematics-graphs-sources.json'),
+ verify:require('./physics-kinematics-graphs-checks').verifyPhysics,
+ records:Object.values(require('./physics-kinematics-graphs').records).map(r=>({...r,
+  diagram_svg:require('./physics-kinematics-graphs-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'optics',count:53,
+ sources:require('./physics-optics-sources.json'),
+ verify:require('./physics-optics-checks').verifyPhysics,
+ records:Object.values(require('./physics-optics').records).map(r=>({...r,
+  diagram_svg:require('./physics-optics-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'em-oscillations',count:28,
+ sources:require('./physics-em-oscillations-sources.json'),
+ verify:require('./physics-em-oscillations-checks').verifyPhysics,
+ records:Object.values(require('./physics-em-oscillations').records).map(r=>({...r,
+  diagram_svg:require('./physics-em-oscillations-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'induction',count:38,
+ sources:require('./physics-induction-sources.json'),
+ verify:require('./physics-induction-checks').verifyPhysics,
+ records:Object.values(require('./physics-induction').records).map(r=>({...r,
+  diagram_svg:require('./physics-induction-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'magnetism-field',count:42,
+ sources:require('./physics-magnetism-field-sources.json'),
+ verify:require('./physics-magnetism-field-checks').verifyPhysics,
+ records:Object.values(require('./physics-magnetism-field').records).map(r=>({...r,
+  diagram_svg:require('./physics-magnetism-field-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'oscillations-short',count:39,
+ sources:require('./physics-oscillations-short-sources.json'),
+ verify:require('./physics-oscillations-short-checks').verifyPhysics,
+ records:Object.values(require('./physics-oscillations-short').records).map(r=>({...r,
+  diagram_svg:require('./physics-oscillations-short-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'statics-short',count:36,
+ sources:require('./physics-statics-short-sources.json'),
+ verify:require('./physics-statics-short-checks').verifyPhysics,
+ records:Object.values(require('./physics-statics-short').records).map(r=>({...r,
+  diagram_svg:require('./physics-statics-short-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'energy',count:43,
+ sources:require('./physics-energy-sources.json'),
+ verify:require('./physics-energy-checks').verifyPhysics,
+ records:Object.values(require('./physics-energy').records).map(r=>({...r,
+  diagram_svg:require('./physics-energy-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'momentum',count:41,
+ sources:require('./physics-momentum-sources.json'),
+ verify:require('./physics-momentum-checks').verifyPhysics,
+ records:Object.values(require('./physics-momentum').records).map(r=>({...r,
+  diagram_svg:require('./physics-momentum-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'forces',count:23,
+ sources:require('./physics-forces-sources.json'),
+ verify:require('./physics-forces-checks').verifyPhysics,
+ records:Object.values(require('./physics-forces').records).map(r=>({...r,
+  diagram_svg:require('./physics-forces-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'friction',count:18,
+ sources:require('./physics-friction-sources.json'),
+ verify:require('./physics-friction-checks').verifyPhysics,
+ records:Object.values(require('./physics-friction').records).map(r=>({...r,
+  diagram_svg:require('./physics-friction-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'elasticity',count:20,
+ sources:require('./physics-elasticity-sources.json'),
+ verify:require('./physics-elasticity-checks').verifyPhysics,
+ records:Object.values(require('./physics-elasticity').records).map(r=>({...r,
+  diagram_svg:require('./physics-elasticity-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'gravity',count:13,
+ sources:require('./physics-gravity-sources.json'),
+ verify:require('./physics-gravity-checks').verifyPhysics,
+ records:Object.values(require('./physics-gravity').records).map(r=>({...r,
+  diagram_svg:require('./physics-gravity-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'experiment-pictures',count:14,
+ sources:require('./physics-experiment-pictures-sources.json'),
+ verify:require('./physics-experiment-pictures-checks').verifyPhysics,
+ records:Object.values(require('./physics-experiment-pictures').records).map(r=>({...r,
+  diagram_svg:require('./physics-experiment-pictures-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'experiment-tables',count:45,
+ sources:require('./physics-experiment-tables-sources.json'),
+ verify:require('./physics-experiment-tables-checks').verifyPhysics,
+ records:Object.values(require('./physics-experiment-tables').records).map(r=>({...r,
+  diagram_svg:require('./physics-experiment-tables-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'experiment-equipment',count:17,
+ sources:require('./physics-experiment-equipment-sources.json'),
+ verify:require('./physics-experiment-equipment-checks').verifyPhysics,
+ records:Object.values(require('./physics-experiment-equipment').records).map(r=>({...r,
+  diagram_svg:require('./physics-experiment-equipment-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'measurement-direct',count:71,
+ sources:require('./physics-measurement-direct-sources.json'),
+ verify:require('./physics-measurement-direct-checks').verifyPhysics,
+ records:Object.values(require('./physics-measurement-direct').records).map(r=>({...r,
+  diagram_svg:require('./physics-measurement-direct-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'measurement-indirect',count:5,
+ sources:require('./physics-measurement-indirect-sources.json'),
+ verify:require('./physics-measurement-indirect-checks').verifyPhysics,
+ records:Object.values(require('./physics-measurement-indirect').records).map(r=>({...r,
+  diagram_svg:require('./physics-measurement-indirect-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'electricity-circuits',count:59,
+ sources:require('./physics-electricity-circuits-sources.json'),
+ verify:require('./physics-electricity-circuits-checks').verifyPhysics,
+ records:Object.values(require('./physics-electricity-circuits').records).map(r=>({...r,
+  diagram_svg:require('./physics-electricity-circuits-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'electricity-field',count:40,
+ sources:require('./physics-electricity-field-sources.json'),
+ verify:require('./physics-electricity-field-checks').verifyPhysics,
+ records:Object.values(require('./physics-electricity-field').records).map(r=>({...r,
+  diagram_svg:require('./physics-electricity-field-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'remaining-long',count:18,
+ sources:require('./physics-remaining-long-sources.json'),
+ verify:require('./physics-remaining-long-checks').verifyPhysics,
+ records:Object.values(records).map(r=>({...r,diagram_svg:diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'nucleus',count:98,
+ sources:require('./physics-nucleus-sources.json'),
+ verify:require('./physics-nucleus-checks').verifyPhysics,
+ records:Object.values(require('./physics-nucleus-solutions').records).map(r=>({...r,
+  diagram_svg:require('./physics-nucleus-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'quantum-rest',count:33,
+ sources:require('./physics-quantum-rest-sources.json'),
+ verify:require('./physics-quantum-rest-checks').verifyPhysics,
+ records:Object.values(require('./physics-quantum-rest').records).map(r=>({...r,
+  diagram_svg:require('./physics-quantum-rest-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'quantum-changes',count:49,
+ sources:require('./physics-quantum-changes-sources.json'),
+ verify:require('./physics-quantum-changes-checks').verifyPhysics,
+ records:Object.values(require('./physics-quantum-changes').records).map(r=>({...r,
+  diagram_svg:require('./physics-quantum-changes-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'quantum-matching',count:23,
+ sources:require('./physics-quantum-matching-sources.json'),
+ verify:require('./physics-quantum-matching-checks').verifyPhysics,
+ records:Object.values(require('./physics-quantum-matching').records).map(r=>({...r,
+  diagram_svg:require('./physics-quantum-matching-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'astronomy',count:44,
+ sources:require('./physics-astronomy-sources.json'),
+ verify:require('./physics-astronomy-checks').verifyPhysics,
+ records:Object.values(require('./physics-astronomy').records).map(r=>({...r,
+  diagram_svg:require('./physics-astronomy-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'kinematics-motion',count:7,
+ sources:require('./physics-kinematics-motion-sources.json'),
+ verify:require('./physics-kinematics-motion-checks').verifyPhysics,
+ records:Object.values(require('./physics-kinematics-motion').records).map(r=>({...r,
+  diagram_svg:require('./physics-kinematics-motion-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'molecular-gas',count:86,
+ sources:require('./physics-molecular-gas-sources.json'),
+ verify:require('./physics-molecular-gas-checks').verifyPhysics,
+ records:Object.values(require('./physics-molecular-gas').records).map(r=>({...r,
+  diagram_svg:require('./physics-molecular-gas-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'molecular-matter',count:26,
+ sources:require('./physics-molecular-matter-sources.json'),
+ verify:require('./physics-molecular-matter-checks').verifyPhysics,
+ records:Object.values(require('./physics-molecular-matter').records).map(r=>({...r,
+  diagram_svg:require('./physics-molecular-matter-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'thermodynamics-heat',count:40,
+ sources:require('./physics-thermodynamics-heat-sources.json'),
+ verify:require('./physics-thermodynamics-heat-checks').verifyPhysics,
+ records:Object.values(require('./physics-thermodynamics-heat').records).map(r=>({...r,
+  diagram_svg:require('./physics-thermodynamics-heat-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'thermodynamics-gas',count:42,
+ sources:require('./physics-thermodynamics-gas-sources.json'),
+ verify:require('./physics-thermodynamics-gas-checks').verifyPhysics,
+ records:Object.values(require('./physics-thermodynamics-gas').records).map(r=>({...r,
+  diagram_svg:require('./physics-thermodynamics-gas-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'thermodynamics-engines',count:31,
+ sources:require('./physics-thermodynamics-engines-sources.json'),
+ verify:require('./physics-thermodynamics-engines-checks').verifyPhysics,
+ records:Object.values(require('./physics-thermodynamics-engines').records).map(r=>({...r,
+  diagram_svg:require('./physics-thermodynamics-engines-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'thermal-changes',count:44,
+ sources:require('./physics-thermal-changes-sources.json'),
+ verify:require('./physics-thermal-changes-checks').verifyPhysics,
+ records:Object.values(require('./physics-thermal-changes').records).map(r=>({...r,
+  diagram_svg:require('./physics-thermal-changes-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'thermal-matching',count:32,
+ sources:require('./physics-thermal-matching-sources.json'),
+ verify:require('./physics-thermal-matching-checks').verifyPhysics,
+ records:Object.values(require('./physics-thermal-matching').records).map(r=>({...r,
+  diagram_svg:require('./physics-thermal-matching-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'thermal-statements',count:29,
+ sources:require('./physics-thermal-statements-sources.json'),
+ verify:require('./physics-thermal-statements-checks').verifyPhysics,
+ records:Object.values(require('./physics-thermal-statements').records).map(r=>({...r,
+  diagram_svg:require('./physics-thermal-statements-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'thermal-graphs',count:46,
+ sources:require('./physics-thermal-graphs-sources.json'),
+ verify:require('./physics-thermal-graphs-checks').verifyPhysics,
+ records:Object.values(require('./physics-thermal-graphs').records).map(r=>({...r,
+  diagram_svg:require('./physics-thermal-graphs-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+},{
+ name:'electro-changes',count:71,
+ sources:require('./physics-electro-changes-sources.json'),
+ verify:require('./physics-electro-changes-checks').verifyPhysics,
+ records:Object.values(require('./physics-electro-changes').records).map(r=>({...r,
+  diagram_svg:require('./physics-electro-changes-diagrams').diagrams[r.id],diagram_caption:r.diagramCaption}))
+}];

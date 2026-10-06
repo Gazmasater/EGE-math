@@ -1,0 +1,303 @@
+[
+  {
+    "id": "468FFB",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/336F4FC476C984754E1F1F46D6E798D1(copy1)/xs3qstsrc336F4FC476C984754E1F1F46D6E798D1_1_1538643810.gif"
+    ],
+    "answer": "500",
+    "kind": "frequency",
+    "unit": "кГц",
+    "omegaPi": 1000000,
+    "U": 5
+  },
+  {
+    "id": "50A1FE",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/F107D89EFEBF947143CB344E6E1D15D3(copy2)/xs3qstsrcF107D89EFEBF947143CB344E6E1D15D3_1_1538642400.png"
+    ],
+    "answer": "2",
+    "kind": "period",
+    "unit": "мкс",
+    "omegaPi": 1000000,
+    "U": 5
+  },
+  {
+    "id": "CFDDFB",
+    "images": [],
+    "answer": "2",
+    "kind": "energy-period-ratio",
+    "unit": "",
+    "Lratio": 4,
+    "Cratio": 1
+  },
+  {
+    "id": "91A3F0",
+    "images": [],
+    "answer": "1",
+    "kind": "total-energy-ratio",
+    "unit": "",
+    "Lratio": 4
+  },
+  {
+    "id": "0A8805",
+    "images": [],
+    "answer": "1,5",
+    "kind": "area-frequency",
+    "unit": "раз",
+    "Lratio": 4,
+    "Cratio": 0.1111111111111111
+  },
+  {
+    "id": "7CCC09",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/49C4E638F226AD6F4A18D3A6DAE760D4(copy1)/xs3qstsrc49C4E638F226AD6F4A18D3A6DAE760D4_10_1631276092.png"
+    ],
+    "answer": "3",
+    "kind": "energy-minima",
+    "unit": "раз",
+    "T": 4
+  },
+  {
+    "id": "B3D908",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BC9832DFA1C0A1244126AE82C2AE8927(copy3)/xs3qstsrcBC9832DFA1C0A1244126AE82C2AE8927_3_1673441737.png"
+    ],
+    "answer": "0,9",
+    "kind": "switch-frequency",
+    "unit": "Гн",
+    "L": 0.1,
+    "Lunit": "Гн",
+    "Tratio": 3,
+    "Lratio": 9
+  },
+  {
+    "id": "8F8B08",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/CDFAD7B025D9893B47FD76E0E2310602(copy2)/xs3qstsrcCDFAD7B025D9893B47FD76E0E2310602_1_1483024983.png"
+    ],
+    "answer": "4",
+    "kind": "switch-inductance",
+    "unit": "мГн",
+    "L": 12,
+    "Lunit": "мГн",
+    "Tratio": 0.5773502691896258,
+    "Lratio": 0.3333333333333333,
+    "change": "уменьшится в √3 раза"
+  },
+  {
+    "id": "2C5B74",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/E3F22087ADAA9A1B40949DBD65FB774A(copy1)/xs3qstsrcE3F22087ADAA9A1B40949DBD65FB774A_5_1641993903.png"
+    ],
+    "answer": "2",
+    "kind": "graph-period",
+    "unit": "мкс",
+    "T": 4,
+    "Lratio": 1,
+    "Cratio": 0.25,
+    "periodRead": "Два соседних положительных максимума приходятся на 1 и 5 мкс; T₁=5−1=4 мкс."
+  },
+  {
+    "id": "DCBA7F",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B0D0A63374238F4744AFEAC8E79B5BD2(copy1)/xs3qstsrcB0D0A63374238F4744AFEAC8E79B5BD2_1_1574773623.png"
+    ],
+    "answer": "0,005",
+    "kind": "period",
+    "unit": "с",
+    "omegaPi": 400,
+    "U": 2.5
+  },
+  {
+    "id": "003AB3",
+    "images": [],
+    "answer": "3",
+    "kind": "period-ratio",
+    "unit": "раз",
+    "Lratio": 18,
+    "Cratio": 0.5
+  },
+  {
+    "id": "8A97BF",
+    "images": [],
+    "answer": "0,5",
+    "kind": "period-ratio",
+    "unit": "",
+    "Lratio": 0.25,
+    "Cratio": 1
+  },
+  {
+    "id": "DEA818",
+    "images": [],
+    "answer": "3",
+    "kind": "period-ratio",
+    "unit": "раз",
+    "Lratio": 18,
+    "Cratio": 0.5
+  },
+  {
+    "id": "52BC1F",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/56F645585964A1AB4545C3DB62BE35A6(copy1)/xs3qstsrc56F645585964A1AB4545C3DB62BE35A6_1_1455097153.png"
+    ],
+    "answer": "2",
+    "kind": "graph-period",
+    "unit": "мкс",
+    "T": 4,
+    "Lratio": 1,
+    "Cratio": 0.25,
+    "periodRead": "Два соседних положительных максимума приходятся на 1 и 5 мкс; T₁=5−1=4 мкс."
+  },
+  {
+    "id": "1BC020",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/93468CAB17A2A2E2418DC1987971B3DF(copy2)/xs3qstsrc93468CAB17A2A2E2418DC1987971B3DF_1_1483025344.png"
+    ],
+    "answer": "36",
+    "kind": "switch-inductance",
+    "unit": "мГн",
+    "L": 6,
+    "Lunit": "мГн",
+    "Tratio": 2.449489742783178,
+    "Lratio": 6,
+    "change": "увеличится в √6 раза"
+  },
+  {
+    "id": "D9E022",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/582695EC871C866C412D2BEC0B41209E(copy1)/xs3qstsrc582695EC871C866C412D2BEC0B41209E_1_1763726935.png"
+    ],
+    "answer": "2",
+    "kind": "graph-period",
+    "unit": "мкс",
+    "T": 6,
+    "Lratio": 1,
+    "Cratio": 0.1111111111111111,
+    "periodRead": "При t=0 и t=6 мкс ток проходит через ноль, в обоих случаях убывая. Это одинаковые фазы; T₁=6 мкс."
+  },
+  {
+    "id": "960CD5",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6CEDE8D07DBC92B541A0EEA03479FB9F(copy1)/xs3qstsrc7B82DA6487618EBB4418609F1A887C64_6_1721207541.png"
+    ],
+    "answer": "2,25",
+    "kind": "switch-increase",
+    "unit": "раз",
+    "Tratio": 1.5,
+    "Lratio": 2.25
+  },
+  {
+    "id": "FF285E",
+    "images": [],
+    "answer": "1",
+    "kind": "magnetic-energy-ratio",
+    "unit": "",
+    "Lratio": 5
+  },
+  {
+    "id": "E8B859",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/AC876E0EF8D9825B4F7BBE820A0E3762(copy1)/xs3qstsrcAC876E0EF8D9825B4F7BBE820A0E3762_1_1766485132.png"
+    ],
+    "answer": "6,25",
+    "kind": "switch-decrease",
+    "unit": "раз",
+    "Tratio": 0.4,
+    "Lratio": 0.16
+  },
+  {
+    "id": "8F92A7",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/6BC44A7683D19A764B7A3404A0F8A669(copy1)/xs3qstsrc6BC44A7683D19A764B7A3404A0F8A669_1_1510146436.png"
+    ],
+    "answer": "0,002",
+    "kind": "period",
+    "unit": "с",
+    "omegaPi": 1000,
+    "U": 5
+  },
+  {
+    "id": "6713EB",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8DD1A5F25E878F76418EDB768877DEAA(copy1)/xs3qstsrc8DD1A5F25E878F76418EDB768877DEAA_1_1510132524.png"
+    ],
+    "answer": "8",
+    "kind": "graph-period",
+    "unit": "мкс",
+    "T": 4,
+    "Lratio": 4,
+    "Cratio": 1,
+    "periodRead": "Соседние положительные максимумы тока приходятся на 1 и 5 мкс. Поэтому T₁=4 мкс."
+  },
+  {
+    "id": "D2EA3F",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/47BD7952B027800242A72312AB7F0F5D(copy1)/xs3qstsrcE71C696B7865AD774584E930D29509A3_6_1714997756.png"
+    ],
+    "answer": "12",
+    "kind": "graph-period",
+    "unit": "мкс",
+    "T": 6,
+    "Lratio": 1,
+    "Cratio": 4,
+    "periodRead": "Ток проходит через ноль вниз при t=0 и t=6 мкс; одинаковые фазы разделены периодом T₁=6 мкс."
+  },
+  {
+    "id": "2B1340",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/B45CDA7C8E3EB14648DDE0E1FA12E775(copy1)/xs3qstsrcB45CDA7C8E3EB14648DDE0E1FA12E775_1_1670499521.jpg"
+    ],
+    "answer": "2",
+    "kind": "switch-capacitor",
+    "unit": "мкс",
+    "T": 1,
+    "Lratio": 1,
+    "Cratio": 4
+  },
+  {
+    "id": "93A417",
+    "images": [],
+    "answer": "0,5",
+    "kind": "current-amplitude-ratio",
+    "unit": "",
+    "Lratio": 4
+  },
+  {
+    "id": "CBF6C6",
+    "images": [],
+    "answer": "3",
+    "kind": "current-period-ratio",
+    "unit": "раз",
+    "T1": 9e-08,
+    "T2": 3e-08
+  },
+  {
+    "id": "17CD9F",
+    "images": [],
+    "answer": "32",
+    "kind": "table-inductance",
+    "unit": "мГн",
+    "T": 8,
+    "C": 5e-11
+  },
+  {
+    "id": "5F286F",
+    "images": [],
+    "answer": "16",
+    "kind": "table-energy",
+    "unit": "нДж",
+    "T": 8,
+    "C": 4.05e-10,
+    "I": -0.00283
+  },
+  {
+    "id": "445435",
+    "images": [],
+    "answer": "32",
+    "kind": "table-energy-max",
+    "unit": "нДж",
+    "T": 8,
+    "C": 4.05e-10,
+    "I": 0.004
+  }
+]

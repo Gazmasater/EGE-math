@@ -1,0 +1,300 @@
+{
+  "1CCC46": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Под действием силы величиной 9 Н пружина удлинилась на 4,5 см. Каким станет удлинение пружины под действием силы, равной по модулю 6 Н? см",
+    "sourceHash": "a4a9d8277556a51974158fa736034a94c9a959aad7b5eee34ed2db9826681bc4",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38184",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Внешняя задача спрашивает силу при 6 Н, 3 см и 4,5 см. Здесь спрашивается удлинение: 9 Н, 4,5 см и 6 Н дают 3 см; пропорция обращена относительно искомой величины. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "3",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "FA9DFC": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-1.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/BCC8352765B1B70944B83D985731A2EC(copy2)/xs3qstsrcBCC8352765B1B70944B83D985731A2EC_1_1487061271.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости силы упругости пружины от величины её деформации. Определите жёсткость этой пружины. Н/м",
+    "sourceHash": "f3958a8fcbf25e905128e88c3526ec371610052e2ed30ae555ec3c15ca8804fe",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=19914",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Оба графика задают силу в зависимости от деформации в метрах; здесь первичные точки 0,3 м и 21 Н, 0,6 м и 42 Н дают 70 Н на метр, внешний наклон 250 не переносится. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "70",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "BFF6B7": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. На штативе закреплён школьный динамометр. К нему подвесили груз массой 0,1 кг. Пружина динамометра при этом удлинилась на 2,5 см. Чему будет равно удлинение пружины, если масса груза уменьшится вдвое? см",
+    "sourceHash": "cc5a9e5b1af63df5d4af416d782627c2158042d023fa38154ede2c118c4e0bac",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=6482",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Начальные 0,1 кг и 2,5 см совпадают; внешний вариант утраивает массу, здесь она уменьшается вдвое. Поэтому результат 1,25 см вместо 7,5 см. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "1,25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "D8CCBB": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/474AFA1ECDDB92AF4B694E741DF8F5E4/xs3qstsrc474AFA1ECDDB92AF4B694E741DF8F5E4_2_1700664437.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля силы упругости пружины от величины её деформации. Определите жёсткость этой пружины. Н/м",
+    "sourceHash": "218a85d82d344d1f6a877356ea2df511604b82c14b23cc9b5756a971b3e31465",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=7134",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. График прочитан в сантиметрах: 10 см и 20 Н, 20 см и 40 Н. После перевода в метры получено 200 Н на метр. Внешний график имеет иной наклон, 500 Н на метр. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "200",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "ABF5BF": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-4.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/7E03E9D301C799F144D4F0B7EB9DEA1A(copy2)/xs3qstsrc7E03E9D301C799F144D4F0B7EB9DEA1A_1_1423727950.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля силы упругости пружины от величины её деформации. Определите жёсткость этой пружины. Н/м",
+    "sourceHash": "373c7687b766708feb1d5ef5314180ea09873c8ff871283fe2e08a6fea64176c",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=19914",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадают график в метрах, точки 0,2 м и 50 Н, 0,4 м и 100 Н и итог 250 Н на метр. Внешняя иллюстрация просмотрена. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "250",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "1FB423": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-6.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. На лёгкой пружине подвешен груз массой 2 кг. В состоянии покоя он растягивает пружину на 4 см. Определите жёсткость пружины. Н/м",
+    "sourceHash": "3fad9359168d511f0fccea614eeddf5f4e4c2e1fc09a3900051562d8739341e2",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=32578",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадают исходные груз 2 кг и растяжение 4 см. Внешняя задача ищет дополнительный груз, здесь жёсткость: 500 Н на метр. Проверено равновесие mg=kx. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "500",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "702454": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-8.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/C787AB026C7FBBF34E92E4468F017554(copy1)/xs3qstsrcC787AB026C7FBBF34E92E4468F017554_1_1507641480.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. К системе из кубика массой M=1 кг и двух пружин приложена постоянная горизонтальная сила F→ величиной 9 Н (см. рисунок). Между кубиком и опорой трения нет. Система покоится. Жёсткость первой пружины k₁ = 300 Н/м. Жёсткость второй пружины k₂ = 600 Н/м. Каково удлинение первой пружины? см",
+    "sourceHash": "990a7a4a650af89bb83b16b24a7928ee861b69e3f81f41dd3fc1ce04c05056d5",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=734",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадают расположение стены, кубика и двух пружин, жёсткости 300 и 600 Н на метр. Внешняя задача задаёт 2 см и ищет F=6 Н. Здесь F=9 Н и ищется x1=3 см; обе пружины передают одну и ту же силу. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "3",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "C97E5E": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-8.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. При исследовании зависимости модуля силы упругости F_(упр) от удлинения пружины были получены следующие данные. F_(упр), Н 2,5 5,0 10,0 12,5 Δx, м 0,01 0,02 0,04 0,05 Определите по результатам исследования жёсткость пружины. H/м",
+    "sourceHash": "0fd79a6203692a7a287fd9a5f704a2bff73b9b58b3caf9d3f81b980650fefddc",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50701",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадают все четыре пары значений таблицы и ответ 250 Н на метр. Отношение силы к удлинению проверено во всех столбцах. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "250",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "909F5C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-8.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8217AABDDAC78A8F449B01F6961910C7(copy1)/xs3qstsrc8bab21bb31e94b5aabc4cc3dd3f1f690_1_1758618882.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля силы упругости F пружины от её удлинения x. Чему равна жёсткость пружины? Н/м",
+    "sourceHash": "91d09be9e810f7654054c2b8ab8a161a2bd90c20dd052652a3e325fdac21e6fc",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=35162",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадают физические координаты всех узлов и жёсткость 100 Н на метр. Первичная ось подписана 10⁻² м, во внешнем рисунке сантиметры; единицы эквивалентны, различие оформления отмечено. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "100",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "986AAC": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/482C57A1CD889D634139CDB99A44BD5F(copy1)/xs3qstsrc482C57A1CD889D634139CDB99A44BD5F_1_1763717961.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля силы упругости F от удлинения пружины x. Какова жёсткость пружины? H/м",
+    "sourceHash": "cf35d68f7043e697d4fff30d6aac528a59648b9974b7bad2a1c6b2e35dd9a180",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=7134",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Оба графика заданы в сантиметрах; здесь 2 см и 5 Н, 4 см и 10 Н, 6 см и 15 Н дают 250 Н на метр. Внешние значения 20 Н при 4 см дают 500 и не перенесены. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "250",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "6CCCA0": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-9.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Подвешенная к потолку пружина под действием силы 4 Н удлинилась на 6 см. Чему равно удлинение этой пружины под действием силы 6 Н? см",
+    "sourceHash": "b9656f301688c6c05cf7b396b03aa199df4a3da012a300d0573ab149c4eee0ec",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38184",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Используется та же прямая пропорциональность силы и удлинения. Здесь 4 Н, 6 см и 6 Н дают 9 см; внешние числа и искомая величина другие. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "9",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "59C0CD": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. К пружине школьного динамометра подвесили груз массой 0,1 кг. Пружина при этом упруго удлинилась на 2,5 см. Чему будет равно удлинение пружины, если масса груза уменьшится вдвое? см",
+    "sourceHash": "4732fb43e9846e0ee197971fd413a8383df153209a75ab0168ff3b96a8323e38",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=6482",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Начальные 0,1 кг и 2,5 см совпадают; масса здесь уменьшается вдвое, а во внешнем варианте утраивается. Равновесие даёт 1,25 см, не 7,5 см. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "1,25",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "A155CE": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Пружина под действием силы 15 Н растянулась на 5 см. Чему равна жёсткость пружины? Н/м",
+    "sourceHash": "2faaf4a01095dec4d5e655ca2c89ff3c6cb9dd7d81c60cd8dff37b5172c00454",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=50698",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадает приложенная сила 15 Н, но первичное удлинение здесь 5 см, во внешнем варианте 2 см. Получено 300 Н на метр вместо 750. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "300",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "401B9F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Пружина жёсткостью 2⋅10⁴ Н/м одним концом закреплена в штативе. На какую величину она растянется под действием силы 400 Н? см",
+    "sourceHash": "b0db172514363954bdd7e3aacc9486b94db33f0fa86d1add623d76265dea810c",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=11784",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадают жёсткость 2·10⁴ Н на метр, сила 400 Н, искомое удлинение и ответ 2 см. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "2",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "453892": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-10.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/DB727F3D7C8C88A74A00E69CAD145760(copy1)/xs3qstsrcDB727F3D7C8C88A74A00E69CAD145760_1_1483022277.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. Кубик массой M=1 кг, сжатый с боков пружинами (см. рисунок), покоится на гладком горизонтальном столе. Первая пружина сжата на 4 см, а вторая сжата на 3 см. Жёсткость первой пружины k₁=600 Н/м. Чему равна жёсткость второй пружины k₂? Н/м",
+    "sourceHash": "71a463e8bdf7bbf57debc42de963a3c754da1a85e63b19f16c23dfc899538473",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=6755",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадает исходная схема кубика между двумя сжатыми пружинами. Здесь k1=600, сжатия 4 и 3 см, требуется k2=800 Н на метр. Во внешнем варианте 500 и 3 см, требуется сила 15 Н; эти числа не переносятся. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "800",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "26769F": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-11.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Под действием силы величиной 6 Н пружина удлинилась на 3 см. Чему равна величина силы, под действием которой удлинение этой пружины составит 4,5 см? H",
+    "sourceHash": "d5e5bfc9f5d6dd66c73badc3cdbb8505d059134d48d145556878fc33e9abf256",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38184",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадают 6 Н, 3 см, новое удлинение 4,5 см, искомая сила и ответ 9 Н. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "9",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "8CF69C": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-11.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/5DCECB3D834FA8814DABE687DE7C5323(copy1)/xs3qstsrcBFA1AD41EEA5B07D47F9083B4FA69851_5_1721206170.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображены лабораторный динамометр и линейка. Шкала динамометра проградуирована в ньютонах, шкала линейки проградуирована в сантиметрах. Какой должна быть масса груза, подвешенного к пружине динамометра, чтобы пружина растянулась на 7,5 см? г",
+    "sourceHash": "53f32f1dddc8bb6648375198c5c91d5cc853b0bdd5e40f472814313da970a269",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=41566",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Совпадает исходная шкала: 0,5 Н на 5 см, 1 Н на 10 см; внешний разбор находит жёсткость 10 Н на метр. Здесь дополнительно используется требуемое удлинение 7,5 см и равновесие груза: 75 г. Внешняя иллюстрация просмотрена. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "75",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "18D1E8": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-11.raw.html",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/3BB2520D5CA1AE0D43CBDCAE64850842(copy2)/xs3qstsrc3BB2520D5CA1AE0D43CBDCAE64850842_1_1539958055.png"
+    ],
+    "fipiCondition": "Впишите правильный ответ. На рисунке представлен график зависимости модуля силы упругости F от удлинения пружины x. Какова жёсткость пружины? Н/м",
+    "sourceHash": "549989a22604c791fe201bb37d116d8af427f41f9796547890fc8abda7adf205",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=3785",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Сходная координатная сетка, но первичные точки 2 см и 30 Н, 4 см и 60 Н, 6 см и 90 Н дают 1500 Н на метр. Во внешнем рисунке 4 см и 30 Н, ответ 750; различие наклона проверено вручную. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "1500",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "377A36": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-14.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Под действием силы величиной 5 Н пружина удлинилась на 2 см. Чему равна величина силы, под действием которой удлинение этой пружины составит 6 см? Деформацию считать упругой. H",
+    "sourceHash": "e29c587d788a8ea2c64d83d3b1ede8dc7fb0d1e149faef627dc308e5ea81f86e",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=38184",
+    "match": "reviewed-variant",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Тот же расчёт силы при изменении удлинения; здесь 5 Н, 2 см и 6 см дают 15 Н. Внешние 6 Н, 3 см и 4,5 см относятся к другому варианту. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "15",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/catalog.html"
+  },
+  "89A46D": {
+    "fipi": "https://ege.fipi.ru/bank/index.php?proj=BA1F39653304A5B041B656915DC36B38",
+    "file": "physics-20.raw.html",
+    "images": [],
+    "fipiCondition": "Впишите правильный ответ. Груз массой 200 г подвешен на пружине к потолку неподвижного лифта. Лифт начинает двигаться и в течение 2 с равноускоренно опускается вниз на расстояние 5 м. Каково удлинение пружины при опускании лифта, если её жёсткость 100 Н/м? Движение груза также считать равноускоренным, возникновением колебаний пренебречь. см",
+    "sourceHash": "89dc850cccb1679e0cddb487c018e36ee6702846fff65efb96061c48a7c539b7",
+    "url": "https://phys-ege.sdamgia.ru/problem?id=9037",
+    "match": "exact-condition",
+    "comparison": "Прочитаны первичное условие и независимое решение по закону Гука. Полностью совпадают масса 200 г, путь 5 м, время 2 с, старт из покоя, жёсткость 100 Н на метр и отсутствие колебаний. Проверены a=2,5 м в секунду за секунду, mg−kx=ma и удлинение 1,5 см. Собственный ответ проверен обратной подстановкой, единицами и направлениями сил.",
+    "expectedAnswer": "1,5",
+    "reviewed": true,
+    "checkedAt": "2026-09-30",
+    "referenceArchive": "/root/ege-physics-elasticity-20260930/references/lift.html"
+  }
+}

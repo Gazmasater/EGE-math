@@ -1,0 +1,447 @@
+[
+  {
+    "id": "B02B49",
+    "kind": "delta",
+    "F": 12,
+    "t": 3,
+    "along": true,
+    "ref": "29138",
+    "answer": "36",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "F579FA",
+    "kind": "mass2",
+    "m1": 3000,
+    "rv": 0.5,
+    "rp": 1.5,
+    "ref": "38711",
+    "answer": "1000",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "72C7F7",
+    "kind": "speed-ratio",
+    "rp": 5,
+    "rm": 2.5,
+    "ref": "35136",
+    "answer": "2",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "C591F2",
+    "kind": "time",
+    "F": 8,
+    "dp": 24,
+    "ref": "7135",
+    "answer": "3",
+    "images": [],
+    "unit": "с"
+  },
+  {
+    "id": "568701",
+    "kind": "stop",
+    "m": 6,
+    "v": 2,
+    "F": 4,
+    "ref": "32244",
+    "answer": "3",
+    "images": [],
+    "unit": "с"
+  },
+  {
+    "id": "CDB87D",
+    "kind": "time",
+    "F": 1.5,
+    "dp": 6,
+    "ref": "7135",
+    "answer": "4",
+    "images": [],
+    "unit": "с"
+  },
+  {
+    "id": "8CAE7B",
+    "kind": "initial",
+    "F": 5,
+    "t": 4,
+    "p": 35,
+    "ref": "20013",
+    "answer": "15",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "72BBB5",
+    "kind": "delta",
+    "F": 8,
+    "t": 4,
+    "ref": "29138",
+    "answer": "32",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "9BBABD",
+    "kind": "momentum-ratio",
+    "rm": 6,
+    "rv": 0.3,
+    "ref": "38755",
+    "answer": "1,8",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "107015",
+    "kind": "force",
+    "dp": 8,
+    "t": 2,
+    "ref": "423",
+    "answer": "4",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "24A417",
+    "kind": "speed-ratio",
+    "rp": 6,
+    "rm": 2,
+    "ref": "35136",
+    "answer": "3",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "DC8C1F",
+    "kind": "perpendicular",
+    "p1": 8,
+    "p2": 6,
+    "ref": "401",
+    "answer": "10",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/715160B1885AA5124EB25B8C70F038CE(copy2)/xs3qstsrc715160B1885AA5124EB25B8C70F038CE_1_1547641971.png"
+    ],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "3DC615",
+    "kind": "delta",
+    "F": 15,
+    "t": 3,
+    "ref": "29138",
+    "answer": "45",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "E7132C",
+    "kind": "force-speed",
+    "m": 2,
+    "dv": 6,
+    "t": 3,
+    "ref": "11546",
+    "answer": "4",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "0804DD",
+    "kind": "perpendicular",
+    "p1": 0.8,
+    "p2": 0.6,
+    "ref": "38185",
+    "answer": "1",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/8AB45E20E383A49043E3267F0DE3013B(copy1)/xs3qstsrc7272F019866DA9C1466D4B8CD663880C_5_1714997558.png"
+    ],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "1BB6D6",
+    "kind": "force",
+    "dp": 24,
+    "t": 4,
+    "ref": "43004",
+    "answer": "6",
+    "images": [],
+    "unit": "Н"
+  },
+  {
+    "id": "DC2D53",
+    "kind": "delta",
+    "F": 24,
+    "t": 3,
+    "ref": "29138",
+    "answer": "72",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "A8FA51",
+    "kind": "final",
+    "p0": 20,
+    "F": 10,
+    "t": 3,
+    "direction": "increased",
+    "ref": "43185",
+    "answer": "50",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "E83B50",
+    "kind": "delta",
+    "F": 1.5,
+    "t": 8,
+    "ref": "29440",
+    "answer": "12",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "BDB0A9",
+    "kind": "initial",
+    "F": 9,
+    "t": 2,
+    "p": 48,
+    "ref": "20013",
+    "answer": "30",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "5286A9",
+    "kind": "delta",
+    "F": 32,
+    "t": 8,
+    "ref": "29138",
+    "answer": "256",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "3A25A1",
+    "kind": "start",
+    "m": 5,
+    "F": 1,
+    "v": 2,
+    "ref": "32244",
+    "answer": "10",
+    "images": [],
+    "unit": "с"
+  },
+  {
+    "id": "730AC9",
+    "kind": "delta",
+    "F": 10,
+    "t": 4,
+    "ambiguous": true,
+    "ref": "38600",
+    "answer": "40",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "C54EC4",
+    "kind": "initial",
+    "F": 6,
+    "t": 8,
+    "p": 56,
+    "ref": "20013",
+    "answer": "8",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "CC7EC8",
+    "kind": "final",
+    "p0": 30,
+    "F": 15,
+    "t": 5,
+    "direction": "no-turn",
+    "ref": "43185",
+    "answer": "105",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "32DAC5",
+    "kind": "final",
+    "p0": 10,
+    "F": 10,
+    "t": 4,
+    "direction": "along",
+    "ref": "43185",
+    "answer": "50",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "A8589E",
+    "kind": "speed-ratio",
+    "rp": 4,
+    "rm": 8,
+    "ref": "11785",
+    "answer": "0,5",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "9E3095",
+    "kind": "delta",
+    "F": 12,
+    "t": 4,
+    "ref": "29440",
+    "answer": "48",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "DEA9ED",
+    "kind": "speed-ratio",
+    "rp": 6,
+    "rm": 2,
+    "ref": "35136",
+    "answer": "3",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "7F2D66",
+    "kind": "final",
+    "p0": 40,
+    "F": 22,
+    "t": 3,
+    "direction": "no-turn",
+    "ref": "43185",
+    "answer": "106",
+    "images": [],
+    "unit": "кг·м·с⁻¹"
+  },
+  {
+    "id": "BF8368",
+    "kind": "slow",
+    "p0": 100,
+    "p": 40,
+    "F": 30,
+    "ref": "50703",
+    "answer": "2",
+    "images": [],
+    "unit": "с"
+  },
+  {
+    "id": "26C665",
+    "kind": "time",
+    "dp": 12.5,
+    "F": 2.5,
+    "ref": "7135",
+    "answer": "5",
+    "images": [],
+    "unit": "с"
+  },
+  {
+    "id": "478280",
+    "kind": "mass-ratio",
+    "rp": 2.8,
+    "rv": 2,
+    "ref": "11785",
+    "answer": "1,4",
+    "images": [],
+    "unit": ""
+  },
+  {
+    "id": "F46783",
+    "kind": "truck-mass",
+    "m1": 1500,
+    "v1": 90,
+    "v2": 60,
+    "rp21": 2,
+    "ref": "431",
+    "answer": "4500",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "45B12B",
+    "kind": "fragment-speed",
+    "M": 2,
+    "v0": 200,
+    "m2": 1,
+    "alpha": 60,
+    "ref": "9238",
+    "answer": "800",
+    "images": [],
+    "unit": "м·с⁻¹"
+  },
+  {
+    "id": "8CED26",
+    "kind": "head-on",
+    "v": 1,
+    "u": 0.5,
+    "ref": "24378",
+    "answer": "3",
+    "images": [],
+    "unit": "раз"
+  },
+  {
+    "id": "5E35A7",
+    "kind": "fragment-pythagoras",
+    "M": 2,
+    "v0": 200,
+    "m1": 1,
+    "v1": 300,
+    "ref": "9325",
+    "answer": "500",
+    "images": [],
+    "unit": "м·с⁻¹"
+  },
+  {
+    "id": "8CC9AB",
+    "kind": "fragment-mass",
+    "v0": 100,
+    "m2": 1,
+    "v2": 400,
+    "alpha": 60,
+    "ref": "9238",
+    "answer": "2",
+    "images": [],
+    "unit": "кг"
+  },
+  {
+    "id": "2FB793",
+    "kind": "fragment-transverse",
+    "M": 2,
+    "m1": 1,
+    "m2": 1,
+    "v1": 200,
+    "alpha": 30,
+    "ref": "29737",
+    "answer": "400",
+    "images": [],
+    "unit": "м·с⁻¹"
+  },
+  {
+    "id": "434D31",
+    "kind": "sand-cart",
+    "m": 3,
+    "M": 15,
+    "E": 2.25,
+    "alpha": 60,
+    "ref": "3351",
+    "answer": "6",
+    "images": [
+      "docs/BA1F39653304A5B041B656915DC36B38/questions/814F39B2254282A749A66C99673B51FB(copy1)/xs3qstsrc814F39B2254282A749A66C99673B51FB_1_1516890203.png"
+    ],
+    "unit": "м·с⁻¹"
+  },
+  {
+    "id": "FC2D8A",
+    "kind": "same-way",
+    "ref": "426",
+    "answer": "4",
+    "images": [],
+    "unit": ""
+  }
+]
