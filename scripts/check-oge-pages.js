@@ -5,10 +5,12 @@ const os = require('node:os');
 const { spawn } = require('node:child_process');
 const assert = require('node:assert/strict');
 const { readOgeCatalog } = require('./lib/oge-catalog');
-const { ogeTaskMatchesTopic } = require('../lib/oge-catalog');
+const { ogeBank, ogeTopicStats, ogeTaskMatchesTopic } = require('../lib/oge-catalog');
+const section = process.argv[2] || 'oge';
+const bank = ogeBank(section);
 
 const origin = process.env.OGE_SITE_ORIGIN || 'http://127.0.0.1:8877';
-const output = path.resolve(process.env.OGE_BROWSER_REPORT || 'storage/oge-browser');
+const output = path.resolve(process.env.OGE_BROWSER_REPORT || `storage/${section}-browser`);
 const chrome = process.env.CHROME_BIN || (process.platform === 'win32' ? 'C:/Program Files/Google/Chrome/Application/chrome.exe' : '/opt/google/chrome/chrome');
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'oge-browser-'));
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -65,21 +67,24 @@ async function main() {
     const result = await call('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false });
     fs.writeFileSync(path.join(output, name), Buffer.from(result.data, 'base64'));
   };
-  const { tasks } = readOgeCatalog();
+  const { tasks } = readOgeCatalog(undefined, section);
+  const stats = ogeTopicStats(tasks, section);
   const picture = tasks.find(task => task.fragment.includes('class="fipi-picture"'));
-  const shared = tasks.find(task => ogeTaskMatchesTopic(task, 'practical'));
+  const shared = tasks.find(task => ogeTaskMatchesTopic(task, 'practical', section));
+  const sampleTopic = bank.topics.flatMap(group => group.children.map(([code]) => code)).find(code => stats.counts[code] > 12);
+  const lastPage = Math.ceil(tasks.length / 12);
   const report = { pages: [], interactions: [], noJavaScript: [], errors: [] };
   const answerTypes = [...new Set(tasks.map(task => task.answerType))];
   const representatives = answerTypes.map(type => tasks.find(task => task.answerType === type));
-  const paths = [...new Set(['/oge', '/oge?topic=all', '/oge?topic=7.2&page=2', '/oge?topic=all&page=324', '/oge?topic=practical', `/oge?topic=all&q=${tasks[0].id}`, `/tasks/${picture.id}`, `/tasks/${shared.id}`, ...representatives.map(task => `/tasks/${task.id}`)])];
+  const paths = [...new Set([bank.path, `${bank.path}?topic=all`, `${bank.path}?topic=${sampleTopic}&page=2`, `${bank.path}?topic=all&page=${lastPage}`, ...(shared ? [`${bank.path}?topic=practical`, `/tasks/${shared.id}`] : []), `${bank.path}?topic=all&q=${tasks[0].sourceId}`, `/tasks/${picture.id}`, ...representatives.map(task => `/tasks/${task.id}`)])];
   for (const width of [1280, 390]) {
     await call('Emulation.setDeviceMetricsOverride', { width, height: 900, deviceScaleFactor: 1, mobile: false });
     for (const url of paths) {
       await navigate(url);
       const info = await evaluate(`({ title: document.title, width: innerWidth, scrollWidth: document.documentElement.scrollWidth,
         h1: document.querySelectorAll('h1').length, tasks: document.querySelectorAll('.qblock[id]').length,
-        controls: document.querySelectorAll('.solution-controls').length, images: Array.from(document.images).filter(image => image.src.includes('/fipi/oge/')).length,
-        broken: Array.from(document.images).filter(image => image.src.includes('/fipi/oge/') && !image.naturalWidth).map(image => image.src),
+        controls: document.querySelectorAll('.solution-controls').length, images: Array.from(document.images).filter(image => image.src.includes(${JSON.stringify(bank.assetPrefix)})).length,
+        broken: Array.from(document.images).filter(image => image.src.includes(${JSON.stringify(bank.assetPrefix)}) && !image.naturalWidth).map(image => image.src),
         clipped: Array.from(document.querySelectorAll('.qblock[id]')).flatMap(task => {
           const bounds = task.getBoundingClientRect();
           return Array.from(task.querySelectorAll('form, p, input[type="text"], select, .fipi-picture')).filter(element => {
@@ -93,22 +98,22 @@ async function main() {
         hidden: document.documentElement.classList.contains('page-loading') })`);
       if (info.h1 !== 1 || info.hidden || info.tasks !== info.controls || info.scrollWidth > width + 1 || info.broken.length || info.clipped.length) report.errors.push({ url, width, info });
       report.pages.push({ url, width, ...info });
-      if (url === '/oge' || url === `/tasks/${picture.id}` || url === `/tasks/${shared.id}`) {
+      if (url === bank.path || url === `/tasks/${picture.id}` || (shared && url === `/tasks/${shared.id}`)) {
         if (url.startsWith('/tasks/')) await evaluate(`(() => {
           const header = document.querySelector('.local-header');
           const offset = getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().height + 12 : 12;
           window.scrollTo(0, document.querySelector('.qblock[id]').getBoundingClientRect().top + window.scrollY - offset);
         })()`);
-        await screenshot(`${url === '/oge' ? 'hub' : url.slice(7)}-${width}.png`);
+        await screenshot(`${url === bank.path ? 'hub' : url.slice(7)}-${width}.png`);
       }
     }
-    await navigate('/oge?topic=all');
+    await navigate(bank.path + '?topic=all');
     await evaluate(`document.querySelector('.oge-pager a[rel="next"]').click()`);
-    await waitForPage(origin + '/oge?topic=all&page=2');
+    await waitForPage(origin + bank.path + '?topic=all&page=2');
     assert.equal(await evaluate('document.querySelectorAll(".qblock[id]").length'), 12);
     report.interactions.push({ width, action: 'next-page', passed: true });
-    await evaluate(`document.querySelector('#oge-query').value = ${JSON.stringify(tasks[0].id)}; document.querySelector('#oge-query').form.requestSubmit()`);
-    await waitForPage(origin + `/oge?topic=all&q=${tasks[0].id}`);
+    await evaluate(`document.querySelector('#oge-query').value = ${JSON.stringify(tasks[0].sourceId)}; document.querySelector('#oge-query').form.requestSubmit()`);
+    await waitForPage(origin + `${bank.path}?topic=all&q=${tasks[0].sourceId}`);
     assert.equal(await evaluate('document.querySelectorAll(".qblock[id]").length'), 1);
     report.interactions.push({ width, action: 'search', passed: true });
     await evaluate('document.querySelector(".solution-button").click()');
@@ -121,13 +126,13 @@ async function main() {
     assert.ok(unavailable, 'Честное сообщение об отсутствии решения');
     report.interactions.push({ width, action: 'unpublished-solution', passed: true });
     await call('Emulation.setScriptExecutionDisabled', { value: true });
-    for (const url of ['/oge?topic=practical', `/tasks/${shared.id}`]) {
+    for (const url of [bank.path + (shared ? '?topic=practical' : '?topic=all'), `/tasks/${shared?.id || picture.id}`]) {
       await navigate(url);
       const info = await evaluate(`({ tasks: document.querySelectorAll('.qblock[id]').length,
         shared: document.querySelectorAll('.oge-shared-condition').length,
         visible: Array.from(document.querySelectorAll('.qblock[id]')).every(task => task.getBoundingClientRect().height > 0 && getComputedStyle(task).visibility !== 'hidden'),
-        broken: Array.from(document.images).filter(image => image.src.includes('/fipi/oge/') && !image.naturalWidth).length })`);
-      assert.ok(info.visible && info.shared === info.tasks && info.broken === 0, `${url}: условие и рисунки без JavaScript`);
+        broken: Array.from(document.images).filter(image => image.src.includes(${JSON.stringify(bank.assetPrefix)}) && !image.naturalWidth).length })`);
+      assert.ok(info.visible && (!shared || info.shared === info.tasks) && info.broken === 0, `${url}: условие и рисунки без JavaScript`);
       report.noJavaScript.push({ width, url, ...info });
     }
     await call('Emulation.setScriptExecutionDisabled', { value: false });

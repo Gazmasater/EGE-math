@@ -1,10 +1,12 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const https = require('node:https');
-const { OGE_PROJECT, OGE_ORIGIN, ogeAssetPaths } = require('../lib/oge-catalog');
+const { OGE_ORIGIN, OGE_BANKS, ogeBank, ogePublicTaskId, ogeAssetPaths } = require('../lib/oge-catalog');
+const bank = ogeBank(process.argv[2] || 'oge');
+const ownPagePattern = new RegExp(`^${bank.filePrefix}-\\d+\\.raw\\.html$`, 'i');
 
 const root = path.resolve(__dirname, '..');
-const assetRoot = path.join(root, 'fipi-assets', 'oge');
+const assetRoot = path.join(root, 'fipi-assets', bank.section);
 const decoder = new TextDecoder('windows-1251');
 const taskPattern = /<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"]\s+id=['"]q([0-9A-Z]+)['"]/gi;
 
@@ -39,7 +41,7 @@ async function main() {
   let expectedTotal;
   const assets = new Set();
   for (let page = 0; page < 100; page++) {
-    const form = new URLSearchParams({ search: '1', pagesize: '100', proj: OGE_PROJECT });
+    const form = new URLSearchParams({ search: '1', pagesize: '100', proj: bank.project });
     if (page) form.set('page', String(page));
     const bytes = await request(`${OGE_ORIGIN}/bank/questions.php`, form.toString());
     const html = decoder.decode(bytes);
@@ -52,7 +54,7 @@ async function main() {
       if (ids.has(id)) throw new Error(`Duplicate task ${id} on page ${page + 1}`);
       ids.add(id);
     }
-    for (const relative of ogeAssetPaths(html)) assets.add(relative);
+    for (const relative of ogeAssetPaths(html, bank.section)) assets.add(relative);
     pages.push(bytes);
     console.log(`page=${page + 1} tasks=${pageIds.length} total=${ids.size}/${expectedTotal}`);
     if (ids.size === expectedTotal) break;
@@ -61,11 +63,14 @@ async function main() {
   if (ids.size !== expectedTotal) throw new Error(`Downloaded ${ids.size} of ${expectedTotal} tasks`);
 
   // Public task URLs and solution IDs are shared with EGE; never shadow an existing task.
+  const publicIds = new Set([...ids].map(id => ogePublicTaskId(id, bank.section)));
   for (const name of await fs.readdir(root)) {
-    if (!name.endsWith('.raw.html') || name.startsWith('oge-')) continue;
+    if (!name.endsWith('.raw.html') || ownPagePattern.test(name)) continue;
     const html = decoder.decode(await fs.readFile(path.join(root, name)));
+    const sourceBank = Object.values(OGE_BANKS).find(item => new RegExp(`^${item.filePrefix}-\\d+\\.raw\\.html$`, 'i').test(name));
     for (const match of html.matchAll(taskPattern)) {
-      if (ids.has(match[1].toUpperCase())) throw new Error(`OGE/EGE task ID collision: ${match[1]}`);
+      const existingId = sourceBank ? ogePublicTaskId(match[1], sourceBank.section) : match[1].toUpperCase();
+      if (publicIds.has(existingId)) throw new Error(`FIPI task ID collision with ${name}: ${match[1]}`);
     }
   }
 
@@ -100,13 +105,13 @@ async function main() {
     }
   }));
   // Replace pages only after all pages and assets have been validated/downloaded.
-  const names = pages.map((_, index) => `oge-${index + 1}.raw.html`);
+  const names = pages.map((_, index) => `${bank.filePrefix}-${index + 1}.raw.html`);
   for (const [index, name] of names.entries()) await fs.writeFile(path.join(root, `${name}.new`), pages[index]);
   for (const name of names) await fs.rename(path.join(root, `${name}.new`), path.join(root, name));
   for (const name of await fs.readdir(root)) {
-    if (/^oge-\d+\.raw\.html$/i.test(name) && !names.includes(name)) await fs.unlink(path.join(root, name));
+    if (ownPagePattern.test(name) && !names.includes(name)) await fs.unlink(path.join(root, name));
   }
-  console.log(JSON.stringify({ pages: pages.length, tasks: ids.size, assets: assets.size, downloadedAssets }));
+  console.log(JSON.stringify({ section: bank.section, pages: pages.length, tasks: ids.size, assets: assets.size, downloadedAssets }));
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });

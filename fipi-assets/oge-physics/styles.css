@@ -1,0 +1,466 @@
+/***CLASSES_NAMES***
+BODY :: Основное_окно
+.coursebody :: Дополнительное_окно
+a:link :: Новые_ссылки
+a:visited :: Пройденные_ссылки
+a:hover :: Ссылки_при_наведении
+.HeadCell :: Заголовок
+.SubHeadCell :: Подзаголовок
+.cell_1 :: Ячейка_1
+.cell_2 :: Ячейка_2
+.cell_3 :: Ячейка_3
+.Path :: Навигация
+.Walk :: Элемент_управления
+.WalkSelected :: Активный_элемент_управления
+.PageHeader :: Заголовок_меню
+.MenuHeader :: Полоса_заголовка_меню
+.Header :: Заголовок
+.SubHeader :: Подзаголовок
+.Warning :: Внимание
+.Header1 :: Заголовок_1
+.Header2 :: Заголовок_2
+.Header3 :: Заголовок_3
+.Header4 :: Заголовок_4
+.Header5 :: Заголовок_5
+.Header6 :: Заголовок_6
+.Header7 :: Заголовок_7
+.WrongAnswer :: Неправильный_ответ
+.Normal :: Обычный_текст
+.BoldText :: Жирный
+.ItalicText :: Курсив
+.Word :: Cлово
+.inscription :: Подпись
+.Comment :: Комментарий
+.function :: Функция
+.definition :: Определение
+.example :: Пример
+.little :: Меньший_размер
+.BoldItalic :: Жирный_курсив
+.NormalCenter :: Обычный_текст_центр
+.NormalRight :: Обычный_текст_справа
+.ItalicUnderline :: Подчеркнутый_курсив
+*/
+BODY {
+    COLOR: #000000;
+    FONT-FAMILY: Arial,  Helvetica,  TimesNewRoman;
+    background: none;
+    SCROLLBAR-FACE-COLOR: #CFB1DD;
+    SCROLLBAR-HIGHLIGHT-COLOR: #E2D3ED;
+    SCROLLBAR-SHADOW-COLOR: #73106E;
+    SCROLLBAR-3DLIGHT-COLOR: #73106E;
+    SCROLLBAR-ARROW-COLOR: #73106E;
+    SCROLLBAR-TRACK-COLOR: #CFB1DD;
+    SCROLLBAR-DARKSHADOW-COLOR: #8E5391;
+}
+.coursebody {
+    COLOR: #000000;
+    FONT-FAMILY: Arial,  Helvetica,  TimesNewRoman;
+    background: none;
+    background-COLOR: #E4E5EB;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px  none;
+    border-right: 1px  solid  #5D4BAB;
+}
+TABLE {
+    font-size: 100%;
+}
+INPUT {
+    font-size: 95%;
+}
+SELECT {
+    font-size: 95%;
+}
+.linebody {
+    COLOR: #000000;
+    FONT-FAMILY: Arial,  Helvetica,  TimesNewRoman;
+    background: none;
+    background-COLOR: #6C7B93;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+}
+H1 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+}
+H2 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    text-align: left;
+}
+H3 {
+    COLOR: #000000;
+    FONT-FAMILY: Arial,  Helvetica,  TimesNewRoman;
+}
+FORM {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a:MacINPUT {
+    FONT-FAMILY: GenevaCY,  tahoma,  sans-serif;
+}
+a:MacTEXTAREA {
+    FONT-FAMILY: GenevaCY,  tahoma,  sans-serif;
+}
+a:MacSELECT {
+    FONT-FAMILY: GenevaCY,  tahoma,  sans-serif;
+}
+a:link {
+    COLOR: #6C7B93;
+    TEXT-DECORATION: none;
+}
+a:visited {
+    COLOR: #6C7B93;
+    TEXT-DECORATION: none;
+}
+a:hover {
+    COLOR: #535EBA;
+    TEXT-DECORATION: underline;
+}
+.interactive {
+    background-color: #FAFA7B;
+}
+.previewBar {
+}
+.HeadCell {
+    text-align: Center;
+    margin: 2;
+    background-COLOR: #FAFBCA;
+    font-weight: bold;
+    font-size: 107%;
+}
+.SubHeadCell {
+    text-align: Center;
+    margin: 2;
+    background-COLOR: #FAFBCA;
+    font-size: 107%;
+}
+.cell_1 {
+    background-color: #FFFFFF;
+}
+.cell_2 {
+    background-color: #FAF7FF;
+}
+.cell_3 {
+    background-color: #FFE5E5;
+}
+.Path {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #6F0E6E;
+    text-align: left;
+    font-size: 90%;
+}
+.Walk {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: gray;
+    text-align: left;
+}
+.WalkName {
+    font-weight: bold;
+}
+.WalkSelected {
+    border-style: solid;
+    border-width: 1;
+}
+.MsoNormal {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    text-align: justify;
+    margin: 4;
+    text-indent: 15;
+}
+.PageHeader {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    font-size: 118%;
+}
+.MenuHeader {
+    background-color: #DECAE8;
+}
+.Header {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    font-size: 115%;
+}
+.SubHeader {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-size: 115%;
+}
+.SubHeader2 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-size: 105%;
+}
+.CommentHeader {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    font-size: 105%;
+}
+.Warning {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #800000;
+    font-weight: bold;
+}
+.Simple {
+    font-family: Arial,  Helvetica;
+    color: #000000;
+}
+.Header1 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin: 4;
+    font-size: 120%;
+}
+.Header2 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin: 4;
+    font-size: 115%;
+}
+.Header3 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin: 4;
+    font-size: 113%;
+}
+.Header4 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin: 4;
+    font-size: 113%;
+}
+.Header5 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin: 4;
+    font-size: 113%;
+}
+.Header6 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin: 4;
+    font-size: 113%;
+}
+.Header7 {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin: 4;
+    font-size: 113%;
+}
+.WrongAnswer {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #C22800;
+    font-style: italic;
+    text-align: left;
+    margin: 4;
+}
+.EmptyCSS2Name {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    text-align: left;
+    margin: 4;
+}
+.Formula {
+    font-family: TimesNewRoman;
+    color: #000000;
+}
+.SWFHeader {
+    font-family: Arial;
+    color: #000000;
+    font-weight: bold;
+}
+.Normal {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    text-align: justify;
+    margin: 4;
+    text-indent: 15;
+}
+.Table {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    text-align: center;
+    margin: 4;
+    text-indent: 15;
+}
+.BoldText {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    text-align: justify;
+    text-indent: 15;
+}
+.NormalBold {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #0000A0;
+    font-weight: bold;
+    text-align: justify;
+    text-indent: 0;
+}
+.ItalicText {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-style: italic;
+    text-align: justify;
+    text-indent: 15;
+}
+.Word {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #333399;
+    font-size: 115%;
+    font-weight: bold;
+    text-align: justify;
+}
+.Term {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-weight: bold;
+    font-size: 100%;
+    font-style: italic;
+    text-align: justify;
+}
+.inscription {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #666699;
+    font-size: 90%;
+    text-align: Center;
+}
+.Comment {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #999999;
+}
+.function {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #339966;
+    font-weight: bold;
+}
+.definition {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+}
+.example {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-style: italic;
+    text-align: justify;
+}
+.little {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    text-align: Center;
+    font-size: 90%;
+}
+.BoldItalic {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+    text-indent: 15;
+}
+.NormalCenter {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    text-align: center;
+    margin: 4;
+    text-indent: 15;
+}
+.NormalRight {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    text-align: right;
+    margin: 4;
+    text-indent: 15;
+}
+.smallfont {
+    font-size: 1pt;
+}
+.Mistake {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #D63E3E;
+    font-weight: bold;
+    text-align: justify;
+    margin: 4;
+    text-indent: 15;
+}
+.himsymbol {
+    font-family: Symbol;
+    color: #000000;
+}
+.ItalicUnderline {
+    font-family: Arial,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    font-style: italic;
+    text-align: justify;
+    text-indent: 15;
+    border-bottom: 1  solid;
+}
+.rubr {
+    color: #336666;
+    text-decoration: none;
+}
+.on_rubr {
+    color: #6666CC;
+    text-decoration: none;
+}
+.bioTD {
+    FONT-FAMILY: Arial,  Helvetica,  TimesNewRoman;
+    text-align: justify;
+}
+.bioRazdel {
+    font-family: Arial,  Tahoma,  Helvetica,  TimesNewRoman;
+    font-weight: bold;
+    color: #993366;
+}
+.bioPunkt {
+    font-family: TimesNewRoman,  Arial,  Tahoma,  Helvetica;
+    font-weight: bold;
+    color: #000000;
+}
+.bioComment {
+    font-family: Arial,  Tahoma,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    text-align: justify;
+}
+.bioCommentItalic {
+    font-family: Arial,  Tahoma,  Helvetica,  TimesNewRoman;
+    color: #000000;
+    text-align: justify;
+    font-style: italic;
+    text-align: justify;
+}
+.bioText {
+    font-family: Arial,  Tahoma,  Helvetica,  TimesNewRoman;
+    font-weight: bold;
+    color: #4D4D4D;
+    text-align: justify;
+}

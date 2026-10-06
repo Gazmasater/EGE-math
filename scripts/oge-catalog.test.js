@@ -1,6 +1,6 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { ogeTaskCodes, ogeTaskMatchesTopic, ogeTopicStats, ogeCataloguePath, ogePageNumber, normalizeOgeSourceHtml, ogeAssetPaths } = require('../lib/oge-catalog');
+const { ogeBank, ogePublicTaskId, ogeSourceTaskId, ogeTopicInfo, ogeTaskCodes, ogeTaskMatchesTopic, ogeTopicStats, ogeCataloguePath, ogePageNumber, normalizeOgeSourceHtml, ogeAssetPaths } = require('../lib/oge-catalog');
 
 const task = (codes, condition = '') => ({ fragment: `<div class="qblock">${condition}</div><div class="task-info-content"><table><tr><td>КЭС:</td><td>${codes.map(code => `<div>${code} Тема</div>`).join('')}</td></tr></table></div>` });
 
@@ -68,4 +68,40 @@ test('Рисунок ФИПИ доступен без JavaScript и берётс
   assert.match(normalized, /<img[^>]*src="\/fipi\/oge\/docs\/task\/picture.png"/);
   assert.ok(!normalized.includes('ShowPictureQ'));
   assert.throws(() => normalizeOgeSourceHtml('<body><div class="qblock" id="qAAAA01"><script>ShowPictureQ("docs/../secret.png");</script></div></body>'));
+});
+
+test('Физика ОГЭ имеет собственные темы КЭС, включая двузначные подтемы', () => {
+  const example = task(['1.12', '3.17']);
+  assert.equal(ogeTaskMatchesTopic(example, '1.1', 'oge-physics'), false);
+  assert.equal(ogeTaskMatchesTopic(example, '1.12', 'oge-physics'), true);
+  assert.equal(ogeTaskMatchesTopic(example, '3', 'oge-physics'), true);
+  assert.equal(ogeTaskMatchesTopic(example, 'unclassified', 'oge-physics'), false);
+  assert.ok(ogeTopicInfo('1.12', 'oge-physics').name.includes('Трение'));
+  assert.equal(ogeTopicInfo('1.12'), null);
+  assert.equal(ogeBank('oge-physics').topics.flatMap(group => group.children).length, 83);
+  assert.throws(() => ogeBank('constructor'));
+});
+
+test('Одинаковые исходные номера разных банков не смешивают страницы и решения', () => {
+  assert.equal(ogePublicTaskId('465498'), '465498');
+  assert.equal(ogePublicTaskId('465498', 'oge-physics'), 'OGEPHYS465498');
+  assert.equal(ogePublicTaskId('OGEPHYS465498', 'oge-physics'), 'OGEPHYS465498');
+  assert.equal(ogeSourceTaskId('OGEPHYS465498', 'oge-physics'), '465498');
+  const raw = `<body><div class="qblock" id="q465498"><form id="checkform465498">Условие физики</form></div><div id="i465498"><span class="canselect">465498</span></div><script>toggleQFavour('i465498');</script></body>`;
+  const html = normalizeOgeSourceHtml(raw, 'oge-physics');
+  assert.ok(html.includes('id="qOGEPHYS465498"'));
+  assert.ok(html.includes('id="iOGEPHYS465498"'));
+  assert.ok(html.includes("toggleQFavour('iOGEPHYS465498')"));
+  assert.ok(html.includes('id="checkform465498"'));
+  assert.ok(html.includes('<span class="canselect">465498</span>'));
+  assert.equal(normalizeOgeSourceHtml(html, 'oge-physics'), html);
+});
+
+test('Путь каталога и ресурсы физики не используют математический банк', () => {
+  assert.equal(ogeCataloguePath({ section: 'oge-physics', topic: '1.12', page: 2, query: '465498' }), '/oge-physics?topic=1.12&q=465498&page=2');
+  assert.equal(ogeCataloguePath({ section: 'oge-physics', added: true, page: 2 }), '/added?section=oge-physics&page=2');
+  const html = normalizeOgeSourceHtml(`<body><div class="qblock" id="qAAAA01"><script>ShowPictureQ('docs/physics/force.png');</script></div></body>`, 'oge-physics');
+  assert.ok(html.includes('src="/fipi/oge-physics/docs/physics/force.png"'));
+  assert.ok(!html.includes('/fipi/oge/'));
+  assert.ok(ogeAssetPaths(html, 'oge-physics').has('docs/physics/force.png'));
 });

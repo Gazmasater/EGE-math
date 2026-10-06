@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html XMLNS:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><LINK href="../../styles.css" rel="STYLESHEET" type="text/css">
+<LINK href="../../xmodules/os/img/_styles.css?v=1.04" rel="STYLESHEET" type="text/css">
+<script type="text/javascript" src="../../lib/mml/mathjax-4-config.js"></script><script type="text/javascript" src="../../lib/mml/mathjax-4/mml-chtml.js"></script><script type="text/javascript" src="../../lib/t3utils.js?v=2.04"></script><script type="text/javascript">var home_directory="../../";</script><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<META NAME="Document-state" CONTENT="Dynamic"><META HTTP-EQUIV="pragma" CONTENT="no-cache"><META HTTP-EQUIV="expires" CONTENT="0"><meta http-equiv="X-UA-Compatible" content="IE=10"/><link rel='shortcut icon' href='img/icon.png'><style>@media print {.noprint {display:none !important;}}</style><title>Открытый банк тестовых заданий</title>
+</head>
+<body class='questions-container' style='font-size:11pt'>
+		<script language="javascript">
+        var abort_answer_senging;
+		function onButtonClick(formid='')
+		{
+			var aform=document.getElementById('checkform'+formid);
+            abort_answer_senging = false;
+            if (formid)
+                eval('setAnswer'+formid+'(aform);');
+            else
+			    setAnswer(aform);
+            if (abort_answer_senging) return;
+			;
+			//aform.submit();
+            if (aform.setBtn)
+                aform.setBtn.disabled=true;
+		}
+		function onResetClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+			var aEl = document.createElement('input');
+			aEl.type = 'hidden';
+			aEl.name = 'reset';
+			aEl.value = 1;
+			aform.appendChild(aEl);
+			
+;
+			aform.submit();
+		}
+
+		function noAction()
+		{
+		}
+
+		</script>
+        <style type="text/css">
+			.img_scroll_container { height: 400px; overflow-y: scroll; text-align: center; width:100%;}
+			.img_scroll_container img { width: 700px }
+            .printbody .img_scroll_container { height: auto; overflow-y: hidden; }
+            .printbody .img_scroll_container img { width: 650px }
+            .active-distractor:hover{cursor:pointer; background-color: #f2f2f2;}
+            .active-distractor.checked-distractor{background-color: #e8e8e8;}
+		</style>
+		<script language="javascript">
+		var qguid='';
+		var qfiles_location='../../';
+
+		function ShowPictureQ(s,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			document.write('<IMG SRC="'+qfiles_location+s+'" ALIGN=ABSMIDDLE alt="'+hint+'" border="0"> ');
+		}
+
+		function ShowPictureQBL(s,hint,h,bl)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			var vspace=h/2-bl;
+			if (vspace<0) vspace=-vspace;
+			document.write('<IMG SRC="'+qfiles_location+s+'" ALIGN=MIDDLE border="0" alt="'+hint+'" VSPACE='+(vspace)+' STYLE="position:relative; top:'+(h/2-bl)+'px;">');
+		}
+
+
+		
+		function ShowPictureQ2WH(s,s2,hint,w,h)
+		{
+            if (s.indexOf('.flv')>0 ||s.indexOf('.mp4')>0 ||s.indexOf('.swf')>0)
+                s='../../show_media.php?m='+encodeURIComponent(s)+'&w='+w+'&h='+h;
+
+			w=w+40;
+			h=h+30;
+
+						document.write('<a href="javascript:var wnd=window.open(\''+qfiles_location+s+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+s2+'" ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'"></a> ');
+			//alert('вставил картинку!');
+		}
+
+		function ShowPictureQ3WH(s,s2,s3,hint,w,h)
+		{
+			ShowPictureQ2WH(s,s2,hint,w,h);
+		}
+
+		function ShowPictureQ2(s,s2,hint)
+		{
+			ShowPictureQ2WH(s,s2,hint,600,400);
+		};
+
+		function invertImage(img, s, s2)
+		{
+			if (img.src.indexOf(s)>0) img.src=qfiles_location+s2; else img.src=qfiles_location+s;
+		}
+
+		function ShowPictureQ3(s,s2,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+            var onclick=(s.indexOf('.jpg')>0||s.indexOf('.png')>0||s.indexOf('.gif')>0 ?'onclick="invertImage(this, \''+s+'\', \''+s2+'\')"':'');
+			document.write('<IMG SRC="'+qfiles_location+s2+'" '+onclick+' ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'" border="0"> ');
+		};
+
+		function showXGraphic(xml)
+		{
+			document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=1><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+		/*
+function ShowPictureQGX2(img,xml)
+{
+w=500;
+h=400;
+document.write('<IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE>');
+}
+*/
+		function ShowPictureQGX2(img,xml)
+		{
+			w=500;
+			h=400;
+			document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?qguid='+qguid+'&xml='+xml+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}
+
+		</script>
+		<script language='JavaScript'>
+var files_location='';
+var files_abs_location='';
+var space_after_img=true;
+function ShowPicture(s)
+{document.write('<IMG SRC="'+files_location+s+'" ALIGN=absmiddle border=0>'+(space_after_img?' ':''));}
+function ShowPicture2(s,s2,w,h)
+{if (w>800) w=800;
+ if (h>600) h=600;
+ align='ABSMIDDLE'; 
+document.write('<a href="javascript:var wnd=window.open(\''+files_location+s+'\',\'_blank\',\'resizable=1,menubar=0,scrollbars=1,width='+(w+40)+',height='+(h+20)+',left='+((screen.width-w-40)/2)+',top='+((screen.height-h-20)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+s2+'" ALIGN='+align+'></a>'+(space_after_img?' ':''));}
+function ShowPicture2S(objsrc,imgsrc,datasrc,w,h)
+{ShowPicture2(objsrc,imgsrc,w,h);}
+function ShowPictureBL(s,bl)
+{document.write('<IMG SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+bl+' STYLE="position:relative; top:-'+(bl)+'px;" border=0>');}
+function ShowPictureBL2(s,bl,h)
+{ var vspace=h/2-bl;
+  		if (vspace<0) vspace=-vspace;
+document.write('<IMG SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+((vspace))+' STYLE="position:relative; top:'+(h/2-bl-1)+'px;" border=0>');}
+function ShowPictureGX(img,xml)
+		{
+		w=500;
+		h=400;
+		document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?xml='+files_abs_location+xml+'\',\'\',\',status=1,resizable=1,menubar=1,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}function TraceLink(indx,n)
+{ if (n.charAt(0)=='{')
+  		{
+			var guid=n.substring(1,9)+n.substring(10,14)+n.substring(15,19)+n.substring(20,24)+n.substring(25,37);
+			showdocbyguid(guid);
+  		}
+  		else
+  		{var wnd=window.open('../../tracelink.php?project_guid=B24AFED7DE6AB5BC461219556CCA4F9B&cdf='+n,'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+ }
+}
+function showdocbyguid(guid)
+{var wnd=window.open('../../tracelink.php?project_guid=B24AFED7DE6AB5BC461219556CCA4F9B&doc_guid='+guid.toUpperCase(),'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+}
+function delFile(fguid)
+{
+if (confirm('Удалить файл?'))
+  location.href='delete.php?proj=B24AFED7DE6AB5BC461219556CCA4F9B&md=qprint&fguid='+fguid}
+function ShowFlash(url)
+{
+			w='100%'; h='100%';
+			url='../../'+files_location+url;
+			document.write('<object tabindex=0 ID=ilFlash classid=CLSID:D27CDB6E-AE6D-11cf-96B8-444553540000 width='+w+' height='+h+' codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0">'+
+		'<param name=movie value="'+url+'"><PARAM play=true><PARAM SWLIVECONNECT=true><PARAM MENU=true><PARAM LOOP=false>'+
+		'<PARAM NAME=scale VALUE=noScale><embed src="'+url+'" quality=high bgcolor=#FFFFFF  width='+w+' height='+h+' scale=noScale type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockWaveFlash"></embed></object>');}
+	function showXGraphic(xml)
+		{
+		//alert("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+	</script><script type='text/javascript'>
+	var solvedQst = localStorage.getItem("OS:B24AFED7DE6AB5BC461219556CCA4F9B:SOLVED");
+	solvedQst = solvedQst ? new Set(solvedQst.split(",")): new Set();
+	var favQst = localStorage.getItem("OS:B24AFED7DE6AB5BC461219556CCA4F9B:FAV");
+	favQst = favQst ? new Set(favQst.split(",")): new Set();
+
+
+
+var request = createAJAXRequest();
+
+function toggleQFavour(qblock) {    var fvbtn = document.getElementById(qblock).getElementsByClassName('favorite-button');
+    toggleFavour(fvbtn[0]);
+}
+
+function toggleFavour(btn) {	btn.classList.toggle('is-favorite');
+    btn.title = btn.classList.contains('is-favorite')?'В Избранном':'Добавить в Избранное';}
+
+function setToStr(set) {	if (browser.isIE) {		let str = '';
+		set.forEach(function(elem){
+		    str += elem + (str?",":"")
+ 	 	});
+ 	 	return str;	} else {		return Array.from(set).join(",")	}}
+
+
+function changeFavour(btn, qst) {	if (btn.classList.contains('is-favorite'))
+	    favQst.delete(qst);
+    else
+        favQst.add(qst);
+    localStorage.setItem("OS:B24AFED7DE6AB5BC461219556CCA4F9B:FAV", setToStr(favQst));
+	toggleFavour(btn);}
+
+function changeStatus(qst, panel){
+    let answer = solvedQst.has(qst)? '0': '1';
+	if (answer == '0')		solvedQst.delete(qst);
+    else
+        solvedQst.add(qst);
+    localStorage.setItem("OS:B24AFED7DE6AB5BC461219556CCA4F9B:SOLVED", setToStr(solvedQst));
+    setQSolved(panel, answer)
+}
+
+
+
+function checkButtonClick(form, setanswer, panel) {
+	form = document.getElementById(form);
+	setanswer(form);
+    if (!request.inProcess) {
+        request.open('POST', 'solve.php', true);
+        request.onreadystatechange = checkSolutionDone;
+        request.inProcess = true;
+        request.panel = panel;
+
+        var formData = new FormData(form);
+        formData.append("ajax", "1");
+        formData.append("proj", "B24AFED7DE6AB5BC461219556CCA4F9B")
+
+		if (browser.isIE)
+			request.qst = form.guid.value;
+		else
+	        request.qst = formData.get("guid");
+
+        request.send(formData);
+
+        panel.getElementsByClassName('task-status')[0].innerHTML = "<img class='loader' src='img/loading_spinner.gif'>";    }
+}
+
+function checkSolutionDone() {    if (request.readyState==4)  {
+        request.inProcess = false;
+        answer = "0";
+        if (request.status==200) {
+            answer = request.responseText;
+        }
+        if (answer!='1' && answer!='2' && answer!='3') {
+        	answer = "0";
+        }
+        qst = request.qst;
+
+        if (answer == '0' || answer == '2')
+    		solvedQst.delete(qst);
+        else
+            solvedQst.add(qst);
+        localStorage.setItem("OS:B24AFED7DE6AB5BC461219556CCA4F9B:SOLVED", setToStr(solvedQst));
+        setQSolved(request.panel, answer);
+    }
+}
+
+function setQSolved(block, answer) {	if (typeof(block) === 'string')
+	    block = document.getElementById(block);
+	var statusNode = block.getElementsByClassName('task-status')[0];
+    statusNode.className= "task-status task-status-" + answer ;
+    if (answer=='1')
+        statusNode.innerHTML = "РЕШЕНО";
+    else if (answer=='2')
+        statusNode.innerHTML = "НЕВЕРНО";
+    else if (answer=='3')
+        statusNode.innerHTML = "ВЕРНО";
+    else
+        statusNode.innerHTML = "НЕ РЕШЕНО";}
+
+</script>
+
+ <div class="qblock">
+    <div id="hint" class="hint" name="hint">Прочитайте текст и выполните задания.</div> <script language='JavaScript'>
+files_location='../../docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/F1C127061CD2ABF74AD3D504380DC119/';
+files_abs_location='docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/F1C127061CD2ABF74AD3D504380DC119/';
+</script>  <p class=MsoNormal align=center><b>Как ориентируются летучие мыши</b></p> <p class=MsoNormal>Летучие мыши обычно живут огромными стаями в пещерах. Влетая <br> и вылетая из пещеры, каждая мышь издаёт неслышимые нами звуки. Одновременно эти звуки издают тысячи мышей, но это никак не мешает им прекрасно ориентироваться в пространстве в полной темноте и летать, не сталкиваясь друг с другом. </p> <p class=MsoNormal><span>Сегодня главный секрет ориентации летучих мышей можно считать раскрытым: они обладают поразительными по своему совершенству органами ультразвуковой локации. </span>Оказалось, что во время полёта мышь излучает короткие сигналы на частотах примерно от 50 до 100 кГц, а затем принимает отражённые эхо-сигналы, которые приходят к ней от ближайших препятствий и пролетающих вблизи насекомых (см. рисунок 1).</p> <p class=MsoNormal><span>&nbsp;</span></p> <p class=MsoNormal align=center><span><script language='javascript'> ShowPicture('xs3docsrcF1C127061CD2ABF74AD3D504380DC119_9_1737722635.jpg');</script></span></p> <p class=MsoNormal align=center>Рисунок 1</p> <p class=MsoNormal align=center><span>&nbsp;</span></p> <p class=MsoNormal>Для того, чтобы сигнал был отражён препятствием, наименьший линейный размер этого препятствия должен быть не меньше длины волны посылаемого звука. Кроме того, использование ультразвуковых сигналов связано с тем, что с уменьшением длины волны улучшается направленность излучения, а это очень важно для эхолокации. </p>   </div>  <div class="qblock hide-form" id='q920444'> 	    <div id="hint" class="hint" name="hint">Задание №1. Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform920444' id='checkform920444' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="0B0260200280B0684A3AD39B4044210B">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'><p class="Basis">Может ли летучая мышь, посылая сигнал частотой 80 кГц,
+  обнаружить муху размером 1 см? Скорость звука в воздухе принять равной 320 <span style="position:relative;top:12.0pt"><script language="JavaScript">ShowPictureQ("docs/B24AFED7DE6AB5BC461219556CCA4F9B/questions/0B0260200280B0684A3AD39B4044210B/innerimg0.gif","");</script></span>. Ответ поясните.</p></TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i920444'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1 МЕХАНИЧЕСКИЕ ЯВЛЕНИЯ</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">920444</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'0B0260200280B0684A3AD39B4044210B')"></div>
+                         <div class="number-in-group" title="Задание 1 в F0FD8E ">
+            <span class="number-in-group-img"></span><span class="number-in-group-text">1 (F0FD8E)</span>
+        </div>
+        <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('0B0260200280B0684A3AD39B4044210B',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("0B0260200280B0684A3AD39B4044210B"))
+	            toggleQFavour('i920444');
+	        if (solvedQst.has("0B0260200280B0684A3AD39B4044210B"))
+	            setQSolved('i920444', '1');
+	    </script>
+	     <div class="qblock">
+    <div id="hint" class="hint" name="hint">Прочитайте текст и выполните задания.</div> <script language='JavaScript'>
+files_location='../../docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/F292BD7A6484B2664A6C2A02ED189BA5/';
+files_abs_location='docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/F292BD7A6484B2664A6C2A02ED189BA5/';
+</script>  <p class=MsoNormal align=center><b>Меркурий </b></p> <p class=MsoNormal><span>История наших знаний о Меркурии уходит корнями в глубокую древность, это одна из первых планет, известных человечеству. Меркурий наблюдали еще в древнем Шумере, одной из первых развитых цивилизаций на Земле. Древние римляне назвали планету в честь бога Меркурия <br> (в греческом варианте Гермеса), покровителя торговли, ремесел, а также посланца других олимпийских богов. </span></p> <p class=MsoNormal><span>С чем связана такая ассоциация? Год на планете длится всего 88 дней, Меркурий – самая быстрая планета. </span></p> <p class=MsoNormal><span>Меркурий – это ближайшая к Солнцу и самая маленькая планета Солнечной системы. </span><span>При пролёте мимо Меркурия космического аппарата «</span><span>Маринер-10<span>», запущенного в 1973 г., было установлено наличие у планеты предельно разреженной </span>атмосферы<span>, давление которой в 5</span></span><span>&#8901;</span><span>10<sup>11</sup> раз меньше давления земной атмосферы. В таких условиях атомы чаще сталкиваются <br> с поверхностью планеты, чем друг с другом. </span><span>Атмосферу<span> составляют захваченные из солнечного ветра или выбитые солнечным ветром <br> с поверхности атомы </span>гелия<span>, </span>натрия<span>, </span>кислорода<span>, </span>калия<span>, </span>аргона<span>, </span>водорода<span>. </span></span><span>Имеющейся у Меркурия гравитации недостаточно для поддержания плотной атмосферы.</span></p>   </div>  <div class="qblock hide-form" id='q5D816A'> 	    <div id="hint" class="hint" name="hint">Задание №1. Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform5D816A' id='checkform5D816A' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="D89F751C0BE5BF554732358956EEE4A9">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В таблице ниже приведены сравнительные физические характеристики для двух планет Солнечной системы – Меркурия и Марса.</p> <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0> <tr> <td width=96 valign=top> <p class=MsoNormal align=center>Планета</p> </td> <td width=103 valign=top> <p class=MsoNormal align=center>Среднее расстояние от Солнца, млн км</p> </td> <td width=69 valign=top> <p class=MsoNormal align=center>Масса, % от массы Земли</p> </td> <td width=220 valign=top> <p class=MsoNormal align=center>Ускорение свободного падения, <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mfrac><m:mi>&#x043C;</m:mi><m:mrow><m:msup><m:mi>&#x0441;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mstyle></m:math></span>&nbsp;</p> </td> <td width=120 valign=top> <p class=MsoNormal align=center>Температура у поверхности, <a name="_GoBack"></a>°С</p> </td> <td width=118 valign=top> <p class=MsoNormal align=center>Атмосфера</p> </td> </tr> <tr> <td width=96 valign=top> <p class=MsoNormal align=left>Меркурий</p> </td> <td width=103 valign=top> <p class=MsoNormal align=center>58 </p> </td> <td width=69 valign=top> <p class=MsoNormal align=center><span>5,5</span></p> </td> <td width=220 valign=top> <p class=MsoNormal align=center>3,77</p> </td> <td width=120 valign=top> <p class=MsoNormal align=center><span>от &#8722;190 </span>°<span>C до +430 </span>°<span>C</span></p> </td> <td width=118 valign=top> <p class=MsoNormal align=center>Практически отсутствует</p> </td> </tr> <tr> <td width=96 valign=top> <p class=MsoNormal align=left>Марс</p> </td> <td width=103 valign=top> <p class=MsoNormal align=center>228</p> </td> <td width=69 valign=top> <p class=MsoNormal align=center><span>10,7</span></p> </td> <td width=220 valign=top> <p class=MsoNormal align=center>3,71</p> </td> <td width=120 valign=top> <p class=MsoNormal align=center><span>от –153 </span>°<span>C до <br> +35 </span>°<span>C</span></p> </td> <td width=118 valign=top> <p class=MsoNormal align=center><span>Среднее атмосферное давление составляет 0,4–0,87 кПа</span></p> </td> </tr> </table> <p class=MsoNormal>Марс, в отличие от Меркурия,<span> не растерял полностью свою атмосферу <br> в космосе. Чем объясняется это различие? Ответ поясните.</span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i5D816A'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2 ТЕПЛОВЫЕ ЯВЛЕНИЯ</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">5D816A</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'D89F751C0BE5BF554732358956EEE4A9')"></div>
+                         <div class="number-in-group" title="Задание 1 в 09068A ">
+            <span class="number-in-group-img"></span><span class="number-in-group-text">1 (09068A)</span>
+        </div>
+        <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('D89F751C0BE5BF554732358956EEE4A9',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("D89F751C0BE5BF554732358956EEE4A9"))
+	            toggleQFavour('i5D816A');
+	        if (solvedQst.has("D89F751C0BE5BF554732358956EEE4A9"))
+	            setQSolved('i5D816A', '1');
+	    </script>
+	     <div class="qblock">
+    <div id="hint" class="hint" name="hint">Прочитайте текст и выполните задания.</div> <script language='JavaScript'>
+files_location='../../docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/F2CCD96EDFF6BAAF42F6E5B81C561CEB/';
+files_abs_location='docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/F2CCD96EDFF6BAAF42F6E5B81C561CEB/';
+</script>  <p class=MsoNormal align=center><b>Молния и гром</b></p> <p class=MsoNormal>Заряженные облака наводят на земной поверхности под собой противоположный по знаку заряд. Внутри облака и между облаком и Землёй создаётся сильное электрическое поле, которое способствует ионизации воздуха и возникновению искровых разрядов (молний) как внутри облака, так и между облаком и поверхностью Земли.</p> <p class=MsoNormal>Гром возникает вследствие резкого расширения воздуха при быстром повышении температуры в канале разряда молнии. </p> <p class=MsoNormal>Вспышку молнии мы видим практически одновременно с разрядом, так как скорость распространения света очень велика (3<b>·</b>10<sup>8</sup> <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mfrac><m:mtext>&#x043C;</m:mtext><m:mtext>&#x0441;</m:mtext></m:mfrac></m:mrow></m:mstyle></m:math></span>). Разряд молнии длится всего 0,1–0,2 с.</p> <p class=MsoNormal>Звук распространяется значительно медленнее. В воздухе его скорость равна примерно 330 <span class=mml><m:math><m:mstyle displaystyle="true"><m:mrow><m:mfrac><m:mtext>&#x043C;</m:mtext><m:mtext>&#x0441;</m:mtext></m:mfrac></m:mrow></m:mstyle></m:math></span>. Чем дальше от нас произошёл разряд молнии, тем длиннее пауза между вспышкой света и громом. Гром от очень далёких молний вообще не доходит: звуковая энергия рассеивается и поглощается по пути. Такие молнии называют зарницами. Как правило, гром слышен на расстоянии до 15–20 км; таким образом, если наблюдатель видит молнию, но не слышит грома, то гроза находится на расстоянии более 20&nbsp;км.</p>   </div>  <div class="qblock hide-form" id='q557580'> 	    <div id="hint" class="hint" name="hint">Задание №1. Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform557580' id='checkform557580' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="F823882AFAF486D24D0460E7AE6EA368">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Может ли воспринимаемый человеком интервал времени между молнией <br> и сопровождающим её громовым раскатом составлять 30 с? Ответ поясните.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i557580'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>1 МЕХАНИЧЕСКИЕ ЯВЛЕНИЯ</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">557580</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'F823882AFAF486D24D0460E7AE6EA368')"></div>
+                         <div class="number-in-group" title="Задание 1 в 06EA8E ">
+            <span class="number-in-group-img"></span><span class="number-in-group-text">1 (06EA8E)</span>
+        </div>
+        <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('F823882AFAF486D24D0460E7AE6EA368',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("F823882AFAF486D24D0460E7AE6EA368"))
+	            toggleQFavour('i557580');
+	        if (solvedQst.has("F823882AFAF486D24D0460E7AE6EA368"))
+	            setQSolved('i557580', '1');
+	    </script>
+	     <div class="qblock">
+    <div id="hint" class="hint" name="hint">Прочитайте текст и выполните задания.</div> <script language='JavaScript'>
+files_location='../../docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/FDFA28E8CD7E86BF44631E75E852398C/';
+files_abs_location='docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/FDFA28E8CD7E86BF44631E75E852398C/';
+</script>  <p class=MsoNormal align=center><b>Гейзеры</b></p> <p class=MsoNormal>Гейзеры (<span>горячие источники, периодически выбрасывающие фонтаны горячей воды и пара</span>) располагаются вблизи действующих или недавно уснувших вулканов. Для извержения гейзеров необходима теплота, поступающая от вулканов.</p> <p class=MsoNormal>Чтобы понять физику гейзеров, вспомним, что температура кипения воды зависит от давления (см. рисунок 1).</p> <p class=MsoNormal align=center><script language='javascript'> ShowPicture('xs3docsrcFDFA28E8CD7E86BF44631E75E852398C_9_1737721679.jpg');</script></p> <p class=MsoNormal align=center>Рисунок 1. Зависимость температуры кипения воды от давления</p> <p class=MsoNormal align=center><span>&nbsp;</span></p> <p class=MsoNormal>Представим себе 20-метровую гейзерную трубку, наполненную горячей водой. По мере увеличения глубины температура воды растёт. Одновременно возрастает и давление: оно складывается из атмосферного давления <br> и давления столба воды в трубке. При этом везде по длине трубки температура воды оказывается несколько ниже температуры кипения, соответствующей давлению на той или иной глубине. </p> <p class=MsoNormal>Теперь предположим, что по одному из боковых протоков в трубку поступила порция пара. Пар вошёл в трубку и поднял воду до некоторого нового уровня, а часть её вылилась из трубки в бассейн. При этом температура поднятой воды может оказаться выше температуры кипения при новом давлении, и тогда вода немедленно закипает. При кипении образуется пар, который ещё выше поднимает воду, заставляя её выливаться в бассейн. </p>   </div>  <div class="qblock hide-form" id='q7A7175'> 	    <div id="hint" class="hint" name="hint">Задание №1. Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform7A7175' id='checkform7A7175' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="3383957D7CCCAB7448EA0F059F7013F0">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>В гейзерную трубку из бокового протока поступила порция пара. Часть воды вылилась, и над паром остался столб воды высотой 10 м. Вода на этой глубине находится при температуре 100 °С. Атмосферное давление 10<sup>5</sup> Па. Закипит или нет поднятая паром вода? Ответ поясните.<span> </span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i7A7175'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2 ТЕПЛОВЫЕ ЯВЛЕНИЯ</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">7A7175</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'3383957D7CCCAB7448EA0F059F7013F0')"></div>
+                         <div class="number-in-group" title="Задание 1 в 60C588 ">
+            <span class="number-in-group-img"></span><span class="number-in-group-text">1 (60C588)</span>
+        </div>
+        <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('3383957D7CCCAB7448EA0F059F7013F0',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("3383957D7CCCAB7448EA0F059F7013F0"))
+	            toggleQFavour('i7A7175');
+	        if (solvedQst.has("3383957D7CCCAB7448EA0F059F7013F0"))
+	            setQSolved('i7A7175', '1');
+	    </script>
+	     <div class="qblock">
+    <div id="hint" class="hint" name="hint">Прочитайте текст и выполните задания.</div> <script language='JavaScript'>
+files_location='../../docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/FE7A0503986C9A634700655EE929579B/';
+files_abs_location='docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/FE7A0503986C9A634700655EE929579B/';
+</script>  <p class=MsoNormal align=center><b><span>Фотолюминесценция</span></b></p> <p class=MsoNormal><span>Некоторые вещества при освещении электромагнитным излучением сами начинают светиться. Такое свечение, или люминесценция, отличается важной особенностью: свет люминесценции имеет иной спектральный состав, чем свет, вызвавший свечение. Наблюдения показывают, что свет люминесценции характеризуется большей длиной волны, чем возбуждающий свет. Например, если пучок фиолетового света направить на колбочку с&nbsp;раствором красителя флуоресцеина, то освещённая жидкость начинает ярко люминесцировать зелёно-жёлтым светом.</span></p> <p class=MsoNormal><span>Некоторые тела сохраняют способность светиться некоторое время после того, как освещение их прекратилось. Такое послесвечение может иметь различную длительность: от долей секунды до многих часов. Принято называть свечение, исчезающее с прекращением освещения, флуоресценцией, а свечение, имеющее заметную длительность после прекращения освещения, – фосфоресценцией. </span></p> <p class=MsoNormal><span>Явление люминесценции характеризуется крайне высокой чувствительностью: достаточно иногда 10<sup>&nbsp;–&nbsp;10</sup> г светящегося вещества, например, в&nbsp;растворе, чтобы обнаружить это вещество по характерному свечению. Это свойство лежит в&nbsp;основе люминесцентного анализа, который позволяет обнаружить ничтожно малые примеси и судить о загрязнениях или процессах, приводящих к&nbsp;изменению исходного вещества.</span></p> <p class=MsoNormal><span>Очень важное применение нашли фосфоресцирующие порошки при изготовлении ламп дневного света. </span></p>   </div>  <div class="qblock hide-form" id='q131A98'> 	    <div id="hint" class="hint" name="hint">Задание №1. Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform131A98' id='checkform131A98' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="B5F5E9088707B2024A79DF0E62A11BBA">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal><span>В газоразрядных лампах, наполненных парами ртути, при прохождении электрического тока возникает ультрафиолетовое излучение. Может ли это излучение вызвать послесвечение для фосфоресцирующего вещества, <br> у которого спектральный состав излучаемого света находится в области видимого света? </span>Ответ поясните.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i131A98'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3 ЭЛЕКТРОМАГНИТНЫЕ ЯВЛЕНИЯ</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">131A98</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'B5F5E9088707B2024A79DF0E62A11BBA')"></div>
+                         <div class="number-in-group" title="Задание 1 в 34C18D ">
+            <span class="number-in-group-img"></span><span class="number-in-group-text">1 (34C18D)</span>
+        </div>
+        <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('B5F5E9088707B2024A79DF0E62A11BBA',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("B5F5E9088707B2024A79DF0E62A11BBA"))
+	            toggleQFavour('i131A98');
+	        if (solvedQst.has("B5F5E9088707B2024A79DF0E62A11BBA"))
+	            setQSolved('i131A98', '1');
+	    </script>
+	     <div class="qblock">
+    <div id="hint" class="hint" name="hint">Прочитайте текст и выполните задания.</div> <script language='JavaScript'>
+files_location='../../docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/FE93DD6767CBBCBD4F8D6CA516CAA984/';
+files_abs_location='docs/B24AFED7DE6AB5BC461219556CCA4F9B/docs/FE93DD6767CBBCBD4F8D6CA516CAA984/';
+</script>  <p class=MsoNormal align=center><b>Солнечная активность</b></p> <p class=MsoNormal>Один из наиболее распространённых показателей уровня солнечной активности – число Вольфа, связанное с количеством солнечных пятен на видимой полусфере Солнца. Общий уровень солнечной активности меняется с периодом, примерно равным 11 годам (см. рисунок 1).</p>  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0> <tr> <td valign=top> <p class=MsoNormal align=center><script language='javascript'> ShowPicture('xs3docsrcFE93DD6767CBBCBD4F8D6CA516CAA984_9_1737721748.jpg');</script></p> </td> </tr> <tr> <td valign=top> <p class=MsoNormal align=center>Рисунок 1. Солнечная активность середины <span lang=EN-US>XX</span> в. – начала <span lang=EN-US>XXI</span> в.</p> </td> </tr> <tr> <td valign=top> <p class=MsoNormal align=center><span>&nbsp;</span></p> </td> </tr> </table>  <p class=MsoNormal>В период активности на Солнце наблюдаются вспышки, в результате которых образуется направленный поток очень быстрых заряженных частиц (электронов, протонов и др.). Потоки заряженных частиц, несущихся <br> с огромной скоростью, изменяют магнитное поле Земли, то есть приводят <br> к появлению магнитных бурь на нашей планете.</p> <p class=MsoNormal>Захваченные магнитным полем Земли заряженные частицы движутся <br> по спирали вдоль линий индукции магнитного поля и наиболее близко <br> к поверхности Земли проникают в областях магнитных полюсов Земли. <br> В результате столкновений заряженных частиц с молекулами воздуха возникает видимое электромагнитное излучение – полярное сияние.</p> <p class=MsoNormal>Цвет полярного сияния определяется химическим составом атмосферы. На высотах от 300 до 500 км, где воздух разрежен, преобладает кислород. Цвет сияния здесь может быть зелёным или красноватым. Ниже преобладает азот, дающий сияние ярко-красного и фиолетового цвета.</p>   </div>  <div class="qblock hide-form" id='q84F6CA'> 	    <div id="hint" class="hint" name="hint">Задание №1. Дайте развернутый ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform84F6CA' id='checkform84F6CA' method="post" enctype="multipart/form-data"		>
+		<input type="Hidden" name="guid" value="AF910DE23AC4B9D140BD9402B743B507">
+		<TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class=MsoNormal>Какой прогноз солнечной активности можно дать на 2025–2026 гг.? Ответ поясните.</p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div>&nbsp;</div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	 </div> <div id='i84F6CA'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>3 ЭЛЕКТРОМАГНИТНЫЕ ЯВЛЕНИЯ</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Развернутый ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect">84F6CA</span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'AF910DE23AC4B9D140BD9402B743B507')"></div>
+                         <div class="number-in-group" title="Задание 1 в 36768A ">
+            <span class="number-in-group-img"></span><span class="number-in-group-text">1 (36768A)</span>
+        </div>
+        <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="changeStatus('AF910DE23AC4B9D140BD9402B743B507',this.parentNode)">Изменить статус</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("AF910DE23AC4B9D140BD9402B743B507"))
+	            toggleQFavour('i84F6CA');
+	        if (solvedQst.has("AF910DE23AC4B9D140BD9402B743B507"))
+	            setQSolved('i84F6CA', '1');
+	    </script>
+	    
+<div id='bottom_marker'></div>
+
+<script type='text/javascript'>
+function setSize() {  if (window.parent) {
+    window.parent.setQCount(1506);
+    //var rect = document.body.getBoundingClientRect();
+    //window.parent.setContainerSize(rect.bottom - rect.top);
+    //window.parent.setContainerSize(Math.max(
+    //      document.body.offsetHeight, document.documentElement.offsetHeight,
+    //      document.body.clientHeight, document.documentElement.clientHeight)
+    //);
+    resizeContainer();
+  }
+}
+
+var cWidth = document.body.offsetWidth;
+
+function resizeContainer(){
+    var rect = document.getElementById('bottom_marker').getBoundingClientRect(); //document.body.lastChild.getBoundingClientRect();
+    window.parent.setContainerSize(rect.bottom);}
+
+function windowResize() {
+    if (cWidth != document.body.offsetWidth) {    	cWidth = document.body.offsetWidth;
+    	resizeContainer();
+    }}
+
+if (window.parent) {
+    window.parent.setQCount(1506, 16, 100);
+    
+    if (MathJax) {
+        MathJax.Hub.Register.StartupHook("End",function () { setSize(); setTimeout(resizeContainer, 1000) });
+    }
+
+	if (window.addEventListener)
+        window.addEventListener('resize', windowResize);
+    else if (window.attachEvent)
+        window.attachEvent('onresize', windowResize);
+}
+
+</script>
+<SCRIPT language=JavaScript src="../../lib/bdetect.js" type=text/javascript></SCRIPT>
+
+<script language='JavaScript'>
+var crtm="1791326895";
+function SubmitForm(aform,pgname)
+{
+var aEl = document.createElement('input');
+if (!browser.isMac || !browser.isIE)
+  aEl.type = 'hidden';
+aEl.style.display = 'none';
+aEl.name = 'crtm';
+aEl.value = crtm;
+aform.appendChild(aEl);
+aform.action=pgname;
+aform.submit();
+
+}
+function GetPageName(pgname,extparams){
+if (pgname=='') pgname='/bank/questions.php';
+if (extparams=='')
+	pgname=pgname+"?crtm="+crtm;
+else	pgname=pgname+"?crtm="+crtm+"&"+extparams;
+return pgname;}
+function ShowPage(pgname,extparams,wndname,wndparam){
+if (wndname=='') {
+
+  location.href=GetPageName(pgname,extparams);
+
+  }
+  else
+ {if (wndparam=='')
+wnd=window.open(GetPageName(pgname,extparams),wndname);
+else wnd=window.open(GetPageName(pgname,extparams),wndname,wndparam);
+wnd.focus();}
+}
+</script>
+<script language='javascript'>
+                function onXS3DocumectLoad() {setSize();
+ }
+
+		if (window.addEventListener)
+            window.addEventListener('load', onXS3DocumectLoad);
+        else if (window.attachEvent)
+            window.attachEvent('onload', onXS3DocumectLoad);
+        else
+            window.onload = onXS3DocumectLoad;
+ </script><script language='javascript'>
+                function onXS3DocumectUnload(e) {
+			    	document.cookie = "md_auto=qprint; path=/; SameSite=Lax";
+			   		//return false;
+		    }
+		if (window.addEventListener)
+            window.addEventListener('beforeunload', onXS3DocumectUnload);
+        else if (window.attachEvent)
+            window.attachEvent('onbeforeunload', onXS3DocumectUnload);
+        else
+            window.onbeforeunload = onXS3DocumectUnload;
+        </script></body>
+</html>

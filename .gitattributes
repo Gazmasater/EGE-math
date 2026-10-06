@@ -1,3 +1,4 @@
 # Original FIPI OGE snapshots/assets must retain their source bytes and encoding.
 oge-*.raw.html binary
 fipi-assets/oge/** binary
+fipi-assets/oge-physics/** binary
