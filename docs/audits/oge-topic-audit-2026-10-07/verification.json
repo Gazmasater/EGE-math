@@ -1,0 +1,102 @@
+{
+  "publication": {
+    "publishedAt": "2026-10-07T01:04:36Z",
+    "site": "https://ege-fipi.ru",
+    "codeCommit": "ea5aefbca7b18b58577a151dd96162c4f16b7551",
+    "service": "ege-math.service",
+    "pid": 709701,
+    "publicCatalogs": 133,
+    "publicTaskExamples": 12,
+    "publicBrowserChecks": 12,
+    "sitemapUrls": 10778,
+    "errors": 0,
+    "preservedSolutions": 3492,
+    "preservedRawFiles": 106,
+    "previewStopped": true
+  },
+  "previewChecks": {
+    "final-http-math.json": {
+      "catalogues": 40,
+      "catalogPages": 1195,
+      "ogeTasks": 3884,
+      "existingTasks": 4998,
+      "errors": 0
+    },
+    "final-http-physics.json": {
+      "catalogues": 95,
+      "catalogPages": 551,
+      "ogeTasks": 1506,
+      "existingTasks": 0,
+      "errors": 0
+    },
+    "final-browser-math/report.json": {
+      "pages": 26,
+      "errors": 0
+    },
+    "final-browser-physics/report.json": {
+      "pages": 26,
+      "errors": 0
+    },
+    "review-browser/report.json": {
+      "pages": 12,
+      "checks": 1,
+      "errors": 0
+    },
+    "ege-math-navigation/navigation-report.json": {
+      "catalogs": 84,
+      "tasks": 1148,
+      "errors": 0
+    },
+    "ege-physics-navigation/navigation-report.json": {
+      "catalogs": 135,
+      "tasks": 2344,
+      "errors": 0
+    },
+    "ege-subjects/subject-audit.json": {
+      "subjects": 2,
+      "catalogs": 45,
+      "errors": 0
+    },
+    "seo-browser/browser-report.json": {
+      "pages": 50,
+      "errors": 0
+    },
+    "catalogue-browser/ui-report.json": {
+      "pages": 20,
+      "errors": 0
+    },
+    "ui-browser/ui-report.json": {
+      "pages": 27,
+      "errors": 0
+    },
+    "analytics-browser/report.json": {
+      "checks": 3,
+      "pages": 24,
+      "errors": 0
+    },
+    "integrity-before.json": {
+      "solutions": 3492,
+      "rawFiles": 106,
+      "solutionsUnchanged": true,
+      "rawUnchanged": true
+    },
+    "test-oge.log": {
+      "pass": 19
+    },
+    "test-catalogue.log": {
+      "pass": 3
+    },
+    "test-analytics.log": {
+      "pass": 5
+    }
+  },
+  "integrityAfter": {
+    "checkedAt": "2026-10-07T01:05:04.266Z",
+    "solutions": 3492,
+    "rawFiles": 106,
+    "solutionsUnchanged": true,
+    "rawUnchanged": true,
+    "integrity": "ok",
+    "canonicalSolutionsHash": "b3d895ec48e5a6dc06a2e0d0898bb7e7d4cbc8ed5ba71fd4c252d38a8b8662e7"
+  }
+}
