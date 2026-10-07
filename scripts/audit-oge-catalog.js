@@ -2,7 +2,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { readOgeCatalog } = require('./lib/oge-catalog');
-const { OGE_BANKS, ogeBank, ogePublicTaskId, ogeTopicStats } = require('../lib/oge-catalog');
+const { OGE_BANKS, ogeBank, ogePublicTaskId, ogeTopicCodes, ogeTopicStats } = require('../lib/oge-catalog');
 const { conditionText } = require('../lib/seo-text');
 
 const root = path.resolve(__dirname, '..');
@@ -49,5 +49,5 @@ for (const file of fs.readdirSync(root).filter(name => name.endsWith('.raw.html'
   }
 }
 const stats = ogeTopicStats(tasks, section);
-assert.ok(tasks.every(task => task.ogeCodes.length || stats.counts.unclassified), 'Задание потеряно вне тематического меню');
+assert.ok(tasks.every(task => ogeTopicCodes(task, section).length || stats.counts.unclassified), 'Задание потеряно вне тематического меню');
 console.log(JSON.stringify({ section, pages: pages.length, tasks: tasks.length, answerTypes: Object.fromEntries(types), assets: assets.size, ...stats }, null, 2));

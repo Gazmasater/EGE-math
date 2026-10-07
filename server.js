@@ -15,7 +15,7 @@ const {PHYSICS_TASK_TYPES, physicsTaskPart, physicsTaskTypeInfo, physicsTaskType
 
 const {MATH_CATALOGUE_ALIASES, LEGACY_MATH_NAMES, LEGACY_PHYSICS_NAMES, catalogueUrl, normalizeCatalogueQuery, catalogueMatches, catalogueWindow, cataloguePageNumbers} = require('./lib/catalogue');
 const {guides: catalogueGuides} = require('./lib/catalogue-guides');
-const { OGE_ORIGIN, OGE_PAGE_SIZE, OGE_BANKS, ogeBank, ogePublicTaskId, ogeSourceTaskId, ogeTopicInfo, ogeTaskCodes, ogeTaskMatchesTopic, ogeTopicStats, ogeCataloguePath, ogePageNumber, normalizeOgeSourceHtml } = require('./lib/oge-catalog');
+const { OGE_ORIGIN, OGE_PAGE_SIZE, OGE_BANKS, ogeBank, ogePublicTaskId, ogeSourceTaskId, ogeTopicInfo, ogeTaskCodes, ogeTopicCodes, ogeTaskMatchesTopic, ogeTopicStats, ogeCataloguePath, ogePageNumber, normalizeOgeSourceHtml } = require('./lib/oge-catalog');
 const { execFile } = require('node:child_process');
 
 const PORT = Number(process.env.PORT || 8765);
@@ -3335,8 +3335,8 @@ function renderOgeTopicMenu(activeCode, stats, section = 'oge') {
     <a class="math-all-link ${activeCode === 'all' ? 'active' : ''}" href="${bank.path}?topic=all">Все задания <span>${stats.total}</span></a></div>
     ${stats.counts.practical ? `<p>${link('practical', ogeTopicInfo('practical', section).name)}</p>` : ''}
     <div class="math-topic-grid">${bank.topics.map(group => `<details class="math-topic-group" ${activeCode === group.code || activeCode.startsWith(`${group.code}.`) ? 'open' : ''}>
-      <summary><span>${group.code}. ${escapeHtml(group.name)}</span><span class="math-topic-count">${stats.counts[group.code] || 0}</span></summary>
-      <div class="math-topic-children">${link(group.code, 'Все задания раздела', 'math-topic-major')}${group.children.map(([code, name]) => link(code, `${code} ${name}`)).join('')}</div>
+      <summary><span>${/^\d+$/.test(group.code) ? group.code + ". " : ""}${escapeHtml(group.name)}</span><span class="math-topic-count">${stats.counts[group.code] || 0}</span></summary>
+      <div class="math-topic-children">${link(group.code, 'Все задания раздела', 'math-topic-major')}${group.children.map(([code, name]) => link(code, `${/^\d/.test(code) ? code + " " : ""}${name}`)).join('')}</div>
     </details>`).join('')}</div>
     ${stats.counts.unclassified ? link('unclassified', 'Без указанной темы КЭС') : ''}
   </section>`;
@@ -3708,7 +3708,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
   const physicsPath = `${physicsPart === 2 ? '/physics/part-2' : '/physics'}?topic=${physicsCode}`;
   const mathSourceTask = entry.section === 'mathematics' ? sourceTaskEntries(sourceHtml).find(task => task.id === entry.taskId) : null;
   const mathType = mathSourceTask ? mathTaskType(mathSourceTask) : null;
-  const ogeTopics = ogeTask ? ogeTaskCodes(ogeTask).map(code => ogeTopicInfo(code, entry.section)).filter(Boolean).sort((left, right) => right.code.split('.').length - left.code.split('.').length) : [];
+  const ogeTopics = ogeTask ? ogeTopicCodes(ogeTask, entry.section).map(code => ogeTopicInfo(code, entry.section)).filter(Boolean).sort((left, right) => right.code.split('.').length - left.code.split('.').length) : [];
   const topic = oge ? ogeTopics[0] : sourceTask ? taskPhysicsTopic(sourceTask) : null;
   const classification = sourceTask ? physicsClassification(sourceTask) : null;
   const taskTopics = oge ? ogeTopics : classification?.topicCodes.map(physicsTopicInfo).filter(Boolean) || [];
@@ -3789,7 +3789,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     physicsPart,
     physicsStats: catalog ? { counts: physicsPart === 2 ? catalog.secondCounts : catalog.counts, total: physicsPart === 2 ? catalog.secondTotal : catalog.total, unclassified: physicsPart === 2 ? catalog.secondCounts.unclassified : catalog.unclassified } : undefined,
     intro: oge && taskTopics.length
-      ? `<section class="catalog-summary"><p>Темы ФИПИ: ${taskTopics.map(item => `<a href="${ogeCataloguePath({ topic: item.code, section: entry.section })}">${escapeHtml(item.name)}</a>`).join('; ')}.</p></section>`
+      ? `<section class="catalog-summary"><p>Учебные темы: ${taskTopics.map(item => `<a href="${ogeCataloguePath({ topic: item.code, section: entry.section })}">${escapeHtml(item.name)}</a>`).join('; ')}.</p></section>`
       : classification?.reviewStatus === 'reviewed'
       ? `<section class="catalog-summary physics-task-topics"><p>Темы сайта: ${taskTopics.map((item, index) => `<a href="${physicsPart === 2 ? '/physics/part-2' : '/physics'}?topic=${item.code}#tasks">${escapeHtml(item.name)}</a>${index === 0 ? ' (основная)' : ''}`).join('; ')}.</p><p>Исходные метки ФИПИ сохранены в свойствах задания.</p></section>`
       : ''

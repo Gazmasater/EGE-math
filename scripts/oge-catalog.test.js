@@ -78,7 +78,7 @@ test('Физика ОГЭ имеет собственные темы КЭС, в�
   assert.equal(ogeTaskMatchesTopic(example, 'unclassified', 'oge-physics'), false);
   assert.ok(ogeTopicInfo('1.12', 'oge-physics').name.includes('Трение'));
   assert.equal(ogeTopicInfo('1.12'), null);
-  assert.equal(ogeBank('oge-physics').topics.flatMap(group => group.children).length, 83);
+  assert.equal(ogeBank('oge-physics').topics.filter(group => /^\d+$/.test(group.code)).flatMap(group => group.children).length, 83);
   assert.throws(() => ogeBank('constructor'));
 });
 

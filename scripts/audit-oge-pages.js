@@ -2,7 +2,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { readOgeCatalog } = require('./lib/oge-catalog');
-const { ogeBank, OGE_PAGE_SIZE, ogeTaskMatchesTopic: bankTaskMatchesTopic, ogeCataloguePath: bankCataloguePath } = require('../lib/oge-catalog');
+const { ogeBank, OGE_PAGE_SIZE, ogeTopicCodes, ogeTopicInfo, ogeTaskMatchesTopic: bankTaskMatchesTopic, ogeCataloguePath: bankCataloguePath } = require('../lib/oge-catalog');
 const { conditionText, decodeEntities } = require('../lib/seo-text');
 
 const origin = process.env.OGE_SITE_ORIGIN || 'http://127.0.0.1:8877';
@@ -14,7 +14,7 @@ const ogeTaskMatchesTopic = (task, topic) => bankTaskMatchesTopic(task, topic, s
 const ogeCataloguePath = options => bankCataloguePath({ ...options, section });
 const taskIds = html => [...html.matchAll(/<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"]\s+id=['"]q([A-Z0-9]+)['"]/gi)].map(match => match[1]);
 const get = async url => {
-  const response = await fetch(origin + url, { redirect: 'manual', signal: AbortSignal.timeout(30000) });
+  const response = await fetch(origin + url, { redirect: 'manual', headers: { Connection: 'close' }, signal: AbortSignal.timeout(30000) });
   return { status: response.status, html: await response.text(), location: response.headers.get('location') };
 };
 function pageMetadata(url, result) {
@@ -78,6 +78,10 @@ async function main() {
       assert.equal(resource.identifier, task.id);
       assert.equal(resource.text, conditionText(task.fragment), `${url}: исходное условие`);
       assert.equal(resource.educationalLevel, 'Основное общее образование, 9 класс');
+      assert.deepEqual(resource.about.slice(1).map(item => item.name), ogeTopicCodes(task, section).map(code => ogeTopicInfo(code, section).name), `${url}: проверенные темы в разметке страницы`);
+      const breadcrumb = data.find(item => item['@type'] === 'BreadcrumbList');
+      const firstTopic = ogeTopicCodes(task, section)[0];
+      assert.equal(breadcrumb.itemListElement[1].item, canonicalOrigin + ogeCataloguePath({topic: firstTopic}), `${url}: переход в основную тему`);
       assert.ok(result.html.includes(bank.assetPrefix + 'styles.css'), `${url}: ресурсы банка ОГЭ`);
       assert.ok(result.html.includes(`<a class="task-permalink" href="/tasks/${task.id}">${task.sourceId}</a>`), `${url}: исходный номер и уникальная ссылка`);
       checkedTasks++;
@@ -87,7 +91,9 @@ async function main() {
   // Cover existing section routes and every other task URL without changing their data.
   let checkedExistingTasks = 0;
   const ogeTaskPaths = new Set(tasks.map(task => `/tasks/${task.id}`));
-  const existingPaths = sitemapPaths.filter(url => !checkedCatalogues.has(url) && url !== bank.path && !ogeTaskPaths.has(url));
+  // A combined two-bank run may cover these identical legacy routes once.
+  // The default still checks every existing URL.
+  const existingPaths = process.env.OGE_AUDIT_EXISTING === '0' ? [] : sitemapPaths.filter(url => !checkedCatalogues.has(url) && url !== bank.path && !ogeTaskPaths.has(url));
   let nextExisting = 0;
   await Promise.all(Array.from({ length: 4 }, async () => {
     while (nextExisting < existingPaths.length) {

@@ -67,12 +67,13 @@
     "check:catalogue:pages": "node scripts/check-catalogue-pages.js",
     "fetch:oge": "node scripts/fetch-oge.js",
     "audit:oge": "node scripts/audit-oge-catalog.js",
-    "test:oge": "node --test scripts/oge-catalog.test.js",
+    "test:oge": "node --test scripts/oge-catalog.test.js scripts/oge-topic-assignments.test.js",
     "audit:oge:pages": "node scripts/audit-oge-pages.js",
     "check:oge:pages": "node scripts/check-oge-pages.js",
     "fetch:oge-physics": "node scripts/fetch-oge.js oge-physics",
     "audit:oge-physics": "node scripts/audit-oge-catalog.js oge-physics",
     "audit:oge-physics:pages": "node scripts/audit-oge-pages.js oge-physics",
-    "check:oge-physics:pages": "node scripts/check-oge-pages.js oge-physics"
+    "check:oge-physics:pages": "node scripts/check-oge-pages.js oge-physics",
+    "audit:oge:topics": "node scripts/audit-oge-topics.js"
   }
 }
