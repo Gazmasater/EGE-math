@@ -19,7 +19,8 @@ assert.equal(ids.size, tasks.length, 'Повторяются идентифик�
 const types = new Map();
 const allowedTypes = new Set(['Краткий ответ', 'Развернутый ответ', 'Выбор ответа из предложенных вариантов', 'Выбор ответов из предложенных вариантов', 'Установление соответствия']);
 if (section === 'oge-physics') allowedTypes.add('Расстановка терминов');
-if (section === 'oge-informatics') allowedTypes.add('Последовательность');
+if (section.endsWith('-informatics')) allowedTypes.add('Последовательность');
+if (section === 'ege-informatics') allowedTypes.add('Выбор ответа');
 const knownCodes = new Set(bank.topics.flatMap(group => [group.code, ...group.children.map(([code]) => code)]));
 for (const task of tasks) {
   assert.ok(conditionText(task.fragment), `${task.id}: пустое условие`);

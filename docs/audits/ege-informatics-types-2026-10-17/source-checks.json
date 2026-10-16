@@ -1,0 +1,233 @@
+[
+  {
+    "type": "type.graph-models",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=358",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "15619"
+  },
+  {
+    "type": "type.truth-tables",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=352",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "14688"
+  },
+  {
+    "type": "type.databases",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=424",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "37415"
+  },
+  {
+    "type": "type.codes",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=369",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "15790"
+  },
+  {
+    "type": "type.number-transform",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=362",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "8094"
+  },
+  {
+    "type": "type.plane-executors",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=316",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "47210"
+  },
+  {
+    "type": "type.media-transfer",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=250",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "9759"
+  },
+  {
+    "type": "type.combinatorics",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=243",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "3193"
+  },
+  {
+    "type": "type.spreadsheets",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=406",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "38588"
+  },
+  {
+    "type": "type.networks",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=348",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "2231"
+  },
+  {
+    "type": "type.information-volume",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=350",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "8101"
+  },
+  {
+    "type": "type.string-executors",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=356",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "9365"
+  },
+  {
+    "type": "type.executor-programs",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=277",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "11358"
+  },
+  {
+    "type": "type.numeral-systems",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=247",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "7761"
+  },
+  {
+    "type": "type.logic",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=418",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "9804"
+  },
+  {
+    "type": "type.recursion",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=214",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "36871"
+  },
+  {
+    "type": "type.number-sequence",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=423",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "37336"
+  },
+  {
+    "type": "type.robot-grid",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=412",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "27415"
+  },
+  {
+    "type": "type.games",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=407",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "27802"
+  },
+  {
+    "type": "type.processes",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=215",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "47226"
+  },
+  {
+    "type": "type.graph-paths",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=281",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "3285"
+  },
+  {
+    "type": "type.strings",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=413",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "27421"
+  },
+  {
+    "type": "type.divisors",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=414",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "27422"
+  },
+  {
+    "type": "type.sorting",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=415",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "27423"
+  },
+  {
+    "type": "type.large-data",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=416",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "27424"
+  },
+  {
+    "type": "type.text-search",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=410",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "27407"
+  },
+  {
+    "type": "type.file-system",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=218",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "3798"
+  },
+  {
+    "type": "type.search-queries",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=257",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "2705"
+  },
+  {
+    "type": "type.number-executors",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=273",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "3402"
+  },
+  {
+    "type": "type.program-analysis",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=245",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "27403"
+  },
+  {
+    "type": "type.array-analysis",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=343",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "3354"
+  },
+  {
+    "type": "type.debugging",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=307",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "3646"
+  },
+  {
+    "type": "type.write-program",
+    "url": "https://inf-ege.sdamgia.ru/test?filter=all&category_id=291",
+    "checkedAt": "2026-10-17",
+    "status": 200,
+    "sampleId": "3104"
+  }
+]

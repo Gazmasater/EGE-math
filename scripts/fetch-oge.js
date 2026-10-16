@@ -12,7 +12,7 @@ const taskPattern = /<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"]\s+id=['"]q([0-9
 
 async function request(url, body, attempts = 3) {
   const target = new URL(url);
-  if (target.origin !== OGE_ORIGIN) throw new Error('Unexpected FIPI origin');
+  if (target.origin !== bank.origin) throw new Error('Unexpected FIPI origin');
   for (let attempt = 1; attempt <= attempts; attempt++) {
     try {
       return await new Promise((resolve, reject) => {
@@ -43,7 +43,7 @@ async function main() {
   for (let page = 0; page < 100; page++) {
     const form = new URLSearchParams({ search: '1', pagesize: '100', proj: bank.project });
     if (page) form.set('page', String(page));
-    const bytes = await request(`${OGE_ORIGIN}/bank/questions.php`, form.toString());
+    const bytes = await request(`${bank.origin}/bank/questions.php`, form.toString());
     const html = decoder.decode(bytes);
     const pageIds = [...html.matchAll(taskPattern)].map(match => match[1].toUpperCase());
     const reportedTotal = Number(html.match(/setQCount\((\d+)/)?.[1]);
@@ -96,7 +96,7 @@ async function main() {
         } catch (error) { if (error.code !== 'ENOENT') throw error; }
       }
       try { const stat = await fs.stat(target); if (stat.size) continue; } catch (error) { if (error.code !== 'ENOENT') throw error; }
-      const bytes = await request(`${OGE_ORIGIN}/${relative.split('/').map(encodeURIComponent).join('/')}`);
+      const bytes = await request(`${bank.origin}/${relative.split('/').map(encodeURIComponent).join('/')}`);
       if (!bytes.length) throw new Error(`Empty asset: ${relative}`);
       await fs.mkdir(path.dirname(target), { recursive: true });
       await fs.writeFile(`${target}.new`, bytes);

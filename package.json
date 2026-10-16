@@ -93,6 +93,13 @@
     "check:oge-informatics:pages": "node scripts/check-oge-pages.js oge-informatics",
     "audit:oge-informatics:attachments": "node scripts/audit-oge-attachments.js oge-informatics",
     "audit:oge-informatics:types": "node scripts/build-oge-informatics-classification.js && node scripts/audit-oge-informatics-types.js",
-    "test:oge-informatics:types": "node --test scripts/oge-informatics-types.test.js"
+    "test:oge-informatics:types": "node --test scripts/oge-informatics-types.test.js",
+    "fetch:ege-informatics": "node scripts/fetch-oge.js ege-informatics",
+    "audit:ege-informatics": "node scripts/audit-oge-catalog.js ege-informatics && npm run audit:ege-informatics:types",
+    "audit:ege-informatics:pages": "node scripts/audit-oge-pages.js ege-informatics",
+    "check:ege-informatics:pages": "node scripts/check-oge-pages.js ege-informatics",
+    "audit:ege-informatics:attachments": "node scripts/audit-oge-attachments.js ege-informatics",
+    "audit:ege-informatics:types": "node scripts/build-ege-informatics-classification.js",
+    "test:ege-informatics": "node --test scripts/ege-informatics.test.js"
   }
 }
