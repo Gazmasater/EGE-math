@@ -24,7 +24,7 @@ function pageMetadata(url, result) {
   const canonical = result.html.match(/<link rel="canonical" href="([^"]+)"/)[1];
   assert.equal(decodeEntities(canonical), canonicalOrigin + url, `${url}: canonical`);
   assert.match(result.html, /<html lang="ru"/);
-  assert.match(result.html, /ОГЭ/);
+  assert.ok(result.html.includes(bank.exam));
   return [...result.html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].flatMap(match => {
     const data = JSON.parse(match[1]); return data['@graph'] || [data];
   });
@@ -78,7 +78,7 @@ async function main() {
       const resource = data.find(item => Array.isArray(item['@type']) && item['@type'].includes('LearningResource'));
       assert.equal(resource.identifier, task.id);
       assert.equal(resource.text, conditionText(task.fragment), `${url}: исходное условие`);
-      assert.equal(resource.educationalLevel, 'Основное общее образование, 9 класс');
+      assert.equal(resource.educationalLevel, bank.exam === 'ЕГЭ' ? 'Среднее общее образование' : 'Основное общее образование, 9 класс');
       assert.deepEqual(resource.about.slice(1).map(item => item.name), ogeTopicCodes(task, section).map(code => ogeTopicInfo(code, section).name), `${url}: проверенные темы в разметке страницы`);
       const breadcrumb = data.find(item => item['@type'] === 'BreadcrumbList');
       const firstTopic = ogeTopicCodes(task, section)[0];

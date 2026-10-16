@@ -55,7 +55,7 @@ a.site-header-cta:hover,.study-button:hover{background:#ffd975;color:var(--ui-in
 .study-hero h1 em:after{content:"";position:absolute;z-index:-1;left:0;right:0;bottom:1px;height:12px;background:var(--ui-yellow);transform:rotate(-1deg)}
 .study-lead{max-width:510px;margin:0 0 25px;color:var(--ui-muted);font-size:17px;line-height:1.75}
 .study-exam-links{display:grid;gap:2px;margin:-8px 0 20px;font:500 13px/1.5 var(--ui-font);color:var(--ui-muted)}
-.study-exam-links>div{display:grid;grid-template-columns:3em max-content max-content;align-items:center;column-gap:14px}
+.study-exam-links>div{display:grid;grid-template-columns:3em repeat(3,max-content);align-items:center;column-gap:14px}
 .study-exam-links a{display:inline-flex;align-items:center;min-height:44px;color:#1d6096;text-decoration:underline;text-underline-offset:3px}
 .study-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px}
 a.study-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:54px;padding:14px 23px;border-radius:10px;background:var(--ui-yellow);color:var(--ui-ink);font:750 15px/1.4 var(--ui-font);text-decoration:none;box-shadow:0 3px 0 #cda22930}

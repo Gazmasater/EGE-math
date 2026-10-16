@@ -3,19 +3,20 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const https = require('node:https');
 const {readOgeCatalog} = require('./lib/oge-catalog');
-const {OGE_ORIGIN, ogeIsExternalAsset} = require('../lib/oge-catalog');
+const {ogeBank, ogeIsExternalAsset} = require('../lib/oge-catalog');
 
 const section = process.argv[2] || 'oge-informatics';
+const sourceOrigin = ogeBank(section).origin;
 const {tasks, assets} = readOgeCatalog(undefined, section);
 const urls = [...assets].filter(file => ogeIsExternalAsset(file, section))
-  .map(file => OGE_ORIGIN + '/' + file.split('/').map(encodeURIComponent).join('/'));
+  .map(file => sourceOrigin + '/' + file.split('/').map(encodeURIComponent).join('/'));
 const links = tasks.flatMap(task => [...task.fragment.matchAll(/class="fipi-attachment" href="([^"]+)"/g)].map(match => match[1]));
 assert.deepEqual(new Set(links), new Set(urls), 'Все архивы должны иметь обычные ссылки в условиях');
 
 function check(url, attempt = 1) {
   return new Promise((resolve, reject) => {
     // Scoped to the official OGE host, whose certificate chain is incomplete.
-    assert.equal(new URL(url).origin, OGE_ORIGIN);
+    assert.equal(new URL(url).origin, sourceOrigin);
     const request = https.request(url, {method: 'HEAD', timeout: 30000, rejectUnauthorized: false}, response => {
       response.resume();
       const bytes = Number(response.headers['content-length']);

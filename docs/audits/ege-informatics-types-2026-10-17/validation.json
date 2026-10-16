@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-17",
+  "environment": {
+    "origin": "http://127.0.0.1:8887",
+    "separatePreviewDatabases": true,
+    "productionChanged": false
+  },
+  "unitTests": {
+    "passed": 91,
+    "failed": 0
+  },
+  "http": {
+    "section": "ege-informatics",
+    "catalogues": 85,
+    "catalogPages": 958,
+    "ogeTasks": 2475,
+    "existingTasks": 10467,
+    "sitemapUrls": 16334,
+    "errors": 0
+  },
+  "browser": {
+    "pages": 162,
+    "interactions": 6,
+    "noJavaScript": 6,
+    "errors": 0
+  },
+  "focusedBrowser": {
+    "pages": 6,
+    "interactions": 6,
+    "noJavaScript": 6,
+    "errors": 0
+  },
+  "archives": {
+    "method": "HEAD",
+    "checked": 388,
+    "errors": 0
+  },
+  "localFiles": {
+    "method": "GET; byte-for-byte comparison with disk; directory placeholders excluded",
+    "assets": 1189,
+    "bytesPreserved": true,
+    "errors": 0
+  },
+  "visualInspection": [
+    "catalogue at 1280 and 390 px",
+    "truth tables at 390 px",
+    "database table at 390 px",
+    "shared game conditions at 390 px",
+    "EGE hub at 1280 and 390 px"
+  ]
+}

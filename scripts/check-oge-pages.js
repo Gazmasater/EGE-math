@@ -76,7 +76,8 @@ async function main() {
   const report = { pages: [], interactions: [], noJavaScript: [], errors: [] };
   const answerTypes = [...new Set(tasks.map(task => task.answerType))];
   const representatives = answerTypes.map(type => tasks.find(task => task.answerType === type));
-  if (section === 'oge-informatics') {
+  if (section === 'ege-informatics') for (const id of ['EGEINFF126F9','EGEINF0AB846','EGEINFF738F0']) representatives.push(tasks.find(task => task.id === id));
+  if (section.endsWith('-informatics')) {
     // Cover every populated KES topic and both archive formats, including code tables.
     for (const group of bank.topics) for (const [code] of group.children) {
       const task = tasks.find(task => ogeTaskMatchesTopic(task, code, section));
@@ -105,7 +106,7 @@ async function main() {
           return Array.from(task.querySelectorAll('form, p, input[type="text"], select, .fipi-picture')).filter(element => {
             const rect = element.getBoundingClientRect();
             // Wide source data tables scroll locally, so every column stays accessible.
-            const table = element.closest('table.MsoNormalTable');
+            const table = element.closest('table');
             if (table && getComputedStyle(table).overflowX === 'auto') return false;
             return rect.width > 0 && (rect.right > bounds.right + 1 || rect.left < bounds.left - 1 || element.scrollWidth > element.clientWidth + 1);
           }).map(element => ({ task: task.id, tag: element.tagName, width: element.clientWidth, scrollWidth: element.scrollWidth }));
@@ -114,7 +115,7 @@ async function main() {
         hidden: document.documentElement.classList.contains('page-loading') })`);
       if (info.h1 !== 1 || info.hidden || info.tasks !== info.controls || info.scrollWidth > width + 1 || info.broken.length || info.clipped.length || info.hiddenCondition.length) report.errors.push({ url, width, info });
       report.pages.push({ url, width, ...info });
-      if (url === bank.path || url === `/tasks/${picture.id}` || (shared && url === `/tasks/${shared.id}`) || (section === 'oge-informatics' && url.startsWith('/tasks/'))) {
+      if (url === bank.path || url === `/tasks/${picture.id}` || (shared && url === `/tasks/${shared.id}`) || (section.endsWith('-informatics') && url.startsWith('/tasks/'))) {
         if (url.startsWith('/tasks/')) await evaluate(`(() => {
           const header = document.querySelector('.local-header');
           const offset = getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().height + 12 : 12;
@@ -149,10 +150,11 @@ async function main() {
         shared: document.querySelectorAll('.oge-shared-condition').length,
         visible: Array.from(document.querySelectorAll('.qblock[id]')).every(task => task.getBoundingClientRect().height > 0 && getComputedStyle(task).visibility !== 'hidden'),
         broken: Array.from(document.images).filter(image => image.src.includes(${JSON.stringify(bank.assetPrefix)}) && !image.naturalWidth).length })`);
-      assert.ok(info.visible && (!shared || info.shared === info.tasks) && info.broken === 0, `${url}: условие и рисунки без JavaScript`);
+      const sharedExpected = url.includes('topic=practical') || url === `/tasks/${shared?.id}`;
+      assert.ok(info.visible && (!sharedExpected || info.shared === info.tasks) && info.broken === 0, `${url}: условие и рисунки без JavaScript`);
       if (attachment && url === `/tasks/${attachment.id}`) {
         const href = await evaluate('document.querySelector(".fipi-attachment")?.href');
-        assert.ok(href?.startsWith('https://oge.fipi.ru/docs/'), 'Архив доступен без JavaScript');
+        assert.ok(href?.startsWith(bank.origin + '/docs/'), 'Архив доступен без JavaScript');
       }
       report.noJavaScript.push({ width, url, ...info });
     }
