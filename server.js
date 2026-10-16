@@ -77,7 +77,8 @@ const SECTION_INFO = {
   finance: { name: 'Финансовая математика', path: '/finance', topic: 'финансовой математике', description: 'Финансовые задачи профильного ЕГЭ из открытого банка ФИПИ: условия, ответы и подробные решения.' },
   physics: { name: 'Физика', path: '/physics', topic: 'физике', description: 'Первая часть ЕГЭ по физике: задания ФИПИ по учебным типам, числовые ответы, выбор вариантов и соответствия.' },
   oge: { name: 'ОГЭ — математика', path: '/oge', topic: 'математике ОГЭ', description: 'Задания ОГЭ по математике из открытого банка ФИПИ: числа, алгебра, уравнения, функции, геометрия, вероятность и статистика.' },
-  'oge-physics': { name: 'ОГЭ — физика', path: '/oge-physics', topic: 'физике ОГЭ', description: 'Задания ОГЭ по физике из открытого банка ФИПИ: механические, тепловые, электромагнитные и квантовые явления.' }
+  'oge-physics': { name: 'ОГЭ — физика', path: '/oge-physics', topic: 'физике ОГЭ', description: 'Задания ОГЭ по физике из открытого банка ФИПИ: механические, тепловые, электромагнитные и квантовые явления.' },
+  'oge-informatics': { name: 'ОГЭ — информатика', path: '/oge-informatics', topic: 'информатике ОГЭ', description: 'Задания ОГЭ по информатике из открытого банка ФИПИ: цифровая грамотность, теоретические основы информатики, алгоритмы и программирование, информационные технологии.' }
 };
 const MATH_TOPICS = [
   { code: '1', name: 'Числа и вычисления', children: [
@@ -358,7 +359,7 @@ const sourceEntriesCache = new Map();
 const mathStatsCache = new Map();
 let taskDirectoryPromise = null;
 let taskSearchIndexPromise = null;
-const added = { stereometry: [], planimetry: [], parameters: [], equations: [], inequalities: [], optimal: [], numbers: [], finance: [], mathematics: [], physics: [], oge: [], 'oge-physics': [] };
+const added = Object.fromEntries(PUBLIC_SECTIONS.map(section => [section, []]));
 try {
   const saved = JSON.parse(fsSync.readFileSync(ADDED_FILE, 'utf8'));
   for (const section of Object.keys(added)) {
@@ -1000,7 +1001,7 @@ function normalizeFipiHtml(html, assetPrefix = '/fipi/', expandFences = false) {
   return (expandFences ? expandMathmlFences(normalized) : normalized)
     .replace(/<math\b[^>]*>[\s\S]*?<\/math>/gi, formula => `<span class="fipi-math-scroll">${formula}</span>`)
     .replace(/((?:src|href)=["'])\.\.\/\.\.\//gi, `$1${assetPrefix}`)
-    .replace(/((?:src|href)=["'])(\/fipi\/(?:oge\/|oge-physics\/)?(?:styles\.css|xmodules\/os\/img\/_styles\.css|lib\/t3utils\.js))(?:\?[^"']*)?(["'])/gi,
+    .replace(/((?:src|href)=["'])(\/fipi\/(?:oge(?:-physics|-informatics)?\/)?(?:styles\.css|xmodules\/os\/img\/_styles\.css|lib\/t3utils\.js))(?:\?[^"']*)?(["'])/gi,
       (_, prefix, url, suffix) => `${prefix}${sharedFipiAssetUrl(url)}${suffix}`)
     .replaceAll('var home_directory="../../";', `var home_directory="${assetPrefix}";`)
     .replaceAll("var qfiles_location='../../';", `var qfiles_location='${assetPrefix}';`)
@@ -1367,7 +1368,7 @@ function renderAdminDashboard() {
   return renderAdminShell('Решения', `<section class="card">
       <h1>Решения</h1>
       <p>Введите номер задания из карточки, чтобы создать решение или изменить существующее. После публикации ответ и решение будут доступны всем посетителям по кнопке «Решение».</p>
-      <p class="muted">Для физики ОГЭ используйте идентификатор из адреса страницы, например <code>OGEPHYS4D1B4F</code>. Короткий номер ФИПИ может совпадать с номером другой задачи.</p>
+      <p class="muted">Для физики и информатики ОГЭ используйте идентификатор из адреса страницы с префиксом <code>OGEPHYS</code> или <code>OGEINF</code>. Короткий номер ФИПИ может совпадать с номером другой задачи.</p>
       <form method="get" action="/admin">
         <label for="task">Номер задания</label>
         <input id="task" name="task" type="text" pattern="[A-Za-z0-9]{4,32}" placeholder="Например, 30ED04" required>
@@ -2273,7 +2274,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     ogeSection: isOge ? section : '',
     ogeHubPath: isOge ? ogeConfig.path : ''
   }).replace(/</g, '\\u003c')}</script>` : '';
-  const banner = renderStudyRequest(isOge ? 'ОГЭ' : 'ЕГЭ', section === 'physics' || section === 'oge-physics' ? 'физика' : 'математика');
+  const banner = renderStudyRequest(isOge ? 'ОГЭ' : 'ЕГЭ', isOge ? ogeConfig.shortName : isPhysics ? 'физика' : 'математика');
   return fixed
     .replace(/<head([^>]*)>/i, `<head$1>${YANDEX_METRIKA_HEAD}${viewportMeta}`)
     .replace(/<link\b(?=[^>]*\brel\s*=\s*["'](?:shortcut\s+)?icon["'])[^>]*>\s*/gi, '')
@@ -3094,7 +3095,7 @@ function renderAboutPage() {
       <p>ЕГЭ и ОГЭ ФИПИ помогает самостоятельно готовиться к обоим экзаменам по математике и физике: выбирать нужную тему, пробовать свои силы и закреплять знания. Все опубликованные материалы доступны бесплатно и без регистрации.</p>
       <p>Каталог математики ЕГЭ содержит задания первой части с кратким ответом, распределённые по типам и темам. Задания второй части с развёрнутым ответом собраны в отдельных разделах верхнего меню.</p>
       <p>Каталог физики ЕГЭ содержит задания первой части: числовые ответы, выбор вариантов и соответствия, сгруппированные по типам. Задачи второй части с развёрнутым ответом доступны через отдельные пункты меню физики.</p>
-      <p>Для ОГЭ открыты отдельные банки по <a href="/oge">математике</a> и <a href="/oge-physics">физике</a> с выбором тем и поиском. В ОГЭ по физике постепенно добавляем подробные решения: задания с готовым разбором отмечены в каталоге. В ОГЭ по математике опубликованы подробные решения ко всем 3884 заданиям банка ФИПИ. В разделах ЕГЭ опубликованы подробные решения.</p>
+      <p>Для ОГЭ открыты отдельные банки по <a href="/oge">математике</a>, <a href="/oge-physics">физике</a> и <a href="/oge-informatics">информатике</a> с выбором тем и поиском. В информатике доступны условия, рисунки и файлы практических заданий ФИПИ. Задания с готовым разбором отмечены в каталоге. В ОГЭ по математике опубликованы подробные решения ко всем 3884 заданиям банка ФИПИ. В разделах ЕГЭ опубликованы подробные решения.</p>
       <p>Это независимый учебный проект. Условия взяты из открытого банка ФИПИ, а решения и пояснения подготовлены для сайта.</p>
       <a class="study-button" href="/ege#subjects">Выбрать предмет ЕГЭ →</a>
     </section>

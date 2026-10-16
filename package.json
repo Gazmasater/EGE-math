@@ -86,6 +86,11 @@
     "audit:oge-math:solution-pages": "node scripts/audit-oge-math-solution-pages.js",
     "check:oge-math:solutions": "node scripts/check-oge-math-solutions.js",
     "check:oge-math:conditions": "node scripts/check-oge-math-condition-layout.js",
-    "test:assets": "node --test scripts/web-assets.test.js"
+    "test:assets": "node --test scripts/web-assets.test.js",
+    "fetch:oge-informatics": "node scripts/fetch-oge.js oge-informatics",
+    "audit:oge-informatics": "node scripts/audit-oge-catalog.js oge-informatics",
+    "audit:oge-informatics:pages": "node scripts/audit-oge-pages.js oge-informatics",
+    "check:oge-informatics:pages": "node scripts/check-oge-pages.js oge-informatics",
+    "audit:oge-informatics:attachments": "node scripts/audit-oge-attachments.js oge-informatics"
   }
 }

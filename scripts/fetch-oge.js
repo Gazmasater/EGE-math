@@ -1,7 +1,7 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const https = require('node:https');
-const { OGE_ORIGIN, OGE_BANKS, ogeBank, ogePublicTaskId, ogeAssetPaths } = require('../lib/oge-catalog');
+const { OGE_ORIGIN, OGE_BANKS, ogeBank, ogePublicTaskId, ogeAssetPaths, ogeIsExternalAsset } = require('../lib/oge-catalog');
 const bank = ogeBank(process.argv[2] || 'oge');
 const ownPagePattern = new RegExp(`^${bank.filePrefix}-\\d+\\.raw\\.html$`, 'i');
 
@@ -75,7 +75,8 @@ async function main() {
   }
 
   let downloadedAssets = 0;
-  const queue = [...assets];
+  const queue = [...assets].filter(relative => !ogeIsExternalAsset(relative, bank.section));
+  const externalAssets = assets.size - queue.length;
   await Promise.all(Array.from({ length: 4 }, async () => {
     while (queue.length) {
       const relative = queue.shift();
@@ -111,7 +112,7 @@ async function main() {
   for (const name of await fs.readdir(root)) {
     if (ownPagePattern.test(name) && !names.includes(name)) await fs.unlink(path.join(root, name));
   }
-  console.log(JSON.stringify({ section: bank.section, pages: pages.length, tasks: ids.size, assets: assets.size, downloadedAssets }));
+  console.log(JSON.stringify({ section: bank.section, pages: pages.length, tasks: ids.size, assets: assets.size, externalAssets, downloadedAssets }));
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });

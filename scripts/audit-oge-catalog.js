@@ -2,7 +2,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { readOgeCatalog } = require('./lib/oge-catalog');
-const { OGE_BANKS, ogeBank, ogePublicTaskId, ogeTopicCodes, ogeTopicStats } = require('../lib/oge-catalog');
+const { OGE_BANKS, ogeBank, ogePublicTaskId, ogeTopicCodes, ogeTopicStats, ogeIsExternalAsset } = require('../lib/oge-catalog');
 const { conditionText } = require('../lib/seo-text');
 
 const root = path.resolve(__dirname, '..');
@@ -19,6 +19,7 @@ assert.equal(ids.size, tasks.length, 'Повторяются идентифик�
 const types = new Map();
 const allowedTypes = new Set(['Краткий ответ', 'Развернутый ответ', 'Выбор ответа из предложенных вариантов', 'Выбор ответов из предложенных вариантов', 'Установление соответствия']);
 if (section === 'oge-physics') allowedTypes.add('Расстановка терминов');
+if (section === 'oge-informatics') allowedTypes.add('Последовательность');
 const knownCodes = new Set(bank.topics.flatMap(group => [group.code, ...group.children.map(([code]) => code)]));
 for (const task of tasks) {
   assert.ok(conditionText(task.fragment), `${task.id}: пустое условие`);
@@ -31,6 +32,7 @@ for (const task of tasks) {
 assert.ok(types.get('Краткий ответ') && types.get('Развернутый ответ'), 'Один из основных типов ответа отсутствует');
 const assetRoot = path.join(root, 'fipi-assets', section);
 for (const relative of assets) {
+  if (ogeIsExternalAsset(relative, section)) continue;
   const target = path.resolve(assetRoot, ...relative.split('/'), ...(relative.endsWith('/') ? ['index.html'] : []));
   assert.ok(target.startsWith(`${assetRoot}${path.sep}`), `Некорректный путь ресурса: ${relative}`);
   assert.ok(fs.existsSync(target) && fs.statSync(target).size > 0, `Отсутствует ресурс: ${relative}`);
@@ -50,4 +52,5 @@ for (const file of fs.readdirSync(root).filter(name => name.endsWith('.raw.html'
 }
 const stats = ogeTopicStats(tasks, section);
 assert.ok(tasks.every(task => ogeTopicCodes(task, section).length || stats.counts.unclassified), 'Задание потеряно вне тематического меню');
-console.log(JSON.stringify({ section, pages: pages.length, tasks: tasks.length, answerTypes: Object.fromEntries(types), assets: assets.size, ...stats }, null, 2));
+const externalAssets = [...assets].filter(relative => ogeIsExternalAsset(relative, section)).length;
+console.log(JSON.stringify({ section, pages: pages.length, tasks: tasks.length, answerTypes: Object.fromEntries(types), assets: assets.size, localAssets: assets.size - externalAssets, externalAssets, ...stats }, null, 2));

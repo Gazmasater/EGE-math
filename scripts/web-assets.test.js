@@ -18,7 +18,7 @@ function request(url, method = 'GET', headers = {}) {
 }
 
 test('Immutable URLs identify their bytes; GET, HEAD and validators agree', () => {
-  for (const name of ['site.css', 'site.js', 'catalogue.js', 'catalogue-math.css', 'catalogue-physics.css', 'catalogue-oge.css', 'catalogue-oge-physics.css']) {
+  for (const name of ['site.css', 'site.js', 'catalogue.js', 'catalogue-math.css', 'catalogue-physics.css', 'catalogue-oge.css', 'catalogue-oge-physics.css', 'catalogue-oge-informatics.css']) {
     const url = assetUrl(name), get = request(url), head = request(url, 'HEAD');
     assert.equal(get.status, 200);
     assert.ok(url.includes(createHash('sha256').update(get.body).digest('hex').slice(0, 16)));
@@ -51,6 +51,7 @@ test('Legacy URLs revalidate; invalid paths never expose project files', () => {
 test('All banks share the same legacy resources; source bytes and icon URLs are preserved', () => {
   for (const file of ['styles.css', 'lib/t3utils.js', 'xmodules/os/img/_styles.css']) {
     const url = sharedFipiAssetUrl('/fipi/' + file);
+    assert.equal(sharedFipiAssetUrl('/fipi/oge-informatics/' + file), url);
     for (const bank of ['oge', 'oge-physics']) {
       assert.equal(sharedFipiAssetUrl('/fipi/' + bank + '/' + file), url);
       assert.deepEqual(fs.readFileSync(path.join(root, 'fipi-assets', bank, file)), fs.readFileSync(path.join(root, 'fipi-assets', file)));

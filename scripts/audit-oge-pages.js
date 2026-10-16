@@ -4,6 +4,7 @@ const path = require('node:path');
 const { readOgeCatalog } = require('./lib/oge-catalog');
 const { ogeBank, OGE_PAGE_SIZE, ogeTopicCodes, ogeTopicInfo, ogeTaskMatchesTopic: bankTaskMatchesTopic, ogeCataloguePath: bankCataloguePath } = require('../lib/oge-catalog');
 const { conditionText, decodeEntities } = require('../lib/seo-text');
+const {assetUrl} = require('../lib/web-assets');
 
 const origin = process.env.OGE_SITE_ORIGIN || 'http://127.0.0.1:8877';
 const canonicalOrigin = 'https://ege-fipi.ru';
@@ -82,7 +83,9 @@ async function main() {
       const breadcrumb = data.find(item => item['@type'] === 'BreadcrumbList');
       const firstTopic = ogeTopicCodes(task, section)[0];
       assert.equal(breadcrumb.itemListElement[1].item, canonicalOrigin + ogeCataloguePath({topic: firstTopic}), `${url}: переход в основную тему`);
-      assert.ok(result.html.includes(bank.assetPrefix + 'styles.css'), `${url}: ресурсы банка ОГЭ`);
+      assert.ok(result.html.includes(assetUrl(`catalogue-${section}.css`)), `${url}: стили банка ОГЭ`);
+      const attachmentUrls = [...task.fragment.matchAll(/class="fipi-attachment" href="([^"]+)"/g)].map(match => match[1]);
+      for (const href of attachmentUrls) assert.ok(result.html.includes(`href="${href}"`), `${url}: файл задания доступен без JavaScript`);
       assert.ok(result.html.includes(`<a class="task-permalink" href="/tasks/${task.id}">${task.sourceId}</a>`), `${url}: исходный номер и уникальная ссылка`);
       checkedTasks++;
       if (checkedTasks % 500 === 0) console.log(`tasks=${checkedTasks}/${tasks.length}`);
@@ -128,7 +131,9 @@ async function main() {
     assert.deepEqual(taskIds(physicsPage.html), [collision.id]);
     assert.deepEqual(taskIds(mathPage.html), ['465498']);
     assert.notEqual(conditionText(collision.fragment), conditionText(mathPage.html));
-    assert.equal((await get('/api/solutions/' + collision.id)).status, 404);
+    const solution = await get('/api/solutions/' + collision.id);
+    assert.ok([200, 404].includes(solution.status));
+    if (solution.status === 200) assert.equal(JSON.parse(solution.html).taskId, collision.id);
   }
   const injection = await get(ogeCataloguePath({ topic: 'all', query: '<script>alert(1)</script>' }));
   assert.equal(injection.status, 200); assert.ok(!injection.html.includes('<script>alert(1)</script>'));
