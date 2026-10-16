@@ -41,7 +41,7 @@ async function main() {
   let catalogues = 0;
   let catalogPages = 0;
   const checkedCatalogues = new Set();
-  const codes = ['all', 'practical', ...bank.topics.flatMap(group => [group.code, ...group.children.map(([code]) => code)]), 'unclassified'];
+  const codes = ['all', 'practical', ...(bank.types || []).map(type => type.code), ...bank.topics.flatMap(group => [group.code, ...group.children.map(([code]) => code)]), 'unclassified'];
   for (const topic of codes) {
     const selected = tasks.filter(task => ogeTaskMatchesTopic(task, topic));
     const pages = Math.max(1, Math.ceil(selected.length / OGE_PAGE_SIZE));
@@ -86,6 +86,14 @@ async function main() {
       assert.ok(result.html.includes(assetUrl(`catalogue-${section}.css`)), `${url}: стили банка ОГЭ`);
       const attachmentUrls = [...task.fragment.matchAll(/class="fipi-attachment" href="([^"]+)"/g)].map(match => match[1]);
       for (const href of attachmentUrls) assert.ok(result.html.includes(`href="${href}"`), `${url}: файл задания доступен без JavaScript`);
+      if (bank.types) {
+        const type = bank.types.find(type => ogeTaskMatchesTopic(task, type.code));
+        assert.ok(type, `${url}: проверенный тип задачи`);
+        assert.ok(result.html.includes(`href="${ogeCataloguePath({topic: type.code})}"`), `${url}: возврат в тип задачи`);
+        const family = tasks.filter(item => ogeTaskMatchesTopic(item, type.code));
+        const next = family[family.findIndex(item => item.id === task.id) + 1];
+        if (next) assert.ok(result.html.includes(`href="/tasks/${next.id}"`), `${url}: следующая задача того же типа`);
+      }
       assert.ok(result.html.includes(`<a class="task-permalink" href="/tasks/${task.id}">${task.sourceId}</a>`), `${url}: исходный номер и уникальная ссылка`);
       checkedTasks++;
       if (checkedTasks % 500 === 0) console.log(`tasks=${checkedTasks}/${tasks.length}`);

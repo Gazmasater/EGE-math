@@ -2386,6 +2386,7 @@ function renderOgeTopicMenu(activeCode, stats, section = 'oge') {
   return `<section class="math-topics" aria-labelledby="oge-topics-title">
     <div class="math-topics-heading"><div><h2 id="oge-topics-title">Каталог заданий ОГЭ</h2><p>Выберите раздел или тему для подготовки.</p></div>
     <a class="math-all-link ${activeCode === 'all' ? 'active' : ''}" href="${bank.path}?topic=all">Все задания <span>${stats.total}</span></a></div>
+    ${bank.types ? `<section class="oge-study-types" aria-labelledby="oge-types-title"><h3 id="oge-types-title">Типы задач</h3><p>Учебные подборки по навыкам из каталога «Решу ОГЭ», включая дополнительные задания.</p><div class="math-topic-grid">${bank.types.map(type => link(type.code, `${type.name} · ${type.sourceTypes.join(', ')}`, 'math-topic-major')).join('')}</div></section><h3>Темы информатики</h3>` : ''}
     ${stats.counts.practical ? `<p>${link('practical', ogeTopicInfo('practical', section).name)}</p>` : ''}
     <div class="math-topic-grid">${bank.topics.map(group => `<details class="math-topic-group" ${activeCode === group.code || activeCode.startsWith(`${group.code}.`) ? 'open' : ''}>
       <summary><span>${/^\d+$/.test(group.code) ? group.code + ". " : ""}${escapeHtml(group.name)}</span><span class="math-topic-count">${stats.counts[group.code] || 0}</span></summary>
@@ -2443,7 +2444,8 @@ async function loadOgeQuestions(onlyAdded, options = {}, section = 'oge') {
     ogeNavigation: ogeTaskNavigation(selected, {topic: topicCode, page, query, added: onlyAdded, section}),
     robots: query || onlyAdded || (topic && !selected.length) ? 'noindex,follow' : 'index,follow',
     intro: `${onlyAdded ? '' : topic ? `<details class="oge-topic-switcher"><summary>Выбрать другую тему</summary>${renderOgeTopicMenu(topicCode, catalog, section)}</details>` : renderOgeTopicMenu(topicCode, catalog, section)}<section class="catalog-summary"><p>${escapeHtml(description)}</p>
-      ${!topic && !onlyAdded ? `<p>Условия и рисунки сохранены из <a href="${OGE_ORIGIN}/bank/index.php?proj=${bank.project}" target="_blank" rel="noopener noreferrer">открытого банка ФИПИ</a>. Выберите тему или откройте все задания.</p>` : ''}</section>${queryForm}${pager}
+      ${!topic && !onlyAdded ? `<p>Условия и рисунки сохранены из <a href="${OGE_ORIGIN}/bank/index.php?proj=${bank.project}" target="_blank" rel="noopener noreferrer">открытого банка ФИПИ</a>. Выберите тему или откройте все задания.</p>` : ''}
+      ${topic?.sources ? `<p>Сопоставление по проверяемому навыку: ${topic.sources.map((href, index) => `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">«Решу ОГЭ»${topic.sources.length > 1 ? ` (${index + 1})` : ''}</a>`).join(', ')}. Обозначение «Д» относится к дополнительным заданиям.</p>` : ''}</section>${queryForm}${pager}
       <style>.oge-pager a { padding: 7px 11px; border: 1px solid #b8c8da; border-radius: 5px; color: #1769aa; background: white; text-decoration: none; }.oge-pager [aria-current] { padding: 7px 11px; border-radius: 5px; background: #1769aa; color: white; }</style>`,
     structuredData: { '@context': 'https://schema.org', '@graph': [
       { '@type': 'CollectionPage', name: title, description, url: absoluteUrl(pathname), inLanguage: 'ru',
@@ -2750,6 +2752,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
   const bank = Object.hasOwn(OGE_BANKS, entry.section) ? ogeBank(entry.section) : null;
   const oge = bank ? ogeCatalog(sourceHtml, entry.section) : null;
   const ogeTask = oge?.byId.get(entry.taskId);
+  const ogeType = ogeTask && bank.types?.find(type => ogeTaskMatchesTopic(ogeTask, type.code, entry.section));
   const fragment = ogeTask?.fragment || extractTaskFragment(sourceHtml, entry.sourceTaskId || entry.taskId);
   if (!fragment) return null;
   const info = sectionInfo(entry.section);
@@ -2769,8 +2772,8 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
   const taskTopics = oge ? ogeTopics : classification?.topicCodes.map(physicsTopicInfo).filter(Boolean) || [];
   const publishedSolution = getPublishedSolution.get(entry.taskId);
   const hasPublishedSolution = Boolean(publishedSolution);
-  const topicName = physicsType ? `${physicsType.groupName ? physicsType.groupName + ': ' : ''}${physicsType.name}`
-    : topic?.name || (mathType ? `${mathType.groupName ? mathType.groupName + ': ' : ''}${mathType.name}` : info.name);
+  const topicName = ogeType?.name || (physicsType ? `${physicsType.groupName ? physicsType.groupName + ': ' : ''}${physicsType.name}`
+    : topic?.name || (mathType ? `${mathType.groupName ? mathType.groupName + ': ' : ''}${mathType.name}` : info.name));
   const subject = oge ? `ОГЭ по ${bank.subject}` : entry.section === 'physics' ? 'ЕГЭ по физике' : 'ЕГЭ по математике, профиль';
   const displayTaskId = ogeTask?.sourceId || entry.taskId;
   const title = `${displayTaskId} — ${topicName}: ${hasPublishedSolution ? 'ответ и решение' : 'условие'} | ${subject}`;
@@ -2813,7 +2816,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
       breadcrumbData(breadcrumbs)
     ]
   };
-  const sectionTasks = (oge ? oge.tasks.filter(task => !topic || ogeTaskMatchesTopic(task, topic.code, entry.section)).map(task => task.id)
+  const sectionTasks = (oge ? oge.tasks.filter(task => !(ogeType || topic) || ogeTaskMatchesTopic(task, (ogeType || topic).code, entry.section)).map(task => task.id)
     : sourceTask ? catalog.tasks.filter(task => taskMatchesPhysicsCatalogTopic(task, physicsCode, physicsPart)).map(task => task.id)
     : Array.from(taskIds(mathType ? filterMathTopicHtml(sourceHtml, mathType.group || mathType.code) : sourceHtml)))
     .map(normalizeTaskId)
@@ -2824,7 +2827,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     next: taskPosition >= 0 && taskPosition < sectionTasks.length - 1 ? sectionTasks[taskPosition + 1] : '',
     position: taskPosition + 1,
     total: sectionTasks.length,
-    sectionPath: oge ? ogeCataloguePath({topic: topic?.code || 'all', section: entry.section}) : sourceTask
+    sectionPath: oge ? ogeCataloguePath({topic: ogeType?.code || topic?.code || 'all', section: entry.section}) : sourceTask
       ? physicsPath + '#tasks'
       : (mathType ? `/?topic=${mathType.group || mathType.code}#tasks` : info.path)
   };
@@ -2844,7 +2847,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     physicsPart,
     physicsStats: catalog ? { counts: physicsPart === 2 ? catalog.secondCounts : catalog.counts, total: physicsPart === 2 ? catalog.secondTotal : catalog.total, unclassified: physicsPart === 2 ? catalog.secondCounts.unclassified : catalog.unclassified } : undefined,
     intro: oge && taskTopics.length
-      ? `<section class="catalog-summary"><p>Учебные темы: ${taskTopics.map(item => `<a href="${ogeCataloguePath({ topic: item.code, section: entry.section })}">${escapeHtml(item.name)}</a>`).join('; ')}.</p></section>`
+      ? `<section class="catalog-summary">${ogeType ? `<p>Тип задачи: <a href="${ogeCataloguePath({topic: ogeType.code, section: entry.section})}">${escapeHtml(ogeType.name)}</a>.</p>` : ''}<p>Учебные темы: ${taskTopics.map(item => `<a href="${ogeCataloguePath({ topic: item.code, section: entry.section })}">${escapeHtml(item.name)}</a>`).join('; ')}.</p></section>`
       : classification?.reviewStatus === 'reviewed'
       ? `<section class="catalog-summary physics-task-topics"><p>Темы сайта: ${taskTopics.map((item, index) => `<a href="${physicsPart === 2 ? '/physics/part-2' : '/physics'}?topic=${item.code}#tasks">${escapeHtml(item.name)}</a>${index === 0 ? ' (основная)' : ''}`).join('; ')}.</p><p>Исходные метки ФИПИ сохранены в свойствах задания.</p></section>`
       : ''
@@ -2866,7 +2869,7 @@ async function renderSitemap() {
   const catalog = physicsCatalog(await loadSourceHtml('physics'));
   const ogePages = (await Promise.all(Object.values(OGE_BANKS).map(async bank => {
     const catalog = ogeCatalog(await loadSourceHtml(bank.section), bank.section);
-    return ['all', 'practical', ...bank.topics.flatMap(group => [group.code, ...group.children.map(([code]) => code)]), 'unclassified']
+    return ['all', 'practical', ...(bank.types || []).map(type => type.code), ...bank.topics.flatMap(group => [group.code, ...group.children.map(([code]) => code)]), 'unclassified']
       .filter(code => code === 'all' || catalog.counts[code] > 0)
       .flatMap(topic => Array.from({ length: Math.ceil((topic === 'all' ? catalog.total : catalog.counts[topic]) / OGE_PAGE_SIZE) }, (_, index) => ({
         pathname: ogeCataloguePath({ topic, page: index + 1, section: bank.section }), priority: index ? '0.6' : '0.8'

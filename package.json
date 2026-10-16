@@ -68,7 +68,7 @@
     "check:catalogue:pages": "node scripts/check-catalogue-pages.js",
     "fetch:oge": "node scripts/fetch-oge.js",
     "audit:oge": "node scripts/audit-oge-catalog.js",
-    "test:oge": "node --test scripts/oge-catalog.test.js scripts/oge-topic-assignments.test.js",
+    "test:oge": "node --test scripts/oge-catalog.test.js scripts/oge-topic-assignments.test.js scripts/oge-informatics-types.test.js",
     "audit:oge:pages": "node scripts/audit-oge-pages.js",
     "check:oge:pages": "node scripts/check-oge-pages.js",
     "fetch:oge-physics": "node scripts/fetch-oge.js oge-physics",
@@ -88,9 +88,11 @@
     "check:oge-math:conditions": "node scripts/check-oge-math-condition-layout.js",
     "test:assets": "node --test scripts/web-assets.test.js",
     "fetch:oge-informatics": "node scripts/fetch-oge.js oge-informatics",
-    "audit:oge-informatics": "node scripts/audit-oge-catalog.js oge-informatics",
+    "audit:oge-informatics": "node scripts/audit-oge-catalog.js oge-informatics && npm run audit:oge-informatics:types",
     "audit:oge-informatics:pages": "node scripts/audit-oge-pages.js oge-informatics",
     "check:oge-informatics:pages": "node scripts/check-oge-pages.js oge-informatics",
-    "audit:oge-informatics:attachments": "node scripts/audit-oge-attachments.js oge-informatics"
+    "audit:oge-informatics:attachments": "node scripts/audit-oge-attachments.js oge-informatics",
+    "audit:oge-informatics:types": "node scripts/build-oge-informatics-classification.js && node scripts/audit-oge-informatics-types.js",
+    "test:oge-informatics:types": "node --test scripts/oge-informatics-types.test.js"
   }
 }

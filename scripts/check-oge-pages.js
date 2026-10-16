@@ -87,7 +87,11 @@ async function main() {
       if (task) representatives.push(task);
     }
   }
-  const paths = [...new Set([bank.path, `${bank.path}?topic=all`, `${bank.path}?topic=${sampleTopic}&page=2`, `${bank.path}?topic=all&page=${lastPage}`, ...(shared ? [`${bank.path}?topic=practical`, `/tasks/${shared.id}`] : []), `${bank.path}?topic=all&q=${tasks[0].sourceId}`, `/tasks/${picture.id}`, ...representatives.map(task => `/tasks/${task.id}`)])];
+  const typePaths = (bank.types || []).flatMap(type => {
+    const sample = tasks.find(task => ogeTaskMatchesTopic(task, type.code, section));
+    return sample ? [`${bank.path}?topic=${type.code}`, `/tasks/${sample.id}`] : [];
+  });
+  const paths = [...new Set([bank.path, `${bank.path}?topic=all`, `${bank.path}?topic=${sampleTopic}&page=2`, `${bank.path}?topic=all&page=${lastPage}`, ...(shared ? [`${bank.path}?topic=practical`, `/tasks/${shared.id}`] : []), `${bank.path}?topic=all&q=${tasks[0].sourceId}`, `/tasks/${picture.id}`, ...representatives.map(task => `/tasks/${task.id}`), ...typePaths])];
   for (const width of [1280, 390]) {
     await call('Emulation.setDeviceMetricsOverride', { width, height: 900, deviceScaleFactor: 1, mobile: false });
     for (const url of paths) {
