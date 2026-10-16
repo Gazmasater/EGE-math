@@ -10,7 +10,7 @@ assert.equal(review.schemaVersion, 1);
 const report = [];
 for (const [section, bank] of Object.entries(OGE_BANKS)) {
   const { tasks } = readOgeCatalog(root, section);
-  const rows = review.banks[section];
+  const rows = section === 'oge-informatics' ? require('../lib/oge-informatics-classification.json') : review.banks[section];
   const leaves = new Set(bank.topics.flatMap(group => group.children.map(([code]) => code)));
   assert.equal(rows.count, tasks.length, `${section}: новый состав банка требует аудита тем`);
   assert.deepEqual(Object.keys(rows.tasks).sort(), tasks.map(task => task.id).sort(), `${section}: потерянные или лишние записи аудита`);

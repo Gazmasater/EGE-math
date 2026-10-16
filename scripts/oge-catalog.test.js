@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const { ogeBank, ogePublicTaskId, ogeSourceTaskId, ogeTopicInfo, ogeTaskCodes, ogeTaskMatchesTopic, ogeTopicStats, ogeCataloguePath, ogePageNumber, ogeTaskNavigation, normalizeOgeSourceHtml, ogeAssetPaths } = require('../lib/oge-catalog');
 
 test('Продолжение ОГЭ сохраняет выборку и банк на границе серверных страниц', () => {
-  for (const section of ['oge', 'oge-physics']) {
+  for (const section of ['oge', 'oge-physics', 'oge-informatics']) {
     // Deliberately non-contiguous IDs model a filtered search, not the whole bank.
     const selected = Array.from({length: 25}, (_, i) => ({id: ogePublicTaskId((i * 17).toString(16).padStart(6, '0'), section)}));
     const options = {section, topic: '1.1', query: 'сила & <ток>', added: true};
@@ -134,4 +134,26 @@ test('Путь каталога и ресурсы физики не исполь
   assert.ok(html.includes('src="/fipi/oge-physics/docs/physics/force.png"'));
   assert.ok(!html.includes('/fipi/oge/'));
   assert.ok(ogeAssetPaths(html, 'oge-physics').has('docs/physics/force.png'));
+});
+
+
+test('Информатика: отдельные ID, темы и ссылки файлов без JavaScript', () => {
+  const section = 'oge-informatics';
+  const bank = ogeBank(section);
+  assert.equal(bank.project, '74676951F093A0754D74F2D6E7955F06');
+  assert.equal(bank.topics.length, 4);
+  assert.equal(bank.topics.flatMap(group => group.children).length, 25);
+  assert.match(ogeTopicInfo('3.6', section).name, /Обратная связь/);
+  assert.equal(ogePublicTaskId('465498', section), 'OGEINF465498');
+  assert.equal(ogeSourceTaskId('OGEINF465498', section), '465498');
+  const source = `<body><div class="qblock" id="q465498"><p>Выполните задание</p><script>ShowPictureQ2WH('docs/test/data.zip','docs/test/icon.gif','',600,400)</script><script>ShowPictureQ('docs/test/graph.png')</script><div id="i465498"></div></div></body>`;
+  const html = normalizeOgeSourceHtml(source, section);
+  assert.match(html, /id="qOGEINF465498"/);
+  assert.match(html, /id="iOGEINF465498"/);
+  assert.ok(html.includes('href="https://oge.fipi.ru/docs/test/data.zip"'));
+  assert.ok(html.includes('src="/fipi/oge-informatics/docs/test/graph.png"'));
+  assert.ok(!html.includes('ShowPicture'));
+  assert.equal(normalizeOgeSourceHtml(html, section), html);
+  assert.ok(ogeAssetPaths(source, section).has('docs/test/data.zip'));
+  assert.equal(ogeCataloguePath({section, topic: '3.6', page: 2}), '/oge-informatics?topic=3.6&page=2');
 });

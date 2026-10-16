@@ -4,6 +4,7 @@ const path = require('node:path');
 const { readOgeCatalog } = require('./lib/oge-catalog');
 const { ogeBank, OGE_PAGE_SIZE, ogeTopicCodes, ogeTopicInfo, ogeTaskMatchesTopic: bankTaskMatchesTopic, ogeCataloguePath: bankCataloguePath } = require('../lib/oge-catalog');
 const { conditionText, decodeEntities } = require('../lib/seo-text');
+const {assetUrl} = require('../lib/web-assets');
 
 const origin = process.env.OGE_SITE_ORIGIN || 'http://127.0.0.1:8877';
 const canonicalOrigin = 'https://ege-fipi.ru';
@@ -40,7 +41,7 @@ async function main() {
   let catalogues = 0;
   let catalogPages = 0;
   const checkedCatalogues = new Set();
-  const codes = ['all', 'practical', ...bank.topics.flatMap(group => [group.code, ...group.children.map(([code]) => code)]), 'unclassified'];
+  const codes = ['all', 'practical', ...(bank.types || []).map(type => type.code), ...bank.topics.flatMap(group => [group.code, ...group.children.map(([code]) => code)]), 'unclassified'];
   for (const topic of codes) {
     const selected = tasks.filter(task => ogeTaskMatchesTopic(task, topic));
     const pages = Math.max(1, Math.ceil(selected.length / OGE_PAGE_SIZE));
@@ -82,7 +83,17 @@ async function main() {
       const breadcrumb = data.find(item => item['@type'] === 'BreadcrumbList');
       const firstTopic = ogeTopicCodes(task, section)[0];
       assert.equal(breadcrumb.itemListElement[1].item, canonicalOrigin + ogeCataloguePath({topic: firstTopic}), `${url}: переход в основную тему`);
-      assert.ok(result.html.includes(bank.assetPrefix + 'styles.css'), `${url}: ресурсы банка ОГЭ`);
+      assert.ok(result.html.includes(assetUrl(`catalogue-${section}.css`)), `${url}: стили банка ОГЭ`);
+      const attachmentUrls = [...task.fragment.matchAll(/class="fipi-attachment" href="([^"]+)"/g)].map(match => match[1]);
+      for (const href of attachmentUrls) assert.ok(result.html.includes(`href="${href}"`), `${url}: файл задания доступен без JavaScript`);
+      if (bank.types) {
+        const type = bank.types.find(type => ogeTaskMatchesTopic(task, type.code));
+        assert.ok(type, `${url}: проверенный тип задачи`);
+        assert.ok(result.html.includes(`href="${ogeCataloguePath({topic: type.code})}"`), `${url}: возврат в тип задачи`);
+        const family = tasks.filter(item => ogeTaskMatchesTopic(item, type.code));
+        const next = family[family.findIndex(item => item.id === task.id) + 1];
+        if (next) assert.ok(result.html.includes(`href="/tasks/${next.id}"`), `${url}: следующая задача того же типа`);
+      }
       assert.ok(result.html.includes(`<a class="task-permalink" href="/tasks/${task.id}">${task.sourceId}</a>`), `${url}: исходный номер и уникальная ссылка`);
       checkedTasks++;
       if (checkedTasks % 500 === 0) console.log(`tasks=${checkedTasks}/${tasks.length}`);
@@ -128,7 +139,9 @@ async function main() {
     assert.deepEqual(taskIds(physicsPage.html), [collision.id]);
     assert.deepEqual(taskIds(mathPage.html), ['465498']);
     assert.notEqual(conditionText(collision.fragment), conditionText(mathPage.html));
-    assert.equal((await get('/api/solutions/' + collision.id)).status, 404);
+    const solution = await get('/api/solutions/' + collision.id);
+    assert.ok([200, 404].includes(solution.status));
+    if (solution.status === 200) assert.equal(JSON.parse(solution.html).taskId, collision.id);
   }
   const injection = await get(ogeCataloguePath({ topic: 'all', query: '<script>alert(1)</script>' }));
   assert.equal(injection.status, 200); assert.ok(!injection.html.includes('<script>alert(1)</script>'));

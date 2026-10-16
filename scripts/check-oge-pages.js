@@ -76,7 +76,22 @@ async function main() {
   const report = { pages: [], interactions: [], noJavaScript: [], errors: [] };
   const answerTypes = [...new Set(tasks.map(task => task.answerType))];
   const representatives = answerTypes.map(type => tasks.find(task => task.answerType === type));
-  const paths = [...new Set([bank.path, `${bank.path}?topic=all`, `${bank.path}?topic=${sampleTopic}&page=2`, `${bank.path}?topic=all&page=${lastPage}`, ...(shared ? [`${bank.path}?topic=practical`, `/tasks/${shared.id}`] : []), `${bank.path}?topic=all&q=${tasks[0].sourceId}`, `/tasks/${picture.id}`, ...representatives.map(task => `/tasks/${task.id}`)])];
+  if (section === 'oge-informatics') {
+    // Cover every populated KES topic and both archive formats, including code tables.
+    for (const group of bank.topics) for (const [code] of group.children) {
+      const task = tasks.find(task => ogeTaskMatchesTopic(task, code, section));
+      if (task) representatives.push(task);
+    }
+    for (const extension of ['zip', 'rar']) {
+      const task = tasks.find(task => task.fragment.includes('class="fipi-attachment"') && task.fragment.includes(`.${extension}"`));
+      if (task) representatives.push(task);
+    }
+  }
+  const typePaths = (bank.types || []).flatMap(type => {
+    const sample = tasks.find(task => ogeTaskMatchesTopic(task, type.code, section));
+    return sample ? [`${bank.path}?topic=${type.code}`, `/tasks/${sample.id}`] : [];
+  });
+  const paths = [...new Set([bank.path, `${bank.path}?topic=all`, `${bank.path}?topic=${sampleTopic}&page=2`, `${bank.path}?topic=all&page=${lastPage}`, ...(shared ? [`${bank.path}?topic=practical`, `/tasks/${shared.id}`] : []), `${bank.path}?topic=all&q=${tasks[0].sourceId}`, `/tasks/${picture.id}`, ...representatives.map(task => `/tasks/${task.id}`), ...typePaths])];
   for (const width of [1280, 390]) {
     await call('Emulation.setDeviceMetricsOverride', { width, height: 900, deviceScaleFactor: 1, mobile: false });
     for (const url of paths) {
@@ -99,7 +114,7 @@ async function main() {
         hidden: document.documentElement.classList.contains('page-loading') })`);
       if (info.h1 !== 1 || info.hidden || info.tasks !== info.controls || info.scrollWidth > width + 1 || info.broken.length || info.clipped.length || info.hiddenCondition.length) report.errors.push({ url, width, info });
       report.pages.push({ url, width, ...info });
-      if (url === bank.path || url === `/tasks/${picture.id}` || (shared && url === `/tasks/${shared.id}`)) {
+      if (url === bank.path || url === `/tasks/${picture.id}` || (shared && url === `/tasks/${shared.id}`) || (section === 'oge-informatics' && url.startsWith('/tasks/'))) {
         if (url.startsWith('/tasks/')) await evaluate(`(() => {
           const header = document.querySelector('.local-header');
           const offset = getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().height + 12 : 12;
@@ -127,17 +142,22 @@ async function main() {
     assert.ok(unavailable, 'Честное сообщение об отсутствии решения');
     report.interactions.push({ width, action: 'unpublished-solution', passed: true });
     await call('Emulation.setScriptExecutionDisabled', { value: true });
-    for (const url of [bank.path + (shared ? '?topic=practical' : '?topic=all'), `/tasks/${shared?.id || picture.id}`]) {
+    const attachment = tasks.find(task => task.fragment.includes('class="fipi-attachment"'));
+    for (const url of [bank.path + (shared ? '?topic=practical' : '?topic=all'), `/tasks/${shared?.id || picture.id}`, ...(attachment ? [`/tasks/${attachment.id}`] : [])]) {
       await navigate(url);
       const info = await evaluate(`({ tasks: document.querySelectorAll('.qblock[id]').length,
         shared: document.querySelectorAll('.oge-shared-condition').length,
         visible: Array.from(document.querySelectorAll('.qblock[id]')).every(task => task.getBoundingClientRect().height > 0 && getComputedStyle(task).visibility !== 'hidden'),
         broken: Array.from(document.images).filter(image => image.src.includes(${JSON.stringify(bank.assetPrefix)}) && !image.naturalWidth).length })`);
       assert.ok(info.visible && (!shared || info.shared === info.tasks) && info.broken === 0, `${url}: условие и рисунки без JavaScript`);
+      if (attachment && url === `/tasks/${attachment.id}`) {
+        const href = await evaluate('document.querySelector(".fipi-attachment")?.href');
+        assert.ok(href?.startsWith('https://oge.fipi.ru/docs/'), 'Архив доступен без JavaScript');
+      }
       report.noJavaScript.push({ width, url, ...info });
     }
     await call('Emulation.setScriptExecutionDisabled', { value: false });
-    console.log(`width=${width} pages=${paths.length} interactions=3 noJavaScript=2`);
+    console.log(`width=${width} pages=${paths.length} interactions=3 noJavaScript=${report.noJavaScript.filter(item => item.width === width).length}`);
   }
   fs.writeFileSync(path.join(output, 'report.json'), JSON.stringify(report, null, 2) + '\n');
   assert.deepEqual(report.errors, []);
