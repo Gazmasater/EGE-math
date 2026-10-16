@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-08T21:31:19.648276+00:00",
+  "passed": true,
+  "checks": [
+    "JSON parse",
+    "88 seed results complete and unique",
+    "331 quoted counts match exact API rows",
+    "316 positive and 15 zero phrases",
+    "CSV and JSON agree",
+    "HTML contains all 316 rows and working local file links",
+    "70 destinations passed stored checks",
+    "Own reports cleaned",
+    "Credentials absent",
+    "Project context updated"
+  ],
+  "ranking_update": {
+    "checked_at": "2026-10-08T21:36:24.320702+00:00",
+    "passed": true,
+    "checks": [
+      "Only two named phrases marked for retention",
+      "Ranking source is user; numerical positions, search engine and region unspecified",
+      "133 P1 candidates, 2 retention, 316 total positive phrases",
+      "Other ranking statuses remain unknown",
+      "Quoted frequency data unchanged",
+      "CSV, JSON and HTML agree"
+    ]
+  }
+}

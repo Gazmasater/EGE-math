@@ -1,0 +1,24 @@
+{
+  "retrieved_at": "2026-10-08T21:44:30.911510+00:00",
+  "path": "/v4/user/227850612/hosts/https%3Aege-fipi.ru%3A443/search-queries/popular",
+  "params": {
+    "date_from": "2026-09-28T00:00:00+03:00",
+    "date_to": "2026-10-04T00:00:00+03:00",
+    "query_indicator": [
+      "TOTAL_SHOWS",
+      "TOTAL_CLICKS",
+      "AVG_SHOW_POSITION"
+    ],
+    "device_type_indicator": "ALL",
+    "order_by": "TOTAL_SHOWS",
+    "limit": 500,
+    "offset": 2500
+  },
+  "body": null,
+  "response": {
+    "count": 2200,
+    "queries": [],
+    "date_from": "2026-09-28",
+    "date_to": "2026-10-04"
+  }
+}

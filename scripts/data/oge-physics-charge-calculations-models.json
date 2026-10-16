@@ -1,0 +1,170 @@
+{
+  "48E602": {
+    "kind": "coulomb",
+    "a": 3,
+    "b": 0.5
+  },
+  "21C988": {
+    "kind": "coulomb",
+    "a": 4,
+    "b": 2
+  },
+  "3D4D89": {
+    "kind": "coulomb",
+    "a": 4,
+    "b": 0.5
+  },
+  "8CEE80": {
+    "kind": "coulomb",
+    "a": 3,
+    "b": 2
+  },
+  "CFD04C": {
+    "kind": "pair",
+    "initial": [
+      -8,
+      -2
+    ],
+    "target": 1
+  },
+  "A4CB02": {
+    "kind": "pair",
+    "initial": [
+      -10,
+      -2
+    ],
+    "target": 2
+  },
+  "FC74BC": {
+    "kind": "pair",
+    "initial": [
+      -6,
+      -2
+    ],
+    "target": 2
+  },
+  "0DBEC2": {
+    "kind": "pair",
+    "initial": [
+      6,
+      -2
+    ],
+    "target": 1
+  },
+  "DD9AE5": {
+    "kind": "pair",
+    "initial": [
+      -2,
+      8
+    ],
+    "target": 1
+  },
+  "7367BF": {
+    "kind": "sequence",
+    "initial": [
+      2.4,
+      0.0,
+      0.0
+    ],
+    "target": 3
+  },
+  "550BBA": {
+    "kind": "sequence",
+    "initial": [
+      1.6,
+      -1.6,
+      1.6
+    ],
+    "target": 1
+  },
+  "29C115": {
+    "kind": "sequence",
+    "initial": [
+      2.4,
+      0.0,
+      0.0
+    ],
+    "target": 1
+  },
+  "5CE5D9": {
+    "kind": "sequence",
+    "initial": [
+      2.8,
+      -2.8,
+      5.6
+    ],
+    "target": 2
+  },
+  "74C4CE": {
+    "kind": "sequence",
+    "initial": [
+      1.4,
+      -1.4,
+      2.8
+    ],
+    "target": 1
+  },
+  "170D96": {
+    "kind": "sequence",
+    "initial": [
+      2.8,
+      -2.8,
+      5.6
+    ],
+    "target": 3
+  },
+  "A8DDE5": {
+    "kind": "sequence",
+    "initial": [
+      1.6,
+      -1.6,
+      1.6
+    ],
+    "target": 3
+  },
+  "FD6B3E": {
+    "kind": "sequence",
+    "initial": [
+      2.8,
+      0.0,
+      0.0
+    ],
+    "target": 2
+  },
+  "8D988A": {
+    "kind": "sequence",
+    "initial": [
+      1.6,
+      -1.6,
+      1.6
+    ],
+    "target": 2
+  },
+  "188474": {
+    "kind": "ratio-sequence",
+    "initial": [
+      2,
+      -4,
+      2
+    ],
+    "target": 1
+  },
+  "8BD22D": {
+    "kind": "ratio-sequence",
+    "initial": [
+      2,
+      -4,
+      2
+    ],
+    "target": 2
+  },
+  "DDB68A": {
+    "kind": "ratio-sequence",
+    "initial": [
+      2,
+      -4,
+      2
+    ],
+    "target": 3
+  }
+}

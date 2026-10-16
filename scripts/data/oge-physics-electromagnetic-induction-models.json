@@ -1,0 +1,97 @@
+{
+  "OGEPHYS8A5423": {
+    "kind": "recognize",
+    "coil": true,
+    "inside": true
+  },
+  "OGEPHYSA87CAB": {
+    "kind": "recognize",
+    "coil": true,
+    "inside": false
+  },
+  "OGEPHYS0DA899": {
+    "kind": "recognize",
+    "coil": false,
+    "inside": true
+  },
+  "OGEPHYSB01FE0": {
+    "kind": "recognize",
+    "coil": false,
+    "inside": false
+  },
+  "OGEPHYSA09148": {
+    "kind": "two-coils",
+    "version": "A09148",
+    "observations": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "OGEPHYS3E6EF8": {
+    "kind": "two-coils",
+    "version": "3E6EF8",
+    "observations": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "OGEPHYS07211B": {
+    "kind": "two-coils",
+    "version": "07211B",
+    "observations": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "OGEPHYS828FC1": {
+    "kind": "two-coils",
+    "version": "828FC1",
+    "observations": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "OGEPHYS4B47F4": {
+    "kind": "moving-magnet",
+    "version": "three-states",
+    "observations": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "OGEPHYS682C9D": {
+    "kind": "moving-magnet",
+    "version": "three-states",
+    "observations": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "OGEPHYSD5A1B1": {
+    "kind": "moving-magnet",
+    "version": "direction",
+    "observations": [
+      -1,
+      1
+    ]
+  },
+  "OGEPHYS61B41E": {
+    "kind": "moving-magnet",
+    "version": "speed",
+    "observations": [
+      -1,
+      -2
+    ]
+  },
+  "OGEPHYS618B9F": {
+    "kind": "ring",
+    "axis": "vertical",
+    "field": "horizontal"
+  }
+}

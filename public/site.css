@@ -54,6 +54,9 @@ a.site-header-cta:hover,.study-button:hover{background:#ffd975;color:var(--ui-in
 .study-hero h1 em{position:relative;display:inline-block;font-style:normal;z-index:0}
 .study-hero h1 em:after{content:"";position:absolute;z-index:-1;left:0;right:0;bottom:1px;height:12px;background:var(--ui-yellow);transform:rotate(-1deg)}
 .study-lead{max-width:510px;margin:0 0 25px;color:var(--ui-muted);font-size:17px;line-height:1.75}
+.study-exam-links{display:grid;gap:2px;margin:-8px 0 20px;font:500 13px/1.5 var(--ui-font);color:var(--ui-muted)}
+.study-exam-links>div{display:grid;grid-template-columns:3em max-content max-content;align-items:center;column-gap:14px}
+.study-exam-links a{display:inline-flex;align-items:center;min-height:44px;color:#1d6096;text-decoration:underline;text-underline-offset:3px}
 .study-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px}
 a.study-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:54px;padding:14px 23px;border-radius:10px;background:var(--ui-yellow);color:var(--ui-ink);font:750 15px/1.4 var(--ui-font);text-decoration:none;box-shadow:0 3px 0 #cda22930}
 .study-secondary{display:inline-flex;align-items:center;gap:7px;min-height:44px;color:var(--ui-ink);font-size:14px;font-weight:650}
@@ -275,12 +278,13 @@ body:has(.seo-task-solution) .comments-widget,body:has(.about-card) .comments-wi
 }
 @media(max-width:359px){.site-brand{font-size:16px}.site-header-actions{gap:3px}.site-mobile-menu>summary{font-size:11px;gap:4px}.study-stats{gap:10px}.study-stats>div+div{padding-left:10px}.study-subject-switch span{display:none}.study-preview-top strong{font-size:12px}.study-preview-card{padding-left:16px;padding-right:16px}.study-reassurance{font-size:9px}.study-preview-sketch{font-size:15px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
-.site-ad{width:100%;max-width:760px;min-height:1px;margin:0 auto;font-family:var(--ui-font)}
+.site-ad{display:none;width:100%;max-width:760px;min-height:70px;margin:28px auto;font-family:var(--ui-font)}
+.site-js .site-ad{display:block}
 .site-ad[hidden]{display:none!important}
-.site-ad[data-ad-state="loading"],.site-ad[data-ad-state="ready"]{margin:28px auto;min-height:50px}
-.site-ad[data-ad-state="loading"] .site-ad-slot,.site-ad[data-ad-state="ready"] .site-ad-slot{min-height:50px;width:100%}
-.site-ad-label{font-size:10px;line-height:1.4;color:var(--ui-muted);text-align:center;margin-bottom:6px}
-.site-ad-label:not([hidden]){display:block}
+.site-ad[data-ad-state="empty"]{visibility:hidden;pointer-events:none}
+.site-ad-slot{min-height:50px;width:100%}
+.site-ad-label{display:block;font-size:10px;line-height:14px;color:var(--ui-muted);text-align:center;margin-bottom:6px}
+.site-ad-label[hidden]{display:block!important;visibility:hidden}
 @media print{.site-header,.site-footer,.site-ad,.study-actions,.study-guide-section,.comments-widget{display:none!important}}
 
 /* Catalogue search and the crawlable fallback for server pagination. */
@@ -300,3 +304,21 @@ body:has(.seo-task-solution) .comments-widget,body:has(.about-card) .comments-wi
 .catalogue-next-task{min-height:44px!important}
 .catalogue-complete{padding:16px;background:#e9f5ec;border-radius:8px}
 @media(max-width:600px){.catalogue-search{padding:12px}.catalogue-guide nav{gap:5px 14px}.catalogue-guide nav a{min-height:36px}.local-pager button,.local-pager a{min-height:44px}}
+
+/* Contact form in the former Telegram banner position. */
+.study-request{scroll-margin-top:90px;display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;margin:30px 0;padding:32px;border:1px solid #d1e1ee;border-radius:16px;background:#edf4f9;color:var(--ui-ink);font:400 15px/1.65 var(--ui-font);white-space:normal}
+.study-request *{box-sizing:border-box}.study-request-copy,.study-request-body{min-width:0}
+.study-request .study-request-eyebrow{margin:0 0 10px;color:#28658c;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.study-request h2{margin:0 0 14px;font:700 30px/1.2 var(--ui-font);letter-spacing:-.6px;color:var(--ui-ink)}
+.study-request-copy>p:last-child{max-width:360px;margin:0;color:var(--ui-muted);font:400 15px/1.75 var(--ui-font)}
+.study-request-form{display:grid;gap:14px;margin:0}.study-request-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.study-request-form label{display:grid;gap:6px;margin:0;font:600 13px/1.5 var(--ui-font);color:var(--ui-ink)}
+.study-request-form input:not([type=checkbox]),.study-request-form select,.study-request-form textarea{width:100%;min-width:0;min-height:46px;margin:0;padding:11px 12px;border:1px solid #b8cbda;border-radius:8px;background:#fff;color:var(--ui-ink);font:400 16px/1.4 var(--ui-font);box-shadow:none}
+.study-request-form textarea{min-height:94px;resize:vertical}.study-request-form input:focus-visible,.study-request-form select:focus-visible,.study-request-form textarea:focus-visible,.study-request button:focus-visible{outline:3px solid #79b0d3;outline-offset:2px}
+.study-request-form .study-request-consent{display:flex;align-items:flex-start;gap:9px;font-size:12px;font-weight:400;line-height:1.65}.study-request-consent input{width:18px;height:18px;flex:0 0 18px;margin:2px 0 0;accent-color:#2076aa}
+.study-request a{color:#1e648e;text-decoration:underline}.study-request .study-request-hint{margin:-7px 0 0;color:var(--ui-muted);font-size:12px}
+.study-request button{min-height:48px;padding:12px 18px;border:0;border-radius:9px;background:#2076aa;color:#fff;font:650 14px/1.5 var(--ui-font);cursor:pointer}.study-request button:hover{background:#195c86}.study-request button:disabled{cursor:wait;opacity:.65}
+.study-request-submit{display:flex;align-items:center;justify-content:space-between;width:100%}.study-request-error{margin:0;color:#962d25;font-size:14px}.study-request-success{padding:24px;border:1px solid #a9ccb7;border-radius:12px;background:#f4fbf6}.study-request-success h3{margin:0;color:#225f3e}.study-request-success p{margin:10px 0 20px}
+.study-request [hidden]{display:none!important}.study-request-form .study-request-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+@media(max-width:900px){.study-request{grid-template-columns:1fr;gap:22px}.study-request-copy>p:last-child{max-width:none}}
+@media(max-width:600px){.study-request{margin:24px 0;padding:22px 16px;border-radius:12px}.study-request h2{font-size:26px}.study-request-grid{grid-template-columns:1fr}}

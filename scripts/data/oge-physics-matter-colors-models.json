@@ -1,0 +1,123 @@
+{
+  "OGEPHYSD06F28": {
+    "kind": "adhesion",
+    "bothOil": false
+  },
+  "OGEPHYS047983": {
+    "kind": "adhesion",
+    "bothOil": true
+  },
+  "OGEPHYS62F78F": {
+    "kind": "plate-force"
+  },
+  "OGEPHYSCF2B48": {
+    "kind": "thermal-equilibrium",
+    "up": true
+  },
+  "OGEPHYSB7689D": {
+    "kind": "thermal-equilibrium",
+    "up": false
+  },
+  "OGEPHYSE45CF7": {
+    "kind": "film"
+  },
+  "OGEPHYSADC6F7": {
+    "kind": "filter",
+    "object": [
+      1,
+      0,
+      0
+    ],
+    "paper": [
+      1,
+      1,
+      1
+    ],
+    "filter": [
+      0,
+      1,
+      0
+    ]
+  },
+  "OGEPHYS8585F1": {
+    "kind": "filter",
+    "object": [
+      1,
+      0,
+      0
+    ],
+    "paper": [
+      1,
+      1,
+      1
+    ],
+    "filter": [
+      1,
+      0,
+      0
+    ]
+  },
+  "OGEPHYSCAD12E": {
+    "kind": "filter",
+    "object": [
+      0,
+      1,
+      0
+    ],
+    "paper": [
+      1,
+      0,
+      0
+    ],
+    "filter": [
+      1,
+      0,
+      0
+    ]
+  },
+  "OGEPHYS371785": {
+    "kind": "filter",
+    "object": [
+      0,
+      1,
+      0
+    ],
+    "paper": [
+      1,
+      1,
+      1
+    ],
+    "filter": [
+      1,
+      0,
+      0
+    ]
+  },
+  "OGEPHYS259D93": {
+    "kind": "scattering",
+    "view": "side"
+  },
+  "OGEPHYS52E019": {
+    "kind": "scattering",
+    "view": "transmitted"
+  },
+  "OGEPHYSD69485": {
+    "kind": "scattering",
+    "view": "long-path"
+  },
+  "OGEPHYSF03741": {
+    "kind": "scattering",
+    "view": "transmitted"
+  },
+  "OGEPHYSE60018": {
+    "kind": "correlation",
+    "coPeakPixels": [
+      330,
+      428
+    ],
+    "mortalityPeakPixels": [
+      344,
+      442
+    ]
+  }
+}

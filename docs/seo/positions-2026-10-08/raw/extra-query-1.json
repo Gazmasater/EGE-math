@@ -1,0 +1,344 @@
+{
+  "retrieved_at": "2026-10-08T21:47:00.411612+00:00",
+  "path": "/v4/user/227850612/hosts/https%3Aege-fipi.ru%3A443/query-analytics/list",
+  "params": null,
+  "body": {
+    "limit": 500,
+    "text_indicator": "QUERY",
+    "region_ids": [
+      225
+    ],
+    "search_location": "WEB_LOCATION",
+    "filters": {
+      "text_filters": [
+        {
+          "text_indicator": "QUERY",
+          "operation": "TEXT_MATCH",
+          "value": "открытый банк заданий фипи математика профиль"
+        }
+      ]
+    }
+  },
+  "response": {
+    "count": 1,
+    "text_indicator_to_statistics": [
+      {
+        "text_indicator": {
+          "type": "QUERY",
+          "value": "открытый банк заданий фипи математика профиль"
+        },
+        "popular_complementary_indicator": {
+          "type": "URL",
+          "value": "/?topic=7.5"
+        },
+        "statistics": [
+          {
+            "date": "2026-09-20",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-20",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-20",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-20",
+            "field": "DEMAND",
+            "value": 34.0
+          },
+          {
+            "date": "2026-09-21",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-21",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-21",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-21",
+            "field": "DEMAND",
+            "value": 36.0
+          },
+          {
+            "date": "2026-09-22",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-22",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-22",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-22",
+            "field": "DEMAND",
+            "value": 22.0
+          },
+          {
+            "date": "2026-09-23",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-23",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-23",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-23",
+            "field": "DEMAND",
+            "value": 35.0
+          },
+          {
+            "date": "2026-09-24",
+            "field": "IMPRESSIONS",
+            "value": 16.0
+          },
+          {
+            "date": "2026-09-24",
+            "field": "POSITION",
+            "value": 8.9
+          },
+          {
+            "date": "2026-09-24",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-24",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-24",
+            "field": "DEMAND",
+            "value": 42.0
+          },
+          {
+            "date": "2026-09-25",
+            "field": "IMPRESSIONS",
+            "value": 717.0
+          },
+          {
+            "date": "2026-09-25",
+            "field": "POSITION",
+            "value": 8.4
+          },
+          {
+            "date": "2026-09-25",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-25",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-25",
+            "field": "DEMAND",
+            "value": 1289.0
+          },
+          {
+            "date": "2026-09-26",
+            "field": "IMPRESSIONS",
+            "value": 142.0
+          },
+          {
+            "date": "2026-09-26",
+            "field": "POSITION",
+            "value": 7.0
+          },
+          {
+            "date": "2026-09-26",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-26",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-26",
+            "field": "DEMAND",
+            "value": 2334.0
+          },
+          {
+            "date": "2026-09-27",
+            "field": "IMPRESSIONS",
+            "value": 90.0
+          },
+          {
+            "date": "2026-09-27",
+            "field": "POSITION",
+            "value": 7.4
+          },
+          {
+            "date": "2026-09-27",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-27",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-27",
+            "field": "DEMAND",
+            "value": 2442.0
+          },
+          {
+            "date": "2026-09-28",
+            "field": "IMPRESSIONS",
+            "value": 29.0
+          },
+          {
+            "date": "2026-09-28",
+            "field": "POSITION",
+            "value": 8.2
+          },
+          {
+            "date": "2026-09-28",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-28",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-28",
+            "field": "DEMAND",
+            "value": 1174.0
+          },
+          {
+            "date": "2026-09-29",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-29",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-29",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-29",
+            "field": "DEMAND",
+            "value": 2.0
+          },
+          {
+            "date": "2026-09-30",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-30",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-30",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-30",
+            "field": "DEMAND",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-01",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-01",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-01",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-01",
+            "field": "DEMAND",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-02",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-02",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-02",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-02",
+            "field": "DEMAND",
+            "value": 1.0
+          },
+          {
+            "date": "2026-10-03",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-03",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-03",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-03",
+            "field": "DEMAND",
+            "value": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

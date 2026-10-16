@@ -1,0 +1,203 @@
+{
+  "OGEPHYS30C5F8": {
+    "kind": "mechanism",
+    "keys": [
+      "electrometer",
+      "motor"
+    ],
+    "options": [
+      3,
+      2
+    ]
+  },
+  "OGEPHYS601D73": {
+    "kind": "mechanism",
+    "keys": [
+      "projector",
+      "lamp"
+    ],
+    "options": [
+      4,
+      1
+    ]
+  },
+  "OGEPHYSE63C19": {
+    "kind": "mechanism",
+    "keys": [
+      "ammeter",
+      "electrometer"
+    ],
+    "options": [
+      1,
+      2
+    ]
+  },
+  "OGEPHYSCC9E29": {
+    "kind": "mechanism",
+    "keys": [
+      "motor",
+      "compass"
+    ],
+    "options": [
+      2,
+      4
+    ]
+  },
+  "OGEPHYSD511D0": {
+    "kind": "mechanism",
+    "keys": [
+      "rheostat",
+      "ammeter"
+    ],
+    "options": [
+      3,
+      1
+    ]
+  },
+  "OGEPHYS3BEEA5": {
+    "kind": "mechanism",
+    "keys": [
+      "generator",
+      "motor"
+    ],
+    "options": [
+      4,
+      1
+    ]
+  },
+  "OGEPHYS435097": {
+    "kind": "mechanism",
+    "keys": [
+      "projector",
+      "heater"
+    ],
+    "options": [
+      4,
+      1
+    ]
+  },
+  "OGEPHYS5E553B": {
+    "kind": "mechanism",
+    "keys": [
+      "rheostat",
+      "electrometer"
+    ],
+    "options": [
+      3,
+      2
+    ]
+  },
+  "OGEPHYS94F69D": {
+    "kind": "mechanism",
+    "keys": [
+      "compass",
+      "kettle"
+    ],
+    "options": [
+      4,
+      1
+    ]
+  },
+  "OGEPHYS99D548": {
+    "kind": "measurement",
+    "keys": [
+      "charge",
+      "voltage"
+    ],
+    "options": [
+      4,
+      3
+    ]
+  },
+  "OGEPHYS37DFF1": {
+    "kind": "measurement",
+    "keys": [
+      "charge",
+      "power"
+    ],
+    "options": [
+      2,
+      3
+    ]
+  },
+  "OGEPHYS30D7B4": {
+    "kind": "measurement",
+    "keys": [
+      "voltage",
+      "resistance"
+    ],
+    "options": [
+      3,
+      2
+    ]
+  },
+  "OGEPHYSB92A26": {
+    "kind": "measurement",
+    "keys": [
+      "charge",
+      "current"
+    ],
+    "options": [
+      2,
+      1
+    ]
+  },
+  "OGEPHYSA9B82C": {
+    "kind": "measurement",
+    "keys": [
+      "current",
+      "voltage"
+    ],
+    "options": [
+      3,
+      2
+    ]
+  },
+  "OGEPHYSCD5D5D": {
+    "kind": "measurement",
+    "keys": [
+      "charge",
+      "resistance"
+    ],
+    "options": [
+      4,
+      2
+    ]
+  },
+  "OGEPHYSE0C149": {
+    "kind": "voltmeter",
+    "limit": 3,
+    "divisions": 30,
+    "ticks": 14,
+    "option": 1
+  },
+  "OGEPHYS0DB6B1": {
+    "kind": "voltmeter",
+    "limit": 6,
+    "divisions": 30,
+    "ticks": 24,
+    "option": 4
+  },
+  "OGEPHYS4473B2": {
+    "kind": "radiation-instruments",
+    "quantities": [
+      "dose",
+      "wavelength"
+    ],
+    "options": [
+      2,
+      1
+    ]
+  },
+  "OGEPHYSF75EE1": {
+    "kind": "radiation-instruments",
+    "quantities": [
+      "frequency",
+      "particle-energy"
+    ],
+    "options": [
+      1,
+      3
+    ]
+  }
+}

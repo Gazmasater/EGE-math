@@ -1,0 +1,114 @@
+[
+  {
+    "url": "https://ege-fipi.ru/?topic=derivative",
+    "status": 200,
+    "title": "Производная и её применение — первая часть ЕГЭ по математике",
+    "h1": "Производная и её применение — первая часть ЕГЭ по математике",
+    "canonical": "https://ege-fipi.ru/?topic=derivative",
+    "checked_at": "2026-10-16T19:55:57.275403+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/?topic=vectors",
+    "status": 200,
+    "title": "Векторы — первая часть ЕГЭ по математике",
+    "h1": "Векторы — первая часть ЕГЭ по математике",
+    "canonical": "https://ege-fipi.ru/?topic=vectors",
+    "checked_at": "2026-10-16T19:55:57.043478+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/ege/math",
+    "status": 200,
+    "title": "ЕГЭ по математике, профиль — задания с решениями",
+    "h1": "ЕГЭ по математике: профильный уровень",
+    "canonical": "https://ege-fipi.ru/ege/math",
+    "checked_at": "2026-10-16T19:55:56.821220+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/ege/physics",
+    "status": 200,
+    "title": "ЕГЭ по физике — задания с ответами и решениями",
+    "h1": "ЕГЭ по физике: задания и подготовка",
+    "canonical": "https://ege-fipi.ru/ege/physics",
+    "checked_at": "2026-10-16T19:55:57.682495+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/equations",
+    "status": 200,
+    "title": "Уравнения — ЕГЭ по математике, профильный уровень",
+    "h1": "Уравнения — ЕГЭ по математике, профильный уровень",
+    "canonical": "https://ege-fipi.ru/equations",
+    "checked_at": "2026-10-16T19:55:57.701472+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/finance",
+    "status": 200,
+    "title": "Финансовая математика — ЕГЭ по математике, профильный уровень",
+    "h1": "Финансовая математика — ЕГЭ по математике, профильный уровень",
+    "canonical": "https://ege-fipi.ru/finance",
+    "checked_at": "2026-10-16T19:55:57.709395+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/oge-physics",
+    "status": 200,
+    "title": "ОГЭ по физике — банк заданий ФИПИ",
+    "h1": "ОГЭ по физике — банк заданий ФИПИ",
+    "canonical": "https://ege-fipi.ru/oge-physics",
+    "checked_at": "2026-10-16T19:55:57.752781+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/oge-physics?topic=1",
+    "status": 200,
+    "title": "МЕХАНИЧЕСКИЕ ЯВЛЕНИЯ — ОГЭ по физике",
+    "h1": "МЕХАНИЧЕСКИЕ ЯВЛЕНИЯ — ОГЭ по физике",
+    "canonical": "https://ege-fipi.ru/oge-physics?topic=1",
+    "checked_at": "2026-10-16T19:55:57.832603+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/oge?topic=3.1",
+    "status": 200,
+    "title": "Целые и дробно-рациональные уравнения. Системы и совокупности уравнений — ОГЭ по математике",
+    "h1": "Целые и дробно-рациональные уравнения. Системы и совокупности уравнений — ОГЭ по математике",
+    "canonical": "https://ege-fipi.ru/oge?topic=3.1",
+    "checked_at": "2026-10-16T19:55:57.882766+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/oge?topic=3.2",
+    "status": 200,
+    "title": "Целые и дробно-рациональные неравенства. Системы и совокупности неравенств — ОГЭ по математике",
+    "h1": "Целые и дробно-рациональные неравенства. Системы и совокупности неравенств — ОГЭ по математике",
+    "canonical": "https://ege-fipi.ru/oge?topic=3.2",
+    "checked_at": "2026-10-16T19:55:58.051416+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/oge?topic=5.1",
+    "status": 200,
+    "title": "Функция и её график. Область определения и множество значений, нули, знакопостоянство, монотонность и экстремумы — ОГЭ по математике",
+    "h1": "Функция и её график. Область определения и множество значений, нули, знакопостоянство, монотонность и экстремумы — ОГЭ по математике",
+    "canonical": "https://ege-fipi.ru/oge?topic=5.1",
+    "checked_at": "2026-10-16T19:55:57.938517+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/oge?topic=practical",
+    "status": 200,
+    "title": "Практические задачи с общим условием — ОГЭ по математике",
+    "h1": "Практические задачи с общим условием — ОГЭ по математике",
+    "canonical": "https://ege-fipi.ru/oge?topic=practical",
+    "checked_at": "2026-10-16T19:55:58.005560+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/physics?topic=kinematics",
+    "status": 200,
+    "title": "Кинематика — первая часть ЕГЭ по физике",
+    "h1": "Кинематика — первая часть ЕГЭ по физике",
+    "canonical": "https://ege-fipi.ru/physics?topic=kinematics",
+    "checked_at": "2026-10-16T19:55:58.181025+00:00"
+  },
+  {
+    "url": "https://ege-fipi.ru/physics?topic=magnetism.field",
+    "status": 200,
+    "title": "Магнитное поле и силы — первая часть ЕГЭ по физике",
+    "h1": "Магнитное поле и силы — первая часть ЕГЭ по физике",
+    "canonical": "https://ege-fipi.ru/physics?topic=magnetism.field",
+    "checked_at": "2026-10-16T19:55:58.291196+00:00"
+  }
+]

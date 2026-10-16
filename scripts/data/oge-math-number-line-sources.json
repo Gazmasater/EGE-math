@@ -1,0 +1,2097 @@
+{
+  "B00E05": {
+    "sourceId": "B00E05",
+    "sourceFile": "oge-4.raw.html",
+    "sourceHash": "ce7d9affd369ea1424ba25cdaa9f1536be67e853750cf2769e94da4777f39d25",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены точки A, B, C, D. Одна из них соответствует числу √(33). Какая это точка? 1) точка A 2) точка B 3) точка C 4) точка D",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/24822C7E4E92AF524B93D882B45FA918/xs3qstsrc24822C7E4E92AF524B93D882B45FA918_1_1455523986.png",
+        "sha256": "f596f520452ba909d296dad8093e8c2fe1110c1d76a4f96142348765663befe8",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=355957",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.866173+00:00",
+    "expectedAnswer": "4",
+    "externalAnswer": "3",
+    "externalAnswerRaw": "Ответ: 3",
+    "externalCondition": "Одна из точек, отмеченных на координатной прямой, соответствует числу корень из: начало аргумента: 33 конец аргумента . Какая это точка? В ответе укажите номер правильного варианта. 1) точка A 2) точка B 3) точка C 4) точка D",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+    "externalSnapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+    "model": {
+      "kind": "root-point",
+      "ticks": [
+        4,
+        5,
+        6
+      ],
+      "halfIntervals": {
+        "A": [
+          4,
+          4.5
+        ],
+        "B": [
+          4.5,
+          5
+        ],
+        "C": [
+          5,
+          5.5
+        ],
+        "D": [
+          5.5,
+          6
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/24822C7E4E92AF524B93D882B45FA918/xs3qstsrc24822C7E4E92AF524B93D882B45FA918_1_1455523986.png",
+          "sha256": "f596f520452ba909d296dad8093e8c2fe1110c1d76a4f96142348765663befe8",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "точкаA",
+        "точкаB",
+        "точкаC",
+        "точкаD"
+      ],
+      "radicand": 33,
+      "answer": "4",
+      "primary": "√33; деления [4, 5, 6]; варианты ['точкаA', 'точкаB', 'точкаC', 'точкаD']"
+    },
+    "diagramModel": {
+      "kind": "root-point",
+      "ticks": [
+        4,
+        5,
+        6
+      ],
+      "halfIntervals": {
+        "A": [
+          4,
+          4.5
+        ],
+        "B": [
+          4.5,
+          5
+        ],
+        "C": [
+          5,
+          5.5
+        ],
+        "D": [
+          5.5,
+          6
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/24822C7E4E92AF524B93D882B45FA918/xs3qstsrc24822C7E4E92AF524B93D882B45FA918_1_1455523986.png",
+          "sha256": "f596f520452ba909d296dad8093e8c2fe1110c1d76a4f96142348765663befe8",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=355951",
+      "steps": "Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+      "snapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+      "solutionSha256": "a0a7bc4df327393927c8e40cf36c1cbd576d4cdb252a2322322bfbd82541774d"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Внешний ключ 3 неверен: 5,5²=30,25<33<36=6², поэтому √33 находится между 5,5 и 6, где отмечена D. Вариант 4; C находится между 5 и 5,5. Собственная проверка:\n1. На рисунке подписаны деления 4, 5 и 6. Нужно определить положение числа √33, а затем выбрать букву соответствующей точки.\nКвадратный корень неотрицателен. Для неотрицательных чисел возведение в квадрат сохраняет порядок, поэтому сравним 33 с квадратами границ.\n\n2. Уточним положение корня с помощью половины единичного отрезка:\n5,5² = 30,25, 6² = 36.\nЧисло 33 строго между 30,25 и 36, следовательно, √33 строго между 5,5 и 6.\n\n3. На исходном рисунке внутри этого промежутка отмечена только точка D. Остальные три точки находятся за его границами. Значит, нужная точка — D, вариант 4.\n\nПроверка: обе границы неотрицательны, их квадраты расположены по разные стороны от 33; выбор точки подтверждён её положением относительно делений.\n\nОтвет: 4."
+    }
+  },
+  "3ACC7D": {
+    "sourceId": "3ACC7D",
+    "sourceFile": "oge-6.raw.html",
+    "sourceHash": "db62f2f13ea8913283bff1f22d6416855175c36267c6891c142570a3b825bdf2",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа p, q и r. Какая из разностей q−p, q−r, r−p отрицательна? 1) q−p 2) q−r 3) r−p 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3E7A9ADF4E94AC9A49757BDA5381189B/xs3qstsrc3E7A9ADF4E94AC9A49757BDA5381189B_1_1457698016.png",
+        "sha256": "fb2af6b892a8c5041212e4520a54b204c00b655998a75765f23f00ebc7a4f8d7",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=392893",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.867655+00:00",
+    "expectedAnswer": "2",
+    "externalAnswer": "2",
+    "externalAnswerRaw": "Ответ: 2",
+    "externalCondition": "На координатной прямой отмечены числа p, q и r . Какая из разностей q − p , q − r , r − p отрицательна? В ответе укажите номер правильного варианта. 1) q − p 2) q − r 3) r − p 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+    "externalSnapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "p",
+        "q",
+        "r"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3E7A9ADF4E94AC9A49757BDA5381189B/xs3qstsrc3E7A9ADF4E94AC9A49757BDA5381189B_1_1457698016.png",
+          "sha256": "fb2af6b892a8c5041212e4520a54b204c00b655998a75765f23f00ebc7a4f8d7",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "q−p",
+        "q−r",
+        "r−p",
+        "ни одна из них"
+      ],
+      "desiredSign": -1,
+      "answer": "2",
+      "primary": "p < q < r; варианты ['q−p', 'q−r', 'r−p', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "p",
+        "q",
+        "r"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3E7A9ADF4E94AC9A49757BDA5381189B/xs3qstsrc3E7A9ADF4E94AC9A49757BDA5381189B_1_1457698016.png",
+          "sha256": "fb2af6b892a8c5041212e4520a54b204c00b655998a75765f23f00ebc7a4f8d7",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Порядок p<q<r подтверждён рисунком; q−p и r−p положительны, q−r отрицательна. Подходит только второй вариант исходного набора.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=392893",
+      "steps": "Порядок p<q<r подтверждён рисунком; q−p и r−p положительны, q−r отрицательна. Подходит только второй вариант исходного набора.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+      "snapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+      "solutionSha256": "f65df2ed369761457b90a203849ebfe019edf42c35ca1c98efae9b6a17b7e274"
+    }
+  },
+  "D0C118": {
+    "sourceId": "D0C118",
+    "sourceFile": "oge-9.raw.html",
+    "sourceHash": "50dab67b776028f3055dd6dffe3a3ddf1cdb36b37088f530a38637be459762c7",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа x, y и z. Какая из разностей z−x, z−y, y−x отрицательна? 1) z−x 2) z−y 3) y−x 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/57FA25208DF08F3C46368A23DB3C6CE7/xs3qstsrc57FA25208DF08F3C46368A23DB3C6CE7_1_1457697984.png",
+        "sha256": "1cb8c9e806674e5962cd6d4a1b4fc4ea33dcba93326e7ba84070fb2841ccac74",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=322418",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.876984+00:00",
+    "expectedAnswer": "4",
+    "externalAnswer": "4",
+    "externalAnswerRaw": "Ответ: 4",
+    "externalCondition": "На координатной прямой отмечены числа x, y и z . Какая из разностей z − x , z − y , y − x отрицательна? В ответе укажите номер правильного варианта. 1) z − x 2) z − y 3) y − x 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+    "externalSnapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "x",
+        "y",
+        "z"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/57FA25208DF08F3C46368A23DB3C6CE7/xs3qstsrc57FA25208DF08F3C46368A23DB3C6CE7_1_1457697984.png",
+          "sha256": "1cb8c9e806674e5962cd6d4a1b4fc4ea33dcba93326e7ba84070fb2841ccac74",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "z−x",
+        "z−y",
+        "y−x",
+        "ни одна из них"
+      ],
+      "desiredSign": -1,
+      "answer": "4",
+      "primary": "x < y < z; варианты ['z−x', 'z−y', 'y−x', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "x",
+        "y",
+        "z"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/57FA25208DF08F3C46368A23DB3C6CE7/xs3qstsrc57FA25208DF08F3C46368A23DB3C6CE7_1_1457697984.png",
+          "sha256": "1cb8c9e806674e5962cd6d4a1b4fc4ea33dcba93326e7ba84070fb2841ccac74",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. По рисунку x<y<z. Все три разности z−x, z−y, y−x положительны, поэтому для поиска отрицательной выбирается «ни одна из них».",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=322418",
+      "steps": "По рисунку x<y<z. Все три разности z−x, z−y, y−x положительны, поэтому для поиска отрицательной выбирается «ни одна из них».",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+      "snapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+      "solutionSha256": "fc6bfaa59a9abeea4d55efb8dba17d0d7af8a85026b02384473e81304eae4e4e"
+    }
+  },
+  "68B11A": {
+    "sourceId": "68B11A",
+    "sourceFile": "oge-9.raw.html",
+    "sourceHash": "1d7c2733c08d756fd342146e5542a03b8b1c9f366696f889835d68524c1f82e4",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа p, q и r. Какая из разностей p−r, p−q, r−q отрицательна? 1) p−r 2) p−q 3) r−q 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/5D94F5F6E0E287C34FB1E5E8FFB2C2D7/xs3qstsrc5D94F5F6E0E287C34FB1E5E8FFB2C2D7_1_1457698049.png",
+        "sha256": "60ecad17274b4bb472b0d7824086371c5f18e40d17005f92fd49b3d675e0b807",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=322419",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.877760+00:00",
+    "expectedAnswer": "3",
+    "externalAnswer": "3",
+    "externalAnswerRaw": "Ответ: 3",
+    "externalCondition": "На координатной прямой отмечены числа p , q и r . Какая из разностей p −⁠ r , p −⁠ q , r −⁠ q отрицательна? В ответе укажите номер правильного варианта . 1) p −⁠ r 2) p −⁠ q 3) r −⁠ q 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+    "externalSnapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "r",
+        "q",
+        "p"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/5D94F5F6E0E287C34FB1E5E8FFB2C2D7/xs3qstsrc5D94F5F6E0E287C34FB1E5E8FFB2C2D7_1_1457698049.png",
+          "sha256": "60ecad17274b4bb472b0d7824086371c5f18e40d17005f92fd49b3d675e0b807",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "p−r",
+        "p−q",
+        "r−q",
+        "ни одна из них"
+      ],
+      "desiredSign": -1,
+      "answer": "3",
+      "primary": "r < q < p; варианты ['p−r', 'p−q', 'r−q', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "r",
+        "q",
+        "p"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/5D94F5F6E0E287C34FB1E5E8FFB2C2D7/xs3qstsrc5D94F5F6E0E287C34FB1E5E8FFB2C2D7_1_1457698049.png",
+          "sha256": "60ecad17274b4bb472b0d7824086371c5f18e40d17005f92fd49b3d675e0b807",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. По рисунку r<q<p, разность отрицательна ровно тогда, когда уменьшаемое левее вычитаемого. Проверены все три разности; r−q отрицательна. Для аналогов порядок и буквы восстановлены по ФИПИ.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=322419",
+      "steps": "По рисунку r<q<p, разность отрицательна ровно тогда, когда уменьшаемое левее вычитаемого. Проверены все три разности; r−q отрицательна. Для аналогов порядок и буквы восстановлены по ФИПИ.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+      "snapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+      "solutionSha256": "3884dc9d48be5e30f4786e2f33696f6c500e2242148106e0f9ec82fe15f8edc7"
+    }
+  },
+  "F38B2D": {
+    "sourceId": "F38B2D",
+    "sourceFile": "oge-10.raw.html",
+    "sourceHash": "b55408aaf809b43fbabb73a59a5515762684446cbf0f8512de60e65e4535a4fe",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа x, y и z. Какая из разностей y−x, x−z, z−y отрицательна? 1) y−x 2) x−z 3) z−y 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/617FE44D915397124796DB4A30F93084/xs3qstsrc617FE44D915397124796DB4A30F93084_1_1457697995.png",
+        "sha256": "e28d7207ff8e6537a6a85c4006b59ce225193c221d3623d9b7d046038816d404",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=322420",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.878506+00:00",
+    "expectedAnswer": "2",
+    "externalAnswer": "2",
+    "externalAnswerRaw": "Ответ: 2",
+    "externalCondition": "На координатной прямой отмечены числа x , y и z . Какая из разностей y – x , x – z , z – y отрицательна? В ответе укажите номер правильного варианта. 1) y – x 2) x – z 3) z – y 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+    "externalSnapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "x",
+        "y",
+        "z"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/617FE44D915397124796DB4A30F93084/xs3qstsrc617FE44D915397124796DB4A30F93084_1_1457697995.png",
+          "sha256": "e28d7207ff8e6537a6a85c4006b59ce225193c221d3623d9b7d046038816d404",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "y−x",
+        "x−z",
+        "z−y",
+        "ни одна из них"
+      ],
+      "desiredSign": -1,
+      "answer": "2",
+      "primary": "x < y < z; варианты ['y−x', 'x−z', 'z−y', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "x",
+        "y",
+        "z"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/617FE44D915397124796DB4A30F93084/xs3qstsrc617FE44D915397124796DB4A30F93084_1_1457697995.png",
+          "sha256": "e28d7207ff8e6537a6a85c4006b59ce225193c221d3623d9b7d046038816d404",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. По рисунку r<q<p, разность отрицательна ровно тогда, когда уменьшаемое левее вычитаемого. Проверены все три разности; r−q отрицательна. Для аналогов порядок и буквы восстановлены по ФИПИ.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=322419",
+      "steps": "По рисунку r<q<p, разность отрицательна ровно тогда, когда уменьшаемое левее вычитаемого. Проверены все три разности; r−q отрицательна. Для аналогов порядок и буквы восстановлены по ФИПИ.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+      "snapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+      "solutionSha256": "3884dc9d48be5e30f4786e2f33696f6c500e2242148106e0f9ec82fe15f8edc7"
+    }
+  },
+  "01C720": {
+    "sourceId": "01C720",
+    "sourceFile": "oge-10.raw.html",
+    "sourceHash": "8c4f1047e0dd287fa2c385de6a25cd3957038c1eaf29b17006c1c9a7013ef806",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа p, q и r. Какая из разностей q−p, r−q, p−r отрицательна? 1) q−p 2) r−q 3) p−r 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/622A538324ACB27F48D3FB3E72678E8F/xs3qstsrc622A538324ACB27F48D3FB3E72678E8F_1_1457698028.png",
+        "sha256": "ed5377de4e0530d41996ee2707d3e6a3c646c9ce7bc3456cf2a94c82866dd5ba",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=322421",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.887478+00:00",
+    "expectedAnswer": "3",
+    "externalAnswer": "3",
+    "externalAnswerRaw": "Ответ: 3",
+    "externalCondition": "На координатной прямой отмечены числа p , q и r . Какая из разностей q – p , r – q , p – r отрицательна? В ответе укажите номер правильного варианта. 1) q – p 2) r – q 3) p – r 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+    "externalSnapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "p",
+        "q",
+        "r"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/622A538324ACB27F48D3FB3E72678E8F/xs3qstsrc622A538324ACB27F48D3FB3E72678E8F_1_1457698028.png",
+          "sha256": "ed5377de4e0530d41996ee2707d3e6a3c646c9ce7bc3456cf2a94c82866dd5ba",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "q−p",
+        "r−q",
+        "p−r",
+        "ни одна из них"
+      ],
+      "desiredSign": -1,
+      "answer": "3",
+      "primary": "p < q < r; варианты ['q−p', 'r−q', 'p−r', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "p",
+        "q",
+        "r"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/622A538324ACB27F48D3FB3E72678E8F/xs3qstsrc622A538324ACB27F48D3FB3E72678E8F_1_1457698028.png",
+          "sha256": "ed5377de4e0530d41996ee2707d3e6a3c646c9ce7bc3456cf2a94c82866dd5ba",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. По рисунку r<q<p, разность отрицательна ровно тогда, когда уменьшаемое левее вычитаемого. Проверены все три разности; r−q отрицательна. Для аналогов порядок и буквы восстановлены по ФИПИ.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=322419",
+      "steps": "По рисунку r<q<p, разность отрицательна ровно тогда, когда уменьшаемое левее вычитаемого. Проверены все три разности; r−q отрицательна. Для аналогов порядок и буквы восстановлены по ФИПИ.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+      "snapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+      "solutionSha256": "3884dc9d48be5e30f4786e2f33696f6c500e2242148106e0f9ec82fe15f8edc7"
+    }
+  },
+  "B3D324": {
+    "sourceId": "B3D324",
+    "sourceFile": "oge-10.raw.html",
+    "sourceHash": "8898b237c685e386820d971bbb0dcfc15e33994017d8cce041f3c11cb79f4660",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечено число a. Какое из утверждений для этого числа является верным? 1) 7−a>0 2) a−5 3) a−8>0 4) 6−a",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/6407EE757D8CAA9641DFA6CF0B1146B6/xs3qstsrc6407EE757D8CAA9641DFA6CF0B1146B6_1_1458117844.png",
+        "sha256": "c5108e236cf7eb7bdb598cd77fb0810e4527189475de3af29cfb2d85b217b494",
+        "width": 482,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=317033",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.893158+00:00",
+    "expectedAnswer": "4",
+    "externalAnswer": "2",
+    "externalAnswerRaw": "Ответ: 2",
+    "externalCondition": "На координатной прямой отмечено число a . Какое из утверждений относительно этого числа является верным? 1) a − 6 < 0 2) a − 7 > 0 3) 6 − a > 0 4) 8 − a < 0",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-311418.html",
+    "externalSnapshotSha256": "cdef9dce01afd3aedcf3984dab787ed71908b40f3d33068067ef9e61d7babd1b",
+    "model": {
+      "kind": "point-inequality",
+      "bounds": [
+        7,
+        8
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/6407EE757D8CAA9641DFA6CF0B1146B6/xs3qstsrc6407EE757D8CAA9641DFA6CF0B1146B6_1_1458117844.png",
+          "sha256": "c5108e236cf7eb7bdb598cd77fb0810e4527189475de3af29cfb2d85b217b494",
+          "width": 482,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "7−a>0",
+        "a−5<0",
+        "a−8>0",
+        "6−a<0"
+      ],
+      "answer": "4",
+      "primary": "7 < a < 8; варианты ['7−a>0', 'a−5<0', 'a−8>0', '6−a<0']"
+    },
+    "diagramModel": {
+      "kind": "point-inequality",
+      "bounds": [
+        7,
+        8
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/6407EE757D8CAA9641DFA6CF0B1146B6/xs3qstsrc6407EE757D8CAA9641DFA6CF0B1146B6_1_1458117844.png",
+          "sha256": "c5108e236cf7eb7bdb598cd77fb0810e4527189475de3af29cfb2d85b217b494",
+          "width": 482,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Рисунок даёт аналогичный интервал, но варианты утверждений отличаются; это variant. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Все четыре сравнения переписаны как ограничения на a, затем сверены с положением точки между соседними целыми. Прототип имеет −5<a<−4; собственный рисунок 7<a<8 и его четыре утверждения проверены отдельно.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=311418",
+      "steps": "Все четыре сравнения переписаны как ограничения на a, затем сверены с положением точки между соседними целыми. Прототип имеет −5<a<−4; собственный рисунок 7<a<8 и его четыре утверждения проверены отдельно.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-311418.html",
+      "snapshotSha256": "cdef9dce01afd3aedcf3984dab787ed71908b40f3d33068067ef9e61d7babd1b",
+      "solutionSha256": "1de0b50c66b3b9f587f590d60906d88afe473993b995f7bac49c086f00df13a2"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Во внешнем аналоге и первичном рисунке 7<a<8, но комплекты утверждений различаются. В ФИПИ 7−a>0, a−5<0, a−8>0 ложны, 6−a<0 верно. Внешний ответ 2 относится к a−7>0, в ФИПИ ответ 4. Собственная проверка:\n1. По подписанным делениям 0 и 1 устанавливаем единичный отрезок. Последовательно отсчитываем равные деления вправо. Точка a расположена строго между 7 и 8. Значит, a больше 7, но меньше 8.\n\n2. Проверим все четыре утверждения. При вычитании меньшего числа из большего разность положительна, при вычитании большего из меньшего — отрицательна:\n1) 7 − a меньше нуля, поэтому предложенное утверждение неверно.\n2) a − 5 больше нуля, поэтому предложенное утверждение неверно.\n3) a − 8 меньше нуля, поэтому предложенное утверждение неверно.\n4) 6 − a меньше нуля, поэтому предложенное утверждение верно.\n\n3. Только утверждение под номером 4 согласуется с положением a на исходной прямой.\n\nПроверка: сравнения верны для любого числа между 7 и 8; знать точную координату a не требуется.\n\nОтвет: 4."
+    }
+  },
+  "8C0E23": {
+    "sourceId": "8C0E23",
+    "sourceFile": "oge-11.raw.html",
+    "sourceHash": "40213e85fa95b216ae7d6b38a4393a4db1c9f805af16d7e3989b6f8b2bc1c601",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа a, b и c. Какая из разностей a−b, c−a, b−c положительна? 1) a−b 2) c−a 3) b−c 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/6FE2ACE248EBAAF44ACF3722BA27140A/xs3qstsrc6FE2ACE248EBAAF44ACF3722BA27140A_1_1457698060.png",
+        "sha256": "744ea90f5de9eddffd5af6b183eb089620c7d47e589d2f982344dbacb2b39c8c",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=392920",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.894003+00:00",
+    "expectedAnswer": "2",
+    "externalAnswer": "2",
+    "externalAnswerRaw": "Ответ: 2",
+    "externalCondition": "На координатной прямой отмечены числа a, b и c . Какая из разностей a − b , с − a , b − c положительна? В ответе укажите номер правильного варианта. 1) a − b 2) c − a 3) b − c 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+    "externalSnapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/6FE2ACE248EBAAF44ACF3722BA27140A/xs3qstsrc6FE2ACE248EBAAF44ACF3722BA27140A_1_1457698060.png",
+          "sha256": "744ea90f5de9eddffd5af6b183eb089620c7d47e589d2f982344dbacb2b39c8c",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "a−b",
+        "c−a",
+        "b−c",
+        "ни одна из них"
+      ],
+      "desiredSign": 1,
+      "answer": "2",
+      "primary": "a < b < c; варианты ['a−b', 'c−a', 'b−c', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/6FE2ACE248EBAAF44ACF3722BA27140A/xs3qstsrc6FE2ACE248EBAAF44ACF3722BA27140A_1_1457698060.png",
+          "sha256": "744ea90f5de9eddffd5af6b183eb089620c7d47e589d2f982344dbacb2b39c8c",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Порядок a<b<c подтверждён рисунком; a−b и b−c отрицательны, c−a положительна. Все три сравнения согласованы с направлением оси.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=392920",
+      "steps": "Порядок a<b<c подтверждён рисунком; a−b и b−c отрицательны, c−a положительна. Все три сравнения согласованы с направлением оси.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+      "snapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+      "solutionSha256": "ff76e58bf110e105d37819ab3e86d8477c673bb1003f30708fc0360514459638"
+    }
+  },
+  "A7075E": {
+    "sourceId": "A7075E",
+    "sourceFile": "oge-13.raw.html",
+    "sourceHash": "aa9c516cd913f225012503aee4c656350051e127974bf484a48a0f3d431be1d9",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа p, q и r. Какая из разностей q−p, q−r, r−p положительна? 1) q−p 2) q−r 3) r−p 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/89C2334AA5398B7A45736C774A99DFC9/xs3qstsrc89C2334AA5398B7A45736C774A99DFC9_1_1457698039.png",
+        "sha256": "4c3f4ba7520de47e1b48ca6b97d76744f172db40400c9045e6dc5c30f904c26a",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=392946",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.894760+00:00",
+    "expectedAnswer": "2",
+    "externalAnswer": "2",
+    "externalAnswerRaw": "Ответ: 2",
+    "externalCondition": "На координатной прямой отмечены числа r, q и p . Какая из разностей q − p , q − r , r − p положительна? В ответе укажите номер правильного варианта. 1) q − p 2) q − r 3) r − p 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+    "externalSnapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "r",
+        "q",
+        "p"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/89C2334AA5398B7A45736C774A99DFC9/xs3qstsrc89C2334AA5398B7A45736C774A99DFC9_1_1457698039.png",
+          "sha256": "4c3f4ba7520de47e1b48ca6b97d76744f172db40400c9045e6dc5c30f904c26a",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "reviewNote": "Повторно просмотрен оригинальный PNG отдельно: слева r, посередине q, справа p.",
+      "choices": [
+        "q−p",
+        "q−r",
+        "r−p",
+        "ни одна из них"
+      ],
+      "desiredSign": 1,
+      "answer": "2",
+      "primary": "r < q < p; варианты ['q−p', 'q−r', 'r−p', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "r",
+        "q",
+        "p"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/89C2334AA5398B7A45736C774A99DFC9/xs3qstsrc89C2334AA5398B7A45736C774A99DFC9_1_1457698039.png",
+          "sha256": "4c3f4ba7520de47e1b48ca6b97d76744f172db40400c9045e6dc5c30f904c26a",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "reviewNote": "Повторно просмотрен оригинальный PNG отдельно: слева r, посередине q, справа p."
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Порядок r<q<p подтверждён рисунком; q−p и r−p отрицательны, q−r положительна. Отдельно просмотрен исходный PNG A7075E, ответ 2.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=392946",
+      "steps": "Порядок r<q<p подтверждён рисунком; q−p и r−p отрицательны, q−r положительна. Отдельно просмотрен исходный PNG A7075E, ответ 2.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+      "snapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+      "solutionSha256": "9b76d8a55add7b3e0287643fcbb524f5303ee6e16bbfc8fba2ea1a69ead8227f"
+    }
+  },
+  "54D6A9": {
+    "sourceId": "54D6A9",
+    "sourceFile": "oge-15.raw.html",
+    "sourceHash": "6d25a644cdd29a5598943a6fcbf7b05fc041947c1d515788b7e9de5d93d5716b",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены точки A, B, C, D. Одна из них соответствует числу √(53). Какая это точка? 1) точка A 2) точка B 3) точка C 4) точка D",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/98B70DF7AE65BE3A4DD32F6ED65052A6/xs3qstsrc98B70DF7AE65BE3A4DD32F6ED65052A6_1_1455524184.png",
+        "sha256": "8588a5dfe4943994fca5df20a52a159e90b675d26e81d6f78d60ac83ab260546",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=355956",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.914453+00:00",
+    "expectedAnswer": "3",
+    "externalAnswer": "0000",
+    "externalAnswerRaw": "Ответ: 0000",
+    "externalCondition": "Одна из точек, отмеченных на координатной прямой, соответствует числу корень из: начало аргумента: 53 конец аргумента . Какая это точка? В ответе укажите номер правильного варианта. 1) точка A 2) точка B 3) точка C 4) точка D",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+    "externalSnapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+    "model": {
+      "kind": "root-point",
+      "ticks": [
+        6,
+        7,
+        8
+      ],
+      "halfIntervals": {
+        "A": [
+          6,
+          6.5
+        ],
+        "B": [
+          6.5,
+          7
+        ],
+        "C": [
+          7,
+          7.5
+        ],
+        "D": [
+          7.5,
+          8
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/98B70DF7AE65BE3A4DD32F6ED65052A6/xs3qstsrc98B70DF7AE65BE3A4DD32F6ED65052A6_1_1455524184.png",
+          "sha256": "8588a5dfe4943994fca5df20a52a159e90b675d26e81d6f78d60ac83ab260546",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "точкаA",
+        "точкаB",
+        "точкаC",
+        "точкаD"
+      ],
+      "radicand": 53,
+      "answer": "3",
+      "primary": "√53; деления [6, 7, 8]; варианты ['точкаA', 'точкаB', 'точкаC', 'точкаD']"
+    },
+    "diagramModel": {
+      "kind": "root-point",
+      "ticks": [
+        6,
+        7,
+        8
+      ],
+      "halfIntervals": {
+        "A": [
+          6,
+          6.5
+        ],
+        "B": [
+          6.5,
+          7
+        ],
+        "C": [
+          7,
+          7.5
+        ],
+        "D": [
+          7.5,
+          8
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/98B70DF7AE65BE3A4DD32F6ED65052A6/xs3qstsrc98B70DF7AE65BE3A4DD32F6ED65052A6_1_1455524184.png",
+          "sha256": "8588a5dfe4943994fca5df20a52a159e90b675d26e81d6f78d60ac83ab260546",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=355951",
+      "steps": "Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+      "snapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+      "solutionSha256": "a0a7bc4df327393927c8e40cf36c1cbd576d4cdb252a2322322bfbd82541774d"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Внешний ключ «0000» не является номером варианта. 7²=49<53<56,25=7,5², поэтому 7<√53<7,5. На обоих фактически просмотренных рисунках это C, вариант 3. Собственная проверка:\n1. На рисунке подписаны деления 6, 7 и 8. Нужно определить положение числа √53, а затем выбрать букву соответствующей точки.\nКвадратный корень неотрицателен. Для неотрицательных чисел возведение в квадрат сохраняет порядок, поэтому сравним 53 с квадратами границ.\n\n2. Уточним положение корня с помощью половины единичного отрезка:\n7² = 49, 7,5² = 56,25.\nЧисло 53 строго между 49 и 56,25, следовательно, √53 строго между 7 и 7,5.\n\n3. На исходном рисунке внутри этого промежутка отмечена только точка C. Остальные три точки находятся за его границами. Значит, нужная точка — C, вариант 3.\n\nПроверка: обе границы неотрицательны, их квадраты расположены по разные стороны от 53; выбор точки подтверждён её положением относительно делений.\n\nОтвет: 3."
+    }
+  },
+  "DBE8C2": {
+    "sourceId": "DBE8C2",
+    "sourceFile": "oge-16.raw.html",
+    "sourceHash": "a439923a5cc1f440dafd3d7b2e11a6f2a0e663276e1fdacae070048cef013e46",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа a, b и c. Какая из разностей b−a, c−b, c−a положительна? 1) b−a 2) c−b 3) c−a 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A76C4FE898C9B8AC4911F1F6E5AD6527/xs3qstsrcA76C4FE898C9B8AC4911F1F6E5AD6527_1_1457698005.png",
+        "sha256": "a82d61512b23196ca8815ebee25555f41d5f729d32da558b7852f617f666114b",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=322424",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.918382+00:00",
+    "expectedAnswer": "4",
+    "externalAnswer": "4",
+    "externalAnswerRaw": "Ответ: 4",
+    "externalCondition": "На координатной прямой отмечены числа а , b и с (см. рис.). Какая из разностей b – a , c – b , c – a положительна? В ответе укажите номер правильного варианта. 1) b – a 2) c – b 3) c – a 4) ни одна их них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322422.html",
+    "externalSnapshotSha256": "c19a8f0e3d88d434d5764a0155ecc6917358c1ef1acad469397f323188f4c4aa",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "c",
+        "b",
+        "a"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A76C4FE898C9B8AC4911F1F6E5AD6527/xs3qstsrcA76C4FE898C9B8AC4911F1F6E5AD6527_1_1457698005.png",
+          "sha256": "a82d61512b23196ca8815ebee25555f41d5f729d32da558b7852f617f666114b",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "b−a",
+        "c−b",
+        "c−a",
+        "ни одна из них"
+      ],
+      "desiredSign": 1,
+      "answer": "4",
+      "primary": "c < b < a; варианты ['b−a', 'c−b', 'c−a', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "c",
+        "b",
+        "a"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A76C4FE898C9B8AC4911F1F6E5AD6527/xs3qstsrcA76C4FE898C9B8AC4911F1F6E5AD6527_1_1457698005.png",
+          "sha256": "a82d61512b23196ca8815ebee25555f41d5f729d32da558b7852f617f666114b",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. По рисунку c<b<a. Все три разности b−a, c−b, c−a отрицательны, поэтому положительной среди них нет; вариант 4.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=322424",
+      "steps": "По рисунку c<b<a. Все три разности b−a, c−b, c−a отрицательны, поэтому положительной среди них нет; вариант 4.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322422.html",
+      "snapshotSha256": "c19a8f0e3d88d434d5764a0155ecc6917358c1ef1acad469397f323188f4c4aa",
+      "solutionSha256": "bb1633a2b0af4aaf1c0553a28ceb92e560422f8ccb7061bf72d4bd08de97721c"
+    }
+  },
+  "E53CC3": {
+    "sourceId": "E53CC3",
+    "sourceFile": "oge-16.raw.html",
+    "sourceHash": "49caec1a2bea8a04a9b42902f428a56e0cf333efbbc4f62779ff5757684cf7be",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены точки A, B, C, D. Одна из них соответствует числу √(96). Какая это точка? 1) точка A 2) точка B 3) точка C 4) точка D",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/ACEE8A1AD99289A943B621B10C84D7F3/xs3qstsrcACEE8A1AD99289A943B621B10C84D7F3_1_1455524119.png",
+        "sha256": "3884a7edb141449b14e3ac3dea915a67006174dab90f9bf40f472611e5082724",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=460989",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.930833+00:00",
+    "expectedAnswer": "4",
+    "externalAnswer": "4",
+    "externalAnswerRaw": "Ответ: 4",
+    "externalCondition": "Одна из точек, отмеченных на координатной прямой, соответствует числу корень из: начало аргумента: 96 конец аргумента . Какая это точка? 1) точка A 2) точка B 3) точка C 4) точка D",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+    "externalSnapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+    "model": {
+      "kind": "root-point",
+      "ticks": [
+        8,
+        9,
+        10
+      ],
+      "halfIntervals": {
+        "A": [
+          8,
+          8.5
+        ],
+        "B": [
+          8.5,
+          9
+        ],
+        "C": [
+          9,
+          9.5
+        ],
+        "D": [
+          9.5,
+          10
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/ACEE8A1AD99289A943B621B10C84D7F3/xs3qstsrcACEE8A1AD99289A943B621B10C84D7F3_1_1455524119.png",
+          "sha256": "3884a7edb141449b14e3ac3dea915a67006174dab90f9bf40f472611e5082724",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "точкаA",
+        "точкаB",
+        "точкаC",
+        "точкаD"
+      ],
+      "radicand": 96,
+      "answer": "4",
+      "primary": "√96; деления [8, 9, 10]; варианты ['точкаA', 'точкаB', 'точкаC', 'точкаD']"
+    },
+    "diagramModel": {
+      "kind": "root-point",
+      "ticks": [
+        8,
+        9,
+        10
+      ],
+      "halfIntervals": {
+        "A": [
+          8,
+          8.5
+        ],
+        "B": [
+          8.5,
+          9
+        ],
+        "C": [
+          9,
+          9.5
+        ],
+        "D": [
+          9.5,
+          10
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/ACEE8A1AD99289A943B621B10C84D7F3/xs3qstsrcACEE8A1AD99289A943B621B10C84D7F3_1_1455524119.png",
+          "sha256": "3884a7edb141449b14e3ac3dea915a67006174dab90f9bf40f472611e5082724",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Подписанные деления 8,9,10 и точки сверены. 9,5²=90,25<96<100=10², поэтому 9,5<√96<10. Единственная отмеченная там точка D, ответ 4.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=460989",
+      "steps": "Подписанные деления 8,9,10 и точки сверены. 9,5²=90,25<96<100=10², поэтому 9,5<√96<10. Единственная отмеченная там точка D, ответ 4.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+      "snapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+      "solutionSha256": "754f81d6edb1b23ada6e6f28eff90690f1b3146283759170960943b05665aba6"
+    }
+  },
+  "3069CE": {
+    "sourceId": "3069CE",
+    "sourceFile": "oge-16.raw.html",
+    "sourceHash": "5f666f21004b9f7df6e95103406ef04a2163b29e8c139c59e56eaacc5a5765f2",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа a, b и c. Какая из разностей a−b, a−c, c−b отрицательна? 1) a−b 2) a−c 3) c−b 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AECD2B5180B8A540465FF8D2AACFCA96/xs3qstsrcAECD2B5180B8A540465FF8D2AACFCA96_1_1457697950.png",
+        "sha256": "9b679840339629df72a71616279a6b252efaaadf9db3dd1f5a3250ec16ad04f3",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=322425",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.931822+00:00",
+    "expectedAnswer": "3",
+    "externalAnswer": "3",
+    "externalAnswerRaw": "Ответ: 3",
+    "externalCondition": "На координатной прямой отмечены числа a , b и c . Какая из разностей a – b , a − c , c − b отрицательна? В ответе укажите номер правильного варианта. 1) a – b 2) a − c 3) c − b 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+    "externalSnapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "c",
+        "b",
+        "a"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AECD2B5180B8A540465FF8D2AACFCA96/xs3qstsrcAECD2B5180B8A540465FF8D2AACFCA96_1_1457697950.png",
+          "sha256": "9b679840339629df72a71616279a6b252efaaadf9db3dd1f5a3250ec16ad04f3",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "a−b",
+        "a−c",
+        "c−b",
+        "ни одна из них"
+      ],
+      "desiredSign": -1,
+      "answer": "3",
+      "primary": "c < b < a; варианты ['a−b', 'a−c', 'c−b', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "c",
+        "b",
+        "a"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AECD2B5180B8A540465FF8D2AACFCA96/xs3qstsrcAECD2B5180B8A540465FF8D2AACFCA96_1_1457697950.png",
+          "sha256": "9b679840339629df72a71616279a6b252efaaadf9db3dd1f5a3250ec16ad04f3",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. По рисунку c<b<a. a−b и a−c положительны, c−b отрицательна. Вычитание большего из меньшего даёт отрицательное число, вариант 3.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=322425",
+      "steps": "По рисунку c<b<a. a−b и a−c положительны, c−b отрицательна. Вычитание большего из меньшего даёт отрицательное число, вариант 3.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322419.html",
+      "snapshotSha256": "c5481c92516656e64c87713e0e359b875f2cba0de85cbffd3a12a49172543057",
+      "solutionSha256": "8fa16c9059b6e220b821b924de81a92594e9d8ff3ee163331610ee6c960d97d4"
+    }
+  },
+  "363DC3": {
+    "sourceId": "363DC3",
+    "sourceFile": "oge-16.raw.html",
+    "sourceHash": "6de4f945a11fd3b46e7fb092e02d1b10a2a7917108c053523eac509eff508eae",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены точки A, B, C, D. Одна из них соответствует числу √(60). Какая это точка? 1) точка A 2) точка B 3) точка C 4) точка D",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AEEED732BC63AAAD4511222CF3E3508B/xs3qstsrcAEEED732BC63AAAD4511222CF3E3508B_1_1455523864.png",
+        "sha256": "878ceb85ab477f854b53ea06db7bafce412b75c70edeea288352f7c08c966442",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=460962",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.938746+00:00",
+    "expectedAnswer": "2",
+    "externalAnswer": "2",
+    "externalAnswerRaw": "Ответ: 2",
+    "externalCondition": "Одна из точек, отмеченных на координатной прямой, соответствует числу корень из: начало аргумента: 60 конец аргумента . Какая это точка? 1) точка А 2) точка В 3) точка С 4) точка D",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+    "externalSnapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+    "model": {
+      "kind": "root-point",
+      "ticks": [
+        7,
+        8,
+        9
+      ],
+      "halfIntervals": {
+        "A": [
+          7,
+          7.5
+        ],
+        "B": [
+          7.5,
+          8
+        ],
+        "C": [
+          8,
+          8.5
+        ],
+        "D": [
+          8.5,
+          9
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AEEED732BC63AAAD4511222CF3E3508B/xs3qstsrcAEEED732BC63AAAD4511222CF3E3508B_1_1455523864.png",
+          "sha256": "878ceb85ab477f854b53ea06db7bafce412b75c70edeea288352f7c08c966442",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "точкаA",
+        "точкаB",
+        "точкаC",
+        "точкаD"
+      ],
+      "radicand": 60,
+      "answer": "2",
+      "primary": "√60; деления [7, 8, 9]; варианты ['точкаA', 'точкаB', 'точкаC', 'точкаD']"
+    },
+    "diagramModel": {
+      "kind": "root-point",
+      "ticks": [
+        7,
+        8,
+        9
+      ],
+      "halfIntervals": {
+        "A": [
+          7,
+          7.5
+        ],
+        "B": [
+          7.5,
+          8
+        ],
+        "C": [
+          8,
+          8.5
+        ],
+        "D": [
+          8.5,
+          9
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AEEED732BC63AAAD4511222CF3E3508B/xs3qstsrcAEEED732BC63AAAD4511222CF3E3508B_1_1455523864.png",
+          "sha256": "878ceb85ab477f854b53ea06db7bafce412b75c70edeea288352f7c08c966442",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Во внешнем разборе ошибочно упомянут √68, но условие и итог относятся к √60. Ручная поправка: 7,5²=56,25<60<64=8², значит 7,5<√60<8; по рисунку это B, ответ 2.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=460962",
+      "steps": "Во внешнем разборе ошибочно упомянут √68, но условие и итог относятся к √60. Ручная поправка: 7,5²=56,25<60<64=8², значит 7,5<√60<8; по рисунку это B, ответ 2.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+      "snapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+      "solutionSha256": "77388e0f22e891de4ced0f0d7f0af2c3a3cc3b671097df2d97d580405c0dad80"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "В условии и итоговом выводе внешней карточки √60, но начало решения ошибочно содержит √68. По ФИПИ требуется √60: 56,25<60<64, поэтому между 7,5 и 8 лежит нужная точка B, вариант 2. Собственная проверка:\n1. На рисунке подписаны деления 7, 8 и 9. Нужно определить положение числа √60, а затем выбрать букву соответствующей точки.\nКвадратный корень неотрицателен. Для неотрицательных чисел возведение в квадрат сохраняет порядок, поэтому сравним 60 с квадратами границ.\n\n2. Уточним положение корня с помощью половины единичного отрезка:\n7,5² = 56,25, 8² = 64.\nЧисло 60 строго между 56,25 и 64, следовательно, √60 строго между 7,5 и 8.\n\n3. На исходном рисунке внутри этого промежутка отмечена только точка B. Остальные три точки находятся за его границами. Значит, нужная точка — B, вариант 2.\n\nПроверка: обе границы неотрицательны, их квадраты расположены по разные стороны от 60; выбор точки подтверждён её положением относительно делений.\n\nОтвет: 2."
+    }
+  },
+  "89DAC4": {
+    "sourceId": "89DAC4",
+    "sourceFile": "oge-16.raw.html",
+    "sourceHash": "e85d32b3da5affe47c090c4aeedb75702650610099c8033b6c5725ad06d4c842",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечено число a. Какое из утверждений для этого числа является верным? 1) a−4 2) 7−a 3) a−3>0 4) 2−a>0",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AF07B944BB56A5FB4E49AAFF4926B57E/xs3qstsrcAF07B944BB56A5FB4E49AAFF4926B57E_1_1458117846.png",
+        "sha256": "7022c854cf2c2be7b4c8c47b9df6abe583f13f24176a6bacc830a51cf7c31b1f",
+        "width": 482,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=341398",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.943187+00:00",
+    "expectedAnswer": "3",
+    "externalAnswer": "3",
+    "externalAnswerRaw": "Ответ: 3",
+    "externalCondition": "На координатной прямой отмечено число a . Какое из утверждений относительно этого числа является верным? 1) a − 8 > 0 2) 7 − a < 0 3) a − 3 > 0 4) 2 − a > 0",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-341398.html",
+    "externalSnapshotSha256": "31cf56055183e034761813e295395bf4624b112876f8cb8915bf4a0ca50f605a",
+    "model": {
+      "kind": "point-inequality",
+      "bounds": [
+        4,
+        5
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AF07B944BB56A5FB4E49AAFF4926B57E/xs3qstsrcAF07B944BB56A5FB4E49AAFF4926B57E_1_1458117846.png",
+          "sha256": "7022c854cf2c2be7b4c8c47b9df6abe583f13f24176a6bacc830a51cf7c31b1f",
+          "width": 482,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "a−4<0",
+        "7−a<0",
+        "a−3>0",
+        "2−a>0"
+      ],
+      "answer": "3",
+      "primary": "4 < a < 5; варианты ['a−4<0', '7−a<0', 'a−3>0', '2−a>0']"
+    },
+    "diagramModel": {
+      "kind": "point-inequality",
+      "bounds": [
+        4,
+        5
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AF07B944BB56A5FB4E49AAFF4926B57E/xs3qstsrcAF07B944BB56A5FB4E49AAFF4926B57E_1_1458117846.png",
+          "sha256": "7022c854cf2c2be7b4c8c47b9df6abe583f13f24176a6bacc830a51cf7c31b1f",
+          "width": 482,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Рисунок даёт аналогичный интервал, но варианты утверждений отличаются; это variant. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Установлен интервал 4<a<5 по делениям исходного рисунка; проверены четыре утверждения. Во внешнем первом варианте a−8>0, в ФИПИ a−4<0: оба ложны, различие сохранено как variant.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=341398",
+      "steps": "Установлен интервал 4<a<5 по делениям исходного рисунка; проверены четыре утверждения. Во внешнем первом варианте a−8>0, в ФИПИ a−4<0: оба ложны, различие сохранено как variant.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-341398.html",
+      "snapshotSha256": "31cf56055183e034761813e295395bf4624b112876f8cb8915bf4a0ca50f605a",
+      "solutionSha256": "6100b794816c4f9df34ce23a30ef2b5cfae4de22c29434f595cbd923f492bc31"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Оба рисунка дают 4<a<5, но первый вариант отличается: внешнее a−8>0 вместо первичного a−4<0. Оба ложны, остальные варианты сверены; a−3>0 единственное верное, ответ 3. Собственная проверка:\n1. По подписанным делениям 0 и 1 устанавливаем единичный отрезок. Последовательно отсчитываем равные деления вправо. Точка a расположена строго между 4 и 5. Значит, a больше 4, но меньше 5.\n\n2. Проверим все четыре утверждения. При вычитании меньшего числа из большего разность положительна, при вычитании большего из меньшего — отрицательна:\n1) a − 4 больше нуля, поэтому предложенное утверждение неверно.\n2) 7 − a больше нуля, поэтому предложенное утверждение неверно.\n3) a − 3 больше нуля, поэтому предложенное утверждение верно.\n4) 2 − a меньше нуля, поэтому предложенное утверждение неверно.\n\n3. Только утверждение под номером 3 согласуется с положением a на исходной прямой.\n\nПроверка: сравнения верны для любого числа между 4 и 5; знать точную координату a не требуется.\n\nОтвет: 3."
+    }
+  },
+  "894EC0": {
+    "sourceId": "894EC0",
+    "sourceFile": "oge-16.raw.html",
+    "sourceHash": "da75be582d5a8e3b991ad67fa2edc0f331687151f89ddbc0022226bb796cffb7",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены точки A, B, C, D. Одна из них соответствует числу √(86). Какая это точка? 1) точка A 2) точка B 3) точка C 4) точка D",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AF20BC14E4D7A77443CD576EA33EEA04/xs3qstsrcAF20BC14E4D7A77443CD576EA33EEA04_1_1455523933.png",
+        "sha256": "3884a7edb141449b14e3ac3dea915a67006174dab90f9bf40f472611e5082724",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=355951",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.949239+00:00",
+    "expectedAnswer": "3",
+    "externalAnswer": "3",
+    "externalAnswerRaw": "Ответ: 3",
+    "externalCondition": "Одна из точек, отмеченных на координатной прямой, соответствует числу корень из: начало аргумента: 86 конец аргумента . Какая это точка? В ответе укажите номер правильного варианта. 1) точка A 2) точка B 3) точка C 4) точка D",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+    "externalSnapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+    "model": {
+      "kind": "root-point",
+      "ticks": [
+        8,
+        9,
+        10
+      ],
+      "halfIntervals": {
+        "A": [
+          8,
+          8.5
+        ],
+        "B": [
+          8.5,
+          9
+        ],
+        "C": [
+          9,
+          9.5
+        ],
+        "D": [
+          9.5,
+          10
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AF20BC14E4D7A77443CD576EA33EEA04/xs3qstsrcAF20BC14E4D7A77443CD576EA33EEA04_1_1455523933.png",
+          "sha256": "3884a7edb141449b14e3ac3dea915a67006174dab90f9bf40f472611e5082724",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "точкаA",
+        "точкаB",
+        "точкаC",
+        "точкаD"
+      ],
+      "radicand": 86,
+      "answer": "3",
+      "primary": "√86; деления [8, 9, 10]; варианты ['точкаA', 'точкаB', 'точкаC', 'точкаD']"
+    },
+    "diagramModel": {
+      "kind": "root-point",
+      "ticks": [
+        8,
+        9,
+        10
+      ],
+      "halfIntervals": {
+        "A": [
+          8,
+          8.5
+        ],
+        "B": [
+          8.5,
+          9
+        ],
+        "C": [
+          9,
+          9.5
+        ],
+        "D": [
+          9.5,
+          10
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/AF20BC14E4D7A77443CD576EA33EEA04/xs3qstsrcAF20BC14E4D7A77443CD576EA33EEA04_1_1455523933.png",
+          "sha256": "3884a7edb141449b14e3ac3dea915a67006174dab90f9bf40f472611e5082724",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=355951",
+      "steps": "Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+      "snapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+      "solutionSha256": "a0a7bc4df327393927c8e40cf36c1cbd576d4cdb252a2322322bfbd82541774d"
+    }
+  },
+  "993392": {
+    "sourceId": "993392",
+    "sourceFile": "oge-17.raw.html",
+    "sourceHash": "1e836ddd328bd2282b8c56448f11ee6bd2a0e823fdb34a7874050ef2f7db1ffd",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа x, y и z. Какая из разностей z−x, y−z, x−y отрицательна? 1) z−x 2) y−z 3) x−y 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BB6EBEBF3AC294604A6EF2699EA642CA/xs3qstsrcBB6EBEBF3AC294604A6EF2699EA642CA_1_1457698071.png",
+        "sha256": "f98c7acb77d03411618125f7a5ade2b2701ea423240ec402ffc7f041d9a14e02",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=448839",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.949803+00:00",
+    "expectedAnswer": "1",
+    "externalAnswer": "1",
+    "externalAnswerRaw": "Ответ: 1",
+    "externalCondition": "На координатной прямой отмечены числа x, y и z . Какая из разностей z − x , y − z , x − y отрицательна? В ответе укажите номер правильного варианта. 1) z − x 2) y − z 3) x − y 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322422.html",
+    "externalSnapshotSha256": "c19a8f0e3d88d434d5764a0155ecc6917358c1ef1acad469397f323188f4c4aa",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "z",
+        "y",
+        "x"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BB6EBEBF3AC294604A6EF2699EA642CA/xs3qstsrcBB6EBEBF3AC294604A6EF2699EA642CA_1_1457698071.png",
+          "sha256": "f98c7acb77d03411618125f7a5ade2b2701ea423240ec402ffc7f041d9a14e02",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "z−x",
+        "y−z",
+        "x−y",
+        "ни одна из них"
+      ],
+      "desiredSign": -1,
+      "answer": "1",
+      "primary": "z < y < x; варианты ['z−x', 'y−z', 'x−y', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "z",
+        "y",
+        "x"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BB6EBEBF3AC294604A6EF2699EA642CA/xs3qstsrcBB6EBEBF3AC294604A6EF2699EA642CA_1_1457698071.png",
+          "sha256": "f98c7acb77d03411618125f7a5ade2b2701ea423240ec402ffc7f041d9a14e02",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. При z<y<x отрицательна только z−x, а y−z и x−y положительны. Проверены все предложенные разности и исходные подписи точек.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=448839",
+      "steps": "При z<y<x отрицательна только z−x, а y−z и x−y положительны. Проверены все предложенные разности и исходные подписи точек.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322422.html",
+      "snapshotSha256": "c19a8f0e3d88d434d5764a0155ecc6917358c1ef1acad469397f323188f4c4aa",
+      "solutionSha256": "e4467b0cd068b0abead1ed5955980cc238e8e3c5a4b9e1484986d6ba6071e7a8"
+    }
+  },
+  "FBAC66": {
+    "sourceId": "FBAC66",
+    "sourceFile": "oge-19.raw.html",
+    "sourceHash": "2f05a8bac9cb9ee73bdd2edb69326306d489b4c81e0cec6aba871009e66feb44",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены точки A, B, C, D. Одна из них соответствует числу √(46). Какая это точка? 1) точка A 2) точка B 3) точка C 4) точка D",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D1D94A805F0CAE0C4AAFF9DACAE629C5/xs3qstsrcD1D94A805F0CAE0C4AAFF9DACAE629C5_1_1455524068.png",
+        "sha256": "387af3a034d8e34680efe6e15daf192c179df30b180036c5230c996a6991e598",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=355952",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.957389+00:00",
+    "expectedAnswer": "4",
+    "externalAnswer": "4",
+    "externalAnswerRaw": "Ответ: 4",
+    "externalCondition": "Одна из точек, отмеченных на координатной прямой, соответствует числу корень из: начало аргумента: 46 конец аргумента . Какая это точка? В ответе укажите номер правильного варианта. 1) точка A 2) точка B 3) точка C 4) точка D",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+    "externalSnapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+    "model": {
+      "kind": "root-point",
+      "ticks": [
+        5,
+        6,
+        7
+      ],
+      "halfIntervals": {
+        "A": [
+          5,
+          5.5
+        ],
+        "B": [
+          5.5,
+          6
+        ],
+        "C": [
+          6,
+          6.5
+        ],
+        "D": [
+          6.5,
+          7
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D1D94A805F0CAE0C4AAFF9DACAE629C5/xs3qstsrcD1D94A805F0CAE0C4AAFF9DACAE629C5_1_1455524068.png",
+          "sha256": "387af3a034d8e34680efe6e15daf192c179df30b180036c5230c996a6991e598",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "точкаA",
+        "точкаB",
+        "точкаC",
+        "точкаD"
+      ],
+      "radicand": 46,
+      "answer": "4",
+      "primary": "√46; деления [5, 6, 7]; варианты ['точкаA', 'точкаB', 'точкаC', 'точкаD']"
+    },
+    "diagramModel": {
+      "kind": "root-point",
+      "ticks": [
+        5,
+        6,
+        7
+      ],
+      "halfIntervals": {
+        "A": [
+          5,
+          5.5
+        ],
+        "B": [
+          5.5,
+          6
+        ],
+        "C": [
+          6,
+          6.5
+        ],
+        "D": [
+          6.5,
+          7
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D1D94A805F0CAE0C4AAFF9DACAE629C5/xs3qstsrcD1D94A805F0CAE0C4AAFF9DACAE629C5_1_1455524068.png",
+          "sha256": "387af3a034d8e34680efe6e15daf192c179df30b180036c5230c996a6991e598",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=355951",
+      "steps": "Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+      "snapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+      "solutionSha256": "a0a7bc4df327393927c8e40cf36c1cbd576d4cdb252a2322322bfbd82541774d"
+    }
+  },
+  "1F8761": {
+    "sourceId": "1F8761",
+    "sourceFile": "oge-20.raw.html",
+    "sourceHash": "328df221e374fac9670a610c8476bf20ba72031144d532f56586c185c9970696",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены точки A, B, C, D. Одна из них соответствует числу √(95). Какая это точка? 1) точка A 2) точка B 3) точка C 4) точка D",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D55F13539D62B2BB4965FDBDF2435816/xs3qstsrcD55F13539D62B2BB4965FDBDF2435816_1_1455523764.png",
+        "sha256": "1c2559b0088e61fd068a23ee49edf20259fa02ba99efe9d3b3476ca397498e31",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=355948",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.964991+00:00",
+    "expectedAnswer": "2",
+    "externalAnswer": "2",
+    "externalAnswerRaw": "Ответ: 2",
+    "externalCondition": "Одна из точек, отмеченных на координатной прямой, соответствует числу корень из: начало аргумента: 95 конец аргумента . Какая это точка? В ответе укажите номер правильного варианта. 1) точка A 2) точка B 3) точка C 4) точка D",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+    "externalSnapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+    "model": {
+      "kind": "root-point",
+      "ticks": [
+        9,
+        10,
+        11
+      ],
+      "halfIntervals": {
+        "A": [
+          9,
+          9.5
+        ],
+        "B": [
+          9.5,
+          10
+        ],
+        "C": [
+          10,
+          10.5
+        ],
+        "D": [
+          10.5,
+          11
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D55F13539D62B2BB4965FDBDF2435816/xs3qstsrcD55F13539D62B2BB4965FDBDF2435816_1_1455523764.png",
+          "sha256": "1c2559b0088e61fd068a23ee49edf20259fa02ba99efe9d3b3476ca397498e31",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "точкаA",
+        "точкаB",
+        "точкаC",
+        "точкаD"
+      ],
+      "radicand": 95,
+      "answer": "2",
+      "primary": "√95; деления [9, 10, 11]; варианты ['точкаA', 'точкаB', 'точкаC', 'точкаD']"
+    },
+    "diagramModel": {
+      "kind": "root-point",
+      "ticks": [
+        9,
+        10,
+        11
+      ],
+      "halfIntervals": {
+        "A": [
+          9,
+          9.5
+        ],
+        "B": [
+          9.5,
+          10
+        ],
+        "C": [
+          10,
+          10.5
+        ],
+        "D": [
+          10.5,
+          11
+        ]
+      },
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D55F13539D62B2BB4965FDBDF2435816/xs3qstsrcD55F13539D62B2BB4965FDBDF2435816_1_1455523764.png",
+          "sha256": "1c2559b0088e61fd068a23ee49edf20259fa02ba99efe9d3b3476ca397498e31",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=355951",
+      "steps": "Для неотрицательных чисел сравниваем квадраты; 81<86<100, а 86<9,5²=90,25, поэтому 9<√86<9,5 и подходит C. Для других радикандов границы заново вычислены, близость квадратов не заменяет точного сравнения с полуцелой границей.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-105.html",
+      "snapshotSha256": "d34bf6673b07810830f598f9b3728af80f8c39b013d0f5b5d91ced7a871faf49",
+      "solutionSha256": "a0a7bc4df327393927c8e40cf36c1cbd576d4cdb252a2322322bfbd82541774d"
+    }
+  },
+  "89913D": {
+    "sourceId": "89913D",
+    "sourceFile": "oge-22.raw.html",
+    "sourceHash": "9229678ae82a89ab20da1ca0b600f27c8360a407b26201348a2f83d768655dba",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа x, y и z. Какая из разностей z−x, x−y, z−y положительна? 1) z−x 2) x−y 3) z−y 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/EF7BB54074B5A90140C9DBD4455FDF63/xs3qstsrcEF7BB54074B5A90140C9DBD4455FDF63_1_1457697963.png",
+        "sha256": "d7c4e5c535d8190653855eeeea991b33ef6cad0ae274d8956f10075239ebfe48",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=322427",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.965532+00:00",
+    "expectedAnswer": "2",
+    "externalAnswer": "2",
+    "externalAnswerRaw": "Ответ: 2",
+    "externalCondition": "На координатной прямой отмечены числа x, y и z . Какая из разностей z − x , x − y , z − y положительна? В ответе укажите номер правильного варианта. 1) z − x 2) x − y 3) z − y 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322422.html",
+    "externalSnapshotSha256": "c19a8f0e3d88d434d5764a0155ecc6917358c1ef1acad469397f323188f4c4aa",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "z",
+        "y",
+        "x"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/EF7BB54074B5A90140C9DBD4455FDF63/xs3qstsrcEF7BB54074B5A90140C9DBD4455FDF63_1_1457697963.png",
+          "sha256": "d7c4e5c535d8190653855eeeea991b33ef6cad0ae274d8956f10075239ebfe48",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "z−x",
+        "x−y",
+        "z−y",
+        "ни одна из них"
+      ],
+      "desiredSign": 1,
+      "answer": "2",
+      "primary": "z < y < x; варианты ['z−x', 'x−y', 'z−y', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "z",
+        "y",
+        "x"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/EF7BB54074B5A90140C9DBD4455FDF63/xs3qstsrcEF7BB54074B5A90140C9DBD4455FDF63_1_1457697963.png",
+          "sha256": "d7c4e5c535d8190653855eeeea991b33ef6cad0ae274d8956f10075239ebfe48",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. По рисунку z<y<x. z−x и z−y отрицательны, а x−y положительна. Проверены порядок точек и все варианты; подходит второй.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=322427",
+      "steps": "По рисунку z<y<x. z−x и z−y отрицательны, а x−y положительна. Проверены порядок точек и все варианты; подходит второй.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322422.html",
+      "snapshotSha256": "c19a8f0e3d88d434d5764a0155ecc6917358c1ef1acad469397f323188f4c4aa",
+      "solutionSha256": "fc789b5777772677f98f37a1e4cca38e23b79687712ff4885944b76e98ef0641"
+    }
+  },
+  "FA9985": {
+    "sourceId": "FA9985",
+    "sourceFile": "oge-22.raw.html",
+    "sourceHash": "ada80ad718693c2b6ce54ae57ed4b0e0ddbd6c463c9f029f26c323a0d9e503ae",
+    "fipiCondition": "Выберите правильный ответ. На координатной прямой отмечены числа a, b и c. Какая из разностей a−b, a−c, c−b положительна? 1) a−b 2) a−c 3) c−b 4) ни одна из них",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F18B9B86FC0D9762412042F4E39DB52D/xs3qstsrcF18B9B86FC0D9762412042F4E39DB52D_1_1457697974.png",
+        "sha256": "ec4e3ba999c1bec5f8c25229b550d58d2b22ea01b9c35c7d498775ab3d962772",
+        "width": 382,
+        "height": 57,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=322422",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:03:27.966008+00:00",
+    "expectedAnswer": "3",
+    "externalAnswer": "3",
+    "externalAnswerRaw": "Ответ: 3",
+    "externalCondition": "На координатной прямой отмечены числа a , b и c . Какая из разностей a − b , a − c , c − b положительна? В ответе укажите номер правильного варианта. 1) a − b 2) a − c 3) c − b 4) ни одна из них",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322422.html",
+    "externalSnapshotSha256": "c19a8f0e3d88d434d5764a0155ecc6917358c1ef1acad469397f323188f4c4aa",
+    "model": {
+      "kind": "difference-sign",
+      "order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F18B9B86FC0D9762412042F4E39DB52D/xs3qstsrcF18B9B86FC0D9762412042F4E39DB52D_1_1457697974.png",
+          "sha256": "ec4e3ba999c1bec5f8c25229b550d58d2b22ea01b9c35c7d498775ab3d962772",
+          "width": 382,
+          "height": 57
+        }
+      ],
+      "choices": [
+        "a−b",
+        "a−c",
+        "c−b",
+        "ни одна из них"
+      ],
+      "desiredSign": 1,
+      "answer": "3",
+      "primary": "a < b < c; варианты ['a−b', 'a−c', 'c−b', 'ни одна из них']"
+    },
+    "diagramModel": {
+      "kind": "difference-sign",
+      "order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F18B9B86FC0D9762412042F4E39DB52D/xs3qstsrcF18B9B86FC0D9762412042F4E39DB52D_1_1457697974.png",
+          "sha256": "ec4e3ba999c1bec5f8c25229b550d58d2b22ea01b9c35c7d498775ab3d962772",
+          "width": 382,
+          "height": 57
+        }
+      ]
+    },
+    "comparison": "Полное математическое условие совпало: подписи и порядок точек, единичные деления либо интервалы положения, искомый знак и порядок всех вариантов фактически сверены. Метод проверен по указанному полному разбору; если у самой внешней карточки только решение прототипа, оно не считается её собственным разбором. По рисунку a<b<c. Сравнение уменьшаемого и вычитаемого проверено для всех трёх разностей; c−b положительна, остальные отрицательны.",
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/primary-visual-review.json",
+      "notes": "Все 21 первичный рисунок фактически просмотрен на пяти листах; отмечены порядок букв, подписанные деления и интервалы положения точек. Для A7075E повторно просмотрен отдельный оригинальный PNG."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/number-line/external-visual-review.json"
+    },
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=322422",
+      "steps": "По рисунку a<b<c. Сравнение уменьшаемого и вычитаемого проверено для всех трёх разностей; c−b положительна, остальные отрицательны.",
+      "snapshot": "/root/oge-math-solutions-20261010/number-line/sources/likes-322422.html",
+      "snapshotSha256": "c19a8f0e3d88d434d5764a0155ecc6917358c1ef1acad469397f323188f4c4aa",
+      "solutionSha256": "2285e2dc045c9f2ca85b3155c4a3614cd4d929225418b2e3c1bb1cfc1e3b7ab6"
+    }
+  }
+}

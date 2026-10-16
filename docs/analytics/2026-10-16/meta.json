@@ -1,0 +1,20 @@
+{
+  "counter": 112561663,
+  "timezone": "Europe/Moscow",
+  "metrics": [
+    "ym:s:visits",
+    "ym:s:users",
+    "ym:s:pageviews",
+    "ym:s:bounceRate",
+    "ym:s:pageDepth",
+    "ym:s:avgVisitDurationSeconds",
+    "ym:s:goal663176353visits",
+    "ym:s:goal663176354visits",
+    "ym:s:goal663176387visits",
+    "ym:s:goal672311557visits"
+  ],
+  "queries": 42,
+  "errors": {},
+  "unsampled": true,
+  "finished_at_msk": "2026-10-16T23:26:12.543619+03:00"
+}

@@ -1,0 +1,120 @@
+{
+  "OGEPHYS2EEF49": {
+    "kind": "gaps",
+    "repel": true,
+    "nearNeedle": "S",
+    "nearPole": 2,
+    "dictionary": {
+      "attract": 1,
+      "repel": 2,
+      "same": 5,
+      "unlike": 6,
+      "N": 7,
+      "S": 8
+    }
+  },
+  "OGEPHYS63DCC9": {
+    "kind": "gaps",
+    "repel": false,
+    "nearNeedle": "N",
+    "nearPole": 1,
+    "dictionary": {
+      "attract": 2,
+      "repel": 3,
+      "same": 4,
+      "unlike": 5,
+      "N": 6,
+      "S": 7
+    }
+  },
+  "OGEPHYS6E7F4C": {
+    "kind": "mixture",
+    "materials": [
+      "Cu",
+      "Fe"
+    ]
+  },
+  "OGEPHYSEA8EBC": {
+    "kind": "mixture",
+    "materials": [
+      "steel",
+      "Fe"
+    ]
+  },
+  "OGEPHYS5E1F99": {
+    "kind": "mixture",
+    "materials": [
+      "Zn",
+      "Cu"
+    ]
+  },
+  "OGEPHYS4E4D5A": {
+    "kind": "mixture",
+    "materials": [
+      "sand",
+      "unknown"
+    ]
+  },
+  "OGEPHYSA43B73": {
+    "kind": "remagnetize"
+  },
+  "OGEPHYSD54DB7": {
+    "kind": "housing"
+  },
+  "OGEPHYS4F2025": {
+    "kind": "inference",
+    "both": true
+  },
+  "OGEPHYS838D93": {
+    "kind": "inference",
+    "both": false
+  },
+  "OGEPHYS1410B8": {
+    "kind": "needles",
+    "above": false
+  },
+  "OGEPHYSF1AE19": {
+    "kind": "needles",
+    "above": true
+  },
+  "OGEPHYS6B8225": {
+    "kind": "leftward"
+  },
+  "OGEPHYS23CEC6": {
+    "kind": "photos",
+    "version": "23CEC6"
+  },
+  "OGEPHYS7F5336": {
+    "kind": "photos",
+    "version": "7F5336"
+  },
+  "OGEPHYSE28022": {
+    "kind": "period",
+    "duration": 4000000,
+    "minCount": 9,
+    "latest": 700000
+  },
+  "OGEPHYSBC3604": {
+    "kind": "planet-table",
+    "planets": [
+      [
+        "Меркурий",
+        false,
+        true
+      ],
+      [
+        "Венера",
+        true,
+        false
+      ],
+      [
+        "Марс",
+        true,
+        true
+      ]
+    ]
+  },
+  "OGEPHYSB3C2B4": {
+    "kind": "other-planets"
+  }
+}

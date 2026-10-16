@@ -1,0 +1,244 @@
+{
+  "site": "https://ege-fipi.ru",
+  "source": "Yandex Direct Live 4 Wordstat API",
+  "api_endpoint": "https://api.direct.yandex.ru/live/v4/json/",
+  "methods": [
+    "GetRegions",
+    "CreateNewWordstatReport",
+    "GetWordstatReport",
+    "DeleteWordstatReport"
+  ],
+  "geo_ids": [
+    225
+  ],
+  "region": "Россия",
+  "devices": "Без фильтра устройств; все доступные в API",
+  "collection_started_at": "2026-10-08T21:11:40.447200+00:00",
+  "collection_completed_at": "2026-10-08T21:22:55.924860+00:00",
+  "period": "Месячная оценка Shows на дату выгрузки. Точные границы периода этот API в ответе не возвращает.",
+  "counts": {
+    "seeds": 88,
+    "raw_observations": 7105,
+    "unique_searched_with": 5482,
+    "quoted_checked": 331,
+    "positive_keywords": 316,
+    "zero_frequency_watchlist": 15,
+    "priority_p1": 133,
+    "retention": 2,
+    "reserve": 2369,
+    "excluded": 849,
+    "checked_destinations": 70,
+    "groups": 60
+  },
+  "by_exam_subject": {
+    "ЕГЭ / Математика": 122,
+    "ЕГЭ / Физика": 80,
+    "ОГЭ / Физика": 35,
+    "ОГЭ / Математика": 78,
+    "Бренд / Оба": 1
+  },
+  "methodology": [
+    "Основы выбраны по текущим банкам ЕГЭ и ОГЭ: профильная математика и физика. Рекомендованное ядро отобрано из SearchedWith; ассоциации сохранены как сырые наблюдения.",
+    "Не более четырех основных фраз и двух целевых уточнений на основу, с удалением пересечений. Это репрезентативный подбор, не исчерпывающая семантика. Выдача может упираться в 200 строк на основу.",
+    "Широкая частотность включает вложенные запросы. Кавычки фиксируют количество слов, но не словоформы и порядок; ! и [] не применялись. Это не строгая частота буквальной строки.",
+    "Из каждого уточняющего отчета берется только строка, дословно равная запросу с кавычками. Соседние строки могут по-прежнему содержать широкую частотность.",
+    "Частоты похожих, вложенных и переставленных фраз нельзя складывать. Это не уникальные люди, визиты сайта, прогноз кликов, CPC или дохода.",
+    "Перестановки слов и явные перечисленные словоформы объединены; исходные варианты, значения и ID отчетов сохранены. Частоты не суммировались.",
+    "P1 — кандидаты для проверки потенциала роста: существующие разделы с решениями, релевантным намерением и частотой в кавычках не менее 10. P2 — более широкое намерение, ограниченное содержание либо меньшая частота. Спрос сам по себе не подтверждает возможность роста: позиции остальных запросов ещё не проверены, конкуренция не оценена.",
+    "Известные со слов пользователя запросы в топе переведены в «Удержание» и исключены из priority.csv. Источник и дата сообщения сохранены в known-rankings.json; точная позиция, поисковик и регион не сообщались. Статус относится только к двум названным фразам и не переносится на весь тематический раздел или соседние формулировки.",
+    "ОГЭ-математика: обещания ответов и решений исключены из ядра. По физике ОГЭ наличие решений проверено по рабочей SQLite только для чтения; это датированный снимок.",
+    "Запросы с 2027 и другими годами, номерами КИМ, демоверсиями, вариантами и справочниками оставлены в резерве: нельзя обещать соответствие текущему экзамену без отдельной проверки.",
+    "Условия отбора резерва и исключений автоматические, они требуют ручного просмотра перед будущим расширением. Все рекомендованные фразы просмотрены, назначения проверены по HTTP, canonical, robots и sitemap.",
+    "Для возможной рекламы исключать чужие бренды, базовую математику, отсутствующие услуги и явную навигацию на официальный ФИПИ. Не применять весь reserve.csv как глобальные минус-слова; «бесплатно», «решения», «ответы» для ЕГЭ не минусовать.",
+    "Рекламные кампании и содержимое сайта не изменены. Внешние действия ограничены созданием и удалением собственных временных отчетов подбора."
+  ],
+  "documentation": [
+    "https://yandex.ru/dev/direct/doc/ru/best-practice/statistics",
+    "https://yandex.ru/support/direct/ru/keywords/wordstat",
+    "https://yandex.ru/support/direct/ru/keywords/symbols-and-operators"
+  ],
+  "solution_snapshot": {
+    "oge": {
+      "tasks": 3884,
+      "published_solutions": 0,
+      "scope": "Reviewed local catalogue and read-only production SQLite",
+      "captured_at": "2026-10-08T21:24:30.076302+00:00"
+    },
+    "oge-physics": {
+      "tasks": 1506,
+      "published_solutions": 971,
+      "scope": "Reviewed local catalogue and read-only production SQLite",
+      "captured_at": "2026-10-08T21:24:30.076302+00:00"
+    }
+  },
+  "known_rankings": [
+    {
+      "phrase": "векторы егэ",
+      "status": "В топе — со слов пользователя",
+      "source": "Сообщение пользователя в этой задаче",
+      "reported_at": "2026-10-08",
+      "search_engine": null,
+      "region": null,
+      "position": null
+    },
+    {
+      "phrase": "банк фипи егэ физика",
+      "status": "В топе — со слов пользователя",
+      "source": "Сообщение пользователя в этой задаче",
+      "reported_at": "2026-10-08",
+      "search_engine": null,
+      "region": null,
+      "position": null
+    }
+  ],
+  "reproduce": [
+    "python3 collect.py seeds.json broad.json",
+    "python3 curate.py",
+    "python3 collect.py quoted-seeds.json quoted.json",
+    "python3 check_landings.py",
+    "python3 build_result.py"
+  ],
+  "reproduction_note": "Существующие выгрузки не перезапрашиваются. Для нового среза скопировать seeds.json, known-rankings.json и скрипты в новый датированный каталог; актуальность сведений о позициях перепроверить. Ключ читается из окружения или защищенного файла, никогда не сохраняется в отчете.",
+  "highlights": [
+    {
+      "phrase": "открытый банк заданий егэ математика профиль",
+      "quoted_shows": 1077,
+      "broad_shows": 3489,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/ege/math"
+    },
+    {
+      "phrase": "экономическая задача егэ математика профиль",
+      "quoted_shows": 1013,
+      "broad_shows": 3650,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/finance"
+    },
+    {
+      "phrase": "егэ математика профиль задания",
+      "quoted_shows": 924,
+      "broad_shows": 112615,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/ege/math"
+    },
+    {
+      "phrase": "вектора егэ профиль математика",
+      "quoted_shows": 788,
+      "broad_shows": 4854,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=vectors"
+    },
+    {
+      "phrase": "векторы егэ профиль",
+      "quoted_shows": 710,
+      "broad_shows": 11647,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=vectors"
+    },
+    {
+      "phrase": "производная егэ",
+      "quoted_shows": 570,
+      "broad_shows": 22397,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=derivative"
+    },
+    {
+      "phrase": "экономические задачи егэ",
+      "quoted_shows": 474,
+      "broad_shows": 9378,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/finance"
+    },
+    {
+      "phrase": "банк заданий егэ математика профиль",
+      "quoted_shows": 460,
+      "broad_shows": 6855,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/ege/math"
+    },
+    {
+      "phrase": "тригонометрические уравнения егэ",
+      "quoted_shows": 449,
+      "broad_shows": 5057,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/equations"
+    },
+    {
+      "phrase": "логарифмы егэ",
+      "quoted_shows": 435,
+      "broad_shows": 13577,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=expressions.logarithms"
+    },
+    {
+      "phrase": "тригонометрические уравнения егэ профиль",
+      "quoted_shows": 415,
+      "broad_shows": 2078,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/equations"
+    },
+    {
+      "phrase": "планиметрия егэ",
+      "quoted_shows": 412,
+      "broad_shows": 11970,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=plane"
+    },
+    {
+      "phrase": "текстовые задачи егэ математика профиль",
+      "quoted_shows": 405,
+      "broad_shows": 882,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=word-problems"
+    },
+    {
+      "phrase": "планиметрия егэ профиль",
+      "quoted_shows": 401,
+      "broad_shows": 4615,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=plane"
+    },
+    {
+      "phrase": "стереометрия егэ",
+      "quoted_shows": 363,
+      "broad_shows": 11321,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=solid"
+    },
+    {
+      "phrase": "векторы егэ профиль задания",
+      "quoted_shows": 355,
+      "broad_shows": 2972,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=vectors"
+    },
+    {
+      "phrase": "неравенства егэ профиль",
+      "quoted_shows": 349,
+      "broad_shows": 4758,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/inequalities"
+    },
+    {
+      "phrase": "логарифмы егэ профиль",
+      "quoted_shows": 343,
+      "broad_shows": 4090,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/?topic=expressions.logarithms"
+    },
+    {
+      "phrase": "фипи банк егэ математика",
+      "quoted_shows": 332,
+      "broad_shows": 11426,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/ege/math"
+    },
+    {
+      "phrase": "неравенства егэ",
+      "quoted_shows": 318,
+      "broad_shows": 16663,
+      "priority": "P1",
+      "target_url": "https://ege-fipi.ru/inequalities"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "OGEPHYS41BD4C": {
+    "kind": "wire-order",
+    "maximum": true
+  },
+  "OGEPHYS83107A": {
+    "kind": "wire-order",
+    "maximum": false
+  },
+  "OGEPHYSCE4F4F": {
+    "kind": "graph",
+    "U": 2,
+    "I": 4
+  },
+  "OGEPHYS248D00": {
+    "kind": "graph",
+    "U": 16,
+    "I": 1
+  },
+  "OGEPHYSCDE367": {
+    "kind": "graph",
+    "U": 4,
+    "I": 1
+  },
+  "OGEPHYSD22121": {
+    "kind": "control-pair"
+  },
+  "OGEPHYSEBC093": {
+    "kind": "shorten",
+    "power": true
+  },
+  "OGEPHYSA0463C": {
+    "kind": "shorten",
+    "power": false
+  },
+  "OGEPHYSCD3142": {
+    "kind": "table",
+    "truth": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  "OGEPHYS6FD942": {
+    "kind": "table",
+    "truth": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  "OGEPHYS93A3B3": {
+    "kind": "table",
+    "truth": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  "OGEPHYS064FD7": {
+    "kind": "table",
+    "truth": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  "OGEPHYSA8D134": {
+    "kind": "table",
+    "truth": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  "OGEPHYS679141": {
+    "kind": "experiment-table",
+    "rows": [
+      [
+        0.4,
+        2,
+        2
+      ],
+      [
+        0.8,
+        8,
+        4
+      ],
+      [
+        0.8,
+        4,
+        2
+      ],
+      [
+        0.4,
+        2,
+        6
+      ]
+    ],
+    "material": [
+      "nickel",
+      "nickel",
+      "nickel",
+      "fecr"
+    ]
+  },
+  "OGEPHYS3E9BF5": {
+    "kind": "experiment-table",
+    "rows": [
+      [
+        0.2,
+        1,
+        2
+      ],
+      [
+        0.2,
+        2,
+        4
+      ],
+      [
+        0.4,
+        2,
+        2
+      ],
+      [
+        0.2,
+        0.5,
+        3
+      ]
+    ],
+    "material": [
+      "nickel",
+      "nickel",
+      "nickel",
+      "fecr"
+    ]
+  },
+  "OGEPHYS112EEF": {
+    "kind": "experiment-table",
+    "rows": [
+      [
+        0.4,
+        2,
+        2
+      ],
+      [
+        0.4,
+        4,
+        4
+      ],
+      [
+        0.8,
+        4,
+        2
+      ],
+      [
+        0.4,
+        1,
+        3
+      ]
+    ],
+    "material": [
+      "nickel",
+      "nickel",
+      "nickel",
+      "fecr"
+    ]
+  },
+  "OGEPHYS9686FE": {
+    "kind": "power",
+    "rho": 1.1,
+    "l": 8,
+    "S": 0.05,
+    "U": 220,
+    "value": 275
+  },
+  "OGEPHYS6276F7": {
+    "kind": "length",
+    "U": 0.5,
+    "I": 1,
+    "S": 1,
+    "rho": 0.1,
+    "value": 5.0
+  },
+  "OGEPHYSADCDC1": {
+    "kind": "length",
+    "U": 3,
+    "I": 0.6,
+    "S": 0.2,
+    "rho": 0.4,
+    "value": 2.5
+  },
+  "OGEPHYSC08D14": {
+    "kind": "length",
+    "U": 1,
+    "I": 1,
+    "S": 1,
+    "rho": 0.4,
+    "value": 2.5
+  },
+  "OGEPHYS9F181E": {
+    "kind": "ratio",
+    "factor": 2,
+    "value": 6
+  },
+  "OGEPHYSD57EA8": {
+    "kind": "ratio",
+    "factor": 0.5,
+    "value": 1.5
+  },
+  "OGEPHYS1EFD97": {
+    "kind": "wire-voltage",
+    "rho": 1.1,
+    "l": 2,
+    "S": 1,
+    "I": 1,
+    "value": 2.2
+  },
+  "OGEPHYS465BEC": {
+    "kind": "area",
+    "rho": 0.4,
+    "l": 5,
+    "pairs": [
+      [
+        12,
+        2.4
+      ],
+      [
+        9.6,
+        1.92
+      ],
+      [
+        6,
+        1.2
+      ],
+      [
+        4.8,
+        0.96
+      ],
+      [
+        3,
+        0.6
+      ],
+      [
+        1.5,
+        0.3
+      ]
+    ],
+    "value": 0.4
+  },
+  "OGEPHYSC20D81": {
+    "kind": "power-voltage",
+    "rho": 0.4,
+    "l": 6,
+    "S": 0.5,
+    "P": 30,
+    "value": 12
+  },
+  "OGEPHYSA842B7": {
+    "kind": "density-mass",
+    "densityMode": true,
+    "rho": 0.4,
+    "S": 1,
+    "U": 24,
+    "I": 3,
+    "density": 8800,
+    "mass": 0.176,
+    "value": 8800
+  },
+  "OGEPHYS0EC011": {
+    "kind": "density-mass",
+    "densityMode": false,
+    "rho": 0.1,
+    "S": 2,
+    "U": 24,
+    "I": 4,
+    "density": 7800,
+    "mass": 1.872,
+    "value": 1.872
+  },
+  "OGEPHYSC3F129": {
+    "kind": "density-mass",
+    "densityMode": false,
+    "rho": 0.4,
+    "S": 1,
+    "U": 24,
+    "I": 3,
+    "density": 8800,
+    "mass": 0.176,
+    "value": 0.176
+  },
+  "OGEPHYS5D997D": {
+    "kind": "lab",
+    "element": "лампа",
+    "I": 0.3,
+    "du": 0.2,
+    "exampleU": 3,
+    "exampleR": 10.0
+  },
+  "OGEPHYS6CAEB6": {
+    "kind": "lab",
+    "element": "R₁",
+    "I": 0.5,
+    "du": 0.1,
+    "exampleU": 2.5,
+    "exampleR": 5.0
+  },
+  "OGEPHYSFA6A26": {
+    "kind": "lab",
+    "element": "R₂",
+    "I": 0.5,
+    "du": 0.1,
+    "exampleU": 2.9,
+    "exampleR": 5.8
+  },
+  "OGEPHYS930128": {
+    "kind": "lab",
+    "element": "R₃",
+    "I": 0.3,
+    "du": 0.1,
+    "exampleU": 2.4,
+    "exampleR": 8.0
+  },
+  "OGEPHYSB16450": {
+    "kind": "lab",
+    "element": "R₂",
+    "I": 0.4,
+    "du": 0.1,
+    "exampleU": 2.3,
+    "exampleR": 5.749999999999999
+  },
+  "OGEPHYSC7C9ED": {
+    "kind": "lab",
+    "element": "R₃",
+    "I": 0.4,
+    "du": 0.2,
+    "exampleU": 3.2,
+    "exampleR": 8.0
+  }
+}

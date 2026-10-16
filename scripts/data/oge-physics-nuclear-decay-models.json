@@ -1,0 +1,462 @@
+{
+  "OGEPHYS643D4C": {
+    "kind": "half-life",
+    "T": 2,
+    "initial": 4,
+    "unit": "мес",
+    "quantity": "N"
+  },
+  "OGEPHYS32B505": {
+    "kind": "half-life",
+    "T": 20,
+    "initial": 60,
+    "unit": "с",
+    "quantity": "N"
+  },
+  "OGEPHYS4F4AC3": {
+    "kind": "half-life",
+    "T": 1,
+    "initial": 3,
+    "unit": "мес",
+    "quantity": "m"
+  },
+  "OGEPHYS07F66A": {
+    "kind": "half-life",
+    "T": 4,
+    "initial": 2,
+    "unit": "ч",
+    "quantity": "m"
+  },
+  "OGEPHYS642A64": {
+    "kind": "half-life",
+    "T": 40,
+    "initial": 80,
+    "unit": "с",
+    "quantity": "N"
+  },
+  "OGEPHYS1AAFD9": {
+    "kind": "carbon-age",
+    "fraction": 0.25,
+    "period": 5730
+  },
+  "OGEPHYSA66128": {
+    "kind": "carbon-material",
+    "answer": "Деревянная кухонная утварь."
+  },
+  "OGEPHYS02ED46": {
+    "kind": "alpha",
+    "givenA": 179,
+    "givenZ": 79,
+    "count": 1,
+    "reverse": false,
+    "target": "A"
+  },
+  "OGEPHYSEF05FF": {
+    "kind": "alpha",
+    "givenA": 224,
+    "givenZ": 88,
+    "count": 2,
+    "reverse": false,
+    "target": "A"
+  },
+  "OGEPHYS606C06": {
+    "kind": "alpha",
+    "givenA": 226,
+    "givenZ": 88,
+    "count": 1,
+    "reverse": true,
+    "target": "A"
+  },
+  "OGEPHYSD12B7A": {
+    "kind": "alpha",
+    "givenA": 140,
+    "givenZ": 58,
+    "count": 2,
+    "reverse": true,
+    "target": "A"
+  },
+  "OGEPHYSAE6E1A": {
+    "kind": "alpha",
+    "givenA": 230,
+    "givenZ": 90,
+    "count": 1,
+    "reverse": false,
+    "target": "A"
+  },
+  "OGEPHYSF17427": {
+    "kind": "alpha",
+    "givenA": 230,
+    "givenZ": 90,
+    "count": 1,
+    "reverse": false,
+    "target": "Z"
+  },
+  "OGEPHYS8E4527": {
+    "kind": "alpha",
+    "givenA": 140,
+    "givenZ": 58,
+    "count": 2,
+    "reverse": true,
+    "target": "Z"
+  },
+  "OGEPHYS9053D8": {
+    "kind": "alpha",
+    "givenA": 179,
+    "givenZ": 79,
+    "count": 1,
+    "reverse": false,
+    "target": "Z"
+  },
+  "OGEPHYS06EFAB": {
+    "kind": "alpha",
+    "givenA": 222,
+    "givenZ": 86,
+    "count": 1,
+    "reverse": true,
+    "target": "A"
+  },
+  "OGEPHYS00149E": {
+    "kind": "alpha",
+    "givenA": 224,
+    "givenZ": 88,
+    "count": 2,
+    "reverse": false,
+    "target": "Z"
+  },
+  "OGEPHYS4B1867": {
+    "kind": "alpha",
+    "givenA": 210,
+    "givenZ": 84,
+    "count": 1,
+    "reverse": false,
+    "target": "A"
+  },
+  "OGEPHYSF51272": {
+    "kind": "beta",
+    "A": 240,
+    "Z": 93,
+    "target": "A",
+    "reverse": true
+  },
+  "OGEPHYSFB8575": {
+    "kind": "beta",
+    "A": 95,
+    "Z": 41,
+    "target": "Z",
+    "reverse": false
+  },
+  "OGEPHYSD9CF79": {
+    "kind": "beta",
+    "A": 90,
+    "Z": 38,
+    "target": "A",
+    "reverse": false
+  },
+  "OGEPHYS575474": {
+    "kind": "beta",
+    "A": 214,
+    "Z": 83,
+    "target": "A",
+    "reverse": false
+  },
+  "OGEPHYSF7A41C": {
+    "kind": "beta",
+    "A": 195,
+    "Z": 76,
+    "target": "Z",
+    "reverse": false
+  },
+  "OGEPHYS619D26": {
+    "kind": "beta",
+    "A": 214,
+    "Z": 83,
+    "target": "Z",
+    "reverse": false
+  },
+  "OGEPHYS682DCC": {
+    "kind": "beta",
+    "A": 22,
+    "Z": 11,
+    "target": "A",
+    "reverse": false
+  },
+  "OGEPHYS9D23F9": {
+    "kind": "reaction",
+    "mode": "multiplicity",
+    "incoming": [
+      [
+        1,
+        1,
+        "протон"
+      ],
+      [
+        7,
+        3,
+        "ядро лития"
+      ]
+    ],
+    "outgoing": [],
+    "particle": "alpha",
+    "target": "n"
+  },
+  "OGEPHYS0A2956": {
+    "kind": "reaction",
+    "mode": "product",
+    "incoming": [
+      [
+        238,
+        92,
+        "ядро урана"
+      ],
+      [
+        12,
+        6,
+        "ядро углерода"
+      ]
+    ],
+    "outgoing": [
+      [
+        4,
+        0,
+        "четыре нейтрона"
+      ]
+    ],
+    "particle": "X",
+    "target": "A"
+  },
+  "OGEPHYS21CE59": {
+    "kind": "reaction",
+    "mode": "product",
+    "incoming": [
+      [
+        252,
+        98,
+        "ядро калифорния"
+      ],
+      [
+        4,
+        2,
+        "альфа-частица"
+      ]
+    ],
+    "outgoing": [
+      [
+        3,
+        0,
+        "три нейтрона"
+      ]
+    ],
+    "particle": "X",
+    "target": "A"
+  },
+  "OGEPHYS579C59": {
+    "kind": "reaction",
+    "mode": "multiplicity",
+    "incoming": [
+      [
+        1,
+        0,
+        "нейтрон"
+      ],
+      [
+        235,
+        92,
+        "ядро урана"
+      ]
+    ],
+    "outgoing": [
+      [
+        141,
+        56,
+        "ядро бария"
+      ],
+      [
+        92,
+        36,
+        "ядро криптона"
+      ]
+    ],
+    "particle": "neutron",
+    "target": "n"
+  },
+  "OGEPHYS70FBAD": {
+    "kind": "reaction",
+    "mode": "initial",
+    "incoming": [
+      [
+        50,
+        22,
+        "ядро титана"
+      ]
+    ],
+    "outgoing": [
+      [
+        255,
+        104,
+        "ядро резерфордия"
+      ],
+      [
+        3,
+        0,
+        "три нейтрона"
+      ]
+    ],
+    "particle": "X",
+    "target": "A"
+  },
+  "OGEPHYSE15DC4": {
+    "kind": "reaction",
+    "mode": "product",
+    "incoming": [
+      [
+        238,
+        92,
+        "ядро урана"
+      ],
+      [
+        14,
+        7,
+        "ядро азота"
+      ]
+    ],
+    "outgoing": [
+      [
+        6,
+        0,
+        "шесть нейтронов"
+      ]
+    ],
+    "particle": "X",
+    "target": "Z"
+  },
+  "OGEPHYS36C69F": {
+    "kind": "reaction",
+    "mode": "product",
+    "incoming": [
+      [
+        252,
+        98,
+        "ядро калифорния"
+      ],
+      [
+        4,
+        2,
+        "альфа-частица"
+      ]
+    ],
+    "outgoing": [
+      [
+        3,
+        0,
+        "три нейтрона"
+      ]
+    ],
+    "particle": "X",
+    "target": "Z"
+  },
+  "OGEPHYSD1746D": {
+    "kind": "reaction",
+    "mode": "initial",
+    "incoming": [
+      [
+        50,
+        22,
+        "ядро титана"
+      ]
+    ],
+    "outgoing": [
+      [
+        255,
+        104,
+        "ядро резерфордия"
+      ],
+      [
+        3,
+        0,
+        "три нейтрона"
+      ]
+    ],
+    "particle": "X",
+    "target": "Z"
+  },
+  "OGEPHYSC8296F": {
+    "kind": "reaction",
+    "mode": "multiplicity",
+    "incoming": [
+      [
+        1,
+        0,
+        "нейтрон"
+      ],
+      [
+        238,
+        92,
+        "ядро урана"
+      ]
+    ],
+    "outgoing": [
+      [
+        146,
+        56,
+        "ядро бария"
+      ],
+      [
+        92,
+        36,
+        "ядро криптона"
+      ]
+    ],
+    "particle": "neutron",
+    "target": "n"
+  },
+  "OGEPHYSC5E667": {
+    "kind": "reaction",
+    "mode": "product",
+    "incoming": [
+      [
+        238,
+        92,
+        "ядро урана"
+      ],
+      [
+        14,
+        7,
+        "ядро азота"
+      ]
+    ],
+    "outgoing": [
+      [
+        6,
+        0,
+        "шесть нейтронов"
+      ]
+    ],
+    "particle": "X",
+    "target": "A"
+  },
+  "OGEPHYS5BA43D": {
+    "kind": "reaction",
+    "mode": "product",
+    "incoming": [
+      [
+        19,
+        9,
+        "ядро фтора"
+      ],
+      [
+        1,
+        1,
+        "протон"
+      ]
+    ],
+    "outgoing": [
+      [
+        16,
+        8,
+        "ядро кислорода"
+      ]
+    ],
+    "particle": "X",
+    "target": "Z"
+  }
+}

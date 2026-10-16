@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-16T19:59:33.703268+00:00",
+  "token_source": "same configured Direct token used by historical Wordstat collector",
+  "direct_v5": {
+    "endpoint": "https://api.direct.yandex.com/json/v5/clients",
+    "method": "Clients.get",
+    "http_status": 200,
+    "clients_returned": 1,
+    "error": null
+  },
+  "wordstat_live4": {
+    "error_detail": "",
+    "error_str": "Метод недоступен в данной версии API",
+    "error_code": 509
+  }
+}

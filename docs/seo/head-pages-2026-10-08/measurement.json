@@ -1,0 +1,87 @@
+{
+  "queries": [
+    {
+      "query": "егэ математика профиль",
+      "quoted_wordstat_ru": 53729,
+      "target_url": "https://ege-fipi.ru/ege/math",
+      "priority": 1
+    },
+    {
+      "query": "егэ физика",
+      "quoted_wordstat_ru": 24194,
+      "target_url": "https://ege-fipi.ru/ege/physics",
+      "priority": 2
+    },
+    {
+      "query": "егэ физика профиль",
+      "quoted_wordstat_ru": 87,
+      "target_url": "https://ege-fipi.ru/ege/physics",
+      "priority": "secondary FAQ"
+    }
+  ],
+  "wordstat_note": "Россия, без фильтра устройств, 2026-10-08. Кавычки фиксируют число слов, не буквальную строку. Источник: ../positions-2026-10-08/head-query-wordstat.json.",
+  "retention_queries": [
+    "векторы егэ",
+    "банк фипи егэ физика"
+  ],
+  "before_indexing": {
+    "https://ege-fipi.ru/ege/math": {
+      "url": "https://ege-fipi.ru/ege/math",
+      "last_access": "2026-10-03T14:13:14.000+03:00",
+      "title": "Решение задач ЕГЭ по математике — ФИПИ, ответы и разборы"
+    },
+    "https://ege-fipi.ru/ege/physics": {
+      "url": "https://ege-fipi.ru/ege/physics",
+      "last_access": "2026-10-03T07:21:04.000+03:00",
+      "title": "Решение задач ЕГЭ по физике — ФИПИ, ответы и разборы"
+    },
+    "https://ege-fipi.ru/ege": {
+      "url": "https://ege-fipi.ru/ege",
+      "last_access": "2026-10-01T11:28:58.000+03:00",
+      "title": "ЕГЭ — задания ФИПИ по математике и физике"
+    }
+  },
+  "before_metrika": {
+    "math": {
+      "period": [
+        "2026-10-02",
+        "2026-10-08"
+      ],
+      "timezone": "+03:00",
+      "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+      "totals": [
+        1.0,
+        1.0,
+        100.0,
+        0.0,
+        0.0
+      ],
+      "sampled": false
+    },
+    "physics": {
+      "period": [
+        "2026-10-02",
+        "2026-10-08"
+      ],
+      "timezone": "+03:00",
+      "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+      "totals": [
+        5.0,
+        4.0,
+        20.0,
+        3.0,
+        0.0
+      ],
+      "sampled": false
+    }
+  },
+  "evaluation": [
+    "Сначала подтвердить переобход и обновлённый заголовок в поисковой базе.",
+    "Сравнивать полные недельные окна после переобхода с учётом задержки данных Вебмастера.",
+    "Для каждой точной фразы отдельно смотреть показы, клики, среднюю позицию и выбранный URL в России; фразы с ФИПИ не смешивать.",
+    "По предметным страницам отдельно считать органические входы без роботов и визиты с открытием решения.",
+    "Отсутствие строки в мониторинге не означает отсутствие в индексе; малую выборку не выдавать за доказанный рост."
+  ],
+  "ranking_outcome": "pending",
+  "scheduled_automation_created": false
+}

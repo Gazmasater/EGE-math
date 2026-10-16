@@ -1,0 +1,80 @@
+{
+  "OGEPHYSF4764A": {
+    "kind": "accommodation",
+    "near": false
+  },
+  "OGEPHYSD46C7F": {
+    "kind": "accommodation",
+    "near": true
+  },
+  "OGEPHYS138115": {
+    "kind": "accommodation",
+    "near": true
+  },
+  "OGEPHYS03A057": {
+    "kind": "accommodation",
+    "near": false
+  },
+  "OGEPHYS02270F": {
+    "kind": "devices",
+    "devices": [
+      "microscope",
+      "telescope"
+    ],
+    "codes": {
+      "reflection": 1,
+      "refraction": 2
+    }
+  },
+  "OGEPHYS6D7B02": {
+    "kind": "devices",
+    "devices": [
+      "periscope",
+      "microscope"
+    ],
+    "codes": {
+      "reflection": 1,
+      "refraction": 2
+    }
+  },
+  "OGEPHYSCE875F": {
+    "kind": "devices",
+    "devices": [
+      "telescope",
+      "magnifier"
+    ],
+    "codes": {
+      "reflection": 1,
+      "refraction": 2
+    }
+  },
+  "OGEPHYS37AFF2": {
+    "kind": "devices",
+    "devices": [
+      "glasses",
+      "periscope"
+    ],
+    "codes": {
+      "reflection": 1,
+      "refraction": 2
+    }
+  },
+  "OGEPHYS1C4C0B": {
+    "kind": "devices",
+    "devices": [
+      "periscope",
+      "stove"
+    ],
+    "codes": {
+      "reflection": 3,
+      "heat": 1,
+      "refraction": 4
+    }
+  },
+  "OGEPHYSDF7CDA": {
+    "kind": "image-experiment",
+    "F": 5,
+    "d": 7.5,
+    "b": 15
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "counter": 112561663,
+  "collected_at_msk": "2026-10-16T23:26:12.543619+03:00",
+  "timezone": "Europe/Moscow",
+  "checks": {
+    "responses_42_without_errors": true,
+    "all_unsampled": true,
+    "daily_all_visits_reconcile": true,
+    "daily_all_views_reconcile": true,
+    "oct11_public_split_visits": true,
+    "oct11_public_split_views": true
+  },
+  "spike": {
+    "date": "2026-10-11",
+    "all": {
+      "ym:s:visits": 215.0,
+      "ym:s:users": 191.0,
+      "ym:s:pageviews": 2121.0,
+      "ym:s:bounceRate": 29.76744186,
+      "ym:s:pageDepth": 9.86511628,
+      "ym:s:avgVisitDurationSeconds": 324.60930233,
+      "ym:s:goal663176353visits": 89.0,
+      "ym:s:goal663176354visits": 22.0,
+      "ym:s:goal663176387visits": 0.0,
+      "ym:s:goal672311557visits": 0.0
+    },
+    "deep_public_100plus": {
+      "ym:s:visits": 3.0,
+      "ym:s:users": 1.0,
+      "ym:s:pageviews": 1559.0,
+      "ym:s:bounceRate": 0.0,
+      "ym:s:pageDepth": 519.66666667,
+      "ym:s:avgVisitDurationSeconds": 548.33333333,
+      "ym:s:goal663176353visits": 0.0,
+      "ym:s:goal663176354visits": 0.0,
+      "ym:s:goal663176387visits": 0.0,
+      "ym:s:goal672311557visits": 0.0
+    },
+    "remaining_public": {
+      "ym:s:visits": 211.0,
+      "ym:s:users": 190.0,
+      "ym:s:pageviews": 561.0,
+      "ym:s:bounceRate": 29.85781991,
+      "ym:s:pageDepth": 2.65876777,
+      "ym:s:avgVisitDurationSeconds": 322.96682464,
+      "ym:s:goal663176353visits": 89.0,
+      "ym:s:goal663176354visits": 22.0,
+      "ym:s:goal663176387visits": 0.0,
+      "ym:s:goal672311557visits": 0.0
+    },
+    "deep_view_share_pct": 73.5030645921735,
+    "hours_00_01_all_views": 1598.0,
+    "hours_00_01_note": "Metrics assigned to visit start hour; not exact timestamps of all pageviews. Direct hour details for deep segment hidden by privacy threshold.",
+    "deep_rate_views_per_second_of_reported_duration": 0.9477203647474026,
+    "interpretation": "A few visits dominate the pageview spike; automated browsing is plausible, identity and cause not established."
+  },
+  "weekly_search": {
+    "before_dates": [
+      "2026-10-02",
+      "2026-10-08"
+    ],
+    "current_dates": [
+      "2026-10-09",
+      "2026-10-15"
+    ],
+    "before": {
+      "ym:s:visits": 841.0,
+      "ym:s:users": 722.0,
+      "ym:s:pageviews": 1632.0,
+      "ym:s:bounceRate": 26.99167658,
+      "ym:s:pageDepth": 1.94054697,
+      "ym:s:avgVisitDurationSeconds": 261.30439952,
+      "ym:s:goal663176353visits": 377.0,
+      "ym:s:goal663176354visits": 127.0,
+      "ym:s:goal663176387visits": 0.0,
+      "ym:s:goal672311557visits": 0.0
+    },
+    "current": {
+      "ym:s:visits": 1165.0,
+      "ym:s:users": 1048.0,
+      "ym:s:pageviews": 2465.0,
+      "ym:s:bounceRate": 26.69527897,
+      "ym:s:pageDepth": 2.11587983,
+      "ym:s:avgVisitDurationSeconds": 228.83433476,
+      "ym:s:goal663176353visits": 531.0,
+      "ym:s:goal663176354visits": 130.0,
+      "ym:s:goal663176387visits": 1.0,
+      "ym:s:goal672311557visits": 0.0
+    },
+    "visits_change_pct": 38.525564803805004,
+    "oge_catalogue_before_visits": 179.0,
+    "oge_catalogue_current_visits": 409.0,
+    "oge_share_of_growth_pct": 70.98765432098766,
+    "outside_oge_catalogues_before_visits": 662.0,
+    "outside_oge_catalogues_current_visits": 756.0,
+    "caveat": "OGE catalogues launched 7 October; exposure differs between these weeks."
+  },
+  "matched_weekdays": {
+    "before_dates": [
+      "2026-10-07",
+      "2026-10-08"
+    ],
+    "current_dates": [
+      "2026-10-14",
+      "2026-10-15"
+    ],
+    "before": {
+      "ym:s:visits": 411.0,
+      "ym:s:users": 382.0,
+      "ym:s:pageviews": 852.0,
+      "ym:s:bounceRate": 29.6836983,
+      "ym:s:pageDepth": 2.0729927,
+      "ym:s:avgVisitDurationSeconds": 205.95377129,
+      "ym:s:goal663176353visits": 136.0,
+      "ym:s:goal663176354visits": 50.0,
+      "ym:s:goal663176387visits": 0.0,
+      "ym:s:goal672311557visits": 0.0
+    },
+    "current": {
+      "ym:s:visits": 403.0,
+      "ym:s:users": 383.0,
+      "ym:s:pageviews": 884.0,
+      "ym:s:bounceRate": 26.55086849,
+      "ym:s:pageDepth": 2.19354839,
+      "ym:s:avgVisitDurationSeconds": 224.93548387,
+      "ym:s:goal663176353visits": 188.0,
+      "ym:s:goal663176354visits": 45.0,
+      "ym:s:goal663176387visits": 0.0,
+      "ym:s:goal672311557visits": 0.0
+    }
+  },
+  "sections": [
+    {
+      "key": "oge_math",
+      "label": "Каталоги ОГЭ — математика",
+      "before_visits": 114.0,
+      "current_visits": 256.0,
+      "delta_visits": 142.0,
+      "current_solution_open_visits": 44.0,
+      "current_solution_open_share_pct": 17.1875
+    },
+    {
+      "key": "oge_physics",
+      "label": "Каталоги ОГЭ — физика",
+      "before_visits": 65.0,
+      "current_visits": 153.0,
+      "delta_visits": 88.0,
+      "current_solution_open_visits": 44.0,
+      "current_solution_open_share_pct": 28.758169934640524
+    },
+    {
+      "key": "physics_catalogs",
+      "label": "Каталог /physics",
+      "before_visits": 135.0,
+      "current_visits": 104.0,
+      "delta_visits": -31.0,
+      "current_solution_open_visits": 29.0,
+      "current_solution_open_share_pct": 27.884615384615383
+    },
+    {
+      "key": "physics_part2",
+      "label": "Вторая часть ЕГЭ — физика",
+      "before_visits": 65.0,
+      "current_visits": 40.0,
+      "delta_visits": -25.0,
+      "current_solution_open_visits": 12.0,
+      "current_solution_open_share_pct": 30.0
+    },
+    {
+      "key": "math_part2",
+      "label": "Вторая часть ЕГЭ — математика",
+      "before_visits": 25.0,
+      "current_visits": 26.0,
+      "delta_visits": 1.0,
+      "current_solution_open_visits": 11.0,
+      "current_solution_open_share_pct": 42.30769230769231
+    },
+    {
+      "key": "subject_hubs",
+      "label": "Предметные страницы ЕГЭ",
+      "before_visits": 8.0,
+      "current_visits": 92.0,
+      "delta_visits": 84.0,
+      "current_solution_open_visits": 43.0,
+      "current_solution_open_share_pct": 46.73913043478261
+    },
+    {
+      "key": "home",
+      "label": "Главная без параметров",
+      "before_visits": 5.0,
+      "current_visits": 12.0,
+      "delta_visits": 7.0,
+      "current_solution_open_visits": 0.0,
+      "current_solution_open_share_pct": 0.0
+    }
+  ],
+  "today_matched_23msk": {
+    "today": {
+      "public": {
+        "ym:s:visits": 215.0,
+        "ym:s:users": 204.0,
+        "ym:s:pageviews": 476.0,
+        "ym:s:bounceRate": 26.51162791,
+        "ym:s:pageDepth": 2.21395349,
+        "ym:s:avgVisitDurationSeconds": 240.31162791,
+        "ym:s:goal663176353visits": 103.0,
+        "ym:s:goal663176354visits": 35.0,
+        "ym:s:goal663176387visits": 0.0,
+        "ym:s:goal672311557visits": 0.0
+      },
+      "search": {
+        "ym:s:visits": 165.0,
+        "ym:s:users": 158.0,
+        "ym:s:pageviews": 373.0,
+        "ym:s:bounceRate": 27.27272727,
+        "ym:s:pageDepth": 2.26060606,
+        "ym:s:avgVisitDurationSeconds": 222.76363636,
+        "ym:s:goal663176353visits": 79.0,
+        "ym:s:goal663176354visits": 22.0,
+        "ym:s:goal663176387visits": 0.0,
+        "ym:s:goal672311557visits": 0.0
+      }
+    },
+    "yesterday": {
+      "public": {
+        "ym:s:visits": 252.0,
+        "ym:s:users": 242.0,
+        "ym:s:pageviews": 544.0,
+        "ym:s:bounceRate": 28.96825397,
+        "ym:s:pageDepth": 2.15873016,
+        "ym:s:avgVisitDurationSeconds": 204.02380952,
+        "ym:s:goal663176353visits": 97.0,
+        "ym:s:goal663176354visits": 22.0,
+        "ym:s:goal663176387visits": 0.0,
+        "ym:s:goal672311557visits": 0.0
+      },
+      "search": {
+        "ym:s:visits": 208.0,
+        "ym:s:users": 202.0,
+        "ym:s:pageviews": 479.0,
+        "ym:s:bounceRate": 27.40384615,
+        "ym:s:pageDepth": 2.30288462,
+        "ym:s:avgVisitDurationSeconds": 214.41346154,
+        "ym:s:goal663176353visits": 86.0,
+        "ym:s:goal663176354visits": 19.0,
+        "ym:s:goal663176387visits": 0.0,
+        "ym:s:goal672311557visits": 0.0
+      }
+    },
+    "last_friday": {
+      "public": {
+        "ym:s:visits": 177.0,
+        "ym:s:users": 160.0,
+        "ym:s:pageviews": 341.0,
+        "ym:s:bounceRate": 29.94350282,
+        "ym:s:pageDepth": 1.92655367,
+        "ym:s:avgVisitDurationSeconds": 210.49717514,
+        "ym:s:goal663176353visits": 59.0,
+        "ym:s:goal663176354visits": 16.0,
+        "ym:s:goal663176387visits": 0.0,
+        "ym:s:goal672311557visits": 0.0
+      },
+      "search": {
+        "ym:s:visits": 143.0,
+        "ym:s:users": 135.0,
+        "ym:s:pageviews": 255.0,
+        "ym:s:bounceRate": 30.76923077,
+        "ym:s:pageDepth": 1.78321678,
+        "ym:s:avgVisitDurationSeconds": 188.23776224,
+        "ym:s:goal663176353visits": 50.0,
+        "ym:s:goal663176354visits": 9.0,
+        "ym:s:goal663176387visits": 0.0,
+        "ym:s:goal672311557visits": 0.0
+      }
+    }
+  },
+  "server_correlation": {
+    "file": "/root/ege-metrika-spike-20261016/followup/access-analysis.json",
+    "result": "Mass HTTP and HeadlessChrome activity coincides in time, but cannot be linked to the Metrica visitor. Nginx shared log lacks hostname and counter identifiers; connection IP is not a reliable visitor identifier.",
+    "historical_checker": "/root/oge-math-solutions-20261010/geometry-final/browser-check-before-tabs.js:35 blocks *mc.yandex* before navigation; current checker does likewise."
+  },
+  "limitations": [
+    "Unique users cannot be added/subtracted across segments or summed across dates.",
+    "Public means not classified technical by the configured segment, not guaranteed human.",
+    "Some dimension rows are hidden; aggregate totals used, missing rows never treated as zero.",
+    "No Metrica Logs export, client IDs or Webvisor playback requested.",
+    "Navigation goals introduced 16 October are not comparable with prior OGE zeros; first full week is 17–23 October."
+  ],
+  "changes": "Only local analysis artifacts; no site, counter, filter, goal, or service changes."
+}

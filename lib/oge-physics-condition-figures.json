@@ -1,0 +1,35 @@
+{
+  "OGEPHYS0B8B06": {
+    "conditionHash": "fbbc4bfcaa5320572fb95f392de6c4f106b87167cd09d1c2bcc0a5f6b2710d02",
+    "placeholder": "<p class=MsoNormal align=center><span></span></p>",
+    "asset": "oge-physics/recovered/OGEPHYS0B8B06-sdamgia.svg",
+    "sha256": "dc3f0a926d4f2f6377b1f277c38bfde37a55ec8fdc44033520c04c1122513513",
+    "width": 230.0275,
+    "height": 261.0315,
+    "displayWidth": 330,
+    "alt": "График охлаждения железа с четырьмя полками",
+    "page": "https://phys-oge.sdamgia.ru/problem?id=28310",
+    "imageURL": "https://phys-oge.sdamgia.ru/get_file?id=77122",
+    "problem": 28310,
+    "provenance": "Решу ОГЭ; первичное происхождение ФИПИ отдельно не подтверждено",
+    "authorization": "Пользователь: «найди их на решку огэ», затем «публикуй»",
+    "reviewedAt": "2026-10-09",
+    "physicsReference": "https://analyzing-testing.netzsch.com/en-AU/know-how/glossary/curie-temperature"
+  },
+  "OGEPHYSDDDA91": {
+    "conditionHash": "629b1e821b418d4d69bf107a1843d20fed3b0f1ddcf52ffd1298f15d3ab93ded",
+    "placeholder": "<p class=MsoNormal align=center></p>",
+    "asset": "oge-physics/recovered/OGEPHYSDDDA91-sdamgia.svg",
+    "sha256": "9e6afaef56ff52844a7dec8dddfffa3e705b1a0bb87d2a8f4685fe8053393561",
+    "width": 202.6463,
+    "height": 133.954,
+    "displayWidth": 410,
+    "alt": "Преломление света в атмосфере: S₁ ниже S₂",
+    "page": "https://phys-oge.sdamgia.ru/problem?id=28327",
+    "imageURL": "https://phys-oge.sdamgia.ru/get_file?id=58658",
+    "problem": 28327,
+    "provenance": "Решу ОГЭ; первичное происхождение ФИПИ отдельно не подтверждено",
+    "authorization": "Пользователь: «найди их на решку огэ», затем «публикуй»",
+    "reviewedAt": "2026-10-09"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "OGEPHYS0D1745": {
+    "kind": "six",
+    "U": 220,
+    "target": 6,
+    "values": [
+      30,
+      30,
+      30,
+      12,
+      12,
+      4
+    ]
+  },
+  "OGEPHYSE3465B": {
+    "kind": "six",
+    "U": 220,
+    "target": 4,
+    "values": [
+      30,
+      30,
+      30,
+      12,
+      12,
+      4
+    ]
+  },
+  "OGEPHYS4E1A68": {
+    "kind": "six",
+    "U": 180,
+    "target": 1,
+    "values": [
+      30,
+      30,
+      30,
+      12,
+      12,
+      4
+    ]
+  },
+  "OGEPHYS8C2504": {
+    "kind": "appliances",
+    "added": false
+  },
+  "OGEPHYS954DB2": {
+    "kind": "appliances",
+    "added": true
+  },
+  "OGEPHYS75F1ED": {
+    "kind": "appliances",
+    "added": true
+  },
+  "OGEPHYSEA5326": {
+    "kind": "unknown-resistance",
+    "U": 220,
+    "R1": 25,
+    "P1": 400
+  },
+  "OGEPHYS0CB850": {
+    "kind": "unknown-resistance",
+    "U": 240,
+    "R1": 9,
+    "P1": 81
+  },
+  "OGEPHYSC87663": {
+    "kind": "five",
+    "U": 200,
+    "target": 4,
+    "values": [
+      10,
+      20,
+      14,
+      12,
+      12
+    ]
+  },
+  "OGEPHYSE23389": {
+    "kind": "five",
+    "U": 200,
+    "target": 3,
+    "values": [
+      10,
+      20,
+      14,
+      12,
+      12
+    ]
+  }
+}

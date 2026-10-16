@@ -1,6 +1,36 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { ogeBank, ogePublicTaskId, ogeSourceTaskId, ogeTopicInfo, ogeTaskCodes, ogeTaskMatchesTopic, ogeTopicStats, ogeCataloguePath, ogePageNumber, normalizeOgeSourceHtml, ogeAssetPaths } = require('../lib/oge-catalog');
+const { ogeBank, ogePublicTaskId, ogeSourceTaskId, ogeTopicInfo, ogeTaskCodes, ogeTaskMatchesTopic, ogeTopicStats, ogeCataloguePath, ogePageNumber, ogeTaskNavigation, normalizeOgeSourceHtml, ogeAssetPaths } = require('../lib/oge-catalog');
+
+test('Продолжение ОГЭ сохраняет выборку и банк на границе серверных страниц', () => {
+  for (const section of ['oge', 'oge-physics']) {
+    // Deliberately non-contiguous IDs model a filtered search, not the whole bank.
+    const selected = Array.from({length: 25}, (_, i) => ({id: ogePublicTaskId((i * 17).toString(16).padStart(6, '0'), section)}));
+    const options = {section, topic: '1.1', query: 'сила & <ток>', added: true};
+    const recovered = [];
+    for (let page = 1; page <= 3; page++) {
+      const links = ogeTaskNavigation(selected, {...options, page});
+      assert.ok(Object.keys(links).length <= 12);
+      for (const [id, next] of Object.entries(links)) {
+        const index = selected.findIndex(task => task.id === id);
+        if (index === selected.length - 1) {assert.equal(next, null); continue;}
+        assert.equal(next.id, selected[index + 1].id);
+        const url = new URL(next.href, 'https://ege-fipi.ru');
+        assert.equal(url.pathname, '/added');
+        assert.equal(url.searchParams.get('section'), section);
+        assert.equal(url.searchParams.get('topic'), '1.1');
+        assert.equal(url.searchParams.get('q'), options.query);
+        assert.equal(Number(url.searchParams.get('page') || 1), Math.floor((index + 1) / 12) + 1);
+        assert.equal(url.hash, '#q' + next.id);
+        assert.ok(!next.href.includes('<'));
+        recovered.push(next.id);
+      }
+    }
+    assert.deepEqual(recovered, selected.slice(1).map(task => task.id));
+  }
+  assert.deepEqual(ogeTaskNavigation([], {topic: 'all'}), {});
+  assert.deepEqual(ogeTaskNavigation([{id: 'ABCDEF'}]), {ABCDEF: null});
+});
 
 const task = (codes, condition = '') => ({ fragment: `<div class="qblock">${condition}</div><div class="task-info-content"><table><tr><td>КЭС:</td><td>${codes.map(code => `<div>${code} Тема</div>`).join('')}</td></tr></table></div>` });
 

@@ -1,0 +1,14 @@
+{
+  "retrieved_at": "2026-10-08T21:43:02.872868+00:00",
+  "path": "/v4/user/227850612/hosts/https%3Aege-fipi.ru%3A443/summary",
+  "params": null,
+  "body": null,
+  "response": {
+    "sqi": 10,
+    "excluded_pages_count": 22,
+    "searchable_pages_count": 3623,
+    "site_problems": {
+      "RECOMMENDATION": 2
+    }
+  }
+}

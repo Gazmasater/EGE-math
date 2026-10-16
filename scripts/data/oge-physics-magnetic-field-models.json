@@ -1,0 +1,150 @@
+{
+  "OGEPHYS262DF5": {
+    "kind": "compass",
+    "answer": "4"
+  },
+  "OGEPHYS3B7716": {
+    "kind": "rotation",
+    "current": 1,
+    "position": [
+      1,
+      0
+    ],
+    "initialNorth": [
+      0,
+      -1
+    ],
+    "angle": 180
+  },
+  "OGEPHYS7E9E20": {
+    "kind": "four-needles",
+    "current": 1,
+    "positions": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "north": [
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "OGEPHYS0B1E53": {
+    "kind": "four-needles",
+    "current": -1,
+    "positions": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "north": [
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "OGEPHYS740893": {
+    "kind": "spring",
+    "on": false
+  },
+  "OGEPHYS585690": {
+    "kind": "spring",
+    "on": true
+  },
+  "OGEPHYS6EDCEB": {
+    "kind": "rheostat",
+    "right": true
+  },
+  "OGEPHYS0A7135": {
+    "kind": "rheostat",
+    "right": false
+  },
+  "OGEPHYSCEC9A6": {
+    "kind": "observations",
+    "evidence": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  "OGEPHYS0E1FED": {
+    "kind": "turns",
+    "length": 1,
+    "initialTurns": 10
+  },
+  "OGEPHYS683EE6": {
+    "kind": "observations",
+    "evidence": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  "OGEPHYS6D6680": {
+    "kind": "observations",
+    "evidence": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  }
+}

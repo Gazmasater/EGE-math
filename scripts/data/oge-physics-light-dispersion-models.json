@@ -1,0 +1,20 @@
+{
+  "OGEPHYSEF8720": {
+    "kind": "shadows",
+    "treeHeight": 2,
+    "treeShadow": 3,
+    "craneShadow": 60
+  },
+  "OGEPHYS293D03": {
+    "kind": "window-brightness"
+  },
+  "OGEPHYSC7BD3B": {
+    "kind": "lunar-twilight"
+  },
+  "OGEPHYS9D6929": {
+    "kind": "prism-dispersion"
+  },
+  "OGEPHYSD91021": {
+    "kind": "spectrograph-defocus"
+  }
+}

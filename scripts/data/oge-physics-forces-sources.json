@@ -1,0 +1,110 @@
+{
+  "OGEPHYSA0C0F4": {
+    "sourceId": "A0C0F4",
+    "sourceHash": "d93602a5437fb75bf7127962d980dfdb9a49e8ae5026c3b86da30fb5e1fbf73c",
+    "file": "oge-physics-1.raw.html",
+    "fipiCondition": "Впишите правильный ответ. На тело действуют три силы, модули которых F₁ = 6 Н, F₂ = 4 Н и F₃ = 12 Н. Силы действуют в одной плоскости. Направления действия сил показаны на рисунке. Чему равен модуль равнодействующей этих трёх сил? Н",
+    "reviewed": true,
+    "reviewedAt": "2026-10-07",
+    "url": "https://phys-oge.sdamgia.ru/problem?id=23868",
+    "match": "variant",
+    "comparison": "Внешняя задача спрашивает направление суммы сил 2, 3 и 6 Н и имеет другую ориентацию F₁ и F₂. Первичный рисунок просмотрен отдельно: 6 Н влево, 4 Н вверх, 12 Н вниз. Проекции −6 и −8 Н дают модуль 10 Н; внешний номер стрелки 4 не переносился.",
+    "expectedAnswer": "10",
+    "images": [
+      {
+        "path": "fipi-assets/oge-physics/docs/B24AFED7DE6AB5BC461219556CCA4F9B/questions/190A226A36AFA61848DB1BE09C9696C8/xs3qstsrc190A226A36AFA61848DB1BE09C9696C8_12_1737720217.png",
+        "width": 189,
+        "height": 168,
+        "sha256": "cdcf3ca5e661687df9fffb812ab69f009ccb6893bed965c190776ede0fca675d",
+        "displayWidth": 420,
+        "annotations": [
+          {
+            "x1": 95,
+            "y1": 57,
+            "x2": 39,
+            "y2": 132,
+            "label": "R",
+            "tx": 34,
+            "ty": 117,
+            "color": "#b05613"
+          }
+        ]
+      }
+    ]
+  },
+  "OGEPHYSA2A1BF": {
+    "sourceId": "A2A1BF",
+    "sourceHash": "77f5c68ec9493f1e044b5aabcb51d51b23701f5e960bea6eda08fef6aede5efa",
+    "file": "oge-physics-3.raw.html",
+    "fipiCondition": "Выберите правильный ответ. Чему равны соответственно цена деления и предел измерения динамометра (см. рисунок)? 1) 1 Н; 4 Н 2) 4 Н; 1 Н 3) 0,5 Н; 4 Н 4) 0,5 Н; 5 Н",
+    "reviewed": true,
+    "reviewedAt": "2026-10-07",
+    "url": "https://phys-oge.sdamgia.ru/problem?id=97",
+    "match": "exact",
+    "comparison": "Первичный и внешний динамометры просмотрены: две половины ньютона между соседними целыми отметками, предел 4 Н. Между 0 и 1 Н два интервала, цена деления 0,5 Н; восемь интервалов всей шкалы подтверждают предел. Верный вариант 3.",
+    "expectedAnswer": "3",
+    "images": [
+      {
+        "path": "fipi-assets/oge-physics/docs/B24AFED7DE6AB5BC461219556CCA4F9B/questions/4919658CE0148840431DB3F77FB92FFC/xs3qstsrc4919658CE0148840431DB3F77FB92FFC_12_1737724095.png",
+        "width": 72,
+        "height": 253,
+        "sha256": "d86fec2461ce5275f9028326aee08f18d7c0f1b07da964158b420a1ee36d4a96",
+        "displayWidth": 150
+      }
+    ]
+  },
+  "OGEPHYS3EC256": {
+    "sourceId": "3EC256",
+    "sourceHash": "8ade1b86e06f2959abd3744b89975714f09e3e51ec45a15f1d49221012e15daa",
+    "file": "oge-physics-5.raw.html",
+    "fipiCondition": "Выберите правильный ответ. Чему равны соответственно цена деления и предел измерения динамометра (см. рисунок)? 1) 2 Н; 8 Н 2) 8 Н; 1 Н 3) 1 Н; 8 Н 4) 0,5 Н; 4 Н",
+    "reviewed": true,
+    "reviewedAt": "2026-10-07",
+    "url": "https://phys-oge.sdamgia.ru/problem?id=97",
+    "match": "variant",
+    "comparison": "Внешняя шкала заканчивается на 4 Н, а первичная — на 8 Н. Рисунки просмотрены отдельно: в первичной между 0 и 2 Н два промежутка, поэтому цена деления 1 Н. Предел 8 Н и первичный набор вариантов дают ответ 3; значения внешней шкалы не переносились.",
+    "expectedAnswer": "3",
+    "images": [
+      {
+        "path": "fipi-assets/oge-physics/docs/B24AFED7DE6AB5BC461219556CCA4F9B/questions/8EDAC6C50970B505429F0A3E61F87D3C/xs3qstsrc8EDAC6C50970B505429F0A3E61F87D3C_12_1737723807.png",
+        "width": 75,
+        "height": 263,
+        "sha256": "b94eb32d3838059a92fcc5fd5e368496b16360bdd17bdf605274ea70c5a16dba",
+        "displayWidth": 150
+      }
+    ]
+  },
+  "OGEPHYS3B27CC": {
+    "sourceId": "3B27CC",
+    "sourceHash": "52da8828d7bebafa306e6343650518caf62a2308a232bb2155c5ba16a4e7dc2a",
+    "file": "oge-physics-7.raw.html",
+    "fipiCondition": "Впишите правильный ответ. На тело действуют три силы, модули которых F₁ = 2 Н, F₂ = 3 Н и F₃ = 6 Н. Силы действуют в одной плоскости. Направления действия сил показаны на рисунке. Чему равен модуль равнодействующей этих трёх сил? Н",
+    "reviewed": true,
+    "reviewedAt": "2026-10-07",
+    "url": "https://phys-oge.sdamgia.ru/problem?id=23868",
+    "match": "variant",
+    "comparison": "Совпадают силы и направления: F₁ = 2 Н вверх, F₂ = 3 Н вправо, F₃ = 6 Н вниз. Просмотрены обе внешние схемы, проекции 3 и −4 Н совпадают. Первичный вопрос требует модуль 5 Н, внешний — номер стрелки направления 4; форматы ответа различены.",
+    "expectedAnswer": "5",
+    "images": [
+      {
+        "path": "fipi-assets/oge-physics/docs/B24AFED7DE6AB5BC461219556CCA4F9B/questions/AEA643B267D0898B4A92EDB269F91142/xs3qstsrcAEA643B267D0898B4A92EDB269F91142_12_1737721233.png",
+        "width": 189,
+        "height": 168,
+        "sha256": "2f9dfc397e60f375bc6315bcc64e781d9d0ba7b5e6684e7d1e0b19fc0bf06359",
+        "displayWidth": 420,
+        "annotations": [
+          {
+            "x1": 95,
+            "y1": 57,
+            "x2": 151,
+            "y2": 132,
+            "label": "R",
+            "tx": 155,
+            "ty": 116,
+            "color": "#b05613"
+          }
+        ]
+      }
+    ]
+  }
+}

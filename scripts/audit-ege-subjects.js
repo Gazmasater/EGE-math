@@ -33,7 +33,18 @@ async function run() {
   for (const [subject, name, source] of [['math', 'математике', math], ['physics', 'физике', physics]]) {
     const route = '/ege/' + subject, html = await get(route), data = graph(html);
     assert.equal((html.match(/<h1\b/g) || []).length, 1, route + ': H1');
-    assert.ok(html.includes(`>Решение задач ЕГЭ по ${name}</h1>`));
+    assert.ok(html.includes(subject === 'math' ? '>ЕГЭ по математике: профильный уровень</h1>' : '>ЕГЭ по физике: задания и подготовка</h1>'));
+    assert.ok(html.includes(`Подготовка к ${subject === 'math' ? 'профильному ЕГЭ по математике' : 'ЕГЭ по физике'}: ${source.size} заданий ФИПИ`));
+    assert.equal((html.match(/id="study-faq-title"/g) || []).length, 1, route + ': one subject FAQ');
+    assert.ok(html.includes('id="preparation"'), route + ': preparation route is server rendered');
+    assert.ok(html.includes('https://fipi.ru/ege/demoversii-specifikacii-kodifikatory'), route + ': official exam materials');
+    if (subject === 'physics') assert.ok(html.includes('ЕГЭ по физике не делится на базовый и профильный уровни'));
+    const preparation = html.match(/<section class="subject-section subject-preparation"[\s\S]*?<\/section>/)?.[0];
+    assert.ok(preparation, route + ': preparation section');
+    for (const match of preparation.matchAll(/href="([^"]+)"/g)) {
+      const destination = await get(match[1].split('#')[0]);
+      assert.ok(idsIn(destination).length > 0, match[1] + ': preparation link has tasks');
+    }
     assert.ok(html.includes(`rel="canonical" href="${canonical + route}"`));
     assert.ok(html.includes('name="robots" content="index,follow"'));
     assert.equal((html.match(/ym\(112561663, 'init'/g) || []).length, 1);

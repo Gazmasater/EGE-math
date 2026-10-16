@@ -1,0 +1,386 @@
+{
+  "retrieved_at": "2026-10-08T21:44:14.016184+00:00",
+  "path": "/v4/user/227850612/hosts/https%3Aege-fipi.ru%3A443/query-analytics/list",
+  "params": null,
+  "body": {
+    "limit": 500,
+    "offset": 0,
+    "text_indicator": "QUERY",
+    "region_ids": [
+      225
+    ],
+    "device_type_indicator": "ALL",
+    "search_location": "WEB_LOCATION",
+    "filters": {
+      "text_filters": [
+        {
+          "text_indicator": "QUERY",
+          "operation": "TEXT_MATCH",
+          "value": "фипи егэ физика"
+        }
+      ]
+    }
+  },
+  "response": {
+    "count": 1,
+    "text_indicator_to_statistics": [
+      {
+        "text_indicator": {
+          "type": "QUERY",
+          "value": "фипи егэ физика"
+        },
+        "popular_complementary_indicator": {
+          "type": "URL",
+          "value": "/physics"
+        },
+        "statistics": [
+          {
+            "date": "2026-09-20",
+            "field": "IMPRESSIONS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-20",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-20",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-20",
+            "field": "DEMAND",
+            "value": 87.0
+          },
+          {
+            "date": "2026-09-21",
+            "field": "IMPRESSIONS",
+            "value": 2.0
+          },
+          {
+            "date": "2026-09-21",
+            "field": "POSITION",
+            "value": 10.0
+          },
+          {
+            "date": "2026-09-21",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-21",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-21",
+            "field": "DEMAND",
+            "value": 182.0
+          },
+          {
+            "date": "2026-09-22",
+            "field": "IMPRESSIONS",
+            "value": 37.0
+          },
+          {
+            "date": "2026-09-22",
+            "field": "POSITION",
+            "value": 7.7
+          },
+          {
+            "date": "2026-09-22",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-22",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-22",
+            "field": "DEMAND",
+            "value": 138.0
+          },
+          {
+            "date": "2026-09-23",
+            "field": "IMPRESSIONS",
+            "value": 50.0
+          },
+          {
+            "date": "2026-09-23",
+            "field": "POSITION",
+            "value": 7.7
+          },
+          {
+            "date": "2026-09-23",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-23",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-23",
+            "field": "DEMAND",
+            "value": 142.0
+          },
+          {
+            "date": "2026-09-24",
+            "field": "IMPRESSIONS",
+            "value": 100.0
+          },
+          {
+            "date": "2026-09-24",
+            "field": "POSITION",
+            "value": 7.1
+          },
+          {
+            "date": "2026-09-24",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-24",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-24",
+            "field": "DEMAND",
+            "value": 140.0
+          },
+          {
+            "date": "2026-09-25",
+            "field": "IMPRESSIONS",
+            "value": 118.0
+          },
+          {
+            "date": "2026-09-25",
+            "field": "POSITION",
+            "value": 6.7
+          },
+          {
+            "date": "2026-09-25",
+            "field": "CLICKS",
+            "value": 1.0
+          },
+          {
+            "date": "2026-09-25",
+            "field": "CTR",
+            "value": 0.8
+          },
+          {
+            "date": "2026-09-25",
+            "field": "DEMAND",
+            "value": 121.0
+          },
+          {
+            "date": "2026-09-26",
+            "field": "IMPRESSIONS",
+            "value": 84.0
+          },
+          {
+            "date": "2026-09-26",
+            "field": "POSITION",
+            "value": 6.0
+          },
+          {
+            "date": "2026-09-26",
+            "field": "CLICKS",
+            "value": 1.0
+          },
+          {
+            "date": "2026-09-26",
+            "field": "CTR",
+            "value": 1.1
+          },
+          {
+            "date": "2026-09-26",
+            "field": "DEMAND",
+            "value": 86.0
+          },
+          {
+            "date": "2026-09-27",
+            "field": "IMPRESSIONS",
+            "value": 128.0
+          },
+          {
+            "date": "2026-09-27",
+            "field": "POSITION",
+            "value": 6.7
+          },
+          {
+            "date": "2026-09-27",
+            "field": "CLICKS",
+            "value": 1.0
+          },
+          {
+            "date": "2026-09-27",
+            "field": "CTR",
+            "value": 0.7
+          },
+          {
+            "date": "2026-09-27",
+            "field": "DEMAND",
+            "value": 129.0
+          },
+          {
+            "date": "2026-09-28",
+            "field": "IMPRESSIONS",
+            "value": 144.0
+          },
+          {
+            "date": "2026-09-28",
+            "field": "POSITION",
+            "value": 6.4
+          },
+          {
+            "date": "2026-09-28",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-28",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-09-28",
+            "field": "DEMAND",
+            "value": 145.0
+          },
+          {
+            "date": "2026-09-29",
+            "field": "IMPRESSIONS",
+            "value": 156.0
+          },
+          {
+            "date": "2026-09-29",
+            "field": "POSITION",
+            "value": 6.7
+          },
+          {
+            "date": "2026-09-29",
+            "field": "CLICKS",
+            "value": 1.0
+          },
+          {
+            "date": "2026-09-29",
+            "field": "CTR",
+            "value": 0.6
+          },
+          {
+            "date": "2026-09-29",
+            "field": "DEMAND",
+            "value": 164.0
+          },
+          {
+            "date": "2026-09-30",
+            "field": "IMPRESSIONS",
+            "value": 156.0
+          },
+          {
+            "date": "2026-09-30",
+            "field": "POSITION",
+            "value": 6.8
+          },
+          {
+            "date": "2026-09-30",
+            "field": "CLICKS",
+            "value": 2.0
+          },
+          {
+            "date": "2026-09-30",
+            "field": "CTR",
+            "value": 1.2
+          },
+          {
+            "date": "2026-09-30",
+            "field": "DEMAND",
+            "value": 159.0
+          },
+          {
+            "date": "2026-10-01",
+            "field": "IMPRESSIONS",
+            "value": 135.0
+          },
+          {
+            "date": "2026-10-01",
+            "field": "POSITION",
+            "value": 6.6
+          },
+          {
+            "date": "2026-10-01",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-01",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-01",
+            "field": "DEMAND",
+            "value": 143.0
+          },
+          {
+            "date": "2026-10-02",
+            "field": "IMPRESSIONS",
+            "value": 81.0
+          },
+          {
+            "date": "2026-10-02",
+            "field": "POSITION",
+            "value": 7.2
+          },
+          {
+            "date": "2026-10-02",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-02",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-02",
+            "field": "DEMAND",
+            "value": 91.0
+          },
+          {
+            "date": "2026-10-03",
+            "field": "IMPRESSIONS",
+            "value": 77.0
+          },
+          {
+            "date": "2026-10-03",
+            "field": "POSITION",
+            "value": 7.8
+          },
+          {
+            "date": "2026-10-03",
+            "field": "CLICKS",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-03",
+            "field": "CTR",
+            "value": 0.0
+          },
+          {
+            "date": "2026-10-03",
+            "field": "DEMAND",
+            "value": 82.0
+          }
+        ]
+      }
+    ]
+  }
+}

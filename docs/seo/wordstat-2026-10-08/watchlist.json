@@ -1,0 +1,454 @@
+[
+  {
+    "phrase": "давление твердых тел физика огэ",
+    "broad_shows": 19,
+    "seeds": [
+      "давление огэ физика"
+    ],
+    "exam": "ОГЭ",
+    "subject": "Физика",
+    "cluster": "Давление",
+    "target_url": "https://ege-fipi.ru/oge-physics?topic=1.21",
+    "alternative_url": "",
+    "note": "",
+    "observed_shows_values": [
+      19
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"давление твердых тел физика огэ\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643262906,
+    "measured_at": "2026-10-08T21:22:16.869513+00:00",
+    "broad_report_ids": [
+      1643246193
+    ],
+    "landing_title": "Давление твёрдого тела. Формула для вычисления давления твёрдого тела. Давление газа. Атмосферное давление. Гидростатическое давление внутри жидкости. Формула для вычисления давления внутри жидкости: — ОГЭ по физике",
+    "content_status": "Решения 70/70; условия доступны",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "задача егэ физика закон сохранения энергии",
+    "broad_shows": 27,
+    "seeds": [
+      "законы сохранения егэ"
+    ],
+    "exam": "ЕГЭ",
+    "subject": "Физика",
+    "cluster": "Законы сохранения",
+    "target_url": "https://ege-fipi.ru/physics?topic=conservation",
+    "alternative_url": "https://ege-fipi.ru/physics/part-2?topic=1.4",
+    "note": "",
+    "observed_shows_values": [
+      27
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"задача егэ физика закон сохранения энергии\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643256878,
+    "measured_at": "2026-10-08T21:19:41.603886+00:00",
+    "broad_report_ids": [
+      1643245442
+    ],
+    "landing_title": "Законы сохранения в механике — первая часть ЕГЭ по физике",
+    "content_status": "Задания с опубликованными решениями",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "задачи прикладного содержания егэ",
+    "broad_shows": 209,
+    "seeds": [
+      "задачи прикладного содержания егэ"
+    ],
+    "exam": "ЕГЭ",
+    "subject": "Математика",
+    "cluster": "Прикладные задачи",
+    "target_url": "https://ege-fipi.ru/?topic=applied",
+    "alternative_url": "",
+    "note": "",
+    "observed_shows_values": [
+      209
+    ],
+    "equivalent_variants": [
+      "егэ задачи прикладного содержания"
+    ],
+    "quoted_query": "\"задачи прикладного содержания егэ\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643255761,
+    "measured_at": "2026-10-08T21:19:07.712518+00:00",
+    "broad_report_ids": [
+      1643245442
+    ],
+    "landing_title": "Задачи с прикладным содержанием — первая часть ЕГЭ по математике",
+    "content_status": "Задания с опубликованными решениями",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "закон архимеда огэ",
+    "broad_shows": 25,
+    "seeds": [
+      "закон архимеда огэ"
+    ],
+    "exam": "ОГЭ",
+    "subject": "Физика",
+    "cluster": "Закон Архимеда",
+    "target_url": "https://ege-fipi.ru/oge-physics?topic=1.23",
+    "alternative_url": "",
+    "note": "",
+    "observed_shows_values": [
+      25
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"закон архимеда огэ\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643262906,
+    "measured_at": "2026-10-08T21:22:16.869513+00:00",
+    "broad_report_ids": [
+      1643246193
+    ],
+    "landing_title": "Закон Архимеда. Формула для определения выталкивающей силы, действующей на тело, погружённое в жидкость или газ. Условие плавания тела. Плавание судов и воздухоплавание — ОГЭ по физике",
+    "content_status": "Решения 68/68; условия доступны",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "закон ома огэ",
+    "broad_shows": 28,
+    "seeds": [
+      "закон ома огэ"
+    ],
+    "exam": "ОГЭ",
+    "subject": "Физика",
+    "cluster": "Закон Ома",
+    "target_url": "https://ege-fipi.ru/oge-physics?topic=3.8",
+    "alternative_url": "",
+    "note": "Не обещать решения всех задач; доступность проверять перед продвижением",
+    "observed_shows_values": [
+      28
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"закон ома огэ\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643263143,
+    "measured_at": "2026-10-08T21:22:26.603504+00:00",
+    "broad_report_ids": [
+      1643246193
+    ],
+    "landing_title": "Закон Ома для участка электрической цепи — ОГЭ по физике",
+    "content_status": "Решения 11/60; условия доступны",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "законы сохранения егэ",
+    "broad_shows": 567,
+    "seeds": [
+      "законы сохранения егэ"
+    ],
+    "exam": "ЕГЭ",
+    "subject": "Физика",
+    "cluster": "Законы сохранения",
+    "target_url": "https://ege-fipi.ru/physics?topic=conservation",
+    "alternative_url": "https://ege-fipi.ru/physics/part-2?topic=1.4",
+    "note": "",
+    "observed_shows_values": [
+      567
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"законы сохранения егэ\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643256878,
+    "measured_at": "2026-10-08T21:19:41.603886+00:00",
+    "broad_report_ids": [
+      1643245442
+    ],
+    "landing_title": "Законы сохранения в механике — первая часть ЕГЭ по физике",
+    "content_status": "Задания с опубликованными решениями",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "законы сохранения егэ задачи",
+    "broad_shows": 119,
+    "seeds": [
+      "законы сохранения егэ"
+    ],
+    "exam": "ЕГЭ",
+    "subject": "Физика",
+    "cluster": "Законы сохранения",
+    "target_url": "https://ege-fipi.ru/physics?topic=conservation",
+    "alternative_url": "https://ege-fipi.ru/physics/part-2?topic=1.4",
+    "note": "",
+    "observed_shows_values": [
+      119
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"законы сохранения егэ задачи\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643256878,
+    "measured_at": "2026-10-08T21:19:41.603886+00:00",
+    "broad_report_ids": [
+      1643245442
+    ],
+    "landing_title": "Законы сохранения в механике — первая часть ЕГЭ по физике",
+    "content_status": "Задания с опубликованными решениями",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "найти подготовка егэ по математике",
+    "broad_shows": 6320,
+    "seeds": [
+      "подготовка егэ математика"
+    ],
+    "exam": "ЕГЭ",
+    "subject": "Математика",
+    "cluster": "Общий банк",
+    "target_url": "https://ege-fipi.ru/ege/math",
+    "alternative_url": "",
+    "note": "",
+    "observed_shows_values": [
+      6320
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"найти подготовка егэ по математике\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643255133,
+    "measured_at": "2026-10-08T21:18:43.316918+00:00",
+    "broad_report_ids": [
+      1643242504
+    ],
+    "landing_title": "Решение задач ЕГЭ по математике — ФИПИ, ответы и разборы",
+    "content_status": "Задания с опубликованными решениями",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "огэ треугольник найти угол",
+    "broad_shows": 4874,
+    "seeds": [
+      "треугольники огэ"
+    ],
+    "exam": "ОГЭ",
+    "subject": "Математика",
+    "cluster": "Треугольники",
+    "target_url": "https://ege-fipi.ru/oge?topic=7.2",
+    "alternative_url": "",
+    "note": "Не обещать ответы и решения до их публикации",
+    "observed_shows_values": [
+      4874
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"огэ треугольник найти угол\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643262267,
+    "measured_at": "2026-10-08T21:21:56.767209+00:00",
+    "broad_report_ids": [
+      1643245655
+    ],
+    "landing_title": "Треугольник — ОГЭ по математике",
+    "content_status": "Решения 0/632; условия доступны",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "подготовка к егэ по математике ответы",
+    "broad_shows": 1466,
+    "seeds": [
+      "подготовка егэ математика"
+    ],
+    "exam": "ЕГЭ",
+    "subject": "Математика",
+    "cluster": "Общий банк",
+    "target_url": "https://ege-fipi.ru/ege/math",
+    "alternative_url": "",
+    "note": "",
+    "observed_shows_values": [
+      1466
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"подготовка к егэ по математике ответы\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643255322,
+    "measured_at": "2026-10-08T21:18:51.372793+00:00",
+    "broad_report_ids": [
+      1643242504
+    ],
+    "landing_title": "Решение задач ЕГЭ по математике — ФИПИ, ответы и разборы",
+    "content_status": "Задания с опубликованными решениями",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "подготовка огэ математика класс",
+    "broad_shows": 17797,
+    "seeds": [
+      "подготовка огэ математика"
+    ],
+    "exam": "ОГЭ",
+    "subject": "Математика",
+    "cluster": "Общий банк",
+    "target_url": "https://ege-fipi.ru/oge",
+    "alternative_url": "",
+    "note": "Не обещать ответы и решения до их публикации",
+    "observed_shows_values": [
+      17797
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"подготовка огэ математика класс\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643260265,
+    "measured_at": "2026-10-08T21:21:06.498213+00:00",
+    "broad_report_ids": [
+      1643242504
+    ],
+    "landing_title": "ОГЭ по математике — банк заданий ФИПИ",
+    "content_status": "Решения 0/3884; условия доступны",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "подготовка огэ физика класс",
+    "broad_shows": 2334,
+    "seeds": [
+      "подготовка огэ физика"
+    ],
+    "exam": "ОГЭ",
+    "subject": "Физика",
+    "cluster": "Общий банк",
+    "target_url": "https://ege-fipi.ru/oge-physics",
+    "alternative_url": "",
+    "note": "Не обещать решения всех задач; доступность проверять перед продвижением",
+    "observed_shows_values": [
+      2334
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"подготовка огэ физика класс\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643263441,
+    "measured_at": "2026-10-08T21:22:36.250171+00:00",
+    "broad_report_ids": [
+      1643242504
+    ],
+    "landing_title": "ОГЭ по физике — банк заданий ФИПИ",
+    "content_status": "Решения 971/1506; условия доступны",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "радиоактивность огэ",
+    "broad_shows": 72,
+    "seeds": [
+      "радиоактивность огэ"
+    ],
+    "exam": "ОГЭ",
+    "subject": "Физика",
+    "cluster": "Радиоактивность",
+    "target_url": "https://ege-fipi.ru/oge-physics?topic=4.1",
+    "alternative_url": "",
+    "note": "Не обещать решения всех задач; доступность проверять перед продвижением",
+    "observed_shows_values": [
+      72
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"радиоактивность огэ\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643263693,
+    "measured_at": "2026-10-08T21:22:45.349144+00:00",
+    "broad_report_ids": [
+      1643246193
+    ],
+    "landing_title": "Радиоактивность. Альфа-, бета-, гамма-излучения. Реакции альфа- и бета-распада — ОГЭ по физике",
+    "content_status": "Решения 1/26; условия доступны",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "термодинамика егэ задания",
+    "broad_shows": 96,
+    "seeds": [
+      "термодинамика егэ"
+    ],
+    "exam": "ЕГЭ",
+    "subject": "Физика",
+    "cluster": "Термодинамика",
+    "target_url": "https://ege-fipi.ru/physics?topic=thermodynamics",
+    "alternative_url": "https://ege-fipi.ru/physics/part-2?topic=2.2",
+    "note": "",
+    "observed_shows_values": [
+      96
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"термодинамика егэ задания\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643258921,
+    "measured_at": "2026-10-08T21:20:36.336814+00:00",
+    "broad_report_ids": [
+      1643245442
+    ],
+    "landing_title": "Термодинамика — первая часть ЕГЭ по физике",
+    "content_status": "Задания с опубликованными решениями",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  },
+  {
+    "phrase": "физика егэ первая часть решать",
+    "broad_shows": 211,
+    "seeds": [
+      "егэ физика первая часть"
+    ],
+    "exam": "ЕГЭ",
+    "subject": "Физика",
+    "cluster": "Первая часть",
+    "target_url": "https://ege-fipi.ru/physics?topic=all",
+    "alternative_url": "",
+    "note": "",
+    "observed_shows_values": [
+      211
+    ],
+    "equivalent_variants": [],
+    "quoted_query": "\"физика егэ первая часть решать\"",
+    "quoted_shows": 0,
+    "quoted_report_id": 1643258470,
+    "measured_at": "2026-10-08T21:20:24.645481+00:00",
+    "broad_report_ids": [
+      1643242504
+    ],
+    "landing_title": "Все задания первой части — первая часть ЕГЭ по физике",
+    "content_status": "Задания с опубликованными решениями",
+    "ranking_status": "Позиции не проверены",
+    "ranking_source": "",
+    "ranking_reported_at": "",
+    "priority": "Наблюдение"
+  }
+]

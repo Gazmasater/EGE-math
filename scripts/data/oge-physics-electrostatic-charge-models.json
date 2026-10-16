@@ -1,0 +1,191 @@
+{
+  "8FC943": {
+    "kind": "transfer",
+    "glass": false,
+    "labels": [
+      "Количество электронов на палочке",
+      "Количество протонов на шерсти"
+    ]
+  },
+  "F6B2F5": {
+    "kind": "transfer",
+    "glass": true,
+    "labels": [
+      "Количество электронов на палочке",
+      "Количество протонов в шёлке"
+    ]
+  },
+  "F24477": {
+    "kind": "transfer",
+    "glass": true,
+    "labels": [
+      "Количество электронов на шёлке",
+      "Количество протонов на палочке"
+    ]
+  },
+  "5546B6": {
+    "kind": "transfer",
+    "glass": true,
+    "labels": [
+      "Количество протонов на шёлке",
+      "Количество протонов на палочке"
+    ]
+  },
+  "759419": {
+    "kind": "transfer",
+    "glass": false,
+    "labels": [
+      "Количество протонов на палочке",
+      "Количество электронов на шерсти"
+    ]
+  },
+  "E1D8A9": {
+    "kind": "transfer",
+    "glass": false,
+    "labels": [
+      "Количество электронов на палочке",
+      "Количество протонов на палочке"
+    ]
+  },
+  "493DC1": {
+    "kind": "transfer",
+    "glass": true,
+    "labels": [
+      "Количество электронов на шёлке",
+      "Количество электронов на палочке"
+    ]
+  },
+  "26733B": {
+    "kind": "transfer",
+    "glass": false,
+    "labels": [
+      "Количество электронов на шерсти",
+      "Количество электронов на палочке"
+    ]
+  },
+  "4FCE0A": {
+    "kind": "ion",
+    "positive": true
+  },
+  "60785D": {
+    "kind": "ion",
+    "positive": false
+  },
+  "4D1B4F": {
+    "kind": "influence-fill",
+    "negative": true,
+    "metal": false,
+    "fire": true
+  },
+  "70A950": {
+    "kind": "influence-fill",
+    "negative": true,
+    "metal": false,
+    "fire": false
+  },
+  "E1B4C5": {
+    "kind": "influence-fill",
+    "negative": false,
+    "metal": false,
+    "fire": false
+  },
+  "6678F9": {
+    "kind": "influence-fill",
+    "negative": false,
+    "metal": true,
+    "fire": false
+  },
+  "914B83": {
+    "kind": "influence-fill",
+    "negative": true,
+    "metal": true,
+    "fire": false
+  },
+  "16A317": {
+    "kind": "repulsion"
+  },
+  "F0DEFD": {
+    "kind": "neutral-ambiguity",
+    "ball": true,
+    "positive": true
+  },
+  "0C8CA2": {
+    "kind": "neutral-ambiguity",
+    "ball": false,
+    "positive": false
+  },
+  "5DC6C0": {
+    "kind": "neutral-ambiguity",
+    "ball": true,
+    "positive": false
+  },
+  "F2890F": {
+    "kind": "influence-choice",
+    "pepper": false,
+    "foil": false,
+    "full": true
+  },
+  "DAADD5": {
+    "kind": "influence-choice",
+    "pepper": false,
+    "foil": false,
+    "full": true
+  },
+  "D8BABD": {
+    "kind": "influence-choice",
+    "pepper": false,
+    "foil": false,
+    "full": false
+  },
+  "56AE1C": {
+    "kind": "influence-choice",
+    "pepper": true,
+    "foil": false,
+    "full": false
+  },
+  "586E90": {
+    "kind": "influence-choice",
+    "pepper": false,
+    "foil": true,
+    "full": false
+  },
+  "6263AF": {
+    "kind": "replace-rod"
+  },
+  "3030B7": {
+    "kind": "three-experiments"
+  },
+  "1C7467": {
+    "kind": "three-experiments"
+  },
+  "32F9E2": {
+    "kind": "four-experiments"
+  },
+  "937A61": {
+    "kind": "four-experiments"
+  },
+  "40713A": {
+    "kind": "four-experiments"
+  },
+  "574AF4": {
+    "kind": "two-experiments",
+    "cloths": true
+  },
+  "4E5E17": {
+    "kind": "two-experiments",
+    "cloths": false
+  },
+  "409AD7": {
+    "kind": "two-experiments",
+    "cloths": false
+  },
+  "185676": {
+    "kind": "electroscope-neutral"
+  },
+  "6D2455": {
+    "kind": "grounding"
+  },
+  "C0BFEE": {
+    "kind": "insulation"
+  }
+}

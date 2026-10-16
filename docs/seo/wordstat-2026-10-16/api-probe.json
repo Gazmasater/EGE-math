@@ -1,0 +1,9 @@
+{
+  "time": "2026-10-16T19:51:15.685672+00:00",
+  "method": "GetWordstatReportList",
+  "response": {
+    "error_detail": "",
+    "error_code": 509,
+    "error_str": "Метод недоступен в данной версии API"
+  }
+}

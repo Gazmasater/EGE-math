@@ -1,0 +1,120 @@
+{
+  "OGEPHYSCE6BF0": {
+    "kind": "sun",
+    "height": 55,
+    "angle": 35
+  },
+  "OGEPHYS85CE12": {
+    "kind": "sun",
+    "height": 45,
+    "angle": 45
+  },
+  "OGEPHYS5C99C3": {
+    "kind": "sun",
+    "height": 50,
+    "angle": 40
+  },
+  "OGEPHYSD27B09": {
+    "kind": "between",
+    "phi": 150,
+    "asked": "surface"
+  },
+  "OGEPHYS9D8428": {
+    "kind": "between",
+    "phi": 140,
+    "asked": "reflection"
+  },
+  "OGEPHYS307DEF": {
+    "kind": "between",
+    "phi": 90,
+    "asked": "incidence"
+  },
+  "OGEPHYS133A7E": {
+    "kind": "tilted-sun",
+    "height": 50
+  },
+  "OGEPHYSE0620F": {
+    "kind": "scale",
+    "angle": 15,
+    "choices": [
+      10,
+      15,
+      75,
+      30
+    ]
+  },
+  "OGEPHYSEB7E14": {
+    "kind": "scale",
+    "angle": 30,
+    "choices": [
+      85,
+      60,
+      30,
+      20
+    ]
+  },
+  "OGEPHYSBE4FE5": {
+    "kind": "scale",
+    "angle": 70,
+    "choices": [
+      20,
+      40,
+      50,
+      70
+    ]
+  },
+  "OGEPHYS33A860": {
+    "kind": "scale",
+    "angle": 60,
+    "choices": [
+      30,
+      35,
+      55,
+      60
+    ]
+  },
+  "OGEPHYS162BB8": {
+    "kind": "distance",
+    "value": 10
+  },
+  "OGEPHYS58CD38": {
+    "kind": "image-distance",
+    "value": 6
+  },
+  "OGEPHYS8846A6": {
+    "kind": "closer",
+    "value": 5
+  },
+  "OGEPHYS35F03B": {
+    "kind": "farther",
+    "value": 4
+  },
+  "OGEPHYS7E472C": {
+    "kind": "grow-factor",
+    "value": 4
+  },
+  "OGEPHYSFCB795": {
+    "kind": "shrink-factor",
+    "value": 2
+  },
+  "OGEPHYSDF7018": {
+    "kind": "changes",
+    "away": true
+  },
+  "OGEPHYS20565D": {
+    "kind": "changes",
+    "away": false
+  },
+  "OGEPHYS6C8AC1": {
+    "kind": "arrow"
+  },
+  "OGEPHYSD17B9E": {
+    "kind": "puddle"
+  },
+  "OGEPHYS576395": {
+    "kind": "landscape"
+  },
+  "OGEPHYS370A68": {
+    "kind": "reciprocal"
+  }
+}

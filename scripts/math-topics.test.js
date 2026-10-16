@@ -8,7 +8,7 @@ const types = require('../lib/math-task-types');
 const catalog = readMathematicsCatalog();
 const root = path.resolve(__dirname, '..');
 const source = fs.readFileSync(path.join(root, 'server.js'), 'utf8');
-const context = {...types, normalizeTaskId: value => String(value).trim().toUpperCase()};
+const context = {...types, sourceEntriesCache: new Map(), mathStatsCache: new Map(), normalizeTaskId: value => String(value).trim().toUpperCase()};
 vm.createContext(context);
 vm.runInContext(
   source.slice(source.indexOf('const MATH_TOPICS ='), source.indexOf('const YANDEX_METRIKA_HEAD ='))

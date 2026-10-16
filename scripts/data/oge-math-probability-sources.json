@@ -1,0 +1,3880 @@
+{
+  "0C154A": {
+    "sourceId": "0C154A",
+    "sourceFile": "oge-24.raw.html",
+    "sourceHash": "d07f76fefb13ae3056c8b9432715ff6faf34a2aca7952d2df05ca7de0c4121ec",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0295A8EE4172B09747223FC7727553F1/innerimg0.gif",
+        "sha256": "f5e390e43d30805eb81348436ed7147e84748efb3af2010cd249d7ecdf8c6212",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0295A8EE4172B09747223FC7727553F1/innerimg1.gif",
+        "sha256": "5e3478f3add971efe1714f54714688cfcb5c5b27c1951ab977993a0e7161e089",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0295A8EE4172B09747223FC7727553F1/innerimg2.gif",
+        "sha256": "dcc4db2c4d6e54fa532fa11eec1d11dedfa6884d781e0ca701922db201dea4e5",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0295A8EE4172B09747223FC7727553F1/innerimg3.gif",
+        "sha256": "2694e2a9a6f65bbf71b788e95da0d47dda535300cbd310445c7a0379e298a8c6",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,6",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует A ∪ (не B), собственный ответ 0,6; внешний №472222 требует A ∪ (не B), его ответ 0,6. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "A_or_notB",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      }
+    ]
+  },
+  "FFB4F8": {
+    "sourceId": "FFB4F8",
+    "sourceFile": "oge-24.raw.html",
+    "sourceHash": "339b4214a5033ddf76d0463e4411a3fd627348413447c681ba703936f2e612ec",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/11F4102AEFB0B00E49E362725495FE9D/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/11F4102AEFB0B00E49E362725495FE9D/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/11F4102AEFB0B00E49E362725495FE9D/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/11F4102AEFB0B00E49E362725495FE9D/innerimg3.gif",
+        "sha256": "6605a4de3f4a1dc4a63ca18feb4cda61a4b02d9f9833316c6e5c567ae753fbdd",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,7",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует A, собственный ответ 0,7; внешний №472223 требует A, его ответ 0,7. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "A",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      }
+    ]
+  },
+  "8A64F1": {
+    "sourceId": "8A64F1",
+    "sourceFile": "oge-25.raw.html",
+    "sourceHash": "f31c0f1c446964caa8d4e4d13055634a4af5415589af6db2a8708b4a586c749d",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/1F5D903F2F1C902C452F82B4F6E7C78B/innerimg0.gif",
+        "sha256": "f5e390e43d30805eb81348436ed7147e84748efb3af2010cd249d7ecdf8c6212",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/1F5D903F2F1C902C452F82B4F6E7C78B/innerimg1.gif",
+        "sha256": "5e3478f3add971efe1714f54714688cfcb5c5b27c1951ab977993a0e7161e089",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/1F5D903F2F1C902C452F82B4F6E7C78B/innerimg2.gif",
+        "sha256": "1f5ed65fc32fa34802955e2e7fe77714a4a99b71bfaa4383f6909cbfcf146412",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/1F5D903F2F1C902C452F82B4F6E7C78B/innerimg3.gif",
+        "sha256": "b8aac02fb5bcd8cc99ae0720e235e50e61e69565ac3b5ca3406cd321f6a51e7b",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,6",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+    "externalSnapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует A ∪ B, собственный ответ 0,6; внешний №472228 требует A ∪ B, его ответ 0,6. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+      "snapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "union",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      }
+    ]
+  },
+  "921C71": {
+    "sourceId": "921C71",
+    "sourceFile": "oge-26.raw.html",
+    "sourceHash": "c2374d7b9f2b38cfa7ecaec53cc1b950c413f8fde2af1ea48a8527666a9f8838",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3B556ADA2BDF88D449D2040713AA390A/innerimg0.gif",
+        "sha256": "8a7602f96a0cc26f93d29f854afda088f13e283031c2eade77daf69074454cf4",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3B556ADA2BDF88D449D2040713AA390A/innerimg1.gif",
+        "sha256": "390a93faa9feec593fa13dcb6f79f20d27ac81a787a078954fb7e77747694d76",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3B556ADA2BDF88D449D2040713AA390A/innerimg2.gif",
+        "sha256": "d831d9408d849c6d3585cc5a25f3224b3e1737160d82b95a268208c9cbb63536",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3B556ADA2BDF88D449D2040713AA390A/innerimg3.gif",
+        "sha256": "e5545a71690a940d94dc117a7be3337cc1b9445f0475a3bbdd29cf0627833eb0",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,8",
+    "externalAnswer": "0,8",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует A ∪ (не B), собственный ответ 0,8; внешний №472236 требует A ∪ (не B), его ответ 0,8. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "A_or_notB",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      }
+    ]
+  },
+  "3C5A72": {
+    "sourceId": "3C5A72",
+    "sourceFile": "oge-26.raw.html",
+    "sourceHash": "1804e6425bdb841ad566e096b54339a9610d87ba19fa2983a0b1115dea20b7c2",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3E68A97C605DB6AD4BC4A03B62385014/innerimg0.gif",
+        "sha256": "dd289294a7528db02986ec85e472090d1a3b739093f1e7e94c0aac3c003aaacf",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3E68A97C605DB6AD4BC4A03B62385014/innerimg1.gif",
+        "sha256": "6d7505c391def8260eee705d2403894f18adeea46dc0d4d9bd0c10992bfc1e1c",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3E68A97C605DB6AD4BC4A03B62385014/innerimg2.gif",
+        "sha256": "dd9539ff024afd9133e7639478528b46eb60f05c7540074fe7edb7629c2d287a",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3E68A97C605DB6AD4BC4A03B62385014/innerimg3.gif",
+        "sha256": "17136c1b2a3582e0b6459948f5914417e90f75865a7469f7b1f8c6b5556fdd25",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472237",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,7",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+    "externalSnapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует (не A) ∪ B, собственный ответ 0,7; внешний №472237 требует (не A) ∪ B, его ответ 0,7. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472237",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+      "snapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "notA_or_B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/46/46d8d2b1372f21d4fb604b165faa7988.svg",
+        "refs": [
+          {
+            "id": "472239",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          },
+          {
+            "id": "472259",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          },
+          {
+            "id": "472237",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/b453f4745fda955a.bin",
+        "sha256": "bc18cbac8557a3a04ef5e55ed661f9392d9ed003b2dd6babcb02c093f9a5f56f",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      }
+    ]
+  },
+  "F58BBB": {
+    "sourceId": "F58BBB",
+    "sourceFile": "oge-26.raw.html",
+    "sourceHash": "1fc6d8d3134a65dd26642b32d67b1983e2a8d07b24e2697444afe84b6e4d2943",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/414F84CD4D4680DB42B6440048781382/innerimg0.gif",
+        "sha256": "c34d6c57dd95c764a2b0e8bbbcf2e991e7e03356d142eebce069a399e8f6dc13",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/414F84CD4D4680DB42B6440048781382/innerimg1.gif",
+        "sha256": "ee67bb9918c3d4210bd17358ebee90bab2fb5c948d361dd65efc1cdcf54918bc",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/414F84CD4D4680DB42B6440048781382/innerimg1.gif",
+        "sha256": "ee67bb9918c3d4210bd17358ebee90bab2fb5c948d361dd65efc1cdcf54918bc",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/414F84CD4D4680DB42B6440048781382/innerimg3.gif",
+        "sha256": "97f13e69e0368d646bf696024931c02048deb13b21ae80ca47c1f0a3dbf95bd4",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472238",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,6",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует B, собственный ответ 0,6; внешний №472238 требует B, его ответ 0,6. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472238",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      }
+    ]
+  },
+  "BB80B2": {
+    "sourceId": "BB80B2",
+    "sourceFile": "oge-26.raw.html",
+    "sourceHash": "c82ca7c0efbcfd7a1bfdc95531f2f202aae960ffaeb36dcd1efe3b285e9db690",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/446F420E66C0A0F2451DDDC78D18A309/innerimg0.gif",
+        "sha256": "a937d5d0964ddce56cd8694730850589a26a3096bbeb2ceccba531841abe09e4",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/446F420E66C0A0F2451DDDC78D18A309/innerimg1.gif",
+        "sha256": "6061306bd65e1f2e2e8d862746e5fecd12f41162e5f5d321ec376bd6d3ae2b26",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/446F420E66C0A0F2451DDDC78D18A309/innerimg2.gif",
+        "sha256": "b34801b2afe46e6b47557b08a8b05f729db43cb61f3c3f08586f37879539fd6e",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/446F420E66C0A0F2451DDDC78D18A309/innerimg3.gif",
+        "sha256": "e6aa06f29a2f1a65b15a5fb86b9b8133a31bf885b1b559b9d60e7b9ec8931a20",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472239",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,7",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует (не A) ∪ B, собственный ответ 0,7; внешний №472239 требует (не A) ∪ B, его ответ 0,7. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472239",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "notA_or_B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/46/46d8d2b1372f21d4fb604b165faa7988.svg",
+        "refs": [
+          {
+            "id": "472239",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          },
+          {
+            "id": "472259",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          },
+          {
+            "id": "472237",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/b453f4745fda955a.bin",
+        "sha256": "bc18cbac8557a3a04ef5e55ed661f9392d9ed003b2dd6babcb02c093f9a5f56f",
+        "reviewed": true
+      }
+    ]
+  },
+  "8FE0B2": {
+    "sourceId": "8FE0B2",
+    "sourceFile": "oge-26.raw.html",
+    "sourceHash": "1c999475179c6342121a96ed69000d5dc952e6f49541f75c9d1a3ca970123ef2",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4F6C122F7AFF963A4256E30E1D8E3F49/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4F6C122F7AFF963A4256E30E1D8E3F49/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4F6C122F7AFF963A4256E30E1D8E3F49/innerimg2.gif",
+        "sha256": "a4e6b17cc0af7524bd8288902f3f12ab4cf52107d5423164ca10fbdf0c1dc517",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 24
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4F6C122F7AFF963A4256E30E1D8E3F49/innerimg3.gif",
+        "sha256": "5953ec6b7c20589f953d3f15ea082e9a991d4e4b2ed4ed971bf828f0ebde8ce5",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472242",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,9",
+    "externalAnswer": "0,9",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/theme-154.html",
+    "externalSnapshotSha256": "9e72052d8bed99743ecf22a22c52f965859eb9ba51d01dd2cc1ce2eacc458799",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует не (A ∩ B), собственный ответ 0,9; внешний №472242 требует не (A ∩ B), его ответ 0,9. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472242",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/theme-154.html",
+      "snapshotSha256": "9e72052d8bed99743ecf22a22c52f965859eb9ba51d01dd2cc1ce2eacc458799"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "not_intersection",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/8d/8df02dd3ef4fb01ce840324b34c34871.svg",
+        "refs": [
+          {
+            "id": "472242",
+            "index": 1,
+            "alt": " \\overlineA \\cap B."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/b8d95d33653983c6.bin",
+        "sha256": "de5690cee3f947000d005b35293da257a53c1d66eb0a3650c29e8fdbe53c6e56",
+        "reviewed": true
+      }
+    ],
+    "extractionNote": "Текстовый alt SVG не сохраняет скобки области действия черты. На фактически просмотренном SVG черта охватывает всё пересечение (472242) или всё объединение (472258). Условие и численный разбор согласованы именно при этой визуально подтверждённой трактовке."
+  },
+  "1FCB1A": {
+    "sourceId": "1FCB1A",
+    "sourceFile": "oge-27.raw.html",
+    "sourceHash": "e884bc582aed5d1a1c20b2a402f677503572c6c78f64b701ee8bfaaff14bb256",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/559A14AF106EB14A4F37FE24B333180B/innerimg0.gif",
+        "sha256": "599215dc3ffeca9976dcbf8b47e353b88e2dae4622012b7d160e641287bfa7bb",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/559A14AF106EB14A4F37FE24B333180B/innerimg1.gif",
+        "sha256": "390a93faa9feec593fa13dcb6f79f20d27ac81a787a078954fb7e77747694d76",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/559A14AF106EB14A4F37FE24B333180B/innerimg2.gif",
+        "sha256": "be8fd9cd2ead13b2519bde1c5e6852c98515e00c38d4feaffe2263b77a6ed84b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/559A14AF106EB14A4F37FE24B333180B/innerimg3.gif",
+        "sha256": "95621af7310393fb47a287356017f37ed1ba8da7fde772f23ea47bfe597aebd5",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472253",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,4",
+    "externalAnswer": "0,4",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует A, собственный ответ 0,4; внешний №472253 требует A, его ответ 0,4. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472253",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "A",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      }
+    ]
+  },
+  "A06618": {
+    "sourceId": "A06618",
+    "sourceFile": "oge-27.raw.html",
+    "sourceHash": "d7b087339a4d2ccdf14dedb792e71907a8e48254c2d3675927806408b5ee9790",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/59FD2D85FF51857A4B4BBFE40A3A03B0/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/59FD2D85FF51857A4B4BBFE40A3A03B0/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/59FD2D85FF51857A4B4BBFE40A3A03B0/innerimg2.gif",
+        "sha256": "9bdd49d95012673e5797594eadb25838b8c22102db49f9d2d982f2cb1e8ac5df",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/59FD2D85FF51857A4B4BBFE40A3A03B0/innerimg3.gif",
+        "sha256": "bfeded30a4cde5b3a32bbdb93e275188f673f900f37b6d5dd2f9fc1569498ae7",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472255",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,3",
+    "externalAnswer": "0,3",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует A ∩ (не B), собственный ответ 0,3; внешний №472255 требует A ∩ (не B), его ответ 0,3. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472255",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "A_and_notB",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/bf/bffafe8038f67910500225f3053cffaa.svg",
+        "refs": [
+          {
+            "id": "472255",
+            "index": 1,
+            "alt": " A \\cap \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/77e43524e3b425ee.bin",
+        "sha256": "9e1e264b6e07b7e081a547395b7b994d004d2e91f5920ea4bb519580ad244276",
+        "reviewed": true
+      }
+    ]
+  },
+  "00B922": {
+    "sourceId": "00B922",
+    "sourceFile": "oge-27.raw.html",
+    "sourceHash": "15a751457984c7c5cb5268449de1ad34f6ea7971035b65a6f32efa312c986b0d",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/62642B4E7369AF5549B0274D9F32C920/innerimg0.gif",
+        "sha256": "c34d6c57dd95c764a2b0e8bbbcf2e991e7e03356d142eebce069a399e8f6dc13",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/62642B4E7369AF5549B0274D9F32C920/innerimg1.gif",
+        "sha256": "ee67bb9918c3d4210bd17358ebee90bab2fb5c948d361dd65efc1cdcf54918bc",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/62642B4E7369AF5549B0274D9F32C920/innerimg2.gif",
+        "sha256": "25b7e8e366c2c9eed83e25471c04d349aa21cfaf7c821e2ede224970991c2547",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 24
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/62642B4E7369AF5549B0274D9F32C920/innerimg3.gif",
+        "sha256": "e6aa06f29a2f1a65b15a5fb86b9b8133a31bf885b1b559b9d60e7b9ec8931a20",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,8",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует не (A ∩ B), собственный ответ 0,8; внешний №472222 требует A ∪ (не B), его ответ 0,6. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "not_intersection",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      }
+    ]
+  },
+  "17012C": {
+    "sourceId": "17012C",
+    "sourceFile": "oge-27.raw.html",
+    "sourceHash": "5162d3ac4975189c552e521e81bf87e3e21528aad2163a141292bfc0f851f1d6",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/65A235173EEDB9C44B628C8D946B1B63/innerimg0.gif",
+        "sha256": "c34d6c57dd95c764a2b0e8bbbcf2e991e7e03356d142eebce069a399e8f6dc13",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/65A235173EEDB9C44B628C8D946B1B63/innerimg1.gif",
+        "sha256": "ee67bb9918c3d4210bd17358ebee90bab2fb5c948d361dd65efc1cdcf54918bc",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/65A235173EEDB9C44B628C8D946B1B63/innerimg0.gif",
+        "sha256": "c34d6c57dd95c764a2b0e8bbbcf2e991e7e03356d142eebce069a399e8f6dc13",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/65A235173EEDB9C44B628C8D946B1B63/innerimg3.gif",
+        "sha256": "cc4e62fc4ea3da8771ff0895195be43c8230e96e5a7ddeacc644444f7c02a671",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,5",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A, собственный ответ 0,5; внешний №472222 требует A ∪ (не B), его ответ 0,6. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "A",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      }
+    ]
+  },
+  "D1E728": {
+    "sourceId": "D1E728",
+    "sourceFile": "oge-27.raw.html",
+    "sourceHash": "8fe5c1460664b0b183e7224d79f7bf69d0839762e4eddf14247ef606dd7e3547",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/67FC53C2D0AA91A34C4D4585E2051DC0/innerimg0.gif",
+        "sha256": "f5e390e43d30805eb81348436ed7147e84748efb3af2010cd249d7ecdf8c6212",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/67FC53C2D0AA91A34C4D4585E2051DC0/innerimg1.gif",
+        "sha256": "5e3478f3add971efe1714f54714688cfcb5c5b27c1951ab977993a0e7161e089",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/67FC53C2D0AA91A34C4D4585E2051DC0/innerimg2.gif",
+        "sha256": "acc5262a0f364a32165359d7ccca104761abc36d03c0b15e275c65bea78c84cf",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 24
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/67FC53C2D0AA91A34C4D4585E2051DC0/innerimg3.gif",
+        "sha256": "2694e2a9a6f65bbf71b788e95da0d47dda535300cbd310445c7a0379e298a8c6",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,1",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует не (A ∪ B), собственный ответ 0,1; внешний №472222 требует A ∪ (не B), его ответ 0,6. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "not_union",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      }
+    ]
+  },
+  "7C8050": {
+    "sourceId": "7C8050",
+    "sourceFile": "oge-28.raw.html",
+    "sourceHash": "beea5e807bf3b3db38f6570771da5a99a23525c283423491fe6d55fb702b0e26",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/832FA2859AC3BC1E43781126D9F4A49C/innerimg0.gif",
+        "sha256": "8a7602f96a0cc26f93d29f854afda088f13e283031c2eade77daf69074454cf4",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/832FA2859AC3BC1E43781126D9F4A49C/innerimg1.gif",
+        "sha256": "0ce3c465bd3b34319d98d2d008aa0dcefecff3ef6fbaaa147dbb5e18d5d4b2da",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/832FA2859AC3BC1E43781126D9F4A49C/innerimg2.gif",
+        "sha256": "f1d7796f16371d1fb3ea0c039ff903a8494583bb622336d69cc6c1b5f1b519dd",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 24
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/832FA2859AC3BC1E43781126D9F4A49C/innerimg3.gif",
+        "sha256": "e5545a71690a940d94dc117a7be3337cc1b9445f0475a3bbdd29cf0627833eb0",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472258",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,4",
+    "externalAnswer": "0,4",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует не (A ∪ B), собственный ответ 0,4; внешний №472258 требует не (A ∪ B), его ответ 0,4. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472258",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "not_union",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/0f/0fc35d23bcfacd4f69814697086bcb4c.svg",
+        "refs": [
+          {
+            "id": "472258",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/ebc4d0d2760b42b5.bin",
+        "sha256": "3333a8ae31aeb4526a8d95174b6ba46bb2f36b1c66cadffb4d26e4ec99eac63e",
+        "reviewed": true
+      }
+    ],
+    "extractionNote": "Текстовый alt SVG не сохраняет скобки области действия черты. На фактически просмотренном SVG черта охватывает всё пересечение (472242) или всё объединение (472258). Условие и численный разбор согласованы именно при этой визуально подтверждённой трактовке."
+  },
+  "AC745D": {
+    "sourceId": "AC745D",
+    "sourceFile": "oge-29.raw.html",
+    "sourceHash": "ad56f3624ddf3708dbb5673a57e21dcfe4648c8e22156b36f26aed1444ebf7c6",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8973A0CF70C38DF94AABC5284B98B79E/innerimg0.gif",
+        "sha256": "8a7602f96a0cc26f93d29f854afda088f13e283031c2eade77daf69074454cf4",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8973A0CF70C38DF94AABC5284B98B79E/innerimg1.gif",
+        "sha256": "390a93faa9feec593fa13dcb6f79f20d27ac81a787a078954fb7e77747694d76",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8973A0CF70C38DF94AABC5284B98B79E/innerimg2.gif",
+        "sha256": "beb138124ace267b0423cee6927cc54fc3be17a2e33308d8d74de1039be5405f",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8973A0CF70C38DF94AABC5284B98B79E/innerimg3.gif",
+        "sha256": "ec8abbd4b53bb8b79c9e7f58fccdef273ab6425ef4a5ef3a1f175a926659b5df",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,1",
+    "externalAnswer": "0,8",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∩ B, собственный ответ 0,1; внешний №472236 требует A ∪ (не B), его ответ 0,8. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "intersection",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      }
+    ]
+  },
+  "C7C75A": {
+    "sourceId": "C7C75A",
+    "sourceFile": "oge-29.raw.html",
+    "sourceHash": "a64808342ea54e348567d0c27e70c1978b8b78faebda607866fd79f28af58f73",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8A9A33E906DDB5E249C89968FA49F5B0/innerimg0.gif",
+        "sha256": "953059b9f2d6997d01d4f5e43701330f7e0445ac940a527f467270b392911df8",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8A9A33E906DDB5E249C89968FA49F5B0/innerimg1.gif",
+        "sha256": "af0b278a2ce68a0cf7aabc74ab78dc386cfc2ebd6878a0e8d7f93b73476d595a",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8A9A33E906DDB5E249C89968FA49F5B0/innerimg2.gif",
+        "sha256": "59428dc5a9e39f7a83d772b7dbb52bdb2178f0ac668474d1ea9375119b3db463",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8A9A33E906DDB5E249C89968FA49F5B0/innerimg3.gif",
+        "sha256": "6605a4de3f4a1dc4a63ca18feb4cda61a4b02d9f9833316c6e5c567ae753fbdd",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472259",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,7",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Полностью сверены первичное условие, схема, заданная операция над событиями, численный ответ и основные шаги полного внешнего решения. ФИПИ требует (не A) ∪ B, собственный ответ 0,7; внешний №472259 требует (не A) ∪ B, его ответ 0,7. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472259",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "notA_or_B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/46/46d8d2b1372f21d4fb604b165faa7988.svg",
+        "refs": [
+          {
+            "id": "472239",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          },
+          {
+            "id": "472259",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          },
+          {
+            "id": "472237",
+            "index": 1,
+            "alt": "\\overlineA \\cup B."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/b453f4745fda955a.bin",
+        "sha256": "bc18cbac8557a3a04ef5e55ed661f9392d9ed003b2dd6babcb02c093f9a5f56f",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      }
+    ]
+  },
+  "95D358": {
+    "sourceId": "95D358",
+    "sourceFile": "oge-29.raw.html",
+    "sourceHash": "39ff8efef7ea52cc83cb6521a055a360795868fee18548b36bd8ad60f112ccea",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8BF78E0A87FB95BD4B0500DD101792BF/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8BF78E0A87FB95BD4B0500DD101792BF/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8BF78E0A87FB95BD4B0500DD101792BF/innerimg2.gif",
+        "sha256": "932f2fcdf44d6af59b23ede951b10ae74657a873bfc850773dc4d8fd770312e4",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8BF78E0A87FB95BD4B0500DD101792BF/innerimg3.gif",
+        "sha256": "5953ec6b7c20589f953d3f15ea082e9a991d4e4b2ed4ed971bf828f0ebde8ce5",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,2",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+    "externalSnapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует (не A) ∩ B, собственный ответ 0,2; внешний №472228 требует A ∪ B, его ответ 0,6. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+      "snapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "notA_and_B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      }
+    ]
+  },
+  "E3BC57": {
+    "sourceId": "E3BC57",
+    "sourceFile": "oge-29.raw.html",
+    "sourceHash": "fd8abf259de0dde54f8e4a4c43d79e72e2c9a047c536ba0bcb2d85e527068a70",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8C34EAD7531F831240F00F068C0D6CCC/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8C34EAD7531F831240F00F068C0D6CCC/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8C34EAD7531F831240F00F068C0D6CCC/innerimg2.gif",
+        "sha256": "48de268cde6cb291a0fd7586517a4d3f15bb57879a7cefc05301821753270d2c",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 24
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8C34EAD7531F831240F00F068C0D6CCC/innerimg3.gif",
+        "sha256": "30457ae0c780d060e7f0cfba5f03602aea31a8b6121f54a32a98b5523ab1e0e2",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,4",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+    "externalSnapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует не (A ∪ B), собственный ответ 0,4; внешний №472228 требует A ∪ B, его ответ 0,6. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+      "snapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "not_union",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      }
+    ]
+  },
+  "AD6FA1": {
+    "sourceId": "AD6FA1",
+    "sourceFile": "oge-29.raw.html",
+    "sourceHash": "b929d68f8aeeea54254d1289540607f45098423f7eb4ad07e2be9021dbb56a0d",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/995D717804199431477611CCEA776B0E/innerimg0.gif",
+        "sha256": "8a7602f96a0cc26f93d29f854afda088f13e283031c2eade77daf69074454cf4",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/995D717804199431477611CCEA776B0E/innerimg1.gif",
+        "sha256": "0ce3c465bd3b34319d98d2d008aa0dcefecff3ef6fbaaa147dbb5e18d5d4b2da",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/995D717804199431477611CCEA776B0E/innerimg2.gif",
+        "sha256": "677419c77dece36c3cec2d9918f24363acddaf5c4c2aa8ea4ac237e83c29c27c",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/995D717804199431477611CCEA776B0E/innerimg3.gif",
+        "sha256": "ec8abbd4b53bb8b79c9e7f58fccdef273ab6425ef4a5ef3a1f175a926659b5df",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,3",
+    "externalAnswer": "0,8",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует B, собственный ответ 0,3; внешний №472236 требует A ∪ (не B), его ответ 0,8. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      }
+    ]
+  },
+  "C393AF": {
+    "sourceId": "C393AF",
+    "sourceFile": "oge-29.raw.html",
+    "sourceHash": "a7c49cd37e97b86e1b4a9286d5c082044f4af2be89f3a710d8e6e4f9f8f61ea2",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9A1BEE8BD36E9ED04DC0212D0B8EC787/innerimg0.gif",
+        "sha256": "762d69466627fcb4c009b8acfb00b2538c101a077aed14c3097e4e2123661a0f",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9A1BEE8BD36E9ED04DC0212D0B8EC787/innerimg1.gif",
+        "sha256": "d36d577c7f9c481dc8f756ff008ca3a9a3dfd9dff5d8ea3f8037ac3345d6da05",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9A1BEE8BD36E9ED04DC0212D0B8EC787/innerimg2.gif",
+        "sha256": "b0e71f345c77a524ea2bad33643ebcb97cc01cc588a3b65e7b9673b4df5356f4",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 24
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9A1BEE8BD36E9ED04DC0212D0B8EC787/innerimg3.gif",
+        "sha256": "bfeded30a4cde5b3a32bbdb93e275188f673f900f37b6d5dd2f9fc1569498ae7",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,6",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует не (A ∩ B), собственный ответ 0,6; внешний №472223 требует A, его ответ 0,7. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "not_intersection",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      }
+    ]
+  },
+  "9F34A2": {
+    "sourceId": "9F34A2",
+    "sourceFile": "oge-29.raw.html",
+    "sourceHash": "23859a27cd0d7331fcd21a223aef6fefba6c53cb74298ef8dc96d82ef4181510",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9B6E10BA468BA2BB44789E58F7F8A770/innerimg0.gif",
+        "sha256": "953059b9f2d6997d01d4f5e43701330f7e0445ac940a527f467270b392911df8",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9B6E10BA468BA2BB44789E58F7F8A770/innerimg1.gif",
+        "sha256": "af0b278a2ce68a0cf7aabc74ab78dc386cfc2ebd6878a0e8d7f93b73476d595a",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9B6E10BA468BA2BB44789E58F7F8A770/innerimg2.gif",
+        "sha256": "24911f61db161bc13220459c2517b2083f744488c5232e6ff4aaed130b4b78e4",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 24
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9B6E10BA468BA2BB44789E58F7F8A770/innerimg3.gif",
+        "sha256": "e5545a71690a940d94dc117a7be3337cc1b9445f0475a3bbdd29cf0627833eb0",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,9",
+    "externalAnswer": "0,8",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует не (A ∩ B), собственный ответ 0,9; внешний №472236 требует A ∪ (не B), его ответ 0,8. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "not_intersection",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      }
+    ]
+  },
+  "9140A5": {
+    "sourceId": "9140A5",
+    "sourceFile": "oge-29.raw.html",
+    "sourceHash": "d03525f4814cae5533ceadad42e5ce1b794bbe6155e993b6bd3cfb027130ab73",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9B8052063491A872446C5E61FB83EBDA/innerimg0.gif",
+        "sha256": "c34d6c57dd95c764a2b0e8bbbcf2e991e7e03356d142eebce069a399e8f6dc13",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9B8052063491A872446C5E61FB83EBDA/innerimg1.gif",
+        "sha256": "ee67bb9918c3d4210bd17358ebee90bab2fb5c948d361dd65efc1cdcf54918bc",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9B8052063491A872446C5E61FB83EBDA/innerimg2.gif",
+        "sha256": "a7a205b21946f610a1f21a4c4bf0a7de972646d84576e565a10d747d80a98dd6",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9B8052063491A872446C5E61FB83EBDA/innerimg3.gif",
+        "sha256": "e6aa06f29a2f1a65b15a5fb86b9b8133a31bf885b1b559b9d60e7b9ec8931a20",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,9",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∪ B, собственный ответ 0,9; внешний №472222 требует A ∪ (не B), его ответ 0,6. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "union",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      }
+    ]
+  },
+  "B583CF": {
+    "sourceId": "B583CF",
+    "sourceFile": "oge-29.raw.html",
+    "sourceHash": "c3eadf612b5e87cba79d7edef0ec6e8a596c61b0ba3417015a89686b917c4a02",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A41F8E2424E0AF6D49C6AEFE58D5062E/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A41F8E2424E0AF6D49C6AEFE58D5062E/innerimg1.gif",
+        "sha256": "ad3ca03bf5d5811a6f7515e93ce4bf6545cbc4dd67d07e388b0b39c649fbb6ea",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A41F8E2424E0AF6D49C6AEFE58D5062E/innerimg2.gif",
+        "sha256": "2ceccd47abdb3f35600be9d076d64395d05f84e7e839f9eec9cc9bde9e856c2e",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A41F8E2424E0AF6D49C6AEFE58D5062E/innerimg3.gif",
+        "sha256": "b8aac02fb5bcd8cc99ae0720e235e50e61e69565ac3b5ca3406cd321f6a51e7b",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,8",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+    "externalSnapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∪ (не B), собственный ответ 0,8; внешний №472228 требует A ∪ B, его ответ 0,6. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+      "snapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "A_or_notB",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      }
+    ]
+  },
+  "5481C5": {
+    "sourceId": "5481C5",
+    "sourceFile": "oge-30.raw.html",
+    "sourceHash": "17c0cc32ea95495afe2fd8b3b08be5b771b9d3b26541c58061aaba8a4ac3df6f",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A88F05C55190BF0F4CAD0A8A05D2AA24/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A88F05C55190BF0F4CAD0A8A05D2AA24/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A88F05C55190BF0F4CAD0A8A05D2AA24/innerimg2.gif",
+        "sha256": "6ba4f727726d6c394a88bea2d47e847dc82ab1ae3020db9524bd1ebc0085fbce",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A88F05C55190BF0F4CAD0A8A05D2AA24/innerimg3.gif",
+        "sha256": "6605a4de3f4a1dc4a63ca18feb4cda61a4b02d9f9833316c6e5c567ae753fbdd",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,4",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∩ B, собственный ответ 0,4; внешний №472223 требует A, его ответ 0,7. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "intersection",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      }
+    ]
+  },
+  "A390CD": {
+    "sourceId": "A390CD",
+    "sourceFile": "oge-30.raw.html",
+    "sourceHash": "12ba0e425a7ba04765815de563a144f6ffb89d5fda2651ea853dee0c8c86ba5d",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A97BE2E86D0E927A478809B82A5B4486/innerimg0.gif",
+        "sha256": "c34d6c57dd95c764a2b0e8bbbcf2e991e7e03356d142eebce069a399e8f6dc13",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A97BE2E86D0E927A478809B82A5B4486/innerimg1.gif",
+        "sha256": "ee67bb9918c3d4210bd17358ebee90bab2fb5c948d361dd65efc1cdcf54918bc",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A97BE2E86D0E927A478809B82A5B4486/innerimg2.gif",
+        "sha256": "8a94b8142c66aad2a793ba36ee0222fa14e91a8001840a16c585fc5fb8485d7f",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A97BE2E86D0E927A478809B82A5B4486/innerimg3.gif",
+        "sha256": "02b02819795808bf1c4d500aff8438a8229c868a40eba572f4850d542a41f356",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,4",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует (не A) ∩ B, собственный ответ 0,4; внешний №472222 требует A ∪ (не B), его ответ 0,6. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "notA_and_B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      }
+    ]
+  },
+  "5DB79C": {
+    "sourceId": "5DB79C",
+    "sourceFile": "oge-30.raw.html",
+    "sourceHash": "7880f31a9226c550952a71e37db926c4345dc0d19e1a3257f4e6ca753552a009",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B8A473B78EF4B44644A0CFFF5F4239A1/innerimg0.gif",
+        "sha256": "07a2e1437cd0cf1beb5f3561518fcac5e23f19e0d5e922d7f7adca7d6d6dbf72",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B8A473B78EF4B44644A0CFFF5F4239A1/innerimg1.gif",
+        "sha256": "cf7e3a938a8bb187667239351ea0b1a5eaef09459410ab60350dda54a70cb6af",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B8A473B78EF4B44644A0CFFF5F4239A1/innerimg2.gif",
+        "sha256": "f4158ac05c463fca759923ac88cf9860904579383f6d220a990eeec7b6e649fa",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 24
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B8A473B78EF4B44644A0CFFF5F4239A1/innerimg3.gif",
+        "sha256": "bfeded30a4cde5b3a32bbdb93e275188f673f900f37b6d5dd2f9fc1569498ae7",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,15",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует не (A ∪ B), собственный ответ 0,15; внешний №472223 требует A, его ответ 0,7. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "not_union",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      }
+    ]
+  },
+  "CD3B90": {
+    "sourceId": "CD3B90",
+    "sourceFile": "oge-30.raw.html",
+    "sourceHash": "aa063df0780da5ee6bff587f7a3a8db8f72a1a046190c368873b04f774abbf56",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BA2E74CCEBC58A564232DF721B17690E/innerimg0.gif",
+        "sha256": "f5e390e43d30805eb81348436ed7147e84748efb3af2010cd249d7ecdf8c6212",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BA2E74CCEBC58A564232DF721B17690E/innerimg1.gif",
+        "sha256": "5e3478f3add971efe1714f54714688cfcb5c5b27c1951ab977993a0e7161e089",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BA2E74CCEBC58A564232DF721B17690E/innerimg1.gif",
+        "sha256": "5e3478f3add971efe1714f54714688cfcb5c5b27c1951ab977993a0e7161e089",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BA2E74CCEBC58A564232DF721B17690E/innerimg3.gif",
+        "sha256": "17136c1b2a3582e0b6459948f5914417e90f75865a7469f7b1f8c6b5556fdd25",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,3",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+    "externalSnapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует B, собственный ответ 0,3; внешний №472228 требует A ∪ B, его ответ 0,6. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+      "snapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      }
+    ]
+  },
+  "C3FD9C": {
+    "sourceId": "C3FD9C",
+    "sourceFile": "oge-30.raw.html",
+    "sourceHash": "439b1b70c22f77f547c06cda2677a0cac24b97e0bba986668fac89e64c874c79",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BAA1E7D2E0DC846D47985C5069E230BC/innerimg0.gif",
+        "sha256": "953059b9f2d6997d01d4f5e43701330f7e0445ac940a527f467270b392911df8",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BAA1E7D2E0DC846D47985C5069E230BC/innerimg1.gif",
+        "sha256": "af0b278a2ce68a0cf7aabc74ab78dc386cfc2ebd6878a0e8d7f93b73476d595a",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BAA1E7D2E0DC846D47985C5069E230BC/innerimg2.gif",
+        "sha256": "acfb471d34164aa00dab154709868fb58af643d571a1cc2fe73fe1e20bf80072",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BAA1E7D2E0DC846D47985C5069E230BC/innerimg3.gif",
+        "sha256": "bfeded30a4cde5b3a32bbdb93e275188f673f900f37b6d5dd2f9fc1569498ae7",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,85",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∪ (не B), собственный ответ 0,85; внешний №472223 требует A, его ответ 0,7. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "A_or_notB",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      }
+    ]
+  },
+  "352D90": {
+    "sourceId": "352D90",
+    "sourceFile": "oge-31.raw.html",
+    "sourceHash": "ab9fb7fcfe2ffeca8b0b59f4939cf5b7e3511c0257e1495fb4f53df0844500ff",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BE268708095F918642AE65730209CAED/innerimg0.gif",
+        "sha256": "6bff7f5641279f2270e50f3b7d19fb67150092b56a78473c9fd6c1edd528b627",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BE268708095F918642AE65730209CAED/innerimg1.gif",
+        "sha256": "390a93faa9feec593fa13dcb6f79f20d27ac81a787a078954fb7e77747694d76",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BE268708095F918642AE65730209CAED/innerimg2.gif",
+        "sha256": "ac94167cdd37f5f8feac446dc0be89e0c0ea44cdc3826121fe75e7987058772f",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/BE268708095F918642AE65730209CAED/innerimg3.gif",
+        "sha256": "e5545a71690a940d94dc117a7be3337cc1b9445f0475a3bbdd29cf0627833eb0",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,6",
+    "externalAnswer": "0,8",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∪ B, собственный ответ 0,6; внешний №472236 требует A ∪ (не B), его ответ 0,8. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "union",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      }
+    ]
+  },
+  "7369EE": {
+    "sourceId": "7369EE",
+    "sourceFile": "oge-31.raw.html",
+    "sourceHash": "ce280f7a18630adc7d4551364ab6b938c8e5e07be2c47909ac91915f43c29ab1",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/C3CDEB36C4D5B3144CAF4584B1D59113/innerimg0.gif",
+        "sha256": "f5e390e43d30805eb81348436ed7147e84748efb3af2010cd249d7ecdf8c6212",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/C3CDEB36C4D5B3144CAF4584B1D59113/innerimg1.gif",
+        "sha256": "5e3478f3add971efe1714f54714688cfcb5c5b27c1951ab977993a0e7161e089",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/C3CDEB36C4D5B3144CAF4584B1D59113/innerimg0.gif",
+        "sha256": "f5e390e43d30805eb81348436ed7147e84748efb3af2010cd249d7ecdf8c6212",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/C3CDEB36C4D5B3144CAF4584B1D59113/innerimg3.gif",
+        "sha256": "17136c1b2a3582e0b6459948f5914417e90f75865a7469f7b1f8c6b5556fdd25",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,4",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+    "externalSnapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A, собственный ответ 0,4; внешний №472228 требует A ∪ B, его ответ 0,6. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+      "snapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "A",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      }
+    ]
+  },
+  "D316EA": {
+    "sourceId": "D316EA",
+    "sourceFile": "oge-31.raw.html",
+    "sourceHash": "0d867a2d4f0b8d98e88d624065a8a368b137aefee0be31632811b107d2c6c4e3",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/C795ED265CD8A5F143F20B32DF0EFFEA/innerimg0.gif",
+        "sha256": "c34d6c57dd95c764a2b0e8bbbcf2e991e7e03356d142eebce069a399e8f6dc13",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/C795ED265CD8A5F143F20B32DF0EFFEA/innerimg1.gif",
+        "sha256": "ee67bb9918c3d4210bd17358ebee90bab2fb5c948d361dd65efc1cdcf54918bc",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/C795ED265CD8A5F143F20B32DF0EFFEA/innerimg2.gif",
+        "sha256": "1ca756835aeb6239faf9925955360f5f5a110ec864a05a42541e1f321cba154c",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/C795ED265CD8A5F143F20B32DF0EFFEA/innerimg3.gif",
+        "sha256": "97f13e69e0368d646bf696024931c02048deb13b21ae80ca47c1f0a3dbf95bd4",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,2",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∩ B, собственный ответ 0,2; внешний №472222 требует A ∪ (не B), его ответ 0,6. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "intersection",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      }
+    ]
+  },
+  "9AD0E5": {
+    "sourceId": "9AD0E5",
+    "sourceFile": "oge-31.raw.html",
+    "sourceHash": "ed1a861949b1222ef0f253fbb93d19229389d17827b6170e5a144c9930220007",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/CB87925D3DA4999B494AE35819DD7389/innerimg0.gif",
+        "sha256": "953059b9f2d6997d01d4f5e43701330f7e0445ac940a527f467270b392911df8",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/CB87925D3DA4999B494AE35819DD7389/innerimg1.gif",
+        "sha256": "0ce3c465bd3b34319d98d2d008aa0dcefecff3ef6fbaaa147dbb5e18d5d4b2da",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/CB87925D3DA4999B494AE35819DD7389/innerimg2.gif",
+        "sha256": "59e8526852347e1973c60e629316969c78672151bc2fab2a09ec8963484bbad2",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/CB87925D3DA4999B494AE35819DD7389/innerimg3.gif",
+        "sha256": "e5545a71690a940d94dc117a7be3337cc1b9445f0475a3bbdd29cf0627833eb0",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,2",
+    "externalAnswer": "0,8",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует (не A) ∩ B, собственный ответ 0,2; внешний №472236 требует A ∪ (не B), его ответ 0,8. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "notA_and_B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      }
+    ]
+  },
+  "92256B": {
+    "sourceId": "92256B",
+    "sourceFile": "oge-32.raw.html",
+    "sourceHash": "75c63a4497cfd755a9c18c75397644d9a78126126912a779e9dbf2e6f2612728",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DB466851B7668C624CC724F838DFD4DB/innerimg0.gif",
+        "sha256": "762d69466627fcb4c009b8acfb00b2538c101a077aed14c3097e4e2123661a0f",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DB466851B7668C624CC724F838DFD4DB/innerimg1.gif",
+        "sha256": "d36d577c7f9c481dc8f756ff008ca3a9a3dfd9dff5d8ea3f8037ac3345d6da05",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DB466851B7668C624CC724F838DFD4DB/innerimg2.gif",
+        "sha256": "515395701f244c9e3be88d8c478589e4d73bd2b3cbfe0934a467d393cfbe7087",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DB466851B7668C624CC724F838DFD4DB/innerimg3.gif",
+        "sha256": "6605a4de3f4a1dc4a63ca18feb4cda61a4b02d9f9833316c6e5c567ae753fbdd",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,85",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∪ B, собственный ответ 0,85; внешний №472223 требует A, его ответ 0,7. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "union",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      }
+    ]
+  },
+  "781B33": {
+    "sourceId": "781B33",
+    "sourceFile": "oge-32.raw.html",
+    "sourceHash": "aa0d450873330ba8732be95a75340229585e90ad961f307654d728a9f14f9e4b",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E3E5F47BF16AA6284B2093EFF25D3756/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E3E5F47BF16AA6284B2093EFF25D3756/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E3E5F47BF16AA6284B2093EFF25D3756/innerimg2.gif",
+        "sha256": "11389f92824957b88fbe9a23296090e7aec118422a17bb202a4b081c502d4ae8",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E3E5F47BF16AA6284B2093EFF25D3756/innerimg3.gif",
+        "sha256": "5953ec6b7c20589f953d3f15ea082e9a991d4e4b2ed4ed971bf828f0ebde8ce5",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,1",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+    "externalSnapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∩ B, собственный ответ 0,1; внешний №472228 требует A ∪ B, его ответ 0,6. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+      "snapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "intersection",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      }
+    ]
+  },
+  "55D234": {
+    "sourceId": "55D234",
+    "sourceFile": "oge-32.raw.html",
+    "sourceHash": "2667def8c7d7ff4556c859aa4bc92fc9176cff1352454eae71d87c71834cd924",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E80786D6AFFCAF8943A1746BA46F6626/innerimg0.gif",
+        "sha256": "599215dc3ffeca9976dcbf8b47e353b88e2dae4622012b7d160e641287bfa7bb",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E80786D6AFFCAF8943A1746BA46F6626/innerimg1.gif",
+        "sha256": "390a93faa9feec593fa13dcb6f79f20d27ac81a787a078954fb7e77747694d76",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E80786D6AFFCAF8943A1746BA46F6626/innerimg2.gif",
+        "sha256": "ed77b5ca5142738d1be5f481abfd001bd2ae38fee646e9ce16451fdb332e9959",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E80786D6AFFCAF8943A1746BA46F6626/innerimg3.gif",
+        "sha256": "ec8abbd4b53bb8b79c9e7f58fccdef273ab6425ef4a5ef3a1f175a926659b5df",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,3",
+    "externalAnswer": "0,8",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∩ (не B), собственный ответ 0,3; внешний №472236 требует A ∪ (не B), его ответ 0,8. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "A_and_notB",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      }
+    ]
+  },
+  "51743B": {
+    "sourceId": "51743B",
+    "sourceFile": "oge-32.raw.html",
+    "sourceHash": "134d910e0898b31ba56947f3d1ae2f20ded62531b28a69bd37f15a530a0e8ca5",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все равновозможные элементарные события опыта. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E843501E099CBB4745DFB74C7BD6C649/innerimg0.gif",
+        "sha256": "c34d6c57dd95c764a2b0e8bbbcf2e991e7e03356d142eebce069a399e8f6dc13",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E843501E099CBB4745DFB74C7BD6C649/innerimg1.gif",
+        "sha256": "ee67bb9918c3d4210bd17358ebee90bab2fb5c948d361dd65efc1cdcf54918bc",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E843501E099CBB4745DFB74C7BD6C649/innerimg2.gif",
+        "sha256": "5cce21b0a817ed61c3d8a95d915ff9bc428eb549818867b0b4092f4f8719e30e",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E843501E099CBB4745DFB74C7BD6C649/innerimg3.gif",
+        "sha256": "97f13e69e0368d646bf696024931c02048deb13b21ae80ca47c1f0a3dbf95bd4",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,3",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+    "externalSnapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∩ (не B), собственный ответ 0,3; внешний №472222 требует A ∪ (не B), его ответ 0,6. На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472222",
+      "reviewed": true,
+      "steps": "На диаграмме 10 равновозможных точек. Внешний разбор выделяет нужные точки по операции над событиями, затем делит их число на 10. В собственном решении операция прочитана с первичного изображения и отдельно проверено дополнение события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472222.html",
+      "snapshotSha256": "77974f07bdb7a91bdc3c213192a8642959a1b363d7dd861e34457cac184ef87c"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "dots",
+      "event": "A_and_notB",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93162",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472238",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472239",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/15a6f1177918529e.bin",
+        "sha256": "94c48a965addfb40bb2be459267d66fce5f739d80df649945cd3fcd70a35df38",
+        "reviewed": true
+      },
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      }
+    ]
+  },
+  "AE9136": {
+    "sourceId": "AE9136",
+    "sourceFile": "oge-32.raw.html",
+    "sourceHash": "1f6d29cd46b19f2bc755bd83c422158fd806195fc1ebeeeda363c203f792d41b",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте с равновозможными исходами. В каждой области указано, сколько исходов принадлежит этой области. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E9DBC545EB7C8D5D473EE9236ACBB72B/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E9DBC545EB7C8D5D473EE9236ACBB72B/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E9DBC545EB7C8D5D473EE9236ACBB72B/innerimg2.gif",
+        "sha256": "76cd108fc77de8600f21bf63421a4d6b48a1f70347f8f67f540f8a887a2e7645",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/E9DBC545EB7C8D5D473EE9236ACBB72B/innerimg3.gif",
+        "sha256": "007a01420f8464daa109c16b414ec1ae8b5b0e223be045605fa37fb9655a5d0f",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,3",
+    "externalAnswer": "0,6",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+    "externalSnapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует A ∩ (не B), собственный ответ 0,3; внешний №472228 требует A ∪ B, его ответ 0,6. Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472228",
+      "reviewed": true,
+      "steps": "Четыре области содержат 18, 6, 12 и 24 равновозможных исхода, всего 60. Для заданного события суммируются количества выбранных непересекающихся областей и результат делится на 60. Собственный выбор областей и дополнение пересчитаны.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472228.html",
+      "snapshotSha256": "b81fd7546b50957d23214ede5314955d41b351d5ed44890ff0347c3a7be9c1ab"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "counts",
+      "event": "A_and_notB",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93169",
+        "refs": [
+          {
+            "id": "472228",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472237",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472242",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/0ae51ef743659486.bin",
+        "sha256": "5367cd24494d71ce8fdc31d99dae81cdf6f43d160bc29a4be67f7ef43967d395",
+        "reviewed": true
+      }
+    ]
+  },
+  "18258D": {
+    "sourceId": "18258D",
+    "sourceFile": "oge-33.raw.html",
+    "sourceHash": "012f1ae6155bea6b7a950e5c35812c15aff752ce9b523274c068922e07d8370a",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F576F8F8740BA913422747E5DB1AE069/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F576F8F8740BA913422747E5DB1AE069/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F576F8F8740BA913422747E5DB1AE069/innerimg2.gif",
+        "sha256": "9a335ef482d40d6fe933f32342e85158ecb10fc2d8665277301ec86e63cde721",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F576F8F8740BA913422747E5DB1AE069/innerimg3.gif",
+        "sha256": "bfeded30a4cde5b3a32bbdb93e275188f673f900f37b6d5dd2f9fc1569498ae7",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,15",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует (не A) ∩ B, собственный ответ 0,15; внешний №472223 требует A, его ответ 0,7. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "notA_and_B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      }
+    ]
+  },
+  "2EF387": {
+    "sourceId": "2EF387",
+    "sourceFile": "oge-33.raw.html",
+    "sourceHash": "beae9b20242b62b344d22441726731b6248a6bb133fac0a16727768d651e3227",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. В каждой из четырёх областей указана вероятность соответствующего события. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F631CEE98995B1F1445167033EE283C8/innerimg0.gif",
+        "sha256": "599215dc3ffeca9976dcbf8b47e353b88e2dae4622012b7d160e641287bfa7bb",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F631CEE98995B1F1445167033EE283C8/innerimg1.gif",
+        "sha256": "390a93faa9feec593fa13dcb6f79f20d27ac81a787a078954fb7e77747694d76",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F631CEE98995B1F1445167033EE283C8/innerimg2.gif",
+        "sha256": "663877605e0dc1016c25f11c542c3d677d2c50450209c0795acaca401f7d5cc4",
+        "reviewed": true,
+        "role": "formula",
+        "width": 51,
+        "height": 23
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/F631CEE98995B1F1445167033EE283C8/innerimg3.gif",
+        "sha256": "e5545a71690a940d94dc117a7be3337cc1b9445f0475a3bbdd29cf0627833eb0",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,7",
+    "externalAnswer": "0,8",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+    "externalSnapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует (не A) ∪ B, собственный ответ 0,7; внешний №472236 требует A ∪ (не B), его ответ 0,8. На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472236",
+      "reviewed": true,
+      "steps": "На диаграмме уже указаны вероятности четырёх непересекающихся областей: 0,3; 0,1; 0,2; 0,4. Внешний разбор складывает вероятности нужных областей. Собственный выбор областей сделан по первичной формуле, сумма дополнения проверяет ответ.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472236.html",
+      "snapshotSha256": "2e200a683b86ca7d39805db8e01c37a5781627d92e86f93c073c7c5139d0016b"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "regions",
+      "event": "notA_or_B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://oge.sdamgia.ru/formula/svg/24/24963f422d88e848b37add5343b443c3.svg",
+        "refs": [
+          {
+            "id": "472222",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          },
+          {
+            "id": "472236",
+            "index": 1,
+            "alt": " A \\cup \\overlineB."
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/50f489eba1a7c6a4.bin",
+        "sha256": "0a29fe79f778b3ef6eca4d0d854ba6f375bc84c1fb2eb1e1e77c412761d736a7",
+        "reviewed": true
+      },
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93170",
+        "refs": [
+          {
+            "id": "472236",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472253",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472258",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/7da26def546b3a47.bin",
+        "sha256": "9086cef5d79f3f8559f6acc1bab0d81e2b0b5bcb5c1dfb75c180ac6e70687bbc",
+        "reviewed": true
+      }
+    ]
+  },
+  "E6748F": {
+    "sourceId": "E6748F",
+    "sourceFile": "oge-33.raw.html",
+    "sourceHash": "67d9211e01906b69443c0fd96a172cca106e6e60bf57a07188a19d9ea20411c1",
+    "fipiCondition": "Впишите правильный ответ. На рисунке изображена диаграмма Эйлера для случайных событий и в некотором случайном опыте. Точками показаны все элементарные события и около каждого указана его вероятность. Найдите вероятность события .",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FC13D0EACD60A7544BFA0D96204238F5/innerimg0.gif",
+        "sha256": "8139262eebfe082d25abb83e160626befdfc3eee72f955100e24b7c33353ab60",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FC13D0EACD60A7544BFA0D96204238F5/innerimg1.gif",
+        "sha256": "6f926edab478cf33a36bd6a2ac66b4e0fcdaaa625864f8b98dee51805504e77b",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FC13D0EACD60A7544BFA0D96204238F5/innerimg2.gif",
+        "sha256": "0a706650c825381aff33b352b9d66f537acd13caeb7b53906ee7fdcfb62d6f73",
+        "reviewed": true,
+        "role": "formula",
+        "width": 17,
+        "height": 18
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FC13D0EACD60A7544BFA0D96204238F5/innerimg3.gif",
+        "sha256": "bfeded30a4cde5b3a32bbdb93e275188f673f900f37b6d5dd2f9fc1569498ae7",
+        "reviewed": true,
+        "role": "diagram",
+        "width": 359,
+        "height": 180
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-10T20:14:16.387983+00:00",
+    "expectedAnswer": "0,55",
+    "externalAnswer": "0,7",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+    "externalSnapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2",
+    "comparison": "Сверка по варианту события: первичная и внешняя диаграммы имеют одинаковые данные, но требуется другая операция над событиями. Совпадение всей задачи или ответа не заявляется. ФИПИ требует B, собственный ответ 0,55; внешний №472223 требует A, его ответ 0,7. Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+    "methodSource": {
+      "url": "https://math-oge.sdamgia.ru/problem?id=472223",
+      "reviewed": true,
+      "steps": "Вероятности восьми точек различны. Внешний разбор складывает вероятности выбранных точек, не делит их число на восемь. В собственном решении сначала вычисляются суммы четырёх областей 0,3; 0,4; 0,15; 0,15, затем выполняется операция события.",
+      "snapshot": "/root/oge-math-solutions-20261010/probability/sources/likes-472223.html",
+      "snapshotSha256": "06f7af0a96d8772baf34c76a946b16200c26124f39ed280387c9ca54abd17ce2"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "kind": "weighted",
+      "event": "B",
+      "notes": "Все четыре первичных изображения фактически просмотрены на primary-images-1…10.png: A, B, требуемая операция с точной областью черты и диаграмма. Все девять различных внешних изображений просмотрены на external-images-review.png; количества, вероятности и операции сопоставлены."
+    },
+    "externalImages": [
+      {
+        "url": "https://math-oge.sdamgia.ru/get_file?id=93165",
+        "refs": [
+          {
+            "id": "472223",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472255",
+            "index": 0,
+            "alt": ""
+          },
+          {
+            "id": "472259",
+            "index": 0,
+            "alt": ""
+          }
+        ],
+        "path": "/root/oge-math-solutions-20261010/probability/external-images/d1b34e32d3cfd91a.bin",
+        "sha256": "8f31571594e6f1c91e581de02c784f63c6d6a61258e64c351ce68e125c8b8057",
+        "reviewed": true
+      }
+    ]
+  }
+}

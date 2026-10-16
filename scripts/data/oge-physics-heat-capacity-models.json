@@ -1,0 +1,920 @@
+{
+  "D9EE45": {
+    "kind": "sensible",
+    "c": 2100,
+    "m": 2,
+    "t1": -10,
+    "t2": 0,
+    "find": "Q",
+    "Q": 42000,
+    "answerUnit": "кДж"
+  },
+  "515CFE": {
+    "kind": "sensible",
+    "c": 500,
+    "m": 10,
+    "t1": 200,
+    "t2": 0,
+    "find": "m",
+    "Q": 1000000,
+    "answerUnit": "кг"
+  },
+  "9EA422": {
+    "kind": "sensible",
+    "c": 4200,
+    "m": 0.2,
+    "t1": 20,
+    "t2": 100,
+    "find": "Q",
+    "Q": 67200.0,
+    "answerUnit": "Дж"
+  },
+  "67DDD0": {
+    "kind": "sensible",
+    "c": 400,
+    "m": 2,
+    "t1": 230,
+    "t2": 30,
+    "find": "Q",
+    "Q": 160000,
+    "answerUnit": "кДж"
+  },
+  "8AF2D8": {
+    "kind": "sensible",
+    "c": 4200,
+    "m": 5,
+    "t1": 20,
+    "t2": 100,
+    "find": "m",
+    "Q": 1680000,
+    "answerUnit": "кг"
+  },
+  "8E3AAC": {
+    "kind": "sensible",
+    "c": 500,
+    "m": 10,
+    "t1": 200,
+    "t2": 0,
+    "find": "Q",
+    "Q": 1000000,
+    "answerUnit": "кДж"
+  },
+  "D8BCC1": {
+    "kind": "sensible",
+    "c": 2100,
+    "m": 0.2,
+    "t1": -10,
+    "t2": 0,
+    "find": "Q",
+    "Q": 4200.0,
+    "answerUnit": "Дж"
+  },
+  "D1E5CD": {
+    "kind": "sensible",
+    "c": 130,
+    "m": 4,
+    "t1": 327,
+    "t2": 27,
+    "find": "Q",
+    "Q": 156000,
+    "answerUnit": "кДж"
+  },
+  "253C99": {
+    "kind": "sensible",
+    "c": 400,
+    "m": 2,
+    "t1": 180,
+    "t2": 170,
+    "find": "Q",
+    "Q": 8000,
+    "answerUnit": "кДж"
+  },
+  "65AF9D": {
+    "kind": "sensible",
+    "c": 2400,
+    "m": 0.1,
+    "t1": 28,
+    "t2": 78,
+    "find": "m",
+    "Q": 12000.0,
+    "answerUnit": "кг"
+  },
+  "3DF797": {
+    "kind": "sensible",
+    "c": 500,
+    "m": 10,
+    "t1": 200,
+    "t2": 0,
+    "find": "delta",
+    "Q": 1000000,
+    "answerUnit": "°C"
+  },
+  "A69A60": {
+    "kind": "sensible",
+    "c": 2100,
+    "m": 0.2,
+    "t1": -10,
+    "t2": 0,
+    "find": "m",
+    "Q": 4200.0,
+    "answerUnit": "кг"
+  },
+  "95546F": {
+    "kind": "sensible",
+    "c": 4200,
+    "m": 0.2,
+    "t1": 20,
+    "t2": 100,
+    "find": "m",
+    "Q": 67200.0,
+    "answerUnit": "кг"
+  },
+  "325B62": {
+    "kind": "sensible",
+    "c": 400,
+    "m": 2,
+    "t1": 180,
+    "t2": 170,
+    "find": "m",
+    "Q": 8000,
+    "answerUnit": "кг"
+  },
+  "502B30": {
+    "kind": "sensible",
+    "c": 230,
+    "m": 0.2,
+    "t1": 32,
+    "t2": 232,
+    "find": "Q",
+    "Q": 9200.0,
+    "answerUnit": "Дж"
+  },
+  "FBCD06": {
+    "kind": "graph-c",
+    "Q": 300000,
+    "m": 2,
+    "delta": 300,
+    "c": 500.0
+  },
+  "8E3E8D": {
+    "kind": "graph-c",
+    "Q": 300000,
+    "m": 5,
+    "delta": 300,
+    "c": 200.0
+  },
+  "3319C3": {
+    "kind": "graph-c",
+    "Q": 500000,
+    "m": 2,
+    "delta": 100,
+    "c": 2500.0
+  },
+  "B5C6B2": {
+    "kind": "graph-c",
+    "Q": 200000,
+    "m": 4,
+    "delta": 200,
+    "c": 250.0
+  },
+  "52A1A7": {
+    "kind": "graph-m",
+    "Q": 200000,
+    "c": 500,
+    "delta": 100,
+    "m": 4
+  },
+  "0539B3": {
+    "kind": "graph-c",
+    "m": 5,
+    "Q": 300000,
+    "delta": 50,
+    "c": 1200
+  },
+  "593DEE": {
+    "kind": "graph-c",
+    "m": 5,
+    "Q": 200000,
+    "delta": 20,
+    "c": 2000
+  },
+  "4BBC54": {
+    "kind": "graph-c",
+    "m": 0.1,
+    "Q": 2400,
+    "delta": 100,
+    "c": 240
+  },
+  "AEC32C": {
+    "kind": "graph-c",
+    "m": 1,
+    "Q": 4000,
+    "delta": 10,
+    "c": 400.0
+  },
+  "E78235": {
+    "kind": "graph-c",
+    "m": 1,
+    "Q": 2000,
+    "delta": 10,
+    "c": 200.0
+  },
+  "B76CDB": {
+    "kind": "ratio",
+    "q1": 3,
+    "q2": 6,
+    "ratio": 2.0
+  },
+  "9DBEAD": {
+    "kind": "ratio",
+    "q1": 3,
+    "q2": 9,
+    "ratio": 3.0
+  },
+  "34AF72": {
+    "kind": "cooling-stages",
+    "stages": [
+      "water"
+    ],
+    "sumkJ": 84
+  },
+  "7C78DD": {
+    "kind": "cooling-stages",
+    "stages": [
+      "ice"
+    ],
+    "sumkJ": 42
+  },
+  "BBE6F9": {
+    "kind": "cooling-stages",
+    "stages": [
+      "water",
+      "freeze",
+      "ice"
+    ],
+    "sumkJ": 456
+  },
+  "C206B1": {
+    "kind": "cooling-stages",
+    "stages": [
+      "water",
+      "freeze"
+    ],
+    "sumkJ": 414
+  },
+  "C0FEC5": {
+    "kind": "cooling-stages",
+    "stages": [
+      "freeze",
+      "ice"
+    ],
+    "sumkJ": 372
+  },
+  "CD2520": {
+    "kind": "sensible",
+    "c": 2100,
+    "m": 1,
+    "t1": -20,
+    "t2": 0,
+    "find": "Q",
+    "Q": 42000,
+    "answerUnit": "кДж"
+  },
+  "884544": {
+    "kind": "drop",
+    "leadC": 130,
+    "alC": 920,
+    "answer": "2"
+  },
+  "F74FFB": {
+    "kind": "mix-loss",
+    "mh": 3,
+    "mc": 1.6,
+    "th": 80,
+    "tc": 10,
+    "eta": 0.8,
+    "T": 52
+  },
+  "6DDA7B": {
+    "kind": "ice-mix",
+    "mwater": 0.275,
+    "mice": 0.55,
+    "melt": 0.105,
+    "question": "воды"
+  },
+  "F4EF29": {
+    "kind": "ice-mix",
+    "mwater": 0.275,
+    "mice": 0.55,
+    "melt": 0.105,
+    "question": "льда"
+  },
+  "2252DC": {
+    "kind": "wet-snow",
+    "snow": 0.2,
+    "hot": 0.2,
+    "Thot": 100,
+    "T": 20,
+    "ice": 0.15272727272727274,
+    "questionWater": false
+  },
+  "87F657": {
+    "kind": "wet-snow",
+    "snow": 0.2,
+    "hot": 0.2,
+    "Thot": 100,
+    "T": 20,
+    "ice": 0.15272727272727274,
+    "questionWater": true
+  },
+  "C24751": {
+    "kind": "fuel-evap",
+    "fuelMass": 0.04,
+    "waterMass": 2.5,
+    "eta": 0.5,
+    "evap": 0.034782608695652174
+  },
+  "058F63": {
+    "kind": "fuel-evap",
+    "fuelMass": 0.08,
+    "waterMass": 5,
+    "eta": 0.6,
+    "evap": 0.22956521739130434
+  },
+  "75900A": {
+    "kind": "phase-cool",
+    "m": 2,
+    "c": 4200,
+    "latent": 2300000,
+    "delta": 60,
+    "Q": 5104000,
+    "findMass": false
+  },
+  "197FAA": {
+    "kind": "phase-cool",
+    "m": 0.8,
+    "c": 130,
+    "latent": 25000,
+    "delta": 300,
+    "Q": 51200.0,
+    "findMass": false
+  },
+  "833489": {
+    "kind": "phase-cool",
+    "m": 0.02,
+    "c": 2400,
+    "latent": 900000,
+    "delta": 50,
+    "Q": 20400.0,
+    "findMass": true
+  },
+  "ADE8C7": {
+    "kind": "compound",
+    "ma": 2,
+    "mw": 8,
+    "delta": 80,
+    "Q": 2835200
+  },
+  "F13F82": {
+    "kind": "compound",
+    "ma": 0.2,
+    "mw": 1,
+    "delta": 80,
+    "Q": 350720.0
+  },
+  "A77EC9": {
+    "kind": "spoons",
+    "cAl": 920,
+    "cCu": 400,
+    "ratio": 2.3
+  },
+  "93D497": {
+    "kind": "fuel-heat",
+    "mw": 2,
+    "delta": 29,
+    "q": 29000000,
+    "fuel": 0.0084
+  },
+  "EE087C": {
+    "kind": "phase-time",
+    "delta": 20,
+    "knownMinutes": 5,
+    "findMelt": true,
+    "resultMinutes": 39.285714285714285
+  },
+  "6CBF58": {
+    "kind": "phase-time",
+    "delta": 30,
+    "knownMinutes": 20,
+    "findMelt": false,
+    "resultMinutes": 3.8181818181818183
+  },
+  "6DA9DE": {
+    "kind": "electrical-efficiency",
+    "m": 0.75,
+    "evap": 0.05,
+    "delta": 80,
+    "I": 4,
+    "R": 30,
+    "seconds": 1200,
+    "Q": 367000,
+    "A": 576000
+  },
+  "BBD2AC": {
+    "kind": "electrical-evap",
+    "U": 220,
+    "R": 160,
+    "seconds": 1200,
+    "eta": 0.75,
+    "m": 0.4,
+    "delta": 80,
+    "evap": 0.059934782608695655
+  },
+  "152B37": {
+    "kind": "electrical-efficiency-ui",
+    "U": 220,
+    "I": 7,
+    "seconds": 360,
+    "m": 1,
+    "delta": 80,
+    "Q": 336000,
+    "A": 554400
+  },
+  "CFFE85": {
+    "kind": "electrical-compound",
+    "U": 12,
+    "R": 2,
+    "seconds": 300,
+    "eta": 0.75,
+    "ma": 0.1,
+    "mw": 0.2,
+    "delta": 17.38197424892704
+  },
+  "F30746": {
+    "kind": "choice",
+    "truth": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "graph": "cool-two",
+    "c1Greater": true,
+    "latent1Greater": true
+  },
+  "BF4C0A": {
+    "kind": "choice",
+    "truth": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "graph": "heat-two",
+    "c1Greater": true,
+    "latent1Greater": true,
+    "equalEndQ": true
+  },
+  "658302": {
+    "kind": "choice",
+    "truth": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "graph": "heat-boil",
+    "solidCGreater": true
+  },
+  "1921BB": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "graph": "heat-boil",
+    "solidCGreater": true
+  },
+  "DA30ED": {
+    "kind": "choice",
+    "truth": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "graph": "heat-boil",
+    "solidCGreater": true
+  },
+  "6839B5": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "graph": "cool-one"
+  },
+  "907F9E": {
+    "kind": "choice",
+    "truth": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "graph": "cool-one",
+    "liquidCGreater": true
+  },
+  "0CAB57": {
+    "kind": "choice",
+    "truth": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "graph": "heat-one",
+    "solidCLess": true
+  },
+  "BF2B8D": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "graph": "heat-one",
+    "solidCLess": true
+  },
+  "2C146F": {
+    "kind": "choice",
+    "truth": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "graph": "heat-cool-cycle"
+  },
+  "3BC98D": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "graph": "heat-cool-cycle"
+  },
+  "F91211": {
+    "kind": "choice",
+    "truth": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "graph": "lead-Q",
+    "mass": 2,
+    "Qheat": 78000,
+    "Qmelt": 50000
+  },
+  "247712": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "graph": "lead-Q",
+    "mass": 2,
+    "Qheat": 78000,
+    "Qmelt": 50000
+  },
+  "6F393D": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "graph": "lead-time",
+    "delta": 100,
+    "Q": 13000
+  },
+  "DD988A": {
+    "kind": "choice",
+    "truth": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "graph": "lead-time",
+    "delta": 100,
+    "Q": 13000
+  },
+  "493C65": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "graph": "boil-two",
+    "c1Less": true,
+    "latent1Less": true
+  },
+  "6AE72E": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "graph": "ice-earlier",
+    "equilibrium": "Б"
+  },
+  "B04F64": {
+    "kind": "choice",
+    "truth": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "graph": "ice-simultaneous",
+    "equilibrium": "Б"
+  },
+  "F78C8C": {
+    "kind": "choice",
+    "truth": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "graph": "water-earlier",
+    "equilibrium": "В"
+  },
+  "8E0690": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "graph": "water-two",
+    "equilibriumTemp": "t₂"
+  },
+  "B9F400": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "graph": "calorimeter-Q",
+    "qD": 200,
+    "qE": 600,
+    "qHot": 800,
+    "T": 50
+  },
+  "05B852": {
+    "kind": "graph-energy",
+    "qReference": 300000,
+    "deltaReference": 300,
+    "delta": 150,
+    "Q": 150000
+  },
+  "F06DF8": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "table": "cooling",
+    "al": [
+      72,
+      62,
+      55,
+      50,
+      46
+    ],
+    "plastic": null
+  },
+  "6A34B6": {
+    "kind": "choice",
+    "truth": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "table": "cooling",
+    "al": [
+      72,
+      62,
+      55,
+      50,
+      46
+    ],
+    "plastic": null
+  },
+  "6CA903": {
+    "kind": "choice",
+    "truth": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "table": "cooling",
+    "al": [
+      72,
+      62,
+      55,
+      50,
+      46
+    ],
+    "plastic": [
+      72,
+      65,
+      60.5,
+      56.7,
+      53.3
+    ]
+  },
+  "EDFC22": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "table": "cooling",
+    "al": [
+      72,
+      62,
+      55,
+      50,
+      46
+    ],
+    "plastic": [
+      72,
+      65,
+      60.5,
+      56.7,
+      53.3
+    ]
+  },
+  "7C2DD3": {
+    "kind": "choice",
+    "truth": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "table": "cooling",
+    "al": [
+      72,
+      62,
+      55,
+      50,
+      46
+    ],
+    "plastic": [
+      72,
+      65,
+      60.5,
+      56.7,
+      53.3
+    ]
+  },
+  "05D595": {
+    "kind": "choice",
+    "truth": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "table": "cooling",
+    "al": [
+      72,
+      62,
+      55,
+      50,
+      46
+    ],
+    "plastic": [
+      72,
+      65,
+      60.5,
+      56.7,
+      53.3
+    ]
+  },
+  "54DCF4": {
+    "kind": "choice",
+    "truth": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "table": "cylinders",
+    "waterMass": 0.1,
+    "waterDeltas": [
+      10,
+      10,
+      24,
+      13
+    ]
+  },
+  "E7317D": {
+    "kind": "choice",
+    "truth": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "table": "liquid-heat",
+    "initial": 20,
+    "final1": 60,
+    "final2": 40
+  },
+  "5C7855": {
+    "kind": "choice",
+    "truth": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "table": "liquid-heat",
+    "initial": 20,
+    "final1": 40,
+    "final2": 50
+  },
+  "2B938C": {
+    "kind": "choice",
+    "truth": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "table": "liquid-heat",
+    "initial": 20,
+    "final1": 60,
+    "final2": 40
+  }
+}

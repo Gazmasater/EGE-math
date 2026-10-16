@@ -1,0 +1,22 @@
+{
+  "available_count": 3752,
+  "rows": 3752,
+  "unique_urls": 3738,
+  "targets": {
+    "https://ege-fipi.ru/ege/math": {
+      "url": "https://ege-fipi.ru/ege/math",
+      "last_access": "2026-10-03T14:13:14.000+03:00",
+      "title": "Решение задач ЕГЭ по математике — ФИПИ, ответы и разборы"
+    },
+    "https://ege-fipi.ru/ege/physics": {
+      "url": "https://ege-fipi.ru/ege/physics",
+      "last_access": "2026-10-03T07:21:04.000+03:00",
+      "title": "Решение задач ЕГЭ по физике — ФИПИ, ответы и разборы"
+    },
+    "https://ege-fipi.ru/ege": {
+      "url": "https://ege-fipi.ru/ege",
+      "last_access": "2026-10-01T11:28:58.000+03:00",
+      "title": "ЕГЭ — задания ФИПИ по математике и физике"
+    }
+  }
+}

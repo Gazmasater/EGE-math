@@ -1,0 +1,277 @@
+{
+  "OGEPHYSC10EF1": {
+    "kind": "volume",
+    "reading": 100,
+    "step": 10,
+    "uncertainty": 5
+  },
+  "OGEPHYSF3C375": {
+    "kind": "volume",
+    "reading": 80,
+    "step": 10,
+    "uncertainty": 5
+  },
+  "OGEPHYSE72221": {
+    "kind": "volume",
+    "reading": 60,
+    "step": 10,
+    "uncertainty": 5
+  },
+  "OGEPHYS7A8E71": {
+    "kind": "range",
+    "step": 10,
+    "limit": 120
+  },
+  "OGEPHYS44D638": {
+    "kind": "range",
+    "step": 10,
+    "limit": 80
+  },
+  "OGEPHYS8F911C": {
+    "kind": "length",
+    "left": 0,
+    "right": 6.5,
+    "step": 0.5,
+    "uncertainty": 0.25
+  },
+  "OGEPHYSF731A7": {
+    "kind": "length",
+    "left": 1,
+    "right": 7.5,
+    "step": 0.5,
+    "uncertainty": 0.5
+  },
+  "OGEPHYSFC25C7": {
+    "kind": "length",
+    "left": 1,
+    "right": 5.5,
+    "step": 0.5,
+    "uncertainty": 0.5
+  },
+  "OGEPHYSFAF596": {
+    "kind": "two-rulers",
+    "firstStepCm": 10,
+    "secondStepMm": 1
+  },
+  "OGEPHYSD5F59C": {
+    "kind": "length-given",
+    "reading": 20.1,
+    "uncertainty": 0.1
+  },
+  "OGEPHYS309BCF": {
+    "kind": "mechanisms",
+    "devices": [
+      "рычажные весы",
+      "демонстрационный гальванометр"
+    ]
+  },
+  "OGEPHYS297148": {
+    "kind": "matching",
+    "quantities": [
+      "mass",
+      "psych"
+    ],
+    "devices": [
+      "весы",
+      "психрометр"
+    ]
+  },
+  "OGEPHYSC89049": {
+    "kind": "matching",
+    "quantities": [
+      "temp",
+      "cylinder"
+    ],
+    "devices": [
+      "термометр",
+      "измерительный цилиндр"
+    ]
+  },
+  "OGEPHYS64F247": {
+    "kind": "matching",
+    "quantities": [
+      "aneroid",
+      "liquidtemp"
+    ],
+    "devices": [
+      "барометр-анероид",
+      "жидкостный термометр"
+    ]
+  },
+  "OGEPHYSCDE5FE": {
+    "kind": "matching",
+    "quantities": [
+      "temp",
+      "hygro"
+    ],
+    "devices": [
+      "термометр",
+      "гигрометр"
+    ]
+  },
+  "OGEPHYSA8B970": {
+    "kind": "matching",
+    "quantities": [
+      "lever",
+      "hair"
+    ],
+    "devices": [
+      "рычажные весы",
+      "волосной гигрометр"
+    ]
+  },
+  "OGEPHYS3EB879": {
+    "kind": "matching",
+    "quantities": [
+      "power",
+      "current"
+    ],
+    "devices": [
+      "ваттметр",
+      "амперметр"
+    ]
+  },
+  "OGEPHYS01AF1F": {
+    "kind": "matching",
+    "quantities": [
+      "accel",
+      "force"
+    ],
+    "devices": [
+      "акселерометр",
+      "динамометр"
+    ]
+  },
+  "OGEPHYSDE7F1F": {
+    "kind": "matching",
+    "quantities": [
+      "force",
+      "time"
+    ],
+    "devices": [
+      "динамометр",
+      "секундомер"
+    ]
+  },
+  "OGEPHYS91591D": {
+    "kind": "matching",
+    "quantities": [
+      "speed",
+      "accel"
+    ],
+    "devices": [
+      "спидометр",
+      "акселерометр"
+    ]
+  },
+  "OGEPHYS342D17": {
+    "kind": "matching",
+    "quantities": [
+      "psychh",
+      "aneroid"
+    ],
+    "devices": [
+      "психрометрический гигрометр",
+      "барометр-анероид"
+    ]
+  },
+  "OGEPHYS934F2F": {
+    "kind": "matching",
+    "quantities": [
+      "force",
+      "baro"
+    ],
+    "devices": [
+      "динамометр",
+      "барометр"
+    ]
+  },
+  "OGEPHYS34E22F": {
+    "kind": "matching",
+    "quantities": [
+      "density",
+      "volume"
+    ],
+    "devices": [
+      "ареометр",
+      "мензурка"
+    ]
+  },
+  "OGEPHYS704ED5": {
+    "kind": "matching",
+    "quantities": [
+      "speed",
+      "force"
+    ],
+    "devices": [
+      "спидометр",
+      "динамометр"
+    ]
+  },
+  "OGEPHYS4A965C": {
+    "kind": "matching",
+    "quantities": [
+      "temp",
+      "volume"
+    ],
+    "devices": [
+      "термометр",
+      "мензурка"
+    ]
+  },
+  "OGEPHYS6F7554": {
+    "kind": "matching",
+    "quantities": [
+      "density",
+      "temp"
+    ],
+    "devices": [
+      "ареометр",
+      "термометр"
+    ]
+  },
+  "OGEPHYS6174A8": {
+    "kind": "matching",
+    "quantities": [
+      "baro",
+      "hydro"
+    ],
+    "devices": [
+      "барометр",
+      "манометр"
+    ]
+  },
+  "OGEPHYS2CBE9A": {
+    "kind": "matching",
+    "quantities": [
+      "temp",
+      "baro"
+    ],
+    "devices": [
+      "термометр",
+      "барометр"
+    ]
+  },
+  "OGEPHYSDA6791": {
+    "kind": "matching",
+    "quantities": [
+      "diff",
+      "psychh"
+    ],
+    "devices": [
+      "U-образный манометр",
+      "психрометрический гигрометр"
+    ]
+  },
+  "OGEPHYS5CFE9B": {
+    "kind": "matching",
+    "quantities": [
+      "irregular",
+      "density"
+    ],
+    "devices": [
+      "мензурка",
+      "ареометр"
+    ]
+  }
+}

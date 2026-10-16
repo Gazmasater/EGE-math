@@ -1,0 +1,335 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "checkedAt": "2026-10-08T22:33:12.659Z",
+  "pages": [
+    {
+      "route": "/ege",
+      "viewport": 390,
+      "title": "ЕГЭ — задания ФИПИ по математике и физике",
+      "width": 390,
+      "scrollWidth": 390,
+      "headings": 1,
+      "headerHeight": 70,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/math",
+      "viewport": 390,
+      "title": "ЕГЭ по математике, профиль — задания с решениями",
+      "width": 390,
+      "scrollWidth": 390,
+      "headings": 1,
+      "headerHeight": 70,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/physics",
+      "viewport": 390,
+      "title": "ЕГЭ по физике — задания с ответами и решениями",
+      "width": 390,
+      "scrollWidth": 390,
+      "headings": 1,
+      "headerHeight": 70,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege",
+      "viewport": 1280,
+      "title": "ЕГЭ — задания ФИПИ по математике и физике",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "headings": 1,
+      "headerHeight": 84,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/math",
+      "viewport": 1280,
+      "title": "ЕГЭ по математике, профиль — задания с решениями",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "headings": 1,
+      "headerHeight": 84,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/physics",
+      "viewport": 1280,
+      "title": "ЕГЭ по физике — задания с ответами и решениями",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "headings": 1,
+      "headerHeight": 84,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/",
+      "viewport": 320,
+      "title": "Первая часть ЕГЭ по математике — каталог по типам",
+      "width": 320,
+      "scrollWidth": 320,
+      "headings": 1,
+      "headerHeight": 70,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/",
+      "viewport": 360,
+      "title": "Первая часть ЕГЭ по математике — каталог по типам",
+      "width": 360,
+      "scrollWidth": 360,
+      "headings": 1,
+      "headerHeight": 70,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/",
+      "viewport": 768,
+      "title": "Первая часть ЕГЭ по математике — каталог по типам",
+      "width": 768,
+      "scrollWidth": 753,
+      "headings": 1,
+      "headerHeight": 74,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/",
+      "viewport": 1024,
+      "title": "Первая часть ЕГЭ по математике — каталог по типам",
+      "width": 1024,
+      "scrollWidth": 1009,
+      "headings": 1,
+      "headerHeight": 84,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/",
+      "viewport": 1440,
+      "title": "Первая часть ЕГЭ по математике — каталог по типам",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "headings": 1,
+      "headerHeight": 84,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/math",
+      "viewport": 390,
+      "title": "ЕГЭ по математике, профиль — задания с решениями",
+      "width": 390,
+      "scrollWidth": 390,
+      "headings": 1,
+      "headerHeight": 70,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/physics",
+      "viewport": 390,
+      "title": "ЕГЭ по физике — задания с ответами и решениями",
+      "width": 390,
+      "scrollWidth": 390,
+      "headings": 1,
+      "headerHeight": 70,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/math",
+      "viewport": 1280,
+      "title": "ЕГЭ по математике, профиль — задания с решениями",
+      "width": 1280,
+      "scrollWidth": 1265,
+      "headings": 1,
+      "headerHeight": 84,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/physics",
+      "viewport": 1280,
+      "title": "ЕГЭ по физике — задания с ответами и решениями",
+      "width": 1280,
+      "scrollWidth": 1265,
+      "headings": 1,
+      "headerHeight": 84,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/math",
+      "viewport": 390,
+      "title": "ЕГЭ по математике, профиль — задания с решениями",
+      "width": 390,
+      "scrollWidth": 390,
+      "headings": 1,
+      "headerHeight": 70,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/physics",
+      "viewport": 390,
+      "title": "ЕГЭ по физике — задания с ответами и решениями",
+      "width": 390,
+      "scrollWidth": 390,
+      "headings": 1,
+      "headerHeight": 70,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/math",
+      "viewport": 1280,
+      "title": "ЕГЭ по математике, профиль — задания с решениями",
+      "width": 1280,
+      "scrollWidth": 1265,
+      "headings": 1,
+      "headerHeight": 84,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    },
+    {
+      "route": "/ege/physics",
+      "viewport": 1280,
+      "title": "ЕГЭ по физике — задания с ответами и решениями",
+      "width": 1280,
+      "scrollWidth": 1265,
+      "headings": 1,
+      "headerHeight": 84,
+      "overflow": [],
+      "broken": 0,
+      "footer": true,
+      "styled": true
+    }
+  ],
+  "interactions": [
+    {
+      "width": 390,
+      "cta": true,
+      "sample": true,
+      "secondPartMenu": true,
+      "escapeAndFocus": true,
+      "search": true,
+      "solutionAnchor": true
+    },
+    {
+      "width": 1280,
+      "cta": true,
+      "sample": true,
+      "secondPartMenu": true,
+      "escapeAndFocus": true,
+      "search": true,
+      "solutionAnchor": true
+    },
+    {
+      "subject": "math",
+      "width": 390,
+      "noJavaScript": false,
+      "preparationAnchor": true,
+      "subjectFaq": true
+    },
+    {
+      "subject": "physics",
+      "width": 390,
+      "noJavaScript": false,
+      "preparationAnchor": true,
+      "subjectFaq": true
+    },
+    {
+      "subject": "math",
+      "width": 1280,
+      "noJavaScript": false,
+      "preparationAnchor": true,
+      "subjectFaq": true
+    },
+    {
+      "subject": "physics",
+      "width": 1280,
+      "noJavaScript": false,
+      "preparationAnchor": true,
+      "subjectFaq": true
+    },
+    {
+      "subject": "math",
+      "width": 390,
+      "noJavaScript": true,
+      "preparationAnchor": true,
+      "subjectFaq": true
+    },
+    {
+      "subject": "physics",
+      "width": 390,
+      "noJavaScript": true,
+      "preparationAnchor": true,
+      "subjectFaq": true
+    },
+    {
+      "subject": "math",
+      "width": 1280,
+      "noJavaScript": true,
+      "preparationAnchor": true,
+      "subjectFaq": true
+    },
+    {
+      "subject": "physics",
+      "width": 1280,
+      "noJavaScript": true,
+      "preparationAnchor": true,
+      "subjectFaq": true
+    },
+    {
+      "noJavaScript": true,
+      "sample": true,
+      "mobileSubjectNavigation": true
+    }
+  ],
+  "errors": []
+}

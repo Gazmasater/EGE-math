@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-16T19:55:29.792817+00:00",
+  "fresh_collection": "failed",
+  "fresh_rows": 0,
+  "temporary_reports_created": 0,
+  "error_code": 509,
+  "error": "Метод недоступен в данной версии API",
+  "probes": [
+    "broad.json",
+    "api-probe.json",
+    "api-v4-probe.json"
+  ],
+  "new_api": "https://searchapi.api.cloud.yandex.net/v2/wordstat/topRequests",
+  "missing": "Yandex Search API credentials and folderId are not configured in inspected locations",
+  "plugin_search": "No Wordstat plugin found by exact-name search",
+  "analysis_source": "Archived successful Direct Wordstat responses from 2026-10-08 UTC"
+}

@@ -1,0 +1,50 @@
+{
+  "reviewed_at": "2026-10-08T22:31:51.624832+00:00",
+  "result": "pass",
+  "findings": "Both subject pages: readable headings, preparation links, FAQ answers and controls; no overlap or horizontal overflow. Native FAQ and preparation anchors verified with JS disabled.",
+  "images": [
+    {
+      "file": "ui-preview/390-math-intro.jpg",
+      "sha256": "16d3f7d706bc4dd99151f81d2a9852a23667f47961333e5426d289c9925647b4"
+    },
+    {
+      "file": "ui-preview/390-physics-preparation.jpg",
+      "sha256": "6ce766b260941772358da872774b24359e1780d2497a20c374506efbb90c1ab2"
+    },
+    {
+      "file": "ui-preview/1280-math-intro.jpg",
+      "sha256": "464489563a6e5a9b6081c8e9f43b81295053fb01d23151cd93d5e0c170c24925"
+    },
+    {
+      "file": "ui-preview/1280-physics-faq.jpg",
+      "sha256": "8b5636f8f8da745add0022f2574d5b0f8d711ed3517964a0a52d7e951d2de6cb"
+    },
+    {
+      "file": "ui-preview/390-physics-intro-nojs.jpg",
+      "sha256": "9765a3b5ae65cd351dc3fd75447c4bddf3a0c6c7385dd778967fdcc786853b16"
+    },
+    {
+      "file": "ui-preview/390-math-preparation-nojs.jpg",
+      "sha256": "10b0085a11e1b57c8d32290069132c57731439248911a221e66b7fa06df45393"
+    },
+    {
+      "file": "ui-preview/390-physics-faq-nojs.jpg",
+      "sha256": "880800b0e128094fedb43a075897c8af746f107647f584ef6fcb7f7a93d61cca"
+    },
+    {
+      "file": "ui-preview/1280-physics-intro.jpg",
+      "sha256": "27a66f932c94687e8c6b7470bc21ec604d389fa03b155523b283ba03a47e2fa5"
+    }
+  ],
+  "public_reviewed_at": "2026-10-08T22:36:32.318620+00:00",
+  "public_images": [
+    {
+      "file": "ui-public/390-math-preparation-nojs.jpg",
+      "sha256": "10b0085a11e1b57c8d32290069132c57731439248911a221e66b7fa06df45393"
+    },
+    {
+      "file": "ui-public/1280-physics-faq.jpg",
+      "sha256": "53ba40d9ecbcab91f963c0270ef5740766c17edb9930e436fd8d15cf191fb3d9"
+    }
+  ]
+}

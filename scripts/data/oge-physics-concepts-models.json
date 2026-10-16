@@ -1,0 +1,250 @@
+{
+  "OGEPHYSFAF147": {
+    "kind": "concept",
+    "answer": "234"
+  },
+  "OGEPHYSFF47F3": {
+    "kind": "concept",
+    "answer": "421"
+  },
+  "OGEPHYS446805": {
+    "kind": "concept",
+    "answer": "421"
+  },
+  "OGEPHYS491879": {
+    "kind": "concept",
+    "answer": "415"
+  },
+  "OGEPHYSE89275": {
+    "kind": "concept",
+    "answer": "235"
+  },
+  "OGEPHYS1B21BF": {
+    "kind": "concept",
+    "answer": "321"
+  },
+  "OGEPHYSE64CD6": {
+    "kind": "concept",
+    "answer": "254"
+  },
+  "OGEPHYS68C5D8": {
+    "kind": "concept",
+    "answer": "345"
+  },
+  "OGEPHYS8C10DA": {
+    "kind": "concept",
+    "answer": "153"
+  },
+  "OGEPHYSE3F45E": {
+    "kind": "concept",
+    "answer": "421"
+  },
+  "OGEPHYS38985C": {
+    "kind": "concept",
+    "answer": "432"
+  },
+  "OGEPHYS5158A9": {
+    "kind": "concept",
+    "answer": "254"
+  },
+  "OGEPHYSCD90C7": {
+    "kind": "concept",
+    "answer": "435"
+  },
+  "OGEPHYSCB7BC8": {
+    "kind": "concept",
+    "answer": "315"
+  },
+  "OGEPHYS3D179D": {
+    "kind": "concept",
+    "answer": "152"
+  },
+  "OGEPHYSE86B6C": {
+    "kind": "concept",
+    "answer": "345"
+  },
+  "OGEPHYSB7A980": {
+    "kind": "concept",
+    "answer": "341"
+  },
+  "OGEPHYS8E6542": {
+    "kind": "concept",
+    "answer": "142"
+  },
+  "OGEPHYSDEB4F4": {
+    "kind": "concept",
+    "answer": "254"
+  },
+  "OGEPHYS889A76": {
+    "kind": "concept",
+    "answer": "234"
+  },
+  "OGEPHYSA55ABD": {
+    "kind": "concept",
+    "answer": "423"
+  },
+  "OGEPHYSD99612": {
+    "kind": "concept",
+    "answer": "254"
+  },
+  "OGEPHYS0AA950": {
+    "kind": "concept",
+    "answer": "124"
+  },
+  "OGEPHYSD58750": {
+    "kind": "concept",
+    "answer": "254"
+  },
+  "OGEPHYS5444C6": {
+    "kind": "concept",
+    "answer": "451"
+  },
+  "OGEPHYS296E9C": {
+    "kind": "concept",
+    "answer": "234"
+  },
+  "OGEPHYS209D38": {
+    "kind": "concept",
+    "answer": "153"
+  },
+  "OGEPHYSAF8881": {
+    "kind": "concept",
+    "answer": "243"
+  },
+  "OGEPHYS74EDFD": {
+    "kind": "unit",
+    "answer": "132"
+  },
+  "OGEPHYSD7DEF8": {
+    "kind": "unit",
+    "answer": "452"
+  },
+  "OGEPHYS95027B": {
+    "kind": "unit",
+    "answer": "431"
+  },
+  "OGEPHYS738CBD": {
+    "kind": "unit",
+    "answer": "123"
+  },
+  "OGEPHYS4E3D1F": {
+    "kind": "unit",
+    "answer": "534"
+  },
+  "OGEPHYS44071E": {
+    "kind": "unit",
+    "answer": "542"
+  },
+  "OGEPHYS15DE12": {
+    "kind": "unit",
+    "answer": "215"
+  },
+  "OGEPHYS266A17": {
+    "kind": "unit",
+    "answer": "213"
+  },
+  "OGEPHYS387010": {
+    "kind": "unit",
+    "answer": "123"
+  },
+  "OGEPHYS2BA02C": {
+    "kind": "unit",
+    "answer": "235"
+  },
+  "OGEPHYS38C226": {
+    "kind": "unit",
+    "answer": "123"
+  },
+  "OGEPHYSEB66DE": {
+    "kind": "unit",
+    "answer": "235"
+  },
+  "OGEPHYS419E50": {
+    "kind": "unit",
+    "answer": "351"
+  },
+  "OGEPHYS47AEA4": {
+    "kind": "unit",
+    "answer": "321"
+  },
+  "OGEPHYS914297": {
+    "kind": "unit",
+    "answer": "451"
+  },
+  "OGEPHYS4E53E1": {
+    "kind": "unit",
+    "answer": "421"
+  },
+  "OGEPHYSF0E360": {
+    "kind": "unit",
+    "answer": "123"
+  },
+  "OGEPHYS224E67": {
+    "kind": "unit",
+    "answer": "243"
+  },
+  "OGEPHYSB35D3D": {
+    "kind": "unit",
+    "answer": "512"
+  },
+  "OGEPHYS71EB89": {
+    "kind": "unit",
+    "answer": "432"
+  },
+  "OGEPHYSBB1221": {
+    "kind": "definition",
+    "answer": "235"
+  },
+  "OGEPHYS246CE1": {
+    "kind": "definition",
+    "answer": "413"
+  },
+  "OGEPHYS88CB6C": {
+    "kind": "definition",
+    "answer": "134"
+  },
+  "OGEPHYS43324D": {
+    "kind": "definition",
+    "answer": "135"
+  },
+  "OGEPHYS0A784C": {
+    "kind": "definition",
+    "answer": "412"
+  },
+  "OGEPHYSDC9046": {
+    "kind": "definition",
+    "answer": "125"
+  },
+  "OGEPHYS26520B": {
+    "kind": "definition",
+    "answer": "124"
+  },
+  "OGEPHYSA1B901": {
+    "kind": "definition",
+    "answer": "523"
+  },
+  "OGEPHYS034E27": {
+    "kind": "definition",
+    "answer": "253"
+  },
+  "OGEPHYSCA2DD9": {
+    "kind": "definition",
+    "answer": "452"
+  },
+  "OGEPHYSFB4591": {
+    "kind": "definition",
+    "answer": "243"
+  },
+  "OGEPHYS4A77E5": {
+    "kind": "definition",
+    "answer": "352"
+  },
+  "OGEPHYSDE7FE0": {
+    "kind": "definition",
+    "answer": "241"
+  },
+  "OGEPHYS89293F": {
+    "kind": "definition",
+    "answer": "145"
+  }
+}

@@ -1,0 +1,2746 @@
+{
+  "EBD148": {
+    "sourceId": "EBD148",
+    "sourceFile": "oge-2.raw.html",
+    "sourceHash": "d5117ff11b457b043d70b208ed2d02b7ea1621ad516f58d52347d644c430c9f6",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k Б) k 0 В) k>0, b ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0CF745355A67A77446731AE48E14E803/xs3qvrsrcDE0F5AADE43C9E324CDE2FC8D403C59B_1_1426875109.png",
+        "sha256": "34d1fa0c38fa143e37ad9eba7627f6b430a8e79608c704ee82e6345cbced0ed5",
+        "width": 181,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0CF745355A67A77446731AE48E14E803/xs3qvrsrcFD870D32CC23BB764FF6031F3A2CCFB5_1_1426875138.png",
+        "sha256": "8c1851ebb76fd6786575cbc1da046c7b96b7a777a946260f9bea753b4298aaf5",
+        "width": 185,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0CF745355A67A77446731AE48E14E803/xs3qvrsrcD7820B932FE196DC480F2100F2A0F134_1_1426875166.png",
+        "sha256": "ab62c591f819f2c345c95a86e3d2ddea19b27e9307284bf604a5cf73b35c7b73",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=339082",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "213",
+    "externalAnswer": "213",
+    "externalAnswerRaw": "Ответ: 213",
+    "externalCondition": "На рисунке изображены графики функций вида y = kx + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. Графики Коэффициенты А) k < 0, b<0 Б) k < 0, b > 0 В) k > 0, b < 0 Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: А Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "--",
+        "-+",
+        "+-"
+      ],
+      "graphSigns": [
+        "-+",
+        "--",
+        "+-"
+      ],
+      "answer": "213",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k < 0 , b < 0 Б) k < 0 , b > 0 В) k > 0 , b < 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: -+, --, +-"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0CF745355A67A77446731AE48E14E803/xs3qvrsrcDE0F5AADE43C9E324CDE2FC8D403C59B_1_1426875109.png",
+          "sha256": "34d1fa0c38fa143e37ad9eba7627f6b430a8e79608c704ee82e6345cbced0ed5",
+          "width": 181,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0CF745355A67A77446731AE48E14E803/xs3qvrsrcFD870D32CC23BB764FF6031F3A2CCFB5_1_1426875138.png",
+          "sha256": "8c1851ebb76fd6786575cbc1da046c7b96b7a777a946260f9bea753b4298aaf5",
+          "width": 185,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0CF745355A67A77446731AE48E14E803/xs3qvrsrcD7820B932FE196DC480F2100F2A0F134_1_1426875166.png",
+          "sha256": "ab62c591f819f2c345c95a86e3d2ddea19b27e9307284bf604a5cf73b35c7b73",
+          "width": 183,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: -+, --, +-; во внешнем: -+, --, +-, ++. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 1, В — 3. Ответ: 213.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=339082",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 1, В — 3. Ответ: 213.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: -+, --, +-; во внешнем: -+, --, +-, ++. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик 1: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик 2: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\nГрафик 3: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k отрицателен, b отрицателен; подходит график 2.\n\nБ) k отрицателен, b положителен; подходит график 1.\n\nВ) k положителен, b отрицателен; подходит график 3.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 213."
+    }
+  },
+  "8C2242": {
+    "sourceId": "8C2242",
+    "sourceFile": "oge-2.raw.html",
+    "sourceHash": "8ed26aed6ffeea15021d62c889c5adc55da28e77d996efb5e70cc93a9b65e349",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k>0, b Б) k>0, b>0 В) k ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0F66A6931F28907341BA1FD230FD1E3B/xs3qvrsrcA5AA430A3393AFA54FAFB6DD4ADE83FC_1_1426876017.png",
+        "sha256": "f7f102fa74022ac7b2369bf771940c1f6c27e2234b0b8304a32be50dee7e67fd",
+        "width": 182,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0F66A6931F28907341BA1FD230FD1E3B/xs3qvrsrc5C431F1422DCA1F4471E418ED7E3A818_1_1426876041.png",
+        "sha256": "4250832a88dbff4782e21d93957e1b88487e46a1290d38292264240fca6bc7eb",
+        "width": 181,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0F66A6931F28907341BA1FD230FD1E3B/xs3qvrsrc3E1BB9740E7DB5D7460B9685C712B393_1_1426876062.png",
+        "sha256": "adcb6c71b1e481f9bbbe40c9b6093526b907bfd18d58b3e536ce5d3f770aa2a6",
+        "width": 181,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=348623",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "231",
+    "externalAnswer": "231",
+    "externalAnswerRaw": "Ответ: 231",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k больше 0, b меньше 0 Б) k больше 0, b больше 0 В) k меньше 0, b меньше 0 ГРАФИКИ",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "+-",
+        "++",
+        "--"
+      ],
+      "graphSigns": [
+        "--",
+        "+-",
+        "++"
+      ],
+      "answer": "231",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k > 0 , b < 0 Б) k > 0 , b > 0 В) k < 0 , b < 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: --, +-, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0F66A6931F28907341BA1FD230FD1E3B/xs3qvrsrcA5AA430A3393AFA54FAFB6DD4ADE83FC_1_1426876017.png",
+          "sha256": "f7f102fa74022ac7b2369bf771940c1f6c27e2234b0b8304a32be50dee7e67fd",
+          "width": 182,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0F66A6931F28907341BA1FD230FD1E3B/xs3qvrsrc5C431F1422DCA1F4471E418ED7E3A818_1_1426876041.png",
+          "sha256": "4250832a88dbff4782e21d93957e1b88487e46a1290d38292264240fca6bc7eb",
+          "width": 181,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/0F66A6931F28907341BA1FD230FD1E3B/xs3qvrsrc3E1BB9740E7DB5D7460B9685C712B393_1_1426876062.png",
+          "sha256": "adcb6c71b1e481f9bbbe40c9b6093526b907bfd18d58b3e536ce5d3f770aa2a6",
+          "width": 181,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 2, Б — 3, В —1. Ответ: 231.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=348623",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 2, Б — 3, В —1. Ответ: 231.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "F7E600": {
+    "sourceId": "F7E600",
+    "sourceFile": "oge-4.raw.html",
+    "sourceHash": "22293c56befc760381f82731da5ed48cbe507a23ff17e8905f0a505e4b592386",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k>0, b>0 Б) k 0 В) k ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/212C3D1657C4ACC24CF80A0525AC89CA/xs3qvrsrc701EBEEA43FAAFA2429381EC6DD6FE43_1_1426875367.png",
+        "sha256": "2a90a36dd498c56d78a8e1a28c19f9296aab07d2222a8a821d87abee707c1e8a",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/212C3D1657C4ACC24CF80A0525AC89CA/xs3qvrsrc8985DFDD4C9DAFC74E7AC3F155BD4A75_1_1426875389.png",
+        "sha256": "4eff282284bbdfb5b077cb5cd0e8ad8150c599dbb6023860d57d1c7780c5234a",
+        "width": 180,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/212C3D1657C4ACC24CF80A0525AC89CA/xs3qvrsrcE43F89F7286080B9428E70102BB7374F_1_1426875412.png",
+        "sha256": "ab7433e74d3f06070f983bd755acea2d0814baf16d05453e30ac130aff4a8cf4",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=348928",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "312",
+    "externalAnswer": "312",
+    "externalAnswerRaw": "Ответ: 312",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k больше 0, b больше 0 Б) k меньше 0, b больше 0 В) k меньше 0, b меньше 0 ГРАФИКИ В таблице под каждой буквой укажите соответствующий номер. Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: А Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "++",
+        "-+",
+        "--"
+      ],
+      "graphSigns": [
+        "-+",
+        "--",
+        "++"
+      ],
+      "answer": "312",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k > 0 , b > 0 Б) k < 0 , b > 0 В) k < 0 , b < 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: -+, --, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/212C3D1657C4ACC24CF80A0525AC89CA/xs3qvrsrc701EBEEA43FAAFA2429381EC6DD6FE43_1_1426875367.png",
+          "sha256": "2a90a36dd498c56d78a8e1a28c19f9296aab07d2222a8a821d87abee707c1e8a",
+          "width": 183,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/212C3D1657C4ACC24CF80A0525AC89CA/xs3qvrsrc8985DFDD4C9DAFC74E7AC3F155BD4A75_1_1426875389.png",
+          "sha256": "4eff282284bbdfb5b077cb5cd0e8ad8150c599dbb6023860d57d1c7780c5234a",
+          "width": 180,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/212C3D1657C4ACC24CF80A0525AC89CA/xs3qvrsrcE43F89F7286080B9428E70102BB7374F_1_1426875412.png",
+          "sha256": "ab7433e74d3f06070f983bd755acea2d0814baf16d05453e30ac130aff4a8cf4",
+          "width": 183,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 3, Б — 1, В —2. Ответ: 312.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=348928",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 3, Б — 1, В —2. Ответ: 312.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "152506": {
+    "sourceId": "152506",
+    "sourceFile": "oge-4.raw.html",
+    "sourceHash": "4323e6005c405d3967bc50c9f04d74bc6573afc11f2903e6d87ef955defa002d",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k 2) k>0, b>0 3) k>0, b В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/25D6882B1546BE604155EF438BC32862/xs3qvrsrcD817885E316496BB40956ACD2CCA67EF_1_1433248798.png",
+        "sha256": "a6f6086921ca5361966d6606b31b8e340bcd94b5f148d5c5e23c78966cebbdd5",
+        "width": 189,
+        "height": 188,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/25D6882B1546BE604155EF438BC32862/xs3qvrsrc05D8696601E9960844C6E7DA6203D3CD_1_1433248802.png",
+        "sha256": "2f90462369f1008dcc5bb419f5cec56c64506f9669504bf07befb574beffd969",
+        "width": 189,
+        "height": 192,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/25D6882B1546BE604155EF438BC32862/xs3qvrsrcC6471E4561B29068440DFC7261A4C391_1_1433248805.png",
+        "sha256": "7f9a3d8d2fae29d4d592e03245348f380872b346778042fa577b52cd9d6a0d3a",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=316226",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "231",
+    "externalAnswer": "321",
+    "externalAnswerRaw": "Ответ: 321",
+    "externalCondition": "На рисунке изображены графики функций вида y = kx плюс b . Установите соответствие между знаками коэффициентов k и b и графиками. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k больше 0, b больше 0 В) k больше 0, b меньше 0 ГРАФИКИ Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: А Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "--",
+        "++",
+        "+-"
+      ],
+      "graphSigns": [
+        "++",
+        "+-",
+        "--"
+      ],
+      "answer": "231",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k < 0 , b < 0 2) k > 0 , b > 0 3) k > 0 , b < 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: ++, +-, --"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/25D6882B1546BE604155EF438BC32862/xs3qvrsrcD817885E316496BB40956ACD2CCA67EF_1_1433248798.png",
+          "sha256": "a6f6086921ca5361966d6606b31b8e340bcd94b5f148d5c5e23c78966cebbdd5",
+          "width": 189,
+          "height": 188,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/25D6882B1546BE604155EF438BC32862/xs3qvrsrc05D8696601E9960844C6E7DA6203D3CD_1_1433248802.png",
+          "sha256": "2f90462369f1008dcc5bb419f5cec56c64506f9669504bf07befb574beffd969",
+          "width": 189,
+          "height": 192,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/25D6882B1546BE604155EF438BC32862/xs3qvrsrcC6471E4561B29068440DFC7261A4C391_1_1433248805.png",
+          "sha256": "7f9a3d8d2fae29d4d592e03245348f380872b346778042fa577b52cd9d6a0d3a",
+          "width": 189,
+          "height": 189,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: ++, +-, --; во внешнем: +-, ++, --, -+. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 2, В — 1. Ответ: 321.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=316226",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 2, В — 1. Ответ: 321.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: ++, +-, --; во внешнем: +-, ++, --, -+. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик А: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик Б: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\nГрафик В: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k положителен, b положителен; подходит пара коэффициентов 2.\n\nБ) k положителен, b отрицателен; подходит пара коэффициентов 3.\n\nВ) k отрицателен, b отрицателен; подходит пара коэффициентов 1.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 231."
+    }
+  },
+  "3A0009": {
+    "sourceId": "3A0009",
+    "sourceFile": "oge-5.raw.html",
+    "sourceHash": "53ce9b1fba489871fca5fe2430e1c0138ea905a9a5f4b7b9aa83ce849392647b",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k Б) k 0 В) k>0, b ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/2EB292341679A3E14ED6E36607656239/xs3qvrsrcE7398C9025B6924B4A25D4DC7E2FEF00_1_1426876088.png",
+        "sha256": "2723382466e6202ec2630d5f4af49aa48e0efcf4ac17bf2af50c31f59e7c8d70",
+        "width": 181,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/2EB292341679A3E14ED6E36607656239/xs3qvrsrc1D73DACEE936978242022611B7819E60_1_1426876122.png",
+        "sha256": "8dff073c4a00db7713cb4529f3d24bae4244125feb8536dae980e4518ce7e903",
+        "width": 181,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/2EB292341679A3E14ED6E36607656239/xs3qvrsrc9E347113C61BBD714B1DBF23CEDE3951_1_1426876153.png",
+        "sha256": "806cface155be7f2b3a36e9d4bf3bb4f625bf512071977ba415a8deef4b5ff92",
+        "width": 181,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=349170",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "231",
+    "externalAnswer": "231",
+    "externalAnswerRaw": "Ответ: 231",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k меньше 0, b больше 0 В) k больше 0, b меньше 0 ГРАФИКИ В таблице под каждой буквой укажите соответствующий номер.",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "--",
+        "-+",
+        "+-"
+      ],
+      "graphSigns": [
+        "+-",
+        "--",
+        "-+"
+      ],
+      "answer": "231",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k < 0 , b < 0 Б) k < 0 , b > 0 В) k > 0 , b < 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: +-, --, -+"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/2EB292341679A3E14ED6E36607656239/xs3qvrsrcE7398C9025B6924B4A25D4DC7E2FEF00_1_1426876088.png",
+          "sha256": "2723382466e6202ec2630d5f4af49aa48e0efcf4ac17bf2af50c31f59e7c8d70",
+          "width": 181,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/2EB292341679A3E14ED6E36607656239/xs3qvrsrc1D73DACEE936978242022611B7819E60_1_1426876122.png",
+          "sha256": "8dff073c4a00db7713cb4529f3d24bae4244125feb8536dae980e4518ce7e903",
+          "width": 181,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/2EB292341679A3E14ED6E36607656239/xs3qvrsrc9E347113C61BBD714B1DBF23CEDE3951_1_1426876153.png",
+          "sha256": "806cface155be7f2b3a36e9d4bf3bb4f625bf512071977ba415a8deef4b5ff92",
+          "width": 181,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=349170",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "CF1C7A": {
+    "sourceId": "CF1C7A",
+    "sourceFile": "oge-6.raw.html",
+    "sourceHash": "96f4df69d312d951c4652ef669c362ddc077f4b354bba8e1103ccc05e8208c34",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k>0, b>0 2) k 0 3) k>0, b В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3A951AE8C13085704D543CB7510B4B58/xs3qvrsrcD2AF016B32C9BE1B45FA9A86821540D6_1_1433248897.png",
+        "sha256": "46c512f2e1cdfa341c710de7d690e798195a8d5996ce1b68f4060598cb299352",
+        "width": 189,
+        "height": 192,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3A951AE8C13085704D543CB7510B4B58/xs3qvrsrc856A6C796925BA8B4BF7E6CBB333F3E9_1_1433248900.png",
+        "sha256": "efbaed29c41413c28f334d83e6025911afdf6f0d212fb4c434082e991de5886b",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3A951AE8C13085704D543CB7510B4B58/xs3qvrsrcF87EB9C7CB0F81EA45A5977B61C9E8A1_1_1433248903.png",
+        "sha256": "4ac41697a5ffcc2143f0dd3db2be2aed37753e76853f1e27437daa9671bdfb69",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=351035",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "213",
+    "externalAnswer": "231",
+    "externalAnswerRaw": "Ответ: 231",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k больше 0, b больше 0 Б) k меньше 0, b больше 0 В) k больше 0, b меньше 0 ГРАФИКИ Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "++",
+        "-+",
+        "+-"
+      ],
+      "graphSigns": [
+        "-+",
+        "++",
+        "+-"
+      ],
+      "answer": "213",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k > 0 , b > 0 2) k < 0 , b > 0 3) k > 0 , b < 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: -+, ++, +-"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3A951AE8C13085704D543CB7510B4B58/xs3qvrsrcD2AF016B32C9BE1B45FA9A86821540D6_1_1433248897.png",
+          "sha256": "46c512f2e1cdfa341c710de7d690e798195a8d5996ce1b68f4060598cb299352",
+          "width": 189,
+          "height": 192,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3A951AE8C13085704D543CB7510B4B58/xs3qvrsrc856A6C796925BA8B4BF7E6CBB333F3E9_1_1433248900.png",
+          "sha256": "efbaed29c41413c28f334d83e6025911afdf6f0d212fb4c434082e991de5886b",
+          "width": 189,
+          "height": 189,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3A951AE8C13085704D543CB7510B4B58/xs3qvrsrcF87EB9C7CB0F81EA45A5977B61C9E8A1_1_1433248903.png",
+          "sha256": "4ac41697a5ffcc2143f0dd3db2be2aed37753e76853f1e27437daa9671bdfb69",
+          "width": 189,
+          "height": 191,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: -+, ++, +-; во внешнем: +-, ++, -+. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=351035",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: -+, ++, +-; во внешнем: +-, ++, -+. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик А: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик Б: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик В: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k отрицателен, b положителен; подходит пара коэффициентов 2.\n\nБ) k положителен, b положителен; подходит пара коэффициентов 1.\n\nВ) k положителен, b отрицателен; подходит пара коэффициентов 3.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 213."
+    }
+  },
+  "663C78": {
+    "sourceId": "663C78",
+    "sourceFile": "oge-6.raw.html",
+    "sourceHash": "6a4da61cded5847cf2ba46a84914302cf8d516789bf17ec758f5c06f3ea8d41a",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k Б) k 0 В) k>0, b ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3DFEDA2C88A282EA4857674F2057F7EF/xs3qvrsrc638182F16C1A9BCB41E361F5ADD83599_1_1426875534.png",
+        "sha256": "028ff6718a595020188d66fe43e527b39ec8b9ce5c7623058b4054e9e9991d67",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3DFEDA2C88A282EA4857674F2057F7EF/xs3qvrsrc54DD22EF57DD839047FE699EB341665C_1_1426875562.png",
+        "sha256": "9deb0782a2307409360eed7d0c0bcdeaaaa251bf6c750b3ee1b2d3ff76fab2a2",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3DFEDA2C88A282EA4857674F2057F7EF/xs3qvrsrc706DAF543C5E94BE40F95AD5BD919418_1_1426875587.png",
+        "sha256": "e0002e353c7076349e25f32e76f534036c2c4e5741a04a9d50c7413a07ff4439",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=349441",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "321",
+    "externalAnswer": "321",
+    "externalAnswerRaw": "Ответ: 321",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k меньше 0, b больше 0 В) k больше 0, b меньше 0 ГРАФИКИ В таблице под каждой буквой укажите соответствующий номер. Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "--",
+        "-+",
+        "+-"
+      ],
+      "graphSigns": [
+        "+-",
+        "-+",
+        "--"
+      ],
+      "answer": "321",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k < 0 , b < 0 Б) k < 0 , b > 0 В) k > 0 , b < 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: +-, -+, --"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3DFEDA2C88A282EA4857674F2057F7EF/xs3qvrsrc638182F16C1A9BCB41E361F5ADD83599_1_1426875534.png",
+          "sha256": "028ff6718a595020188d66fe43e527b39ec8b9ce5c7623058b4054e9e9991d67",
+          "width": 183,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3DFEDA2C88A282EA4857674F2057F7EF/xs3qvrsrc54DD22EF57DD839047FE699EB341665C_1_1426875562.png",
+          "sha256": "9deb0782a2307409360eed7d0c0bcdeaaaa251bf6c750b3ee1b2d3ff76fab2a2",
+          "width": 183,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/3DFEDA2C88A282EA4857674F2057F7EF/xs3qvrsrc706DAF543C5E94BE40F95AD5BD919418_1_1426875587.png",
+          "sha256": "e0002e353c7076349e25f32e76f534036c2c4e5741a04a9d50c7413a07ff4439",
+          "width": 183,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 3, Б — 2, В —1. Ответ: 321.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=349441",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 3, Б — 2, В —1. Ответ: 321.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "4AD6B2": {
+    "sourceId": "4AD6B2",
+    "sourceFile": "oge-7.raw.html",
+    "sourceHash": "4f71bfe171bf94c29817ae9e37501215a766a5182303c6071aac4a10568019de",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k 2) k>0, b 3) k 0 В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/40679D7D7251A20D41ACDE38CA199FCB/xs3qvrsrcE4C14DD88BEBA1644726EB4FD9BF192E_1_1433248773.png",
+        "sha256": "4e6aa737222d5ef65888e08b92e703c3b3152628adc16781924e6ac6a6bb7986",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/40679D7D7251A20D41ACDE38CA199FCB/xs3qvrsrc88A4E60DA831ABA34F14AB4ADDE7A995_1_1433248777.png",
+        "sha256": "05b7256f3fbbed4cb1518c5464a99634722393f4ef294460799c18c6e84826f3",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/40679D7D7251A20D41ACDE38CA199FCB/xs3qvrsrcE3F136E284DCAEF9494A1FB1595EAAEE_1_1433248780.png",
+        "sha256": "6b3b1d8337ab4988386437e3a5caa5ef95b6fbfe2d7b5da86557b6d3652cd0cf",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=350971",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "213",
+    "externalAnswer": "132",
+    "externalAnswerRaw": "Ответ: 132",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k больше 0, b меньше 0 В) k меньше 0, b больше 0 ГРАФИКИ Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "--",
+        "+-",
+        "-+"
+      ],
+      "graphSigns": [
+        "+-",
+        "--",
+        "-+"
+      ],
+      "answer": "213",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k < 0 , b < 0 2) k > 0 , b < 0 3) k < 0 , b > 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: +-, --, -+"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/40679D7D7251A20D41ACDE38CA199FCB/xs3qvrsrcE4C14DD88BEBA1644726EB4FD9BF192E_1_1433248773.png",
+          "sha256": "4e6aa737222d5ef65888e08b92e703c3b3152628adc16781924e6ac6a6bb7986",
+          "width": 189,
+          "height": 191,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/40679D7D7251A20D41ACDE38CA199FCB/xs3qvrsrc88A4E60DA831ABA34F14AB4ADDE7A995_1_1433248777.png",
+          "sha256": "05b7256f3fbbed4cb1518c5464a99634722393f4ef294460799c18c6e84826f3",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/40679D7D7251A20D41ACDE38CA199FCB/xs3qvrsrcE3F136E284DCAEF9494A1FB1595EAAEE_1_1433248780.png",
+          "sha256": "6b3b1d8337ab4988386437e3a5caa5ef95b6fbfe2d7b5da86557b6d3652cd0cf",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: +-, --, -+; во внешнем: --, -+, +-. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 3, В —2. Ответ: 132.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=350971",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 3, В —2. Ответ: 132.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: +-, --, -+; во внешнем: --, -+, +-. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик А: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\nГрафик Б: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\nГрафик В: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k положителен, b отрицателен; подходит пара коэффициентов 2.\n\nБ) k отрицателен, b отрицателен; подходит пара коэффициентов 1.\n\nВ) k отрицателен, b положителен; подходит пара коэффициентов 3.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 213."
+    }
+  },
+  "E1C4BF": {
+    "sourceId": "E1C4BF",
+    "sourceFile": "oge-8.raw.html",
+    "sourceHash": "f796a4cb508de8f5f9796660befd91d2a7f1e3620943e4caf00ac6bca0698376",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k Б) k 0 В) k>0, b>0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4C1A502DDD719AFE44CE5CF2300690DB/xs3qvrsrcB715E837B55F908E472D64A073788B27_1_1426875932.png",
+        "sha256": "31fbda8109c884a915edd59b972bcddd84e5e89aaa6b20a1ac477a8e1b5a4a44",
+        "width": 182,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4C1A502DDD719AFE44CE5CF2300690DB/xs3qvrsrc6B2FF2B9E78F982E413E48E37FDA9687_1_1426875957.png",
+        "sha256": "bade899f2efda7c7c99e4e357cfed58dd1d866188bc4388fc8aaec01f6ef1b2c",
+        "width": 185,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4C1A502DDD719AFE44CE5CF2300690DB/xs3qvrsrcCADFBB57179082F94F452D8EB47E70FA_1_1426875987.png",
+        "sha256": "9a78fad732b278d3a1408745a8949a8156341e17de09160979c4922d4bdfd9f8",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=349703",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "123",
+    "externalAnswer": "123",
+    "externalAnswerRaw": "Ответ: 123",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k меньше 0, b больше 0 В) k больше 0, b больше 0 ГРАФИКИ В таблице под каждой буквой укажите соответствующий номер. Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "--",
+        "-+",
+        "++"
+      ],
+      "graphSigns": [
+        "--",
+        "-+",
+        "++"
+      ],
+      "answer": "123",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k < 0 , b < 0 Б) k < 0 , b > 0 В) k > 0 , b > 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: --, -+, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4C1A502DDD719AFE44CE5CF2300690DB/xs3qvrsrcB715E837B55F908E472D64A073788B27_1_1426875932.png",
+          "sha256": "31fbda8109c884a915edd59b972bcddd84e5e89aaa6b20a1ac477a8e1b5a4a44",
+          "width": 182,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4C1A502DDD719AFE44CE5CF2300690DB/xs3qvrsrc6B2FF2B9E78F982E413E48E37FDA9687_1_1426875957.png",
+          "sha256": "bade899f2efda7c7c99e4e357cfed58dd1d866188bc4388fc8aaec01f6ef1b2c",
+          "width": 185,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/4C1A502DDD719AFE44CE5CF2300690DB/xs3qvrsrcCADFBB57179082F94F452D8EB47E70FA_1_1426875987.png",
+          "sha256": "9a78fad732b278d3a1408745a8949a8156341e17de09160979c4922d4bdfd9f8",
+          "width": 183,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 2, В —3. Ответ: 123.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=349703",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 2, В —3. Ответ: 123.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "2FC11A": {
+    "sourceId": "2FC11A",
+    "sourceFile": "oge-9.raw.html",
+    "sourceHash": "e72424e4b9f8f8fc5de25a6722ba9f11e21c35fad4ae656336646207bfb1f90b",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k Б) k 0 В) k>0, b>0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/569A15DF78BBBE46448C2E63BA31B5FA/xs3qvrsrc1FC23D5C332ABE204F8D6577BD6D9817_1_1426875279.png",
+        "sha256": "fbf82d76b43c34edb5fedba52b0491490f217c61a7307088f3e60ecef6ba2930",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/569A15DF78BBBE46448C2E63BA31B5FA/xs3qvrsrc9FAA0780ED37A8914AADC69FEE094722_1_1426875333.png",
+        "sha256": "b7aefbdb17eb850217a270f8cd1b77066d7c3f34ce50ee636d796d946111c0d7",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/569A15DF78BBBE46448C2E63BA31B5FA/xs3qvrsrcD1F4B2E14162AD3F44C33E1658CAE6D8_1_1426875305.png",
+        "sha256": "e7cb0187bffb65179837a767884024dbdce82b085dff69964fac92d2d535fad9",
+        "width": 184,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=349888",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "231",
+    "externalAnswer": "231",
+    "externalAnswerRaw": "Ответ: 231",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k меньше 0, b больше 0 В) k больше 0, b больше 0 ГРАФИКИ В таблице под каждой буквой укажите соответствующий номер. Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "--",
+        "-+",
+        "++"
+      ],
+      "graphSigns": [
+        "++",
+        "--",
+        "-+"
+      ],
+      "answer": "231",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k < 0 , b < 0 Б) k < 0 , b > 0 В) k > 0 , b > 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: ++, --, -+"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/569A15DF78BBBE46448C2E63BA31B5FA/xs3qvrsrc1FC23D5C332ABE204F8D6577BD6D9817_1_1426875279.png",
+          "sha256": "fbf82d76b43c34edb5fedba52b0491490f217c61a7307088f3e60ecef6ba2930",
+          "width": 183,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/569A15DF78BBBE46448C2E63BA31B5FA/xs3qvrsrc9FAA0780ED37A8914AADC69FEE094722_1_1426875333.png",
+          "sha256": "b7aefbdb17eb850217a270f8cd1b77066d7c3f34ce50ee636d796d946111c0d7",
+          "width": 183,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/569A15DF78BBBE46448C2E63BA31B5FA/xs3qvrsrcD1F4B2E14162AD3F44C33E1658CAE6D8_1_1426875305.png",
+          "sha256": "e7cb0187bffb65179837a767884024dbdce82b085dff69964fac92d2d535fad9",
+          "width": 184,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=349888",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "642C12": {
+    "sourceId": "642C12",
+    "sourceFile": "oge-9.raw.html",
+    "sourceHash": "26f48e678ad353e94fed013772e7e06a14bf080393e507107531b0a74641e4e0",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k>0, b 2) k 0 3) k>0, b>0 В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/5D660A717C0CBECD4EEEDE9283940A53/xs3qvrsrc953417482AA6873441F69C0BA98C0369_1_1433248872.png",
+        "sha256": "a9a590663ad06459bef62857b614a838d15207a17ef0309b4846bea32088c998",
+        "width": 188,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/5D660A717C0CBECD4EEEDE9283940A53/xs3qvrsrc05972F7ACF059D884F571EF405A9C16D_1_1433248875.png",
+        "sha256": "db6a18fa6541afbb20985c705856b10ccca06880c1478697f895ed86d06d3e98",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/5D660A717C0CBECD4EEEDE9283940A53/xs3qvrsrc10D5A2250FE4A3524A5E9AAF63040A0B_1_1433248879.png",
+        "sha256": "2f814c29bd24cc4ba8b5a64e1223532cc9baf85c6ff6a00ac503a1d4da378456",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=403687",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "321",
+    "externalAnswer": "321",
+    "externalAnswerRaw": "Ответ: 321",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k меньше 0 , b больше 0 2) k меньше 0 , b меньше 0 3) k больше 0 , b больше 0",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "+-",
+        "-+",
+        "++"
+      ],
+      "graphSigns": [
+        "++",
+        "-+",
+        "+-"
+      ],
+      "answer": "321",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k > 0 , b < 0 2) k < 0 , b > 0 3) k > 0 , b > 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: ++, -+, +-"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/5D660A717C0CBECD4EEEDE9283940A53/xs3qvrsrc953417482AA6873441F69C0BA98C0369_1_1433248872.png",
+          "sha256": "a9a590663ad06459bef62857b614a838d15207a17ef0309b4846bea32088c998",
+          "width": 188,
+          "height": 189,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/5D660A717C0CBECD4EEEDE9283940A53/xs3qvrsrc05972F7ACF059D884F571EF405A9C16D_1_1433248875.png",
+          "sha256": "db6a18fa6541afbb20985c705856b10ccca06880c1478697f895ed86d06d3e98",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/5D660A717C0CBECD4EEEDE9283940A53/xs3qvrsrc10D5A2250FE4A3524A5E9AAF63040A0B_1_1433248879.png",
+          "sha256": "2f814c29bd24cc4ba8b5a64e1223532cc9baf85c6ff6a00ac503a1d4da378456",
+          "width": 189,
+          "height": 189,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: ++, -+, +-; во внешнем: --, -+, ++. Исходные пары коэффициентов: +-, -+, ++; во внешнем: -+, --, ++. Внешний ключ 321 неверен: график А убывает и пересекает Oy ниже начала, это пара 2; Б убывает и пересекает выше, пара 1; В возрастает и пересекает выше, пара 3. Правильный внешний ответ 213. Первичный 642C12 имеет другие графики и пары; его 321 независимо подтверждён. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=339104",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: ++, -+, +-; во внешнем: --, -+, ++. Исходные пары коэффициентов: +-, -+, ++; во внешнем: -+, --, ++. Внешний ключ 321 неверен: график А убывает и пересекает Oy ниже начала, это пара 2; Б убывает и пересекает выше, пара 1; В возрастает и пересекает выше, пара 3. Правильный внешний ответ 213. Первичный 642C12 имеет другие графики и пары; его 321 независимо подтверждён. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик А: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик Б: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик В: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k положителен, b положителен; подходит пара коэффициентов 3.\n\nБ) k отрицателен, b положителен; подходит пара коэффициентов 2.\n\nВ) k положителен, b отрицателен; подходит пара коэффициентов 1.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 321."
+    }
+  },
+  "AA42D3": {
+    "sourceId": "AA42D3",
+    "sourceFile": "oge-12.raw.html",
+    "sourceHash": "754550801de4e1db14b3c7f4258475731cea410bd8e1c1ec53f86379f63287b8",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k>0, b>0 2) k 0 3) k В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/79E0968375F8BFDF467D73E1E6A751D6/xs3qvrsrc814D220E5BC78BAA4434E925E22CCE26_1_1433248847.png",
+        "sha256": "928d44ee7f966ec9443760807d6d2edd690bd178c7327326c3b14995a6cf2b9f",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/79E0968375F8BFDF467D73E1E6A751D6/xs3qvrsrc7BB54BE53B77AAFF4BAD0F476BACA557_1_1433248851.png",
+        "sha256": "18d84e8bb0b03a7729e4afbf210284bb458d69ff05221667525b099ec0739c15",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/79E0968375F8BFDF467D73E1E6A751D6/xs3qvrsrcD52305E78664892745BF21340FB4FD53_1_1433248854.png",
+        "sha256": "95a167cf5e298b7c6fd4065c51c2779f5011d143bed3d5e43ca96c9573f2ce02",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=353209",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "231",
+    "externalAnswer": "123",
+    "externalAnswerRaw": "Ответ: 123",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. ГРАФИКИ КОЭФФИЦИЕНТЫ 1) k больше 0, b больше 0 2) k меньше 0, b больше 0 3) k меньше 0, b меньше 0 В таблице под каждой буквой укажите соответствующий номер.",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "++",
+        "-+",
+        "--"
+      ],
+      "graphSigns": [
+        "-+",
+        "--",
+        "++"
+      ],
+      "answer": "231",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k > 0 , b > 0 2) k < 0 , b > 0 3) k < 0 , b < 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: -+, --, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/79E0968375F8BFDF467D73E1E6A751D6/xs3qvrsrc814D220E5BC78BAA4434E925E22CCE26_1_1433248847.png",
+          "sha256": "928d44ee7f966ec9443760807d6d2edd690bd178c7327326c3b14995a6cf2b9f",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/79E0968375F8BFDF467D73E1E6A751D6/xs3qvrsrc7BB54BE53B77AAFF4BAD0F476BACA557_1_1433248851.png",
+          "sha256": "18d84e8bb0b03a7729e4afbf210284bb458d69ff05221667525b099ec0739c15",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/79E0968375F8BFDF467D73E1E6A751D6/xs3qvrsrcD52305E78664892745BF21340FB4FD53_1_1433248854.png",
+          "sha256": "95a167cf5e298b7c6fd4065c51c2779f5011d143bed3d5e43ca96c9573f2ce02",
+          "width": 189,
+          "height": 189,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: -+, --, ++; во внешнем: ++, -+, --. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=339104",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: -+, --, ++; во внешнем: ++, -+, --. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик А: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик Б: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\nГрафик В: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k отрицателен, b положителен; подходит пара коэффициентов 2.\n\nБ) k отрицателен, b отрицателен; подходит пара коэффициентов 3.\n\nВ) k положителен, b положителен; подходит пара коэффициентов 1.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 231."
+    }
+  },
+  "AC0A57": {
+    "sourceId": "AC0A57",
+    "sourceFile": "oge-13.raw.html",
+    "sourceHash": "8c063774fb43d84bd4b9ac6800d7ca30c3672887090cc13c93430c1ecbe4b673",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k>0, b>0 2) k 0 3) k>0, b В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8932A983B3E692D74CD01E618CE15C26/xs3qvrsrcEBB72041CDF482AD462A2C42BA6FB829_1_1433248724.png",
+        "sha256": "c0a8488c3e09a9271c0d561c3dc9ffd690cf0eec607ecdd1c43deed030adc171",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8932A983B3E692D74CD01E618CE15C26/xs3qvrsrc1CF1019F558C88194ADAE9C7BC8960D8_1_1433248727.png",
+        "sha256": "fb1325f7a60640785b25946cf56c14e67e45b449f7732ca4f33e6019f59b5de9",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8932A983B3E692D74CD01E618CE15C26/xs3qvrsrcC2DBF93BC15D9E94433F14683EEE4AB2_1_1433248730.png",
+        "sha256": "ac66576c293653cb03daa4e7a2af92de23c899a4c490df2c71c986192f06b50b",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=351035",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "231",
+    "externalAnswer": "231",
+    "externalAnswerRaw": "Ответ: 231",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k больше 0, b больше 0 Б) k меньше 0, b больше 0 В) k больше 0, b меньше 0 ГРАФИКИ Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "++",
+        "-+",
+        "+-"
+      ],
+      "graphSigns": [
+        "-+",
+        "+-",
+        "++"
+      ],
+      "answer": "231",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k > 0 , b > 0 2) k < 0 , b > 0 3) k > 0 , b < 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: -+, +-, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8932A983B3E692D74CD01E618CE15C26/xs3qvrsrcEBB72041CDF482AD462A2C42BA6FB829_1_1433248724.png",
+          "sha256": "c0a8488c3e09a9271c0d561c3dc9ffd690cf0eec607ecdd1c43deed030adc171",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8932A983B3E692D74CD01E618CE15C26/xs3qvrsrc1CF1019F558C88194ADAE9C7BC8960D8_1_1433248727.png",
+          "sha256": "fb1325f7a60640785b25946cf56c14e67e45b449f7732ca4f33e6019f59b5de9",
+          "width": 189,
+          "height": 191,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/8932A983B3E692D74CD01E618CE15C26/xs3qvrsrcC2DBF93BC15D9E94433F14683EEE4AB2_1_1433248730.png",
+          "sha256": "ac66576c293653cb03daa4e7a2af92de23c899a4c490df2c71c986192f06b50b",
+          "width": 189,
+          "height": 189,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: -+, +-, ++; во внешнем: +-, ++, -+. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=351035",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: -+, +-, ++; во внешнем: +-, ++, -+. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик А: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик Б: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\nГрафик В: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k отрицателен, b положителен; подходит пара коэффициентов 2.\n\nБ) k положителен, b отрицателен; подходит пара коэффициентов 3.\n\nВ) k положителен, b положителен; подходит пара коэффициентов 1.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 231."
+    }
+  },
+  "4041A0": {
+    "sourceId": "4041A0",
+    "sourceFile": "oge-14.raw.html",
+    "sourceHash": "90a0de50b484e60ee062a7997e4dec0001b8761e0671acf4a5205dbe12e6cace",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k>0, b>0 Б) k 0 В) k>0, b ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/90202522606BBFAD4CB9309F500C1046/xs3qvrsrc778A99EC8A119A574A7A8DC98242E673_1_1426875198.png",
+        "sha256": "2fa4ec25026dd5c4e14c476371c646cc7e9b0532bece351a5bcef0023c522f11",
+        "width": 182,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/90202522606BBFAD4CB9309F500C1046/xs3qvrsrc0A7D36386C4AB2894649A3F3D40CA386_1_1426875221.png",
+        "sha256": "e52e942d8fb77c1d6e33f9bea791429c80e2b190e878cbc8df129a76ebb83101",
+        "width": 185,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/90202522606BBFAD4CB9309F500C1046/xs3qvrsrc264C2056C947A5A048A7F6F6B9D9B7F1_1_1426875248.png",
+        "sha256": "a1bcbf6dd5e83ee634ec40c0817decf187592c7efa9eeac0782c61a6d5761322",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=351035",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "231",
+    "externalAnswer": "231",
+    "externalAnswerRaw": "Ответ: 231",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k больше 0, b больше 0 Б) k меньше 0, b больше 0 В) k больше 0, b меньше 0 ГРАФИКИ Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "++",
+        "-+",
+        "+-"
+      ],
+      "graphSigns": [
+        "+-",
+        "++",
+        "-+"
+      ],
+      "answer": "231",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k > 0 , b > 0 Б) k < 0 , b > 0 В) k > 0 , b < 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: +-, ++, -+"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/90202522606BBFAD4CB9309F500C1046/xs3qvrsrc778A99EC8A119A574A7A8DC98242E673_1_1426875198.png",
+          "sha256": "2fa4ec25026dd5c4e14c476371c646cc7e9b0532bece351a5bcef0023c522f11",
+          "width": 182,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/90202522606BBFAD4CB9309F500C1046/xs3qvrsrc0A7D36386C4AB2894649A3F3D40CA386_1_1426875221.png",
+          "sha256": "e52e942d8fb77c1d6e33f9bea791429c80e2b190e878cbc8df129a76ebb83101",
+          "width": 185,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/90202522606BBFAD4CB9309F500C1046/xs3qvrsrc264C2056C947A5A048A7F6F6B9D9B7F1_1_1426875248.png",
+          "sha256": "a1bcbf6dd5e83ee634ec40c0817decf187592c7efa9eeac0782c61a6d5761322",
+          "width": 183,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=351035",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "B2EAA0": {
+    "sourceId": "B2EAA0",
+    "sourceFile": "oge-14.raw.html",
+    "sourceHash": "f77647f3243b4e6132ca453828adfca5ca300a446553645a2df37a36a351b074",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k Б) k>0, b В) k>0, b>0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/942C690DFAEDA2D54434D85803FF2929/xs3qvrsrcB29A70E02376AC8147FC2D57D8A60D9B_1_1426875783.png",
+        "sha256": "8c7f56c52ac95262d8baf691d03e3e741928fce283a950523db780785be45133",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/942C690DFAEDA2D54434D85803FF2929/xs3qvrsrcDE165E650E73969242D3615294EC5A61_1_1426875804.png",
+        "sha256": "3d0aaf6f547686748fe976d32ec54a58f856a98efc29d9a9265659186aefb13e",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/942C690DFAEDA2D54434D85803FF2929/xs3qvrsrcB8559C52054384A44031CE6D2F58B831_1_1426875824.png",
+        "sha256": "852d09089462a0dfadd24352bf404c1efed1a5d09ccf750fae8e8154b5305664",
+        "width": 181,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=351113",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "213",
+    "externalAnswer": "213",
+    "externalAnswerRaw": "Ответ: 213",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k больше 0, b меньше 0 В) k больше 0, b больше 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "--",
+        "+-",
+        "++"
+      ],
+      "graphSigns": [
+        "+-",
+        "--",
+        "++"
+      ],
+      "answer": "213",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k < 0 , b < 0 Б) k > 0 , b < 0 В) k > 0 , b > 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: +-, --, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/942C690DFAEDA2D54434D85803FF2929/xs3qvrsrcB29A70E02376AC8147FC2D57D8A60D9B_1_1426875783.png",
+          "sha256": "8c7f56c52ac95262d8baf691d03e3e741928fce283a950523db780785be45133",
+          "width": 183,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/942C690DFAEDA2D54434D85803FF2929/xs3qvrsrcDE165E650E73969242D3615294EC5A61_1_1426875804.png",
+          "sha256": "3d0aaf6f547686748fe976d32ec54a58f856a98efc29d9a9265659186aefb13e",
+          "width": 183,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/942C690DFAEDA2D54434D85803FF2929/xs3qvrsrcB8559C52054384A44031CE6D2F58B831_1_1426875824.png",
+          "sha256": "852d09089462a0dfadd24352bf404c1efed1a5d09ccf750fae8e8154b5305664",
+          "width": 181,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 1, В —3. Ответ: 213.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=351113",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 1, В —3. Ответ: 213.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "C95BA6": {
+    "sourceId": "C95BA6",
+    "sourceFile": "oge-15.raw.html",
+    "sourceHash": "629af13b6914690e9b20a7a40e84a8e09e0db923c83a1e01033d4d933a9f1c2d",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k>0, b>0 Б) k>0, b В) k ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9AD8B4015E6F835C42F62B91C45D8197/xs3qvrsrc599EAFC4A02E88674C3224B360D6A541_1_1426875863.png",
+        "sha256": "07622fe9458444e109056edb598d2c3d44aa4ced4363059a0abd979f7bf6b6a9",
+        "width": 182,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9AD8B4015E6F835C42F62B91C45D8197/xs3qvrsrc861FFF31A369BC6C48987B7CA282EBC0_1_1426875885.png",
+        "sha256": "49b7690b1c1104a12f40af4d808b533e294fd05149eb2a734c01c301bf1ed118",
+        "width": 182,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9AD8B4015E6F835C42F62B91C45D8197/xs3qvrsrc5BB0D7E76F5588A34616328C601453E8_1_1426875908.png",
+        "sha256": "29774138b93aaf5695f339fd79ad947aa9abdea587e793904c08d09c6c775c3b",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=351252",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "312",
+    "externalAnswer": "312",
+    "externalAnswerRaw": "Ответ: 312",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k больше 0, b больше 0 Б) k больше 0, b меньше 0 В) k меньше 0, b меньше 0 ГРАФИКИ В таблице под каждой буквой укажите соответствующий номер.",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "++",
+        "+-",
+        "--"
+      ],
+      "graphSigns": [
+        "+-",
+        "--",
+        "++"
+      ],
+      "answer": "312",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k > 0 , b > 0 Б) k > 0 , b < 0 В) k < 0 , b < 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: +-, --, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9AD8B4015E6F835C42F62B91C45D8197/xs3qvrsrc599EAFC4A02E88674C3224B360D6A541_1_1426875863.png",
+          "sha256": "07622fe9458444e109056edb598d2c3d44aa4ced4363059a0abd979f7bf6b6a9",
+          "width": 182,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9AD8B4015E6F835C42F62B91C45D8197/xs3qvrsrc861FFF31A369BC6C48987B7CA282EBC0_1_1426875885.png",
+          "sha256": "49b7690b1c1104a12f40af4d808b533e294fd05149eb2a734c01c301bf1ed118",
+          "width": 182,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9AD8B4015E6F835C42F62B91C45D8197/xs3qvrsrc5BB0D7E76F5588A34616328C601453E8_1_1426875908.png",
+          "sha256": "29774138b93aaf5695f339fd79ad947aa9abdea587e793904c08d09c6c775c3b",
+          "width": 183,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 3, Б — 1, В —2. Ответ: 312.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=351252",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 3, Б — 1, В —2. Ответ: 312.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "E537AB": {
+    "sourceId": "E537AB",
+    "sourceFile": "oge-15.raw.html",
+    "sourceHash": "c9a9484d78d3d7af68e99139bce8f671df588f812af50ca276cd42a75a1bfc4d",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k 0 Б) k>0, b В) k ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9C4E8379EA0BBD9D480E879B54922648/xs3qvrsrcC4ADDBB238A8B5D6482F00EB099C002E_1_1426875702.png",
+        "sha256": "6135d7fd9e35ddedb4de360949a3cdb76f5052f3ee564b6b2cd129e6090efb14",
+        "width": 182,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9C4E8379EA0BBD9D480E879B54922648/xs3qvrsrc7EE76DD63BF0A1BE41CE25B07D787DD2_1_1426875722.png",
+        "sha256": "eed1f1ecd06d8f376b81eaa9984b76338395eed53fea1a094f8fb14da847fce1",
+        "width": 184,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9C4E8379EA0BBD9D480E879B54922648/xs3qvrsrc1358B2968729BD794B1697974374FCF2_1_1426875747.png",
+        "sha256": "a224a6cf75f0c3e0236edead98efc5c978fa50720bebd00f60b537443d0ec80d",
+        "width": 185,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=351280",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "231",
+    "externalAnswer": "231",
+    "externalAnswerRaw": "Ответ: 231",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b больше 0 Б) k больше 0, b меньше 0 В) k меньше 0, b меньше 0 ГРАФИКИ В таблице под каждой буквой укажите соответствующий номер. Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "-+",
+        "+-",
+        "--"
+      ],
+      "graphSigns": [
+        "--",
+        "-+",
+        "+-"
+      ],
+      "answer": "231",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k < 0 , b > 0 Б) k > 0 , b < 0 В) k < 0 , b < 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: --, -+, +-"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9C4E8379EA0BBD9D480E879B54922648/xs3qvrsrcC4ADDBB238A8B5D6482F00EB099C002E_1_1426875702.png",
+          "sha256": "6135d7fd9e35ddedb4de360949a3cdb76f5052f3ee564b6b2cd129e6090efb14",
+          "width": 182,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9C4E8379EA0BBD9D480E879B54922648/xs3qvrsrc7EE76DD63BF0A1BE41CE25B07D787DD2_1_1426875722.png",
+          "sha256": "eed1f1ecd06d8f376b81eaa9984b76338395eed53fea1a094f8fb14da847fce1",
+          "width": 184,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9C4E8379EA0BBD9D480E879B54922648/xs3qvrsrc1358B2968729BD794B1697974374FCF2_1_1426875747.png",
+          "sha256": "a224a6cf75f0c3e0236edead98efc5c978fa50720bebd00f60b537443d0ec80d",
+          "width": 185,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=351280",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 2, Б — 3, В —1. Ответ: 231.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "8C33A7": {
+    "sourceId": "8C33A7",
+    "sourceFile": "oge-15.raw.html",
+    "sourceHash": "dfb75fb4425a6ba1fde4796fbf74d8b1f3637c3d5fa7052ec2efa5631c41dca6",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k Б) k 0 В) k>0, b ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9F3EAE8D642287E14920B90A3E96AE93/xs3qvrsrc5080D35FAB9CA04E4EB0D7F5BE3F2ED7_1_1426875445.png",
+        "sha256": "f175824de7424337c464421fc7efa47a7e1a884994bc441b219901b42b684c7d",
+        "width": 184,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9F3EAE8D642287E14920B90A3E96AE93/xs3qvrsrcEE5457DA8D85B8E9448DCE3E92FE4D52_1_1426875474.png",
+        "sha256": "8a400ccb5df8ce14f36d214efdf05423b972e0a3f04eaf42c54cfd108352a205",
+        "width": 182,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9F3EAE8D642287E14920B90A3E96AE93/xs3qvrsrc286ECC8C82C38440422C8EFB8707168F_1_1426875495.png",
+        "sha256": "9c34d7d6c167c9db5d7b273e7caf7ec79f6d12387bdb8950a26603069b043526",
+        "width": 185,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=351353",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "123",
+    "externalAnswer": "123",
+    "externalAnswerRaw": "Ответ: 123",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k меньше 0, b больше 0 В) k больше 0, b меньше 0 ГРАФИКИ Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "--",
+        "-+",
+        "+-"
+      ],
+      "graphSigns": [
+        "--",
+        "-+",
+        "+-"
+      ],
+      "answer": "123",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k < 0 , b < 0 Б) k < 0 , b > 0 В) k > 0 , b < 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: --, -+, +-"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9F3EAE8D642287E14920B90A3E96AE93/xs3qvrsrc5080D35FAB9CA04E4EB0D7F5BE3F2ED7_1_1426875445.png",
+          "sha256": "f175824de7424337c464421fc7efa47a7e1a884994bc441b219901b42b684c7d",
+          "width": 184,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9F3EAE8D642287E14920B90A3E96AE93/xs3qvrsrcEE5457DA8D85B8E9448DCE3E92FE4D52_1_1426875474.png",
+          "sha256": "8a400ccb5df8ce14f36d214efdf05423b972e0a3f04eaf42c54cfd108352a205",
+          "width": 182,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/9F3EAE8D642287E14920B90A3E96AE93/xs3qvrsrc286ECC8C82C38440422C8EFB8707168F_1_1426875495.png",
+          "sha256": "9c34d7d6c167c9db5d7b273e7caf7ec79f6d12387bdb8950a26603069b043526",
+          "width": 185,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 2, В —3. Ответ: 123.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=351353",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 2, В —3. Ответ: 123.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "7617C1": {
+    "sourceId": "7617C1",
+    "sourceFile": "oge-15.raw.html",
+    "sourceHash": "f039f48316b1cd644c5fedb70c8840f0c1dd61fb88a6fb0285f3862f1a10a6ea",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k>0, b 2) k 3) k>0, b>0 В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A355D357484A95974021073304312074/xs3qvrsrcA147004342A8A3D847DA1792735EB48E_1_1433248644.png",
+        "sha256": "950b335f6ef18067fc25b93240c04d43433ca50734b62ffd287f0b2eea0008e0",
+        "width": 189,
+        "height": 193,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A355D357484A95974021073304312074/xs3qvrsrc734624C8C668AB234EA66F784154B995_1_1433248648.png",
+        "sha256": "0b4a90c60f27f35852abcef9cb39616b7195e13eaa7f0adc84b81e6845945be2",
+        "width": 189,
+        "height": 192,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A355D357484A95974021073304312074/xs3qvrsrcBA95A97380D9B09E4910B1EF4244AB01_1_1433248652.png",
+        "sha256": "d0472e82a058cd639d83457e0b63de6770765706a574b8a6cdd7b072101f96ae",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=352767",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "312",
+    "externalAnswer": "312",
+    "externalAnswerRaw": "Ответ: 312",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. ГРАФИКИ КОЭФФИЦИЕНТЫ 1) k меньше 0, b меньше 0 2) k больше 0, b больше 0 3) k меньше 0, b больше 0 В таблице под каждой буквой укажите соответствующий номер.",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "+-",
+        "--",
+        "++"
+      ],
+      "graphSigns": [
+        "++",
+        "+-",
+        "--"
+      ],
+      "answer": "312",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k > 0 , b < 0 2) k < 0 , b < 0 3) k > 0 , b > 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: ++, +-, --"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A355D357484A95974021073304312074/xs3qvrsrcA147004342A8A3D847DA1792735EB48E_1_1433248644.png",
+          "sha256": "950b335f6ef18067fc25b93240c04d43433ca50734b62ffd287f0b2eea0008e0",
+          "width": 189,
+          "height": 193,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A355D357484A95974021073304312074/xs3qvrsrc734624C8C668AB234EA66F784154B995_1_1433248648.png",
+          "sha256": "0b4a90c60f27f35852abcef9cb39616b7195e13eaa7f0adc84b81e6845945be2",
+          "width": 189,
+          "height": 192,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/A355D357484A95974021073304312074/xs3qvrsrcBA95A97380D9B09E4910B1EF4244AB01_1_1433248652.png",
+          "sha256": "d0472e82a058cd639d83457e0b63de6770765706a574b8a6cdd7b072101f96ae",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: ++, +-, --; во внешнем: -+, --, ++. Исходные пары коэффициентов: +-, --, ++; во внешнем: --, ++, -+. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=339104",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: ++, +-, --; во внешнем: -+, --, ++. Исходные пары коэффициентов: +-, --, ++; во внешнем: --, ++, -+. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик А: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик Б: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\nГрафик В: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k положителен, b положителен; подходит пара коэффициентов 3.\n\nБ) k положителен, b отрицателен; подходит пара коэффициентов 1.\n\nВ) k отрицателен, b отрицателен; подходит пара коэффициентов 2.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 312."
+    }
+  },
+  "1D6F9C": {
+    "sourceId": "1D6F9C",
+    "sourceFile": "oge-17.raw.html",
+    "sourceHash": "a3134de68404cefecf5fdaf197014404cac17cd2f5437309cb9af28db9e6e019",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k 0 2) k 3) k>0, b>0 В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B5AD716D84B58629424F326FCA71D703/xs3qvrsrcB430E8174E8B8D99486C551C19390A47_1_1433248823.png",
+        "sha256": "3c03a54d712ce758dfbd16dc927c706c999f1a80f9286eb548002039f89809ed",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B5AD716D84B58629424F326FCA71D703/xs3qvrsrcAC475407E2A0805B42C0EAADE3281A86_1_1433248826.png",
+        "sha256": "1bc626d5239f62c0a91e9b7d19c2c9e86afef9d434dde687e5b9589f6ef35713",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B5AD716D84B58629424F326FCA71D703/xs3qvrsrcDAAE3492ADB59F3147A2B51A9380428F_1_1433248829.png",
+        "sha256": "ee06fab178abf40853e7a40f1aa98f97ec821bf74641cef5b03b72f6aa34c0b8",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=351888",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "123",
+    "externalAnswer": "123",
+    "externalAnswerRaw": "Ответ: 123",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. ГРАФИКИ КОЭФФИЦИЕНТЫ 1) k меньше 0, b больше 0 2) k меньше 0, b меньше 0 3) k больше 0, b больше 0 В таблице под каждой буквой укажите соответствующий номер. Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: A Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "-+",
+        "--",
+        "++"
+      ],
+      "graphSigns": [
+        "-+",
+        "--",
+        "++"
+      ],
+      "answer": "123",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k < 0 , b > 0 2) k < 0 , b < 0 3) k > 0 , b > 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: -+, --, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B5AD716D84B58629424F326FCA71D703/xs3qvrsrcB430E8174E8B8D99486C551C19390A47_1_1433248823.png",
+          "sha256": "3c03a54d712ce758dfbd16dc927c706c999f1a80f9286eb548002039f89809ed",
+          "width": 189,
+          "height": 189,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B5AD716D84B58629424F326FCA71D703/xs3qvrsrcAC475407E2A0805B42C0EAADE3281A86_1_1433248826.png",
+          "sha256": "1bc626d5239f62c0a91e9b7d19c2c9e86afef9d434dde687e5b9589f6ef35713",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B5AD716D84B58629424F326FCA71D703/xs3qvrsrcDAAE3492ADB59F3147A2B51A9380428F_1_1433248829.png",
+          "sha256": "ee06fab178abf40853e7a40f1aa98f97ec821bf74641cef5b03b72f6aa34c0b8",
+          "width": 189,
+          "height": 191,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 2, В —3. Ответ: 123.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=351888",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 2, В —3. Ответ: 123.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "D62996": {
+    "sourceId": "D62996",
+    "sourceFile": "oge-17.raw.html",
+    "sourceHash": "b5976797318896f78f8747d12a342460e27f257d46f15e4ddfe337f11e33f2ef",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k 2) k 0 3) k>0, b>0 В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B7D6DB6BE031B4DA461D4BABE1D8D857/xs3qvrsrc4248A113DF7A9D1846DEF186C04D2E6E_1_1433248698.png",
+        "sha256": "48263ee497bc042e7041b90454f5f9577d8eac515b49e97b2dbfd3b8094090b5",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B7D6DB6BE031B4DA461D4BABE1D8D857/xs3qvrsrcC445183AFC8EB76A4A520C474284F47B_1_1433248702.png",
+        "sha256": "ac573a3050452e88f93aeb2fa781dbe6ae9142a6dec2c08af3edcd786491ffc1",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B7D6DB6BE031B4DA461D4BABE1D8D857/xs3qvrsrc6E0D8CD9D16DB58748C4F2BEBB49C55B_1_1433248705.png",
+        "sha256": "297dcbda72fc8a28e00f154006433f24106a073b9989fbb1b869dd8fa4eef43d",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=351943",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "132",
+    "externalAnswer": "132",
+    "externalAnswerRaw": "Ответ: 132",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. ГРАФИКИ КОЭФФИЦИЕНТЫ 1) k меньше 0, b меньше 0 2) k меньше 0, b больше 0 3) k больше 0, b больше 0 В таблице под каждой буквой укажите соответствующий номер. А Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "--",
+        "-+",
+        "++"
+      ],
+      "graphSigns": [
+        "--",
+        "++",
+        "-+"
+      ],
+      "answer": "132",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k < 0 , b < 0 2) k < 0 , b > 0 3) k > 0 , b > 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: --, ++, -+"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B7D6DB6BE031B4DA461D4BABE1D8D857/xs3qvrsrc4248A113DF7A9D1846DEF186C04D2E6E_1_1433248698.png",
+          "sha256": "48263ee497bc042e7041b90454f5f9577d8eac515b49e97b2dbfd3b8094090b5",
+          "width": 189,
+          "height": 189,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B7D6DB6BE031B4DA461D4BABE1D8D857/xs3qvrsrcC445183AFC8EB76A4A520C474284F47B_1_1433248702.png",
+          "sha256": "ac573a3050452e88f93aeb2fa781dbe6ae9142a6dec2c08af3edcd786491ffc1",
+          "width": 189,
+          "height": 189,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/B7D6DB6BE031B4DA461D4BABE1D8D857/xs3qvrsrc6E0D8CD9D16DB58748C4F2BEBB49C55B_1_1433248705.png",
+          "sha256": "297dcbda72fc8a28e00f154006433f24106a073b9989fbb1b869dd8fa4eef43d",
+          "width": 189,
+          "height": 189,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 3, В —2. Ответ: 132.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=351943",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 3, В —2. Ответ: 132.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "071A69": {
+    "sourceId": "071A69",
+    "sourceFile": "oge-20.raw.html",
+    "sourceHash": "d8d553753d9f9a2a1d614fcb839fb0706e9efe00057a48d19f697a95ff167130",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k 0 2) k 3) k>0, b>0 В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D2B539C35A73962D49C19E82E8C5F264/xs3qvrsrc1D2EA953889685414CCF34F8EACF7D3E_1_1433248922.png",
+        "sha256": "c000ee4efb9915618d34d3e59bf55bfcc95d56048bd4d8519805c44286b6e08d",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D2B539C35A73962D49C19E82E8C5F264/xs3qvrsrcADD0A51C5DD488E34B2E0D6958322566_1_1433248925.png",
+        "sha256": "734da75f5a724fe32722dee5455f6f053e405ba32ef986169c2efc5ae41abe37",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D2B539C35A73962D49C19E82E8C5F264/xs3qvrsrc600F10301956B12E49A1030285A55379_1_1433248929.png",
+        "sha256": "61296e66995c5b93df73154897a7d1041f36b29b15af8f0ef9c8d23ae42a24bb",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=352499",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "213",
+    "externalAnswer": "213",
+    "externalAnswerRaw": "Ответ: 213",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. ГРАФИКИ КОЭФФИЦИЕНТЫ 1) k меньше 0, b больше 0 2) k меньше 0, b меньше 0 3) k больше 0, b больше 0 В таблице под каждой буквой укажите соответствующий номер.",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "-+",
+        "--",
+        "++"
+      ],
+      "graphSigns": [
+        "--",
+        "-+",
+        "++"
+      ],
+      "answer": "213",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k < 0 , b > 0 2) k < 0 , b < 0 3) k > 0 , b > 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: --, -+, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D2B539C35A73962D49C19E82E8C5F264/xs3qvrsrc1D2EA953889685414CCF34F8EACF7D3E_1_1433248922.png",
+          "sha256": "c000ee4efb9915618d34d3e59bf55bfcc95d56048bd4d8519805c44286b6e08d",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D2B539C35A73962D49C19E82E8C5F264/xs3qvrsrcADD0A51C5DD488E34B2E0D6958322566_1_1433248925.png",
+          "sha256": "734da75f5a724fe32722dee5455f6f053e405ba32ef986169c2efc5ae41abe37",
+          "width": 189,
+          "height": 191,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D2B539C35A73962D49C19E82E8C5F264/xs3qvrsrc600F10301956B12E49A1030285A55379_1_1433248929.png",
+          "sha256": "61296e66995c5b93df73154897a7d1041f36b29b15af8f0ef9c8d23ae42a24bb",
+          "width": 189,
+          "height": 189,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=339104",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "B8C065": {
+    "sourceId": "B8C065",
+    "sourceFile": "oge-20.raw.html",
+    "sourceHash": "69ac4232c50037edfdb783ac69cc55b7fd45a02dfdd068bd696746b5a166fd6d",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k 0 2) k 3) k>0, b В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D48AF230EC058102498D44A5D9EF2C5B/xs3qvrsrc3F279636C7A69C614537CD7D9ECDA2EF_1_1433248749.png",
+        "sha256": "8bd7c1759267cd13cbf9a9a4dda0a578d72167dc0d4862be124d023d5a61b89a",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D48AF230EC058102498D44A5D9EF2C5B/xs3qvrsrcF65B81D11AD39FF04DB8D8419BC839F3_1_1433248752.png",
+        "sha256": "5004800fe3261f1ca6e45e6b088b2caba2b6ff60f3d0c1de98ee8b006a72de17",
+        "width": 189,
+        "height": 192,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D48AF230EC058102498D44A5D9EF2C5B/xs3qvrsrc2BDAA86D0D07BFAE4F113E4D28E0EBDD_1_1433248756.png",
+        "sha256": "83cb521f6d21e35034ceb9ab58fa53e987ba309200d0b350fa1c113d527199bb",
+        "width": 189,
+        "height": 195,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=353454",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "312",
+    "externalAnswer": "213",
+    "externalAnswerRaw": "Ответ: 213",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b больше 0 Б) k меньше 0, b меньше 0 В) k больше 0, b меньше 0 ГРАФИКИ В таблице под каждой буквой укажите соответствующий номер.",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "-+",
+        "--",
+        "+-"
+      ],
+      "graphSigns": [
+        "+-",
+        "-+",
+        "--"
+      ],
+      "answer": "312",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k < 0 , b > 0 2) k < 0 , b < 0 3) k > 0 , b < 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: +-, -+, --"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D48AF230EC058102498D44A5D9EF2C5B/xs3qvrsrc3F279636C7A69C614537CD7D9ECDA2EF_1_1433248749.png",
+          "sha256": "8bd7c1759267cd13cbf9a9a4dda0a578d72167dc0d4862be124d023d5a61b89a",
+          "width": 189,
+          "height": 191,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D48AF230EC058102498D44A5D9EF2C5B/xs3qvrsrcF65B81D11AD39FF04DB8D8419BC839F3_1_1433248752.png",
+          "sha256": "5004800fe3261f1ca6e45e6b088b2caba2b6ff60f3d0c1de98ee8b006a72de17",
+          "width": 189,
+          "height": 192,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D48AF230EC058102498D44A5D9EF2C5B/xs3qvrsrc2BDAA86D0D07BFAE4F113E4D28E0EBDD_1_1433248756.png",
+          "sha256": "83cb521f6d21e35034ceb9ab58fa53e987ba309200d0b350fa1c113d527199bb",
+          "width": 189,
+          "height": 195,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: +-, -+, --; во внешнем: --, -+, +-. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=339104",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: +-, -+, --; во внешнем: --, -+, +-. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик А: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\nГрафик Б: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик В: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k положителен, b отрицателен; подходит пара коэффициентов 3.\n\nБ) k отрицателен, b положителен; подходит пара коэффициентов 1.\n\nВ) k отрицателен, b отрицателен; подходит пара коэффициентов 2.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 312."
+    }
+  },
+  "A32768": {
+    "sourceId": "A32768",
+    "sourceFile": "oge-20.raw.html",
+    "sourceHash": "1dbe6d68b5cb5de7ea8e00a2f1b4ef76db08678dee6041460d04687ab3016629",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k Б) k>0, b>0 В) k 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D9F6E30E336AAB9D4D6A54A3CDFDCC97/xs3qvrsrcB481446616CF8AF743DFD93D52D63449_1_1426875631.png",
+        "sha256": "64a86087a2034a9f90aa69a96621db02aaadc9677fa9896963c48407e65dda9d",
+        "width": 181,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D9F6E30E336AAB9D4D6A54A3CDFDCC97/xs3qvrsrcB20BC8750F1F8CFF45ED2B45EA494FBE_1_1426875654.png",
+        "sha256": "e9b9617d3d323a3cc6ddd07b9324273de4095294419bcdf84d5aa0d5d1b1a941",
+        "width": 183,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D9F6E30E336AAB9D4D6A54A3CDFDCC97/xs3qvrsrc390E2197CFDE87CA42EB4D8318A88743_1_1426875676.png",
+        "sha256": "a0962e4b58eadfb1fa5c1387e5b486c7b8ed9c6918dfacd72e157ce5aee9996c",
+        "width": 180,
+        "height": 185,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=352241",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "123",
+    "externalAnswer": "123",
+    "externalAnswerRaw": "Ответ: 123",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k больше 0, b больше 0 В) k меньше 0, b больше 0 ГРАФИКИ В таблице под каждой буквой укажите соответствующий номер.",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": true,
+      "coefficientSigns": [
+        "--",
+        "++",
+        "-+"
+      ],
+      "graphSigns": [
+        "--",
+        "++",
+        "-+"
+      ],
+      "answer": "123",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между знаками коэффициентов k и b и графиками функций. КОЭФФИЦИЕНТЫ А) k < 0 , b < 0 Б) k > 0 , b > 0 В) k < 0 , b > 0 ГРАФИКИ 1) 2) 3) В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: --, ++, -+"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D9F6E30E336AAB9D4D6A54A3CDFDCC97/xs3qvrsrcB481446616CF8AF743DFD93D52D63449_1_1426875631.png",
+          "sha256": "64a86087a2034a9f90aa69a96621db02aaadc9677fa9896963c48407e65dda9d",
+          "width": 181,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D9F6E30E336AAB9D4D6A54A3CDFDCC97/xs3qvrsrcB20BC8750F1F8CFF45ED2B45EA494FBE_1_1426875654.png",
+          "sha256": "e9b9617d3d323a3cc6ddd07b9324273de4095294419bcdf84d5aa0d5d1b1a941",
+          "width": 183,
+          "height": 185,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/D9F6E30E336AAB9D4D6A54A3CDFDCC97/xs3qvrsrc390E2197CFDE87CA42EB4D8318A88743_1_1426875676.png",
+          "sha256": "a0962e4b58eadfb1fa5c1387e5b486c7b8ed9c6918dfacd72e157ce5aee9996c",
+          "width": 180,
+          "height": 185,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 2, В —3. Ответ: 123.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=352241",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, коэффициентам соответствуют следующие графики: А — 1, Б — 2, В —3. Ответ: 123.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "661D6B": {
+    "sourceId": "661D6B",
+    "sourceFile": "oge-21.raw.html",
+    "sourceHash": "7c11d2cd924bfa6788946b8464a14819891d69b22b0fa780f9b3a7a47c62ca51",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k 2) k>0, b>0 3) k 0 В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DD45D70235EF9CA642FD979D8A1E127D/xs3qvrsrc4BC55DDDE0A4894142501F2E746EF391_1_1433248948.png",
+        "sha256": "73b4b6a9c6a81f3f07ed3d1fb6b03d8b8ee1719f84fe1e53bbd1d8da0fd8615f",
+        "width": 189,
+        "height": 192,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DD45D70235EF9CA642FD979D8A1E127D/xs3qvrsrcC618856F39739E844F7CE513FB598F87_1_1433248952.png",
+        "sha256": "83c4f28863b126d0a8edb9364c0da00c2be7f9de472e4214f136dee370b28e4e",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DD45D70235EF9CA642FD979D8A1E127D/xs3qvrsrc76BBAEB297E08703413CB59FFA84BDFA_1_1433248956.png",
+        "sha256": "23a6e73d1652de08de87d4f64b99689da35f611f6219e86fc09da1b29f5511e3",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=352767",
+    "match": "exact",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "312",
+    "externalAnswer": "312",
+    "externalAnswerRaw": "Ответ: 312",
+    "externalCondition": "На рисунках изображены графики функций вида y=kx плюс b. Установите соответствие между знаками коэффициентов k и b и графиками функций. ГРАФИКИ КОЭФФИЦИЕНТЫ 1) k меньше 0, b меньше 0 2) k больше 0, b больше 0 3) k меньше 0, b больше 0 В таблице под каждой буквой укажите соответствующий номер.",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "--",
+        "++",
+        "-+"
+      ],
+      "graphSigns": [
+        "-+",
+        "--",
+        "++"
+      ],
+      "answer": "312",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k < 0 , b < 0 2) k > 0 , b > 0 3) k < 0 , b > 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: -+, --, ++"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DD45D70235EF9CA642FD979D8A1E127D/xs3qvrsrc4BC55DDDE0A4894142501F2E746EF391_1_1433248948.png",
+          "sha256": "73b4b6a9c6a81f3f07ed3d1fb6b03d8b8ee1719f84fe1e53bbd1d8da0fd8615f",
+          "width": 189,
+          "height": 192,
+          "slope": "decreasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DD45D70235EF9CA642FD979D8A1E127D/xs3qvrsrcC618856F39739E844F7CE513FB598F87_1_1433248952.png",
+          "sha256": "83c4f28863b126d0a8edb9364c0da00c2be7f9de472e4214f136dee370b28e4e",
+          "width": 189,
+          "height": 189,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/DD45D70235EF9CA642FD979D8A1E127D/xs3qvrsrc76BBAEB297E08703413CB59FFA84BDFA_1_1433248956.png",
+          "sha256": "23a6e73d1652de08de87d4f64b99689da35f611f6219e86fc09da1b29f5511e3",
+          "width": 189,
+          "height": 189,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        }
+      ]
+    },
+    "comparison": "Совпали тип y=kx+b, все три пары знаков, их порядок, направление сопоставления и признаки каждого графика; внешний ответ независимо проверен. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=339104",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0. Следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 4, В —1. Ответ: 341.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    }
+  },
+  "924380": {
+    "sourceId": "924380",
+    "sourceFile": "oge-23.raw.html",
+    "sourceHash": "ec3f2047c6614c516788841e56c94dd870c6cb02c89488f7e544fcc0d04e5b41",
+    "fipiCondition": "Установите соответствие и впишите ответ. На рисунках изображены графики функций вида y=kx+b. Установите соответствие между графиками функций и знаками коэффициентов k и b. ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k 2) k>0, b>0 3) k>0, b В таблице под каждой буквой укажите соответствующий номер. А Б В 1 2 3 1 2 3 1 2 3",
+    "images": [
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FB206EFC46D484754D6BB16882D9D3D6/xs3qvrsrcFF851D281D35AA2F44148F167DA4FA00_1_1433248674.png",
+        "sha256": "6d8f72336b08f54c751d037fa1ea405b58025cdecd119399d380d910ef22e008",
+        "width": 189,
+        "height": 189,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FB206EFC46D484754D6BB16882D9D3D6/xs3qvrsrc0C6C04C4EB7283FD49F73B2FFC594BFE_1_1433248677.png",
+        "sha256": "86da90e25fc98d7c82a712277f95e7dba30a789ebb04c9830117e87e3f09db40",
+        "width": 189,
+        "height": 191,
+        "role": "diagram",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FB206EFC46D484754D6BB16882D9D3D6/xs3qvrsrc10DA2819C3DE87E041CBB551F7E9E90B_1_1433248681.png",
+        "sha256": "40233b32f3a7a46a144e178d3cf7c1582e91e07eee64097639c92f7447d9b77c",
+        "width": 189,
+        "height": 192,
+        "role": "diagram",
+        "reviewed": true
+      }
+    ],
+    "url": "https://math-oge.sdamgia.ru/problem?id=316226",
+    "match": "variant",
+    "reviewed": true,
+    "reviewedAt": "2026-10-11T01:19:43.793068+00:00",
+    "expectedAnswer": "231",
+    "externalAnswer": "321",
+    "externalAnswerRaw": "Ответ: 321",
+    "externalCondition": "На рисунке изображены графики функций вида y = kx плюс b . Установите соответствие между знаками коэффициентов k и b и графиками. КОЭФФИЦИЕНТЫ А) k меньше 0, b меньше 0 Б) k больше 0, b больше 0 В) k больше 0, b меньше 0 ГРАФИКИ Запишите в ответ цифры, расположив их в порядке, соответствующем буквам: А Б В",
+    "externalSnapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+    "externalSnapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f",
+    "model": {
+      "kind": "linear-sign-matching",
+      "coefficientsFirst": false,
+      "coefficientSigns": [
+        "--",
+        "++",
+        "+-"
+      ],
+      "graphSigns": [
+        "++",
+        "+-",
+        "--"
+      ],
+      "answer": "231",
+      "reviewDescription": "На рисунках изображены графики функций вида y = k x + b . Установите соответствие между графиками функций и знаками коэффициентов k и b . ГРАФИКИ А) Б) В) КОЭФФИЦИЕНТЫ 1) k < 0 , b < 0 2) k > 0 , b > 0 3) k > 0 , b < 0 В таблице под каждой буквой укажите соответствующий номер. Знаки графиков слева направо: ++, +-, --"
+    },
+    "diagramModel": {
+      "reviewed": true,
+      "assets": [
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FB206EFC46D484754D6BB16882D9D3D6/xs3qvrsrcFF851D281D35AA2F44148F167DA4FA00_1_1433248674.png",
+          "sha256": "6d8f72336b08f54c751d037fa1ea405b58025cdecd119399d380d910ef22e008",
+          "width": 189,
+          "height": 189,
+          "slope": "increasing",
+          "yIntercept": "above-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FB206EFC46D484754D6BB16882D9D3D6/xs3qvrsrc0C6C04C4EB7283FD49F73B2FFC594BFE_1_1433248677.png",
+          "sha256": "86da90e25fc98d7c82a712277f95e7dba30a789ebb04c9830117e87e3f09db40",
+          "width": 189,
+          "height": 191,
+          "slope": "increasing",
+          "yIntercept": "below-origin"
+        },
+        {
+          "src": "/fipi/oge/docs/DE0E276E497AB3784C3FC4CC20248DC0/questions/FB206EFC46D484754D6BB16882D9D3D6/xs3qvrsrc10DA2819C3DE87E041CBB551F7E9E90B_1_1433248681.png",
+          "sha256": "40233b32f3a7a46a144e178d3cf7c1582e91e07eee64097639c92f7447d9b77c",
+          "width": 189,
+          "height": 192,
+          "slope": "decreasing",
+          "yIntercept": "below-origin"
+        }
+      ]
+    },
+    "comparison": "Сверен вариант того же семейства; полное совпадение условий не заявляется. Порядок знаков (k, b) исходных графиков: ++, +-, --; во внешнем: +-, ++, --, -+. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Метод знака наклона и значения y при x=0 сверен по указанному полному разбору. Решение прототипа не объявляется разбором самой карточки. Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 2, В — 1. Ответ: 321.",
+    "methodSource": {
+      "reviewed": true,
+      "url": "https://math-oge.sdamgia.ru/problem?id=316226",
+      "steps": "Решение . Если значение функции возрастает с увеличением x , то коэффициент k положителен, если убывает — отрицателен. Значение b соответствует значению функции в точке x = 0, следовательно, если график пересекает ось ординат выше оси абсцисс, то значение b положительно, если ниже оси абсцисс — отрицательно. Таким образом, графикам соответствуют следующие коэффициенты: А — 3, Б — 2, В — 1. Ответ: 321.",
+      "snapshot": "/root/oge-math-solutions-20261010/coordinate-plane/sources/likes-339104.html",
+      "snapshotSha256": "e7aa9a7ef32afe3b5db31cc909774b064dfacc8e978cb0ac757c1ff15cf4c51f"
+    },
+    "visualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/primary-visual-review.json",
+      "notes": "Все 78 первичных графиков на шести листах фактически просмотрены: направление прямой и положение пересечения Oy относительно начала координат."
+    },
+    "externalVisualReview": {
+      "reviewed": true,
+      "manifest": "/root/oge-math-solutions-20261010/coordinate-plane/external-visual-review.json"
+    },
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Порядок знаков (k, b) исходных графиков: ++, +-, --; во внешнем: +-, ++, --, -+. Направление сопоставления различается: буквы в первичном условии относятся к графикам, во внешнем — к коэффициентам. Собственная проверка по первичным рисункам:\n1. У линейной функции y = kx + b коэффициент k задаёт направление прямой: при положительном k она поднимается слева направо, при отрицательном — опускается. Это следует из равенства y₂ − y₁ = k · (x₂ − x₁): при движении вправо x₂ − x₁ положительно.\n\nПри x = 0 получаем y = b. Поэтому пересечение с осью Oy выше начала координат означает положительный b, ниже начала координат — отрицательный b. Положение пересечения с осью Ox для определения знака b не используем.\n\n2. Рассмотрим все три исходных графика.\n\nГрафик А: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy выше начала координат, поэтому b положителен.\n\nГрафик Б: прямая поднимается слева направо, поэтому k положителен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\nГрафик В: прямая опускается слева направо, поэтому k отрицателен; она пересекает ось Oy ниже начала координат, поэтому b отрицателен.\n\n3. Сопоставим графики с предложенными парами знаков и запишем номера в порядке А, Б, В.\n\nА) k положителен, b положителен; подходит пара коэффициентов 2.\n\nБ) k положителен, b отрицателен; подходит пара коэффициентов 3.\n\nВ) k отрицателен, b отрицателен; подходит пара коэффициентов 1.\n\nПроверка: у каждой сопоставленной пары совпали оба признака — направление прямой и сторона пересечения с осью Oy. Все три пары знаков различны, каждому пункту соответствует единственный график, все номера использованы один раз.\n\nОтвет: 231."
+    }
+  }
+}

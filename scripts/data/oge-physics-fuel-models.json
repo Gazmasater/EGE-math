@@ -1,0 +1,84 @@
+{
+  "CBD544": {
+    "kind": "efficiency",
+    "eta": 0.25,
+    "Q_MJ": 1,
+    "loss": false,
+    "unit": "кДж"
+  },
+  "4F8C00": {
+    "kind": "efficiency",
+    "eta": 0.3,
+    "Q_MJ": 20,
+    "loss": true,
+    "unit": "МДж"
+  },
+  "7D5A77": {
+    "kind": "efficiency",
+    "eta": 0.3,
+    "Q_MJ": 30,
+    "loss": false,
+    "unit": "МДж"
+  },
+  "142575": {
+    "kind": "efficiency",
+    "eta": 0.25,
+    "Q_MJ": 10,
+    "loss": true,
+    "unit": "МДж"
+  },
+  "C7649F": {
+    "kind": "efficiency",
+    "eta": 0.25,
+    "Q_MJ": 4,
+    "loss": false,
+    "unit": "кДж"
+  },
+  "A0BEE5": {
+    "kind": "efficiency",
+    "eta": 0.25,
+    "Q_MJ": 40,
+    "loss": false,
+    "unit": "МДж"
+  },
+  "B60B15": {
+    "kind": "table",
+    "variant": "B60B15"
+  },
+  "7A9E29": {
+    "kind": "table",
+    "variant": "7A9E29"
+  },
+  "E23DD9": {
+    "kind": "table",
+    "variant": "E23DD9"
+  },
+  "32FD9C": {
+    "kind": "table",
+    "variant": "32FD9C"
+  },
+  "AD5C94": {
+    "kind": "maximum",
+    "m": 3,
+    "q": 46000000,
+    "eta": 0.3
+  },
+  "1FCE75": {
+    "kind": "flight",
+    "s_km": 500,
+    "v_kmh": 250,
+    "P": 2300000,
+    "eta": 0.25,
+    "q": 46000000,
+    "m": 1440
+  },
+  "870E19": {
+    "kind": "car",
+    "m": 30,
+    "q": 46000000,
+    "eta": 0.36,
+    "P": 46000,
+    "v_kmh": 100,
+    "s_km": 300
+  }
+}

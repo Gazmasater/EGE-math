@@ -1,0 +1,432 @@
+{
+  "OGEPHYS132BF1": {
+    "kind": "ohm-change",
+    "U1": 110,
+    "I1": 4,
+    "U2": 220
+  },
+  "OGEPHYS9449F4": {
+    "kind": "two-factors",
+    "rFactor": 2,
+    "uFactor": 0.5,
+    "increase": false
+  },
+  "OGEPHYS9F60BD": {
+    "kind": "two-factors",
+    "rFactor": 0.3333333333333333,
+    "uFactor": 0.5,
+    "increase": true
+  },
+  "OGEPHYS9729F4": {
+    "kind": "table-gap",
+    "U": 4,
+    "I": 1,
+    "unknown": "U",
+    "value": 2.5
+  },
+  "OGEPHYS7A46D7": {
+    "kind": "table-gap",
+    "U": 8,
+    "I": 2,
+    "unknown": "I",
+    "value": 10
+  },
+  "OGEPHYSB61376": {
+    "kind": "table-resistance",
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        10
+      ]
+    ]
+  },
+  "OGEPHYS77208C": {
+    "kind": "table-resistance",
+    "pairs": [
+      [
+        0.4,
+        0.2
+      ],
+      [
+        0.6,
+        0.3
+      ],
+      [
+        1,
+        0.5
+      ],
+      [
+        1.4,
+        0.7
+      ],
+      [
+        2,
+        1
+      ]
+    ]
+  },
+  "OGEPHYS54881C": {
+    "kind": "parallel-equal",
+    "n": 3,
+    "R": 9
+  },
+  "OGEPHYSAFDA75": {
+    "kind": "network",
+    "values": [
+      2,
+      2,
+      6,
+      6
+    ],
+    "pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "series": []
+  },
+  "OGEPHYSCDE099": {
+    "kind": "network",
+    "values": [
+      8,
+      8,
+      10,
+      10
+    ],
+    "pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "series": []
+  },
+  "OGEPHYS85E41C": {
+    "kind": "network",
+    "values": [
+      5,
+      2,
+      2
+    ],
+    "pairs": [
+      [
+        1,
+        2
+      ]
+    ],
+    "series": [
+      0
+    ]
+  },
+  "OGEPHYSE264DF": {
+    "kind": "network",
+    "values": [
+      1,
+      10,
+      10,
+      1
+    ],
+    "pairs": [
+      [
+        1,
+        2
+      ]
+    ],
+    "series": [
+      0,
+      3
+    ]
+  },
+  "OGEPHYS226DA5": {
+    "kind": "network",
+    "values": [
+      3,
+      3,
+      4
+    ],
+    "pairs": [
+      [
+        0,
+        1
+      ]
+    ],
+    "series": [
+      2
+    ]
+  },
+  "OGEPHYS46E193": {
+    "kind": "network",
+    "values": [
+      6,
+      6,
+      3,
+      5
+    ],
+    "pairs": [
+      [
+        0,
+        1
+      ]
+    ],
+    "series": [
+      2,
+      3
+    ]
+  },
+  "OGEPHYS1ADDEA": {
+    "kind": "network",
+    "values": [
+      2,
+      4,
+      10,
+      10
+    ],
+    "pairs": [
+      [
+        2,
+        3
+      ]
+    ],
+    "series": [
+      0,
+      1
+    ]
+  },
+  "OGEPHYS11283D": {
+    "kind": "network",
+    "values": [
+      10,
+      10,
+      2,
+      2
+    ],
+    "pairs": [
+      [
+        0,
+        1
+      ]
+    ],
+    "series": [
+      2,
+      3
+    ]
+  },
+  "OGEPHYS882BF2": {
+    "kind": "voltmeters",
+    "U1": 2,
+    "U2": 0.5,
+    "target": "lamp"
+  },
+  "OGEPHYS19303B": {
+    "kind": "voltmeters",
+    "U1": 4,
+    "U2": 2.5,
+    "target": "lamp"
+  },
+  "OGEPHYSF30F85": {
+    "kind": "voltmeters",
+    "U1": 2,
+    "U2": 0.5,
+    "target": "R1"
+  },
+  "OGEPHYSD38070": {
+    "kind": "ammeters",
+    "I1": 1.5,
+    "I2": 0.5,
+    "layout": "common"
+  },
+  "OGEPHYS1118A8": {
+    "kind": "ammeters",
+    "I1": 2.5,
+    "I2": 0.5,
+    "layout": "common"
+  },
+  "OGEPHYS69B4C9": {
+    "kind": "ammeters",
+    "I1": 0.5,
+    "I2": 1.5,
+    "layout": "lamp-branch"
+  },
+  "OGEPHYS38DAED": {
+    "kind": "ammeters",
+    "I1": 1.5,
+    "I2": 0.5,
+    "layout": "lamp-branch"
+  },
+  "OGEPHYS23C264": {
+    "kind": "ammeters",
+    "I1": 1.5,
+    "I2": 0.5,
+    "layout": "sum"
+  },
+  "OGEPHYS8989AF": {
+    "kind": "ammeters",
+    "I1": 6,
+    "I2": 10,
+    "layout": "difference"
+  },
+  "OGEPHYS677676": {
+    "kind": "series-current",
+    "R1": 5,
+    "R2": 10,
+    "U": 30,
+    "target": "R₂"
+  },
+  "OGEPHYSF13BEE": {
+    "kind": "series-current",
+    "R1": 5,
+    "R2": 10,
+    "U": 30,
+    "target": "R₁"
+  },
+  "OGEPHYS01F449": {
+    "kind": "rheostat",
+    "decrease": true,
+    "power": false
+  },
+  "OGEPHYS2F3F3A": {
+    "kind": "rheostat",
+    "decrease": false,
+    "power": false
+  },
+  "OGEPHYSB3B810": {
+    "kind": "rheostat",
+    "decrease": true,
+    "power": true
+  },
+  "OGEPHYS3862E5": {
+    "kind": "rheostat-branch",
+    "decrease": true
+  },
+  "OGEPHYS8B1E69": {
+    "kind": "rheostat-branch",
+    "decrease": false
+  },
+  "OGEPHYS78BFF6": {
+    "kind": "switch",
+    "layout": "bypass"
+  },
+  "OGEPHYSAB5BBD": {
+    "kind": "switch",
+    "layout": "add-branch"
+  },
+  "OGEPHYS0FF912": {
+    "kind": "switch",
+    "layout": "add-parallel"
+  },
+  "OGEPHYSB561DA": {
+    "kind": "switch",
+    "layout": "short-common"
+  },
+  "OGEPHYS1CCCD7": {
+    "kind": "switch",
+    "layout": "short-branch"
+  },
+  "OGEPHYSA019D1": {
+    "kind": "switch",
+    "layout": "parallel-common"
+  },
+  "OGEPHYSD26CC6": {
+    "kind": "remove-lamps",
+    "before": 5,
+    "after": 2
+  },
+  "OGEPHYS7907C5": {
+    "kind": "lamp-text",
+    "layout": "series"
+  },
+  "OGEPHYS69DFC0": {
+    "kind": "lamp-text",
+    "layout": "parallel"
+  },
+  "OGEPHYSE04560": {
+    "kind": "lamp-text",
+    "layout": "parallel"
+  },
+  "OGEPHYS3156F4": {
+    "kind": "branch-voltage",
+    "R1": 10,
+    "R2": 5,
+    "R3": 5,
+    "I3": 2
+  },
+  "OGEPHYS853616": {
+    "kind": "divider",
+    "R1": 1,
+    "R2": 0.5,
+    "U": 6,
+    "target": "BC"
+  },
+  "OGEPHYS70C835": {
+    "kind": "divider",
+    "R1": 1,
+    "R2": 0.5,
+    "U": 6,
+    "target": "AB"
+  },
+  "OGEPHYS0DA5D2": {
+    "kind": "series-power",
+    "R1": 4,
+    "R2": 8,
+    "U": 24,
+    "total": true
+  },
+  "OGEPHYS14415D": {
+    "kind": "series-power",
+    "R1": 4,
+    "R2": 8,
+    "U": 24,
+    "total": false
+  },
+  "OGEPHYS485DFD": {
+    "kind": "rated-lamps",
+    "powers": [
+      50,
+      50,
+      25
+    ],
+    "ratedU": 110,
+    "U": 220,
+    "target": 1
+  },
+  "OGEPHYS0D0FE6": {
+    "kind": "rated-lamps",
+    "powers": [
+      50,
+      50,
+      25
+    ],
+    "ratedU": 110,
+    "U": 220,
+    "target": 3
+  }
+}

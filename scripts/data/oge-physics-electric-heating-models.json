@@ -1,0 +1,57 @@
+{
+  "OGEPHYS02A6A8": {
+    "kind": "graph-current",
+    "R": 2,
+    "Q": 3000,
+    "t": 60
+  },
+  "OGEPHYS3F1A79": {
+    "kind": "charge-heat",
+    "q": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15
+    ],
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "R": 3,
+    "t": 5
+  },
+  "OGEPHYSE6B7D5": {
+    "kind": "charge-heat",
+    "q": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "R": 2,
+    "t": 4
+  },
+  "OGEPHYS63B521": {
+    "kind": "parallel-keys",
+    "factor": 2.5
+  },
+  "OGEPHYS17A52A": {
+    "kind": "induction-time"
+  }
+}

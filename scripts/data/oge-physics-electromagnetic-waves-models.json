@@ -1,0 +1,163 @@
+{
+  "OGEPHYSFEA04E": {
+    "kind": "boundary",
+    "n1": 1.33,
+    "n2": 1,
+    "quantities": [
+      "v",
+      "f"
+    ]
+  },
+  "OGEPHYS0D58F3": {
+    "kind": "boundary",
+    "n1": 1.33,
+    "n2": 1,
+    "quantities": [
+      "lambda",
+      "v"
+    ]
+  },
+  "OGEPHYSEFC1F6": {
+    "kind": "boundary",
+    "n1": 1.5,
+    "n2": 1,
+    "quantities": [
+      "f",
+      "lambda"
+    ]
+  },
+  "OGEPHYSAD87D5": {
+    "kind": "boundary",
+    "n1": 1,
+    "n2": 1.5,
+    "quantities": [
+      "v",
+      "f"
+    ]
+  },
+  "OGEPHYSD80851": {
+    "kind": "boundary",
+    "n1": 1,
+    "n2": 1.5,
+    "quantities": [
+      "lambda",
+      "v"
+    ]
+  },
+  "OGEPHYS7868CA": {
+    "kind": "boundary",
+    "n1": 1,
+    "n2": 1.33,
+    "quantities": [
+      "v",
+      "f"
+    ]
+  },
+  "OGEPHYSA192F3": {
+    "kind": "recognition",
+    "phenomenon": "infrared"
+  },
+  "OGEPHYS199C01": {
+    "kind": "recognition",
+    "phenomenon": "earth-thermal"
+  },
+  "OGEPHYS4C0BB8": {
+    "kind": "recognition",
+    "phenomenon": "xray"
+  },
+  "OGEPHYS989E55": {
+    "kind": "recognition",
+    "phenomenon": "gamma"
+  },
+  "OGEPHYS56222E": {
+    "kind": "radio",
+    "frequency": 500000,
+    "wavelength": null,
+    "unit": "м"
+  },
+  "OGEPHYS7910C5": {
+    "kind": "radio",
+    "frequency": null,
+    "wavelength": 25,
+    "unit": "МГц"
+  },
+  "OGEPHYS9E249C": {
+    "kind": "radio",
+    "frequency": 106200000,
+    "wavelength": null,
+    "unit": "м"
+  },
+  "OGEPHYSD9DD83": {
+    "kind": "radio",
+    "frequency": null,
+    "wavelength": 600,
+    "unit": "кГц"
+  },
+  "OGEPHYS6B9CDD": {
+    "kind": "band",
+    "band": "infrared"
+  },
+  "OGEPHYS8B71D2": {
+    "kind": "band",
+    "band": "xray"
+  },
+  "OGEPHYSC5229F": {
+    "kind": "band",
+    "band": "radio"
+  },
+  "OGEPHYS854235": {
+    "kind": "band",
+    "band": "ultraviolet"
+  },
+  "OGEPHYSF68244": {
+    "kind": "statements",
+    "version": "first"
+  },
+  "OGEPHYSF04908": {
+    "kind": "statements",
+    "version": "second"
+  },
+  "OGEPHYS0EE008": {
+    "kind": "statements",
+    "version": "third"
+  },
+  "OGEPHYS492BEF": {
+    "kind": "statements",
+    "version": "fourth"
+  },
+  "OGEPHYSB3C8E1": {
+    "kind": "galileo"
+  },
+  "OGEPHYS6075A5": {
+    "kind": "welding",
+    "peakNm": [
+      300,
+      400
+    ]
+  },
+  "OGEPHYSC66A0B": {
+    "kind": "glass",
+    "targetNm": 340,
+    "transmission": 0.9
+  },
+  "OGEPHYSAE88B4": {
+    "kind": "luminescence",
+    "excitationNm": [
+      650,
+      450
+    ],
+    "emissionNm": 580
+  },
+  "OGEPHYS131A98": {
+    "kind": "luminescence",
+    "excitationNm": [
+      300
+    ],
+    "emissionNm": 550
+  },
+  "OGEPHYS84F6CA": {
+    "kind": "solar",
+    "minimumYear": 2020,
+    "period": 11
+  }
+}

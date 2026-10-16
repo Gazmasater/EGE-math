@@ -1,0 +1,44 @@
+{
+  "queries": [
+    {
+      "phrase": "егэ математика профиль",
+      "wordstat_quoted": 53729,
+      "wordstat_broad": 796094,
+      "wm_exact_query_present": false,
+      "wm_response_file": "raw/head-query-0.json",
+      "wm_popular_statistics": null,
+      "user_reported_not_found": true,
+      "current_position": null,
+      "note": "Отсутствие записи в историческом отчёте не доказывает отсутствие в текущей выдаче или индексе."
+    },
+    {
+      "phrase": "егэ физика профиль",
+      "wordstat_quoted": 87,
+      "wordstat_broad": 1789,
+      "wm_exact_query_present": false,
+      "wm_response_file": "raw/head-query-1.json",
+      "wm_popular_statistics": null,
+      "user_reported_not_found": true,
+      "current_position": null,
+      "note": "Отсутствие записи в историческом отчёте не доказывает отсутствие в текущей выдаче или индексе."
+    },
+    {
+      "phrase": "егэ физика",
+      "wordstat_quoted": 24194,
+      "wordstat_broad": 476943,
+      "wm_exact_query_present": true,
+      "wm_response_file": "raw/head-query-2.json",
+      "wm_popular_statistics": null,
+      "user_reported_not_found": false,
+      "current_position": null,
+      "note": "Отсутствие записи в историческом отчёте не доказывает отсутствие в текущей выдаче или индексе."
+    }
+  ],
+  "region_wordstat": 225,
+  "wm_monitoring_region": 225,
+  "wm_latest_available_date": "2026-10-03",
+  "user_observation": "head-query-user-observation.json",
+  "decision": "Общие предметные запросы без ФИПИ — основной приоритет. Запросы с ФИПИ — отдельный подкластер, их позиции не переносятся на общие фразы.",
+  "physics_naming_source": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory",
+  "physics_note": "У ЕГЭ по физике нет отдельного профильного экзамена. Слово «профиль» учитывается как поисковая формулировка пользователя; основной предметный запрос — ЕГЭ по физике."
+}

@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-08T21:54:26.608954+00:00",
+  "passed": true,
+  "core_rows": 316,
+  "popular_rows": 2200,
+  "known_retention_preserved": true,
+  "all_api_responses_successful": true,
+  "wordstat_report_deleted": true,
+  "public_pages_checked": 11,
+  "csv_json_html_consistent": true,
+  "no_credentials_in_artifacts": true,
+  "production_changed": false,
+  "head_query_followup": {
+    "checked_at": "2026-10-08T22:17:37.759623+00:00",
+    "passed": true,
+    "four_priorities_in_new_order": true,
+    "fipi_positions_not_transferred": true,
+    "missing_rank_not_zero": true,
+    "wordstat_report_deleted": true
+  }
+}

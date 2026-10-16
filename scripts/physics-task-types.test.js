@@ -8,7 +8,7 @@ const subjects = require('../lib/physics-topics');
 const {readPhysicsCatalog} = require('./lib/physics-catalog');
 const catalog = readPhysicsCatalog(undefined, {allAnswerTypes: true});
 const root = path.resolve(__dirname, '..'), source = fs.readFileSync(path.join(root, 'server.js'), 'utf8');
-const context = {...types, ...subjects, MATH_SECTIONS: [], normalizeTaskId: s => String(s).trim().toUpperCase()};
+const context = {...types, ...subjects, sourceEntriesCache: new Map(), mathStatsCache: new Map(), MATH_SECTIONS: [], normalizeTaskId: s => String(s).trim().toUpperCase()};
 vm.createContext(context);
 vm.runInContext(source.slice(source.indexOf('const MATH_TOPICS ='), source.indexOf('const YANDEX_METRIKA_HEAD ='))
   + source.slice(source.indexOf('function cleanPlainText('), source.indexOf('function truncateText('))

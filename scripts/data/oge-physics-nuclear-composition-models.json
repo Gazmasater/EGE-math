@@ -1,0 +1,272 @@
+{
+  "OGEPHYS8D8D44": {
+    "kind": "electron",
+    "A": 24,
+    "Z": 10,
+    "element": "неона"
+  },
+  "OGEPHYSBF3204": {
+    "kind": "electron",
+    "A": 7,
+    "Z": 3,
+    "element": "лития"
+  },
+  "OGEPHYSDE3D02": {
+    "kind": "electron",
+    "A": 15,
+    "Z": 8,
+    "element": "кислорода"
+  },
+  "OGEPHYSD98313": {
+    "kind": "electron",
+    "A": 27,
+    "Z": 13,
+    "element": "алюминия"
+  },
+  "OGEPHYS6034DF": {
+    "kind": "electron",
+    "A": 15,
+    "Z": 6,
+    "element": "углерода"
+  },
+  "OGEPHYSC057AF": {
+    "kind": "electron",
+    "A": 56,
+    "Z": 26,
+    "element": "железа"
+  },
+  "OGEPHYSFEE061": {
+    "kind": "electron",
+    "A": 44,
+    "Z": 20,
+    "element": "кальция"
+  },
+  "OGEPHYSEB0962": {
+    "kind": "electron",
+    "A": 50,
+    "Z": 22,
+    "element": "титана"
+  },
+  "OGEPHYS24BE8F": {
+    "kind": "electron",
+    "A": 206,
+    "Z": 84,
+    "element": "полония"
+  },
+  "OGEPHYS134644": {
+    "kind": "count",
+    "A": 50,
+    "Z": 22,
+    "target": "p"
+  },
+  "OGEPHYS29F34F": {
+    "kind": "count",
+    "A": 206,
+    "Z": 84,
+    "target": "p"
+  },
+  "OGEPHYSEA3D46": {
+    "kind": "count",
+    "A": 24,
+    "Z": 10,
+    "target": "n"
+  },
+  "OGEPHYS0083F8": {
+    "kind": "count",
+    "A": 44,
+    "Z": 20,
+    "target": "p"
+  },
+  "OGEPHYS1986F0": {
+    "kind": "count",
+    "A": 50,
+    "Z": 22,
+    "target": "n"
+  },
+  "OGEPHYS0A2911": {
+    "kind": "count",
+    "A": 56,
+    "Z": 26,
+    "target": "p"
+  },
+  "OGEPHYSB44B1D": {
+    "kind": "count",
+    "A": 17,
+    "Z": 8,
+    "target": "n"
+  },
+  "OGEPHYS974617": {
+    "kind": "count",
+    "A": 11,
+    "Z": 5,
+    "target": "n"
+  },
+  "OGEPHYS614D11": {
+    "kind": "count",
+    "A": 15,
+    "Z": 8,
+    "target": "p"
+  },
+  "OGEPHYS4BC9D5": {
+    "kind": "count",
+    "A": 15,
+    "Z": 6,
+    "target": "p"
+  },
+  "OGEPHYS113DDF": {
+    "kind": "count",
+    "A": 15,
+    "Z": 8,
+    "target": "n"
+  },
+  "OGEPHYS8426CA": {
+    "kind": "count",
+    "A": 44,
+    "Z": 20,
+    "target": "n"
+  },
+  "OGEPHYS401D98": {
+    "kind": "count",
+    "A": 15,
+    "Z": 6,
+    "target": "n"
+  },
+  "OGEPHYSB0AA93": {
+    "kind": "count",
+    "A": 11,
+    "Z": 5,
+    "target": "p"
+  },
+  "OGEPHYSD3CA92": {
+    "kind": "count",
+    "A": 56,
+    "Z": 26,
+    "target": "n"
+  },
+  "OGEPHYS650299": {
+    "kind": "count",
+    "A": 15,
+    "Z": 7,
+    "target": "p"
+  },
+  "OGEPHYS23C2E1": {
+    "kind": "count",
+    "A": 24,
+    "Z": 10,
+    "target": "p"
+  },
+  "OGEPHYSD12EE7": {
+    "kind": "count",
+    "A": 15,
+    "Z": 7,
+    "target": "n"
+  },
+  "OGEPHYSD10F65": {
+    "kind": "count",
+    "A": 16,
+    "Z": 8,
+    "target": "p"
+  },
+  "OGEPHYSF01A38": {
+    "kind": "count",
+    "A": 206,
+    "Z": 84,
+    "target": "n"
+  },
+  "OGEPHYS690DBD": {
+    "kind": "neutral-given",
+    "electrons": 30,
+    "neutrons": 36,
+    "target": "Z"
+  },
+  "OGEPHYS43845E": {
+    "kind": "neutral-given",
+    "electrons": 30,
+    "neutrons": 36,
+    "target": "Z"
+  },
+  "OGEPHYS7C983B": {
+    "kind": "neutral-given",
+    "electrons": 26,
+    "neutrons": 32,
+    "target": "electrons"
+  },
+  "OGEPHYS659E38": {
+    "kind": "neutral-given",
+    "electrons": 5,
+    "neutrons": 6,
+    "target": "A"
+  },
+  "OGEPHYSD83B8D": {
+    "kind": "neutral-given",
+    "electrons": 5,
+    "neutrons": 6,
+    "target": "N"
+  },
+  "OGEPHYSEE3185": {
+    "kind": "neutral-given",
+    "electrons": 8,
+    "neutrons": 8,
+    "target": "N"
+  },
+  "OGEPHYSE3563E": {
+    "kind": "reaction",
+    "incoming": [
+      [
+        14,
+        7
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "outgoing": [
+      [
+        1,
+        1
+      ]
+    ],
+    "target": "Z"
+  },
+  "OGEPHYS0BCAF4": {
+    "kind": "statements",
+    "case": "0BCAF4"
+  },
+  "OGEPHYSE1BC72": {
+    "kind": "statements",
+    "case": "E1BC72"
+  },
+  "OGEPHYSDE65B6": {
+    "kind": "statements",
+    "case": "DE65B6"
+  },
+  "OGEPHYS88BD26": {
+    "kind": "statements",
+    "case": "88BD26"
+  },
+  "OGEPHYS844723": {
+    "kind": "statements",
+    "case": "844723"
+  },
+  "OGEPHYS522CC4": {
+    "kind": "statements",
+    "case": "522CC4"
+  },
+  "OGEPHYSD075AC": {
+    "kind": "statements",
+    "case": "D075AC"
+  },
+  "OGEPHYS5096E5": {
+    "kind": "statements",
+    "case": "5096E5"
+  },
+  "OGEPHYS5ABAEB": {
+    "kind": "statements",
+    "case": "5ABAEB"
+  },
+  "OGEPHYS56C783": {
+    "kind": "statements",
+    "case": "56C783"
+  }
+}

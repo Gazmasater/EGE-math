@@ -118,6 +118,15 @@ async function run() {
   await click('#local-pager-top a[rel=next]');await waitFor(`location.search.includes('page=2') && document.readyState==='complete'`);
   assert.equal(await evaluate(`document.querySelectorAll('.qblock').length`),12);assert.ok(await evaluate(`document.querySelector('link[rel=canonical]').href.endsWith('topic=all&page=2')`));await capture('no-js-page-2');
   await call('Emulation.setScriptExecutionDisabled',{value:false});
+  // A server-rendered task must be readable before its optional controls load.
+  await call('Network.setCacheDisabled', {cacheDisabled: true});
+  await call('Network.setBlockedURLs', {urls: ['*mc.yandex*', '*challenges.cloudflare*', '*yandex.ru/ads/system/*', '*an.yandex*', '*/assets/catalogue.*.js']});
+  await call('Page.navigate', {url: origin + '/tasks/30D64C'});
+  await waitFor(`location.pathname==='/tasks/30D64C' && document.readyState!=='loading' && !!document.querySelector('.qblock')`);
+  assert.equal(await evaluate(`document.documentElement.classList.contains('page-loading')`), false, 'a task must not wait for the catalogue script or its fallback timer');
+  assert.equal(await evaluate(`[...document.querySelectorAll('.qblock')].filter(e=>e.checkVisibility()).length`), 1);
+  assert.equal(await evaluate(`!!document.querySelector('.solution-modal')`), false, 'the catalogue script was actually blocked');
+  report.interactions.push({taskReadableBeforeCatalogueScript: true});
   report.interactions.push({modalNext:true,lastTask:true,crossChunk:true,legacyHash:true,history:true,scopedSearch:true,emptySearch:true,noJavaScript:true});
 }
 run().catch(error => {report.errors.push(error.stack); process.exitCode = 1; console.error(error);}).finally(async () => {

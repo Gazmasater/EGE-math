@@ -1,3 +1,4 @@
+const {assetUrl, serveAsset, sharedFipiAssetUrl} = require('./lib/web-assets');
 const http = require('node:http');
 const https = require('node:https');
 const fs = require('node:fs/promises');
@@ -5,17 +6,21 @@ const fsSync = require('node:fs');
 const path = require('node:path');
 const { createHmac, timingSafeEqual, randomBytes, scryptSync } = require('node:crypto');
 const { DatabaseSync } = require('node:sqlite');
+const {renderStudyRequest, validateStudyLead, openStudyLeads, renderStudyLeadsAdmin, createStudyLeadDelivery} = require('./lib/study-leads');
 const { conditionText } = require('./lib/seo-text');
+const { expandMathmlFences } = require('./lib/mathml-fences');
 const {restorePhysicsFigures} = require('./lib/physics-condition-figures');
+const {restoreOgePhysicsFigures} = require('./lib/oge-physics-condition-figures');
 const { ANALYTICS_SCRIPT, registrationAnalyticsCookie } = require('./lib/analytics');
-const {UI_HEAD, renderSiteHeader, renderSiteFooter, renderStudyHero, renderSubjectSwitch, renderStudyBenefits, renderStudyGuide, renderStudyFaq} = require('./lib/site-ui');
+const {UI_HEAD, renderSiteHeader, renderSiteFooter, renderSiteAd, insertSiteAd, renderStudyHero, renderSubjectSwitch, renderStudyBenefits, renderStudyGuide, renderStudyFaq} = require('./lib/site-ui');
+const {egeSubjectContent} = require('./lib/ege-subject-content');
 const {PHYSICS_TOPICS, physicsTopicInfo, physicsClassification, taskMatchesTopic, taskPhysicsTopic} = require('./lib/physics-topics');
 const {MATH_TASK_TYPES, mathTaskTypeInfo, isFirstPartMathTask, mathTaskAssignment, mathTaskType} = require('./lib/math-task-types');
 const {PHYSICS_TASK_TYPES, physicsTaskPart, physicsTaskTypeInfo, physicsTaskType, firstPartPhysicsMatches} = require('./lib/physics-task-types');
 
 const {MATH_CATALOGUE_ALIASES, LEGACY_MATH_NAMES, LEGACY_PHYSICS_NAMES, catalogueUrl, normalizeCatalogueQuery, catalogueMatches, catalogueWindow, cataloguePageNumbers} = require('./lib/catalogue');
 const {guides: catalogueGuides} = require('./lib/catalogue-guides');
-const { OGE_ORIGIN, OGE_PAGE_SIZE, OGE_BANKS, ogeBank, ogePublicTaskId, ogeSourceTaskId, ogeTopicInfo, ogeTaskCodes, ogeTopicCodes, ogeTaskMatchesTopic, ogeTopicStats, ogeCataloguePath, ogePageNumber, normalizeOgeSourceHtml } = require('./lib/oge-catalog');
+const { OGE_ORIGIN, OGE_PAGE_SIZE, OGE_BANKS, ogeBank, ogePublicTaskId, ogeSourceTaskId, ogeTopicInfo, ogeTaskCodes, ogeTopicCodes, ogeTaskMatchesTopic, ogeTopicStats, ogeCataloguePath, ogePageNumber, ogeTaskNavigation, normalizeOgeSourceHtml } = require('./lib/oge-catalog');
 const { execFile } = require('node:child_process');
 
 const PORT = Number(process.env.PORT || 8765);
@@ -35,8 +40,10 @@ const MAX_COMMENT_LENGTH = 2_000;
 const MAX_FEEDBACK_LENGTH = 2_000;
 const COMMENTS_WIDGET_LIMIT = 100;
 const SITE_ORIGIN = 'https://ege-fipi.ru';
-const TELEGRAM_CHANNEL_URL = 'https://t.me/leon_358';
-const TELEGRAM_USERNAME = '@leon_358';
+const studyLeads = openStudyLeads(process.env.EGE_LEADS_DB || path.join(STORAGE_ROOT, 'study-leads.sqlite'));
+const studyLeadDelivery = createStudyLeadDelivery(studyLeads);
+void studyLeadDelivery.flush();
+setInterval(() => { void studyLeadDelivery.flush(); }, 60_000).unref();
 // Temporary maintenance switch; only an explicit 0 disables bot verification.
 const TURNSTILE_ENABLED = process.env.TURNSTILE_ENABLED !== '0';
 const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY || '';
@@ -144,7 +151,7 @@ const YANDEX_METRIKA_HEAD = `<!-- Yandex.Metrika counter -->
 <!-- /Yandex.Metrika counter -->`;
 const YANDEX_METRIKA_NOSCRIPT = `<noscript><div><img src="https://mc.yandex.ru/watch/112561663" style="position:absolute; left:-9999px;" alt="" /></div></noscript>`;
 const SITE_ICON_HEAD = '<link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg">';
-const SITE_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="ЕГЭ ФИПИ"><rect width="192" height="192" rx="38" fill="#183153"/><path fill="#f0b429" d="M38 42h116v24H65v29h75v23H65v32h89v24H38z"/><text x="96" y="87" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="700">ЕГЭ</text></svg>`;
+const SITE_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="ЕГЭ и ОГЭ ФИПИ"><rect width="192" height="192" rx="38" fill="#183153"/><path fill="#f0b429" d="M38 42h116v24H65v29h75v23H65v32h89v24H38z"/><text x="96" y="87" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="700">ЕГЭ</text></svg>`;
 
 function requestFipi(url, options = {}) {
   const target = new URL(url);
@@ -385,15 +392,6 @@ function absoluteUrl(pathname = '/') {
   return new URL(pathname, SITE_ORIGIN).toString();
 }
 
-function renderTelegramBanner(exam = 'ЕГЭ', subject = 'математика') {
-  return `<aside class="telegram-banner" aria-label="Подготовка к ${exam}">
-    <div class="telegram-banner-copy">
-      <strong>Продолжим подготовку в Telegram</strong>
-      <span>Разборы, задания и материалы по математике и физике — чтобы возвращаться к практике было проще.</span>
-    </div>
-    <a class="telegram-banner-action" href="${TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener noreferrer">Перейти в Telegram <span>${TELEGRAM_USERNAME}</span></a>
-  </aside>`;
-}
 
 function sectionInfo(section) {
   return SECTION_INFO[section] || SECTION_INFO.mathematics;
@@ -497,7 +495,7 @@ function renderPhysicsSecondPartMenu(activeCode = '', counts = {}, total = 0, un
   </section></details>`.replaceAll('/physics?topic=', '/physics/part-2?topic=').replace(/(href="\/physics\/part-2\?topic=[^"]+)"/g, '$1#tasks"');
 }
 
-function renderExamPage({title, description, pathname, breadcrumbs, items, content}) {
+function renderExamPage({title, description, pathname, breadcrumbs, items, content, faq}) {
   return `<!doctype html>
 <html lang="ru">
 <head>
@@ -588,14 +586,14 @@ function renderExamPage({title, description, pathname, breadcrumbs, items, conte
   ${renderSiteHeader({pathname, subject: pathname === '/ege/physics' ? 'physics' : pathname === '/ege/math' ? 'math' : ''})}
   <main>
     ${renderBreadcrumbs(breadcrumbs)}
-    ${content}
+    ${insertSiteAd(content)}
     <form class="exam-search" action="/search" method="get" role="search">
       <label for="exam-search-query">Найти задание по номеру ФИПИ или условию</label>
       <div class="exam-search-row"><input id="exam-search-query" name="q" type="search" placeholder="Номер ФИПИ или текст условия" required><button type="submit">Найти</button></div>
     </form>
-    ${renderStudyFaq()}
-    ${renderTelegramBanner()}
-    ${renderSiteFooter({advertising: true})}
+    ${faq || renderStudyFaq()}
+    ${renderStudyRequest('ЕГЭ', pathname.includes('physics') ? 'физика' : 'математика')}
+    ${renderSiteFooter()}
   </main>
 </body>
 </html>`;
@@ -614,7 +612,7 @@ async function renderEgeHubPage() {
   const solved = [...allIds].filter(id => published.has(id)).length;
   const breadcrumbs = [{name: 'ЕГЭ', path: '/ege'}];
   return renderExamPage({title, description, pathname: '/ege', breadcrumbs,
-    items: [{name: 'Решение задач ЕГЭ по математике', path: '/ege/math'}, {name: 'Решение задач ЕГЭ по физике', path: '/ege/physics'}],
+    items: [{name: 'ЕГЭ по математике: профильный уровень', path: '/ege/math'}, {name: 'ЕГЭ по физике', path: '/ege/physics'}],
     content: `${renderStudyHero({hub: true, solved, sampleAnswer: getPublishedSolution.get('6D1598')?.answer || ''})}
     ${renderStudyBenefits()}
     <div class="subject-choice-heading" id="subjects"><h2>С какого предмета начнём?</h2><p>Выберите предмет, затем часть экзамена и нужную тему.</p></div>
@@ -623,7 +621,7 @@ async function renderEgeHubPage() {
         <h2 id="math-title"><a href="/ege/math">Математика</a></h2>
         <p>Профильный уровень</p>
         <p class="subject-stats">${stats(mathHtml)}</p>
-        <a class="subject-overview-link" href="/ege/math">Решение задач ЕГЭ по математике →</a>
+        <a class="subject-overview-link" href="/ege/math">Профильный ЕГЭ по математике: обе части →</a>
         <a class="part-link" href="/math">Первая часть — по типам заданий</a>
         <h3>Вторая часть — по темам</h3>
         <div class="subject-topics">${MATH_SECTIONS.map(section => `<a href="${sectionInfo(section).path}">${escapeHtml(sectionInfo(section).name)}</a>`).join('')}</div>
@@ -632,7 +630,7 @@ async function renderEgeHubPage() {
         <h2 id="physics-title"><a href="/ege/physics">Физика</a></h2>
         <p>Задания с кратким и развёрнутым ответом</p>
         <p class="subject-stats">${stats(physicsHtml)}</p>
-        <a class="subject-overview-link" href="/ege/physics">Решение задач ЕГЭ по физике →</a>
+        <a class="subject-overview-link" href="/ege/physics">ЕГЭ по физике: подготовка по темам →</a>
         <a class="part-link" href="/physics">Первая часть — по типам заданий</a>
         <h3>Вторая часть — по темам</h3>
         <div class="subject-topics">${PHYSICS_TOPICS.map(group => `<a href="/physics/part-2?topic=${group.code}#tasks">${escapeHtml(group.name)}</a>`).join('')}<a href="/physics/part-2#tasks">Вся вторая часть</a></div>
@@ -647,15 +645,14 @@ async function renderEgeSubjectPage(subject) {
   const isPhysics = subject === 'physics';
   const pathname = isPhysics ? '/ege/physics' : '/ege/math';
   const subjectName = isPhysics ? 'Физика' : 'Математика';
-  const heading = `Решение задач ЕГЭ по ${isPhysics ? 'физике' : 'математике'}`;
-  const title = `${heading} — ФИПИ, ответы и разборы`;
   const tasks = [...new Map(sourceTaskEntries(await loadSourceHtml(isPhysics ? 'physics' : 'mathematics')).map(task => [task.id, task])).values()];
   const published = new Set(listPublishedSolutionIds.all().map(row => row.task_id));
   const first = tasks.filter(task => isPhysics ? physicsTaskPart(task) === 1 : isFirstPartMathTask(task));
   const second = tasks.filter(task => isPhysics ? physicsTaskPart(task) === 2 : !isFirstPartMathTask(task));
   const solvedCount = entries => entries.filter(task => published.has(task.id)).length;
   const stats = entries => `Заданий: ${entries.length} · С решениями: ${solvedCount(entries)}`;
-  const description = `Решение задач ЕГЭ по ${isPhysics ? 'физике' : 'профильной математике'} из банка ФИПИ. Первая и вторая части, выбор по темам. Заданий: ${tasks.length}, опубликованных решений: ${solvedCount(tasks)}.`;
+  const subjectContent = egeSubjectContent(subject, {total: tasks.length, solved: solvedCount(tasks)});
+  const {title, heading, description} = subjectContent;
   const firstTypes = isPhysics ? PHYSICS_TASK_TYPES : MATH_TASK_TYPES;
   const firstGroups = [...firstTypes, {code: 'other', name: 'Другие задания первой части'}].map(group => ({
     name: group.name,
@@ -683,16 +680,16 @@ async function renderEgeSubjectPage(subject) {
     </article>`;
   }).join('');
   const breadcrumbs = [{name: 'ЕГЭ', path: '/ege'}, {name: subjectName, path: pathname}];
-  return renderExamPage({title, description, pathname, breadcrumbs, items: [...firstGroups, ...secondGroups], content: `
+  return renderExamPage({title, description, pathname, breadcrumbs, items: [...firstGroups, ...secondGroups], faq: subjectContent.faq, content: `
     <section class="exam-intro" aria-labelledby="subject-title">
-      <p class="study-eyebrow"><span></span>Математика и физика · бесплатная подготовка</p>
+      <p class="study-eyebrow"><span></span>${isPhysics ? 'Физика' : 'Профильная математика'} · обе части ЕГЭ</p>
       <h1 id="subject-title">${heading}</h1>
-      <p>${isPhysics
-        ? 'Поймите, как работают физические законы в задачах. Выберите тему, попробуйте решить самостоятельно и сравните свой ход мысли с пошаговым разбором. Обе части экзамена, графики и схемы — бесплатно и без регистрации.'
-        : 'Отработайте нужную тему на заданиях открытого банка ФИПИ. Сначала попробуйте сами, затем проверьте каждый шаг по подробному решению. Профильный уровень, обе части экзамена — бесплатно и без регистрации.'}</p>
+      <p>${subjectContent.lead}</p>
+      <p>Задания и опубликованные решения — бесплатно и без регистрации.</p>
       <p class="subject-stats">${stats(tasks)}</p>
-      <nav class="subject-jumps" aria-label="Части экзамена"><a href="#part-1">Начать с первой части →</a><a href="#part-2">Перейти ко второй части</a><a href="#study-guide">Как пользоваться решениями</a></nav>
+      <nav class="subject-jumps" aria-label="Навигация по подготовке"><a href="#part-1">Первая часть →</a><a href="#part-2">Вторая часть</a><a href="#preparation">С чего начать</a><a href="#study-guide">Как пользоваться решениями</a></nav>
     </section>
+    ${subjectContent.preparation}
     <section class="subject-section" id="part-1" aria-labelledby="part-1-title">
       <h2 id="part-1-title">Первая часть: задания с кратким ответом</h2>
       <p>${isPhysics
@@ -769,7 +766,7 @@ async function renderMathHubPage() {
           description,
           url: absoluteUrl('/math'),
           inLanguage: 'ru',
-          isPartOf: {'@type': 'WebSite', name: 'ЕГЭ ФИПИ — математика и физика', url: SITE_ORIGIN},
+          isPartOf: {'@type': 'WebSite', name: 'ЕГЭ и ОГЭ ФИПИ — математика и физика', url: SITE_ORIGIN},
           mainEntity: {'@type': 'ItemList', name: 'Типы заданий первой части ЕГЭ', numberOfItems: sections.length, itemListElement: sectionLinks}
         },
         breadcrumbData(breadcrumbs)
@@ -837,6 +834,7 @@ async function renderMathHubPage() {
         <a href="/">Выбрать тип задания</a>
       </div>
     </section>
+    ${renderSiteAd()}
     <section class="math-hub-section" aria-labelledby="math-hub-sections-title">
       <h2 id="math-hub-sections-title">Типы заданий первой части</h2>
       <div class="math-hub-grid">
@@ -848,8 +846,8 @@ async function renderMathHubPage() {
       </div>
     </section>
     ${renderStudyGuide({subject: 'math'})}
-    ${renderTelegramBanner()}
-    ${renderSiteFooter({advertising: true})}
+    ${renderStudyRequest()}
+    ${renderSiteFooter()}
   </main>
 </body>
 </html>`;
@@ -983,7 +981,7 @@ function renderSeoMetadata({ title, description, pathname, robots = 'index,follo
   <link rel="canonical" href="${escapeHtml(url)}">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:type" content="${escapeHtml(type)}">
-  <meta property="og:site_name" content="ЕГЭ ФИПИ — математика и физика">
+  <meta property="og:site_name" content="ЕГЭ и ОГЭ ФИПИ — математика и физика">
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(url)}">
@@ -993,14 +991,17 @@ function renderSeoMetadata({ title, description, pathname, robots = 'index,follo
   ${renderStructuredData(structuredData)}`;
 }
 
-function normalizeFipiHtml(html, assetPrefix = '/fipi/') {
-  return String(html)
+function normalizeFipiHtml(html, assetPrefix = '/fipi/', expandFences = false) {
+  const normalized = String(html)
     .replace(/<script[^>]+src=["'][^"']*mathjax[^"']*["'][^>]*><\/script>/gi, '')
     .replace(/<script[^>]+src=["'][^"']*mml-chtml\.js[^"']*["'][^>]*><\/script>/gi, '')
     .replaceAll('<m:', '<')
-    .replaceAll('</m:', '</')
+    .replaceAll('</m:', '</');
+  return (expandFences ? expandMathmlFences(normalized) : normalized)
     .replace(/<math\b[^>]*>[\s\S]*?<\/math>/gi, formula => `<span class="fipi-math-scroll">${formula}</span>`)
     .replace(/((?:src|href)=["'])\.\.\/\.\.\//gi, `$1${assetPrefix}`)
+    .replace(/((?:src|href)=["'])(\/fipi\/(?:oge\/|oge-physics\/)?(?:styles\.css|xmodules\/os\/img\/_styles\.css|lib\/t3utils\.js))(?:\?[^"']*)?(["'])/gi,
+      (_, prefix, url, suffix) => `${prefix}${sharedFipiAssetUrl(url)}${suffix}`)
     .replaceAll('var home_directory="../../";', `var home_directory="${assetPrefix}";`)
     .replaceAll("var qfiles_location='../../';", `var qfiles_location='${assetPrefix}';`)
     .replaceAll('<IMG SRC=', '<IMG loading="lazy" SRC=')
@@ -1253,11 +1254,11 @@ function renderTurnstileScript() {
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=egeTurnstileLoaded&render=explicit" async defer></script>`;
 }
 
-function renderAdminShell(title, content) {
+function renderAdminShell(title, content, privateData = false) {
   return `<!doctype html>
 <html lang="ru">
 <head>
-  ${YANDEX_METRIKA_HEAD}
+  ${privateData ? '' : YANDEX_METRIKA_HEAD}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(title)} — администрирование</title>
@@ -1302,10 +1303,11 @@ function renderAdminShell(title, content) {
   </style>
 </head>
 <body>
-  ${YANDEX_METRIKA_NOSCRIPT}
+  ${privateData ? '' : YANDEX_METRIKA_NOSCRIPT}
   <main>
     <div class="top">
       <a href="/admin">Управление решениями</a>
+      <a href="/admin/leads">Заявки</a>
       <form method="post" action="/admin/logout"><button type="submit">Выйти</button></form>
     </div>
     ${content}
@@ -1430,7 +1432,7 @@ function renderAccountShell(title, content, user = null) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,follow">
-  <title>${escapeHtml(title)} — ЕГЭ ФИПИ</title>
+  <title>${escapeHtml(title)} — ЕГЭ и ОГЭ ФИПИ</title>
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; background: #f4f6f8; color: #243447; font: 16px/1.5 Arial, sans-serif; }
@@ -1556,6 +1558,10 @@ function renderAccountPage(user, notice = '') {
 function renderPrivacyPage(user = null) {
   return renderAccountShell('Данные пользователей', `<section class="card">
       <h1>Данные пользователей</h1>
+      <h2>Обращения через форму</h2>
+      <p>Для ответа на обращение сохраняются имя, указанный контакт, экзамен, предмет, текст вопроса и время согласия на обработку данных. Эти сведения доступны администратору сайта и не публикуются. Обращение также направляется администратору через Telegram. Контакт используется для ответа на ваше обращение.</p>
+      <p>Чтобы исправить или удалить обращение, напишите через эту же форму и укажите контакт из первоначального обращения.</p>
+      <h2>Личный кабинет</h2>
       <p>Для создания аккаунта сайт запрашивает ФИО, город, электронную почту и пароль.</p>
       <p>ФИО и город показываются рядом с опубликованным комментарием. Электронная почта используется для входа и не публикуется. Пароль хранится только в виде необратимого защищённого хеша.</p>
       <p>Данные используются для работы личного кабинета, ограничения доступа к комментариям и связи комментария с его автором.</p>
@@ -1725,8 +1731,8 @@ function renderFeedbackModal() {
   </section>`;
 }
 
-function renderCommentsWidget() {
-  return `<aside class="comments-widget" aria-label="Комментарии сайта">
+function renderCommentsWidget({ inlineOnMobile = false } = {}) {
+  return `<aside class="comments-widget${inlineOnMobile ? ' comments-widget-inline-mobile' : ''}" aria-label="Комментарии сайта">
     <button class="comments-widget-trigger" type="button" aria-expanded="false" aria-controls="comments-widget-panel">
       <span class="comments-widget-icon" aria-hidden="true">💬</span>
       <span>Комментарии</span>
@@ -1767,6 +1773,8 @@ function renderCommentsWidget() {
       @media (max-width: 700px) {
         .comments-widget { right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); }
         .comments-widget-trigger { min-height: 44px; padding: 9px 12px; }
+        .comments-widget.comments-widget-inline-mobile { position: relative; right: auto; bottom: auto; display: flex; justify-content: flex-end; margin: 0 0 12px; }
+        .comments-widget-inline-mobile .comments-widget-panel { top: calc(100% + 10px); bottom: auto; width: min(390px, 100%); box-sizing: border-box; }
       }
       @media print { .comments-widget { display: none; } }
     </style>
@@ -2174,373 +2182,14 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     : (isPlane
       ? 'ФИПИ · тема 7.1 · развёрнутый ответ · проверенная подборка'
       : 'ФИПИ · темы 7.2–7.5 · развёрнутый ответ · проверенная подборка')))))))));
-  const fixed = normalizeFipiHtml(isPhysics ? restorePhysicsFigures(html) : html, isOge ? ogeConfig.assetPrefix : '/fipi/')
+  const fixed = normalizeFipiHtml(isPhysics ? restorePhysicsFigures(html) : section === 'oge-physics' ? restoreOgePhysicsFigures(html) : html, isOge ? ogeConfig.assetPrefix : '/fipi/', section === 'oge')
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="ru"$1>')
     .replace(/(<div class="id-text">[\s\S]*?<span class="canselect">)([A-Z0-9]{4,32})(<\/span>)/gi,
       (_, before, id, after) => `${before}<a class="task-permalink" href="/tasks/${isOge ? ogePublicTaskId(id, section) : normalizeTaskId(id)}">${normalizeTaskId(id)}</a>${after}`);
 
-  const localStyle = `
-  <style>
-    html { width: 100%; max-width: 100%; min-width: 0 !important; overflow-x: hidden; }
-    *, *::before, *::after { box-sizing: border-box; }
-    html.added-loading .task-header-panel,
-    html.added-loading .qblock { display: none !important; }
-    html.page-loading .task-header-panel,
-    html.page-loading .qblock,
-    html.page-loading .local-pager { visibility: hidden !important; }
-    html.page-loading body::after { content: 'Подготовка заданий…'; display: block; margin: 36px auto; text-align: center;
-      color: #526273; font: 15px Arial, sans-serif; }
-    math { font-family: 'Cambria Math', 'STIX Two Math', serif; }
-    .fipi-math-scroll { display: inline-block; max-width: 100%; vertical-align: middle; overflow-x: auto; }
-    /* Поле ответа size=40 в выгрузке ФИПИ иначе задаёт минимальную ширину всей таблицы условия. */
-    .qblock > form > table { width: 100%; table-layout: fixed; }
-    /* Однострочные таблицы Word служат раскладкой условия и рисунка, а не данными. */
-    .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid):has(> tbody > tr:only-child > td:nth-child(2)):has(img) { width: 100% !important; table-layout: fixed; }
-    .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid):has(> tbody > tr:only-child > td:nth-child(2)):has(img) > tbody > tr { display: flex; flex-wrap: wrap; }
-    .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid):has(> tbody > tr:only-child > td:nth-child(2)):has(img) > tbody > tr > td { flex: 1 1 220px; width: auto !important; min-width: 0; max-width: 100%; }
-    .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid) img { max-width: 100%; height: auto; }
-    ${isPhysics || section === 'oge-physics' ? `/* Таблицы ответов ФИПИ имеют ширину в пикселях; на телефоне сохраняем столбцы и переносим текст. */
-    @media (max-width: 600px) {
-      .qblock .cell_0 table { max-width: 100%; }
-      .qblock .cell_0 td { overflow-wrap: anywhere; }
-      .qblock .cell_0 td[width="0"] { white-space: nowrap; overflow-wrap: normal; }
-      /* Только трёхколоночные соответствия: А/Б, пустой разделитель, варианты. Двухколоночные списки терминов остаются целиком. */
-      .qblock .cell_0 table:has(> tbody > tr:first-child > td > b > u):has(> tbody > tr:first-child > td:nth-child(3)) { display: grid; grid-template-columns: minmax(0, 1fr); width: 100% !important; }
-      .qblock .cell_0 table:has(> tbody > tr:first-child > td > b > u):has(> tbody > tr:first-child > td:nth-child(3)) > tbody,
-      .qblock .cell_0 table:has(> tbody > tr:first-child > td > b > u):has(> tbody > tr:first-child > td:nth-child(3)) > tbody > tr { display: contents; }
-      .qblock .cell_0 table:has(> tbody > tr:first-child > td > b > u):has(> tbody > tr:first-child > td:nth-child(3)) > tbody > tr > td { width: auto !important; min-width: 0; text-align: left; }
-      .qblock .cell_0 table:has(> tbody > tr:first-child > td > b > u):has(> tbody > tr:first-child > td:nth-child(3)) > tbody > tr > td:nth-child(2) { display: none; }
-      .qblock .cell_0 table:has(> tbody > tr:first-child > td > b > u):has(> tbody > tr:first-child > td:nth-child(3)) > tbody > tr:first-child > td:first-child { grid-row: 1; }
-      .qblock .cell_0 table:has(> tbody > tr:first-child > td > b > u):has(> tbody > tr:first-child > td:nth-child(3)) > tbody > tr:nth-child(2) > td:first-child { grid-row: 2; }
-      .qblock .cell_0 table:has(> tbody > tr:first-child > td > b > u):has(> tbody > tr:first-child > td:nth-child(3)) > tbody > tr:first-child > td:nth-child(3) { grid-row: 3; margin-top: 12px; }
-      .qblock .cell_0 table:has(> tbody > tr:first-child > td > b > u):has(> tbody > tr:first-child > td:nth-child(3)) > tbody > tr:nth-child(2) > td:nth-child(3) { grid-row: 4; }
-      .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid)[border="1"] { width: 100% !important; table-layout: fixed; }
-      .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid)[border="1"] td { width: auto !important; overflow-wrap: anywhere; }
-    }` : ''}
-
-    .qblock .varinats-block input[type="text"] { width: 100%; min-width: 0; max-width: 100%; }
-    ${isOge ? `
-    .qblock > form > table, .qblock .submit-outblock, .qblock .varinats-block > div > table { width: 100%; table-layout: fixed; }
-    .qblock input[type="text"] { width: min(100%, 365px); max-width: 100%; min-width: 0; margin-right: 0; }
-    .qblock img { height: auto; }
-    @media (max-width: 700px) {
-      .qblock table.MsoNormalTable { display: block; max-width: 100%; overflow-x: auto; }
-    }
-    ` : ''}
-    /* В исходных стилях ФИПИ для этого body задан overflow: hidden.
-       Без переопределения длинные условия и опубликованные решения не прокручиваются на телефонах. */
-    body.questions-container { width: 100%; max-width: 1000px; min-width: 0 !important; margin: 0 auto; padding: 24px; overflow-x: hidden; overflow-y: auto !important; background: #f4f6f8; }
-    body.questions-container > table { background: white; box-shadow: 0 2px 14px #00000018; }
-    .local-header { position: sticky; top: 0; z-index: 50; margin: -24px -24px 20px; padding: 14px 24px;
-      background: #183153; color: white; font: 600 16px/1.35 Arial, sans-serif; box-shadow: 0 2px 8px #0003; }
-    .local-header small { display: block; margin-top: 3px; font-weight: 400; opacity: .82; }
-    .local-header h1 { margin: 0; color: #fff; font: inherit; white-space: normal !important; overflow-wrap: anywhere; }
-    .seo-breadcrumbs { margin: 0 0 16px; color: #40566d; font: 14px/1.5 Arial, sans-serif; }
-    .seo-breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 6px 10px; margin: 0; padding: 0; list-style: none; }
-    .seo-breadcrumbs li { min-width: 0; overflow-wrap: anywhere; }
-    .seo-breadcrumbs li + li::before { content: '›'; margin-right: 10px; }
-    .seo-breadcrumbs a { color: #1769aa; }
-    .catalog-summary { margin: 0 0 20px; padding: 16px 18px; border: 1px solid #cbd7e4; border-radius: 8px; background: #fff; color: #344054; font: 16px/1.5 Arial, sans-serif; }
-    .oge-shared-condition { margin-bottom: 16px; padding: 16px; border: 1px solid #cbd7e4; border-radius: 8px; background: white; }
-    .oge-shared-condition h2 { margin: 0 0 12px; font: 700 18px Arial,sans-serif; color: #183153; }
-    .oge-topic-switcher { margin: 0 0 16px; }
-    .oge-topic-switcher > summary { padding: 12px 16px; border: 1px solid #cbd7e4; border-radius: 8px; background: white; color: #1769aa; font-weight: 700; cursor: pointer; }
-    .catalog-summary p { margin: 0; }
-    .telegram-banner { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 0 0 20px; padding: 18px 20px;
-      border: 1px solid #6f9cd0; border-radius: 10px; background: linear-gradient(120deg, #e7f3ff, #f6fbff); color: #183153;
-      box-shadow: 0 2px 10px #18315312; font-family: Arial, sans-serif; }
-    .telegram-banner-copy { display: grid; gap: 4px; }
-    .telegram-banner-copy strong { font-size: 18px; line-height: 1.25; }
-    .telegram-banner-copy span { color: #40566d; font-size: 14px; line-height: 1.4; }
-    .telegram-banner a.telegram-banner-action { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 7px; min-height: 42px;
-      padding: 10px 14px; border-radius: 7px; background: #229ed9; color: #fff; font: 700 14px/1.2 Arial, sans-serif; text-align: center; text-decoration: none; }
-    .telegram-banner a.telegram-banner-action:hover { background: #168ac2; color: #fff; }
-    .telegram-banner-action span { font-weight: 500; }
-    .task-solution-jump { display: inline-flex; margin-top: 9px; padding: 7px 10px; border-radius: 6px; background: #e8f5e9;
-      color: #1d5e2d; font: 700 14px Arial, sans-serif; text-decoration: none; }
-    .task-solution-jump:hover { background: #d8f0db; color: #12451f; }
-    .task-feedback-jump { display: inline-flex; margin: 9px 0 0 8px; padding: 7px 10px; border: 1px solid #f4d18a; border-radius: 6px; background: #fff5db;
-      color: #704900; font: 700 14px Arial, sans-serif; text-decoration: none; }
-    .task-feedback-jump:hover { background: #ffedbd; color: #563700; }
-    .local-menu { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
-    .local-menu-heading { grid-column: 2 / -1; align-self: center; margin-top: 2px; color: #d4dfeb; font: 700 13px Arial, sans-serif; }
-    .local-menu a { padding: 7px 8px; border: 1px solid #ffffff70; border-radius: 6px; color: white; text-decoration: none;
-      font-weight: 500; text-align: center; white-space: normal; }
-    .local-menu a:hover { background: #ffffff18; }
-    .local-menu a.active { background: white; color: #183153; }
-    .physics-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #f0b429; border-radius: 8px; background: #f0b429; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
-    .physics-top-button:hover { background: #ffd166; border-color: #ffd166; color: #183153; }
-    .math-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #f0b429; border-radius: 8px; background: #f0b429; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
-    .math-top-button:hover { background: #ffd166; border-color: #ffd166; }
-    .local-menu form { margin: 0; min-width: 0; }
-    .local-menu button { padding: 7px 11px; border: 1px solid #ffffff70; border-radius: 6px; color: white;
-      background: transparent; font: 500 14px Arial, sans-serif; cursor: pointer; width: 100%; height: 100%; white-space: normal; }
-    .local-menu button:hover { background: #ffffff18; }
-    .math-topics { margin: 0 0 20px; padding: 20px; border: 1px solid #cbd7e4; border-radius: 10px;
-      background: #fff; color: #243447; font-family: Arial, sans-serif; box-shadow: 0 2px 10px #18315312; }
-    .math-topics-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 16px; }
-    .math-topics-heading h2 { margin: 0; color: #183153; font-size: 23px; }
-    .math-topics-heading p { margin: 5px 0 0; color: #526273; font-size: 14px; }
-    a.math-all-link { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 10px 13px; border: 1px solid #1769aa;
-      border-radius: 7px; color: #1769aa; font-weight: 700; text-decoration: none; }
-    .math-all-link span { display: inline-grid; min-width: 30px; place-items: center; padding: 2px 6px; border-radius: 12px; background: #e7f1fb; }
-    a.math-all-link:hover, a.math-all-link.active { background: #1769aa; color: #fff; }
-    .math-all-link:hover span, .math-all-link.active span { background: #ffffff2b; }
-    .math-topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
-    .math-topic-group { overflow: hidden; border: 1px solid #d8e1eb; border-radius: 8px; background: #fbfdff; }
-    .math-topic-group summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 14px;
-      background: #eef4fa; color: #183153; font-weight: 700; cursor: pointer; }
-    .math-topic-group summary > span:first-child { min-width: 0; white-space: normal; overflow-wrap: anywhere; }
-    .math-topic-group summary:hover { background: #e3edf7; }
-    .math-topic-group[open] summary { border-bottom: 1px solid #d8e1eb; }
-    .math-topic-count { flex: 0 0 auto; color: #526273; font-weight: 600; }
-    .math-topic-children { display: grid; gap: 4px; padding: 8px; }
-    .math-topic-children a, .math-topic-children > span { display: block; padding: 8px 10px; border-radius: 6px; color: #1769aa;
-      font-size: 14px; line-height: 1.35; text-decoration: none; }
-    .math-topic-children a:hover { background: #eaf3fb; }
-    .math-topic-children a.active { background: #1769aa; color: #fff; }
-    .math-topic-children a.active .math-topic-count { color: inherit; }
-    .math-topic-children .math-topic-major { margin-bottom: 3px; background: #eef4fa; color: #183153; font-weight: 700; }
-    .math-topic-children .disabled { color: #8492a3; background: #f5f7f9; cursor: not-allowed; }
-    .math-topic-children a .math-topic-count, .math-topic-children > span .math-topic-count { float: right; margin-left: 8px; }
-    .math-topic-prompt { margin: 0 0 20px; padding: 18px 20px; border-left: 4px solid #f0b429; border-radius: 7px;
-      background: #fff9e8; color: #40566d; font: 15px/1.5 Arial, sans-serif; }
-    .math-topic-prompt strong { color: #183153; }
-    .math-topic-picker { margin: 0 0 16px; border: 1px solid #cbd7e4; border-radius: 8px; background: #fff; }
-    .math-topic-picker > summary { padding: 12px 16px; color: #1769aa; cursor: pointer; font: 700 15px/1.4 Arial, sans-serif; }
-    .math-topic-picker > .math-topics { margin: 0; border: 0; box-shadow: none; }
-    .catalogue-task-start { scroll-margin-top: 320px; }
-    a.catalogue-task-jump { display: inline-flex; margin-top: 9px; padding: 7px 10px; border-radius: 6px;
-      background: #e8f5e9; color: #1d5e2d; font: 700 14px Arial, sans-serif; text-decoration: none; }
-    .physics-topics { margin: 0 0 20px; padding: 18px; border: 1px solid #cbd7e4; border-radius: 10px;
-      background: #fff; color: #243447; font-family: Arial, sans-serif; box-shadow: 0 2px 10px #18315312; }
-    .physics-topics-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 14px; }
-    .physics-topics h2 { margin: 0; color: #183153; font-size: 23px; }
-    .physics-topics-heading p { margin: 5px 0 0; color: #526273; font-size: 14px; }
-    .physics-topics a { color: #1769aa; text-decoration: none; }
-    .physics-topics a:hover { text-decoration: underline; }
-    .physics-topics a.active { color: #fff; background: #1769aa; }
-    a.physics-all-link { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 10px 13px; border: 1px solid #1769aa; border-radius: 7px; font-weight: 700; }
-    .physics-all-link span { display: inline-grid; min-width: 30px; place-items: center; padding: 2px 6px; border-radius: 12px; background: #e7f1fb; }
-    a.physics-all-link:hover, a.physics-all-link.active { color: #fff; background: #1769aa; text-decoration: none; }
-    .physics-all-link:hover span, .physics-all-link.active span { background: #ffffff2b; }
-    .physics-topic-major, .physics-topic-children a, .physics-topic-children > span { display: block; padding: 8px 10px; border-radius: 6px; }
-    .physics-topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-    .physics-topic-group { overflow: hidden; border: 1px solid #d8e1eb; border-radius: 8px; }
-    .physics-topic-major { display: flex; justify-content: space-between; gap: 10px; font-weight: 700; background: #eef4fa; }
-    .physics-topic-children { display: grid; gap: 2px; padding: 6px; }
-    .physics-topic-children a .physics-topic-count, .physics-topic-children > span .physics-topic-count { float: right; margin-left: 8px; }
-    .physics-topic-count { flex: 0 0 auto; color: #526273; font-weight: 600; }
-    .physics-topics a.active .physics-topic-count { color: inherit; }
-    .physics-topics .disabled { color: #8492a3; background: #f5f7f9; cursor: not-allowed; }
-    a.physics-unclassified { display: flex; justify-content: space-between; gap: 10px; margin-top: 12px; padding: 10px 12px; border: 1px dashed #afbdcd; border-radius: 7px; }
-    .physics-topic-prompt { margin: 0 0 20px; padding: 18px 20px; border-left: 4px solid #f0b429; border-radius: 7px;
-      background: #fff9e8; color: #40566d; font: 15px/1.5 Arial, sans-serif; }
-    .physics-topic-prompt strong { color: #183153; }
-    .site-search-form { display: flex; align-items: stretch; gap: 7px; margin-top: 10px; font-family: Arial, sans-serif; }
-    .site-search-form input { min-width: 0; flex: 1 1 230px; padding: 8px 10px; border: 1px solid #afbdcd; border-radius: 6px;
-      color: #183153; background: #fff; font: 14px/1.2 Arial, sans-serif; }
-    .site-search-form button { flex: 0 0 auto; padding: 8px 12px; border: 1px solid #ffffff70; border-radius: 6px;
-      color: #fff; background: #254a79; font: 600 14px/1.2 Arial, sans-serif; cursor: pointer; }
-    .site-search-form button:hover { background: #335d94; }
-    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
-      clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-    .task-permalink { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
-    .task-permalink:hover { color: #0c4a6e; }
-    .local-pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 7px;
-      margin: 18px 0; padding: 12px; background: white; border-radius: 8px; box-shadow: 0 1px 7px #00000015;
-      font: 14px Arial, sans-serif; }
-    .local-pager--top { margin-top: 0; }
-    .local-pager button { min-width: 38px; padding: 8px 11px; border: 1px solid #b8c3d1; border-radius: 6px;
-      background: white; color: #183153; cursor: pointer; }
-    .local-pager button:hover:not(:disabled) { background: #eaf1f8; }
-    .local-pager button.active { border-color: #183153; background: #183153; color: white; }
-    .local-pager button:disabled { cursor: default; opacity: .4; }
-    .local-page-label { margin: 0 6px; color: #4b5968; }
-    .task-sequence-pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 7px;
-      margin: 0 0 18px; padding: 12px; background: white; border-radius: 8px; box-shadow: 0 1px 7px #00000015;
-      font: 14px Arial, sans-serif; }
-    .task-sequence-pager a, .task-sequence-pager span { min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center;
-      justify-content: center; padding: 8px 11px; border: 1px solid #b8c3d1; border-radius: 6px; color: #183153; text-decoration: none; }
-    .task-sequence-pager a:hover { background: #eaf1f8; }
-    .task-sequence-pager .task-sequence-pager-label { border: 0; color: #4b5968; }
-    .task-sequence-pager .task-sequence-pager-disabled { opacity: .4; }
-    .search-page { margin: 0 0 24px; padding: 24px; border: 1px solid #d8e1eb; border-radius: 8px; background: #fff;
-      box-shadow: 0 1px 7px #00000012; color: #243447; font: 16px/1.5 Arial, sans-serif; }
-    .search-page h2 { margin: 0 0 14px; color: #183153; font-size: 24px; line-height: 1.25; }
-    .search-page .site-search-form { margin: 0 0 14px; }
-    .search-page .site-search-form input { border-color: #7f98b4; font-size: 16px; }
-    .search-page .site-search-form button { border-color: #183153; background: #183153; }
-    .search-page .site-search-form button:hover { background: #254a79; }
-    .search-summary { margin: 0 0 14px; color: #4b5968; }
-    .search-results { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
-    .search-results a { display: grid; gap: 4px; padding: 14px 16px; border: 1px solid #cbd7e4; border-radius: 7px;
-      color: #183153; text-decoration: none; background: #f8fafc; }
-    .search-results a:hover { border-color: #7194ba; background: #eef4fa; }
-    .search-results strong { font-size: 16px; }
-    .search-results span { color: #40566d; font-size: 14px; }
-    .local-task-hidden { display: none !important; }
-    .solution-controls { margin-top: 16px; padding-top: 14px; border-top: 1px solid #d8e1eb; font-family: Arial, sans-serif; }
-    .solution-controls.has-published-solution { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; border-color: #86ae8e; }
-    .solution-published-badge { display: inline-flex; align-items: center; min-height: 34px; padding: 0 10px; border-radius: 17px;
-      background: #e8f5e9; color: #1f6330; font: 700 13px Arial, sans-serif; }
-    .solution-controls.has-published-solution .solution-discussion-link { margin-left: 0; }
-    .solution-button { padding: 9px 14px; border: 1px solid #183153; border-radius: 6px; background: #183153; color: #fff;
-      font: 600 14px Arial, sans-serif; cursor: pointer; }
-    .solution-button:hover:not(:disabled) { background: #254a79; }
-    .solution-button:disabled { cursor: wait; opacity: .7; }
-    .solution-discussion-link { display: inline-flex; align-items: center; min-height: 38px; margin-left: 10px; color: #183153;
-      font: 600 14px Arial, sans-serif; text-decoration: underline; text-underline-offset: 2px; }
-    .solution-discussion-link:hover { color: #254a79; }
-    .solution-feedback-link { display: inline-flex; align-items: center; min-height: 38px; margin-left: 2px; color: #704900;
-      padding: 0; border: 0; background: transparent; font: 600 14px Arial, sans-serif; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
-    .solution-feedback-link:hover { color: #563700; }
-    .solution-result { margin-top: 12px; padding: 14px 16px; border-radius: 6px; background: #eef4fa; color: #243447; }
-    .solution-result[hidden] { display: none; }
-    .solution-result p { margin: 0 0 10px; }
-    .solution-result p:last-child { margin-bottom: 0; }
-    .solution-answer { font-weight: 700; }
-    .solution-text { margin: 0; font: 16px/1.55 Arial, sans-serif; }
-    .solution-text p, .formatted-solution p { margin: 0 0 12px; }
-    .solution-text p:last-child, .formatted-solution p:last-child { margin-bottom: 0; }
-    .math-fraction { display: inline-flex; flex-direction: column; min-width: 1.1em; margin: 0 .08em; vertical-align: middle;
-      text-align: center; font: .93em/1.05 'Cambria Math', 'STIX Two Math', serif; }
-    .math-fraction > span { display: block; padding: 0 .12em; }
-    .math-fraction > span:first-child { border-bottom: 1px solid currentColor; }
-    .math-root { display: inline-flex; align-items: flex-start; margin-right: .03em; vertical-align: middle;
-      font-family: 'Cambria Math', 'STIX Two Math', serif; }
-    .math-radicand { margin-top: .11em; padding: 0 .08em 0 .1em; border-top: 1px solid currentColor; line-height: .95; }
-    .math-vector { position: relative; display: inline-block; padding-top: .13em; vertical-align: middle;
-      font-family: 'Cambria Math', 'STIX Two Math', serif; }
-    .math-vector::before { position: absolute; top: -.5em; left: 50%; content: '→'; transform: translateX(-50%); font-size: .85em; line-height: 1; }
-    .solution-text sub, .solution-text sup, .formatted-solution sub, .formatted-solution sup { font-size: .75em; line-height: 0; }
-    .solution-modal { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 24px;
-      background: #10243c99; font-family: Arial, sans-serif; }
-    .solution-modal[hidden] { display: none; }
-    .solution-modal-dialog { display: flex; flex-direction: column; width: min(940px, 100%); max-height: calc(100dvh - 48px);
-      overflow: hidden; border-radius: 10px; background: #eef4fa; color: #243447; box-shadow: 0 12px 40px #0008; }
-    .solution-modal-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex: 0 0 auto;
-      padding: 14px 18px; border-bottom: 1px solid #cbd7e4; background: #fff; }
-    .solution-modal-title { margin: 0; color: #183153; font: 700 17px/1.35 Arial, sans-serif; }
-    .solution-modal-close { min-width: 38px; min-height: 38px; border: 1px solid #183153; border-radius: 6px; background: #fff;
-      color: #183153; font: 700 22px/1 Arial, sans-serif; cursor: pointer; }
-    .solution-modal-close:hover { background: #eaf1f8; }
-    .solution-modal-body { min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
-      padding: 18px; scrollbar-gutter: stable; }
-    .solution-modal-body p { margin: 0 0 10px; }
-    .solution-modal-body p:last-child { margin-bottom: 0; }
-    .solution-figure { margin: 16px 0 0; }
-    .solution-diagram-caption { margin: 8px 0 0; color: #40566d; font: 14px/1.45 Arial, sans-serif; }
-    .solution-diagram { display: block; width: min(100%, 560px); height: auto; max-height: none; margin-top: 12px; border: 1px solid #cbd7e4;
-      border-radius: 4px; background: #fff; object-fit: contain; }
-    .solution-comments { margin: 20px 0; padding: 20px; border: 1px solid #cbd7e4; border-radius: 8px; background: #fff;
-      color: #243447; font-family: Arial, sans-serif; }
-    .solution-comments h2 { margin: 0 0 14px; color: #183153; font-size: 21px; }
-    .solution-comments-list { display: grid; gap: 12px; }
-    .solution-comment { padding: 14px; border: 1px solid #d8e1eb; border-radius: 7px; background: #f8fafc; }
-    .solution-comment header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
-    .solution-comment header strong { color: #183153; }
-    .solution-comment header span, .solution-comment time { color: #526273; font-size: 13px; }
-    .solution-comment time { margin-left: auto; }
-    .solution-comment p { margin: 8px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
-    .solution-comment-delete-form { margin: 10px 0 0; }
-    .solution-comment-delete-form button { padding: 7px 10px; border: 1px solid #8c241b; border-radius: 6px; background: #fff; color: #8c241b;
-      font: 600 13px Arial, sans-serif; cursor: pointer; }
-    .solution-comment-delete-form button:hover { background: #fbe9e8; }
-    .solution-comments-empty, .solution-comments-login, .solution-comments-public { margin: 0; color: #526273; }
-    .solution-comments-notice { margin: 0 0 12px; padding: 10px 12px; border-radius: 6px; background: #e9f2fb; color: #183153; }
-    .solution-comment-form { margin-top: 18px; }
-    .solution-comment-form label { display: block; margin-bottom: 6px; font-weight: 700; }
-    .solution-comment-form textarea { display: block; width: 100%; min-height: 92px; padding: 10px 12px; border: 1px solid #afbdcd; border-radius: 6px;
-      color: #243447; font: 16px/1.45 Arial, sans-serif; resize: vertical; }
-    .solution-comment-form button { margin-top: 10px; padding: 9px 14px; border: 1px solid #183153; border-radius: 6px; background: #183153;
-      color: #fff; font: 600 14px Arial, sans-serif; cursor: pointer; }
-    .solution-comment-form button:hover:not(:disabled) { background: #254a79; }
-    .solution-comment-form .comment-error { margin: 9px 0 0; color: #8c241b; }
-    .site-feedback { margin: 20px 0; padding: 20px; border: 1px solid #bad4c0; border-radius: 8px; background: #f5fbf6;
-      color: #243447; font-family: Arial, sans-serif; }
-    .site-feedback h2 { margin: 0 0 10px; color: #183153; font-size: 21px; }
-    .site-feedback > p { margin: 0 0 8px; }
-    .site-feedback-private { color: #526273; font-size: 14px; }
-    .site-feedback-notice, .site-feedback-error { margin: 12px 0 !important; padding: 10px 12px; border-radius: 6px; }
-    .site-feedback-notice { background: #e8f5e9; color: #1d5e2d; }
-    .site-feedback-error { background: #fbe9e8; color: #8c241b; }
-    .site-feedback-form { margin-top: 16px; }
-    .site-feedback-form label { display: block; margin: 12px 0 6px; font-weight: 700; }
-    .site-feedback-form select, .site-feedback-form textarea { display: block; width: 100%; padding: 10px 12px; border: 1px solid #afbdcd; border-radius: 6px;
-      color: #243447; background: #fff; font: 16px/1.45 Arial, sans-serif; }
-    .site-feedback-form textarea { min-height: 100px; resize: vertical; }
-    .site-feedback-form button { margin-top: 10px; padding: 9px 14px; border: 1px solid #183153; border-radius: 6px; background: #183153;
-      color: #fff; font: 600 14px Arial, sans-serif; cursor: pointer; }
-    .site-feedback-form button:hover { background: #254a79; }
-    .seo-task-solution { margin: 20px 0; padding: 20px; border: 1px solid #cbd7e4; border-radius: 8px; background: #eef4fa;
-      color: #243447; font-family: Arial, sans-serif; }
-    .seo-task-solution h2 { margin: 0 0 12px; color: #183153; font-size: 21px; }
-    .seo-task-solution p { margin: 0 0 12px; }
-    .seo-task-solution .formatted-solution { margin: 0; font: 16px/1.55 Arial, sans-serif; }
-    .seo-task-solution figure { margin: 16px 0 0; }
-    .seo-task-solution figcaption { margin-top: 8px; color: #40566d; font-size: 14px; }
-    .seo-task-solution img { display: block; width: min(100%, 560px); height: auto; border: 1px solid #cbd7e4; border-radius: 4px; background: #fff; }
-    @media (max-width: 700px) {
-      body.questions-container { padding: 12px; overflow-x: hidden; }
-      .local-header { position: static; margin: -12px -12px 14px; padding: 14px 12px; font-size: 15px; }
-      .catalogue-task-start { scroll-margin-top: 12px; }
-      .math-topics, .telegram-banner, .local-pager { max-width: 100%; }
-      .physics-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
-      .math-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
-      .local-header small { font-size: 12px; line-height: 1.35; }
-      .telegram-banner { align-items: stretch; flex-direction: column; gap: 12px; margin-bottom: 14px; padding: 16px; }
-      .telegram-banner-copy strong { font-size: 16px; }
-      .telegram-banner-action { width: 100%; }
-      .local-menu { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 12px; }
-      .local-menu a, .local-menu button { display: grid; place-items: center; min-height: 46px; padding: 6px 4px;
-        font-size: 12px; line-height: 1.2; overflow-wrap: anywhere; }
-      .physics-topics { padding: 14px 12px; }
-      .physics-topics-heading { align-items: flex-start; flex-direction: column; }
-      .physics-all-link { width: 100%; justify-content: center; }
-      .physics-topic-grid { grid-template-columns: 1fr; }
-      .math-topics { padding: 15px 12px; }
-      .math-topics-heading { flex-direction: column; }
-      .math-topics-heading h2, .math-topics-heading p { white-space: normal; overflow-wrap: anywhere; }
-      .math-all-link { width: 100%; justify-content: center; }
-      .math-topic-grid { grid-template-columns: 1fr; }
-      .qblock { margin-top: 8px; padding: 14px 16px; }
-      .qblock, .qblock p, .qblock .hint { font-size: 17px; line-height: 1.48; text-align: left; }
-      .qblock > form table[align="right"] { float: none; margin: 12px auto; max-width: 100%; }
-
-      .task-header-panel { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 8px; align-items: center; padding: 9px 8px; }
-      .task-header-panel .id-text { min-width: 0; margin: 0; font-size: 15px; }
-      .task-header-panel .favorite-button { display: none; }
-      .task-header-panel .answer-panel { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; }
-      .task-header-panel .task-status { min-width: 0; font-size: 14px; }
-      .task-header-panel .answer-button { float: none; flex: 0 0 auto; width: auto; height: 36px; margin: 0; padding: 8px 10px; font-size: 12px; }
-      .task-header-panel .task-info-panel { left: 8px; right: 8px; bottom: auto; top: 48px; max-width: none; }
-      .task-info-panel .task-info-content { padding: 10px 12px; overflow-x: auto; }
-      .local-pager { gap: 6px; margin: 14px 0; padding: 10px 8px; }
-      .local-pager button { min-width: 36px; padding: 8px 9px; font-size: 13px; }
-      .local-page-label { flex: 1 0 100%; margin: 2px 0 0; text-align: center; font-size: 12px; }
-      .site-search-form input { flex-basis: 0; }
-      .search-page { margin-bottom: 16px; padding: 18px 14px; }
-      .search-page h2 { font-size: 21px; }
-      .solution-controls { margin-top: 14px; }
-      .solution-controls.has-published-solution { gap: 7px; }
-      .solution-published-badge { min-height: 32px; font-size: 12px; }
-      .solution-button { min-height: 38px; font-size: 14px; }
-      .solution-discussion-link { margin-left: 8px; font-size: 13px; }
-      .solution-result { padding: 12px; }
-      .solution-text { font-size: 15px; }
-      /* На iOS прокрутка вложенного блока внутри fixed-диалога может не принимать жесты.
-         Поэтому на телефоне прокручивается само полноэкранное окно решения. */
-      .solution-modal { display: block; padding: 0; overflow-y: auto; overscroll-behavior: contain;
-        -webkit-overflow-scrolling: touch; touch-action: pan-y; }
-      .solution-modal-dialog { display: block; width: 100%; min-height: 100%; height: auto; max-height: none; border-radius: 0; }
-      .solution-modal-header { position: sticky; top: 0; z-index: 1; padding: 12px; }
-      .solution-modal-title { font-size: 16px; }
-      .solution-modal-body { min-height: calc(100dvh - 63px); overflow: visible; padding: 14px 12px 24px; }
-    }
-    @media print { .local-header { position: static; margin: 0 0 16px; } body.questions-container { background: white; padding: 0; } }
-  </style>`;
-  const loadingGuard = `<script>${useCataloguePager ? `document.documentElement.classList.add('page-loading'${onlyAdded ? ", 'added-loading'" : ''});` : ''}
+  const localStyle = `<link rel="stylesheet" href="${assetUrl(`catalogue-${isOge ? section : isPhysics ? 'physics' : 'math'}.css`)}">`;
+  // A single task is already server rendered; reading it must not wait for controls.
+  const loadingGuard = `<script>${useCataloguePager && !taskIdFromPath ? `document.documentElement.classList.add('page-loading'${onlyAdded ? ", 'added-loading'" : ''});` : ''}
     // В исходной странице ФИПИ эти функции принадлежат родительскому iframe.
     // Здесь документ открыт самостоятельно, поэтому оставляем безопасные заглушки:
     // ошибка старого скрипта не должна прерывать работу навигации каталога.
@@ -2579,7 +2228,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       description: pageDescription,
       url: absoluteUrl(seoPathname),
       inLanguage: 'ru',
-      isPartOf: { '@type': 'WebSite', name: 'ЕГЭ ФИПИ — математика и физика', url: SITE_ORIGIN }
+      isPartOf: { '@type': 'WebSite', name: 'ЕГЭ и ОГЭ ФИПИ — математика и физика', url: SITE_ORIGIN }
     },
     ...seoOverride
   });
@@ -2595,13 +2244,13 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     searchPath: isOge ? ogeConfig.path : '/search', searchTopic: isOge ? 'all' : ''});
   const pageHeading = isLandingCatalogue ? renderStudyHero({subject: uiSubject,
     solved: seoOverride?.catalogueSolved || 0, types: isPhysics ? PHYSICS_TASK_TYPES.length : MATH_TASK_TYPES.length,
-    sampleAnswer: getPublishedSolution.get(isPhysics ? '8A3445' : '6D1598')?.answer || ''}) + renderStudyBenefits()
+    sampleAnswer: getPublishedSolution.get(isPhysics ? '8A3445' : '6D1598')?.answer || ''}) + renderSiteAd() + renderStudyBenefits()
     : `<section class="page-heading"><h1>${escapeHtml(headerTitle)}</h1><p>${escapeHtml(subtitle)}</p>
       ${isSelectedMathCatalogue || isSelectedPhysicsCatalogue || hasTaskSolution || taskIdFromPath ? `<div class="page-heading-actions">
         ${isSelectedMathCatalogue || isSelectedPhysicsCatalogue ? '<a class="catalogue-task-jump" href="#tasks">Начать решать ↓</a>' : ''}
         ${hasTaskSolution ? `<a class="task-solution-jump" href="#solution-${escapeHtml(taskIdFromPath)}">Открыть решение ↓</a>` : ''}
         ${taskIdFromPath ? `<a class="task-feedback-jump" href="#feedback" data-feedback-modal-open data-task-id="${escapeHtml(taskIdFromPath)}">Ошибка или пожелание</a>` : ''}
-      </div>` : ''}</section>`;
+      </div>` : ''}</section>${isSearch ? '' : renderSiteAd()}`;
   const taskPager = renderTaskNavigation(taskNavigation);
   const physicsTopicMenu = isPhysics && isPhysicsCatalogue && !onlyAdded && !isSearch
     ? (physicsPart === 2 ? renderPhysicsSecondPartMenu(physicsTopic?.code || '', physicsStats.counts, physicsStats.total, physicsStats.unclassified)
@@ -2610,627 +2259,30 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const mathTopicMenu = isMathematics && isMathCatalogue && !onlyAdded
     ? renderMathTopicMenu(mathTopic?.code || '', mathStats.counts, mathStats.total)
     : '';
-  const pagerScript = useCataloguePager ? `<script>
-  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-  window.addEventListener('DOMContentLoaded', function () {
-    let currentPage = 1;
-    let resizeTimer;
-    let pages = [];
-    const isSingleTaskPage = ${Boolean(taskIdFromPath)};
-    const catalogue = JSON.parse(document.getElementById('catalogue-data')?.textContent || 'null');
-    let catalogueIndex = catalogue?.offset || 0;
-    let catalogueNavigating = false;
-    const publishedSolutionIds = new Set(${JSON.stringify(publishedSolutionIds)});
-    const emptyCatalogueMessage = ${JSON.stringify(catalogue?.query ? 'По вашему запросу заданий не найдено. Измените слова или вернитесь ко всей подборке.' : onlyAdded
+  const pagerScript = useCataloguePager ? `<script id="catalogue-config" type="application/json">${JSON.stringify({
+    isSingleTaskPage: Boolean(taskIdFromPath),
+    publishedSolutionIds: publishedSolutionIds,
+    emptyCatalogueMessage: catalogue?.query ? 'По вашему запросу заданий не найдено. Измените слова или вернитесь ко всей подборке.' : onlyAdded
       ? 'Новых задач после последнего обновления нет.'
-      : 'По выбранной теме заданий в банке ФИПИ пока нет.')};
-    // Состав раздела уже отфильтрован сервером; браузер только разбивает его на страницы.
-    // Старый HTML банка неидеален. Собираем пары по устойчивому идентификатору
-    // самого задания, а не по родительскому элементу панели: мобильные браузеры
-    // могут по-разному восстанавливать вложенность такой разметки.
-    const allTasks = Array.from(document.querySelectorAll('.qblock[id^="q"]')).map(content => {
-      const id = content.id.slice(1);
-      const header = id ? document.getElementById('i' + id) : null;
-      return header ? { id, header, content } : null;
-    }).filter(Boolean);
-    const tasks = allTasks;
-
-    let modalOpener = null;
-    const solutionModal = document.createElement('section');
-    solutionModal.className = 'solution-modal';
-    solutionModal.hidden = true;
-    solutionModal.setAttribute('role', 'dialog');
-    solutionModal.setAttribute('aria-modal', 'true');
-    solutionModal.setAttribute('aria-labelledby', 'solution-modal-title');
-    solutionModal.innerHTML = '<div class="solution-modal-dialog"><header class="solution-modal-header"><h2 class="solution-modal-title" id="solution-modal-title"></h2><button class="solution-modal-close" type="button" aria-label="Закрыть решение">×</button></header><div class="solution-modal-body" tabindex="0"></div></div>';
-    document.body.appendChild(solutionModal);
-    const modalTitle = solutionModal.querySelector('.solution-modal-title');
-    const modalBody = solutionModal.querySelector('.solution-modal-body');
-    const modalClose = solutionModal.querySelector('.solution-modal-close');
-
-    function closeSolutionModal() {
-      solutionModal.hidden = true;
-      if (modalOpener) modalOpener.focus({ preventScroll: true });
-      modalOpener = null;
-    }
-
-    function modalCommentElement(comment, taskId) {
-      const article = document.createElement('article');
-      article.className = 'solution-comment';
-      const header = document.createElement('header');
-      const author = document.createElement('strong');
-      author.textContent = comment.fullName;
-      const city = document.createElement('span');
-      city.textContent = comment.city;
-      const time = document.createElement('time');
-      time.dateTime = comment.createdAt;
-      const date = new Date(comment.createdAt);
-      time.textContent = Number.isNaN(date.getTime()) ? '' : date.toLocaleString('ru-RU', { dateStyle: 'medium', timeStyle: 'short' });
-      const body = document.createElement('p');
-      body.textContent = comment.body;
-      header.append(author, city, time);
-      article.append(header, body);
-      if (comment.isOwn) {
-        const form = document.createElement('form');
-        form.className = 'solution-comment-delete-form';
-        form.method = 'post';
-        form.action = '/account/comments/' + encodeURIComponent(comment.id) + '/delete';
-        const next = document.createElement('input');
-        next.type = 'hidden';
-        next.name = 'next';
-        next.value = location.pathname + location.search + '#comments';
-        const button = document.createElement('button');
-        button.type = 'submit';
-        button.textContent = 'Удалить мой комментарий';
-        form.append(next, button);
-        article.appendChild(form);
-      }
-      return article;
-    }
-
-    function appendSolutionComments(solution, taskId) {
-      const section = document.createElement('section');
-      section.className = 'solution-comments';
-      const heading = document.createElement('h3');
-      heading.textContent = 'Комментарии к решению';
-      const list = document.createElement('div');
-      list.className = 'solution-comments-list';
-      const comments = Array.isArray(solution.comments) ? solution.comments : [];
-      if (comments.length) {
-        comments.forEach(comment => list.appendChild(modalCommentElement(comment, taskId)));
-      } else {
-        const empty = document.createElement('p');
-        empty.className = 'solution-comments-empty';
-        empty.textContent = 'Комментариев пока нет. Будьте первым.';
-        list.appendChild(empty);
-      }
-      section.append(heading, list);
-      if (!solution.viewer) {
-        const hint = document.createElement('p');
-        hint.className = 'solution-comments-login';
-        const prefix = document.createTextNode('Чтобы оставить комментарий, ');
-        const login = document.createElement('a');
-        login.href = '/account/login?next=' + encodeURIComponent(location.pathname + location.search + '#comments');
-        login.textContent = 'войдите';
-        const middle = document.createTextNode(' или ');
-        const register = document.createElement('a');
-        register.href = '/account/register?next=' + encodeURIComponent(location.pathname + location.search + '#comments');
-        register.textContent = 'зарегистрируйтесь';
-        hint.append(prefix, login, middle, register, '.');
-        section.appendChild(hint);
-        return section;
-      }
-      const form = document.createElement('form');
-      form.className = 'solution-comment-form';
-      const label = document.createElement('label');
-      const inputId = 'modal-comment-' + taskId;
-      label.htmlFor = inputId;
-      label.textContent = 'Ваш комментарий';
-      const field = document.createElement('textarea');
-      field.id = inputId;
-      field.name = 'body';
-      field.maxLength = ${MAX_COMMENT_LENGTH};
-      field.required = true;
-      field.placeholder = 'Напишите вопрос или дополнение к решению';
-      const button = document.createElement('button');
-      button.type = 'submit';
-      button.textContent = 'Отправить комментарий';
-      const error = document.createElement('p');
-      error.className = 'comment-error';
-      error.hidden = true;
-      form.append(label, field, button, error);
-      form.addEventListener('submit', async function (event) {
-        event.preventDefault();
-        error.hidden = true;
-        button.disabled = true;
-        try {
-          const response = await fetch('/tasks/' + encodeURIComponent(taskId) + '/comments', {
-            method: 'POST',
-            headers: { Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams({ body: field.value }).toString()
-          });
-          const payload = await response.json().catch(() => ({}));
-          if (!response.ok || !payload.comment) throw new Error(payload.error || 'Не удалось отправить комментарий.');
-          solution.comments = comments;
-          solution.comments.push(payload.comment);
-          list.querySelector('.solution-comments-empty')?.remove();
-          list.appendChild(modalCommentElement(payload.comment, taskId));
-          document.dispatchEvent(new Event('comments:changed'));
-          field.value = '';
-        } catch (requestError) {
-          error.textContent = requestError.message || 'Не удалось отправить комментарий.';
-          error.hidden = false;
-        } finally {
-          button.disabled = false;
-        }
-      });
-      section.appendChild(form);
-      return section;
-    }
-
-    function openSolutionModal(solution, taskId, opener) {
-      modalOpener = opener;
-      modalTitle.textContent = 'Решение задания ' + taskId;
-      modalBody.replaceChildren();
-      if (solution.answer) {
-        const answer = document.createElement('p');
-        answer.className = 'solution-answer';
-        if (solution.answerHtml) {
-          answer.innerHTML = '<strong>Ответ:</strong> ' + solution.answerHtml;
-        } else {
-          answer.textContent = 'Ответ: ' + solution.answer;
-        }
-        modalBody.appendChild(answer);
-      }
-      const title = document.createElement('p');
-      title.textContent = 'Решение:';
-      modalBody.appendChild(title);
-      const text = document.createElement('div');
-      text.className = 'solution-text';
-      if (solution.solutionHtml) {
-        text.innerHTML = solution.solutionHtml;
-      } else {
-        text.textContent = solution.solution;
-      }
-      modalBody.appendChild(text);
-      if (solution.diagramSvg) {
-        const figure = document.createElement('figure');
-        figure.className = 'solution-figure';
-        const diagram = document.createElement('img');
-        diagram.className = 'solution-diagram';
-        diagram.alt = 'Схема к решению задания ' + taskId;
-        diagram.src = URL.createObjectURL(new Blob([solution.diagramSvg], { type: 'image/svg+xml' }));
-        figure.appendChild(diagram);
-        if (solution.diagramCaption) {
-          const caption = document.createElement('figcaption');
-          caption.className = 'solution-diagram-caption';
-          if (solution.diagramCaptionHtml) {
-            caption.innerHTML = 'Обозначения: ' + solution.diagramCaptionHtml;
-          } else {
-            caption.textContent = 'Обозначения: ' + solution.diagramCaption;
-          }
-          figure.appendChild(caption);
-        }
-        modalBody.appendChild(figure);
-      }
-      const nextIndex = catalogue ? catalogue.ids.indexOf(taskId) + 1 : -1;
-      const nextTaskId = catalogue ? catalogue.ids[nextIndex] || '' : ${JSON.stringify(taskNavigation?.next || '')};
-      if (nextTaskId) {
-        const navigation = document.createElement('nav');
-        navigation.className = 'task-sequence-pager';
-        navigation.setAttribute('aria-label', 'Навигация после решения');
-        const nextLink = document.createElement('a');
-        nextLink.href = catalogue ? catalogueTaskUrl(nextIndex) : '/tasks/' + nextTaskId;
-        if (catalogue) {
-          nextLink.className = 'catalogue-next-task';
-          nextLink.addEventListener('click', function (event) {
-            if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
-              window.egeAnalytics?.goal('next_task', {placement: 'catalogue_dialog', task_id: nextTaskId});
-              return;
-            }
-            event.preventDefault();
-            closeSolutionModal();
-            showCatalogueTask(nextIndex, {scroll: true, track: true, placement: 'catalogue_dialog', historyMode: 'push'});
-          });
-        } else nextLink.dataset.analyticsNextTask = nextTaskId;
-        nextLink.textContent = 'Следующее задание →';
-        navigation.appendChild(nextLink);
-        modalBody.appendChild(navigation);
-      }
-      if (catalogue && !nextTaskId) {
-        const done = document.createElement('p');
-        done.className = 'catalogue-complete';
-        done.textContent = 'Это последнее задание подборки. ';
-        const returnLink = document.createElement('a');
-        returnLink.href = catalogue.hubPath;
-        returnLink.textContent = 'Выбрать другую тему';
-        done.appendChild(returnLink);
-        modalBody.appendChild(done);
-      }
-      modalBody.appendChild(appendSolutionComments(solution, taskId));
-      modalBody.scrollTop = 0;
-      solutionModal.scrollTop = 0;
-      solutionModal.hidden = false;
-      modalClose.focus({ preventScroll: true });
-      window.egeAnalytics?.goal('solution_open', {placement: 'dialog', task_id: taskId});
-    }
-
-    modalClose.addEventListener('click', closeSolutionModal);
-    solutionModal.addEventListener('click', event => {
-      if (event.target === solutionModal) closeSolutionModal();
-    });
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && !solutionModal.hidden) closeSolutionModal();
-    });
-
-    function addSolutionControls() {
-      tasks.forEach(task => {
-        const sourceTaskId = task.content?.id?.replace(/^q/, '') || '';
-        const taskId = sourceTaskId.toUpperCase();
-        if (!/^[A-Z0-9]{4,32}$/i.test(sourceTaskId) || task.content.querySelector('.solution-controls')) return;
-
-        const controls = document.createElement('section');
-        controls.className = 'solution-controls';
-        const hasPublishedSolution = publishedSolutionIds.has(taskId);
-        if (hasPublishedSolution) controls.classList.add('has-published-solution');
-        const button = document.createElement('button');
-        button.className = 'solution-button';
-        button.type = 'button';
-        button.textContent = hasPublishedSolution ? 'Открыть решение' : 'Решение';
-        button.setAttribute('aria-haspopup', 'dialog');
-        const result = document.createElement('div');
-        result.className = 'solution-result';
-        result.hidden = true;
-        const discussionLink = document.createElement('a');
-        discussionLink.className = 'solution-discussion-link';
-        discussionLink.href = '/tasks/' + encodeURIComponent(taskId) + '#comments';
-        discussionLink.textContent = 'Комментарии к решению';
-        const feedbackLink = document.createElement('button');
-        feedbackLink.className = 'solution-feedback-link';
-        feedbackLink.type = 'button';
-        feedbackLink.dataset.feedbackModalOpen = '';
-        feedbackLink.dataset.taskId = taskId;
-        feedbackLink.textContent = 'Ошибка или пожелание';
-        if (hasPublishedSolution) {
-          const badge = document.createElement('span');
-          badge.className = 'solution-published-badge';
-          badge.textContent = '✓ Решение опубликовано';
-          controls.append(badge);
-        }
-        controls.append(button);
-        if (catalogue) {
-          const taskLink = document.createElement('a');
-          taskLink.className = 'solution-discussion-link solution-task-link';
-          taskLink.href = '/tasks/' + encodeURIComponent(taskId);
-          taskLink.textContent = 'Задание ' + taskId + ' на отдельной странице';
-          controls.append(taskLink);
-        }
-        controls.append(discussionLink, feedbackLink, result);
-        task.content.appendChild(controls);
-
-        button.addEventListener('click', async function () {
-          if (controls.dataset.loaded === 'true') {
-            openSolutionModal(controls.solutionData, taskId, button);
-            return;
-          }
-
-          button.disabled = true;
-          button.textContent = 'Загрузка…';
-          result.hidden = false;
-          result.replaceChildren();
-          const loading = document.createElement('p');
-          loading.textContent = 'Загружаем решение…';
-          result.appendChild(loading);
-
-          try {
-            const response = await fetch('/api/solutions/' + encodeURIComponent(taskId), { headers: { Accept: 'application/json' } });
-            if (response.status === 404) {
-              result.replaceChildren();
-              const message = document.createElement('p');
-              message.textContent = 'Решение ещё не опубликовано.';
-              result.appendChild(message);
-              return;
-            }
-            if (!response.ok) throw new Error('Не удалось загрузить решение.');
-            const solution = await response.json();
-            result.replaceChildren();
-            result.hidden = true;
-            controls.solutionData = solution;
-            openSolutionModal(solution, taskId, button);
-            controls.dataset.loaded = 'true';
-            button.textContent = 'Открыть решение';
-          } catch {
-            result.replaceChildren();
-            const message = document.createElement('p');
-            message.textContent = 'Не удалось загрузить решение. Попробуйте ещё раз.';
-            result.appendChild(message);
-          } finally {
-            button.disabled = false;
-            if (controls.dataset.loaded !== 'true') button.textContent = hasPublishedSolution ? 'Открыть решение' : 'Решение';
-          }
-        });
-      });
-    }
-
-    addSolutionControls();
-    document.documentElement.classList.remove('added-loading');
-    if (${Boolean(seoOverride?.serverCatalogue)}) {
-      document.documentElement.classList.remove('page-loading');
-      return;
-    }
-    const top = document.getElementById('local-pager-top') || document.createElement('nav');
-    top.hidden = isSingleTaskPage;
-    top.id = 'local-pager-top';
-    top.className = 'local-pager local-pager--top';
-    top.setAttribute('aria-label', 'Навигация по страницам заданий');
-    const catalogueStart = document.getElementById('tasks');
-    if (catalogueStart) catalogueStart.appendChild(top);
-    else document.querySelector('.local-header').insertAdjacentElement('afterend', top);
-    const bottom = document.getElementById('local-pager-bottom') || document.createElement('nav');
-    bottom.hidden = isSingleTaskPage;
-    bottom.id = 'local-pager-bottom';
-    bottom.className = 'local-pager';
-    bottom.setAttribute('aria-label', 'Навигация по страницам заданий');
-    const footer = document.querySelector('.site-footer');
-    if (footer) footer.before(bottom); else document.body.appendChild(bottom);
-    const pagers = [top, bottom];
-    if (!tasks.length) {
-      pagers.forEach(pager => { pager.textContent = emptyCatalogueMessage; });
-      document.documentElement.classList.remove('page-loading');
-      return;
-    }
-
-    function catalogueTaskUrl(index) {
-      const url = new URL(catalogue.basePath, location.origin);
-      if (catalogue.query) url.searchParams.set('q', catalogue.query);
-      const serverPage = Math.floor(index / catalogue.pageSize) + 1;
-      if (serverPage > 1) url.searchParams.set('page', serverPage);
-      url.hash = 'task-' + catalogue.ids[index];
-      return url.pathname + url.search + url.hash;
-    }
-
-    function catalogueInitialIndex() {
-      const id = location.hash.match(/^#(?:task-|q)([a-z0-9]+)$/i)?.[1]?.toUpperCase();
-      const byId = id ? catalogue.ids.indexOf(id) : -1;
-      if (byId >= 0) return byId;
-      // Old catalogue links used viewport-dependent #page=N. Preserve their
-      // mobile meaning (one task per page) and redirect into the right chunk.
-      const oldPage = Number(location.hash.match(/^#page=(\\d+)$/)?.[1]);
-      return oldPage > 0 ? Math.min(oldPage - 1, catalogue.total - 1) : catalogue.offset;
-    }
-
-    function drawCataloguePager(container) {
-      container.replaceChildren();
-      container.setAttribute('aria-label', 'Навигация по заданиям подборки');
-      const add = (label, index, disabled = false, active = false) => {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.textContent = label;
-        button.disabled = disabled;
-        if (active) {button.className = 'active';button.setAttribute('aria-current', 'true');}
-        button.addEventListener('click', () => showCatalogueTask(index, {scroll: true, track: true, historyMode: 'push'}));
-        container.appendChild(button);
-      };
-      add('← Назад', catalogueIndex - 1, catalogueIndex === 0);
-      const numbers = [...new Set([0, catalogueIndex - 1, catalogueIndex, catalogueIndex + 1, catalogue.total - 1])]
-        .filter(index => index >= 0 && index < catalogue.total).sort((a, b) => a - b);
-      numbers.forEach((index, position) => {
-        if (position && index - numbers[position - 1] > 1) {
-          const gap = document.createElement('span');gap.textContent = '…';gap.setAttribute('aria-hidden', 'true');container.appendChild(gap);
-        }
-        add(String(index + 1), index, false, index === catalogueIndex);
-      });
-      add('Вперёд →', catalogueIndex + 1, catalogueIndex === catalogue.total - 1);
-      const label = document.createElement('span');label.className = 'local-page-label';
-      label.textContent = 'Задание ' + (catalogueIndex + 1) + ' из ' + catalogue.total;
-      container.appendChild(label);
-    }
-
-    function showCatalogueTask(index, {scroll = false, track = false, placement = 'catalogue', historyMode = 'replace'} = {}) {
-      index = Math.max(0, Math.min(catalogue.total - 1, index));
-      const previous = catalogueIndex;
-      const id = catalogue.ids[index];
-      const task = tasks.find(item => item.id.toUpperCase() === id);
-      const targetUrl = catalogueTaskUrl(index);
-      const countForward = callback => {
-        if (track && index > previous) window.egeAnalytics?.goal('next_task', {placement, page: index + 1, task_id: id}, callback);
-        else callback?.();
-      };
-      if (!task) {
-        if (catalogueNavigating) return;
-        catalogueNavigating = true;
-        let navigated = false;
-        const navigate = () => {if (navigated) return;navigated = true;historyMode === 'push' ? location.assign(targetUrl) : location.replace(targetUrl);};
-        setTimeout(navigate, 250);
-        countForward(navigate);
-        return;
-      }
-      catalogueIndex = index;
-      tasks.forEach(item => {
-        const hidden = item !== task;
-        item.header.classList.toggle('local-task-hidden', hidden);
-        item.content.classList.toggle('local-task-hidden', hidden);
-      });
-      pagers.forEach(drawCataloguePager);
-      if (historyMode !== 'none') {
-        // Preserve #tasks on entry so the existing start CTA remains stable.
-        const url = !scroll && location.hash === '#tasks' ? location.pathname + location.search + '#tasks' : targetUrl;
-        if (location.pathname + location.search + location.hash !== url) history[historyMode === 'push' ? 'pushState' : 'replaceState'](null, '', url);
-      }
-      if (scroll) {
-        const header = document.querySelector('.local-header');
-        catalogueStart.style.scrollMarginTop = (getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().height + 12 : 12) + 'px';
-        catalogueStart.scrollIntoView({block: 'start'});
-        task.content.tabIndex = -1;
-        task.content.focus({preventScroll: true});
-      }
-      countForward();
-    }
-
-    if (catalogue) {
-      const initialHash = location.hash;
-      showCatalogueTask(catalogueInitialIndex(), {historyMode: 'none'});
-      document.documentElement.classList.remove('page-loading');
-      const reveal = () => {
-        if (initialHash && !catalogueNavigating) showCatalogueTask(catalogueInitialIndex(), {scroll: true, historyMode: 'none'});
-      };
-      requestAnimationFrame(() => requestAnimationFrame(reveal));
-      window.addEventListener('load', reveal, {once: true});
-      window.addEventListener('popstate', () => {
-        if (!solutionModal.hidden) closeSolutionModal();
-        showCatalogueTask(catalogueInitialIndex(), {scroll: true, historyMode: 'none'});
-      });
-      window.addEventListener('pageshow', () => {catalogueNavigating = false;});
-      return;
-    }
-
-    function drawPager(container, current) {
-      const pageCount = pages.length;
-      container.replaceChildren();
-      const add = (label, page, disabled, active) => {
-        const button = document.createElement('button');
-        button.textContent = label;
-        button.disabled = disabled;
-        if (active) button.className = 'active';
-        button.addEventListener('click', () => showPage(page, true));
-        container.appendChild(button);
-      };
-      add('← Назад', current - 1, current === 1, false);
-      const pageLinks = [];
-      const addPage = (page) => {
-        if (!pageLinks.includes(page) && page >= 1 && page <= pageCount) pageLinks.push(page);
-      };
-      addPage(1);
-      addPage(current - 1);
-      addPage(current);
-      addPage(current + 1);
-      addPage(pageCount);
-      pageLinks.sort((a, b) => a - b).forEach((page, index, pagesToShow) => {
-        if (index && page - pagesToShow[index - 1] > 1) {
-          const gap = document.createElement('span');
-          gap.textContent = '…';
-          gap.setAttribute('aria-hidden', 'true');
-          container.appendChild(gap);
-        }
-        add(String(page), page, false, page === current);
-      });
-      add('Вперёд →', current + 1, current === pageCount, false);
-      const label = document.createElement('span');
-      label.className = 'local-page-label';
-      label.textContent = 'Страница ' + current + ' из ' + pageCount + ' · заданий: ' + tasks.length;
-      container.appendChild(label);
-    }
-
-    function showPage(page, scroll) {
-      const pageCount = pages.length;
-      page = Math.max(1, Math.min(pageCount, page));
-      const previousPage = currentPage;
-      currentPage = page;
-      const visible = new Set(pages[page - 1]);
-      tasks.forEach((task, index) => {
-        const hidden = !visible.has(index);
-        task.header.classList.toggle('local-task-hidden', hidden);
-        if (task.content) task.content.classList.toggle('local-task-hidden', hidden);
-      });
-      pagers.forEach(pager => drawPager(pager, page));
-      if (!isSingleTaskPage) history.replaceState(null, '', '#page=' + page);
-      if (scroll && page > previousPage) {
-        window.egeAnalytics?.goal('next_task', {placement: 'catalogue', page: page,
-          task_id: tasks[pages[page - 1]?.[0]]?.content?.id.slice(1)});
-      }
-      // Переключение страницы не должно менять вертикальную позицию пользователя.
-    }
-
-    function measureAndBuildPages(anchorTask) {
-      if (catalogueStart) {
-        const header = document.querySelector('.local-header');
-        catalogueStart.style.scrollMarginTop = (getComputedStyle(header).position === 'sticky'
-          ? header.getBoundingClientRect().height + 12 : 12) + 'px';
-      }
-      // Сначала показываем все блоки, чтобы измерить их фактическую высоту
-      // при текущей ширине окна и масштабе браузера.
-      tasks.forEach(task => {
-        task.header.classList.remove('local-task-hidden');
-        if (task.content) task.content.classList.remove('local-task-hidden');
-      });
-
-      const chromeHeight = document.querySelector('.local-header').getBoundingClientRect().height
-        + top.getBoundingClientRect().height + bottom.getBoundingClientRect().height + 120;
-      const available = Math.max(320, window.innerHeight - chromeHeight);
-      const heights = tasks.map(task => {
-        const headerRect = task.header.getBoundingClientRect();
-        const contentRect = task.content ? task.content.getBoundingClientRect() : headerRect;
-        return Math.max(headerRect.height + contentRect.height, contentRect.bottom - headerRect.top) + 28;
-      });
-
-      pages = [];
-      let page = [];
-      let used = 0;
-      heights.forEach((height, index) => {
-        if (page.length && used + height > available) {
-          pages.push(page);
-          page = [];
-          used = 0;
-        }
-        page.push(index);
-        used += height;
-      });
-      if (page.length) pages.push(page);
-
-      // Нулевые размеры во время восстановления страницы из кэша браузера
-      // раньше объединяли весь каталог в «Страницу 1 из 1». В таком случае
-      // сохраняем рабочую постраничную навигацию: по одному заданию на страницу.
-      if (pages.length === 1 && tasks.length > 1) {
-        pages = tasks.map((_, index) => [index]);
-      }
-
-      const nextPage = Math.max(0, pages.findIndex(group => group.includes(anchorTask))) + 1;
-      showPage(nextPage, false);
-    }
-
-    function adaptToViewport() {
-      const anchorTask = pages[currentPage - 1]?.[0] || 0;
-      measureAndBuildPages(anchorTask);
-    }
-
-    const jumpToTasks = location.hash === '#tasks';
-    const initial = Number((location.hash.match(/page=(\\d+)/) || [])[1]) || 1;
-    measureAndBuildPages(0);
-    showPage(initial, false);
-    // Показываем интерфейс сразу, не ожидая загрузки всех ресурсов скрытых страниц.
-    requestAnimationFrame(function () {
-      requestAnimationFrame(function () {
-        document.documentElement.classList.remove('page-loading');
-        if (jumpToTasks && catalogueStart) catalogueStart.scrollIntoView({ block: 'start' });
-      });
-    });
-    // После загрузки видимых картинок незаметно уточняем разбиение.
-    window.addEventListener('load', function () {
-      adaptToViewport();
-    }, { once: true });
-    window.addEventListener('resize', function () {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(adaptToViewport, 160);
-    });
-    window.addEventListener('pageshow', function () {
-      // Восстановление страницы из истории браузера может вернуть устаревшее DOM-состояние.
-      requestAnimationFrame(function () {
-        if (pages.length) adaptToViewport();
-        document.documentElement.classList.remove('page-loading', 'added-loading');
-      });
-    });
-  });
-  </script>` : '';
-  const banner = renderTelegramBanner(isOge ? 'ОГЭ' : 'ЕГЭ', ogeConfig?.shortName);
+      : 'По выбранной теме заданий в банке ФИПИ пока нет.',
+    maxCommentLength: MAX_COMMENT_LENGTH,
+    nextTaskId: taskNavigation?.next || '',
+    ogeMath: section === 'oge',
+    serverCatalogue: Boolean(seoOverride?.serverCatalogue),
+    ogeNavigation: seoOverride?.ogeNavigation || null,
+    ogeSection: isOge ? section : '',
+    ogeHubPath: isOge ? ogeConfig.path : ''
+  }).replace(/</g, '\\u003c')}</script>` : '';
+  const banner = renderStudyRequest(isOge ? 'ОГЭ' : 'ЕГЭ', section === 'physics' || section === 'oge-physics' ? 'физика' : 'математика');
   return fixed
     .replace(/<head([^>]*)>/i, `<head$1>${YANDEX_METRIKA_HEAD}${viewportMeta}`)
     .replace(/<link\b(?=[^>]*\brel\s*=\s*["'](?:shortcut\s+)?icon["'])[^>]*>\s*/gi, '')
     .replace(/<title>[\s\S]*?<\/title>/i, pageTitle)
-    .replace('</head>', `${loadingGuard}${localStyle}${pageSeo}${UI_HEAD}</head>`)
-    .replace(/<body([^>]*)>/i, `<body$1>${YANDEX_METRIKA_NOSCRIPT}${header}${seoOverride?.breadcrumbs ? renderBreadcrumbs(seoOverride.breadcrumbs) : ''}${pageHeading}${taskPager}${isLandingCatalogue ? renderSubjectSwitch(uiSubject) : ''}${mathTopicMenu}${physicsTopicMenu}${isLandingCatalogue ? '' : seoOverride?.intro || ''}${catalogue && !catalogue.total ? `<div id="tasks"></div>${renderCataloguePages(catalogue, 'top')}` : ''}${!isLandingCatalogue && !isSearch ? renderCommentsWidget() : ''}${renderFeedbackModal()}`)
+    .replace('</head>', `${loadingGuard}${localStyle}${pageSeo}${UI_HEAD}${useCataloguePager ? `<script defer src="${assetUrl('catalogue.js')}"></script>` : ''}</head>`)
+    .replace(/<body([^>]*)>/i, `<body$1>${YANDEX_METRIKA_NOSCRIPT}${header}${seoOverride?.breadcrumbs ? renderBreadcrumbs(seoOverride.breadcrumbs) : ''}${pageHeading}${taskPager}${isLandingCatalogue ? renderSubjectSwitch(uiSubject) : ''}${mathTopicMenu}${physicsTopicMenu}${isLandingCatalogue ? '' : seoOverride?.intro || ''}${catalogue && !catalogue.total ? `<div id="tasks"></div>${renderCataloguePages(catalogue, 'top')}` : ''}${!isLandingCatalogue && !isSearch ? renderCommentsWidget({ inlineOnMobile: section === 'oge' }) : ''}${renderFeedbackModal()}`)
     .replace(/<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"][^>]*>/i, match =>
       `${catalogue || isSelectedMathCatalogue || isSelectedPhysicsCatalogue ? `<div id="tasks" class="catalogue-task-start">${renderCataloguePages(catalogue, 'top')}</div>` : ''}${match}`)
-    .replace('</body>', `${isLandingCatalogue ? renderStudyGuide({subject: uiSubject}) + renderStudyFaq() : ''}${!taskIdFromPath ? banner : ''}${renderCataloguePages(catalogue, 'bottom')}<div id="site-end"></div>${renderSiteFooter({advertising: !isSearch})}${catalogue ? `<script id="catalogue-data" type="application/json">${JSON.stringify(catalogue).replace(/</g, '\\u003c')}</script>` : ''}${pagerScript}${renderTurnstileScript()}</body>`);
+    .replace('</body>', `${isLandingCatalogue ? renderStudyGuide({subject: uiSubject}) + renderStudyFaq() : ''}${!taskIdFromPath ? banner : ''}${renderCataloguePages(catalogue, 'bottom')}<div id="site-end"></div>${renderSiteFooter()}${catalogue ? `<script id="catalogue-data" type="application/json">${JSON.stringify(catalogue).replace(/</g, '\\u003c')}</script>` : ''}${pagerScript}${renderTurnstileScript()}</body>`);
 }
 
 async function loadSourceHtml(section) {
@@ -3346,10 +2398,11 @@ function renderOgePager({ topic, page, query, added: onlyAdded, total, section =
   const pages = Math.max(1, Math.ceil(total / OGE_PAGE_SIZE));
   const url = number => escapeHtml(ogeCataloguePath({ topic, page: number, query, added: onlyAdded, section }));
   const numbers = [...new Set([1, page - 1, page, page + 1, pages])].filter(number => number >= 1 && number <= pages).sort((a, b) => a - b);
+  const forwardAttributes = number => number > page ? ` data-analytics-catalogue-page-next="${number}" data-analytics-section="${escapeHtml(section)}"` : '';
   return `<nav class="local-pager oge-pager" aria-label="Страницы каталога ОГЭ">
     ${page > 1 ? `<a rel="prev" href="${url(page - 1)}">← Назад</a>` : '<span>← Назад</span>'}
-    ${numbers.map(number => number === page ? `<span aria-current="page">${number}</span>` : `<a href="${url(number)}">${number}</a>`).join('')}
-    ${page < pages ? `<a rel="next" href="${url(page + 1)}">Вперёд →</a>` : '<span>Вперёд →</span>'}
+    ${numbers.map(number => number === page ? `<span aria-current="page">${number}</span>` : `<a href="${url(number)}"${forwardAttributes(number)}>${number}</a>`).join('')}
+    ${page < pages ? `<a rel="next" href="${url(page + 1)}"${forwardAttributes(page + 1)}>Вперёд →</a>` : '<span>Вперёд →</span>'}
     <span class="local-page-label">Страница ${page} из ${pages} · заданий: ${total}</span>
   </nav>`;
 }
@@ -3386,6 +2439,7 @@ async function loadOgeQuestions(onlyAdded, options = {}, section = 'oge') {
   const result = decorate(html, section, onlyAdded ? added[section] : null, {
     title, heading: title, description, pathname, breadcrumbs,
     ogeStats: catalog, serverCatalogue: true, disableCataloguePager: !topic && !onlyAdded,
+    ogeNavigation: ogeTaskNavigation(selected, {topic: topicCode, page, query, added: onlyAdded, section}),
     robots: query || onlyAdded || (topic && !selected.length) ? 'noindex,follow' : 'index,follow',
     intro: `${onlyAdded ? '' : topic ? `<details class="oge-topic-switcher"><summary>Выбрать другую тему</summary>${renderOgeTopicMenu(topicCode, catalog, section)}</details>` : renderOgeTopicMenu(topicCode, catalog, section)}<section class="catalog-summary"><p>${escapeHtml(description)}</p>
       ${!topic && !onlyAdded ? `<p>Условия и рисунки сохранены из <a href="${OGE_ORIGIN}/bank/index.php?proj=${bank.project}" target="_blank" rel="noopener noreferrer">открытого банка ФИПИ</a>. Выберите тему или откройте все задания.</p>` : ''}</section>${queryForm}${pager}
@@ -3509,7 +2563,7 @@ async function loadQuestions(section, onlyAdded = false, options = {}) {
     intro,
     structuredData: {'@context': 'https://schema.org', '@graph': [
       {'@type': 'CollectionPage', name: title, description, url: absoluteUrl(pathname), inLanguage: 'ru',
-        isPartOf: {'@type': 'WebSite', name: 'ЕГЭ ФИПИ — математика и физика', url: SITE_ORIGIN},
+        isPartOf: {'@type': 'WebSite', name: 'ЕГЭ и ОГЭ ФИПИ — математика и физика', url: SITE_ORIGIN},
         mainEntity: {'@type': 'ItemList', numberOfItems: ids.length, itemListElement: window.tasks.map((task, index) => ({
           '@type': 'ListItem', position: window.offset + index + 1, name: `Задание ${task.id}`, url: absoluteUrl(`/tasks/${task.id}`)
         }))}}, breadcrumbData(breadcrumbs)]}
@@ -3970,10 +3024,10 @@ function renderAboutPage() {
   ${YANDEX_METRIKA_HEAD}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>О проекте — задания ЕГЭ по математике и физике</title>
+  <title>О проекте — задания ЕГЭ и ОГЭ по математике и физике</title>
   ${renderSeoMetadata({
-    title: 'О проекте — задания ЕГЭ по математике и физике',
-    description: 'Все типы заданий ЕГЭ по профильной математике и физике из открытого банка ФИПИ по разделам и темам КЭС.',
+    title: 'О проекте — задания ЕГЭ и ОГЭ по математике и физике',
+    description: 'Подготовка к ЕГЭ и ОГЭ по математике и физике: задания открытого банка ФИПИ по темам. Подробные решения ЕГЭ и всех заданий ОГЭ по математике, постепенно добавляемые разборы ОГЭ по физике.',
     pathname: '/about',
     structuredData: {
       '@context': 'https://schema.org',
@@ -3981,7 +3035,7 @@ function renderAboutPage() {
       name: 'О проекте',
       url: absoluteUrl('/about'),
       inLanguage: 'ru',
-      isPartOf: { '@type': 'WebSite', name: 'ЕГЭ ФИПИ — математика и физика', url: SITE_ORIGIN }
+      isPartOf: { '@type': 'WebSite', name: 'ЕГЭ и ОГЭ ФИПИ — математика и физика', url: SITE_ORIGIN }
     }
   })}
   <style>
@@ -4036,16 +3090,17 @@ function renderAboutPage() {
     ${renderSiteHeader({pathname: '/about'})}
     <section class="about-card" aria-labelledby="about-title">
       <p class="study-eyebrow">Бесплатно. Понятно. В вашем темпе.</p>
-      <h1 id="about-title">Подготовка, в которой понятен каждый шаг</h1>
-      <p>ЕГЭ ФИПИ помогает готовиться к профильной математике и физике самостоятельно: выбирать нужную тему, пробовать свои силы и разбираться в решениях. Условия, ответы и подробные объяснения открыты бесплатно и без регистрации.</p>
-      <p>Основной каталог математики содержит только задания первой части с кратким ответом, распределённые по типам и темам. Задания второй части с развёрнутым ответом собраны в отдельных разделах верхнего меню.</p>
-      <p>Основной каталог физики содержит задания первой части: числовые ответы, выбор вариантов и соответствия, сгруппированные по типам. Задачи второй части с развёрнутым ответом доступны через отдельные пункты меню физики.</p>
+      <h1 id="about-title">Подготовка к ЕГЭ и ОГЭ</h1>
+      <p>ЕГЭ и ОГЭ ФИПИ помогает самостоятельно готовиться к обоим экзаменам по математике и физике: выбирать нужную тему, пробовать свои силы и закреплять знания. Все опубликованные материалы доступны бесплатно и без регистрации.</p>
+      <p>Каталог математики ЕГЭ содержит задания первой части с кратким ответом, распределённые по типам и темам. Задания второй части с развёрнутым ответом собраны в отдельных разделах верхнего меню.</p>
+      <p>Каталог физики ЕГЭ содержит задания первой части: числовые ответы, выбор вариантов и соответствия, сгруппированные по типам. Задачи второй части с развёрнутым ответом доступны через отдельные пункты меню физики.</p>
+      <p>Для ОГЭ открыты отдельные банки по <a href="/oge">математике</a> и <a href="/oge-physics">физике</a> с выбором тем и поиском. В ОГЭ по физике постепенно добавляем подробные решения: задания с готовым разбором отмечены в каталоге. В ОГЭ по математике опубликованы подробные решения ко всем 3884 заданиям банка ФИПИ. В разделах ЕГЭ опубликованы подробные решения.</p>
       <p>Это независимый учебный проект. Условия взяты из открытого банка ФИПИ, а решения и пояснения подготовлены для сайта.</p>
-      <a class="study-button" href="/ege#subjects">Выбрать предмет →</a>
+      <a class="study-button" href="/ege#subjects">Выбрать предмет ЕГЭ →</a>
     </section>
     ${renderStudyGuide({hub: true})}
     ${renderStudyFaq()}
-    ${renderTelegramBanner()}
+    ${renderStudyRequest()}
     ${renderSiteFooter()}
   </main>
   ${renderCommentsWidget()}
@@ -4057,17 +3112,7 @@ http.createServer(async (req, res) => {
   try {
     const requestUrl = new URL(req.url, `http://${req.headers.host}`);
     const pathname = requestUrl.pathname;
-    if (pathname === '/assets/site.css' || pathname === '/assets/site.js') {
-      if (req.method !== 'GET' && req.method !== 'HEAD') {
-        res.writeHead(405, {allow: 'GET, HEAD'});
-        return res.end();
-      }
-      const stylesheet = pathname.endsWith('.css');
-      const content = await fs.readFile(path.join(__dirname, 'public', stylesheet ? 'site.css' : 'site.js'));
-      res.writeHead(200, {'content-type': stylesheet ? 'text/css; charset=utf-8' : 'text/javascript; charset=utf-8',
-        'cache-control': 'public, max-age=3600', 'x-content-type-options': 'nosniff'});
-      return res.end(req.method === 'HEAD' ? undefined : content);
-    }
+    if (serveAsset(req, res, pathname)) return;
     if (pathname === '/favicon.svg' || pathname === '/favicon.ico') {
       res.writeHead(200, {
         'content-type': 'image/svg+xml; charset=utf-8',
@@ -4077,6 +3122,41 @@ http.createServer(async (req, res) => {
     }
     if (pathname.startsWith('/admin') || pathname.startsWith('/api/') || pathname.startsWith('/account') || pathname === '/update' || /^\/tasks\/[A-Za-z0-9]+\/(?:comments|feedback)$/.test(pathname)) {
       res.setHeader('X-Robots-Tag', 'noindex, nofollow');
+    }
+    if (pathname === '/api/study-leads') {
+      res.setHeader('cache-control', 'no-store');
+      if (req.method !== 'POST') { res.writeHead(405, {allow: 'POST'}); return res.end(); }
+      const wantsJson = String(req.headers.accept || '').includes('application/json');
+      const sendError = (status, error) => {
+        res.writeHead(status, {'content-type': wantsJson ? 'application/json; charset=utf-8' : 'text/html; charset=utf-8'});
+        return res.end(wantsJson ? JSON.stringify({error}) : renderAccountShell('Обращение не отправлено', `<section class="card"><h1>Обращение не отправлено</h1><p>${escapeHtml(error)}</p><a href="/#study-request">Вернуться к форме</a></section>`));
+      };
+      if (!isTrustedOrigin(req)) return sendError(403, 'Недопустимый источник запроса.');
+      if (!String(req.headers['content-type'] || '').startsWith('application/x-www-form-urlencoded')) return sendError(415, 'Неподдерживаемый формат формы.');
+      const form = await readForm(req, 16 * 1024);
+      let accepted = false;
+      if (!String(form.get('website') || '').trim()) {
+        if (isRateLimited(req, 'study-lead', 3, 10 * 60 * 1000)) return sendError(429, 'Слишком много обращений. Попробуйте через 10 минут.');
+        const started = Number(form.get('formStartedAt'));
+        // Without JS the ordinary HTML form still works; rate limit and honeypot remain active.
+        if (started && (!Number.isFinite(started) || Date.now() - started < 2000 || Date.now() - started > 2 * 60 * 60 * 1000)) return sendError(400, 'Попробуйте заполнить форму ещё раз.');
+        const result = validateStudyLead(form);
+        if (result.error) return sendError(422, result.error);
+        try { accepted = studyLeads.save(result.lead); if (accepted) void studyLeadDelivery.flush(); }
+        catch { return sendError(503, 'Не удалось сохранить обращение. Попробуйте ещё раз позже.'); }
+      }
+      if (wantsJson) {
+        res.writeHead(200, {'content-type': 'application/json; charset=utf-8'});
+        return res.end(JSON.stringify({ok: true, accepted}));
+      }
+      if (accepted) res.setHeader('set-cookie', 'ege_study_accepted=1; Max-Age=120; Path=/; Secure; SameSite=Lax');
+      res.writeHead(303, {location: '/study-request/sent'});
+      return res.end();
+    }
+    if (pathname === '/study-request/sent') {
+      if (req.method !== 'GET') {res.writeHead(405, {allow: 'GET'}); return res.end();}
+      res.writeHead(200, {'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex, nofollow'});
+      return res.end(renderAccountShell('Обращение принято', '<section class="card"><h1>Обращение принято</h1><p>Спасибо за вопрос. Для ответа используем указанный контакт.</p><a href="/#study-request">Вернуться на сайт</a></section>'));
     }
     if (pathname === '/yandex_bb9d4153ffc40087.html') {
       const verificationFile = path.join(__dirname, 'yandex_bb9d4153ffc40087.html');
@@ -4459,7 +3539,7 @@ http.createServer(async (req, res) => {
       return res.end();
     }
     const adminSolutionMatch = pathname.match(/^\/admin\/solutions\/([A-Za-z0-9]+)$/);
-    if (pathname === '/admin' || adminSolutionMatch) {
+    if (pathname === '/admin' || pathname === '/admin/leads' || adminSolutionMatch) {
       if (!getAdminPassword()) {
         res.writeHead(503, { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store' });
         return res.end('Администрирование не настроено. Укажите пароль в защищённом файле сервера.');
@@ -4467,6 +3547,12 @@ http.createServer(async (req, res) => {
       if (!isAdmin(req)) {
         res.writeHead(303, { location: '/admin/login' });
         return res.end();
+      }
+      if (pathname === '/admin/leads') {
+        if (req.method !== 'GET') { res.writeHead(405, {allow: 'GET'}); return res.end(); }
+        const page = Math.max(1, Math.min(100000, Number.parseInt(requestUrl.searchParams.get('page'), 10) || 1));
+        res.writeHead(200, {'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'referrer-policy': 'no-referrer'});
+        return res.end(renderAdminShell('Заявки', renderStudyLeadsAdmin(studyLeads, page), true));
       }
       if (pathname === '/admin') {
         if (req.method !== 'GET') {
@@ -4623,7 +3709,7 @@ http.createServer(async (req, res) => {
     res.end(`<h1>Не удалось загрузить задания ФИПИ</h1><pre>${String(error.message)}</pre>`);
   }
 }).listen(PORT, '127.0.0.1', async () => {
-  console.log(`ЕГЭ ФИПИ: http://localhost:${PORT}`);
+  console.log(`ЕГЭ и ОГЭ ФИПИ: http://localhost:${PORT}`);
   const sections = PUBLIC_SECTIONS;
   await Promise.all(sections.map(section => loadQuestions(section).catch(() => null)));
 });

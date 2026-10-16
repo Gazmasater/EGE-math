@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-16T19:51:39.720232+00:00",
+  "endpoint": "https://api.direct.yandex.ru/v4/json/",
+  "method": "GetWordstatReportList",
+  "response": {
+    "error_str": "Метод недоступен в данной версии API",
+    "error_detail": "",
+    "error_code": 509
+  }
+}

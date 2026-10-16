@@ -144,6 +144,33 @@ async function run() {
     assert.equal(solution.pagers, false, 'individual task has no redundant catalog pager');
     report.interactions.push({width, cta: true, sample: true, secondPartMenu: true, escapeAndFocus: true, search: true, solutionAnchor: true});
   }
+  // Subject preparation links and FAQs also work with scripts disabled.
+  for (const noJavaScript of [false, true]) {
+    await call('Emulation.setScriptExecutionDisabled', {value: noJavaScript});
+    for (const width of [390, 1280]) {
+      await viewport(width);
+      for (const subject of ['math', 'physics']) {
+        await navigate('/ege/' + subject);
+        const saveViewport = async state => {
+          const shot = await call('Page.captureScreenshot', {format: 'jpeg', quality: 90});
+          fs.writeFileSync(path.join(out, `${width}-${subject}-${state}${noJavaScript ? '-nojs' : ''}.jpg`), Buffer.from(shot.data, 'base64'));
+        };
+        await saveViewport('intro');
+        await click('.subject-jumps a[href="#preparation"]');
+        const position = await evaluate(`({hash:location.hash,top:document.querySelector('#preparation').getBoundingClientRect().top,headerBottom:document.querySelector('.site-header').getBoundingClientRect().bottom})`);
+        assert.equal(position.hash, '#preparation');
+        assert.ok(position.top >= position.headerBottom - 2 && position.top < 844, 'preparation visible below header');
+        await saveViewport('preparation');
+        await click('.study-faq-items details:first-child>summary');
+        assert.ok(await evaluate('document.querySelector(".study-faq-items details").open'), 'subject FAQ opens');
+        await evaluate('document.querySelector(".study-faq").scrollIntoView({block:"center"})');
+        await saveViewport('faq');
+        await checkLayout('/ege/' + subject, width);
+        report.interactions.push({subject, width, noJavaScript, preparationAnchor: true, subjectFaq: true});
+      }
+    }
+  }
+  await call('Emulation.setScriptExecutionDisabled', {value: false});
   // Native mobile menus, catalog accordions and the sample remain usable without JS.
   await viewport(390); await navigate('/about'); await call('Emulation.setScriptExecutionDisabled', {value: true});
   await navigate('/'); await click('.study-demo-answer>summary');

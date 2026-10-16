@@ -62,6 +62,7 @@
     "check:physics:completion": "node scripts/check-physics-completion-pages.js",
     "test:analytics": "node --test scripts/analytics.test.js",
     "check:analytics:pages": "node scripts/check-analytics-pages.js",
+    "check:oge:navigation": "node scripts/check-oge-navigation.js",
     "report:metrika": "python3 scripts/metrika-report.py",
     "test:catalogue": "node --test scripts/catalogue.test.js",
     "check:catalogue:pages": "node scripts/check-catalogue-pages.js",
@@ -74,6 +75,17 @@
     "audit:oge-physics": "node scripts/audit-oge-catalog.js oge-physics",
     "audit:oge-physics:pages": "node scripts/audit-oge-pages.js oge-physics",
     "check:oge-physics:pages": "node scripts/check-oge-pages.js oge-physics",
-    "audit:oge:topics": "node scripts/audit-oge-topics.js"
+    "audit:oge:topics": "node scripts/audit-oge-topics.js",
+    "audit:oge-physics:solutions": "node scripts/audit-oge-physics-solutions.js",
+    "audit:oge-physics:solution-pages": "node scripts/audit-oge-physics-solution-pages.js",
+    "publish:oge-physics:solutions": "node scripts/audit-oge-physics-solutions.js --apply",
+    "check:oge-physics:solutions": "node scripts/check-oge-physics-solutions.js",
+    "test:study-leads": "node --test scripts/study-leads-delivery.test.js",
+    "audit:oge-math:solutions": "node scripts/audit-oge-math-solutions.js",
+    "publish:oge-math:solutions": "node scripts/audit-oge-math-solutions.js --apply",
+    "audit:oge-math:solution-pages": "node scripts/audit-oge-math-solution-pages.js",
+    "check:oge-math:solutions": "node scripts/check-oge-math-solutions.js",
+    "check:oge-math:conditions": "node scripts/check-oge-math-condition-layout.js",
+    "test:assets": "node --test scripts/web-assets.test.js"
   }
 }

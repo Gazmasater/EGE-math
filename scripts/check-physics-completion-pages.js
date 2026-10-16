@@ -24,7 +24,11 @@ async function run(){
   if(previewServer){let ready=false;for(let n=0;n<100;n++){try{const r=await fetch(origin);if(r.ok){ready=true;break;}}catch{}await delay(100);}assert.ok(ready,'Preview did not start');}
   let port;
   for(let n=0;n<100;n++){
-    try{port=Number(fs.readFileSync(path.join(profile,'DevToolsActivePort'),'utf8').split('\n')[0]);break;}catch{await delay(100);}
+    try{
+      const candidate=Number(fs.readFileSync(path.join(profile,'DevToolsActivePort'),'utf8').split('\n')[0]);
+      if(Number.isInteger(candidate)&&candidate>0&&candidate<=65535){port=candidate;break;}
+    }catch{}
+    await delay(100);
   }
   assert.ok(port,'Chrome did not start');
   const pages=await(await fetch(`http://127.0.0.1:${port}/json/list`)).json();
@@ -46,7 +50,7 @@ async function run(){
   };
   await call('Page.enable');await call('Network.enable');
   await call('Page.addScriptToEvaluateOnNewDocument',{source:'window.__physicsReviewDocument = Math.random().toString(36).slice(2);'});
-  await call('Network.setBlockedURLs',{urls:['*mc.yandex*','*challenges.cloudflare*']});
+  await call('Network.setBlockedURLs',{urls:['*mc.yandex*','*challenges.cloudflare*','*yandex.ru/ads/*','*an.yandex.ru/*']});
   const selected=process.env.PHYSICS_TASK_IDS?new Set(process.env.PHYSICS_TASK_IDS.split(',')):null;
   const active=batches.filter(b=>!process.env.PHYSICS_BATCH||b.name===process.env.PHYSICS_BATCH);
   const tasks=active.flatMap(b=>b.records).filter(r=>!selected||selected.has(r.id)).map(expected=>({id:expected.id,expected})).sort((a,b)=>a.id.localeCompare(b.id));
@@ -70,25 +74,53 @@ async function run(){
       }
       assert.ok(ready,`${task.id}: load timeout`);
       await evaluate('document.fonts.ready.then(()=>true)');
+      // Full-page captures must first bring lazy source figures into view, as a reader would.
+      await evaluate(`(async()=>{
+        for(const img of document.querySelectorAll('img[loading="lazy"]')){
+          img.scrollIntoView({block:'center'});
+          await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+        }
+        window.scrollTo(0,0);return true;
+      })()`);
       await evaluate(`Promise.race([Promise.all(Array.from(document.images,i=>i.decode().catch(()=>false))),new Promise(r=>setTimeout(r,8000))])`);
       const info=await evaluate(`(()=>{const box=document.querySelector('.seo-task-solution'),formatted=box?.querySelector('.formatted-solution');return {
         title:document.title,headings:document.querySelectorAll('h1').length,scrollWidth:document.documentElement.scrollWidth,width:innerWidth,height:document.documentElement.scrollHeight,
         solutionHtml:formatted?.innerHTML||'',text:box?.innerText||'',fractions:box?.querySelectorAll('.math-fraction').length||0,
         broken:Array.from(document.images).filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),
+        choiceOverlaps:Array.from(document.querySelectorAll('.distractors-table tr')).flatMap(row=>{const cells=Array.from(row.children),number=cells[1]?.querySelector('b'),content=cells[2];if(!number||!content||!row.getBoundingClientRect().height)return [];const n=number.getBoundingClientRect(),c=content.getBoundingClientRect();return n.right>c.left+1?[number.innerText]:[];}),
         contentOverflow:Array.from(document.querySelectorAll('.qblock > form, .qblock .cell_0, .qblock .cell_0 p, .qblock input[type="text"], .formatted-solution p')).filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&(r.right>innerWidth+1||r.left<0||e.scrollWidth>e.clientWidth+2);}).map(e=>e.tagName+'.'+e.className),
         visible:!!box&&box.getBoundingClientRect().height>0&&getComputedStyle(box).visibility!=='hidden'
       };})()`);
       const clean=s=>s.replace(/\r/g,'').trim();
       assert.equal(clean(info.solutionHtml),clean(api.solutionHtml),`${task.id}: page differs from API`);
-      assert.ok(info.visible&&info.headings===1&&info.title.includes(task.id),`${task.id}: missing visible solution`);
+      assert.ok(info.visible&&info.headings===1&&info.title.includes(expected.sourceId||task.id),`${task.id}: missing visible solution`);
       assert.ok(info.scrollWidth<=width+1,`${task.id} ${name}: horizontal overflow`);
       assert.deepEqual(info.contentOverflow,[],`${task.id} ${name}: clipped condition or solution`);
       assert.deepEqual(info.broken,[],`${task.id}: broken source images`);
+      if(task.id.startsWith('OGEPHYS'))assert.deepEqual(info.choiceOverlaps,[],`${task.id} ${name}: option number overlaps text`);
       assert.ok(!/[⟦⟧¦/^]/.test(info.text),`${task.id}: math formatting`);
       assert.equal(info.fractions,(expected.answer+expected.solution+(expected.diagram_caption||'')).split('⟦').length-1,`${task.id}: vertical fraction count differs`);
       const shot=await capture({format:'png',captureBeyondViewport:true,clip:{x:0,y:0,width,height:info.height,scale:1}});
       fs.writeFileSync(path.join(out,`${task.id}-${name}.png`),Buffer.from(shot.data,'base64'));
       report.pages.push({id:task.id,viewport:name,width,height:info.height,fractions:info.fractions,textLength:info.text.length});save();
+      if(process.env.PHYSICS_CHECK_MODAL==='1'){
+        await evaluate(`document.querySelector('.solution-button').click();true`);
+        let modalReady=false;
+        for(let n=0;n<100;n++){
+          modalReady=await evaluate(`!!document.querySelector('.solution-modal:not([hidden]) .solution-text')`);
+          if(modalReady)break;await delay(100);
+        }
+        assert.ok(modalReady,task.id+': solution modal');
+        await evaluate(`Promise.all(Array.from(document.querySelectorAll('.solution-modal img'),i=>i.decode().catch(()=>false)))`);
+        const modal=await evaluate(`(()=>{const m=document.querySelector('.solution-modal:not([hidden])');return {html:m.querySelector('.solution-text').innerHTML,overflow:m.scrollWidth>innerWidth+1,images:Array.from(m.querySelectorAll('img')).every(i=>i.complete&&i.naturalWidth)};})()`);
+        assert.equal(clean(modal.html),clean(api.solutionHtml),task.id+': modal differs from API');
+        assert.ok(!modal.overflow&&modal.images,task.id+': modal overflow or broken image');
+        const modalShot=await capture({format:'png',captureBeyondViewport:false});
+        fs.writeFileSync(path.join(out,`${task.id}-${name}-modal.png`),Buffer.from(modalShot.data,'base64'));
+        await evaluate(`document.querySelector('.solution-modal-close').click();true`);
+        assert.ok(await evaluate(`document.querySelector('.solution-modal').hidden`),task.id+': modal close');
+        (report.modals ||= []).push({id:task.id,viewport:name});save();
+      }
     }
     await call('Emulation.setDeviceMetricsOverride',{width:720,height:1100,deviceScaleFactor:1,mobile:false});
     await call('Page.navigate',{url:'about:blank'});await delay(100);

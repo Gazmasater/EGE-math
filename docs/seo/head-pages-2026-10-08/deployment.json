@@ -1,0 +1,86 @@
+{
+  "applied_at": "2026-10-08T22:32:12.778590+00:00",
+  "files": [
+    "server.js",
+    "scripts/audit-ege-subjects.js",
+    "scripts/check-site-ui-pages.js",
+    "lib/ege-subject-content.js"
+  ],
+  "before_sha256": {
+    "server.js": "806ab5511414a38bf8f8f45b2715d3b43ae21a5664798557a9594b629844359b",
+    "scripts/audit-ege-subjects.js": "4a8dd6970d5d107c9190d9a3bbcb62f6088b1113a2c68967107ac1b96ddf9f9e",
+    "scripts/check-site-ui-pages.js": "0c98b54f859bb60a040683cfac5c7d9c57f0d0de3def61268588527374b3398e"
+  },
+  "after_sha256": {
+    "server.js": "4cf7783ead4369a7ce6e562176bc1445f0825ba9c3ec05812db6790706a8b275",
+    "scripts/audit-ege-subjects.js": "300dd363b8de4357be77e4fe7d7f3f0841a2aa7514efdb48213d25fe6640b83f",
+    "scripts/check-site-ui-pages.js": "c6996298e9810400ac7743afb9b4f9935d9875c7a2256c794c6241655f109db7",
+    "lib/ege-subject-content.js": "a7a29426aa47f271a021344276f147c3b429787186f560057ce2d26158ce4eb7"
+  },
+  "verified_at": "2026-10-08T22:35:25.315768+00:00",
+  "status": "published-and-verified-ranking-outcome-pending",
+  "service_restart_utc": "2026-10-08T22:32:41Z",
+  "preview_browser": {
+    "pages": 35,
+    "interaction_groups": 11,
+    "errors": 0
+  },
+  "public_browser": {
+    "pages": 19,
+    "interaction_groups": 11,
+    "errors": 0
+  },
+  "http_audit": {
+    "subjects": 2,
+    "catalogs": 45,
+    "examples": 45,
+    "math_tasks": 1148,
+    "physics_tasks": 2344
+  },
+  "unit_tests": {
+    "test:seo": 4,
+    "test:catalogue": 3,
+    "test:analytics": 5,
+    "result": "passed"
+  },
+  "integrity": {
+    "checked_at": "2026-10-08T22:32:57.004527+00:00",
+    "public_pages": 5,
+    "control_metadata_unchanged": [
+      "/?topic=vectors",
+      "/physics"
+    ],
+    "raw_files_unchanged": 106,
+    "solutions_before": 4522,
+    "solutions_after": 4522,
+    "existing_solution_rows_unchanged": true,
+    "sqlite_integrity": "ok"
+  },
+  "recrawl_accepted": [
+    {
+      "route": "/ege/math",
+      "status": 202,
+      "data": {
+        "task_id": "43740c90-c368-11f1-b518-8103174f3502",
+        "quota_remainder": 150
+      }
+    },
+    {
+      "route": "/ege/physics",
+      "status": 202,
+      "data": {
+        "task_id": "43b4bf11-c368-11f1-83a3-db32b2b0e403",
+        "quota_remainder": 149
+      }
+    },
+    {
+      "route": "/ege",
+      "status": 202,
+      "data": {
+        "task_id": "4427cc33-c368-11f1-b518-8103174f3502",
+        "quota_remainder": 148
+      }
+    }
+  ],
+  "artifacts_directory": "/root/ege-seo-head-20261008"
+}

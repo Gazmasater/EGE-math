@@ -1,0 +1,120 @@
+{
+  "query": {
+    "ids": [
+      112561663
+    ],
+    "timezone": "+03:00",
+    "dimensions": [],
+    "metrics": [
+      "ym:s:visits",
+      "ym:s:users",
+      "ym:s:pageviews",
+      "ym:s:bounceRate",
+      "ym:s:pageDepth",
+      "ym:s:avgVisitDurationSeconds",
+      "ym:s:goal663176353visits",
+      "ym:s:goal663176354visits",
+      "ym:s:goal663176387visits",
+      "ym:s:goal672311557visits"
+    ],
+    "sort": [
+      "-ym:s:visits"
+    ],
+    "date1": "2026-10-07",
+    "date2": "2026-10-08",
+    "filters": "ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical')) AND ym:s:lastTrafficSource=='organic'",
+    "limit": 1000,
+    "offset": 1,
+    "group": "Week",
+    "benchmarks_version": "1791158400000",
+    "benchmarks_sub_industry": "false",
+    "auto_group_size": "1",
+    "exp_bucket_size": "100",
+    "attr_name": "",
+    "funnel_window": "",
+    "benchmarks_quantile": "50",
+    "time_interval": "1SECOND",
+    "intervals": "1",
+    "quantile": "50",
+    "offline_window": "21",
+    "attribution": "CROSS_DEVICE_LAST_SIGNIFICANT",
+    "currency": "RUB",
+    "benchmarks_attribution": "Automatic",
+    "adfox_event_id": "0",
+    "funnel_pattern": ""
+  },
+  "data": [
+    {
+      "dimensions": [],
+      "metrics": [
+        411.0,
+        382.0,
+        852.0,
+        29.6836983,
+        2.0729927,
+        205.95377129,
+        136.0,
+        50.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "total_rows": 1,
+  "total_rows_rounded": false,
+  "sampled": false,
+  "contains_sensitive_data": true,
+  "sample_share": 1.0,
+  "sample_size": 494,
+  "sample_space": 494,
+  "data_lag": 0,
+  "totals": [
+    411.0,
+    382.0,
+    852.0,
+    29.6836983,
+    2.0729927,
+    205.95377129,
+    136.0,
+    50.0,
+    0.0,
+    0.0
+  ],
+  "min": [
+    411.0,
+    382.0,
+    852.0,
+    29.6836983,
+    2.0729927,
+    205.95377129,
+    136.0,
+    50.0,
+    0.0,
+    0.0
+  ],
+  "max": [
+    411.0,
+    382.0,
+    852.0,
+    29.6836983,
+    2.0729927,
+    205.95377129,
+    136.0,
+    50.0,
+    0.0,
+    0.0
+  ],
+  "requested_params": {
+    "ids": 112561663,
+    "date1": "2026-10-07",
+    "date2": "2026-10-08",
+    "metrics": "ym:s:visits,ym:s:users,ym:s:pageviews,ym:s:bounceRate,ym:s:pageDepth,ym:s:avgVisitDurationSeconds,ym:s:goal663176353visits,ym:s:goal663176354visits,ym:s:goal663176387visits,ym:s:goal672311557visits",
+    "accuracy": "full",
+    "timezone": "+03:00",
+    "include_undefined": "true",
+    "limit": 1000,
+    "lang": "ru",
+    "filters": "ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical')) AND ym:s:lastTrafficSource=='organic'"
+  },
+  "fetched_at_msk": "2026-10-16T23:26:11.820115+03:00"
+}

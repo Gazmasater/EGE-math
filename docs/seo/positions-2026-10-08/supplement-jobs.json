@@ -1,0 +1,311 @@
+{
+  "groups": {
+    "math-general": "ym:s:startURLPathFull=.('/','/?topic=all','/math','/ege/math')",
+    "physics-general": "ym:s:startURLPathFull=.('/physics','/physics?topic=all','/ege/physics')",
+    "plane-first": "ym:s:startURLPathFull=='/?topic=plane'",
+    "plane-second": "ym:s:startURLPath=='/planimetry'",
+    "equations": "ym:s:startURLPath=='/equations'",
+    "roots-first": "ym:s:startURLPathFull=='/?topic=basic-equations.roots'",
+    "finance": "ym:s:startURLPath=='/finance'",
+    "derivative": "ym:s:startURLPathFull=='/?topic=derivative'",
+    "kinematics": "ym:s:startURLPathFull=='/physics?topic=kinematics'"
+  },
+  "jobs": [
+    {
+      "name": "extra-query-0",
+      "path": "/v4/user/227850612/hosts/https%3Aege-fipi.ru%3A443/query-analytics/list",
+      "params": null,
+      "body": {
+        "limit": 500,
+        "text_indicator": "QUERY",
+        "region_ids": [
+          225
+        ],
+        "search_location": "WEB_LOCATION",
+        "filters": {
+          "text_filters": [
+            {
+              "text_indicator": "QUERY",
+              "operation": "TEXT_MATCH",
+              "value": "иррациональные уравнения егэ профиль"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "extra-query-1",
+      "path": "/v4/user/227850612/hosts/https%3Aege-fipi.ru%3A443/query-analytics/list",
+      "params": null,
+      "body": {
+        "limit": 500,
+        "text_indicator": "QUERY",
+        "region_ids": [
+          225
+        ],
+        "search_location": "WEB_LOCATION",
+        "filters": {
+          "text_filters": [
+            {
+              "text_indicator": "QUERY",
+              "operation": "TEXT_MATCH",
+              "value": "открытый банк заданий фипи математика профиль"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "metrika-before-page-math-general",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-09-24",
+        "date2": "2026-09-30",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=.('/','/?topic=all','/math','/ege/math'))",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-before-page-physics-general",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-09-24",
+        "date2": "2026-09-30",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=.('/physics','/physics?topic=all','/ege/physics'))",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-before-page-plane-first",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-09-24",
+        "date2": "2026-09-30",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=='/?topic=plane')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-before-page-plane-second",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-09-24",
+        "date2": "2026-09-30",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPath=='/planimetry')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-before-page-equations",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-09-24",
+        "date2": "2026-09-30",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPath=='/equations')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-before-page-roots-first",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-09-24",
+        "date2": "2026-09-30",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=='/?topic=basic-equations.roots')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-before-page-finance",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-09-24",
+        "date2": "2026-09-30",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPath=='/finance')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-before-page-derivative",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-09-24",
+        "date2": "2026-09-30",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=='/?topic=derivative')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-before-page-kinematics",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-09-24",
+        "date2": "2026-09-30",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=='/physics?topic=kinematics')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-current-page-math-general",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-10-01",
+        "date2": "2026-10-07",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=.('/','/?topic=all','/math','/ege/math'))",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-current-page-physics-general",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-10-01",
+        "date2": "2026-10-07",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=.('/physics','/physics?topic=all','/ege/physics'))",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-current-page-plane-first",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-10-01",
+        "date2": "2026-10-07",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=='/?topic=plane')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-current-page-plane-second",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-10-01",
+        "date2": "2026-10-07",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPath=='/planimetry')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-current-page-equations",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-10-01",
+        "date2": "2026-10-07",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPath=='/equations')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-current-page-roots-first",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-10-01",
+        "date2": "2026-10-07",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=='/?topic=basic-equations.roots')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-current-page-finance",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-10-01",
+        "date2": "2026-10-07",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPath=='/finance')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-current-page-derivative",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-10-01",
+        "date2": "2026-10-07",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=='/?topic=derivative')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    },
+    {
+      "name": "metrika-current-page-kinematics",
+      "path": "/stat/v1/data",
+      "params": {
+        "ids": 112561663,
+        "date1": "2026-10-01",
+        "date2": "2026-10-07",
+        "metrics": "ym:s:visits,ym:s:users,ym:s:bounceRate,ym:s:goal663176353visits,ym:s:goal663176354visits",
+        "filters": "(ym:s:lastTrafficSource=='organic' AND ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))) AND (ym:s:startURLPathFull=='/physics?topic=kinematics')",
+        "accuracy": "full",
+        "timezone": "+03:00"
+      },
+      "body": null
+    }
+  ]
+}

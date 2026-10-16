@@ -1,0 +1,2268 @@
+<!doctype html><html lang="ru"><head><!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function analyticsBootstrap() {
+  if (window.egeAnalytics) return;
+  const counter = 112561663;
+  let technical = !!navigator.webdriver || /HeadlessChrome/i.test(navigator.userAgent);
+  try {
+    const url = new URL(location.href);
+    const setting = url.searchParams.get('analytics_technical');
+    technical = technical || setting === '1';
+    try {
+      if (setting === '1') localStorage.setItem('ege_analytics_technical', '1');
+      if (setting === '0') localStorage.removeItem('ege_analytics_technical');
+      technical = technical || localStorage.getItem('ege_analytics_technical') === '1';
+    } catch { /* The explicit setting still applies to this visit. */ }
+    if (setting === '1' || setting === '0') {
+      url.searchParams.delete('analytics_technical');
+      history.replaceState(history.state, '', url.pathname + url.search + url.hash);
+    }
+  } catch { /* Storage restrictions must not affect the site. */ }
+
+  function goal(name, params, callback) {
+    try {
+      if (typeof window.ym === 'function') window.ym(counter, 'reachGoal', name, params, callback);
+    } catch { /* Analytics must never block navigation or account creation. */ }
+  }
+  window.egeAnalytics = {goal, visitParams: {traffic_kind: technical ? 'technical' : 'public'}};
+
+  function consumeRegistration() {
+    const marker = document.cookie.match(/(?:^|;\s*)ege_registration_success=([a-f0-9]{32})(?:;|$)/);
+    if (!marker) return;
+    document.cookie = 'ege_registration_success=; Max-Age=0; Path=/; Secure; SameSite=Lax';
+    // Also protect against cookie deletion being restricted by a browser.
+    try {
+      if (sessionStorage.getItem('ege_registration_sent') === marker[1]) return;
+      sessionStorage.setItem('ege_registration_sent', marker[1]);
+    } catch {}
+    goal('registration_success', {placement: 'registration_redirect'});
+  }
+
+  function ready() {
+    consumeRegistration();
+    document.addEventListener('click', function (event) {
+      const link = event.target.closest && event.target.closest('a[data-analytics-next-task]');
+      if (!link || event.defaultPrevented || event.button !== 0) return;
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || link.target === '_blank') {
+        goal('next_task', {placement: 'task_page', task_id: link.dataset.analyticsNextTask});
+        return;
+      }
+      event.preventDefault();
+      if (link.dataset.analyticsNavigating) return;
+      link.dataset.analyticsNavigating = '1';
+      let navigated = false;
+      const navigate = function () {
+        if (navigated) return;
+        navigated = true;
+        location.assign(link.href);
+      };
+      // The counter callback normally wins; blockers still permit navigation.
+      setTimeout(navigate, 250);
+      goal('next_task', {placement: 'task_page', task_id: link.dataset.analyticsNextTask}, navigate);
+    });
+    window.addEventListener('pageshow', function () {
+      document.querySelectorAll('[data-analytics-navigating]').forEach(link => delete link.dataset.analyticsNavigating);
+    });
+
+    const heading = document.querySelector('.seo-task-solution h2');
+    if (!heading || !('IntersectionObserver' in window)) return;
+    let visible = false, timer;
+    function schedule() {
+      clearTimeout(timer);
+      if (!visible || document.visibilityState !== 'visible') return;
+      timer = setTimeout(function () {
+        observer.disconnect();
+        document.removeEventListener('visibilitychange', schedule);
+        goal('solution_open', {placement: 'task_page', task_id: heading.id.replace(/^solution-/, '')});
+      }, 1000);
+    }
+    const observer = new IntersectionObserver(function (entries) {
+      visible = entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= 0.5);
+      schedule();
+    }, {threshold: [0, 0.5]});
+    observer.observe(heading);
+    document.addEventListener('visibilitychange', schedule);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready, {once: true});
+  else ready();
+})();
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112561663', 'ym');
+
+    ym(112561663, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true, params: window.egeAnalytics.visitParams});
+</script>
+<!-- /Yandex.Metrika counter --><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><LINK href="/fipi/styles.css" rel="STYLESHEET" type="text/css">
+<LINK href="/fipi/xmodules/os/img/_styles.css?v=1.04" rel="STYLESHEET" type="text/css">
+<script type="text/javascript" src="/fipi/lib/t3utils.js?v=2.04"></script><script type="text/javascript">var home_directory="/fipi/";</script><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<META NAME="Document-state" CONTENT="Dynamic"><META HTTP-EQUIV="pragma" CONTENT="no-cache"><META HTTP-EQUIV="expires" CONTENT="0"><meta http-equiv="X-UA-Compatible" content="IE=10"/><style>@media print {.noprint {display:none !important;}}</style><title>Иррациональные уравнения — первая часть ЕГЭ по математике</title>
+<script>document.documentElement.classList.add('page-loading');
+    // В исходной странице ФИПИ эти функции принадлежат родительскому iframe.
+    // Здесь документ открыт самостоятельно, поэтому оставляем безопасные заглушки:
+    // ошибка старого скрипта не должна прерывать работу навигации каталога.
+    if (typeof window.setQCount !== 'function') window.setQCount = function () {};
+    if (typeof window.setContainerSize !== 'function') window.setContainerSize = function () {};
+    if (typeof window.MathJax === 'undefined') {
+      window.MathJax = { Hub: { Register: { StartupHook: function () {} } } };
+    }
+    // Если внешний HTML задания нарушит работу скрипта, каталог всё равно не останется скрытым.
+    window.setTimeout(function () { document.documentElement.classList.remove('page-loading', 'added-loading'); }, 2500);
+  </script>
+  <style>
+    html { width: 100%; max-width: 100%; min-width: 0 !important; overflow-x: hidden; }
+    *, *::before, *::after { box-sizing: border-box; }
+    html.added-loading .task-header-panel,
+    html.added-loading .qblock { display: none !important; }
+    html.page-loading .task-header-panel,
+    html.page-loading .qblock,
+    html.page-loading .local-pager { visibility: hidden !important; }
+    html.page-loading body::after { content: 'Подготовка заданий…'; display: block; margin: 36px auto; text-align: center;
+      color: #526273; font: 15px Arial, sans-serif; }
+    math { font-family: 'Cambria Math', 'STIX Two Math', serif; }
+    .fipi-math-scroll { display: inline-block; max-width: 100%; vertical-align: middle; overflow-x: auto; }
+    /* Поле ответа size=40 в выгрузке ФИПИ иначе задаёт минимальную ширину всей таблицы условия. */
+    .qblock > form > table { width: 100%; table-layout: fixed; }
+    /* Однострочные таблицы Word служат раскладкой условия и рисунка, а не данными. */
+    .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid):has(> tbody > tr:only-child > td:nth-child(2)):has(img) { width: 100% !important; table-layout: fixed; }
+    .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid):has(> tbody > tr:only-child > td:nth-child(2)):has(img) > tbody > tr { display: flex; flex-wrap: wrap; }
+    .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid):has(> tbody > tr:only-child > td:nth-child(2)):has(img) > tbody > tr > td { flex: 1 1 220px; width: auto !important; min-width: 0; max-width: 100%; }
+    .qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid) img { max-width: 100%; height: auto; }
+    
+
+    .qblock .varinats-block input[type="text"] { width: 100%; min-width: 0; max-width: 100%; }
+    
+    /* В исходных стилях ФИПИ для этого body задан overflow: hidden.
+       Без переопределения длинные условия и опубликованные решения не прокручиваются на телефонах. */
+    body.questions-container { width: 100%; max-width: 1000px; min-width: 0 !important; margin: 0 auto; padding: 24px; overflow-x: hidden; overflow-y: auto !important; background: #f4f6f8; }
+    body.questions-container > table { background: white; box-shadow: 0 2px 14px #00000018; }
+    .local-header { position: sticky; top: 0; z-index: 50; margin: -24px -24px 20px; padding: 14px 24px;
+      background: #183153; color: white; font: 600 16px/1.35 Arial, sans-serif; box-shadow: 0 2px 8px #0003; }
+    .local-header small { display: block; margin-top: 3px; font-weight: 400; opacity: .82; }
+    .local-header h1 { margin: 0; color: #fff; font: inherit; white-space: normal !important; overflow-wrap: anywhere; }
+    .seo-breadcrumbs { margin: 0 0 16px; color: #40566d; font: 14px/1.5 Arial, sans-serif; }
+    .seo-breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 6px 10px; margin: 0; padding: 0; list-style: none; }
+    .seo-breadcrumbs li { min-width: 0; overflow-wrap: anywhere; }
+    .seo-breadcrumbs li + li::before { content: '›'; margin-right: 10px; }
+    .seo-breadcrumbs a { color: #1769aa; }
+    .catalog-summary { margin: 0 0 20px; padding: 16px 18px; border: 1px solid #cbd7e4; border-radius: 8px; background: #fff; color: #344054; font: 16px/1.5 Arial, sans-serif; }
+    .oge-shared-condition { margin-bottom: 16px; padding: 16px; border: 1px solid #cbd7e4; border-radius: 8px; background: white; }
+    .oge-shared-condition h2 { margin: 0 0 12px; font: 700 18px Arial,sans-serif; color: #183153; }
+    .oge-topic-switcher { margin: 0 0 16px; }
+    .oge-topic-switcher > summary { padding: 12px 16px; border: 1px solid #cbd7e4; border-radius: 8px; background: white; color: #1769aa; font-weight: 700; cursor: pointer; }
+    .catalog-summary p { margin: 0; }
+    .telegram-banner { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 0 0 20px; padding: 18px 20px;
+      border: 1px solid #6f9cd0; border-radius: 10px; background: linear-gradient(120deg, #e7f3ff, #f6fbff); color: #183153;
+      box-shadow: 0 2px 10px #18315312; font-family: Arial, sans-serif; }
+    .telegram-banner-copy { display: grid; gap: 4px; }
+    .telegram-banner-copy strong { font-size: 18px; line-height: 1.25; }
+    .telegram-banner-copy span { color: #40566d; font-size: 14px; line-height: 1.4; }
+    .telegram-banner a.telegram-banner-action { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 7px; min-height: 42px;
+      padding: 10px 14px; border-radius: 7px; background: #229ed9; color: #fff; font: 700 14px/1.2 Arial, sans-serif; text-align: center; text-decoration: none; }
+    .telegram-banner a.telegram-banner-action:hover { background: #168ac2; color: #fff; }
+    .telegram-banner-action span { font-weight: 500; }
+    .task-solution-jump { display: inline-flex; margin-top: 9px; padding: 7px 10px; border-radius: 6px; background: #e8f5e9;
+      color: #1d5e2d; font: 700 14px Arial, sans-serif; text-decoration: none; }
+    .task-solution-jump:hover { background: #d8f0db; color: #12451f; }
+    .task-feedback-jump { display: inline-flex; margin: 9px 0 0 8px; padding: 7px 10px; border: 1px solid #f4d18a; border-radius: 6px; background: #fff5db;
+      color: #704900; font: 700 14px Arial, sans-serif; text-decoration: none; }
+    .task-feedback-jump:hover { background: #ffedbd; color: #563700; }
+    .local-menu { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+    .local-menu-heading { grid-column: 2 / -1; align-self: center; margin-top: 2px; color: #d4dfeb; font: 700 13px Arial, sans-serif; }
+    .local-menu a { padding: 7px 8px; border: 1px solid #ffffff70; border-radius: 6px; color: white; text-decoration: none;
+      font-weight: 500; text-align: center; white-space: normal; }
+    .local-menu a:hover { background: #ffffff18; }
+    .local-menu a.active { background: white; color: #183153; }
+    .physics-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #f0b429; border-radius: 8px; background: #f0b429; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
+    .physics-top-button:hover { background: #ffd166; border-color: #ffd166; color: #183153; }
+    .math-top-button { position: absolute; top: 12px; right: 24px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 22px; border: 2px solid #f0b429; border-radius: 8px; background: #f0b429; color: #183153; font-size: 21px; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 3px 8px #0005; }
+    .math-top-button:hover { background: #ffd166; border-color: #ffd166; }
+    .local-menu form { margin: 0; min-width: 0; }
+    .local-menu button { padding: 7px 11px; border: 1px solid #ffffff70; border-radius: 6px; color: white;
+      background: transparent; font: 500 14px Arial, sans-serif; cursor: pointer; width: 100%; height: 100%; white-space: normal; }
+    .local-menu button:hover { background: #ffffff18; }
+    .math-topics { margin: 0 0 20px; padding: 20px; border: 1px solid #cbd7e4; border-radius: 10px;
+      background: #fff; color: #243447; font-family: Arial, sans-serif; box-shadow: 0 2px 10px #18315312; }
+    .math-topics-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 16px; }
+    .math-topics-heading h2 { margin: 0; color: #183153; font-size: 23px; }
+    .math-topics-heading p { margin: 5px 0 0; color: #526273; font-size: 14px; }
+    a.math-all-link { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 10px 13px; border: 1px solid #1769aa;
+      border-radius: 7px; color: #1769aa; font-weight: 700; text-decoration: none; }
+    .math-all-link span { display: inline-grid; min-width: 30px; place-items: center; padding: 2px 6px; border-radius: 12px; background: #e7f1fb; }
+    a.math-all-link:hover, a.math-all-link.active { background: #1769aa; color: #fff; }
+    .math-all-link:hover span, .math-all-link.active span { background: #ffffff2b; }
+    .math-topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+    .math-topic-group { overflow: hidden; border: 1px solid #d8e1eb; border-radius: 8px; background: #fbfdff; }
+    .math-topic-group summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 14px;
+      background: #eef4fa; color: #183153; font-weight: 700; cursor: pointer; }
+    .math-topic-group summary > span:first-child { min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+    .math-topic-group summary:hover { background: #e3edf7; }
+    .math-topic-group[open] summary { border-bottom: 1px solid #d8e1eb; }
+    .math-topic-count { flex: 0 0 auto; color: #526273; font-weight: 600; }
+    .math-topic-children { display: grid; gap: 4px; padding: 8px; }
+    .math-topic-children a, .math-topic-children > span { display: block; padding: 8px 10px; border-radius: 6px; color: #1769aa;
+      font-size: 14px; line-height: 1.35; text-decoration: none; }
+    .math-topic-children a:hover { background: #eaf3fb; }
+    .math-topic-children a.active { background: #1769aa; color: #fff; }
+    .math-topic-children a.active .math-topic-count { color: inherit; }
+    .math-topic-children .math-topic-major { margin-bottom: 3px; background: #eef4fa; color: #183153; font-weight: 700; }
+    .math-topic-children .disabled { color: #8492a3; background: #f5f7f9; cursor: not-allowed; }
+    .math-topic-children a .math-topic-count, .math-topic-children > span .math-topic-count { float: right; margin-left: 8px; }
+    .math-topic-prompt { margin: 0 0 20px; padding: 18px 20px; border-left: 4px solid #f0b429; border-radius: 7px;
+      background: #fff9e8; color: #40566d; font: 15px/1.5 Arial, sans-serif; }
+    .math-topic-prompt strong { color: #183153; }
+    .math-topic-picker { margin: 0 0 16px; border: 1px solid #cbd7e4; border-radius: 8px; background: #fff; }
+    .math-topic-picker > summary { padding: 12px 16px; color: #1769aa; cursor: pointer; font: 700 15px/1.4 Arial, sans-serif; }
+    .math-topic-picker > .math-topics { margin: 0; border: 0; box-shadow: none; }
+    .catalogue-task-start { scroll-margin-top: 320px; }
+    a.catalogue-task-jump { display: inline-flex; margin-top: 9px; padding: 7px 10px; border-radius: 6px;
+      background: #e8f5e9; color: #1d5e2d; font: 700 14px Arial, sans-serif; text-decoration: none; }
+    .physics-topics { margin: 0 0 20px; padding: 18px; border: 1px solid #cbd7e4; border-radius: 10px;
+      background: #fff; color: #243447; font-family: Arial, sans-serif; box-shadow: 0 2px 10px #18315312; }
+    .physics-topics-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 14px; }
+    .physics-topics h2 { margin: 0; color: #183153; font-size: 23px; }
+    .physics-topics-heading p { margin: 5px 0 0; color: #526273; font-size: 14px; }
+    .physics-topics a { color: #1769aa; text-decoration: none; }
+    .physics-topics a:hover { text-decoration: underline; }
+    .physics-topics a.active { color: #fff; background: #1769aa; }
+    a.physics-all-link { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 10px 13px; border: 1px solid #1769aa; border-radius: 7px; font-weight: 700; }
+    .physics-all-link span { display: inline-grid; min-width: 30px; place-items: center; padding: 2px 6px; border-radius: 12px; background: #e7f1fb; }
+    a.physics-all-link:hover, a.physics-all-link.active { color: #fff; background: #1769aa; text-decoration: none; }
+    .physics-all-link:hover span, .physics-all-link.active span { background: #ffffff2b; }
+    .physics-topic-major, .physics-topic-children a, .physics-topic-children > span { display: block; padding: 8px 10px; border-radius: 6px; }
+    .physics-topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .physics-topic-group { overflow: hidden; border: 1px solid #d8e1eb; border-radius: 8px; }
+    .physics-topic-major { display: flex; justify-content: space-between; gap: 10px; font-weight: 700; background: #eef4fa; }
+    .physics-topic-children { display: grid; gap: 2px; padding: 6px; }
+    .physics-topic-children a .physics-topic-count, .physics-topic-children > span .physics-topic-count { float: right; margin-left: 8px; }
+    .physics-topic-count { flex: 0 0 auto; color: #526273; font-weight: 600; }
+    .physics-topics a.active .physics-topic-count { color: inherit; }
+    .physics-topics .disabled { color: #8492a3; background: #f5f7f9; cursor: not-allowed; }
+    a.physics-unclassified { display: flex; justify-content: space-between; gap: 10px; margin-top: 12px; padding: 10px 12px; border: 1px dashed #afbdcd; border-radius: 7px; }
+    .physics-topic-prompt { margin: 0 0 20px; padding: 18px 20px; border-left: 4px solid #f0b429; border-radius: 7px;
+      background: #fff9e8; color: #40566d; font: 15px/1.5 Arial, sans-serif; }
+    .physics-topic-prompt strong { color: #183153; }
+    .site-search-form { display: flex; align-items: stretch; gap: 7px; margin-top: 10px; font-family: Arial, sans-serif; }
+    .site-search-form input { min-width: 0; flex: 1 1 230px; padding: 8px 10px; border: 1px solid #afbdcd; border-radius: 6px;
+      color: #183153; background: #fff; font: 14px/1.2 Arial, sans-serif; }
+    .site-search-form button { flex: 0 0 auto; padding: 8px 12px; border: 1px solid #ffffff70; border-radius: 6px;
+      color: #fff; background: #254a79; font: 600 14px/1.2 Arial, sans-serif; cursor: pointer; }
+    .site-search-form button:hover { background: #335d94; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .task-permalink { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+    .task-permalink:hover { color: #0c4a6e; }
+    .local-pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 7px;
+      margin: 18px 0; padding: 12px; background: white; border-radius: 8px; box-shadow: 0 1px 7px #00000015;
+      font: 14px Arial, sans-serif; }
+    .local-pager--top { margin-top: 0; }
+    .local-pager button { min-width: 38px; padding: 8px 11px; border: 1px solid #b8c3d1; border-radius: 6px;
+      background: white; color: #183153; cursor: pointer; }
+    .local-pager button:hover:not(:disabled) { background: #eaf1f8; }
+    .local-pager button.active { border-color: #183153; background: #183153; color: white; }
+    .local-pager button:disabled { cursor: default; opacity: .4; }
+    .local-page-label { margin: 0 6px; color: #4b5968; }
+    .task-sequence-pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 7px;
+      margin: 0 0 18px; padding: 12px; background: white; border-radius: 8px; box-shadow: 0 1px 7px #00000015;
+      font: 14px Arial, sans-serif; }
+    .task-sequence-pager a, .task-sequence-pager span { min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center;
+      justify-content: center; padding: 8px 11px; border: 1px solid #b8c3d1; border-radius: 6px; color: #183153; text-decoration: none; }
+    .task-sequence-pager a:hover { background: #eaf1f8; }
+    .task-sequence-pager .task-sequence-pager-label { border: 0; color: #4b5968; }
+    .task-sequence-pager .task-sequence-pager-disabled { opacity: .4; }
+    .search-page { margin: 0 0 24px; padding: 24px; border: 1px solid #d8e1eb; border-radius: 8px; background: #fff;
+      box-shadow: 0 1px 7px #00000012; color: #243447; font: 16px/1.5 Arial, sans-serif; }
+    .search-page h2 { margin: 0 0 14px; color: #183153; font-size: 24px; line-height: 1.25; }
+    .search-page .site-search-form { margin: 0 0 14px; }
+    .search-page .site-search-form input { border-color: #7f98b4; font-size: 16px; }
+    .search-page .site-search-form button { border-color: #183153; background: #183153; }
+    .search-page .site-search-form button:hover { background: #254a79; }
+    .search-summary { margin: 0 0 14px; color: #4b5968; }
+    .search-results { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .search-results a { display: grid; gap: 4px; padding: 14px 16px; border: 1px solid #cbd7e4; border-radius: 7px;
+      color: #183153; text-decoration: none; background: #f8fafc; }
+    .search-results a:hover { border-color: #7194ba; background: #eef4fa; }
+    .search-results strong { font-size: 16px; }
+    .search-results span { color: #40566d; font-size: 14px; }
+    .local-task-hidden { display: none !important; }
+    .solution-controls { margin-top: 16px; padding-top: 14px; border-top: 1px solid #d8e1eb; font-family: Arial, sans-serif; }
+    .solution-controls.has-published-solution { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; border-color: #86ae8e; }
+    .solution-published-badge { display: inline-flex; align-items: center; min-height: 34px; padding: 0 10px; border-radius: 17px;
+      background: #e8f5e9; color: #1f6330; font: 700 13px Arial, sans-serif; }
+    .solution-controls.has-published-solution .solution-discussion-link { margin-left: 0; }
+    .solution-button { padding: 9px 14px; border: 1px solid #183153; border-radius: 6px; background: #183153; color: #fff;
+      font: 600 14px Arial, sans-serif; cursor: pointer; }
+    .solution-button:hover:not(:disabled) { background: #254a79; }
+    .solution-button:disabled { cursor: wait; opacity: .7; }
+    .solution-discussion-link { display: inline-flex; align-items: center; min-height: 38px; margin-left: 10px; color: #183153;
+      font: 600 14px Arial, sans-serif; text-decoration: underline; text-underline-offset: 2px; }
+    .solution-discussion-link:hover { color: #254a79; }
+    .solution-feedback-link { display: inline-flex; align-items: center; min-height: 38px; margin-left: 2px; color: #704900;
+      padding: 0; border: 0; background: transparent; font: 600 14px Arial, sans-serif; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+    .solution-feedback-link:hover { color: #563700; }
+    .solution-result { margin-top: 12px; padding: 14px 16px; border-radius: 6px; background: #eef4fa; color: #243447; }
+    .solution-result[hidden] { display: none; }
+    .solution-result p { margin: 0 0 10px; }
+    .solution-result p:last-child { margin-bottom: 0; }
+    .solution-answer { font-weight: 700; }
+    .solution-text { margin: 0; font: 16px/1.55 Arial, sans-serif; }
+    .solution-text p, .formatted-solution p { margin: 0 0 12px; }
+    .solution-text p:last-child, .formatted-solution p:last-child { margin-bottom: 0; }
+    .math-fraction { display: inline-flex; flex-direction: column; min-width: 1.1em; margin: 0 .08em; vertical-align: middle;
+      text-align: center; font: .93em/1.05 'Cambria Math', 'STIX Two Math', serif; }
+    .math-fraction > span { display: block; padding: 0 .12em; }
+    .math-fraction > span:first-child { border-bottom: 1px solid currentColor; }
+    .math-root { display: inline-flex; align-items: flex-start; margin-right: .03em; vertical-align: middle;
+      font-family: 'Cambria Math', 'STIX Two Math', serif; }
+    .math-radicand { margin-top: .11em; padding: 0 .08em 0 .1em; border-top: 1px solid currentColor; line-height: .95; }
+    .math-vector { position: relative; display: inline-block; padding-top: .13em; vertical-align: middle;
+      font-family: 'Cambria Math', 'STIX Two Math', serif; }
+    .math-vector::before { position: absolute; top: -.5em; left: 50%; content: '→'; transform: translateX(-50%); font-size: .85em; line-height: 1; }
+    .solution-text sub, .solution-text sup, .formatted-solution sub, .formatted-solution sup { font-size: .75em; line-height: 0; }
+    .solution-modal { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 24px;
+      background: #10243c99; font-family: Arial, sans-serif; }
+    .solution-modal[hidden] { display: none; }
+    .solution-modal-dialog { display: flex; flex-direction: column; width: min(940px, 100%); max-height: calc(100dvh - 48px);
+      overflow: hidden; border-radius: 10px; background: #eef4fa; color: #243447; box-shadow: 0 12px 40px #0008; }
+    .solution-modal-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex: 0 0 auto;
+      padding: 14px 18px; border-bottom: 1px solid #cbd7e4; background: #fff; }
+    .solution-modal-title { margin: 0; color: #183153; font: 700 17px/1.35 Arial, sans-serif; }
+    .solution-modal-close { min-width: 38px; min-height: 38px; border: 1px solid #183153; border-radius: 6px; background: #fff;
+      color: #183153; font: 700 22px/1 Arial, sans-serif; cursor: pointer; }
+    .solution-modal-close:hover { background: #eaf1f8; }
+    .solution-modal-body { min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+      padding: 18px; scrollbar-gutter: stable; }
+    .solution-modal-body p { margin: 0 0 10px; }
+    .solution-modal-body p:last-child { margin-bottom: 0; }
+    .solution-figure { margin: 16px 0 0; }
+    .solution-diagram-caption { margin: 8px 0 0; color: #40566d; font: 14px/1.45 Arial, sans-serif; }
+    .solution-diagram { display: block; width: min(100%, 560px); height: auto; max-height: none; margin-top: 12px; border: 1px solid #cbd7e4;
+      border-radius: 4px; background: #fff; object-fit: contain; }
+    .solution-comments { margin: 20px 0; padding: 20px; border: 1px solid #cbd7e4; border-radius: 8px; background: #fff;
+      color: #243447; font-family: Arial, sans-serif; }
+    .solution-comments h2 { margin: 0 0 14px; color: #183153; font-size: 21px; }
+    .solution-comments-list { display: grid; gap: 12px; }
+    .solution-comment { padding: 14px; border: 1px solid #d8e1eb; border-radius: 7px; background: #f8fafc; }
+    .solution-comment header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+    .solution-comment header strong { color: #183153; }
+    .solution-comment header span, .solution-comment time { color: #526273; font-size: 13px; }
+    .solution-comment time { margin-left: auto; }
+    .solution-comment p { margin: 8px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .solution-comment-delete-form { margin: 10px 0 0; }
+    .solution-comment-delete-form button { padding: 7px 10px; border: 1px solid #8c241b; border-radius: 6px; background: #fff; color: #8c241b;
+      font: 600 13px Arial, sans-serif; cursor: pointer; }
+    .solution-comment-delete-form button:hover { background: #fbe9e8; }
+    .solution-comments-empty, .solution-comments-login, .solution-comments-public { margin: 0; color: #526273; }
+    .solution-comments-notice { margin: 0 0 12px; padding: 10px 12px; border-radius: 6px; background: #e9f2fb; color: #183153; }
+    .solution-comment-form { margin-top: 18px; }
+    .solution-comment-form label { display: block; margin-bottom: 6px; font-weight: 700; }
+    .solution-comment-form textarea { display: block; width: 100%; min-height: 92px; padding: 10px 12px; border: 1px solid #afbdcd; border-radius: 6px;
+      color: #243447; font: 16px/1.45 Arial, sans-serif; resize: vertical; }
+    .solution-comment-form button { margin-top: 10px; padding: 9px 14px; border: 1px solid #183153; border-radius: 6px; background: #183153;
+      color: #fff; font: 600 14px Arial, sans-serif; cursor: pointer; }
+    .solution-comment-form button:hover:not(:disabled) { background: #254a79; }
+    .solution-comment-form .comment-error { margin: 9px 0 0; color: #8c241b; }
+    .site-feedback { margin: 20px 0; padding: 20px; border: 1px solid #bad4c0; border-radius: 8px; background: #f5fbf6;
+      color: #243447; font-family: Arial, sans-serif; }
+    .site-feedback h2 { margin: 0 0 10px; color: #183153; font-size: 21px; }
+    .site-feedback > p { margin: 0 0 8px; }
+    .site-feedback-private { color: #526273; font-size: 14px; }
+    .site-feedback-notice, .site-feedback-error { margin: 12px 0 !important; padding: 10px 12px; border-radius: 6px; }
+    .site-feedback-notice { background: #e8f5e9; color: #1d5e2d; }
+    .site-feedback-error { background: #fbe9e8; color: #8c241b; }
+    .site-feedback-form { margin-top: 16px; }
+    .site-feedback-form label { display: block; margin: 12px 0 6px; font-weight: 700; }
+    .site-feedback-form select, .site-feedback-form textarea { display: block; width: 100%; padding: 10px 12px; border: 1px solid #afbdcd; border-radius: 6px;
+      color: #243447; background: #fff; font: 16px/1.45 Arial, sans-serif; }
+    .site-feedback-form textarea { min-height: 100px; resize: vertical; }
+    .site-feedback-form button { margin-top: 10px; padding: 9px 14px; border: 1px solid #183153; border-radius: 6px; background: #183153;
+      color: #fff; font: 600 14px Arial, sans-serif; cursor: pointer; }
+    .site-feedback-form button:hover { background: #254a79; }
+    .seo-task-solution { margin: 20px 0; padding: 20px; border: 1px solid #cbd7e4; border-radius: 8px; background: #eef4fa;
+      color: #243447; font-family: Arial, sans-serif; }
+    .seo-task-solution h2 { margin: 0 0 12px; color: #183153; font-size: 21px; }
+    .seo-task-solution p { margin: 0 0 12px; }
+    .seo-task-solution .formatted-solution { margin: 0; font: 16px/1.55 Arial, sans-serif; }
+    .seo-task-solution figure { margin: 16px 0 0; }
+    .seo-task-solution figcaption { margin-top: 8px; color: #40566d; font-size: 14px; }
+    .seo-task-solution img { display: block; width: min(100%, 560px); height: auto; border: 1px solid #cbd7e4; border-radius: 4px; background: #fff; }
+    @media (max-width: 700px) {
+      body.questions-container { padding: 12px; overflow-x: hidden; }
+      .local-header { position: static; margin: -12px -12px 14px; padding: 14px 12px; font-size: 15px; }
+      .catalogue-task-start { scroll-margin-top: 12px; }
+      .math-topics, .telegram-banner, .local-pager { max-width: 100%; }
+      .physics-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
+      .math-top-button { position: static; margin: 0 0 10px auto; min-height: 42px; padding: 8px 18px; font-size: 19px; }
+      .local-header small { font-size: 12px; line-height: 1.35; }
+      .telegram-banner { align-items: stretch; flex-direction: column; gap: 12px; margin-bottom: 14px; padding: 16px; }
+      .telegram-banner-copy strong { font-size: 16px; }
+      .telegram-banner-action { width: 100%; }
+      .local-menu { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 12px; }
+      .local-menu a, .local-menu button { display: grid; place-items: center; min-height: 46px; padding: 6px 4px;
+        font-size: 12px; line-height: 1.2; overflow-wrap: anywhere; }
+      .physics-topics { padding: 14px 12px; }
+      .physics-topics-heading { align-items: flex-start; flex-direction: column; }
+      .physics-all-link { width: 100%; justify-content: center; }
+      .physics-topic-grid { grid-template-columns: 1fr; }
+      .math-topics { padding: 15px 12px; }
+      .math-topics-heading { flex-direction: column; }
+      .math-topics-heading h2, .math-topics-heading p { white-space: normal; overflow-wrap: anywhere; }
+      .math-all-link { width: 100%; justify-content: center; }
+      .math-topic-grid { grid-template-columns: 1fr; }
+      .qblock { margin-top: 8px; padding: 14px 16px; }
+      .qblock, .qblock p, .qblock .hint { font-size: 17px; line-height: 1.48; text-align: left; }
+      .qblock > form table[align="right"] { float: none; margin: 12px auto; max-width: 100%; }
+
+      .task-header-panel { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 8px; align-items: center; padding: 9px 8px; }
+      .task-header-panel .id-text { min-width: 0; margin: 0; font-size: 15px; }
+      .task-header-panel .favorite-button { display: none; }
+      .task-header-panel .answer-panel { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; }
+      .task-header-panel .task-status { min-width: 0; font-size: 14px; }
+      .task-header-panel .answer-button { float: none; flex: 0 0 auto; width: auto; height: 36px; margin: 0; padding: 8px 10px; font-size: 12px; }
+      .task-header-panel .task-info-panel { left: 8px; right: 8px; bottom: auto; top: 48px; max-width: none; }
+      .task-info-panel .task-info-content { padding: 10px 12px; overflow-x: auto; }
+      .local-pager { gap: 6px; margin: 14px 0; padding: 10px 8px; }
+      .local-pager button { min-width: 36px; padding: 8px 9px; font-size: 13px; }
+      .local-page-label { flex: 1 0 100%; margin: 2px 0 0; text-align: center; font-size: 12px; }
+      .site-search-form input { flex-basis: 0; }
+      .search-page { margin-bottom: 16px; padding: 18px 14px; }
+      .search-page h2 { font-size: 21px; }
+      .solution-controls { margin-top: 14px; }
+      .solution-controls.has-published-solution { gap: 7px; }
+      .solution-published-badge { min-height: 32px; font-size: 12px; }
+      .solution-button { min-height: 38px; font-size: 14px; }
+      .solution-discussion-link { margin-left: 8px; font-size: 13px; }
+      .solution-result { padding: 12px; }
+      .solution-text { font-size: 15px; }
+      /* На iOS прокрутка вложенного блока внутри fixed-диалога может не принимать жесты.
+         Поэтому на телефоне прокручивается само полноэкранное окно решения. */
+      .solution-modal { display: block; padding: 0; overflow-y: auto; overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch; touch-action: pan-y; }
+      .solution-modal-dialog { display: block; width: 100%; min-height: 100%; height: auto; max-height: none; border-radius: 0; }
+      .solution-modal-header { position: sticky; top: 0; z-index: 1; padding: 12px; }
+      .solution-modal-title { font-size: 16px; }
+      .solution-modal-body { min-height: calc(100dvh - 63px); overflow: visible; padding: 14px 12px 24px; }
+    }
+    @media print { .local-header { position: static; margin: 0 0 16px; } body.questions-container { background: white; padding: 0; } }
+  </style>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg">
+  <meta name="description" content="Иррациональные уравнения: задания первой части ЕГЭ по математике профильного уровня из банка ФИПИ. Заданий: 27; с подробными решениями: 27.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ege-fipi.ru/?topic=2.2">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ЕГЭ и ОГЭ ФИПИ — математика и физика">
+  <meta property="og:title" content="Иррациональные уравнения — первая часть ЕГЭ по математике">
+  <meta property="og:description" content="Иррациональные уравнения: задания первой части ЕГЭ по математике профильного уровня из банка ФИПИ. Заданий: 27; с подробными решениями: 27.">
+  <meta property="og:url" content="https://ege-fipi.ru/?topic=2.2">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Иррациональные уравнения — первая часть ЕГЭ по математике">
+  <meta name="twitter:description" content="Иррациональные уравнения: задания первой части ЕГЭ по математике профильного уровня из банка ФИПИ. Заданий: 27; с подробными решениями: 27.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Иррациональные уравнения — первая часть ЕГЭ по математике","description":"Иррациональные уравнения: задания первой части ЕГЭ по математике профильного уровня из банка ФИПИ. Заданий: 27; с подробными решениями: 27.","url":"https://ege-fipi.ru/?topic=2.2","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"ЕГЭ и ОГЭ ФИПИ — математика и физика","url":"https://ege-fipi.ru"},"mainEntity":{"@type":"ItemList","numberOfItems":27,"itemListElement":[{"@type":"ListItem","position":1,"name":"Задание 1FE24C","url":"https://ege-fipi.ru/tasks/1FE24C"},{"@type":"ListItem","position":2,"name":"Задание 4C69F7","url":"https://ege-fipi.ru/tasks/4C69F7"},{"@type":"ListItem","position":3,"name":"Задание BBFFF9","url":"https://ege-fipi.ru/tasks/BBFFF9"},{"@type":"ListItem","position":4,"name":"Задание 1E76F6","url":"https://ege-fipi.ru/tasks/1E76F6"},{"@type":"ListItem","position":5,"name":"Задание 19E729","url":"https://ege-fipi.ru/tasks/19E729"},{"@type":"ListItem","position":6,"name":"Задание 3599D1","url":"https://ege-fipi.ru/tasks/3599D1"},{"@type":"ListItem","position":7,"name":"Задание 59D451","url":"https://ege-fipi.ru/tasks/59D451"},{"@type":"ListItem","position":8,"name":"Задание 12B3C9","url":"https://ege-fipi.ru/tasks/12B3C9"},{"@type":"ListItem","position":9,"name":"Задание 2FB6C7","url":"https://ege-fipi.ru/tasks/2FB6C7"},{"@type":"ListItem","position":10,"name":"Задание 5CE2C6","url":"https://ege-fipi.ru/tasks/5CE2C6"},{"@type":"ListItem","position":11,"name":"Задание C6D0C4","url":"https://ege-fipi.ru/tasks/C6D0C4"},{"@type":"ListItem","position":12,"name":"Задание 8BE5C3","url":"https://ege-fipi.ru/tasks/8BE5C3"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ЕГЭ","item":"https://ege-fipi.ru/ege"},{"@type":"ListItem","position":2,"name":"Математика","item":"https://ege-fipi.ru/ege/math"},{"@type":"ListItem","position":3,"name":"Профильная математика","item":"https://ege-fipi.ru/"},{"@type":"ListItem","position":4,"name":"Иррациональные уравнения","item":"https://ege-fipi.ru/?topic=2.2"}]}]}</script><link rel="stylesheet" href="/assets/site.css?v=20261007-2"><script defer src="/assets/site.js?v=20261006-1"></script></head><body class='questions-container' style='font-size:11pt'><noscript><div><img src="https://mc.yandex.ru/watch/112561663" style="position:absolute; left:-9999px;" alt="" /></div></noscript><header class="local-header site-header">
+    <a class="site-brand" href="/" aria-label="ЕГЭ и ОГЭ ФИПИ — на главную"><span class="site-brand-mark"><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v14c-4-1-6 0-9 2-3-2-5-3-9-2Z"/></svg></span><span>ЕГЭ и ОГЭ<small>ФИПИ · понять и решить</small></span></a>
+    <nav class="site-desktop-nav" aria-label="Предметы и разделы"><details class="site-dropdown is-current"><summary>Математика<svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary><div class="site-dropdown-panel"><a href="/ege/math">Обзор предмета · обе части</a>
+    <a href="/#practice">Первая часть · по типам</a>
+    <span class="site-nav-label">Вторая часть</span>
+    <a href="/equations">Уравнения</a><a href="/stereometry">Стереометрия</a><a href="/inequalities">Неравенства</a><a href="/finance">Финансовая математика</a><a href="/optimal">Оптимальный выбор</a><a href="/planimetry">Планиметрия</a><a href="/parameters">Задачи с параметром</a><a href="/numbers">Числа и их свойства</a>
+    
+    <a href="/added?section=mathematics">Добавленные задания</a></div></details><details class="site-dropdown"><summary>Физика<svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary><div class="site-dropdown-panel"><a href="/ege/physics">Обзор предмета · обе части</a>
+    <a href="/physics#practice">Первая часть · по типам</a>
+    <span class="site-nav-label">Вторая часть</span>
+    <a href="/physics/part-2?topic=1#tasks">Механика</a><a href="/physics/part-2?topic=2#tasks">Молекулярная физика и термодинамика</a><a href="/physics/part-2?topic=3#tasks">Электродинамика</a><a href="/physics/part-2?topic=4#tasks">Квантовая физика</a>
+    <a href="/physics/part-2#tasks">Вся вторая часть</a>
+    <a href="/added?section=physics">Добавленные задания</a></div></details><details class="site-dropdown"><summary>ОГЭ<svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary><div class="site-dropdown-panel"><a href="/oge">ОГЭ — математика</a><a href="/oge-physics">ОГЭ — физика</a></div></details><a href="/about">О проекте</a></nav>
+    <div class="site-header-actions">
+      <details class="site-dropdown site-search"><summary aria-label="Поиск заданий"><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg></summary><div class="site-dropdown-panel site-search-panel"><form action="/search" method="get" role="search"><label for="header-search">Номер ФИПИ или текст условия</label><div><input id="header-search" type="search" name="q" value="" placeholder="Номер задания или слова из условия" required><button type="submit">Найти</button></div></form></div></details>
+      <a class="site-account" href="/account">Кабинет</a>
+      <a class="site-header-cta" href="/ege#subjects">Начать подготовку<svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <details class="site-mobile-menu"><summary><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Меню</span></summary><nav class="site-mobile-panel" aria-label="Мобильная навигация">
+        <a class="site-mobile-start" href="/ege#subjects">Выбрать предмет <svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <details><summary><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 13 4 5 4-14h10M14 10l6 8m0-8-6 8"/></svg>Математика<svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary><div><a href="/ege/math">Обзор предмета · обе части</a>
+    <a href="/#practice">Первая часть · по типам</a>
+    <span class="site-nav-label">Вторая часть</span>
+    <a href="/equations">Уравнения</a><a href="/stereometry">Стереометрия</a><a href="/inequalities">Неравенства</a><a href="/finance">Финансовая математика</a><a href="/optimal">Оптимальный выбор</a><a href="/planimetry">Планиметрия</a><a href="/parameters">Задачи с параметром</a><a href="/numbers">Числа и их свойства</a>
+    
+    <a href="/added?section=mathematics">Добавленные задания</a></div></details>
+        <details><summary><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(35 12 12)"/></svg>Физика<svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary><div><a href="/ege/physics">Обзор предмета · обе части</a>
+    <a href="/physics#practice">Первая часть · по типам</a>
+    <span class="site-nav-label">Вторая часть</span>
+    <a href="/physics/part-2?topic=1#tasks">Механика</a><a href="/physics/part-2?topic=2#tasks">Молекулярная физика и термодинамика</a><a href="/physics/part-2?topic=3#tasks">Электродинамика</a><a href="/physics/part-2?topic=4#tasks">Квантовая физика</a>
+    <a href="/physics/part-2#tasks">Вся вторая часть</a>
+    <a href="/added?section=physics">Добавленные задания</a></div></details>
+        <details><summary><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v14c-4-1-6 0-9 2-3-2-5-3-9-2Z"/></svg>ОГЭ<svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary><div><a href="/oge">ОГЭ — математика</a><a href="/oge-physics">ОГЭ — физика</a></div></details>
+        <a href="/about">О проекте</a><a href="/account">Личный кабинет</a><a href="/search">Найти задание</a>
+      </nav></details>
+    </div>
+  </header><nav class="seo-breadcrumbs" aria-label="Хлебные крошки"><ol><li><a href="/ege">ЕГЭ</a></li><li><a href="/ege/math">Математика</a></li><li><a href="/">Профильная математика</a></li><li><span aria-current="page">Иррациональные уравнения</span></li></ol></nav><section class="page-heading"><h1>Иррациональные уравнения — первая часть ЕГЭ по математике</h1><p>ФИПИ · первая часть · краткий ответ · 27 заданий</p>
+      <div class="page-heading-actions">
+        <a class="catalogue-task-jump" href="#tasks">Начать решать ↓</a>
+        
+        
+      </div></section><details class="math-topic-picker"><summary>Выбрать другую тему</summary><section class="math-topics" id="practice" aria-labelledby="math-topics-title">
+    <div class="math-topics-heading">
+      <div><h2 id="math-topics-title">Первая часть: задания по типам</h2><p>Выберите тип и тему задания с кратким ответом.</p></div>
+      <a class="math-all-link " href="/?topic=all#tasks">Вся первая часть <span>673</span></a>
+    </div>
+    <div class="math-topic-grid"><details class="math-topic-group" >
+      <summary><span>Планиметрия</span><span class="math-topic-count">58</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=plane#tasks">Все задания раздела <span class="math-topic-count">58</span></a><a class="" href="/?topic=plane.triangles#tasks">Треугольники <span class="math-topic-count">19</span></a><a class="" href="/?topic=plane.quadrilaterals#tasks">Четырёхугольники <span class="math-topic-count">5</span></a><a class="" href="/?topic=plane.circles#tasks">Окружности <span class="math-topic-count">34</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Векторы</span><span class="math-topic-count">31</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=vectors#tasks">Все задания раздела <span class="math-topic-count">31</span></a><a class="" href="/?topic=vectors.coordinates#tasks">Координаты и длина вектора <span class="math-topic-count">13</span></a><a class="" href="/?topic=vectors.scalar#tasks">Скалярное произведение <span class="math-topic-count">18</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Стереометрия</span><span class="math-topic-count">57</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=solid#tasks">Все задания раздела <span class="math-topic-count">57</span></a><a class="" href="/?topic=solid.polyhedra#tasks">Многогранники <span class="math-topic-count">31</span></a><a class="" href="/?topic=solid.round#tasks">Тела вращения <span class="math-topic-count">5</span></a><a class="" href="/?topic=solid.combinations#tasks">Комбинации тел <span class="math-topic-count">21</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Начала теории вероятностей</span><span class="math-topic-count">57</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=probability-basic#tasks">Все задания раздела <span class="math-topic-count">57</span></a><a class="" href="/?topic=probability-basic.classical#tasks">Равновероятные исходы и частоты <span class="math-topic-count">57</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Вероятности сложных событий</span><span class="math-topic-count">53</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=probability-compound#tasks">Все задания раздела <span class="math-topic-count">53</span></a><a class="" href="/?topic=probability-compound.events#tasks">Сумма и пересечение событий <span class="math-topic-count">12</span></a><a class="" href="/?topic=probability-compound.independent#tasks">Независимые испытания <span class="math-topic-count">21</span></a><a class="" href="/?topic=probability-compound.conditional#tasks">Условная и полная вероятность <span class="math-topic-count">20</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Простейшие уравнения</span><span class="math-topic-count">54</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=basic-equations#tasks">Все задания раздела <span class="math-topic-count">54</span></a><a class="" href="/?topic=basic-equations.rational#tasks">Рациональные <span class="math-topic-count">3</span></a><a class="" href="/?topic=basic-equations.roots#tasks">Иррациональные <span class="math-topic-count">16</span></a><a class="" href="/?topic=basic-equations.exponential#tasks">Показательные <span class="math-topic-count">27</span></a><a class="" href="/?topic=basic-equations.logarithms#tasks">Логарифмические <span class="math-topic-count">8</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Вычисления и преобразования</span><span class="math-topic-count">60</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=expressions#tasks">Все задания раздела <span class="math-topic-count">60</span></a><a class="" href="/?topic=expressions.powers#tasks">Степени <span class="math-topic-count">8</span></a><a class="" href="/?topic=expressions.roots#tasks">Корни <span class="math-topic-count">7</span></a><a class="" href="/?topic=expressions.logarithms#tasks">Логарифмы <span class="math-topic-count">13</span></a><a class="" href="/?topic=expressions.trigonometry#tasks">Тригонометрия <span class="math-topic-count">32</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Производная и её применение</span><span class="math-topic-count">56</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=derivative#tasks">Все задания раздела <span class="math-topic-count">56</span></a><a class="" href="/?topic=derivative.tangent#tasks">Касательная и наклон графика <span class="math-topic-count">24</span></a><a class="" href="/?topic=derivative.graph#tasks">Чтение графиков функции и производной <span class="math-topic-count">32</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Задачи с прикладным содержанием</span><span class="math-topic-count">58</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=applied#tasks">Все задания раздела <span class="math-topic-count">58</span></a><a class="" href="/?topic=applied.algebraic#tasks">Алгебраические модели <span class="math-topic-count">30</span></a><a class="" href="/?topic=applied.roots#tasks">Модели с корнями <span class="math-topic-count">11</span></a><a class="" href="/?topic=applied.exponential-log#tasks">Показательные и логарифмические модели <span class="math-topic-count">15</span></a><a class="" href="/?topic=applied.trigonometry#tasks">Тригонометрические модели <span class="math-topic-count">2</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Текстовые задачи</span><span class="math-topic-count">62</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=word-problems#tasks">Все задания раздела <span class="math-topic-count">62</span></a><a class="" href="/?topic=word-problems.percent#tasks">Проценты, смеси и сплавы <span class="math-topic-count">5</span></a><a class="" href="/?topic=word-problems.motion#tasks">Движение и средняя скорость <span class="math-topic-count">22</span></a><a class="" href="/?topic=word-problems.water#tasks">Движение по воде <span class="math-topic-count">19</span></a><a class="" href="/?topic=word-problems.work#tasks">Работа и производительность <span class="math-topic-count">16</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Графики функций</span><span class="math-topic-count">58</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=graphs#tasks">Все задания раздела <span class="math-topic-count">58</span></a><a class="" href="/?topic=graphs.linear#tasks">Прямые <span class="math-topic-count">4</span></a><a class="" href="/?topic=graphs.quadratic#tasks">Параболы <span class="math-topic-count">3</span></a><a class="" href="/?topic=graphs.inverse#tasks">Гиперболы <span class="math-topic-count">8</span></a><a class="" href="/?topic=graphs.roots#tasks">Корневые функции <span class="math-topic-count">6</span></a><a class="" href="/?topic=graphs.exponential-log#tasks">Показательные и логарифмические функции <span class="math-topic-count">15</span></a><a class="" href="/?topic=graphs.intersection#tasks">Пересечения графиков <span class="math-topic-count">22</span></a></div>
+    </details><details class="math-topic-group" >
+      <summary><span>Исследование функций</span><span class="math-topic-count">69</span></summary>
+      <div class="math-topic-children"><a class="math-topic-major " href="/?topic=function-study#tasks">Все задания раздела <span class="math-topic-count">69</span></a><a class="" href="/?topic=function-study.extrema#tasks">Точки максимума и минимума <span class="math-topic-count">52</span></a><a class="" href="/?topic=function-study.values#tasks">Наибольшее и наименьшее значения <span class="math-topic-count">17</span></a></div>
+    </details></div>
+    
+  </section></details><section class="catalog-summary"><p>Иррациональные уравнения: задания первой части ЕГЭ по математике профильного уровня из банка ФИПИ. Заданий: 27; с подробными решениями: 27.</p></section><form class="catalogue-search" action="/#tasks" method="get" role="search">
+    <input type="hidden" name="topic" value="2.2">
+    <label for="catalogue-query">Найти задание в этой подборке</label>
+    <div><input id="catalogue-query" name="q" type="search" maxlength="80" value="" placeholder="Номер ФИПИ или слова из условия"><button type="submit">Найти</button></div>
+    
+  </form><aside class="comments-widget" aria-label="Комментарии сайта">
+    <button class="comments-widget-trigger" type="button" aria-expanded="false" aria-controls="comments-widget-panel">
+      <span class="comments-widget-icon" aria-hidden="true">💬</span>
+      <span>Комментарии</span>
+      <strong class="comments-widget-count" aria-live="polite">…</strong>
+    </button>
+    <section class="comments-widget-panel" id="comments-widget-panel" hidden aria-labelledby="comments-widget-title">
+      <header class="comments-widget-header">
+        <h2 id="comments-widget-title">Комментарии</h2>
+        <button class="comments-widget-close" type="button" aria-label="Закрыть комментарии">×</button>
+      </header>
+      <div class="comments-widget-content" aria-live="polite"><p>Загружаем комментарии…</p></div>
+    </section>
+    <style>
+      .comments-widget { position: fixed; right: 20px; bottom: 20px; z-index: 900; font-family: Arial, sans-serif; }
+      .comments-widget-trigger { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 10px 14px; border: 1px solid #183153;
+        border-radius: 23px; background: #183153; color: #fff; box-shadow: 0 4px 16px #10243c38; font: 700 14px/1 Arial, sans-serif; cursor: pointer; }
+      .comments-widget-trigger:hover { background: #254a79; }
+      .comments-widget-trigger:focus-visible, .comments-widget-close:focus-visible, .comments-widget-item a:focus-visible { outline: 3px solid #f0b429; outline-offset: 3px; }
+      .comments-widget-icon { font-size: 18px; line-height: 1; }
+      .comments-widget-count { display: inline-grid; min-width: 22px; min-height: 22px; place-items: center; padding: 2px 6px; border-radius: 11px; background: #fff; color: #183153; font-size: 13px; }
+      .comments-widget-panel { position: absolute; right: 0; bottom: calc(100% + 10px); width: min(390px, calc(100vw - 24px)); max-height: min(620px, calc(100dvh - 92px));
+        overflow: auto; border: 1px solid #cbd7e4; border-radius: 10px; background: #fff; color: #243447; box-shadow: 0 12px 34px #10243c38; }
+      .comments-widget-header { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border-bottom: 1px solid #d8e1eb; background: #fff; }
+      .comments-widget-header h2 { margin: 0; color: #183153; font: 700 18px/1.3 Arial, sans-serif; }
+      .comments-widget-close { display: grid; width: 32px; height: 32px; place-items: center; padding: 0; border: 1px solid #afbdcd; border-radius: 6px; background: #fff; color: #183153; font: 700 21px/1 Arial, sans-serif; cursor: pointer; }
+      .comments-widget-close:hover { background: #eaf1f8; }
+      .comments-widget-content { padding: 14px 16px 16px; }
+      .comments-widget-content > p { margin: 0; color: #526273; font: 14px/1.45 Arial, sans-serif; }
+      .comments-widget-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+      .comments-widget-item { padding: 12px; border: 1px solid #d8e1eb; border-radius: 7px; background: #f8fafc; }
+      .comments-widget-item header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 8px; }
+      .comments-widget-item strong { color: #183153; }
+      .comments-widget-item .comments-widget-city, .comments-widget-item time { color: #526273; font-size: 12px; }
+      .comments-widget-item time { margin-left: auto; }
+      .comments-widget-item p { margin: 8px 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+      .comments-widget-item a { color: #183153; font-size: 13px; font-weight: 700; }
+      .comments-widget-meta { margin: 0 0 10px !important; }
+      @media (max-width: 700px) {
+        .comments-widget { right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); }
+        .comments-widget-trigger { min-height: 44px; padding: 9px 12px; }
+      }
+      @media print { .comments-widget { display: none; } }
+    </style>
+    <script>
+      (function () {
+        const widget = document.querySelector('.comments-widget');
+        if (!widget) return;
+        const trigger = widget.querySelector('.comments-widget-trigger');
+        const panel = widget.querySelector('.comments-widget-panel');
+        const closeButton = widget.querySelector('.comments-widget-close');
+        const content = widget.querySelector('.comments-widget-content');
+        const count = widget.querySelector('.comments-widget-count');
+
+        function closePanel() {
+          panel.hidden = true;
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+
+        function setCount(total) {
+          const value = Number(total) || 0;
+          count.textContent = String(value);
+          count.setAttribute('aria-label', 'Всего комментариев: ' + value);
+        }
+
+        function dateText(value) {
+          const date = new Date(value);
+          return Number.isNaN(date.getTime()) ? '' : date.toLocaleString('ru-RU', { dateStyle: 'medium', timeStyle: 'short' });
+        }
+
+        function renderComments(payload) {
+          const total = Number(payload.total) || 0;
+          const comments = Array.isArray(payload.comments) ? payload.comments : [];
+          setCount(total);
+          content.replaceChildren();
+          const meta = document.createElement('p');
+          meta.className = 'comments-widget-meta';
+          meta.textContent = payload.hasMore ? 'Показаны последние ' + comments.length + ' из ' + total + '.' : 'Всего комментариев: ' + total + '.';
+          content.appendChild(meta);
+          if (!comments.length) {
+            const empty = document.createElement('p');
+            empty.textContent = 'Комментариев пока нет. Будьте первым в обсуждении задачи.';
+            content.appendChild(empty);
+            return;
+          }
+          const list = document.createElement('ol');
+          list.className = 'comments-widget-list';
+          comments.forEach(function (comment) {
+            const item = document.createElement('li');
+            item.className = 'comments-widget-item';
+            const header = document.createElement('header');
+            const author = document.createElement('strong');
+            author.textContent = comment.fullName;
+            const city = document.createElement('span');
+            city.className = 'comments-widget-city';
+            city.textContent = comment.city;
+            const time = document.createElement('time');
+            time.dateTime = comment.createdAt;
+            time.textContent = dateText(comment.createdAt);
+            const body = document.createElement('p');
+            body.textContent = comment.body;
+            const link = document.createElement('a');
+            link.href = '/tasks/' + encodeURIComponent(comment.taskId) + '#comments';
+            link.textContent = 'Перейти к заданию ' + comment.taskId;
+            header.append(author, city, time);
+            item.append(header, body, link);
+            list.appendChild(item);
+          });
+          content.appendChild(list);
+        }
+
+        async function loadComments() {
+          content.replaceChildren();
+          const loading = document.createElement('p');
+          loading.textContent = 'Загружаем комментарии…';
+          content.appendChild(loading);
+          try {
+            const response = await fetch('/api/comments', { headers: { Accept: 'application/json' } });
+            const payload = await response.json().catch(function () { return {}; });
+            if (!response.ok) throw new Error(payload.error || 'Не удалось загрузить комментарии.');
+            renderComments(payload);
+          } catch (error) {
+            content.replaceChildren();
+            const message = document.createElement('p');
+            message.textContent = error.message || 'Не удалось загрузить комментарии.';
+            content.appendChild(message);
+          }
+        }
+
+        trigger.addEventListener('click', function () {
+          if (!panel.hidden) {
+            closePanel();
+            return;
+          }
+          panel.hidden = false;
+          trigger.setAttribute('aria-expanded', 'true');
+          loadComments();
+          closeButton.focus({ preventScroll: true });
+        });
+        closeButton.addEventListener('click', function () {
+          closePanel();
+          trigger.focus({ preventScroll: true });
+        });
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && !panel.hidden) {
+            closePanel();
+            trigger.focus({ preventScroll: true });
+          }
+        });
+        document.addEventListener('click', function (event) {
+          if (!panel.hidden && !widget.contains(event.target)) closePanel();
+        });
+        function refreshCount() {
+          fetch('/api/comments', { headers: { Accept: 'application/json' } })
+            .then(function (response) { return response.ok ? response.json() : null; })
+            .then(function (payload) { if (payload) setCount(payload.total); })
+            .catch(function () { count.textContent = '—'; });
+        }
+        document.addEventListener('comments:changed', function () {
+          if (!panel.hidden) {
+            loadComments();
+            return;
+          }
+          refreshCount();
+        });
+        refreshCount();
+      })();
+    </script>
+  </aside><section class="feedback-modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title">
+    <div class="feedback-modal-dialog">
+      <header class="feedback-modal-header">
+        <h2 id="feedback-modal-title">Сообщить об ошибке или пожелании</h2>
+        <button class="feedback-modal-close" type="button" aria-label="Закрыть форму">×</button>
+      </header>
+      <form class="feedback-modal-form" method="post">
+        <p class="feedback-modal-task"></p>
+        <p class="feedback-modal-private">Сообщение не публикуется: его увидит только команда сайта.</p>
+        <label for="feedback-modal-kind">Тип сообщения</label>
+        <select id="feedback-modal-kind" name="kind" required>
+          <option value="suggestion">Пожелание по сайту или решению</option>
+          <option value="issue">Неточность или ошибка</option>
+        </select>
+        <label for="feedback-modal-body">Ваше сообщение</label>
+        <textarea id="feedback-modal-body" name="body" maxlength="2000" minlength="2" required placeholder="Например: в шаге 2 не хватает пояснения…"></textarea>
+        <div class="feedback-modal-turnstile"></div>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+    <style>
+      .feedback-modal { position: fixed; inset: 0; z-index: 1100; display: grid; place-items: center; padding: 20px; background: #10243c99; font-family: Arial, sans-serif; }
+      .feedback-modal[hidden] { display: none; }
+      .feedback-modal-dialog { width: min(560px, 100%); max-height: calc(100dvh - 40px); overflow: auto; border-radius: 10px; background: #fff; color: #243447; box-shadow: 0 12px 40px #0008; }
+      .feedback-modal-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 18px; border-bottom: 1px solid #cbd7e4; }
+      .feedback-modal-header h2 { margin: 0; color: #183153; font: 700 18px/1.35 Arial, sans-serif; }
+      .feedback-modal-close { display: grid; width: 38px; height: 38px; place-items: center; padding: 0; border: 1px solid #183153; border-radius: 6px; background: #fff; color: #183153; font: 700 22px/1 Arial, sans-serif; cursor: pointer; }
+      .feedback-modal-close:hover { background: #eaf1f8; }
+      .feedback-modal-form { padding: 18px; }
+      .feedback-modal-form p { margin: 0 0 10px; }
+      .feedback-modal-task { color: #183153; font-weight: 700; }
+      .feedback-modal-private { color: #526273; font-size: 14px; }
+      .feedback-modal-form label { display: block; margin: 14px 0 6px; font-weight: 700; }
+      .feedback-modal-form select, .feedback-modal-form textarea { display: block; width: 100%; padding: 10px 12px; border: 1px solid #afbdcd; border-radius: 6px; color: #243447; background: #fff; font: 16px/1.45 Arial, sans-serif; }
+      .feedback-modal-form textarea { min-height: 120px; resize: vertical; }
+      .feedback-modal-form > button { margin-top: 12px; padding: 9px 14px; border: 1px solid #183153; border-radius: 6px; background: #183153; color: #fff; font: 600 14px Arial, sans-serif; cursor: pointer; }
+      .feedback-modal-form > button:hover { background: #254a79; }
+      .feedback-modal-close:focus-visible, .feedback-modal-form select:focus-visible, .feedback-modal-form textarea:focus-visible, .feedback-modal-form > button:focus-visible { outline: 3px solid #f0b429; outline-offset: 3px; }
+      @media (max-width: 700px) { .feedback-modal { padding: 12px; } .feedback-modal-form { padding: 16px; } }
+    </style>
+    <script>
+      (function () {
+        const modal = document.querySelector('.feedback-modal');
+        if (!modal) return;
+        const form = modal.querySelector('.feedback-modal-form');
+        const task = modal.querySelector('.feedback-modal-task');
+        const closeButton = modal.querySelector('.feedback-modal-close');
+        const field = modal.querySelector('#feedback-modal-body');
+        const turnstileField = modal.querySelector('.feedback-modal-turnstile');
+        const turnstileMarkup = "";
+        let opener = null;
+
+        function closeModal() {
+          modal.hidden = true;
+          modal.setAttribute('aria-hidden', 'true');
+          turnstileField.textContent = '';
+          if (opener) opener.focus({ preventScroll: true });
+          opener = null;
+        }
+
+        function openModal(taskId, source) {
+          if (!/^[A-Z0-9]{4,32}$/i.test(taskId || '')) return;
+          opener = source;
+          task.textContent = 'Задание ' + taskId.toUpperCase();
+          form.action = '/tasks/' + encodeURIComponent(taskId.toUpperCase()) + '/feedback';
+          modal.hidden = false;
+          modal.setAttribute('aria-hidden', 'false');
+          turnstileField.innerHTML = turnstileMarkup;
+          if (window.egeTurnstileLoaded) window.egeTurnstileLoaded();
+          field.focus({ preventScroll: true });
+        }
+
+        document.addEventListener('click', function (event) {
+          const source = event.target.closest?.('[data-feedback-modal-open]');
+          if (!source) return;
+          event.preventDefault();
+          openModal(source.dataset.taskId, source);
+        });
+        closeButton.addEventListener('click', closeModal);
+        modal.addEventListener('click', function (event) {
+          if (event.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && !modal.hidden) closeModal();
+        });
+      })();
+    </script>
+  </section>
+		<script language="javascript">
+        var abort_answer_senging;
+		function onButtonClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+            abort_answer_senging = false;
+            if (formid)
+                eval('setAnswer'+formid+'(aform);');
+            else
+			    setAnswer(aform);
+            if (abort_answer_senging) return;
+			;
+			//aform.submit();
+            if (aform.setBtn)
+                aform.setBtn.disabled=true;
+		}
+		function onResetClick(formid = '')
+		{
+			var aform=document.getElementById('checkform'+formid);
+			var aEl = document.createElement('input');
+			aEl.type = 'hidden';
+			aEl.name = 'reset';
+			aEl.value = 1;
+			aform.appendChild(aEl);
+			
+;
+			aform.submit();
+		}
+
+		function noAction()
+		{
+		}
+
+		</script>
+        <style type="text/css">
+			.img_scroll_container { height: 400px; overflow-y: scroll; text-align: center; width:100%;}
+			.img_scroll_container img { width: 700px }
+            .printbody .img_scroll_container { height: auto; overflow-y: hidden; }
+            .printbody .img_scroll_container img { width: 650px }
+            .active-distractor:hover{cursor:pointer; background-color: #f2f2f2;}
+            .active-distractor.checked-distractor{background-color: #e8e8e8;}
+		</style>
+		<script language="javascript">
+		var qguid='';
+		var qfiles_location='/fipi/';
+
+		function ShowPictureQ(s,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			document.write('<IMG loading="lazy" SRC="'+qfiles_location+s+'" ALIGN=ABSMIDDLE alt="'+hint+'" border="0"> ');
+		}
+
+		function ShowPictureQBL(s,hint,h,bl)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+			var vspace=h/2-bl;
+			if (vspace<0) vspace=-vspace;
+			document.write('<IMG loading="lazy" SRC="'+qfiles_location+s+'" ALIGN=MIDDLE border="0" alt="'+hint+'" VSPACE='+(vspace)+' STYLE="position:relative; top:'+(h/2-bl)+'px;">');
+		}
+
+
+		
+		function ShowPictureQ2WH(s,s2,hint,w,h)
+		{
+            if (s.indexOf('.flv')>0 ||s.indexOf('.mp4')>0 ||s.indexOf('.swf')>0)
+                s='../../show_media.php?m='+encodeURIComponent(s)+'&w='+w+'&h='+h;
+
+			w=w+40;
+			h=h+30;
+
+						document.write('<a href="javascript:var wnd=window.open(\''+qfiles_location+s+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+s2+'" ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'"></a> ');
+			//alert('вставил картинку!');
+		}
+
+		function ShowPictureQ3WH(s,s2,s3,hint,w,h)
+		{
+			ShowPictureQ2WH(s,s2,hint,w,h);
+		}
+
+		function ShowPictureQ2(s,s2,hint)
+		{
+			ShowPictureQ2WH(s,s2,hint,600,400);
+		};
+
+		function invertImage(img, s, s2)
+		{
+			if (img.src.indexOf(s)>0) img.src=qfiles_location+s2; else img.src=qfiles_location+s;
+		}
+
+		function ShowPictureQ3(s,s2,hint)
+		{
+			while ((p=s.indexOf(". "))>0)
+			s=s.substring(0,p+1)+s.substring(p+2);
+            var onclick=(s.indexOf('.jpg')>0||s.indexOf('.png')>0||s.indexOf('.gif')>0 ?'onclick="invertImage(this, \''+s+'\', \''+s2+'\')"':'');
+			document.write('<IMG loading="lazy" SRC="'+qfiles_location+s2+'" '+onclick+' ALIGN=ABSMIDDLE style="cursor:pointer" alt="'+hint+'" border="0"> ');
+		};
+
+		function showXGraphic(xml)
+		{
+			document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=1><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+		/*
+function ShowPictureQGX2(img,xml)
+{
+w=500;
+h=400;
+document.write('<IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE>');
+}
+*/
+		function ShowPictureQGX2(img,xml)
+		{
+			w=500;
+			h=400;
+			document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?qguid='+qguid+'&xml='+xml+'\',\'\',\',status=1,resizable=1,menubar=0,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+qfiles_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}
+
+		</script>
+		<script language='JavaScript'>
+var files_location='';
+var files_abs_location='';
+var space_after_img=true;
+function ShowPicture(s)
+{document.write('<IMG loading="lazy" SRC="'+files_location+s+'" ALIGN=absmiddle border=0>'+(space_after_img?' ':''));}
+function ShowPicture2(s,s2,w,h)
+{if (w>800) w=800;
+ if (h>600) h=600;
+ align='ABSMIDDLE'; 
+document.write('<a href="javascript:var wnd=window.open(\''+files_location+s+'\',\'_blank\',\'resizable=1,menubar=0,scrollbars=1,width='+(w+40)+',height='+(h+20)+',left='+((screen.width-w-40)/2)+',top='+((screen.height-h-20)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+s2+'" ALIGN='+align+'></a>'+(space_after_img?' ':''));}
+function ShowPicture2S(objsrc,imgsrc,datasrc,w,h)
+{ShowPicture2(objsrc,imgsrc,w,h);}
+function ShowPictureBL(s,bl)
+{document.write('<IMG loading="lazy" SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+bl+' STYLE="position:relative; top:-'+(bl)+'px;" border=0>');}
+function ShowPictureBL2(s,bl,h)
+{ var vspace=h/2-bl;
+  		if (vspace<0) vspace=-vspace;
+document.write('<IMG loading="lazy" SRC="'+files_location+s+'" ALIGN=MIDDLE VSPACE='+((vspace))+' STYLE="position:relative; top:'+(h/2-bl-1)+'px;" border=0>');}
+function ShowPictureGX(img,xml)
+		{
+		w=500;
+		h=400;
+		document.write('<a href="javascript:var wnd=window.open(\'../../showxgprahic.php?xml='+files_abs_location+xml+'\',\'\',\',status=1,resizable=1,menubar=1,scrollbars=1,width='+w+', height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2)+'\');wnd.focus();"><IMG BORDER=0 SRC="'+files_location+img+'" ALIGN=ABSMIDDLE style="cursor:pointer"></a> ');
+		}function TraceLink(indx,n)
+{ if (n.charAt(0)=='{')
+  		{
+			var guid=n.substring(1,9)+n.substring(10,14)+n.substring(15,19)+n.substring(20,24)+n.substring(25,37);
+			showdocbyguid(guid);
+  		}
+  		else
+  		{var wnd=window.open('../../tracelink.php?project_guid=AC437B34557F88EA4115D2F374B0A07B&cdf='+n,'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+ }
+}
+function showdocbyguid(guid)
+{var wnd=window.open('../../tracelink.php?project_guid=AC437B34557F88EA4115D2F374B0A07B&doc_guid='+guid.toUpperCase(),'link_wnd','toolbar=1,resizable=1,menubar=0, location=0,scrollbars=1,width=416,height=350,left=0,top=0');
+wnd.focus();
+}
+function delFile(fguid)
+{
+if (confirm('Удалить файл?'))
+  location.href='delete.php?proj=AC437B34557F88EA4115D2F374B0A07B&md=qprint&fguid='+fguid}
+function ShowFlash(url)
+{
+			w='100%'; h='100%';
+			url='../../'+files_location+url;
+			document.write('<object tabindex=0 ID=ilFlash classid=CLSID:D27CDB6E-AE6D-11cf-96B8-444553540000 width='+w+' height='+h+' codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0">'+
+		'<param name=movie value="'+url+'"><PARAM play=true><PARAM SWLIVECONNECT=true><PARAM MENU=true><PARAM LOOP=false>'+
+		'<PARAM NAME=scale VALUE=noScale><embed src="'+url+'" quality=high bgcolor=#FFFFFF  width='+w+' height='+h+' scale=noScale type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockWaveFlash"></embed></object>');}
+	function showXGraphic(xml)
+		{
+		//alert("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		document.write("<object classid=\"CLSID:A40BD42C-2DF9-4DB6-AE58-6411A05C7827\" ID=GraphX, width=258, height=410 ><param name=DEsignMode value=0><param name=\"Buffer\" value='<?xml version=\"1.0\"?>"+xml+"'></object>");
+		}
+	</script><script type='text/javascript'>
+	var solvedQst = localStorage.getItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED");
+	solvedQst = solvedQst ? new Set(solvedQst.split(",")): new Set();
+	var favQst = localStorage.getItem("OS:AC437B34557F88EA4115D2F374B0A07B:FAV");
+	favQst = favQst ? new Set(favQst.split(",")): new Set();
+
+
+
+var request = createAJAXRequest();
+
+function toggleQFavour(qblock) {    var fvbtn = document.getElementById(qblock).getElementsByClassName('favorite-button');
+    toggleFavour(fvbtn[0]);
+}
+
+function toggleFavour(btn) {	btn.classList.toggle('is-favorite');
+    btn.title = btn.classList.contains('is-favorite')?'В Избранном':'Добавить в Избранное';}
+
+function setToStr(set) {	if (browser.isIE) {		let str = '';
+		set.forEach(function(elem){
+		    str += elem + (str?",":"")
+ 	 	});
+ 	 	return str;	} else {		return Array.from(set).join(",")	}}
+
+
+function changeFavour(btn, qst) {	if (btn.classList.contains('is-favorite'))
+	    favQst.delete(qst);
+    else
+        favQst.add(qst);
+    localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:FAV", setToStr(favQst));
+	toggleFavour(btn);}
+
+function changeStatus(qst, panel){
+    let answer = solvedQst.has(qst)? '0': '1';
+	if (answer == '0')		solvedQst.delete(qst);
+    else
+        solvedQst.add(qst);
+    localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED", setToStr(solvedQst));
+    setQSolved(panel, answer)
+}
+
+
+
+function checkButtonClick(form, setanswer, panel) {
+	form = document.getElementById(form);
+	setanswer(form);
+    if (!request.inProcess) {
+        request.open('POST', 'solve.php', true);
+        request.onreadystatechange = checkSolutionDone;
+        request.inProcess = true;
+        request.panel = panel;
+
+        var formData = new FormData(form);
+        formData.append("ajax", "1");
+        formData.append("proj", "AC437B34557F88EA4115D2F374B0A07B")
+
+		if (browser.isIE)
+			request.qst = form.guid.value;
+		else
+	        request.qst = formData.get("guid");
+
+        request.send(formData);
+
+        panel.getElementsByClassName('task-status')[0].innerHTML = "<img class='loader' src='img/loading_spinner.gif'>";    }
+}
+
+function checkSolutionDone() {    if (request.readyState==4)  {
+        request.inProcess = false;
+        answer = "0";
+        if (request.status==200) {
+            answer = request.responseText;
+        }
+        if (answer!='1' && answer!='2' && answer!='3') {
+        	answer = "0";
+        }
+        qst = request.qst;
+
+        if (answer == '0' || answer == '2')
+    		solvedQst.delete(qst);
+        else
+            solvedQst.add(qst);
+        localStorage.setItem("OS:AC437B34557F88EA4115D2F374B0A07B:SOLVED", setToStr(solvedQst));
+        setQSolved(request.panel, answer);
+    }
+}
+
+function setQSolved(block, answer) {	if (typeof(block) === 'string')
+	    block = document.getElementById(block);
+	var statusNode = block.getElementsByClassName('task-status')[0];
+    statusNode.className= "task-status task-status-" + answer ;
+    if (answer=='1')
+        statusNode.innerHTML = "РЕШЕНО";
+    else if (answer=='2')
+        statusNode.innerHTML = "НЕВЕРНО";
+    else if (answer=='3')
+        statusNode.innerHTML = "ВЕРНО";
+    else
+        statusNode.innerHTML = "НЕ РЕШЕНО";}
+
+</script>
+
+ <div id="tasks" class="catalogue-task-start"><nav id="local-pager-top" class="local-pager local-pager--top" aria-label="Страницы подборки">
+    <a href="/?topic=2.2#tasks" aria-current="page" class="active">1</a><a href="/?topic=2.2&amp;page=2#tasks">2</a><a href="/?topic=2.2&amp;page=3#tasks">3</a>
+    <a href="/?topic=2.2&amp;page=2#tasks" rel="next">Вперёд →</a>
+    <span class="local-page-label">Задания 1–12 из 27</span>
+  </nav></div><div class="qblock" id='q1FE24C'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform1FE24C' id='checkform1FE24C' method="get"		>
+		<input type="Hidden" name="guid" value="05AC168CDBF5AA054639C0046CD09D77">
+		<script language='JavaScript'> 
+ function setAnswer1FE24C(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math> <semantics> <mrow> <msqrt> <mrow> <mn>9</mn><mi>x</mi><mo>&#x2212;</mo><mn>47</mn> </mrow> </msqrt> <mo>=</mo><mn>4.</mn> </mrow> </semantics> </math></span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='05AC168CDBF5AA054639C0046CD09D77'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i1FE24C'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/1FE24C">1FE24C</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'05AC168CDBF5AA054639C0046CD09D77')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform1FE24C', setAnswer1FE24C, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("05AC168CDBF5AA054639C0046CD09D77"))
+	            toggleQFavour('i1FE24C');
+	        if (solvedQst.has("05AC168CDBF5AA054639C0046CD09D77"))
+	            setQSolved('i1FE24C', '1');
+	    </script>
+	     <div class="qblock" id='q4C69F7'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform4C69F7' id='checkform4C69F7' method="get"		>
+		<input type="Hidden" name="guid" value="103DABC577FAA9A24E2709893A9A98FB">
+		<script language='JavaScript'> 
+ function setAnswer4C69F7(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math> <semantics> <mrow> <msqrt> <mrow> <mn>5</mn><mi>x</mi><mo>&#x2212;</mo><mn>1</mn> </mrow> </msqrt> <mo>=</mo><mn>7.</mn> </mrow> </semantics> </math></span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='103DABC577FAA9A24E2709893A9A98FB'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i4C69F7'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/4C69F7">4C69F7</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'103DABC577FAA9A24E2709893A9A98FB')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform4C69F7', setAnswer4C69F7, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("103DABC577FAA9A24E2709893A9A98FB"))
+	            toggleQFavour('i4C69F7');
+	        if (solvedQst.has("103DABC577FAA9A24E2709893A9A98FB"))
+	            setQSolved('i4C69F7', '1');
+	    </script>
+	     <div class="qblock" id='qBBFFF9'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformBBFFF9' id='checkformBBFFF9' method="get"		>
+		<input type="Hidden" name="guid" value="14B1414F84988A0D4D86AC3F448E6A0D">
+		<script language='JavaScript'> 
+ function setAnswerBBFFF9(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math><mstyle displaystyle="true"> <semantics> <mrow> <msqrt> <mrow> <mn>3</mn><mi>x</mi><mo>+</mo><mn>49</mn> </mrow> </msqrt> <mo>=</mo><mn>10</mn> </mrow>  </semantics> </mstyle></math></span>.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='14B1414F84988A0D4D86AC3F448E6A0D'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='iBBFFF9'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/BBFFF9">BBFFF9</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'14B1414F84988A0D4D86AC3F448E6A0D')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkformBBFFF9', setAnswerBBFFF9, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("14B1414F84988A0D4D86AC3F448E6A0D"))
+	            toggleQFavour('iBBFFF9');
+	        if (solvedQst.has("14B1414F84988A0D4D86AC3F448E6A0D"))
+	            setQSolved('iBBFFF9', '1');
+	    </script>
+	     <div class="qblock" id='q1E76F6'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform1E76F6' id='checkform1E76F6' method="get"		>
+		<input type="Hidden" name="guid" value="15D3CD20277393AF45E1D11B6192BF13">
+		<script language='JavaScript'> 
+ function setAnswer1E76F6(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math> <semantics> <mrow> <msqrt> <mrow> <mn>99</mn><mo>&#x2212;</mo><mn>7</mn><mi>x</mi> </mrow> </msqrt> <mo>=</mo><mn>6.</mn> </mrow> </semantics> </math></span><span>&nbsp;</span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='15D3CD20277393AF45E1D11B6192BF13'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i1E76F6'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/1E76F6">1E76F6</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'15D3CD20277393AF45E1D11B6192BF13')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform1E76F6', setAnswer1E76F6, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("15D3CD20277393AF45E1D11B6192BF13"))
+	            toggleQFavour('i1E76F6');
+	        if (solvedQst.has("15D3CD20277393AF45E1D11B6192BF13"))
+	            setQSolved('i1E76F6', '1');
+	    </script>
+	     <div class="qblock" id='q19E729'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform19E729' id='checkform19E729' method="get"		>
+		<input type="Hidden" name="guid" value="65BCB3F06CECA1464EC03AA7CAAC1695">
+		<script language='JavaScript'> 
+ function setAnswer19E729(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math><mstyle displaystyle="true"> <semantics> <mrow> <mroot> <mrow> <mi>x</mi><mo>+</mo><mn>3</mn> </mrow> <mn>3</mn> </mroot> <mo>=</mo><mn>3</mn> </mrow>  </semantics> </mstyle></math></span>.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='65BCB3F06CECA1464EC03AA7CAAC1695'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i19E729'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/19E729">19E729</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'65BCB3F06CECA1464EC03AA7CAAC1695')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform19E729', setAnswer19E729, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("65BCB3F06CECA1464EC03AA7CAAC1695"))
+	            toggleQFavour('i19E729');
+	        if (solvedQst.has("65BCB3F06CECA1464EC03AA7CAAC1695"))
+	            setQSolved('i19E729', '1');
+	    </script>
+	     <div class="qblock" id='q3599D1'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform3599D1' id='checkform3599D1' method="get"		>
+		<input type="Hidden" name="guid" value="7E5B8B682CF2B158454A3D3DD3B78F45">
+		<script language='JavaScript'> 
+ function setAnswer3599D1(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math> <semantics> <mrow> <msqrt> <mrow> <mn>44</mn><mo>&#x2212;</mo><mn>5</mn><mi>x</mi> </mrow> </msqrt> <mo>=</mo><mn>3.</mn> </mrow> </semantics> </math></span><span>&nbsp;</span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='7E5B8B682CF2B158454A3D3DD3B78F45'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i3599D1'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/3599D1">3599D1</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'7E5B8B682CF2B158454A3D3DD3B78F45')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform3599D1', setAnswer3599D1, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("7E5B8B682CF2B158454A3D3DD3B78F45"))
+	            toggleQFavour('i3599D1');
+	        if (solvedQst.has("7E5B8B682CF2B158454A3D3DD3B78F45"))
+	            setQSolved('i3599D1', '1');
+	    </script>
+	     <div class="qblock" id='q59D451'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform59D451' id='checkform59D451' method="get"		>
+		<input type="Hidden" name="guid" value="8857B0047E93AB2447DFEC7D1BD35F01">
+		<script language='JavaScript'> 
+ function setAnswer59D451(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math> <semantics> <mrow> <msqrt> <mrow> <mn>57</mn><mo>&#x2212;</mo><mn>7</mn><mi>x</mi> </mrow> </msqrt> <mo>=</mo><mn>6.</mn> </mrow> </semantics> </math></span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='8857B0047E93AB2447DFEC7D1BD35F01'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i59D451'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/59D451">59D451</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'8857B0047E93AB2447DFEC7D1BD35F01')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform59D451', setAnswer59D451, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("8857B0047E93AB2447DFEC7D1BD35F01"))
+	            toggleQFavour('i59D451');
+	        if (solvedQst.has("8857B0047E93AB2447DFEC7D1BD35F01"))
+	            setQSolved('i59D451', '1');
+	    </script>
+	     <div class="qblock" id='q12B3C9'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform12B3C9' id='checkform12B3C9' method="get"		>
+		<input type="Hidden" name="guid" value="A5B46EE602148A644F601627012B604E">
+		<script language='JavaScript'> 
+ function setAnswer12B3C9(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math> <semantics> <mrow> <mroot> <mrow> <mi>x</mi><mo>+</mo><mn>6</mn> </mrow> <mn>3</mn> </mroot> <mo>=</mo><mn>4.</mn> </mrow> </semantics> </math></span>&nbsp;<span> </span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='A5B46EE602148A644F601627012B604E'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i12B3C9'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/12B3C9">12B3C9</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'A5B46EE602148A644F601627012B604E')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform12B3C9', setAnswer12B3C9, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("A5B46EE602148A644F601627012B604E"))
+	            toggleQFavour('i12B3C9');
+	        if (solvedQst.has("A5B46EE602148A644F601627012B604E"))
+	            setQSolved('i12B3C9', '1');
+	    </script>
+	     <div class="qblock" id='q2FB6C7'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform2FB6C7' id='checkform2FB6C7' method="get"		>
+		<input type="Hidden" name="guid" value="A6341DE768D0BD864BB9DA5901A9B033">
+		<script language='JavaScript'> 
+ function setAnswer2FB6C7(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math> <semantics> <mrow> <msqrt> <mrow> <mn>36</mn><mo>&#x2212;</mo><mn>4</mn><mi>x</mi> </mrow> </msqrt> <mo>=</mo><mn>2.</mn> </mrow> </semantics> </math></span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='A6341DE768D0BD864BB9DA5901A9B033'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i2FB6C7'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/2FB6C7">2FB6C7</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'A6341DE768D0BD864BB9DA5901A9B033')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform2FB6C7', setAnswer2FB6C7, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("A6341DE768D0BD864BB9DA5901A9B033"))
+	            toggleQFavour('i2FB6C7');
+	        if (solvedQst.has("A6341DE768D0BD864BB9DA5901A9B033"))
+	            setQSolved('i2FB6C7', '1');
+	    </script>
+	     <div class="qblock" id='q5CE2C6'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform5CE2C6' id='checkform5CE2C6' method="get"		>
+		<input type="Hidden" name="guid" value="A8DCA63D7CBB8A7D4AEBAD8563E221D5">
+		<script language='JavaScript'> 
+ function setAnswer5CE2C6(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math><mstyle displaystyle="true"> <semantics> <mrow> <msqrt> <mrow> <mn>7</mn><mi>x</mi><mo>&#x2212;</mo><mn>31</mn> </mrow> </msqrt> <mo>=</mo><mn>2</mn> </mrow>  </semantics> </mstyle></math></span>.<span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='A8DCA63D7CBB8A7D4AEBAD8563E221D5'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i5CE2C6'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/5CE2C6">5CE2C6</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'A8DCA63D7CBB8A7D4AEBAD8563E221D5')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform5CE2C6', setAnswer5CE2C6, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("A8DCA63D7CBB8A7D4AEBAD8563E221D5"))
+	            toggleQFavour('i5CE2C6');
+	        if (solvedQst.has("A8DCA63D7CBB8A7D4AEBAD8563E221D5"))
+	            setQSolved('i5CE2C6', '1');
+	    </script>
+	     <div class="qblock" id='qC6D0C4'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkformC6D0C4' id='checkformC6D0C4' method="get"		>
+		<input type="Hidden" name="guid" value="AA07D2D98904B25B4F839E1F67D83C31">
+		<script language='JavaScript'> 
+ function setAnswerC6D0C4(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math> <semantics> <mrow> <msqrt> <mrow> <mn>6</mn><mi>x</mi><mo>+</mo><mn>57</mn> </mrow> </msqrt> <mo>=</mo><mn>9.</mn> </mrow> </semantics> </math></span><span>&nbsp;</span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='AA07D2D98904B25B4F839E1F67D83C31'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='iC6D0C4'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/C6D0C4">C6D0C4</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'AA07D2D98904B25B4F839E1F67D83C31')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkformC6D0C4', setAnswerC6D0C4, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("AA07D2D98904B25B4F839E1F67D83C31"))
+	            toggleQFavour('iC6D0C4');
+	        if (solvedQst.has("AA07D2D98904B25B4F839E1F67D83C31"))
+	            setQSolved('iC6D0C4', '1');
+	    </script>
+	     <div class="qblock" id='q8BE5C3'> 	    <div id="hint" class="hint" name="hint">Впишите правильный ответ.</div>
+	    		<form action='javascript:noAction()' name='checkform8BE5C3' id='checkform8BE5C3' method="get"		>
+		<input type="Hidden" name="guid" value="AFEC4891F1DEB7D441ECF64C71881136">
+		<script language='JavaScript'> 
+ function setAnswer8BE5C3(aform)
+ {;}
+ </script><TABLE WIDTH="100%" border='0' bgcolor='gray' cellspacing='1' cellpadding=2>
+  <TR><TD valign=top width=100% bgcolor="#FAFBCA" class='cell_0'>  <p class="MsoNormal">Найдите корень уравнения <span class="fipi-math-scroll"><math> <semantics> <mrow> <msqrt> <mrow> <mn>5</mn><mi>x</mi><mo>+</mo><mn>11</mn> </mrow> </msqrt> <mo>=</mo><mn>4.</mn> </mrow> </semantics> </math></span><span></span></p>  </TD></TR>
+  <TR bgcolor="#FFFFFF"><TD>
+	  <TABLE WIDTH="100%" class='submit-outblock'>
+	  	<TR><TD class='varinats-block'><a name="variants"></a><br><div><table width='100%' cellspacing=0 cellpadding=1><tr><td width=100%><input type=text name="answer" size=40 value="" maxlength="250"></td></tr></table></div><br></TD></TR>
+	  	<TR><TD class='submit-block'></TD></TR>
+	  </TABLE>
+  </TD></TR></TABLE>	</form>
+	<form name='chkcodeform'>
+			<input type='hidden' name='guid' value='AFEC4891F1DEB7D441ECF64C71881136'>
+			<input type='hidden' name='answer' value="">
+			<input type='hidden' name='chkcode' value=''>
+		</form> </div> <div id='i8BE5C3'>
+    <div class="separator"></div>
+    <div class="task-header-panel">
+        <div class="info-button" onclick='this.parentNode.classList.toggle("show-info")'>i</div>
+        <div class="task-info-panel">
+            <div class="task-info-title">
+                <span>СВОЙСТВА ЗАДАНИЯ</span>
+                <span class="task-info-title-close-button" onclick='this.parentNode.parentNode.parentNode.classList.toggle("show-info")'></span>
+            </div>
+            <div class="task-info-content">
+                <table><tbody>
+                    <tr><td class="param-name">КЭС:</td><td class="param-row"><div>2.2 Иррациональные уравнения</div></td></tr>                                                                                <tr><td class="param-name">Тип ответа:</td><td>Краткий ответ</td></tr>                                      </tbody></table>
+            </div>
+        </div>
+        <div class="id-text">Номер: <span class="canselect"><a class="task-permalink" href="/tasks/8BE5C3">8BE5C3</a></span></div>
+        <div class="favorite-button" title="Добавить в Избранное" onclick="changeFavour(this,'AFEC4891F1DEB7D441ECF64C71881136')"></div>
+                         <div class="answer-panel">
+             <span class="status-title-text hidden-xs">Статус задания:</span>
+             <span class="task-status task-status-0">НЕ РЕШЕНО</span>
+             <span class="answer-button" onclick="checkButtonClick('checkform8BE5C3', setAnswer8BE5C3, this.parentNode)">Ответить</span>
+        </div>
+
+    </div>
+</div>	    <script type='text/javascript'>
+	        if (favQst.has("AFEC4891F1DEB7D441ECF64C71881136"))
+	            toggleQFavour('i8BE5C3');
+	        if (solvedQst.has("AFEC4891F1DEB7D441ECF64C71881136"))
+	            setQSolved('i8BE5C3', '1');
+	    </script>
+	     <aside class="telegram-banner" aria-label="Подготовка к ЕГЭ">
+    <div class="telegram-banner-copy">
+      <strong>Продолжим подготовку в Telegram</strong>
+      <span>Разборы, задания и материалы по математике и физике — чтобы возвращаться к практике было проще.</span>
+    </div>
+    <a class="telegram-banner-action" href="https://t.me/leon_358" target="_blank" rel="noopener noreferrer">Перейти в Telegram <span>@leon_358</span></a>
+  </aside><nav id="local-pager-bottom" class="local-pager local-pager--bottom" aria-label="Страницы подборки">
+    <a href="/?topic=2.2#tasks" aria-current="page" class="active">1</a><a href="/?topic=2.2&amp;page=2#tasks">2</a><a href="/?topic=2.2&amp;page=3#tasks">3</a>
+    <a href="/?topic=2.2&amp;page=2#tasks" rel="next">Вперёд →</a>
+    <span class="local-page-label">Задания 1–12 из 27</span>
+  </nav><div id="site-end"></div><aside class="site-ad" data-site-ad="R-A-20149267-3" data-ad-state="idle" aria-label="Реклама"><span class="site-ad-label" hidden>Реклама</span><div class="site-ad-slot" id="yandex_rtb_R-A-20149267-3"></div></aside><footer class="site-footer"><div class="site-footer-top"><a class="site-brand" href="/"><span class="site-brand-mark"><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v14c-4-1-6 0-9 2-3-2-5-3-9-2Z"/></svg></span><span>ЕГЭ и ОГЭ<small>ФИПИ · понять и решить</small></span></a><p>ЕГЭ и ОГЭ по математике и физике.<br>Задания из открытого банка ФИПИ.</p><nav aria-label="Ссылки в подвале"><a href="/ege/math">ЕГЭ — математика</a><a href="/ege/physics">ЕГЭ — физика</a><a href="/oge">ОГЭ — математика</a><a href="/oge-physics">ОГЭ — физика</a><a href="/about">О проекте</a><a href="/account">Личный кабинет</a></nav></div><div class="site-footer-bottom"><span>Независимый учебный проект. Задания из открытого банка ФИПИ.</span><a href="/privacy">Политика конфиденциальности</a></div></footer><script id="catalogue-data" type="application/json">{"page":1,"pageSize":12,"total":27,"totalPages":3,"offset":0,"ids":["1FE24C","4C69F7","BBFFF9","1E76F6","19E729","3599D1","59D451","12B3C9","2FB6C7","5CE2C6","C6D0C4","8BE5C3","DE509B","ED6C96","5E753F","E43E38","94554A","D888F6","19DD0F","8371BD","C15C1C","BA98A1","3B8999","6169E1","90316E","FC9B35","58C283"],"basePath":"/?topic=2.2","query":"","hubPath":"/#practice"}</script><script>
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('DOMContentLoaded', function () {
+    let currentPage = 1;
+    let resizeTimer;
+    let pages = [];
+    const isSingleTaskPage = false;
+    const catalogue = JSON.parse(document.getElementById('catalogue-data')?.textContent || 'null');
+    let catalogueIndex = catalogue?.offset || 0;
+    let catalogueNavigating = false;
+    const publishedSolutionIds = new Set(["19E729","3599D1","59D451","12B3C9","2FB6C7","5CE2C6","C6D0C4","8BE5C3","1FE24C","4C69F7","BBFFF9","1E76F6"]);
+    const emptyCatalogueMessage = "По выбранной теме заданий в банке ФИПИ пока нет.";
+    // Состав раздела уже отфильтрован сервером; браузер только разбивает его на страницы.
+    // Старый HTML банка неидеален. Собираем пары по устойчивому идентификатору
+    // самого задания, а не по родительскому элементу панели: мобильные браузеры
+    // могут по-разному восстанавливать вложенность такой разметки.
+    const allTasks = Array.from(document.querySelectorAll('.qblock[id^="q"]')).map(content => {
+      const id = content.id.slice(1);
+      const header = id ? document.getElementById('i' + id) : null;
+      return header ? { id, header, content } : null;
+    }).filter(Boolean);
+    const tasks = allTasks;
+
+    let modalOpener = null;
+    const solutionModal = document.createElement('section');
+    solutionModal.className = 'solution-modal';
+    solutionModal.hidden = true;
+    solutionModal.setAttribute('role', 'dialog');
+    solutionModal.setAttribute('aria-modal', 'true');
+    solutionModal.setAttribute('aria-labelledby', 'solution-modal-title');
+    solutionModal.innerHTML = '<div class="solution-modal-dialog"><header class="solution-modal-header"><h2 class="solution-modal-title" id="solution-modal-title"></h2><button class="solution-modal-close" type="button" aria-label="Закрыть решение">×</button></header><div class="solution-modal-body" tabindex="0"></div></div>';
+    document.body.appendChild(solutionModal);
+    const modalTitle = solutionModal.querySelector('.solution-modal-title');
+    const modalBody = solutionModal.querySelector('.solution-modal-body');
+    const modalClose = solutionModal.querySelector('.solution-modal-close');
+
+    function closeSolutionModal() {
+      solutionModal.hidden = true;
+      if (modalOpener) modalOpener.focus({ preventScroll: true });
+      modalOpener = null;
+    }
+
+    function modalCommentElement(comment, taskId) {
+      const article = document.createElement('article');
+      article.className = 'solution-comment';
+      const header = document.createElement('header');
+      const author = document.createElement('strong');
+      author.textContent = comment.fullName;
+      const city = document.createElement('span');
+      city.textContent = comment.city;
+      const time = document.createElement('time');
+      time.dateTime = comment.createdAt;
+      const date = new Date(comment.createdAt);
+      time.textContent = Number.isNaN(date.getTime()) ? '' : date.toLocaleString('ru-RU', { dateStyle: 'medium', timeStyle: 'short' });
+      const body = document.createElement('p');
+      body.textContent = comment.body;
+      header.append(author, city, time);
+      article.append(header, body);
+      if (comment.isOwn) {
+        const form = document.createElement('form');
+        form.className = 'solution-comment-delete-form';
+        form.method = 'post';
+        form.action = '/account/comments/' + encodeURIComponent(comment.id) + '/delete';
+        const next = document.createElement('input');
+        next.type = 'hidden';
+        next.name = 'next';
+        next.value = location.pathname + location.search + '#comments';
+        const button = document.createElement('button');
+        button.type = 'submit';
+        button.textContent = 'Удалить мой комментарий';
+        form.append(next, button);
+        article.appendChild(form);
+      }
+      return article;
+    }
+
+    function appendSolutionComments(solution, taskId) {
+      const section = document.createElement('section');
+      section.className = 'solution-comments';
+      const heading = document.createElement('h3');
+      heading.textContent = 'Комментарии к решению';
+      const list = document.createElement('div');
+      list.className = 'solution-comments-list';
+      const comments = Array.isArray(solution.comments) ? solution.comments : [];
+      if (comments.length) {
+        comments.forEach(comment => list.appendChild(modalCommentElement(comment, taskId)));
+      } else {
+        const empty = document.createElement('p');
+        empty.className = 'solution-comments-empty';
+        empty.textContent = 'Комментариев пока нет. Будьте первым.';
+        list.appendChild(empty);
+      }
+      section.append(heading, list);
+      if (!solution.viewer) {
+        const hint = document.createElement('p');
+        hint.className = 'solution-comments-login';
+        const prefix = document.createTextNode('Чтобы оставить комментарий, ');
+        const login = document.createElement('a');
+        login.href = '/account/login?next=' + encodeURIComponent(location.pathname + location.search + '#comments');
+        login.textContent = 'войдите';
+        const middle = document.createTextNode(' или ');
+        const register = document.createElement('a');
+        register.href = '/account/register?next=' + encodeURIComponent(location.pathname + location.search + '#comments');
+        register.textContent = 'зарегистрируйтесь';
+        hint.append(prefix, login, middle, register, '.');
+        section.appendChild(hint);
+        return section;
+      }
+      const form = document.createElement('form');
+      form.className = 'solution-comment-form';
+      const label = document.createElement('label');
+      const inputId = 'modal-comment-' + taskId;
+      label.htmlFor = inputId;
+      label.textContent = 'Ваш комментарий';
+      const field = document.createElement('textarea');
+      field.id = inputId;
+      field.name = 'body';
+      field.maxLength = 2000;
+      field.required = true;
+      field.placeholder = 'Напишите вопрос или дополнение к решению';
+      const button = document.createElement('button');
+      button.type = 'submit';
+      button.textContent = 'Отправить комментарий';
+      const error = document.createElement('p');
+      error.className = 'comment-error';
+      error.hidden = true;
+      form.append(label, field, button, error);
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        error.hidden = true;
+        button.disabled = true;
+        try {
+          const response = await fetch('/tasks/' + encodeURIComponent(taskId) + '/comments', {
+            method: 'POST',
+            headers: { Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({ body: field.value }).toString()
+          });
+          const payload = await response.json().catch(() => ({}));
+          if (!response.ok || !payload.comment) throw new Error(payload.error || 'Не удалось отправить комментарий.');
+          solution.comments = comments;
+          solution.comments.push(payload.comment);
+          list.querySelector('.solution-comments-empty')?.remove();
+          list.appendChild(modalCommentElement(payload.comment, taskId));
+          document.dispatchEvent(new Event('comments:changed'));
+          field.value = '';
+        } catch (requestError) {
+          error.textContent = requestError.message || 'Не удалось отправить комментарий.';
+          error.hidden = false;
+        } finally {
+          button.disabled = false;
+        }
+      });
+      section.appendChild(form);
+      return section;
+    }
+
+    function openSolutionModal(solution, taskId, opener) {
+      modalOpener = opener;
+      modalTitle.textContent = 'Решение задания ' + taskId;
+      modalBody.replaceChildren();
+      if (solution.answer) {
+        const answer = document.createElement('p');
+        answer.className = 'solution-answer';
+        if (solution.answerHtml) {
+          answer.innerHTML = '<strong>Ответ:</strong> ' + solution.answerHtml;
+        } else {
+          answer.textContent = 'Ответ: ' + solution.answer;
+        }
+        modalBody.appendChild(answer);
+      }
+      const title = document.createElement('p');
+      title.textContent = 'Решение:';
+      modalBody.appendChild(title);
+      const text = document.createElement('div');
+      text.className = 'solution-text';
+      if (solution.solutionHtml) {
+        text.innerHTML = solution.solutionHtml;
+      } else {
+        text.textContent = solution.solution;
+      }
+      modalBody.appendChild(text);
+      if (solution.diagramSvg) {
+        const figure = document.createElement('figure');
+        figure.className = 'solution-figure';
+        const diagram = document.createElement('img');
+        diagram.className = 'solution-diagram';
+        diagram.alt = 'Схема к решению задания ' + taskId;
+        diagram.src = URL.createObjectURL(new Blob([solution.diagramSvg], { type: 'image/svg+xml' }));
+        figure.appendChild(diagram);
+        if (solution.diagramCaption) {
+          const caption = document.createElement('figcaption');
+          caption.className = 'solution-diagram-caption';
+          if (solution.diagramCaptionHtml) {
+            caption.innerHTML = 'Обозначения: ' + solution.diagramCaptionHtml;
+          } else {
+            caption.textContent = 'Обозначения: ' + solution.diagramCaption;
+          }
+          figure.appendChild(caption);
+        }
+        modalBody.appendChild(figure);
+      }
+      const nextIndex = catalogue ? catalogue.ids.indexOf(taskId) + 1 : -1;
+      const nextTaskId = catalogue ? catalogue.ids[nextIndex] || '' : "";
+      if (nextTaskId) {
+        const navigation = document.createElement('nav');
+        navigation.className = 'task-sequence-pager';
+        navigation.setAttribute('aria-label', 'Навигация после решения');
+        const nextLink = document.createElement('a');
+        nextLink.href = catalogue ? catalogueTaskUrl(nextIndex) : '/tasks/' + nextTaskId;
+        if (catalogue) {
+          nextLink.className = 'catalogue-next-task';
+          nextLink.addEventListener('click', function (event) {
+            if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+              window.egeAnalytics?.goal('next_task', {placement: 'catalogue_dialog', task_id: nextTaskId});
+              return;
+            }
+            event.preventDefault();
+            closeSolutionModal();
+            showCatalogueTask(nextIndex, {scroll: true, track: true, placement: 'catalogue_dialog', historyMode: 'push'});
+          });
+        } else nextLink.dataset.analyticsNextTask = nextTaskId;
+        nextLink.textContent = 'Следующее задание →';
+        navigation.appendChild(nextLink);
+        modalBody.appendChild(navigation);
+      }
+      if (catalogue && !nextTaskId) {
+        const done = document.createElement('p');
+        done.className = 'catalogue-complete';
+        done.textContent = 'Это последнее задание подборки. ';
+        const returnLink = document.createElement('a');
+        returnLink.href = catalogue.hubPath;
+        returnLink.textContent = 'Выбрать другую тему';
+        done.appendChild(returnLink);
+        modalBody.appendChild(done);
+      }
+      modalBody.appendChild(appendSolutionComments(solution, taskId));
+      modalBody.scrollTop = 0;
+      solutionModal.scrollTop = 0;
+      solutionModal.hidden = false;
+      modalClose.focus({ preventScroll: true });
+      window.egeAnalytics?.goal('solution_open', {placement: 'dialog', task_id: taskId});
+    }
+
+    modalClose.addEventListener('click', closeSolutionModal);
+    solutionModal.addEventListener('click', event => {
+      if (event.target === solutionModal) closeSolutionModal();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !solutionModal.hidden) closeSolutionModal();
+    });
+
+    function addSolutionControls() {
+      tasks.forEach(task => {
+        const sourceTaskId = task.content?.id?.replace(/^q/, '') || '';
+        const taskId = sourceTaskId.toUpperCase();
+        if (!/^[A-Z0-9]{4,32}$/i.test(sourceTaskId) || task.content.querySelector('.solution-controls')) return;
+
+        const controls = document.createElement('section');
+        controls.className = 'solution-controls';
+        const hasPublishedSolution = publishedSolutionIds.has(taskId);
+        if (hasPublishedSolution) controls.classList.add('has-published-solution');
+        const button = document.createElement('button');
+        button.className = 'solution-button';
+        button.type = 'button';
+        button.textContent = hasPublishedSolution ? 'Открыть решение' : 'Решение';
+        button.setAttribute('aria-haspopup', 'dialog');
+        const result = document.createElement('div');
+        result.className = 'solution-result';
+        result.hidden = true;
+        const discussionLink = document.createElement('a');
+        discussionLink.className = 'solution-discussion-link';
+        discussionLink.href = '/tasks/' + encodeURIComponent(taskId) + '#comments';
+        discussionLink.textContent = 'Комментарии к решению';
+        const feedbackLink = document.createElement('button');
+        feedbackLink.className = 'solution-feedback-link';
+        feedbackLink.type = 'button';
+        feedbackLink.dataset.feedbackModalOpen = '';
+        feedbackLink.dataset.taskId = taskId;
+        feedbackLink.textContent = 'Ошибка или пожелание';
+        if (hasPublishedSolution) {
+          const badge = document.createElement('span');
+          badge.className = 'solution-published-badge';
+          badge.textContent = '✓ Решение опубликовано';
+          controls.append(badge);
+        }
+        controls.append(button);
+        if (catalogue) {
+          const taskLink = document.createElement('a');
+          taskLink.className = 'solution-discussion-link solution-task-link';
+          taskLink.href = '/tasks/' + encodeURIComponent(taskId);
+          taskLink.textContent = 'Задание ' + taskId + ' на отдельной странице';
+          controls.append(taskLink);
+        }
+        controls.append(discussionLink, feedbackLink, result);
+        task.content.appendChild(controls);
+
+        button.addEventListener('click', async function () {
+          if (controls.dataset.loaded === 'true') {
+            openSolutionModal(controls.solutionData, taskId, button);
+            return;
+          }
+
+          button.disabled = true;
+          button.textContent = 'Загрузка…';
+          result.hidden = false;
+          result.replaceChildren();
+          const loading = document.createElement('p');
+          loading.textContent = 'Загружаем решение…';
+          result.appendChild(loading);
+
+          try {
+            const response = await fetch('/api/solutions/' + encodeURIComponent(taskId), { headers: { Accept: 'application/json' } });
+            if (response.status === 404) {
+              result.replaceChildren();
+              const message = document.createElement('p');
+              message.textContent = 'Решение ещё не опубликовано.';
+              result.appendChild(message);
+              return;
+            }
+            if (!response.ok) throw new Error('Не удалось загрузить решение.');
+            const solution = await response.json();
+            result.replaceChildren();
+            result.hidden = true;
+            controls.solutionData = solution;
+            openSolutionModal(solution, taskId, button);
+            controls.dataset.loaded = 'true';
+            button.textContent = 'Открыть решение';
+          } catch {
+            result.replaceChildren();
+            const message = document.createElement('p');
+            message.textContent = 'Не удалось загрузить решение. Попробуйте ещё раз.';
+            result.appendChild(message);
+          } finally {
+            button.disabled = false;
+            if (controls.dataset.loaded !== 'true') button.textContent = hasPublishedSolution ? 'Открыть решение' : 'Решение';
+          }
+        });
+      });
+    }
+
+    addSolutionControls();
+    document.documentElement.classList.remove('added-loading');
+    if (false) {
+      document.documentElement.classList.remove('page-loading');
+      return;
+    }
+    const top = document.getElementById('local-pager-top') || document.createElement('nav');
+    top.hidden = isSingleTaskPage;
+    top.id = 'local-pager-top';
+    top.className = 'local-pager local-pager--top';
+    top.setAttribute('aria-label', 'Навигация по страницам заданий');
+    const catalogueStart = document.getElementById('tasks');
+    if (catalogueStart) catalogueStart.appendChild(top);
+    else document.querySelector('.local-header').insertAdjacentElement('afterend', top);
+    const bottom = document.getElementById('local-pager-bottom') || document.createElement('nav');
+    bottom.hidden = isSingleTaskPage;
+    bottom.id = 'local-pager-bottom';
+    bottom.className = 'local-pager';
+    bottom.setAttribute('aria-label', 'Навигация по страницам заданий');
+    const footer = document.querySelector('.site-footer');
+    if (footer) footer.before(bottom); else document.body.appendChild(bottom);
+    const pagers = [top, bottom];
+    if (!tasks.length) {
+      pagers.forEach(pager => { pager.textContent = emptyCatalogueMessage; });
+      document.documentElement.classList.remove('page-loading');
+      return;
+    }
+
+    function catalogueTaskUrl(index) {
+      const url = new URL(catalogue.basePath, location.origin);
+      if (catalogue.query) url.searchParams.set('q', catalogue.query);
+      const serverPage = Math.floor(index / catalogue.pageSize) + 1;
+      if (serverPage > 1) url.searchParams.set('page', serverPage);
+      url.hash = 'task-' + catalogue.ids[index];
+      return url.pathname + url.search + url.hash;
+    }
+
+    function catalogueInitialIndex() {
+      const id = location.hash.match(/^#(?:task-|q)([a-z0-9]+)$/i)?.[1]?.toUpperCase();
+      const byId = id ? catalogue.ids.indexOf(id) : -1;
+      if (byId >= 0) return byId;
+      // Old catalogue links used viewport-dependent #page=N. Preserve their
+      // mobile meaning (one task per page) and redirect into the right chunk.
+      const oldPage = Number(location.hash.match(/^#page=(\d+)$/)?.[1]);
+      return oldPage > 0 ? Math.min(oldPage - 1, catalogue.total - 1) : catalogue.offset;
+    }
+
+    function drawCataloguePager(container) {
+      container.replaceChildren();
+      container.setAttribute('aria-label', 'Навигация по заданиям подборки');
+      const add = (label, index, disabled = false, active = false) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = label;
+        button.disabled = disabled;
+        if (active) {button.className = 'active';button.setAttribute('aria-current', 'true');}
+        button.addEventListener('click', () => showCatalogueTask(index, {scroll: true, track: true, historyMode: 'push'}));
+        container.appendChild(button);
+      };
+      add('← Назад', catalogueIndex - 1, catalogueIndex === 0);
+      const numbers = [...new Set([0, catalogueIndex - 1, catalogueIndex, catalogueIndex + 1, catalogue.total - 1])]
+        .filter(index => index >= 0 && index < catalogue.total).sort((a, b) => a - b);
+      numbers.forEach((index, position) => {
+        if (position && index - numbers[position - 1] > 1) {
+          const gap = document.createElement('span');gap.textContent = '…';gap.setAttribute('aria-hidden', 'true');container.appendChild(gap);
+        }
+        add(String(index + 1), index, false, index === catalogueIndex);
+      });
+      add('Вперёд →', catalogueIndex + 1, catalogueIndex === catalogue.total - 1);
+      const label = document.createElement('span');label.className = 'local-page-label';
+      label.textContent = 'Задание ' + (catalogueIndex + 1) + ' из ' + catalogue.total;
+      container.appendChild(label);
+    }
+
+    function showCatalogueTask(index, {scroll = false, track = false, placement = 'catalogue', historyMode = 'replace'} = {}) {
+      index = Math.max(0, Math.min(catalogue.total - 1, index));
+      const previous = catalogueIndex;
+      const id = catalogue.ids[index];
+      const task = tasks.find(item => item.id.toUpperCase() === id);
+      const targetUrl = catalogueTaskUrl(index);
+      const countForward = callback => {
+        if (track && index > previous) window.egeAnalytics?.goal('next_task', {placement, page: index + 1, task_id: id}, callback);
+        else callback?.();
+      };
+      if (!task) {
+        if (catalogueNavigating) return;
+        catalogueNavigating = true;
+        let navigated = false;
+        const navigate = () => {if (navigated) return;navigated = true;historyMode === 'push' ? location.assign(targetUrl) : location.replace(targetUrl);};
+        setTimeout(navigate, 250);
+        countForward(navigate);
+        return;
+      }
+      catalogueIndex = index;
+      tasks.forEach(item => {
+        const hidden = item !== task;
+        item.header.classList.toggle('local-task-hidden', hidden);
+        item.content.classList.toggle('local-task-hidden', hidden);
+      });
+      pagers.forEach(drawCataloguePager);
+      if (historyMode !== 'none') {
+        // Preserve #tasks on entry so the existing start CTA remains stable.
+        const url = !scroll && location.hash === '#tasks' ? location.pathname + location.search + '#tasks' : targetUrl;
+        if (location.pathname + location.search + location.hash !== url) history[historyMode === 'push' ? 'pushState' : 'replaceState'](null, '', url);
+      }
+      if (scroll) {
+        const header = document.querySelector('.local-header');
+        catalogueStart.style.scrollMarginTop = (getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().height + 12 : 12) + 'px';
+        catalogueStart.scrollIntoView({block: 'start'});
+        task.content.tabIndex = -1;
+        task.content.focus({preventScroll: true});
+      }
+      countForward();
+    }
+
+    if (catalogue) {
+      const initialHash = location.hash;
+      showCatalogueTask(catalogueInitialIndex(), {historyMode: 'none'});
+      document.documentElement.classList.remove('page-loading');
+      const reveal = () => {
+        if (initialHash && !catalogueNavigating) showCatalogueTask(catalogueInitialIndex(), {scroll: true, historyMode: 'none'});
+      };
+      requestAnimationFrame(() => requestAnimationFrame(reveal));
+      window.addEventListener('load', reveal, {once: true});
+      window.addEventListener('popstate', () => {
+        if (!solutionModal.hidden) closeSolutionModal();
+        showCatalogueTask(catalogueInitialIndex(), {scroll: true, historyMode: 'none'});
+      });
+      window.addEventListener('pageshow', () => {catalogueNavigating = false;});
+      return;
+    }
+
+    function drawPager(container, current) {
+      const pageCount = pages.length;
+      container.replaceChildren();
+      const add = (label, page, disabled, active) => {
+        const button = document.createElement('button');
+        button.textContent = label;
+        button.disabled = disabled;
+        if (active) button.className = 'active';
+        button.addEventListener('click', () => showPage(page, true));
+        container.appendChild(button);
+      };
+      add('← Назад', current - 1, current === 1, false);
+      const pageLinks = [];
+      const addPage = (page) => {
+        if (!pageLinks.includes(page) && page >= 1 && page <= pageCount) pageLinks.push(page);
+      };
+      addPage(1);
+      addPage(current - 1);
+      addPage(current);
+      addPage(current + 1);
+      addPage(pageCount);
+      pageLinks.sort((a, b) => a - b).forEach((page, index, pagesToShow) => {
+        if (index && page - pagesToShow[index - 1] > 1) {
+          const gap = document.createElement('span');
+          gap.textContent = '…';
+          gap.setAttribute('aria-hidden', 'true');
+          container.appendChild(gap);
+        }
+        add(String(page), page, false, page === current);
+      });
+      add('Вперёд →', current + 1, current === pageCount, false);
+      const label = document.createElement('span');
+      label.className = 'local-page-label';
+      label.textContent = 'Страница ' + current + ' из ' + pageCount + ' · заданий: ' + tasks.length;
+      container.appendChild(label);
+    }
+
+    function showPage(page, scroll) {
+      const pageCount = pages.length;
+      page = Math.max(1, Math.min(pageCount, page));
+      const previousPage = currentPage;
+      currentPage = page;
+      const visible = new Set(pages[page - 1]);
+      tasks.forEach((task, index) => {
+        const hidden = !visible.has(index);
+        task.header.classList.toggle('local-task-hidden', hidden);
+        if (task.content) task.content.classList.toggle('local-task-hidden', hidden);
+      });
+      pagers.forEach(pager => drawPager(pager, page));
+      if (!isSingleTaskPage) history.replaceState(null, '', '#page=' + page);
+      if (scroll && page > previousPage) {
+        window.egeAnalytics?.goal('next_task', {placement: 'catalogue', page: page,
+          task_id: tasks[pages[page - 1]?.[0]]?.content?.id.slice(1)});
+      }
+      // Переключение страницы не должно менять вертикальную позицию пользователя.
+    }
+
+    function measureAndBuildPages(anchorTask) {
+      if (catalogueStart) {
+        const header = document.querySelector('.local-header');
+        catalogueStart.style.scrollMarginTop = (getComputedStyle(header).position === 'sticky'
+          ? header.getBoundingClientRect().height + 12 : 12) + 'px';
+      }
+      // Сначала показываем все блоки, чтобы измерить их фактическую высоту
+      // при текущей ширине окна и масштабе браузера.
+      tasks.forEach(task => {
+        task.header.classList.remove('local-task-hidden');
+        if (task.content) task.content.classList.remove('local-task-hidden');
+      });
+
+      const chromeHeight = document.querySelector('.local-header').getBoundingClientRect().height
+        + top.getBoundingClientRect().height + bottom.getBoundingClientRect().height + 120;
+      const available = Math.max(320, window.innerHeight - chromeHeight);
+      const heights = tasks.map(task => {
+        const headerRect = task.header.getBoundingClientRect();
+        const contentRect = task.content ? task.content.getBoundingClientRect() : headerRect;
+        return Math.max(headerRect.height + contentRect.height, contentRect.bottom - headerRect.top) + 28;
+      });
+
+      pages = [];
+      let page = [];
+      let used = 0;
+      heights.forEach((height, index) => {
+        if (page.length && used + height > available) {
+          pages.push(page);
+          page = [];
+          used = 0;
+        }
+        page.push(index);
+        used += height;
+      });
+      if (page.length) pages.push(page);
+
+      // Нулевые размеры во время восстановления страницы из кэша браузера
+      // раньше объединяли весь каталог в «Страницу 1 из 1». В таком случае
+      // сохраняем рабочую постраничную навигацию: по одному заданию на страницу.
+      if (pages.length === 1 && tasks.length > 1) {
+        pages = tasks.map((_, index) => [index]);
+      }
+
+      const nextPage = Math.max(0, pages.findIndex(group => group.includes(anchorTask))) + 1;
+      showPage(nextPage, false);
+    }
+
+    function adaptToViewport() {
+      const anchorTask = pages[currentPage - 1]?.[0] || 0;
+      measureAndBuildPages(anchorTask);
+    }
+
+    const jumpToTasks = location.hash === '#tasks';
+    const initial = Number((location.hash.match(/page=(\d+)/) || [])[1]) || 1;
+    measureAndBuildPages(0);
+    showPage(initial, false);
+    // Показываем интерфейс сразу, не ожидая загрузки всех ресурсов скрытых страниц.
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        document.documentElement.classList.remove('page-loading');
+        if (jumpToTasks && catalogueStart) catalogueStart.scrollIntoView({ block: 'start' });
+      });
+    });
+    // После загрузки видимых картинок незаметно уточняем разбиение.
+    window.addEventListener('load', function () {
+      adaptToViewport();
+    }, { once: true });
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(adaptToViewport, 160);
+    });
+    window.addEventListener('pageshow', function () {
+      // Восстановление страницы из истории браузера может вернуть устаревшее DOM-состояние.
+      requestAnimationFrame(function () {
+        if (pages.length) adaptToViewport();
+        document.documentElement.classList.remove('page-loading', 'added-loading');
+      });
+    });
+  });
+  </script></body></html>

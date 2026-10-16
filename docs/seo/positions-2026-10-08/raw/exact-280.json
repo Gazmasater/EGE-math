@@ -1,0 +1,28 @@
+{
+  "retrieved_at": "2026-10-08T21:44:26.357068+00:00",
+  "path": "/v4/user/227850612/hosts/https%3Aege-fipi.ru%3A443/query-analytics/list",
+  "params": null,
+  "body": {
+    "limit": 500,
+    "offset": 0,
+    "text_indicator": "QUERY",
+    "region_ids": [
+      225
+    ],
+    "device_type_indicator": "ALL",
+    "search_location": "WEB_LOCATION",
+    "filters": {
+      "text_filters": [
+        {
+          "text_indicator": "QUERY",
+          "operation": "TEXT_MATCH",
+          "value": "решение задач егэ профильная математика"
+        }
+      ]
+    }
+  },
+  "response": {
+    "count": 0,
+    "text_indicator_to_statistics": []
+  }
+}

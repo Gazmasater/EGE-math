@@ -71,6 +71,8 @@ async function run() {
   const goals = () => evaluate("JSON.parse(sessionStorage.getItem('test_goals') || '[]')");
   const reset = () => evaluate("sessionStorage.setItem('test_goals', '[]')");
   const count = async (name, placement) => (await goals()).filter(g => g.name === name && (!placement || g.params.placement === placement)).length;
+  // Old-page observers can fire between reset and navigation; assess once per document.
+  const staticGoalsOnCurrentPage = () => evaluate("JSON.parse(sessionStorage.getItem('test_goals') || '[]').filter(g => g.name === 'solution_open' && g.params.placement === 'task_page' && g.documentId === window.__testDocumentId).length");
   const click = selector => evaluate(`document.querySelector(${JSON.stringify(selector)}).click()`);
   const capture = async name => {
     const shot = await call('Page.captureScreenshot', {format: 'png'});
@@ -121,7 +123,7 @@ async function run() {
         await navigate(route);
         await evaluate("document.querySelector('.seo-task-solution h2').scrollIntoView({block:'center'})");
         await delay(1300);
-        assert.equal(await count('solution_open', 'task_page'), 1);
+        assert.equal(await staticGoalsOnCurrentPage(), 1);
         await capture('390-static-solution-' + route.split('/').pop());
         if (route === '/tasks/36135B') {
           await evaluate("document.querySelector('.seo-task-solution figure').scrollIntoView({block:'center'})");
@@ -130,7 +132,7 @@ async function run() {
         await evaluate('window.scrollTo(0,0)'); await delay(100);
         await evaluate("document.querySelector('.seo-task-solution h2').scrollIntoView({block:'center'})");
         await delay(1200);
-        assert.equal(await count('solution_open', 'task_page'), 1, 'static solution only once per page');
+        assert.equal(await staticGoalsOnCurrentPage(), 1, 'static solution only once per page');
       }
     }
   }

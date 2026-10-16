@@ -52,6 +52,40 @@
           "url": "registration_success"
         }
       ]
+    },
+    {
+      "id": 671438825,
+      "name": "Обращение через форму принято",
+      "type": "action",
+      "default_price": 0.0,
+      "is_retargeting": 0,
+      "goal_source": "user",
+      "is_favorite": 0,
+      "status": "Active",
+      "labels": [],
+      "conditions": [
+        {
+          "type": "exact",
+          "url": "study_lead_accepted"
+        }
+      ]
+    },
+    {
+      "id": 672311557,
+      "name": "Переход вперёд по страницам каталога ОГЭ",
+      "type": "action",
+      "default_price": 0.0,
+      "is_retargeting": 0,
+      "goal_source": "user",
+      "is_favorite": 0,
+      "status": "Active",
+      "labels": [],
+      "conditions": [
+        {
+          "type": "exact",
+          "url": "catalogue_page_next"
+        }
+      ]
     }
   ],
   "segments": [
@@ -103,5 +137,14 @@
       },
       "retargeting": false
     }
-  ]
+  ],
+  "updated_at": "2026-10-16",
+  "oge_navigation": {
+    "event": "catalogue_page_next",
+    "goal_id": 672311557,
+    "first_full_day": "2026-10-17",
+    "next_task_placement": "oge_catalogue_dialog",
+    "page_placement": "oge_catalogue_page",
+    "note": "Страница содержит до 12 заданий; отдельная цель, не складывать с next_task."
+  }
 }

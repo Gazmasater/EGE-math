@@ -19,7 +19,7 @@ function browser({cookie = '', storageBlocked = false, url = 'https://ege-fipi.r
   context.window = context;
   vm.createContext(context);
   vm.runInContext(ANALYTICS_SCRIPT, context);
-  return {context, calls, ready: () => listeners.DOMContentLoaded(), reload: () => {
+  return {context, calls, click: event => listeners.click(event), ready: () => listeners.DOMContentLoaded(), reload: () => {
     delete context.egeAnalytics; vm.runInContext(ANALYTICS_SCRIPT, context); listeners.DOMContentLoaded();
   }};
 }
@@ -56,4 +56,38 @@ test('Repeated bootstrap does not replace helper or attach duplicate handlers', 
   const b = browser(); const original = b.context.egeAnalytics;
   vm.runInContext(ANALYTICS_SCRIPT, b.context);
   assert.equal(b.context.egeAnalytics, original);
+});
+
+test('Server-page navigation uses a distinct goal and navigates once with a missing or repeated callback', () => {
+  for (const dataset of [
+    {analyticsCataloguePageNext: '2', analyticsSection: 'oge'},
+    {analyticsNextTask: 'OGEPHYS123456', analyticsPlacement: 'oge_catalogue_dialog', analyticsSection: 'oge-physics'}
+  ]) {
+    const b = browser(), timers = [], navigated = [];
+    b.context.setTimeout = fn => timers.push(fn);
+    b.context.location.assign = url => navigated.push(url);
+    b.ready();
+    const link = {dataset: {...dataset}, href: '/oge?topic=all&page=2', target: ''};
+    const event = () => ({target: {closest: () => link}, button: 0, preventDefault() {this.defaultPrevented = true;}});
+    b.click(event()); b.click(event());
+    assert.equal(b.calls.length, 1, 'double click must not double count');
+    assert.equal(b.calls[0][2], dataset.analyticsCataloguePageNext ? 'catalogue_page_next' : 'next_task');
+    assert.equal(b.calls[0][3].placement, dataset.analyticsCataloguePageNext ? 'oge_catalogue_page' : 'oge_catalogue_dialog');
+    assert.equal(b.calls[0][3].section, dataset.analyticsSection);
+    if (dataset.analyticsCataloguePageNext) assert.equal(b.calls[0][3].page, 2);
+    timers[0](); b.calls[0][4](); b.calls[0][4]();
+    assert.deepEqual(navigated, [link.href]);
+  }
+});
+
+test('Modified links retain native navigation; back links and handled in-page transitions do not count again', () => {
+  const b = browser(); b.ready();
+  const link = {dataset: {analyticsCataloguePageNext: '3', analyticsSection: 'oge-physics'}, target: ''};
+  const modified = {target: {closest: () => link}, button: 0, ctrlKey: true, preventDefault() {throw Error('native click intercepted');}};
+  b.click(modified);
+  assert.equal(b.calls.length, 1);
+  assert.equal(b.calls[0][2], 'catalogue_page_next');
+  b.click({...modified, ctrlKey: false, defaultPrevented: true});
+  b.click({...modified, target: {closest: () => null}});
+  assert.equal(b.calls.length, 1);
 });

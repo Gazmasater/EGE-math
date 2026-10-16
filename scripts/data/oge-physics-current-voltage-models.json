@@ -1,0 +1,268 @@
+{
+  "OGEPHYSE38F4C": {
+    "kind": "voltage-work",
+    "work": 4.8e-15
+  },
+  "OGEPHYS3DC1BC": {
+    "kind": "voltage-work",
+    "work": 2.4e-15
+  },
+  "OGEPHYS1D15CF": {
+    "kind": "voltage-work",
+    "work": 3.6e-15
+  },
+  "OGEPHYS0C2587": {
+    "kind": "voltage-work",
+    "work": 1.2e-15
+  },
+  "OGEPHYS311627": {
+    "kind": "time",
+    "q": 25,
+    "I": 0.5
+  },
+  "OGEPHYSE8656E": {
+    "kind": "time",
+    "q": 2.5,
+    "I": 0.5
+  },
+  "OGEPHYS7D74A4": {
+    "kind": "charge",
+    "I": 0.3,
+    "t": 60
+  },
+  "OGEPHYS1FAA02": {
+    "kind": "qt",
+    "q": 4,
+    "t": 4
+  },
+  "OGEPHYS2F4F56": {
+    "kind": "qt",
+    "q": 2,
+    "t": 8
+  },
+  "OGEPHYS2E719F": {
+    "kind": "qt",
+    "q": 3,
+    "t": 4
+  },
+  "OGEPHYS78B1E0": {
+    "kind": "qt",
+    "q": 6,
+    "t": 4
+  },
+  "OGEPHYS30B8AD": {
+    "kind": "it",
+    "points": [
+      [
+        0,
+        3
+      ],
+      [
+        40,
+        3
+      ],
+      [
+        80,
+        2
+      ],
+      [
+        100,
+        2
+      ],
+      [
+        120,
+        0
+      ]
+    ],
+    "start": 0,
+    "end": 40
+  },
+  "OGEPHYS786286": {
+    "kind": "it",
+    "points": [
+      [
+        0,
+        3
+      ],
+      [
+        40,
+        3
+      ],
+      [
+        80,
+        2
+      ],
+      [
+        100,
+        2
+      ],
+      [
+        120,
+        0
+      ]
+    ],
+    "start": 80,
+    "end": 100
+  },
+  "OGEPHYS2AF762": {
+    "kind": "it",
+    "points": [
+      [
+        0,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        8,
+        0
+      ]
+    ],
+    "start": 0,
+    "end": 8
+  },
+  "OGEPHYS710910": {
+    "kind": "scale",
+    "unit": "А",
+    "maximum": 10,
+    "interval": 2,
+    "divisions": 10
+  },
+  "OGEPHYS613655": {
+    "kind": "scale",
+    "unit": "мА",
+    "maximum": 50,
+    "interval": 10,
+    "divisions": 5
+  },
+  "OGEPHYSD128AF": {
+    "kind": "scale",
+    "unit": "мА",
+    "maximum": 25,
+    "interval": 5,
+    "divisions": 5
+  },
+  "OGEPHYSB5203C": {
+    "kind": "scale",
+    "unit": "В",
+    "maximum": 150,
+    "interval": 50,
+    "divisions": 10
+  },
+  "OGEPHYSC7C549": {
+    "kind": "measurement",
+    "unit": "В",
+    "value": 14,
+    "low": 5,
+    "high": 10,
+    "divisions": 10
+  },
+  "OGEPHYS1F3FA9": {
+    "kind": "measurement",
+    "unit": "А",
+    "value": 7,
+    "low": 0,
+    "high": 2,
+    "divisions": 4
+  },
+  "OGEPHYS002B61": {
+    "kind": "measurement",
+    "unit": "А",
+    "value": 1.5,
+    "low": 0,
+    "high": 2,
+    "divisions": 4
+  },
+  "OGEPHYSC39468": {
+    "kind": "measurement",
+    "unit": "В",
+    "value": 3,
+    "low": 5,
+    "high": 10,
+    "divisions": 10
+  },
+  "OGEPHYS5A0EF8": {
+    "kind": "circuit",
+    "layout": "series",
+    "voltageSpan": "R2"
+  },
+  "OGEPHYSC22EFE": {
+    "kind": "circuit",
+    "layout": "voltage",
+    "voltageSpan": "R2"
+  },
+  "OGEPHYSEFC9DF": {
+    "kind": "circuit",
+    "layout": "series",
+    "voltageSpan": "R1+R2"
+  },
+  "OGEPHYS07935B": {
+    "kind": "circuit",
+    "layout": "voltage",
+    "voltageSpan": "R1+R2"
+  },
+  "OGEPHYS0303EB": {
+    "kind": "circuit",
+    "layout": "series",
+    "voltageSpan": "R1"
+  },
+  "OGEPHYS59526D": {
+    "kind": "circuit",
+    "layout": "r2-current",
+    "voltageSpan": "R1"
+  },
+  "OGEPHYSE42056": {
+    "kind": "circuit",
+    "layout": "reversed",
+    "voltageSpan": null
+  },
+  "OGEPHYS57D1AB": {
+    "kind": "circuit",
+    "layout": "reversed",
+    "voltageSpan": null
+  },
+  "OGEPHYSE2CBCA": {
+    "kind": "circuit",
+    "layout": "branch-r1",
+    "voltageSpan": null
+  },
+  "OGEPHYSEE9631": {
+    "kind": "circuit",
+    "layout": "total-current",
+    "voltageSpan": null
+  },
+  "OGEPHYS53C316": {
+    "kind": "lamp-circuit",
+    "layout": "voltmeter-wide"
+  },
+  "OGEPHYSB98ED1": {
+    "kind": "lamp-circuit",
+    "layout": "both-correct"
+  },
+  "OGEPHYSB0995E": {
+    "kind": "lamp-circuit",
+    "layout": "swapped"
+  },
+  "OGEPHYS5193E6": {
+    "kind": "lamp-circuit",
+    "layout": "voltmeter-wide"
+  },
+  "OGEPHYS715B48": {
+    "kind": "lightning",
+    "ground": true
+  },
+  "OGEPHYS65E106": {
+    "kind": "lightning",
+    "ground": false
+  },
+  "OGEPHYSF6571B": {
+    "kind": "thermo",
+    "mode": "reverse"
+  },
+  "OGEPHYSC334D1": {
+    "kind": "thermo",
+    "mode": "zero"
+  }
+}

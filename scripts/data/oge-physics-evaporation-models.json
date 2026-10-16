@@ -1,0 +1,176 @@
+{
+  "C7C6F7": {
+    "kind": "latent",
+    "L": 900000,
+    "m": 0.1,
+    "Q": 90000,
+    "find": "mass"
+  },
+  "25E5A7": {
+    "kind": "latent",
+    "L": 900000,
+    "m": 0.1,
+    "Q": 90000,
+    "find": "heat"
+  },
+  "AFFC36": {
+    "kind": "latent",
+    "L": 2300000,
+    "m": 0.2,
+    "Q": 460000,
+    "find": "heat"
+  },
+  "CF28F9": {
+    "kind": "ratio",
+    "q1": 3,
+    "q2": 6
+  },
+  "2C1CC0": {
+    "kind": "ratio",
+    "q1": 3,
+    "q2": 9
+  },
+  "2A0E2A": {
+    "kind": "phase-change",
+    "boiling": false,
+    "kinetic": true
+  },
+  "DC1656": {
+    "kind": "phase-change",
+    "boiling": false,
+    "kinetic": false
+  },
+  "B006C6": {
+    "kind": "phase-change",
+    "boiling": true,
+    "kinetic": true
+  },
+  "3BF46A": {
+    "kind": "phase-change",
+    "boiling": true,
+    "kinetic": false
+  },
+  "9EDA06": {
+    "kind": "choice",
+    "correct": [
+      3
+    ],
+    "phenomenon": "condensation"
+  },
+  "AD2455": {
+    "kind": "choice",
+    "correct": [
+      3
+    ],
+    "phenomenon": "evaporation"
+  },
+  "2AB4C2": {
+    "kind": "choice",
+    "correct": [
+      1
+    ],
+    "phenomenon": "evaporation"
+  },
+  "A07867": {
+    "kind": "choice",
+    "correct": [
+      3
+    ],
+    "phenomenon": "condensation"
+  },
+  "BD443F": {
+    "kind": "choice",
+    "correct": [
+      1
+    ],
+    "phenomenon": "condensation"
+  },
+  "BE1836": {
+    "kind": "choice",
+    "correct": [
+      1
+    ],
+    "phenomenon": "evaporation"
+  },
+  "03EFB0": {
+    "kind": "experiment",
+    "area": false
+  },
+  "F21B1E": {
+    "kind": "experiment",
+    "area": true
+  },
+  "C1FCD8": {
+    "kind": "boiling-table",
+    "second": false,
+    "pressures": [
+      100,
+      150,
+      200,
+      400,
+      760,
+      1100,
+      1450
+    ],
+    "temperatures": [
+      34.2,
+      42,
+      47.8,
+      62.8,
+      78.2,
+      87.8,
+      95.3
+    ]
+  },
+  "CE93A9": {
+    "kind": "boiling-table",
+    "second": true,
+    "pressures": [
+      100,
+      150,
+      200,
+      400,
+      760,
+      1100,
+      1450
+    ],
+    "temperatures": [
+      34.2,
+      42,
+      47.8,
+      62.8,
+      78.15,
+      87.8,
+      95.3
+    ]
+  },
+  "D94E4A": {
+    "kind": "balance",
+    "initialEqual": true,
+    "massEscapes": true
+  },
+  "C125EE": {
+    "kind": "humidity",
+    "dryEvaporationGreater": true
+  },
+  "9CF6E0": {
+    "kind": "wet-cloth",
+    "secondCooled": true
+  },
+  "FBD64D": {
+    "kind": "phase-diagram",
+    "start": "A",
+    "direction": "down",
+    "boundary": "в"
+  },
+  "723937": {
+    "kind": "phase-diagram",
+    "start": "Б",
+    "direction": "up",
+    "boundary": "б"
+  },
+  "EA1744": {
+    "kind": "nucleation",
+    "firstMoreSites": true
+  }
+}

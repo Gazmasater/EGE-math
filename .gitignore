@@ -5,3 +5,6 @@ added-history.json
 Thumbs.db
 storage/
 __pycache__/
+
+# Content-addressed assets are generated at server startup. Retain old versions.
+public/cache/

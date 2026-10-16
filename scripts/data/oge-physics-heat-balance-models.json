@@ -1,0 +1,417 @@
+{
+  "F20DFC": {
+    "kind": "ice-ratio",
+    "c": 4200,
+    "latent": 330000,
+    "delta": 33,
+    "ratio": 2.380952380952381
+  },
+  "E6B2F1": {
+    "kind": "mix-loss",
+    "coldMass": 0.2,
+    "hotMass": 0.8,
+    "coldT": 40,
+    "hotT": 80,
+    "finalT": 60,
+    "Qloss": 50400
+  },
+  "FB02BF": {
+    "kind": "fuel",
+    "waterMass": 4.6,
+    "fuelMass": 0.0336,
+    "delta": 80,
+    "q": 46000000,
+    "find": "fuel"
+  },
+  "0730EA": {
+    "kind": "fuel",
+    "waterMass": 23,
+    "fuelMass": 0.168,
+    "delta": 80,
+    "q": 46000000,
+    "find": "water"
+  },
+  "7D75BE": {
+    "kind": "spoon",
+    "waterMass": 0.2,
+    "alMass": 0.014,
+    "waterT": 85,
+    "alT": 20,
+    "drop": 0.9816152330925805
+  },
+  "25CBBE": {
+    "kind": "impact",
+    "cCopper": 400,
+    "cLead": 130
+  },
+  "CDC914": {
+    "kind": "body-water",
+    "cBody": 400,
+    "bodyMass": 0.3,
+    "bodyDelta": 7,
+    "waterMass": 0.2,
+    "waterDelta": 1,
+    "find": "water"
+  },
+  "F8FCE2": {
+    "kind": "body-water",
+    "cBody": 420,
+    "bodyMass": 5,
+    "bodyDelta": 4,
+    "waterMass": 2,
+    "waterDelta": 1,
+    "find": "specific"
+  },
+  "23C832": {
+    "kind": "mix",
+    "coldMass": 0.4,
+    "hotMass": 0.1,
+    "coldT": 25,
+    "hotT": 100,
+    "finalT": 40
+  },
+  "DE6435": {
+    "kind": "copper-ice",
+    "cCopper": 400,
+    "delta": 100,
+    "iceMass": 0.012,
+    "latent": 330000,
+    "copperMass": 0.099
+  },
+  "7BE789": {
+    "kind": "mix-mass",
+    "hotMass": 4,
+    "coldMass": 12,
+    "hotT": 70,
+    "coldT": 30,
+    "finalT": 40
+  },
+  "77064A": {
+    "kind": "electric-vessel",
+    "alMass": 0.05,
+    "waterMass": 0.12,
+    "U": 15,
+    "R": 2,
+    "P": 112.5,
+    "eta": 1,
+    "delta": 9,
+    "time": 44,
+    "find": "time"
+  },
+  "18D142": {
+    "kind": "electric-vessel",
+    "alMass": 0.05,
+    "waterMass": 0.12,
+    "U": null,
+    "R": null,
+    "P": 12.5,
+    "eta": 0.8,
+    "delta": 24,
+    "time": 1320,
+    "find": "time"
+  },
+  "778700": {
+    "kind": "electric-vessel",
+    "alMass": 0.05,
+    "waterMass": 0.12,
+    "U": 5,
+    "R": 2,
+    "P": 12.5,
+    "eta": 0.8,
+    "delta": 12,
+    "time": 660,
+    "find": "time"
+  },
+  "3ECF9D": {
+    "kind": "electric-vessel",
+    "alMass": 0.05,
+    "waterMass": 0.12,
+    "U": 15,
+    "R": 2,
+    "P": 112.5,
+    "eta": 1,
+    "delta": 2.25,
+    "time": 11,
+    "find": "delta"
+  },
+  "2A1DE5": {
+    "kind": "electric-vessel",
+    "alMass": 0.05,
+    "waterMass": 0.12,
+    "U": 5,
+    "R": 2,
+    "P": 12.5,
+    "eta": 0.8,
+    "delta": 12,
+    "time": 660,
+    "find": "delta"
+  },
+  "DC607E": {
+    "kind": "electric-vessel",
+    "alMass": 0.5,
+    "waterMass": 1,
+    "U": 200,
+    "R": 10,
+    "P": 4000,
+    "eta": 1,
+    "delta": 80,
+    "time": 93.2,
+    "find": "time"
+  },
+  "497513": {
+    "kind": "electric-vessel",
+    "alMass": 0.5,
+    "waterMass": 1,
+    "U": 200,
+    "R": 10,
+    "P": 4000,
+    "eta": 1,
+    "delta": 80,
+    "time": 93.2,
+    "find": "resistance"
+  },
+  "28F4F4": {
+    "kind": "two-power",
+    "series": true,
+    "p0": 600,
+    "m": 2,
+    "delta": 30,
+    "time": 840,
+    "find": "mass"
+  },
+  "2115FF": {
+    "kind": "two-power",
+    "series": false,
+    "p0": 800,
+    "m": 1,
+    "delta": 80,
+    "time": 210,
+    "find": "time"
+  },
+  "BD7C78": {
+    "kind": "two-power",
+    "series": false,
+    "p0": 600,
+    "m": 2,
+    "delta": 60,
+    "time": 420,
+    "find": "delta"
+  },
+  "DCCAA5": {
+    "kind": "two-power",
+    "series": false,
+    "p0": 600,
+    "m": 8,
+    "delta": 30,
+    "time": 840,
+    "find": "mass"
+  },
+  "AEDEA1": {
+    "kind": "two-power",
+    "series": false,
+    "p0": 400,
+    "m": 1,
+    "delta": 40,
+    "time": 210,
+    "find": "time"
+  },
+  "3A2CAA": {
+    "kind": "two-power",
+    "series": true,
+    "p0": 400,
+    "m": 1,
+    "delta": 40,
+    "time": 840,
+    "find": "time"
+  },
+  "0CAB31": {
+    "kind": "two-power",
+    "series": true,
+    "p0": 600,
+    "m": 2,
+    "delta": 15,
+    "time": 420,
+    "find": "delta"
+  },
+  "73F4F5": {
+    "kind": "electric-ui",
+    "find": "voltage",
+    "m": 2.2,
+    "delta": 90,
+    "eta": 0.45,
+    "I": 7,
+    "U": 220,
+    "time": 1200
+  },
+  "C49FE5": {
+    "kind": "electric-ui",
+    "find": "time",
+    "m": 2.2,
+    "delta": 90,
+    "eta": 0.45,
+    "I": 7,
+    "U": 220,
+    "time": 1200
+  },
+  "A1130D": {
+    "kind": "steel",
+    "find": "time",
+    "m": 1000,
+    "delta": 1500,
+    "c": 500,
+    "latent": 78000,
+    "power": 100000,
+    "time": 8280
+  },
+  "CDE770": {
+    "kind": "steel",
+    "find": "mass",
+    "m": 1000,
+    "delta": 1500,
+    "c": 500,
+    "latent": 78000,
+    "power": 100000,
+    "time": 8280
+  },
+  "5D1CB1": {
+    "kind": "steel",
+    "find": "power",
+    "m": 1000,
+    "delta": 1500,
+    "c": 500,
+    "latent": 78000,
+    "power": 100000,
+    "time": 8280
+  },
+  "974008": {
+    "kind": "low-voltage",
+    "find": "mass",
+    "p0": 2400,
+    "u0": 240,
+    "U": 120,
+    "R": 24,
+    "eta": 0.82,
+    "m": 0.6,
+    "delta": 82,
+    "time": 420
+  },
+  "76CC88": {
+    "kind": "low-voltage",
+    "find": "time",
+    "p0": 2400,
+    "u0": 240,
+    "U": 120,
+    "R": 24,
+    "eta": 0.82,
+    "m": 0.6,
+    "delta": 82,
+    "time": 420
+  },
+  "893172": {
+    "kind": "boil",
+    "find": "mass",
+    "U": 220,
+    "R": 12.1,
+    "m": 0.6009104704097117,
+    "eta": 0.6,
+    "time": 660,
+    "c": 4200,
+    "delta": 80,
+    "latent": 2300000
+  },
+  "4A3918": {
+    "kind": "boil",
+    "find": "resistance",
+    "U": 220,
+    "R": 12.11836115326252,
+    "m": 0.6,
+    "eta": 0.6,
+    "time": 660,
+    "c": 4200,
+    "delta": 80,
+    "latent": 2300000
+  },
+  "E260AB": {
+    "kind": "boil",
+    "find": "efficiency",
+    "U": 220,
+    "R": 12,
+    "m": 0.6,
+    "eta": 0.5941397445529677,
+    "time": 660,
+    "c": 4200,
+    "delta": 80,
+    "latent": 2300000
+  },
+  "A815C7": {
+    "kind": "initial-temperature",
+    "series": true,
+    "R": 10,
+    "U": 220,
+    "time": 148,
+    "mw": 1,
+    "ma": 0.3,
+    "finalT": 100
+  },
+  "D59E3C": {
+    "kind": "initial-temperature",
+    "series": false,
+    "R": 10,
+    "U": 220,
+    "time": 37,
+    "mw": 1,
+    "ma": 0.3,
+    "finalT": 100
+  },
+  "1F7008": {
+    "kind": "series-efficiency",
+    "find": "resistance",
+    "m": 1,
+    "delta": 80,
+    "time": 174,
+    "eta": 0.8,
+    "U": 220,
+    "R": 10
+  },
+  "5FD1E5": {
+    "kind": "series-efficiency",
+    "find": "voltage",
+    "m": 1,
+    "delta": 80,
+    "time": 174,
+    "eta": 0.8,
+    "U": 220,
+    "R": 10
+  },
+  "7127A7": {
+    "kind": "parallel-each",
+    "m": 2,
+    "delta": 80,
+    "time": 420
+  },
+  "58BE52": {
+    "kind": "ambiguous-power",
+    "m": 1,
+    "delta": 80,
+    "time": 840,
+    "actualEach": 200,
+    "aloneEach": 800
+  },
+  "A85FCD": {
+    "kind": "electric-power",
+    "m": 2,
+    "delta": 80,
+    "power": 500,
+    "time": 2100,
+    "eta": 0.64
+  },
+  "CCF482": {
+    "kind": "milk",
+    "c": 3900,
+    "m": 0.44,
+    "delta": 55,
+    "R": 200,
+    "U": 220,
+    "time": 390
+  }
+}

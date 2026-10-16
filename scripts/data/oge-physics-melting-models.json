@@ -1,0 +1,228 @@
+{
+  "OGEPHYS01FB46": {
+    "kind": "plateau",
+    "mass": 5,
+    "start": 300,
+    "end": 1050,
+    "scale": 1,
+    "mode": "lambda"
+  },
+  "OGEPHYSD22349": {
+    "kind": "plateau",
+    "mass": 3,
+    "start": 2,
+    "end": 8,
+    "scale": 100,
+    "mode": "lambda"
+  },
+  "OGEPHYS118304": {
+    "kind": "plateau",
+    "mass": 0.4,
+    "start": 1,
+    "end": 4,
+    "scale": 100,
+    "mode": "lambda"
+  },
+  "OGEPHYS17F616": {
+    "kind": "plateau",
+    "mass": 4,
+    "start": 1,
+    "end": 4,
+    "scale": 100,
+    "mode": "heat"
+  },
+  "OGEPHYS91C45E": {
+    "kind": "plateau",
+    "mass": 2,
+    "start": 50,
+    "end": 300,
+    "scale": 1,
+    "mode": "lambda-cooling"
+  },
+  "OGEPHYS8C34A1": {
+    "kind": "plateau",
+    "mass": 0.1,
+    "start": 0.5,
+    "end": 3,
+    "scale": 1,
+    "mode": "heat-cooling"
+  },
+  "OGEPHYS183EC7": {
+    "kind": "plateau",
+    "mass": 0.5,
+    "start": 1,
+    "end": 4,
+    "scale": 100,
+    "mode": "lambda"
+  },
+  "OGEPHYS1B44C6": {
+    "kind": "plateau",
+    "mass": 3,
+    "start": 2,
+    "end": 8,
+    "scale": 100,
+    "mode": "heat"
+  },
+  "OGEPHYSEFA1B6": {
+    "kind": "plateau",
+    "mass": 5,
+    "start": 300,
+    "end": 1050,
+    "scale": 1,
+    "mode": "unit-energy"
+  },
+  "OGEPHYSA701F9": {
+    "kind": "timed",
+    "start": 1,
+    "end": 3,
+    "rate": 500,
+    "divide": 1
+  },
+  "OGEPHYS31011F": {
+    "kind": "timed",
+    "start": 5,
+    "end": 15,
+    "rate": 50,
+    "divide": 1
+  },
+  "OGEPHYS058ADC": {
+    "kind": "timed",
+    "start": 2,
+    "end": 6,
+    "rate": 1,
+    "divide": 1
+  },
+  "OGEPHYSD96034": {
+    "kind": "timed",
+    "start": 5,
+    "end": 20,
+    "rate": 1,
+    "divide": 1
+  },
+  "OGEPHYSF425A6": {
+    "kind": "timed",
+    "start": 10,
+    "end": 50,
+    "rate": 8400,
+    "divide": 1000
+  },
+  "OGEPHYS1C82FB": {
+    "kind": "ratio",
+    "mass": 0.5,
+    "q1": 3,
+    "q2": 9
+  },
+  "OGEPHYSBCE62F": {
+    "kind": "ratio",
+    "mass": 0.1,
+    "q1": 3,
+    "q2": 6
+  },
+  "OGEPHYS3DFCF9": {
+    "kind": "bar",
+    "index": 2,
+    "mass": 0.1,
+    "heat": 9
+  },
+  "OGEPHYS8853FD": {
+    "kind": "bar",
+    "index": 1,
+    "mass": 0.1,
+    "heat": 6
+  },
+  "OGEPHYSD375BC": {
+    "kind": "table",
+    "mass": 0.1,
+    "heatStart": 4.8,
+    "heatEnd": 12
+  },
+  "OGEPHYS570F1E": {
+    "kind": "direct",
+    "mass": 2,
+    "latent": 59
+  },
+  "OGEPHYSEB072B": {
+    "kind": "direct",
+    "mass": 4,
+    "latent": 25
+  },
+  "OGEPHYS79AF80": {
+    "kind": "mass",
+    "heat": 66000,
+    "latent": 330000
+  },
+  "OGEPHYS2607D1": {
+    "kind": "changes",
+    "phase": "melting",
+    "first": "kinetic"
+  },
+  "OGEPHYSE8E399": {
+    "kind": "changes",
+    "phase": "melting",
+    "first": "temperature"
+  },
+  "OGEPHYS10C466": {
+    "kind": "changes",
+    "phase": "freezing",
+    "first": "temperature"
+  },
+  "OGEPHYSE87C85": {
+    "kind": "changes",
+    "phase": "freezing",
+    "first": "kinetic"
+  },
+  "OGEPHYS7036F9": {
+    "kind": "balance-claims",
+    "truth": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  "OGEPHYSFCD322": {
+    "kind": "experiment",
+    "truth": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  "OGEPHYS65EA2B": {
+    "kind": "experiment",
+    "truth": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  "OGEPHYS02C7DC": {
+    "kind": "experiment",
+    "truth": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  "OGEPHYS1559E5": {
+    "kind": "experiment",
+    "truth": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  "OGEPHYS2822AC": {
+    "kind": "amorphous",
+    "graph": 3
+  }
+}

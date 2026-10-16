@@ -1,0 +1,115 @@
+{
+  "OGEPHYS7A3172": {
+    "kind": "rods",
+    "labels": [
+      "А",
+      "Б",
+      "В",
+      "Г"
+    ],
+    "lengths": [
+      2,
+      2,
+      1,
+      1
+    ],
+    "diameters": [
+      1,
+      3,
+      1,
+      2
+    ],
+    "options": [
+      [
+        "А",
+        "Б"
+      ],
+      [
+        "А",
+        "В"
+      ],
+      [
+        "В",
+        "Г"
+      ],
+      [
+        "В",
+        "Б"
+      ]
+    ]
+  },
+  "OGEPHYS5DD253": {
+    "kind": "rods",
+    "labels": [
+      "А",
+      "Б",
+      "В",
+      "Г"
+    ],
+    "lengths": [
+      2,
+      2,
+      1,
+      1
+    ],
+    "diameters": [
+      1,
+      3,
+      2,
+      3
+    ],
+    "options": [
+      [
+        "А",
+        "Г"
+      ],
+      [
+        "Б",
+        "В"
+      ],
+      [
+        "Б",
+        "Г"
+      ],
+      [
+        "В",
+        "Г"
+      ]
+    ]
+  },
+  "OGEPHYSFE0A4D": {
+    "kind": "power",
+    "t": null
+  },
+  "OGEPHYS4E9457": {
+    "kind": "resistance",
+    "t": null
+  },
+  "OGEPHYSEADAE4": {
+    "kind": "work",
+    "t": 60
+  },
+  "OGEPHYS4798C5": {
+    "kind": "dependence"
+  },
+  "OGEPHYS25F44E": {
+    "kind": "three-readings",
+    "currents": [
+      0.3,
+      0.4,
+      0.5
+    ],
+    "di": 0.02,
+    "du": 0.1
+  },
+  "OGEPHYSC0F1E5": {
+    "kind": "three-readings",
+    "currents": [
+      0.3,
+      0.4,
+      0.5
+    ],
+    "di": 0.02,
+    "du": 0.1
+  }
+}

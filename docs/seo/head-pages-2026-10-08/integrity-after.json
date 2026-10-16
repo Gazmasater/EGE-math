@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-08T22:32:57.004527+00:00",
+  "public_pages": 5,
+  "control_metadata_unchanged": [
+    "/?topic=vectors",
+    "/physics"
+  ],
+  "raw_files_unchanged": 106,
+  "solutions_before": 4522,
+  "solutions_after": 4522,
+  "existing_solution_rows_unchanged": true,
+  "sqlite_integrity": "ok"
+}

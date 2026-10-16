@@ -1,0 +1,325 @@
+{
+  "OGEPHYSCD3C4F": {
+    "kind": "aperture",
+    "answer": "23"
+  },
+  "OGEPHYS22777D": {
+    "kind": "aperture",
+    "answer": "32"
+  },
+  "OGEPHYS0269A0": {
+    "kind": "aperture",
+    "answer": "32"
+  },
+  "OGEPHYSB0D9FA": {
+    "kind": "object-position",
+    "case": "large-real",
+    "choice": 2
+  },
+  "OGEPHYS3F2BF3": {
+    "kind": "object-position",
+    "case": "small-real",
+    "choice": 3
+  },
+  "OGEPHYSEDC184": {
+    "kind": "object-position",
+    "case": "virtual",
+    "choice": 1
+  },
+  "OGEPHYS208CFD": {
+    "kind": "single-ray",
+    "case": "focus",
+    "choice": 3
+  },
+  "OGEPHYS255CFE": {
+    "kind": "single-ray",
+    "case": "parallel",
+    "choice": 1
+  },
+  "OGEPHYSF9197D": {
+    "kind": "single-ray",
+    "case": "double-focus",
+    "choice": 2
+  },
+  "OGEPHYS0A32B5": {
+    "kind": "single-ray",
+    "case": "inside-focus",
+    "choice": 4
+  },
+  "OGEPHYSC4CFFC": {
+    "kind": "equal-image",
+    "case": "distance-to-power",
+    "value": 20,
+    "answer": 10
+  },
+  "OGEPHYSE5AAF1": {
+    "kind": "equal-image",
+    "case": "distance-to-focus",
+    "value": 20,
+    "answer": 0.1
+  },
+  "OGEPHYS0328D7": {
+    "kind": "equal-image",
+    "case": "focus-to-distance",
+    "value": 5,
+    "answer": 10
+  },
+  "OGEPHYSA209A1": {
+    "kind": "equal-image",
+    "case": "focus-to-distance",
+    "value": 7,
+    "answer": 14
+  },
+  "OGEPHYSE519EB": {
+    "kind": "equal-image",
+    "case": "power-to-distance",
+    "value": 5,
+    "answer": 0.4
+  },
+  "OGEPHYS1EF7BC": {
+    "kind": "candle",
+    "h": 12,
+    "d": 30,
+    "F": 15
+  },
+  "OGEPHYS0F7FA2": {
+    "kind": "candle",
+    "h": 10,
+    "d": 12,
+    "F": 6
+  },
+  "OGEPHYSE4B006": {
+    "kind": "changes",
+    "d1": 4,
+    "d2": 2,
+    "order": [
+      "D",
+      "H"
+    ],
+    "virtual": false,
+    "answer": "31"
+  },
+  "OGEPHYS724729": {
+    "kind": "changes",
+    "d1": 4,
+    "d2": 2,
+    "order": [
+      "F",
+      "b"
+    ],
+    "virtual": false,
+    "answer": "31"
+  },
+  "OGEPHYSD9055C": {
+    "kind": "changes",
+    "d1": 0.2,
+    "d2": 0.8,
+    "order": [
+      "F",
+      "b"
+    ],
+    "virtual": true,
+    "answer": "31"
+  },
+  "OGEPHYS7C16CA": {
+    "kind": "changes",
+    "d1": 2,
+    "d2": 5,
+    "order": [
+      "D",
+      "H"
+    ],
+    "virtual": false,
+    "answer": "32"
+  },
+  "OGEPHYS405EB2": {
+    "kind": "changes",
+    "d1": 4,
+    "d2": 3,
+    "order": [
+      "b",
+      "D"
+    ],
+    "virtual": false,
+    "answer": "13"
+  },
+  "OGEPHYSBA92B8": {
+    "kind": "changes",
+    "d1": 1.5,
+    "d2": 1.8,
+    "order": [
+      "b",
+      "D"
+    ],
+    "virtual": false,
+    "answer": "23"
+  },
+  "OGEPHYSE380D4": {
+    "kind": "changes",
+    "d1": 3,
+    "d2": 4,
+    "order": [
+      "b",
+      "D"
+    ],
+    "virtual": false,
+    "answer": "23"
+  },
+  "OGEPHYSB81C5E": {
+    "kind": "changes",
+    "d1": 4,
+    "d2": 3,
+    "order": [
+      "b",
+      "H"
+    ],
+    "virtual": false,
+    "answer": "11"
+  },
+  "OGEPHYS7B7AC6": {
+    "kind": "changes",
+    "d1": 3,
+    "d2": 4,
+    "order": [
+      "b",
+      "H"
+    ],
+    "virtual": false,
+    "answer": "22"
+  },
+  "OGEPHYSE9E1E3": {
+    "kind": "changes",
+    "d1": 1.8,
+    "d2": 1.5,
+    "order": [
+      "b",
+      "D"
+    ],
+    "virtual": false,
+    "answer": "13"
+  },
+  "OGEPHYS57AE84": {
+    "kind": "changes",
+    "d1": 1.5,
+    "d2": 1.8,
+    "order": [
+      "b",
+      "H"
+    ],
+    "virtual": false,
+    "answer": "22"
+  },
+  "OGEPHYS42F198": {
+    "kind": "point-image",
+    "virtual": true,
+    "choice": 1
+  },
+  "OGEPHYS7F6093": {
+    "kind": "point-image",
+    "virtual": false,
+    "choice": 4
+  },
+  "OGEPHYS7FC50C": {
+    "kind": "grid",
+    "cells": 2,
+    "cellcm": 10,
+    "F": 0.2,
+    "D": 5.0
+  },
+  "OGEPHYSE5A3AF": {
+    "kind": "grid",
+    "cells": 2,
+    "cellcm": 2,
+    "F": 0.04,
+    "D": 25.0
+  },
+  "OGEPHYSDCA914": {
+    "kind": "grid",
+    "cells": 4,
+    "cellcm": 5,
+    "F": 0.2,
+    "D": 5.0
+  },
+  "OGEPHYSE77C38": {
+    "kind": "grid",
+    "cells": 4,
+    "cellcm": 2,
+    "F": 0.08,
+    "D": 12.5
+  },
+  "OGEPHYS881410": {
+    "kind": "grid",
+    "cells": 4,
+    "cellcm": 4,
+    "F": 0.16,
+    "D": 6.25
+  },
+  "OGEPHYS465498": {
+    "kind": "grid",
+    "cells": 4,
+    "cellcm": 1,
+    "F": 0.04,
+    "D": 25.0
+  },
+  "OGEPHYSA56899": {
+    "kind": "shape"
+  },
+  "OGEPHYS8ED50C": {
+    "kind": "magnifier"
+  },
+  "OGEPHYSE57861": {
+    "kind": "water-drop"
+  },
+  "OGEPHYS69AA4B": {
+    "kind": "focus-experiment",
+    "lens": 2,
+    "F": 5
+  },
+  "OGEPHYS47F533": {
+    "kind": "focus-experiment",
+    "lens": 1,
+    "F": 10
+  },
+  "OGEPHYS848427": {
+    "kind": "image-experiment",
+    "lens": 1,
+    "d": 15,
+    "F": 10,
+    "b": 30.0
+  },
+  "OGEPHYS005C5C": {
+    "kind": "image-experiment",
+    "lens": 2,
+    "d": 15,
+    "F": 5,
+    "b": 7.5
+  },
+  "OGEPHYS9F5CCB": {
+    "kind": "image-experiment",
+    "lens": 1,
+    "d": 18,
+    "F": 10,
+    "b": 22.5
+  },
+  "OGEPHYS8444CF": {
+    "kind": "image-experiment",
+    "lens": 2,
+    "d": 18,
+    "F": 5,
+    "b": 6.923076923076923
+  },
+  "OGEPHYS29449B": {
+    "kind": "image-experiment",
+    "lens": 1,
+    "d": 30,
+    "F": 10,
+    "b": 15.0
+  },
+  "OGEPHYSB00E35": {
+    "kind": "image-experiment",
+    "lens": 2,
+    "d": 8,
+    "F": 5,
+    "b": 13.333333333333334
+  }
+}

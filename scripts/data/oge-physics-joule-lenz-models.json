@@ -1,0 +1,260 @@
+{
+  "OGEPHYSA96A72": {
+    "kind": "voltage",
+    "E": 900,
+    "t": 30,
+    "I": 0.5
+  },
+  "OGEPHYS4A07D0": {
+    "kind": "voltage",
+    "E": 18000,
+    "t": 600,
+    "I": 0.5
+  },
+  "OGEPHYS7D5BE4": {
+    "kind": "voltage",
+    "E": 1200,
+    "t": 30,
+    "I": 1
+  },
+  "OGEPHYS39837C": {
+    "kind": "lamp-ratio",
+    "before": 5,
+    "after": 4
+  },
+  "OGEPHYS3E428D": {
+    "kind": "lamp-ratio",
+    "before": 5,
+    "after": 2
+  },
+  "OGEPHYSD516B5": {
+    "kind": "lamp-power",
+    "U": 120,
+    "R": 160,
+    "n": 1,
+    "total": false
+  },
+  "OGEPHYS0C7B46": {
+    "kind": "lamp-power",
+    "U": 120,
+    "R": 240,
+    "n": 3,
+    "total": false
+  },
+  "OGEPHYSE031F2": {
+    "kind": "lamp-power",
+    "U": 120,
+    "R": 240,
+    "n": 3,
+    "total": true
+  },
+  "OGEPHYS5FF3B9": {
+    "kind": "energy-resistance",
+    "E": 900000,
+    "t": 180,
+    "I": 5
+  },
+  "OGEPHYS22F716": {
+    "kind": "power-ratio",
+    "U1": 220,
+    "U2": 110,
+    "P1": 60
+  },
+  "OGEPHYS6BDCA6": {
+    "kind": "energy",
+    "P": 2400,
+    "t": 120
+  },
+  "OGEPHYSBB9E16": {
+    "kind": "qualitative",
+    "change": "rheostat"
+  },
+  "OGEPHYSEF9FE7": {
+    "kind": "qualitative",
+    "change": "add-resistor"
+  },
+  "OGEPHYS7E6A2B": {
+    "kind": "qualitative",
+    "change": "remove-lamps"
+  },
+  "OGEPHYS8AD6D3": {
+    "kind": "qualitative",
+    "change": "add-appliance"
+  },
+  "OGEPHYS880352": {
+    "kind": "brightness"
+  },
+  "OGEPHYSA349A0": {
+    "kind": "efficiency",
+    "U": 220,
+    "I": 40,
+    "useful": 6500
+  },
+  "OGEPHYS5F1E1E": {
+    "kind": "six",
+    "U": 120,
+    "target": 1,
+    "values": [
+      15,
+      15,
+      15,
+      6,
+      6,
+      2
+    ]
+  },
+  "OGEPHYS5738DF": {
+    "kind": "six",
+    "U": 120,
+    "target": 4,
+    "values": [
+      15,
+      15,
+      15,
+      6,
+      6,
+      2
+    ]
+  },
+  "OGEPHYS3C2008": {
+    "kind": "five",
+    "U": 120,
+    "target": 3,
+    "values": [
+      2,
+      20,
+      15,
+      10,
+      10
+    ]
+  },
+  "OGEPHYS8F7C13": {
+    "kind": "five",
+    "U": 120,
+    "target": 4,
+    "values": [
+      2,
+      20,
+      15,
+      10,
+      10
+    ]
+  },
+  "OGEPHYSAFEC1B": {
+    "kind": "locomotive",
+    "F": 340000,
+    "v": 12,
+    "I": 1600,
+    "eta": 0.85,
+    "U": 3000,
+    "findv": false
+  },
+  "OGEPHYS748C28": {
+    "kind": "locomotive",
+    "F": 336000,
+    "v": 9,
+    "I": 1200,
+    "eta": 0.84,
+    "U": 3000,
+    "findv": true
+  },
+  "OGEPHYS6A0B99": {
+    "kind": "locomotive",
+    "F": 216000,
+    "v": 13,
+    "I": 1200,
+    "eta": 0.78,
+    "U": 3000,
+    "findv": false
+  },
+  "OGEPHYS735140": {
+    "kind": "lab",
+    "element": "R₂",
+    "I": 0.4,
+    "du": 0.1,
+    "exampleU": 2.3,
+    "t": 1,
+    "work": false,
+    "exampleValue": 0.9199999999999999
+  },
+  "OGEPHYSD4B818": {
+    "kind": "lab",
+    "element": "R₁",
+    "I": 0.4,
+    "du": 0.1,
+    "exampleU": 1.9,
+    "t": 1,
+    "work": false,
+    "exampleValue": 0.76
+  },
+  "OGEPHYSD4815C": {
+    "kind": "lab",
+    "element": "R₃",
+    "I": 0.3,
+    "du": 0.1,
+    "exampleU": 2.5,
+    "t": 1,
+    "work": false,
+    "exampleValue": 0.75
+  },
+  "OGEPHYS22FAB7": {
+    "kind": "lab",
+    "element": "R₃",
+    "I": 0.3,
+    "du": 0.1,
+    "exampleU": 2.5,
+    "t": 600,
+    "work": true,
+    "exampleValue": 450.0
+  },
+  "OGEPHYSD0B9B0": {
+    "kind": "lab",
+    "element": "R₁",
+    "I": 0.4,
+    "du": 0.1,
+    "exampleU": 1.9,
+    "t": 600,
+    "work": true,
+    "exampleValue": 456.0
+  },
+  "OGEPHYSE50BB3": {
+    "kind": "lab",
+    "element": "R₁",
+    "I": 0.5,
+    "du": 0.1,
+    "exampleU": 2.5,
+    "t": 300,
+    "work": true,
+    "exampleValue": 375.0
+  },
+  "OGEPHYS908A55": {
+    "kind": "lab",
+    "element": "R₂",
+    "I": 0.5,
+    "du": 0.2,
+    "exampleU": 2.8,
+    "t": 480,
+    "work": true,
+    "exampleValue": 672.0
+  },
+  "OGEPHYS9D489F": {
+    "kind": "lab",
+    "element": "R₂",
+    "I": 0.4,
+    "du": 0.1,
+    "exampleU": 2.3,
+    "t": 360,
+    "work": true,
+    "exampleValue": 331.2
+  },
+  "OGEPHYS2832AB": {
+    "kind": "switch-time",
+    "seriesfirst": true,
+    "told": 36
+  },
+  "OGEPHYS1878E5": {
+    "kind": "switch-time",
+    "seriesfirst": false,
+    "told": 1
+  }
+}

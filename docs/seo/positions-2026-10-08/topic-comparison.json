@@ -1,0 +1,42 @@
+{
+  "source": "lib/math-task-assignments.json",
+  "legacy_topic": "2.2",
+  "total": 27,
+  "by_current_type": {
+    "basic-equations.roots": 16,
+    "applied.roots": 11
+  },
+  "ids_by_type": {
+    "basic-equations.roots": [
+      "12B3C9",
+      "19E729",
+      "1E76F6",
+      "1FE24C",
+      "2FB6C7",
+      "3599D1",
+      "4C69F7",
+      "59D451",
+      "5CE2C6",
+      "5E753F",
+      "8BE5C3",
+      "BBFFF9",
+      "C6D0C4",
+      "DE509B",
+      "E43E38",
+      "ED6C96"
+    ],
+    "applied.roots": [
+      "19DD0F",
+      "3B8999",
+      "58C283",
+      "6169E1",
+      "8371BD",
+      "90316E",
+      "94554A",
+      "BA98A1",
+      "C15C1C",
+      "D888F6",
+      "FC9B35"
+    ]
+  }
+}
