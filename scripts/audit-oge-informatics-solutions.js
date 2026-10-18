@@ -21,7 +21,11 @@ const { auditBases } = require('./lib/audit-oge-informatics-bases');
 const { auditProgramming, auditProgrammingImages } = require('./lib/audit-oge-informatics-programming');
 const { auditRobot, auditRobotImages } = require('./lib/audit-oge-informatics-robot');
 const { auditDocument, isDocumentTask } = require('./lib/audit-oge-informatics-documents');
-const auditors = { 'text-volume': auditTextVolume, coding: auditCoding, logic: auditLogic, roads: auditRoads, executor: auditExecutor, branches: auditBranches, addresses: auditAddresses, sets: auditSets, graphs: auditGraphs, bases: auditBases, programming: auditProgramming, robot: auditRobot, documents: auditDocument };
+const { auditTextSearch } = require('./lib/audit-oge-informatics-text-search');
+const { auditFileSearch } = require('./lib/audit-oge-informatics-file-search');
+const { auditPresentation, auditPresentationImages } = require('./lib/audit-oge-informatics-presentations');
+const { auditSpreadsheet } = require('./lib/audit-oge-informatics-spreadsheets');
+const auditors = { 'text-volume': auditTextVolume, coding: auditCoding, logic: auditLogic, roads: auditRoads, executor: auditExecutor, branches: auditBranches, addresses: auditAddresses, sets: auditSets, graphs: auditGraphs, bases: auditBases, programming: auditProgramming, robot: auditRobot, documents: auditDocument, 'text-search': auditTextSearch, 'file-search': auditFileSearch, presentations: auditPresentation, spreadsheets: auditSpreadsheet };
 const batches = require('./data/oge-informatics-solutions');
 const root = path.resolve(__dirname, '..');
 const args = process.argv.slice(2);
@@ -35,8 +39,7 @@ for (const batch of batches) {
   const topicTasks = tasks.filter(t => ogeTaskMatchesTopic(t, batch.topic, 'oge-informatics'));
   let selected = topicTasks;
   if (batch.name === 'documents') {
-    // Type 13 contains two distinct deliverables. Audit its entire partition;
-    // presentation tasks with unavailable source archives remain unpublished.
+    // Type 13 contains two distinct deliverables; audit both complete partitions.
     assert.equal(batch.topic, 'type.13');
     selected = topicTasks.filter(isDocumentTask);
     assert.equal(selected.length, 61, 'Changed document subgroup');
@@ -46,6 +49,11 @@ for (const batch of batches) {
       assert.match(conditionText(task.fragment), /создайте презентацию/iu, task.id + ': unknown type 13 task');
       assert.match(task.fragment, /\.zip|\.rar/iu, task.id + ': presentation source archive');
     }
+  }
+  if (batch.name === 'presentations') {
+    assert.equal(batch.topic, 'type.13');
+    selected = topicTasks.filter(t => !isDocumentTask(t));
+    assert.equal(selected.length, 59, 'Changed presentation subgroup');
   }
   assert.deepEqual(batch.records.map(r => r.id).sort(), selected.map(t => t.id).sort(), 'Incomplete topic or subgroup ' + batch.topic);
   for (const record of batch.records) {
@@ -66,6 +74,10 @@ for (const batch of batches) {
       assert.equal(source.externalAnswer, null);
       assert.match(source.externalSample.sha256, /^[a-f0-9]{64}$/u);
       assert.match(source.documentHash, /^[a-f0-9]{64}$/u);
+    } else if (['presentations', 'spreadsheets'].includes(batch.name)) {
+      assert.equal(source.answerKind, batch.name === 'presentations' ? 'presentation' : 'spreadsheet');
+      assert.equal(source.externalAnswer, null);
+      assert.match(source.fileHash, /^[a-f0-9]{64}$/u);
     } else if (source.match === 'exact') assert.equal(record.answer.toLowerCase(), source.externalAnswer.toLowerCase());
     if (source.discrepancy) {
       assert.equal(source.discrepancy.status, 'resolved');
@@ -76,6 +88,7 @@ for (const batch of batches) {
     if (/<img|ShowPicture/u.test(task.fragment.split('КЭС:')[0])) {
       if (batch.name === 'robot') assert.deepEqual(source.primaryImages, auditRobotImages(task));
       else if (batch.name === 'programming') assert.deepEqual(source.primaryImages, auditProgrammingImages(task));
+      else if (batch.name === 'presentations') assert.deepEqual(source.primaryImages, auditPresentationImages(task));
       else {
         assert.equal(batch.name, 'graphs', record.id + ': new primary image needs review');
         const graph = auditGraphImage(task);
@@ -99,10 +112,12 @@ for (const batch of batches) {
     const checked = audit(task, record);
     if (['programming', 'robot'].includes(batch.name)) assert.equal(checked.programHash, source.programHash, record.id + ': reviewed program changed');
     if (batch.name === 'documents') assert.equal(checked.documentHash, source.documentHash, record.id + ': reviewed document changed');
+    if (['presentations', 'spreadsheets'].includes(batch.name)) assert.equal(checked.fileHash, source.fileHash, record.id + ': reviewed attachment changed');
     checks.push({ id: record.id, ...checked });
     assert.throws(() => audit(task, { ...record, answer: record.answer + 'а' }), /answer/u);
   }
 }
+assert.equal(records.length, tasks.length, 'Every OGE informatics task must have a solution');
 let changed = 0, published = null, integrity = null, preserved = null;
 if (!args.includes('--content-only')) {
   const apply = args.includes('--apply');

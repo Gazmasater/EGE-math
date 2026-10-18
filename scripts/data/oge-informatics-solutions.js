@@ -52,4 +52,20 @@ module.exports = [{
   name: 'documents', topic: 'type.13',
   records: require('./oge-informatics-documents-records.json'),
   sources: require('./oge-informatics-documents-sources.json')
+}, {
+  name: 'text-search', topic: 'type.11',
+  records: require('./oge-informatics-text-search-records.json'),
+  sources: require('./oge-informatics-text-search-sources.json')
+}, {
+  name: 'file-search', topic: 'type.12',
+  records: require('./oge-informatics-file-search-records.json'),
+  sources: require('./oge-informatics-file-search-sources.json')
+}, {
+  name: 'presentations', topic: 'type.13',
+  records: require('./oge-informatics-presentations-records.json'),
+  sources: require('./oge-informatics-presentations-sources.json')
+}, {
+  name: 'spreadsheets', topic: 'type.14',
+  records: require('./oge-informatics-spreadsheets-records.json'),
+  sources: require('./oge-informatics-spreadsheets-sources.json')
 }];

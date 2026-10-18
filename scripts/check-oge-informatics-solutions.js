@@ -53,7 +53,7 @@ async function run(){
   });
   const evaluate=async expression=>{const r=await call('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw new Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
   const screenshot=params=>{
-    const capture=captureQueue.then(async()=>{await call('Page.bringToFront');return call('Page.captureScreenshot',{optimizeForSpeed:true,...params});});
+    const capture=captureQueue.then(async()=>{await call('Page.bringToFront');return call('Page.captureScreenshot',{optimizeForSpeed:false,...params});});
     captureQueue=capture.catch(()=>{});
     return capture;
   };
@@ -79,6 +79,7 @@ async function run(){
     }
     report.apis.push(task.id);
     for(const [name,width,height] of [['desktop',1280,960],['mobile',390,844]]){
+      const startedAt=Date.now();
       await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
       const url=`${origin}/tasks/${task.id}`;await call('Page.navigate',{url});
       let ready=false;
@@ -118,6 +119,7 @@ async function run(){
         }),
         visible:!!box&&box.getBoundingClientRect().height>0&&getComputedStyle(box).visibility!=='hidden'
       };})()`);
+      const loadedAt=Date.now();
       // Retain the failing viewport too; it is needed to diagnose source layout.
       const shot=await screenshot({format:'png',captureBeyondViewport:true,clip:{x:0,y:0,width,height:info.height,scale:1}});
       fs.writeFileSync(path.join(out,`${task.id}-${name}.png`),Buffer.from(shot.data,'base64'));
@@ -139,7 +141,7 @@ async function run(){
       // A literal caret is a code symbol in informatics, not an exponent.
       assert.equal((info.text.match(/\^/g)||[]).length,(expected.answer+expected.solution+expected.diagram_caption).split('^').length-1,`${task.id}: code symbols must survive formatting`);
       assert.equal(info.fractions,(expected.answer+expected.solution+expected.diagram_caption).split('⟦').length-1,`${task.id}: missing vertical fractions`);
-      report.pages.push({id:task.id,viewport:name,width,height:info.height,solutionTop:info.solutionTop,solutionHeight:info.solutionHeight,fractions:info.fractions,textLength:info.text.length});save();
+      report.pages.push({id:task.id,viewport:name,width,height:info.height,solutionTop:info.solutionTop,solutionHeight:info.solutionHeight,fractions:info.fractions,textLength:info.text.length,loadMs:loadedAt-startedAt,screenshotMs:Date.now()-loadedAt});save();
       const tableCount=await evaluate(`document.querySelectorAll('table.fipi-table-scrollable').length`);
       for(let index=0;index<tableCount;index++){
         const table=await evaluate(`(()=>{

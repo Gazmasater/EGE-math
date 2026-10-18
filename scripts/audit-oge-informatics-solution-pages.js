@@ -3,12 +3,13 @@ const fs = require('node:fs');
 const {createHash} = require('node:crypto');
 const {solutionFile} = require('../lib/solution-files');
 const selectedBatches = process.env.OGE_INF_BATCH?.split(',');
-const batches = require('./data/oge-informatics-solutions').filter(b => !selectedBatches || selectedBatches.includes(b.name));
+const allBatches = require('./data/oge-informatics-solutions');
+const batches = allBatches.filter(b => !selectedBatches || selectedBatches.includes(b.name));
 assert.ok(batches.length, 'No solution batches selected');
 const {readOgeCatalog} = require('./lib/oge-catalog');
 const {ogeTaskMatchesTopic,ogeCataloguePath,OGE_PAGE_SIZE} = require('../lib/oge-catalog');
 const origin = process.env.OGE_SITE_ORIGIN || 'http://127.0.0.1:8888';
-const records = batches.flatMap(b=>b.records), ids = new Set(records.map(r=>r.id));
+const records = batches.flatMap(b=>b.records), ids = new Set(allBatches.flatMap(b=>b.records.map(r=>r.id)));
 const tasks = readOgeCatalog(undefined,'oge-informatics').tasks;
 const concurrency = Number(process.env.OGE_HTTP_CONCURRENCY || 4);
 assert.ok(Number.isInteger(concurrency) && concurrency >= 1 && concurrency <= 8, 'HTTP concurrency must be 1–8');
@@ -44,7 +45,7 @@ async function main() {
     if (r.diagram_svg) assert.ok(html.includes('data:image/svg+xml;base64,'),r.id+': server-rendered diagram');
   });
   let pages = 0;
-  for (const {topic} of batches) {
+  for (const topic of new Set(batches.map(b=>b.topic))) {
     const selected = tasks.filter(t=>ogeTaskMatchesTopic(t,topic,'oge-informatics'));
     for (let page=1;page<=Math.ceil(selected.length/OGE_PAGE_SIZE);page++) {
       const url = ogeCataloguePath({topic,page,section:'oge-informatics'});

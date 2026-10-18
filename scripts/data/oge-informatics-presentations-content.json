@@ -1,0 +1,4184 @@
+{
+  "OGEINFDCAD4C": {
+    "theme": "Тигр",
+    "kind": "animal",
+    "archiveHash": "b2aeded68eb0826a8d823d72f56fd91b3db6947a1df088b78b58158d44409a7e",
+    "sourceDocument": "17/18_Тигр/Тигр.odt",
+    "sourceDocumentHash": "0b2448525b18bf29232a71977e6989a787eed14b6b6d81308872b345d4dc9911",
+    "blocks": [
+      "Тигр — крупная дикая кошка. Полосы маскируют зверя, а их рисунок индивидуален.",
+      "Тигры живут в Азии, в том числе в Индии, Китае, России и Индонезии.",
+      "Охотится один: подкрадывается к добыче или поджидает её в засаде.",
+      "Основная пища — копытные: олени, кабаны и косули.",
+      "Тропы и водопои помогают хищнику находить добычу."
+    ],
+    "patterns": [
+      "ITTI",
+      "IITTTI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/07A9A7F66547A7614C007E95ECF85BD7/xs3qstsrc07A9A7F66547A7614C007E95ECF85BD7_10_1760009622.png",
+        "sha256": "3fcd9dd290cf74d03f08c9a3e1841a2d09a5650f0a192a78155f11f419572e90",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/07A9A7F66547A7614C007E95ECF85BD7/xs3qstsrc07A9A7F66547A7614C007E95ECF85BD7_11_1760009622.png",
+        "sha256": "67da8ba1fa55f1e30b59a1314cfe5e59ac31940db920d70041308b911faf4f6c",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/07A9A7F66547A7614C007E95ECF85BD7/xs3qstsrc07A9A7F66547A7614C007E95ECF85BD7_12_1760009622.png",
+        "sha256": "2871bdc38f129b0a14a17ca4cb3e1d2132f5d88dbcb586fa45bbce8e64a7f1b7",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/07A9A7F66547A7614C007E95ECF85BD7/xs3qstsrc07A9A7F66547A7614C007E95ECF85BD7_13_1760009622.png",
+        "sha256": "642638b10cceed2c65391d7a3cadb467c4add328bf2185fc8b0d55f86e03422d",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "17/18_Тигр/Тигр 2.jpg",
+        "sha256": "2007869abd893ec0ae725eadda809db3bb5e90a482ffda98430acfa3933fe7e2",
+        "reviewed": true
+      },
+      {
+        "member": "17/18_Тигр/Тигр 1.jpg",
+        "sha256": "cefa46fe5cd816169532ebf88b22c820b9d5edaee87fe83f284542f16cbf081b",
+        "reviewed": true
+      },
+      {
+        "member": "17/18_Тигр/Тигр 4.jpg",
+        "sha256": "b3ded859b7dbed67e8e0bb4aa2ef8c873953de1a1f7b99b0fc96a3dd1a4350b1",
+        "reviewed": true
+      },
+      {
+        "member": "17/18_Тигр/Тигр 3.jpg",
+        "sha256": "1b1cc7d0612bd56f037aea363f1b193c04662be1c0f368c62c82599b1392b936",
+        "reviewed": true
+      },
+      {
+        "member": "17/18_Тигр/Тигр 5.jpg",
+        "sha256": "3779c779e0ce60f2ba06a94081aa6d223ee6047b3fe388de4ab1bb20a2b1055f",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFAE7749": {
+    "theme": "Инжир",
+    "kind": "plant",
+    "archiveHash": "aa67532a39bffff34e176e8982957ff4b2528e04f0652695e4d92aa286465b50",
+    "sourceDocument": "51/Инжир/ЗАДАНИЕ 13/Инжир.odt",
+    "sourceDocumentHash": "873322205c396c2f4194d03008f0d8a6cc21f001a156884f0721c3d01564dfc6",
+    "blocks": [
+      "Инжир относится к роду Фикус. Дерево или куст имеет широкую раскидистую крону.",
+      "Крупные листья разделены на лопасти. Растение предпочитает тёплое лето и мягкую зиму.",
+      "Сочные сладкие соплодия бывают округлыми и грушевидными.",
+      "Свежий инжир добавляют в салаты; его сочетают с козьим сыром.",
+      "Из свежих плодов готовят варенье, а сушёные кладут в выпечку."
+    ],
+    "patterns": [
+      "TIIT",
+      "IIITTT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/09B3C39C20379D9F4F05DD9CF0D23528/xs3qstsrc09B3C39C20379D9F4F05DD9CF0D23528_10_1760011199.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/09B3C39C20379D9F4F05DD9CF0D23528/xs3qstsrc09B3C39C20379D9F4F05DD9CF0D23528_11_1760011199.png",
+        "sha256": "01b866f031dd001ec2ae61ede1cfe6bed9b8f20804c3cb3d61775e7ccbdbfe07",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/09B3C39C20379D9F4F05DD9CF0D23528/xs3qstsrc09B3C39C20379D9F4F05DD9CF0D23528_12_1760011199.png",
+        "sha256": "5e3556eb523fdef18da768bc816be1cf923589860994df5442d575abde0e4108",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "51/Инжир/ЗАДАНИЕ 13/lori-0034380627-a7.jpg",
+        "sha256": "de8a0b4d9831f684d38b1e15d0eb7a81db02785fe7e884ad5fb30ea5669b2e36",
+        "reviewed": true
+      },
+      {
+        "member": "51/Инжир/ЗАДАНИЕ 13/lori-0026573500-a7.jpg",
+        "sha256": "f296aa4b05c8e231a1b4496c094b768d908aa74f583886bab9cd5900ea7f9c4f",
+        "reviewed": true
+      },
+      {
+        "member": "51/Инжир/ЗАДАНИЕ 13/lori-0033711245-a7.jpg",
+        "sha256": "a4cf3052ba4a40e4dbde716629b3233313b525007fbd8f2fffa51f10ec56fc5d",
+        "reviewed": true
+      },
+      {
+        "member": "51/Инжир/ЗАДАНИЕ 13/lori-0004917067-a7.jpg",
+        "sha256": "06d56763123bace61872c4d1b2672d940a8f15e84bcea18bced3dbc229f9b576",
+        "reviewed": true
+      },
+      {
+        "member": "51/Инжир/ЗАДАНИЕ 13/lori-0023222105-a7.jpg",
+        "sha256": "cba7cc36ab4238fbf735f7af289f9abda8cdfd7806e995f386214312a6f3e7f7",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF9C1F40": {
+    "theme": "Каракал",
+    "kind": "animal",
+    "archiveHash": "aaba925f6de34d4f4e33dcc54989925e053fd1ec089fe4e85a04806a9d9d14b2",
+    "sourceDocument": "13/14_Каракал/Карака́л.odt",
+    "sourceDocumentHash": "ac69d94a382f877707ac7f574b37ca1029449a4a1b67b98b1d8e181d57d3d9e6",
+    "blocks": [
+      "Каракал — стройная кошка с коротким густым мехом и чёрными кисточками на ушах.",
+      "Встречается в Африке; в Азии справка отмечает каракалов Туркмении.",
+      "Обычно деятелен ночью. Укрывается в расщелинах скал и чужих норах.",
+      "Добывает грызунов, зайцев, птиц и небольших антилоп.",
+      "Подкрадывается незаметно и настигает жертву длинным прыжком."
+    ],
+    "patterns": [
+      "ITTI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/0B25A12DAD09BD4341F81DEB51D42C6C/xs3qstsrc0B25A12DAD09BD4341F81DEB51D42C6C_10_1760009482.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/0B25A12DAD09BD4341F81DEB51D42C6C/xs3qstsrc0B25A12DAD09BD4341F81DEB51D42C6C_11_1760009482.png",
+        "sha256": "4b7133d51558d64243dbdccadcdbc1eab43aa30796b6434a73f317ed776db550",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/0B25A12DAD09BD4341F81DEB51D42C6C/xs3qstsrc0B25A12DAD09BD4341F81DEB51D42C6C_12_1760009482.png",
+        "sha256": "1e9685bfaa636e46d93d241d8417c76109c6937861ba162ed2353e448d65bf75",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "13/14_Каракал/Каракал 1.jpg",
+        "sha256": "237648b30ce187d5acbd96701b6c2ee5fd4ad9889b722602e5f324fd5e93efdf",
+        "reviewed": true
+      },
+      {
+        "member": "13/14_Каракал/Каракал 2.jpg",
+        "sha256": "5c4fae6973fe2e521d372e810658ccbd8914313fe70f84e2bea6176464323ef2",
+        "reviewed": true
+      },
+      {
+        "member": "13/14_Каракал/Каракал 3.jpg",
+        "sha256": "088ca010cf5852a8e94d16e48fd8e9c33cfb6a17721ed83ebe6b484755d4b424",
+        "reviewed": true
+      },
+      {
+        "member": "13/14_Каракал/Каракал 5.jpg",
+        "sha256": "ad71d0f375f2e32ee421f689e68a8a015a52d859b3a40b356485de90df6514c4",
+        "reviewed": true
+      },
+      {
+        "member": "13/14_Каракал/Каракал 4.jpg",
+        "sha256": "296fe200a1dada78fc2288b7526316239621549893e8eb983386cbf8a6b86850",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF622644": {
+    "theme": "Крыжовник",
+    "kind": "plant",
+    "archiveHash": "57d08c09ca06674be7b1bf61412c7a1da3c8789fe454b09ef441b920db561d5a",
+    "sourceDocument": "53/Крыжовник/ЗАДАНИЕ 13/Крыжовник.odt",
+    "sourceDocumentHash": "2a2f7a9ec2171a424594eb90c8e2ca70577b3d03b930533742e0ea3b4d23719b",
+    "blocks": [
+      "Крыжовник — кустарник с колючими ветвями. Его выращивают в садах.",
+      "Ягоды могут быть зелёными, жёлтыми и багровыми; на кожице заметны светлые полоски.",
+      "Плоды используют как начинку для пирогов и других десертов.",
+      "Кисловатые ягоды подходят для компота.",
+      "Из спелых ягод готовят джем или варенье."
+    ],
+    "patterns": [
+      "ITTI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/0D066D08C79EBC194845444BD46C5E0A/xs3qstsrc0D066D08C79EBC194845444BD46C5E0A_10_1760011272.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/0D066D08C79EBC194845444BD46C5E0A/xs3qstsrc0D066D08C79EBC194845444BD46C5E0A_11_1760011272.png",
+        "sha256": "4b7133d51558d64243dbdccadcdbc1eab43aa30796b6434a73f317ed776db550",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/0D066D08C79EBC194845444BD46C5E0A/xs3qstsrc0D066D08C79EBC194845444BD46C5E0A_12_1760011272.png",
+        "sha256": "1e9685bfaa636e46d93d241d8417c76109c6937861ba162ed2353e448d65bf75",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "53/Крыжовник/ЗАДАНИЕ 13/lori-0024233328-a7.jpg",
+        "sha256": "ce07ae3eb5b62a25c393d169cda6102943a09d378a08d26277067f266402b0b3",
+        "reviewed": true
+      },
+      {
+        "member": "53/Крыжовник/ЗАДАНИЕ 13/lori-0032031784-a7.jpg",
+        "sha256": "d93c1c907a142d1f9f9a137b7a0ac9b128632a365ce6f2475282ff51f5f28179",
+        "reviewed": true
+      },
+      {
+        "member": "53/Крыжовник/ЗАДАНИЕ 13/lori-0015854400-a7.jpg",
+        "sha256": "fd846714f0e643f0b6b3651f1b7b54b5ab35737f30d7c4c32b7e09610881cf8e",
+        "reviewed": true
+      },
+      {
+        "member": "53/Крыжовник/ЗАДАНИЕ 13/lori-0003845953-a7.jpg",
+        "sha256": "af942c5b7683449e378387564022d5ac06d9a2442fc3c081cbe527df3496fff0",
+        "reviewed": true
+      },
+      {
+        "member": "53/Крыжовник/ЗАДАНИЕ 13/lori-0002690428-a7.jpg",
+        "sha256": "2722e7bdf93d8b1966c4021c8090a4ead54132b09f21e41c480db7f3cfb6ac62",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFDE20FB": {
+    "theme": "Брусника",
+    "kind": "plant",
+    "archiveHash": "bddb069c249af94a66ecc272317d88ae2ebe9727cb161df904d55c6b356de82c",
+    "sourceDocument": "47/Брусника/ЗАДАНИЕ 13/Брусника.odt",
+    "sourceDocumentHash": "932fb52ec92804a65835069fa7e3de9869e4a89e2336c23a4485fefc94115998",
+    "blocks": [
+      "Брусника — низкий кустарничек семейства Вересковые с плотными кожистыми листьями.",
+      "Растёт на севере Евразии. Ягоды небольшие, красные, кисло-сладкие.",
+      "Ягодами начиняют пироги и пирожки.",
+      "Брусничный соус подают к мясным блюдам.",
+      "Из ягод также делают напитки, варенье и джемы."
+    ],
+    "patterns": [
+      "ITTI",
+      "IITTTI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/1746C2EFD75B8F4C475438CCC5C0DDBB/xs3qstsrc1746C2EFD75B8F4C475438CCC5C0DDBB_10_1760010991.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/1746C2EFD75B8F4C475438CCC5C0DDBB/xs3qstsrc1746C2EFD75B8F4C475438CCC5C0DDBB_11_1760010991.png",
+        "sha256": "4b7133d51558d64243dbdccadcdbc1eab43aa30796b6434a73f317ed776db550",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/1746C2EFD75B8F4C475438CCC5C0DDBB/xs3qstsrc1746C2EFD75B8F4C475438CCC5C0DDBB_12_1760010991.png",
+        "sha256": "afcc0f9628172e9794a5dc653dd915267edf0d51b5cd5435e65c66361fc35c6b",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "47/Брусника/ЗАДАНИЕ 13/lori-0032105245-a7.jpg",
+        "sha256": "a201b96497bdca9ab7090cbd9e36d942306c00670d48f30a8b6d48295e10eff3",
+        "reviewed": true
+      },
+      {
+        "member": "47/Брусника/ЗАДАНИЕ 13/lori-0034146224-a7.jpg",
+        "sha256": "c86d9d63b7f690b4b676a9514c4eaaea545e721bfa20d990f09247f7a69a7862",
+        "reviewed": true
+      },
+      {
+        "member": "47/Брусника/ЗАДАНИЕ 13/lori-0032020051-a7.jpg",
+        "sha256": "524dd9c8256eecc0c11458770bb644320a12e76df746290a7034c4b5de74984d",
+        "reviewed": true
+      },
+      {
+        "member": "47/Брусника/ЗАДАНИЕ 13/lori-0005071643-a7.jpg",
+        "sha256": "8e8f3032d1772164bede896b8833ef8516c94c8bb50852f0b4a1e373a15f5157",
+        "reviewed": true
+      },
+      {
+        "member": "47/Брусника/ЗАДАНИЕ 13/lori-0027028396-a7.jpg",
+        "sha256": "cb0dda0b4fb6eaba7f8c4310690d7eaf3efbedbb58e3e18c15227b1e5d5c2232",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF165603": {
+    "theme": "Бишон фризе",
+    "kind": "dog",
+    "archiveHash": "4b34e8cb6ecbd539ef888c10cc21b363e309656d7f2976529b47789a163f21ce",
+    "sourceDocument": "34/35_Бишон/Бишон фризе.odt",
+    "sourceDocumentHash": "fb8f7d37bcf981e5ba8e414e64b550dad292f69b18076e5f3f71638d4db9d5bf",
+    "blocks": [
+      "Бишон фризе — маленькая собака с белой густой кудрявой шерстью.",
+      "Французская порода восходит к небольшим средиземноморским собакам-крысоловам.",
+      "Бишон обычно весел, игрив и активен.",
+      "Собаки привязываются к хозяевам и хорошо поддаются обучению.",
+      "Для игр им нужно пространство; длинная шерсть требует ухода."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/25E8DD4FFFA988064A04D7E1B4443F15/xs3qstsrc25E8DD4FFFA988064A04D7E1B4443F15_10_1760010358.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/25E8DD4FFFA988064A04D7E1B4443F15/xs3qstsrc25E8DD4FFFA988064A04D7E1B4443F15_11_1760010358.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/25E8DD4FFFA988064A04D7E1B4443F15/xs3qstsrc25E8DD4FFFA988064A04D7E1B4443F15_12_1760010358.png",
+        "sha256": "d62187a6d53a9c238bbdd42f13869b12c0e16ade80a50d5d5a552de999fa7b74",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "34/35_Бишон/Бишон1.jpg",
+        "sha256": "109f61b7234a33c3af5ac497126c7d2ce374b2bd8ff7b0ac4bbeeb908051c522",
+        "reviewed": true
+      },
+      {
+        "member": "34/35_Бишон/Бишон3.jpg",
+        "sha256": "e3ecf9e9940b630f850a05e3f661a5250110b2c6154eef64bed5cf2ee087e2f0",
+        "reviewed": true
+      },
+      {
+        "member": "34/35_Бишон/Бишон6.jpg",
+        "sha256": "2b4614afd8f8dd4e5e960b0c4058e7f3af097c370188bfc0b5f5e9563da3096f",
+        "reviewed": true
+      },
+      {
+        "member": "34/35_Бишон/Бишон5.jpg",
+        "sha256": "ec9e1209fc631f9e32fbdbdb87c6ea000dbd28da8e0a74a4f6dccb52d88b19b8",
+        "reviewed": true
+      },
+      {
+        "member": "34/35_Бишон/Бишон4.jpg",
+        "sha256": "e33bb982189761954b22578a0f26187031f9484ae1421f82a177422b7fa5ee56",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешность и происхождение",
+      "Характер и особенности"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF7F2470": {
+    "theme": "Ягуар",
+    "kind": "animal",
+    "archiveHash": "dba26d281333fc9f66ac2a751f06df26aacf0360b8a5e5d1eaa19cba9a52101d",
+    "sourceDocument": "15/16_Ягуар/Ягуа́р.odt",
+    "sourceDocumentHash": "40c6929fdc7bfbd142fb26c3d592a9e24532b56cb5db2efdcbc9e33bdd8d273c",
+    "blocks": [
+      "Ягуар — крупная кошка с мощным телом и пятнистой окраской.",
+      "Обитает в Северной и Южной Америке; основные местообитания — тропические леса.",
+      "Живёт преимущественно в одиночку, активно охотится в сумерках.",
+      "Ищет добычу и возле воды, где ловит животных и разыскивает черепашьи яйца.",
+      "Его охотничья территория зависит от количества доступной добычи."
+    ],
+    "patterns": [
+      "TIIT",
+      "ITTTII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/332610DD4A4A8E8A4C9654435EE5407F/xs3qstsrc332610DD4A4A8E8A4C9654435EE5407F_10_1760009550.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/332610DD4A4A8E8A4C9654435EE5407F/xs3qstsrc332610DD4A4A8E8A4C9654435EE5407F_11_1760009550.png",
+        "sha256": "01b866f031dd001ec2ae61ede1cfe6bed9b8f20804c3cb3d61775e7ccbdbfe07",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/332610DD4A4A8E8A4C9654435EE5407F/xs3qstsrc332610DD4A4A8E8A4C9654435EE5407F_12_1760009550.png",
+        "sha256": "536c7effdfb02f69a0bbe5fad01d9a46b32af221b726b197e565b42e6e877201",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "15/16_Ягуар/Ягуар 2.jpg",
+        "sha256": "8964b75a8f73dcfcb838ccfee267ec139c73cbb75ced2b2eb1303261efe9829c",
+        "reviewed": true
+      },
+      {
+        "member": "15/16_Ягуар/Ягуар 4.jpg",
+        "sha256": "aa7f0615293f91015655964fbbd8b698f3204c2351c545ad1d273e7504b067a1",
+        "reviewed": true
+      },
+      {
+        "member": "15/16_Ягуар/Ягуар 3.jpg",
+        "sha256": "5d38ee2e75331dcd71e43b296c066037c99927544d4562dd9e2f538666ccc38c",
+        "reviewed": true
+      },
+      {
+        "member": "15/16_Ягуар/Ягуар 1.jpg",
+        "sha256": "f92a260728b70e5b1b3ba732a012c6dd0e086060cabcb7a6469e7f75fbdcb527",
+        "reviewed": true
+      },
+      {
+        "member": "15/16_Ягуар/Ягуар 5.jpg",
+        "sha256": "22e14aa663bcfc7c9d0dc794a5057852638c9ea10ca69fcec35e24c800120c47",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFBA7571": {
+    "theme": "Душица",
+    "kind": "plant",
+    "archiveHash": "01eadd7539dc19ac5f7d4b0cc8ebb7fae0b085cea72620e51a8e21983a75e7b6",
+    "sourceDocument": "41/Душица/ЗАДАНИЕ 13/Душица.odt",
+    "sourceDocumentHash": "c7b897ba9f6b3a7efa50c6c064af6ab715e6dff8214ef3ed9459b89ef32cd712",
+    "blocks": [
+      "Душица — травянистое растение высотой около 50–70 см.",
+      "Распространена в Европе и Средиземноморье. Цветёт в июне и июле.",
+      "Ароматную зелень включают в пряные смеси и мясные начинки.",
+      "Душицу добавляют к мясу, в соусы и подливки; ею ароматизируют пиццу.",
+      "Пример салата: тёртые морковь и яблоко, листья душицы и зелёный лук со сметаной."
+    ],
+    "patterns": [
+      "TIIT",
+      "IIITTT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/345398A99D3A8CF24D4689BDB3EBF4F1/xs3qstsrc345398A99D3A8CF24D4689BDB3EBF4F1_10_1760010757.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/345398A99D3A8CF24D4689BDB3EBF4F1/xs3qstsrc345398A99D3A8CF24D4689BDB3EBF4F1_11_1760010757.png",
+        "sha256": "01b866f031dd001ec2ae61ede1cfe6bed9b8f20804c3cb3d61775e7ccbdbfe07",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/345398A99D3A8CF24D4689BDB3EBF4F1/xs3qstsrc345398A99D3A8CF24D4689BDB3EBF4F1_12_1760010757.png",
+        "sha256": "5e3556eb523fdef18da768bc816be1cf923589860994df5442d575abde0e4108",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "41/Душица/ЗАДАНИЕ 13/lori-0034419924-a7.jpg",
+        "sha256": "12b0ed06e8b7d5d4c969bdb18c351c4dbd43771ad85a4ae71428586ec6fa48e9",
+        "reviewed": true
+      },
+      {
+        "member": "41/Душица/ЗАДАНИЕ 13/lori-0034020070-a7.jpg",
+        "sha256": "a5821a740518ada575824fcff79974f8d91486400075894e62de9a6b43af9d1f",
+        "reviewed": true
+      },
+      {
+        "member": "41/Душица/ЗАДАНИЕ 13/lori-0021891400-a7.jpg",
+        "sha256": "cf597556924d7cb926e14d89bed46464b785595554448a9d964892f58e059a80",
+        "reviewed": true
+      },
+      {
+        "member": "41/Душица/ЗАДАНИЕ 13/lori-0005125072-a7.jpg",
+        "sha256": "d391eb2839055ab8fabeae5085015915e696945a98315dff56be158dfb526085",
+        "reviewed": true
+      },
+      {
+        "member": "41/Душица/ЗАДАНИЕ 13/lori-0005679381-a7.jpg",
+        "sha256": "ce341c5937c24e67742b16992bf8ce67ffa391cf5ecaddddc8cf7687104daf88",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF2CB179": {
+    "theme": "Белый медведь",
+    "kind": "animal",
+    "archiveHash": "8f74caa836dc7e238054114a0a704e3d849c4f1dbed64ba47e0bb9d9c79dc71c",
+    "sourceDocument": "20/21_Белый медведь/Бе́лый медве́дь.odt",
+    "sourceDocumentHash": "1c60384433176fcc2d9237692d29544d5b93fe22742350ba9da91e9b508c7f4f",
+    "blocks": [
+      "Белый медведь — крупный хищник с густой светлой шерстью.",
+      "Живёт среди северных морских льдов, включая районы Шпицбергена.",
+      "Передвигается по льду и хорошо плавает.",
+      "Главная добыча — морские млекопитающие, в том числе кольчатая нерпа.",
+      "Медведь подкарауливает тюленей у лунок или подкрадывается из-за укрытия."
+    ],
+    "patterns": [
+      "ITIT",
+      "ITITIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/36B4A5C86DEF9B4E41344ABE0F3543F1/xs3qstsrc36B4A5C86DEF9B4E41344ABE0F3543F1_10_1760009758.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/36B4A5C86DEF9B4E41344ABE0F3543F1/xs3qstsrc36B4A5C86DEF9B4E41344ABE0F3543F1_11_1760009758.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/36B4A5C86DEF9B4E41344ABE0F3543F1/xs3qstsrc36B4A5C86DEF9B4E41344ABE0F3543F1_12_1760009758.png",
+        "sha256": "3870cb320f791b7ef1dbf312ce642e869a032b7558d5e41681d995c1f8807e89",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/36B4A5C86DEF9B4E41344ABE0F3543F1/xs3qstsrc36B4A5C86DEF9B4E41344ABE0F3543F1_13_1760009758.png",
+        "sha256": "1ce4d7df2ce3ffc97b70a5bef466efa76db2b514ac381c701f8699b2c18021fb",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "20/21_Белый медведь/Белый медведь 3.jpg",
+        "sha256": "27e3561b0bc03b3f6331480c24be1a67c43c12665a3e1d1468614674a1c01c8c",
+        "reviewed": true
+      },
+      {
+        "member": "20/21_Белый медведь/Белый медведь 2.jpg",
+        "sha256": "9312924d38df7cf9d27fa85abfb1c414fa1b057976eadafe09f2b52fbd0805d9",
+        "reviewed": true
+      },
+      {
+        "member": "20/21_Белый медведь/Белый медведь 5.jpg",
+        "sha256": "0a54c7b5a2e296913d7eea2d8de6ed34e043b888756fef8474e345395cc3bf1d",
+        "reviewed": true
+      },
+      {
+        "member": "20/21_Белый медведь/Белый медведь 1.jpg",
+        "sha256": "0b24ed08c7c73325fb71137fda692c6b4fc46e7723a8966b79b8beda9cbe0f39",
+        "reviewed": true
+      },
+      {
+        "member": "20/21_Белый медведь/Белый медведь 4.jpg",
+        "sha256": "aff622dea26224f9413408c86a6be9ace5c773968e1ee4ee99a1d05c850e8f91",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFE3F178": {
+    "theme": "Малая панда",
+    "kind": "animal",
+    "archiveHash": "d1fb77ce916e4f20ee71624d010dbbd7483af64132794d9c568f931245ef4d24",
+    "sourceDocument": "25/26_Малая панда/Ма́лая па́нда.odt",
+    "sourceDocumentHash": "ef545fa16c7eba40550797405b9dd81b9522aa3a2cff96734382d7741a929972",
+    "blocks": [
+      "Малая панда имеет рыжеватый мех, светлую мордочку и длинный пушистый хвост.",
+      "Обитает в горных лесах Гималаев и соседних районов Азии, где есть бамбук.",
+      "Активна преимущественно в сумерках, днём отдыхает в дуплах.",
+      "Основу питания составляют молодые листья и нежные побеги бамбука.",
+      "Хорошо лазает по деревьям; хвост помогает сохранять равновесие."
+    ],
+    "patterns": [
+      "TIIT",
+      "ITTTII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/3CF1E5DBEEB59EBE4994E91B63EB7D17/xs3qstsrc3CF1E5DBEEB59EBE4994E91B63EB7D17_10_1760009992.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/3CF1E5DBEEB59EBE4994E91B63EB7D17/xs3qstsrc3CF1E5DBEEB59EBE4994E91B63EB7D17_11_1760009992.png",
+        "sha256": "01b866f031dd001ec2ae61ede1cfe6bed9b8f20804c3cb3d61775e7ccbdbfe07",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/3CF1E5DBEEB59EBE4994E91B63EB7D17/xs3qstsrc3CF1E5DBEEB59EBE4994E91B63EB7D17_12_1760009992.png",
+        "sha256": "536c7effdfb02f69a0bbe5fad01d9a46b32af221b726b197e565b42e6e877201",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "25/26_Малая панда/Малая панда 4.jpg",
+        "sha256": "3bb2689dab5cbf501e9be80c8aeb439791a78aaf4fcb3c75feb1f5f2d21fdc2d",
+        "reviewed": true
+      },
+      {
+        "member": "25/26_Малая панда/Малая панда 2.jpg",
+        "sha256": "b4fb648b04b74701bd9255f45b2f09c00972e9b54c62c00e27a108097bc8e5b4",
+        "reviewed": true
+      },
+      {
+        "member": "25/26_Малая панда/Малая панда 1.jpg",
+        "sha256": "c575afd59bc3d535d05b0ee853ce067ae7ca7ad2e651ec83eec01ea20bc43bd3",
+        "reviewed": true
+      },
+      {
+        "member": "25/26_Малая панда/Малая панда 5.jpg",
+        "sha256": "22584b0b327374a6507c7911b76275e8c67a8b3a0714283fee044d0d2b6f3e4b",
+        "reviewed": true
+      },
+      {
+        "member": "25/26_Малая панда/Малая панда 3.jpg",
+        "sha256": "584756f0574a0fa2f8a3a792d2b0bd1b148c6fa2a380fa4d022ab2cf35766698",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [
+      {
+        "scope": "Ареал и равновесие на ветвях",
+        "url": "https://nationalzoo.si.edu/animals/red-panda",
+        "reviewed": true
+      }
+    ],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF332B74": {
+    "theme": "Ирга",
+    "kind": "plant",
+    "archiveHash": "03206f7b2027d6906463f3770eca7cc3ff549bdb703188958b24fddb2fe5b628",
+    "sourceDocument": "52/Ирга/ЗАДАНИЕ 13/Ирга.odt",
+    "sourceDocumentHash": "42fbb764229ac37cef6561e8f07ded832357e6517702ac9012dcf81007515666",
+    "blocks": [
+      "Ирга — небольшое дерево или многоствольный листопадный кустарник.",
+      "Весной появляются соцветия из светлых цветков; осенью листья меняют окраску.",
+      "Плоды тёмно-фиолетовые или почти чёрные, небольшие и сладкие.",
+      "Иргу едят свежей, используют для джема и сока.",
+      "Пюре из плодов подходит для начинки пирогов, йогурта и мороженого."
+    ],
+    "patterns": [
+      "TITI",
+      "TTTIII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/3E06E406F16C9D684C60DE8102FFC0A7/xs3qstsrc3E06E406F16C9D684C60DE8102FFC0A7_10_1760011242.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/3E06E406F16C9D684C60DE8102FFC0A7/xs3qstsrc3E06E406F16C9D684C60DE8102FFC0A7_11_1760011242.png",
+        "sha256": "ce8a49703926deb3ae163463e92f89685c8046599574b262ec9bda6041b4abb5",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/3E06E406F16C9D684C60DE8102FFC0A7/xs3qstsrc3E06E406F16C9D684C60DE8102FFC0A7_12_1760011242.png",
+        "sha256": "77f44201f6e791e5505bdd2d14a804da1be9dc6b2dcbd9c4f6c67896eb22fcd8",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "52/Ирга/ЗАДАНИЕ 13/lori-0023382351-a7.jpg",
+        "sha256": "2873dc6978a0e8b00b4135fd3e3c8720e3e9b0a021efc3956111c4576f7eb48d",
+        "reviewed": true
+      },
+      {
+        "member": "52/Ирга/ЗАДАНИЕ 13/lori-0005875043-a7.jpg",
+        "sha256": "4b466de9310d0d760d01d62f60e737df68d94f0b2bba4b304ae747d3121f0770",
+        "reviewed": true
+      },
+      {
+        "member": "52/Ирга/ЗАДАНИЕ 13/lori-0021471913-a7.jpg",
+        "sha256": "d2d1c65bf8f613ccc6dbb1bfb3271b2ac7fdb791cff009a17f95c937e8e3e628",
+        "reviewed": true
+      },
+      {
+        "member": "52/Ирга/ЗАДАНИЕ 13/lori-0023733595-a7.jpg",
+        "sha256": "b1984f29cc6c166d915c71af39c586c6dbfb256c2efd0aec6c5d5aad07f3f426",
+        "reviewed": true
+      },
+      {
+        "member": "52/Ирга/ЗАДАНИЕ 13/lori-0000940093-a7.jpg",
+        "sha256": "f8bac6766f388f461e008824dca2ada7a0bb993e01af83a83470d8a5f5298982",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFF1C71B": {
+    "theme": "Домашняя кошка",
+    "kind": "animal",
+    "archiveHash": "30b7bb4ac7b275d03e7963e29442d2912294b82722bde237b47f5c2632961568",
+    "sourceDocument": "19/20_Домашняя кошка/Домашняя кошка.odt",
+    "sourceDocumentHash": "70882199bdd2e6a6a38ab34f9f95c1e5a2984a80159069d9bd03dfef3cd0fcf4",
+    "blocks": [
+      "Домашние кошки разнообразны: есть длинношёрстные породы и почти лишённые шерсти.",
+      "Живут рядом с человеком по всему миру, в том числе в городских домах.",
+      "Для общения используют звуки, запахи и движения тела.",
+      "Кошка — хищник. На воле охотится главным образом на грызунов и птиц.",
+      "Много времени проводит во сне; любит игры с небольшими движущимися предметами."
+    ],
+    "patterns": [
+      "TITI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/514A53D94F0D84624FAE028B943D4BD1/xs3qstsrc514A53D94F0D84624FAE028B943D4BD1_10_1760009721.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/514A53D94F0D84624FAE028B943D4BD1/xs3qstsrc514A53D94F0D84624FAE028B943D4BD1_11_1760009721.png",
+        "sha256": "ce8a49703926deb3ae163463e92f89685c8046599574b262ec9bda6041b4abb5",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/514A53D94F0D84624FAE028B943D4BD1/xs3qstsrc514A53D94F0D84624FAE028B943D4BD1_12_1760009721.png",
+        "sha256": "8468eae788ae4b83dcfc9a06448bf4c47ee456f41f165557d9533a4605bef689",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "19/20_Домашняя кошка/Домашняя кошка 11.jpg",
+        "sha256": "e16fb8cdf7ac6a9f46ca4e00e713a2c7b4b5a9b9b873336555d09c98d5c61f43",
+        "reviewed": true
+      },
+      {
+        "member": "19/20_Домашняя кошка/Домашняя кошка 9.jpg",
+        "sha256": "0590351c8fa68ca39dea30740e1de08848f6898342f274e5e95c17620a7abf49",
+        "reviewed": true
+      },
+      {
+        "member": "19/20_Домашняя кошка/Домашняя кошка 5.jpg",
+        "sha256": "281a9c13de3ddae27ec76454e9f245e836f590b7ec6b91e1a5c670dbb425e122",
+        "reviewed": true
+      },
+      {
+        "member": "19/20_Домашняя кошка/Домашняя кошка 8.jpg",
+        "sha256": "87de0b17a348ffa24d921656af567c051db354f129c23f74e46a72ac73568c71",
+        "reviewed": true
+      },
+      {
+        "member": "19/20_Домашняя кошка/Домашняя кошка 10.jpg",
+        "sha256": "30723b7bac1bad758562d85e6cba620f743a47e9df2e518da05aaf62cb594c78",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF016415": {
+    "theme": "Пекинес",
+    "kind": "dog",
+    "archiveHash": "7a99d83833563eed56bf78e974f784965c160950d5d562830e04be2b0ba226c1",
+    "sourceDocument": "36/37_Пекинес/Пекинес.odt",
+    "sourceDocumentHash": "d1be709b6fe04c51656f59aca6c74e325d7f0624cdfe732817f25253259c42d0",
+    "blocks": [
+      "Пекинес — небольшая собака с длинной шерстью, крупными глазами и короткой мордочкой.",
+      "Порода возникла в древнем Китае. Её название связано с городом Пекин.",
+      "Раньше пекинесов содержали во дворце китайского императора.",
+      "Пекинес самостоятельный, смелый и любит внимание хозяина.",
+      "Привязавшись к человеку, проявляет преданность, но сохраняет независимость."
+    ],
+    "patterns": [
+      "TITI",
+      "TIIITT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/528D50FBE4B7AF6043040E43F99B48A7/xs3qstsrc528D50FBE4B7AF6043040E43F99B48A7_10_1760010501.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/528D50FBE4B7AF6043040E43F99B48A7/xs3qstsrc528D50FBE4B7AF6043040E43F99B48A7_11_1760010501.png",
+        "sha256": "841e3a2e70faf10405b2a912a076136ebb91270f4b422f9dd9f7a44c19956d5e",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/528D50FBE4B7AF6043040E43F99B48A7/xs3qstsrc528D50FBE4B7AF6043040E43F99B48A7_12_1760010501.png",
+        "sha256": "7c3459717985eba766dcd1187a12a36c7503edec8ab3ffda2746475d08478544",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "36/37_Пекинес/Пекинес 2.jpg",
+        "sha256": "ad638e13a27258184096a3dccd665a26726119dc95707b73e43ad46b45d5b6a0",
+        "reviewed": true
+      },
+      {
+        "member": "36/37_Пекинес/Пекинес 4.jpg",
+        "sha256": "8cc989ba4dc0f16f68fd28340ea247e13f56a4b72449b3af776bcebfb7f62243",
+        "reviewed": true
+      },
+      {
+        "member": "36/37_Пекинес/Пекинес 5.jpg",
+        "sha256": "a2630b82a03546508e91545dde72e17e7212bbf37276eb0f347643d3eb66e41c",
+        "reviewed": true
+      },
+      {
+        "member": "36/37_Пекинес/Пекинес 3.jpg",
+        "sha256": "a541e7807aa958eff1af81065af4319e0f1600dced2920c5ca9d5ed884bdd930",
+        "reviewed": true
+      },
+      {
+        "member": "36/37_Пекинес/Пекинес 1.jpg",
+        "sha256": "c563694928eac5e934fa847bd5064266139f3f42decd8d543a1041ab38633a57",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешность и происхождение",
+      "Характер и особенности"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF388A2C": {
+    "theme": "Голубика",
+    "kind": "plant",
+    "archiveHash": "44e22b61f4af8c031d8e3622bbb11b1173047b1d8c39d7ae20d93e50c4f2af62",
+    "sourceDocument": "48/Голубика/ЗАДАНИЕ 13/Голубика.odt",
+    "sourceDocumentHash": "6b893b0f02bae6278fd91d079abab4c13254a5686f87339cb86f1069c75f6104",
+    "blocks": [
+      "Голубика — кустарничек семейства Вересковые с одревесневшими стеблями.",
+      "Растёт в холодных областях Северного полушария, в том числе в горных районах.",
+      "Синие ягоды покрыты восковым налётом; мякоть и сок светлые.",
+      "Из голубики готовят варенье, желе и джем.",
+      "Ягоды сочетают с черникой и чёрной смородиной; ими можно дополнить десерт."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6EAFF9AA8EB7BE41407820C0B63B9788/xs3qstsrc6EAFF9AA8EB7BE41407820C0B63B9788_10_1760011048.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6EAFF9AA8EB7BE41407820C0B63B9788/xs3qstsrc6EAFF9AA8EB7BE41407820C0B63B9788_11_1760011048.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6EAFF9AA8EB7BE41407820C0B63B9788/xs3qstsrc6EAFF9AA8EB7BE41407820C0B63B9788_12_1760011048.png",
+        "sha256": "ce93efbecdd885cb22231341de7e0e22cfea7fd34568b68f263e58ec9368b612",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "48/Голубика/ЗАДАНИЕ 13/lori-0006442492-a7.jpg",
+        "sha256": "ca3666365831e3321bb8b137cd16de2a740bcca4569f1b610de02019d5fd3259",
+        "reviewed": true
+      },
+      {
+        "member": "48/Голубика/ЗАДАНИЕ 13/lori-0003557037-a7.jpg",
+        "sha256": "837d69bb350433e8135ed1478a24e6d19549aa45c8242ebb07e9af07998e6d9c",
+        "reviewed": true
+      },
+      {
+        "member": "48/Голубика/ЗАДАНИЕ 13/lori-0029540110-a7.jpg",
+        "sha256": "38c16381f1b729f1322ca879772bb223ff618cdfbc8c8d8a2f4712588c30ef4f",
+        "reviewed": true
+      },
+      {
+        "member": "48/Голубика/ЗАДАНИЕ 13/lori-0023925334-a7.jpg",
+        "sha256": "7223f34eb91fc52c5e003330ac9593942fe63e6f4d4cbe9326aebe55b28989f6",
+        "reviewed": true
+      },
+      {
+        "member": "48/Голубика/ЗАДАНИЕ 13/lori-0000979593-a7.jpg",
+        "sha256": "4544e40adb35930a506ca4a52f7287f43fd5c9b16e69da642557ec2cea7722b2",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF879B2D": {
+    "theme": "Сервал",
+    "kind": "animal",
+    "archiveHash": "5d792281f04378206fc245e54d6634d56ae0f6e997499313a3c7c4d6fb6cd091",
+    "sourceDocument": "12/13_Сервал/Сервал.odt",
+    "sourceDocumentHash": "40586e4f029d80e0d869d535e6cafb2b01d1c404af1a6946e38ffaa652f3a037",
+    "blocks": [
+      "Сервал — длинноногая пятнистая кошка с большими ушами.",
+      "Живёт в Африке, предпочитает открытые травянистые пространства возле воды.",
+      "Ведёт одиночный образ жизни; особенно активен в сумерках.",
+      "Основная добыча — грызуны, зайцы, мелкие антилопы и птицы.",
+      "Хороший слух помогает находить добычу, а длинные ноги — двигаться в высокой траве."
+    ],
+    "patterns": [
+      "TITI",
+      "TTTIII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6F7B34888147886D4FBEC6553D3CB150/xs3qstsrc6F7B34888147886D4FBEC6553D3CB150_10_1760009437.png",
+        "sha256": "3fcd9dd290cf74d03f08c9a3e1841a2d09a5650f0a192a78155f11f419572e90",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6F7B34888147886D4FBEC6553D3CB150/xs3qstsrc6F7B34888147886D4FBEC6553D3CB150_11_1760009437.png",
+        "sha256": "67da8ba1fa55f1e30b59a1314cfe5e59ac31940db920d70041308b911faf4f6c",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6F7B34888147886D4FBEC6553D3CB150/xs3qstsrc6F7B34888147886D4FBEC6553D3CB150_12_1760009437.png",
+        "sha256": "07b42271e3ebbebd94357f9b2a04721d885429cc7114242c165dd67efbf97835",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6F7B34888147886D4FBEC6553D3CB150/xs3qstsrc6F7B34888147886D4FBEC6553D3CB150_13_1760009437.png",
+        "sha256": "a8a84a75ae1f7bb65696780b1d542780e0696b38afd4ac58a2aae292a782a1b6",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "12/13_Сервал/Сервал 1.jpg",
+        "sha256": "9d3871be0dfdaff9916719f88a152da9a5759fafa46cb2b1a7ac87ca681c129c",
+        "reviewed": true
+      },
+      {
+        "member": "12/13_Сервал/Сервал 3.jpg",
+        "sha256": "ea5eb06f6bd5b6ce32ffb1a147a180b8722dc2245c17a02fe91f19a7732bd216",
+        "reviewed": true
+      },
+      {
+        "member": "12/13_Сервал/Сервал 4.jpg",
+        "sha256": "3047c38bbbd12fbd5dac49a2433ebcfc09ad7c5fdfa96e577a763590e9d3eb68",
+        "reviewed": true
+      },
+      {
+        "member": "12/13_Сервал/Сервал 2.jpg",
+        "sha256": "4ab03e6f525871169c8923cdff77ccfa9364fce39c9ee016d980b577fe496af3",
+        "reviewed": true
+      },
+      {
+        "member": "12/13_Сервал/Сервал 5.jpg",
+        "sha256": "2b6805ec0d99544d4b02e43736e0808fa81b63ef7e0a869353e929e97597cc74",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFC062D1": {
+    "theme": "Лев",
+    "kind": "animal",
+    "archiveHash": "a0e163813d59fabe10ca55ab93254e663beb006954f6d828f0011d512bcbcc2a",
+    "sourceDocument": "16/17_Лев/Лев.odt",
+    "sourceDocumentHash": "0dc02f5097b4a68082795e59f38ffbaf58121c11ac8700a0b224425c6fb6a9a3",
+    "blocks": [
+      "Лев — крупная кошка; взрослые самцы выделяются густой гривой.",
+      "Основные популяции живут на востоке и юге Африки; азиатские львы сохранились в Индии.",
+      "Львы могут жить группами — прайдами.",
+      "Охотятся на крупных животных: зебр, антилоп, буйволов и кабанов.",
+      "Наиболее активны после захода солнца, хотя могут охотиться и днём."
+    ],
+    "patterns": [
+      "TITI",
+      "TIIITT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/7A5D269197E5A4EB47A1975A2D8C173F/xs3qstsrc7A5D269197E5A4EB47A1975A2D8C173F_10_1760009585.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/7A5D269197E5A4EB47A1975A2D8C173F/xs3qstsrc7A5D269197E5A4EB47A1975A2D8C173F_11_1760009585.png",
+        "sha256": "841e3a2e70faf10405b2a912a076136ebb91270f4b422f9dd9f7a44c19956d5e",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/7A5D269197E5A4EB47A1975A2D8C173F/xs3qstsrc7A5D269197E5A4EB47A1975A2D8C173F_12_1760009585.png",
+        "sha256": "7c3459717985eba766dcd1187a12a36c7503edec8ab3ffda2746475d08478544",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "16/17_Лев/Лев 5.jpg",
+        "sha256": "58f90a0ce79032955ce3b71cdeb335be6f963baa28d232c6ae28d84a4b7f1f6c",
+        "reviewed": true
+      },
+      {
+        "member": "16/17_Лев/Лев 1.jpg",
+        "sha256": "7034a1dd004151f7988f773c6c6035115e51ea6bd461d8ea9c225e1d44c3f6fc",
+        "reviewed": true
+      },
+      {
+        "member": "16/17_Лев/Лев 2.jpg",
+        "sha256": "804bb5ba8acf3b075ce2db90e3023bcd1f4307a4ac6e6897da5a9aed9c14aceb",
+        "reviewed": true
+      },
+      {
+        "member": "16/17_Лев/Лев 3.jpg",
+        "sha256": "fa9aa70a0cdc6f61854288f7fa7da6387a713131184c6e13e8d90527735f0438",
+        "reviewed": true
+      },
+      {
+        "member": "16/17_Лев/Лев 4.jpg",
+        "sha256": "ac0f236d872c0ca7980e8b2ca2b55205074c312f1f9e9be7c8a00520f27c2b81",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF961ED5": {
+    "theme": "Жимолость",
+    "kind": "plant",
+    "archiveHash": "c5318d9cfe472c30331e0f75497cc45ad3e3802e043d97407a108465a1eeff00",
+    "sourceDocument": "57/Жимолость/ЗАДАНИЕ 13/Жимолость.odt",
+    "sourceDocumentHash": "32af73074e30f52ccb170551bf9acd0e55c8174ca29f1f377ad700ea71438f25",
+    "blocks": [
+      "Жимолости — кустарники с супротивными листьями, распространённые в Северном полушарии.",
+      "Съедобная синяя жимолость растёт в Сибири, на Камчатке и Курилах.",
+      "У съедобных сортов вытянутые синие плоды; не всякая жимолость пригодна в пищу.",
+      "Ягоды съедобных сортов добавляют в пироги, йогурт и мороженое.",
+      "Из них варят джем и варенье: пектины помогают загустеванию."
+    ],
+    "patterns": [
+      "ITTI",
+      "IITTTI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/7B85DCB4B828B02244114C71861DE341/xs3qstsrc7B85DCB4B828B02244114C71861DE341_10_1760011419.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/7B85DCB4B828B02244114C71861DE341/xs3qstsrc7B85DCB4B828B02244114C71861DE341_11_1760011419.png",
+        "sha256": "4b7133d51558d64243dbdccadcdbc1eab43aa30796b6434a73f317ed776db550",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/7B85DCB4B828B02244114C71861DE341/xs3qstsrc7B85DCB4B828B02244114C71861DE341_12_1760011419.png",
+        "sha256": "5ec5d1b89c0e1a71f859c951b04b9d654403ec34276ecc12d438ef62b56421e0",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "57/Жимолость/ЗАДАНИЕ 13/lori-0008465630-a7.jpg",
+        "sha256": "73ccdbeea1a0d6c5cf8585b75925bef15041a68d245d5bfd394f486959c40798",
+        "reviewed": true
+      },
+      {
+        "member": "57/Жимолость/ЗАДАНИЕ 13/lori-0026576112-a7.jpg",
+        "sha256": "1dc2f7a50a3647b1e78fa06c86a8fde7bd3769c58303ac77ffc6f8a68b961f97",
+        "reviewed": true
+      },
+      {
+        "member": "57/Жимолость/ЗАДАНИЕ 13/lori-0026360719-a7.jpg",
+        "sha256": "24f89ad9e8f25ae2a9a22439ecb1299716fe2870fcd5d761375f41f6632a8d98",
+        "reviewed": true
+      },
+      {
+        "member": "57/Жимолость/ЗАДАНИЕ 13/lori-0003579674-a7.jpg",
+        "sha256": "2f4bf37d842534bd2e9af9c58fa85929e877554a6e8593031f39ed3cf3580ce5",
+        "reviewed": true
+      },
+      {
+        "member": "57/Жимолость/ЗАДАНИЕ 13/lori-0026695401-a7.jpg",
+        "sha256": "386fa77c8fd49e97839361295db722a83b8fb1fc76785394a026d4551bdee53e",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF216459": {
+    "theme": "Нутрия",
+    "kind": "animal",
+    "archiveHash": "5aa1c910589aebc5ac5ef8c832023d72e65b8a997ffecb246a3ba97377430c7e",
+    "sourceDocument": "8/9_Нутрия/Нутрия.odt",
+    "sourceDocumentHash": "62fe9d30a0c80a33fc4ffe2462b93fb604a26fd5b04fc6c100f80d76c069a02e",
+    "blocks": [
+      "Нутрия — грызун с густым водонепроницаемым мехом и округлым хвостом.",
+      "Естественный ареал — южная часть Южной Америки; заселяет берега водоёмов.",
+      "Ведёт полуводную жизнь и обычно активна ночью.",
+      "Ест корневища, стебли и листья тростника, рогоза и других водных растений.",
+      "Отлично плавает и ныряет; на задних лапах есть плавательные перепонки."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/86BD50E6A205829C47970A7B2CF1C86F/xs3qstsrc86BD50E6A205829C47970A7B2CF1C86F_10_1760009106.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/86BD50E6A205829C47970A7B2CF1C86F/xs3qstsrc86BD50E6A205829C47970A7B2CF1C86F_11_1760009106.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/86BD50E6A205829C47970A7B2CF1C86F/xs3qstsrc86BD50E6A205829C47970A7B2CF1C86F_12_1760009106.png",
+        "sha256": "d90294b8317b237595a04e41b382575fcfa6be560b08ea1eab904a6bb24e5d33",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "8/9_Нутрия/Нутрия 5.jpg",
+        "sha256": "fd3b534baba1250a343c209d0786302369189326048455201a1dbf559fe791a2",
+        "reviewed": true
+      },
+      {
+        "member": "8/9_Нутрия/Нутрия 2.jpg",
+        "sha256": "6093e64d9b906d5cac36926bfbf8734d71f9ab5b3eeb9fe7c4301b702ef1bc6e",
+        "reviewed": true
+      },
+      {
+        "member": "8/9_Нутрия/Нутрия 6.jpg",
+        "sha256": "8da4ecb9c87fe9345832617e6248b40dca6fdb15677b68fcc943ad7c31d74100",
+        "reviewed": true
+      },
+      {
+        "member": "8/9_Нутрия/Нутрия 1.jpg",
+        "sha256": "e79b13b7b45faa5625aaa6f00dce3cea6722851053faf38b1f0741b4f388bc7c",
+        "reviewed": true
+      },
+      {
+        "member": "8/9_Нутрия/Нутрия 4.jpg",
+        "sha256": "a042f56b4dbc3cc1d1b593f504698eb7e2b8573c055813ab3cd9820c11cd6145",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF533256": {
+    "theme": "Лабрадор",
+    "kind": "dog",
+    "archiveHash": "ce55be6f0911b938f7b5588a20c48d151bb238aac6967b3f934913cc0cd69c96",
+    "sourceDocument": "35/36_Лабрадор/Лабрадо́р.odt",
+    "sourceDocumentHash": "ad9ca9fae9d758fe92309eaf7a7a7952f0812e3e74d2d12b7a8b38ef6c82ed90",
+    "blocks": [
+      "Лабрадор имеет крепкое тело, плотную шерсть и толстый у основания хвост.",
+      "Порода берёт начало на острове Ньюфаундленд; её разводили как охотничью.",
+      "Лабрадор подвижен, сообразителен и обычно доброжелателен.",
+      "Может работать поводырём, спасателем или быть собакой-компаньоном.",
+      "Любит движение и воду; ему нужны ежедневные прогулки и занятия."
+    ],
+    "patterns": [
+      "TIIT",
+      "ITTTII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/88DEE673ACDEA9074060FB55F7CD2864/xs3qstsrc88DEE673ACDEA9074060FB55F7CD2864_10_1760010399.png",
+        "sha256": "784901473d58a6c8cb408cc4933709dcd151fc1e02f7100845d65ecf07be7693",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/88DEE673ACDEA9074060FB55F7CD2864/xs3qstsrc88DEE673ACDEA9074060FB55F7CD2864_11_1760010399.png",
+        "sha256": "69ef2c014aaae7fb5ede1a33e3e4f3cfa9c7cda02178d99bba35bca3169d5781",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/88DEE673ACDEA9074060FB55F7CD2864/xs3qstsrc88DEE673ACDEA9074060FB55F7CD2864_12_1760010399.png",
+        "sha256": "f98d332917cc80176a733ee8dd120c4c011a4fc6acc5b6620ea45126d3b5c918",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "35/36_Лабрадор/Лабрадор_5.jpg",
+        "sha256": "6d28a78c0379ef2ea4490e7301cad0e94253ad95ece7e371780e3f3a8da41c7a",
+        "reviewed": true
+      },
+      {
+        "member": "35/36_Лабрадор/Лабрадор_6.jpg",
+        "sha256": "8b667f1d1a75d0d357d215deea8cdaa0a2d16aaa803f68937afb35613b2dc207",
+        "reviewed": true
+      },
+      {
+        "member": "35/36_Лабрадор/Лабрадор_2.jpg",
+        "sha256": "7f6be952662ba442a7866f541cf39692839fb7cafb6eb9d97bdbefa3f1eccb6d",
+        "reviewed": true
+      },
+      {
+        "member": "35/36_Лабрадор/Лабрадор_3.jpg",
+        "sha256": "db266bae5aeed09b9abb5cd462f3cbe5befb34be83f87007e34ec4a321989c7f",
+        "reviewed": true
+      },
+      {
+        "member": "35/36_Лабрадор/Лабрадор_4.jpg",
+        "sha256": "a14a84a1251fdd46ae481298a5a3107f9be6b2a44e6b80e75b0e06fbb8c7be4b",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешность и происхождение",
+      "Характер и особенности"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFA4175E": {
+    "theme": "Ленивец",
+    "kind": "animal",
+    "archiveHash": "1b4b84730309f2464a8ac8b0838a3df3ec8a4201b98ecc5506b8e40957f38f20",
+    "sourceDocument": "28/29_Ленивец/Ленивцы.odt",
+    "sourceDocumentHash": "c5e276fa01e2fc5dda6177c9ff6da7161484155ddb8ea756d3fb87563295d39a",
+    "blocks": [
+      "Ленивец имеет длинную грубую шерсть и цепкие лапы; водоросли придают меху зеленоватый оттенок.",
+      "Живёт в Центральной и Южной Америке.",
+      "Двигается медленно, экономит энергию и обычно держится один.",
+      "Основная пища — листья деревьев; иногда ест насекомых.",
+      "Трёхпалые ленивцы особенно часто питаются листьями и цветками цекропии."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/89C50328605BBD334AB20007C32C3CBD/xs3qstsrc89C50328605BBD334AB20007C32C3CBD_10_1760010108.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/89C50328605BBD334AB20007C32C3CBD/xs3qstsrc89C50328605BBD334AB20007C32C3CBD_11_1760010108.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/89C50328605BBD334AB20007C32C3CBD/xs3qstsrc89C50328605BBD334AB20007C32C3CBD_12_1760010108.png",
+        "sha256": "d90294b8317b237595a04e41b382575fcfa6be560b08ea1eab904a6bb24e5d33",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "28/29_Ленивец/Ленивец 4.jpg",
+        "sha256": "1eb362c246158b14937a1e2bf1a2b9086a65d0538e17939adbbb85788950cbbe",
+        "reviewed": true
+      },
+      {
+        "member": "28/29_Ленивец/Ленивец 1.jpg",
+        "sha256": "74725e33e52b84741d1e398a54d2769179bb6873a300324a3d3dddd7b94ba503",
+        "reviewed": true
+      },
+      {
+        "member": "28/29_Ленивец/Ленивец 2.jpg",
+        "sha256": "9bf30b94bf589de8424910dd066624198a0161b724a4222a21531f71d133f8c0",
+        "reviewed": true
+      },
+      {
+        "member": "28/29_Ленивец/Ленивец 3.jpg",
+        "sha256": "ea157f1c5243a4b71da5ea886c32593c8288881d9e2fc014d0ed495957a94b63",
+        "reviewed": true
+      },
+      {
+        "member": "28/29_Ленивец/Ленивец 5.jpg",
+        "sha256": "ebe95d4501d1f8d99b0021523dd1b26e6b82244125b8c14bff85be756b482b48",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF3F4A5C": {
+    "theme": "Большая панда",
+    "kind": "animal",
+    "archiveHash": "ea141ced847719d7aafa2beb36d1544e6676268fc625f5a0711326d7045aa55e",
+    "sourceDocument": "22/23_Большая панда/Больша́я па́нда.odt",
+    "sourceDocumentHash": "1c37e8853e0cf61da97b7455dd6fdfeab0a643bc9ec955cd257296011ec01fe8",
+    "blocks": [
+      "Большая панда — медведь с характерной чёрно-белой окраской.",
+      "Живёт в горных областях Центрального Китая, включая Сычуань и Тибет.",
+      "Активна круглый год и не впадает в зимнюю спячку.",
+      "Основу питания составляет бамбук.",
+      "На поиск и поедание корма панда тратит значительную часть дня."
+    ],
+    "patterns": [
+      "TITI",
+      "TTTIII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8EA019A742F79D3744F1F77024D8E025/xs3qstsrc8EA019A742F79D3744F1F77024D8E025_10_1760009835.png",
+        "sha256": "3fcd9dd290cf74d03f08c9a3e1841a2d09a5650f0a192a78155f11f419572e90",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8EA019A742F79D3744F1F77024D8E025/xs3qstsrc8EA019A742F79D3744F1F77024D8E025_11_1760009835.png",
+        "sha256": "67da8ba1fa55f1e30b59a1314cfe5e59ac31940db920d70041308b911faf4f6c",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8EA019A742F79D3744F1F77024D8E025/xs3qstsrc8EA019A742F79D3744F1F77024D8E025_12_1760009835.png",
+        "sha256": "07b42271e3ebbebd94357f9b2a04721d885429cc7114242c165dd67efbf97835",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8EA019A742F79D3744F1F77024D8E025/xs3qstsrc8EA019A742F79D3744F1F77024D8E025_13_1760009835.png",
+        "sha256": "a8a84a75ae1f7bb65696780b1d542780e0696b38afd4ac58a2aae292a782a1b6",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "22/23_Большая панда/Большая панда 2.jpg",
+        "sha256": "3628bba8e8d52bdb1d9a5aad78bf257bd95655637f2725ac18f36264dd798e14",
+        "reviewed": true
+      },
+      {
+        "member": "22/23_Большая панда/Большая панда 1.jpg",
+        "sha256": "48c61a93950ac191a7faef47dc54f700d16923e45ac2d7c78993ffbcebf38093",
+        "reviewed": true
+      },
+      {
+        "member": "22/23_Большая панда/Большая панда 3.jpg",
+        "sha256": "8c70f1b609cff1f65b3b7a16c47b4976b98d96b03d5c7f4dc290b79b956f2b81",
+        "reviewed": true
+      },
+      {
+        "member": "22/23_Большая панда/Большая панда 5.jpg",
+        "sha256": "9c593c23304bced19017e03bb9cf8eb09e47f277b4e0bcace9a9b5447692a781",
+        "reviewed": true
+      },
+      {
+        "member": "22/23_Большая панда/Большая панда 4.jpg",
+        "sha256": "11c60752ec5d902fc499f99609e8d60381847c5cc708def3ac9130896c636e7c",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF50E6A1": {
+    "theme": "Черника",
+    "kind": "plant",
+    "archiveHash": "1971bb6dd69f59f5594ae575abc0d13499dbe675416a13a0aa7a0972c496d365",
+    "sourceDocument": "59/Черника/ЗАДАНИЕ 13/Черника.odt",
+    "sourceDocumentHash": "2ad7c1b8567a9d1dc391494f4f52620caa20b426a16e58b6ee44a93cc74ade4b",
+    "blocks": [
+      "Черника — невысокий листопадный кустарничек.",
+      "Растёт в тенистых хвойных и смешанных лесах, встречается на болотах.",
+      "Собирают спелые, почти чёрные ягоды; их сок оставляет яркие пятна.",
+      "Для хранения ягоды замораживают или высушивают.",
+      "Кулинарный пример — черничное варенье или джем."
+    ],
+    "patterns": [
+      "TITI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/985C2D2E234B85AD44F3B2E7F21C1703/xs3qstsrc985C2D2E234B85AD44F3B2E7F21C1703_10_1760011490.png",
+        "sha256": "01dc15333c1da250f36c2e3c470c715a14e1dbec1e2bd1b53531acfac0108695",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/985C2D2E234B85AD44F3B2E7F21C1703/xs3qstsrc985C2D2E234B85AD44F3B2E7F21C1703_11_1760011490.png",
+        "sha256": "a311f9aa4959b8a6de7c9670bb7475e4153ae0adb3f3e7c5f5879ab338494b98",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/985C2D2E234B85AD44F3B2E7F21C1703/xs3qstsrc985C2D2E234B85AD44F3B2E7F21C1703_12_1760011490.png",
+        "sha256": "595d627b7574b90b9cf0f836df7abaf521a4edb3760f1d049a8db939ccd485f8",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "59/Черника/ЗАДАНИЕ 13/lori-0006611979-a7.jpg",
+        "sha256": "0d71d9541464b251000d8d400c0c81ffaec7c9068b9b59f84ccb16723c679f94",
+        "reviewed": true
+      },
+      {
+        "member": "59/Черника/ЗАДАНИЕ 13/lori-0001722332-a7.jpg",
+        "sha256": "4a667606364f0af3fda9d5f327c9c25fc0359c44f8536e9152524cfd927d8af0",
+        "reviewed": true
+      },
+      {
+        "member": "59/Черника/ЗАДАНИЕ 13/lori-0002701542-a7.jpg",
+        "sha256": "de38322ffd410a53591ede50d1e6b70c4104d0d67840aac7a8036cb937363f41",
+        "reviewed": true
+      },
+      {
+        "member": "59/Черника/ЗАДАНИЕ 13/lori-0006505200-a7.jpg",
+        "sha256": "1c019ffd651a6e522be372656acfd2086f8ad5a013c14fad9ffc05504e5bf778",
+        "reviewed": true
+      },
+      {
+        "member": "59/Черника/ЗАДАНИЕ 13/lori-0033006962-a7.jpg",
+        "sha256": "c86275e5644c6d574b6aa5ad7dca7415acca9583901bf16a5ff33c65b8f98750",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF6B9FAF": {
+    "theme": "Шалфей",
+    "kind": "plant",
+    "archiveHash": "43d0951633f2749cf99a8f90d2d984f13f7db37c38628676bcdfff5e8e42b183",
+    "sourceDocument": "43/Шалфей/ЗАДАНИЕ 13/Шалфей.odt",
+    "sourceDocumentHash": "179dfbe5a915cc9cba4e613a75a975691531509b904c1d0b310cbc2e0165c9c0",
+    "blocks": [
+      "Шалфей — ароматная трава или полукустарник высотой до 80 см.",
+      "Его родиной считают Юго-Восточную Европу; выращивают в тёплых районах.",
+      "В качестве пряности используют свежие и высушенные листья.",
+      "Листья добавляют в салаты, овощные блюда, бульоны и соусы к рыбе.",
+      "Пример соуса к пасте: листья шалфея, прогретые в сливочном масле."
+    ],
+    "patterns": [
+      "ITTI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/9D1B413E8CC78E094794CC34DF0C279F/xs3qstsrc9D1B413E8CC78E094794CC34DF0C279F_10_1760010838.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/9D1B413E8CC78E094794CC34DF0C279F/xs3qstsrc9D1B413E8CC78E094794CC34DF0C279F_11_1760010838.png",
+        "sha256": "4b7133d51558d64243dbdccadcdbc1eab43aa30796b6434a73f317ed776db550",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/9D1B413E8CC78E094794CC34DF0C279F/xs3qstsrc9D1B413E8CC78E094794CC34DF0C279F_12_1760010838.png",
+        "sha256": "1e9685bfaa636e46d93d241d8417c76109c6937861ba162ed2353e448d65bf75",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "43/Шалфей/ЗАДАНИЕ 13/lori-0033960102-a7.jpg",
+        "sha256": "46f973ef061903cccab58f5772959bab32875d9cc8cb9df9ac60b4d507efe3f6",
+        "reviewed": true
+      },
+      {
+        "member": "43/Шалфей/ЗАДАНИЕ 13/lori-0006136583-a7.jpg",
+        "sha256": "13fe67199d980a251460dc2b0f4f50db2e228a779cbb3ee21cc9da599afd87a0",
+        "reviewed": true
+      },
+      {
+        "member": "43/Шалфей/ЗАДАНИЕ 13/lori-0027179500-a7.jpg",
+        "sha256": "47f1f2fa8d42ed40bf6694040c8e1280221184e2d1d1f216fc521c43aad05945",
+        "reviewed": true
+      },
+      {
+        "member": "43/Шалфей/ЗАДАНИЕ 13/lori-0012781070-a7.jpg",
+        "sha256": "6df18ba5bab147b00eb6d727731b1e8d48d8c946b9f81212bd0c2a4924b0a73b",
+        "reviewed": true
+      },
+      {
+        "member": "43/Шалфей/ЗАДАНИЕ 13/lori-0002891737-a7.jpg",
+        "sha256": "4095818700deca921bcdb77764a86d2c4cb8fa2f9859996861d2c07a943176d4",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFD2B7CE": {
+    "theme": "Земляника",
+    "kind": "plant",
+    "archiveHash": "9160668d797623852b098d6c45394f060a79bd826a34fa8a7eaa90db0a8fd094",
+    "sourceDocument": "50/Земляника/ЗАДАНИЕ 13/Земляника.odt",
+    "sourceDocumentHash": "1e044adfce3d5a3a2944f794057c019bdea3ebfeaa1ca4a0ec6c4148dd3a96d7",
+    "blocks": [
+      "Земляника — невысокое травянистое растение с тройчатыми листьями.",
+      "Растёт на открытых местах и в лесах; встречается во многих областях России.",
+      "Ароматные плоды используют как сладкое лакомство.",
+      "Пример кулинарного применения — варенье из спелой земляники.",
+      "Сладкую ягодную заготовку можно подать к чаю как десерт."
+    ],
+    "patterns": [
+      "ITIT",
+      "ITITIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A7C4633D380298554B94876DD90777DE/xs3qstsrcA7C4633D380298554B94876DD90777DE_10_1760011157.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A7C4633D380298554B94876DD90777DE/xs3qstsrcA7C4633D380298554B94876DD90777DE_11_1760011157.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A7C4633D380298554B94876DD90777DE/xs3qstsrcA7C4633D380298554B94876DD90777DE_12_1760011157.png",
+        "sha256": "cbc8e66f103ccede5322df1bdd7c319db9ec8f634f33b997a391ef2be628b42f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A7C4633D380298554B94876DD90777DE/xs3qstsrcA7C4633D380298554B94876DD90777DE_13_1760011157.png",
+        "sha256": "1ce4d7df2ce3ffc97b70a5bef466efa76db2b514ac381c701f8699b2c18021fb",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "50/Земляника/ЗАДАНИЕ 13/lori-0003938558-a7.jpg",
+        "sha256": "df24dc2c083b2954c8092da86ee583be41a33146518bc23497b349fc55244099",
+        "reviewed": true
+      },
+      {
+        "member": "50/Земляника/ЗАДАНИЕ 13/lori-0001827281-a7.jpg",
+        "sha256": "15a0647ce72ea858acc6185723df415be97878676a7e775db83dba4591354533",
+        "reviewed": true
+      },
+      {
+        "member": "50/Земляника/ЗАДАНИЕ 13/lori-0003726393-a7.jpg",
+        "sha256": "5cd134fc9a65857ca113187524704448d883e0fb36766f13a92e056ff2298807",
+        "reviewed": true
+      },
+      {
+        "member": "50/Земляника/ЗАДАНИЕ 13/lori-0005047983-a7.jpg",
+        "sha256": "eb78db8a16f2d3c0a3618367db6a67bbd8b032d56da6a4f9908dc6961cc1f6cd",
+        "reviewed": true
+      },
+      {
+        "member": "50/Земляника/ЗАДАНИЕ 13/lori-0032427309-a7.jpg",
+        "sha256": "f3f949b21db20b59c1b26735888b40c6d6c56d0fc85dcd733b7c5f9f71e5a432",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "Кулинарный пример предложен автором по иллюстрациям из архива; в текстовой справке нет рецепта.",
+    "reviewed": true
+  },
+  "OGEINFAD72C0": {
+    "theme": "Облепиха",
+    "kind": "plant",
+    "archiveHash": "69392bf78d2c202be9c61a3ce977fd2d7d6e5de82820803aa4eaf05ae821d146",
+    "sourceDocument": "55/Облепиха/ЗАДАНИЕ 13/Облепиха.odt",
+    "sourceDocumentHash": "699240121a54fc83f6bd43ac4a8a7b852041de8e08e45b8498e4b2546818f4a6",
+    "blocks": [
+      "Облепиха — кустарник с узкими листьями и яркими плодами.",
+      "Распространена в Азии и Европе, в том числе в Сибири и на Кавказе.",
+      "Кислые ягоды придают блюдам выразительный вкус.",
+      "Из плодов готовят джем, компот и начинку для сладкого пирога.",
+      "Свежую или сушёную облепиху добавляют в мюсли и фруктовые салаты."
+    ],
+    "patterns": [
+      "TIIT",
+      "ITTTII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A92376EFA796901C4EB607008D1184EA/xs3qstsrcA92376EFA796901C4EB607008D1184EA_10_1760011340.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A92376EFA796901C4EB607008D1184EA/xs3qstsrcA92376EFA796901C4EB607008D1184EA_11_1760011340.png",
+        "sha256": "01b866f031dd001ec2ae61ede1cfe6bed9b8f20804c3cb3d61775e7ccbdbfe07",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A92376EFA796901C4EB607008D1184EA/xs3qstsrcA92376EFA796901C4EB607008D1184EA_12_1760011340.png",
+        "sha256": "536c7effdfb02f69a0bbe5fad01d9a46b32af221b726b197e565b42e6e877201",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "55/Облепиха/ЗАДАНИЕ 13/lori-0004281554-a7.jpg",
+        "sha256": "29dcded267fe8e513f811febe462ce11d780ba7a361901a3af5fedff0f1e44c0",
+        "reviewed": true
+      },
+      {
+        "member": "55/Облепиха/ЗАДАНИЕ 13/lori-0003988210-a7.jpg",
+        "sha256": "b0ae6c28d2148e36dd6711a48a92e775a1842b64ee97007eab39cfc64a5191fa",
+        "reviewed": true
+      },
+      {
+        "member": "55/Облепиха/ЗАДАНИЕ 13/lori-0004983067-a7.jpg",
+        "sha256": "e2cc2d6b3b48ef56e974340c8411f9e8df19976041a1cbc98d78fedd81aae526",
+        "reviewed": true
+      },
+      {
+        "member": "55/Облепиха/ЗАДАНИЕ 13/lori-0003159822-a7.jpg",
+        "sha256": "86306707139ff37639e14d23db806e4601a3db310fe7c44a850c8600bf969742",
+        "reviewed": true
+      },
+      {
+        "member": "55/Облепиха/ЗАДАНИЕ 13/lori-0032126109-a7.jpg",
+        "sha256": "9188e33b13ede50d9dc6acd266f0bcd78362f80c1db2d4d21ea23ce70dc6ea1d",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF84F6C4": {
+    "theme": "Гепард",
+    "kind": "animal",
+    "archiveHash": "d2e24043fe487431261720cb95fe12bd9e76c9955df1033cb4545c34a9e1f7bd",
+    "sourceDocument": "14/15_Гепард/Гепа́рд.odt",
+    "sourceDocumentHash": "a36683593524905f9e778ca059c07497318dfc4a9948a8597337077406e00c90",
+    "blocks": [
+      "Гепард — стройная кошка с длинными ногами, чёрными пятнами и полосами на морде.",
+      "Живёт главным образом в Африке; небольшая популяция сохранилась в Иране.",
+      "Для охоты выбирает открытые пространства и быстро преследует добычу.",
+      "Ловит антилоп, зайцев и наземных птиц.",
+      "Обычно охотится утром или ближе к вечеру, а в жару отдыхает."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/AF010D408F9B9BBE446FA1F66E093D62/xs3qstsrcAF010D408F9B9BBE446FA1F66E093D62_10_1760009513.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/AF010D408F9B9BBE446FA1F66E093D62/xs3qstsrcAF010D408F9B9BBE446FA1F66E093D62_11_1760009513.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/AF010D408F9B9BBE446FA1F66E093D62/xs3qstsrcAF010D408F9B9BBE446FA1F66E093D62_12_1760009513.png",
+        "sha256": "d62187a6d53a9c238bbdd42f13869b12c0e16ade80a50d5d5a552de999fa7b74",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "14/15_Гепард/Гепард 2.jpg",
+        "sha256": "9b0f78dd173e86a7e6f4db93951dfbd40e2667ff36d47c7a6abfb1ffeb27e949",
+        "reviewed": true
+      },
+      {
+        "member": "14/15_Гепард/Гепард 4.jpg",
+        "sha256": "a108d7246d6acbc365ac33bf27a622cfaa3d2acef6f54c5e2bf6a333bcf83a85",
+        "reviewed": true
+      },
+      {
+        "member": "14/15_Гепард/Гепард 1.jpg",
+        "sha256": "a10fc9e655d4bd165c81e3749553a7c58102a26b7a26042f0ff63db5e1b54ee0",
+        "reviewed": true
+      },
+      {
+        "member": "14/15_Гепард/Гепард 5.jpg",
+        "sha256": "cc303f39f9a5c2785827b569322e9d2511444156cc4fa13678770c7ebc385a91",
+        "reviewed": true
+      },
+      {
+        "member": "14/15_Гепард/Гепард 3.jpg",
+        "sha256": "dbedcd0ae763823daf6fd36b8cd1296adef6dfc34357764863425e0c362726d2",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [
+      {
+        "scope": "Пища и время охоты",
+        "url": "https://animals.sandiegozoo.org/animals/cheetah",
+        "reviewed": true
+      }
+    ],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF2E439B": {
+    "theme": "Мопсы",
+    "kind": "dog",
+    "archiveHash": "4f3b20d8d7b6ac92522231312dc721a4156ce25e9fa0fcc600d75e8687649e97",
+    "sourceDocument": "31/32_Мопсы/Мопс.odt",
+    "sourceDocumentHash": "a51730ae3c5bc3d1b19d996798ed0a7a65c9e749bfcaac01e5dcc1fbe7754670",
+    "blocks": [
+      "Мопс — компактная короткошёрстная собака с короткой мордочкой.",
+      "Это древняя китайская порода, которую издавна держали представители знати.",
+      "У мопса живой, весёлый и в то же время уравновешенный характер.",
+      "Собака привязана к хозяину и ценит общение с ним.",
+      "Для содержания нужны движение, внимательный уход и подходящее питание."
+    ],
+    "patterns": [
+      "TIIT",
+      "IIITTT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B640CE5A970987A2447A239C214A8D5B/xs3qstsrcB640CE5A970987A2447A239C214A8D5B_10_1760010233.png",
+        "sha256": "784901473d58a6c8cb408cc4933709dcd151fc1e02f7100845d65ecf07be7693",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B640CE5A970987A2447A239C214A8D5B/xs3qstsrcB640CE5A970987A2447A239C214A8D5B_11_1760010233.png",
+        "sha256": "69ef2c014aaae7fb5ede1a33e3e4f3cfa9c7cda02178d99bba35bca3169d5781",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B640CE5A970987A2447A239C214A8D5B/xs3qstsrcB640CE5A970987A2447A239C214A8D5B_12_1760010233.png",
+        "sha256": "8305e2323d40ddfdd923932e00cd8d9b8309dcee1a9d26041d6c1ba995123a95",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "31/32_Мопсы/Мопс 1.jpg",
+        "sha256": "1180b8283c0e313f5c738e4ea42ae9833c9149d1be4f3f89ec16e9ddf139f1cd",
+        "reviewed": true
+      },
+      {
+        "member": "31/32_Мопсы/Мопс 7.jpg",
+        "sha256": "a1aa75df57db431381b6036999357c8ac28307d9764232cccebd619652925808",
+        "reviewed": true
+      },
+      {
+        "member": "31/32_Мопсы/Мопс 3.jpg",
+        "sha256": "8af37d485c7b901e34713a1be4514e3251959ea9eb2aaa26106246700b957cea",
+        "reviewed": true
+      },
+      {
+        "member": "31/32_Мопсы/Мопс 6.jpg",
+        "sha256": "5d9d4eaeea9081f61a8fe8aac15db3239103f6e23abd2323a65cc85c18122e01",
+        "reviewed": true
+      },
+      {
+        "member": "31/32_Мопсы/Мопс 2.jpg",
+        "sha256": "00eb3d58a5be0062c8dffcc2e7e9974af88b10be5c9a4679ca02057dfe6d3f99",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешность и происхождение",
+      "Характер и особенности"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF224F95": {
+    "theme": "Ондатра",
+    "kind": "animal",
+    "archiveHash": "337feec16f1714d67dd71803b970fff0ac788da22c765a91ec8dad1c3fad893a",
+    "sourceDocument": "9/10_Ондатра/Онда́тра.odt",
+    "sourceDocumentHash": "632ba84211bce55ca55a193644a33ca1a1191831cf45b1f93469da888d036e77",
+    "blocks": [
+      "Ондатра — грызун с густым водонепроницаемым мехом.",
+      "Селится у рек, озёр, каналов и пресноводных болот.",
+      "Ведёт полуводную жизнь; особенно активна после заката и рано утром.",
+      "Ест водные и прибрежные растения: тростник, рогоз, осоку и их корневища.",
+      "На заболоченных берегах строит хатки из растений, скреплённых илом."
+    ],
+    "patterns": [
+      "TITI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B68061CFFB8189C6483D33DDC1F64967/xs3qstsrcB68061CFFB8189C6483D33DDC1F64967_10_1760009143.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B68061CFFB8189C6483D33DDC1F64967/xs3qstsrcB68061CFFB8189C6483D33DDC1F64967_11_1760009143.png",
+        "sha256": "ce8a49703926deb3ae163463e92f89685c8046599574b262ec9bda6041b4abb5",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B68061CFFB8189C6483D33DDC1F64967/xs3qstsrcB68061CFFB8189C6483D33DDC1F64967_12_1760009143.png",
+        "sha256": "8468eae788ae4b83dcfc9a06448bf4c47ee456f41f165557d9533a4605bef689",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "9/10_Ондатра/Ондатра 4.jpg",
+        "sha256": "9e64fc64385648810a02fab9d7e0b27be7f29a9cb91937b8e1ac1718b2056534",
+        "reviewed": true
+      },
+      {
+        "member": "9/10_Ондатра/Ондатра 5.jpg",
+        "sha256": "a461b12cc47cf168dc392e0048b7599218d32f9e608a2d14932a951484c41616",
+        "reviewed": true
+      },
+      {
+        "member": "9/10_Ондатра/Ондатра 1.jpg",
+        "sha256": "7ca58187fda8f289fa0345cd9772dcb21bcb63c682ef97e24842528daff451d2",
+        "reviewed": true
+      },
+      {
+        "member": "9/10_Ондатра/Ондатра 2.jpg",
+        "sha256": "9f0c7f3c39bc3e52333741edcbb2df1efa49f393a23107977aae40b378334bd0",
+        "reviewed": true
+      },
+      {
+        "member": "9/10_Ондатра/Ондатра 3.jpg",
+        "sha256": "46cb88a1e7547a4e7345248b96c4c3ed8498d8d5c9c5938bdb87810dcca08baf",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF292A9E": {
+    "theme": "Розмарин",
+    "kind": "plant",
+    "archiveHash": "aaffd4c83ed112f48b025c3727b20583d1fa9b388ef8d69da230441c04ff2eaa",
+    "sourceDocument": "42/Розмарин/ЗАДАНИЕ 13/Розмарин.odt",
+    "sourceDocumentHash": "7cfcf482efdd05d8cfa86e18de0dffcb178f401e79a68fe8ff1ac96e90d7d8dc",
+    "blocks": [
+      "Розмарин — многолетний вечнозелёный кустарник семейства Яснотковые.",
+      "Теплолюбив и нуждается в хорошем освещении; растёт в Средиземноморье и Крыму.",
+      "Его сильный аромат напоминает хвою, камфару и лимон.",
+      "Свежие и сушёные побеги используют как пряность.",
+      "Небольшое количество розмарина добавляют в овощной суп, салат или маринад."
+    ],
+    "patterns": [
+      "TITI",
+      "TTTIII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B6C6B963EF20B2DC4CAEBC36E2C7AC42/xs3qstsrcB6C6B963EF20B2DC4CAEBC36E2C7AC42_10_1760010796.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B6C6B963EF20B2DC4CAEBC36E2C7AC42/xs3qstsrcB6C6B963EF20B2DC4CAEBC36E2C7AC42_11_1760010796.png",
+        "sha256": "f5334cd4337fae3a49b5c509b50151101c7b7fdbd424d61a3aef3b26fe2f4ec7",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B6C6B963EF20B2DC4CAEBC36E2C7AC42/xs3qstsrcB6C6B963EF20B2DC4CAEBC36E2C7AC42_12_1760010796.png",
+        "sha256": "77f44201f6e791e5505bdd2d14a804da1be9dc6b2dcbd9c4f6c67896eb22fcd8",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "42/Розмарин/ЗАДАНИЕ 13/lori-0023160722-a7.jpg",
+        "sha256": "6f1805f112a7236dc980c690fc37073a850e5fa9d4f8530dc02830f0559f2c1c",
+        "reviewed": true
+      },
+      {
+        "member": "42/Розмарин/ЗАДАНИЕ 13/lori-0034297026-a7.jpg",
+        "sha256": "e4eeb5a6dd9fd2d8526a48cddd204cddefbbdb1fc6c41afb61e855af29608f00",
+        "reviewed": true
+      },
+      {
+        "member": "42/Розмарин/ЗАДАНИЕ 13/lori-0031672008-a7.jpg",
+        "sha256": "55bb3d4efab159a0db59af74318f10bfc0fc171c71637977e4eebd5f586391a6",
+        "reviewed": true
+      },
+      {
+        "member": "42/Розмарин/ЗАДАНИЕ 13/lori-0027179500-a7.jpg",
+        "sha256": "47f1f2fa8d42ed40bf6694040c8e1280221184e2d1d1f216fc521c43aad05945",
+        "reviewed": true
+      },
+      {
+        "member": "42/Розмарин/ЗАДАНИЕ 13/lori-0034019127-a7.jpg",
+        "sha256": "554539cca7465e6b8c93c22243b96a03cf5a3e8bfa2b90ed46f0fe910fb04cb4",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF80759C": {
+    "theme": "Носухи",
+    "kind": "animal",
+    "archiveHash": "a700b4a4fac69f199780babae9c53eb6274875a84c39002d8c07e1b833268f30",
+    "sourceDocument": "24/25_Носуха/Носухи.odt",
+    "sourceDocumentHash": "cf98db42a1f9ea2c38db93ba292868fc9ed0d8e45b4dfe4f84318976f90ddfd2",
+    "blocks": [
+      "Носуха — небольшой родственник енота с вытянутой мордочкой и длинным хвостом.",
+      "Носухи живут в Америке, преимущественно в тропических лесах.",
+      "В отличие от многих енотовых, часто активны днём.",
+      "Всеядны, но предпочитают животную пищу.",
+      "Самки с детёнышами живут группами, взрослые самцы обычно держатся отдельно."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/BFA328BFBDCF91D14894C35194649EF1/xs3qstsrcBFA328BFBDCF91D14894C35194649EF1_10_1760009954.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/BFA328BFBDCF91D14894C35194649EF1/xs3qstsrcBFA328BFBDCF91D14894C35194649EF1_11_1760009954.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/BFA328BFBDCF91D14894C35194649EF1/xs3qstsrcBFA328BFBDCF91D14894C35194649EF1_12_1760009954.png",
+        "sha256": "d62187a6d53a9c238bbdd42f13869b12c0e16ade80a50d5d5a552de999fa7b74",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "24/25_Носуха/Носуха 4.jpg",
+        "sha256": "cfe7de546ca6795b5aafc0bb228d358bd7dd710438c10883a5f8c3c8f6abe731",
+        "reviewed": true
+      },
+      {
+        "member": "24/25_Носуха/Носуха 5.jpg",
+        "sha256": "42e91ac2e3f082f018dd60d2b438aa23a631e614991bfae13e0eb1d3bfd46ab8",
+        "reviewed": true
+      },
+      {
+        "member": "24/25_Носуха/Носуха 3.jpg",
+        "sha256": "4bc27bf220bd424902edf5ce41eea0fac289a20bc92024bb213f0664b4d94dc5",
+        "reviewed": true
+      },
+      {
+        "member": "24/25_Носуха/Носуха 2.jpg",
+        "sha256": "eb09018e0c3e9e226dc9c0a335a237293b41b6afe21d014d9a60a885ae35e176",
+        "reviewed": true
+      },
+      {
+        "member": "24/25_Носуха/Носуха 6.jpg",
+        "sha256": "316fee7d30741b3ebbb95ac80564604acfe030b716b9fccf3bca504f714283fb",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFABC26F": {
+    "theme": "Бордер-колли",
+    "kind": "dog",
+    "archiveHash": "55f98f15baff81aac4b3d7a5d88ab843d5e32404155035b48a0bd2bc0562b8ce",
+    "sourceDocument": "32/33_Бордер-колли/Бо́рдер-колли.odt",
+    "sourceDocumentHash": "ebb78bae693f85f5e33c4e383cadf2f6d403aac96f6308bf2e9426cfc909548b",
+    "blocks": [
+      "Бордер-колли — атлетичная собака; встречаются короткошёрстная и полудлинношёрстная разновидности.",
+      "Породу вывели в Великобритании.",
+      "Бордер-колли энергична, восприимчива и сообразительна.",
+      "Собакам нужны постоянные физические и умственные нагрузки.",
+      "Они быстро учатся и охотно выполняют задачи вместе с человеком."
+    ],
+    "patterns": [
+      "TITI",
+      "TTTIII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/D91A463401DDB6244CD81C899B5E5682/xs3qstsrcD91A463401DDB6244CD81C899B5E5682_10_1760010275.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/D91A463401DDB6244CD81C899B5E5682/xs3qstsrcD91A463401DDB6244CD81C899B5E5682_11_1760010275.png",
+        "sha256": "25ed3386b7e0cc4ee6df704e2a79a3d47c0e8d33b8cbc54906832e047bb04ddd",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/D91A463401DDB6244CD81C899B5E5682/xs3qstsrcD91A463401DDB6244CD81C899B5E5682_12_1760010275.png",
+        "sha256": "5f4cfe3c776593db65da5de71ddcfd7fc63264afcb6c2a49d187627791db7410",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "32/33_Бордер-колли/Бордер_колли_3.jpg",
+        "sha256": "d3d82fc43d5ea1bdbdae2433f501bd53fa5e561230efce7f9fcc2233fbfd6c01",
+        "reviewed": true
+      },
+      {
+        "member": "32/33_Бордер-колли/Бордер_колли_2.jpg",
+        "sha256": "cb1fd5842916f4a6f1de4e10aae6f1c9dc870ba924b4eae7e4b580aa214f7865",
+        "reviewed": true
+      },
+      {
+        "member": "32/33_Бордер-колли/Бордер_колли_5.jpg",
+        "sha256": "2d3937bde2129c89d1e30900da6c6566807b80d702484d1051a3d8db57f7efbd",
+        "reviewed": true
+      },
+      {
+        "member": "32/33_Бордер-колли/Бордер_колли_1.jpg",
+        "sha256": "992c48b85999f5973c0b7d5d82b3fdb4157df6d88117479cab8ca40de54a9585",
+        "reviewed": true
+      },
+      {
+        "member": "32/33_Бордер-колли/Бордер_колли_6.jpg",
+        "sha256": "397cc381dd20e2e84101b409391e7075228cb1760ded04925400336ffd6e5917",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешность и происхождение",
+      "Характер и особенности"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFC35866": {
+    "theme": "Боярышник",
+    "kind": "plant",
+    "archiveHash": "593096a7c9cc1f03c4d95fe4d335f11780d39260ec515e5a96eb4fc4f54e4793",
+    "sourceDocument": "46/Боярышник/ЗАДАНИЕ 13/Боярышник.odt",
+    "sourceDocumentHash": "12191feff1e5443e5f403e517b5b1145663cdf12c8ae2c8b68f1ac7fc3451f61",
+    "blocks": [
+      "Боярышник растёт кустарником или небольшим деревом с плотной кроной.",
+      "Встречается в Евразии и Северной Америке, на опушках и среди кустарников.",
+      "Цветёт в мае и июне; плоды созревают с конца лета до осени.",
+      "Плоды используют для компота и сладких заготовок.",
+      "Пример — варенье из боярышника с сахаром и небольшим количеством лимонной кислоты."
+    ],
+    "patterns": [
+      "TITI",
+      "TIIITT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DAD8EF8600788A984EA73D358416FACF/xs3qstsrcDAD8EF8600788A984EA73D358416FACF_10_1760010957.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DAD8EF8600788A984EA73D358416FACF/xs3qstsrcDAD8EF8600788A984EA73D358416FACF_11_1760010957.png",
+        "sha256": "a311f9aa4959b8a6de7c9670bb7475e4153ae0adb3f3e7c5f5879ab338494b98",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DAD8EF8600788A984EA73D358416FACF/xs3qstsrcDAD8EF8600788A984EA73D358416FACF_12_1760010957.png",
+        "sha256": "5584d9931dbea3c4091bd203fce79424a3bae19fe5dace219dc82b692066b844",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "46/Боярышник/ЗАДАНИЕ 13/lori-0006915492-a7.jpg",
+        "sha256": "d0b6b5f5327385bce71b1ea06b0430dd99ee94bf5c3e90fcb5211e1aee5016f7",
+        "reviewed": true
+      },
+      {
+        "member": "46/Боярышник/ЗАДАНИЕ 13/lori-0028357074-a7.jpg",
+        "sha256": "4c4b4f5591dbd19bbe70cf1025b5d41870c5fe6d6f6741963b517795354fb9ff",
+        "reviewed": true
+      },
+      {
+        "member": "46/Боярышник/ЗАДАНИЕ 13/lori-0006201192-a7.jpg",
+        "sha256": "aa17e783c18466a64bcfc2e74af4e7dbf4a0927d176d73bd77e9e4f5ea5110fa",
+        "reviewed": true
+      },
+      {
+        "member": "46/Боярышник/ЗАДАНИЕ 13/lori-0022979304-a7.jpg",
+        "sha256": "99bc5b29aac20a5ecccc71eeaac4cd59d991715a6d5372c09e4508a203300c3f",
+        "reviewed": true
+      },
+      {
+        "member": "46/Боярышник/ЗАДАНИЕ 13/lori-0023578733-a7.jpg",
+        "sha256": "5ae1ee12aa38e75148e629b22913b1820b8c51632714f0993f015954de0fe82e",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF687160": {
+    "theme": "Басéнджи",
+    "kind": "dog",
+    "archiveHash": "23ca654d7f9ace60ec0e3de8e0c2131afe3dddace3a9087dc7cc760b836df106",
+    "sourceDocument": "33/34_Басенджи/Басéнджи.odt",
+    "sourceDocumentHash": "cedc6c53e0da8da65a25873042ca0a8ef7885499d9c7eba8af80484e0537be27",
+    "blocks": [
+      "Басенджи — небольшая собака; при разных окрасах лапы, грудь и кончик хвоста белые.",
+      "Древняя порода происходит из Центральной Африки.",
+      "Известна отсутствием обычного лая, но способна издавать другие звуки.",
+      "Это активная, умная и ласковая собака-компаньон.",
+      "Ей нужно безопасное пространство для движения и игр."
+    ],
+    "patterns": [
+      "ITTI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DD23F530CA74A81F4109B490B5F44BBB/xs3qstsrcDD23F530CA74A81F4109B490B5F44BBB_10_1760010316.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DD23F530CA74A81F4109B490B5F44BBB/xs3qstsrcDD23F530CA74A81F4109B490B5F44BBB_11_1760010316.png",
+        "sha256": "fd612a94c47cdb94fad9b8b0ad3b2c97103a9d70970dd64b83312118171fd21b",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DD23F530CA74A81F4109B490B5F44BBB/xs3qstsrcDD23F530CA74A81F4109B490B5F44BBB_12_1760010316.png",
+        "sha256": "521cba31be5b5060b993a236cc64b2a626d5b434301085d31a5c656f8b9ee0c5",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "33/34_Басенджи/Басенджи2.jpg",
+        "sha256": "a972b1b61b89c78547951840b5e4df49c8bac55ac04e8d9c967ef45edcf8e6c5",
+        "reviewed": true
+      },
+      {
+        "member": "33/34_Басенджи/Басенджи7.jpg",
+        "sha256": "d30145c7c116871f51d03b0fb0c462404be36c04227975255e03b5e83332a315",
+        "reviewed": true
+      },
+      {
+        "member": "33/34_Басенджи/Басенджи1.jpg",
+        "sha256": "2ff91c4cd4717ac334ca257120c7807fc1580a307743336426a5e2ed87aaca4a",
+        "reviewed": true
+      },
+      {
+        "member": "33/34_Басенджи/Басенджи4.jpg",
+        "sha256": "ab8e7209743dad17737b21b8b4047bcac170f04376b9c735cd4b63b68a105ebc",
+        "reviewed": true
+      },
+      {
+        "member": "33/34_Басенджи/Басенджи5.jpg",
+        "sha256": "05791d0c3f81a895bd487e52ac817991481006b4a167bb902fe00cfb6e0d794e",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешность и происхождение",
+      "Характер и особенности"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF042E86": {
+    "theme": "Рябина",
+    "kind": "plant",
+    "archiveHash": "8a1cb22de4ffb68420534c17eb75ee5769d6781cfa36001bc3557a10736ad863",
+    "sourceDocument": "58/Рябина/ЗАДАНИЕ 13/Рябина.odt",
+    "sourceDocumentHash": "0ba5b31faffa6bd19efc7de36ed6298efdcec6b2936ffa106295b2e397ec0bf6",
+    "blocks": [
+      "Рябина — листопадное дерево или кустарник с яркими плодами.",
+      "Встречается в Европе и Западной Сибири; плоды часто остаются на ветках до зимы.",
+      "Мелкие плоды собраны в заметные гроздья и служат кормом птицам.",
+      "Кулинарный пример — желе из проваренных плодов рябины и яблок.",
+      "Отцеженный сок уваривают с сахаром; такое желе подают к сыру или мясу."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/F2D60CFBD73C839F41638152396991BA/xs3qstsrcF2D60CFBD73C839F41638152396991BA_10_1760011456.png",
+        "sha256": "7e79bec56d8d5f3ce528fd16b0ce4b6479d7a09c78f44b6a20dfd15380c4cfbe",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/F2D60CFBD73C839F41638152396991BA/xs3qstsrcF2D60CFBD73C839F41638152396991BA_11_1760011456.png",
+        "sha256": "67da8ba1fa55f1e30b59a1314cfe5e59ac31940db920d70041308b911faf4f6c",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/F2D60CFBD73C839F41638152396991BA/xs3qstsrcF2D60CFBD73C839F41638152396991BA_12_1760011456.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/F2D60CFBD73C839F41638152396991BA/xs3qstsrcF2D60CFBD73C839F41638152396991BA_13_1760011456.png",
+        "sha256": "2f0b5adea40f12e72e66ae6c55338b4e73884f76da7a8e82d281b8f05f254762",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/F2D60CFBD73C839F41638152396991BA/xs3qstsrcF2D60CFBD73C839F41638152396991BA_14_1760011456.png",
+        "sha256": "1ce4d7df2ce3ffc97b70a5bef466efa76db2b514ac381c701f8699b2c18021fb",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "58/Рябина/ЗАДАНИЕ 13/lori-0006700427-a7.jpg",
+        "sha256": "ad43b067f9920ba63055bb04c858c6fad5482fef0b742c5b6e3288bb8c756296",
+        "reviewed": true
+      },
+      {
+        "member": "58/Рябина/ЗАДАНИЕ 13/lori-0026569882-a7.jpg",
+        "sha256": "f9ebf04a1589f6e571c3abfff2a3767408b5c9cfcb7225dfe84ab0a0f7a4806a",
+        "reviewed": true
+      },
+      {
+        "member": "58/Рябина/ЗАДАНИЕ 13/lori-0003668940-a7.jpg",
+        "sha256": "f848140198e5c3403dbc096a799010bdec4a72b3d97de6e91c53b7d09452d3bc",
+        "reviewed": true
+      },
+      {
+        "member": "58/Рябина/ЗАДАНИЕ 13/lori-0033555664-a7.jpg",
+        "sha256": "da559cca0383dd6bcf78b7e14e3af8e8e60514f8e707e9ddd64c6724471b2025",
+        "reviewed": true
+      },
+      {
+        "member": "58/Рябина/ЗАДАНИЕ 13/lori-0024203052-a7.jpg",
+        "sha256": "0e5ba6d91b06a1f82f66ec616cef1cd0536644bb826423c82f7a2dd024b03dc0",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [
+      {
+        "scope": "Кулинарный пример",
+        "url": "https://www.woodlandtrust.org.uk/blog/rowan-jelly-recipe/",
+        "reviewed": true
+      }
+    ],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF91218E": {
+    "theme": "Сибирский бурундук",
+    "kind": "animal",
+    "archiveHash": "ccc83446e4ab78c633284335e1792816f12cf46bd11ed4c577e423bec18ac0e4",
+    "sourceDocument": "6/7_Сибирский бурундук/Бурундук.odt",
+    "sourceDocumentHash": "84dad70e6b858f3b37836c4ee2071b134b34e7252f7af5a2b96e2266694075c3",
+    "blocks": [
+      "У сибирского бурундука вдоль спины проходят тёмные полосы; окраска серо-бурая или красно-бурая.",
+      "Обитает в лесах и тайге Евразии, включая Сахалин и Хоккайдо.",
+      "Устраивает норы с гнездовой камерой и запасает корм.",
+      "Питается главным образом растительной пищей, иногда поедает насекомых."
+    ],
+    "patterns": [
+      "TITI",
+      "ITTI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/FBC655E29FD4BD4440AA195A5E3213AB/xs3qstsrcFBC655E29FD4BD4440AA195A5E3213AB_10_1760009037.png",
+        "sha256": "01dc15333c1da250f36c2e3c470c715a14e1dbec1e2bd1b53531acfac0108695",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/FBC655E29FD4BD4440AA195A5E3213AB/xs3qstsrcFBC655E29FD4BD4440AA195A5E3213AB_11_1760009037.png",
+        "sha256": "ce8a49703926deb3ae163463e92f89685c8046599574b262ec9bda6041b4abb5",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/FBC655E29FD4BD4440AA195A5E3213AB/xs3qstsrcFBC655E29FD4BD4440AA195A5E3213AB_12_1760009037.png",
+        "sha256": "e123348aff01eb4c40e556de17b6f4a20006bc2199546798c40e6af60e2932aa",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "6/7_Сибирский бурундук/Бурундук 1.jpg",
+        "sha256": "83b897d04efd1f3b38305f1d098adac7146eddbd51de65e0c0f1e1940bc41714",
+        "reviewed": true
+      },
+      {
+        "member": "6/7_Сибирский бурундук/Бурундук 2.jpg",
+        "sha256": "f476eaaddf6ab72268b9ec32b6a197c6965b2ab523b94b69e24415cec77aede8",
+        "reviewed": true
+      },
+      {
+        "member": "6/7_Сибирский бурундук/Бурундук 3.jpg",
+        "sha256": "f37038cc565bca40baaef42361bfc7686f27b619d9326c3112ef80306fccc029",
+        "reviewed": true
+      },
+      {
+        "member": "6/7_Сибирский бурундук/Бурундук 4.jpg",
+        "sha256": "96d5d17f571e722f7a2ec11162274d3bf3af7d0fe64ef6d5f445a35a88f149fb",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF1C3C4D": {
+    "theme": "Немецкая овчарка",
+    "kind": "dog",
+    "archiveHash": "f21a379b3f9f524ccd95a309adf032286c7a25a2d2d8e7cdb1d98bc9df6d3ea6",
+    "sourceDocument": "37/38_Немецкая овчарка/Немецкая овчарка.odt",
+    "sourceDocumentHash": "1bba01aa8ca40b5bdbeddf86d7c44225dbfbe3e95474c15b49a7152f24c33935",
+    "blocks": [
+      "Немецкая овчарка — крепкая собака со стоячими ушами; бывает гладкошёрстной и длинношёрстной.",
+      "Порода сформирована в Германии в конце XIX века на основе пастушьих собак.",
+      "Хорошо обучается и нуждается в последовательной дрессировке.",
+      "Может работать пастушьей, розыскной, охранной собакой или поводырём.",
+      "Используется и как семейная собака; общение с маленькими детьми требует контроля взрослых."
+    ],
+    "patterns": [
+      "ITTI",
+      "IITTTI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/057EAA5566CEB4CE4C70935E16A7DE56/xs3qstsrc057EAA5566CEB4CE4C70935E16A7DE56_10_1760010571.png",
+        "sha256": "3fcd9dd290cf74d03f08c9a3e1841a2d09a5650f0a192a78155f11f419572e90",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/057EAA5566CEB4CE4C70935E16A7DE56/xs3qstsrc057EAA5566CEB4CE4C70935E16A7DE56_11_1760010571.png",
+        "sha256": "67da8ba1fa55f1e30b59a1314cfe5e59ac31940db920d70041308b911faf4f6c",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/057EAA5566CEB4CE4C70935E16A7DE56/xs3qstsrc057EAA5566CEB4CE4C70935E16A7DE56_12_1760010571.png",
+        "sha256": "2871bdc38f129b0a14a17ca4cb3e1d2132f5d88dbcb586fa45bbce8e64a7f1b7",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/057EAA5566CEB4CE4C70935E16A7DE56/xs3qstsrc057EAA5566CEB4CE4C70935E16A7DE56_13_1760010571.png",
+        "sha256": "642638b10cceed2c65391d7a3cadb467c4add328bf2185fc8b0d55f86e03422d",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "37/38_Немецкая овчарка/Немецкая овчарка 5.jpg",
+        "sha256": "5769762c657172ec4eae6b9ac87e46afaa4a74718839634a5797352d1ec1b16e",
+        "reviewed": true
+      },
+      {
+        "member": "37/38_Немецкая овчарка/Немецкая овчарка 1.jpg",
+        "sha256": "d79a654334031b2dc4bc50201ab40e5c34e4ada6649558ae8752f975904a1171",
+        "reviewed": true
+      },
+      {
+        "member": "37/38_Немецкая овчарка/Немецкая овчарка 6.jpg",
+        "sha256": "6fe76d340d0a331a031b94360113f6d2205e174fd7bc96d915ad28dee3d3a11a",
+        "reviewed": true
+      },
+      {
+        "member": "37/38_Немецкая овчарка/Немецкая овчарка 4.jpg",
+        "sha256": "cd0c968072814b84216d09f1b867e6a63f0908580ab6d8a0c3de5cb369509ebe",
+        "reviewed": true
+      },
+      {
+        "member": "37/38_Немецкая овчарка/Немецкая овчарка 3.jpg",
+        "sha256": "ca1038d9d7b3c6a54203236903c084eaeeb92d7d1fbdaac370b53b8cbdac7ef1",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешность и происхождение",
+      "Характер и особенности"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFFF22FD": {
+    "theme": "Барбарис",
+    "kind": "plant",
+    "archiveHash": "b7d46775bb716c21134a2b55a1258f8fcd33b82925b4f6ad2c8f5f74c9420ab5",
+    "sourceDocument": "45/Барбарис/ЗАДАНИЕ 13/Барбарис.odt",
+    "sourceDocumentHash": "a58643cdf32f1ae846b45d86b7683714b20ff05ef3804e07000bd09adb4662c3",
+    "blocks": [
+      "Барбарис — кустарник с колючими ветвями и небольшими продолговатыми листьями.",
+      "Встречается на опушках, лесных полянах и каменистых склонах.",
+      "Кисловатые ягоды используют свежими, маринованными и сушёными.",
+      "Барбарис добавляют в плов, мясные блюда и выпечку.",
+      "Из ягод готовят варенье, пастилу и напитки."
+    ],
+    "patterns": [
+      "TIIT",
+      "ITTTII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/117616E8731D86034B515054275E423F/xs3qstsrc117616E8731D86034B515054275E423F_10_1760010919.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/117616E8731D86034B515054275E423F/xs3qstsrc117616E8731D86034B515054275E423F_11_1760010919.png",
+        "sha256": "01b866f031dd001ec2ae61ede1cfe6bed9b8f20804c3cb3d61775e7ccbdbfe07",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/117616E8731D86034B515054275E423F/xs3qstsrc117616E8731D86034B515054275E423F_12_1760010919.png",
+        "sha256": "536c7effdfb02f69a0bbe5fad01d9a46b32af221b726b197e565b42e6e877201",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "45/Барбарис/ЗАДАНИЕ 13/lori-0023663482-a7.jpg",
+        "sha256": "85a5bcc9bb30c7c6163c842925509e460fedd9ada07d0f55d5178768a67feb0f",
+        "reviewed": true
+      },
+      {
+        "member": "45/Барбарис/ЗАДАНИЕ 13/lori-0030555827-a7.jpg",
+        "sha256": "4eef48eecd66da9bb2fee830ad38a215c8847da3ee8f04e1d1efc985e9500d78",
+        "reviewed": true
+      },
+      {
+        "member": "45/Барбарис/ЗАДАНИЕ 13/lori-0033452272-a7.jpg",
+        "sha256": "e4d0840b837ec088a8cd5f045da99d6c279acaca2fb52ef3e992f1d1d65bb664",
+        "reviewed": true
+      },
+      {
+        "member": "45/Барбарис/ЗАДАНИЕ 13/lori-0033074027-a7.jpg",
+        "sha256": "2e07652b267e4e28e91b3709cb641f7c1c0f8b665113bf5ee0dfb4906d3e1186",
+        "reviewed": true
+      },
+      {
+        "member": "45/Барбарис/ЗАДАНИЕ 13/lori-0003888237-a7.jpg",
+        "sha256": "ef2119bda3be900d7427ca61948bedb9e402c13da25f1888ea07af683f5221cc",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF6CE1FA": {
+    "theme": "Домовая мышь",
+    "kind": "animal",
+    "archiveHash": "b8b9ba3b3765f061c05b5c79dae6212e4be7ea666609f51cab23f5944c98280d",
+    "sourceDocument": "7/8_Домовая мышь/Домова́я мышь.odt",
+    "sourceDocumentHash": "d49c9556385efefbfd8b413908bbbf626a554e824c1929134771dcf77692dbdf",
+    "blocks": [
+      "Домовая мышь — мелкий грызун с округлыми ушами и длинным хвостом.",
+      "Распространена почти по всему миру, кроме особенно холодных районов и высокогорий.",
+      "Часто селится рядом с человеком, устраивает гнёзда в укромных местах.",
+      "В природе основная пища — семена злаков и других растений.",
+      "Дополняет рацион насекомыми; при избытке пищи делает запасы."
+    ],
+    "patterns": [
+      "ITTI",
+      "IITTTI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/1D9CA5AE4A1094ED444940A0417F34D0/xs3qstsrc1D9CA5AE4A1094ED444940A0417F34D0_10_1760009072.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/1D9CA5AE4A1094ED444940A0417F34D0/xs3qstsrc1D9CA5AE4A1094ED444940A0417F34D0_11_1760009072.png",
+        "sha256": "4b7133d51558d64243dbdccadcdbc1eab43aa30796b6434a73f317ed776db550",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/1D9CA5AE4A1094ED444940A0417F34D0/xs3qstsrc1D9CA5AE4A1094ED444940A0417F34D0_12_1760009072.png",
+        "sha256": "5ec5d1b89c0e1a71f859c951b04b9d654403ec34276ecc12d438ef62b56421e0",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "7/8_Домовая мышь/Мышь 4.jpg",
+        "sha256": "ad23b7f5f4b61c113bb4c18ab125a28c2364d4726ceb5e6690dc2240246397d5",
+        "reviewed": true
+      },
+      {
+        "member": "7/8_Домовая мышь/Мышь 5.jpg",
+        "sha256": "70a50dc9c3d4cb1ad7705a82b709b1866186d73aba872ed8f3ed52b2f800e033",
+        "reviewed": true
+      },
+      {
+        "member": "7/8_Домовая мышь/Мышь 2.jpg",
+        "sha256": "02b8bb897e95046efc6ba420968d4fb7586c53252e5b950ccf67d7eab701f843",
+        "reviewed": true
+      },
+      {
+        "member": "7/8_Домовая мышь/Мышь 1.jpg",
+        "sha256": "ee8cd622cdf22cc47059b4560108c31ba5fbd800eb625a175163ff39ed7148d0",
+        "reviewed": true
+      },
+      {
+        "member": "7/8_Домовая мышь/Мышь 3.jpg",
+        "sha256": "09f10f5b1fdd513b6b9df08b5c9364230bf3231fd8868db33d81e570634074e2",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF3298F2": {
+    "theme": "Дегу",
+    "kind": "animal",
+    "archiveHash": "80fa6e1c944373e09ee1f48d1097e336231c92080b57c2f8b1ffddd29fe657d8",
+    "sourceDocument": "3/4_Дегу/Де́гу.odt",
+    "sourceDocumentHash": "532c14b312c89412dad99ed4c013a0be6998e40e273e238fb44a1f5a33944b7e",
+    "blocks": [
+      "Дегу — небольшой грызун с коротким мягким мехом.",
+      "Живёт в Южной Америке, предпочитает каменистые участки с кустарником.",
+      "Дневное животное; особенно активно утром и вечером, избегает сильной жары.",
+      "Ест траву, листья, кору, семена и корни.",
+      "Группы дегу имеют свои территории, которые защищают от чужаков."
+    ],
+    "patterns": [
+      "ITTI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/1E6B6FEAD26F915F41DCE0CE44A4B280/xs3qstsrc1E6B6FEAD26F915F41DCE0CE44A4B280_10_1760008929.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/1E6B6FEAD26F915F41DCE0CE44A4B280/xs3qstsrc1E6B6FEAD26F915F41DCE0CE44A4B280_11_1760008929.png",
+        "sha256": "4b7133d51558d64243dbdccadcdbc1eab43aa30796b6434a73f317ed776db550",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/1E6B6FEAD26F915F41DCE0CE44A4B280/xs3qstsrc1E6B6FEAD26F915F41DCE0CE44A4B280_12_1760008929.png",
+        "sha256": "1e9685bfaa636e46d93d241d8417c76109c6937861ba162ed2353e448d65bf75",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "3/4_Дегу/Дегу 2.jpg",
+        "sha256": "f95f9619e52953e6f428c020aa47650dc637b6455e1d2932b70a8a4492a67e75",
+        "reviewed": true
+      },
+      {
+        "member": "3/4_Дегу/Дегу 3.jpg",
+        "sha256": "9aab702c5f7d02f2996d7335de1e27e169e773674d0052c34aad24d53f2aac31",
+        "reviewed": true
+      },
+      {
+        "member": "3/4_Дегу/Дегу 4.jpg",
+        "sha256": "b39bcd1c6fd7384d3f7b0161f7e1cd657110aaf06b47b73e5fd605050353f393",
+        "reviewed": true
+      },
+      {
+        "member": "3/4_Дегу/Дегу 1.jpg",
+        "sha256": "d209b5f350f9de2781bd2d526d35fe3e97a6ca11ecde8a487420eda5313bcdd9",
+        "reviewed": true
+      },
+      {
+        "member": "3/4_Дегу/Дегу 5.jpg",
+        "sha256": "d3162f752f38f55c905b498cffbcb8abd824beb28bf6d13a1585193aa6e0ab6f",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF7E3900": {
+    "theme": "Леопард",
+    "kind": "animal",
+    "archiveHash": "d75bd270ebf4a934f4643b4fafa73cfe582634767a7dae180d2e69774f7f0afa",
+    "sourceDocument": "11/12_Леопард/Леопард.odt",
+    "sourceDocumentHash": "208b57dff58197e6bb399de78e9c21bf65d7bf6bf8ce1d928b5620bb87606465",
+    "blocks": [
+      "Леопард — гибкая мускулистая кошка с длинным хвостом и пятнистой шкурой.",
+      "Обитает в Африке и Азии; приспосабливается к лесам, горам и засушливым местам.",
+      "Живёт один и охотится преимущественно ночью.",
+      "Основная добыча — копытные; может ловить грызунов, птиц и обезьян.",
+      "Часто затаскивает остатки добычи на дерево, скрывая их от других хищников."
+    ],
+    "patterns": [
+      "TIIT",
+      "IIITTT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/232ECB7331A3915045E4379ECC06FDE5/xs3qstsrc232ECB7331A3915045E4379ECC06FDE5_10_1760009402.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/232ECB7331A3915045E4379ECC06FDE5/xs3qstsrc232ECB7331A3915045E4379ECC06FDE5_11_1760009402.png",
+        "sha256": "01b866f031dd001ec2ae61ede1cfe6bed9b8f20804c3cb3d61775e7ccbdbfe07",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/232ECB7331A3915045E4379ECC06FDE5/xs3qstsrc232ECB7331A3915045E4379ECC06FDE5_12_1760009402.png",
+        "sha256": "5e3556eb523fdef18da768bc816be1cf923589860994df5442d575abde0e4108",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "11/12_Леопард/Леопард 4.jpg",
+        "sha256": "0999bceb13a10e1b8d981390b55a749b632e2b0af800f4f4589f3bfcae1adcd6",
+        "reviewed": true
+      },
+      {
+        "member": "11/12_Леопард/Леопард 1.jpg",
+        "sha256": "984507c29245104455f031fc960cc7bacb99f68441db6f142eb1d9bfdf5a6bbe",
+        "reviewed": true
+      },
+      {
+        "member": "11/12_Леопард/Леопард 2.jpg",
+        "sha256": "af48264c9c01795c6f2436f7a37f3b8211c6a6d9519f6f73c5ef28cde0472625",
+        "reviewed": true
+      },
+      {
+        "member": "11/12_Леопард/Леопард 3.jpg",
+        "sha256": "65d440bff4c26d42fd15f6ff1e2a65a4843bb67549d5e20852509af4b3c8a746",
+        "reviewed": true
+      },
+      {
+        "member": "11/12_Леопард/Леопард 5.jpg",
+        "sha256": "6e4e6d38ea2fd62acc7a5191673db2986a89a0921054ddb5c5a6bd063393e4ad",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [
+      {
+        "scope": "Географический ареал",
+        "url": "https://animals.sandiegozoo.org/animals/leopard",
+        "reviewed": true
+      }
+    ],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF177F76": {
+    "theme": "Коала",
+    "kind": "animal",
+    "archiveHash": "275eb3ec4170615e1e097d5046706b1f141a1c65b7c92d17cbc7926bfacc6816",
+    "sourceDocument": "27/28_Коала/Коа́ла.odt",
+    "sourceDocumentHash": "73858ad9b1eb75818d8eecd354569a168d8134cd260589f435cdee1a9e5d74e0",
+    "blocks": [
+      "Коала — сумчатое с густым мехом, крупными ушами и цепкими лапами.",
+      "Обитает на востоке и юге Австралии, в эвкалиптовых лесах.",
+      "Большую часть жизни проводит в кронах деревьев, днём обычно спит.",
+      "Основная пища — листья и побеги эвкалипта.",
+      "Крепкие когти помогают держаться за стволы и ветви."
+    ],
+    "patterns": [
+      "ITTI",
+      "IITTTI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/35D3310256CABB0A446F787B07095287/xs3qstsrc35D3310256CABB0A446F787B07095287_10_1760010070.png",
+        "sha256": "3fcd9dd290cf74d03f08c9a3e1841a2d09a5650f0a192a78155f11f419572e90",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/35D3310256CABB0A446F787B07095287/xs3qstsrc35D3310256CABB0A446F787B07095287_11_1760010070.png",
+        "sha256": "67da8ba1fa55f1e30b59a1314cfe5e59ac31940db920d70041308b911faf4f6c",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/35D3310256CABB0A446F787B07095287/xs3qstsrc35D3310256CABB0A446F787B07095287_12_1760010070.png",
+        "sha256": "2871bdc38f129b0a14a17ca4cb3e1d2132f5d88dbcb586fa45bbce8e64a7f1b7",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/35D3310256CABB0A446F787B07095287/xs3qstsrc35D3310256CABB0A446F787B07095287_13_1760010070.png",
+        "sha256": "642638b10cceed2c65391d7a3cadb467c4add328bf2185fc8b0d55f86e03422d",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "27/28_Коала/Коала 5.jpg",
+        "sha256": "9d6ae725e40b0383714ca351eed40da5f03a0680f319f9cd21e30209ded3c211",
+        "reviewed": true
+      },
+      {
+        "member": "27/28_Коала/Коала 3.jpg",
+        "sha256": "32e6771a81a2ff2e04ad1e83ec657a83314cf76e6937fbdb66219229e9bd541e",
+        "reviewed": true
+      },
+      {
+        "member": "27/28_Коала/Коала 4.jpg",
+        "sha256": "fb0dc74cc360a9fb0030325207fc417b0404ff6f4ed73ba025acd8f0ef82ff41",
+        "reviewed": true
+      },
+      {
+        "member": "27/28_Коала/Коала 1.jpg",
+        "sha256": "ca2376ae1b8ce583be9eb68d85f49249c1756ed30f133ef93bcebe84ed368ad6",
+        "reviewed": true
+      },
+      {
+        "member": "27/28_Коала/Коала 2.jpg",
+        "sha256": "1ee3670eb2e1d4e43ac25be9d569f058a343e1a933a7fbac7b539a685644d267",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF7BAB23": {
+    "theme": "Лисица обыкновенная",
+    "kind": "animal",
+    "archiveHash": "e2406419b56625ff639457c4558140335d62d13a75babcdc7f1dfd1c1fb02d1b",
+    "sourceDocument": "26/27_Лисица обыкновенная/Лисица обыкновенная.odt",
+    "sourceDocumentHash": "63196cb3ccbdc54142e9a5f8ab3eb4e99be104029ba119892a2755533d82a4eb",
+    "blocks": [
+      "Обыкновенная лисица обычно рыжая, с белым брюхом, тёмными лапами и пушистым хвостом.",
+      "Широко распространена в Евразии, Северной Америке и Северной Африке.",
+      "Охотясь зимой, прислушивается к движению грызунов под снегом.",
+      "Основа питания — мелкие грызуны, особенно полёвки.",
+      "Рацион разнообразен: кроме животных, лисица употребляет растительную пищу."
+    ],
+    "patterns": [
+      "TITI",
+      "ITTTII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/63E944FB39A5BC8548BAC8ED0201435C/xs3qstsrc63E944FB39A5BC8548BAC8ED0201435C_10_1760010031.png",
+        "sha256": "01dc15333c1da250f36c2e3c470c715a14e1dbec1e2bd1b53531acfac0108695",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/63E944FB39A5BC8548BAC8ED0201435C/xs3qstsrc63E944FB39A5BC8548BAC8ED0201435C_11_1760010031.png",
+        "sha256": "ce8a49703926deb3ae163463e92f89685c8046599574b262ec9bda6041b4abb5",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/63E944FB39A5BC8548BAC8ED0201435C/xs3qstsrc63E944FB39A5BC8548BAC8ED0201435C_12_1760010031.png",
+        "sha256": "ac58765485f852c03a6777d43c71327aa389a859b3581222511889496d1d877d",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "26/27_Лисица обыкновенная/Лисица 1.jpg",
+        "sha256": "e9828d9198db14ab41a5cb24d24a1c00366346d9d75bea281ff04f607bc3c440",
+        "reviewed": true
+      },
+      {
+        "member": "26/27_Лисица обыкновенная/Лисица 3.jpg",
+        "sha256": "c09b52f4c0a6c48282beee17470a50684d9aae5153ad356338559dd747fe96e1",
+        "reviewed": true
+      },
+      {
+        "member": "26/27_Лисица обыкновенная/Лисица 4.jpg",
+        "sha256": "486428dfa15ac3e900a5d0d41c4cec4673a79b1c53e077136fd1be92fe76d8a7",
+        "reviewed": true
+      },
+      {
+        "member": "26/27_Лисица обыкновенная/Лисица 5.jpg",
+        "sha256": "c6c4c4842dc008b5eac56c0f056b7e0f3f81eafeff4757caf943080d9e0ec09c",
+        "reviewed": true
+      },
+      {
+        "member": "26/27_Лисица обыкновенная/Лисица 2.jpg",
+        "sha256": "5968d865c27746390e01f51f887e413228e51aecf725a00e5a0757735b3be4fa",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFB74B2A": {
+    "theme": "Базилик",
+    "kind": "plant",
+    "archiveHash": "142c7e7da8c4b403eba141b5e0c972007ef5b8be6a490c2e13edfe0cd63f183b",
+    "sourceDocument": "40/Базилик/ЗАДАНИЕ 13/Базилик.odt",
+    "sourceDocumentHash": "b9b86485f589eee93e9bc8c56c89b35054ace4cc0a14d36d3c574f1c589cfbfd",
+    "blocks": [
+      "Базилик — ароматное растение с зелёными или фиолетовыми листьями.",
+      "Его родина — Южная Азия; выращивают на защищённых от ветра участках и в теплицах.",
+      "Свежие и сушёные листья используют как пряность.",
+      "Базилик добавляют в соусы, супы и овощные салаты.",
+      "Чтобы лучше сохранить аромат, зелень кладут ближе к концу приготовления."
+    ],
+    "patterns": [
+      "ITIT",
+      "ITITIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/64903419ED64A85442B6CF2B28F17700/xs3qstsrc64903419ED64A85442B6CF2B28F17700_10_1760010701.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/64903419ED64A85442B6CF2B28F17700/xs3qstsrc64903419ED64A85442B6CF2B28F17700_11_1760010701.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/64903419ED64A85442B6CF2B28F17700/xs3qstsrc64903419ED64A85442B6CF2B28F17700_12_1760010701.png",
+        "sha256": "3870cb320f791b7ef1dbf312ce642e869a032b7558d5e41681d995c1f8807e89",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/64903419ED64A85442B6CF2B28F17700/xs3qstsrc64903419ED64A85442B6CF2B28F17700_13_1760010701.png",
+        "sha256": "1ce4d7df2ce3ffc97b70a5bef466efa76db2b514ac381c701f8699b2c18021fb",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "40/Базилик/ЗАДАНИЕ 13/lori-0033356248-a7.jpg",
+        "sha256": "84a203be726fb6ed6ad755ec8dca3eb091b9d1724a81996464eef7728b0d1d4c",
+        "reviewed": true
+      },
+      {
+        "member": "40/Базилик/ЗАДАНИЕ 13/lori-0028731280-a7.jpg",
+        "sha256": "f49128f0345572d5e970b9e00ec874764f7181b0e4bf867252d32e54878e0ca0",
+        "reviewed": true
+      },
+      {
+        "member": "40/Базилик/ЗАДАНИЕ 13/lori-0033356295-a7.jpg",
+        "sha256": "0e6965b34a934301e555deb88fb653933c40c83a5b28b07ef1bff4e571e0c1ff",
+        "reviewed": true
+      },
+      {
+        "member": "40/Базилик/ЗАДАНИЕ 13/lori-0012645229-a7.jpg",
+        "sha256": "6c00aced09510fac52435044724ec72c6831daa6c34d21e02df9582d75c86e11",
+        "reviewed": true
+      },
+      {
+        "member": "40/Базилик/ЗАДАНИЕ 13/lori-0028207582-a7.jpg",
+        "sha256": "dbaa05a4546372fa879b3d646a248c187aad3eae52e3e4f576fbe0e351632864",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF89A32A": {
+    "theme": "Белка",
+    "kind": "animal",
+    "archiveHash": "c113321b457739ca37905cf69471e34a9ce6622a6ab7a8127e913847463a9736",
+    "sourceDocument": "2/3_Белка/Бе́лки.odt",
+    "sourceDocumentHash": "c31cc3bc6aa58ef9db5beee5e13ca3cc2a30b38502749699d7ec2349892d9792",
+    "blocks": [
+      "Белка — грызун с удлинённым телом и длинным пушистым хвостом.",
+      "Виды рода Белки распространены в Европе, Азии и обеих Америках.",
+      "Прячет излишки пищи и может селиться рядом с человеком, в парках и садах.",
+      "Ест орехи, семена, плоды и грибы; весной — почки деревьев.",
+      "Пища бывает и животной: насекомые, яйца и другие небольшие животные."
+    ],
+    "patterns": [
+      "TITI",
+      "TTTIII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6F99BE12637088734AECBB34CED01752/xs3qstsrc6F99BE12637088734AECBB34CED01752_10_1760008883.png",
+        "sha256": "ca01801a10ef8099d12eb35eaebf04f5a0f2e583045ae4c538e28cc713323a9b",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6F99BE12637088734AECBB34CED01752/xs3qstsrc6F99BE12637088734AECBB34CED01752_11_1760008883.png",
+        "sha256": "a78e998dd16a17fee4388bfe3b3cf81daa5dfeb5d8ff5acc77b3dde503cd9078",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6F99BE12637088734AECBB34CED01752/xs3qstsrc6F99BE12637088734AECBB34CED01752_12_1760008883.png",
+        "sha256": "5d66a8a064d4adf5273361c823c008c79835d055512483d26d22c04065218f36",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "2/3_Белка/Белка 5.jpg",
+        "sha256": "7ff8b1e6ba3bbe925ee1161571b83d2506e104fd764d349350cc9fa4ed1cd07c",
+        "reviewed": true
+      },
+      {
+        "member": "2/3_Белка/Белка 1.jpg",
+        "sha256": "50b9d7b296fcf7bb1895edd5feb070cdf5851a91340ead052f37ae2c0327cff2",
+        "reviewed": true
+      },
+      {
+        "member": "2/3_Белка/Белка 4.jpg",
+        "sha256": "0715a1f61747cfa2d2f96346778569cde48620ec32c5dc5f5720de5ed20fe6f7",
+        "reviewed": true
+      },
+      {
+        "member": "2/3_Белка/Белка 3.jpg",
+        "sha256": "7960fa003ee7faf8aff252ba83a6a1f6a03fc7a6c8482a89b9830960e50e1882",
+        "reviewed": true
+      },
+      {
+        "member": "2/3_Белка/Белка 2.jpg",
+        "sha256": "b5e44f4ef1033cc1a31865290635a1b27447fa99347444c106306a8a1e5832d3",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF455CDA": {
+    "theme": "Норка",
+    "kind": "animal",
+    "archiveHash": "e201203e9bff7d7426045ccea2ccf2e16b83b8d5937bee35c3d87a089750de95",
+    "sourceDocument": "29/30_Норка/Европе́йская но́рка.odt",
+    "sourceDocumentHash": "b6359c9dae0f17048b822ba6eb15243c095b0e786002f82856f8aa029c766e72",
+    "blocks": [
+      "Европейская норка имеет плотный бурый мех и перепонки между пальцами.",
+      "Живёт в Восточной Европе по берегам рек и других водоёмов.",
+      "Активна преимущественно в сумерках и ночью.",
+      "Ест рыбу, лягушек, раков, водных насекомых и мелких грызунов.",
+      "Густой подшёрсток помогает сохранять тепло при нахождении в воде."
+    ],
+    "patterns": [
+      "TITI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/70988A03F790942C44F5020C1D737EEF/xs3qstsrc70988A03F790942C44F5020C1D737EEF_10_1760010147.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/70988A03F790942C44F5020C1D737EEF/xs3qstsrc70988A03F790942C44F5020C1D737EEF_11_1760010147.png",
+        "sha256": "ce8a49703926deb3ae163463e92f89685c8046599574b262ec9bda6041b4abb5",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/70988A03F790942C44F5020C1D737EEF/xs3qstsrc70988A03F790942C44F5020C1D737EEF_12_1760010147.png",
+        "sha256": "8468eae788ae4b83dcfc9a06448bf4c47ee456f41f165557d9533a4605bef689",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "29/30_Норка/Норка 3.jpg",
+        "sha256": "1157660b333bf565574bcdb06ab742f09cbff93a921f6820d55f59e59730f766",
+        "reviewed": true
+      },
+      {
+        "member": "29/30_Норка/Норка 4.jpg",
+        "sha256": "9672aead79fccfa7188863361e18557c634b170d35cf1857d0873841366ef81c",
+        "reviewed": true
+      },
+      {
+        "member": "29/30_Норка/Норка 1.jpg",
+        "sha256": "10d98b67d834ffd4f6eb1ea17bdbece916bc69449fe18bd57d365d9c41f1e6d6",
+        "reviewed": true
+      },
+      {
+        "member": "29/30_Норка/Норка 2.jpg",
+        "sha256": "5646b8af96fddac7013968559dac536c010a8c148fea89c5db8965c625f5cd99",
+        "reviewed": true
+      },
+      {
+        "member": "29/30_Норка/Норка 5.jpg",
+        "sha256": "e9be598dd3e8dc5b01c57f61f6c35e3c971f9140d595be6030eed3ea327961ee",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFE9CA54": {
+    "theme": "Малина",
+    "kind": "plant",
+    "archiveHash": "527bfcdd5debd19090e8188baf0d2a216535c4c7a87230587279d877c53406a1",
+    "sourceDocument": "54/Малина/ЗАДАНИЕ 13/Малина.odt",
+    "sourceDocumentHash": "74b984d131806ff3190a352ad756580b09ae8ae647f5a94fad281d8d2681f06a",
+    "blocks": [
+      "Малина — кустарник с сложными листьями и белыми цветками.",
+      "Распространена в Европе и Азии; растёт на полянах, опушках и берегах рек.",
+      "Цветки дают пыльцу и нектар, привлекая пчёл и бабочек.",
+      "Ферментированные листья добавляют в чайные смеси.",
+      "Пример ягодного десерта — малиновое варенье к чаю."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8C0AB91A6A168FE04817479F9C4A326E/xs3qstsrc8C0AB91A6A168FE04817479F9C4A326E_10_1760011303.png",
+        "sha256": "16e2bec6671ae7596119bf268e1a7e3ecfb3f008aed7facb0ef133e49a77b1b6",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8C0AB91A6A168FE04817479F9C4A326E/xs3qstsrc8C0AB91A6A168FE04817479F9C4A326E_11_1760011303.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8C0AB91A6A168FE04817479F9C4A326E/xs3qstsrc8C0AB91A6A168FE04817479F9C4A326E_12_1760011303.png",
+        "sha256": "52364e0be4c0ef16f41f536e4ade1eb258ed7b6dd95c7daafd3789a10eea3c10",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "54/Малина/ЗАДАНИЕ 13/lori-0029369554-a7.jpg",
+        "sha256": "7574d1a18ad7660b9c48e8e2527d73dbc0d23d76b90eedd1b93acc0bcfc5cce6",
+        "reviewed": true
+      },
+      {
+        "member": "54/Малина/ЗАДАНИЕ 13/lori-0033839474-a7.jpg",
+        "sha256": "832d62e9573e54acac03ac930172e6edb44817b81192c61752068f872ccda998",
+        "reviewed": true
+      },
+      {
+        "member": "54/Малина/ЗАДАНИЕ 13/lori-0023277005-a7.jpg",
+        "sha256": "85e6cfdc65b79b72a99857b9e743a87002a9aebd97f0b50ebc7d6879cca40540",
+        "reviewed": true
+      },
+      {
+        "member": "54/Малина/ЗАДАНИЕ 13/lori-0012589223-a7.jpg",
+        "sha256": "6adacf8a1e1a5d3349800ff15f0a9e3de4eb155f798b037880f579614454d53c",
+        "reviewed": true
+      },
+      {
+        "member": "54/Малина/ЗАДАНИЕ 13/lori-0026746948-a7.jpg",
+        "sha256": "082aaff859907a799825bee80ad5b9460dc555387386f0df2d2d96a1c618496d",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "Кулинарный пример предложен автором по иллюстрациям из архива; в текстовой справке нет рецепта.",
+    "reviewed": true
+  },
+  "OGEINF329F58": {
+    "theme": "Ежевика",
+    "kind": "plant",
+    "archiveHash": "b97e77820df019cec89672bb4fdc39b71eb87b8b4659a6017dffe3a4788eb113",
+    "sourceDocument": "49/Ежевика/ЗАДАНИЕ 13/Ежевика.odt",
+    "sourceDocumentHash": "a3e1b129b4d1ba6e43be6d1a57823d4a13d2f4d1985d038eafca72be00ea19fa",
+    "blocks": [
+      "Ежевика — кустарник или кустарниковая лиана с гибкими побегами.",
+      "У многих форм побеги покрыты шипами; при наличии опоры они поднимаются вверх.",
+      "Ягоды ежевики тёмные, состоят из множества небольших костянок.",
+      "Кулинарный пример — ежевичное варенье.",
+      "Из ягод также готовят компот; сладкие заготовки хранят в защищённом от света месте."
+    ],
+    "patterns": [
+      "TITI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8EFB61B09F7FB71B4C8DBAE2C95BBB7D/xs3qstsrc8EFB61B09F7FB71B4C8DBAE2C95BBB7D_10_1760011104.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8EFB61B09F7FB71B4C8DBAE2C95BBB7D/xs3qstsrc8EFB61B09F7FB71B4C8DBAE2C95BBB7D_11_1760011104.png",
+        "sha256": "ce8a49703926deb3ae163463e92f89685c8046599574b262ec9bda6041b4abb5",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/8EFB61B09F7FB71B4C8DBAE2C95BBB7D/xs3qstsrc8EFB61B09F7FB71B4C8DBAE2C95BBB7D_12_1760011104.png",
+        "sha256": "85bf414f510a0cc9630aefa2c8e88998a7c9baeed5f035ed439156fa4a3b85d8",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "49/Ежевика/ЗАДАНИЕ 13/lori-0001676377-a7.jpg",
+        "sha256": "8db5a0df13924d12c4e8c51a49d653bf68f646679515364973ea97cf012a589a",
+        "reviewed": true
+      },
+      {
+        "member": "49/Ежевика/ЗАДАНИЕ 13/lori-0005966793-a7.jpg",
+        "sha256": "fb8d06aca255ea738d1fd150b2e97244ff53c6cf7eab801ab9b45170b37bb311",
+        "reviewed": true
+      },
+      {
+        "member": "49/Ежевика/ЗАДАНИЕ 13/lori-0002797254-a7.jpg",
+        "sha256": "423d260464a51f4c7a533a6a1eb84212ef68a81280f17fa1b5652d487c78be56",
+        "reviewed": true
+      },
+      {
+        "member": "49/Ежевика/ЗАДАНИЕ 13/lori-0033449850-a7.jpg",
+        "sha256": "03a69355127ec7372338e6c0daf55a6c8083a8336affd06d55babf205dc651d7",
+        "reviewed": true
+      },
+      {
+        "member": "49/Ежевика/ЗАДАНИЕ 13/lori-0006267125-a7.jpg",
+        "sha256": "089c6b545a3349be024ab04828a57909692bfd689980c22b59570ad19bcd330a",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF55F0A6": {
+    "theme": "Эстрагон",
+    "kind": "plant",
+    "archiveHash": "c39b05141f1e3017e68b74d9d3ca8b78c74a95cb0dc2d767211e37b2aeb1cbdf",
+    "sourceDocument": "44/Эстрагон/ЗАДАНИЕ 13/Эстрагон.odt",
+    "sourceDocumentHash": "3779ceec183282c46c5095f5a700982eadaf1357dc581bb82769a6fe76e50a4a",
+    "blocks": [
+      "Эстрагон, или тархун, — травянистый многолетник с прямостоячими стеблями.",
+      "У него узкие листья; молодая зелень обладает ароматом и освежающим анисовым вкусом.",
+      "Листья и нежные побеги используют как пряную зелень.",
+      "Эстрагон добавляют в салаты, супы, овощные, мясные и рыбные блюда.",
+      "Пример — томатный соус с зеленью эстрагона, чесноком и лимонным соком к мясу."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/98D18269A90CB5334CC0BEC507A7817C/xs3qstsrc98D18269A90CB5334CC0BEC507A7817C_10_1760010879.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/98D18269A90CB5334CC0BEC507A7817C/xs3qstsrc98D18269A90CB5334CC0BEC507A7817C_11_1760010879.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/98D18269A90CB5334CC0BEC507A7817C/xs3qstsrc98D18269A90CB5334CC0BEC507A7817C_12_1760010879.png",
+        "sha256": "d62187a6d53a9c238bbdd42f13869b12c0e16ade80a50d5d5a552de999fa7b74",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "44/Эстрагон/ЗАДАНИЕ 13/lori-0001872735-a7.jpg",
+        "sha256": "6838bb95eefc33b53eadddbfeb5e678ae62f5b083d56fdb11f078a42aa58f801",
+        "reviewed": true
+      },
+      {
+        "member": "44/Эстрагон/ЗАДАНИЕ 13/lori-0004344048-a7.jpg",
+        "sha256": "eafd59e5610788f5caaa1977de1f16cbff5c5a9f368a8a4ebd7ae7b753a4008f",
+        "reviewed": true
+      },
+      {
+        "member": "44/Эстрагон/ЗАДАНИЕ 13/lori-0027179500-a7.jpg",
+        "sha256": "47f1f2fa8d42ed40bf6694040c8e1280221184e2d1d1f216fc521c43aad05945",
+        "reviewed": true
+      },
+      {
+        "member": "44/Эстрагон/ЗАДАНИЕ 13/lori-0022941871-a7.jpg",
+        "sha256": "8de11cda570237601579c2c0da4fe3f68a8c399e4145774bb665296860df688b",
+        "reviewed": true
+      },
+      {
+        "member": "44/Эстрагон/ЗАДАНИЕ 13/lori-0003564234-a7.jpg",
+        "sha256": "3ebe7f3f99f73d8bc9b5218b048b18cea0773af24c8d302f787e7728296713c6",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFF1B6C3": {
+    "theme": "Бурый медведь",
+    "kind": "animal",
+    "archiveHash": "62039d3a1fe89e133de2473c8cc3b0ecebcfd7e152afa8b7e9c48cd9f05c2a57",
+    "sourceDocument": "21/22_Бурый медведь/Бу́рый медве́дь.odt",
+    "sourceDocumentHash": "2c4b08a3016c48f945f0f457319c626d7810da7211bad1fc4e4ca1fe86ffbf5c",
+    "blocks": [
+      "Бурый медведь — один из крупнейших наземных хищников, с массивным телом и густым мехом.",
+      "Живёт в Евразии и Северной Америке; в России предпочитает большие лесные массивы.",
+      "На зиму устраивает берлогу; сезонные изменения влияют на его питание.",
+      "Всеяден: ест ягоды, орехи, корни, насекомых и рыбу.",
+      "Во время нереста ловит лососёвых; может добывать и крупных копытных."
+    ],
+    "patterns": [
+      "TIIT",
+      "IIITTT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A1E45DC9DFE1B06D49C50942789AE81A/xs3qstsrcA1E45DC9DFE1B06D49C50942789AE81A_10_1760009793.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A1E45DC9DFE1B06D49C50942789AE81A/xs3qstsrcA1E45DC9DFE1B06D49C50942789AE81A_11_1760009793.png",
+        "sha256": "01b866f031dd001ec2ae61ede1cfe6bed9b8f20804c3cb3d61775e7ccbdbfe07",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/A1E45DC9DFE1B06D49C50942789AE81A/xs3qstsrcA1E45DC9DFE1B06D49C50942789AE81A_12_1760009793.png",
+        "sha256": "5e3556eb523fdef18da768bc816be1cf923589860994df5442d575abde0e4108",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "21/22_Бурый медведь/Бурый медведь 3.jpg",
+        "sha256": "53d41efc3f14fa6748046f5fbb052d7f8f9e9b12d1ceb9c573e73cc297caba0c",
+        "reviewed": true
+      },
+      {
+        "member": "21/22_Бурый медведь/Бурый медведь 2.jpg",
+        "sha256": "fd1007896374f645fbed0318f27f00ad5d5d9708c057e4201761227db152d42e",
+        "reviewed": true
+      },
+      {
+        "member": "21/22_Бурый медведь/Бурый медведь 4.jpg",
+        "sha256": "cfcea58707474e9d31b31af383386ade3584a3aef4511d805767d1c3f2a7edc3",
+        "reviewed": true
+      },
+      {
+        "member": "21/22_Бурый медведь/Бурый медведь 1.jpg",
+        "sha256": "2031f703e12e620893f962d33feedd1d4d985795ebc3682b57df624b0c5d3b8d",
+        "reviewed": true
+      },
+      {
+        "member": "21/22_Бурый медведь/Бурый медведь 5.jpg",
+        "sha256": "1f87317321d704182a1c83235acfcf290cd3c38a79cf94d8c9ea21c45b6cfe03",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF419A9B": {
+    "theme": "Крыса",
+    "kind": "animal",
+    "archiveHash": "120af38a15b1384c87c2ec955f83a41a3cda99926fe30eff6ac769a9a7427b60",
+    "sourceDocument": "1/1_Крыса/Кры́сы.odt",
+    "sourceDocumentHash": "709caa5534d334d07b29345acfb7d5d1b870744b56e6f6c7e4496451f687c8cc",
+    "blocks": [
+      "Крысы — грызуны с длинным хвостом; обычная окраска серая или серо-бурая.",
+      "Серая крыса расселилась по всем материкам, кроме Антарктиды, часто рядом с человеком.",
+      "Используют норы, естественные укрытия и части построек; могут жить группами.",
+      "Большинство видов всеядно: едят семена, плоды и мелких беспозвоночных.",
+      "Домашние декоративные крысы отличаются поведением от диких сородичей."
+    ],
+    "patterns": [
+      "ITIT",
+      "ITITIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B04B59D0815489EF40ADC8FFFB9D9BA6/xs3qstsrcB04B59D0815489EF40ADC8FFFB9D9BA6_10_1760008851.png",
+        "sha256": "85f6ba45caf188185e738aa83758952ff9673099a09550748d339ed54d7d8061",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B04B59D0815489EF40ADC8FFFB9D9BA6/xs3qstsrcB04B59D0815489EF40ADC8FFFB9D9BA6_11_1760008851.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B04B59D0815489EF40ADC8FFFB9D9BA6/xs3qstsrcB04B59D0815489EF40ADC8FFFB9D9BA6_12_1760008851.png",
+        "sha256": "6da4e058776e94209effccda834d251ba6fb344e0b7a8ed29cb7c1d653a1757f",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "1/1_Крыса/Крыса 5.jpg",
+        "sha256": "a51c6ecaca010fbaa86e89a657fdf59c285ab5f29cbeef8af0dfd9accdbe4312",
+        "reviewed": true
+      },
+      {
+        "member": "1/1_Крыса/Крыса 4.jpg",
+        "sha256": "384930806942c088eba7e86bb7385dc0486f8a72b13f9c1a607a3f695ec584ae",
+        "reviewed": true
+      },
+      {
+        "member": "1/1_Крыса/Крыса 2.jpg",
+        "sha256": "eeed44613b7aed0d286806efe8fb5a87363402fa41cb62e26c8d4211feba9dcd",
+        "reviewed": true
+      },
+      {
+        "member": "1/1_Крыса/Крыса 3.jpg",
+        "sha256": "032034447ca39c7f4e86067c645316e6f65a07715113423f79c0a22dcd5874f6",
+        "reviewed": true
+      },
+      {
+        "member": "1/1_Крыса/Крыса 1.jpg",
+        "sha256": "1200145721edc40f1e5cd110a6eac4defab63709b53b54046b4d3c3f7cbd8dcf",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [
+      {
+        "scope": "Географический ареал серой крысы",
+        "url": "https://animaldiversity.org/accounts/Rattus_norvegicus/",
+        "reviewed": true
+      }
+    ],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF46B49E": {
+    "theme": "Дикие кошки",
+    "kind": "animal",
+    "archiveHash": "d3fea97e21f789e9949a06750da1e7d8ab023270beb19a34c4c11120634599df",
+    "sourceDocument": "18/19_Дикие кошки/Коша́чьи.odt",
+    "sourceDocumentHash": "f4573028463391f3d0bc143d2101f04629d652bd804c167a971a084523cd3c9f",
+    "blocks": [
+      "У кошачьих гибкое тело, острые зубы и часто пятнистая или полосатая окраска.",
+      "Дикие кошачьи встречаются в Евразии, Африке и Америке, в самых разных наземных средах.",
+      "Большинство видов активно в сумерках или ночью.",
+      "Питаются животной пищей; добычу подкарауливают, скрадывают или преследуют.",
+      "Обычно живут поодиночке или семьями; львы образуют прайды."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B0C4D009B7FABCD14C1D76AAF9BD3E09/xs3qstsrcB0C4D009B7FABCD14C1D76AAF9BD3E09_10_1760009675.png",
+        "sha256": "3fcd9dd290cf74d03f08c9a3e1841a2d09a5650f0a192a78155f11f419572e90",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B0C4D009B7FABCD14C1D76AAF9BD3E09/xs3qstsrcB0C4D009B7FABCD14C1D76AAF9BD3E09_11_1760009675.png",
+        "sha256": "67da8ba1fa55f1e30b59a1314cfe5e59ac31940db920d70041308b911faf4f6c",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B0C4D009B7FABCD14C1D76AAF9BD3E09/xs3qstsrcB0C4D009B7FABCD14C1D76AAF9BD3E09_12_1760009675.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B0C4D009B7FABCD14C1D76AAF9BD3E09/xs3qstsrcB0C4D009B7FABCD14C1D76AAF9BD3E09_13_1760009675.png",
+        "sha256": "0386944f2a89a9dadc8cc20458dda66057d10122510294c2cd6c31b8266450aa",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/B0C4D009B7FABCD14C1D76AAF9BD3E09/xs3qstsrcB0C4D009B7FABCD14C1D76AAF9BD3E09_14_1760009675.png",
+        "sha256": "1ce4d7df2ce3ffc97b70a5bef466efa76db2b514ac381c701f8699b2c18021fb",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "18/19_Дикие кошки/Тигр.jpg",
+        "sha256": "cefa46fe5cd816169532ebf88b22c820b9d5edaee87fe83f284542f16cbf081b",
+        "reviewed": true
+      },
+      {
+        "member": "18/19_Дикие кошки/Рысь.jpg",
+        "sha256": "5704bc17b2f3cf96fbe212f8932044692ac7b7f828d9102d2aaea2c799e7e8bb",
+        "reviewed": true
+      },
+      {
+        "member": "18/19_Дикие кошки/Ягуар.jpg",
+        "sha256": "5d38ee2e75331dcd71e43b296c066037c99927544d4562dd9e2f538666ccc38c",
+        "reviewed": true
+      },
+      {
+        "member": "18/19_Дикие кошки/Гепард.jpg",
+        "sha256": "cc303f39f9a5c2785827b569322e9d2511444156cc4fa13678770c7ebc385a91",
+        "reviewed": true
+      },
+      {
+        "member": "18/19_Дикие кошки/Сервал.jpg",
+        "sha256": "2b6805ec0d99544d4b02e43736e0808fa81b63ef7e0a869353e929e97597cc74",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [
+      {
+        "scope": "Естественный ареал семейства",
+        "url": "https://animaldiversity.org/accounts/Felidae/",
+        "reviewed": true
+      }
+    ],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF6FD598": {
+    "theme": "Китайская хохлатая собака",
+    "kind": "animal",
+    "archiveHash": "5d7b606900af424e2578f4f17a5ca7277045d49cde5b39502819ed851db771e9",
+    "sourceDocument": "38/39_Китайская хохлатая/Китайская хохлатая.odt",
+    "sourceDocumentHash": "e080cc042950303dbe5b326f0a3707190a7a8449c3b1924af1cb6b81b123ef0c",
+    "blocks": [
+      "Китайская хохлатая — небольшая изящная собака; есть голая и пуховая разновидности.",
+      "Породу разводят во многих странах. Точное место её возникновения остаётся спорным.",
+      "Собака активна, жизнерадостна и сильно привязывается к хозяину.",
+      "Рацион — полноценный корм по возрасту, желательно для мелких пород.",
+      "Это собака-компаньон; любит общение и совместные игры с человеком."
+    ],
+    "patterns": [
+      "ITIT",
+      "ITTTII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/BDF718C0798795BA4AC7CC643D02A843/xs3qstsrcBDF718C0798795BA4AC7CC643D02A843_10_1760010606.png",
+        "sha256": "16e2bec6671ae7596119bf268e1a7e3ecfb3f008aed7facb0ef133e49a77b1b6",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/BDF718C0798795BA4AC7CC643D02A843/xs3qstsrcBDF718C0798795BA4AC7CC643D02A843_11_1760010606.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/BDF718C0798795BA4AC7CC643D02A843/xs3qstsrcBDF718C0798795BA4AC7CC643D02A843_12_1760010606.png",
+        "sha256": "e9c84f178e796d2c788e3510a4abba692ca1a271ee720976260e25270c3fd8bc",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "38/39_Китайская хохлатая/Китайская хохлатая 5.jpg",
+        "sha256": "f03e536c82a7ca963a4cd54e1167a32b6469a332b6f76c03b8c497636c1a829b",
+        "reviewed": true
+      },
+      {
+        "member": "38/39_Китайская хохлатая/Китайская хохлатая 2.jpg",
+        "sha256": "82e9a2b42d194394c2c339da6022dcb8e35dadae6b160794dcbcd484da043ea9",
+        "reviewed": true
+      },
+      {
+        "member": "38/39_Китайская хохлатая/Китайская хохлатая 1.jpg",
+        "sha256": "7b52e00ccd77c6821c5c510b81086a28a3aedc1207e7cefe6a122b1914fce19a",
+        "reviewed": true
+      },
+      {
+        "member": "38/39_Китайская хохлатая/Китайская хохлатая 4.jpg",
+        "sha256": "e8bdca30d5f08c3839e4ac83835a5edbfebede269a1082c2138b075560b25bd3",
+        "reviewed": true
+      },
+      {
+        "member": "38/39_Китайская хохлатая/Китайская хохлатая 3.jpg",
+        "sha256": "150b7bad33bf9524fe93bd3f0ef6f9a288cc38001b4505670b2c0a7bcb6d82db",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [
+      {
+        "scope": "Рацион",
+        "url": "https://www.akc.org/dog-breeds/chinese-crested/",
+        "reviewed": true
+      }
+    ],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFFDCBEC": {
+    "theme": "Шелковица",
+    "kind": "plant",
+    "archiveHash": "2e53e2da941fc28df957e50df9900bda970fcfcdcae59d0e3b8b6ce6006aac97",
+    "sourceDocument": "56/Шелковица/ЗАДАНИЕ 13/Шелковица.odt",
+    "sourceDocumentHash": "366861a6450db30d51551d01b74f14f857d2da94764d232debb29f651239792c",
+    "blocks": [
+      "Шелковица, или тутовое дерево, — долговечное растение с густой кроной.",
+      "Листья простые; ими питается тутовый шелкопряд.",
+      "Мелкие цветки собраны в соцветия, напоминающие серёжки.",
+      "Спелые сочные плоды можно подать как десерт.",
+      "Пример кулинарного использования — варенье из шелковицы."
+    ],
+    "patterns": [
+      "TITI",
+      "TIIITT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/C1AA74F88F2B8A8643E007AE9CAD3C37/xs3qstsrcC1AA74F88F2B8A8643E007AE9CAD3C37_10_1760011371.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/C1AA74F88F2B8A8643E007AE9CAD3C37/xs3qstsrcC1AA74F88F2B8A8643E007AE9CAD3C37_11_1760011371.png",
+        "sha256": "a311f9aa4959b8a6de7c9670bb7475e4153ae0adb3f3e7c5f5879ab338494b98",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/C1AA74F88F2B8A8643E007AE9CAD3C37/xs3qstsrcC1AA74F88F2B8A8643E007AE9CAD3C37_12_1760011371.png",
+        "sha256": "7c3459717985eba766dcd1187a12a36c7503edec8ab3ffda2746475d08478544",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "56/Шелковица/ЗАДАНИЕ 13/lori-0034253298-a7.jpg",
+        "sha256": "629309085f93894d32a344432f6c7eb502806019b6a724bc5bf5ae5b31dadc98",
+        "reviewed": true
+      },
+      {
+        "member": "56/Шелковица/ЗАДАНИЕ 13/lori-0002227781-a7.jpg",
+        "sha256": "9b01d39b4949581c78da7e0399f770bba23f19925ee0eaad554ef4dec455de01",
+        "reviewed": true
+      },
+      {
+        "member": "56/Шелковица/ЗАДАНИЕ 13/lori-0033959978-a7.jpg",
+        "sha256": "baf036ea71d21fe707aa280c61a535baf9c2500552a2c9be4dc07f2e51612ebc",
+        "reviewed": true
+      },
+      {
+        "member": "56/Шелковица/ЗАДАНИЕ 13/lori-0028084087-a7.jpg",
+        "sha256": "aa0908ffa9ec8e11e8aceca06bd18fc985f26b49be6f40a3270b4a4415140dbf",
+        "reviewed": true
+      },
+      {
+        "member": "56/Шелковица/ЗАДАНИЕ 13/lori-0007640121-a7.jpg",
+        "sha256": "155aced17fd90cfff0b1d20d07e309134b503f5dec56b8c9ac157c21de67183f",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Растение и его особенности",
+      "Применение в кулинарии"
+    ],
+    "supplements": [],
+    "contentNote": "Кулинарный пример предложен автором по иллюстрациям из архива; в текстовой справке нет рецепта.",
+    "reviewed": true
+  },
+  "OGEINFC2B7E0": {
+    "theme": "Морская свинка",
+    "kind": "animal",
+    "archiveHash": "d88919142a28b893ffc1d8cd567fc2c04197d648dc409c54c01bf11a987371ae",
+    "sourceDocument": "5/6_Морская свинка/Морская свинка.odt",
+    "sourceDocumentHash": "446dbaad7502a7402d113d4e59f727ebe3f8df2246a6f43f93471ec06c4135ea",
+    "blocks": [
+      "Морская свинка — грызун с коротким телом, тупой мордочкой и малозаметным хвостом.",
+      "Предков домашних свинок одомашнили в Андах Южной Америки.",
+      "Существуют породы с короткой, длинной и жёсткой шерстью.",
+      "Основная пища — растительная: свежая зелень и сочные овощи.",
+      "Ест часто и небольшими порциями; это наземное, а не морское животное."
+    ],
+    "patterns": [
+      "TIIT",
+      "ITTTII"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/CA2463694846BDBF4CF0297051790AD1/xs3qstsrcCA2463694846BDBF4CF0297051790AD1_10_1760009003.png",
+        "sha256": "ca01801a10ef8099d12eb35eaebf04f5a0f2e583045ae4c538e28cc713323a9b",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/CA2463694846BDBF4CF0297051790AD1/xs3qstsrcCA2463694846BDBF4CF0297051790AD1_11_1760009003.png",
+        "sha256": "df7e57d1c4836ee62143598dc95c08ed79f4997de622f91038dc5bac0639efae",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/CA2463694846BDBF4CF0297051790AD1/xs3qstsrcCA2463694846BDBF4CF0297051790AD1_12_1760009003.png",
+        "sha256": "08b2a996ef5a91c234dac1e0ee628b567a6efd3f18327e14b1a05b78e94df97d",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "5/6_Морская свинка/Морская свинка 5.jpg",
+        "sha256": "82103d083ec8402f81fc95cef682dabfeb3663a4cac47487095a01799bf99aea",
+        "reviewed": true
+      },
+      {
+        "member": "5/6_Морская свинка/Морская свинка 2.jpg",
+        "sha256": "68fa2be7a370d39b98c1cdcec2b4b735b2a20b5257ab7d38038698a3dc08f67e",
+        "reviewed": true
+      },
+      {
+        "member": "5/6_Морская свинка/Морская свинка 1.jpg",
+        "sha256": "39251d98496b9873b36eff70d34f80697f28edbb4d1ef5e95ad57828656b1f30",
+        "reviewed": true
+      },
+      {
+        "member": "5/6_Морская свинка/Морская свинка 3.jpg",
+        "sha256": "fa29d15ce0bc0c919657d6e1cfe098b1f2b2f39e82c3a82588f33b127137dc72",
+        "reviewed": true
+      },
+      {
+        "member": "5/6_Морская свинка/Морская свинка 4.jpg",
+        "sha256": "5ec4a44c0101a17a7ebc60da90f56f64a925b4ca6007d7121528533956983531",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFC95A6B": {
+    "theme": "Карело-финская лайка",
+    "kind": "dog",
+    "archiveHash": "5caf4f2eeb2a1382fc9bfc8214bd017b368e93778dc7124a227f7b27b589be4a",
+    "sourceDocument": "30/31_Карело-финская лайка/Карело-финская лайка.odt",
+    "sourceDocumentHash": "0b1dfa6086f14c469e907194f03dd3f232d18c3d9a57ef349522a813702b9c8d",
+    "blocks": [
+      "Карело-финская лайка — небольшая собака с рыжей шерстью и стоячими заострёнными ушами.",
+      "Получена скрещиванием карельских и олонецких охотничьих собак с финскими.",
+      "Собака активная, выносливая, сообразительная и самостоятельная.",
+      "В первую очередь это охотничья порода.",
+      "Может быть компаньоном человека, который любит движение и прогулки."
+    ],
+    "patterns": [
+      "ITIT",
+      "ITITIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DA48B9B9E1B1AC284DD9A92779A9ACF8/xs3qstsrcDA48B9B9E1B1AC284DD9A92779A9ACF8_10_1760010201.png",
+        "sha256": "7e79bec56d8d5f3ce528fd16b0ce4b6479d7a09c78f44b6a20dfd15380c4cfbe",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DA48B9B9E1B1AC284DD9A92779A9ACF8/xs3qstsrcDA48B9B9E1B1AC284DD9A92779A9ACF8_11_1760010201.png",
+        "sha256": "67da8ba1fa55f1e30b59a1314cfe5e59ac31940db920d70041308b911faf4f6c",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DA48B9B9E1B1AC284DD9A92779A9ACF8/xs3qstsrcDA48B9B9E1B1AC284DD9A92779A9ACF8_12_1760010201.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DA48B9B9E1B1AC284DD9A92779A9ACF8/xs3qstsrcDA48B9B9E1B1AC284DD9A92779A9ACF8_13_1760010201.png",
+        "sha256": "f890796b8fb1753289ce21e436445610c909a0f058af013338a49479be305a15",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/DA48B9B9E1B1AC284DD9A92779A9ACF8/xs3qstsrcDA48B9B9E1B1AC284DD9A92779A9ACF8_14_1760010201.png",
+        "sha256": "1ce4d7df2ce3ffc97b70a5bef466efa76db2b514ac381c701f8699b2c18021fb",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "30/31_Карело-финская лайка/карелка_7.jpg",
+        "sha256": "33014272e9eee08b88e99762084662470457bfbfceeaac48ad1d8ba9f7aae01a",
+        "reviewed": true
+      },
+      {
+        "member": "30/31_Карело-финская лайка/карелка_2.jpg",
+        "sha256": "4990b49cdd67347c5e429f2ae61166d73c4421ffa9962d999b30ce921814b74b",
+        "reviewed": true
+      },
+      {
+        "member": "30/31_Карело-финская лайка/карелка_4.jpg",
+        "sha256": "cf99a12baea948fa476252befe025e06df2fcce8d3915658076e1534c59877e8",
+        "reviewed": true
+      },
+      {
+        "member": "30/31_Карело-финская лайка/карелка_5.jpg",
+        "sha256": "bf501498a3b51daf4a6a5bb657c7e3c61b5be5f178835de24fd920374e8e151a",
+        "reviewed": true
+      },
+      {
+        "member": "30/31_Карело-финская лайка/карелка_1.jpg",
+        "sha256": "cbb4e6d052fd04e55a17ecf6ec864a9c3ca0dac2d340c43b8744958bf4521640",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешность и происхождение",
+      "Характер и особенности"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF92BB33": {
+    "theme": "Такса",
+    "kind": "dog",
+    "archiveHash": "16843acb647335263453541be295f4bc0a6f89879fa24ca3232113efd1d9f711",
+    "sourceDocument": "39/40_Такса/Таксы.odt",
+    "sourceDocumentHash": "124f5225c70bd018e04f3422394230ee3244077246420621ed8715a94d5e0dee",
+    "blocks": [
+      "Такса — охотничья собака с вытянутым туловищем и короткими ногами.",
+      "Порода сформировалась в Германии; её использовали для норной охоты.",
+      "Есть стандартные, миниатюрные и кроличьи таксы с разными типами шерсти.",
+      "Такса смела, вынослива, самостоятельна и обладает хорошим чутьём.",
+      "При уравновешенном темпераменте она дружелюбна и предана своей семье."
+    ],
+    "patterns": [
+      "TITI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/EBE4642B44888080427A55C51C154A29/xs3qstsrcEBE4642B44888080427A55C51C154A29_10_1760010656.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/EBE4642B44888080427A55C51C154A29/xs3qstsrcEBE4642B44888080427A55C51C154A29_11_1760010656.png",
+        "sha256": "ce8a49703926deb3ae163463e92f89685c8046599574b262ec9bda6041b4abb5",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/EBE4642B44888080427A55C51C154A29/xs3qstsrcEBE4642B44888080427A55C51C154A29_12_1760010656.png",
+        "sha256": "8468eae788ae4b83dcfc9a06448bf4c47ee456f41f165557d9533a4605bef689",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "39/40_Такса/Такса 4.jpg",
+        "sha256": "1185d7242d651fdb6d6334dcc3a178c9ad004456dbb37e433b21992babf250ca",
+        "reviewed": true
+      },
+      {
+        "member": "39/40_Такса/Такса 2.jpg",
+        "sha256": "f00b00ab35980029546a62f1aeacb7e47ff87ebede2e29af04bceb829388adf0",
+        "reviewed": true
+      },
+      {
+        "member": "39/40_Такса/Такса 5.jpg",
+        "sha256": "2a4516ae5e4aace4d6cbf2c9701369601b5ae96b761c68ee40ae161d4e92f66c",
+        "reviewed": true
+      },
+      {
+        "member": "39/40_Такса/Такса 1.jpg",
+        "sha256": "f20a7d402321502dc25c45038944599ba190316cdd01a8ee222b81eeada9f833",
+        "reviewed": true
+      },
+      {
+        "member": "39/40_Такса/Такса 3.jpg",
+        "sha256": "d112f18226c07bc1d1726a5a5943fac594d84ee19b0b40656d2cb1cb1155cb17",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешность и происхождение",
+      "Характер и особенности"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINFED8B31": {
+    "theme": "Рысь",
+    "kind": "animal",
+    "archiveHash": "a61f5aa9ba92a21321fab3ba5b8a62c81d3d707030d8a0871fd6b70b7e6b91e7",
+    "sourceDocument": "10/11_Рысь/Рысь.odt",
+    "sourceDocumentHash": "586911fb6e0962f51c29e892b2bb6fdb56638713b5891015b10208d86ef1d6a4",
+    "blocks": [
+      "Рысь — кошка с пятнистой шерстью, кисточками на ушах и коротким хвостом.",
+      "Предпочитает тайгу и глухие хвойные леса, встречается и в горных лесах.",
+      "Охотится в сумерках: подкрадывается или ждёт добычу в засаде.",
+      "Основная пища — зайцы-беляки; ловит также птиц и мелких грызунов.",
+      "Хорошо лазает и плавает; при недостатке пищи переходит на новые участки."
+    ],
+    "patterns": [
+      "ITIT",
+      "ITITIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/EC5F749A46A78AD441EC2092981D85CE/xs3qstsrcEC5F749A46A78AD441EC2092981D85CE_10_1760009204.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/EC5F749A46A78AD441EC2092981D85CE/xs3qstsrcEC5F749A46A78AD441EC2092981D85CE_11_1760009204.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/EC5F749A46A78AD441EC2092981D85CE/xs3qstsrcEC5F749A46A78AD441EC2092981D85CE_12_1760009204.png",
+        "sha256": "3870cb320f791b7ef1dbf312ce642e869a032b7558d5e41681d995c1f8807e89",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/EC5F749A46A78AD441EC2092981D85CE/xs3qstsrcEC5F749A46A78AD441EC2092981D85CE_13_1760009204.png",
+        "sha256": "1ce4d7df2ce3ffc97b70a5bef466efa76db2b514ac381c701f8699b2c18021fb",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "10/11_Рысь/Рысь 5.jpg",
+        "sha256": "277c66f95f0bf28a14dc61e18ddc70a7b1a1736c473f354cd019fb4e3fe89896",
+        "reviewed": true
+      },
+      {
+        "member": "10/11_Рысь/Рысь 2.jpg",
+        "sha256": "8f7b7959354338c41a2c81985dac8e399191d0a4fae2ea4bfded37100f6ad00a",
+        "reviewed": true
+      },
+      {
+        "member": "10/11_Рысь/Рысь 1.jpg",
+        "sha256": "39b5b1c7d271952c98cccd364f89062dab167eb968485398aead2ec96d6ea92d",
+        "reviewed": true
+      },
+      {
+        "member": "10/11_Рысь/Рысь 4.jpg",
+        "sha256": "5704bc17b2f3cf96fbe212f8932044692ac7b7f828d9102d2aaea2c799e7e8bb",
+        "reviewed": true
+      },
+      {
+        "member": "10/11_Рысь/Рысь 3.jpg",
+        "sha256": "41c063269e961d19bdbcd4eeb705403125e22086c0a526a64ad326f13b1843a7",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF289187": {
+    "theme": "Енот-полоскун",
+    "kind": "animal",
+    "archiveHash": "2190101cc4d7448a98bd085e2129aebf7e8b049b04dc68eab96fc7ae3d91a36c",
+    "sourceDocument": "23/24_Енот-полоскун/Енот-полоскун.odt",
+    "sourceDocumentHash": "2e6b5002cbd0d92ec2a3d890591a2930d520910447c159d3369c37a471b296ed",
+    "blocks": [
+      "Енот-полоскун имеет густой серо-бурый мех, тёмную маску и полосатый хвост.",
+      "Естественный ареал — Северная Америка, от Панамы до южных районов Канады.",
+      "Активен в сумерках и ночью, а днём отдыхает в логове.",
+      "Весной и в начале лета чаще ест животных, осенью — растительные корма.",
+      "В растительную часть рациона входят ягоды, жёлуди, орехи и фрукты."
+    ],
+    "patterns": [
+      "ITTI",
+      "TITITI"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/F63BF564A13B8C834C2C855ACD4EB358/xs3qstsrcF63BF564A13B8C834C2C855ACD4EB358_10_1760009912.png",
+        "sha256": "0e83fcbac01202d6ca5a4018ec39903cd84a0d98398af3ec825009eceaa72afc",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/F63BF564A13B8C834C2C855ACD4EB358/xs3qstsrcF63BF564A13B8C834C2C855ACD4EB358_11_1760009912.png",
+        "sha256": "4b7133d51558d64243dbdccadcdbc1eab43aa30796b6434a73f317ed776db550",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/F63BF564A13B8C834C2C855ACD4EB358/xs3qstsrcF63BF564A13B8C834C2C855ACD4EB358_12_1760009912.png",
+        "sha256": "1e9685bfaa636e46d93d241d8417c76109c6937861ba162ed2353e448d65bf75",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "23/24_Енот-полоскун/Енот 2.jpg",
+        "sha256": "9eed77ac675f4d4eb5a74c69fc1d215199ef2088e13e155731d470568245a74a",
+        "reviewed": true
+      },
+      {
+        "member": "23/24_Енот-полоскун/Енот 3.jpg",
+        "sha256": "fe759e63fedec6325a7fb5274f1c16ee41e068ca89abce20d1a994cbbe74f825",
+        "reviewed": true
+      },
+      {
+        "member": "23/24_Енот-полоскун/Енот 4.jpg",
+        "sha256": "a2981847cbb8b38231d5f9a02848f01f588f784d1aaa89f5d0296bb50df8993a",
+        "reviewed": true
+      },
+      {
+        "member": "23/24_Енот-полоскун/Енот 5.jpg",
+        "sha256": "2ade9e44355a2c27609dca254fc8d1ff75159514d5288785231ed75589bafc98",
+        "reviewed": true
+      },
+      {
+        "member": "23/24_Енот-полоскун/Енот 1.jpg",
+        "sha256": "a75ae700eb64878b6e9484e716ceda0201387d2c583809074fcaecce04f0bb20",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  },
+  "OGEINF6EC480": {
+    "theme": "Шиншилла",
+    "kind": "animal",
+    "archiveHash": "3870044500ecf215b3a33019b1285628f031903c64497bd54c9a58d23d66d10b",
+    "sourceDocument": "4/5_Шиншилла/Шинши́ллы.odt",
+    "sourceDocumentHash": "b1b133c639cc97a8f9973f88688751f4905404bfe4aabdecbb24def6fa9b5425",
+    "blocks": [
+      "У шиншиллы густой мех, большие тёмные глаза, длинные усы и крупные овальные уши.",
+      "Естественный ареал — высокогорные районы Анд Южной Америки.",
+      "Живёт колониями, активна ночью, укрывается среди скал и камней.",
+      "Ест травы, злаки, бобовые, кору и другие растения; иногда — насекомых.",
+      "Хорошо передвигается по скалам и пролезает в узкие расщелины."
+    ],
+    "patterns": [
+      "ITIT",
+      "TTIIIT"
+    ],
+    "primaryImages": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/FD2AC048061D98334F7C655D99D7C1D8/xs3qstsrcFD2AC048061D98334F7C655D99D7C1D8_10_1760008967.png",
+        "sha256": "b8b7546cc47a3dc89df41096b330e0ff939a394cbb86f885c40b0eee16dbf549",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/FD2AC048061D98334F7C655D99D7C1D8/xs3qstsrcFD2AC048061D98334F7C655D99D7C1D8_11_1760008967.png",
+        "sha256": "50498ff9173ce251c634df053bb48e327dd9ce2bf0092a8fcc82c5e74bb0bd5f",
+        "reviewed": true
+      },
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/FD2AC048061D98334F7C655D99D7C1D8/xs3qstsrcFD2AC048061D98334F7C655D99D7C1D8_12_1760008967.png",
+        "sha256": "d62187a6d53a9c238bbdd42f13869b12c0e16ade80a50d5d5a552de999fa7b74",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      {
+        "member": "4/5_Шиншилла/Шиншилла 5.jpg",
+        "sha256": "07d099ded24420414a6dcf8069386458ecb66300b6190727d64e4507b065d749",
+        "reviewed": true
+      },
+      {
+        "member": "4/5_Шиншилла/Шиншилла 2.jpg",
+        "sha256": "f580c3d10dcb7bcbd9873afc932ad8fea897bb72a1a60538735e1ff0cc730079",
+        "reviewed": true
+      },
+      {
+        "member": "4/5_Шиншилла/Шиншилла 3.jpg",
+        "sha256": "d2c74f7b71b17bb148ffeb11cd1c3c7e60e7cf3489510b579d209c7e30852c01",
+        "reviewed": true
+      },
+      {
+        "member": "4/5_Шиншилла/Шиншилла 1.jpg",
+        "sha256": "1321daafc3205847e14b244b2de05dd3e880ceee3f31d8acd277143a93d755f8",
+        "reviewed": true
+      },
+      {
+        "member": "4/5_Шиншилла/Шиншилла 4.jpg",
+        "sha256": "9381996755c205db3980458635ef236658e63839aa1c45fa668d7aa49dce15c6",
+        "reviewed": true
+      }
+    ],
+    "headings": [
+      "Внешний вид и среда обитания",
+      "Образ жизни и питание"
+    ],
+    "supplements": [],
+    "contentNote": "",
+    "reviewed": true
+  }
+}
