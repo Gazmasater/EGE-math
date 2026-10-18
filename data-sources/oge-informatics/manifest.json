@@ -14896,5 +14896,6 @@
     "chunkBytes": 524288,
     "parts": 707
   },
-  "documentValidation": "document-validation.json"
+  "documentValidation": "document-validation.json",
+  "releaseValidation": "release-validation.json"
 }

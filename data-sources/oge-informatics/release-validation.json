@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "verifiedAt": "2026-10-18T17:02:28.416287+00:00",
+  "release": "oge-informatics-archives-20261018-5f6c32c",
+  "releaseManifestSha256": "8feda652037450320f91dc1d379096f999ca3dd698f70ccce5ff43a72bb2cd71",
+  "verifiedTasks": 371,
+  "verifiedDistinctArchives": 147,
+  "verifiedParts": 707,
+  "downloadedBytes": 311858950,
+  "method": "Fresh anonymous HTTPS downloads; SHA-256 and size of every part and every assembled original",
+  "workflowRun": "https://github.com/Gazmasater/EGE-math/actions/runs/39146261863",
+  "verificationCommit": "20e4ca11a7755da7c65f71cdd4ea678d16bb6a80",
+  "githubAssetDigests": {
+    "status": "passed",
+    "assets": 707,
+    "checkedAt": "2026-10-18T17:04:49.246966+00:00"
+  }
+}

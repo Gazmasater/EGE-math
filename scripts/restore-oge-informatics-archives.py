@@ -7,12 +7,20 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 import shutil
+import ssl
 import time
 import urllib.error
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data-sources/oge-informatics'
+
+
+class HttpsRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, request, fp, code, message, headers, new_url):
+        if not new_url.startswith('https://'):
+            raise ValueError('Refusing a redirect outside HTTPS')
+        return super().redirect_request(request, fp, code, message, headers, new_url)
 
 
 def digest(file):
@@ -60,7 +68,13 @@ def download(part, cache):
     for attempt in range(3):
         try:
             request = urllib.request.Request(part['url'], headers={'User-Agent': 'EGE-math-archive-restore'})
-            with urllib.request.urlopen(request, timeout=60) as response, temporary.open('wb') as output:
+            context = ssl.create_default_context()
+            # Some proxies fail TLS 1.3 handshakes. Retrying with verified TLS 1.2
+            # keeps certificate/hostname checks enabled and stays within three attempts.
+            if attempt:
+                context.maximum_version = ssl.TLSVersion.TLSv1_2
+            opener = urllib.request.build_opener(urllib.request.HTTPSHandler(context=context), HttpsRedirect())
+            with opener.open(request, timeout=60) as response, temporary.open('wb') as output:
                 if response.status != 200 or not response.url.startswith('https://'):
                     raise ValueError('Expected a successful HTTPS download')
                 if 'html' in response.headers.get('Content-Type', '').lower():
