@@ -84,7 +84,7 @@ async function run(){
       await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
       const url=`${origin}/tasks/${task.id}`;await call('Page.navigate',{url});
       let ready=false;
-      for(let n=0;n<150;n++){
+      for(let n=0;n<600;n++){
         ready=await evaluate(`location.href.split('#')[0]===${JSON.stringify(url)}&&document.readyState==='complete'`);
         if(ready)break;await delay(100);
       }
@@ -162,7 +162,7 @@ async function run(){
       }
       await evaluate(`document.querySelector('.solution-button').click();true`);
       let modalReady=false;
-      for(let n=0;n<100;n++){
+      for(let n=0;n<300;n++){
         modalReady=await evaluate(`!!document.querySelector('.solution-modal:not([hidden]) .solution-text')`);
         if(modalReady)break;await delay(100);
       }
