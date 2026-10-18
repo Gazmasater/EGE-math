@@ -90,7 +90,7 @@ async function run(){
       }
       assert.ok(ready,`${task.id}: load timeout`);
       await evaluate('document.fonts.ready.then(()=>true)');
-      await evaluate(`(async()=>{for(const img of document.querySelectorAll('img[loading=lazy]'))img.loading='eager';await Promise.race([Promise.all(Array.from(document.images,i=>i.decode().catch(()=>false))),new Promise(r=>setTimeout(r,8000))]);scrollTo(0,0);return true;})()`);
+      await evaluate(`(async()=>{for(const img of document.querySelectorAll('img[loading=lazy]'))img.loading='eager';await Promise.race([Promise.all(Array.from(document.images,i=>i.decode().catch(()=>false))),new Promise(r=>setTimeout(r,30000))]);scrollTo(0,0);return true;})()`);
       const info=await evaluate(`(()=>{const box=document.querySelector('.seo-task-solution'),formatted=box?.querySelector('.formatted-solution');return {
         title:document.title,headings:document.querySelectorAll('h1').length,scrollWidth:document.documentElement.scrollWidth,width:innerWidth,height:document.documentElement.scrollHeight,
         solutionTop:box?box.getBoundingClientRect().top+scrollY:0,solutionHeight:box?.getBoundingClientRect().height||0,
