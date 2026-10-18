@@ -100,6 +100,10 @@
     "check:ege-informatics:pages": "node scripts/check-oge-pages.js ege-informatics",
     "audit:ege-informatics:attachments": "node scripts/audit-oge-attachments.js ege-informatics",
     "audit:ege-informatics:types": "node scripts/build-ege-informatics-classification.js",
-    "test:ege-informatics": "node --test scripts/ege-informatics.test.js"
+    "test:ege-informatics": "node --test scripts/ege-informatics.test.js",
+    "audit:oge-informatics:solutions": "node scripts/audit-oge-informatics-solutions.js",
+    "publish:oge-informatics:solutions": "node scripts/audit-oge-informatics-solutions.js --apply",
+    "audit:oge-informatics:solution-pages": "node scripts/audit-oge-informatics-solution-pages.js",
+    "check:oge-informatics:solutions": "node scripts/check-oge-informatics-solutions.js"
   }
 }

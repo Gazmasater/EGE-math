@@ -370,11 +370,14 @@
       });
     }
 
-    if (pageConfig.ogeMath) {
+    if (pageConfig.ogeMath || pageConfig.ogeSection === 'oge-informatics') {
 
     // Source tables preserve the original rows and headings.
     // On narrow screens make their existing native scrolling discoverable.
-    document.querySelectorAll('.qblock .cell_0 table.MsoNormalTable').forEach(table => {
+    const sourceTables = pageConfig.ogeSection === 'oge-informatics'
+      ? '.qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid)'
+      : '.qblock .cell_0 table.MsoNormalTable';
+    document.querySelectorAll(sourceTables).forEach(table => {
       const hint = document.createElement('p');
       hint.className = 'fipi-table-scroll-hint';
       hint.textContent = 'Прокрутите таблицу вправо, чтобы увидеть все столбцы →';

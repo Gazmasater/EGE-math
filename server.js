@@ -8,6 +8,8 @@ const { createHmac, timingSafeEqual, randomBytes, scryptSync } = require('node:c
 const { DatabaseSync } = require('node:sqlite');
 const {renderStudyRequest, validateStudyLead, openStudyLeads, renderStudyLeadsAdmin, createStudyLeadDelivery} = require('./lib/study-leads');
 const { conditionText } = require('./lib/seo-text');
+const { renderSolutionBlocks } = require('./lib/solution-blocks');
+const { renderSolutionFileLink, serveSolutionFile } = require('./lib/solution-files');
 const { expandMathmlFences } = require('./lib/mathml-fences');
 const {restorePhysicsFigures} = require('./lib/physics-condition-figures');
 const {restoreOgePhysicsFigures} = require('./lib/oge-physics-condition-figures');
@@ -969,9 +971,7 @@ function renderMathText(value) {
 }
 
 function renderMathSolution(value) {
-  return String(value || '').trim().split(/\n\s*\n/).filter(Boolean).map(paragraph =>
-    `<p>${paragraph.split('\n').map(renderMathText).join('<br>')}</p>`
-  ).join('');
+  return renderSolutionBlocks(value, renderMathText, escapeHtml);
 }
 
 function renderStructuredData(data) {
@@ -2750,7 +2750,7 @@ function renderPublishedSolution(taskId, topicName = '') {
   return `<section class="seo-task-solution" aria-labelledby="solution-${escapeHtml(taskId)}">
     <h2 id="solution-${escapeHtml(taskId)}">Решение задания ${escapeHtml(taskId)}</h2>
     ${answer}
-    <div class="formatted-solution">${renderMathSolution(solution.solution)}</div>
+    <div class="formatted-solution">${renderMathSolution(solution.solution)}${renderSolutionFileLink(taskId)}</div>
     ${diagram}
   </section>`;
 }
@@ -3124,6 +3124,7 @@ http.createServer(async (req, res) => {
     const requestUrl = new URL(req.url, `http://${req.headers.host}`);
     const pathname = requestUrl.pathname;
     if (serveAsset(req, res, pathname)) return;
+    if (await serveSolutionFile(req, res, pathname, taskId => Boolean(getPublishedSolution.get(taskId)))) return;
     if (pathname === '/favicon.svg' || pathname === '/favicon.ico') {
       res.writeHead(200, {
         'content-type': 'image/svg+xml; charset=utf-8',
@@ -3498,7 +3499,7 @@ http.createServer(async (req, res) => {
         answer: solution.answer,
         answerHtml: renderMathText(solution.answer),
         solution: solution.solution,
-        solutionHtml: renderMathSolution(solution.solution),
+        solutionHtml: renderMathSolution(solution.solution) + renderSolutionFileLink(taskId),
         diagramSvg: solution.diagram_svg,
         diagramCaption: solution.diagram_caption,
         diagramCaptionHtml: renderMathText(solution.diagram_caption),

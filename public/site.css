@@ -277,6 +277,7 @@ body:has(.seo-task-solution) .comments-widget,body:has(.about-card) .comments-wi
   .catalogue-task-start{scroll-margin-top:88px}.seo-task-solution,.seo-task-solution h2{scroll-margin-top:88px}
 }
 @media(max-width:359px){.site-brand{font-size:16px}.site-header-actions{gap:3px}.site-mobile-menu>summary{font-size:11px;gap:4px}.study-stats{gap:10px}.study-stats>div+div{padding-left:10px}.study-subject-switch span{display:none}.study-preview-top strong{font-size:12px}.study-preview-card{padding-left:16px;padding-right:16px}.study-reassurance{font-size:9px}.study-preview-sketch{font-size:15px}}
+@media(max-width:359px){.study-exam-links>div{grid-template-columns:3em repeat(2,max-content)}.study-exam-links>div>a:last-child{grid-column:2 / -1}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 .site-ad{display:none;width:100%;max-width:760px;min-height:70px;margin:28px auto;font-family:var(--ui-font)}
 .site-js .site-ad{display:block}

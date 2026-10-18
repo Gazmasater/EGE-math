@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-18T14:54:19.468496+00:00",
+  "section": "oge-informatics",
+  "catalogue": {
+    "tasks": 1585,
+    "rawPages": 16,
+    "localAssets": 812
+  },
+  "solutions": {
+    "published": 1214,
+    "odtDocuments": 61,
+    "records": "scripts/data/oge-informatics-solutions.js",
+    "documents": "solution-files/oge-informatics/"
+  },
+  "requiredArchives": 371,
+  "verifiedArchives": 0,
+  "remainingByGroup": {
+    "type.11": 66,
+    "type.12": 160,
+    "type.13": 59,
+    "type.14": 86
+  },
+  "tasks": "tasks.json",
+  "missing": "missing.json",
+  "archives": []
+}

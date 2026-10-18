@@ -1,0 +1,26 @@
+{
+  "OGEINF937E26": {
+    "sourceHash": "224e2b542994a099cbb75d224852248df97d0d606c335b340766b20187019d96",
+    "images": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/6BD3EC2FD3BA8C9B467CCA899591D551/xs3qstsrc6BD3EC2FD3BA8C9B467CCA899591D551_1_1506511278.png",
+        "sha256": "106dffb7c52e30a9c33080f04fc4fddd57ec62bb7f7fd6c801be08a5f0563aad",
+        "reviewed": true
+      }
+    ],
+    "reviewed": true,
+    "meaning": "Тире между нулём и пояснением признака окончания ввода; не меняет отбор чисел или примеры."
+  },
+  "OGEINF8D33AE": {
+    "sourceHash": "673aab52fa5d9470148d2b08a6506ce67eaf38c580943d39aff651b302d43256",
+    "images": [
+      {
+        "src": "/fipi/oge-informatics/docs/74676951F093A0754D74F2D6E7955F06/questions/9FCE7E430F5DBA1E468451382CB5B907/xs3qstsrc9FCE7E430F5DBA1E468451382CB5B907_1_1469625699.png",
+        "sha256": "106dffb7c52e30a9c33080f04fc4fddd57ec62bb7f7fd6c801be08a5f0563aad",
+        "reviewed": true
+      }
+    ],
+    "reviewed": true,
+    "meaning": "Тире между нулём и пояснением признака окончания ввода; не меняет отбор чисел или примеры."
+  }
+}
