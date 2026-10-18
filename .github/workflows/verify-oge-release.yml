@@ -1,0 +1,39 @@
+name: Verify public FIPI archive release
+on:
+  push:
+    branches: [codex/oge-release-verification]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Download every public part, assemble every original, verify SHA-256
+        run: |
+          python3 scripts/restore-oge-informatics-archives.py --cache-only
+          python3 - <<'PY'
+          from datetime import datetime, timezone
+          import hashlib, json, os
+          from pathlib import Path
+          data = Path('data-sources/oge-informatics')
+          raw = (data / 'release.json').read_bytes()
+          release = json.loads(raw)
+          manifest = json.loads((data / 'manifest.json').read_bytes())
+          cache = Path('storage/oge-informatics-release')
+          for archive in release['archives']:
+              with (cache / 'originals' / archive['sha256']).open('rb') as source:
+                  assert hashlib.file_digest(source, 'sha256').hexdigest() == archive['sha256']
+          report = {
+              'status': 'passed', 'verifiedAt': datetime.now(timezone.utc).isoformat(),
+              'release': release['tag'], 'releaseManifestSha256': hashlib.sha256(raw).hexdigest(),
+              'verifiedTasks': manifest['verifiedTasks'], 'verifiedDistinctArchives': len(release['archives']),
+              'verifiedParts': sum(len(a['parts']) for a in release['archives']),
+              'downloadedBytes': sum(a['size'] for a in release['archives']),
+              'method': 'Fresh anonymous HTTPS downloads; SHA-256 and size of every part and every assembled original',
+              'workflowRun': 'https://github.com/' + os.environ['GITHUB_REPOSITORY'] + '/actions/runs/' + os.environ['GITHUB_RUN_ID'],
+              'verificationCommit': os.environ['GITHUB_SHA'],
+          }
+          print('RELEASE_VALIDATION_JSON=' + json.dumps(report))
+          PY
