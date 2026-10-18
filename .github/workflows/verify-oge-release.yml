@@ -7,9 +7,43 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Verify available public parts while the bounded transfer finishes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 -u - <<'PY'
+          from concurrent.futures import ThreadPoolExecutor
+          import importlib.util, json, os, time, urllib.request
+          from pathlib import Path
+          spec = importlib.util.spec_from_file_location('restore', 'scripts/restore-oge-informatics-archives.py')
+          restore = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(restore)
+          manifest, release = restore.read_catalog()
+          parts = {p['name']: p for a in release['archives'] for p in a['parts']}
+          cache = Path('storage/oge-informatics-release')
+          (cache / 'parts').mkdir(parents=True, exist_ok=True)
+          verified = set()
+          for iteration in range(120):
+              request = urllib.request.Request(
+                  'https://api.github.com/repos/Gazmasater/EGE-math/releases/416550263',
+                  headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'User-Agent': 'EGE-archive-verification'})
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  assets = json.load(response)['assets']
+              ready = [parts[a['name']] for a in assets if a['name'] in parts and a['name'] not in verified
+                       and a.get('state') == 'uploaded' and a['size'] == parts[a['name']]['size']
+                       and a.get('digest') == 'sha256:' + parts[a['name']]['sha256']]
+              with ThreadPoolExecutor(max_workers=3) as executor:
+                  list(executor.map(lambda p: restore.download(p, cache), ready))
+              verified.update(p['name'] for p in ready)
+              print('Public parts downloaded and verified:', len(verified), '/', len(parts), flush=True)
+              if len(verified) == len(parts):
+                  break
+              time.sleep(30)
+          assert len(verified) == len(parts), 'Transfer has not finished within one hour'
+          PY
       - name: Download every public part, assemble every original, verify SHA-256
         run: |
           python3 scripts/restore-oge-informatics-archives.py --cache-only
