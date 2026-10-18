@@ -63,13 +63,14 @@ async function run(){
     const task=tasks[nextTask++];
     const expected=task.expected;
     const expectedPrograms=[...expected.solution.matchAll(/^```(?:python|kumir)\n([\s\S]*?)\n```[ \t]*(?:\n|$)/gm)].map(m=>m[1]);
-    const response=await fetch(`${origin}/api/solutions/${task.id}`);assert.equal(response.status,200,task.id);
+    // Screenshots can outlast the server's keep-alive timeout between API reads.
+    const response=await fetch(`${origin}/api/solutions/${task.id}`,{headers:{connection:'close'}});assert.equal(response.status,200,task.id);
     const api=await response.json();
     assert.equal(api.answer,expected.answer,`${task.id}: API answer`);assert.equal(api.solution,expected.solution,`${task.id}: API solution`);
     assert.equal(api.diagramSvg,expected.diagram_svg,`${task.id}: API diagram`);
     const attachment=solutionFile(task.id);
     if(attachment){
-      const download=await fetch(origin+attachment.url);assert.equal(download.status,200,task.id+': file download');
+      const download=await fetch(origin+attachment.url,{headers:{connection:'close'}});assert.equal(download.status,200,task.id+': file download');
       assert.equal(download.headers.get('content-type'),attachment.contentType,task.id+': file media type');
       assert.equal(download.headers.get('content-disposition'),`attachment; filename="${attachment.name}"`,task.id+': file name');
       const data=Buffer.from(await download.arrayBuffer());
