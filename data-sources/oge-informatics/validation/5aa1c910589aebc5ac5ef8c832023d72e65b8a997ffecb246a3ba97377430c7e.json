@@ -1,0 +1,84 @@
+{
+  "sha256": "5aa1c910589aebc5ac5ef8c832023d72e65b8a997ffecb246a3ba97377430c7e",
+  "size": 3081632,
+  "checkedAt": "2026-10-18T15:16:27.912550+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 7,
+    "directories": 2,
+    "uncompressedBytes": 3081751,
+    "evidence": "data-sources/oge-informatics/validation/5aa1c910589aebc5ac5ef8c832023d72e65b8a997ffecb246a3ba97377430c7e.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3081632 bytes (3010 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3081632\n\nEverything is Ok\n\nFolders: 2\nFiles: 7\nSize:       3081751\nCompressed: 3081632",
+  "members": [
+    {
+      "path": "8",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "8/9_Нутрия",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "8/9_Нутрия/Нутрия 1.jpg",
+      "directory": false,
+      "size": 539755,
+      "crc32": "2966F877",
+      "encrypted": false
+    },
+    {
+      "path": "8/9_Нутрия/Нутрия 2.jpg",
+      "directory": false,
+      "size": 536698,
+      "crc32": "6F622604",
+      "encrypted": false
+    },
+    {
+      "path": "8/9_Нутрия/Нутрия 3.jpg",
+      "directory": false,
+      "size": 328066,
+      "crc32": "96EC9E0C",
+      "encrypted": false
+    },
+    {
+      "path": "8/9_Нутрия/Нутрия 4.jpg",
+      "directory": false,
+      "size": 302875,
+      "crc32": "BD75613E",
+      "encrypted": false
+    },
+    {
+      "path": "8/9_Нутрия/Нутрия 5.jpg",
+      "directory": false,
+      "size": 726916,
+      "crc32": "DE72807C",
+      "encrypted": false
+    },
+    {
+      "path": "8/9_Нутрия/Нутрия 6.jpg",
+      "directory": false,
+      "size": 639089,
+      "crc32": "D34B797A",
+      "encrypted": false
+    },
+    {
+      "path": "8/9_Нутрия/Нутрия.odt",
+      "directory": false,
+      "size": 8352,
+      "crc32": "B738670E",
+      "encrypted": false
+    }
+  ]
+}

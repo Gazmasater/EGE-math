@@ -1,0 +1,371 @@
+{
+  "sha256": "0897172295b451135aef3bde3b355f602cc7b7c21932d5de01b1c9251735d142",
+  "size": 36967738,
+  "checkedAt": "2026-10-18T15:13:38.200132+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "rar",
+    "magic": "526172211a070100",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 41,
+    "directories": 9,
+    "uncompressedBytes": 76557882,
+    "evidence": "data-sources/oge-informatics/validation/0897172295b451135aef3bde3b355f602cc7b7c21932d5de01b1c9251735d142.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 36967738 bytes (36 MiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = Rar5\nPhysical Size = 36967738\nSolid = -\nBlocks = 50\nEncrypted = -\nMultivolume = -\nVolumes = 1\n\nEverything is Ok\n\nFolders: 9\nFiles: 41\nSize:       76557882\nCompressed: 36967738",
+  "members": [
+    {
+      "path": "Проза/Гоголь/Вий.rtf",
+      "directory": false,
+      "size": 559026,
+      "crc32": "5D02BC02",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гоголь/Мертвые души.pdf",
+      "directory": false,
+      "size": 1631527,
+      "crc32": "908F8343",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гоголь/Нос.htm",
+      "directory": false,
+      "size": 55367,
+      "crc32": "11D3243B",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гоголь/Нос.pdf",
+      "directory": false,
+      "size": 222034,
+      "crc32": "4F5D2CE7",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гоголь/Ревизор.htm",
+      "directory": false,
+      "size": 168565,
+      "crc32": "D6D86733",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гоголь/Тарас Бульба.pdf",
+      "directory": false,
+      "size": 667614,
+      "crc32": "44D04E35",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гоголь/Шинель.htm",
+      "directory": false,
+      "size": 69942,
+      "crc32": "029AD8FF",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гоголь/Шинель.rtf",
+      "directory": false,
+      "size": 219563,
+      "crc32": "561D0DB1",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гончаров/Гончаров И. А. - Обломов.htm",
+      "directory": false,
+      "size": 1013368,
+      "crc32": "5950B390",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гончаров/Гончаров И. А. - Обыкновенная история.pdf",
+      "directory": false,
+      "size": 1316044,
+      "crc32": "3BF03337",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гончаров/И. А. Гончаров - Обломов.rtf",
+      "directory": false,
+      "size": 6265160,
+      "crc32": "146796D1",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гончаров/И. А. Гончаров - Обыкновенная история.htm",
+      "directory": false,
+      "size": 664444,
+      "crc32": "C6C550AC",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гончаров/Иван Гончаров - Обломов.pdf",
+      "directory": false,
+      "size": 2628910,
+      "crc32": "CCBD4344",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гончаров/Иван Гончаров - Обыкновенная история.rtf",
+      "directory": false,
+      "size": 4087519,
+      "crc32": "E32AC291",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Грибоедов/А. С. Грибоедов-Горе от ума.htm",
+      "directory": false,
+      "size": 261049,
+      "crc32": "371B78B9",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Грибоедов/Горе от ума - А. С Грибоедов.pdf",
+      "directory": false,
+      "size": 717632,
+      "crc32": "F1E7500C",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Грибоедов/Грибоедов А. С. - Горе от ума.rtf",
+      "directory": false,
+      "size": 713312,
+      "crc32": "C4C6FE70",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Достоевский Ф. - Преступление и наказание.rtf",
+      "directory": false,
+      "size": 7262280,
+      "crc32": "346364D0",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Достоевский Ф. М. - Бесы.rtf",
+      "directory": false,
+      "size": 8704207,
+      "crc32": "E95B13B9",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Достоевский Ф. М. - Братья Карамазовы.pdf",
+      "directory": false,
+      "size": 3753538,
+      "crc32": "E3A4006E",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Достоевский Ф. М. - Идиот.htm",
+      "directory": false,
+      "size": 1380286,
+      "crc32": "F4F8EE93",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Преступление и наказание - Достоевский Ф. М..pdf",
+      "directory": false,
+      "size": 2915681,
+      "crc32": "84AF983C",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Ф. М. Достоевский - Братья Карамазовы.rtf",
+      "directory": false,
+      "size": 2082609,
+      "crc32": "C8B27432",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Ф. М. Достоевский - Идиот.pdf",
+      "directory": false,
+      "size": 2732157,
+      "crc32": "CEDA158E",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Федор Достоевский - Бесы.pdf",
+      "directory": false,
+      "size": 2735068,
+      "crc32": "FEB7B660",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Федор Достоевский - Идиот.rtf",
+      "directory": false,
+      "size": 1493464,
+      "crc32": "DC6523FA",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский/Федор Достоевский - Преступление и наказание.txt",
+      "directory": false,
+      "size": 1075134,
+      "crc32": "3560D6A1",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Куприн/Куприн А. - Яма.pdf",
+      "directory": false,
+      "size": 1388481,
+      "crc32": "6322CE97",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Лермонтов/Герой нашего времени.pdf",
+      "directory": false,
+      "size": 1478490,
+      "crc32": "AAD69CBF",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Пушкин/Арап Петра Великого.htm",
+      "directory": false,
+      "size": 153564,
+      "crc32": "66298148",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Пушкин/Барышня-Крестьянка.htm",
+      "directory": false,
+      "size": 43352,
+      "crc32": "EE207DFB",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Пушкин/Дубровский.pdf",
+      "directory": false,
+      "size": 486717,
+      "crc32": "D9BF1727",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Пушкин/Капитанская дочка.rtf",
+      "directory": false,
+      "size": 791472,
+      "crc32": "FC13CFBF",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Чехов/А. П. Чехов - Палата №6. Сборник.htm",
+      "directory": false,
+      "size": 1213819,
+      "crc32": "DD76BE87",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Чехов/А. П. Чехов - Собрание юмористических рассказов.rtf",
+      "directory": false,
+      "size": 3027861,
+      "crc32": "7376A6A3",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Чехов/А. П. Чехов - Три сестры.htm",
+      "directory": false,
+      "size": 133494,
+      "crc32": "6964D15A",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Чехов/Антон Чехов - Собрание юмористических рассказов.pdf",
+      "directory": false,
+      "size": 4638514,
+      "crc32": "1B91BA9D",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Чехов/Чехов А. - Палата №6. Сборник.pdf",
+      "directory": false,
+      "size": 3486165,
+      "crc32": "9AAC8587",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Чехов/Чехов А. П. - Три сестры.pdf",
+      "directory": false,
+      "size": 963897,
+      "crc32": "985A3C1E",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Чехов/Чехов Антон Павлович - Полное собрание рассказов.htm",
+      "directory": false,
+      "size": 2019040,
+      "crc32": "91D5B472",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Чехов/Чехов Антон Павлович - Три сестры.rtf",
+      "directory": false,
+      "size": 1337516,
+      "crc32": "5FD6A914",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гоголь",
+      "directory": true,
+      "size": 0,
+      "crc32": "00000000",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Гончаров",
+      "directory": true,
+      "size": 0,
+      "crc32": "00000000",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Грибоедов",
+      "directory": true,
+      "size": 0,
+      "crc32": "00000000",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Достоевский",
+      "directory": true,
+      "size": 0,
+      "crc32": "00000000",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Куприн",
+      "directory": true,
+      "size": 0,
+      "crc32": "00000000",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Лермонтов",
+      "directory": true,
+      "size": 0,
+      "crc32": "00000000",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Пушкин",
+      "directory": true,
+      "size": 0,
+      "crc32": "00000000",
+      "encrypted": false
+    },
+    {
+      "path": "Проза/Чехов",
+      "directory": true,
+      "size": 0,
+      "crc32": "00000000",
+      "encrypted": false
+    },
+    {
+      "path": "Проза",
+      "directory": true,
+      "size": 0,
+      "crc32": "00000000",
+      "encrypted": false
+    }
+  ]
+}

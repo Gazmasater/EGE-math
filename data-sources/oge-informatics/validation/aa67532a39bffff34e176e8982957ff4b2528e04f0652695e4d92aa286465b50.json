@@ -1,0 +1,105 @@
+{
+  "sha256": "aa67532a39bffff34e176e8982957ff4b2528e04f0652695e4d92aa286465b50",
+  "size": 3469881,
+  "checkedAt": "2026-10-18T15:13:39.438813+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 9,
+    "directories": 3,
+    "uncompressedBytes": 3475794,
+    "evidence": "data-sources/oge-informatics/validation/aa67532a39bffff34e176e8982957ff4b2528e04f0652695e4d92aa286465b50.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3469881 bytes (3389 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3469881\n\nEverything is Ok\n\nFolders: 3\nFiles: 9\nSize:       3475794\nCompressed: 3469881",
+  "members": [
+    {
+      "path": "51",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13/lori-0004917067-a7.jpg",
+      "directory": false,
+      "size": 554351,
+      "crc32": "97207C59",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13/lori-0023222105-a7.jpg",
+      "directory": false,
+      "size": 372226,
+      "crc32": "4AC32332",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13/lori-0026573500-a7.jpg",
+      "directory": false,
+      "size": 479414,
+      "crc32": "1064BAB4",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13/lori-0029849230-a7.jpg",
+      "directory": false,
+      "size": 826092,
+      "crc32": "3022DBCB",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13/lori-0033711245-a7.jpg",
+      "directory": false,
+      "size": 377408,
+      "crc32": "76E92F40",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13/lori-0033836140-a7.jpg",
+      "directory": false,
+      "size": 343507,
+      "crc32": "F181FADC",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13/lori-0034380627-a7.jpg",
+      "directory": false,
+      "size": 408027,
+      "crc32": "909D56AF",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13/Thumbs.db",
+      "directory": false,
+      "size": 105472,
+      "crc32": "43FC6494",
+      "encrypted": false
+    },
+    {
+      "path": "51/Инжир/ЗАДАНИЕ 13/Инжир.odt",
+      "directory": false,
+      "size": 9297,
+      "crc32": "2585BEDB",
+      "encrypted": false
+    }
+  ]
+}

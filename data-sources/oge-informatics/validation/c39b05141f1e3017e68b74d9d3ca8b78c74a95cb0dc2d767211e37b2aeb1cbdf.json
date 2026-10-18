@@ -1,0 +1,105 @@
+{
+  "sha256": "c39b05141f1e3017e68b74d9d3ca8b78c74a95cb0dc2d767211e37b2aeb1cbdf",
+  "size": 3644434,
+  "checkedAt": "2026-10-18T15:30:00.948908+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 9,
+    "directories": 3,
+    "uncompressedBytes": 3651221,
+    "evidence": "data-sources/oge-informatics/validation/c39b05141f1e3017e68b74d9d3ca8b78c74a95cb0dc2d767211e37b2aeb1cbdf.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3644434 bytes (3560 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3644434\n\nEverything is Ok\n\nFolders: 3\nFiles: 9\nSize:       3651221\nCompressed: 3644434",
+  "members": [
+    {
+      "path": "44",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13/lori-0001872735-a7.jpg",
+      "directory": false,
+      "size": 604455,
+      "crc32": "ADF046C4",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13/lori-0003564234-a7.jpg",
+      "directory": false,
+      "size": 442149,
+      "crc32": "C3B648A2",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13/lori-0004344048-a7.jpg",
+      "directory": false,
+      "size": 306105,
+      "crc32": "8DF33A27",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13/lori-0022941871-a7.jpg",
+      "directory": false,
+      "size": 504559,
+      "crc32": "5908A776",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13/lori-0023102857-a7.jpg",
+      "directory": false,
+      "size": 525824,
+      "crc32": "E7555498",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13/lori-0023490477-a7.jpg",
+      "directory": false,
+      "size": 440086,
+      "crc32": "1D959E3D",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13/lori-0027179500-a7.jpg",
+      "directory": false,
+      "size": 711562,
+      "crc32": "7FF8885A",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13/Thumbs.db",
+      "directory": false,
+      "size": 108032,
+      "crc32": "4BBF9600",
+      "encrypted": false
+    },
+    {
+      "path": "44/Эстрагон/ЗАДАНИЕ 13/Эстрагон.odt",
+      "directory": false,
+      "size": 8449,
+      "crc32": "6C4A191D",
+      "encrypted": false
+    }
+  ]
+}

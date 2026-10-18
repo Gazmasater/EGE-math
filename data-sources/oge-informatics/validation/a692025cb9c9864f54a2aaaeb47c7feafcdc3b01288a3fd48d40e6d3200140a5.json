@@ -1,0 +1,42 @@
+{
+  "sha256": "a692025cb9c9864f54a2aaaeb47c7feafcdc3b01288a3fd48d40e6d3200140a5",
+  "size": 31657,
+  "checkedAt": "2026-10-18T15:37:31.662895+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 1,
+    "directories": 2,
+    "uncompressedBytes": 32399,
+    "evidence": "data-sources/oge-informatics/validation/a692025cb9c9864f54a2aaaeb47c7feafcdc3b01288a3fd48d40e6d3200140a5.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 31657 bytes (31 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 31657\n\nEverything is Ok\n\nFolders: 2\nFiles: 1\nSize:       32399\nCompressed: 31657",
+  "members": [
+    {
+      "path": "9",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "9/14_улица_марка_цена",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "9/14_улица_марка_цена/14.ods",
+      "directory": false,
+      "size": 32399,
+      "crc32": "03850FD3",
+      "encrypted": false
+    }
+  ]
+}

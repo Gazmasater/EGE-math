@@ -1,0 +1,77 @@
+{
+  "sha256": "2190101cc4d7448a98bd085e2129aebf7e8b049b04dc68eab96fc7ae3d91a36c",
+  "size": 3068487,
+  "checkedAt": "2026-10-18T15:36:34.333628+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 3067136,
+    "evidence": "data-sources/oge-informatics/validation/2190101cc4d7448a98bd085e2129aebf7e8b049b04dc68eab96fc7ae3d91a36c.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3068487 bytes (2997 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3068487\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       3067136\nCompressed: 3068487",
+  "members": [
+    {
+      "path": "23",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "23/24_Енот-полоскун",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "23/24_Енот-полоскун/Енот 1.jpg",
+      "directory": false,
+      "size": 535887,
+      "crc32": "6CCD89CD",
+      "encrypted": false
+    },
+    {
+      "path": "23/24_Енот-полоскун/Енот 2.jpg",
+      "directory": false,
+      "size": 537074,
+      "crc32": "FB7CE081",
+      "encrypted": false
+    },
+    {
+      "path": "23/24_Енот-полоскун/Енот 3.jpg",
+      "directory": false,
+      "size": 561950,
+      "crc32": "C2E7F173",
+      "encrypted": false
+    },
+    {
+      "path": "23/24_Енот-полоскун/Енот 4.jpg",
+      "directory": false,
+      "size": 735490,
+      "crc32": "F13A8B4F",
+      "encrypted": false
+    },
+    {
+      "path": "23/24_Енот-полоскун/Енот 5.jpg",
+      "directory": false,
+      "size": 688256,
+      "crc32": "FAA8A1EE",
+      "encrypted": false
+    },
+    {
+      "path": "23/24_Енот-полоскун/Енот-полоскун.odt",
+      "directory": false,
+      "size": 8479,
+      "crc32": "33905550",
+      "encrypted": false
+    }
+  ]
+}

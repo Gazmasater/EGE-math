@@ -1,0 +1,77 @@
+{
+  "sha256": "aaba925f6de34d4f4e33dcc54989925e053fd1ec089fe4e85a04806a9d9d14b2",
+  "size": 3294221,
+  "checkedAt": "2026-10-18T15:13:40.370862+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 3293694,
+    "evidence": "data-sources/oge-informatics/validation/aaba925f6de34d4f4e33dcc54989925e053fd1ec089fe4e85a04806a9d9d14b2.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3294221 bytes (3218 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3294221\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       3293694\nCompressed: 3294221",
+  "members": [
+    {
+      "path": "13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "13/14_Каракал",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "13/14_Каракал/Карака́л.odt",
+      "directory": false,
+      "size": 7788,
+      "crc32": "89AE47E8",
+      "encrypted": false
+    },
+    {
+      "path": "13/14_Каракал/Каракал 1.jpg",
+      "directory": false,
+      "size": 440775,
+      "crc32": "556877C4",
+      "encrypted": false
+    },
+    {
+      "path": "13/14_Каракал/Каракал 2.jpg",
+      "directory": false,
+      "size": 293148,
+      "crc32": "056FA8DE",
+      "encrypted": false
+    },
+    {
+      "path": "13/14_Каракал/Каракал 3.jpg",
+      "directory": false,
+      "size": 1072679,
+      "crc32": "D3071E43",
+      "encrypted": false
+    },
+    {
+      "path": "13/14_Каракал/Каракал 4.jpg",
+      "directory": false,
+      "size": 814949,
+      "crc32": "39DBCC76",
+      "encrypted": false
+    },
+    {
+      "path": "13/14_Каракал/Каракал 5.jpg",
+      "directory": false,
+      "size": 664355,
+      "crc32": "A01A7E85",
+      "encrypted": false
+    }
+  ]
+}

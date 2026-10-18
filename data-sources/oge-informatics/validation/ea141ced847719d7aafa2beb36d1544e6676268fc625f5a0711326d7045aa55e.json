@@ -1,0 +1,77 @@
+{
+  "sha256": "ea141ced847719d7aafa2beb36d1544e6676268fc625f5a0711326d7045aa55e",
+  "size": 2440731,
+  "checkedAt": "2026-10-18T15:16:35.677553+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 2439525,
+    "evidence": "data-sources/oge-informatics/validation/ea141ced847719d7aafa2beb36d1544e6676268fc625f5a0711326d7045aa55e.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2440731 bytes (2384 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2440731\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       2439525\nCompressed: 2440731",
+  "members": [
+    {
+      "path": "22",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "22/23_Большая панда",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "22/23_Большая панда/Больша́я па́нда.odt",
+      "directory": false,
+      "size": 7817,
+      "crc32": "063717AD",
+      "encrypted": false
+    },
+    {
+      "path": "22/23_Большая панда/Большая панда 1.jpg",
+      "directory": false,
+      "size": 360327,
+      "crc32": "CC2C5819",
+      "encrypted": false
+    },
+    {
+      "path": "22/23_Большая панда/Большая панда 2.jpg",
+      "directory": false,
+      "size": 516022,
+      "crc32": "60656D77",
+      "encrypted": false
+    },
+    {
+      "path": "22/23_Большая панда/Большая панда 3.jpg",
+      "directory": false,
+      "size": 698509,
+      "crc32": "88522980",
+      "encrypted": false
+    },
+    {
+      "path": "22/23_Большая панда/Большая панда 4.jpg",
+      "directory": false,
+      "size": 382698,
+      "crc32": "66548BA0",
+      "encrypted": false
+    },
+    {
+      "path": "22/23_Большая панда/Большая панда 5.jpg",
+      "directory": false,
+      "size": 474152,
+      "crc32": "FE420832",
+      "encrypted": false
+    }
+  ]
+}

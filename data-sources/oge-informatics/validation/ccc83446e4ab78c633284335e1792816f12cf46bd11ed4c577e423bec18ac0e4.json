@@ -1,0 +1,70 @@
+{
+  "sha256": "ccc83446e4ab78c633284335e1792816f12cf46bd11ed4c577e423bec18ac0e4",
+  "size": 2439298,
+  "checkedAt": "2026-10-18T15:20:00.099461+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 5,
+    "directories": 2,
+    "uncompressedBytes": 2438711,
+    "evidence": "data-sources/oge-informatics/validation/ccc83446e4ab78c633284335e1792816f12cf46bd11ed4c577e423bec18ac0e4.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2439298 bytes (2383 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2439298\n\nEverything is Ok\n\nFolders: 2\nFiles: 5\nSize:       2438711\nCompressed: 2439298",
+  "members": [
+    {
+      "path": "6",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "6/7_Сибирский бурундук",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "6/7_Сибирский бурундук/Бурундук 1.jpg",
+      "directory": false,
+      "size": 927389,
+      "crc32": "663331B5",
+      "encrypted": false
+    },
+    {
+      "path": "6/7_Сибирский бурундук/Бурундук 2.jpg",
+      "directory": false,
+      "size": 496694,
+      "crc32": "26EEBC49",
+      "encrypted": false
+    },
+    {
+      "path": "6/7_Сибирский бурундук/Бурундук 3.jpg",
+      "directory": false,
+      "size": 407235,
+      "crc32": "EFCFD743",
+      "encrypted": false
+    },
+    {
+      "path": "6/7_Сибирский бурундук/Бурундук 4.jpg",
+      "directory": false,
+      "size": 599805,
+      "crc32": "9D99EF1C",
+      "encrypted": false
+    },
+    {
+      "path": "6/7_Сибирский бурундук/Бурундук.odt",
+      "directory": false,
+      "size": 7588,
+      "crc32": "B44FFC95",
+      "encrypted": false
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "sha256": "62039d3a1fe89e133de2473c8cc3b0ecebcfd7e152afa8b7e9c48cd9f05c2a57",
+  "size": 2956830,
+  "checkedAt": "2026-10-18T15:30:26.068663+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 2955546,
+    "evidence": "data-sources/oge-informatics/validation/62039d3a1fe89e133de2473c8cc3b0ecebcfd7e152afa8b7e9c48cd9f05c2a57.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2956830 bytes (2888 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2956830\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       2955546\nCompressed: 2956830",
+  "members": [
+    {
+      "path": "21",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "21/22_Бурый медведь",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "21/22_Бурый медведь/Бу́рый медве́дь.odt",
+      "directory": false,
+      "size": 8984,
+      "crc32": "A5E0B056",
+      "encrypted": false
+    },
+    {
+      "path": "21/22_Бурый медведь/Бурый медведь 1.jpg",
+      "directory": false,
+      "size": 539789,
+      "crc32": "9AF36C68",
+      "encrypted": false
+    },
+    {
+      "path": "21/22_Бурый медведь/Бурый медведь 2.jpg",
+      "directory": false,
+      "size": 771068,
+      "crc32": "CAEECEED",
+      "encrypted": false
+    },
+    {
+      "path": "21/22_Бурый медведь/Бурый медведь 3.jpg",
+      "directory": false,
+      "size": 575149,
+      "crc32": "6518D5E4",
+      "encrypted": false
+    },
+    {
+      "path": "21/22_Бурый медведь/Бурый медведь 4.jpg",
+      "directory": false,
+      "size": 560747,
+      "crc32": "902B8768",
+      "encrypted": false
+    },
+    {
+      "path": "21/22_Бурый медведь/Бурый медведь 5.jpg",
+      "directory": false,
+      "size": 499809,
+      "crc32": "FE2FA93F",
+      "encrypted": false
+    }
+  ]
+}

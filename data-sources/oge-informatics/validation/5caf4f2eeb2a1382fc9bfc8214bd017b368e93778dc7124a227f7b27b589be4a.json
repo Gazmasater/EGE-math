@@ -1,0 +1,91 @@
+{
+  "sha256": "5caf4f2eeb2a1382fc9bfc8214bd017b368e93778dc7124a227f7b27b589be4a",
+  "size": 7085217,
+  "checkedAt": "2026-10-18T15:34:55.582044+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 8,
+    "directories": 2,
+    "uncompressedBytes": 7108372,
+    "evidence": "data-sources/oge-informatics/validation/5caf4f2eeb2a1382fc9bfc8214bd017b368e93778dc7124a227f7b27b589be4a.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 7085217 bytes (6920 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 7085217\n\nEverything is Ok\n\nFolders: 2\nFiles: 8\nSize:       7108372\nCompressed: 7085217",
+  "members": [
+    {
+      "path": "30",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "30/31_Карело-финская лайка",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "30/31_Карело-финская лайка/карелка_1.jpg",
+      "directory": false,
+      "size": 712920,
+      "crc32": "3A14024F",
+      "encrypted": false
+    },
+    {
+      "path": "30/31_Карело-финская лайка/карелка_2.jpg",
+      "directory": false,
+      "size": 1178693,
+      "crc32": "FA1CF717",
+      "encrypted": false
+    },
+    {
+      "path": "30/31_Карело-финская лайка/карелка_3.jpg",
+      "directory": false,
+      "size": 1317044,
+      "crc32": "40E6F4E3",
+      "encrypted": false
+    },
+    {
+      "path": "30/31_Карело-финская лайка/карелка_4.jpg",
+      "directory": false,
+      "size": 494328,
+      "crc32": "F2D4A0BD",
+      "encrypted": false
+    },
+    {
+      "path": "30/31_Карело-финская лайка/карелка_5.jpg",
+      "directory": false,
+      "size": 646416,
+      "crc32": "BF40BF28",
+      "encrypted": false
+    },
+    {
+      "path": "30/31_Карело-финская лайка/карелка_6.jpg",
+      "directory": false,
+      "size": 1134599,
+      "crc32": "D8673686",
+      "encrypted": false
+    },
+    {
+      "path": "30/31_Карело-финская лайка/карелка_7.jpg",
+      "directory": false,
+      "size": 1615676,
+      "crc32": "27813B52",
+      "encrypted": false
+    },
+    {
+      "path": "30/31_Карело-финская лайка/Карело-финская лайка.odt",
+      "directory": false,
+      "size": 8696,
+      "crc32": "92B583B5",
+      "encrypted": false
+    }
+  ]
+}

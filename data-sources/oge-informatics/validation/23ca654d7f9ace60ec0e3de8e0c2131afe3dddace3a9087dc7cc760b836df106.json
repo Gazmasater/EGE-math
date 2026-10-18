@@ -1,0 +1,91 @@
+{
+  "sha256": "23ca654d7f9ace60ec0e3de8e0c2131afe3dddace3a9087dc7cc760b836df106",
+  "size": 1155176,
+  "checkedAt": "2026-10-18T15:19:02.906477+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 8,
+    "directories": 2,
+    "uncompressedBytes": 1155372,
+    "evidence": "data-sources/oge-informatics/validation/23ca654d7f9ace60ec0e3de8e0c2131afe3dddace3a9087dc7cc760b836df106.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 1155176 bytes (1129 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 1155176\n\nEverything is Ok\n\nFolders: 2\nFiles: 8\nSize:       1155372\nCompressed: 1155176",
+  "members": [
+    {
+      "path": "33",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "33/34_Басенджи",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "33/34_Басенджи/Басéнджи.odt",
+      "directory": false,
+      "size": 9792,
+      "crc32": "9CAE084B",
+      "encrypted": false
+    },
+    {
+      "path": "33/34_Басенджи/Басенджи1.jpg",
+      "directory": false,
+      "size": 179113,
+      "crc32": "6A351387",
+      "encrypted": false
+    },
+    {
+      "path": "33/34_Басенджи/Басенджи2.jpg",
+      "directory": false,
+      "size": 145671,
+      "crc32": "E86EE390",
+      "encrypted": false
+    },
+    {
+      "path": "33/34_Басенджи/Басенджи3.jpg",
+      "directory": false,
+      "size": 99140,
+      "crc32": "7AAAC88C",
+      "encrypted": false
+    },
+    {
+      "path": "33/34_Басенджи/Басенджи4.jpg",
+      "directory": false,
+      "size": 222352,
+      "crc32": "E3300B08",
+      "encrypted": false
+    },
+    {
+      "path": "33/34_Басенджи/Басенджи5.jpg",
+      "directory": false,
+      "size": 78159,
+      "crc32": "DA39A388",
+      "encrypted": false
+    },
+    {
+      "path": "33/34_Басенджи/Басенджи6.jpg",
+      "directory": false,
+      "size": 58779,
+      "crc32": "1808955F",
+      "encrypted": false
+    },
+    {
+      "path": "33/34_Басенджи/Басенджи7.jpg",
+      "directory": false,
+      "size": 362366,
+      "crc32": "F368A1FD",
+      "encrypted": false
+    }
+  ]
+}

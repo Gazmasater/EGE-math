@@ -1,0 +1,105 @@
+{
+  "sha256": "43d0951633f2749cf99a8f90d2d984f13f7db37c38628676bcdfff5e8e42b183",
+  "size": 3906947,
+  "checkedAt": "2026-10-18T15:17:08.334739+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 9,
+    "directories": 3,
+    "uncompressedBytes": 3913706,
+    "evidence": "data-sources/oge-informatics/validation/43d0951633f2749cf99a8f90d2d984f13f7db37c38628676bcdfff5e8e42b183.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3906947 bytes (3816 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3906947\n\nEverything is Ok\n\nFolders: 3\nFiles: 9\nSize:       3913706\nCompressed: 3906947",
+  "members": [
+    {
+      "path": "43",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13/lori-0002891737-a7.jpg",
+      "directory": false,
+      "size": 274906,
+      "crc32": "5F654D11",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13/lori-0006136583-a7.jpg",
+      "directory": false,
+      "size": 672096,
+      "crc32": "D5EB6913",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13/lori-0006961554-a7.jpg",
+      "directory": false,
+      "size": 503245,
+      "crc32": "A43C4F49",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13/lori-0012781070-a7.jpg",
+      "directory": false,
+      "size": 409858,
+      "crc32": "EBE6D45A",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13/lori-0027179500-a7.jpg",
+      "directory": false,
+      "size": 711562,
+      "crc32": "7FF8885A",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13/lori-0033960102-a7.jpg",
+      "directory": false,
+      "size": 603270,
+      "crc32": "4226844F",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13/lori-0034155349-a7.jpg",
+      "directory": false,
+      "size": 621592,
+      "crc32": "1638B008",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13/Thumbs.db",
+      "directory": false,
+      "size": 108544,
+      "crc32": "FE31D85E",
+      "encrypted": false
+    },
+    {
+      "path": "43/Шалфей/ЗАДАНИЕ 13/Шалфей.odt",
+      "directory": false,
+      "size": 8633,
+      "crc32": "C0D31FC0",
+      "encrypted": false
+    }
+  ]
+}

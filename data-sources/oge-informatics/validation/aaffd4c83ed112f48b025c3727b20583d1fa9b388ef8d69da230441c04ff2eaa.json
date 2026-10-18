@@ -1,0 +1,112 @@
+{
+  "sha256": "aaffd4c83ed112f48b025c3727b20583d1fa9b388ef8d69da230441c04ff2eaa",
+  "size": 4214291,
+  "checkedAt": "2026-10-18T15:17:35.658934+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 10,
+    "directories": 3,
+    "uncompressedBytes": 4242203,
+    "evidence": "data-sources/oge-informatics/validation/aaffd4c83ed112f48b025c3727b20583d1fa9b388ef8d69da230441c04ff2eaa.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 4214291 bytes (4116 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 4214291\n\nEverything is Ok\n\nFolders: 3\nFiles: 10\nSize:       4242203\nCompressed: 4214291",
+  "members": [
+    {
+      "path": "42",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/lori-0023160722-a7.jpg",
+      "directory": false,
+      "size": 1049468,
+      "crc32": "9FFE1092",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/lori-0027179500-a7.jpg",
+      "directory": false,
+      "size": 711562,
+      "crc32": "7FF8885A",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/lori-0027571508-a7.jpg",
+      "directory": false,
+      "size": 166393,
+      "crc32": "CFFB300A",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/lori-0030253335-a7.jpg",
+      "directory": false,
+      "size": 243338,
+      "crc32": "2CDFA10D",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/lori-0031672008-a7.jpg",
+      "directory": false,
+      "size": 1038709,
+      "crc32": "459974BC",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/lori-0033805489-a7.jpg",
+      "directory": false,
+      "size": 259832,
+      "crc32": "B1DCB2E7",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/lori-0034019127-a7.jpg",
+      "directory": false,
+      "size": 309413,
+      "crc32": "97F3E186",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/lori-0034297026-a7.jpg",
+      "directory": false,
+      "size": 350686,
+      "crc32": "201DEFF2",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/Thumbs.db",
+      "directory": false,
+      "size": 103936,
+      "crc32": "79899549",
+      "encrypted": false
+    },
+    {
+      "path": "42/Розмарин/ЗАДАНИЕ 13/Розмарин.odt",
+      "directory": false,
+      "size": 8866,
+      "crc32": "C9BDAB58",
+      "encrypted": false
+    }
+  ]
+}

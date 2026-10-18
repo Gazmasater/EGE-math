@@ -1,0 +1,105 @@
+{
+  "sha256": "593096a7c9cc1f03c4d95fe4d335f11780d39260ec515e5a96eb4fc4f54e4793",
+  "size": 3755203,
+  "checkedAt": "2026-10-18T15:19:01.884457+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 9,
+    "directories": 3,
+    "uncompressedBytes": 3761164,
+    "evidence": "data-sources/oge-informatics/validation/593096a7c9cc1f03c4d95fe4d335f11780d39260ec515e5a96eb4fc4f54e4793.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3755203 bytes (3668 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3755203\n\nEverything is Ok\n\nFolders: 3\nFiles: 9\nSize:       3761164\nCompressed: 3755203",
+  "members": [
+    {
+      "path": "46",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13/lori-0006201192-a7.jpg",
+      "directory": false,
+      "size": 562747,
+      "crc32": "4225208B",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13/lori-0006915492-a7.jpg",
+      "directory": false,
+      "size": 644859,
+      "crc32": "367653E8",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13/lori-0022979304-a7.jpg",
+      "directory": false,
+      "size": 526472,
+      "crc32": "89936CAB",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13/lori-0023578733-a7.jpg",
+      "directory": false,
+      "size": 475394,
+      "crc32": "14F7C5CB",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13/lori-0024208837-a7.jpg",
+      "directory": false,
+      "size": 492342,
+      "crc32": "FA0076E4",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13/lori-0028357074-a7.jpg",
+      "directory": false,
+      "size": 431520,
+      "crc32": "552025ED",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13/lori-0029439538-a7.jpg",
+      "directory": false,
+      "size": 496928,
+      "crc32": "1A8B542C",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13/Thumbs.db",
+      "directory": false,
+      "size": 121344,
+      "crc32": "F6FD89F5",
+      "encrypted": false
+    },
+    {
+      "path": "46/Боярышник/ЗАДАНИЕ 13/Боярышник.odt",
+      "directory": false,
+      "size": 9558,
+      "crc32": "CF3E71D6",
+      "encrypted": false
+    }
+  ]
+}

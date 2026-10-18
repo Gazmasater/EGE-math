@@ -1,0 +1,105 @@
+{
+  "sha256": "1971bb6dd69f59f5594ae575abc0d13499dbe675416a13a0aa7a0972c496d365",
+  "size": 3610323,
+  "checkedAt": "2026-10-18T15:17:07.198898+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 9,
+    "directories": 3,
+    "uncompressedBytes": 3617379,
+    "evidence": "data-sources/oge-informatics/validation/1971bb6dd69f59f5594ae575abc0d13499dbe675416a13a0aa7a0972c496d365.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3610323 bytes (3526 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3610323\n\nEverything is Ok\n\nFolders: 3\nFiles: 9\nSize:       3617379\nCompressed: 3610323",
+  "members": [
+    {
+      "path": "59",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13/lori-0001722332-a7.jpg",
+      "directory": false,
+      "size": 263128,
+      "crc32": "66A63695",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13/lori-0002701542-a7.jpg",
+      "directory": false,
+      "size": 389022,
+      "crc32": "0FDF94CA",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13/lori-0004983930-a7.jpg",
+      "directory": false,
+      "size": 1057640,
+      "crc32": "CC2C13BA",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13/lori-0006505200-a7.jpg",
+      "directory": false,
+      "size": 298941,
+      "crc32": "3DD3A38B",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13/lori-0006611979-a7.jpg",
+      "directory": false,
+      "size": 939345,
+      "crc32": "83A8A185",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13/lori-0029441644-a7.jpg",
+      "directory": false,
+      "size": 311952,
+      "crc32": "D5A58A29",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13/lori-0033006962-a7.jpg",
+      "directory": false,
+      "size": 250118,
+      "crc32": "A8394DFA",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13/Thumbs.db",
+      "directory": false,
+      "size": 97280,
+      "crc32": "8375FBEC",
+      "encrypted": false
+    },
+    {
+      "path": "59/Черника/ЗАДАНИЕ 13/Черника.odt",
+      "directory": false,
+      "size": 9953,
+      "crc32": "13326BEE",
+      "encrypted": false
+    }
+  ]
+}

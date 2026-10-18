@@ -1,0 +1,77 @@
+{
+  "sha256": "337feec16f1714d67dd71803b970fff0ac788da22c765a91ec8dad1c3fad893a",
+  "size": 2669281,
+  "checkedAt": "2026-10-18T15:17:33.884115+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 2668955,
+    "evidence": "data-sources/oge-informatics/validation/337feec16f1714d67dd71803b970fff0ac788da22c765a91ec8dad1c3fad893a.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2669281 bytes (2607 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2669281\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       2668955\nCompressed: 2669281",
+  "members": [
+    {
+      "path": "9",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "9/10_Ондатра",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "9/10_Ондатра/Онда́тра.odt",
+      "directory": false,
+      "size": 8001,
+      "crc32": "88FA9A73",
+      "encrypted": false
+    },
+    {
+      "path": "9/10_Ондатра/Ондатра 1.jpg",
+      "directory": false,
+      "size": 388493,
+      "crc32": "51D6B611",
+      "encrypted": false
+    },
+    {
+      "path": "9/10_Ондатра/Ондатра 2.jpg",
+      "directory": false,
+      "size": 906023,
+      "crc32": "10D3E1F3",
+      "encrypted": false
+    },
+    {
+      "path": "9/10_Ондатра/Ондатра 3.jpg",
+      "directory": false,
+      "size": 497476,
+      "crc32": "6653EF8B",
+      "encrypted": false
+    },
+    {
+      "path": "9/10_Ондатра/Ондатра 4.jpg",
+      "directory": false,
+      "size": 464780,
+      "crc32": "D063A8EE",
+      "encrypted": false
+    },
+    {
+      "path": "9/10_Ондатра/Ондатра 5.jpg",
+      "directory": false,
+      "size": 404182,
+      "crc32": "A9206339",
+      "encrypted": false
+    }
+  ]
+}

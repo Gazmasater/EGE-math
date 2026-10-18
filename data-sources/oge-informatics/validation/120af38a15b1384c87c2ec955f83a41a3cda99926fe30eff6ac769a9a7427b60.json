@@ -1,0 +1,84 @@
+{
+  "sha256": "120af38a15b1384c87c2ec955f83a41a3cda99926fe30eff6ac769a9a7427b60",
+  "size": 4577024,
+  "checkedAt": "2026-10-18T15:31:45.744248+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 7,
+    "directories": 2,
+    "uncompressedBytes": 4583221,
+    "evidence": "data-sources/oge-informatics/validation/120af38a15b1384c87c2ec955f83a41a3cda99926fe30eff6ac769a9a7427b60.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 4577024 bytes (4470 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 4577024\n\nEverything is Ok\n\nFolders: 2\nFiles: 7\nSize:       4583221\nCompressed: 4577024",
+  "members": [
+    {
+      "path": "1",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "1/1_Крыса",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "1/1_Крыса/Кры́сы.odt",
+      "directory": false,
+      "size": 7711,
+      "crc32": "0C6F8E3A",
+      "encrypted": false
+    },
+    {
+      "path": "1/1_Крыса/Крыса 1.jpg",
+      "directory": false,
+      "size": 913019,
+      "crc32": "9C1A6DD1",
+      "encrypted": false
+    },
+    {
+      "path": "1/1_Крыса/Крыса 2.jpg",
+      "directory": false,
+      "size": 626154,
+      "crc32": "0B6E3DDB",
+      "encrypted": false
+    },
+    {
+      "path": "1/1_Крыса/Крыса 3.jpg",
+      "directory": false,
+      "size": 771812,
+      "crc32": "20328498",
+      "encrypted": false
+    },
+    {
+      "path": "1/1_Крыса/Крыса 4.jpg",
+      "directory": false,
+      "size": 1044555,
+      "crc32": "BC2E8A2E",
+      "encrypted": false
+    },
+    {
+      "path": "1/1_Крыса/Крыса 5.jpg",
+      "directory": false,
+      "size": 856465,
+      "crc32": "CC835E91",
+      "encrypted": false
+    },
+    {
+      "path": "1/1_Крыса/Крыса 6.jpg",
+      "directory": false,
+      "size": 363505,
+      "crc32": "8361FAB9",
+      "encrypted": false
+    }
+  ]
+}

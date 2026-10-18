@@ -1,0 +1,84 @@
+{
+  "sha256": "dba26d281333fc9f66ac2a751f06df26aacf0360b8a5e5d1eaa19cba9a52101d",
+  "size": 3873171,
+  "checkedAt": "2026-10-18T15:14:55.643628+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 7,
+    "directories": 2,
+    "uncompressedBytes": 3881800,
+    "evidence": "data-sources/oge-informatics/validation/dba26d281333fc9f66ac2a751f06df26aacf0360b8a5e5d1eaa19cba9a52101d.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3873171 bytes (3783 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3873171\n\nEverything is Ok\n\nFolders: 2\nFiles: 7\nSize:       3881800\nCompressed: 3873171",
+  "members": [
+    {
+      "path": "15",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "15/16_Ягуар",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "15/16_Ягуар/Кошки.jpg",
+      "directory": false,
+      "size": 448351,
+      "crc32": "36AF32C1",
+      "encrypted": false
+    },
+    {
+      "path": "15/16_Ягуар/Ягуа́р.odt",
+      "directory": false,
+      "size": 8575,
+      "crc32": "EB138B3B",
+      "encrypted": false
+    },
+    {
+      "path": "15/16_Ягуар/Ягуар 1.jpg",
+      "directory": false,
+      "size": 477353,
+      "crc32": "20B9541D",
+      "encrypted": false
+    },
+    {
+      "path": "15/16_Ягуар/Ягуар 2.jpg",
+      "directory": false,
+      "size": 631817,
+      "crc32": "F076E3A2",
+      "encrypted": false
+    },
+    {
+      "path": "15/16_Ягуар/Ягуар 3.jpg",
+      "directory": false,
+      "size": 477221,
+      "crc32": "FDEB5DEA",
+      "encrypted": false
+    },
+    {
+      "path": "15/16_Ягуар/Ягуар 4.jpg",
+      "directory": false,
+      "size": 678274,
+      "crc32": "B1363566",
+      "encrypted": false
+    },
+    {
+      "path": "15/16_Ягуар/Ягуар 5.jpg",
+      "directory": false,
+      "size": 1160209,
+      "crc32": "33F695D5",
+      "encrypted": false
+    }
+  ]
+}

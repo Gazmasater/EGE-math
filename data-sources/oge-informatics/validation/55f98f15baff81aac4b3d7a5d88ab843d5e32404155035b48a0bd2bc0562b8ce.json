@@ -1,0 +1,84 @@
+{
+  "sha256": "55f98f15baff81aac4b3d7a5d88ab843d5e32404155035b48a0bd2bc0562b8ce",
+  "size": 8766984,
+  "checkedAt": "2026-10-18T15:19:02.112812+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 7,
+    "directories": 2,
+    "uncompressedBytes": 8828294,
+    "evidence": "data-sources/oge-informatics/validation/55f98f15baff81aac4b3d7a5d88ab843d5e32404155035b48a0bd2bc0562b8ce.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 8766984 bytes (8562 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 8766984\n\nEverything is Ok\n\nFolders: 2\nFiles: 7\nSize:       8828294\nCompressed: 8766984",
+  "members": [
+    {
+      "path": "32",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "32/33_Бордер-колли",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "32/33_Бордер-колли/Бо́рдер-колли.odt",
+      "directory": false,
+      "size": 7431,
+      "crc32": "056276F8",
+      "encrypted": false
+    },
+    {
+      "path": "32/33_Бордер-колли/Бордер_колли_1.jpg",
+      "directory": false,
+      "size": 5481438,
+      "crc32": "000BBA6F",
+      "encrypted": false
+    },
+    {
+      "path": "32/33_Бордер-колли/Бордер_колли_2.jpg",
+      "directory": false,
+      "size": 1463497,
+      "crc32": "D8886F56",
+      "encrypted": false
+    },
+    {
+      "path": "32/33_Бордер-колли/Бордер_колли_3.jpg",
+      "directory": false,
+      "size": 940238,
+      "crc32": "C8883618",
+      "encrypted": false
+    },
+    {
+      "path": "32/33_Бордер-колли/Бордер_колли_4.jpg",
+      "directory": false,
+      "size": 221026,
+      "crc32": "66E5B13C",
+      "encrypted": false
+    },
+    {
+      "path": "32/33_Бордер-колли/Бордер_колли_5.jpg",
+      "directory": false,
+      "size": 519090,
+      "crc32": "2409DEC1",
+      "encrypted": false
+    },
+    {
+      "path": "32/33_Бордер-колли/Бордер_колли_6.jpg",
+      "directory": false,
+      "size": 195574,
+      "crc32": "89B6CB8A",
+      "encrypted": false
+    }
+  ]
+}

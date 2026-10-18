@@ -1,0 +1,105 @@
+{
+  "sha256": "b7d46775bb716c21134a2b55a1258f8fcd33b82925b4f6ad2c8f5f74c9420ab5",
+  "size": 4188103,
+  "checkedAt": "2026-10-18T15:21:49.010812+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 9,
+    "directories": 3,
+    "uncompressedBytes": 4194449,
+    "evidence": "data-sources/oge-informatics/validation/b7d46775bb716c21134a2b55a1258f8fcd33b82925b4f6ad2c8f5f74c9420ab5.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 4188103 bytes (4090 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 4188103\n\nEverything is Ok\n\nFolders: 3\nFiles: 9\nSize:       4194449\nCompressed: 4188103",
+  "members": [
+    {
+      "path": "45",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13/lori-0003888237-a7.jpg",
+      "directory": false,
+      "size": 560531,
+      "crc32": "9A93D5BC",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13/lori-0023663482-a7.jpg",
+      "directory": false,
+      "size": 1027558,
+      "crc32": "B6C618C7",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13/lori-0026573845-a7.jpg",
+      "directory": false,
+      "size": 714027,
+      "crc32": "7D45577A",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13/lori-0026784194-a7.jpg",
+      "directory": false,
+      "size": 430837,
+      "crc32": "3BE103CA",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13/lori-0030555827-a7.jpg",
+      "directory": false,
+      "size": 384142,
+      "crc32": "FE302841",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13/lori-0033074027-a7.jpg",
+      "directory": false,
+      "size": 450645,
+      "crc32": "D74CEC54",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13/lori-0033452272-a7.jpg",
+      "directory": false,
+      "size": 501852,
+      "crc32": "64062E66",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13/Thumbs.db",
+      "directory": false,
+      "size": 115712,
+      "crc32": "CA822D9D",
+      "encrypted": false
+    },
+    {
+      "path": "45/Барбарис/ЗАДАНИЕ 13/Барбарис.odt",
+      "directory": false,
+      "size": 9145,
+      "crc32": "A77C5613",
+      "encrypted": false
+    }
+  ]
+}

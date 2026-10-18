@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "tasks": 371,
+  "urls": 371,
+  "byGroup": {
+    "type.11": 66,
+    "type.12": 160,
+    "type.13": 59,
+    "type.14": 86
+  },
+  "registrySha256": "14b0a9fc9286358a626179b284adaeb4e3782d197d820302d223a4ebba3c1f95",
+  "rawPages": [
+    {
+      "path": "oge-informatics-1.raw.html",
+      "sha256": "fc6e32868623317e514e10baba76b173ee018d63c2f645d6c99f3c79d76f6c02"
+    },
+    {
+      "path": "oge-informatics-2.raw.html",
+      "sha256": "b148826c4d97692b4b44627b53d6334c2c142265603923f85ebab074c16e9473"
+    },
+    {
+      "path": "oge-informatics-3.raw.html",
+      "sha256": "837244d53c1d18eac8a2f1fe350d34117430d97f6de8cb6979a13913a9b6ce81"
+    },
+    {
+      "path": "oge-informatics-4.raw.html",
+      "sha256": "e8340cd3f320b7cbf5b09b90d688e0799432d2a419f1794f14f07a9b91f32e5f"
+    },
+    {
+      "path": "oge-informatics-5.raw.html",
+      "sha256": "37e0aabf869cfe995b0a07257dd06f9bb13082559dcdbf273f0d9cab3cbaa675"
+    },
+    {
+      "path": "oge-informatics-6.raw.html",
+      "sha256": "ae3ac4a950b6f3225a3e8949e26eff131705324b4d229934ee7a3db06122655f"
+    },
+    {
+      "path": "oge-informatics-7.raw.html",
+      "sha256": "63d87daeaf5b4dce516ead0600a1f266bc4b04dd7aa8f01ea70346a16372745a"
+    },
+    {
+      "path": "oge-informatics-8.raw.html",
+      "sha256": "9550dcd6c634ca7ed058d56958bc9fdc350b90513fee04357b1cd61545de700c"
+    },
+    {
+      "path": "oge-informatics-9.raw.html",
+      "sha256": "9bd58870e65c07f0920555f467aa9edb5289be73f796402b7aa6200c71943590"
+    },
+    {
+      "path": "oge-informatics-10.raw.html",
+      "sha256": "153371f42fab3dcb0682174859d648ee7012d4574cbe9cdb7c5ad44e6ef6b236"
+    },
+    {
+      "path": "oge-informatics-11.raw.html",
+      "sha256": "d55b83e26c552f9ce53f1bc7707262a1a98c6ac683290bbdc06fabd5df24e8b5"
+    },
+    {
+      "path": "oge-informatics-12.raw.html",
+      "sha256": "d8bcfcf2cf168459aa41ec7a3c1db306a93b4aa81df544a0ece05474e9e085c1"
+    },
+    {
+      "path": "oge-informatics-13.raw.html",
+      "sha256": "c632acdc4d6ed57f2264056a58352d700f6d6f1d64f900181088b7bc4ac887ca"
+    },
+    {
+      "path": "oge-informatics-14.raw.html",
+      "sha256": "7536ecad581cc662da644dbc8da4da69bc334cbe953877c0120a1472f6362c2e"
+    },
+    {
+      "path": "oge-informatics-15.raw.html",
+      "sha256": "d5cc1b3f001bc779c6b11c0d638710fffd4750c310283871429ee5f9cac82310"
+    },
+    {
+      "path": "oge-informatics-16.raw.html",
+      "sha256": "b2a2b2defa6ccdb4307a68f342bbd7210b7a4fb144230cc2c11159136e54ee54"
+    }
+  ]
+}

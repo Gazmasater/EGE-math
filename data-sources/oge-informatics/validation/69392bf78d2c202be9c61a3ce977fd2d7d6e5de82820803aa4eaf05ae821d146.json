@@ -1,0 +1,105 @@
+{
+  "sha256": "69392bf78d2c202be9c61a3ce977fd2d7d6e5de82820803aa4eaf05ae821d146",
+  "size": 3549588,
+  "checkedAt": "2026-10-18T15:17:29.732312+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 9,
+    "directories": 3,
+    "uncompressedBytes": 3554913,
+    "evidence": "data-sources/oge-informatics/validation/69392bf78d2c202be9c61a3ce977fd2d7d6e5de82820803aa4eaf05ae821d146.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3549588 bytes (3467 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3549588\n\nEverything is Ok\n\nFolders: 3\nFiles: 9\nSize:       3554913\nCompressed: 3549588",
+  "members": [
+    {
+      "path": "55",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13/lori-0003159822-a7.jpg",
+      "directory": false,
+      "size": 385642,
+      "crc32": "3C8067A1",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13/lori-0003482224-a7.jpg",
+      "directory": false,
+      "size": 566876,
+      "crc32": "C33AB39E",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13/lori-0003988210-a7.jpg",
+      "directory": false,
+      "size": 605777,
+      "crc32": "562A28F6",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13/lori-0004281554-a7.jpg",
+      "directory": false,
+      "size": 628098,
+      "crc32": "9E5FBC44",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13/lori-0004983067-a7.jpg",
+      "directory": false,
+      "size": 379361,
+      "crc32": "D1BE88A1",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13/lori-0023569312-a7.jpg",
+      "directory": false,
+      "size": 381607,
+      "crc32": "EEF02EBB",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13/lori-0032126109-a7.jpg",
+      "directory": false,
+      "size": 483156,
+      "crc32": "7A280F72",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13/Thumbs.db",
+      "directory": false,
+      "size": 114688,
+      "crc32": "70C4CB2D",
+      "encrypted": false
+    },
+    {
+      "path": "55/Облепиха/ЗАДАНИЕ 13/Облепиха.odt",
+      "directory": false,
+      "size": 9708,
+      "crc32": "B30CE179",
+      "encrypted": false
+    }
+  ]
+}

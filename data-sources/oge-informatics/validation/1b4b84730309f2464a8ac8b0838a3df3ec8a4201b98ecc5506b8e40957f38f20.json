@@ -1,0 +1,77 @@
+{
+  "sha256": "1b4b84730309f2464a8ac8b0838a3df3ec8a4201b98ecc5506b8e40957f38f20",
+  "size": 2739127,
+  "checkedAt": "2026-10-18T15:16:32.569977+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 2737997,
+    "evidence": "data-sources/oge-informatics/validation/1b4b84730309f2464a8ac8b0838a3df3ec8a4201b98ecc5506b8e40957f38f20.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2739127 bytes (2675 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2739127\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       2737997\nCompressed: 2739127",
+  "members": [
+    {
+      "path": "28",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "28/29_Ленивец",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "28/29_Ленивец/Ленивец 1.jpg",
+      "directory": false,
+      "size": 491117,
+      "crc32": "12405229",
+      "encrypted": false
+    },
+    {
+      "path": "28/29_Ленивец/Ленивец 2.jpg",
+      "directory": false,
+      "size": 583651,
+      "crc32": "7BDA0725",
+      "encrypted": false
+    },
+    {
+      "path": "28/29_Ленивец/Ленивец 3.jpg",
+      "directory": false,
+      "size": 537856,
+      "crc32": "5EFFB554",
+      "encrypted": false
+    },
+    {
+      "path": "28/29_Ленивец/Ленивец 4.jpg",
+      "directory": false,
+      "size": 667588,
+      "crc32": "1AAEE720",
+      "encrypted": false
+    },
+    {
+      "path": "28/29_Ленивец/Ленивец 5.jpg",
+      "directory": false,
+      "size": 451321,
+      "crc32": "B079690C",
+      "encrypted": false
+    },
+    {
+      "path": "28/29_Ленивец/Ленивцы.odt",
+      "directory": false,
+      "size": 6464,
+      "crc32": "1C971624",
+      "encrypted": false
+    }
+  ]
+}

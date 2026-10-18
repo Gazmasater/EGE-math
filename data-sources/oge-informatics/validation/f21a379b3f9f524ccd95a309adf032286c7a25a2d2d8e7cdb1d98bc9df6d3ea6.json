@@ -1,0 +1,84 @@
+{
+  "sha256": "f21a379b3f9f524ccd95a309adf032286c7a25a2d2d8e7cdb1d98bc9df6d3ea6",
+  "size": 2733761,
+  "checkedAt": "2026-10-18T15:21:14.220937+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 7,
+    "directories": 2,
+    "uncompressedBytes": 2749026,
+    "evidence": "data-sources/oge-informatics/validation/f21a379b3f9f524ccd95a309adf032286c7a25a2d2d8e7cdb1d98bc9df6d3ea6.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2733761 bytes (2670 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2733761\n\nEverything is Ok\n\nFolders: 2\nFiles: 7\nSize:       2749026\nCompressed: 2733761",
+  "members": [
+    {
+      "path": "37",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "37/38_Немецкая овчарка",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "37/38_Немецкая овчарка/Немецкая овчарка 1.jpg",
+      "directory": false,
+      "size": 517688,
+      "crc32": "1F30BBB1",
+      "encrypted": false
+    },
+    {
+      "path": "37/38_Немецкая овчарка/Немецкая овчарка 2.jpg",
+      "directory": false,
+      "size": 216241,
+      "crc32": "BB012A53",
+      "encrypted": false
+    },
+    {
+      "path": "37/38_Немецкая овчарка/Немецкая овчарка 3.jpg",
+      "directory": false,
+      "size": 558285,
+      "crc32": "B906D728",
+      "encrypted": false
+    },
+    {
+      "path": "37/38_Немецкая овчарка/Немецкая овчарка 4.jpg",
+      "directory": false,
+      "size": 436682,
+      "crc32": "D670E8DA",
+      "encrypted": false
+    },
+    {
+      "path": "37/38_Немецкая овчарка/Немецкая овчарка 5.jpg",
+      "directory": false,
+      "size": 646505,
+      "crc32": "EAB335B8",
+      "encrypted": false
+    },
+    {
+      "path": "37/38_Немецкая овчарка/Немецкая овчарка 6.jpg",
+      "directory": false,
+      "size": 364968,
+      "crc32": "176662CF",
+      "encrypted": false
+    },
+    {
+      "path": "37/38_Немецкая овчарка/Немецкая овчарка.odt",
+      "directory": false,
+      "size": 8657,
+      "crc32": "60DC7D58",
+      "encrypted": false
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "sha256": "80fa6e1c944373e09ee1f48d1097e336231c92080b57c2f8b1ffddd29fe657d8",
+  "size": 2152967,
+  "checkedAt": "2026-10-18T15:22:10.588759+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 2164967,
+    "evidence": "data-sources/oge-informatics/validation/80fa6e1c944373e09ee1f48d1097e336231c92080b57c2f8b1ffddd29fe657d8.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2152967 bytes (2103 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2152967\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       2164967\nCompressed: 2152967",
+  "members": [
+    {
+      "path": "3",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "3/4_Дегу",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "3/4_Дегу/Де́гу.odt",
+      "directory": false,
+      "size": 8195,
+      "crc32": "5E0E4E77",
+      "encrypted": false
+    },
+    {
+      "path": "3/4_Дегу/Дегу 1.jpg",
+      "directory": false,
+      "size": 210389,
+      "crc32": "BFC529A8",
+      "encrypted": false
+    },
+    {
+      "path": "3/4_Дегу/Дегу 2.jpg",
+      "directory": false,
+      "size": 704141,
+      "crc32": "E171B43F",
+      "encrypted": false
+    },
+    {
+      "path": "3/4_Дегу/Дегу 3.jpg",
+      "directory": false,
+      "size": 375030,
+      "crc32": "597BC671",
+      "encrypted": false
+    },
+    {
+      "path": "3/4_Дегу/Дегу 4.jpg",
+      "directory": false,
+      "size": 500185,
+      "crc32": "AEA0744B",
+      "encrypted": false
+    },
+    {
+      "path": "3/4_Дегу/Дегу 5.jpg",
+      "directory": false,
+      "size": 367027,
+      "crc32": "002C1165",
+      "encrypted": false
+    }
+  ]
+}

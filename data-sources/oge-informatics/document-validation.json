@@ -1,0 +1,1458 @@
+{
+  "status": "passed",
+  "distinctArchives": 147,
+  "documents": 145,
+  "method": "7-Zip extracts exact member bytes; Python zipfile tests all inner CRCs; ElementTree parses every XML part and checks the ODF body type",
+  "results": [
+    {
+      "archiveSha256": "01eadd7539dc19ac5f7d4b0cc8ebb7fae0b085cea72620e51a8e21983a75e7b6",
+      "member": "41/Душица/ЗАДАНИЕ 13/Душица.odt",
+      "size": 8668,
+      "sha256": "c7b897ba9f6b3a7efa50c6c064af6ab715e6dff8214ef3ed9459b89ef32cd712",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "023ea5a63c1a77d5366806a3f851279c5182b601d613f4e75923016be2a48953",
+      "member": "55/14_фамилия предмет балл/task14.ods",
+      "size": 34803,
+      "sha256": "7b5486ee0449ea6ff86e6698c3cc41e9f216c4256dc8826c4dfc7ee5c09e1b0f",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "03206f7b2027d6906463f3770eca7cc3ff549bdb703188958b24fddb2fe5b628",
+      "member": "52/Ирга/ЗАДАНИЕ 13/Ирга.odt",
+      "size": 9471,
+      "sha256": "42fbb764229ac37cef6561e8f07ded832357e6517702ac9012dcf81007515666",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "04c5336d865974719283f5de19547ac8e84bd76c4aa2fe9029f09d0b091a2a90",
+      "member": "84/14_продукт_ж_б_у_к/14.ods",
+      "size": 48825,
+      "sha256": "77113aaef427ead9685dfef02149e4aa17df5f14cd1640bcf92210ad1a90f645",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "08dd912c0ba711852d8ded9c9b149291ddc649742d3d477ba665c5d84824420f",
+      "member": "51/14_фамилия предмет балл/task14.ods",
+      "size": 34803,
+      "sha256": "7b5486ee0449ea6ff86e6698c3cc41e9f216c4256dc8826c4dfc7ee5c09e1b0f",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "0a4b797c0c507901d5605a7ad08f0a0f0384183d70ff27145eb236f1dfac59a1",
+      "member": "12/14_улица_марка_цена/14.ods",
+      "size": 32399,
+      "sha256": "678df8775bc49ddc27ab8ee5c2e7221851cd19fb77557f3eb680b5b11f644230",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "0ffd6944353c49208e65293eeb94244d0a9b5751960aeb2e2bd6c407bf7c7158",
+      "member": "39/14_осадки/task14.ods",
+      "size": 24985,
+      "sha256": "1a1078e5d0d13e552e70f8f410440e9b3ba16f6a522ddc4bb079c6bcd15e0939",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "120af38a15b1384c87c2ec955f83a41a3cda99926fe30eff6ac769a9a7427b60",
+      "member": "1/1_Крыса/Кры́сы.odt",
+      "size": 7711,
+      "sha256": "709caa5534d334d07b29345acfb7d5d1b870744b56e6f6c7e4496451f687c8cc",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "142c7e7da8c4b403eba141b5e0c972007ef5b8be6a490c2e13edfe0cd63f183b",
+      "member": "40/Базилик/ЗАДАНИЕ 13/Базилик.odt",
+      "size": 11374,
+      "sha256": "b9b86485f589eee93e9bc8c56c89b35054ace4cc0a14d36d3c574f1c589cfbfd",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "16843acb647335263453541be295f4bc0a6f89879fa24ca3232113efd1d9f711",
+      "member": "39/40_Такса/Таксы.odt",
+      "size": 7592,
+      "sha256": "124f5225c70bd018e04f3422394230ee3244077246420621ed8715a94d5e0dee",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "1782b29c2f62a5a723ea26ccd16443bd6de654a1e38bde68ddd87c9774176784",
+      "member": "69/14_участник школа класс/task14.ods",
+      "size": 32521,
+      "sha256": "df68a64d75750be6393f77935b9155367e07671e5f5a206758233dcd0443acef",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "190c3170e9567d1d355f66fcf27ed21ea9ded5a9efb66cc1b75031a92132dcc8",
+      "member": "17/14_левая_рука_правая_рука/14.ods",
+      "size": 33973,
+      "sha256": "ae3b812e27b1f900151780ac26f375e60ca9ff126e68400dfb357029bc75a733",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "1971bb6dd69f59f5594ae575abc0d13499dbe675416a13a0aa7a0972c496d365",
+      "member": "59/Черника/ЗАДАНИЕ 13/Черника.odt",
+      "size": 9953,
+      "sha256": "2ad7c1b8567a9d1dc391494f4f52620caa20b426a16e58b6ee44a93cc74ade4b",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "1b4b84730309f2464a8ac8b0838a3df3ec8a4201b98ecc5506b8e40957f38f20",
+      "member": "28/29_Ленивец/Ленивцы.odt",
+      "size": 6464,
+      "sha256": "c5e276fa01e2fc5dda6177c9ff6da7161484155ddb8ea756d3fb87563295d39a",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "1cf83228ac502ab6e9f0ceb7a46f8320f9ca8a8007c068790be1bd3f24be4d8a",
+      "member": "59/14_арахис/task14.ods",
+      "size": 49158,
+      "sha256": "018b10cab742b6f2ca4949158a00d8e3135f97200c36f532d3e0930232830735",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "1f9667a3cd9ef66976cdabee86ba555694e4bbde990cbbf72e731d2c13dce376",
+      "member": "5/14_участник_пол_возраст/14.ods",
+      "size": 33309,
+      "sha256": "db40f5e57974a84ac4254d097473a542495344baf1d07c5ee3fc9ea50b05f744",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "210c8fa9a51f53745f8085bc4092f9fe0b9054dfb45a536444cd7e5f6ab7cd9d",
+      "member": "50/14_фамилия предмет балл/task14.ods",
+      "size": 34803,
+      "sha256": "7b5486ee0449ea6ff86e6698c3cc41e9f216c4256dc8826c4dfc7ee5c09e1b0f",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "2190101cc4d7448a98bd085e2129aebf7e8b049b04dc68eab96fc7ae3d91a36c",
+      "member": "23/24_Енот-полоскун/Енот-полоскун.odt",
+      "size": 8479,
+      "sha256": "2e6b5002cbd0d92ec2a3d890591a2930d520910447c159d3369c37a471b296ed",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "230e242c47d2486be3e60c67f913c262e9007bc98f8278d8e61291cb8e0df8da",
+      "member": "1/14_участник_пол_возраст/14.ods",
+      "size": 33309,
+      "sha256": "db40f5e57974a84ac4254d097473a542495344baf1d07c5ee3fc9ea50b05f744",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "238c7b41f66c4569924107e29e6e5986440ccc678cf47c141db2eb53f0245a62",
+      "member": "57/14_арахис/task14.ods",
+      "size": 49158,
+      "sha256": "018b10cab742b6f2ca4949158a00d8e3135f97200c36f532d3e0930232830735",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "23ca654d7f9ace60ec0e3de8e0c2131afe3dddace3a9087dc7cc760b836df106",
+      "member": "33/34_Басенджи/Басéнджи.odt",
+      "size": 9792,
+      "sha256": "cedc6c53e0da8da65a25873042ca0a8ef7885499d9c7eba8af80484e0537be27",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "26071a84c2006ddb03a79fe0056c447ec565714e66cf08b6a3c29a004c4ef9f2",
+      "member": "32/14_осадки/task14.ods",
+      "size": 24985,
+      "sha256": "1a1078e5d0d13e552e70f8f410440e9b3ba16f6a522ddc4bb079c6bcd15e0939",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "275eb3ec4170615e1e097d5046706b1f141a1c65b7c92d17cbc7926bfacc6816",
+      "member": "27/28_Коала/Коа́ла.odt",
+      "size": 7774,
+      "sha256": "73858ad9b1eb75818d8eecd354569a168d8134cd260589f435cdee1a9e5d74e0",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "2e53e2da941fc28df957e50df9900bda970fcfcdcae59d0e3b8b6ce6006aac97",
+      "member": "56/Шелковица/ЗАДАНИЕ 13/Шелковица.odt",
+      "size": 9772,
+      "sha256": "366861a6450db30d51551d01b74f14f857d2da94764d232debb29f651239792c",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "30b7bb4ac7b275d03e7963e29442d2912294b82722bde237b47f5c2632961568",
+      "member": "19/20_Домашняя кошка/Домашняя кошка.odt",
+      "size": 7549,
+      "sha256": "70882199bdd2e6a6a38ab34f9f95c1e5a2984a80159069d9bd03dfef3cd0fcf4",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "337feec16f1714d67dd71803b970fff0ac788da22c765a91ec8dad1c3fad893a",
+      "member": "9/10_Ондатра/Онда́тра.odt",
+      "size": 8001,
+      "sha256": "632ba84211bce55ca55a193644a33ca1a1191831cf45b1f93469da888d036e77",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "376cacd656d9eed0244d933bf3ddf6b5dfec3f63b4a6b3d6767e3ad1e645d03b",
+      "member": "72/14_участник_баллы/task14.ods",
+      "size": 34019,
+      "sha256": "3d7ae670e011268de9577761b407b70b9030811b5ec301eebf7f3f3c50e24f95",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "3870044500ecf215b3a33019b1285628f031903c64497bd54c9a58d23d66d10b",
+      "member": "4/5_Шиншилла/Шинши́ллы.odt",
+      "size": 6328,
+      "sha256": "b1b133c639cc97a8f9973f88688751f4905404bfe4aabdecbb24def6fa9b5425",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "3f4a6241c1e16510aec47c12d82c84b731a4f238a7b902e04d56daf538ee8286",
+      "member": "35/14_осадки/task14.ods",
+      "size": 24985,
+      "sha256": "1a1078e5d0d13e552e70f8f410440e9b3ba16f6a522ddc4bb079c6bcd15e0939",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "419ea3af68be3ec98cc3d0fc939e8eff87650fd7201867d592403bf1bdc47baa",
+      "member": "73/14_участник_баллы/task14.ods",
+      "size": 34019,
+      "sha256": "3d7ae670e011268de9577761b407b70b9030811b5ec301eebf7f3f3c50e24f95",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "42466a68febc9d398e77f3da69d1aeae84a857356f4d63c95a4f193c50b63624",
+      "member": "37/14_осадки/task14.ods",
+      "size": 24985,
+      "sha256": "1a1078e5d0d13e552e70f8f410440e9b3ba16f6a522ddc4bb079c6bcd15e0939",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "42500d8ca5c9a28803a3d662263df4eb9ce756fff4d959f501b899d2b7e887f7",
+      "member": "34/14_осадки/task14.ods",
+      "size": 24985,
+      "sha256": "1a1078e5d0d13e552e70f8f410440e9b3ba16f6a522ddc4bb079c6bcd15e0939",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "42b43d11d55e84efe8a30ce8cca02036f21378acbacda039fc09aac451b82171",
+      "member": "75/14_участник_баллы/task14.ods",
+      "size": 34019,
+      "sha256": "3d7ae670e011268de9577761b407b70b9030811b5ec301eebf7f3f3c50e24f95",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "43d0951633f2749cf99a8f90d2d984f13f7db37c38628676bcdfff5e8e42b183",
+      "member": "43/Шалфей/ЗАДАНИЕ 13/Шалфей.odt",
+      "size": 8633,
+      "sha256": "179dfbe5a915cc9cba4e613a75a975691531509b904c1d0b310cbc2e0165c9c0",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "43d96660ea9451569d2fece0775bdf8140e271c81991ec22875c9cd5eac93a77",
+      "member": "4/14_участник_пол_возраст/14.ods",
+      "size": 33309,
+      "sha256": "db40f5e57974a84ac4254d097473a542495344baf1d07c5ee3fc9ea50b05f744",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "44e22b61f4af8c031d8e3622bbb11b1173047b1d8c39d7ae20d93e50c4f2af62",
+      "member": "48/Голубика/ЗАДАНИЕ 13/Голубика.odt",
+      "size": 11127,
+      "sha256": "6b893b0f02bae6278fd91d079abab4c13254a5686f87339cb86f1069c75f6104",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "45a3a6f0efaf01e0c68383d95636eecb37ff9f7d7b1a86ce9a1819ce8564a910",
+      "member": "70/14_участник_баллы/task14.ods",
+      "size": 34019,
+      "sha256": "3d7ae670e011268de9577761b407b70b9030811b5ec301eebf7f3f3c50e24f95",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "48835a4a416ab84295767f6d966c54a5ab7a1c7132e309c38b31c21cb053c2e0",
+      "member": "11/14_улица_марка_цена/14.ods",
+      "size": 32399,
+      "sha256": "678df8775bc49ddc27ab8ee5c2e7221851cd19fb77557f3eb680b5b11f644230",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "490bc4d46fac2e929a527cacbf1b74d2a78d67b87b5f4ae4b7e39280ee475ffb",
+      "member": "19/14_левая_рука_правая_рука/14.ods",
+      "size": 33973,
+      "sha256": "ae3b812e27b1f900151780ac26f375e60ca9ff126e68400dfb357029bc75a733",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "49116fbcd42479065dfd5af1cfee6a8e7695995c02e5b509772b44610aabc683",
+      "member": "80/14_ученик_майский_предметы/14.ods",
+      "size": 38199,
+      "sha256": "d7da9be5b380502f0d4b73938372a8bb802fa5d548ee6d2f24acbab9548aaba2",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "4b34e8cb6ecbd539ef888c10cc21b363e309656d7f2976529b47789a163f21ce",
+      "member": "34/35_Бишон/Бишон фризе.odt",
+      "size": 8881,
+      "sha256": "fb8f7d37bcf981e5ba8e414e64b550dad292f69b18076e5f3f71638d4db9d5bf",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "4cf9d56621cf4b665eefb576d9a81fd7ad3ec00e7415b10658e73a7e97a28497",
+      "member": "53/14_фамилия предмет балл/task14.ods",
+      "size": 34803,
+      "sha256": "7b5486ee0449ea6ff86e6698c3cc41e9f216c4256dc8826c4dfc7ee5c09e1b0f",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "4f3b20d8d7b6ac92522231312dc721a4156ce25e9fa0fcc600d75e8687649e97",
+      "member": "31/32_Мопсы/Мопс.odt",
+      "size": 9739,
+      "sha256": "a51730ae3c5bc3d1b19d996798ed0a7a65c9e749bfcaac01e5dcc1fbe7754670",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "4f984ca0cc34753f3bf2d0f81b5ca0425b18fef3d582021dfab5c957079d68c9",
+      "member": "79/14_ученик_майский_предметы/14.ods",
+      "size": 38199,
+      "sha256": "d7da9be5b380502f0d4b73938372a8bb802fa5d548ee6d2f24acbab9548aaba2",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "516e6f724ebe6dc713d23093faeb2901516eb96b2c7238f85740ec056af4ab6e",
+      "member": "38/14_осадки/task14.ods",
+      "size": 24985,
+      "sha256": "1a1078e5d0d13e552e70f8f410440e9b3ba16f6a522ddc4bb079c6bcd15e0939",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "527bfcdd5debd19090e8188baf0d2a216535c4c7a87230587279d877c53406a1",
+      "member": "54/Малина/ЗАДАНИЕ 13/Малина.odt",
+      "size": 8510,
+      "sha256": "74b984d131806ff3190a352ad756580b09ae8ae647f5a94fad281d8d2681f06a",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "545a68fd3d67ce9874c94dd6613845382f0e8a36243038036e234b84e837f351",
+      "member": "16/14_левая_рука_правая_рука/14.ods",
+      "size": 33973,
+      "sha256": "ae3b812e27b1f900151780ac26f375e60ca9ff126e68400dfb357029bc75a733",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "55f98f15baff81aac4b3d7a5d88ab843d5e32404155035b48a0bd2bc0562b8ce",
+      "member": "32/33_Бордер-колли/Бо́рдер-колли.odt",
+      "size": 7431,
+      "sha256": "ebb78bae693f85f5e33c4e383cadf2f6d403aac96f6308bf2e9426cfc909548b",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "5719762722ec4503126ccc36c7066bc287c639efd976dca07d7906fcd10235a2",
+      "member": "68/14_участник школа класс/task14.ods",
+      "size": 32521,
+      "sha256": "df68a64d75750be6393f77935b9155367e07671e5f5a206758233dcd0443acef",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "5799757feea575997d5365a01eec27a733fee4cbdd21a8f3016dd9b08a65560f",
+      "member": "85/14_продукт_ж_б_у_к/14.ods",
+      "size": 48825,
+      "sha256": "77113aaef427ead9685dfef02149e4aa17df5f14cd1640bcf92210ad1a90f645",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "57d08c09ca06674be7b1bf61412c7a1da3c8789fe454b09ef441b920db561d5a",
+      "member": "53/Крыжовник/ЗАДАНИЕ 13/Крыжовник.odt",
+      "size": 8228,
+      "sha256": "2a2f7a9ec2171a424594eb90c8e2ca70577b3d03b930533742e0ea3b4d23719b",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "593096a7c9cc1f03c4d95fe4d335f11780d39260ec515e5a96eb4fc4f54e4793",
+      "member": "46/Боярышник/ЗАДАНИЕ 13/Боярышник.odt",
+      "size": 9558,
+      "sha256": "12191feff1e5443e5f403e517b5b1145663cdf12c8ae2c8b68f1ac7fc3451f61",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "5aa1c910589aebc5ac5ef8c832023d72e65b8a997ffecb246a3ba97377430c7e",
+      "member": "8/9_Нутрия/Нутрия.odt",
+      "size": 8352,
+      "sha256": "62fe9d30a0c80a33fc4ffe2462b93fb604a26fd5b04fc6c100f80d76c069a02e",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "5caf4f2eeb2a1382fc9bfc8214bd017b368e93778dc7124a227f7b27b589be4a",
+      "member": "30/31_Карело-финская лайка/Карело-финская лайка.odt",
+      "size": 8696,
+      "sha256": "0b1dfa6086f14c469e907194f03dd3f232d18c3d9a57ef349522a813702b9c8d",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "5d792281f04378206fc245e54d6634d56ae0f6e997499313a3c7c4d6fb6cd091",
+      "member": "12/13_Сервал/Сервал.odt",
+      "size": 8106,
+      "sha256": "40586e4f029d80e0d869d535e6cafb2b01d1c404af1a6946e38ffaa652f3a037",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "5d7b606900af424e2578f4f17a5ca7277045d49cde5b39502819ed851db771e9",
+      "member": "38/39_Китайская хохлатая/Китайская хохлатая.odt",
+      "size": 8297,
+      "sha256": "e080cc042950303dbe5b326f0a3707190a7a8449c3b1924af1cb6b81b123ef0c",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "5ffb652f25a2ee6b4d4f7d97b019a76387eb2d6258078f8cf54616bc26e97b7c",
+      "member": "48/14_липки/task14.ods",
+      "size": 24145,
+      "sha256": "de120659d2ec4116b38217722d2b028d257bb92c9cd5fb5b9ed36df2a03b57b7",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "6141c19bfbdaad41bfaef47f2e0a9a17431f52e6a4bdb685d8c48bc2b2044445",
+      "member": "52/14_фамилия предмет балл/task14.ods",
+      "size": 34803,
+      "sha256": "7b5486ee0449ea6ff86e6698c3cc41e9f216c4256dc8826c4dfc7ee5c09e1b0f",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "62039d3a1fe89e133de2473c8cc3b0ecebcfd7e152afa8b7e9c48cd9f05c2a57",
+      "member": "21/22_Бурый медведь/Бу́рый медве́дь.odt",
+      "size": 8984,
+      "sha256": "2c4b08a3016c48f945f0f457319c626d7810da7211bad1fc4e4ca1fe86ffbf5c",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "69392bf78d2c202be9c61a3ce977fd2d7d6e5de82820803aa4eaf05ae821d146",
+      "member": "55/Облепиха/ЗАДАНИЕ 13/Облепиха.odt",
+      "size": 9708,
+      "sha256": "699240121a54fc83f6bd43ac4a8a7b852041de8e08e45b8498e4b2546818f4a6",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "6bea1446542cf62d9f92040442c3b989b95fc48cb12db459da73f7daddde56ad",
+      "member": "24/14_асмун/task14.ods",
+      "size": 39746,
+      "sha256": "43ef44888802c95cbc8d7456b243a669204c8dcdcc3275972713dcb41025de91",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "743f7700083578fc3296516c15de3fd4ce36bb4b718d25b33c5577df96c780ae",
+      "member": "66/14_участник школа класс/task14.ods",
+      "size": 32521,
+      "sha256": "df68a64d75750be6393f77935b9155367e07671e5f5a206758233dcd0443acef",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "7a99d83833563eed56bf78e974f784965c160950d5d562830e04be2b0ba226c1",
+      "member": "36/37_Пекинес/Пекинес.odt",
+      "size": 7607,
+      "sha256": "d1be709b6fe04c51656f59aca6c74e325d7f0624cdfe732817f25253259c42d0",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "7ee2b664b689db44af1107a5663fb1d1213696dfd488e6e01541f19fffebbc5b",
+      "member": "82/14_ученик_майский_предметы/14.ods",
+      "size": 38199,
+      "sha256": "d7da9be5b380502f0d4b73938372a8bb802fa5d548ee6d2f24acbab9548aaba2",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "7f78cf511af5152aa483a94088f6b457780ad618d4b775c944f0b3252c8ef097",
+      "member": "76/14_участник_баллы/task14.ods",
+      "size": 34019,
+      "sha256": "3d7ae670e011268de9577761b407b70b9030811b5ec301eebf7f3f3c50e24f95",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "80fa6e1c944373e09ee1f48d1097e336231c92080b57c2f8b1ffddd29fe657d8",
+      "member": "3/4_Дегу/Де́гу.odt",
+      "size": 8195,
+      "sha256": "532c14b312c89412dad99ed4c013a0be6998e40e273e238fb44a1f5a33944b7e",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "85ddede72918e194c530574b356a03b6b1970fb824eb3a52f9e4c158ac48ca18",
+      "member": "25/14_асмун/task14.ods",
+      "size": 39746,
+      "sha256": "43ef44888802c95cbc8d7456b243a669204c8dcdcc3275972713dcb41025de91",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "8a1cb22de4ffb68420534c17eb75ee5769d6781cfa36001bc3557a10736ad863",
+      "member": "58/Рябина/ЗАДАНИЕ 13/Рябина.odt",
+      "size": 8953,
+      "sha256": "0ba5b31faffa6bd19efc7de36ed6298efdcec6b2936ffa106295b2e397ec0bf6",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "8a4a4da5685be31808b7ab97d222b3b2af4c10d32aee3f9d53d35e2d309f4757",
+      "member": "62/14_арахис/task14.ods",
+      "size": 49158,
+      "sha256": "018b10cab742b6f2ca4949158a00d8e3135f97200c36f532d3e0930232830735",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "8d930e3160a3748932caf5340a0c83c44da5725dfe7dd3b65afa499cdfee3d6c",
+      "member": "56/14_арахис/task14.ods",
+      "size": 49158,
+      "sha256": "018b10cab742b6f2ca4949158a00d8e3135f97200c36f532d3e0930232830735",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "8e29051604d2ad3aa6b5e1b58dc18013f80853eb0dfdf891a90db37c14c6b878",
+      "member": "74/14_участник_баллы/task14.ods",
+      "size": 34019,
+      "sha256": "3d7ae670e011268de9577761b407b70b9030811b5ec301eebf7f3f3c50e24f95",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "8e851a2c0721a1ca3c90ea8036a573def18709f726caf184200a5414512b380a",
+      "member": "86/14_продукт_ж_б_у_к/14.ods",
+      "size": 48825,
+      "sha256": "77113aaef427ead9685dfef02149e4aa17df5f14cd1640bcf92210ad1a90f645",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "8f74caa836dc7e238054114a0a704e3d849c4f1dbed64ba47e0bb9d9c79dc71c",
+      "member": "20/21_Белый медведь/Бе́лый медве́дь.odt",
+      "size": 7832,
+      "sha256": "1c60384433176fcc2d9237692d29544d5b93fe22742350ba9da91e9b508c7f4f",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "9160668d797623852b098d6c45394f060a79bd826a34fa8a7eaa90db0a8fd094",
+      "member": "50/Земляника/ЗАДАНИЕ 13/Земляника.odt",
+      "size": 9855,
+      "sha256": "1e044adfce3d5a3a2944f794057c019bdea3ebfeaa1ca4a0ec6c4148dd3a96d7",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "99971e5fd47e49defe3c4f451658a5764c3b5e1dc3dc67d4bc9d6d22dffe4cca",
+      "member": "43/14_липки/task14.ods",
+      "size": 24145,
+      "sha256": "de120659d2ec4116b38217722d2b028d257bb92c9cd5fb5b9ed36df2a03b57b7",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "9f385eae283a208b239e07e18fd4b2b8784740c9cdb980d8b9d62e1383b450b8",
+      "member": "54/14_фамилия предмет балл/task14.ods",
+      "size": 34803,
+      "sha256": "7b5486ee0449ea6ff86e6698c3cc41e9f216c4256dc8826c4dfc7ee5c09e1b0f",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "a01f5e18d24f4471de72e94b20398b4fd48945ba4542ce8038b5f65f06880f17",
+      "member": "20/14_ученик_район_ма_фи/task14.ods",
+      "size": 45208,
+      "sha256": "ebc8d10a11592e51187180a1deac9d89a46ccea7964e239179f242d40131ffcb",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "a07e9081f2e827659425fd2df06bf08b333beae9f4bd0c3d4a8277588a24b066",
+      "member": "29/14_участник факультет/task14.ods",
+      "size": 29925,
+      "sha256": "f617cce22b064a107a8f881f9efbdcdb16effb78bb4dfe18ce9586b151b0d11d",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "a0e163813d59fabe10ca55ab93254e663beb006954f6d828f0011d512bcbcc2a",
+      "member": "16/17_Лев/Лев.odt",
+      "size": 8155,
+      "sha256": "0dc02f5097b4a68082795e59f38ffbaf58121c11ac8700a0b224425c6fb6a9a3",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "a1b85f1660d4fbb6895b1d338a3359c1989ae644c95068f839f3b49468e65e8d",
+      "member": "64/14_участник школа класс/task14.ods",
+      "size": 32521,
+      "sha256": "df68a64d75750be6393f77935b9155367e07671e5f5a206758233dcd0443acef",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "a61f5aa9ba92a21321fab3ba5b8a62c81d3d707030d8a0871fd6b70b7e6b91e7",
+      "member": "10/11_Рысь/Рысь.odt",
+      "size": 7583,
+      "sha256": "586911fb6e0962f51c29e892b2bb6fdb56638713b5891015b10208d86ef1d6a4",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "a692025cb9c9864f54a2aaaeb47c7feafcdc3b01288a3fd48d40e6d3200140a5",
+      "member": "9/14_улица_марка_цена/14.ods",
+      "size": 32399,
+      "sha256": "678df8775bc49ddc27ab8ee5c2e7221851cd19fb77557f3eb680b5b11f644230",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "a700b4a4fac69f199780babae9c53eb6274875a84c39002d8c07e1b833268f30",
+      "member": "24/25_Носуха/Носухи.odt",
+      "size": 6517,
+      "sha256": "cf98db42a1f9ea2c38db93ba292868fc9ed0d8e45b4dfe4f84318976f90ddfd2",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "a901e3a99cfd052bde01bff032af167cb8ac891b326c671f23546df923b2f276",
+      "member": "31/14_осадки/task14.ods",
+      "size": 24985,
+      "sha256": "1a1078e5d0d13e552e70f8f410440e9b3ba16f6a522ddc4bb079c6bcd15e0939",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "aa67532a39bffff34e176e8982957ff4b2528e04f0652695e4d92aa286465b50",
+      "member": "51/Инжир/ЗАДАНИЕ 13/Инжир.odt",
+      "size": 9297,
+      "sha256": "873322205c396c2f4194d03008f0d8a6cc21f001a156884f0721c3d01564dfc6",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "aa92021880070aa640a177b778b25d2a8246307d357a8c7a73aea37e4b67409b",
+      "member": "27/14_асмун/task14.ods",
+      "size": 39746,
+      "sha256": "43ef44888802c95cbc8d7456b243a669204c8dcdcc3275972713dcb41025de91",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "aaba925f6de34d4f4e33dcc54989925e053fd1ec089fe4e85a04806a9d9d14b2",
+      "member": "13/14_Каракал/Карака́л.odt",
+      "size": 7788,
+      "sha256": "ac69d94a382f877707ac7f574b37ca1029449a4a1b67b98b1d8e181d57d3d9e6",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "aac3460d5bd4dfcee0d80b494d25c2f3d604ff3e67740304f44b1240e68e5eac",
+      "member": "18/14_левая_рука_правая_рука/14.ods",
+      "size": 33973,
+      "sha256": "ae3b812e27b1f900151780ac26f375e60ca9ff126e68400dfb357029bc75a733",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "aaffd4c83ed112f48b025c3727b20583d1fa9b388ef8d69da230441c04ff2eaa",
+      "member": "42/Розмарин/ЗАДАНИЕ 13/Розмарин.odt",
+      "size": 8866,
+      "sha256": "7cfcf482efdd05d8cfa86e18de0dffcb178f401e79a68fe8ff1ac96e90d7d8dc",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "ae71d58301fd0c09fdd77ddf406616738a56e0c74464a7f4b700796143a1f5b7",
+      "member": "45/14_липки/task14.ods",
+      "size": 24145,
+      "sha256": "de120659d2ec4116b38217722d2b028d257bb92c9cd5fb5b9ed36df2a03b57b7",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "b2aeded68eb0826a8d823d72f56fd91b3db6947a1df088b78b58158d44409a7e",
+      "member": "17/18_Тигр/Тигр.odt",
+      "size": 8576,
+      "sha256": "0b2448525b18bf29232a71977e6989a787eed14b6b6d81308872b345d4dc9911",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "b556b2ba10b086cc0c7510e88df027da90369218689d2d3bc4305f2ad9a69676",
+      "member": "42/14_липки/task14.ods",
+      "size": 24145,
+      "sha256": "de120659d2ec4116b38217722d2b028d257bb92c9cd5fb5b9ed36df2a03b57b7",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "b7d46775bb716c21134a2b55a1258f8fcd33b82925b4f6ad2c8f5f74c9420ab5",
+      "member": "45/Барбарис/ЗАДАНИЕ 13/Барбарис.odt",
+      "size": 9145,
+      "sha256": "a58643cdf32f1ae846b45d86b7683714b20ff05ef3804e07000bd09adb4662c3",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "b8ab8d1f0f36cc291c91a6667530cea858b0985285522c3003863f40bb5cf604",
+      "member": "6/14_участник_пол_возраст/14.ods",
+      "size": 33309,
+      "sha256": "db40f5e57974a84ac4254d097473a542495344baf1d07c5ee3fc9ea50b05f744",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "b8b9ba3b3765f061c05b5c79dae6212e4be7ea666609f51cab23f5944c98280d",
+      "member": "7/8_Домовая мышь/Домова́я мышь.odt",
+      "size": 8092,
+      "sha256": "d49c9556385efefbfd8b413908bbbf626a554e824c1929134771dcf77692dbdf",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "b8eb8383881de90c08f046e6728fcfcd8ab91432188a08bd9f75621dbb05c41f",
+      "member": "77/14_округ_товар_склад/14.ods",
+      "size": 31275,
+      "sha256": "34629139b8f6e8578e9650a4bc5024c376c7c8ec84a784b073eb70bfc6a7a523",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "b97e77820df019cec89672bb4fdc39b71eb87b8b4659a6017dffe3a4788eb113",
+      "member": "49/Ежевика/ЗАДАНИЕ 13/Ежевика.odt",
+      "size": 8646,
+      "sha256": "a3e1b129b4d1ba6e43be6d1a57823d4a13d2f4d1985d038eafca72be00ea19fa",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "ba5188d7694d75810d74d7d5280d6922a0baa4315e4466ae6466c7a9c7a77176",
+      "member": "67/14_участник школа класс/task14.ods",
+      "size": 32521,
+      "sha256": "df68a64d75750be6393f77935b9155367e07671e5f5a206758233dcd0443acef",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "bddb069c249af94a66ecc272317d88ae2ebe9727cb161df904d55c6b356de82c",
+      "member": "47/Брусника/ЗАДАНИЕ 13/Брусника.odt",
+      "size": 9094,
+      "sha256": "932fb52ec92804a65835069fa7e3de9869e4a89e2336c23a4485fefc94115998",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c0d6dc138adaf524ac4d2d49df229e48274220a99c2a8b4e28d7ca81d93320a5",
+      "member": "65/14_участник школа класс/task14.ods",
+      "size": 32521,
+      "sha256": "df68a64d75750be6393f77935b9155367e07671e5f5a206758233dcd0443acef",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c0ed648c16b4d35c0c40f14b3bea6e935ee6288a1775bcd49dc69e0c18b91cbc",
+      "member": "21/14_ученик_район_ма_фи/task14.ods",
+      "size": 45208,
+      "sha256": "ebc8d10a11592e51187180a1deac9d89a46ccea7964e239179f242d40131ffcb",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c113321b457739ca37905cf69471e34a9ce6622a6ab7a8127e913847463a9736",
+      "member": "2/3_Белка/Бе́лки.odt",
+      "size": 7573,
+      "sha256": "c31cc3bc6aa58ef9db5beee5e13ca3cc2a30b38502749699d7ec2349892d9792",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c1141bb9c51b33e935ee95b551518d8f539ac50e86878b5a2195db3d32d72470",
+      "member": "3/14_участник_пол_возраст/14.ods",
+      "size": 33309,
+      "sha256": "db40f5e57974a84ac4254d097473a542495344baf1d07c5ee3fc9ea50b05f744",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c1edabd97732362c320d8c9e81c25a37282a13319fe807c9e16486ce28d0b5b1",
+      "member": "71/14_участник_баллы/task14.ods",
+      "size": 34019,
+      "sha256": "3d7ae670e011268de9577761b407b70b9030811b5ec301eebf7f3f3c50e24f95",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c39b05141f1e3017e68b74d9d3ca8b78c74a95cb0dc2d767211e37b2aeb1cbdf",
+      "member": "44/Эстрагон/ЗАДАНИЕ 13/Эстрагон.odt",
+      "size": 8449,
+      "sha256": "3779ceec183282c46c5095f5a700982eadaf1357dc581bb82769a6fe76e50a4a",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c3a4b27bc02b70b8d46ca685cf839ed86d3d2c27a58c7fbe9d2fba65e5ea5e54",
+      "member": "47/14_липки/task14.ods",
+      "size": 24145,
+      "sha256": "de120659d2ec4116b38217722d2b028d257bb92c9cd5fb5b9ed36df2a03b57b7",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c3cd1ecf6745a9a075803427c332ec5399804e566d05b6468e41eeb926f170bf",
+      "member": "8/14_участник_пол_возраст/14.ods",
+      "size": 33309,
+      "sha256": "db40f5e57974a84ac4254d097473a542495344baf1d07c5ee3fc9ea50b05f744",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c4fcbe595df3567e25bb3a42168e0f70b89889de8101da48ca8247184f1ca4c5",
+      "member": "33/14_осадки/task14.ods",
+      "size": 24985,
+      "sha256": "1a1078e5d0d13e552e70f8f410440e9b3ba16f6a522ddc4bb079c6bcd15e0939",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c5318d9cfe472c30331e0f75497cc45ad3e3802e043d97407a108465a1eeff00",
+      "member": "57/Жимолость/ЗАДАНИЕ 13/Жимолость.odt",
+      "size": 9043,
+      "sha256": "32af73074e30f52ccb170551bf9acd0e55c8174ca29f1f377ad700ea71438f25",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c7d1f5d240b623ed3497bacd1b7078a1016dad054738ec84f9f6df9ce3036be3",
+      "member": "40/14_липки/task14.ods",
+      "size": 24145,
+      "sha256": "de120659d2ec4116b38217722d2b028d257bb92c9cd5fb5b9ed36df2a03b57b7",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c93998acb2c7bb96f60ef70b53e1234bb5cb1e9ed5cef4b349a552dc8950da94",
+      "member": "36/14_осадки/task14.ods",
+      "size": 24985,
+      "sha256": "1a1078e5d0d13e552e70f8f410440e9b3ba16f6a522ddc4bb079c6bcd15e0939",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "c9b1e8ec6222595c0e207b94c850cdf00fcaa6683003e0c0c5cba656b056b2b6",
+      "member": "60/14_арахис/task14.ods",
+      "size": 49158,
+      "sha256": "018b10cab742b6f2ca4949158a00d8e3135f97200c36f532d3e0930232830735",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "ca8bffcfe4875c440d2fefd6ec5da2fee83186d18b77fd5194bb2e097873908c",
+      "member": "26/14_асмун/task14.ods",
+      "size": 39746,
+      "sha256": "43ef44888802c95cbc8d7456b243a669204c8dcdcc3275972713dcb41025de91",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "ccc83446e4ab78c633284335e1792816f12cf46bd11ed4c577e423bec18ac0e4",
+      "member": "6/7_Сибирский бурундук/Бурундук.odt",
+      "size": 7588,
+      "sha256": "84dad70e6b858f3b37836c4ee2071b134b34e7252f7af5a2b96e2266694075c3",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "cd103a6a8fbd1dc14e3de6da535571184d2b8ff89078a9c176317e0f61a84d20",
+      "member": "10/14_улица_марка_цена/14.ods",
+      "size": 32399,
+      "sha256": "678df8775bc49ddc27ab8ee5c2e7221851cd19fb77557f3eb680b5b11f644230",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "ce55be6f0911b938f7b5588a20c48d151bb238aac6967b3f934913cc0cd69c96",
+      "member": "35/36_Лабрадор/Лабрадо́р.odt",
+      "size": 8113,
+      "sha256": "ad9ca9fae9d758fe92309eaf7a7a7952f0812e3e74d2d12b7a8b38ef6c82ed90",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "ced17b9114df1ddd87d73ebb4ce42143129c7a41afa32264aa1bf02054286154",
+      "member": "78/14_округ_товар_склад/14.ods",
+      "size": 31275,
+      "sha256": "34629139b8f6e8578e9650a4bc5024c376c7c8ec84a784b073eb70bfc6a7a523",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "d1035c49fb2dfcf950252e029cec10d7b3c59ad087bada5baf88fdabf09e1990",
+      "member": "28/14_участник факультет/task14.ods",
+      "size": 29925,
+      "sha256": "f617cce22b064a107a8f881f9efbdcdb16effb78bb4dfe18ce9586b151b0d11d",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "d1fb77ce916e4f20ee71624d010dbbd7483af64132794d9c568f931245ef4d24",
+      "member": "25/26_Малая панда/Ма́лая па́нда.odt",
+      "size": 7954,
+      "sha256": "ef545fa16c7eba40550797405b9dd81b9522aa3a2cff96734382d7741a929972",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "d235c35636173a45e2bda38a55d379a22c0f8fcd3e738bce45feeca4ee32e5de",
+      "member": "44/14_липки/task14.ods",
+      "size": 24145,
+      "sha256": "de120659d2ec4116b38217722d2b028d257bb92c9cd5fb5b9ed36df2a03b57b7",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "d2e24043fe487431261720cb95fe12bd9e76c9955df1033cb4545c34a9e1f7bd",
+      "member": "14/15_Гепард/Гепа́рд.odt",
+      "size": 8696,
+      "sha256": "a36683593524905f9e778ca059c07497318dfc4a9948a8597337077406e00c90",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "d3fea97e21f789e9949a06750da1e7d8ab023270beb19a34c4c11120634599df",
+      "member": "18/19_Дикие кошки/Коша́чьи.odt",
+      "size": 6679,
+      "sha256": "f4573028463391f3d0bc143d2101f04629d652bd804c167a971a084523cd3c9f",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "d435c2924b4bb7c3a721f7e368ca20ad0b00db8b7ecb68122504237601ea0e5a",
+      "member": "41/14_липки/task14.ods",
+      "size": 24145,
+      "sha256": "de120659d2ec4116b38217722d2b028d257bb92c9cd5fb5b9ed36df2a03b57b7",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "d52f0a51f9dab895f50bd92695743bc7668ce4cd3ae6f124f44a522ff2938bb2",
+      "member": "58/14_арахис/task14.ods",
+      "size": 49158,
+      "sha256": "018b10cab742b6f2ca4949158a00d8e3135f97200c36f532d3e0930232830735",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "d75bd270ebf4a934f4643b4fafa73cfe582634767a7dae180d2e69774f7f0afa",
+      "member": "11/12_Леопард/Леопард.odt",
+      "size": 7447,
+      "sha256": "208b57dff58197e6bb399de78e9c21bf65d7bf6bf8ce1d928b5620bb87606465",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "d88919142a28b893ffc1d8cd567fc2c04197d648dc409c54c01bf11a987371ae",
+      "member": "5/6_Морская свинка/Морская свинка.odt",
+      "size": 7754,
+      "sha256": "446dbaad7502a7402d113d4e59f727ebe3f8df2246a6f43f93471ec06c4135ea",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "dae9929012bf2cec72061ad4a6cf86297cb855870ef5f4fdd616aef468fe0fa4",
+      "member": "13/14_улица_марка_цена/14.ods",
+      "size": 32399,
+      "sha256": "678df8775bc49ddc27ab8ee5c2e7221851cd19fb77557f3eb680b5b11f644230",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "db62a7a97a30d5df24e0d07a8e8c23820f611c74b6d4a8587ed7e489f3ab27ed",
+      "member": "83/14_продукт_ж_б_у_к/14.ods",
+      "size": 48825,
+      "sha256": "77113aaef427ead9685dfef02149e4aa17df5f14cd1640bcf92210ad1a90f645",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "dba26d281333fc9f66ac2a751f06df26aacf0360b8a5e5d1eaa19cba9a52101d",
+      "member": "15/16_Ягуар/Ягуа́р.odt",
+      "size": 8575,
+      "sha256": "40c6929fdc7bfbd142fb26c3d592a9e24532b56cb5db2efdcbc9e33bdd8d273c",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "e201203e9bff7d7426045ccea2ccf2e16b83b8d5937bee35c3d87a089750de95",
+      "member": "29/30_Норка/Европе́йская но́рка.odt",
+      "size": 7937,
+      "sha256": "b6359c9dae0f17048b822ba6eb15243c095b0e786002f82856f8aa029c766e72",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "e229cddaabf0bb61e6910ae71ba67148fbcb8c7684a702c1ec18491cb952e85a",
+      "member": "46/14_липки/task14.ods",
+      "size": 24145,
+      "sha256": "de120659d2ec4116b38217722d2b028d257bb92c9cd5fb5b9ed36df2a03b57b7",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "e2406419b56625ff639457c4558140335d62d13a75babcdc7f1dfd1c1fb02d1b",
+      "member": "26/27_Лисица обыкновенная/Лисица обыкновенная.odt",
+      "size": 9139,
+      "sha256": "63196cb3ccbdc54142e9a5f8ab3eb4e99be104029ba119892a2755533d82a4eb",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "e363fdda3bca28dc38b8caa9b87607bb09984d4012e1794b67dc78a2ef2e91bd",
+      "member": "30/14_участник факультет/task14.ods",
+      "size": 29925,
+      "sha256": "f617cce22b064a107a8f881f9efbdcdb16effb78bb4dfe18ce9586b151b0d11d",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "e56a428878413ecb307e5b155ef5dc1abd32e60dde085a9d6f28e0893f1e651a",
+      "member": "63/14_участник школа класс/task14.ods",
+      "size": 32521,
+      "sha256": "df68a64d75750be6393f77935b9155367e07671e5f5a206758233dcd0443acef",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "e5a6325a71caaca23390a33c449b801d22528c02b98fc7ea209397863a033d6b",
+      "member": "23/14_ученик_район_ма_фи/task14.ods",
+      "size": 45208,
+      "sha256": "ebc8d10a11592e51187180a1deac9d89a46ccea7964e239179f242d40131ffcb",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "e6de15b396752a8f7b6934455b5d668beee4c4c69b3ab13ac86188ba1938a42f",
+      "member": "15/14_левая_рука_правая_рука/14.ods",
+      "size": 33973,
+      "sha256": "ae3b812e27b1f900151780ac26f375e60ca9ff126e68400dfb357029bc75a733",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "e766f8c2e9151a6060035c68ffc65560a81932fe0d6d8175797a65092cf35bc5",
+      "member": "22/14_ученик_район_ма_фи/task14.ods",
+      "size": 45208,
+      "sha256": "ebc8d10a11592e51187180a1deac9d89a46ccea7964e239179f242d40131ffcb",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "ea141ced847719d7aafa2beb36d1544e6676268fc625f5a0711326d7045aa55e",
+      "member": "22/23_Большая панда/Больша́я па́нда.odt",
+      "size": 7817,
+      "sha256": "1c37e8853e0cf61da97b7455dd6fdfeab0a643bc9ec955cd257296011ec01fe8",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "ee4779cdc35160dfd043bd4f468433eaae2708d5c4fcf0df9c4e2ea3ff2f055c",
+      "member": "7/14_участник_пол_возраст/14.ods",
+      "size": 33309,
+      "sha256": "db40f5e57974a84ac4254d097473a542495344baf1d07c5ee3fc9ea50b05f744",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "eea8f4a858b6844424ecab683406a2d9f47ce777defafb830f2df1a8700133a3",
+      "member": "2/14_участник_пол_возраст/14.ods",
+      "size": 33309,
+      "sha256": "db40f5e57974a84ac4254d097473a542495344baf1d07c5ee3fc9ea50b05f744",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "ef379b180dc97d95c3559c7cedb338d151d99141163e99f9f282ab7df10ec67c",
+      "member": "49/14_фамилия предмет балл/task14.ods",
+      "size": 34803,
+      "sha256": "7b5486ee0449ea6ff86e6698c3cc41e9f216c4256dc8826c4dfc7ee5c09e1b0f",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "f1422ba7e20b21ada1cdaad519e442372594f59732264295707e3dbc6087d1c6",
+      "member": "61/14_арахис/task14.ods",
+      "size": 49158,
+      "sha256": "018b10cab742b6f2ca4949158a00d8e3135f97200c36f532d3e0930232830735",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "f21a379b3f9f524ccd95a309adf032286c7a25a2d2d8e7cdb1d98bc9df6d3ea6",
+      "member": "37/38_Немецкая овчарка/Немецкая овчарка.odt",
+      "size": 8657,
+      "sha256": "1bba01aa8ca40b5bdbeddf86d7c44225dbfbe3e95474c15b49a7152f24c33935",
+      "mimetype": "application/vnd.oasis.opendocument.text",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "f9fe644c065119b19bfd58d49c99949ca590548eb2f152134f4321b9387a99f5",
+      "member": "14/14_улица_марка_цена/14.ods",
+      "size": 32399,
+      "sha256": "678df8775bc49ddc27ab8ee5c2e7221851cd19fb77557f3eb680b5b11f644230",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    },
+    {
+      "archiveSha256": "fa2a7a1a8f58b6f2dd07e2289c896b0c972532066464b87a99c0c3c97c876465",
+      "member": "81/14_ученик_майский_предметы/14.ods",
+      "size": 38199,
+      "sha256": "d7da9be5b380502f0d4b73938372a8bb802fa5d548ee6d2f24acbab9548aaba2",
+      "mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+      "zipCrc": "passed",
+      "xml": "passed",
+      "xmlFiles": 5
+    }
+  ]
+}

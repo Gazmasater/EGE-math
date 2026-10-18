@@ -1,0 +1,84 @@
+{
+  "sha256": "a61f5aa9ba92a21321fab3ba5b8a62c81d3d707030d8a0871fd6b70b7e6b91e7",
+  "size": 2853912,
+  "checkedAt": "2026-10-18T15:36:16.811474+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 7,
+    "directories": 2,
+    "uncompressedBytes": 2875076,
+    "evidence": "data-sources/oge-informatics/validation/a61f5aa9ba92a21321fab3ba5b8a62c81d3d707030d8a0871fd6b70b7e6b91e7.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2853912 bytes (2788 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2853912\n\nEverything is Ok\n\nFolders: 2\nFiles: 7\nSize:       2875076\nCompressed: 2853912",
+  "members": [
+    {
+      "path": "10",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "10/11_Рысь",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "10/11_Рысь/Кошки.jpg",
+      "directory": false,
+      "size": 448351,
+      "crc32": "36AF32C1",
+      "encrypted": false
+    },
+    {
+      "path": "10/11_Рысь/Рысь 1.jpg",
+      "directory": false,
+      "size": 744356,
+      "crc32": "F223D5F3",
+      "encrypted": false
+    },
+    {
+      "path": "10/11_Рысь/Рысь 2.jpg",
+      "directory": false,
+      "size": 377278,
+      "crc32": "C84968F3",
+      "encrypted": false
+    },
+    {
+      "path": "10/11_Рысь/Рысь 3.jpg",
+      "directory": false,
+      "size": 369770,
+      "crc32": "C8DC5AAD",
+      "encrypted": false
+    },
+    {
+      "path": "10/11_Рысь/Рысь 4.jpg",
+      "directory": false,
+      "size": 455064,
+      "crc32": "CB25FB5C",
+      "encrypted": false
+    },
+    {
+      "path": "10/11_Рысь/Рысь 5.jpg",
+      "directory": false,
+      "size": 472674,
+      "crc32": "B38E88DD",
+      "encrypted": false
+    },
+    {
+      "path": "10/11_Рысь/Рысь.odt",
+      "directory": false,
+      "size": 7583,
+      "crc32": "EA8C7DF5",
+      "encrypted": false
+    }
+  ]
+}

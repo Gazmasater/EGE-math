@@ -1,0 +1,42 @@
+{
+  "sha256": "c7d1f5d240b623ed3497bacd1b7078a1016dad054738ec84f9f6df9ce3036be3",
+  "size": 23275,
+  "checkedAt": "2026-10-18T15:15:19.410317+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 1,
+    "directories": 2,
+    "uncompressedBytes": 24145,
+    "evidence": "data-sources/oge-informatics/validation/c7d1f5d240b623ed3497bacd1b7078a1016dad054738ec84f9f6df9ce3036be3.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 23275 bytes (23 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 23275\n\nEverything is Ok\n\nFolders: 2\nFiles: 1\nSize:       24145\nCompressed: 23275",
+  "members": [
+    {
+      "path": "40",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "40/14_липки",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "40/14_липки/task14.ods",
+      "directory": false,
+      "size": 24145,
+      "crc32": "3930F200",
+      "encrypted": false
+    }
+  ]
+}

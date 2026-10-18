@@ -1,0 +1,77 @@
+{
+  "sha256": "d1fb77ce916e4f20ee71624d010dbbd7483af64132794d9c568f931245ef4d24",
+  "size": 2416631,
+  "checkedAt": "2026-10-18T15:15:01.120523+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 2415412,
+    "evidence": "data-sources/oge-informatics/validation/d1fb77ce916e4f20ee71624d010dbbd7483af64132794d9c568f931245ef4d24.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2416631 bytes (2360 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2416631\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       2415412\nCompressed: 2416631",
+  "members": [
+    {
+      "path": "25",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "25/26_Малая панда",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "25/26_Малая панда/Ма́лая па́нда.odt",
+      "directory": false,
+      "size": 7954,
+      "crc32": "14CAA779",
+      "encrypted": false
+    },
+    {
+      "path": "25/26_Малая панда/Малая панда 1.jpg",
+      "directory": false,
+      "size": 530757,
+      "crc32": "E546637C",
+      "encrypted": false
+    },
+    {
+      "path": "25/26_Малая панда/Малая панда 2.jpg",
+      "directory": false,
+      "size": 501059,
+      "crc32": "F471DE33",
+      "encrypted": false
+    },
+    {
+      "path": "25/26_Малая панда/Малая панда 3.jpg",
+      "directory": false,
+      "size": 514300,
+      "crc32": "1EFAA71E",
+      "encrypted": false
+    },
+    {
+      "path": "25/26_Малая панда/Малая панда 4.jpg",
+      "directory": false,
+      "size": 422118,
+      "crc32": "D05E177D",
+      "encrypted": false
+    },
+    {
+      "path": "25/26_Малая панда/Малая панда 5.jpg",
+      "directory": false,
+      "size": 439224,
+      "crc32": "B11BB49A",
+      "encrypted": false
+    }
+  ]
+}

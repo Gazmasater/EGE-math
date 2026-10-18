@@ -1,0 +1,112 @@
+{
+  "sha256": "d3fea97e21f789e9949a06750da1e7d8ab023270beb19a34c4c11120634599df",
+  "size": 5992159,
+  "checkedAt": "2026-10-18T15:31:46.945209+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 11,
+    "directories": 2,
+    "uncompressedBytes": 6013004,
+    "evidence": "data-sources/oge-informatics/validation/d3fea97e21f789e9949a06750da1e7d8ab023270beb19a34c4c11120634599df.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 5992159 bytes (5852 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 5992159\n\nEverything is Ok\n\nFolders: 2\nFiles: 11\nSize:       6013004\nCompressed: 5992159",
+  "members": [
+    {
+      "path": "18",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Гепард.jpg",
+      "directory": false,
+      "size": 1461744,
+      "crc32": "D5A0606E",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Домашняя кошка.jpg",
+      "directory": false,
+      "size": 571429,
+      "crc32": "1E2F2FA2",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Каракал.jpg",
+      "directory": false,
+      "size": 293148,
+      "crc32": "056FA8DE",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Коша́чьи.odt",
+      "directory": false,
+      "size": 6679,
+      "crc32": "6394B39B",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Кошки.jpg",
+      "directory": false,
+      "size": 448351,
+      "crc32": "36AF32C1",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Лев.jpg",
+      "directory": false,
+      "size": 717257,
+      "crc32": "FB57CAAD",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Леопард.jpg",
+      "directory": false,
+      "size": 361546,
+      "crc32": "D6772B86",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Рысь.jpg",
+      "directory": false,
+      "size": 455064,
+      "crc32": "CB25FB5C",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Сервал.jpg",
+      "directory": false,
+      "size": 764233,
+      "crc32": "1A717C28",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Тигр.jpg",
+      "directory": false,
+      "size": 456332,
+      "crc32": "C6BF152A",
+      "encrypted": false
+    },
+    {
+      "path": "18/19_Дикие кошки/Ягуар.jpg",
+      "directory": false,
+      "size": 477221,
+      "crc32": "FDEB5DEA",
+      "encrypted": false
+    }
+  ]
+}

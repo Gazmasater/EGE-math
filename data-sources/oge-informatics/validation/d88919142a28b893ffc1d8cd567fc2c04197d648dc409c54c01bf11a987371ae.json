@@ -1,0 +1,77 @@
+{
+  "sha256": "d88919142a28b893ffc1d8cd567fc2c04197d648dc409c54c01bf11a987371ae",
+  "size": 2181759,
+  "checkedAt": "2026-10-18T15:33:09.515226+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 2192887,
+    "evidence": "data-sources/oge-informatics/validation/d88919142a28b893ffc1d8cd567fc2c04197d648dc409c54c01bf11a987371ae.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2181759 bytes (2131 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2181759\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       2192887\nCompressed: 2181759",
+  "members": [
+    {
+      "path": "5",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "5/6_Морская свинка",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "5/6_Морская свинка/Морская свинка 1.jpg",
+      "directory": false,
+      "size": 424353,
+      "crc32": "CF8F247E",
+      "encrypted": false
+    },
+    {
+      "path": "5/6_Морская свинка/Морская свинка 2.jpg",
+      "directory": false,
+      "size": 687751,
+      "crc32": "43E05A1C",
+      "encrypted": false
+    },
+    {
+      "path": "5/6_Морская свинка/Морская свинка 3.jpg",
+      "directory": false,
+      "size": 301525,
+      "crc32": "6FE551E4",
+      "encrypted": false
+    },
+    {
+      "path": "5/6_Морская свинка/Морская свинка 4.jpg",
+      "directory": false,
+      "size": 483935,
+      "crc32": "0D242EA0",
+      "encrypted": false
+    },
+    {
+      "path": "5/6_Морская свинка/Морская свинка 5.jpg",
+      "directory": false,
+      "size": 287569,
+      "crc32": "EFF74C7A",
+      "encrypted": false
+    },
+    {
+      "path": "5/6_Морская свинка/Морская свинка.odt",
+      "directory": false,
+      "size": 7754,
+      "crc32": "4F6186E2",
+      "encrypted": false
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "sha256": "4f3b20d8d7b6ac92522231312dc721a4156ce25e9fa0fcc600d75e8687649e97",
+  "size": 1180608,
+  "checkedAt": "2026-10-18T15:17:32.545280+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 8,
+    "directories": 2,
+    "uncompressedBytes": 1179951,
+    "evidence": "data-sources/oge-informatics/validation/4f3b20d8d7b6ac92522231312dc721a4156ce25e9fa0fcc600d75e8687649e97.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 1180608 bytes (1153 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 1180608\n\nEverything is Ok\n\nFolders: 2\nFiles: 8\nSize:       1179951\nCompressed: 1180608",
+  "members": [
+    {
+      "path": "31",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "31/32_Мопсы",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "31/32_Мопсы/Мопс 1.jpg",
+      "directory": false,
+      "size": 394595,
+      "crc32": "AC2F960B",
+      "encrypted": false
+    },
+    {
+      "path": "31/32_Мопсы/Мопс 2.jpg",
+      "directory": false,
+      "size": 144968,
+      "crc32": "C49C520A",
+      "encrypted": false
+    },
+    {
+      "path": "31/32_Мопсы/Мопс 3.jpg",
+      "directory": false,
+      "size": 121593,
+      "crc32": "FA27B07C",
+      "encrypted": false
+    },
+    {
+      "path": "31/32_Мопсы/Мопс 4.jpg",
+      "directory": false,
+      "size": 95419,
+      "crc32": "CBB903BB",
+      "encrypted": false
+    },
+    {
+      "path": "31/32_Мопсы/Мопс 5.jpg",
+      "directory": false,
+      "size": 154617,
+      "crc32": "ADE3A668",
+      "encrypted": false
+    },
+    {
+      "path": "31/32_Мопсы/Мопс 6.jpg",
+      "directory": false,
+      "size": 146181,
+      "crc32": "4EDE0CDD",
+      "encrypted": false
+    },
+    {
+      "path": "31/32_Мопсы/Мопс 7.jpg",
+      "directory": false,
+      "size": 112839,
+      "crc32": "AE3D6F94",
+      "encrypted": false
+    },
+    {
+      "path": "31/32_Мопсы/Мопс.odt",
+      "directory": false,
+      "size": 9739,
+      "crc32": "54DA006F",
+      "encrypted": false
+    }
+  ]
+}

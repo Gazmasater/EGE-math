@@ -1,0 +1,84 @@
+{
+  "sha256": "a700b4a4fac69f199780babae9c53eb6274875a84c39002d8c07e1b833268f30",
+  "size": 3185701,
+  "checkedAt": "2026-10-18T15:17:47.915450+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 7,
+    "directories": 2,
+    "uncompressedBytes": 3197671,
+    "evidence": "data-sources/oge-informatics/validation/a700b4a4fac69f199780babae9c53eb6274875a84c39002d8c07e1b833268f30.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3185701 bytes (3112 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3185701\n\nEverything is Ok\n\nFolders: 2\nFiles: 7\nSize:       3197671\nCompressed: 3185701",
+  "members": [
+    {
+      "path": "24",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "24/25_Носуха",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "24/25_Носуха/Носуха 1.jpg",
+      "directory": false,
+      "size": 411036,
+      "crc32": "85BE82DE",
+      "encrypted": false
+    },
+    {
+      "path": "24/25_Носуха/Носуха 2.jpg",
+      "directory": false,
+      "size": 1026314,
+      "crc32": "CDF6B142",
+      "encrypted": false
+    },
+    {
+      "path": "24/25_Носуха/Носуха 3.jpg",
+      "directory": false,
+      "size": 665850,
+      "crc32": "77DCAAE3",
+      "encrypted": false
+    },
+    {
+      "path": "24/25_Носуха/Носуха 4.jpg",
+      "directory": false,
+      "size": 420609,
+      "crc32": "D19A0078",
+      "encrypted": false
+    },
+    {
+      "path": "24/25_Носуха/Носуха 5.jpg",
+      "directory": false,
+      "size": 170996,
+      "crc32": "D287C04C",
+      "encrypted": false
+    },
+    {
+      "path": "24/25_Носуха/Носуха 6.jpg",
+      "directory": false,
+      "size": 496349,
+      "crc32": "6D6DCB23",
+      "encrypted": false
+    },
+    {
+      "path": "24/25_Носуха/Носухи.odt",
+      "directory": false,
+      "size": 6517,
+      "crc32": "6FDD4B69",
+      "encrypted": false
+    }
+  ]
+}

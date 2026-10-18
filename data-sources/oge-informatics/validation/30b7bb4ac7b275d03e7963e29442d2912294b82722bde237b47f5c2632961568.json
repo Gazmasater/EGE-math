@@ -1,0 +1,119 @@
+{
+  "sha256": "30b7bb4ac7b275d03e7963e29442d2912294b82722bde237b47f5c2632961568",
+  "size": 4688684,
+  "checkedAt": "2026-10-18T15:15:12.486099+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 12,
+    "directories": 2,
+    "uncompressedBytes": 4705097,
+    "evidence": "data-sources/oge-informatics/validation/30b7bb4ac7b275d03e7963e29442d2912294b82722bde237b47f5c2632961568.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 4688684 bytes (4579 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 4688684\n\nEverything is Ok\n\nFolders: 2\nFiles: 12\nSize:       4705097\nCompressed: 4688684",
+  "members": [
+    {
+      "path": "19",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 1.jpg",
+      "directory": false,
+      "size": 357442,
+      "crc32": "451CE223",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 10.jpg",
+      "directory": false,
+      "size": 513477,
+      "crc32": "439ACBA5",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 11.jpg",
+      "directory": false,
+      "size": 378494,
+      "crc32": "25ACB148",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 2.jpg",
+      "directory": false,
+      "size": 313693,
+      "crc32": "F900B418",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 3.jpg",
+      "directory": false,
+      "size": 571429,
+      "crc32": "1E2F2FA2",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 4.jpg",
+      "directory": false,
+      "size": 368627,
+      "crc32": "471BD08C",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 5.jpg",
+      "directory": false,
+      "size": 387300,
+      "crc32": "E2F50071",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 6.jpg",
+      "directory": false,
+      "size": 563903,
+      "crc32": "6CF5DB98",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 7.jpg",
+      "directory": false,
+      "size": 372855,
+      "crc32": "5B9B3B1C",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 8.jpg",
+      "directory": false,
+      "size": 401729,
+      "crc32": "F9C0B39A",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка 9.jpg",
+      "directory": false,
+      "size": 468599,
+      "crc32": "2103A262",
+      "encrypted": false
+    },
+    {
+      "path": "19/20_Домашняя кошка/Домашняя кошка.odt",
+      "directory": false,
+      "size": 7549,
+      "crc32": "87C43B13",
+      "encrypted": false
+    }
+  ]
+}

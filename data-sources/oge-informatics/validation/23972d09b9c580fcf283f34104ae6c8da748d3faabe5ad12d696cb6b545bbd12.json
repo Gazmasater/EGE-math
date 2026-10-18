@@ -1,0 +1,1512 @@
+{
+  "sha256": "23972d09b9c580fcf283f34104ae6c8da748d3faabe5ad12d696cb6b545bbd12",
+  "size": 76218254,
+  "checkedAt": "2026-10-18T15:13:58.699208+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 186,
+    "directories": 27,
+    "uncompressedBytes": 117474749,
+    "evidence": "data-sources/oge-informatics/validation/23972d09b9c580fcf283f34104ae6c8da748d3faabe5ad12d696cb6b545bbd12.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 76218254 bytes (73 MiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 76218254\n\nEverything is Ok\n\nFolders: 27\nFiles: 186\nSize:       117474749\nCompressed: 76218254",
+  "members": [
+    {
+      "path": "DEMO-12",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Айвазовский",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Айвазовский/Венецианская ночь.jpeg",
+      "directory": false,
+      "size": 42707,
+      "crc32": "139C278A",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Айвазовский/Девятый вал.jpeg",
+      "directory": false,
+      "size": 389053,
+      "crc32": "5164C2E9",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Айвазовский/Девятый вал.jpg",
+      "directory": false,
+      "size": 160515,
+      "crc32": "E3FA7CC4",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Айвазовский/Заход солнца на море.tiff",
+      "directory": false,
+      "size": 262086,
+      "crc32": "63E972CB",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Айвазовский/Море с розовым облаком.png",
+      "directory": false,
+      "size": 556801,
+      "crc32": "742A705B",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Айвазовский/Ночь на Чёрном море.jpeg",
+      "directory": false,
+      "size": 100290,
+      "crc32": "FED8BBA1",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Айвазовский/Радуга.jpeg",
+      "directory": false,
+      "size": 290050,
+      "crc32": "64595FCA",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Айвазовский/Шторм.tiff",
+      "directory": false,
+      "size": 785208,
+      "crc32": "51B28D07",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Брюллов",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Брюллов/Автопортрет.jpeg",
+      "directory": false,
+      "size": 145221,
+      "crc32": "82E167C9",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Брюллов/Всадница.jpeg",
+      "directory": false,
+      "size": 145002,
+      "crc32": "3788FDEC",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Брюллов/Итальянский полдень.tiff",
+      "directory": false,
+      "size": 441552,
+      "crc32": "8C4C909D",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Брюллов/Портрет княгини А.А. Багратион.tiff",
+      "directory": false,
+      "size": 608522,
+      "crc32": "9CEE836C",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Брюллов/Портрет М.А.Бек.png",
+      "directory": false,
+      "size": 432155,
+      "crc32": "6D8AF951",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Брюллов/Последний день Помпеи.jpeg",
+      "directory": false,
+      "size": 135876,
+      "crc32": "1E9BE753",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Васнецов",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Васнецов/Алёнушка.tiff",
+      "directory": false,
+      "size": 207974,
+      "crc32": "F1C6BD58",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Васнецов/Витязь на распутье.jpeg",
+      "directory": false,
+      "size": 136310,
+      "crc32": "91DD1726",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Васнецов/Иван царевич на сером волке.tiff",
+      "directory": false,
+      "size": 528836,
+      "crc32": "080CA0EB",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Васнецов/Ковёр-самолёт.jpeg",
+      "directory": false,
+      "size": 111581,
+      "crc32": "69D27EBC",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Васнецов/После побоища.jpeg",
+      "directory": false,
+      "size": 159256,
+      "crc32": "AA5EB5A7",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Васнецов/Три богатыря.png",
+      "directory": false,
+      "size": 703110,
+      "crc32": "3E90DC72",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Верещагин",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Верещагин/Араб на верблюде.tiff",
+      "directory": false,
+      "size": 567670,
+      "crc32": "36DA8E64",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Верещагин/Богатый киргизский охотник с соколом.tiff",
+      "directory": false,
+      "size": 779744,
+      "crc32": "7328033B",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Верещагин/Двери Тимура (Тамерлана).jpeg",
+      "directory": false,
+      "size": 171466,
+      "crc32": "22F5D820",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Верещагин/Мавзолей Тадж-Махал в Агре.png",
+      "directory": false,
+      "size": 381893,
+      "crc32": "906A7062",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Верещагин/Медресе Шир-Дор на площади Регистан в Самарканде.jpeg",
+      "directory": false,
+      "size": 209595,
+      "crc32": "93EE8C0F",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Верещагин/Наполеон I на Бородинских высотах.png",
+      "directory": false,
+      "size": 556899,
+      "crc32": "3B8D515E",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Верещагин/Портрет бачи.tiff",
+      "directory": false,
+      "size": 916350,
+      "crc32": "1CEC86CD",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Врубель",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Врубель/Демон.jpeg",
+      "directory": false,
+      "size": 463261,
+      "crc32": "B4D86693",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Врубель/Пан.png",
+      "directory": false,
+      "size": 86523,
+      "crc32": "82484B33",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Врубель/Сирень.tiff",
+      "directory": false,
+      "size": 576574,
+      "crc32": "0F782839",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Врубель/Царевна лебедь.png",
+      "directory": false,
+      "size": 279022,
+      "crc32": "04AE8AF1",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Малевич",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Малевич/Автопортрет.jpeg",
+      "directory": false,
+      "size": 94299,
+      "crc32": "DA54A756",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Малевич/Спортсмены.jpeg",
+      "directory": false,
+      "size": 88258,
+      "crc32": "249767B5",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Малевич/Торс в жёлтой рубашке.jpeg",
+      "directory": false,
+      "size": 45221,
+      "crc32": "5647F0B9",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Малевич/Три женщины на дороге.png",
+      "directory": false,
+      "size": 591771,
+      "crc32": "00375FAC",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Малевич/Чёрный круг.tiff",
+      "directory": false,
+      "size": 512096,
+      "crc32": "A202C342",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Малевич/Чёрный супрематический квадрат.tiff",
+      "directory": false,
+      "size": 573922,
+      "crc32": "569AF280",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Перов",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Перов/Девушка.png",
+      "directory": false,
+      "size": 525155,
+      "crc32": "EFCAA135",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Перов/Дилетант.jpeg",
+      "directory": false,
+      "size": 149610,
+      "crc32": "02EF7C0E",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Перов/Охотники на привале.jpeg",
+      "directory": false,
+      "size": 191766,
+      "crc32": "FF2CE1EC",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Перов/Плач Ярославны.png",
+      "directory": false,
+      "size": 672644,
+      "crc32": "5DAAFFB2",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Перов/Портрет А.Н.Островского.png",
+      "directory": false,
+      "size": 589835,
+      "crc32": "D6ABC9CF",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Перов/Портрет В.И.Даля.jpeg",
+      "directory": false,
+      "size": 108698,
+      "crc32": "A0CEB7BB",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Перов/Портрет Ф.М.Достоевского.png",
+      "directory": false,
+      "size": 470273,
+      "crc32": "A2218565",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Перов/Сельский крестный ход на Пасхе.jpeg",
+      "directory": false,
+      "size": 179190,
+      "crc32": "31B5B328",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Репин",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Репин/Бурлаки на Волге.tiff",
+      "directory": false,
+      "size": 580908,
+      "crc32": "0BBAF475",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Репин/Летниц пейзаж.jpeg",
+      "directory": false,
+      "size": 247275,
+      "crc32": "9E40F212",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Репин/Не ждали.jpeg",
+      "directory": false,
+      "size": 164915,
+      "crc32": "E6099632",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Репин/Портрет Павла Третьякова.jpeg",
+      "directory": false,
+      "size": 213686,
+      "crc32": "72C6F51D",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Репин/Портрет писателя Ивана Сергеевича Тургенева.png",
+      "directory": false,
+      "size": 700011,
+      "crc32": "ED55ABD1",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Репин/Портрет писателя Л.Н.Толстого.tiff",
+      "directory": false,
+      "size": 744710,
+      "crc32": "2AA3CAC7",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Репин/Садко.tiff",
+      "directory": false,
+      "size": 780250,
+      "crc32": "7D666A01",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Репин/Стрекоза.tiff",
+      "directory": false,
+      "size": 864088,
+      "crc32": "B2B0BDC8",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Суриков",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Суриков/Автопортрет.jpeg",
+      "directory": false,
+      "size": 373901,
+      "crc32": "EE0C9F12",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Суриков/Боярыня Морозова.jpeg",
+      "directory": false,
+      "size": 13239,
+      "crc32": "16985952",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Суриков/Взятие снежного городка.jpeg",
+      "directory": false,
+      "size": 262017,
+      "crc32": "1F500C56",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Суриков/Казачка. Портрет Л.Т. Моториной.jpeg",
+      "directory": false,
+      "size": 379132,
+      "crc32": "63C0D2CC",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Суриков/Переход Суворова через Альпы.jpeg",
+      "directory": false,
+      "size": 484549,
+      "crc32": "650CECD4",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Суриков/Покорение Сибири Ермаком.jpeg",
+      "directory": false,
+      "size": 598250,
+      "crc32": "9C33BC32",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Живопись/Суриков/Утро стрелецкой казни.jpeg",
+      "directory": false,
+      "size": 271761,
+      "crc32": "02710717",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок/Блок от нейросети.jpeg",
+      "directory": false,
+      "size": 50668,
+      "crc32": "1EE9E378",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок/Весна в реке ломает льдины.png",
+      "directory": false,
+      "size": 470249,
+      "crc32": "A55A8CC5",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок/Весна в реке ломает льдины.rtf",
+      "directory": false,
+      "size": 32451,
+      "crc32": "7B8DE5D8",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок/Незнакомка.png",
+      "directory": false,
+      "size": 401861,
+      "crc32": "7D7C69FC",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок/Ночь, улица, фонарь, аптека.png",
+      "directory": false,
+      "size": 481655,
+      "crc32": "27575979",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок/Ночь, улица, фонарь, аптека.txt",
+      "directory": false,
+      "size": 235,
+      "crc32": "EA8D7983",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок/Россия.pdf",
+      "directory": false,
+      "size": 192279,
+      "crc32": "924F592F",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок/Стихотворения.pdf",
+      "directory": false,
+      "size": 203745,
+      "crc32": "632E643F",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Блок/Хрестоматия. Стихотворения.htm",
+      "directory": false,
+      "size": 9664,
+      "crc32": "3C8BBD36",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Белая береза под моим окном....htm",
+      "directory": false,
+      "size": 147681,
+      "crc32": "A1F3437E",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Белая береза под моим окном....pdf",
+      "directory": false,
+      "size": 952207,
+      "crc32": "8B53BF23",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Белая береза.jpeg",
+      "directory": false,
+      "size": 140286,
+      "crc32": "261A9F77",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Гой ты Русь моя родная.txt",
+      "directory": false,
+      "size": 506,
+      "crc32": "4EC7D69E",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Есенин от нейросети.png",
+      "directory": false,
+      "size": 430248,
+      "crc32": "A002E3D4",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Клён ты мой опавший.pdf",
+      "directory": false,
+      "size": 64943,
+      "crc32": "E7376A99",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Клён ты мой опавший.png",
+      "directory": false,
+      "size": 557879,
+      "crc32": "E1E56849",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Отговорила роща золотая.txt",
+      "directory": false,
+      "size": 806,
+      "crc32": "59BAA29B",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Письмо матери.pdf",
+      "directory": false,
+      "size": 197406,
+      "crc32": "409E14A5",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Полное собрание стихотворений.htm",
+      "directory": false,
+      "size": 505099,
+      "crc32": "8D81A636",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Полное собрание стихотворений.rtf",
+      "directory": false,
+      "size": 736010,
+      "crc32": "520BC2E0",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Сторона ль моя, сторонка.htm",
+      "directory": false,
+      "size": 3605,
+      "crc32": "FF6326B5",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Черёмуха.rtf",
+      "directory": false,
+      "size": 33139,
+      "crc32": "4993DAF7",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Есенин/Черемуха.jpeg",
+      "directory": false,
+      "size": 62236,
+      "crc32": "55532ABD",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Выхожу один я на дорогу.jpeg",
+      "directory": false,
+      "size": 96528,
+      "crc32": "A0195213",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Выхожу один я на дорогу.rtf",
+      "directory": false,
+      "size": 33666,
+      "crc32": "2D2A6823",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/И скучно и грустно.txt",
+      "directory": false,
+      "size": 510,
+      "crc32": "3C357E0A",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Кинжал.jpeg",
+      "directory": false,
+      "size": 100629,
+      "crc32": "21E88464",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Кинжал.rtf",
+      "directory": false,
+      "size": 35692,
+      "crc32": "CD5EBEE6",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Лермонтов от нейросети.png",
+      "directory": false,
+      "size": 318541,
+      "crc32": "FF4CCBCD",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Мцыри.jpeg",
+      "directory": false,
+      "size": 114227,
+      "crc32": "93299081",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Мцыри.pdf",
+      "directory": false,
+      "size": 253279,
+      "crc32": "B0B7779C",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Парус.htm",
+      "directory": false,
+      "size": 3127,
+      "crc32": "C50725B5",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Парус.jpeg",
+      "directory": false,
+      "size": 58588,
+      "crc32": "30F69F5D",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Полное собрание стихотворений.htm",
+      "directory": false,
+      "size": 756060,
+      "crc32": "E584B78C",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Полное собрание стихотворений.pdf",
+      "directory": false,
+      "size": 1751833,
+      "crc32": "8F68C5F2",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Пророк.htm",
+      "directory": false,
+      "size": 8872,
+      "crc32": "40EC9C30",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Пророк.pdf",
+      "directory": false,
+      "size": 195820,
+      "crc32": "00B15612",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Прощай, немытая Россия,.txt",
+      "directory": false,
+      "size": 214,
+      "crc32": "F3D027B9",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Родина.pdf",
+      "directory": false,
+      "size": 113284,
+      "crc32": "B76D26D4",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Утес (Ночевала тучка золотая).png",
+      "directory": false,
+      "size": 379671,
+      "crc32": "1C63D985",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Лермонтов/Утес.txt",
+      "directory": false,
+      "size": 238,
+      "crc32": "8574622D",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Кем быть.rtf",
+      "directory": false,
+      "size": 45890,
+      "crc32": "E3D92020",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Маяковский от нейросети.png",
+      "directory": false,
+      "size": 432677,
+      "crc32": "520655F8",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Паспорт.jpeg",
+      "directory": false,
+      "size": 69661,
+      "crc32": "2083494F",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Послушайте.rtf",
+      "directory": false,
+      "size": 34179,
+      "crc32": "3C45CE50",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Прозаседавшиеся.htm",
+      "directory": false,
+      "size": 11187,
+      "crc32": "74DE440F",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Стихи о советскм паспорте.htm",
+      "directory": false,
+      "size": 17778,
+      "crc32": "04DA9788",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Стихотворения и поэмы.pdf",
+      "directory": false,
+      "size": 2573162,
+      "crc32": "33443549",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Хорошее отношение к лошадям.pdf",
+      "directory": false,
+      "size": 122858,
+      "crc32": "C75BCDAB",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Что такое хорошо и что такое плохо.pdf",
+      "directory": false,
+      "size": 203189,
+      "crc32": "A8A14F0C",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Маяковский/Что такое хорошо и что такое плохо.txt",
+      "directory": false,
+      "size": 2034,
+      "crc32": "682C3846",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Баба-Яга, Костяная Нога.txt",
+      "directory": false,
+      "size": 50887,
+      "crc32": "5F2DACBF",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Баюшки-баю.txt",
+      "directory": false,
+      "size": 1392,
+      "crc32": "2F843EAD",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Дедушка Мазай и зайцы.png",
+      "directory": false,
+      "size": 444580,
+      "crc32": "6B037ED1",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Дедушка Мазай и зайцы.rtf",
+      "directory": false,
+      "size": 48419,
+      "crc32": "85668B6E",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Кому на руси жить хорошо.pdf",
+      "directory": false,
+      "size": 724825,
+      "crc32": "805C0F35",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Крестьянские дети.jpeg",
+      "directory": false,
+      "size": 115237,
+      "crc32": "EC802D10",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Крестьянские дети.txt",
+      "directory": false,
+      "size": 8992,
+      "crc32": "3678A86D",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Мороз, Красный Нос.htm",
+      "directory": false,
+      "size": 200966,
+      "crc32": "3239B1E1",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Русские женщины.jpeg",
+      "directory": false,
+      "size": 88503,
+      "crc32": "8217577C",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Русские женщины.rtf",
+      "directory": false,
+      "size": 106226,
+      "crc32": "A7B18240",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Рыцарь на час.txt",
+      "directory": false,
+      "size": 6780,
+      "crc32": "93B2E0D3",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Некрасов/Стихотворения.pdf",
+      "directory": false,
+      "size": 237277,
+      "crc32": "F2234971",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/19 октября 1825.rtf",
+      "directory": false,
+      "size": 49871,
+      "crc32": "AD4A2D82",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Анчар.htm",
+      "directory": false,
+      "size": 7450,
+      "crc32": "F8E407E0",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Во глубине сибирских руд.htm",
+      "directory": false,
+      "size": 3659,
+      "crc32": "B3D6F1E2",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Евгений Онегин.htm",
+      "directory": false,
+      "size": 137251,
+      "crc32": "ED2D7B75",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Евгений Онегин.jpeg",
+      "directory": false,
+      "size": 83113,
+      "crc32": "01E869DB",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Кавказ.jpeg",
+      "directory": false,
+      "size": 115977,
+      "crc32": "C38E0694",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Кавказ.pdf",
+      "directory": false,
+      "size": 191955,
+      "crc32": "15233994",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Няне.txt",
+      "directory": false,
+      "size": 365,
+      "crc32": "300CEB9B",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Памятник.jpeg",
+      "directory": false,
+      "size": 115760,
+      "crc32": "284F2D6D",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Песнь о вещем Олеге.rtf",
+      "directory": false,
+      "size": 43446,
+      "crc32": "1E5883C0",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Руслан и Людмила.jpeg",
+      "directory": false,
+      "size": 123247,
+      "crc32": "86AC0221",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Руслан и Людмила.pdf",
+      "directory": false,
+      "size": 438732,
+      "crc32": "D18A11A7",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Я памятник себе воздвиг нерукотворный.txt",
+      "directory": false,
+      "size": 744,
+      "crc32": "C59F2D22",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Поэзия/Пушкин/Я помню чудное мгновенье.pdf",
+      "directory": false,
+      "size": 144714,
+      "crc32": "FCE17C5F",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Вий.rtf",
+      "directory": false,
+      "size": 559026,
+      "crc32": "5D02BC02",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Гоголь.jpeg",
+      "directory": false,
+      "size": 98217,
+      "crc32": "B28F83D0",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Мертвые души.jpeg",
+      "directory": false,
+      "size": 81522,
+      "crc32": "A9A9A734",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Мертвые души.pdf",
+      "directory": false,
+      "size": 1631527,
+      "crc32": "908F8343",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Нос.htm",
+      "directory": false,
+      "size": 55367,
+      "crc32": "11D3243B",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Нос.pdf",
+      "directory": false,
+      "size": 222034,
+      "crc32": "4F5D2CE7",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Ревизор.htm",
+      "directory": false,
+      "size": 168565,
+      "crc32": "D6D86733",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Тарас Бульба.pdf",
+      "directory": false,
+      "size": 667614,
+      "crc32": "44D04E35",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Шинель.htm",
+      "directory": false,
+      "size": 69942,
+      "crc32": "029AD8FF",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гоголь/Шинель.rtf",
+      "directory": false,
+      "size": 219563,
+      "crc32": "561D0DB1",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гончаров",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гончаров/Гончаров И. А. - Обломов.htm",
+      "directory": false,
+      "size": 1013368,
+      "crc32": "5950B390",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гончаров/Гончаров И. А. - Обыкновенная история.pdf",
+      "directory": false,
+      "size": 1316044,
+      "crc32": "3BF03337",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гончаров/И. А. Гончаров - Обломов.rtf",
+      "directory": false,
+      "size": 6265160,
+      "crc32": "146796D1",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гончаров/И. А. Гончаров - Обыкновенная история.htm",
+      "directory": false,
+      "size": 664444,
+      "crc32": "C6C550AC",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гончаров/Иван Гончаров - Обломов.pdf",
+      "directory": false,
+      "size": 2628910,
+      "crc32": "CCBD4344",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гончаров/Иван Гончаров - Обыкновенная история.rtf",
+      "directory": false,
+      "size": 4087519,
+      "crc32": "E32AC291",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Гончаров/Обломов.jpeg",
+      "directory": false,
+      "size": 112742,
+      "crc32": "BB22B944",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Грибоедов",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Грибоедов/А. С. Грибоедов-Горе от ума.htm",
+      "directory": false,
+      "size": 261049,
+      "crc32": "371B78B9",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Грибоедов/Горе от ума - А. С Грибоедов.pdf",
+      "directory": false,
+      "size": 717632,
+      "crc32": "F1E7500C",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Грибоедов/Грибоедов А. С. - Горе от ума.rtf",
+      "directory": false,
+      "size": 713312,
+      "crc32": "C4C6FE70",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Достоевский Ф. - Преступление и наказание.rtf",
+      "directory": false,
+      "size": 7262280,
+      "crc32": "346364D0",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Достоевский Ф. М. - Бесы.rtf",
+      "directory": false,
+      "size": 8704207,
+      "crc32": "E95B13B9",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Достоевский Ф. М. - Братья Карамазовы.pdf",
+      "directory": false,
+      "size": 3753538,
+      "crc32": "E3A4006E",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Достоевский Ф. М. - Идиот.htm",
+      "directory": false,
+      "size": 1380286,
+      "crc32": "F4F8EE93",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Преступление и наказание - Достоевский Ф. М..pdf",
+      "directory": false,
+      "size": 2915681,
+      "crc32": "84AF983C",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Преступление и наказание.jpeg",
+      "directory": false,
+      "size": 56464,
+      "crc32": "45435450",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Ф. М. Достоевский - Братья Карамазовы.rtf",
+      "directory": false,
+      "size": 2082609,
+      "crc32": "C8B27432",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Ф. М. Достоевский - Идиот.pdf",
+      "directory": false,
+      "size": 2732157,
+      "crc32": "CEDA158E",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Федор Достоевский - Бесы.pdf",
+      "directory": false,
+      "size": 2735068,
+      "crc32": "FEB7B660",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Федор Достоевский - Идиот.rtf",
+      "directory": false,
+      "size": 1493464,
+      "crc32": "DC6523FA",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Достоевский/Федор Достоевский - Преступление и наказание.txt",
+      "directory": false,
+      "size": 1075134,
+      "crc32": "3560D6A1",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Куприн",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Куприн/Александр Куприн. Гранатовый браслет.htm",
+      "directory": false,
+      "size": 108101,
+      "crc32": "8C7C46F2",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Куприн/Александр Куприн. Поединок.pdf",
+      "directory": false,
+      "size": 485266,
+      "crc32": "6C74C89D",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Куприн/Куприн А. - Яма.pdf",
+      "directory": false,
+      "size": 1388481,
+      "crc32": "6322CE97",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Куприн/Куприн.png",
+      "directory": false,
+      "size": 187311,
+      "crc32": "D6826E36",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Лермонтов",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Лермонтов/Герой нашего времени.pdf",
+      "directory": false,
+      "size": 1478490,
+      "crc32": "AAD69CBF",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Лермонтов/Печорин.jpeg",
+      "directory": false,
+      "size": 86092,
+      "crc32": "E5A5A205",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Пушкин",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Пушкин/Арап Петра Великого.htm",
+      "directory": false,
+      "size": 153564,
+      "crc32": "66298148",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Пушкин/Барышня-Крестьянка.htm",
+      "directory": false,
+      "size": 43352,
+      "crc32": "EE207DFB",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Пушкин/Дубровский.pdf",
+      "directory": false,
+      "size": 486717,
+      "crc32": "D9BF1727",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Пушкин/Капитанская дочка.rtf",
+      "directory": false,
+      "size": 791472,
+      "crc32": "FC13CFBF",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Чехов",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Чехов/А. П. Чехов - Палата №6. Сборник.htm",
+      "directory": false,
+      "size": 1213819,
+      "crc32": "DD76BE87",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Чехов/А. П. Чехов - Собрание юмористических рассказов.rtf",
+      "directory": false,
+      "size": 3027861,
+      "crc32": "7376A6A3",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Чехов/А. П. Чехов - Три сестры.htm",
+      "directory": false,
+      "size": 133494,
+      "crc32": "6964D15A",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Чехов/Антон Чехов - Собрание юмористических рассказов.pdf",
+      "directory": false,
+      "size": 4638514,
+      "crc32": "1B91BA9D",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Чехов/Чехов А. - Палата №6. Сборник.pdf",
+      "directory": false,
+      "size": 3486165,
+      "crc32": "9AAC8587",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Чехов/Чехов А. П. - Три сестры.pdf",
+      "directory": false,
+      "size": 963897,
+      "crc32": "985A3C1E",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Чехов/Чехов Антон Павлович - Полное собрание рассказов.htm",
+      "directory": false,
+      "size": 2019040,
+      "crc32": "91D5B472",
+      "encrypted": false
+    },
+    {
+      "path": "DEMO-12/Проза/Чехов/Чехов Антон Павлович - Три сестры.rtf",
+      "directory": false,
+      "size": 1337516,
+      "crc32": "5FD6A914",
+      "encrypted": false
+    }
+  ]
+}

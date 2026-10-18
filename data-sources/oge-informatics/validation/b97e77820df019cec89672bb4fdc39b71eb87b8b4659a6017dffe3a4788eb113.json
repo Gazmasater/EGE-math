@@ -1,0 +1,105 @@
+{
+  "sha256": "b97e77820df019cec89672bb4fdc39b71eb87b8b4659a6017dffe3a4788eb113",
+  "size": 3277004,
+  "checkedAt": "2026-10-18T15:29:20.381110+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 9,
+    "directories": 3,
+    "uncompressedBytes": 3283762,
+    "evidence": "data-sources/oge-informatics/validation/b97e77820df019cec89672bb4fdc39b71eb87b8b4659a6017dffe3a4788eb113.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 3277004 bytes (3201 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 3277004\n\nEverything is Ok\n\nFolders: 3\nFiles: 9\nSize:       3283762\nCompressed: 3277004",
+  "members": [
+    {
+      "path": "49",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13/lori-0001193645-a7.jpg",
+      "directory": false,
+      "size": 321838,
+      "crc32": "10F07DA8",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13/lori-0001676377-a7.jpg",
+      "directory": false,
+      "size": 846204,
+      "crc32": "25BCFCF3",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13/lori-0002797254-a7.jpg",
+      "directory": false,
+      "size": 354896,
+      "crc32": "8867094F",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13/lori-0005966793-a7.jpg",
+      "directory": false,
+      "size": 535898,
+      "crc32": "C8A61D3D",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13/lori-0006267125-a7.jpg",
+      "directory": false,
+      "size": 479085,
+      "crc32": "30032680",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13/lori-0033449850-a7.jpg",
+      "directory": false,
+      "size": 270709,
+      "crc32": "237F8581",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13/lori-0034156477-a7.jpg",
+      "directory": false,
+      "size": 358966,
+      "crc32": "74417041",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13/Thumbs.db",
+      "directory": false,
+      "size": 107520,
+      "crc32": "5B1F9DA6",
+      "encrypted": false
+    },
+    {
+      "path": "49/Ежевика/ЗАДАНИЕ 13/Ежевика.odt",
+      "directory": false,
+      "size": 8646,
+      "crc32": "DE1D3227",
+      "encrypted": false
+    }
+  ]
+}

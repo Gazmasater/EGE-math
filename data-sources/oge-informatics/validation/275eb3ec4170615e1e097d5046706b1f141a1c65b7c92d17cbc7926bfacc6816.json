@@ -1,0 +1,77 @@
+{
+  "sha256": "275eb3ec4170615e1e097d5046706b1f141a1c65b7c92d17cbc7926bfacc6816",
+  "size": 2764837,
+  "checkedAt": "2026-10-18T15:23:12.780875+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 2764303,
+    "evidence": "data-sources/oge-informatics/validation/275eb3ec4170615e1e097d5046706b1f141a1c65b7c92d17cbc7926bfacc6816.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2764837 bytes (2701 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2764837\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       2764303\nCompressed: 2764837",
+  "members": [
+    {
+      "path": "27",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "27/28_Коала",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "27/28_Коала/Коа́ла.odt",
+      "directory": false,
+      "size": 7774,
+      "crc32": "0B231629",
+      "encrypted": false
+    },
+    {
+      "path": "27/28_Коала/Коала 1.jpg",
+      "directory": false,
+      "size": 515800,
+      "crc32": "460CD956",
+      "encrypted": false
+    },
+    {
+      "path": "27/28_Коала/Коала 2.jpg",
+      "directory": false,
+      "size": 522259,
+      "crc32": "FFA79DA5",
+      "encrypted": false
+    },
+    {
+      "path": "27/28_Коала/Коала 3.jpg",
+      "directory": false,
+      "size": 546049,
+      "crc32": "0AEBB8C7",
+      "encrypted": false
+    },
+    {
+      "path": "27/28_Коала/Коала 4.jpg",
+      "directory": false,
+      "size": 501469,
+      "crc32": "2BD5935A",
+      "encrypted": false
+    },
+    {
+      "path": "27/28_Коала/Коала 5.jpg",
+      "directory": false,
+      "size": 670952,
+      "crc32": "3DD4A389",
+      "encrypted": false
+    }
+  ]
+}

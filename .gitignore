@@ -6,5 +6,9 @@ Thumbs.db
 storage/
 __pycache__/
 
+# Original OGE archive bytes are restored from verified GitHub Release parts.
+fipi-assets/oge-informatics/docs/**/*.zip
+fipi-assets/oge-informatics/docs/**/*.rar
+
 # Content-addressed assets are generated at server startup. Retain old versions.
 public/cache/

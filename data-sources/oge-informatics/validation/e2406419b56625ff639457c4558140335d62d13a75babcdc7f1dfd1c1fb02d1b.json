@@ -1,0 +1,77 @@
+{
+  "sha256": "e2406419b56625ff639457c4558140335d62d13a75babcdc7f1dfd1c1fb02d1b",
+  "size": 2419824,
+  "checkedAt": "2026-10-18T15:26:38.666951+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 2419915,
+    "evidence": "data-sources/oge-informatics/validation/e2406419b56625ff639457c4558140335d62d13a75babcdc7f1dfd1c1fb02d1b.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 2419824 bytes (2364 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 2419824\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       2419915\nCompressed: 2419824",
+  "members": [
+    {
+      "path": "26",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "26/27_Лисица обыкновенная",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "26/27_Лисица обыкновенная/Лисица 1.jpg",
+      "directory": false,
+      "size": 480325,
+      "crc32": "C31D696B",
+      "encrypted": false
+    },
+    {
+      "path": "26/27_Лисица обыкновенная/Лисица 2.jpg",
+      "directory": false,
+      "size": 478171,
+      "crc32": "F3AB8D0F",
+      "encrypted": false
+    },
+    {
+      "path": "26/27_Лисица обыкновенная/Лисица 3.jpg",
+      "directory": false,
+      "size": 518459,
+      "crc32": "47A70317",
+      "encrypted": false
+    },
+    {
+      "path": "26/27_Лисица обыкновенная/Лисица 4.jpg",
+      "directory": false,
+      "size": 405410,
+      "crc32": "141A9438",
+      "encrypted": false
+    },
+    {
+      "path": "26/27_Лисица обыкновенная/Лисица 5.jpg",
+      "directory": false,
+      "size": 528411,
+      "crc32": "F7EFAB75",
+      "encrypted": false
+    },
+    {
+      "path": "26/27_Лисица обыкновенная/Лисица обыкновенная.odt",
+      "directory": false,
+      "size": 9139,
+      "crc32": "6C327264",
+      "encrypted": false
+    }
+  ]
+}

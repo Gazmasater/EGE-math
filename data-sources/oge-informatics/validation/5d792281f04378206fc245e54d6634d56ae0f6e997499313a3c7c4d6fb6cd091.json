@@ -1,0 +1,77 @@
+{
+  "sha256": "5d792281f04378206fc245e54d6634d56ae0f6e997499313a3c7c4d6fb6cd091",
+  "size": 4226818,
+  "checkedAt": "2026-10-18T15:16:02.384605+00:00",
+  "summary": {
+    "status": "passed",
+    "format": "zip",
+    "magic": "504b03040a000000",
+    "integrity": "passed",
+    "readable": true,
+    "encrypted": false,
+    "method": "7-Zip t: full decompression and checksum verification of every member",
+    "files": 6,
+    "directories": 2,
+    "uncompressedBytes": 4228814,
+    "evidence": "data-sources/oge-informatics/validation/5d792281f04378206fc245e54d6634d56ae0f6e997499313a3c7c4d6fb6cd091.json"
+  },
+  "testOutput": "7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n\nScanning the drive for archives:\n1 file, 4226818 bytes (4128 KiB)\n\nTesting archive: <archive>\n--\nPath = <archive>\nType = zip\nPhysical Size = 4226818\n\nEverything is Ok\n\nFolders: 2\nFiles: 6\nSize:       4228814\nCompressed: 4226818",
+  "members": [
+    {
+      "path": "12",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "12/13_Сервал",
+      "directory": true,
+      "size": 0,
+      "crc32": "",
+      "encrypted": false
+    },
+    {
+      "path": "12/13_Сервал/Сервал 1.jpg",
+      "directory": false,
+      "size": 582828,
+      "crc32": "BE7B0303",
+      "encrypted": false
+    },
+    {
+      "path": "12/13_Сервал/Сервал 2.jpg",
+      "directory": false,
+      "size": 409823,
+      "crc32": "277B4A85",
+      "encrypted": false
+    },
+    {
+      "path": "12/13_Сервал/Сервал 3.jpg",
+      "directory": false,
+      "size": 1416327,
+      "crc32": "2F30F7B1",
+      "encrypted": false
+    },
+    {
+      "path": "12/13_Сервал/Сервал 4.jpg",
+      "directory": false,
+      "size": 1047497,
+      "crc32": "AF5BA394",
+      "encrypted": false
+    },
+    {
+      "path": "12/13_Сервал/Сервал 5.jpg",
+      "directory": false,
+      "size": 764233,
+      "crc32": "1A717C28",
+      "encrypted": false
+    },
+    {
+      "path": "12/13_Сервал/Сервал.odt",
+      "directory": false,
+      "size": 8106,
+      "crc32": "77BB1E7E",
+      "encrypted": false
+    }
+  ]
+}
