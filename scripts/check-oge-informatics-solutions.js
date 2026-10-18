@@ -81,6 +81,7 @@ async function run(){
     report.apis.push(task.id);
     for(const [name,width,height] of [['desktop',1280,960],['mobile',390,844]]){
       const startedAt=Date.now();
+      await call('Page.bringToFront');
       await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
       const url=`${origin}/tasks/${task.id}`;await call('Page.navigate',{url});
       let ready=false;
@@ -89,6 +90,7 @@ async function run(){
         if(ready)break;await delay(100);
       }
       assert.ok(ready,`${task.id}: load timeout`);
+      await call('Page.bringToFront');
       await evaluate('document.fonts.ready.then(()=>true)');
       await evaluate(`(async()=>{for(const img of document.querySelectorAll('img[loading=lazy]'))img.loading='eager';await Promise.race([Promise.all(Array.from(document.images,i=>i.decode().catch(()=>false))),new Promise(r=>setTimeout(r,30000))]);scrollTo(0,0);return true;})()`);
       const info=await evaluate(`(()=>{const box=document.querySelector('.seo-task-solution'),formatted=box?.querySelector('.formatted-solution');return {
@@ -160,6 +162,7 @@ async function run(){
         await evaluate(`document.querySelectorAll('table.fipi-table-scrollable')[${index}].scrollLeft=0;true`);
         (report.scrollTables ||= []).push({id:task.id,viewport:name,index,range:table.range,lastColumnVisible:true});save();
       }
+      await call('Page.bringToFront');
       await evaluate(`document.querySelector('.solution-button').click();true`);
       let modalReady=false;
       for(let n=0;n<300;n++){
