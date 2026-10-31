@@ -29,7 +29,7 @@ async function run() {
   const physics = readPhysicsCatalog(root, {allAnswerTypes: true});
   const hub = await get('/ege');
   assert.deepEqual(graph(hub).find(item => item['@type'] === 'CollectionPage').mainEntity.itemListElement.map(item => item.url),
-    [canonical + '/ege/math', canonical + '/ege/physics']);
+    [canonical + '/ege/math', canonical + '/ege/physics', canonical + '/ege-informatics']);
   for (const [subject, name, source] of [['math', 'математике', math], ['physics', 'физике', physics]]) {
     const route = '/ege/' + subject, html = await get(route), data = graph(html);
     assert.equal((html.match(/<h1\b/g) || []).length, 1, route + ': H1');

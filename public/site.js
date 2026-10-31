@@ -118,5 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.head.append(script);
     }
   };
-  load();
+  // Let the page finish loading before the advertising SDK starts fetching its
+  // own scripts. The banner still requests automatically, without scrolling.
+  const startAfterLoad = () => window.setTimeout(load, 0);
+  if (document.readyState === 'complete') startAfterLoad();
+  else window.addEventListener('load', startAfterLoad, {once: true});
 });
