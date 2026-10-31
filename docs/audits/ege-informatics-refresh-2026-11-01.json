@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-11-01",
+  "source": "https://ege.fipi.ru/bank/index.php?proj=B9ACA5BBB2E19E434CD6BEC25284C67F",
+  "baseCommit": "cc327428d742999b497f51c457373637a8a1f440",
+  "section": "ege-informatics",
+  "pages": 25,
+  "before": 2475,
+  "after": 2475,
+  "added": [],
+  "removed": [],
+  "changed": [
+    {
+      "id": "EGEINF0348F9",
+      "file": "ege-informatics-21.raw.html",
+      "beforeSignature": "7c5116724d821178c45d7779d51acb27162baecfb4e75ae14132dfb0547cc7f3",
+      "afterSignature": "c0b4a599c48bbb60db4bf1acaddaacb2b023b454053656f30a37ae101d42e9f3",
+      "type": "type.large-data",
+      "onlyTextChange": "U+FFFD replaced by U+2219 (multiplication dot)",
+      "multiplicationSigns": 5
+    },
+    {
+      "id": "EGEINF494D7D",
+      "file": "ege-informatics-22.raw.html",
+      "beforeSignature": "60cfc4aae39ddffa2db6f9321520e506f7e3d8e584049468f193ad3eeb7b46c8",
+      "afterSignature": "f58187041d76309b5a0f7a3ee3de0930720a13fd637a7d692dc4a5ab619996a0",
+      "type": "type.large-data",
+      "onlyTextChange": "U+FFFD replaced by U+2219 (multiplication dot)",
+      "multiplicationSigns": 5
+    },
+    {
+      "id": "EGEINF2E1A79",
+      "file": "ege-informatics-22.raw.html",
+      "beforeSignature": "2eca9d8d6a0d63126bfc897725fac30cdddf8b4e74da36fafc50f11a07e78e66",
+      "afterSignature": "fb4e7663813ead4970ff5dfcce4028ee10d4a23befee8ee7d337ea9909b79dd2",
+      "type": "type.large-data",
+      "onlyTextChange": "U+FFFD replaced by U+2219 (multiplication dot)",
+      "multiplicationSigns": 5
+    },
+    {
+      "id": "EGEINF327EB5",
+      "file": "ege-informatics-22.raw.html",
+      "beforeSignature": "24d8753a964f8400cd7f7823428658627b8645ce51ade5f684404c740087a94c",
+      "afterSignature": "bd82a71981bb7af54e9d231b3a627d6cfea23d3c64fbec5a8df31ea74b3cc2f4",
+      "type": "type.large-data",
+      "onlyTextChange": "U+FFFD replaced by U+2219 (multiplication dot)",
+      "multiplicationSigns": 5
+    },
+    {
+      "id": "EGEINFBED6E1",
+      "file": "ege-informatics-23.raw.html",
+      "beforeSignature": "a966809ab72fee648c8f29da4bc380a4ed9d9f95f0fde79aade74e967d0300ab",
+      "afterSignature": "31c404587ad4d7eac1cdaf369f89d6c1efbddabeee83437a8687d01a1dd03686",
+      "type": "type.large-data",
+      "onlyTextChange": "U+FFFD replaced by U+2219 (multiplication dot)",
+      "multiplicationSigns": 6
+    }
+  ],
+  "assets": {
+    "referencedLocal": 1212,
+    "externalArchives": 388,
+    "added": [
+      {
+        "path": "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0816234219A2B5A148591346A8769DBC(copy2)/xs3qstsrc12B0EFEF1E5EA8D147AA643E0E4F86BC_2_1792506773.png",
+        "sha256": "9e28b14c1864682a34debe2e66641a9ec10f16ee21a120f5eff33aa32cecade4"
+      },
+      {
+        "path": "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/255AA11EBB43A97640B64F075D0C7E6D(copy2)/xs3qstsrc3070B7CD2C1FBDDD4123B69E91E78563_2_1792506798.png",
+        "sha256": "804ddaa8ef22c3ddcb08d7a6386cf0c5e51b6efbdb8b15194117bc2a5e1d6f62"
+      },
+      {
+        "path": "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/564947608856A153456651EA09CBDA86(copy2)/xs3qstsrc36B5C9C1609EAD3F45C6CE2AE0216116_2_1792504444.png",
+        "sha256": "804ddaa8ef22c3ddcb08d7a6386cf0c5e51b6efbdb8b15194117bc2a5e1d6f62"
+      },
+      {
+        "path": "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/854E168600589BCA468E1694311F3BEF(copy2)/xs3qstsrc4E836C054F92BF4447BC7AC708EC60C2_2_1792506823.png",
+        "sha256": "804ddaa8ef22c3ddcb08d7a6386cf0c5e51b6efbdb8b15194117bc2a5e1d6f62"
+      },
+      {
+        "path": "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/63F816699CCD810848A8CB32B28F02BE(copy2)/xs3qstsrcC457CDD2E70DAB7844E00B1B8F7C06A2_2_1792506728.png",
+        "sha256": "9e28b14c1864682a34debe2e66641a9ec10f16ee21a120f5eff33aa32cecade4"
+      }
+    ],
+    "previousFilesRetained": [
+      "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0816234219A2B5A148591346A8769DBC(copy2)/xs3qstsrc0816234219A2B5A148591346A8769DBC_2_1647429291.png",
+      "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/255AA11EBB43A97640B64F075D0C7E6D(copy2)/xs3qstsrc255AA11EBB43A97640B64F075D0C7E6D_2_1647429474.png",
+      "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/564947608856A153456651EA09CBDA86(copy2)/xs3qstsrc564947608856A153456651EA09CBDA86_2_1647429639.png",
+      "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/854E168600589BCA468E1694311F3BEF(copy2)/xs3qstsrc854E168600589BCA468E1694311F3BEF_2_1647429587.png",
+      "fipi-assets/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/63F816699CCD810848A8CB32B28F02BE(copy2)/xs3qstsrc63F816699CCD810848A8CB32B28F02BE_2_1644925218.png"
+    ]
+  },
+  "validation": {
+    "catalogue": {
+      "tasks": 2475,
+      "groups": 33,
+      "errors": 0
+    },
+    "tests": {
+      "egeInformatics": 6,
+      "sharedCatalogues": 26,
+      "failures": 0
+    },
+    "browser": {
+      "pages": 172,
+      "interactions": 6,
+      "noJavaScript": 6,
+      "errors": 0,
+      "reportSha256": "d637be9cc059e39a0d3b9ddb87615ba77088737570684a841da3feaee5d9c529"
+    },
+    "formulas": {
+      "pages": 10,
+      "errors": 0,
+      "visuallyReviewedTaskIds": [
+        "EGEINF0348F9",
+        "EGEINF494D7D",
+        "EGEINF2E1A79",
+        "EGEINF327EB5",
+        "EGEINFBED6E1"
+      ],
+      "widths": [
+        1280,
+        390
+      ],
+      "reportSha256": "19e2464fa2d122b82340592137289591a97873218de8f3684a71d1b52c33ca9d"
+    },
+    "http": {
+      "section": "ege-informatics",
+      "catalogues": 85,
+      "catalogPages": 958,
+      "ogeTasks": 2475,
+      "existingTasks": 10467,
+      "sitemapUrls": 16334,
+      "errors": 0
+    }
+  }
+}
