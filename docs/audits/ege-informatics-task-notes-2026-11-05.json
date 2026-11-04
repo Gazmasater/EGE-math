@@ -1,0 +1,600 @@
+{
+  "scope": "Пометки по 32 отложенным решениям; это документация, не реестр публикации.",
+  "basedOn": "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+  "sourceCheckedAt": "2026-11-04T22:10:57.632Z",
+  "publicationBaseline": {
+    "published": 2443,
+    "total": 2475,
+    "date": "2026-11-04",
+    "liveDatabaseRecounted": false
+  },
+  "counts": {
+    "total": 32,
+    "sourceRecoveredPendingSolutionVerification": 6,
+    "heldForSourceClarification": 26
+  },
+  "publicationRequirement": "После расчёта и независимой проверки выполнить аудит всего раздела, API и отображения; в рамках этих пометок новые решения не публиковались.",
+  "tasks": [
+    {
+      "id": "EGEINF64212F",
+      "shortId": "64212F",
+      "historicalGroup": "missing_source_file",
+      "status": "source_recovered_pending_solution_verification",
+      "conditionSignature": "7dff28c91d93fde3c9bb98f6768768750feac3247e6f2acbce23f795e4191b35",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+      ],
+      "statusLabel": "Исходник восстановлен; требуется решение",
+      "note": "Официальный архив получен и проверен: таблица из 25 процессов. Прежняя причина отсутствия файла снята.",
+      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF64212F.zip",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/6d1605b190ff42b6abf6548167e94b0e/img1_1773136545.zip",
+        "sha256": "e427d465356a21d226bc7c69593730b4d00c178c943e428071c5b1d229cd4dfd",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF0D9B7C",
+      "shortId": "0D9B7C",
+      "historicalGroup": "missing_source_file",
+      "status": "source_recovered_pending_solution_verification",
+      "conditionSignature": "474092f02bcda95e35f38fb275abd3cec4f816cf2806525bef62fb494f067c85",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+      ],
+      "statusLabel": "Исходник восстановлен; требуется решение",
+      "note": "Официальный архив получен и проверен: 1_27_A.txt: 406 строк данных; 1_27_B.txt: 1851 строк данных. Прежняя причина отсутствия файла снята.",
+      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF0D9B7C.zip",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/32ab74b427ef4633955a187639badc74/img1_1786620643.zip",
+        "sha256": "994efa853f1d0b265e91dac2774d07a96b594d17938402a0ea4cebd83a019cda",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF9C15B9",
+      "shortId": "9C15B9",
+      "historicalGroup": "missing_source_file",
+      "status": "source_recovered_pending_solution_verification",
+      "conditionSignature": "bf734676723e82748f2c98288b7dbb15c267db3544632213aa68630ccdd8354e",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+      ],
+      "statusLabel": "Исходник восстановлен; требуется решение",
+      "note": "Официальный архив получен и проверен: 3_27_A.txt: 457 строк данных; 3_27_B.txt: 1230 строк данных. Прежняя причина отсутствия файла снята.",
+      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF9C15B9.zip",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/4bb5a836e5bf4e1fbf8617842098e457/img1_1786621799.zip",
+        "sha256": "c65d13ca25e9cce49488e654535eeb06dda4a4b220dc125777fc5c41e2d31444",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF90EECD",
+      "shortId": "90EECD",
+      "historicalGroup": "missing_source_file",
+      "status": "source_recovered_pending_solution_verification",
+      "conditionSignature": "7d2ea8e4fee46582efcf23651db9999e402b45ecca1689712130c02a14aa16fd",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+      ],
+      "statusLabel": "Исходник восстановлен; требуется решение",
+      "note": "Официальный архив получен и проверен: 2_27_A.txt: 406 строк данных; 2_27_B.txt: 1851 строк данных. Прежняя причина отсутствия файла снята.",
+      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF90EECD.zip",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/ab7c2c90737740a999b5a0fd117310b5/img1_1786621669.zip",
+        "sha256": "abf64b2936cf08f2acdbe469c2651d4a0a39aab9d5bf6effc423a5eec08423fb",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF7B95E8",
+      "shortId": "7B95E8",
+      "historicalGroup": "missing_source_file",
+      "status": "source_recovered_pending_solution_verification",
+      "conditionSignature": "51a0145e14c2b555cb2eed2cbb530b18d615e6e82e4b2b3b57e640c8d1f93124",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+      ],
+      "statusLabel": "Исходник восстановлен; требуется решение",
+      "note": "Официальный архив получен и проверен: 5_27_A.txt: 457 строк данных; 5_27_B.txt: 1230 строк данных. Прежняя причина отсутствия файла снята.",
+      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF7B95E8.zip",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c3fb48ea61ef45ea8dbaf9493ccfd3a6/img1_1786622004.zip",
+        "sha256": "90b3eacba5f0c1902cc3562bec9b67f6913830bc3337088ee591cdba715c7222",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF577EED",
+      "shortId": "577EED",
+      "historicalGroup": "missing_source_file",
+      "status": "source_recovered_pending_solution_verification",
+      "conditionSignature": "13451d1ec53f6baa1d4ca1d637a3952822054a0cc96fea6083727501343ebd10",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+      ],
+      "statusLabel": "Исходник восстановлен; требуется решение",
+      "note": "Официальный архив получен и проверен: 4_27_A.txt: 457 строк данных; 4_27_B.txt: 1230 строк данных. Прежняя причина отсутствия файла снята.",
+      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF577EED.zip",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c8733c22c0624c8a83f1ace65a5e6fba/img1_1786621900.zip",
+        "sha256": "9b60fc7cf86b8e1dc367dc5054804c1db6e4a5768a46a3a66f79de11e790c5b4",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF79404A",
+      "shortId": "79404A",
+      "historicalGroup": "contradictory_coin_bound",
+      "status": "held",
+      "conditionSignature": "a5a4673ba3a1bb370d11a21fcc8fb77b656599a2ff4e0fc2f3e77239f513b5c9",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается разрешение противоречия",
+      "note": "В исходной таблице Робота A1 = 108, при верхней границе 100 в условии.",
+      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0390B221E5A4A15A41374CBB996C719F/img1_1739452053.zip",
+        "sha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF77DB46",
+      "shortId": "77DB46",
+      "historicalGroup": "contradictory_coin_bound",
+      "status": "held",
+      "conditionSignature": "c75cafdf8609ff61fcdc4584b023dd36e833ee1624b17803c9e86fe3d60e48a4",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается разрешение противоречия",
+      "note": "В исходной таблице Робота A1 = 107, при верхней границе 100 в условии.",
+      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/03D7347440FC865E4061FC6F52C292B8/img1_1739452037.zip",
+        "sha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINFB4F848",
+      "shortId": "B4F848",
+      "historicalGroup": "contradictory_coin_bound",
+      "status": "held",
+      "conditionSignature": "3e9ce2b248fa0405e9f22dbda55b7836a2678e182feb0c3f671cca30c74d5045",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается разрешение противоречия",
+      "note": "В исходной таблице Робота A1 = 105, при верхней границе 100 в условии.",
+      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/04F10FF773829C7A49316120AB88B35E/img1_1739451997.zip",
+        "sha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINFE60642",
+      "shortId": "E60642",
+      "historicalGroup": "contradictory_coin_bound",
+      "status": "held",
+      "conditionSignature": "8f0cf3cc4bfde044e657d92debf4f6803ed1e795c64f64ce34f918e7857ec2af",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается разрешение противоречия",
+      "note": "В исходной таблице Робота A1 = 102, при верхней границе 100 в условии.",
+      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0C62DD3AA7B485CF48F63FC63DA9B332/img1_1739451859.zip",
+        "sha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF779E0A",
+      "shortId": "779E0A",
+      "historicalGroup": "contradictory_coin_bound",
+      "status": "held",
+      "conditionSignature": "5def6faa6a333d0f35a726ab4ee9b8f3a03be8669b847eec4a1d9eb0b5852517",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается разрешение противоречия",
+      "note": "В исходной таблице Робота A1 = 106, при верхней границе 100 в условии.",
+      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/239B3C371E3195C54C4258A921FDE9E7/img1_1739452018.zip",
+        "sha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF34C97E",
+      "shortId": "34C97E",
+      "historicalGroup": "contradictory_coin_bound",
+      "status": "held",
+      "conditionSignature": "faf5d08d1ffae1092b501a80d33918bb1319d8a4302fb0fac6052828f3c619b0",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается разрешение противоречия",
+      "note": "В исходной таблице Робота A1 = 101, при верхней границе 100 в условии.",
+      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3ECA0B321AF3AE7A4359D54119B17121/img1_1739451840.zip",
+        "sha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF72C252",
+      "shortId": "72C252",
+      "historicalGroup": "contradictory_coin_bound",
+      "status": "held",
+      "conditionSignature": "adb423b82c498b8fa6a8d5cc537702d325f1a6c8f8960bd66a547ab3d2e153aa",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается разрешение противоречия",
+      "note": "В исходной таблице Робота A1 = 104, при верхней границе 100 в условии.",
+      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/836A66880AC8BF00421720E9DD5B8776/img1_1739451976.zip",
+        "sha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF2F9ABA",
+      "shortId": "2F9ABA",
+      "historicalGroup": "ambiguous_word_boundary",
+      "status": "held",
+      "conditionSignature": "5d5bcdfe7acc919471b21959d461e75e07ba7fd76455f21f109224df67040d2b",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/audits/ege-informatics-remaining-2026-11-04/conditional-drafts.json"
+      ],
+      "statusLabel": "Ожидается правило границы слова",
+      "note": "Поиск Writer даёт 38; при сохранении дефисного сочетания целиком — 34. Оба варианта независимо проверены.",
+      "nextAction": "Получить первичный ключ или пояснение о дефисах именно для этой задачи; до этого окончательный ответ не выбирать.",
+      "answer": null,
+      "conditionalAnswers": {
+        "writer": 38,
+        "hyphenatedCompound": 34
+      },
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/9C61DF660D2C8B354AE248B33278E84D/img1_1620723389.rar",
+        "sha256": "9189af75fcf7631cbddceb346aeecfccb02e7b702021b384b934cfea0781868f",
+        "integrity": "RAR integrity test passed (7-Zip)"
+      }
+    },
+    {
+      "id": "EGEINF671119",
+      "shortId": "671119",
+      "historicalGroup": "ambiguous_word_boundary",
+      "status": "held",
+      "conditionSignature": "7c51fa70f6ceb8aff032b868a2b60abf4d08b0325104eb78fcc5bce0c41e7a3d",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/audits/ege-informatics-remaining-2026-11-04/conditional-drafts.json"
+      ],
+      "statusLabel": "Ожидается правило границы слова",
+      "note": "Поиск Writer даёт 37; при сохранении дефисного сочетания целиком — 35. Оба варианта независимо проверены.",
+      "nextAction": "Получить первичный ключ или пояснение о дефисах именно для этой задачи; до этого окончательный ответ не выбирать.",
+      "answer": null,
+      "conditionalAnswers": {
+        "writer": 37,
+        "hyphenatedCompound": 35
+      },
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/B1B9F727D81E89DD4C69DE63B1A63994/img1_1620723192.rar",
+        "sha256": "491e49730e0d0211aca953346ba3d748c0252030fa377bb4820771e21ab2f58a",
+        "integrity": "RAR integrity test passed (7-Zip)"
+      }
+    },
+    {
+      "id": "EGEINF870FE9",
+      "shortId": "870FE9",
+      "historicalGroup": "ambiguous_word_boundary",
+      "status": "held",
+      "conditionSignature": "6cd60e16e3559c8bf4a41fde86d79bb2b2fbb103643c77683a07b6ad50912721",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/audits/ege-informatics-remaining-2026-11-04/conditional-drafts.json"
+      ],
+      "statusLabel": "Ожидается правило границы слова",
+      "note": "Поиск Writer даёт 11; при сохранении дефисного сочетания целиком — 15. Оба варианта независимо проверены.",
+      "nextAction": "Получить первичный ключ или пояснение о дефисах именно для этой задачи; до этого окончательный ответ не выбирать.",
+      "answer": null,
+      "conditionalAnswers": {
+        "writer": 11,
+        "hyphenatedCompound": 15
+      },
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/EA07A802BEFA9A4D4CEE5E0983486224/img1_1620723352.rar",
+        "sha256": "9189af75fcf7631cbddceb346aeecfccb02e7b702021b384b934cfea0781868f",
+        "integrity": "RAR integrity test passed (7-Zip)"
+      }
+    },
+    {
+      "id": "EGEINFE4A3C2",
+      "shortId": "E4A3C2",
+      "historicalGroup": "ambiguous_word_boundary",
+      "status": "held",
+      "conditionSignature": "560695e9b59a1c7e227e6788a7aa2eac3fb3b1fd4e60f478da145df8a90dd2f5",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/audits/ege-informatics-remaining-2026-11-04/conditional-drafts.json"
+      ],
+      "statusLabel": "Ожидается правило границы слова",
+      "note": "Поиск Writer даёт 52; при сохранении дефисного сочетания целиком — 54. Оба варианта независимо проверены.",
+      "nextAction": "Получить первичный ключ или пояснение о дефисах именно для этой задачи; до этого окончательный ответ не выбирать.",
+      "answer": null,
+      "conditionalAnswers": {
+        "writer": 52,
+        "hyphenatedCompound": 54
+      },
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/8A7106F691E9B3F04ECAC821FA275650/img1_1620723198.rar",
+        "sha256": "491e49730e0d0211aca953346ba3d748c0252030fa377bb4820771e21ab2f58a",
+        "integrity": "RAR integrity test passed (7-Zip)"
+      }
+    },
+    {
+      "id": "EGEINFEF0000",
+      "shortId": "EF0000",
+      "historicalGroup": "unconfirmed_rate_exponent",
+      "status": "held",
+      "conditionSignature": "73e546557ee80b32f8b1b61e888f2ba912253eae2c2315308cdcc2843b38ca8c",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается исходная запись степени",
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Ранее найденные вторичные свидетельства не заменяют первичное подтверждение.",
+      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+    },
+    {
+      "id": "EGEINF5459A3",
+      "shortId": "5459A3",
+      "historicalGroup": "unconfirmed_rate_exponent",
+      "status": "held",
+      "conditionSignature": "5fb37b49aec4c703a1254fccd4f570e688b4a4d1d2ebe88e08d96240a6962822",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается исходная запись степени",
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Ранее найденные вторичные свидетельства не заменяют первичное подтверждение.",
+      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+    },
+    {
+      "id": "EGEINF502BCF",
+      "shortId": "502BCF",
+      "historicalGroup": "unconfirmed_rate_exponent",
+      "status": "held",
+      "conditionSignature": "8c1b97340afcbc3f01b5e47e969d28f36035eb4e7f07ebee0c50c6553de5013f",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается исходная запись степени",
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
+      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+    },
+    {
+      "id": "EGEINF47E49C",
+      "shortId": "47E49C",
+      "historicalGroup": "unconfirmed_rate_exponent",
+      "status": "held",
+      "conditionSignature": "9865f6e069624ed6caed2c42b0523480ff40529e6d2f6e226b3c554e0bb68989",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается исходная запись степени",
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
+      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+    },
+    {
+      "id": "EGEINF57579A",
+      "shortId": "57579A",
+      "historicalGroup": "unconfirmed_rate_exponent",
+      "status": "held",
+      "conditionSignature": "0baa73a7cff5d3308efc31aa339bf9cb2b48ba83cb644a39ba92c87412e75be0",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается исходная запись степени",
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
+      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+    },
+    {
+      "id": "EGEINFBAE6EF",
+      "shortId": "BAE6EF",
+      "historicalGroup": "unconfirmed_rate_exponent",
+      "status": "held",
+      "conditionSignature": "2939929b99843b5a91b5cfb0e6287d61e63536aed5b932616e4c5d2858f97d99",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается исходная запись степени",
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
+      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+    },
+    {
+      "id": "EGEINF4CAD3D",
+      "shortId": "4CAD3D",
+      "historicalGroup": "unconfirmed_rate_exponent",
+      "status": "held",
+      "conditionSignature": "c9d4dbd668c4267d0aaf0b0d8c6045f2e9490db86a41343436432b2cb03c3f23",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается исходная запись степени",
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
+      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+    },
+    {
+      "id": "EGEINFCE2CF3",
+      "shortId": "CE2CF3",
+      "historicalGroup": "wrong_attachment_format",
+      "status": "held",
+      "conditionSignature": "3bb69a7b81c2731b6b94179e04226d311015ac05501ea6825d947287e026fbb8",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается корректное вложение",
+      "note": "В условии алфавит ABCDU, в полученном файле — ACDEF.",
+      "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/65EACC155F7992584CCD065E723BCDCC/img1_1661424753.zip",
+        "sha256": "8fb58a8e1bb9b1b698033997d85f55ee4d2018e09c7cddabd6c42e386485b7b3",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF1F25B2",
+      "shortId": "1F25B2",
+      "historicalGroup": "wrong_attachment_format",
+      "status": "held",
+      "conditionSignature": "85bacbfbf39f8b98527f427fbf5e8c1ec261df8a052e6bf738470439ba4995a3",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается корректное вложение",
+      "note": "Архив содержит буквенную строку 331_24.txt вместо размеров коробок.",
+      "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/D5BAB1F9E9A19541446F4819D1A37378/img1_1661424890.zip",
+        "sha256": "72067e0865f7c01810001da5d9e45e62b6423b526b9649b6e7dc64b12be7e0b1",
+        "integrity": "RAR integrity test passed (7-Zip)"
+      }
+    },
+    {
+      "id": "EGEINF7F1EAA",
+      "shortId": "7F1EAA",
+      "historicalGroup": "wrong_attachment_format",
+      "status": "held",
+      "conditionSignature": "f55b941ae99b54c0b9610ed9c716c075a9fe484702f39aa31c859037adb8ed28",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается корректное вложение",
+      "note": "Вложены одномерные последовательности 307_27_A/B, отсутствуют требуемые пары «ряд, место».",
+      "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/93951C18AC3D8B744125E97940F855B0/img1_1689856649.zip",
+        "sha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF327EB5",
+      "shortId": "327EB5",
+      "historicalGroup": "wrong_attachment_format",
+      "status": "held",
+      "conditionSignature": "bd82a71981bb7af54e9d231b3a627d6cfea23d3c64fbec5a8df31ea74b3cc2f4",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+      ],
+      "statusLabel": "Ожидается корректное вложение",
+      "note": "Вместо одного N в заголовках файлов стоят пары 100 113 и 1200000 12013; это формат с дополнительным параметром.",
+      "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/854E168600589BCA468E1694311F3BEF/img1_1661424780.zip",
+        "sha256": "e002ef198d3c8e5bcca138bb49a094f3974f83c10c4ae9302c292684e3dbe325",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF290F15",
+      "shortId": "290F15",
+      "historicalGroup": "ambiguous_arrival_ties",
+      "status": "held",
+      "conditionSignature": "1efddb62b53eb39e615cb9e1eb2c7726e1208425baddcbb7905d733fa229a636",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md"
+      ],
+      "statusLabel": "Ожидается порядок равных заявок",
+      "note": "Допустимые порядки заявок с одинаковым временем поступления приводят к разным ответам; правило выбора порядка не задано.",
+      "nextAction": "Получить первичное правило обработки равновременных заявок, затем повторить расчёт и независимую проверку.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/5682B145452C9665458066C6752DD8DF/img1_1683032259.zip",
+        "sha256": "9927bf5ce56c253fb6e9c997c5c8fb8d4cf02d11fb0176654df6cc28b1715e14",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINFB3C563",
+      "shortId": "B3C563",
+      "historicalGroup": "ambiguous_arrival_ties",
+      "status": "held",
+      "conditionSignature": "f60802f7fdd71db09befb5a7c0ec05546af8648f463b241b87f71a772b7bbb72",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md"
+      ],
+      "statusLabel": "Ожидается порядок равных заявок",
+      "note": "Допустимые порядки заявок с одинаковым временем поступления приводят к разным ответам; правило выбора порядка не задано.",
+      "nextAction": "Получить первичное правило обработки равновременных заявок, затем повторить расчёт и независимую проверку.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/D4EAE892B00D81BF4013F48108F6272F/img1_1683033145.zip",
+        "sha256": "e0d618aa4397b8fc56f6031ff6f0239197247ab757499f7919e95ac086d12aaa",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINFA99635",
+      "shortId": "A99635",
+      "historicalGroup": "ambiguous_arrival_ties",
+      "status": "held",
+      "conditionSignature": "f53539bf4fd0d88bdd750c46425394d6799f372936983328e22592aa46e5273a",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md"
+      ],
+      "statusLabel": "Ожидается порядок равных заявок",
+      "note": "Допустимые порядки заявок с одинаковым временем поступления приводят к разным ответам; правило выбора порядка не задано.",
+      "nextAction": "Получить первичное правило обработки равновременных заявок, затем повторить расчёт и независимую проверку.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/E98BBD44378694B24A2702B0672CA462/img1_1683032983.zip",
+        "sha256": "912078ede12ae777df99f5b6950539b11045abf0e35f8f08119d80792f767624",
+        "integrity": "ZIP CRC passed"
+      }
+    },
+    {
+      "id": "EGEINF8ECB7C",
+      "shortId": "8ECB7C",
+      "historicalGroup": "ambiguous_arrival_ties",
+      "status": "held",
+      "conditionSignature": "58625a7848f1a4246beac052a88730411f78ddd4c738e4f2f793088b9faff8cc",
+      "evidence": [
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md"
+      ],
+      "statusLabel": "Ожидается порядок равных заявок",
+      "note": "Допустимые порядки заявок с одинаковым временем поступления приводят к разным ответам; правило выбора порядка не задано. В сохранённой проверке 23 порядка дали 18 разных ответов.",
+      "nextAction": "Получить первичное правило обработки равновременных заявок, затем повторить расчёт и независимую проверку.",
+      "originalArchive": {
+        "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3faac495abdc4e0291f99b15adbb44f8/img1_1760104253.zip",
+        "sha256": "1c73f7b08af9839ded17a3a423379f8ffd16fd0fcd459865e961dc54be5c6521",
+        "integrity": "ZIP CRC passed"
+      }
+    }
+  ]
+}
