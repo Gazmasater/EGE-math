@@ -1,139 +1,164 @@
 {
-  "scope": "Пометки по 32 отложенным решениям; это документация, не реестр публикации.",
+  "scope": "Текущие пометки по 32 ранее отложенным решениям: шесть опубликованы, 26 ожидают уточнения первоисточника.",
   "basedOn": "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
   "sourceCheckedAt": "2026-11-04T22:10:57.632Z",
   "publicationBaseline": {
-    "published": 2443,
+    "published": 2449,
     "total": 2475,
-    "date": "2026-11-04",
-    "liveDatabaseRecounted": false
+    "date": "2026-11-04T23:38:42.623175+00:00",
+    "liveDatabaseRecounted": true
   },
   "counts": {
     "total": 32,
-    "sourceRecoveredPendingSolutionVerification": 6,
+    "publishedAfterSourceRecovery": 6,
+    "sourceRecoveredPendingSolutionVerification": 0,
     "heldForSourceClarification": 26
   },
-  "publicationRequirement": "После расчёта и независимой проверки выполнить аудит всего раздела, API и отображения; в рамках этих пометок новые решения не публиковались.",
+  "publicationRequirement": "Шесть восстановленных задач опубликованы после независимых расчётов, полного аудита и визуальных проверок. Остальные 26 не опубликованы.",
   "tasks": [
     {
       "id": "EGEINF64212F",
       "shortId": "64212F",
       "historicalGroup": "missing_source_file",
-      "status": "source_recovered_pending_solution_verification",
+      "status": "published_verified",
       "conditionSignature": "7dff28c91d93fde3c9bb98f6768768750feac3247e6f2acbce23f795e4191b35",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json",
+        "docs/audits/ege-informatics-official-six-2026-11-05.json"
       ],
-      "statusLabel": "Исходник восстановлен; требуется решение",
-      "note": "Официальный архив получен и проверен: таблица из 25 процессов. Прежняя причина отсутствия файла снята.",
-      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "statusLabel": "Решение опубликовано и проверено",
+      "note": "Официальный архив восстановлен; ответ 1. Независимые расчёты, аудит всего раздела, API и отображение прошли.",
+      "nextAction": "Завершено; при изменении первоисточника повторить проверку.",
       "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF64212F.zip",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/6d1605b190ff42b6abf6548167e94b0e/img1_1773136545.zip",
         "sha256": "e427d465356a21d226bc7c69593730b4d00c178c943e428071c5b1d229cd4dfd",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": "1",
+      "publishedAt": "2026-11-04T23:38:42.623175+00:00",
+      "publishedSourceSignature": "e83915e021901ebbee84f2f21d0647bcdb4586ffa242d07c41df67c1e4fd1ad8"
     },
     {
       "id": "EGEINF0D9B7C",
       "shortId": "0D9B7C",
       "historicalGroup": "missing_source_file",
-      "status": "source_recovered_pending_solution_verification",
+      "status": "published_verified",
       "conditionSignature": "474092f02bcda95e35f38fb275abd3cec4f816cf2806525bef62fb494f067c85",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json",
+        "docs/audits/ege-informatics-official-six-2026-11-05.json"
       ],
-      "statusLabel": "Исходник восстановлен; требуется решение",
-      "note": "Официальный архив получен и проверен: 1_27_A.txt: 406 строк данных; 1_27_B.txt: 1851 строк данных. Прежняя причина отсутствия файла снята.",
-      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "statusLabel": "Решение опубликовано и проверено",
+      "note": "Официальный архив восстановлен; ответ 76965 201557 137814 30732. Независимые расчёты, аудит всего раздела, API и отображение прошли.",
+      "nextAction": "Завершено; при изменении первоисточника повторить проверку.",
       "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF0D9B7C.zip",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/32ab74b427ef4633955a187639badc74/img1_1786620643.zip",
         "sha256": "994efa853f1d0b265e91dac2774d07a96b594d17938402a0ea4cebd83a019cda",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": "76965 201557 137814 30732",
+      "publishedAt": "2026-11-04T23:38:42.623175+00:00",
+      "publishedSourceSignature": "823a3ddd1792d936414660a7a204beeb588aa029a4090471268cd41d6650c7c2"
     },
     {
       "id": "EGEINF9C15B9",
       "shortId": "9C15B9",
       "historicalGroup": "missing_source_file",
-      "status": "source_recovered_pending_solution_verification",
+      "status": "published_verified",
       "conditionSignature": "bf734676723e82748f2c98288b7dbb15c267db3544632213aa68630ccdd8354e",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json",
+        "docs/audits/ege-informatics-official-six-2026-11-05.json"
       ],
-      "statusLabel": "Исходник восстановлен; требуется решение",
-      "note": "Официальный архив получен и проверен: 3_27_A.txt: 457 строк данных; 3_27_B.txt: 1230 строк данных. Прежняя причина отсутствия файла снята.",
-      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "statusLabel": "Решение опубликовано и проверено",
+      "note": "Официальный архив восстановлен; ответ 3 129201 4601 13. Независимые расчёты, аудит всего раздела, API и отображение прошли.",
+      "nextAction": "Завершено; при изменении первоисточника повторить проверку.",
       "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF9C15B9.zip",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/4bb5a836e5bf4e1fbf8617842098e457/img1_1786621799.zip",
         "sha256": "c65d13ca25e9cce49488e654535eeb06dda4a4b220dc125777fc5c41e2d31444",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": "3 129201 4601 13",
+      "publishedAt": "2026-11-04T23:38:42.623175+00:00",
+      "publishedSourceSignature": "d7f21663065ecceff4a55c0ff194f024de9ea0aee7155c52d7b659962834c348"
     },
     {
       "id": "EGEINF90EECD",
       "shortId": "90EECD",
       "historicalGroup": "missing_source_file",
-      "status": "source_recovered_pending_solution_verification",
+      "status": "published_verified",
       "conditionSignature": "7d2ea8e4fee46582efcf23651db9999e402b45ecca1689712130c02a14aa16fd",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json",
+        "docs/audits/ege-informatics-official-six-2026-11-05.json"
       ],
-      "statusLabel": "Исходник восстановлен; требуется решение",
-      "note": "Официальный архив получен и проверен: 2_27_A.txt: 406 строк данных; 2_27_B.txt: 1851 строк данных. Прежняя причина отсутствия файла снята.",
-      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "statusLabel": "Решение опубликовано и проверено",
+      "note": "Официальный архив восстановлен; ответ 84057 196841 116881 38914. Независимые расчёты, аудит всего раздела, API и отображение прошли.",
+      "nextAction": "Завершено; при изменении первоисточника повторить проверку.",
       "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF90EECD.zip",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/ab7c2c90737740a999b5a0fd117310b5/img1_1786621669.zip",
         "sha256": "abf64b2936cf08f2acdbe469c2651d4a0a39aab9d5bf6effc423a5eec08423fb",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": "84057 196841 116881 38914",
+      "publishedAt": "2026-11-04T23:38:42.623175+00:00",
+      "publishedSourceSignature": "1331c1b15c4a203a71db6be2380d857e687a4462176cb7a716d98d8eee456d76"
     },
     {
       "id": "EGEINF7B95E8",
       "shortId": "7B95E8",
       "historicalGroup": "missing_source_file",
-      "status": "source_recovered_pending_solution_verification",
+      "status": "published_verified",
       "conditionSignature": "51a0145e14c2b555cb2eed2cbb530b18d615e6e82e4b2b3b57e640c8d1f93124",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json",
+        "docs/audits/ege-informatics-official-six-2026-11-05.json"
       ],
-      "statusLabel": "Исходник восстановлен; требуется решение",
-      "note": "Официальный архив получен и проверен: 5_27_A.txt: 457 строк данных; 5_27_B.txt: 1230 строк данных. Прежняя причина отсутствия файла снята.",
-      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "statusLabel": "Решение опубликовано и проверено",
+      "note": "Официальный архив восстановлен; ответ 14 129272 22689 21. Независимые расчёты, аудит всего раздела, API и отображение прошли.",
+      "nextAction": "Завершено; при изменении первоисточника повторить проверку.",
       "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF7B95E8.zip",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c3fb48ea61ef45ea8dbaf9493ccfd3a6/img1_1786622004.zip",
         "sha256": "90b3eacba5f0c1902cc3562bec9b67f6913830bc3337088ee591cdba715c7222",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": "14 129272 22689 21",
+      "publishedAt": "2026-11-04T23:38:42.623175+00:00",
+      "publishedSourceSignature": "65fc86f7756392062ecf223475ac07bdeaf39fbdc8594d8d49637c7d181fca28"
     },
     {
       "id": "EGEINF577EED",
       "shortId": "577EED",
       "historicalGroup": "missing_source_file",
-      "status": "source_recovered_pending_solution_verification",
+      "status": "published_verified",
       "conditionSignature": "13451d1ec53f6baa1d4ca1d637a3952822054a0cc96fea6083727501343ebd10",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "data-sources/ege-informatics/official-2026-11-05/manifest.json"
+        "data-sources/ege-informatics/official-2026-11-05/manifest.json",
+        "docs/audits/ege-informatics-official-six-2026-11-05.json"
       ],
-      "statusLabel": "Исходник восстановлен; требуется решение",
-      "note": "Официальный архив получен и проверен: 4_27_A.txt: 457 строк данных; 4_27_B.txt: 1230 строк данных. Прежняя причина отсутствия файла снята.",
-      "nextAction": "Рассчитать решение по сохранённым файлам, независимо проверить результат и подготовить развёрнутый разбор.",
+      "statusLabel": "Решение опубликовано и проверено",
+      "note": "Официальный архив восстановлен; ответ 7 128336 18339 13. Независимые расчёты, аудит всего раздела, API и отображение прошли.",
+      "nextAction": "Завершено; при изменении первоисточника повторить проверку.",
       "archivePath": "data-sources/ege-informatics/official-2026-11-05/EGEINF577EED.zip",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c8733c22c0624c8a83f1ace65a5e6fba/img1_1786621900.zip",
         "sha256": "9b60fc7cf86b8e1dc367dc5054804c1db6e4a5768a46a3a66f79de11e790c5b4",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": "7 128336 18339 13",
+      "publishedAt": "2026-11-04T23:38:42.623175+00:00",
+      "publishedSourceSignature": "22fc9aee7fb9e91da946054dc4c2aa7cf81630988375c76f69ff18993666ae6d"
     },
     {
       "id": "EGEINF79404A",
@@ -596,5 +621,7 @@
         "integrity": "ZIP CRC passed"
       }
     }
-  ]
+  ],
+  "solutionCodeCommit": "db743c802a1ef1cac9d2094d7e768de82be47ce5",
+  "solutionCodeBranch": "codex/solve-six-restored-20261105"
 }
