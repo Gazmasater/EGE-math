@@ -4209,5 +4209,53 @@
     "mirrorUrl": "https://ege.braintent.ru/assets/Fe814D_3.zip",
     "archiveSha256": "57740d71c9d41905754aa168be9fb8cedc673180fae9a44ec9a0e224cac7356f",
     "review": "Неизменённый исходный архив сопоставлен с точным URL ФИПИ; регистр нормализован только при сравнении идентификатора. Полное условие, первичные изображения, форматы и ответы проверены."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/6d1605b190ff42b6abf6548167e94b0e/img1_1773136545.zip": {
+    "taskId": "EGEINF64212F",
+    "localRelative": "docs/official-open/2026/EGEINF64212F.zip",
+    "sha256": "e427d465356a21d226bc7c69593730b4d00c178c943e428071c5b1d229cd4dfd",
+    "bytes": 29703,
+    "officialArchive": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/6d1605b190ff42b6abf6548167e94b0e/img1_1773136545.zip",
+    "review": "Оригинальный архив ФИПИ восстановлен и сохранён без изменения байтов; SHA-256 и состав участников сверены с официальным манифестом 05.11.2026. Полное условие прочитано, расчёты независимо проверены Python и JavaScript."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/32ab74b427ef4633955a187639badc74/img1_1786620643.zip": {
+    "taskId": "EGEINF0D9B7C",
+    "localRelative": "docs/official-open/2026/EGEINF0D9B7C.zip",
+    "sha256": "994efa853f1d0b265e91dac2774d07a96b594d17938402a0ea4cebd83a019cda",
+    "bytes": 25524,
+    "officialArchive": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/32ab74b427ef4633955a187639badc74/img1_1786620643.zip",
+    "review": "Оригинальный архив ФИПИ восстановлен и сохранён без изменения байтов; SHA-256 и состав участников сверены с официальным манифестом 05.11.2026. Полное условие прочитано, расчёты независимо проверены Python и JavaScript."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/4bb5a836e5bf4e1fbf8617842098e457/img1_1786621799.zip": {
+    "taskId": "EGEINF9C15B9",
+    "localRelative": "docs/official-open/2026/EGEINF9C15B9.zip",
+    "sha256": "c65d13ca25e9cce49488e654535eeb06dda4a4b220dc125777fc5c41e2d31444",
+    "bytes": 19324,
+    "officialArchive": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/4bb5a836e5bf4e1fbf8617842098e457/img1_1786621799.zip",
+    "review": "Оригинальный архив ФИПИ восстановлен и сохранён без изменения байтов; SHA-256 и состав участников сверены с официальным манифестом 05.11.2026. Полное условие прочитано, расчёты независимо проверены Python и JavaScript."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/ab7c2c90737740a999b5a0fd117310b5/img1_1786621669.zip": {
+    "taskId": "EGEINF90EECD",
+    "localRelative": "docs/official-open/2026/EGEINF90EECD.zip",
+    "sha256": "abf64b2936cf08f2acdbe469c2651d4a0a39aab9d5bf6effc423a5eec08423fb",
+    "bytes": 25540,
+    "officialArchive": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/ab7c2c90737740a999b5a0fd117310b5/img1_1786621669.zip",
+    "review": "Оригинальный архив ФИПИ восстановлен и сохранён без изменения байтов; SHA-256 и состав участников сверены с официальным манифестом 05.11.2026. Полное условие прочитано, расчёты независимо проверены Python и JavaScript."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c3fb48ea61ef45ea8dbaf9493ccfd3a6/img1_1786622004.zip": {
+    "taskId": "EGEINF7B95E8",
+    "localRelative": "docs/official-open/2026/EGEINF7B95E8.zip",
+    "sha256": "90b3eacba5f0c1902cc3562bec9b67f6913830bc3337088ee591cdba715c7222",
+    "bytes": 19311,
+    "officialArchive": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c3fb48ea61ef45ea8dbaf9493ccfd3a6/img1_1786622004.zip",
+    "review": "Оригинальный архив ФИПИ восстановлен и сохранён без изменения байтов; SHA-256 и состав участников сверены с официальным манифестом 05.11.2026. Полное условие прочитано, расчёты независимо проверены Python и JavaScript."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c8733c22c0624c8a83f1ace65a5e6fba/img1_1786621900.zip": {
+    "taskId": "EGEINF577EED",
+    "localRelative": "docs/official-open/2026/EGEINF577EED.zip",
+    "sha256": "9b60fc7cf86b8e1dc367dc5054804c1db6e4a5768a46a3a66f79de11e790c5b4",
+    "bytes": 19356,
+    "officialArchive": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c8733c22c0624c8a83f1ace65a5e6fba/img1_1786621900.zip",
+    "review": "Оригинальный архив ФИПИ восстановлен и сохранён без изменения байтов; SHA-256 и состав участников сверены с официальным манифестом 05.11.2026. Полное условие прочитано, расчёты независимо проверены Python и JavaScript."
   }
 }
