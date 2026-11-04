@@ -1,0 +1,178 @@
+{
+  "source": "https://ege.fipi.ru/bank/index.php?proj=B9ACA5BBB2E19E434CD6BEC25284C67F",
+  "checkedAt": "2026-11-04T22:10:57.632Z",
+  "archives": [
+    {
+      "id": "EGEINF64212F",
+      "group": "missing_source_file",
+      "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/6d1605b190ff42b6abf6548167e94b0e/img1_1773136545.zip",
+      "status": 200,
+      "bytes": 29703,
+      "signature": "504b030414000000",
+      "sha256": "e427d465356a21d226bc7c69593730b4d00c178c943e428071c5b1d229cd4dfd",
+      "members": [
+        {
+          "name": "2_22.xlsx",
+          "bytes": 10858,
+          "sha256": "e6910122ad00208f52cc806a56da129399cf40571ef024a68e031df0391011ab"
+        },
+        {
+          "name": "2_22.ods",
+          "bytes": 18217,
+          "sha256": "3a5b76cc14012cb96c3fe4bb7082ebc0eac565555d1c488416b0369ee14051c3"
+        },
+        {
+          "name": "2_22.xls",
+          "bytes": 25600,
+          "sha256": "1ed6f49be3590c5068c385da2193220d6a1209983241fcfd2fea52ec5a27151c"
+        }
+      ],
+      "integrity": "ZIP CRC passed",
+      "savedPath": "data-sources/ege-informatics/official-2026-11-05/EGEINF64212F.zip",
+      "currentStatus": "source_recovered_pending_solution_verification",
+      "dataRows": {
+        "processes": 25
+      }
+    },
+    {
+      "id": "EGEINF0D9B7C",
+      "group": "missing_source_file",
+      "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/32ab74b427ef4633955a187639badc74/img1_1786620643.zip",
+      "status": 200,
+      "bytes": 25524,
+      "signature": "504b030414000000",
+      "sha256": "994efa853f1d0b265e91dac2774d07a96b594d17938402a0ea4cebd83a019cda",
+      "members": [
+        {
+          "name": "1_27_A.txt",
+          "bytes": 9809,
+          "sha256": "cd57946202e17a6facf4b6d0d7df9660bcb1e686499c36f75ea77dee3fb50c06"
+        },
+        {
+          "name": "1_27_B.txt",
+          "bytes": 47503,
+          "sha256": "06ffc0dab40fec13eb5a6a3581dcd0ad810403e4c46ba2dd9696d4f47236b17d"
+        }
+      ],
+      "integrity": "ZIP CRC passed",
+      "savedPath": "data-sources/ege-informatics/official-2026-11-05/EGEINF0D9B7C.zip",
+      "currentStatus": "source_recovered_pending_solution_verification",
+      "dataRows": {
+        "1_27_A.txt": 406,
+        "1_27_B.txt": 1851
+      }
+    },
+    {
+      "id": "EGEINF9C15B9",
+      "group": "missing_source_file",
+      "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/4bb5a836e5bf4e1fbf8617842098e457/img1_1786621799.zip",
+      "status": 200,
+      "bytes": 19324,
+      "signature": "504b030414000000",
+      "sha256": "c65d13ca25e9cce49488e654535eeb06dda4a4b220dc125777fc5c41e2d31444",
+      "members": [
+        {
+          "name": "3_27_A.txt",
+          "bytes": 11046,
+          "sha256": "e9833413da73dd979589a450cf5b1b8892f604d9e63215747d15bacf4157fc12"
+        },
+        {
+          "name": "3_27_B.txt",
+          "bytes": 31569,
+          "sha256": "03296e58fcc09de977a8a5331905a2596e0fe9dde53f892679f4b99135542b13"
+        }
+      ],
+      "integrity": "ZIP CRC passed",
+      "savedPath": "data-sources/ege-informatics/official-2026-11-05/EGEINF9C15B9.zip",
+      "currentStatus": "source_recovered_pending_solution_verification",
+      "dataRows": {
+        "3_27_A.txt": 457,
+        "3_27_B.txt": 1230
+      }
+    },
+    {
+      "id": "EGEINF90EECD",
+      "group": "missing_source_file",
+      "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/ab7c2c90737740a999b5a0fd117310b5/img1_1786621669.zip",
+      "status": 200,
+      "bytes": 25540,
+      "signature": "504b030414000000",
+      "sha256": "abf64b2936cf08f2acdbe469c2651d4a0a39aab9d5bf6effc423a5eec08423fb",
+      "members": [
+        {
+          "name": "2_27_A.txt",
+          "bytes": 9825,
+          "sha256": "13fd53b7caed837ceeab21d286138e409e27e44882bc6611c32889da98a667b5"
+        },
+        {
+          "name": "2_27_B.txt",
+          "bytes": 47496,
+          "sha256": "321eec3b677fa1f5600eec121464280314d2bb9a75c482a6f6e9c72755d8257b"
+        }
+      ],
+      "integrity": "ZIP CRC passed",
+      "savedPath": "data-sources/ege-informatics/official-2026-11-05/EGEINF90EECD.zip",
+      "currentStatus": "source_recovered_pending_solution_verification",
+      "dataRows": {
+        "2_27_A.txt": 406,
+        "2_27_B.txt": 1851
+      }
+    },
+    {
+      "id": "EGEINF7B95E8",
+      "group": "missing_source_file",
+      "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c3fb48ea61ef45ea8dbaf9493ccfd3a6/img1_1786622004.zip",
+      "status": 200,
+      "bytes": 19311,
+      "signature": "504b030414000000",
+      "sha256": "90b3eacba5f0c1902cc3562bec9b67f6913830bc3337088ee591cdba715c7222",
+      "members": [
+        {
+          "name": "5_27_A.txt",
+          "bytes": 11051,
+          "sha256": "de4104202fcd44fd83f6bb5f233fdbcec2c0b276e77b00a6e8ecd8aa7bb13d83"
+        },
+        {
+          "name": "5_27_B.txt",
+          "bytes": 31567,
+          "sha256": "83461e2fb78be74b4f5408d11776bb910a7066e059e3fa54396438731c9c860e"
+        }
+      ],
+      "integrity": "ZIP CRC passed",
+      "savedPath": "data-sources/ege-informatics/official-2026-11-05/EGEINF7B95E8.zip",
+      "currentStatus": "source_recovered_pending_solution_verification",
+      "dataRows": {
+        "5_27_A.txt": 457,
+        "5_27_B.txt": 1230
+      }
+    },
+    {
+      "id": "EGEINF577EED",
+      "group": "missing_source_file",
+      "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c8733c22c0624c8a83f1ace65a5e6fba/img1_1786621900.zip",
+      "status": 200,
+      "bytes": 19356,
+      "signature": "504b030414000000",
+      "sha256": "9b60fc7cf86b8e1dc367dc5054804c1db6e4a5768a46a3a66f79de11e790c5b4",
+      "members": [
+        {
+          "name": "4_27_A.txt",
+          "bytes": 11094,
+          "sha256": "fa30d0ac2e1afb250e71cec53cd476c41f0f0253226b541e2f135e565c8a73e8"
+        },
+        {
+          "name": "4_27_B.txt",
+          "bytes": 31624,
+          "sha256": "8cc31c1d7abd43953d79a85c4de775efc04bb6631ca8f4ddb969284ae936e991"
+        }
+      ],
+      "integrity": "ZIP CRC passed",
+      "savedPath": "data-sources/ege-informatics/official-2026-11-05/EGEINF577EED.zip",
+      "currentStatus": "source_recovered_pending_solution_verification",
+      "dataRows": {
+        "4_27_A.txt": 457,
+        "4_27_B.txt": 1230
+      }
+    }
+  ]
+}

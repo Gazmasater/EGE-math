@@ -111,7 +111,9 @@ async function main() {
             return rect.width > 0 && (rect.right > bounds.right + 1 || rect.left < bounds.left - 1 || element.scrollWidth > element.clientWidth + 1);
           }).map(element => ({ task: task.id, tag: element.tagName, width: element.clientWidth, scrollWidth: element.scrollWidth }));
         }),
-        hiddenCondition: Array.from(document.querySelectorAll('.qblock .cell_0 p')).filter(p => p.textContent.trim() && !p.checkVisibility()).map(p => p.textContent.trim()),
+        // A generated hint is intentionally hidden when the source table fits.
+        // Keep checking every paragraph of the actual FIPI condition.
+        hiddenCondition: Array.from(document.querySelectorAll('.qblock .cell_0 p:not(.fipi-table-scroll-hint)')).filter(p => p.textContent.trim() && !p.checkVisibility()).map(p => p.textContent.trim()),
         hidden: document.documentElement.classList.contains('page-loading') })`);
       if (info.h1 !== 1 || info.hidden || info.tasks !== info.controls || info.scrollWidth > width + 1 || info.broken.length || info.clipped.length || info.hiddenCondition.length) report.errors.push({ url, width, info });
       report.pages.push({ url, width, ...info });

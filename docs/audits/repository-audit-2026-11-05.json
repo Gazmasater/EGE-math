@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-05",
+  "baseCommit": "921416f41dfc1c4b525abf2746316377cc67f221",
+  "branch": "codex/audit-fixes-2026-11-05",
+  "runtime": "Node.js 24.18.0, Windows",
+  "scope": "Technical audit of main, isolated HTTP servers and SQLite fixtures, local FIPI snapshots",
+  "fixes": [
+    "Require administrator authentication and trusted POST origin for FIPI updates; expose /admin/update within the session cookie path",
+    "Serialize updates and invalidate all catalogue caches after success or failure",
+    "Protect administrative POST requests, throttle login, secure cookies and remove admin analytics",
+    "Use the proxy-appended client address, expire rate-limit entries and bound limiter memory",
+    "Normalize local redirect targets and reject paths that become external or contain control characters",
+    "Reject unsafe numeric session identifiers before querying SQLite",
+    "Return 413 for oversized forms, 400 for malformed resource URLs, and settle aborted request bodies",
+    "Avoid exposing internal exception messages; reject unsupported catalogue and asset methods",
+    "Allow Python division inside complete program blocks while preserving mathematical fraction validation",
+    "Use the selected read-only SQLite consistently across solution and equation audits and HTTP navigation audits",
+    "Exclude only the generated table-scroll hint from hidden-condition browser failures",
+    "Provide npm start/test and a Linux/Windows GitHub Actions workflow",
+    "Preserve all FIPI snapshots and asset bytes against Windows core.autocrlf conversion"
+  ],
+  "validation": {
+    "baselineTests": {"passed": 102, "failed": 0},
+    "fullSuite": {"passed": 121, "failed": 0},
+    "finalFocusedHttpSuite": {"passed": 16, "failed": 0},
+    "snapshots": {
+      "mathematics": 1148,
+      "physics": 2344,
+      "oge": 3884,
+      "oge-physics": 1506,
+      "oge-informatics": 1585,
+      "ege-informatics": 2475,
+      "totalTasks": 12942,
+      "errors": 0
+    },
+    "classification": {"ogeTopicAudit": "passed", "egeInformaticsManifest": "passed"},
+    "http": {"catalogues": 85, "catalogPages": 958, "egeInformaticsTasks": 2475, "existingTasks": 10467, "sitemapUrls": 16334, "errors": 0},
+    "subjectHttp": {"catalogues": 45, "publishedExamples": 0, "errors": 0, "note": "Empty isolated solution database; validates catalogues, not published solution content"},
+    "browser": {"publicPages": 26, "publicInteractions": 6, "withoutJavaScript": 4, "adminPages": 2, "widths": [390, 1280], "errors": 0, "selectedScreenshotsReviewed": true},
+    "updateFailureFixture": "Offline FIPI stub verifies authentication, concurrent rejection, lock release and no source-file replacement",
+    "productionChanged": false,
+    "sourceSnapshotsChanged": false
+  },
+  "limitations": [
+    "No production deployment or production SQLite audit was performed",
+    "No successful live FIPI re-import was performed during the technical audit. A later read-only source/attachment check is recorded in ege-informatics-source-recheck-2026-11-05.json",
+    "The separately saved f69106b snapshot was not merged. The later source check recovered six formerly unavailable archives; six solutions await calculation/review and 26 retain source/interpretation issues",
+    "A complete independent mathematical review of all published solutions is outside this technical validation"
+  ]
+}

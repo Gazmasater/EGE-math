@@ -45,7 +45,7 @@ async function run() {
   const physics = readPhysicsCatalog(root, {allAnswerTypes: true}), math = readMathematicsCatalog(root);
   const first = [...physics.values()].filter(t => physicsTaskPart(t) === 1), second = [...physics.values()].filter(t => physicsTaskPart(t) === 2);
   assert.equal(first.length, 1806);assert.equal(second.length, 538);
-  const db = new DatabaseSync(path.resolve(process.env.PHYSICS_DB || path.join(root, 'storage/solutions.sqlite')), {readOnly: true});
+  const db = new DatabaseSync(process.env.PHYSICS_DB ? path.resolve(process.env.PHYSICS_DB) : require('./lib/solution-database').solutionDatabaseFile(), {readOnly: true});
   const solutions = new Map(db.prepare('SELECT * FROM solutions WHERE published=1').all().map(row => [row.task_id, row]));db.close();
   const home = await catalog('/physics', []);
   assert.ok(home.html.includes('Первая часть физики: задания по типам'));

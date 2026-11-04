@@ -6,6 +6,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const {DatabaseSync} = require('node:sqlite');
+const {solutionDatabaseFile} = require('./lib/solution-database');
 const {readMathematicsCatalog} = require('./lib/mathematics-catalog');
 const {readPhysicsCatalog} = require('./lib/physics-catalog');
 const {physicsTaskPart} = require('../lib/physics-task-types');
@@ -22,7 +23,7 @@ async function get(route) {
   return response.text();
 }
 async function run() {
-  const db = new DatabaseSync(path.join(root, 'storage/solutions.sqlite'), {readOnly: true});
+  const db = new DatabaseSync(solutionDatabaseFile(), {readOnly: true});
   const solutions = new Map(db.prepare('SELECT * FROM solutions WHERE published=1').all().map(row => [row.task_id, row]));
   db.close();
   const math = readMathematicsCatalog(root);

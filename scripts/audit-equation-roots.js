@@ -7,15 +7,20 @@ const fs = require('fs');
 const path = require('path');
 const { TextDecoder } = require('util');
 const { DatabaseSync } = require('node:sqlite');
+const { solutionDatabaseFile } = require('./lib/solution-database');
 
 const ROOT = path.join(__dirname, '..');
 const decoder = new TextDecoder('windows-1251');
 const raw = ['equations-1.raw.html', 'equations-2.raw.html']
   .map(file => decoder.decode(fs.readFileSync(path.join(ROOT, file))))
   .join('');
-const db = new DatabaseSync(path.join(ROOT, 'storage', 'solutions.sqlite'));
-const answers = new Map(db.prepare('SELECT task_id, answer FROM solutions WHERE published = 1').all()
-  .map(row => [row.task_id, row.answer]));
+function readPublishedAnswers(databaseFile = solutionDatabaseFile()) {
+  const db = new DatabaseSync(databaseFile, {readOnly: true});
+  try {
+    return new Map(db.prepare('SELECT task_id, answer FROM solutions WHERE published = 1').all()
+      .map(row => [row.task_id, row.answer]));
+  } finally { db.close(); }
+}
 
 function decodeEntities(value) {
   return value
@@ -321,7 +326,7 @@ const imageTasks = {
   '716236': { interval: [-5 * Math.PI, -7 * Math.PI / 2], fn: x => 2 * Math.sin(x) ** 2 + (Math.sqrt(3) - 2) * Math.sin(x) - Math.sqrt(3) }
 };
 
-function collectEquationDefinitions() {
+function collectEquationDefinitions(answers = readPublishedAnswers()) {
   const definitions = [];
   for (const match of raw.matchAll(/<div\s+class="qblock[^>]*\bid=['"]q([^'"]+)['"][^>]*>([\s\S]*?)<div\s+id=['"]i\1['"]/gi)) {
     const taskId = match[1].toUpperCase();
@@ -349,9 +354,9 @@ function collectEquationDefinitions() {
   return definitions;
 }
 
-function auditEquationRoots() {
+function auditEquationRoots(databaseFile = solutionDatabaseFile()) {
   const issues = [];
-  for (const definition of collectEquationDefinitions()) {
+  for (const definition of collectEquationDefinitions(readPublishedAnswers(databaseFile))) {
     if (definition.error) {
       issues.push({ taskId: definition.taskId, error: definition.error });
       continue;
