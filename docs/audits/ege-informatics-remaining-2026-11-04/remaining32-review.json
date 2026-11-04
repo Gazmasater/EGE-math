@@ -1,0 +1,72 @@
+{
+  "status": "reviewed-holds",
+  "at": "2026-11-04T02:44:55.419161+00:00",
+  "scope": "After completed restored-game-links publication",
+  "count": 32,
+  "groups": {
+    "missing_source_file": [
+      "64212F",
+      "0D9B7C",
+      "9C15B9",
+      "90EECD",
+      "7B95E8",
+      "577EED"
+    ],
+    "contradictory_coin_bound": [
+      "79404A",
+      "77DB46",
+      "B4F848",
+      "E60642",
+      "779E0A",
+      "34C97E",
+      "72C252"
+    ],
+    "ambiguous_word_boundary": [
+      "2F9ABA",
+      "671119",
+      "870FE9",
+      "E4A3C2"
+    ],
+    "unconfirmed_rate_exponent": [
+      "EF0000",
+      "5459A3",
+      "502BCF",
+      "47E49C",
+      "57579A",
+      "BAE6EF",
+      "4CAD3D"
+    ],
+    "wrong_attachment_format": [
+      "CE2CF3",
+      "1F25B2",
+      "7F1EAA",
+      "327EB5"
+    ],
+    "ambiguous_arrival_ties": [
+      "290F15",
+      "B3C563",
+      "A99635",
+      "8ECB7C"
+    ]
+  },
+  "notes": [
+    "Missing-file exact URL, filename and GUID re-match found no new stored source. All 13 official probes (six missing files and seven contradictory robot files) timed out.",
+    "OpenFIPI indexed conditions confirm identifiers 0D9B7C and 64212F, but no attached file was retrieved; its user-proposed answer is not a calculation certificate.",
+    "EF0000 and 5459A3 have prior third-party exponent evidence; original primary format remains unconfirmed. No condition changes performed.",
+    "Each robot file has one A1 value over 100; both formats agree, but none of the earlier verified grids matches the remaining cells and walls. No bound or coin was silently changed.",
+    "Arrival-tie certificates establish distinct outputs for multiple allowed orderings. Four word-boundary cases depend on treating hyphen compounds as whole words."
+  ],
+  "published": 2443,
+  "total": 2475,
+  "resolvedGameIds": [
+    "F931BC",
+    "904C34",
+    "319677",
+    "0BFCDC"
+  ],
+  "resolvedGameCompletion": "/root/ege-informatics-recovered-game-links-20261104/completion.json",
+  "additionalEvidence": [
+    "/root/ege-informatics-word-boundary-review-20261104/interpretation-review.json",
+    "/root/ege-informatics-robot-secondary-review-20261104/grid-comparison.json"
+  ]
+}

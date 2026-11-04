@@ -1,0 +1,164 @@
+{
+  "EGEINF8AAE42": {
+    "sourceHash": "32c102cbe1a4952e32f44345417aed85db29bc8402c15d8d00460768b349c491",
+    "fipiCondition": "Впишите правильный ответ. Задание выполняется с использованием прилагаемых файлов. В файле содержится последовательность целых чисел. Её элементы могут принимать целые значения от –100 000 до 100 000 включительно. Определите количество пар последовательности, в которых элементы не равны, а абсолютное значение их разности делится на минимальный положительный элемент последовательности, кратный 33. Гарантируется, что такой элемент в последовательности есть. В ответе запишите количество найденных пар, затем максимальную из сумм элементов таких пар. В данной задаче под парой подразумевается два идущих подряд элемента последовательности.",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=92194",
+    "externalAnswer": "240 17914",
+    "expectedAnswer": "33 164160",
+    "comparison": "Прочитаны полные условие и решение «Решу ЕГЭ», скачан и независимо пересчитан его исходный файл. Проверен результат опубликованной программы. Divisor of the positive threshold is 33 instead of 9; original file differs. Unequal adjacent elements and divisibility of absolute difference are verified independently. Собственное решение и программа составлены по первичному файлу ФИПИ; Python и JS независимо подтвердили все выбранные индексы, число пар, порог и крайнюю сумму. В первичных изображениях только значки скачивания, все три фактически просмотрены.",
+    "externalComputed": "240 17914",
+    "externalFileSha256": "5a7727b9a93eb583d20c46f756ff4ef9d48f1fd6ede50cd5feb88aa6232f7fa4",
+    "primaryFileSha256": "6619ba500a018ae9f8ce0cc54257bd248a4ea1df2f878c963495dc78be46533b",
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Actually viewed download icons and file-open button; no numerical data in these images.",
+      "files": [
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/4C826F786EE383B14D02591E10BECC94(copy1)/xs3qstsrc4C826F786EE383B14D02591E10BECC94_2_1769498782.png",
+          "sha256": "f5475c9562a15710e090854c73878a6b8a17a572db2c7db842eddc1d35effe05"
+        },
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0f699c7dfe934818999530da19059ccd/simg1_1786621721.gif",
+          "sha256": "b549d510d877c1a2a744a167e747cc87c545db77c77960562aea85f406b69e6f"
+        }
+      ]
+    }
+  },
+  "EGEINFA84AF3": {
+    "sourceHash": "997240a7583ed4fbbcd4cb4c36403a5463cfff9af07e7b9afe8e3ca2c72ce073",
+    "fipiCondition": "Впишите правильный ответ. Задание выполняется с использованием прилагаемых файлов. В файле содержится последовательность целых чисел. Её элементы могут принимать целые значения от –100 000 до 100 000 включительно. Определите количество пар последовательности, в которых сумма элементов меньше минимального положительного элемента последовательности, кратного 21. Гарантируется, что такой элемент в последовательности есть. В ответе запишите количество найденных пар, затем абсолютное значение максимальной из сумм элементов таких пар. В данной задаче под парой подразумевается два идущих подряд элемента последовательности.",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=89754",
+    "externalAnswer": "5001 962",
+    "expectedAnswer": "4990 723",
+    "comparison": "Прочитаны полные условие и решение «Решу ЕГЭ», скачан и независимо пересчитан его исходный файл. Проверен результат опубликованной программы. Same source bytes, but threshold divisor is 21 instead of 123; count and maximum recomputed. Собственное решение и программа составлены по первичному файлу ФИПИ; Python и JS независимо подтвердили все выбранные индексы, число пар, порог и крайнюю сумму. В первичных изображениях только значки скачивания, все три фактически просмотрены.",
+    "externalComputed": "5001 962",
+    "externalFileSha256": "6619ba500a018ae9f8ce0cc54257bd248a4ea1df2f878c963495dc78be46533b",
+    "primaryFileSha256": "6619ba500a018ae9f8ce0cc54257bd248a4ea1df2f878c963495dc78be46533b",
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Actually viewed download icons and file-open button; no numerical data in these images.",
+      "files": [
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/06B3C7EF7750B24647BAB632F4F76DB9(copy1)/xs3qstsrc06B3C7EF7750B24647BAB632F4F76DB9_11_1772445757.png",
+          "sha256": "9e28b14c1864682a34debe2e66641a9ec10f16ee21a120f5eff33aa32cecade4"
+        },
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/19e0f91d993048a1ad1bf274beb1a25e/simg1_1786621945.gif",
+          "sha256": "b549d510d877c1a2a744a167e747cc87c545db77c77960562aea85f406b69e6f"
+        }
+      ]
+    }
+  },
+  "EGEINF03B67F": {
+    "sourceHash": "ac6b6b70002a8807a981f754556a42f5cd638ed25fe58df9a1142948e7ba2837",
+    "fipiCondition": "Впишите правильный ответ. Задание выполняется с использованием прилагаемых файлов. В файле содержится последовательность натуральных чисел. Её элементы могут принимать целые значения от 1 до 100 000 включительно. Определите количество пар последовательности, в которых остаток от деления на 33 хотя бы одного из элементов равен минимальному элементу последовательности. В ответе запишите количество найденных пар, затем максимальную из сумм элементов таких пар. В данной задаче под парой подразумевается два идущих подряд элемента последовательности.",
+    "reviewed": true,
+    "match": "exact",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=92559",
+    "externalAnswer": "622 174933",
+    "expectedAnswer": "622 174933",
+    "comparison": "Прочитаны полные условие и решение «Решу ЕГЭ», скачан и независимо пересчитан его исходный файл. Проверен результат опубликованной программы. Same complete condition, same source bytes, same answer and verified code result. Собственное решение и программа составлены по первичному файлу ФИПИ; Python и JS независимо подтвердили все выбранные индексы, число пар, порог и крайнюю сумму. В первичных изображениях только значки скачивания, все три фактически просмотрены.",
+    "externalComputed": "622 174933",
+    "externalFileSha256": "ae0b22388c9c869383a128735d85763ededa2562569db2be107bac99d7b43171",
+    "primaryFileSha256": "ae0b22388c9c869383a128735d85763ededa2562569db2be107bac99d7b43171",
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Actually viewed download icons and file-open button; no numerical data in these images.",
+      "files": [
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/5C21BDDB2DA49BFE481837E3F2CF7C24(copy1)/xs3qstsrc5C21BDDB2DA49BFE481837E3F2CF7C24_2_1773232699.png",
+          "sha256": "f5475c9562a15710e090854c73878a6b8a17a572db2c7db842eddc1d35effe05"
+        },
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3214edabb4cf48038db477a958a00c31/simg1_1786620549.gif",
+          "sha256": "b549d510d877c1a2a744a167e747cc87c545db77c77960562aea85f406b69e6f"
+        }
+      ]
+    }
+  },
+  "EGEINFEA0074": {
+    "sourceHash": "4ae4616a24ea47ed8016a51c59ce8bc9665e2b42ba4c2f1514ff0bb4b1518241",
+    "fipiCondition": "Впишите правильный ответ. Задание выполняется с использованием прилагаемых файлов. В файле содержится последовательность целых чисел. Её элементы могут принимать целые значения от –100 000 до 100 000 включительно. Определите количество пар последовательности, в которых сумма элементов меньше минимального положительного элемента последовательности, кратного 123. Гарантируется, что такой элемент в последовательности есть. В ответе запишите количество найденных пар, затем абсолютное значение максимальной из сумм элементов таких пар. В данной задаче под парой подразумевается два идущих подряд элемента последовательности",
+    "reviewed": true,
+    "match": "exact",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=89754",
+    "externalAnswer": "5001 962",
+    "expectedAnswer": "5001 962",
+    "comparison": "Прочитаны полные условие и решение «Решу ЕГЭ», скачан и независимо пересчитан его исходный файл. Проверен результат опубликованной программы. Same complete condition, same source bytes, same answer and verified code result. Собственное решение и программа составлены по первичному файлу ФИПИ; Python и JS независимо подтвердили все выбранные индексы, число пар, порог и крайнюю сумму. В первичных изображениях только значки скачивания, все три фактически просмотрены.",
+    "externalComputed": "5001 962",
+    "externalFileSha256": "6619ba500a018ae9f8ce0cc54257bd248a4ea1df2f878c963495dc78be46533b",
+    "primaryFileSha256": "6619ba500a018ae9f8ce0cc54257bd248a4ea1df2f878c963495dc78be46533b",
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Actually viewed download icons and file-open button; no numerical data in these images.",
+      "files": [
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/2282F118EFCFB55C46447935BAD69B3C(copy1)/xs3qstsrc3c0292a6733e4d2bb145a592cad6f7c1_6_1777468561.png",
+          "sha256": "9e28b14c1864682a34debe2e66641a9ec10f16ee21a120f5eff33aa32cecade4"
+        },
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3c0292a6733e4d2bb145a592cad6f7c1/simg1_1777467469.gif",
+          "sha256": "b549d510d877c1a2a744a167e747cc87c545db77c77960562aea85f406b69e6f"
+        }
+      ]
+    }
+  },
+  "EGEINFE5D71A": {
+    "sourceHash": "d71ca8e07cbcedfc63d3b999bd1adf90d14ee11d63de37e47e5d1b0fb4ec8707",
+    "fipiCondition": "Впишите правильный ответ. Задание выполняется с использованием прилагаемых файлов. В файле содержится последовательность натуральных чисел. Её элементы могут принимать целые значения от 1 до 100 000 включительно. Определите количество пар последовательности, в которых сумма остатков от деления обоих элементов на 20 равна минимальному элементу последовательности. В ответе запишите количество найденных пар, затем максимальную из сумм элементов таких пар. В данной задаче под парой подразумевается два идущих подряд элемента последовательности.",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=69895",
+    "externalAnswer": "238 191665",
+    "expectedAnswer": "200 173308",
+    "comparison": "Прочитаны полные условие и решение «Решу ЕГЭ», скачан и независимо пересчитан его исходный файл. Проверен результат опубликованной программы. Remainder divisor is 20 instead of 18, and the input file differs; same adjacent-pair filter and maximum. Собственное решение и программа составлены по первичному файлу ФИПИ; Python и JS независимо подтвердили все выбранные индексы, число пар, порог и крайнюю сумму. В первичных изображениях только значки скачивания, все три фактически просмотрены.",
+    "externalComputed": "238 191665",
+    "externalFileSha256": "90b1d2720ab5da04c1babb98dcffdd642e8528e9909b8a7e06fba37d6e160b2b",
+    "primaryFileSha256": "ae0b22388c9c869383a128735d85763ededa2562569db2be107bac99d7b43171",
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Actually viewed download icons and file-open button; no numerical data in these images.",
+      "files": [
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/4BE41B11B20BBE8E4AEDAF54D4A516A3(copy1)/xs3qstsrc4BE41B11B20BBE8E4AEDAF54D4A516A3_11_1773225521.png",
+          "sha256": "9e28b14c1864682a34debe2e66641a9ec10f16ee21a120f5eff33aa32cecade4"
+        },
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/5c97830ca754464987b451107cbb0712/simg1_1786621842.gif",
+          "sha256": "b549d510d877c1a2a744a167e747cc87c545db77c77960562aea85f406b69e6f"
+        }
+      ]
+    }
+  },
+  "EGEINF0A2C26": {
+    "sourceHash": "79b497f15887029cb10601b13558071f58629ca5fd1343e04abedef659eb602a",
+    "fipiCondition": "Впишите правильный ответ. Задание выполняется с использованием прилагаемых файлов. В файле содержится последовательность натуральных чисел. Её элементы могут принимать целые значения от 1 до 100 000 включительно. Определите количество пар последовательности, в которых сумма остатков от деления обоих элементов на 12 равна минимальному элементу последовательности. В ответе запишите количество найденных пар, затем минимальную из сумм элементов таких пар. В данной задаче под парой подразумевается два идущих подряд элемента последовательности.",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=69895",
+    "externalAnswer": "238 191665",
+    "expectedAnswer": "639 3716",
+    "comparison": "Прочитаны полные условие и решение «Решу ЕГЭ», скачан и независимо пересчитан его исходный файл. Проверен результат опубликованной программы. External example uses modulus 18 and maximum; target uses modulus 12 and minimum. Only the adjacent-pair remainder scan is shared; minimum independently checked. Собственное решение и программа составлены по первичному файлу ФИПИ; Python и JS независимо подтвердили все выбранные индексы, число пар, порог и крайнюю сумму. В первичных изображениях только значки скачивания, все три фактически просмотрены.",
+    "externalComputed": "238 191665",
+    "externalFileSha256": "90b1d2720ab5da04c1babb98dcffdd642e8528e9909b8a7e06fba37d6e160b2b",
+    "primaryFileSha256": "ae0b22388c9c869383a128735d85763ededa2562569db2be107bac99d7b43171",
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Actually viewed download icons and file-open button; no numerical data in these images.",
+      "files": [
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/6B2453CD2126B31F4C3C12B069C73364(copy1)/xs3qstsrc6B2453CD2126B31F4C3C12B069C73364_2_1769498401.png",
+          "sha256": "f5475c9562a15710e090854c73878a6b8a17a572db2c7db842eddc1d35effe05"
+        },
+        {
+          "src": "/fipi/ege-informatics/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/62d69ae7f9f049cea75f928561f46bb0/simg1_1786621611.gif",
+          "sha256": "b549d510d877c1a2a744a167e747cc87c545db77c77960562aea85f406b69e6f"
+        }
+      ]
+    }
+  }
+}

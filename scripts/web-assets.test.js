@@ -18,9 +18,14 @@ function request(url, method = 'GET', headers = {}) {
 }
 
 test('Immutable URLs identify their bytes; GET, HEAD and validators agree', () => {
-  for (const name of ['site.css', 'site.js', 'catalogue.js', 'catalogue-math.css', 'catalogue-physics.css', 'catalogue-oge.css', 'catalogue-oge-physics.css', 'catalogue-oge-informatics.css']) {
+  for (const name of ['site.css', 'site.js', 'catalogue.js', 'catalogue-math.css', 'catalogue-physics.css', 'catalogue-oge.css', 'catalogue-oge-physics.css', 'catalogue-oge-informatics.css', 'preparation-tutor-640.webp', 'preparation-tutor-960.webp']) {
     const url = assetUrl(name), get = request(url), head = request(url, 'HEAD');
     assert.equal(get.status, 200);
+    if (name.endsWith('.webp')) {
+      assert.equal(get.headers['content-type'], 'image/webp');
+      assert.equal(get.body.toString('ascii', 0, 4), 'RIFF');
+      assert.equal(get.body.toString('ascii', 8, 12), 'WEBP');
+    }
     assert.ok(url.includes(createHash('sha256').update(get.body).digest('hex').slice(0, 16)));
     assert.match(get.headers['cache-control'], /max-age=31536000, immutable/);
     assert.equal(Number(get.headers['content-length']), get.body.length);

@@ -1,0 +1,179 @@
+{
+  "EGEINF6AB929": {
+    "kind": "anchored",
+    "starts": "G",
+    "countChars": "13579",
+    "count": 45
+  },
+  "EGEINF4FD865": {
+    "kind": "anchored",
+    "starts": "02468",
+    "countChars": "W",
+    "count": 30
+  },
+  "EGEINF5605A0": {
+    "kind": "mixed-min",
+    "pattern": "2025",
+    "minimum": 110,
+    "char": "W",
+    "count": 90
+  },
+  "EGEINF907644": {
+    "kind": "pairs",
+    "first": "C",
+    "second": "AB"
+  },
+  "EGEINF685605": {
+    "kind": "pairs",
+    "first": "AB",
+    "second": "C"
+  },
+  "EGEINF6B121E": {
+    "kind": "pairs",
+    "first": "BCD",
+    "second": "AO"
+  },
+  "EGEINF8A991E": {
+    "kind": "pairs",
+    "first": "AO",
+    "second": "CDF"
+  },
+  "EGEINF0CF4C0": {
+    "kind": "pairs",
+    "first": "BCD",
+    "second": "AE"
+  },
+  "EGEINF2F6892": {
+    "kind": "pairs",
+    "first": "AE",
+    "second": "CDF"
+  },
+  "EGEINF7663E0": {
+    "kind": "pairs",
+    "first": "BD",
+    "second": "A"
+  },
+  "EGEINFBDE963": {
+    "kind": "pairs",
+    "first": "CDF",
+    "second": "AU"
+  },
+  "EGEINF532082": {
+    "kind": "pairs",
+    "first": "A",
+    "second": "BD"
+  },
+  "EGEINFA520F8": {
+    "kind": "forbidden",
+    "pattern": "BD|DB",
+    "width": 2
+  },
+  "EGEINFB92F00": {
+    "kind": "forbidden",
+    "pattern": "AB|BA",
+    "width": 2
+  },
+  "EGEINFB31CB5": {
+    "kind": "forbidden",
+    "pattern": "KM|MK",
+    "width": 2
+  },
+  "EGEINF98C518": {
+    "kind": "forbidden",
+    "pattern": "AD|DA",
+    "width": 2
+  },
+  "EGEINF347F22": {
+    "kind": "forbidden",
+    "pattern": "RR",
+    "width": 2
+  },
+  "EGEINFAA7E8A": {
+    "kind": "forbidden",
+    "pattern": "PP",
+    "width": 2
+  },
+  "EGEINF0491B1": {
+    "kind": "forbidden",
+    "pattern": "[QRS][QRS]",
+    "width": 2
+  },
+  "EGEINFBAC4D1": {
+    "kind": "forbidden",
+    "pattern": "[NOP][NOP]",
+    "width": 2
+  },
+  "EGEINF4D2418": {
+    "kind": "forbidden",
+    "pattern": "XZZY",
+    "width": 4
+  },
+  "EGEINFF04010": {
+    "kind": "occurrences",
+    "pattern": "Y",
+    "count": 260,
+    "mode": "min-atleast"
+  },
+  "EGEINF281D2A": {
+    "kind": "occurrences",
+    "pattern": "Z",
+    "count": 200,
+    "mode": "min-exact"
+  },
+  "EGEINFC00CCB": {
+    "kind": "occurrences",
+    "pattern": "W",
+    "count": 130,
+    "mode": "max-atmost"
+  },
+  "EGEINF7E659E": {
+    "kind": "occurrences",
+    "pattern": "X",
+    "count": 140,
+    "mode": "max-atmost"
+  },
+  "EGEINFDD0C38": {
+    "kind": "occurrences",
+    "pattern": "W",
+    "count": 240,
+    "mode": "min-atleast"
+  },
+  "EGEINF2AB916": {
+    "kind": "occurrences",
+    "pattern": "AB",
+    "count": 110,
+    "mode": "max-atmost"
+  },
+  "EGEINF361E52": {
+    "kind": "occurrences",
+    "pattern": "CD",
+    "count": 160,
+    "mode": "max-exact"
+  },
+  "EGEINF3380E0": {
+    "kind": "occurrences",
+    "pattern": "AB",
+    "count": 100,
+    "mode": "max-exact"
+  },
+  "EGEINFC2DB39": {
+    "kind": "occurrences",
+    "pattern": "CD",
+    "count": 140,
+    "mode": "max-atmost"
+  },
+  "EGEINF199381": {
+    "kind": "occurrences",
+    "pattern": "AB",
+    "count": 220,
+    "mode": "min-exact"
+  },
+  "EGEINFCF38C4": {
+    "kind": "expression",
+    "digits": "02345"
+  },
+  "EGEINF2B1F8E": {
+    "kind": "expression",
+    "digits": "0789"
+  }
+}

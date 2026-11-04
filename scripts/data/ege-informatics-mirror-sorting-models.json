@@ -1,0 +1,100 @@
+{
+  "EGEINF6689F3": {
+    "family": "prefix-pair",
+    "largest": true
+  },
+  "EGEINFAD6F70": {
+    "family": "prefix-pair",
+    "largest": false
+  },
+  "EGEINFEDE407": {
+    "family": "events",
+    "gap": true
+  },
+  "EGEINFB42224": {
+    "family": "events",
+    "gap": true
+  },
+  "EGEINFA9339F": {
+    "family": "events",
+    "gap": true
+  },
+  "EGEINFE53C3B": {
+    "family": "events",
+    "gap": true
+  },
+  "EGEINF3B2A3F": {
+    "family": "events",
+    "gap": true
+  },
+  "EGEINF72EC10": {
+    "family": "events",
+    "gap": false
+  },
+  "EGEINFB1F57A": {
+    "family": "boxes",
+    "gap": 11
+  },
+  "EGEINF38235A": {
+    "family": "boxes",
+    "gap": 6
+  },
+  "EGEINF584C6A": {
+    "family": "boxes",
+    "gap": 10
+  },
+  "EGEINF0C1433": {
+    "family": "boxes",
+    "gap": 7
+  },
+  "EGEINF05BFA6": {
+    "family": "coloured-boxes"
+  },
+  "EGEINF7257B4": {
+    "family": "students"
+  },
+  "EGEINFD8A5BB": {
+    "family": "cargo"
+  },
+  "EGEINFEB601E": {
+    "family": "astronauts"
+  },
+  "EGEINFC3D450": {
+    "family": "bounded-pair"
+  },
+  "EGEINFFC12A4": {
+    "family": "bounded-pair"
+  },
+  "EGEINFBE60AB": {
+    "family": "bounded-pair"
+  },
+  "EGEINFBD5ECE": {
+    "family": "bounded-pair"
+  },
+  "EGEINF97FA8B": {
+    "family": "bounded-pair"
+  },
+  "EGEINF623F91": {
+    "family": "products",
+    "above": false
+  },
+  "EGEINF64AB6F": {
+    "family": "products",
+    "above": true
+  },
+  "EGEINF4522EF": {
+    "family": "free-run",
+    "seat": false
+  },
+  "EGEINF4A2884": {
+    "family": "free-run",
+    "seat": false
+  },
+  "EGEINF9A0AE4": {
+    "family": "free-run",
+    "seat": true
+  },
+  "EGEINF70B483": {
+    "family": "ship"
+  }
+}

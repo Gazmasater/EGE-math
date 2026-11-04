@@ -1,0 +1,1184 @@
+TAP version 13
+# Subtest: All conditions remain reachable exactly once across server pages
+ok 1 - All conditions remain reachable exactly once across server pages
+  ---
+  duration_ms: 9.607281
+  type: 'test'
+  ...
+# Subtest: Query state survives pagination and is safely encoded in local URLs
+ok 2 - Query state survives pagination and is safely encoded in local URLs
+  ---
+  duration_ms: 2.831631
+  type: 'test'
+  ...
+# Subtest: Catalogue search matches IDs and all condition terms, not scripts or task metadata
+ok 3 - Catalogue search matches IDs and all condition terms, not scripts or task metadata
+  ---
+  duration_ms: 26.738741
+  type: 'test'
+  ...
+# Subtest: Only two source-verified flattened rates become exponents
+ok 4 - Only two source-verified flattened rates become exponents
+  ---
+  duration_ms: 59.923071
+  type: 'test'
+  ...
+# Subtest: Restored rates are idempotent and unknown IDs remain untouched
+ok 5 - Restored rates are idempotent and unknown IDs remain untouched
+  ---
+  duration_ms: 1.819435
+  type: 'test'
+  ...
+# Subtest: An altered source cannot receive an otherwise plausible exponent repair
+ok 6 - An altered source cannot receive an otherwise plausible exponent repair
+  ---
+  duration_ms: 5.24809
+  type: 'test'
+  ...
+# Subtest: The stated percentage is remaining size and processing can erase savings
+ok 7 - The stated percentage is remaining size and processing can erase savings
+  ---
+  duration_ms: 2.32727
+  type: 'test'
+  ...
+# Subtest: Every byte contributes eight bits; both processing stages contribute time
+ok 8 - Every byte contributes eight bits; both processing stages contribute time
+  ---
+  duration_ms: 0.332856
+  type: 'test'
+  ...
+# Subtest: Minute input is converted before subtracting compressed transmission time
+ok 9 - Minute input is converted before subtracting compressed transmission time
+  ---
+  duration_ms: 3.62892
+  type: 'test'
+  ...
+# Subtest: Literal 220..224 values without exponent markup are never silently repaired
+ok 10 - Literal 220..224 values without exponent markup are never silently repaired
+  ---
+  duration_ms: 3.298325
+  type: 'test'
+  ...
+# Subtest: maximum adjacent pairs preserve negative values, first ties and final pair
+ok 11 - maximum adjacent pairs preserve negative values, first ties and final pair
+  ---
+  duration_ms: 248.334887
+  type: 'test'
+  ...
+# Subtest: overlapping even pairs include zero, but sum-products uses disjoint pairs
+ok 12 - overlapping even pairs include zero, but sum-products uses disjoint pairs
+  ---
+  duration_ms: 257.661429
+  type: 'test'
+  ...
+# Subtest: transform uses aggregate of original array and does not revisit changed positions
+ok 13 - transform uses aggregate of original array and does not revisit changed positions
+  ---
+  duration_ms: 73.581162
+  type: 'test'
+  ...
+# Subtest: signed maximum sentinel handles all negative values and last matching entry
+ok 14 - signed maximum sentinel handles all negative values and last matching entry
+  ---
+  duration_ms: 96.711444
+  type: 'test'
+  ...
+# Subtest: predicate boundary equality and independent count agree with executed code
+ok 15 - predicate boundary equality and independent count agree with executed code
+  ---
+  duration_ms: 49.168889
+  type: 'test'
+  ...
+# Subtest: verified official attachments map only in the exact subject and exact source path
+ok 16 - verified official attachments map only in the exact subject and exact source path
+  ---
+  duration_ms: 14.004644
+  type: 'test'
+  ...
+# Subtest: unknown or inherited manifest keys remain unchanged
+ok 17 - unknown or inherited manifest keys remain unchanged
+  ---
+  duration_ms: 0.993625
+  type: 'test'
+  ...
+# Subtest: database joins retain both boundary dates and apply every predicate
+ok 18 - database joins retain both boundary dates and apply every predicate
+  ---
+  duration_ms: 14.345454
+  type: 'test'
+  ...
+# Subtest: mass is converted per product and floored only after summation
+ok 19 - mass is converted per product and floored only after summation
+  ---
+  duration_ms: 1.675661
+  type: 'test'
+  ...
+# Subtest: equal quantities in different operations are counted separately
+ok 20 - equal quantities in different operations are counted separately
+  ---
+  duration_ms: 5.195483
+  type: 'test'
+  ...
+# Subtest: model is derived from the actual FIPI question, not the task identifier
+ok 21 - model is derived from the actual FIPI question, not the task identifier
+  ---
+  duration_ms: 11.982858
+  type: 'test'
+  ...
+# sequence 45
+# strings 40
+# events 25
+# reject-invalid 4
+# Subtest: restored final: independent enumeration sequence
+ok 22 - restored final: independent enumeration sequence
+  ---
+  duration_ms: 4059.195564
+  type: 'test'
+  ...
+# Subtest: restored final: independent enumeration strings
+ok 23 - restored final: independent enumeration strings
+  ---
+  duration_ms: 3686.0555
+  type: 'test'
+  ...
+# Subtest: restored final: independent enumeration events
+ok 24 - restored final: independent enumeration events
+  ---
+  duration_ms: 2882.387956
+  type: 'test'
+  ...
+# Subtest: restored final: independent enumeration reject-invalid
+ok 25 - restored final: independent enumeration reject-invalid
+  ---
+  duration_ms: 1211.910632
+  type: 'test'
+  ...
+# Subtest: negative linear coefficient reverses inequality and zero coefficient avoids division
+ok 26 - negative linear coefficient reverses inequality and zero coefficient avoids division
+  ---
+  duration_ms: 57.751185
+  type: 'test'
+  ...
+# Subtest: zero linear equation includes every real number
+ok 27 - zero linear equation includes every real number
+  ---
+  duration_ms: 47.597284
+  type: 'test'
+  ...
+# Subtest: third pupil threshold retains duplicates rather than third distinct score
+ok 28 - third pupil threshold retains duplicates rather than third distinct score
+  ---
+  duration_ms: 50.37894
+  type: 'test'
+  ...
+# Subtest: frequency uses descending counts, alphabetic ties and supports empty and long streams
+ok 29 - frequency uses descending counts, alphabetic ties and supports empty and long streams
+  ---
+  duration_ms: 333.894609
+  type: 'test'
+  ...
+# Subtest: luggage includes both boundaries and sorts midnight events by future time
+ok 30 - luggage includes both boundaries and sorts midnight events by future time
+  ---
+  duration_ms: 176.007869
+  type: 'test'
+  ...
+# Subtest: satellite distinguishes missing pair, duplicate positions and maximum allowed N
+ok 31 - satellite distinguishes missing pair, duplicate positions and maximum allowed N
+  ---
+  duration_ms: 812.139581
+  type: 'test'
+  ...
+# Subtest: Two matching grandparents count one grandchild and two grandparents
+ok 32 - Two matching grandparents count one grandchild and two grandparents
+  ---
+  duration_ms: 2.565975
+  type: 'test'
+  ...
+# Subtest: Shared one parent suffices; brother condition applies to a sister too
+ok 33 - Shared one parent suffices; brother condition applies to a sister too
+  ---
+  duration_ms: 3.122791
+  type: 'test'
+  ...
+# Subtest: Younger sister is a directed relation including exactly four years
+ok 34 - Younger sister is a directed relation including exactly four years
+  ---
+  duration_ms: 5.019123
+  type: 'test'
+  ...
+# Subtest: Age boundary and number of children differ from number of mothers
+ok 35 - Age boundary and number of children differ from number of mothers
+  ---
+  duration_ms: 1.605624
+  type: 'test'
+  ...
+# Subtest: First and last child have opposite extrema; tie uses smallest ID
+ok 36 - First and last child have opposite extrema; tie uses smallest ID
+  ---
+  duration_ms: 0.610722
+  type: 'test'
+  ...
+# Subtest: Inline HTML spans do not split a number into separate tokens
+ok 37 - Inline HTML spans do not split a number into separate tokens
+  ---
+  duration_ms: 4.018037
+  type: 'test'
+  ...
+# Subtest: Mixed and absolute references preserve only their anchored components
+ok 38 - Mixed and absolute references preserve only their anchored components
+  ---
+  duration_ms: 3.395062
+  type: 'test'
+  ...
+# Subtest: Moving left or up cannot produce an invalid reference
+ok 39 - Moving left or up cannot produce an invalid reference
+  ---
+  duration_ms: 145.401743
+  type: 'test'
+  ...
+# Subtest: Arithmetic uses multiplication precedence and resolves repeated cells
+ok 40 - Arithmetic uses multiplication precedence and resolves repeated cells
+  ---
+  duration_ms: 1.542049
+  type: 'test'
+  ...
+# Subtest: Union progressions count a common multiple once and include both bounds
+ok 41 - Union progressions count a common multiple once and include both bounds
+  ---
+  duration_ms: 20.614871
+  type: 'test'
+  ...
+# Subtest: Remainder filter applies every exclusion and picks the requested extreme
+ok 42 - Remainder filter applies every exclusion and picks the requested extreme
+  ---
+  duration_ms: 0.713616
+  type: 'test'
+  ...
+# Subtest: A second-turn winning strategy must cover every opponent reply
+ok 43 - A second-turn winning strategy must cover every opponent reply
+  ---
+  duration_ms: 1859.646786
+  type: 'test'
+  ...
+# Subtest: A game ends immediately at its threshold; later moves are invalid
+ok 44 - A game ends immediately at its threshold; later moves are invalid
+  ---
+  duration_ms: 34.099263
+  type: 'test'
+  ...
+# Subtest: Floor division and losing-in-one exclusion determine decreasing games
+ok 45 - Floor division and losing-in-one exclusion determine decreasing games
+  ---
+  duration_ms: 26.58266
+  type: 'test'
+  ...
+# Subtest: Shared rules bind by explicit case-insensitive FIPI group, not adjacent IDs
+ok 46 - Shared rules bind by explicit case-insensitive FIPI group, not adjacent IDs
+  ---
+  duration_ms: 52.19121
+  type: 'test'
+  ...
+# Subtest: whole words exclude hyphenated components and inflections, preserve case and ё
+ok 47 - whole words exclude hyphenated components and inflections, preserve case and ё
+  ---
+  duration_ms: 19.205924
+  type: 'test'
+  ...
+# Subtest: embedded matches include compound words, with dash punctuation kept separate
+ok 48 - embedded matches include compound words, with dash punctuation kept separate
+  ---
+  duration_ms: 1.037
+  type: 'test'
+  ...
+# Subtest: scope stops at next heading and rejects duplicate chapter headings
+ok 49 - scope stops at next heading and rejects duplicate chapter headings
+  ---
+  duration_ms: 5.941588
+  type: 'test'
+  ...
+# Subtest: model distinguishes separate words from only embedded occurrences
+ok 50 - model distinguishes separate words from only embedded occurrences
+  ---
+  duration_ms: 1.860595
+  type: 'test'
+  ...
+# Subtest: 243 asymmetric collinear clusters: medoid is median, not arithmetic mean
+ok 51 - 243 asymmetric collinear clusters: medoid is median, not arithmetic mean
+  ---
+  duration_ms: 107.399501
+  type: 'test'
+  ...
+# Subtest: decimal coordinates and header are validated without silently dropping points
+ok 52 - decimal coordinates and header are validated without silently dropping points
+  ---
+  duration_ms: 3.978213
+  type: 'test'
+  ...
+# Subtest: rectangle certificate rejects changed sizes, intersections, extra and nonisolated omissions
+ok 53 - rectangle certificate rejects changed sizes, intersections, extra and nonisolated omissions
+  ---
+  duration_ms: 3.38369
+  type: 'test'
+  ...
+# Subtest: condition binds requested statistics; no centroid shortcut or ambiguous medoid
+ok 54 - condition binds requested statistics; no centroid shortcut or ambiguous medoid
+  ---
+  duration_ms: 1.199006
+  type: 'test'
+  ...
+# Subtest: inclusive dates, three-table joins, shuffled keys and either column order agree with exhaustive joins
+ok 55 - inclusive dates, three-table joins, shuffled keys and either column order agree with exhaustive joins
+  ---
+  duration_ms: 257.05025
+  type: 'test'
+  ...
+# Subtest: truncate after summing, distinguish packages, units and price, and require exact manufacturer
+ok 56 - truncate after summing, distinguish packages, units and price, and require exact manufacturer
+  ---
+  duration_ms: 3.989335
+  type: 'test'
+  ...
+# Subtest: duplicate keys, dangling foreign keys, invalid dates, wrong units and negative counts are rejected
+ok 57 - duplicate keys, dangling foreign keys, invalid dates, wrong units and negative counts are rejected
+  ---
+  duration_ms: 89.383326
+  type: 'test'
+  ...
+# Subtest: ODS explicit spaces, tabs and line breaks survive parsing, and unreviewed formulas are rejected
+ok 58 - ODS explicit spaces, tabs and line breaks survive parsing, and unreviewed formulas are rejected
+  ---
+  duration_ms: 170.743726
+  type: 'test'
+  ...
+# Subtest: word boundaries preserve explicit hyphens and distinguish editor search
+ok 59 - word boundaries preserve explicit hyphens and distinguish editor search
+  ---
+  duration_ms: 6.092311
+  type: 'test'
+  ...
+# Subtest: exact lowercase word forms remain distinct when one is a prefix
+ok 60 - exact lowercase word forms remain distinct when one is a prefix
+  ---
+  duration_ms: 2.564695
+  type: 'test'
+  ...
+# Subtest: substring occurrences and words containing them are different quantities
+ok 61 - substring occurrences and words containing them are different quantities
+  ---
+  duration_ms: 0.408273
+  type: 'test'
+  ...
+# Subtest: chapter scope respects repeated headings in different parts and Cyrillic X
+ok 62 - chapter scope respects repeated headings in different parts and Cyrillic X
+  ---
+  duration_ms: 4.014904
+  type: 'test'
+  ...
+# Subtest: counting agrees with exhaustive token oracle including punctuation and hyphens
+ok 63 - counting agrees with exhaustive token oracle including punctuation and hyphens
+  ---
+  duration_ms: 40.560192
+  type: 'test'
+  ...
+# Subtest: 300 independently brute-forced fixtures cover all ten optimization families
+ok 64 - 300 independently brute-forced fixtures cover all ten optimization families
+  ---
+  duration_ms: 69.908967
+  type: 'test'
+  ...
+# Subtest: all 29 source conditions bind extrema, direction, parity, capacities and modulus
+ok 65 - all 29 source conditions bind extrema, direction, parity, capacities and modulus
+  ---
+  duration_ms: 14.860125
+  type: 'test'
+  ...
+# Subtest: strict data validation and hash-bound upper-limit exception preserve original integers
+ok 66 - strict data validation and hash-bound upper-limit exception preserve original integers
+  ---
+  duration_ms: 9.523136
+  type: 'test'
+  ...
+# Subtest: certificate checks reject invalid gap witnesses and transport costs
+ok 67 - certificate checks reject invalid gap witnesses and transport costs
+  ---
+  duration_ms: 4.32304
+  type: 'test'
+  ...
+# Subtest: all 5184 small acyclic timing graphs agree with independent clock simulation
+ok 68 - all 5184 small acyclic timing graphs agree with independent clock simulation
+  ---
+  duration_ms: 406.016854
+  type: 'test'
+  ...
+# Subtest: numbered millisecond endpoints, completed threshold and simultaneous finishes
+ok 69 - numbered millisecond endpoints, completed threshold and simultaneous finishes
+  ---
+  duration_ms: 1.182397
+  type: 'test'
+  ...
+# Subtest: seven optimal interval certificates reject breaks, overlap and missed deadlines
+ok 70 - seven optimal interval certificates reject breaks, overlap and missed deadlines
+  ---
+  duration_ms: 225.804053
+  type: 'test'
+  ...
+# Subtest: ODS duration formulas are evaluated and inconsistent cached values are rejected
+ok 71 - ODS duration formulas are evaluated and inconsistent cached values are rejected
+  ---
+  duration_ms: 103.117253
+  type: 'test'
+  ...
+# Subtest: All 4096 internal-wall patterns of a 3 by 3 grid match exhaustive paths for both finish rules
+ok 72 - All 4096 internal-wall patterns of a 3 by 3 grid match exhaustive paths for both finish rules
+  ---
+  duration_ms: 843.683623
+  type: 'test'
+  ...
+# Subtest: An early dead end is allowed only for corner finish and unreachable cells never contribute zero
+ok 73 - An early dead end is allowed only for corner finish and unreachable cells never contribute zero
+  ---
+  duration_ms: 0.486738
+  type: 'test'
+  ...
+# Subtest: Both endpoint coins are included and output order follows the condition
+ok 74 - Both endpoint coins are included and output order follows the condition
+  ---
+  duration_ms: 2.481695
+  type: 'test'
+  ...
+# Subtest: Walls on a predecessor right or bottom side exclude exactly that incoming edge
+ok 75 - Walls on a predecessor right or bottom side exclude exactly that incoming edge
+  ---
+  duration_ms: 0.512079
+  type: 'test'
+  ...
+# Subtest: all 22 models: 11000 short sequences against independent exhaustive subarray enumeration
+ok 76 - all 22 models: 11000 short sequences against independent exhaustive subarray enumeration
+  ---
+  duration_ms: 825.403339
+  type: 'test'
+  ...
+# Subtest: overlapping pairs, both matches counted once, zero and negative sum extrema
+ok 77 - overlapping pairs, both matches counted once, zero and negative sum extrema
+  ---
+  duration_ms: 0.322569
+  type: 'test'
+  ...
+# Subtest: signed digit boundaries, exact counts and strict square comparison
+ok 78 - signed digit boundaries, exact counts and strict square comparison
+  ---
+  duration_ms: 26.218252
+  type: 'test'
+  ...
+# Subtest: derive own predicate differences from the complete primary conditions
+ok 79 - derive own predicate differences from the complete primary conditions
+  ---
+  duration_ms: 14.234902
+  type: 'test'
+  ...
+# Subtest: sorting: 5461 exhaustive independent small-case references cover both priorities and edge intervals
+ok 80 - sorting: 5461 exhaustive independent small-case references cover both priorities and edge intervals
+  ---
+  duration_ms: 555.124342
+  type: 'test'
+  ...
+# Subtest: sorting: all 27 models are derived from full primary conditions and files satisfy declared formats
+ok 81 - sorting: all 27 models are derived from full primary conditions and files satisfy declared formats
+  ---
+  duration_ms: 1189.973797
+  type: 'test'
+  ...
+# Subtest: sorting: material counterexample and admission ties, complete groups, partial groups and scholarship boundary
+ok 82 - sorting: material counterexample and admission ties, complete groups, partial groups and scholarship boundary
+  ---
+  duration_ms: 0.722536
+  type: 'test'
+  ...
+# Subtest: sorting: malformed data cannot silently change dimensions, materials, identifiers or product tie order
+ok 83 - sorting: malformed data cannot silently change dimensions, materials, identifiers or product tie order
+  ---
+  duration_ms: 38.110689
+  type: 'test'
+  ...
+# Subtest: All short four-number rows: three partitions, polygon bound, and exact multiplicities
+ok 84 - All short four-number rows: three partitions, polygon bound, and exact multiplicities
+  ---
+  duration_ms: 43.680939
+  type: 'test'
+  ...
+# Subtest: Repeated extreme values remove only one occurrence; strict and inclusive comparisons
+ok 85 - Repeated extreme values remove only one occurrence; strict and inclusive comparisons
+  ---
+  duration_ms: 12.986266
+  type: 'test'
+  ...
+# Subtest: Two pairs reject triples; different squared criteria and first-index answer are preserved
+ok 86 - Two pairs reject triples; different squared criteria and first-index answer are preserved
+  ---
+  duration_ms: 1.132133
+  type: 'test'
+  ...
+# Subtest: Exact temperature arithmetic, selected hours, inclusive endpoints and earliest ties
+ok 87 - Exact temperature arithmetic, selected hours, inclusive endpoints and earliest ties
+  ---
+  duration_ms: 5.743954
+  type: 'test'
+  ...
+# Subtest: pairs matches exhaustive substring oracle, including boundary and empty-answer cases
+ok 88 - pairs matches exhaustive substring oracle, including boundary and empty-answer cases
+  ---
+  duration_ms: 6.653272
+  type: 'test'
+  ...
+# Subtest: forbidden matches exhaustive substring oracle, including boundary and empty-answer cases
+ok 89 - forbidden matches exhaustive substring oracle, including boundary and empty-answer cases
+  ---
+  duration_ms: 3.71045
+  type: 'test'
+  ...
+# Subtest: occurrences matches exhaustive substring oracle, including boundary and empty-answer cases
+ok 90 - occurrences matches exhaustive substring oracle, including boundary and empty-answer cases
+  ---
+  duration_ms: 27.086213
+  type: 'test'
+  ...
+# Subtest: anchored matches exhaustive substring oracle, including boundary and empty-answer cases
+ok 91 - anchored matches exhaustive substring oracle, including boundary and empty-answer cases
+  ---
+  duration_ms: 1.578905
+  type: 'test'
+  ...
+# Subtest: mixed-min matches exhaustive substring oracle, including boundary and empty-answer cases
+ok 92 - mixed-min matches exhaustive substring oracle, including boundary and empty-answer cases
+  ---
+  duration_ms: 8.141866
+  type: 'test'
+  ...
+# Subtest: expression matches exhaustive substring oracle, including boundary and empty-answer cases
+ok 93 - expression matches exhaustive substring oracle, including boundary and empty-answer cases
+  ---
+  duration_ms: 8.257405
+  type: 'test'
+  ...
+# Subtest: six-number rows require exactly one triple and strict squared-sum comparison
+ok 94 - six-number rows require exactly one triple and strict squared-sum comparison
+  ---
+  duration_ms: 8.116826
+  type: 'test'
+  ...
+# Subtest: seven-number rows require two pairs and strict comparison of weighted averages
+ok 95 - seven-number rows require two pairs and strict comparison of weighted averages
+  ---
+  duration_ms: 5.065315
+  type: 'test'
+  ...
+# Subtest: last suitable row determines sum; equality is allowed and maximum sum is irrelevant
+ok 96 - last suitable row determines sum; equality is allowed and maximum sum is irrelevant
+  ---
+  duration_ms: 0.726017
+  type: 'test'
+  ...
+# Subtest: adjacent pairs use global minimum and inclusive two-digit endpoints
+ok 97 - adjacent pairs use global minimum and inclusive two-digit endpoints
+  ---
+  duration_ms: 1.488468
+  type: 'test'
+  ...
+# Subtest: document chapter selection excludes XIII and counts hyphenated words
+ok 98 - document chapter selection excludes XIII and counts hyphenated words
+  ---
+  duration_ms: 9.980572
+  type: 'test'
+  ...
+# Subtest: three consecutive document chapters and exact case variants
+ok 99 - three consecutive document chapters and exact case variants
+  ---
+  duration_ms: 0.748309
+  type: 'test'
+  ...
+# Subtest: exact letter-count window agrees with exhaustive substring enumeration including edges
+ok 100 - exact letter-count window agrees with exhaustive substring enumeration including edges
+  ---
+  duration_ms: 102.304272
+  type: 'test'
+  ...
+# Subtest: pattern-count window includes left segment and handles pattern endpoints
+ok 101 - pattern-count window includes left segment and handles pattern endpoints
+  ---
+  duration_ms: 55.22106
+  type: 'test'
+  ...
+# Subtest: box dynamic programming optimizes count then smallest side, verified by all subsets
+ok 102 - box dynamic programming optimizes count then smallest side, verified by all subsets
+  ---
+  duration_ms: 148.539268
+  type: 'test'
+  ...
+# Subtest: ordered sum includes remainder zero and rejects later larger partner
+ok 103 - ordered sum includes remainder zero and rejects later larger partner
+  ---
+  duration_ms: 58.265821
+  type: 'test'
+  ...
+# Subtest: product classes count each pair once even when both numbers have both factors
+ok 104 - product classes count each pair once even when both numbers have both factors
+  ---
+  duration_ms: 49.818535
+  type: 'test'
+  ...
+# Subtest: distance exactly k is included and k minus one is excluded
+ok 105 - distance exactly k is included and k minus one is excluded
+  ---
+  duration_ms: 53.480118
+  type: 'test'
+  ...
+# Subtest: decreasing multiples and duplicates preserve different positions
+ok 106 - decreasing multiples and duplicates preserve different positions
+  ---
+  duration_ms: 89.485433
+  type: 'test'
+  ...
+# Subtest: distinct remainders reject missing zero and retain the second compatible maximum
+ok 107 - distinct remainders reject missing zero and retain the second compatible maximum
+  ---
+  duration_ms: 50.280724
+  type: 'test'
+  ...
+# Subtest: state stays below source memory limit at maximum sequence lengths
+ok 108 - state stays below source memory limit at maximum sequence lengths
+  ---
+  duration_ms: 135.418564
+  type: 'test'
+  ...
+# Subtest: parallel branches wait for their maximum, independent of row order
+ok 109 - parallel branches wait for their maximum, independent of row order
+  ---
+  duration_ms: 5.971359
+  type: 'test'
+  ...
+# Subtest: numbered millisecond includes its finishing boundary and excludes its starting boundary
+ok 110 - numbered millisecond includes its finishing boundary and excludes its starting boundary
+  ---
+  duration_ms: 0.702714
+  type: 'test'
+  ...
+# Subtest: simultaneous completions count separately at the same first possible time
+ok 111 - simultaneous completions count separately at the same first possible time
+  ---
+  duration_ms: 0.352223
+  type: 'test'
+  ...
+# Subtest: unknown, duplicate and cyclic process keys are rejected
+ok 112 - unknown, duplicate and cyclic process keys are rejected
+  ---
+  duration_ms: 16.833406
+  type: 'test'
+  ...
+# Subtest: the question supplies the requested threshold and quantity
+ok 113 - the question supplies the requested threshold and quantity
+  ---
+  duration_ms: 1.791268
+  type: 'test'
+  ...
+# Subtest: temperature includes both date and hour endpoints; truncates instead of rounding
+ok 114 - temperature includes both date and hour endpoints; truncates instead of rounding
+  ---
+  duration_ms: 8.704378
+  type: 'test'
+  ...
+# Subtest: robot includes both endpoints and agrees with exhaustive paths
+ok 115 - robot includes both endpoints and agrees with exhaustive paths
+  ---
+  duration_ms: 6.907436
+  type: 'test'
+  ...
+# Subtest: document rejects inflections, joined words, and wrong case
+ok 116 - document rejects inflections, joined words, and wrong case
+  ---
+  duration_ms: 3.021968
+  type: 'test'
+  ...
+# Subtest: forbidden substring handles endpoints and exhaustive short strings
+ok 117 - forbidden substring handles endpoints and exhaustive short strings
+  ---
+  duration_ms: 52.073284
+  type: 'test'
+  ...
+# Subtest: container objectives match every subset, including zero fit and duplicate weights
+ok 118 - container objectives match every subset, including zero fit and duplicate weights
+  ---
+  duration_ms: 125.421318
+  type: 'test'
+  ...
+# Subtest: triple loss method matches all choices including nonprime modulus and both alternatives
+ok 119 - triple loss method matches all choices including nonprime modulus and both alternatives
+  ---
+  duration_ms: 43.340002
+  type: 'test'
+  ...
+# Subtest: Whole lowercase document word respects case, forms and hyphens
+ok 120 - Whole lowercase document word respects case, forms and hyphens
+  ---
+  duration_ms: 7.866008
+  type: 'test'
+  ...
+# Subtest: Pairs count pairs instead of characters and include the final run
+ok 121 - Pairs count pairs instead of characters and include the final run
+  ---
+  duration_ms: 0.740426
+  type: 'test'
+  ...
+# Subtest: Pairs impose no arbitrary 100-pair ceiling and reject invalid alphabet
+ok 122 - Pairs impose no arbitrary 100-pair ceiling and reject invalid alphabet
+  ---
+  duration_ms: 1.371876
+  type: 'test'
+  ...
+# Subtest: Trees use exact bounded gaps, largest row and smallest starting place
+ok 123 - Trees use exact bounded gaps, largest row and smallest starting place
+  ---
+  duration_ms: 1.774664
+  type: 'test'
+  ...
+# Subtest: Circular costs match every center for all binary mass arrays up to length eight
+ok 124 - Circular costs match every center for all binary mass arrays up to length eight
+  ---
+  duration_ms: 46.248963
+  type: 'test'
+  ...
+# Subtest: Circular example uses three kilometers and rejects malformed counts or masses
+ok 125 - Circular example uses three kilometers and rejects malformed counts or masses
+  ---
+  duration_ms: 14.483762
+  type: 'test'
+  ...
+# Subtest: Cluster medoid is an actual point and minimizes distances rather than squared distances
+ok 126 - Cluster medoid is an actual point and minimizes distances rather than squared distances
+  ---
+  duration_ms: 5.205755
+  type: 'test'
+  ...
+# Subtest: All points must lie in disjoint rectangles of required dimensions
+ok 127 - All points must lie in disjoint rectangles of required dimensions
+  ---
+  duration_ms: 32.690372
+  type: 'test'
+  ...
+# Subtest: Luminosity suffixes must match completely, including separate VII white dwarfs
+ok 128 - Luminosity suffixes must match completely, including separate VII white dwarfs
+  ---
+  duration_ms: 3.999954
+  type: 'test'
+  ...
+# Subtest: Exact decimal scaling and integer square roots retain floor boundaries
+ok 129 - Exact decimal scaling and integer square roots retain floor boundaries
+  ---
+  duration_ms: 22.65931
+  type: 'test'
+  ...
+# Subtest: Receipt mass uses each article weight, inclusive dates and excludes sales and another street
+ok 130 - Receipt mass uses each article weight, inclusive dates and excludes sales and another street
+  ---
+  duration_ms: 11.195359
+  type: 'test'
+  ...
+# Subtest: Stock change subtracts sales and ignores weight and price
+ok 131 - Stock change subtracts sales and ignores weight and price
+  ---
+  duration_ms: 1.00649
+  type: 'test'
+  ...
+# Subtest: Joins reject duplicate keys, duplicate operations and missing references
+ok 132 - Joins reject duplicate keys, duplicate operations and missing references
+  ---
+  duration_ms: 43.651729
+  type: 'test'
+  ...
+# Subtest: Selection derives year, month and measure from condition, not publication year
+ok 133 - Selection derives year, month and measure from condition, not publication year
+  ---
+  duration_ms: 1.291263
+  type: 'test'
+  ...
+# Subtest: Seven-column stock schema uses F quantities and E types without confusing prices
+ok 134 - Seven-column stock schema uses F quantities and E types without confusing prices
+  ---
+  duration_ms: 1.326381
+  type: 'test'
+  ...
+# Subtest: Soda task selects October district and 2021 dates independent of 2022 variant year
+ok 135 - Soda task selects October district and 2021 dates independent of 2022 variant year
+  ---
+  duration_ms: 0.74134
+  type: 'test'
+  ...
+# Subtest: hyphenated words remain eligible and repeated combinations count separately
+ok 136 - hyphenated words remain eligible and repeated combinations count separately
+  ---
+  duration_ms: 4.436833
+  type: 'test'
+  ...
+# Subtest: exact uppercase surname excludes endings, lowercase and prefixes
+ok 137 - exact uppercase surname excludes endings, lowercase and prefixes
+  ---
+  duration_ms: 0.639853
+  type: 'test'
+  ...
+# Subtest: chapter selection is constrained to the requested part and excludes intermediate chapters
+ok 138 - chapter selection is constrained to the requested part and excludes intermediate chapters
+  ---
+  duration_ms: 19.969393
+  type: 'test'
+  ...
+# Subtest: ODT parser preserves repeated spaces and skips note bodies without dropping surrounding text
+ok 139 - ODT parser preserves repeated spaces and skips note bodies without dropping surrounding text
+  ---
+  duration_ms: 66.914854
+  type: 'test'
+  ...
+# Subtest: exact gap, repeated sizes and arbitrary source order
+ok 140 - exact gap, repeated sizes and arbitrary source order
+  ---
+  duration_ms: 5.628444
+  type: 'test'
+  ...
+# Subtest: largest minimum is the secondary objective; single usable size is valid
+ok 141 - largest minimum is the secondary objective; single usable size is valid
+  ---
+  duration_ms: 31.272547
+  type: 'test'
+  ...
+# Subtest: all subsets of nine sizes agree with exhaustive optimization of both objectives
+ok 142 - all subsets of nine sizes agree with exhaustive optimization of both objectives
+  ---
+  duration_ms: 62.645673
+  type: 'test'
+  ...
+# Subtest: dependency recursion supports out-of-order ids, uses max, and rejects cycles
+ok 143 - dependency recursion supports out-of-order ids, uses max, and rejects cycles
+  ---
+  duration_ms: 7.168761
+  type: 'test'
+  ...
+# Subtest: delayed starts and changing active identities extend five-process interval from three to seven
+ok 144 - delayed starts and changing active identities extend five-process interval from three to seven
+  ---
+  duration_ms: 24.174374
+  type: 'test'
+  ...
+# Subtest: schedule rejects missing processes, negative starts and overlapping dependencies
+ok 145 - schedule rejects missing processes, negative starts and overlapping dependencies
+  ---
+  duration_ms: 39.720378
+  type: 'test'
+  ...
+# Subtest: exactly one two-digit value: overlapping windows count separately, both two-digit values do not
+ok 146 - exactly one two-digit value: overlapping windows count separately, both two-digit values do not
+  ---
+  duration_ms: 4.014831
+  type: 'test'
+  ...
+# Subtest: divisibility uses the found minimum, inclusive OR counts a pair only once
+ok 147 - divisibility uses the found minimum, inclusive OR counts a pair only once
+  ---
+  duration_ms: 0.644888
+  type: 'test'
+  ...
+# Subtest: signed triples reject zero and threshold equality, retain negative minima and final window
+ok 148 - signed triples reject zero and threshold equality, retain negative minima and final window
+  ---
+  duration_ms: 0.520065
+  type: 'test'
+  ...
+# Subtest: The sum comparison includes equality and is invariant under permutation
+ok 149 - The sum comparison includes equality and is invariant under permutation
+  ---
+  duration_ms: 1.927756
+  type: 'test'
+  ...
+# Subtest: A repetition disqualifies the row independently of its sums
+ok 150 - A repetition disqualifies the row independently of its sums
+  ---
+  duration_ms: 19.740877
+  type: 'test'
+  ...
+# Subtest: Overlapping forbidden pairs split without losing single allowed ABC letters
+ok 151 - Overlapping forbidden pairs split without losing single allowed ABC letters
+  ---
+  duration_ms: 2.903987
+  type: 'test'
+  ...
+# Subtest: An alternating maximum at the end is included; differing letters still conflict
+ok 152 - An alternating maximum at the end is included; differing letters still conflict
+  ---
+  duration_ms: 0.891353
+  type: 'test'
+  ...
+# Subtest: Base 14 respects leading zeros, single even digits, invalid letters and numerical ties
+ok 153 - Base 14 respects leading zeros, single even digits, invalid letters and numerical ties
+  ---
+  duration_ms: 0.889631
+  type: 'test'
+  ...
+# Subtest: All short binary and ternary strings agree with exhaustive substring search
+ok 154 - All short binary and ternary strings agree with exhaustive substring search
+  ---
+  duration_ms: 31.597536
+  type: 'test'
+  ...
+# Subtest: Restored links distinguish identical short questions by explicit parent identifier
+ok 155 - Restored links distinguish identical short questions by explicit parent identifier
+  ---
+  duration_ms: 56.676292
+  type: 'test'
+  ...
+# Subtest: A strategy needs every opponent response, including branches changing the first heap
+ok 156 - A strategy needs every opponent response, including branches changing the first heap
+  ---
+  duration_ms: 64.337654
+  type: 'test'
+  ...
+# Subtest: Winning ends the game immediately and the next player cannot continue it
+ok 157 - Winning ends the game immediately and the next player cannot continue it
+  ---
+  duration_ms: 59.052272
+  type: 'test'
+  ...
+# Subtest: A changed primary question or primary parent file rejects recovered rules
+ok 158 - A changed primary question or primary parent file rejects recovered rules
+  ---
+  duration_ms: 2.290923
+  type: 'test'
+  ...
+# Subtest: prime rejects 1 and composite squares
+ok 159 - prime rejects 1 and composite squares
+  ---
+  duration_ms: 4.713628
+  type: 'test'
+  ...
+# Subtest: pair enumeration includes repeated prime factors and excludes lower bound
+ok 160 - pair enumeration includes repeated prime factors and excludes lower bound
+  ---
+  duration_ms: 8.553718
+  type: 'test'
+  ...
+# Subtest: pair enumeration requires exactly one pattern in each prime
+ok 161 - pair enumeration requires exactly one pattern in each prime
+  ---
+  duration_ms: 0.824374
+  type: 'test'
+  ...
+# Subtest: cubic midpoint bounds for both target outputs
+ok 162 - cubic midpoint bounds for both target outputs
+  ---
+  duration_ms: 1.039293
+  type: 'test'
+  ...
+# Subtest: strict and nonstrict minimum updates retain different equal minima
+ok 163 - strict and nonstrict minimum updates retain different equal minima
+  ---
+  duration_ms: 18.77275
+  type: 'test'
+  ...
+# Subtest: EGE informatics has complete, disjoint, signed study families
+ok 164 - EGE informatics has complete, disjoint, signed study families
+  ---
+  duration_ms: 682.755543
+  type: 'test'
+  ...
+# Subtest: Task meaning distinguishes ambiguous words, old metadata and input formats
+ok 165 - Task meaning distinguishes ambiguous words, old metadata and input formats
+  ---
+  duration_ms: 0.653038
+  type: 'test'
+  ...
+# Subtest: Programming memory limits do not become information-volume questions
+ok 166 - Programming memory limits do not become information-volume questions
+  ---
+  duration_ms: 17.63538
+  type: 'test'
+  ...
+# Subtest: EGE source origin and namespace cannot point into OGE
+ok 167 - EGE source origin and namespace cannot point into OGE
+  ---
+  duration_ms: 1132.918377
+  type: 'test'
+  ...
+# Subtest: Restored attachments require exact original conditions and preserve unrelated tasks
+ok 168 - Restored attachments require exact original conditions and preserve unrelated tasks
+  ---
+  duration_ms: 4.663429
+  type: 'test'
+  ...
+# Subtest: Changed conditions lose their reviewed classification
+ok 169 - Changed conditions lose their reviewed classification
+  ---
+  duration_ms: 1.025379
+  type: 'test'
+  ...
+# Subtest: Only reviewed damaged operators are restored, with original source guards
+ok 170 - Only reviewed damaged operators are restored, with original source guards
+  ---
+  duration_ms: 24.668035
+  type: 'test'
+  ...
+# Subtest: Next task preserves family across page boundaries
+ok 171 - Next task preserves family across page boundaries
+  ---
+  duration_ms: 14.919376
+  type: 'test'
+  ...
+# Subtest: Grouped games retain the common condition and independent question
+ok 172 - Grouped games retain the common condition and independent question
+  ---
+  duration_ms: 1114.985811
+  type: 'test'
+  ...
+# Subtest: Only the reviewed stray angle is removed to recover the original database question
+ok 173 - Only the reviewed stray angle is removed to recover the original database question
+  ---
+  duration_ms: 13.050292
+  type: 'test'
+  ...
+# Subtest: Продолжение ОГЭ сохраняет выборку и банк на границе серверных страниц
+ok 174 - Продолжение ОГЭ сохраняет выборку и банк на границе серверных страниц
+  ---
+  duration_ms: 28.318528
+  type: 'test'
+  ...
+# Subtest: КЭС ОГЭ берётся из свойств задания, включая родительские коды 7 и 8
+ok 175 - КЭС ОГЭ берётся из свойств задания, включая родительские коды 7 и 8
+  ---
+  duration_ms: 2.034919
+  type: 'test'
+  ...
+# Subtest: Вложенные и смешанные КЭС не теряют задания и не удваивают счётчики
+ok 176 - Вложенные и смешанные КЭС не теряют задания и не удваивают счётчики
+  ---
+  duration_ms: 1.507413
+  type: 'test'
+  ...
+# Subtest: Пагинация сохраняет тему и поиск; первая страница имеет базовый URL
+ok 177 - Пагинация сохраняет тему и поиск; первая страница имеет базовый URL
+  ---
+  duration_ms: 0.522556
+  type: 'test'
+  ...
+# Subtest: Ошибочные страницы не округляются и не превращаются в первую страницу
+ok 178 - Ошибочные страницы не округляются и не превращаются в первую страницу
+  ---
+  duration_ms: 0.495732
+  type: 'test'
+  ...
+# Subtest: Общее условие прикреплено к каждому вопросу блока и не попадает в предыдущий
+ok 179 - Общее условие прикреплено к каждому вопросу блока и не попадает в предыдущий
+  ---
+  duration_ms: 3.195686
+  type: 'test'
+  ...
+# Subtest: Рисунок ФИПИ доступен без JavaScript и берётся из первого аргумента
+ok 180 - Рисунок ФИПИ доступен без JavaScript и берётся из первого аргумента
+  ---
+  duration_ms: 1.168545
+  type: 'test'
+  ...
+# Subtest: Физика ОГЭ имеет собственные темы КЭС, включая двузначные подтемы
+ok 181 - Физика ОГЭ имеет собственные темы КЭС, включая двузначные подтемы
+  ---
+  duration_ms: 0.727109
+  type: 'test'
+  ...
+# Subtest: Одинаковые исходные номера разных банков не смешивают страницы и решения
+ok 182 - Одинаковые исходные номера разных банков не смешивают страницы и решения
+  ---
+  duration_ms: 2.597587
+  type: 'test'
+  ...
+# Subtest: Путь каталога и ресурсы физики не используют математический банк
+ok 183 - Путь каталога и ресурсы физики не используют математический банк
+  ---
+  duration_ms: 1.94753
+  type: 'test'
+  ...
+# Subtest: Информатика: отдельные ID, темы и ссылки файлов без JavaScript
+ok 184 - Информатика: отдельные ID, темы и ссылки файлов без JavaScript
+  ---
+  duration_ms: 2.352645
+  type: 'test'
+  ...
+# Subtest: Existing paragraphs retain their mathematical formatting and line breaks
+ok 185 - Existing paragraphs retain their mathematical formatting and line breaks
+  ---
+  duration_ms: 4.910117
+  type: 'test'
+  ...
+# Subtest: Program indentation, blank lines and operators survive without becoming HTML or formulas
+ok 186 - Program indentation, blank lines and operators survive without becoming HTML or formulas
+  ---
+  duration_ms: 0.680897
+  type: 'test'
+  ...
+# Subtest: Several code blocks preserve their order; an unclosed block remains ordinary escaped text
+ok 187 - Several code blocks preserve their order; an unclosed block remains ordinary escaped text
+  ---
+  duration_ms: 0.542121
+  type: 'test'
+  ...
+# Subtest: Pascal corrections preserve div, assignment, comparison and indentation
+ok 188 - Pascal corrections preserve div, assignment, comparison and indentation
+  ---
+  duration_ms: 0.442905
+  type: 'test'
+  ...
+# Subtest: strategy tables retain every branch and escape authored cells
+ok 189 - strategy tables retain every branch and escape authored cells
+  ---
+  duration_ms: 3.066652
+  type: 'test'
+  ...
+# Subtest: malformed tables preserve all original values as escaped prose
+ok 190 - malformed tables preserve all original values as escaped prose
+  ---
+  duration_ms: 0.475869
+  type: 'test'
+  ...
+# Subtest: table and code blocks keep separate rendering with surrounding prose
+ok 191 - table and code blocks keep separate rendering with surrounding prose
+  ---
+  duration_ms: 0.515662
+  type: 'test'
+  ...
+# Subtest: Immutable URLs identify their bytes; GET, HEAD and validators agree
+ok 192 - Immutable URLs identify their bytes; GET, HEAD and validators agree
+  ---
+  duration_ms: 19.017572
+  type: 'test'
+  ...
+# Subtest: Legacy URLs revalidate; invalid paths never expose project files
+ok 193 - Legacy URLs revalidate; invalid paths never expose project files
+  ---
+  duration_ms: 1.914247
+  type: 'test'
+  ...
+# Subtest: All banks share the same legacy resources; source bytes and icon URLs are preserved
+ok 194 - All banks share the same legacy resources; source bytes and icon URLs are preserved
+  ---
+  duration_ms: 5.99908
+  type: 'test'
+  ...
+# Subtest: A version retained on disk remains available after a new release
+ok 195 - A version retained on disk remains available after a new release
+  ---
+  duration_ms: 1.447633
+  type: 'test'
+  ...
+1..195
+# tests 195
+# suites 0
+# pass 195
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 44385.52999

@@ -21,3 +21,9 @@ test('Several code blocks preserve their order; an unclosed block remains ordina
   assert.ok(result.includes('кц</code></pre><p>Between</p><pre'));
   assert.equal(renderSolutionBlocks('```python\n<script>', math, escape), '<p>```python<br>&lt;script&gt;</p>');
 });
+
+test('Pascal corrections preserve div, assignment, comparison and indentation', () => {
+  const code = '  k := k + n div 4;\n  if n > 0 then';
+  const result = renderSolutionBlocks('```pascal\n' + code + '\n```', math, escape);
+  assert.equal(result, '<pre class="solution-code" tabindex="0" aria-label="Программа на Паскале"><code>' + escape(code) + '</code></pre>');
+});

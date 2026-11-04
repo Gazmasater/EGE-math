@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-04T21:33:46.264443+00:00",
+  "status": "passed",
+  "command": "node --max-old-space-size=384 --test --test-concurrency=1 scripts/ege-informatics*.test.js scripts/solution-blocks.test.js scripts/solution-tables.test.js scripts/web-assets.test.js scripts/catalogue.test.js scripts/oge-catalog.test.js",
+  "tests": 195,
+  "passed": 195,
+  "failed": 0,
+  "skipped": 0,
+  "testLogSha256": "8ea66a4217dca91b1fd717ca2f46b3a9a503dafaf316940ed87c70651c33379e",
+  "testLogFile": "save-tests.tap",
+  "gitDiffCheck": "passed",
+  "remainingUniqueIds": 32,
+  "archivedEvidenceHashes": "verified",
+  "fullPublicationAudit": "Historical report retained in publication-completion.json; not rerun for this Git save.",
+  "runtimeData": "Ignored storage databases and secrets are not part of this source snapshot."
+}

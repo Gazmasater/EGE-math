@@ -1,6 +1,9 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
+  if (document.getElementById('study-request')) {
+    document.querySelectorAll('[data-prep-request]').forEach(link => { link.href = '#study-request'; });
+  }
   if (location.pathname === '/study-request/sent' && document.cookie.split('; ').includes('ege_study_accepted=1')) {
     document.cookie = 'ege_study_accepted=; Max-Age=0; Path=/; Secure; SameSite=Lax';
     window.egeAnalytics?.goal('study_lead_accepted');

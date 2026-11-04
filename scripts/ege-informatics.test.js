@@ -26,6 +26,8 @@ test('EGE informatics has complete, disjoint, signed study families', () => {
 test('Task meaning distinguishes ambiguous words, old metadata and input formats', () => {
   for(const [id,type] of Object.entries({
     '1BE844':'information-volume', // A password stored in a database is a volume question.
+    'ECAE49':'write-program', '902B84':'write-program', '391438':'write-program', // Memory limits and transmission stories constrain the requested program.
+    'E9F6D6':'write-program', // Chronological sorting is not a logical expression.
     '41E442':'sorting', // Store records are processed by an algorithm, not a DB query.
     '290F15':'sorting', // A locker cell is not a spreadsheet cell.
     'B88351':'combinatorics', // Counting words is not a Fano code problem.
@@ -35,6 +37,20 @@ test('Task meaning distinguishes ambiguous words, old metadata and input formats
   })) assert.equal(review.tasks['EGEINF'+id].type,'type.'+type,id);
 });
 
+test('Programming memory limits do not become information-volume questions', () => {
+  const limited=tasks.filter(t=>/Программа считается эффективной/.test(t.fragment));
+  assert.equal(limited.length,29);
+  assert.deepEqual(classifyEgeInformatics(byId.get('EGEINF391438')).topics, ['3.6', '3.10']);
+  for(const task of limited) {
+    assert.equal(classifyEgeInformatics(task).type,'type.write-program',task.id);
+    assert.ok(ogeTaskMatchesTopic(task,'type.write-program',section),task.id);
+    assert.ok(!ogeTaskMatchesTopic(task,'type.information-volume',section),task.id);
+  }
+  for(const id of ['1BE844','BB5645','C70D4D']) {
+    assert.equal(classifyEgeInformatics(byId.get('EGEINF'+id)).type,'type.information-volume',id);
+  }
+});
+
 test('EGE source origin and namespace cannot point into OGE', () => {
   assert.equal(ogeBank(section).exam,'ЕГЭ');
   assert.equal(ogeBank(section).origin,'https://ege.fipi.ru');
@@ -42,9 +58,39 @@ test('EGE source origin and namespace cannot point into OGE', () => {
   for(const task of tasks) {
     assert.ok(task.id.startsWith('EGEINF'));
     assert.ok(!ogeIds.has(task.id));
-    for(const [,href] of task.fragment.matchAll(/class="fipi-attachment" href="([^"]+)"/g)) assert.equal(new URL(href).origin,'https://ege.fipi.ru');
+    for(const [,href] of task.fragment.matchAll(/class="fipi-attachment" href="([^"]+)"/g)) {
+      if (href.startsWith('/fipi/')) {
+        const restored = require('../lib/ege-informatics-restored-attachments.json')[task.id]?.files.find(file => file.url === href);
+        if (restored) {
+          assert.match(href, /^\/fipi\/ege-informatics\/restored-2021\/[\w.-]+\.(ods|odt|txt)$/);
+          const bytes = require('node:fs').readFileSync(require('node:path').join(__dirname, '..', 'fipi-assets', href.slice('/fipi/'.length)));
+          assert.equal(require('node:crypto').createHash('sha256').update(bytes).digest('hex'), restored.sha256);
+          continue;
+        }
+        const mirror = Object.values(require('../lib/ege-informatics-attachment-mirrors.json')).find(row =>
+          row.taskId === task.id && href === '/fipi/ege-informatics/' + row.localRelative);
+        assert.ok(mirror, task.id + ': local attachment must be explicitly verified');
+        assert.equal(href, '/fipi/ege-informatics/' + mirror.localRelative);
+      } else assert.equal(new URL(href).origin,'https://ege.fipi.ru');
+    }
   }
   assert.equal([...assets].filter(p=>ogeIsExternalAsset(p,section)).length,388);
+});
+
+test('Restored attachments require exact original conditions and preserve unrelated tasks', () => {
+  const restored = require('../lib/ege-informatics-restored-attachments.json');
+  const {restoreEgeInformaticsAttachments: restore} = require('../lib/ege-informatics-restored-attachments');
+  assert.equal(Object.keys(restored).length, 6);
+  for (const id of Object.keys(restored)) {
+    const current = byId.get(id).fragment;
+    const original = current.replace(/<p class="fipi-restored-attachments">[\s\S]*?<\/p>/, '');
+    assert.notEqual(original, current);
+    assert.equal(restore(original, id), current);
+    const changed = original.replace('Впишите', 'Изменено');
+    assert.equal(restore(changed, id), changed);
+    assert.equal(restore(original, id + 'X'), original);
+    assert.equal(restore(current, id), current);
+  }
 });
 
 test('Changed conditions lose their reviewed classification', () => {
@@ -52,6 +98,38 @@ test('Changed conditions lose their reviewed classification', () => {
   assert.ok(reviewedOgeAssignment(task,section));
   task.fragment=task.fragment.replace('TCP/IP','CHANGED');
   assert.equal(reviewedOgeAssignment(task,section),null);
+});
+
+test('Only reviewed damaged operators are restored, with original source guards', () => {
+  const {correctEgeInformaticsSource} = require('../lib/ege-informatics-source-corrections');
+  const corrections = require('../lib/ege-informatics-source-corrections.json').tasks;
+  const {ogeSourceSignature} = require('../lib/oge-classification');
+  const {conditionText} = require('../lib/seo-text');
+  assert.equal(Object.keys(corrections).length, 22);
+  assert.equal(Object.values(corrections).filter(c => !['stray-angle-before-text', 'flattened-rate-exponent'].includes(c.encoding)).length, 19);
+  let operators = 0;
+  for (const [id, correction] of Object.entries(corrections).filter(([, c]) => !['stray-angle-before-text', 'flattened-rate-exponent'].includes(c.encoding))) {
+    const task = byId.get(id), fixed = task.fragment;
+    const entity = {'·':'&#x00B7;', '∈':'&#x2208;', '∧':'&#x2227;'}[correction.operator || '·'];
+    const restored = `<m:mo>${entity}</m:mo>`;
+    const original = correction.encoding === 'legacy-membership'
+      ? fixed.replaceAll(`<span>${entity}</span>`, '<span>&Icirc;</span>')
+      : Number.isInteger(correction.brokenOffset)
+      ? fixed.slice(0, correction.brokenOffset) + '<m:mi>&#xFFFD;</m:mi>' + fixed.slice(correction.brokenOffset + restored.length)
+      : fixed.replaceAll(restored, '<m:mi>&#xFFFD;</m:mi>');
+    assert.equal(ogeSourceSignature({fragment: original}), correction.sourceHash, id);
+    assert.equal(ogeSourceSignature(task), correction.correctedHash, id);
+    assert.equal(conditionText(original), correction.originalCondition, id);
+    assert.equal(conditionText(fixed), correction.correctedCondition, id);
+    assert.equal(correctEgeInformaticsSource(original, id), fixed, id);
+    assert.equal(correctEgeInformaticsSource(fixed, id), fixed, id + ': idempotent');
+    assert.equal(correctEgeInformaticsSource(original, 'EGEINFUNKNOWN'), original);
+    const changed = original.replace('Впишите правильный ответ.', 'Изменённое условие.');
+    assert.notEqual(changed, original);
+    assert.equal(correctEgeInformaticsSource(changed, id), changed, id + ': changed condition');
+    operators += correction.count;
+  }
+  assert.equal(operators, 42);
 });
 
 test('Next task preserves family across page boundaries', () => {
@@ -62,11 +140,33 @@ test('Next task preserves family across page boundaries', () => {
 
 test('Grouped games retain the common condition and independent question', () => {
   const grouped=tasks.filter(t=>t.fragment.includes('class="oge-shared-condition"'));
-  assert.equal(grouped.length,129);
+  const restoredBatch=require('./data/ege-informatics-solutions').find(b=>b.name==='restored-game-links');
+  assert.deepEqual(tasks.filter(t=>ogeTaskMatchesTopic(t,restoredBatch.topic,section) && restoredBatch.records.some(r=>r.id===t.id)).map(t=>t.id).sort(),
+    ['EGEINF0BFCDC','EGEINF319677','EGEINF904C34','EGEINFF931BC']);
+  assert.equal(grouped.length,133);
+  assert.equal(grouped.filter(t=>!t.fragment.includes('data-restored-game=')).length,129);
+  assert.deepEqual(grouped.filter(t=>t.fragment.includes('data-restored-game=')).map(t=>t.id).sort(),
+    ['EGEINF0BFCDC','EGEINF319677','EGEINF904C34','EGEINFF931BC']);
   for(const task of grouped) {
     assert.equal(review.tasks[task.id].type,'type.games');
     assert.equal((task.fragment.match(/class="oge-shared-condition"/g)||[]).length,1);
     assert.match(task.fragment,/Петя/);
     assert.match(task.fragment,/Ваня/);
   }
+});
+
+test('Only the reviewed stray angle is removed to recover the original database question', () => {
+  const {correctEgeInformaticsSource: correct} = require('../lib/ege-informatics-source-corrections');
+  const {ogeSourceSignature} = require('../lib/oge-classification');
+  const {conditionText} = require('../lib/seo-text');
+  const id='EGEINFF3093D',review=require('../lib/ege-informatics-source-corrections.json').tasks[id],fixed=byId.get(id).fragment;
+  const original=fixed.replace(review.correctedSnippet,review.originalSnippet);
+  assert.equal(ogeSourceSignature({fragment:original}),review.sourceHash);
+  assert.equal(ogeSourceSignature({fragment:fixed}),review.correctedHash);
+  assert.equal(correct(original,id),fixed);assert.equal(correct(fixed,id),fixed);
+  assert.equal(correct(original,'EGEINFUNKNOWN'),original);
+  const changed=original.replace('2000','2001');assert.notEqual(changed,original);assert.equal(correct(changed,id),changed);
+  assert.equal(conditionText(original),review.originalCondition);assert.equal(conditionText(fixed),review.correctedCondition);
+  assert.match(conditionText(fixed),/наибольшую разницу между годами рождения родных братьев/u);
+  assert.ok(!conditionText(original).includes('наибольшую разницу'));
 });

@@ -1,0 +1,58 @@
+{
+  "status": "contradiction-confirmed",
+  "productionValidatorUnchanged": true,
+  "note": "Secondary copies repeat over-bound A1 values. Publication remains held. Separate forensic reader accepts positive numbers without upper limit and thick black borders to inspect original values.",
+  "results": [
+    {
+      "id": "779E0A",
+      "n": 20,
+      "A1": 106,
+      "differences": {
+        "grid": [],
+        "rightWalls": [],
+        "downWalls": []
+      },
+      "outOfBound": [
+        [
+          1,
+          1,
+          106
+        ]
+      ]
+    },
+    {
+      "id": "79404A",
+      "n": 20,
+      "A1": 108,
+      "differences": {
+        "grid": [],
+        "rightWalls": [],
+        "downWalls": []
+      },
+      "outOfBound": [
+        [
+          1,
+          1,
+          108
+        ]
+      ]
+    },
+    {
+      "id": "B4F848",
+      "n": 20,
+      "A1": 105,
+      "differences": {
+        "grid": [],
+        "rightWalls": [],
+        "downWalls": []
+      },
+      "outOfBound": [
+        [
+          1,
+          1,
+          105
+        ]
+      ]
+    }
+  ]
+}

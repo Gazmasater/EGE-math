@@ -370,14 +370,22 @@
       });
     }
 
-    if (pageConfig.ogeMath || pageConfig.ogeSection === 'oge-informatics') {
+    if (pageConfig.ogeMath || pageConfig.ogeSection?.endsWith('-informatics')) {
 
     // Source tables preserve the original rows and headings.
     // On narrow screens make their existing native scrolling discoverable.
-    const sourceTables = pageConfig.ogeSection === 'oge-informatics'
-      ? '.qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid)'
-      : '.qblock .cell_0 table.MsoNormalTable';
+    const sourceTables = pageConfig.ogeSection === 'ege-informatics'
+      ? '.qblock .cell_0 table:is(.MsoNormalTable, [border="1"])'
+      : pageConfig.ogeSection === 'oge-informatics'
+        ? '.qblock .cell_0 table:is(.MsoNormalTable, .MsoTableGrid)'
+        : '.qblock .cell_0 table.MsoNormalTable';
     document.querySelectorAll(sourceTables).forEach(table => {
+      const languageHeaders = Array.from(table.rows[0]?.cells || []).filter(cell =>
+        /^(Бейсик|Паскаль|Алгоритмический(?: язык)?|Python|C\+\+|Си|Basic|Pascal)$/i.test(cell.textContent.trim())
+      );
+      if (languageHeaders.length >= 2 && table.matches('[border="1"]:not(.MsoNormalTable):not(.MsoTableGrid):not(:has(table))')) {
+        table.classList.add('fipi-program-table');
+      }
       const hint = document.createElement('p');
       hint.className = 'fipi-table-scroll-hint';
       hint.textContent = 'Прокрутите таблицу вправо, чтобы увидеть все столбцы →';

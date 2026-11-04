@@ -26,7 +26,7 @@ for(const[id,derivative,positive,total,indices]of[
  ['49C3EA',true,false,8,[2,4,6,8]],['57A7B1',true,false,9,[6,7]],['655F85',false,true,8,[1,3,4,5,8]],
  ['6796AE',true,true,10,[2,3,5,6,9,10]],['71BC43',false,false,9,[1,3,6,9]],['875A8A',false,true,10,[4,5,6,8,10]],
  ['95A978',false,false,8,[3,4,7]],['97B55A',true,true,9,[1,2,4,6]],['984B6C',true,false,9,[1,2,3,6,7]],
- ['A62F87',false,false,10,[1,2,4,5,6,8,9]],['C0261C',true,false,7,[4,5,6]],['D143BD',true,false,11,[1,2,5,7,8,9]],['FFE757',false,false,10,[2,3,5,6,8,10]]])defs[id]={family:'signs',source:derivative?(positive?'317541':'317542'):(positive?'317539':'317540'),derivative,positive,total,indices,answer:indices.length};
+ ['A62F87',false,false,10,[1,2,4,5,6,8,9]],['C0261C',true,false,7,[4,5]],['D143BD',true,false,11,[1,2,5,7,8,9]],['FFE757',false,false,10,[2,3,5,6,8,10]]])defs[id]={family:'signs',source:derivative?(positive?'317541':'317542'):(positive?'317539':'317540'),derivative,positive,total,indices,answer:indices.length};
 for(const[id,wantMax,candidates,answer,description]of[
  ['099555',false,[-2,-1,3,4],-1,'В точке −1 график резко идёт вниз; в точке −2 спад значительно положе, а в точках 3 и 4 график идёт вверх.'],
  ['56EA1A',true,[-1,2,3,4],-1,'В точке −1 график поднимается наиболее круто. В точках 2 и 3 он убывает, а в точке 4 поднимается значительно положе.'],
@@ -61,6 +61,7 @@ function solveDerivativeImages(task){
   s.push(d.derivative?`Дан график производной y=f′(x). Функция f ${d.positive?'возрастает при f′(x)>0':'убывает при f′(x)<0'}, то есть там, где изображённая кривая находится ${d.positive?'выше':'ниже'} оси Ox. Наклон самой кривой производной здесь не определяет ответ.`:`Дан график самой функции y=f(x). Знак производной определяется наклоном: f′(x)>0 на участках возрастания, f′(x)<0 на участках убывания. Положение графика выше или ниже оси Ox не определяет знак производной.`,
   `Просматриваем отмеченные точки слева направо. ${d.derivative?`Нужный знак производной имеют`:`На участках ${d.positive?'подъёма':'спада'} находятся`} точки ${d.indices.map(point).join(', ')}.`,
   `Остальные отмеченные точки — ${others.map(point).join(', ')} — условию не удовлетворяют. Таким образом, подходящих точек ${d.indices.length}. Их перечисление даёт проверяемый подсчёт; в ответ записываем количество, а не индексы точек.`);
+  if(task.id==='C0261C')s.push('В частности, при x=x₆ график производной уже расположен выше оси Ox: f′(x₆)>0. Поэтому x₆ принадлежит промежутку возрастания функции и в подсчёт не входит.');
   check=()=>{assert.equal(new Set(d.indices).size,d.answer);assert.ok(d.indices.every(i=>i>=1&&i<=d.total));assert.equal(others.length+d.answer,d.total);};
  }else if(d.family==='compare-slopes'){
   s.push(`Производная в точке равна угловому коэффициенту касательной. Сравним наклоны графика в указанных точках ${d.candidates.map(fmt).join(', ')}. ${d.wantMax?'Самое большое значение производной соответствует наиболее крутому подъёму.':'Самое маленькое значение производной соответствует наиболее крутому спаду, то есть наиболее отрицательному наклону.'}`,
@@ -86,7 +87,8 @@ function solveDerivativeImages(task){
   `На указанном промежутке ${d.point?'(':'['}${d.bounds.map(fmt).join('; ')}${d.point?')':']'} горизонтальные касательные видны при x=${d.locations.map(fmt).join('; x=')}. Это гладкие вершины и впадины изображённой кривой; на остальных её участках касательная имеет ненулевой наклон.`,
   d.point?`Найдена единственная такая точка x=${answer}. По рисунку это минимум функции; в ответ требуется корень уравнения, то есть абсцисса ${answer}.`:`Получено ${d.locations.length} различных точек. Все они лежат между ${fmt(d.bounds[0])} и ${fmt(d.bounds[1])}. Поэтому количество корней уравнения равно ${answer}.`);check=()=>{assert.ok(d.locations.every(x=>x>d.bounds[0]&&x<d.bounds[1]));assert.equal(d.answer,d.point?d.locations[0]:d.locations.length);};
  }else if(d.family==='analytic'){s.push(...d.steps);check=d.check;}
- return{id:task.id,family:d.family,source:d.source,answer,solution:[...s,`Ответ: ${answer}.`].join('\n\n'),diagram_svg:'',diagram_caption:'',check};
+ const correction=task.id==='C0261C'?['Ошибка в первоначальном решении найдена посетителем сайта. Спасибо за внимательность!']:[];
+ return{id:task.id,family:d.family,source:d.source,answer,solution:[...s,`Ответ: ${answer}.`,...correction].join('\n\n'),diagram_svg:'',diagram_caption:'',check};
 }
 function verifyDerivativeImages(r){r.check();}
 function analytic(id,source,answer,fn,x0,wantMax,steps,bounds){

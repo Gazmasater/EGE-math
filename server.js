@@ -15,6 +15,7 @@ const {restorePhysicsFigures} = require('./lib/physics-condition-figures');
 const {restoreOgePhysicsFigures} = require('./lib/oge-physics-condition-figures');
 const { ANALYTICS_SCRIPT, registrationAnalyticsCookie } = require('./lib/analytics');
 const {UI_HEAD, renderSiteHeader, renderSiteFooter, renderSiteAd, insertSiteAd, renderStudyHero, renderSubjectSwitch, renderStudyBenefits, renderStudyGuide, renderStudyFaq} = require('./lib/site-ui');
+const {renderVisitorUpdates} = require('./lib/visitor-updates');
 const {egeSubjectContent} = require('./lib/ege-subject-content');
 const {PHYSICS_TOPICS, physicsTopicInfo, physicsClassification, taskMatchesTopic, taskPhysicsTopic} = require('./lib/physics-topics');
 const {MATH_TASK_TYPES, mathTaskTypeInfo, isFirstPartMathTask, mathTaskAssignment, mathTaskType} = require('./lib/math-task-types');
@@ -590,7 +591,7 @@ function renderExamPage({title, description, pathname, breadcrumbs, items, conte
   ${renderSiteHeader({pathname, subject: pathname === '/ege/physics' ? 'physics' : pathname === '/ege/math' ? 'math' : ''})}
   <main>
     ${renderBreadcrumbs(breadcrumbs)}
-    ${insertSiteAd(content)}
+    ${insertSiteAd(content).replace('</section>', `</section>${pathname === '/ege' || pathname === '/ege/math' ? renderVisitorUpdates() : ''}`)}
     <form class="exam-search" action="/search" method="get" role="search">
       <label for="exam-search-query">Найти задание по номеру ФИПИ или условию</label>
       <div class="exam-search-row"><input id="exam-search-query" name="q" type="search" placeholder="Номер ФИПИ или текст условия" required><button type="submit">Найти</button></div>
@@ -844,6 +845,7 @@ async function renderMathHubPage() {
         <a href="/">Выбрать тип задания</a>
       </div>
     </section>
+    ${renderVisitorUpdates()}
     ${renderSiteAd()}
     <section class="math-hub-section" aria-labelledby="math-hub-sections-title">
       <h2 id="math-hub-sections-title">Типы заданий первой части</h2>
@@ -2252,13 +2254,13 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     searchPath: isOge ? ogeConfig.path : '/search', searchTopic: isOge ? 'all' : ''});
   const pageHeading = isLandingCatalogue ? renderStudyHero({subject: uiSubject,
     solved: seoOverride?.catalogueSolved || 0, types: isPhysics ? PHYSICS_TASK_TYPES.length : MATH_TASK_TYPES.length,
-    sampleAnswer: getPublishedSolution.get(isPhysics ? '8A3445' : '6D1598')?.answer || ''}) + renderSiteAd() + renderStudyBenefits()
+    sampleAnswer: getPublishedSolution.get(isPhysics ? '8A3445' : '6D1598')?.answer || ''}) + (uiSubject === 'math' ? renderVisitorUpdates() : '') + renderSiteAd() + renderStudyBenefits()
     : `<section class="page-heading"><h1>${escapeHtml(headerTitle)}</h1><p>${escapeHtml(subtitle)}</p>
       ${isSelectedMathCatalogue || isSelectedPhysicsCatalogue || hasTaskSolution || taskIdFromPath ? `<div class="page-heading-actions">
         ${isSelectedMathCatalogue || isSelectedPhysicsCatalogue ? '<a class="catalogue-task-jump" href="#tasks">Начать решать ↓</a>' : ''}
         ${hasTaskSolution ? `<a class="task-solution-jump" href="#solution-${escapeHtml(taskIdFromPath)}">Открыть решение ↓</a>` : ''}
         ${taskIdFromPath ? `<a class="task-feedback-jump" href="#feedback" data-feedback-modal-open data-task-id="${escapeHtml(taskIdFromPath)}">Ошибка или пожелание</a>` : ''}
-      </div>` : ''}</section>${isSearch ? '' : renderSiteAd()}`;
+      </div>` : ''}</section>${taskIdFromPath ? renderVisitorUpdates(taskIdFromPath) : ''}${isSearch ? '' : renderSiteAd()}`;
   const taskPager = renderTaskNavigation(taskNavigation);
   const physicsTopicMenu = isPhysics && isPhysicsCatalogue && !onlyAdded && !isSearch
     ? (physicsPart === 2 ? renderPhysicsSecondPartMenu(physicsTopic?.code || '', physicsStats.counts, physicsStats.total, physicsStats.unclassified)

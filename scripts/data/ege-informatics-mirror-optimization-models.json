@@ -1,0 +1,137 @@
+{
+  "EGEINFA6A247": {
+    "kind": "peak-triple",
+    "sign": 1
+  },
+  "EGEINF952F46": {
+    "kind": "longest-signed-parity",
+    "sign": 1,
+    "parity": 0
+  },
+  "EGEINF38414E": {
+    "kind": "peak-triple",
+    "sign": -1
+  },
+  "EGEINF0348F9": {
+    "kind": "linear-cost",
+    "capacity": 36
+  },
+  "EGEINFC2D70A": {
+    "kind": "gap-triple",
+    "operation": "min-sum",
+    "minimum": 1,
+    "maximum": 10000000
+  },
+  "EGEINF377100": {
+    "kind": "max-divisible-subarray",
+    "modulus": 53
+  },
+  "EGEINF494D7D": {
+    "kind": "linear-cost",
+    "capacity": 40
+  },
+  "EGEINF13F17F": {
+    "kind": "gap-pair",
+    "operation": "max-sum",
+    "minimum": 0,
+    "maximum": 100000
+  },
+  "EGEINF2E1A79": {
+    "kind": "linear-cost",
+    "capacity": 46
+  },
+  "EGEINFE8867C": {
+    "kind": "gap-triple",
+    "operation": "max-sum",
+    "minimum": -10000000,
+    "maximum": 10000000
+  },
+  "EGEINF69BBBF": {
+    "kind": "circular-cost"
+  },
+  "EGEINFF13E1D": {
+    "kind": "gap-triple",
+    "operation": "max-product",
+    "minimum": 1,
+    "maximum": 10000000
+  },
+  "EGEINFBDD715": {
+    "kind": "block-difference",
+    "direction": 1
+  },
+  "EGEINFF291D4": {
+    "kind": "max-divisible-subarray",
+    "modulus": 43
+  },
+  "EGEINF522BD9": {
+    "kind": "gap-triple",
+    "operation": "max-product",
+    "minimum": 1,
+    "maximum": 10000000
+  },
+  "EGEINF9F4BD8": {
+    "kind": "max-divisible-subarray",
+    "modulus": 79
+  },
+  "EGEINF6E6BDD": {
+    "kind": "gap-pair",
+    "operation": "max-sum",
+    "minimum": 0,
+    "maximum": 100000
+  },
+  "EGEINF072D53": {
+    "kind": "max-divisible-subarray",
+    "modulus": 71
+  },
+  "EGEINF1D695E": {
+    "kind": "max-divisible-subarray",
+    "modulus": 61
+  },
+  "EGEINF519CA0": {
+    "kind": "block-difference",
+    "direction": -1
+  },
+  "EGEINFA47CA1": {
+    "kind": "longest-signed-parity",
+    "sign": -1,
+    "parity": 1
+  },
+  "EGEINF48B0C6": {
+    "kind": "max-divisible-subarray",
+    "modulus": 97
+  },
+  "EGEINF12C4CF": {
+    "kind": "radius-containers",
+    "capacity": 12
+  },
+  "EGEINF3169CC": {
+    "kind": "peak-triple",
+    "sign": -1
+  },
+  "EGEINF5ABB91": {
+    "kind": "gap-pair",
+    "operation": "max-sum",
+    "minimum": 0,
+    "maximum": 100000
+  },
+  "EGEINF30C294": {
+    "kind": "radius-containers",
+    "capacity": 30
+  },
+  "EGEINFDD9960": {
+    "kind": "gap-triple",
+    "operation": "max-sum",
+    "minimum": -10000000,
+    "maximum": 10000000
+  },
+  "EGEINFEF3033": {
+    "kind": "gap-triple",
+    "operation": "max-product",
+    "minimum": 1,
+    "maximum": 10000000
+  },
+  "EGEINF549B82": {
+    "kind": "choose-triples",
+    "modulus": 109
+  }
+}

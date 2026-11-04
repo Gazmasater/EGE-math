@@ -1,0 +1,9 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict');
+const {solve,model}=require('./lib/ege-informatics-processes-machine');
+const processes=[{id:7,duration:2,depends:[1,3]},{id:1,duration:3,depends:[]},{id:3,duration:2,depends:[]},{id:9,duration:1,depends:[7]}];
+test('parallel branches wait for their maximum, independent of row order',()=>{const r=solve(processes,{kind:'makespan'});assert.equal(r.answer,'6');assert.deepEqual(r.starts,{1:0,3:0,7:3,9:5});assert.deepEqual(r.ends,{1:3,3:2,7:5,9:6});});
+test('numbered millisecond includes its finishing boundary and excludes its starting boundary',()=>{assert.deepEqual(solve(processes,{kind:'active-at',time:3}).selected,[1]);assert.deepEqual(solve(processes,{kind:'active-at',time:4}).selected,[7]);assert.equal(solve(processes,{kind:'active-at',time:7}).answer,'0');});
+test('simultaneous completions count separately at the same first possible time',()=>{const ps=[{id:1,duration:2,depends:[]},{id:2,duration:2,depends:[]},{id:3,duration:1,depends:[1]}];assert.equal(solve(ps,{kind:'finish-count',count:2}).answer,'2');assert.equal(solve(ps,{kind:'finish-count',count:3}).answer,'3');});
+test('unknown, duplicate and cyclic process keys are rejected',()=>{assert.throws(()=>solve([{id:1,duration:1,depends:[2]}],{kind:'makespan'}));assert.throws(()=>solve([{id:1,duration:1,depends:[2]},{id:2,duration:1,depends:[1]}],{kind:'makespan'}));assert.throws(()=>solve([processes[1],processes[1]],{kind:'makespan'}));});
+test('the question supplies the requested threshold and quantity',()=>{const s=require('./data/ege-informatics-processes-sources.json');assert.deepEqual(model(s.EGEINF330C00.fipiCondition),{kind:'active-at',time:7});assert.deepEqual(model(s.EGEINF55E2A1.fipiCondition),{kind:'finish-count',count:16});assert.deepEqual(model(s.EGEINF45BA0B.fipiCondition),{kind:'makespan'});});

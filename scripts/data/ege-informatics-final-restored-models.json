@@ -1,0 +1,373 @@
+{
+  "EGEINF4CC10E": {
+    "kind": "database",
+    "start": "2024-10-14",
+    "end": "2024-10-20",
+    "truncate": false,
+    "store": {
+      "field": "addressPrefix",
+      "value": "Некрасовский бульвар,"
+    },
+    "goods": {
+      "prefix": "Сметана "
+    },
+    "operation": "Продажа",
+    "measure": "revenue"
+  },
+  "EGEINFEFEAB3": {
+    "kind": "database",
+    "start": "2024-10-03",
+    "end": "2024-10-15",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Центральный"
+    },
+    "goods": {
+      "prefix": "Перец "
+    },
+    "operation": "Поступление",
+    "measure": "revenue"
+  },
+  "EGEINF9D82E5": {
+    "kind": "database",
+    "start": "2024-10-02",
+    "end": "2024-10-09",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Заречный"
+    },
+    "goods": {
+      "prefix": "Молоко ультрапастеризованное "
+    },
+    "operation": "Продажа",
+    "measure": "revenue"
+  },
+  "EGEINFE207E9": {
+    "kind": "database",
+    "start": "2024-10-05",
+    "end": "2024-10-20",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Центральный"
+    },
+    "goods": {
+      "prefix": "Масло оливковое "
+    },
+    "operation": "Поступление",
+    "measure": "revenue"
+  },
+  "EGEINFFE814D": {
+    "kind": "process",
+    "type": "makespan"
+  },
+  "EGEINFD9CFB2": {
+    "kind": "robot",
+    "finish": "corners",
+    "order": "max-min"
+  },
+  "EGEINFFAFE1B": {
+    "kind": "robot",
+    "finish": "corners",
+    "order": "max-min"
+  },
+  "EGEINFAE45C9": {
+    "kind": "robot",
+    "finish": "corners",
+    "order": "max-min"
+  },
+  "EGEINF03A0E6": {
+    "kind": "robot",
+    "finish": "corners",
+    "order": "max-min"
+  },
+  "EGEINF776E36": {
+    "kind": "robot",
+    "finish": "corners",
+    "order": "max-min"
+  },
+  "EGEINFE083FC": {
+    "kind": "text",
+    "chapters": [
+      "V",
+      "VI"
+    ],
+    "terms": [
+      "да"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINF37C121": {
+    "kind": "text",
+    "chapters": [
+      "IX",
+      "X"
+    ],
+    "terms": [
+      "след",
+      "След"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINF5121AE": {
+    "kind": "text",
+    "chapters": [
+      "III",
+      "IV",
+      "V"
+    ],
+    "terms": [
+      "вот",
+      "Вот"
+    ],
+    "mode": "whole"
+  },
+  "EGEINFAC92AB": {
+    "kind": "text",
+    "chapters": [
+      "IX",
+      "X"
+    ],
+    "terms": [
+      "вы"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINFD89EC7": {
+    "kind": "text",
+    "chapters": [
+      "II"
+    ],
+    "terms": [
+      "он",
+      "Он"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF1CFE4F": {
+    "kind": "sheet",
+    "width": 6,
+    "predicate": "pair-mean-smaller",
+    "aggregate": "last-index"
+  },
+  "EGEINF6E4E0E": {
+    "kind": "sheet",
+    "width": 6,
+    "predicate": "pair-mean-smaller",
+    "aggregate": "mean"
+  },
+  "EGEINFA8C919": {
+    "kind": "sheet",
+    "width": 7,
+    "predicate": "triple-mean-larger",
+    "aggregate": "last-index"
+  },
+  "EGEINFEAAB94": {
+    "kind": "sheet",
+    "width": 5,
+    "predicate": "distinct-extremes",
+    "aggregate": "first-sum"
+  },
+  "EGEINF204C0F": {
+    "kind": "sequence",
+    "digits": 5,
+    "count": "at-least-one",
+    "ending": 27,
+    "comparison": ">=",
+    "signed": true
+  },
+  "EGEINFFA6C24": {
+    "kind": "sequence",
+    "digits": 4,
+    "count": "at-most-two",
+    "ending": 25,
+    "comparison": "<=",
+    "signed": true
+  },
+  "EGEINF5994E6": {
+    "kind": "sequence",
+    "digits": 2,
+    "count": "exactly-one",
+    "ending": 13,
+    "comparison": "<=",
+    "signed": false
+  },
+  "EGEINFC6FBAB": {
+    "kind": "initial-letter-digits",
+    "letter": "N",
+    "digits": 55
+  },
+  "EGEINF79DEC1": {
+    "kind": "suffix-pattern-count",
+    "pattern": "2025",
+    "count": 50,
+    "letter": "Y",
+    "minimum": 140
+  },
+  "EGEINFB1238C": {
+    "kind": "events",
+    "gap": false
+  },
+  "EGEINFC22345": {
+    "kind": "clusters",
+    "statistic": "means-sums",
+    "boxes": {
+      "A": [
+        [
+          1.3388671875,
+          5.8388671875,
+          3.806640625,
+          9.806640625
+        ],
+        [
+          2.76171875,
+          7.26171875,
+          16.5048828125,
+          22.5048828125
+        ]
+      ],
+      "B": [
+        [
+          7.4541015625,
+          12.4541015625,
+          10.455078125,
+          16.455078125
+        ],
+        [
+          8.9541015625,
+          13.9541015625,
+          20.0830078125,
+          26.0830078125
+        ],
+        [
+          14.2099609375,
+          19.2099609375,
+          19.6123046875,
+          25.6123046875
+        ]
+      ]
+    }
+  },
+  "EGEINFAEB8BB": {
+    "kind": "clusters",
+    "statistic": "min-distance-radius",
+    "boxes": {
+      "A": [
+        [
+          4.7255859375,
+          9.2255859375,
+          9.234375,
+          15.234375
+        ],
+        [
+          1.5595703125,
+          6.0595703125,
+          3.1298828125,
+          9.1298828125
+        ]
+      ],
+      "B": [
+        [
+          8.9609375,
+          13.9609375,
+          11.701171875,
+          17.701171875
+        ],
+        [
+          19.048828125,
+          24.048828125,
+          21.8349609375,
+          27.8349609375
+        ],
+        [
+          12.345703125,
+          17.345703125,
+          20.603515625,
+          26.603515625
+        ]
+      ]
+    }
+  },
+  "EGEINF82E6AD": {
+    "kind": "clusters",
+    "statistic": "max-differences",
+    "boxes": {
+      "A": [
+        [
+          1.2265625,
+          5.7265625,
+          2.552734375,
+          8.552734375
+        ],
+        [
+          2.6865234375,
+          7.1865234375,
+          15.2314453125,
+          21.2314453125
+        ]
+      ],
+      "B": [
+        [
+          15.96484375,
+          20.96484375,
+          17.990234375,
+          23.990234375
+        ],
+        [
+          10.548828125,
+          15.548828125,
+          17.576171875,
+          23.576171875
+        ],
+        [
+          9.0595703125,
+          14.0595703125,
+          6.0693359375,
+          12.0693359375
+        ]
+      ]
+    }
+  },
+  "EGEINF9C8C86": {
+    "kind": "clusters",
+    "statistic": "means-sums",
+    "boxes": {
+      "A": [
+        [
+          4.8095703125,
+          9.3095703125,
+          17.078125,
+          23.078125
+        ],
+        [
+          1.6484375,
+          6.1484375,
+          4.1611328125,
+          10.1611328125
+        ]
+      ],
+      "B": [
+        [
+          4.01953125,
+          9.01953125,
+          18.8974609375,
+          24.8974609375
+        ],
+        [
+          15.6982421875,
+          20.6982421875,
+          23.3056640625,
+          29.3056640625
+        ],
+        [
+          23.15625,
+          28.15625,
+          19.8916015625,
+          25.8916015625
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "completedAt": "2026-11-04T04:58:24.435127+00:00",
+  "added": 4,
+  "published": 2443,
+  "total": 2475,
+  "remaining": 32,
+  "previousSolutionsPreserved": 12906,
+  "totalSiteSolutions": 12910,
+  "serviceRestarted": true,
+  "solutions": [
+    {
+      "id": "EGEINFF931BC",
+      "group": "restored-game-links",
+      "answer": "39 40"
+    },
+    {
+      "id": "EGEINF0BFCDC",
+      "group": "restored-game-links",
+      "answer": "41"
+    },
+    {
+      "id": "EGEINF904C34",
+      "group": "restored-game-links",
+      "answer": "40 46"
+    },
+    {
+      "id": "EGEINF319677",
+      "group": "restored-game-links",
+      "answer": "39"
+    }
+  ],
+  "reports": {
+    "public-downloads.json": "405841e6c706c0317bfbc6c8c470815fd29d45869b9692f9ff9fcd0ec833548d",
+    "ready-to-publish.json": "cef1b865463091fb328bc46f8e3cba1c45c1548dddfcf855e52b99c290ed6da4",
+    "publication.json": "f880e44a5c9cf075a4a0dbf86c500ef4d2ca536443fefafea6cb41fab2f46d44",
+    "public-format.log": "1c6465b60da38da538cd30b1f4d997b6f2ae15bd8e9fac2285403e9699bd1ac4",
+    "public-http.json": "73c0ab222c727a0df5a4977cebb4de918fd85d0559c578c4d1fb9b114080c1ec",
+    "public-browser/report.json": "896cef509b37098672cdd8fbeb6c27fb567ddbfc282d334704c74c746ada313d",
+    "public-browser-visual-review.json": "a89a9ec378318030541c49ad08b1b7750e3d120a6ffed28c0e06cc5397d25071",
+    "public-preview-pixel-comparison.json": "097b768f71893b1b01d9251654d0754a4a146f55e39f98844435e1f26e20e1e8",
+    "preservation.json": "6574faa6e678c38d1682fee166dce3fbf9cca7bbd55a5da42dba0f2cb6c33e1d"
+  }
+}

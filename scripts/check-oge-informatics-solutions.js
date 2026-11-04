@@ -7,14 +7,16 @@ const assert=require('node:assert/strict');
 const {createHash}=require('node:crypto');
 const {solutionFile}=require('../lib/solution-files');
 const {readOgeCatalog}=require('./lib/oge-catalog');
-const batches=require('./data/oge-informatics-solutions');
+const section=process.env.INFORMATICS_SECTION||'oge-informatics';
+assert.ok(['oge-informatics','ege-informatics'].includes(section),'Unknown informatics section');
+const batches=require('./data/'+section+'-solutions');
 const origin=process.env.OGE_INF_ORIGIN||'http://127.0.0.1:8888';
 const concurrency=Number(process.env.OGE_BROWSER_TABS||1);
 assert.ok(Number.isInteger(concurrency)&&concurrency>=1&&concurrency<=2,'OGE_BROWSER_TABS must be 1 or 2');
 const out=path.resolve(process.env.OGE_INF_ARTIFACTS||path.join(os.tmpdir(),'oge-informatics-pages'));
 fs.mkdirSync(out,{recursive:true});
 const profile=fs.mkdtempSync(path.join(os.tmpdir(),'oge-informatics-browser-'));
-const chrome=spawn(process.env.CHROME_BIN||'/opt/google/chrome/chrome',['--headless','--no-sandbox','--disable-gpu','--disable-extensions','--disable-background-networking','--disable-background-timer-throttling','--disable-renderer-backgrounding','--disable-component-update','--disable-sync','--no-first-run','--remote-debugging-port=0',`--user-data-dir=${profile}`,'about:blank'],{stdio:'ignore'});
+const chrome=spawn(process.env.CHROME_BIN||'/opt/google/chrome/chrome',['--headless','--no-sandbox','--disable-gpu','--disable-extensions','--disable-background-networking','--disable-background-timer-throttling','--disable-renderer-backgrounding','--disable-component-update','--disable-sync','--renderer-process-limit=1','--disable-features=BackForwardCache,WebUIOmniboxPopup,WebUIOmniboxAimPopup','--no-first-run','--remote-debugging-port=0',`--user-data-dir=${profile}`,'about:blank'],{stdio:'ignore'});
 const closed=new Promise(resolve=>chrome.once('exit',resolve));
 const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const report={origin,checkedAt:new Date().toISOString(),pages:[],apis:[],errors:[]};
@@ -29,7 +31,7 @@ async function run(){
   const selected=process.env.OGE_INF_TASK_IDS?new Set(process.env.OGE_INF_TASK_IDS.split(',')):null;
   const batchNames=process.env.OGE_INF_BATCH?new Set(process.env.OGE_INF_BATCH.split(',')):null;
   const active=batches.filter(b=>!batchNames||batchNames.has(b.name));
-  const tasks=readOgeCatalog(undefined,'oge-informatics').tasks.flatMap(t=>{
+  const tasks=readOgeCatalog(undefined,section).tasks.flatMap(t=>{
     if(selected&&!selected.has(t.id))return [];
     const expected=active.flatMap(b=>b.records).find(r=>r.id===t.id);return expected?[{...t,expected}]:[];
   }).sort((a,b)=>a.id.localeCompare(b.id));
@@ -62,7 +64,8 @@ async function run(){
   while(nextTask<tasks.length&&!firstError){
     const task=tasks[nextTask++];
     const expected=task.expected;
-    const expectedPrograms=[...expected.solution.matchAll(/^```(?:python|kumir)\n([\s\S]*?)\n```[ \t]*(?:\n|$)/gm)].map(m=>m[1]);
+    const expectedPrograms=[...expected.solution.matchAll(/^```(?:python|kumir|pascal)\n([\s\S]*?)\n```[ \t]*(?:\n|$)/gm)].map(m=>m[1]);
+    const expectedTables=[...expected.solution.matchAll(/^```table\n([\s\S]*?)\n```/gm)].map(m=>m[1].split('\n').map(row=>row.split('|').map(cell=>cell.trim())));
     // Screenshots can outlast the server's keep-alive timeout between API reads.
     const response=await fetch(`${origin}/api/solutions/${task.id}`,{headers:{connection:'close'}});assert.equal(response.status,200,task.id);
     const api=await response.json();
@@ -93,12 +96,16 @@ async function run(){
       await call('Page.bringToFront');
       await evaluate('document.fonts.ready.then(()=>true)');
       await evaluate(`(async()=>{for(const img of document.querySelectorAll('img[loading=lazy]'))img.loading='eager';await Promise.race([Promise.all(Array.from(document.images,i=>i.decode().catch(()=>false))),new Promise(r=>setTimeout(r,30000))]);scrollTo(0,0);return true;})()`);
+      // Paint the solution before a full-page capture: on the first navigation
+      // Chrome may otherwise leave an unpainted strip below the initial viewport.
+      await evaluate(`(async()=>{document.querySelector('.seo-task-solution').scrollIntoView({block:'start'});await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));scrollTo(0,0);await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));return true;})()`);
       const info=await evaluate(`(()=>{const box=document.querySelector('.seo-task-solution'),formatted=box?.querySelector('.formatted-solution');return {
         title:document.title,headings:document.querySelectorAll('h1').length,scrollWidth:document.documentElement.scrollWidth,width:innerWidth,height:document.documentElement.scrollHeight,
         solutionTop:box?box.getBoundingClientRect().top+scrollY:0,solutionHeight:box?.getBoundingClientRect().height||0,
         solutionHtml:formatted?.innerHTML||'',text:box?.innerText||'',fractions:box?.querySelectorAll('.math-fraction').length||0,
         downloads:Array.from(box?.querySelectorAll('a[download]')||[],a=>({url:a.getAttribute('href'),name:a.getAttribute('download')})),
         programs:Array.from(box?.querySelectorAll('.solution-code')||[],p=>{const range=p.scrollWidth-p.clientWidth;p.scrollLeft=p.scrollWidth;const atEnd=p.scrollLeft;p.scrollLeft=0;return {text:p.textContent,tabIndex:p.tabIndex,space:getComputedStyle(p).whiteSpace,scroll:getComputedStyle(p).overflowX,range,atEnd,left:p.getBoundingClientRect().left,right:p.getBoundingClientRect().right};}),
+        tables:Array.from(box?.querySelectorAll('.solution-table-scroll')||[],p=>{const range=p.scrollWidth-p.clientWidth;p.scrollLeft=p.scrollWidth;const atEnd=p.scrollLeft,last=p.querySelector('tr').lastElementChild.getBoundingClientRect(),r=p.getBoundingClientRect();p.scrollLeft=0;return {rows:Array.from(p.querySelectorAll('tr'),tr=>Array.from(tr.children,c=>c.textContent)),tabIndex:p.tabIndex,scroll:getComputedStyle(p).overflowX,range,atEnd,left:r.left,right:r.right,lastVisible:last.right<=r.right+1&&last.left>=r.left-1};}),
         broken:Array.from(document.images).filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),
         contentOverflow:Array.from(document.querySelectorAll('.qblock > form, .qblock .cell_0, .qblock .cell_0 p, .qblock input[type="text"], .formatted-solution p')).filter(e=>{
           const r=e.getBoundingClientRect();
@@ -140,6 +147,8 @@ async function run(){
       assert.deepEqual(info.programs.map(p=>p.text),expectedPrograms,`${task.id}: program characters or indentation changed`);
       for(const p of info.programs)assert.ok(p.tabIndex===0&&p.space==='pre'&&p.scroll==='auto'&&p.left>=0&&p.right<=width+1,`${task.id}: program must fit and support keyboard scrolling`);
       for(const p of info.programs)assert.ok(p.atEnd>=p.range-1,`${task.id}: complete program must be accessible by scrolling`);
+      assert.deepEqual(info.tables.map(t=>t.rows),expectedTables,`${task.id}: strategy table cells changed`);
+      for(const t of info.tables)assert.ok(t.tabIndex===0&&t.scroll==='auto'&&t.left>=0&&t.right<=width+1&&t.atEnd>=t.range-1&&t.lastVisible,`${task.id}: strategy table must fit and expose every column`);
       assert.ok(!/[⟦⟧¦/]|\^(?:\d|\()/.test(info.text),`${task.id}: math formatting`);
       // A literal caret is a code symbol in informatics, not an exponent.
       assert.equal((info.text.match(/\^/g)||[]).length,(expected.answer+expected.solution+expected.diagram_caption).split('^').length-1,`${task.id}: code symbols must survive formatting`);
@@ -156,11 +165,21 @@ async function run(){
             contained:r.left>=0&&r.right<=innerWidth+1,lastColumnVisible:last.right<=r.right+1&&last.left>=r.left-1,
             clip:{x:r.left+scrollX,y:r.top+scrollY,width:r.width,height:r.height,scale:1}};
         })()`);
-        assert.ok(table.range>2&&table.atEnd>=table.range-1&&table.contained&&table.lastColumnVisible&&table.hint&&table.tabIndex===0,`${task.id} ${name}: inaccessible table columns`);
+        assert.ok(table.range>2&&table.atEnd>=table.range-1&&table.contained&&table.lastColumnVisible&&table.hint&&table.tabIndex===0,`${task.id} ${name}: inaccessible table columns ${JSON.stringify(table)}`);
         const tableShot=await screenshot({format:'png',captureBeyondViewport:true,clip:table.clip});
         fs.writeFileSync(path.join(out,`${task.id}-${name}-table-${index+1}-end.png`),Buffer.from(tableShot.data,'base64'));
         await evaluate(`document.querySelectorAll('table.fipi-table-scrollable')[${index}].scrollLeft=0;true`);
         (report.scrollTables ||= []).push({id:task.id,viewport:name,index,range:table.range,lastColumnVisible:true});save();
+      }
+      for(let index=0;index<info.tables.length;index++){
+        const table=info.tables[index];
+        if(table.range>2){
+          const clip=await evaluate(`(()=>{const t=document.querySelectorAll('.seo-task-solution .solution-table-scroll')[${index}];t.scrollLeft=t.scrollWidth;const r=t.getBoundingClientRect();return {x:r.left+scrollX,y:r.top+scrollY,width:r.width,height:r.height,scale:1};})()`);
+          const shot=await screenshot({format:'png',captureBeyondViewport:true,clip});
+          fs.writeFileSync(path.join(out,`${task.id}-${name}-solution-table-${index+1}-end.png`),Buffer.from(shot.data,'base64'));
+          await evaluate(`document.querySelectorAll('.seo-task-solution .solution-table-scroll')[${index}].scrollLeft=0;true`);
+        }
+        (report.solutionTables ||= []).push({id:task.id,viewport:name,index,rows:table.rows.length-1,columns:table.rows[0].length,range:table.range,lastColumnVisible:true});save();
       }
       await call('Page.bringToFront');
       await evaluate(`document.querySelector('.solution-button').click();true`);
@@ -170,11 +189,13 @@ async function run(){
         if(modalReady)break;await delay(100);
       }
       assert.ok(modalReady,task.id+': solution modal');
-      const modal=await evaluate(`(()=>{const m=document.querySelector('.solution-modal:not([hidden])');return {html:m.querySelector('.solution-text').innerHTML,overflow:m.scrollWidth>innerWidth+1,programs:Array.from(m.querySelectorAll('.solution-code'),p=>({text:p.textContent,space:getComputedStyle(p).whiteSpace,left:p.getBoundingClientRect().left,right:p.getBoundingClientRect().right}))};})()`);
+      const modal=await evaluate(`(()=>{const m=document.querySelector('.solution-modal:not([hidden])');return {html:m.querySelector('.solution-text').innerHTML,overflow:m.scrollWidth>innerWidth+1,programs:Array.from(m.querySelectorAll('.solution-code'),p=>({text:p.textContent,space:getComputedStyle(p).whiteSpace,left:p.getBoundingClientRect().left,right:p.getBoundingClientRect().right})),tables:Array.from(m.querySelectorAll('.solution-table-scroll'),p=>{const range=p.scrollWidth-p.clientWidth;p.scrollLeft=p.scrollWidth;const atEnd=p.scrollLeft,r=p.getBoundingClientRect(),last=p.querySelector('tr').lastElementChild.getBoundingClientRect();p.scrollLeft=0;return {rows:Array.from(p.querySelectorAll('tr'),tr=>Array.from(tr.children,c=>c.textContent)),range,atEnd,tabIndex:p.tabIndex,scroll:getComputedStyle(p).overflowX,left:r.left,right:r.right,lastVisible:last.right<=r.right+1&&last.left>=r.left-1};})};})()`);
       assert.equal(clean(modal.html),clean(apiDomHtml),task.id+': modal differs from API');
       assert.ok(!modal.overflow,task.id+': modal overflow');
       assert.deepEqual(modal.programs.map(p=>p.text),expectedPrograms,task.id+': modal program');
       for(const p of modal.programs)assert.ok(p.space==='pre'&&p.left>=0&&p.right<=width+1,task.id+': modal program layout');
+      assert.deepEqual(modal.tables.map(t=>t.rows),expectedTables,task.id+': modal strategy table');
+      for(const t of modal.tables)assert.ok(t.tabIndex===0&&t.scroll==='auto'&&t.left>=0&&t.right<=width+1&&t.atEnd>=t.range-1&&t.lastVisible,task.id+': modal strategy table columns');
       const modalShot=await screenshot({format:'png',captureBeyondViewport:false});
       fs.writeFileSync(path.join(out,`${task.id}-${name}-modal.png`),Buffer.from(modalShot.data,'base64'));
       await evaluate(`document.querySelector('.solution-modal-close').click();true`);

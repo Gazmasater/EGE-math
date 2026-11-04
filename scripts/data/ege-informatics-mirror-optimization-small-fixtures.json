@@ -1,0 +1,5522 @@
+[
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": -3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 0
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 1
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 0
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 1
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-sum"
+    },
+    "answer": -1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-sum"
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          1,
+          2,
+          1
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-product"
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          1,
+          2,
+          1
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-product"
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          1,
+          2,
+          1
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-product"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          1,
+          2,
+          1
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-product"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          1,
+          2,
+          1
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-product"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          1,
+          2,
+          1
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-product"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          1,
+          2,
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 4
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 9
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 8
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 0
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 1
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": -8
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 0
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 1
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-sum"
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-sum"
+    },
+    "answer": 8
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-product"
+    },
+    "answer": 60
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-product"
+    },
+    "answer": 24
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-product"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-product"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-product"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-product"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -2,
+          3,
+          4
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 2
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 14
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 0
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 1
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": -1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 0
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-sum"
+    },
+    "answer": -7
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-sum"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          6,
+          5,
+          3
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-product"
+    },
+    "answer": 90
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          6,
+          5,
+          3
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-product"
+    },
+    "answer": 45
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "min-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-triple",
+      "operation": "max-sum"
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          -5,
+          -4,
+          2
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          6,
+          5,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 6
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 8
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 0
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 1
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 10
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": -2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 0
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": -2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": -2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -2,
+          -5,
+          0,
+          -5
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": -7
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          6,
+          1,
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 2
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 8
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 11
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 0
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 1
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 9
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": -11
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 0
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 1
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -4,
+          3,
+          1
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": -2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          5,
+          4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 5
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 13
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 0
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 1
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 14
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": -5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 0
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 1
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -4,
+          4,
+          -2
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": -1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          5,
+          5,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 5
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": -7
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 0
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 1
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 0
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": 1,
+      "parity": 1
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          0,
+          -2,
+          -1
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          5,
+          1,
+          3,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 4
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          2,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 12
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          2,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          2,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 0
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          2,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "longest-signed-parity",
+      "sign": -1,
+      "parity": 1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          2,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 12
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          2,
+          -4,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          2,
+          -4,
+          2
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          2,
+          -4,
+          2
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          2,
+          -4,
+          2
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": -2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          5,
+          3,
+          5,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 4
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          -1,
+          5,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          -1,
+          5,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          -1,
+          5,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 12
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          -1,
+          5,
+          -1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": -6
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          -1,
+          5,
+          -1
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          -1,
+          5,
+          -1
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          -1,
+          5,
+          -1
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": -2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          2,
+          6,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 4
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          3,
+          2,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          3,
+          2,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          3,
+          2,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 8
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          3,
+          2,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": -6
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          3,
+          2,
+          3
+        ]
+      ],
+      "K": 1
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          3,
+          2,
+          3
+        ]
+      ],
+      "K": 2
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          3,
+          2,
+          3
+        ]
+      ],
+      "K": 3
+    },
+    "model": {
+      "kind": "gap-pair",
+      "operation": "max-sum"
+    },
+    "answer": -1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          5,
+          4,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 3
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          3,
+          2,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          3,
+          2,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": -3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          3,
+          2,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 10
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -1,
+          3,
+          2,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          4,
+          3,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 7
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -1,
+          4,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -1,
+          4,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -1,
+          4,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 14
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -3,
+          -1,
+          4,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": -5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          2,
+          5,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 2
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -1,
+          4,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -1,
+          4,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": -1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -1,
+          4,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 14
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          -1,
+          4,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          2,
+          5,
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 4
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          -1,
+          3,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          -1,
+          3,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          -1,
+          3,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 13
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          -4,
+          -1,
+          3,
+          -3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": -5
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          5,
+          2,
+          4,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 3
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          -3,
+          3,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": -1
+    },
+    "answer": 12
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          -3,
+          3,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": -1
+    },
+    "answer": -2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          -3,
+          3,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "peak-triple",
+      "sign": 1
+    },
+    "answer": 14
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          -3,
+          3,
+          -5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "block-difference",
+      "direction": 1
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          4,
+          4,
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 5
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          4,
+          4,
+          2,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 5
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          6,
+          6,
+          5,
+          5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 2
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          4,
+          6,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 5
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          5,
+          6,
+          1,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 6
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          4,
+          5,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 5
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          1,
+          2,
+          5,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 3
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          6,
+          6,
+          6,
+          5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 6
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          5,
+          5,
+          5,
+          5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 6
+    },
+    "answer": null
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          5,
+          4,
+          2,
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 5
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          6,
+          4,
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 6
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          2,
+          2,
+          5,
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 4
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          6,
+          5,
+          4,
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 7
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          5,
+          5,
+          5,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 6
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          3,
+          3,
+          4,
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 5
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 4,
+      "columns": [
+        [
+          6,
+          6,
+          3,
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "max-divisible-subarray",
+      "modulus": 6
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          14
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          41
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 12
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 7
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          41
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 12
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 7
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          6
+        ],
+        [
+          1
+        ]
+      ],
+      "M": 11
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 2
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          6
+        ],
+        [
+          1
+        ]
+      ],
+      "M": 11
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 2
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          7
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          4
+        ],
+        [
+          7
+        ]
+      ],
+      "M": 2
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 1
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          4
+        ],
+        [
+          7
+        ]
+      ],
+      "M": 2
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 1
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          16
+        ],
+        [
+          4
+        ]
+      ],
+      "M": 3
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 4
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          16
+        ],
+        [
+          4
+        ]
+      ],
+      "M": 3
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 4
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          14
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          20
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 19
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 1
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          20
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 19
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 1
+    },
+    "answer": 14
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          26
+        ],
+        [
+          4
+        ]
+      ],
+      "M": 16
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 5
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          26
+        ],
+        [
+          4
+        ]
+      ],
+      "M": 16
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 5
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          14
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          95
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 3
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 2
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          95
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 3
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 2
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          10
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          89
+        ],
+        [
+          10
+        ]
+      ],
+      "M": 18
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 7
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          89
+        ],
+        [
+          10
+        ]
+      ],
+      "M": 18
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 7
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          8
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          76
+        ],
+        [
+          8
+        ]
+      ],
+      "M": 18
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 5
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          76
+        ],
+        [
+          8
+        ]
+      ],
+      "M": 18
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 5
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          14
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          19
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 13
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 1
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          19
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 13
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 1
+    },
+    "answer": 14
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          39
+        ],
+        [
+          3
+        ]
+      ],
+      "M": 10
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 7
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          39
+        ],
+        [
+          3
+        ]
+      ],
+      "M": 10
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 7
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          33
+        ],
+        [
+          6
+        ]
+      ],
+      "M": 16
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 6
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          33
+        ],
+        [
+          6
+        ]
+      ],
+      "M": 16
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 6
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          30
+        ],
+        [
+          5
+        ]
+      ],
+      "M": 14
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 6
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          30
+        ],
+        [
+          5
+        ]
+      ],
+      "M": 14
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 6
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          13
+        ],
+        [
+          6
+        ]
+      ],
+      "M": 1
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 6
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          13
+        ],
+        [
+          6
+        ]
+      ],
+      "M": 1
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 6
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          7
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          60
+        ],
+        [
+          7
+        ]
+      ],
+      "M": 5
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 3
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          60
+        ],
+        [
+          7
+        ]
+      ],
+      "M": 5
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 3
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          9
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          10
+        ],
+        [
+          9
+        ]
+      ],
+      "M": 7
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 7
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          10
+        ],
+        [
+          9
+        ]
+      ],
+      "M": 7
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 7
+    },
+    "answer": 2
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          13
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          75
+        ],
+        [
+          13
+        ]
+      ],
+      "M": 19
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 2
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          75
+        ],
+        [
+          13
+        ]
+      ],
+      "M": 19
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 2
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          19
+        ],
+        [
+          2
+        ]
+      ],
+      "M": 15
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 2
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          19
+        ],
+        [
+          2
+        ]
+      ],
+      "M": 15
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 2
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          11
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          67
+        ],
+        [
+          11
+        ]
+      ],
+      "M": 17
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 3
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          67
+        ],
+        [
+          11
+        ]
+      ],
+      "M": 17
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 3
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          7
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          28
+        ],
+        [
+          7
+        ]
+      ],
+      "M": 8
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 2
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          28
+        ],
+        [
+          7
+        ]
+      ],
+      "M": 8
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 2
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          12
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          86
+        ],
+        [
+          12
+        ]
+      ],
+      "M": 6
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 2
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          86
+        ],
+        [
+          12
+        ]
+      ],
+      "M": 6
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 2
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          8
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          46
+        ],
+        [
+          8
+        ]
+      ],
+      "M": 1
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 1
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          46
+        ],
+        [
+          8
+        ]
+      ],
+      "M": 1
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 1
+    },
+    "answer": 8
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          49
+        ],
+        [
+          2
+        ]
+      ],
+      "M": 10
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 3
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          49
+        ],
+        [
+          2
+        ]
+      ],
+      "M": 10
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 3
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          41
+        ],
+        [
+          4
+        ]
+      ],
+      "M": 6
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 6
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          41
+        ],
+        [
+          4
+        ]
+      ],
+      "M": 6
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 6
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          7
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          57
+        ],
+        [
+          7
+        ]
+      ],
+      "M": 11
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 7
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          57
+        ],
+        [
+          7
+        ]
+      ],
+      "M": 11
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 7
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          28
+        ],
+        [
+          5
+        ]
+      ],
+      "M": 2
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 6
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          28
+        ],
+        [
+          5
+        ]
+      ],
+      "M": 2
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 6
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          9
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          39
+        ],
+        [
+          9
+        ]
+      ],
+      "M": 13
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 2
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          39
+        ],
+        [
+          9
+        ]
+      ],
+      "M": 13
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 2
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          12
+        ],
+        [
+          6
+        ]
+      ],
+      "M": 1
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 6
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          12
+        ],
+        [
+          6
+        ]
+      ],
+      "M": 1
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 6
+    },
+    "answer": 1
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          13
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          36
+        ],
+        [
+          13
+        ]
+      ],
+      "M": 3
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 2
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          36
+        ],
+        [
+          13
+        ]
+      ],
+      "M": 3
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 2
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          14
+        ]
+      ]
+    },
+    "model": {
+      "kind": "circular-cost"
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          94
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 11
+    },
+    "model": {
+      "kind": "linear-cost",
+      "capacity": 2
+    },
+    "answer": 0
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          94
+        ],
+        [
+          14
+        ]
+      ],
+      "M": 11
+    },
+    "model": {
+      "kind": "radius-containers",
+      "capacity": 2
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          10
+        ],
+        [
+          4
+        ],
+        [
+          9
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 8
+    },
+    "answer": 10
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          3
+        ],
+        [
+          6
+        ],
+        [
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 5
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          7
+        ],
+        [
+          10
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 7
+    },
+    "answer": 10
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          6
+        ],
+        [
+          10
+        ],
+        [
+          8
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 5
+    },
+    "answer": 8
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          4
+        ],
+        [
+          9
+        ],
+        [
+          7
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 5
+    },
+    "answer": 9
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          8
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 7
+    },
+    "answer": 9
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          10
+        ],
+        [
+          2
+        ],
+        [
+          8
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 8
+    },
+    "answer": 10
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          9
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 9
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 6
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 9
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          4
+        ],
+        [
+          10
+        ],
+        [
+          9
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 2
+    },
+    "answer": 9
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          3
+        ],
+        [
+          6
+        ],
+        [
+          8
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 8
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          1
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 5
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          9
+        ],
+        [
+          7
+        ],
+        [
+          2
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 2
+    },
+    "answer": 9
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          9
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 3
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          5
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 2
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 7
+    },
+    "answer": 4
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          7
+        ],
+        [
+          10
+        ],
+        [
+          8
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 3
+    },
+    "answer": 10
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          6
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 2
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          10
+        ],
+        [
+          4
+        ],
+        [
+          9
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 5
+    },
+    "answer": 9
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 4
+    },
+    "answer": 3
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 6
+    },
+    "answer": 7
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          6
+        ],
+        [
+          9
+        ],
+        [
+          5
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 7
+    },
+    "answer": 9
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 8
+    },
+    "answer": 5
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          6
+        ],
+        [
+          6
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 8
+    },
+    "answer": 6
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          2
+        ],
+        [
+          8
+        ],
+        [
+          3
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 7
+    },
+    "answer": 8
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          8
+        ],
+        [
+          10
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 7
+    },
+    "answer": 10
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          10
+        ],
+        [
+          8
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 5
+    },
+    "answer": 8
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 6
+    },
+    "answer": 10
+  },
+  {
+    "data": {
+      "N": 1,
+      "columns": [
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          9
+        ]
+      ]
+    },
+    "model": {
+      "kind": "choose-triples",
+      "modulus": 3
+    },
+    "answer": 4
+  }
+]

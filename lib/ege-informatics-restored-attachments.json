@@ -1,0 +1,109 @@
+{
+  "EGEINFDA74F1": {
+    "sourceHash": "cb32e8c95236a9d41ddf89030d6db11a97a3d0cd4b8b7ff0da179a78ba03f768",
+    "files": [
+      {
+        "url": "/fipi/ege-informatics/restored-2021/9.ods",
+        "label": "Скачать 9.ods",
+        "sha256": "19e177536b6a0b5cf1793b7e4a5e682985ac1cb7b16d2b1933aa6072f01f2e25"
+      }
+    ],
+    "provenance": {
+      "archive": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi-files.zip",
+      "pdf": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi.pdf",
+      "note": "Preserved copy of FIPI-authored open variant 2021 hosted by ctege.info; not a direct download from a FIPI host.",
+      "archiveSha256": "48b13fb7d33402f6bbc9219df51b4beb1f0b476c6a088ffa477de9ea43b8c9b4",
+      "pdfSha256": "ae411312f375df8040eecc2718e576eb085c9a0aa4c69ce4e5d5cc65064d7550"
+    }
+  },
+  "EGEINF68E9C5": {
+    "sourceHash": "9de539bfbb8945affda25368b941ce490f26c20613358540d8e5f439e7024b34",
+    "files": [
+      {
+        "url": "/fipi/ege-informatics/restored-2021/10.odt",
+        "label": "Скачать 10.odt",
+        "sha256": "327072f4025d55fdf2c38a14c7fbf576a65d3113d1384a7720c7a54a788b7703"
+      }
+    ],
+    "provenance": {
+      "archive": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi-files.zip",
+      "pdf": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi.pdf",
+      "note": "Preserved copy of FIPI-authored open variant 2021 hosted by ctege.info; not a direct download from a FIPI host.",
+      "archiveSha256": "48b13fb7d33402f6bbc9219df51b4beb1f0b476c6a088ffa477de9ea43b8c9b4",
+      "pdfSha256": "ae411312f375df8040eecc2718e576eb085c9a0aa4c69ce4e5d5cc65064d7550"
+    }
+  },
+  "EGEINFF3A05F": {
+    "sourceHash": "a497b1467b6e1b604aeb475adff96def29b71fe8838ffb9c2e08b87f1d267ab4",
+    "files": [
+      {
+        "url": "/fipi/ege-informatics/restored-2021/18.ods",
+        "label": "Скачать 18.ods",
+        "sha256": "d7380d8ffc8ae40c9135380123fbf5c59f3915d5055b21fa490db722b5bafbfc"
+      }
+    ],
+    "provenance": {
+      "archive": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi-files.zip",
+      "pdf": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi.pdf",
+      "note": "Preserved copy of FIPI-authored open variant 2021 hosted by ctege.info; not a direct download from a FIPI host.",
+      "archiveSha256": "48b13fb7d33402f6bbc9219df51b4beb1f0b476c6a088ffa477de9ea43b8c9b4",
+      "pdfSha256": "ae411312f375df8040eecc2718e576eb085c9a0aa4c69ce4e5d5cc65064d7550"
+    }
+  },
+  "EGEINF028200": {
+    "sourceHash": "781fdcd56ad212e6deffb59b48a18f46afa592bf05756bae85683d49c972a687",
+    "files": [
+      {
+        "url": "/fipi/ege-informatics/restored-2021/27_A.txt",
+        "label": "Скачать 27_A.txt",
+        "sha256": "56ff9e2eb4b9abebfbc51f8b762850b6e6e5fa323e804501cb8770289350833a"
+      },
+      {
+        "url": "/fipi/ege-informatics/restored-2021/27_B.txt",
+        "label": "Скачать 27_B.txt",
+        "sha256": "c375b6fff067af952b41c483f41f1324233bab7684494a0c78adcc7967c2f7e2"
+      }
+    ],
+    "provenance": {
+      "archive": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi-files.zip",
+      "pdf": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi.pdf",
+      "note": "Preserved copy of FIPI-authored open variant 2021 hosted by ctege.info; not a direct download from a FIPI host.",
+      "archiveSha256": "48b13fb7d33402f6bbc9219df51b4beb1f0b476c6a088ffa477de9ea43b8c9b4",
+      "pdfSha256": "ae411312f375df8040eecc2718e576eb085c9a0aa4c69ce4e5d5cc65064d7550"
+    }
+  },
+  "EGEINFBDC5D0": {
+    "sourceHash": "d82c6540b6457e4e670e95fd24172681121b722afd6a0c52c69a723d9d12eb69",
+    "files": [
+      {
+        "url": "/fipi/ege-informatics/restored-2021/26.txt",
+        "label": "Скачать 26.txt",
+        "sha256": "3a3dff79ff4e96ec8334c262af19b706908f16a25553fb8efc7162393659ae8a"
+      }
+    ],
+    "provenance": {
+      "archive": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi-files.zip",
+      "pdf": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi.pdf",
+      "note": "Preserved copy of FIPI-authored open variant 2021 hosted by ctege.info; not a direct download from a FIPI host.",
+      "archiveSha256": "48b13fb7d33402f6bbc9219df51b4beb1f0b476c6a088ffa477de9ea43b8c9b4",
+      "pdfSha256": "ae411312f375df8040eecc2718e576eb085c9a0aa4c69ce4e5d5cc65064d7550"
+    }
+  },
+  "EGEINF896732": {
+    "sourceHash": "2709663907907aeb7af6c9cf69ef834ddfb91edac51541ad06ca791ac18544b8",
+    "files": [
+      {
+        "url": "/fipi/ege-informatics/restored-2021/24.txt",
+        "label": "Скачать 24.txt",
+        "sha256": "bdfc9eb3bb30ee86e30a6bf8f6d3b0ac5b400d5fcfc95a92f1d0d99143b341da"
+      }
+    ],
+    "provenance": {
+      "archive": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi-files.zip",
+      "pdf": "https://down.ctege.info/ege/2021/otkrytye/inform2021otkrytyi-variant-fipi.pdf",
+      "note": "Preserved copy of FIPI-authored open variant 2021 hosted by ctege.info; not a direct download from a FIPI host.",
+      "archiveSha256": "48b13fb7d33402f6bbc9219df51b4beb1f0b476c6a088ffa477de9ea43b8c9b4",
+      "pdfSha256": "ae411312f375df8040eecc2718e576eb085c9a0aa4c69ce4e5d5cc65064d7550"
+    }
+  }
+}

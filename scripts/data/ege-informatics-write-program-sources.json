@@ -1,0 +1,278 @@
+{
+  "EGEINF876CF0": {
+    "sourceHash": "e3e4e665db60e00a7b22ee43aabb1dcd6c052b5c537995a8ce543886608428a2",
+    "fipiCondition": "Впишите правильный ответ. Напишите программу, которая перебирает целые числа, большие 2 920 573, в порядке возрастания и ищет среди них числа, представленные в виде произведения ровно двух простых множителей, не обязательно различных, каждый из которых содержит в своей записи ровно одну цифру 9. В ответе в первом столбце таблицы запишите первые 5 найденных чисел в порядке возрастания, а во втором столбце – для каждого числа наибольший из соответствующих им найденных множителей. Количество строк в таблице для ответа избыточно.",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=92229",
+    "externalAnswer": "1103299319 1693; 1103309477 1693; 1103322107 16187; 1103323021 1693; 1103328547 3169",
+    "expectedAnswer": "2920661 153719; 2920681 1709; 2920781 8369; 2920847 19603; 2920849 6971",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Внешняя программа независимо выполнена без изменений: рекурсивное разложение на простые множители даёт пять чисел для порога 1103285717 и последовательности 16. Сопоставлен метод, а не численный вариант: собственные порог, шаблон цифр и выбор меньшего или большего множителя обработаны отдельно. Все числа дополнительно подтверждены независимым перебором пар простых p и q. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "26a37a06c9d1b63aa2e6626c2a940f851b8be7004580c79a972a6b12ccc21d30"
+  },
+  "EGEINF53B650": {
+    "sourceHash": "69dc0be04814c18e4f954850a03c183baa5d70d9be010e360c327c86931d8e0f",
+    "fipiCondition": "Впишите правильный ответ. Напишите программу, которая перебирает целые числа, большие 1 481 011, в порядке возрастания и ищет среди них представленные в виде произведения ровно двух простых множителей, не обязательно различных, каждый из которых содержит в своей записи ровно одну цифру 7. В ответе в первом столбце таблицы запишите первые 5 найденных чисел в порядке возрастания, а во втором столбце – для каждого из чисел наибольший из соответствующих им найденных множителей. Количество строк в таблице для ответа избыточно.",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=92229",
+    "externalAnswer": "1103299319 1693; 1103309477 1693; 1103322107 16187; 1103323021 1693; 1103328547 3169",
+    "expectedAnswer": "1481023 87119; 1481057 87121; 1481089 1217; 1481171 18749; 1481179 211597",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Внешняя программа независимо выполнена без изменений: рекурсивное разложение на простые множители даёт пять чисел для порога 1103285717 и последовательности 16. Сопоставлен метод, а не численный вариант: собственные порог, шаблон цифр и выбор меньшего или большего множителя обработаны отдельно. Все числа дополнительно подтверждены независимым перебором пар простых p и q. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "26a37a06c9d1b63aa2e6626c2a940f851b8be7004580c79a972a6b12ccc21d30"
+  },
+  "EGEINF3659C9": {
+    "sourceHash": "6d9936af9dc3d6b249344205f47f086b5a0443fb8ad29e2ad725136c869cb255",
+    "fipiCondition": "Впишите правильный ответ. Напишите программу, которая перебирает целые числа, большие 1 760 906, в порядке возрастания и ищет среди них числа, представленные в виде произведения ровно двух простых множителей, не обязательно различных, каждый из которых содержит в своей записи ровно одну цифру 1. В ответе в первом столбце таблицы запишите первые 5 найденных чисел в порядке возрастания, а во втором столбце – для каждого числа наибольший из соответствующих им найденных множителей. Количество строк в таблице для ответа избыточно.",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=92229",
+    "externalAnswer": "1103299319 1693; 1103309477 1693; 1103322107 16187; 1103323021 1693; 1103328547 3169",
+    "expectedAnswer": "1760911 103583; 1760929 1327; 1760939 92681; 1761007 1777; 1761019 135463",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Внешняя программа независимо выполнена без изменений: рекурсивное разложение на простые множители даёт пять чисел для порога 1103285717 и последовательности 16. Сопоставлен метод, а не численный вариант: собственные порог, шаблон цифр и выбор меньшего или большего множителя обработаны отдельно. Все числа дополнительно подтверждены независимым перебором пар простых p и q. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "26a37a06c9d1b63aa2e6626c2a940f851b8be7004580c79a972a6b12ccc21d30"
+  },
+  "EGEINF4DB94B": {
+    "sourceHash": "9082cbecd5f306260fbb12887b8f88537b48064fd7973be00c7ab99be5e73516",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет напечатано в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик Python DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) <= R THEN M = T R = F(T) END IF NEXT T PRINT M+R FUNCTION F (x) F = 2*(x*x-1)*(x*x-1)+41 END FUNCTION def F(x): return 2*(x*x-1)*(x*x-1)+41 a = -20; b = 20 M = a; R = F(a) for t in range(a,b+1): if (F(t) <= R): M = t; R = F(t) print (M+R) Алгоритмический язык Паскаль алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t) <= R то M := t; R := F(t) все кц вывод M+R кон алг цел F( цел x) нач знач := 2*(x*x-1)*(x*x-1)+41 кон var a, b, t, M, R :longint; function F(x: longint) : longint; begin F := 2*(x*x-1)*(x*x-1)+41; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) <= R) then begin M := t; R := F(t) end end; write(M+R) end. Си #include<stdio.h> long F(long x) { return 2*(x*x-1)*(x*x-1)+41; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t=a; t<=b; t++) { if (F(t) <= R) { M = t; R = F(t); } } printf(\"%ld\", M+R); return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "42",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=1, R=41, ответ 42. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF4581F0": {
+    "sourceHash": "e2c4da763b80107c2ff76d2cde9f805befd622153a888ef2dce20760967981cb",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет выведено в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) < R THEN M = T R = F(T) END IF NEXT T PRINT M + 18 FUNCTION F(x) F = 2 * (x * x - 1) * (x * x - 1) + 5 END FUNCTION Python def F(x): return 2 * (x * x - 1) * (x * x - 1) + 5 a = -20; b = 20 M = a; R = F(a) for t in range(a, b + 1): if (F(t) < R): M = t; R = F(t) print(M + 18) Алгоритмический язык алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t) < R то M := t; R := F(t) все кц вывод M + 18 кон алг цел F( цел x) нач знач := 2 * (x * x - 1) * (x * x - 1) + 5 кон Паскаль var a, b, t, M, R: longint; function F(x: longint): longint; begin F := 2 * (x * x - 1) * (x * x - 1) + 5; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) < R) then begin M := t; R := F(t) end end; write(M + 18) end. С++ #include <iostream> using namespace std; long F(long x) { return 2 * (x * x - 1) * (x * x - 1) + 5; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t = a; t <= b; t++) { if (F(t) < R) { M = t; R = F(t); } } cout << M + 18 << endl; return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "17",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=-1, R=5, ответ 17. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF36077B": {
+    "sourceHash": "af95c5a2e1ab2a59c829b3b6677e3984cfd6422a2a8726b4e654083ce32974a5",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет напечатано в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик Python DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) <= R THEN M = T R = F(T) END IF NEXT T PRINT M+R FUNCTION F (x) F = 2*(x*x-1)*(x*x-1)+27 END FUNCTION def F(x): return 2*(x*x-1)*(x*x-1)+27 a = -20; b = 20 M = a; R = F(a) for t in range(a,b+1): if (F(t) <= R): M = t; R = F(t) print (M+R) Алгоритмический язык Паскаль алг нач цел a, b, t, M, R a:=-20; b:=20 M:=a; R:=F(a) нц для t от a до b если F(t) <= R то M := t; R := F(t) все кц вывод M+R кон алг цел F( цел x) нач знач := 2*(x*x-1)*(x*x-1)+27 кон var a, b, t, M, R :longint; function F(x: longint) : longint; begin F := 2*(x*x-1)*(x*x-1)+27; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) <= R) then begin M := t; R := F(t) end end; write(M+R) end. Си #include<stdio.h> long F(long x) { return 2*(x*x-1)*(x*x-1)+27; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t=a; t<=b; t++) { if (F(t) <= R) { M = t; R = F(t); } } printf(\"%ld\", M+R); return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "28",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=1, R=27, ответ 28. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF1EEB2A": {
+    "sourceHash": "0046de945663ecbb13c9682e6d354368ecf7f8c345937dd38bbe9617dad5bd06",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет напечатано в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик Python DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) <= R THEN M = T R = F(T) END IF NEXT T PRINT M+R FUNCTION F (x) F = 2*(x*x-25)*(x*x-25)+27 END FUNCTION def F(x): return 2*(x*x-25)*(x*x-25)+27 a = -20; b = 20 M = a; R = F(a) for t in range(a,b+1): if (F(t) <= R): M = t; R = F(t) print (M+R) Алгоритмический язык Паскаль алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t) <= R то M := t; R := F(t) все кц вывод M+R кон алг цел F( цел x) нач знач := 2*(x*x-25)*(x*x-25)+27 кон var a, b, t, M, R :longint; function F(x: longint) : longint; begin F := 2*(x*x-25)*(x*x-25)+27; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) <= R) then begin M := t; R := F(t) end end; write(M+R) end. Си #include<stdio.h> long F(long x) { return 2*(x*x-25)*(x*x-25)+27; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t=a; t<=b; t++) { if (F(t) <= R) { M = t; R = F(t); } } printf(\"%ld\", M+R); return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "32",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=5, R=27, ответ 32. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF1B5123": {
+    "sourceHash": "d3e88f6f7fbf5ec79260d5faa47985e19a5f981b2dfbc016b948934dd0be487d",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет выведено в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) <= R THEN M = T R = F(T) END IF NEXT T PRINT M + R FUNCTION F(x) F = 2 * (x * x - 36) * (x * x - 36) + 27 END FUNCTION Python def F(x): return 2 * (x * x - 36) * (x * x - 36) + 27 a = -20; b = 20 M = a; R = F(a) for t in range(a, b + 1): if (F(t) <= R): M = t; R = F(t) print(M + R) Алгоритмический язык алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t) <= R то M := t; R := F(t) все кц вывод M + R кон алг цел F( цел x) нач знач := 2 * (x * x - 36) * (x * x - 36) + 27 кон Паскаль var a, b, t, M, R: longint; function F(x: longint): longint; begin F := 2 * (x * x - 36) * (x * x - 36) + 27; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) <= R) then begin M := t; R := F(t) end end; write(M + R) end. С++ #include <iostream> using namespace std; long F(long x) { return 2 * (x * x - 36) * (x * x - 36) + 27; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t = a; t <= b; t++) { if (F(t) <= R) { M = t; R = F(t); } } cout << M + R << endl; return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "33",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=6, R=27, ответ 33. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF1D2ADC": {
+    "sourceHash": "5fbc456db052ea162560b8a6d261825a584ea1911850993118a74d5875665fd7",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, равное количеству различных значений входной переменной k, при которых приведённая ниже программа выводит тот же ответ, что и при входном значении k = 12. Значение k = 12 также включается в подсчёт количества различных значений k. Для Вашего удобства программа приведена на пяти языках программирования. Бейсик DIM K, I AS LONG INPUT K I = 1 WHILE F(I) < K I = I + 1 WEND IF F(I)- K <= K - F(I - 1) THEN PRINT I ELSE PRINT I - 1 END IF FUNCTION F(N) F = N * N * N END FUNCTION Python def f(n): return n * n * n i = 1 k = int(input()) while f(i) < k: i+=1 if (f(i)- k <= k - f(i - 1)): print(i) else: print(i - 1) Алгоритмический язык алг нач цел i, k ввод k i := 1 нц пока f(i) < k i := i + 1 кц если f(i) - k <= k - f(i - 1) то вывод i иначе вывод i - 1 все кон алг цел f( цел n) нач знач := n * n * n кон Паскаль var k, i: longint; function f(n: longint): longint; begin f := n * n * n; end; begin readln(k); i := 1; while f(i) < k do i := i + 1; if f(i)- k <= k - f(i - 1) then writeln(i) else writeln(i - 1); end. С++ #include <iostream> using namespace std; long f(long n) { return n * n * n; } int main() { long k, i; cin >> k; i = 1; while (f(i) < k) i++; if (f(i) - k <= k - f(i - 1)){ cout << i; } else { cout << i - 1; } return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18449",
+    "externalAnswer": "13",
+    "expectedAnswer": "13",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Полностью сопоставлены алгоритм кубов, две ветви выбора и включение граничных значений. Внешняя задача для входа 12 даёт 13 значений, от 5 до 17; ответ подтверждён исполнением программы и неравенствами. Собственная задача имеет тот же вход и ответ, но полное оформление языковых вариантов отличается. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "b538cb2626f1171d05051461677cb808ea806239c74ec25cb546e1fe21ccd3b0",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Typographic dashes in external Python normalized to ASCII subtraction only for execution. Algorithmic function parameter x versus n is a typo; actual Python, C++ and FIPI cubic expressions agree. For k <= 1 the loop does not advance beyond 1 and cannot output 2; for k > 27 loop i >= 4 cannot output 2. Remaining cases give exactly 5..17."
+    }
+  },
+  "EGEINF0D2757": {
+    "sourceHash": "bbdee34722d7f49639ea2253e9da292b73dfa31ea7953817a1c4c99a0a926acc",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет выведено в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) < R THEN M = T R = F(T) END IF NEXT T PRINT M + 7 FUNCTION F(x) F = 2 * (x * x - 25) * (x * x - 25) + 5 END FUNCTION Python def F(x): return 2 * (x * x - 25) * (x * x - 25) + 5 a = -20; b = 20 M = a; R = F(a) for t in range(a, b + 1): if (F(t) < R): M = t; R = F(t) print(M + 7) Алгоритмический язык алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t) < R то M := t; R := F(t) все кц вывод M + 7 кон алг цел F( цел x) нач знач := 2 * (x * x - 25) * (x * x - 25) + 5 кон Паскаль var a, b, t, M, R: longint; function F(x: longint): longint; begin F := 2 * (x * x - 25) * (x * x - 25) + 5; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) < R) then begin M := t; R := F(t) end end; write(M + 7) end. С++ #include <iostream> using namespace std; long F(long x) { return 2 * (x * x - 25) * (x * x - 25) + 5; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t = a; t <= b; t++) { if (F(t) < R) { M = t; R = F(t); } } cout << M + 7 << endl; return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "2",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=-5, R=5, ответ 2. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF1274A6": {
+    "sourceHash": "bd338a962b4187a9f4160d03b84d32d54d1c8a48597f966e5803da105da0b90a",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет напечатано в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик Python DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) < R THEN M = T R = F(T) END IF NEXT T PRINT M+27 FUNCTION F (x) F = 2*(x*x-49)*(x*x-49)+5 END FUNCTION def F(x): return 2*(x*x-49)*(x*x-49)+5 a = -20; b = 20 M = a; R = F(a) for t in range(a,b+1): if (F(t) < R): M = t; R = F(t) print (M+27) Алгоритмический язык Паскаль алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t)< R то M := t; R := F(t) все кц вывод M+27 кон алг цел F( цел x) нач знач := 2*(x*x-49)*(x*x-49)+5 кон var a, b, t, M, R: longint; function F(x: longint) : longint; begin F := 2*(x*x-49)*(x*x-49)+5; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t)<R) then begin M := t; R := F(t) end end; write(M+27) end. Си #include<stdio.h> long F(long x) { return 2*(x*x-49)*(x*x-49)+5; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t=a; t<=b; t++) { if (F(t)<R) { M = t; R = F(t); } } printf(\"%ld\", M+27); return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "20",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=-7, R=5, ответ 20. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF569BA8": {
+    "sourceHash": "16e02ebbc5cad68866a5993b6a489428fd5100fda61a41c32fedd400e3bb8a80",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет напечатано в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик Python DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) < R THEN M = T R = F(T) END IF NEXT T PRINT M+17 FUNCTION F (x) F = 2*(x*x-49)*(x*x-49)+5 END FUNCTION def F(x): return 2*(x*x-49)*(x*x-49)+5 a = -20; b = 20 M = a; R = F(a) for t in range(a,b+1): if (F(t) < R): M = t; R = F(t) print (M+17) Алгоритмический язык Паскаль алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t)< R то M := t; R := F(t) все кц вывод M+17 кон алг цел F( цел x) нач знач := 2*(x*x-49)*(x*x-49)+5 кон var a, b, t, M, R: longint; function F(x: longint) : longint; begin F := 2*(x*x-49)*(x*x-49)+5; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t)<R) then begin M := t; R := F(t) end end; write(M+17) end. Си #include<stdio.h> long F(long x) { return 2*(x*x-49)*(x*x-49)+5; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t=a; t<=b; t++) { if (F(t)<R) { M = t; R = F(t); } } printf(\"%ld\", M+17); return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "10",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=-7, R=5, ответ 10. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF6F64AA": {
+    "sourceHash": "cab547b20cb50aefe43ea7d099df02020c441aac9c7e1d69f5971b132aceb027",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет напечатано в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик Python DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) <= R THEN M = T R = F(T) END IF NEXT T PRINT M+R FUNCTION F (x) F = 2*(x*x-9)*(x*x-9)+27 END FUNCTION def F(x): return 2*(x*x-9)*(x*x-9)+27 a = -20; b = 20 M = a; R = F(a) for t in range(a,b+1): if (F(t) <= R): M = t; R = F(t) print (M+R) Алгоритмический язык Паскаль алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t) <= R то M := t; R := F(t) все кц вывод M+R кон алг цел F( цел x) нач знач := 2*(x*x-9)*(x*x-9)+27 кон var a, b, t, M, R :longint; function F(x: longint) : longint; begin F := 2*(x*x-9)*(x*x-9)+27; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) <= R) then begin M := t; R := F(t) end end; write(M+R) end. Си #include<stdio.h> long F(long x) { return 2*(x*x-9)*(x*x-9)+27; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t=a; t<=b; t++) { if (F(t) <= R) { M = t; R = F(t); } } printf(\"%ld\", M+R); return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "30",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=3, R=27, ответ 30. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINFA444C4": {
+    "sourceHash": "99a4973f9db4a2aff25729f17512130d4798b57df690858d2f65ceccc021f101",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет выведено в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) < R THEN M = T R = F(T) END IF NEXT T PRINT M + 10 FUNCTION F(x) F = 2 * (x * x - 9) * (x * x - 9) + 5 END FUNCTION Python def F(x): return 2 * (x * x - 9) * (x * x - 9) + 5 a = -20; b = 20 M = a; R = F(a) for t in range(a, b + 1): if (F(t) < R): M = t; R = F(t) print(M + 10) Алгоритмический язык алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t) < R то M := t; R := F(t) все кц вывод M + 10 кон алг цел F( цел x) нач знач := 2 * (x * x - 9) * (x * x - 9) + 5 кон Паскаль var a, b, t, M, R: longint; function F(x: longint): longint; begin F := 2 * (x * x - 9) * (x * x - 9) + 5; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) < R) then begin M := t; R := F(t) end end; write(M + 10) end. С++ #include <iostream> using namespace std; long F(long x) { return 2 * (x * x - 9) * (x * x - 9) + 5; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t = a; t <= b; t++) { if (F(t) < R) { M = t; R = F(t); } } cout << M + 10 << endl; return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "7",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=-3, R=5, ответ 7. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF973F9C": {
+    "sourceHash": "844a396efdaec513e1969a96581cb0dfef7fcaa04773ee2705cb41948538ff30",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, равное количеству различных значений входной переменной k, при которых приведённая ниже программа выводит тот же ответ, что и при входном значении k = 25. Значение k = 25 также включается в подсчёт количества различных значений k. Для Вашего удобства программа приведена на пяти языках программирования. Бейсик Python DIM K, I AS LONG INPUT K I = 1 WHILE F(I) < K I = I + 1 WEND IF F(I)-K <= K-F(I-1) THEN PRINT I ELSE PRINT I-1 END IF FUNCTION F(N) F = N * N * N END FUNCTION def f(n): return n*n*n i = 1 k = int(input()) while f(i) < k: i+=1 if (f(i)-k <= k-f(i-1)): print (i) else: print (i - 1) Алгоритмический язык Паскаль алг нач цел i, k ввод k i := 1 нц пока f(i) < k i := i + 1 кц если f(i)-k <= k-f(i-1) то вывод i иначе вывод i-1 все кон алг цел f( цел n) нач знач := n * n * n кон var k, i : longint; function f(n: longint) : longint; begin f := n * n * n; end; begin readln(k); i := 1; while f(i) < k do i := i+1; if f(i)-k <= k-f(i-1) then writeln(i) else writeln(i-1); end. Си #include<stdio.h> long f(long n) { return n * n * n; } void main() { long k, i; scanf(\"%ld\", &k); i = 1; while (f(i)<k) i++; if (f(i)-k <= k-f(i-1)){ printf(\"%ld\", i); } else { printf(\"%ld\", i-1); } }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18449",
+    "externalAnswer": "13",
+    "expectedAnswer": "28",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Полностью сопоставлены алгоритм кубов, две ветви выбора и включение граничных значений. Внешняя задача для входа 12 даёт 13 значений, от 5 до 17; ответ подтверждён исполнением программы и неравенствами. Собственный вход 25, целевой вывод 3; диапазон 18..45, ответ 28 вычислены отдельно. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "b538cb2626f1171d05051461677cb808ea806239c74ec25cb546e1fe21ccd3b0",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Typographic dashes in external Python normalized to ASCII subtraction only for execution. Algorithmic function parameter x versus n is a typo; actual Python, C++ and FIPI cubic expressions agree. For k <= 1 the loop does not advance beyond 1 and cannot output 2; for k > 27 loop i >= 4 cannot output 2. Remaining cases give exactly 5..17."
+    }
+  },
+  "EGEINFCB623A": {
+    "sourceHash": "637855b747688c0ddc2db0da56589ce042031ca0cf27d741bdf8427bd3857c46",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет выведено в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) <= R THEN M = T R = F(T) END IF NEXT T PRINT M + R FUNCTION F(x) F = 2 * (x * x - 16) * (x * x - 16) + 41 END FUNCTION Python def F(x): return 2 * (x * x - 16) * (x * x - 16) + 41 a = -20; b = 20 M = a; R = F(a) for t in range(a, b + 1): if (F(t) <= R): M = t; R = F(t) print(M + R) Алгоритмический язык алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t) <= R то M := t; R := F(t) все кц вывод M + R кон алг цел F( цел x) нач знач := 2 * (x * x - 16) * (x * x - 16) + 41 кон Паскаль var a, b, t, M, R: longint; function F(x: longint): longint; begin F := 2 * (x * x - 16) * (x * x - 16) + 41; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) <= R) then begin M := t; R := F(t) end end; write(M + R) end. С++ #include <iostream> using namespace std; long F(long x) { return 2 * (x * x - 16) * (x * x - 16) + 41; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t = a; t <= b; t++) { if (F(t) <= R) { M = t; R = F(t); } } cout << M + R << endl; return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "45",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=4, R=41, ответ 45. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINF380284": {
+    "sourceHash": "0b3f08dc7502bc62ddeb31bacca9fdf230bdc3912efd5113a87b80778cbc3534",
+    "fipiCondition": "Впишите правильный ответ. Напишите в ответе число, которое будет выведено в результате выполнения следующего алгоритма. Для Вашего удобства алгоритм представлен на пяти языках программирования. Бейсик DIM A, B, T, M, R AS LONG A = -20: B = 20 M = A: R = F(A) FOR T = A TO B IF F(T) < R THEN M = T R = F(T) END IF NEXT T PRINT M + 27 FUNCTION F(x) F = 2 * (x * x - 100) * (x * x - 100) + 5 END FUNCTION Python def F(x): return 2 * (x * x - 100) * (x * x - 100) + 5 a = -20; b = 20 M = a; R = F(a) for t in range(a, b + 1): if (F(t) < R): M = t; R = F(t) print(M + 27) Алгоритмический язык алг нач цел a, b, t, M, R a := -20; b := 20 M := a; R := F(a) нц для t от a до b если F(t) < R то M := t; R := F(t) все кц вывод M + 27 кон алг цел F( цел x) нач знач := 2 * (x * x - 100) * (x * x - 100) + 5 кон Паскаль var a, b, t, M, R: longint; function F(x: longint): longint; begin F := 2 * (x * x - 100) * (x * x - 100) + 5; end; begin a := -20; b := 20; M := a; R := F(a); for t := a to b do begin if (F(t) < R) then begin M := t; R := F(t) end end; write(M + 27) end. С++ #include <iostream> using namespace std; long F(long x) { return 2 * (x * x - 100) * (x * x - 100) + 5; } int main() { long a, b, t, M, R; a = -20; b = 20; M = a; R = F(a); for (t = a; t <= b; t++) { if (F(t) < R) { M = t; R = F(t); } } cout << M + 27 << endl; return 0; }",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18800",
+    "externalAnswer": "4",
+    "expectedAnswer": "17",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Совпадают перебор целых аргументов и поиск минимума положительного квадрата; отличаются параметры F, знак сравнения и выражение вывода. Внешний ответ 4 подтверждён выполнением исходного Pascal. Собственный вариант выполнен по Python, отдельно по C/C++ модели и интерпретатором Pascal; M=-10, R=5, ответ 17. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "e1188a3bf08fa17407da70143a1db65c170c7f5e5749a114823409ca76a0d0cf",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Python has malformed indentation and f/F mismatch; algorithmic text repeats то. Actual C++ excludes upper endpoint 20, unlike other languages; both minima -1 and +1 remain in range, strict update retains -1 and prints 4. Formula is quartic in x, not a quadratic with vertex -1 as the explanation claims. The nonnegative square proves minimum 5 at both -1 and +1."
+    }
+  },
+  "EGEINFFDB4FB": {
+    "sourceHash": "5b51b4380af0bff11255898ac0d99b95c4714946d9c4cf30b8d4b75f23d64a97",
+    "fipiCondition": "Впишите правильный ответ. Напишите программу, которая перебирает целые числа, бо́льшие 1 103 285 717, в порядке возрастания и ищет среди них числа, представленные в виде произведения ровно двух простых множителей, не обязательно различных, каждый из которых ровно один раз содержит в своей записи 16 (16 – идущие подряд друг за другом в указанном порядке цифры 1 и 6). В ответе в первом столбце таблицы запишите первые 5 найденных чисел в порядке возрастания, а во втором столбце – для каждого из них соответствующий наименьший найденный множитель. Количество строк в таблице для ответа избыточно.",
+    "reviewed": true,
+    "match": "variant",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=92229",
+    "externalAnswer": "1103299319 1693; 1103309477 1693; 1103322107 16187; 1103323021 1693; 1103328547 3169",
+    "expectedAnswer": "1103299319 1693; 1103309477 1693; 1103322107 16187; 1103323021 1693; 1103328547 3169",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Внешняя программа независимо выполнена без изменений: рекурсивное разложение на простые множители даёт пять чисел для порога 1103285717 и последовательности 16. Собственные параметры и все пять пар совпали; полный текст содержит дополнительную вводную строку ФИПИ, поэтому variant. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "26a37a06c9d1b63aa2e6626c2a940f851b8be7004580c79a972a6b12ccc21d30"
+  },
+  "EGEINF6EDEDF": {
+    "sourceHash": "cda844ac8590d6bed89495a26062253600967903f87b3878b46cbf24ab9325ed",
+    "fipiCondition": "Впишите правильный ответ. Напишите программу, которая перебирает целые числа, бо́льшие 2 018 974 447, в порядке возрастания и ищет среди них числа, представленные в виде произведения ровно двух простых множителей, не обязательно различных, каждый из которых ровно один раз содержит в своей записи 43 (43 – идущие подряд друг за другом в указанном порядке цифры 4 и 3). В ответе в первом столбце таблицы запишите первые 5 найденных чисел в порядке возрастания, а во втором столбце – для каждого из них соответствующий наименьший найденный множитель. Количество строк в таблице для ответа избыточно.",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=92229",
+    "externalAnswer": "1103299319 1693; 1103309477 1693; 1103322107 16187; 1103323021 1693; 1103328547 3169",
+    "expectedAnswer": "2018977769 27143; 2018980091 9437; 2018983349 643; 2018997619 43; 2019003907 4643",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Внешняя программа независимо выполнена без изменений: рекурсивное разложение на простые множители даёт пять чисел для порога 1103285717 и последовательности 16. Сопоставлен метод, а не численный вариант: собственные порог, шаблон цифр и выбор меньшего или большего множителя обработаны отдельно. Все числа дополнительно подтверждены независимым перебором пар простых p и q. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "26a37a06c9d1b63aa2e6626c2a940f851b8be7004580c79a972a6b12ccc21d30"
+  },
+  "EGEINFCA8FA9": {
+    "sourceHash": "6311cd2614bd466d448977d4ce111d65d40a08fa2d3a79a21981ef3aa0510b84",
+    "fipiCondition": "Впишите правильный ответ. Напишите программу, которая перебирает целые числа, бо́льшие 2 626 695 891, в порядке возрастания и ищет среди них числа, представленные в виде произведения ровно двух простых множителей, не обязательно различных, каждый из которых ровно один раз содержит в своей записи 67 (67 – идущие подряд друг за другом в указанном порядке цифры 6 и 7). В ответе в первом столбце таблицы запишите первые 5 найденных чисел в порядке возрастания, а во втором столбце – для каждого из них соответствующий наименьший найденный множитель. Количество строк в таблице для ответа избыточно.",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=92229",
+    "externalAnswer": "1103299319 1693; 1103309477 1693; 1103322107 16187; 1103323021 1693; 1103328547 3169",
+    "expectedAnswer": "2626696861 6793; 2626700987 1567; 2626704089 167; 2626711691 2267; 2626713493 67",
+    "comparison": "Полные внешние условие и решение прочитаны, все три формульных изображения просмотрены. Внешняя программа независимо выполнена без изменений: рекурсивное разложение на простые множители даёт пять чисел для порога 1103285717 и последовательности 16. Сопоставлен метод, а не численный вариант: собственные порог, шаблон цифр и выбор меньшего или большего множителя обработаны отдельно. Все числа дополнительно подтверждены независимым перебором пар простых p и q. Написано собственное развёрнутое решение.",
+    "externalEvidenceSha256": "26a37a06c9d1b63aa2e6626c2a940f851b8be7004580c79a972a6b12ccc21d30"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "review-complete-publication-held",
+  "count": 4,
+  "published": 0,
+  "baselineInformaticsPublished": 2443,
+  "remaining": 32,
+  "independentMethods": [
+    "Python tokenization",
+    "JavaScript character scan",
+    "existing read-only LibreOffice Writer search"
+  ],
+  "methodReferences": [
+    "https://inf-ege.sdamgia.ru/problem?id=47214",
+    "https://inf-ege.sdamgia.ru/problem?id=57417"
+  ],
+  "methodScope": "Different books/terms; validates search procedure only, not these four exact answers or hyphen treatment.",
+  "secondaryExactAnswerComparison": {
+    "url": "https://gdzotvet.ru/oge-ege/informatika/1313-zadanie-10-ege-po-informatike-s-otvetami-fipi-podschet-slov-v-tekste",
+    "downloadSha256": "a820134b62906eb4defc3a0426879e179752caeaaadeb7501e461f0ba813f2e9",
+    "answers": {
+      "EGEINF2F9ABA": 38,
+      "EGEINF671119": 37,
+      "EGEINF870FE9": 11,
+      "EGEINFE4A3C2": 52
+    },
+    "limitation": "Agreement with an answer collection does not establish official FIPI intent; its generic hyphen advice conflicts with these answers."
+  },
+  "primaryClarificationFound": false,
+  "sourceFilesChanged": false,
+  "publicationRegistryChanged": false,
+  "nextRequiredEvidence": "Original answer key or author clarification explicitly applicable to these tasks."
+}

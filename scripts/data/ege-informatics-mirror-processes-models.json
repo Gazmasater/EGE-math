@@ -1,0 +1,2927 @@
+{
+  "EGEINF2332FB": {
+    "id": "EGEINF2332FB",
+    "type": "completed-by",
+    "parameter": 17,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 1,
+        "depends": [
+          106,
+          122
+        ]
+      },
+      {
+        "id": 102,
+        "duration": 3,
+        "depends": [
+          112,
+          103
+        ]
+      },
+      {
+        "id": 103,
+        "duration": 6,
+        "depends": [
+          110
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 5,
+        "depends": [
+          121
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 1,
+        "depends": [
+          121
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 2,
+        "depends": []
+      },
+      {
+        "id": 107,
+        "duration": 3,
+        "depends": [
+          116
+        ]
+      },
+      {
+        "id": 108,
+        "duration": 2,
+        "depends": [
+          102,
+          114
+        ]
+      },
+      {
+        "id": 109,
+        "duration": 4,
+        "depends": [
+          112
+        ]
+      },
+      {
+        "id": 110,
+        "duration": 2,
+        "depends": [
+          124,
+          106
+        ]
+      },
+      {
+        "id": 111,
+        "duration": 1,
+        "depends": [
+          116
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 2,
+        "depends": [
+          103,
+          105
+        ]
+      },
+      {
+        "id": 113,
+        "duration": 5,
+        "depends": []
+      },
+      {
+        "id": 114,
+        "duration": 3,
+        "depends": [
+          106
+        ]
+      },
+      {
+        "id": 115,
+        "duration": 3,
+        "depends": [
+          118,
+          117
+        ]
+      },
+      {
+        "id": 116,
+        "duration": 6,
+        "depends": [
+          110
+        ]
+      },
+      {
+        "id": 117,
+        "duration": 6,
+        "depends": [
+          116,
+          119
+        ]
+      },
+      {
+        "id": 118,
+        "duration": 5,
+        "depends": [
+          116
+        ]
+      },
+      {
+        "id": 119,
+        "duration": 6,
+        "depends": [
+          124,
+          103
+        ]
+      },
+      {
+        "id": 120,
+        "duration": 2,
+        "depends": [
+          105,
+          119
+        ]
+      },
+      {
+        "id": 121,
+        "duration": 3,
+        "depends": [
+          106,
+          116
+        ]
+      },
+      {
+        "id": 122,
+        "duration": 6,
+        "depends": [
+          110
+        ]
+      },
+      {
+        "id": 123,
+        "duration": 5,
+        "depends": [
+          125,
+          102
+        ]
+      },
+      {
+        "id": 124,
+        "duration": 6,
+        "depends": []
+      },
+      {
+        "id": 125,
+        "duration": 4,
+        "depends": [
+          103
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/164ee627d23e447096867b19d10231e5/img1_1760104475.zip",
+        "archive": "archives/2332FB_3.zip",
+        "archiveSha256": "ecdf3eb9a2a8af982116f3ca167afa5b4c26ab034fe2e36c106a4adaac806781",
+        "formats": [
+          {
+            "file": "documents/EGEINF2332FB-2332FB_3.xlsx",
+            "member": "6_22.xlsx",
+            "sha256": "547cc92a233b0553a9f78435418cc8571dcb551ecd7213baaf5d9eabbca9d135"
+          },
+          {
+            "file": "documents/EGEINF2332FB-2332FB_3.ods",
+            "member": "6_22.ods",
+            "sha256": "87e6b16fce585ef612f4a01e3d0a6e0e50baa7fc5afa8401f2cf0d3acbeb84ef"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINF096055": {
+    "id": "EGEINF096055",
+    "type": "active-at",
+    "parameter": 16,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 6,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 102,
+        "duration": 6,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 103,
+        "duration": 6,
+        "depends": [
+          114,
+          111
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 4,
+        "depends": [
+          124,
+          121
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 3,
+        "depends": [
+          113
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 3,
+        "depends": [
+          110
+        ]
+      },
+      {
+        "id": 107,
+        "duration": 2,
+        "depends": [
+          117,
+          122
+        ]
+      },
+      {
+        "id": 108,
+        "duration": 6,
+        "depends": [
+          124,
+          121
+        ]
+      },
+      {
+        "id": 109,
+        "duration": 4,
+        "depends": [
+          111
+        ]
+      },
+      {
+        "id": 110,
+        "duration": 5,
+        "depends": [
+          120
+        ]
+      },
+      {
+        "id": 111,
+        "duration": 1,
+        "depends": []
+      },
+      {
+        "id": 112,
+        "duration": 5,
+        "depends": [
+          123,
+          115
+        ]
+      },
+      {
+        "id": 113,
+        "duration": 5,
+        "depends": [
+          122
+        ]
+      },
+      {
+        "id": 114,
+        "duration": 4,
+        "depends": []
+      },
+      {
+        "id": 115,
+        "duration": 5,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 116,
+        "duration": 2,
+        "depends": [
+          109,
+          115
+        ]
+      },
+      {
+        "id": 117,
+        "duration": 4,
+        "depends": [
+          103,
+          115
+        ]
+      },
+      {
+        "id": 118,
+        "duration": 4,
+        "depends": [
+          123
+        ]
+      },
+      {
+        "id": 119,
+        "duration": 3,
+        "depends": [
+          109
+        ]
+      },
+      {
+        "id": 120,
+        "duration": 2,
+        "depends": [
+          115,
+          116
+        ]
+      },
+      {
+        "id": 121,
+        "duration": 6,
+        "depends": [
+          109
+        ]
+      },
+      {
+        "id": 122,
+        "duration": 1,
+        "depends": []
+      },
+      {
+        "id": 123,
+        "duration": 6,
+        "depends": [
+          111,
+          115
+        ]
+      },
+      {
+        "id": 124,
+        "duration": 3,
+        "depends": [
+          109,
+          103
+        ]
+      },
+      {
+        "id": 125,
+        "duration": 1,
+        "depends": [
+          115,
+          123
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/828db2106bf14b8e979ddfdf70f76239/img1_1760104090.zip",
+        "archive": "archives/096055_3.zip",
+        "archiveSha256": "8ebaa22abc21e49e8ad71af50324c48204edbf65227bd69184dde378e19f852c",
+        "formats": [
+          {
+            "file": "documents/EGEINF096055-096055_3.xlsx",
+            "member": "3_22.xlsx",
+            "sha256": "1250f8598266f7dbf580e564bc3d43729f3a0601ba26ff038d98362a70cf8a95"
+          },
+          {
+            "file": "documents/EGEINF096055-096055_3.ods",
+            "member": "3_22.ods",
+            "sha256": "ff0d9cea46f9fbaf77dbda429dc40618050f53e4338a09d8bd2c23fc67748e18"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINF159297": {
+    "id": "EGEINF159297",
+    "type": "finish-count",
+    "parameter": 22,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 1,
+        "depends": []
+      },
+      {
+        "id": 102,
+        "duration": 5,
+        "depends": [
+          101
+        ]
+      },
+      {
+        "id": 103,
+        "duration": 1,
+        "depends": [
+          106,
+          108
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 5,
+        "depends": [
+          115,
+          106
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 5,
+        "depends": [
+          122,
+          113
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 4,
+        "depends": [
+          102
+        ]
+      },
+      {
+        "id": 107,
+        "duration": 3,
+        "depends": [
+          112
+        ]
+      },
+      {
+        "id": 108,
+        "duration": 1,
+        "depends": []
+      },
+      {
+        "id": 109,
+        "duration": 1,
+        "depends": [
+          113,
+          106
+        ]
+      },
+      {
+        "id": 110,
+        "duration": 1,
+        "depends": [
+          107
+        ]
+      },
+      {
+        "id": 111,
+        "duration": 3,
+        "depends": [
+          108,
+          103
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 1,
+        "depends": []
+      },
+      {
+        "id": 113,
+        "duration": 5,
+        "depends": [
+          120
+        ]
+      },
+      {
+        "id": 114,
+        "duration": 6,
+        "depends": [
+          111,
+          124
+        ]
+      },
+      {
+        "id": 115,
+        "duration": 4,
+        "depends": [
+          119
+        ]
+      },
+      {
+        "id": 116,
+        "duration": 4,
+        "depends": [
+          101,
+          109
+        ]
+      },
+      {
+        "id": 117,
+        "duration": 6,
+        "depends": [
+          106,
+          107
+        ]
+      },
+      {
+        "id": 118,
+        "duration": 3,
+        "depends": [
+          101
+        ]
+      },
+      {
+        "id": 119,
+        "duration": 5,
+        "depends": [
+          120,
+          117
+        ]
+      },
+      {
+        "id": 120,
+        "duration": 2,
+        "depends": [
+          112,
+          108
+        ]
+      },
+      {
+        "id": 121,
+        "duration": 1,
+        "depends": [
+          104
+        ]
+      },
+      {
+        "id": 122,
+        "duration": 6,
+        "depends": [
+          102,
+          120
+        ]
+      },
+      {
+        "id": 123,
+        "duration": 1,
+        "depends": [
+          117
+        ]
+      },
+      {
+        "id": 124,
+        "duration": 2,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 125,
+        "duration": 5,
+        "depends": [
+          108
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/b53b8693192d401cb706124ed4c1a4a1/img1_1760104363.zip",
+        "archive": "archives/159297_3.zip",
+        "archiveSha256": "3e6548c65332cf97414deb933490d2b2f1ebf45a2868f2ea3ec3ed8fc97b1ffc",
+        "formats": [
+          {
+            "file": "documents/EGEINF159297-159297_3.xlsx",
+            "member": "5_22.xlsx",
+            "sha256": "94cddef6478a137a15f3e6da2dd542682b1257594a6b300c4435b9cda0f7ecf6"
+          },
+          {
+            "file": "documents/EGEINF159297-159297_3.ods",
+            "member": "5_22.ods",
+            "sha256": "11023c9b2ada009f25abd56fac7dd5a3bb1f53139ab8dd85200c47b0b5ae8ad8"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFABAA67": {
+    "id": "EGEINFABAA67",
+    "type": "finish-count",
+    "parameter": 17,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 6,
+        "depends": [
+          109,
+          103
+        ]
+      },
+      {
+        "id": 102,
+        "duration": 1,
+        "depends": [
+          115,
+          106
+        ]
+      },
+      {
+        "id": 103,
+        "duration": 1,
+        "depends": [
+          125
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 6,
+        "depends": [
+          107
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 6,
+        "depends": [
+          121
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 3,
+        "depends": []
+      },
+      {
+        "id": 107,
+        "duration": 1,
+        "depends": [
+          115,
+          109
+        ]
+      },
+      {
+        "id": 108,
+        "duration": 5,
+        "depends": [
+          106,
+          112
+        ]
+      },
+      {
+        "id": 109,
+        "duration": 2,
+        "depends": [
+          108,
+          125
+        ]
+      },
+      {
+        "id": 110,
+        "duration": 5,
+        "depends": [
+          115
+        ]
+      },
+      {
+        "id": 111,
+        "duration": 4,
+        "depends": [
+          125,
+          121
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 4,
+        "depends": []
+      },
+      {
+        "id": 113,
+        "duration": 5,
+        "depends": [
+          108,
+          124
+        ]
+      },
+      {
+        "id": 114,
+        "duration": 3,
+        "depends": [
+          110
+        ]
+      },
+      {
+        "id": 115,
+        "duration": 6,
+        "depends": [
+          121
+        ]
+      },
+      {
+        "id": 116,
+        "duration": 2,
+        "depends": [
+          112
+        ]
+      },
+      {
+        "id": 117,
+        "duration": 4,
+        "depends": [
+          115
+        ]
+      },
+      {
+        "id": 118,
+        "duration": 6,
+        "depends": [
+          111,
+          108
+        ]
+      },
+      {
+        "id": 119,
+        "duration": 4,
+        "depends": [
+          101
+        ]
+      },
+      {
+        "id": 120,
+        "duration": 1,
+        "depends": [
+          109,
+          115
+        ]
+      },
+      {
+        "id": 121,
+        "duration": 2,
+        "depends": []
+      },
+      {
+        "id": 122,
+        "duration": 2,
+        "depends": [
+          112
+        ]
+      },
+      {
+        "id": 123,
+        "duration": 4,
+        "depends": [
+          109,
+          103
+        ]
+      },
+      {
+        "id": 124,
+        "duration": 6,
+        "depends": [
+          121,
+          125
+        ]
+      },
+      {
+        "id": 125,
+        "duration": 1,
+        "depends": [
+          112
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/d939493bc1f74c9db4355b22dda5dd59/img1_1760104232.zip",
+        "archive": "archives/ABAA67_3.zip",
+        "archiveSha256": "b6891d0f64360995d3585d272ede4826b3a025bdabcd9a5c94f65477531088c1",
+        "formats": [
+          {
+            "file": "documents/EGEINFABAA67-ABAA67_3.xlsx",
+            "member": "4_22.xlsx",
+            "sha256": "e13c24b5738e704712091f3194caad6d5084dd285bac5c3a37c58e6483a51b01"
+          },
+          {
+            "file": "documents/EGEINFABAA67-ABAA67_3.ods",
+            "member": "4_22.ods",
+            "sha256": "350cbccd6c6b2cbb74ec836f2d1953bb202396cf0157a05c86f99ba1daa7bd4b"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINF102242": {
+    "id": "EGEINF102242",
+    "type": "makespan",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 1,
+        "duration": 20,
+        "depends": []
+      },
+      {
+        "id": 2,
+        "duration": 26,
+        "depends": []
+      },
+      {
+        "id": 3,
+        "duration": 22,
+        "depends": [
+          13
+        ]
+      },
+      {
+        "id": 4,
+        "duration": 28,
+        "depends": []
+      },
+      {
+        "id": 5,
+        "duration": 29,
+        "depends": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "duration": 25,
+        "depends": [
+          5,
+          7,
+          8,
+          15
+        ]
+      },
+      {
+        "id": 7,
+        "duration": 31,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "duration": 32,
+        "depends": [
+          1
+        ]
+      },
+      {
+        "id": 9,
+        "duration": 28,
+        "depends": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 10,
+        "duration": 34,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "duration": 30,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "duration": 29,
+        "depends": []
+      },
+      {
+        "id": 13,
+        "duration": 32,
+        "depends": [
+          10,
+          12
+        ]
+      },
+      {
+        "id": 14,
+        "duration": 33,
+        "depends": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 15,
+        "duration": 39,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 16,
+        "duration": 33,
+        "depends": [
+          14,
+          15
+        ]
+      },
+      {
+        "id": 17,
+        "duration": 36,
+        "depends": [
+          13
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0566267FB04CA142440C41487913A63B/img1_1739287040.zip",
+        "archive": "archives/102242_3.zip",
+        "archiveSha256": "2d6ba6d01f502547ca61e201b87c6e27acd9b890e28dfdfcd02e69c79ebdc7d0",
+        "formats": [
+          {
+            "file": "documents/EGEINF102242-102242_3.xlsx",
+            "member": "313_22.xlsx",
+            "sha256": "913388fb5fac5c71a10bfadde473164d9d62eb59a1fff5c349ceb9f95abd06b9"
+          },
+          {
+            "file": "documents/EGEINF102242-102242_3.ods",
+            "member": "313_22.ods",
+            "sha256": "52fe4470a3f4f567318f3dbce1b9dd1c88c3b5942ac6f97014811ed172ee9501"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFE923FA": {
+    "id": "EGEINFE923FA",
+    "type": "interval",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 14,
+        "depends": []
+      },
+      {
+        "id": 102,
+        "duration": 3,
+        "depends": []
+      },
+      {
+        "id": 103,
+        "duration": 1,
+        "depends": [
+          101,
+          102
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 11,
+        "depends": [
+          102
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 13,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 5,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 107,
+        "duration": 3,
+        "depends": [
+          106
+        ]
+      },
+      {
+        "id": 108,
+        "duration": 1,
+        "depends": [
+          105,
+          107
+        ]
+      },
+      {
+        "id": 109,
+        "duration": 2,
+        "depends": [
+          108
+        ]
+      },
+      {
+        "id": 110,
+        "duration": 8,
+        "depends": []
+      },
+      {
+        "id": 111,
+        "duration": 16,
+        "depends": [
+          110
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 8,
+        "depends": [
+          110
+        ]
+      },
+      {
+        "id": 113,
+        "duration": 14,
+        "depends": [
+          112
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/1C96BE85CC5BA13E46F8A2907ABEB4F7/img1_1739285430.zip",
+        "archive": "archives/E923FA_3.zip",
+        "archiveSha256": "58865af0e20634c3608c88d1e077a83edeea594698f1b1070313c4d09809e82f",
+        "formats": [
+          {
+            "file": "documents/EGEINFE923FA-E923FA_3.xlsx",
+            "member": "301_22.xlsx",
+            "sha256": "2bb714dd2370e8854d64f3602159cb87b7631db161942cac2789a101abe42610"
+          },
+          {
+            "file": "documents/EGEINFE923FA-E923FA_3.ods",
+            "member": "301_22.ods",
+            "sha256": "c77fa2b911657784211bc15d8fe5de8642e3429d5fb158a0fbc600ba462c86b4"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINF3133F6": {
+    "id": "EGEINF3133F6",
+    "type": "makespan",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 1,
+        "duration": 20,
+        "depends": []
+      },
+      {
+        "id": 2,
+        "duration": 19,
+        "depends": []
+      },
+      {
+        "id": 3,
+        "duration": 22,
+        "depends": [
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "duration": 23,
+        "depends": []
+      },
+      {
+        "id": 5,
+        "duration": 24,
+        "depends": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "duration": 18,
+        "depends": [
+          5,
+          7,
+          8,
+          14
+        ]
+      },
+      {
+        "id": 7,
+        "duration": 26,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "duration": 27,
+        "depends": [
+          1
+        ]
+      },
+      {
+        "id": 9,
+        "duration": 31,
+        "depends": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 10,
+        "duration": 29,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "duration": 32,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "duration": 31,
+        "depends": []
+      },
+      {
+        "id": 13,
+        "duration": 32,
+        "depends": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 14,
+        "duration": 38,
+        "depends": [
+          10,
+          12
+        ]
+      },
+      {
+        "id": 15,
+        "duration": 34,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 16,
+        "duration": 43,
+        "depends": [
+          13
+        ]
+      },
+      {
+        "id": 17,
+        "duration": 55,
+        "depends": [
+          14,
+          16
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/1EDE5E631A50BB7E44D0AC993BE2068C/img1_1739287106.zip",
+        "archive": "archives/3133F6_3.zip",
+        "archiveSha256": "a9d3e79066816fe9a9888295761485f64a75a0ab01e17ca82f4b9719de7806a9",
+        "formats": [
+          {
+            "file": "documents/EGEINF3133F6-3133F6_3.ods",
+            "member": "319_22.ods",
+            "sha256": "1daabca3b281f9db712220e7feba737bbfefaaf56c3b42dec3043b10268be966"
+          },
+          {
+            "file": "documents/EGEINF3133F6-3133F6_3.xlsx",
+            "member": "319_22.xlsx",
+            "sha256": "ba063d37986b41fc887faeea6c03dc39d1fdf84a8562d47122f86a1173088f15"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFA3580C": {
+    "id": "EGEINFA3580C",
+    "type": "interval",
+    "parameter": null,
+    "minimalMakespanRequired": true,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 7,
+        "depends": []
+      },
+      {
+        "id": 102,
+        "duration": 16,
+        "depends": [
+          101
+        ]
+      },
+      {
+        "id": 103,
+        "duration": 17,
+        "depends": [
+          101
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 10,
+        "depends": [
+          103,
+          107
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 4,
+        "depends": [
+          104
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 14,
+        "depends": [
+          104
+        ]
+      },
+      {
+        "id": 107,
+        "duration": 10,
+        "depends": []
+      },
+      {
+        "id": 108,
+        "duration": 17,
+        "depends": []
+      },
+      {
+        "id": 109,
+        "duration": 10,
+        "depends": [
+          108
+        ]
+      },
+      {
+        "id": 110,
+        "duration": 23,
+        "depends": [
+          109
+        ]
+      },
+      {
+        "id": 111,
+        "duration": 7,
+        "depends": [
+          108
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 19,
+        "depends": [
+          111
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/29A8EF630533860842E527C68A08BA20/img1_1739286137.zip",
+        "archive": "archives/A3580C_3.zip",
+        "archiveSha256": "1b3b918128c94071eb877c523bf6c02612d430c6f1376ef92a57f5efc5877165",
+        "formats": [
+          {
+            "file": "documents/EGEINFA3580C-A3580C_3.xlsx",
+            "member": "349_22.xlsx",
+            "sha256": "a56c562e3195b179de47f6e235deb79518457e2b96012cf61a0c6f4d31935f2a"
+          },
+          {
+            "file": "documents/EGEINFA3580C-A3580C_3.ods",
+            "member": "349_22.ods",
+            "sha256": "8d590a7b93263993fe4434dc0d487d333c8b62f9b4109185f8fe1b1f3c4ee946"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINF777B78": {
+    "id": "EGEINF777B78",
+    "type": "interval",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 7,
+        "depends": []
+      },
+      {
+        "id": 102,
+        "duration": 15,
+        "depends": [
+          101
+        ]
+      },
+      {
+        "id": 103,
+        "duration": 16,
+        "depends": [
+          101
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 10,
+        "depends": [
+          103,
+          107
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 13,
+        "depends": [
+          104
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 4,
+        "depends": [
+          104
+        ]
+      },
+      {
+        "id": 107,
+        "duration": 7,
+        "depends": []
+      },
+      {
+        "id": 108,
+        "duration": 18,
+        "depends": []
+      },
+      {
+        "id": 109,
+        "duration": 10,
+        "depends": [
+          108
+        ]
+      },
+      {
+        "id": 110,
+        "duration": 19,
+        "depends": [
+          109
+        ]
+      },
+      {
+        "id": 111,
+        "duration": 7,
+        "depends": [
+          108
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 4,
+        "depends": [
+          111
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3DE612F0E3FCA27248F9085CC96544D4/img1_1720777147.zip",
+        "archive": "archives/777B78_4.zip",
+        "archiveSha256": "7ebe1be1131961ffe4ead6a0adda9bc7d47edf1ace24dd0a7db8acd387261d8f",
+        "formats": [
+          {
+            "file": "documents/EGEINF777B78-777B78_4.xlsx",
+            "member": "319_22.xlsx",
+            "sha256": "c815b9a8c90b7ef234b98204bc1865f2fce75e84deec3c609361a0fe48eda849"
+          },
+          {
+            "file": "documents/EGEINF777B78-777B78_4.ods",
+            "member": "319_22.ods",
+            "sha256": "b12da7e6d593da0b0639a354fce02b537ec83f591079844cd4a33988ce8e4273"
+          }
+        ]
+      },
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/33F3347057EB826B4094080F661B8303/img2_1739286056.zip",
+        "archive": "archives/777B78_5.zip",
+        "archiveSha256": "00add1b0ad6caf9a9097a038d6bb475e5acfbdfb29de144ccbf96692d4a570e4",
+        "formats": [
+          {
+            "file": "documents/EGEINF777B78-777B78_5.xlsx",
+            "member": "319_22.xlsx",
+            "sha256": "c815b9a8c90b7ef234b98204bc1865f2fce75e84deec3c609361a0fe48eda849"
+          },
+          {
+            "file": "documents/EGEINF777B78-777B78_5.ods",
+            "member": "319_22.ods",
+            "sha256": "01c3e2c61a5d0cf03d0e2200162e8039aa358b3b369b2546f15c145338a90d30"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINF10A671": {
+    "id": "EGEINF10A671",
+    "type": "interval",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 7,
+        "depends": []
+      },
+      {
+        "id": 102,
+        "duration": 16,
+        "depends": [
+          101
+        ]
+      },
+      {
+        "id": 103,
+        "duration": 17,
+        "depends": [
+          101
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 10,
+        "depends": [
+          103,
+          107
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 13,
+        "depends": [
+          104
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 12,
+        "depends": [
+          104
+        ]
+      },
+      {
+        "id": 107,
+        "duration": 20,
+        "depends": []
+      },
+      {
+        "id": 108,
+        "duration": 18,
+        "depends": []
+      },
+      {
+        "id": 109,
+        "duration": 15,
+        "depends": [
+          108
+        ]
+      },
+      {
+        "id": 110,
+        "duration": 11,
+        "depends": [
+          109
+        ]
+      },
+      {
+        "id": 111,
+        "duration": 12,
+        "depends": [
+          108
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 12,
+        "depends": [
+          111
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/35592D849F6BB43541D7DA98F232FE04/img1_1739285755.zip",
+        "archive": "archives/10A671_3.zip",
+        "archiveSha256": "29c2268d2c2c928db19cdc270f5cf041f243f124b9f0a053a82c4608b6526b4f",
+        "formats": [
+          {
+            "file": "documents/EGEINF10A671-10A671_3.xlsx",
+            "member": "313_22.xlsx",
+            "sha256": "554a78053409f823f1707df3cc2d9c14304e969d09cf9fa7640809d4a56b8819"
+          },
+          {
+            "file": "documents/EGEINF10A671-10A671_3.ods",
+            "member": "313_22.ods",
+            "sha256": "fbe4c385dc36bddfdbd5d969e031a8d6cb458c918fdc422db85827315883d08a"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINF38557E": {
+    "id": "EGEINF38557E",
+    "type": "makespan",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 1,
+        "duration": 20,
+        "depends": []
+      },
+      {
+        "id": 2,
+        "duration": 21,
+        "depends": []
+      },
+      {
+        "id": 3,
+        "duration": 19,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "duration": 25,
+        "depends": []
+      },
+      {
+        "id": 5,
+        "duration": 27,
+        "depends": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "duration": 24,
+        "depends": [
+          5,
+          7,
+          8,
+          14
+        ]
+      },
+      {
+        "id": 7,
+        "duration": 20,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "duration": 23,
+        "depends": [
+          1
+        ]
+      },
+      {
+        "id": 9,
+        "duration": 18,
+        "depends": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 10,
+        "duration": 26,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "duration": 22,
+        "depends": []
+      },
+      {
+        "id": 12,
+        "duration": 21,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 13,
+        "duration": 24,
+        "depends": [
+          10,
+          12
+        ]
+      },
+      {
+        "id": 14,
+        "duration": 26,
+        "depends": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 15,
+        "duration": 27,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 16,
+        "duration": 24,
+        "depends": [
+          13
+        ]
+      },
+      {
+        "id": 17,
+        "duration": 26,
+        "depends": [
+          14,
+          16
+        ]
+      },
+      {
+        "id": 18,
+        "duration": 23,
+        "depends": [
+          14,
+          17
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3EC8F88C22C99B394B60167A0A2AC379/img1_1739287214.zip",
+        "archive": "archives/38557E_3.zip",
+        "archiveSha256": "de5bdfc989f637510c3600a7de8aedb4d4e9c2f68b1538dffa2e0311ae8f48ce",
+        "formats": [
+          {
+            "file": "documents/EGEINF38557E-38557E_3.xlsx",
+            "member": "325_22.xlsx",
+            "sha256": "7d1ccafbbbc222b994a98429f4ac8ea5a7929fc6461375882aac6e6559e6de35"
+          },
+          {
+            "file": "documents/EGEINF38557E-38557E_3.ods",
+            "member": "325_22.ods",
+            "sha256": "b2711c7f76cc479aebff03e8709d2844868a47b8a066b807363cd913510ab40e"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFE5D7BF": {
+    "id": "EGEINFE5D7BF",
+    "type": "makespan",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 1,
+        "duration": 8,
+        "depends": []
+      },
+      {
+        "id": 2,
+        "duration": 3,
+        "depends": []
+      },
+      {
+        "id": 3,
+        "duration": 5,
+        "depends": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "duration": 10,
+        "depends": []
+      },
+      {
+        "id": 5,
+        "duration": 9,
+        "depends": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "duration": 2,
+        "depends": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "duration": 3,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "duration": 4,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 9,
+        "duration": 10,
+        "depends": [
+          8
+        ]
+      },
+      {
+        "id": 10,
+        "duration": 8,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "duration": 6,
+        "depends": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": 12,
+        "duration": 5,
+        "depends": [
+          11
+        ]
+      },
+      {
+        "id": 13,
+        "duration": 3,
+        "depends": [
+          11
+        ]
+      },
+      {
+        "id": 14,
+        "duration": 7,
+        "depends": [
+          11
+        ]
+      },
+      {
+        "id": 15,
+        "duration": 9,
+        "depends": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 16,
+        "duration": 10,
+        "depends": [
+          10,
+          9
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/4C178351703C9ABF436BE3B16357EA0C/img1_1739286602.zip",
+        "archive": "archives/E5D7BF_3.zip",
+        "archiveSha256": "2a12e6df8d7801185a75b948f8657dd176283ef02bf0f087610f1e0b1e3d081c",
+        "formats": [
+          {
+            "file": "documents/EGEINFE5D7BF-E5D7BF_3.xlsx",
+            "member": "1_22.xlsx",
+            "sha256": "a2676b683fbf24f6deaadb71abcf6e031dd1c733220bbf6457c5d16b96fdc124"
+          },
+          {
+            "file": "documents/EGEINFE5D7BF-E5D7BF_3.ods",
+            "member": "1_22.ods",
+            "sha256": "b9dbdf645885858317904e163a3ee3768229d3fe4d4041fe1b6270119b783cf3"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFE4C7B9": {
+    "id": "EGEINFE4C7B9",
+    "type": "makespan",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 1,
+        "duration": 18,
+        "depends": []
+      },
+      {
+        "id": 2,
+        "duration": 19,
+        "depends": []
+      },
+      {
+        "id": 3,
+        "duration": 20,
+        "depends": [
+          1,
+          12
+        ]
+      },
+      {
+        "id": 4,
+        "duration": 21,
+        "depends": []
+      },
+      {
+        "id": 5,
+        "duration": 22,
+        "depends": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "duration": 23,
+        "depends": [
+          5,
+          7,
+          8,
+          15
+        ]
+      },
+      {
+        "id": 7,
+        "duration": 24,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "duration": 25,
+        "depends": [
+          1
+        ]
+      },
+      {
+        "id": 9,
+        "duration": 26,
+        "depends": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 10,
+        "duration": 27,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "duration": 28,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "duration": 29,
+        "depends": []
+      },
+      {
+        "id": 13,
+        "duration": 30,
+        "depends": [
+          10,
+          12
+        ]
+      },
+      {
+        "id": 14,
+        "duration": 31,
+        "depends": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 15,
+        "duration": 32,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 16,
+        "duration": 33,
+        "depends": [
+          13
+        ]
+      },
+      {
+        "id": 17,
+        "duration": 34,
+        "depends": [
+          14,
+          16
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/4CBA03E33C928E9E437EAC20844EE27D/img1_1739286946.zip",
+        "archive": "archives/E4C7B9_3.zip",
+        "archiveSha256": "0683ab5d4f29f4af2e61eb3d7bbe77f7fe15b1b35b6d24e4007a37d99f759ae7",
+        "formats": [
+          {
+            "file": "documents/EGEINFE4C7B9-E4C7B9_3.xlsx",
+            "member": "308_22.xlsx",
+            "sha256": "8aa315ac74f9a9edb2233ed939848873888d8a344e7ea928d89a17b942501572"
+          },
+          {
+            "file": "documents/EGEINFE4C7B9-E4C7B9_3.ods",
+            "member": "308_22.ods",
+            "sha256": "755fa0ccaa3df00ebe9fc93fb4a6f38c5645644a41f72319a3320bbfe717a90a"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFE32519": {
+    "id": "EGEINFE32519",
+    "type": "interval",
+    "parameter": null,
+    "minimalMakespanRequired": true,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 15,
+        "depends": []
+      },
+      {
+        "id": 102,
+        "duration": 14,
+        "depends": []
+      },
+      {
+        "id": 103,
+        "duration": 3,
+        "depends": [
+          101,
+          102
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 3,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 15,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 11,
+        "depends": [
+          104
+        ]
+      },
+      {
+        "id": 107,
+        "duration": 1,
+        "depends": [
+          105,
+          106
+        ]
+      },
+      {
+        "id": 108,
+        "duration": 2,
+        "depends": [
+          107
+        ]
+      },
+      {
+        "id": 109,
+        "duration": 8,
+        "depends": []
+      },
+      {
+        "id": 110,
+        "duration": 14,
+        "depends": [
+          109
+        ]
+      },
+      {
+        "id": 111,
+        "duration": 6,
+        "depends": [
+          109
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 13,
+        "depends": [
+          110,
+          111
+        ]
+      },
+      {
+        "id": 113,
+        "duration": 8,
+        "depends": [
+          111
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/5CB6E81FCE649048433EAB0F56025B2F/img1_1739285960.zip",
+        "archive": "archives/E32519_3.zip",
+        "archiveSha256": "c1820321d531cdeead49cdbaf98d5097be3385f97ee465ae8ef77b9cac695480",
+        "formats": [
+          {
+            "file": "documents/EGEINFE32519-E32519_3.xlsx",
+            "member": "355_22.xlsx",
+            "sha256": "b22f8050cc4de6de95c6d845dc17e93f5363b355235bb78e1c5e1cff76a705af"
+          },
+          {
+            "file": "documents/EGEINFE32519-E32519_3.ods",
+            "member": "355_22.ods",
+            "sha256": "5235bab59be217c9e3628399b6079b4a4458be873c616985562a7590a2c38ad8"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFDAB821": {
+    "id": "EGEINFDAB821",
+    "type": "interval",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 15,
+        "depends": []
+      },
+      {
+        "id": 102,
+        "duration": 14,
+        "depends": []
+      },
+      {
+        "id": 103,
+        "duration": 3,
+        "depends": [
+          101,
+          102
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 3,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 15,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 11,
+        "depends": [
+          104
+        ]
+      },
+      {
+        "id": 107,
+        "duration": 5,
+        "depends": [
+          105,
+          106
+        ]
+      },
+      {
+        "id": 108,
+        "duration": 8,
+        "depends": [
+          107
+        ]
+      },
+      {
+        "id": 109,
+        "duration": 8,
+        "depends": []
+      },
+      {
+        "id": 110,
+        "duration": 14,
+        "depends": [
+          109
+        ]
+      },
+      {
+        "id": 111,
+        "duration": 6,
+        "depends": [
+          109
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 13,
+        "depends": [
+          110,
+          111
+        ]
+      },
+      {
+        "id": 113,
+        "duration": 8,
+        "depends": [
+          111
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/67549F416460ACD04C780FED03F87EA5/img1_1739285874.zip",
+        "archive": "archives/DAB821_3.zip",
+        "archiveSha256": "3bd437687890ed74cc71494e24e228522bad604969e7d31204ef803947eaf7c4",
+        "formats": [
+          {
+            "file": "documents/EGEINFDAB821-DAB821_3.xlsx",
+            "member": "325_22.xlsx",
+            "sha256": "97809a319c9455e7bf177cc1f1d2eb6638e7365c702a6c1167a7b4d2f6f1f1e1"
+          },
+          {
+            "file": "documents/EGEINFDAB821-DAB821_3.ods",
+            "member": "325_22.ods",
+            "sha256": "55a86b6dc7d930bab2409d989c70a28ef21bff6e1ded4c652fed41ea1d6bc4b1"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINF3E352F": {
+    "id": "EGEINF3E352F",
+    "type": "makespan",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 1,
+        "duration": 8,
+        "depends": []
+      },
+      {
+        "id": 2,
+        "duration": 3,
+        "depends": []
+      },
+      {
+        "id": 3,
+        "duration": 1,
+        "depends": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "duration": 6,
+        "depends": []
+      },
+      {
+        "id": 5,
+        "duration": 7,
+        "depends": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "duration": 5,
+        "depends": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "duration": 10,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "duration": 9,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 9,
+        "duration": 4,
+        "depends": [
+          8
+        ]
+      },
+      {
+        "id": 10,
+        "duration": 4,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "duration": 8,
+        "depends": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": 12,
+        "duration": 9,
+        "depends": [
+          11
+        ]
+      },
+      {
+        "id": 13,
+        "duration": 4,
+        "depends": [
+          11
+        ]
+      },
+      {
+        "id": 14,
+        "duration": 7,
+        "depends": [
+          11
+        ]
+      },
+      {
+        "id": 15,
+        "duration": 10,
+        "depends": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 16,
+        "duration": 9,
+        "depends": [
+          10,
+          9
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/6E1EC8FE68DEA8774EF4B9BDA987E090/img1_1739287920.zip",
+        "archive": "archives/3E352F_3.zip",
+        "archiveSha256": "2ff72c532688c071bbfad958e6ad039404274e8d09656c1cd5e56bc8f7b9076d",
+        "formats": [
+          {
+            "file": "documents/EGEINF3E352F-3E352F_3.xlsx",
+            "member": "3_22.xlsx",
+            "sha256": "b6d4b8c4e8e3a879cd2bb37c50dc83f6b04f41f274074d43df6111acc41d696d"
+          },
+          {
+            "file": "documents/EGEINF3E352F-3E352F_3.ods",
+            "member": "3_22.ods",
+            "sha256": "4e3240fe92a26f07c17c2a3679b22caa1010d062492f6806916e3a721d0a7602"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINF42A2E4": {
+    "id": "EGEINF42A2E4",
+    "type": "interval",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 101,
+        "duration": 14,
+        "depends": []
+      },
+      {
+        "id": 102,
+        "duration": 3,
+        "depends": []
+      },
+      {
+        "id": 103,
+        "duration": 1,
+        "depends": [
+          101,
+          102
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 11,
+        "depends": [
+          102
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 13,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 106,
+        "duration": 5,
+        "depends": [
+          103
+        ]
+      },
+      {
+        "id": 107,
+        "duration": 7,
+        "depends": [
+          106
+        ]
+      },
+      {
+        "id": 108,
+        "duration": 1,
+        "depends": [
+          105,
+          107
+        ]
+      },
+      {
+        "id": 109,
+        "duration": 2,
+        "depends": [
+          108
+        ]
+      },
+      {
+        "id": 110,
+        "duration": 8,
+        "depends": []
+      },
+      {
+        "id": 111,
+        "duration": 10,
+        "depends": [
+          110
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 8,
+        "depends": [
+          110
+        ]
+      },
+      {
+        "id": 113,
+        "duration": 14,
+        "depends": [
+          112
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/C00966C96A9C985A4195178203E66157/img1_1739285655.zip",
+        "archive": "archives/42A2E4_3.zip",
+        "archiveSha256": "0a10141a477e30ee200065af478daa7f8b208cab2cb63d0afde8251340ee0146",
+        "formats": [
+          {
+            "file": "documents/EGEINF42A2E4-42A2E4_3.xlsx",
+            "member": "307_22.xlsx",
+            "sha256": "4b2f46f1467dd145a8b5066540cb45b197fdc2d5a231cac9e988804877ba76f4"
+          },
+          {
+            "file": "documents/EGEINF42A2E4-42A2E4_3.ods",
+            "member": "307_22.ods",
+            "sha256": "9ac3a90d6cdf4af551a51b25d77709e5520ec1840e77b0607ed619a2e16b75c6"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFFABCEC": {
+    "id": "EGEINFFABCEC",
+    "type": "makespan",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 1,
+        "duration": 21,
+        "depends": []
+      },
+      {
+        "id": 2,
+        "duration": 16,
+        "depends": []
+      },
+      {
+        "id": 3,
+        "duration": 18,
+        "depends": []
+      },
+      {
+        "id": 4,
+        "duration": 15,
+        "depends": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "duration": 19,
+        "depends": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "duration": 20,
+        "depends": [
+          3,
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "duration": 21,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "duration": 17,
+        "depends": [
+          1
+        ]
+      },
+      {
+        "id": 9,
+        "duration": 22,
+        "depends": []
+      },
+      {
+        "id": 10,
+        "duration": 21,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "duration": 22,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "duration": 23,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 13,
+        "duration": 19,
+        "depends": [
+          10,
+          12
+        ]
+      },
+      {
+        "id": 14,
+        "duration": 22,
+        "depends": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 15,
+        "duration": 23,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 16,
+        "duration": 18,
+        "depends": [
+          13
+        ]
+      },
+      {
+        "id": 17,
+        "duration": 22,
+        "depends": [
+          14,
+          16
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/C1A49AA2A1879A0B4A85A7016B8BDF55/img1_1739286862.zip",
+        "archive": "archives/FABCEC_3.zip",
+        "archiveSha256": "39b94a15b0d6dd5627dbeb6d7043a0502fb7c8383b37907a1597ee51631d32cd",
+        "formats": [
+          {
+            "file": "documents/EGEINFFABCEC-FABCEC_3.xlsx",
+            "member": "301_22.xlsx",
+            "sha256": "75c34fe98238d975680849ff2c97c7dd6b274930c9e700782bdd8bd104b7c109"
+          },
+          {
+            "file": "documents/EGEINFFABCEC-FABCEC_3.ods",
+            "member": "301_22.ods",
+            "sha256": "8870516963341fc4ce0d841e2af55a44e3e4b30af5ba39adeacca386cc318ee8"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFA8AC39": {
+    "id": "EGEINFA8AC39",
+    "type": "makespan",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 1,
+        "duration": 23,
+        "depends": []
+      },
+      {
+        "id": 2,
+        "duration": 22,
+        "depends": []
+      },
+      {
+        "id": 3,
+        "duration": 20,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "duration": 25,
+        "depends": []
+      },
+      {
+        "id": 5,
+        "duration": 28,
+        "depends": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "duration": 27,
+        "depends": [
+          5,
+          7,
+          8,
+          14
+        ]
+      },
+      {
+        "id": 7,
+        "duration": 21,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "duration": 22,
+        "depends": [
+          1
+        ]
+      },
+      {
+        "id": 9,
+        "duration": 21,
+        "depends": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 10,
+        "duration": 27,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "duration": 20,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "duration": 26,
+        "depends": []
+      },
+      {
+        "id": 13,
+        "duration": 24,
+        "depends": [
+          10,
+          12
+        ]
+      },
+      {
+        "id": 14,
+        "duration": 27,
+        "depends": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 15,
+        "duration": 27,
+        "depends": [
+          9
+        ]
+      },
+      {
+        "id": 16,
+        "duration": 28,
+        "depends": [
+          14,
+          17
+        ]
+      },
+      {
+        "id": 17,
+        "duration": 21,
+        "depends": [
+          13,
+          14
+        ]
+      },
+      {
+        "id": 18,
+        "duration": 25,
+        "depends": [
+          13
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/E9B9FA1CAA18B1B94ABD895597061B17/img1_1739287289.zip",
+        "archive": "archives/A8AC39_3.zip",
+        "archiveSha256": "6fbeaa92723c8cdb9a8228008c8db2805a84c4ea7973f91cbcdd3cf0806f1cac",
+        "formats": [
+          {
+            "file": "documents/EGEINFA8AC39-A8AC39_3.xlsx",
+            "member": "331_22.xlsx",
+            "sha256": "0f314c32af180c3f9c15cb6fa56cf8589ea2c83327f0f9c7cb1bcc6d86658961"
+          },
+          {
+            "file": "documents/EGEINFA8AC39-A8AC39_3.ods",
+            "member": "331_22.ods",
+            "sha256": "7f7d9f21efc818cd39b99c78c658d03ecef263aa5d2e4dc46bd8e60075f0f8c5"
+          }
+        ]
+      }
+    ]
+  },
+  "EGEINFB63883": {
+    "id": "EGEINFB63883",
+    "type": "makespan",
+    "parameter": null,
+    "minimalMakespanRequired": false,
+    "processes": [
+      {
+        "id": 1,
+        "duration": 4,
+        "depends": []
+      },
+      {
+        "id": 2,
+        "duration": 2,
+        "depends": []
+      },
+      {
+        "id": 3,
+        "duration": 8,
+        "depends": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "duration": 5,
+        "depends": []
+      },
+      {
+        "id": 5,
+        "duration": 7,
+        "depends": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "duration": 9,
+        "depends": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "duration": 10,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "duration": 5,
+        "depends": [
+          5
+        ]
+      },
+      {
+        "id": 9,
+        "duration": 10,
+        "depends": [
+          8
+        ]
+      },
+      {
+        "id": 10,
+        "duration": 8,
+        "depends": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "duration": 7,
+        "depends": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": 12,
+        "duration": 6,
+        "depends": [
+          11
+        ]
+      },
+      {
+        "id": 13,
+        "duration": 9,
+        "depends": [
+          11
+        ]
+      },
+      {
+        "id": 14,
+        "duration": 4,
+        "depends": [
+          11
+        ]
+      },
+      {
+        "id": 15,
+        "duration": 6,
+        "depends": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 16,
+        "duration": 9,
+        "depends": [
+          10,
+          9
+        ]
+      }
+    ],
+    "primaryFiles": [
+      {
+        "sourceUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/F4EEDFAEB07686AF455D5C28F8328146/img1_1739287854.zip",
+        "archive": "archives/B63883_3.zip",
+        "archiveSha256": "eef33b6c448a058303d727cf1ea6cf1c0bcb3d85709004aa7072586037d55bbc",
+        "formats": [
+          {
+            "file": "documents/EGEINFB63883-B63883_3.xlsx",
+            "member": "2_22.xlsx",
+            "sha256": "ae028133b9a033385f4951fa893bae2a2927fbd78d5483b98ca0ff903d0313e5"
+          },
+          {
+            "file": "documents/EGEINFB63883-B63883_3.ods",
+            "member": "2_22.ods",
+            "sha256": "ee78813df7cb8730eca17ec381b5d708d9889eb6b0c568877aeb46fdc1c19c59"
+          }
+        ]
+      }
+    ]
+  }
+}

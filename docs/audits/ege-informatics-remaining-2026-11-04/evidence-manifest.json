@@ -1,0 +1,47 @@
+{
+  "scope": "Historical evidence copied without modification; server-local paths are provenance, not portable dependencies. Full runtime backups are separate from this source snapshot.",
+  "files": [
+    {
+      "file": "remaining32-review.json",
+      "originalPath": "/root/ege-informatics-recovered-game-links-20261104/remaining32-review.json",
+      "bytes": 2195,
+      "sha256": "4d8ae3723e26011b4a99a6ffc53f00333c51a508f3c2718085cd2c512f24133b"
+    },
+    {
+      "file": "publication-completion.json",
+      "originalPath": "/root/ege-informatics-recovered-game-links-20261104/completion.json",
+      "bytes": 1582,
+      "sha256": "51676849436b57b0a297f6d3d42f9d205a69e9f8a7131892b417dff1171ce183"
+    },
+    {
+      "file": "conditional-drafts.json",
+      "originalPath": "/root/ege-informatics-reviewed-word-search-20261104/conditional-drafts.json",
+      "bytes": 16042,
+      "sha256": "52238e76ea2e154a3c0314da049b84ccbcfdf8c06240641d841cbedf535360e9"
+    },
+    {
+      "file": "independent-review.json",
+      "originalPath": "/root/ege-informatics-reviewed-word-search-20261104/independent-review.json",
+      "bytes": 16978,
+      "sha256": "3023f7d8ba96fad96db625a9299057340ddaaf7d9f43a852e7bcec5e914c206a"
+    },
+    {
+      "file": "word-review-completion.json",
+      "originalPath": "/root/ege-informatics-reviewed-word-search-20261104/completion.json",
+      "bytes": 1300,
+      "sha256": "52300f8592f452cdc5ffefedec3cd741faf49ab6fe2087736fb43623b1ddffe3"
+    },
+    {
+      "file": "writer-search-results.json",
+      "originalPath": "/root/ege-informatics-word-boundary-review-20261104/writer-search-results.json",
+      "bytes": 38821,
+      "sha256": "39970293c2e53baea84ecdd806c02de6a4bde70a356d9596126758ac0016d373"
+    },
+    {
+      "file": "robot-grid-comparison.json",
+      "originalPath": "/root/ege-informatics-robot-secondary-review-20261104/grid-comparison.json",
+      "bytes": 1085,
+      "sha256": "1d92eb0c206ebfad547e4d4912337cd47c53c5c7db8fa0db2eacd6f48f22bdb4"
+    }
+  ]
+}

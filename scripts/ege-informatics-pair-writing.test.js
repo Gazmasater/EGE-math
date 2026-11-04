@@ -1,0 +1,8 @@
+'use strict';const test=require('node:test'),assert=require('node:assert/strict'),path=require('node:path'),{execFileSync}=require('node:child_process');const proofs=require('./data/ege-informatics-pair-writing-proofs.json');
+const run=(id,inputs)=>JSON.parse(execFileSync('/usr/bin/python3',[path.join(__dirname,'lib/run-pair-program.py')],{input:JSON.stringify({code:proofs[id].data.code,inputs}),encoding:'utf8'}));
+test('ordered sum includes remainder zero and rejects later larger partner',()=>{assert.deepEqual(run('EGEINFECAE49',[[234,117,351],[351,117,234]]).map(x=>x.output),[[234,117],[351,234]]);});
+test('product classes count each pair once even when both numbers have both factors',()=>{assert.deepEqual(run('EGEINF902B84',[[26,13,2,3],[26,52,2],[1]]).map(x=>x.output),[[4],[3],[0]]);});
+test('distance exactly k is included and k minus one is excluded',()=>{assert.deepEqual(run('EGEINF2C4C01',[[29,1,2,3],[29,1,2,3,4],[1,29,2,3,4]]).map(x=>x.output),[[0],[1],[0]]);});
+test('decreasing multiples and duplicates preserve different positions',()=>{assert.deepEqual(run('EGEINF7BD738',[[102,34],[51,51],[17,2]]).map(x=>x.output),[[102,34],[51,51],[0,0]]);});
+test('distinct remainders reject missing zero and retain the second compatible maximum',()=>{assert.deepEqual(run('EGEINF267752',[[7,7],[350,510,343,1]]).map(x=>x.output),[[0,0],[510,343]]);});
+test('state stays below source memory limit at maximum sequence lengths',()=>{const a=run('EGEINFECAE49',[Array(11999).fill(234).concat(117)])[0],b=run('EGEINF267752',[Array(10000).fill(7)])[0];assert.deepEqual(a.output,[234,117]);assert.ok(a.explicitDataBytes<4096);assert.deepEqual(b.output,[0,0]);assert.ok(b.explicitDataBytes<1024);});

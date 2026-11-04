@@ -1,0 +1,3 @@
+'use strict';const test=require('node:test'),assert=require('node:assert/strict'),{select}=require('./lib/ege-informatics-recovered-spreadsheet-machine');
+test('The sum comparison includes equality and is invariant under permutation',()=>{assert.equal(select([4,5,6,7,8]),true);assert.equal(select([8,4,7,5,6]),true);assert.equal(select([4,5,6,7,9]),false);assert.equal(select([6,7,8,9,10]),true);});
+test('A repetition disqualifies the row independently of its sums',()=>{assert.equal(select([5,5,6,7,8]),false);assert.equal(select([8,7,6,5,5]),false);assert.throws(()=>select([0,5,6,7,8]));assert.throws(()=>select([5,6,7,8]));});

@@ -3,14 +3,16 @@ const fs = require('node:fs');
 const {createHash} = require('node:crypto');
 const {solutionFile} = require('../lib/solution-files');
 const selectedBatches = process.env.OGE_INF_BATCH?.split(',');
-const allBatches = require('./data/oge-informatics-solutions');
+const section = process.env.INFORMATICS_SECTION || 'oge-informatics';
+assert.ok(['oge-informatics','ege-informatics'].includes(section), 'Unknown informatics section');
+const allBatches = require('./data/'+section+'-solutions');
 const batches = allBatches.filter(b => !selectedBatches || selectedBatches.includes(b.name));
 assert.ok(batches.length, 'No solution batches selected');
 const {readOgeCatalog} = require('./lib/oge-catalog');
 const {ogeTaskMatchesTopic,ogeCataloguePath,OGE_PAGE_SIZE} = require('../lib/oge-catalog');
 const origin = process.env.OGE_SITE_ORIGIN || 'http://127.0.0.1:8888';
 const records = batches.flatMap(b=>b.records), ids = new Set(allBatches.flatMap(b=>b.records.map(r=>r.id)));
-const tasks = readOgeCatalog(undefined,'oge-informatics').tasks;
+const tasks = readOgeCatalog(undefined,section).tasks;
 const concurrency = Number(process.env.OGE_HTTP_CONCURRENCY || 4);
 assert.ok(Number.isInteger(concurrency) && concurrency >= 1 && concurrency <= 8, 'HTTP concurrency must be 1–8');
 async function eachBounded(items, visit) {
@@ -46,9 +48,9 @@ async function main() {
   });
   let pages = 0;
   for (const topic of new Set(batches.map(b=>b.topic))) {
-    const selected = tasks.filter(t=>ogeTaskMatchesTopic(t,topic,'oge-informatics'));
+    const selected = tasks.filter(t=>ogeTaskMatchesTopic(t,topic,section));
     for (let page=1;page<=Math.ceil(selected.length/OGE_PAGE_SIZE);page++) {
-      const url = ogeCataloguePath({topic,page,section:'oge-informatics'});
+      const url = ogeCataloguePath({topic,page,section});
       const html = await (await get(url)).text();
       const actual = [...html.matchAll(/<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"]\s+id=['"]q([A-Z0-9]+)['"]/gi)].map(m=>m[1]);
       const expected = selected.slice((page-1)*OGE_PAGE_SIZE,page*OGE_PAGE_SIZE).map(t=>t.id);

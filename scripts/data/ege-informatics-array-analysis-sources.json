@@ -1,0 +1,894 @@
+{
+  "EGEINF454C49": {
+    "sourceHash": "0d0aa6981a6032839f6c624269da438e838010bd04d126a0de301d49b26acc92",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 5, 3, 2, 1, 7, 8, 9, 9, 3 соответственно, т.е. A[0] = 4, A[1] = 5 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1, 10): if A[i-1] < A[i]: c = c + 1 A[i-1], A[i] = A[i], A[i-1] Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; С++ c = 0; for (int i = 1; i < 10; i++) if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "6",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 6. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF7F3642": {
+    "sourceHash": "c93ca8d8d9e8a8c133830290a62c1fbbdda4a886772fda68705083e691e2be83",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов массива A[i] приведены в таблице. i 0 1 2 3 4 5 6 7 8 9 10 11 A[i] 24 17 5 18 14 22 30 11 42 16 7 13 Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 0 FOR i = 1 TO 11 IF A(i) MOD i = 0 THEN s = s + A(n) ELSE A(n) = A(n) + A(i) END IF NEXT i s = 0 n = 0 for i in range(1, 12): if A[i] % i == 0: s += A[n] else: A[n] += A[i] Алгоритмический язык Паскаль s := 0 n := 0 нц для i от 1 до 11 если mod(A[i], i) = 0 то s := s + A[n] иначе A[n]:= A[n] + A[i] все кц s := 0; n := 0; for i := 1 to 11 do if A[i] mod i = 0 then s := s + A[n] else A[n] := A[n] + A[i]; С++ s = 0; n = 0; for (int i = 1; i < 12; i++) { if (A[i] % i == 0) s += A[n]; else A[n] += A[i]; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13549",
+    "externalAnswer": "7",
+    "expectedAnswer": "118",
+    "match": "method",
+    "comparison": "Внешний пример проверяет остаток от деления в условии и последовательное изменение массива. В ФИПИ делитель равен текущему индексу i, при нулевом остатке прибавляется текущее A[0], иначе изменяется A[0]. Эти ветви и все одиннадцать шагов пересчитаны отдельно; внешнему ответу 7 не приписывается совпадение с 118.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 4, 3, 16, 24, 35, 18, 4, 72, 10, 99, 44 соответственно, т. е. A[0] = 4, A[1] = 3 и т. д. Определите значение переменной c после выполнения следующего фрагмента программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) MOD 10 = A(0) THEN c = c + 1 t = A(i+1) A(i+1) = A(i) A(i) = t END IF NEXT i c = 0 for i in range(1,10): if A[i]%10 == A[0]: c = c + 1 t = A[i+1] A[i+1] = A[i] A[i] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do begin if A[i] mod 10 = A[0] then begin c := c + 1; t := A[i+1]; A[i+1] := A[i]; A[i] := t; end; end; c := 0 нц для i от 1 до 9 если mod(A[i],10) = A[0] то c := c + 1 t := A[i+1] A[i+1] := A[i] A[i] := t все кц Си++ c = 0; for (i = 1; i < 10; i++) { if (A[i]%10 == A[0]) { c++; t = A[i+1]; A[i+1] = A[i]; A[i] = t; } }",
+    "externalTextSha256": "44fac8c3a362f0bfc32c10dd76d3f376860ae3ac7c0d6c92e22f238b4aec4cb7",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The last two Python assignments have one fewer leading space than the other statements in the same if block. All other language listings place all four assignments inside the branch. The local control normalizes exactly these seven indentation levels to 0,0,4,8,8,8,8; raw source and code hash are retained. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF110941": {
+    "sourceHash": "6d95e2a8255d2429caaf1865374b4ee7f5ce86fa35b14e990c5b30e2560f445e",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 0, 4, 6, 5, 1, 8, 2, 9, 7 соответственно, т.е. A[0] = 3, A[1] = 0 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) > A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] > A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i-1] > A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц c := 0; for i := 1 to 9 do if A[i-1] > A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; Си c = 0; for (i = 1; i < 10; i++) if (A[i-1] > A[i]) { c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13746",
+    "externalAnswer": "5",
+    "expectedAnswer": "5",
+    "match": "exact",
+    "comparison": "Исходные значения массива, диапазон индексов, условия, порядок присваиваний и требуемая переменная совпадают. Полная самостоятельная трасса по Python и независимый разбор Си подтверждают ответ 5. Сверены также существенные шаги внешнего решения; текст объяснения написан самостоятельно.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 0, 4, 6, 5, 1, 8, 2, 9, 7 соответственно, т. е. A[0] = 3, A[1] = 0 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования) Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) > A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] > A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] > A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] > A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] > A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "d404e5d53969313075e2fb65ae7fd6c6de17e3f4b2440b43e19616cd2d281782"
+  },
+  "EGEINF5B5A4F": {
+    "sourceHash": "982c8e9029079df1d960b86ee5a66eb7e6dc3d76069010d88265eec78f8024fe",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 9, 6, 4, 7, 3, 2, 1, 5, 0, 8 соответственно, т.е. A[0] = 9, A[1] = 6 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) < A(9) THEN c = c + 1 t = A(i) A(i) = A(9) A(9) = t END IF NEXT i c = 0 for i in range(9): if A[i] < A[9]: c = c + 1 t = A[i] A[i] = A[9] A[9] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] < A[9] то c := с + 1 t := A[i] A[i] := A[9] A[9] := t все кц c := 0; for i := 0 to 8 do if A[i] < A[9] then begin c := c + 1; t := A[i]; A[i] := A[9]; A[9] := t; end; Си c = 0; for (i = 0;i < 9;i++) if (A[i] < A[9]) { c++; t = A[i]; A[i] = A[9]; A[9] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=9370",
+    "externalAnswer": "2",
+    "expectedAnswer": "6",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 6. Внешний контроль 2 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 7, 3, 8, 5, 0, 1, 2, 9, 6 соответственно, т. е. A[0] = 4, A[1] = 7 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования) . Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t ENDIF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := c + 1 t := A[i] A[i] := A[0] A[0] := t все кц Си++ c = 0; for (i = 1;i < 10;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "externalTextSha256": "2545fb65b749f4cfb2c784d9e0b05f3c47b1829b76cbb1735798956c635990b5",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The phrase that the program executes twice refers to the true branch. There are nine loop passes; exactly two comparisons trigger swaps. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFF492FD": {
+    "sourceHash": "c08348f2313327d2fec0d54fc82b63bf0077acfdcd9a07f5cac500452af71c2a",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 20, 19, 17, 41, 15, 12, 24, 16, 4, 13 соответственно, т.е. A[0] = 20, A[1] = 19 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 6 FOR i = 0 TO 9 IF A(i) <= A(n) THEN s = s + i t = A(i MOD n) A(i MOD n) = A(n) A(n) = t END IF NEXT i s = 0 n = 6 for i in range(10): if A[i] <= A[n]: s += i t = A[i % n] A[i % n] = A[n] A[n] = t Алгоритмический язык Паскаль s := 0 n := 6 нц для i от 0 до 9 если A[i] <= A[n] то s := s + i t := A[mod(i, n)] A[mod(i, n)] := A[n] A[n] := t все кц s := 0; n := 6; for i := 0 to 9 do if A[i] <= A[n] then begin s := s + i; t := A[i mod n]; A[i mod n] := A[n]; A[n] := t end; С++ s = 0; n = 6; for (int i = 0; i < 10; i++) if (A[i] <= A[n]){ s += i; t = A[i % n]; A[i % n] = A[n]; A[n] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18721",
+    "externalAnswer": "3",
+    "expectedAnswer": "42",
+    "match": "method",
+    "comparison": "Совпадает приём вычисления индекса обмена как остатка i по модулю n. В ФИПИ n = 6 и в сумму добавляется индекс i, а во внешней задаче n = 3 и считается число выполнений ветви. Отдельно проверены текущий опорный элемент, обмены и сумма 42; одинаковые значения при обмене не исключаются из выполнения ветви.",
+    "reviewed": true,
+    "externalCondition": "Представленный ниже на пяти языках программирования фрагмент программы обрабатывает элементы одномерного целочисленного массива A с индексами от 0 до 9. Перед началом выполнения данного фрагмента эти элементы массива имели значения 2, 3, 4, 4, 10, 4, 5, 6, 12, 9 (т. е. A[0] = 2, A[1] = 3, …, A[9] = 9). Определите значение переменной s после выполнения фрагмента. Бейсик Python n = 3 s = 0 FOR i = 0 TO 9 IF A(i) <= A(n) THEN t = A(i MOD n) A(i MOD n) = A(n) A(n) = t s = s + 1 END IF NEXT i n = 3 s = 0 for i in range(0,10): if A[i] <= A[n]: t = A[i % n] A[i % n] = A[n] A[n] = t s = s + 1 Паскаль Алгоритмический язык n := 3; s := 0; for i:=0 to 9 do begin if A[i] <= A[n] then begin t := A[i mod n]; A[i mod n] := A[n]; A[n] := t; s := s + 1 end end; n := 3 s := 0 нц для i от 0 до 9 если A[i] <= A[n] то t := A[mod(i,n)] A[mod(i,n)] := A[n] A[n] := t s := s + 1 все кц С++ n = 3; s = 0; for (i = 0; i <= 9; ++i) { if (A[i] <= A[n]) { t = A[i % n]; A[i % n] = A[n]; A[n] = t; s = s + 1; } }",
+    "externalTextSha256": "0d1508b077a8a255beedb0c79b51156c9a47c29f57556aaa607d073cf98def7e",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The last qualifying exchange swaps equal values, so the array does not change, but the branch counter still increases. Count true conditions, not visible changes; answer 3. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFF4BCFE": {
+    "sourceHash": "7f6b872b00068d47ee367b5b73029c97350ab9ba614183797d3913bd7f21b4f7",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов массива A[i] приведены в таблице. i 0 1 2 3 4 5 6 7 8 9 10 11 A[i] 14 13 15 8 4 12 30 21 22 16 5 9 Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 2 FOR i = 0 TO 11 IF A(i) > A(n) THEN s = s + A(i) + i ELSE A(n) = A(i) END IF NEXT i s = 0 n = 2 for i in range(0, 12): if A[i] > A[n]: s += A[i] + i else: A[n] = A[i] Алгоритмический язык Паскаль s := 0 n := 2 нц для i от 0 до 11 если A[i] > A[n] то s := s + A[i] + i иначе A[n] := A[i] все кц s := 0; n := 2; for i := 0 to 11 do if A[i] > A[n] then s := s + A[i] + i else A[n] := A[i]; С++ s = 0; n = 2; for (int i = 0; i < 12; i++) { if (A[i] > A[n]) s += A[i] + i; else A[n] = A[i]; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=23917",
+    "externalAnswer": "202",
+    "expectedAnswer": "171",
+    "match": "variant",
+    "comparison": "Совпадают исходный массив, прибавление A[i] + i и присваивание опорного элемента в ветви иначе; отличается n: в ФИПИ 2 вместо 1. Изменение опорной позиции учитывается на каждом проходе, поэтому все двенадцать сравнений и приращений пересчитаны. Ответ ФИПИ 171 отличается от внешнего 202.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 14, 13, 15, 8, 4, 12, 30, 21, 22, 16, 5, 9 соответственно, т. е. A[0] = 14, A[1] = 13 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 1 FOR i = 0 TO 11 IF A(i) > A(n) THEN s = s + A(i) + i ELSE A(n) = A(i) END IF NEXT i s = 0 n = 1 for i in range(12): if A[i] > A[n]: s += A[i] + i else: A[n] = A[i] Паскаль Алгоритмический язык s := 0; n := 1; for i := 0 to 11 do if A[i] > A[n] then s := s + A[i] + i else A[n] := A[i]; s := 0 n := 1 нц для i от 0 до 11 если A[i] > A[n] то s := s + A[i] + i иначе A[n] := A[i] все кц Си++ s = 0; n = 1; for (int i = 0; i < 12; i++) { if (A[i] > A[n]) s += A[i] + i; else A[n] = A[i]; }",
+    "externalTextSha256": "5d323bc6a7f9ebb30e8c6f91ecd4354a471388edd22433eca721057bb386c2c2"
+  },
+  "EGEINFA255FD": {
+    "sourceHash": "c2a2488ba9b569c2287559891d98f417e86d033cde834599cfdf9faa61f2c3d1",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 6, 9, 7, 2, 1, 5, 0, 3, 4, 8 соответственно, т.е. A[0] = 6, A[1] = 9 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; Си c = 0; for (i = 1; i < 10; i++) if (A[i-1] < A[i]) { c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "6",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 6. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFA1A3FC": {
+    "sourceHash": "162ed720e6361d36421cbc28c0b39fa65616f6e69f41b7f1a25dd9f220868e0b",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 20, 19, 17, 41, 15, 42, 24, 56, 4, 13 соответственно, т.е. A[0] = 20, A[1] = 19 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 2 FOR i = 0 TO 9 IF A(i) >= A(n) THEN s = s + A(i) – A(n) t = A(i) A(i) = A(n) A(n) = t END IF NEXT i s = 0 n = 2 for i in range(10): if A[i] >= A[n]: s += A[i] – A[n] t = A[i] A[i] = A[n] A[n] = t Алгоритмический язык Паскаль s := 0 n := 2 нц для i от 0 до 9 если A[i] >= A[n] то s := s + A[i] – A[n] t := A[i] A[i] := A[n] A[n] := t все кц s := 0; n := 2; for i := 0 to 9 do if A[i] >= A[n] then begin s := s + A[i] – A[n]; t := A[i]; A[i] := A[n]; A[n] := t end; С++ s = 0; n = 2; for (int i = 0; i < 10; i++) if (A[i] >= A[n]){ s += A[i] – A[n]; t = A[i]; A[i] = A[n]; A[n] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18798",
+    "externalAnswer": "4",
+    "expectedAnswer": "39",
+    "match": "method",
+    "comparison": "Сверен порядок: сначала вычисляется прибавка к сумме по текущим значениям, затем выполняется обмен с опорным элементом. В ФИПИ прибавляется разность A[i] − A[n] при нестрогом сравнении и n = 2, а во внешнем примере — остаток при строгом сравнении и n = 6. Собственная полная трасса даёт 39; внешний ответ 4 не переносится.",
+    "reviewed": true,
+    "externalCondition": "Представленный ниже на пяти языках программирования фрагмент программы обрабатывает элементы одномерного целочисленного массива A с индексами от 0 до 9. Перед началом выполнения данного фрагмента эти элементы массива имели значения 2, 3, 5, 6, 10, 4, 8, 6, 12, 9 (т. е. A[0] = 2, A[1] = 3, …, A[9] = 9). Определите значение переменной s после выполнения фрагмента. Бейсик Python n = 6 s = 0 FOR i = 0 TO 9 IF A(i) > A(n) THEN s = s + (A(i) MOD A(n)) t = A(i) A(i) = A(n) A(n) = t END IF NEXT i n = 6 s = 0 for i in range(0,10): if A[i] > A[n]: s += A[i] % A[n] t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык n := 6; s := 0; for i:=0 to 9 do begin if A[i] > A[n] then begin s := s + (A[i] mod A[n]); t := A[i]; A[i] := A[n]; A[n] := t; end end; n := 6 s := 0 нц для i от 0 до 9 если A[i] > A[n] то s := s + mod(A[i], A[n]) t := A[i] A[i] := A[n] A[n] := t все кц С++ n = 6; s = 0; for (i = 0; i <= 9; ++i) { if (A[i] > A[n]) { s += A[i] % A[n]; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "ef8369e81c82a712e81cf36c9c9534ca47523b294ff20c9db77a023919991974"
+  },
+  "EGEINFCC2CF4": {
+    "sourceHash": "df9a9f105d9d9c8be1aa7dacebe56d7dc6683777ef99e940b2936cee68d65cdb",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 1, 4, 6, 5, 7, 8, 0, 2, 9 соответственно, т.е. A[0] = 3, A[1] = 1 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) > A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t END IF NEXT i c = 0 for i in range(1,10): if A[i] > A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i] > A[0] то c := с + 1 t := A[i] A[i] := A[0] A[0] := t все кц c := 0; for i := 1 to 9 do if A[i] > A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; Си c = 0; for (i = 1;i < 10;i++) if (A[i] > A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18447",
+    "externalAnswer": "5",
+    "expectedAnswer": "5",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 5. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т. е. A[0] = 5, A[1] = 8 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python N = 0 S = 0 FOR I = 1 TO 11 IF A(I) > A(N) THEN S = S + 1 T = A(I) A(I) = A(N) A(N) = t END IF NEXT I n = 0 s = 0 for i in range(1, 12): if A[i] > A[n]: s = s + 1 t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s:= 0; n:= 0; for i:=1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t; все кц С++ n = 0; s = 0; for (i = 1; i < 12; i++) { if (A[i] > A[n]) { s++; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "91498c15d3dbaf5621501f56c3115a26db624c292462f7bdbbd6ccdefd85e297",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose contains an extra i after the word unit. All language listings and the trace increment s by 1, not by i; answer 5. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF087707": {
+    "sourceHash": "80a7677bd5fb786e620c8fcfeac838ba355e0994903fb1b869c0c9a4a25e5e4b",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s + A(i) - A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Алгоритмический язык Паскаль s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; Си s = 0; n=10; for (i = 0; i < n; i++) s = s + A[i] - A[i+1]; В начале выполнения этого фрагмента в массиве находились числа 10, 9, 8, 7, 6, 2, 3, 4, 5, 1, 0, т.е. A[0] = 10, A[1] = 9 и т.д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13365",
+    "externalAnswer": "27",
+    "expectedAnswer": "10",
+    "match": "variant",
+    "comparison": "Совпадают суммирование соседних разностей и диапазон i от 0 до 9. Исходные числа в массивах отличаются. Сверено сокращение всех внутренних элементов; по данным ФИПИ остаётся разность крайних значений 10 − 0 = 10. Дополнительно проверены все десять промежуточных сумм.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s+A(i)-A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Паскаль Алгоритмический язык s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц Си++ s = 0; n = 10; for (i = 0; i < n; i++) { s = s + A[i] - A[i+1]; } В начале выполнения этого фрагмента в массиве находились числа 27, 17, 7, 0, 7, 17, 27, 17, 10, 7, 0, т. е. A[0] = 27, A[1] = 17 и т. д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "externalTextSha256": "fb64dbbce6fa7018b393a6602119a00424ecdd4ec62bcad498bb6ace56b7519d"
+  },
+  "EGEINF2D1A0A": {
+    "sourceHash": "cb4af38771a89fa92724405159a3354c4cb4ceb9760f0ead18a4df2ddd604670",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 1, 5, 7, 6, 2, 4, 0, 3, 8, 9 соответственно, т.е. A[0] = 1, A[1] = 5 и т.д. Определите значение переменной t после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python i = 0: j = 9 WHILE (A(i) < 6) i = i + 1 WEND WHILE (A(j) > 6) j = j - 1 WEND t = A(i) - A(j) i = 0 j = 9 while A[i] < 6: i += 1 while A[j] > 6: j -= 1 t = A[i] - A[j] Алгоритмический язык Паскаль i := 0; j := 9 нц пока A[i] < 6 i := i + 1 кц нц пока A[j] > 6 j := j - 1 кц t := A[i] - A[j] i := 0; j := 9; while A[i] < 6 do i := i + 1; while A[j] > 6 do j := j - 1; t := A[i] - A[j]; С++ i = 0; j = 9; while (A[i] < 6) i += 1; while (A[j] > 6) j -= 1; t = A[i] - A[j];",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13495",
+    "externalAnswer": "11",
+    "expectedAnswer": "4",
+    "match": "variant",
+    "comparison": "Сверен метод последовательной проверки условия while, изменения индекса и остановки на первой ложной проверке. Исходный массив, начальные индексы или порог отличаются. Для ФИПИ отдельно проверены все обращения к массиву, каждое условие, обмены при наличии и окончательное значение t = 4.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 1, 2, 18, 8, 14, 9, 23, 7, 51, 99 соответственно, то есть A[0] = 1, A[1] = 2 и т. д. Определите значение переменной t после выполнения следующего фрагмента программы, записанного ниже на разных языках программирования. Бейсик Python i = 0: j = 9 WHILE A(i) < 10 i = i + 1 WEND WHILE A(j) > 10 j = j - 1 WEND t = A(i) - A(j) i = 0 j = 9 while A[i] < 10: i += 1 while A[j] > 10: j -= 1 t = A[i] - A[j] Паскаль Алгоритмический язык i = 0; j = 9; while A[i] < 10 do i := i + 1; while A[j] > 10 do j := j - 1; t := A[i] - A[j]; i := 0 j := 9 нц пока A[i] < 10 i := i + 1 кц нц пока A[j] > 10 j :=j - 1 кц t := A[i] - A[j] Си++ i = 0; j = 9; while (A[i] < 10) { i += 1; } while (A[j] > 10) { j -= 1; } t = A[i] - A[j];",
+    "externalTextSha256": "0c1a413fc24d706d699021ffd61cb3be19ea909c2d34840aa87098a33338f8f3"
+  },
+  "EGEINFD9DF07": {
+    "sourceHash": "8ed347da7a95f147670924e222c124d7b44ac0bf2e89a55be8e5e95bc2948b83",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 20, 19, 37, 41, 15, 42, 24, 56, 4, 13 соответственно, т.е. A[0] = 20, A[1] = 19 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 1 FOR i = 0 TO 9 IF A(i) >= A(n) THEN s = s + A(i) – A(n) t = A(i) A(i) = A(n) A(n) = t END IF NEXT i s = 0 n = 1 for i in range(10): if A[i] >= A[n]: s += A[i] – A[n] t = A[i] A[i] = A[n] A[n] = t Алгоритмический язык Паскаль s := 0 n := 1 нц для i от 0 до 9 если A[i] >= A[n] то s := s + A[i] – A[n] t := A[i] A[i] := A[n] A[n] := t все кц s := 0; n := 1; for i := 0 to 9 do if A[i] >= A[n] then begin s := s + A[i] – A[n]; t := A[i]; A[i] := A[n]; A[n] := t end; С++ s = 0; n = 1; for (int i = 0; i < 10; i++) if (A[i] >= A[n]){ s += A[i] – A[n]; t = A[i]; A[i] = A[n]; A[n] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18798",
+    "externalAnswer": "4",
+    "expectedAnswer": "37",
+    "match": "method",
+    "comparison": "Сверен порядок: сначала вычисляется прибавка к сумме по текущим значениям, затем выполняется обмен с опорным элементом. В ФИПИ прибавляется разность A[i] − A[n] при нестрогом сравнении и n = 1, а во внешнем примере — остаток при строгом сравнении и n = 6. Собственная полная трасса даёт 37; внешний ответ 4 не переносится.",
+    "reviewed": true,
+    "externalCondition": "Представленный ниже на пяти языках программирования фрагмент программы обрабатывает элементы одномерного целочисленного массива A с индексами от 0 до 9. Перед началом выполнения данного фрагмента эти элементы массива имели значения 2, 3, 5, 6, 10, 4, 8, 6, 12, 9 (т. е. A[0] = 2, A[1] = 3, …, A[9] = 9). Определите значение переменной s после выполнения фрагмента. Бейсик Python n = 6 s = 0 FOR i = 0 TO 9 IF A(i) > A(n) THEN s = s + (A(i) MOD A(n)) t = A(i) A(i) = A(n) A(n) = t END IF NEXT i n = 6 s = 0 for i in range(0,10): if A[i] > A[n]: s += A[i] % A[n] t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык n := 6; s := 0; for i:=0 to 9 do begin if A[i] > A[n] then begin s := s + (A[i] mod A[n]); t := A[i]; A[i] := A[n]; A[n] := t; end end; n := 6 s := 0 нц для i от 0 до 9 если A[i] > A[n] то s := s + mod(A[i], A[n]) t := A[i] A[i] := A[n] A[n] := t все кц С++ n = 6; s = 0; for (i = 0; i <= 9; ++i) { if (A[i] > A[n]) { s += A[i] % A[n]; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "ef8369e81c82a712e81cf36c9c9534ca47523b294ff20c9db77a023919991974"
+  },
+  "EGEINFCA1D0D": {
+    "sourceHash": "c6930eaebaca86e0e7174eec5a52a9aebdeed4e8a27a42c04b8c9a98abfceb41",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 4, 2, 9, 5, 1, 8, 2, 1, 7 соответственно, т.е. A[0] = 3, A[1] = 4 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1, 10): if A[i-1] < A[i]: c = c + 1 A[i-1], A[i] = A[i], A[i-1] Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; С++ c = 0; for (int i = 1; i < 10; i++) if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "6",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 6. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF441677": {
+    "sourceHash": "a58b6964124fbd552720a6291fffcd816c41354f77be81fe367d514b4e67f614",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s + A(i) - A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Алгоритмический язык Паскаль s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; Си s = 0; n=10; for (i = 0; i < n; i++) s = s + A[i] - A[i+1]; В начале выполнения этого фрагмента в массиве находились числа 15, 10, 5, 0, 5, 10, 0, 15, 10, 0, 5, т.е. A[0] = 15, A[1] = 10 и т.д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13365",
+    "externalAnswer": "27",
+    "expectedAnswer": "10",
+    "match": "variant",
+    "comparison": "Совпадают суммирование соседних разностей и диапазон i от 0 до 9. Исходные числа в массивах отличаются. Сверено сокращение всех внутренних элементов; по данным ФИПИ остаётся разность крайних значений 15 − 5 = 10. Дополнительно проверены все десять промежуточных сумм.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s+A(i)-A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Паскаль Алгоритмический язык s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц Си++ s = 0; n = 10; for (i = 0; i < n; i++) { s = s + A[i] - A[i+1]; } В начале выполнения этого фрагмента в массиве находились числа 27, 17, 7, 0, 7, 17, 27, 17, 10, 7, 0, т. е. A[0] = 27, A[1] = 17 и т. д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "externalTextSha256": "fb64dbbce6fa7018b393a6602119a00424ecdd4ec62bcad498bb6ace56b7519d"
+  },
+  "EGEINFF11171": {
+    "sourceHash": "05d204a69a864827ad70efe98a1b2969de602909234fab21d28c0af6e6a2e9a1",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 1, 7, 8, 4, 1, 1, 2, 2, 9, 5 соответственно, т.е. A[0] = 1, A[1] = 7 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1, 10): if A[i-1] < A[i]: c = c + 1 A[i-1], A[i] = A[i], A[i-1] Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; С++ c = 0; for (int i = 1; i < 10; i++) if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "7",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 7. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFF71E79": {
+    "sourceHash": "cd29b34923b75775d987402db80aa1668725c31c0c8ac268aecf5c082ed27f91",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов массива A[i] приведены в таблице. i 0 1 2 3 4 5 6 7 8 9 10 11 A[i] 14 13 15 8 4 12 30 21 22 16 5 9 Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования) Бейсик Python s = 0 n = 2 FOR i = 0 TO 11 IF A(i) > A(n) THEN s = s + A(i) ELSE A(n) = A(i) END IF NEXT i s = 0 n = 2 for i in range(0, 12): if A[i] > A[n]: s += A[i] else: A[n] = A[i] Алгоритмический язык Паскаль s := 0 n := 2 нц для i от 0 до 11 если A[i] > A[n] то s := s + A[i] иначе A[n] := A[i] все кц s := 0; n := 2; for i := 0 to 11 do if A[i] > A[n] then s := s + A[i] else A[n] := A[i]; С++ s = 0; n = 2; for (int i = 0; i < 12; i++) { if (A[i] > A[n]) s += A[i]; else A[n] = A[i]; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=23917",
+    "externalAnswer": "202",
+    "expectedAnswer": "115",
+    "match": "method",
+    "comparison": "Совпадают исходный массив и схема ветвления с уменьшающимся опорным значением. В ФИПИ n = 2 и к сумме прибавляется A[i], а в источнике n = 1 и прибавляется A[i] + i. Поэтому каждое значение и приращение проверено отдельно, результат ФИПИ 115 не объявляется внешним ответом 202.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 14, 13, 15, 8, 4, 12, 30, 21, 22, 16, 5, 9 соответственно, т. е. A[0] = 14, A[1] = 13 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 1 FOR i = 0 TO 11 IF A(i) > A(n) THEN s = s + A(i) + i ELSE A(n) = A(i) END IF NEXT i s = 0 n = 1 for i in range(12): if A[i] > A[n]: s += A[i] + i else: A[n] = A[i] Паскаль Алгоритмический язык s := 0; n := 1; for i := 0 to 11 do if A[i] > A[n] then s := s + A[i] + i else A[n] := A[i]; s := 0 n := 1 нц для i от 0 до 11 если A[i] > A[n] то s := s + A[i] + i иначе A[n] := A[i] все кц Си++ s = 0; n = 1; for (int i = 0; i < 12; i++) { if (A[i] > A[n]) s += A[i] + i; else A[n] = A[i]; }",
+    "externalTextSha256": "5d323bc6a7f9ebb30e8c6f91ecd4354a471388edd22433eca721057bb386c2c2"
+  },
+  "EGEINF08CA7D": {
+    "sourceHash": "1c0a142e2b5afd4ea8c30c3dc678eaee630b8780b4ea791110b831528160b3bd",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 5, 8, 4, 3, 7, 9, 6, 2, 0, 1 соответственно, т.е. A[0] = 5, A[1] = 8 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) > A(9) THEN c = c + 1 t = A(i) A(i) = A(9) A(9) = t END IF NEXT i c = 0 for i in range(9): if A[i] > A[9]: c = c + 1 t = A[i] A[i] = A[9] A[9] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] > A[9] то c := с + 1 t := A[i] A[i] := A[9] A[9] := t все кц c := 0; for i := 0 to 8 do if A[i] > A[9] then begin c := c + 1; t := A[i]; A[i] := A[9]; A[9] := t; end; Си c = 0; for (i = 0; i < 9; i++) if (A[i] > A[9]) { c++; t = A[i]; A[i] = A[9]; A[9] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18447",
+    "externalAnswer": "5",
+    "expectedAnswer": "3",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 3. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т. е. A[0] = 5, A[1] = 8 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python N = 0 S = 0 FOR I = 1 TO 11 IF A(I) > A(N) THEN S = S + 1 T = A(I) A(I) = A(N) A(N) = t END IF NEXT I n = 0 s = 0 for i in range(1, 12): if A[i] > A[n]: s = s + 1 t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s:= 0; n:= 0; for i:=1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t; все кц С++ n = 0; s = 0; for (i = 1; i < 12; i++) { if (A[i] > A[n]) { s++; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "91498c15d3dbaf5621501f56c3115a26db624c292462f7bdbbd6ccdefd85e297",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose contains an extra i after the word unit. All language listings and the trace increment s by 1, not by i; answer 5. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF57997D": {
+    "sourceHash": "0615ca3d550d2b3549ce6c46df1c53ddc24a94d94f9d98bcb110927438c09337",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 0, 8, 4, 3, 10, 7, 2, 1, 5, 9, 6 соответственно, т.е. A[0] = 0, A[1] = 8 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python s = 0 FOR j = 0 TO 9 IF A(j) > A(j+1) THEN s = s + 1 t = A(j) A(j) = A(j+1) A(j+1) = t END IF NEXT j s = 0 for j in range(10): if A[j] > A[j+1]: s = s + 1 t = A[j] A[j] = A[j+1] A[j+1] = t Алгоритмический язык Паскаль s := 0 нц для j от 0 до 9 если A[j] > A[j+1] то s := s + 1 t := A[j] A[j] := A[j+1] A[j+1] := t все кц s := 0; for j := 0 to 9 do if A[j] > A[j+1] then begin s := s + 1; t := A[j]; A[j] := A[j+1]; A[j+1] := t; end; Си s = 0; for (j = 0; j < 10; j++) if (A[j] > A[j+1]) { s++; t = A[j]; A[j] = A[j+1]; A[j+1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13746",
+    "externalAnswer": "5",
+    "expectedAnswer": "8",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 8. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 0, 4, 6, 5, 1, 8, 2, 9, 7 соответственно, т. е. A[0] = 3, A[1] = 0 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования) Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) > A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] > A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] > A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] > A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] > A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "d404e5d53969313075e2fb65ae7fd6c6de17e3f4b2440b43e19616cd2d281782"
+  },
+  "EGEINFA4877C": {
+    "sourceHash": "428804c7bb989316c516709725cbd1db7e24ea219554b9b4c5d53e121c366a8c",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 0, 1, 2, 4, 5, 7, 8, 9, 6, 3 соответственно, т.е. A[0] = 0, A[1] = 1 и т.д. Определите значение переменной j после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python j = 8 WHILE A(j) < A(j-1) t = A(j) A(j) = A(j-1) A(j-1) = t j = j - 1 WEND j = 8 while A[j] < A[j-1]: A[j], A[j-1] = A[j-1], A[j] j -= 1 Алгоритмический язык Паскаль j := 8 нц пока A[j] < A[j-1] t := A[j] A[j] := A[j-1] A[j-1] := t j := j - 1 кц j := 8; while A[j] < A[j-1] do begin t := A[j]; A[j] := A[j-1]; A[j-1] := t; j := j - 1; end; С++ j = 8; while (A[j] < A[j-1]) { t = A[j]; A[j] = A[j-1]; A[j-1] = t; j -= 1; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=11355",
+    "externalAnswer": "2",
+    "expectedAnswer": "5",
+    "match": "variant",
+    "comparison": "Сверен метод последовательной проверки условия while, изменения индекса и остановки на первой ложной проверке. Исходный массив, начальные индексы или порог отличаются. Для ФИПИ отдельно проверены все обращения к массиву, каждое условие, обмены при наличии и окончательное значение j = 5.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 1, 2, 5, 8, 9, 3, 4, 0, 7, 6 соответственно, т. е. A[0] = 1, A[1] = 2 и т. д. Определите значение переменной j после выполнения следующего фрагмента программы (записанного ниже на пяти языках программирования). Бейсик Python j = 5 WHILE A(j) < A(j-1) t = A(j) A(j) = A(j-1) A(j-1) = t j = j - 1 WEND j = 5 while A[j] < A[j-1]: A[j],A[j-1]=A[j-1],A[j] j -= 1 Паскаль Алгоритмический язык j := 5; while A[j] < A[j-1] do begin t := A[j]; A[j] := A[j-1]; A[j-1] := t; j := j - 1; end; j := 5 нц пока A[j] < A[j-1] t := A[j] A[j] := A[j-1] A[j-1] := t j := j - 1 кц Си++ j = 5; while (A[j] < A[j-1]) { t = A[j]; A[j] = A[j-1]; A[j-1] = t; j -= 1; }",
+    "externalTextSha256": "d756c5b431ccf672cc522f8c49e369a043e75cdd1850f7b162e53cc98e052922"
+  },
+  "EGEINF646575": {
+    "sourceHash": "a003813952d2dfd900b0686c80fd0ce7812ab46b73dfb6f373ddd922584483c3",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов массива A[i] приведены в таблице. i 0 1 2 3 4 5 6 7 8 9 10 11 A[i] 14 13 15 8 4 12 30 21 22 16 5 9 Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 0 FOR i = 1 TO 11 IF A(i) < A(n) THEN s = s + A(i) MOD i ELSE A(n) = A(i) END IF NEXT i s = 0 n = 0 for i in range(1, 12): if A[i] < A[n]: s += A[i] % i else: A[n] = A[i] Алгоритмический язык Паскаль s := 0 n := 0 нц для i от 1 до 11 если A[i] < A[n] то s := s + mod(A[i], i) иначе A[n] := A[i] все кц s := 0; n := 0; for i := 1 to 11 do if A[i] < A[n] then s := s + A[i] mod i else A[n] := A[i]; С++ s = 0; n = 0; for (int i = 1; i < 12; i++) { if (A[i] < A[n]) s += A[i] % i; else A[n] = A[i]; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=26962",
+    "externalAnswer": "37",
+    "expectedAnswer": "31",
+    "match": "method",
+    "comparison": "Сверена последовательная обработка с изменяемым опорным элементом и ветвью иначе. В ФИПИ n = 0 и прибавляется остаток A[i] от деления на i, а во внешнем примере n = 2 и прибавляется само значение элемента. Все остатки и значения опорного элемента пересчитаны по ФИПИ; результат 31 отличается от внешнего 37.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 0, 7, 1, 3, 2, 14, 5, 9, 11, 0, 7, т. е. A[0]=0, A[1]=7 и т. д. Определите значение переменной s после выполнения следующего фрагмента программы: Бейсик Python s = 0 n = 2 FOR i = 0 TO 10 IF A(i) < A(n) THEN s = s + A(i) ELSE A(n) = A(i) END IF NEXT i s = 0 n = 2 for i in range(11): if A[i] < A[n]: s += A[i] else: A[n] = A[i] Паскаль Алгоритмический язык s := 0; n := 2; for i := 0 to 10 do if A[i] < A[n] then s := s + A[i] else A[n] := A[i]; s := 0 n := 2 нц для i от 0 до 10 если A[i] < A[n] то s := s + A[i] иначе A[n] := A[i] все кц Си++ s = 0; n = 2; for (int i = 0; i < 11; i++) { if (A[i] < A[n]) s += A[i]; else A[n] = A[i]; }",
+    "externalTextSha256": "2b08bff431c1c8aefe9382132dd545ff113bf32aad273c814029be23a075b215",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The first prose paragraph incorrectly repeats the condition A[i] < A[0] * i from a different problem. All five listings actually compare A[i] with A[2]; full independent simulation gives 37. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF20BCB1": {
+    "sourceHash": "8a14fa40c6d7465ecc521f4e09808e570561686892271fcd8e90ccbc2dc1c7c6",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s + A(i) - A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Алгоритмический язык Паскаль s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; Си s = 0; n=10; for (i = 0; i < n; i++) s = s + A[i] - A[i+1]; В начале выполнения этого фрагмента в массиве находились числа 10, 5, 0, 15, 5, 10, 0, 15, 10, 0, 5, т.е. A[0] = 10, A[1] = 5 и т.д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13365",
+    "externalAnswer": "27",
+    "expectedAnswer": "5",
+    "match": "variant",
+    "comparison": "Совпадают суммирование соседних разностей и диапазон i от 0 до 9. Исходные числа в массивах отличаются. Сверено сокращение всех внутренних элементов; по данным ФИПИ остаётся разность крайних значений 10 − 5 = 5. Дополнительно проверены все десять промежуточных сумм.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s+A(i)-A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Паскаль Алгоритмический язык s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц Си++ s = 0; n = 10; for (i = 0; i < n; i++) { s = s + A[i] - A[i+1]; } В начале выполнения этого фрагмента в массиве находились числа 27, 17, 7, 0, 7, 17, 27, 17, 10, 7, 0, т. е. A[0] = 27, A[1] = 17 и т. д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "externalTextSha256": "fb64dbbce6fa7018b393a6602119a00424ecdd4ec62bcad498bb6ace56b7519d"
+  },
+  "EGEINF230CBE": {
+    "sourceHash": "3ec544c10329fe641b191600b238d2e7eb81afb7679305e10786d516e8671515",
+    "fipiCondition": "Выберите правильный ответ. Значения двумерного массива размера 7×7 задаются с помощью вложенного оператора цикла в представленном фрагменте программы: Бейсик Паскаль Алгоритмический FOR n=1 TO 7 FOR k=1 TO 7 B(n, k)=k–n NEXT k NEXT n for n:=1 to 7 do for k:=1 to 7 do B[n, k]:=k–n; нц для n от 1 до 7 нц для k от 1 до 7 B[n, k]=k–n кц кц Сколько элементов массива будут иметь положительные значения? 1) 49 2) 28 3) 21 4) 7",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=3368",
+    "externalAnswer": "-5050",
+    "expectedAnswer": "3",
+    "match": "method",
+    "comparison": "Внешний пример независимо проверяет заполнение двумерного массива вложенными циклами и разбиение ячеек относительно главной диагонали; там требуется сумма и ответ −5050. В ФИПИ формула k − n, размер 7 на 7 и требуется число положительных ячеек. Собственное неравенство k больше n даёт по строкам 6,5,4,3,2,1,0, всего 21, вариант 3. Внешнему источнику не приписывается этот ответ или его подсчёт.",
+    "reviewed": true,
+    "externalCondition": "Значения элементов фрагмента двумерного массива A[1..100,1..100] задаются с помощью следующего фрагмента программы: Бейсик Паскаль FOR i= 1 TO 100 FOR k=1 TO 100 IF i > k THEN A(i,k) = i ELSE A(i,k) = -k NEXT k NEXT i for i:=1 to 100 do for k:=1 to 100 do if i > k then A[i,k] := i else A[i,k] := -k; Си++ Алгоритмический язык for (i=1;i<=100;i++) { for (k=1;k<=100;k++) { if (i > k) { A[i][k] = i; } else A[i][k] = -k; } } нц для i от 1 до 100 нц для k от 1 до 100 если i > k то A[i,k] := i иначе A[i,k] := -k кц кц Python for i in range(1, 101): for k in range(1, 101): if i > k: A[i][k] = i else: A[i][k] = -k Чему равна сумма элементов фрагмента массива после выполнения этого фрагмента программы?",
+    "externalTextSha256": "4ac4c64e61129def50871595ae30f5fcfb39bb1371c800e53030fdd9b8d2073b"
+  },
+  "EGEINF2BEDB3": {
+    "sourceHash": "f21d5b88f45c18a7bb0c2cba856d975c320e3bf9b29787e566e196cfdee343ce",
+    "fipiCondition": "Выберите правильный ответ. Значения двух массивов A[1..200] и B[1..200] задаются с помощью следующего фрагмента программы: Бейсик Паскаль Алгоритмический FOR n = 1 TO 200 A(n) = n + 100 NEXT n FOR n = 1 TO 200 B(n) = 2*A(n)-500 NEXT n for n:= 1 to 200 do A[n]:= n+100; for n:=1 to 200 do B[n]:= 2*A[n]-500 нц для n от 1 до 200 A[n] = n+100 кц нц для n от 1 до 200 B[n] = 2*A[n]-500 кц Сколько элементов массива B будут иметь положительные значения? 1) 50 2) 51 3) 149 4) 150",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=3358",
+    "externalAnswer": "90",
+    "expectedAnswer": "1",
+    "match": "method",
+    "comparison": "Сверен метод подстановки формулы первого массива во второй и решения строгого неравенства положительности с учётом целых границ. Формулы источника отличаются: n(n − 10) вместо 2n − 300. Для ФИПИ независимо получены индексы 151–200, число 50 и вариант 1; внешний ответ 90 не переносится.",
+    "reviewed": true,
+    "externalCondition": "Значения двух массивов A[1..100] и B[1..100] задаются с помощью следующего фрагмента программы: Бейсик Python FOR n = 1 TO 100 A(n) = n - 10 NEXT n FOR n = 1 TO 100 B(n) = A(n)*n; NEXT n for n in range(1, 101): A[n] = n - 10 for n in range(1, 101): B[n] = A[n]*n Паскаль Алгоритмический язык for n : = 1 to 100 do A[n] : = n - 10; for n : = 1 to 100 do begin B[n]:= A[n]*n; end; нц для n от 1 до 100 A[n] : = n - 10 кц нц для n от 1 до 100 B[n]:=A[n]*n кц Си++ for (n = 1; n <= 100; n++) { A[n] = n - 10; } for (n = 1; n <= 100; n++) { B[n] = A[n]*n; } Сколько элементов массива B будут иметь положительные значения? Примечание. Нуль является ни положительным, ни отрицательным числом.",
+    "externalTextSha256": "725340fff2e049ee5b50c731f158219bfa70e8d91d299f479031690bc2b1fdbf"
+  },
+  "EGEINF47DE15": {
+    "sourceHash": "0cb6d08de0e6e7ffe5f58d8a7da22d4dc5ba9100d3af21fb04dc64388543c016",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т.е. A[0] = 2, A[1] = 4 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1, 10): if A[i-1] < A[i]: c = c + 1 A[i-1], A[i] = A[i], A[i-1] Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; С++ c = 0; for (int i = 1; i < 10; i++) if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "7",
+    "match": "exact",
+    "comparison": "Исходные значения массива, диапазон индексов, условия, порядок присваиваний и требуемая переменная совпадают. Полная самостоятельная трасса по Python и независимый разбор Си подтверждают ответ 7. Сверены также существенные шаги внешнего решения; текст объяснения написан самостоятельно.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF672818": {
+    "sourceHash": "fd09678e58c743208d6225febf73d9c0cbf06d31499ee925bf2099db23d29677",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 9, 8, 4, 7, 3, 2, 1, 5, 0, 6 соответственно, т.е. A[0] = 9, A[1] = 8 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) < A(9) THEN c = c + 1 t = A(i) A(i) = A(9) A(9) = t END IF NEXT i c = 0 for i in range(9): if A[i] < A[9]: c = c + 1 t = A[i] A[i] = A[9] A[9] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] < A[9] то c := с + 1 t := A[i] A[i] := A[9] A[9] := t все кц c := 0; for i := 0 to 8 do if A[i] < A[9] then begin c := c + 1; t := A[i]; A[i] := A[9]; A[9] := t; end; Си c = 0; for (i = 0; i < 9; i++) if (A[i] < A[9]) { c++; t = A[i]; A[i] = A[9]; A[9] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=9370",
+    "externalAnswer": "2",
+    "expectedAnswer": "5",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 5. Внешний контроль 2 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 7, 3, 8, 5, 0, 1, 2, 9, 6 соответственно, т. е. A[0] = 4, A[1] = 7 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования) . Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t ENDIF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := c + 1 t := A[i] A[i] := A[0] A[0] := t все кц Си++ c = 0; for (i = 1;i < 10;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "externalTextSha256": "2545fb65b749f4cfb2c784d9e0b05f3c47b1829b76cbb1735798956c635990b5",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The phrase that the program executes twice refers to the true branch. There are nine loop passes; exactly two comparisons trigger swaps. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF815116": {
+    "sourceHash": "ef8778e2645c1d1aaa7933d254cea23ec64ba266c76db56054da41b76177fc80",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 2, 5, 4, 7, 8, 10, 1, 0, 3, 9, 6 соответственно, т.е. A[0] = 2, A[1] = 5 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 10 IF A(i) > A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t END IF NEXT i c = 0 for i in range(1,11): if A[i] > A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 10 если A[i] > A[0] то c := с + 1 t := A[i] A[i] := A[0] A[0] := t все кц c := 0; for i := 1 to 10 do if A[i] > A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; Си c = 0; for (i = 1; i < 11; i++) if (A[i] > A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18447",
+    "externalAnswer": "5",
+    "expectedAnswer": "4",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 4. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т. е. A[0] = 5, A[1] = 8 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python N = 0 S = 0 FOR I = 1 TO 11 IF A(I) > A(N) THEN S = S + 1 T = A(I) A(I) = A(N) A(N) = t END IF NEXT I n = 0 s = 0 for i in range(1, 12): if A[i] > A[n]: s = s + 1 t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s:= 0; n:= 0; for i:=1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t; все кц С++ n = 0; s = 0; for (i = 1; i < 12; i++) { if (A[i] > A[n]) { s++; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "91498c15d3dbaf5621501f56c3115a26db624c292462f7bdbbd6ccdefd85e297",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose contains an extra i after the word unit. All language listings and the trace increment s by 1, not by i; answer 5. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF4ADC2C": {
+    "sourceHash": "f8ee28692273855695225bb69d40b7f22e85c615b949cb6a18b77625d5ff04a4",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 5, 4, 2, 10, 8, 7, 1, 0, 3, 9, 6 соответственно, т.е. A[0] = 5, A[1] = 4 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 10 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t END IF NEXT i c = 0 for i in range(1,11): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 10 если A[i] < A[0] то c := с + 1 t := A[i] A[i] := A[0] A[0] := t все кц c := 0; for i := 1 to 10 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; Си c = 0; for (i = 1;i < 11;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=9370",
+    "externalAnswer": "2",
+    "expectedAnswer": "4",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 4. Внешний контроль 2 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 7, 3, 8, 5, 0, 1, 2, 9, 6 соответственно, т. е. A[0] = 4, A[1] = 7 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования) . Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t ENDIF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := c + 1 t := A[i] A[i] := A[0] A[0] := t все кц Си++ c = 0; for (i = 1;i < 10;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "externalTextSha256": "2545fb65b749f4cfb2c784d9e0b05f3c47b1829b76cbb1735798956c635990b5",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The phrase that the program executes twice refers to the true branch. There are nine loop passes; exactly two comparisons trigger swaps. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF514F27": {
+    "sourceHash": "8900408b17798366936c23b681617262c63d3717b02d956d21e0ae541f81719a",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 6, 4, 7, 8, 1, 0, 2, 9, 3 соответственно, т.е. A[0] = 2, A[1] = 6 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) > A(9) THEN c = c + 1 t = A(i) A(i) = A(9) A(9) = t END IF NEXT i c = 0 for i in range(9): if A[i] > A[9]: c = c + 1 t = A[i] A[i] = A[9] A[9] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] > A[9] то c := с + 1 t := A[i] A[i] := A[9] A[9] := t все кц c := 0; for i := 0 to 8 do if A[i] > A[9] then begin c := c + 1; t := A[i]; A[i] := A[9]; A[9] := t; end; Си c = 0; for (i = 0;i < 9;i++) if (A[i] > A[9]) { c++; t = A[i]; A[i] = A[9]; A[9] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18447",
+    "externalAnswer": "5",
+    "expectedAnswer": "4",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 4. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т. е. A[0] = 5, A[1] = 8 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python N = 0 S = 0 FOR I = 1 TO 11 IF A(I) > A(N) THEN S = S + 1 T = A(I) A(I) = A(N) A(N) = t END IF NEXT I n = 0 s = 0 for i in range(1, 12): if A[i] > A[n]: s = s + 1 t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s:= 0; n:= 0; for i:=1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t; все кц С++ n = 0; s = 0; for (i = 1; i < 12; i++) { if (A[i] > A[n]) { s++; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "91498c15d3dbaf5621501f56c3115a26db624c292462f7bdbbd6ccdefd85e297",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose contains an extra i after the word unit. All language listings and the trace increment s by 1, not by i; answer 5. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFB659DC": {
+    "sourceHash": "3815a4994399f92b972c428958756bec442421f69c2a2e10b7212500980a3649",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 3, 5, 4, 10, 8, 7, 1, 2, 0, 9, 6 соответственно, т.е. A[0] = 3, A[1] = 5 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 10 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t END IF NEXT i c = 0 for i in range(1,11): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 10 если A[i] < A[0] то c := с + 1 t := A[i] A[i] := A[0] A[0] := t все кц c := 0; for i := 1 to 10 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; Си c = 0; for (i = 1; i < 11; i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=9370",
+    "externalAnswer": "2",
+    "expectedAnswer": "2",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 2. Внешний контроль 2 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 7, 3, 8, 5, 0, 1, 2, 9, 6 соответственно, т. е. A[0] = 4, A[1] = 7 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования) . Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t ENDIF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := c + 1 t := A[i] A[i] := A[0] A[0] := t все кц Си++ c = 0; for (i = 1;i < 10;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "externalTextSha256": "2545fb65b749f4cfb2c784d9e0b05f3c47b1829b76cbb1735798956c635990b5",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The phrase that the program executes twice refers to the true branch. There are nine loop passes; exactly two comparisons trigger swaps. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFB057D9": {
+    "sourceHash": "bdc40414f75ffbb75d911dead901f6f7b25f441c54a09b2dfdab916c9e83a051",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s+A(i)-A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Алгоритмический язык Паскаль s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; Си s = 0; n = 10; for (i = 0; i < n; i++) s = s + A[i] - A[i+1]; В начале выполнения этого фрагмента в массиве находились числа 27, 17, 7, 0, 7, 17, 27, 17, 10, 7, 0, т.е. A[0] = 27, A[1] = 17 и т.д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13365",
+    "externalAnswer": "27",
+    "expectedAnswer": "27",
+    "match": "exact",
+    "comparison": "Исходные значения массива, диапазон индексов, условия, порядок присваиваний и требуемая переменная совпадают. Полная самостоятельная трасса по Python и независимый разбор Си подтверждают ответ 27. Сверены также существенные шаги внешнего решения; текст объяснения написан самостоятельно.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s+A(i)-A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Паскаль Алгоритмический язык s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц Си++ s = 0; n = 10; for (i = 0; i < n; i++) { s = s + A[i] - A[i+1]; } В начале выполнения этого фрагмента в массиве находились числа 27, 17, 7, 0, 7, 17, 27, 17, 10, 7, 0, т. е. A[0] = 27, A[1] = 17 и т. д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "externalTextSha256": "fb64dbbce6fa7018b393a6602119a00424ecdd4ec62bcad498bb6ace56b7519d"
+  },
+  "EGEINFE135D6": {
+    "sourceHash": "6f53724f1d242079aa9fac6cdde7793ecbde8e4c909be41158b8f9d5d5808694",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 6, 9, 7, 2, 1, 5, 0, 3, 4, 8 соответственно, т.е. A[0] = 6, A[1] = 9 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) < A(i+1) THEN c = c + 1 t = A(i) A(i) = A(i+1) A(i+1) = t END IF NEXT i c = 0 for i in range(9): if A[i] < A[i+1]: c = c + 1 t = A[i] A[i] = A[i+1] A[i+1] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] < A[i+1] то c := c + 1 t := A[i] A[i] := A[i+1] A[i+1] := t все кц c := 0; for i := 0 to 8 do if A[i] < A[i+1] then begin c := c + 1; t := A[i]; A[i] := A[i+1]; A[i+1] := t; end; Си c = 0; for (i = 0; i < 9; i++) if (A[i] < A[i+1]) { c++; t = A[i]; A[i] = A[i+1]; A[i+1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "6",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 6. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF9E4759": {
+    "sourceHash": "f4cce7d2c79a412a28177f49f132ad5e9ab1a2251460bbdaa61bf3c2a364828f",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на пяти языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s + A(i) - A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Алгоритмический язык Паскаль s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; Си s = 0; n=10; for (i = 0; i < n; i++) s = s + A[i] - A[i+1]; В начале выполнения этого фрагмента в массиве находились числа 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5, т.е. A[0] = 5, A[1] = 4 и т.д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13365",
+    "externalAnswer": "27",
+    "expectedAnswer": "0",
+    "match": "variant",
+    "comparison": "Совпадают суммирование соседних разностей и диапазон i от 0 до 9. Исходные числа в массивах отличаются. Сверено сокращение всех внутренних элементов; по данным ФИПИ остаётся разность крайних значений 5 − 5 = 0. Дополнительно проверены все десять промежуточных сумм.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s+A(i)-A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Паскаль Алгоритмический язык s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц Си++ s = 0; n = 10; for (i = 0; i < n; i++) { s = s + A[i] - A[i+1]; } В начале выполнения этого фрагмента в массиве находились числа 27, 17, 7, 0, 7, 17, 27, 17, 10, 7, 0, т. е. A[0] = 27, A[1] = 17 и т. д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "externalTextSha256": "fb64dbbce6fa7018b393a6602119a00424ecdd4ec62bcad498bb6ace56b7519d"
+  },
+  "EGEINFE49B50": {
+    "sourceHash": "aee5d029fa9f53ff317089f44d189dfcf8f7e5ddf7e485944627c34d6b118b5e",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 20, 19, 17, 41, 23, 12, 24, 16, 4, 13, 6, 15 соответственно, т.е. A[0] = 20, A[1] = 19 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 0 FOR i = 0 TO 11 IF A(i) <= A(n) THEN s = s + i t = A(i) A(i) = A(n) A(n) = t END IF NEXT i s = 0 n = 0 for i in range(12): if A[i] <= A[n]: s += i t = A[i] A[i] = A[n] A[n] = t Алгоритмический язык Паскаль s := 0 n := 0 нц для i от 0 до 11 если A[i] <= A[n] то s := s + i t := A[i] A[i] := A[n] A[n] := t все кц s := 0; n := 0; for i := 0 to 11 do if A[i] <= A[n] then begin s := s + i; t := A[i]; A[i] := A[n]; A[n] := t end; С++ s = 0; n = 0; for (int i = 0; i < 12; i++) if (A[i] <= A[n]){ s += i; t = A[i]; A[i] = A[n]; A[n] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=19068",
+    "externalAnswer": "16",
+    "expectedAnswer": "16",
+    "match": "variant",
+    "comparison": "Исходный массив, n = 0, нестрогое сравнение и сумма индексов совпадают; ответ 16 подтверждён полной трассой. Внешняя версия Си пропускает инициализацию s, присутствующую во всех других языках; в ФИПИ s = 0 указано явно. Поэтому сопоставление отмечено вариантом с вручную разобранной неточностью; самоперестановка i = 0 и нулевое приращение не потеряны.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 20, 19, 17, 41, 23, 12, 24, 16, 4, 13, 6, 15 соответственно, т. е. A[0] = 20, A[1] = 19 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 0 FOR i = 0 TO 11 IF A(i) <= A(n) THEN s = s + i t = A(i) A(i) = A(n) A(n) = t END IF NEXT i s = 0 n = 0 for i in range(12): if A[i] <= A[n]: s += i t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s := 0; n := 0; for i := 0 to 11 do if A[i] <= A[n] then begin s := s + i; t := A[i]; A[i] := A[n]; A[n] := t end; s := 0 n := 0 нц для i от 0 до 11 если A[i] <= A[n] то s := s + i t := A[i] A[i] := A[n] A[n] := t все кц Си++ n = 0; for (int i = 0; i < 12; i++) if (A[i] <= A[n]){ s += i; t = A[i]; A[i] = A[n]; A[n] = t; }",
+    "externalTextSha256": "0f1776baffb9cb694068dc7aa59ae9743ef436000c4c74c87b7ae5775aab1039",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The C listing omits s = 0. Python, Basic, Pascal and the algorithmic listing all initialize s to 0. The external C control explicitly restores that documented initialization; FIPI has s = 0. Also i = 0 executes a self-swap and adds zero, so it need not appear among the changed arrays. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFE9A356": {
+    "sourceHash": "0bf076c0cce7e6ae086f601f291521df23a48c3bc48fc8b7b0554d86f2d56f39",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 1, 7, 6, 5, 4, 8, 2, 9, 0 соответственно, т.е. A[0] = 3, A[1] = 1 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python s = 0 FOR j = 0 TO 8 IF A(j) > A(j+1) THEN s = s + 1 t = A(j) A(j) = A(j+1) A(j+1) = t END IF NEXT j s = 0 for j in range(9): if A[j] > A[j+1]: s = s + 1 t = A[j] A[j] = A[j+1] A[j+1] = t Алгоритмический язык Паскаль s := 0 нц для j от 0 до 8 если A[j] > A[j+1] то s := s + 1 t := A[j] A[j] := A[j+1] A[j+1] := t все кц s := 0; for j := 0 to 8 do if A[j] > A[j+1] then begin s := s + 1; t := A[j]; A[j] := A[j+1]; A[j+1] := t; end; Си s = 0; for (j = 0;j < 9;j++) if (A[j] > A[j+1]) { s++; t = A[j]; A[j] = A[j+1]; A[j+1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13746",
+    "externalAnswer": "5",
+    "expectedAnswer": "6",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 6. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 0, 4, 6, 5, 1, 8, 2, 9, 7 соответственно, т. е. A[0] = 3, A[1] = 0 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования) Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) > A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] > A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] > A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] > A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] > A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "d404e5d53969313075e2fb65ae7fd6c6de17e3f4b2440b43e19616cd2d281782"
+  },
+  "EGEINFFA63A0": {
+    "sourceHash": "e783466c6b2558791a54c9fe94f185c9ed526aa0062195f3273bcce894f47b1a",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 0, 1, 2, 4, 5, 7, 8, 9, 6, 3 соответственно, т.е. A[0] = 0, A[1] = 1 и т.д. Определите значение переменной j после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python j = 7 WHILE A(j) > A(j+1) t = A(j) A(j) = A(j+1) A(j+1) = t j = j - 1 WEND j = 7 while A[j] > A[j+1]: A[j], A[j+1] = A[j+1], A[j] j -= 1 Алгоритмический язык Паскаль j := 7 нц пока A[j] > A[j+1] t := A[j] A[j] := A[j+1] A[j+1] := t j := j - 1 кц j := 7; while A[j] > A[j+1] do begin t := A[j]; A[j] := A[j+1]; A[j+1] := t; j := j - 1; end; С++ j = 7; while (A[j] > A[j+1]) { t = A[j]; A[j] = A[j+1]; A[j+1] = t; j -= 1; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=11355",
+    "externalAnswer": "2",
+    "expectedAnswer": "4",
+    "match": "variant",
+    "comparison": "Оба фрагмента продвигают значение влево обменом соседей и уменьшают j до ложного сравнения. В ФИПИ старт j = 7, сравниваются A[j] и A[j + 1], условие больше; в источнике старт 5, сравниваются A[j] и A[j − 1], условие меньше. Собственная трасса ФИПИ заканчивается при j = 4, а внешняя — при j = 2.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 1, 2, 5, 8, 9, 3, 4, 0, 7, 6 соответственно, т. е. A[0] = 1, A[1] = 2 и т. д. Определите значение переменной j после выполнения следующего фрагмента программы (записанного ниже на пяти языках программирования). Бейсик Python j = 5 WHILE A(j) < A(j-1) t = A(j) A(j) = A(j-1) A(j-1) = t j = j - 1 WEND j = 5 while A[j] < A[j-1]: A[j],A[j-1]=A[j-1],A[j] j -= 1 Паскаль Алгоритмический язык j := 5; while A[j] < A[j-1] do begin t := A[j]; A[j] := A[j-1]; A[j-1] := t; j := j - 1; end; j := 5 нц пока A[j] < A[j-1] t := A[j] A[j] := A[j-1] A[j-1] := t j := j - 1 кц Си++ j = 5; while (A[j] < A[j-1]) { t = A[j]; A[j] = A[j-1]; A[j-1] = t; j -= 1; }",
+    "externalTextSha256": "d756c5b431ccf672cc522f8c49e369a043e75cdd1850f7b162e53cc98e052922"
+  },
+  "EGEINF04CBA1": {
+    "sourceHash": "ac5d403fa131a746486906176ade483fc1f73ddf0020a8b1732a87752aa9321c",
+    "fipiCondition": "Выберите правильный ответ. Значения двух массивов A[1..100] и B[1..100] задаются с помощью следующего фрагмента программы: Бейсик Паскаль Алгоритмический FOR n=1 TO 100 A(n)=n-10 NEXT n FOR n=1 TO 100 B(n)=A(n)*n NEXT n for n:=1 to 100 do A[n]:=n-10; for n:=1 to 100 do B[n]:=A[n]*n нц для n от 1 до 100 A[n]=n-10 кц нц для n от 1 до 100 B[n]=A[n]*n кц Сколько элементов массива B будут иметь положительные значения? 1) 10 2) 50 3) 90 4) 100",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=3358",
+    "externalAnswer": "90",
+    "expectedAnswer": "3",
+    "match": "variant",
+    "comparison": "Обе формулы, индексы 1–100 и требование положительности совпадают. Внешний ответ — само количество 90, но в ФИПИ требуется номер варианта: 90 записано под номером 3. Подстановка B[n] = n(n − 10), исключение нуля n = 10, диапазон 11–100 и число 90 проверены независимо; в ответ записывается именно 3.",
+    "reviewed": true,
+    "externalCondition": "Значения двух массивов A[1..100] и B[1..100] задаются с помощью следующего фрагмента программы: Бейсик Python FOR n = 1 TO 100 A(n) = n - 10 NEXT n FOR n = 1 TO 100 B(n) = A(n)*n; NEXT n for n in range(1, 101): A[n] = n - 10 for n in range(1, 101): B[n] = A[n]*n Паскаль Алгоритмический язык for n : = 1 to 100 do A[n] : = n - 10; for n : = 1 to 100 do begin B[n]:= A[n]*n; end; нц для n от 1 до 100 A[n] : = n - 10 кц нц для n от 1 до 100 B[n]:=A[n]*n кц Си++ for (n = 1; n <= 100; n++) { A[n] = n - 10; } for (n = 1; n <= 100; n++) { B[n] = A[n]*n; } Сколько элементов массива B будут иметь положительные значения? Примечание. Нуль является ни положительным, ни отрицательным числом.",
+    "externalTextSha256": "725340fff2e049ee5b50c731f158219bfa70e8d91d299f479031690bc2b1fdbf"
+  },
+  "EGEINFD591A3": {
+    "sourceHash": "4297074709dfb95dea76b5cb87e93116f9c2276b64227eee2d4783f5770f0b99",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов массива A[i] приведены в таблице. i 0 1 2 3 4 5 6 7 8 9 10 11 A[i] 14 13 15 8 4 12 30 21 22 16 5 9 Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 0 FOR i = 1 TO 11 IF A(i) < A(n) * i THEN s = s + A(i) ELSE A(n) = A(i) END IF NEXT i s = 0 n = 0 for i in range(1, 12): if A[i] < A[n] * i: s += A[i] else: A[n] = A[i] Алгоритмический язык Паскаль s := 0 n := 0 нц для i от 1 до 11 если A[i] < A[n] * i то s := s + A[i] иначе A[n] := A[i] все кц s := 0; n := 0; for i := 1 to 11 do if A[i] < A[n] * i then s := s + A[i] else A[n] := A[i]; С++ s = 0; n = 0; for (int i = 1; i < 12; i++) { if (A[i] < A[n] * i) s += A[i]; else A[n] = A[i]; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=25849",
+    "externalAnswer": "155",
+    "expectedAnswer": "155",
+    "match": "variant",
+    "comparison": "Массив, умножение опорного элемента на i и обе ветви совпадают. Во внешнем коде перебор начинается с i = 0, в ФИПИ — с i = 1. Дополнительный внешний шаг присваивает A[0] самому себе и не меняет сумму. Полная трасса ФИПИ начинается строго с 1 и подтверждает 155; отличие границы явно сохранено.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 14, 13, 15, 8, 4, 12, 30, 21, 22, 16, 5, 9 соответственно, т. е. A[0] = 14, A[1] = 13 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 0 FOR i = 0 TO 11 IF A(i) < A(n) * i THEN s = s + A(i) ELSE A(n) = A(i) END IF NEXT i s = 0 n = 0 for i in range(12): if A[i] < A[n] * i: s += A[i] else: A[n] = A[i] Паскаль Алгоритмический язык s := 0; n := 0; for i := 0 to 11 do if A[i] < A[n] * i then s := s + A[i] else A[n] := A[i]; s := 0 n := 0 нц для i от 0 до 11 если A[i] < A[n] * i то s := s + A[i] иначе A[n] := A[i] все кц Си++ s = 0; n = 0; for (int i = 0; i < 12; i++) { if (A[i] < A[n] * i) s += A[i]; else A[n] = A[i]; }",
+    "externalTextSha256": "040f3a60044cb750c9d54ed315674fba6a23f1ee7729272055374a61b6a12ce6"
+  },
+  "EGEINFC6D2AE": {
+    "sourceHash": "d11f77d538d67c1485157e69b09215ddb9fccc657e6eb2d33961a65ce698f4b6",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов массива A[i] приведены в таблице. i 0 1 2 3 4 5 6 7 8 9 10 11 A[i] 14 13 15 8 4 12 30 21 22 16 5 9 Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 1 FOR i = 0 TO 11 IF A(i) > A(n) THEN s = s + A(i) + i ELSE A(n) = A(i) END IF NEXT i s = 0 n = 1 for i in range(0, 12): if A[i] > A[n]: s += A[i] + i else: A[n] = A[i] Алгоритмический язык Паскаль s := 0 n := 1 нц для i от 0 до 11 если A[i] > A[n] то s := s + A[i] + i иначе A[n] := A[i] все кц s := 0; n := 1; for i := 0 to 11 do if A[i] > A[n] then s := s + A[i] + i else A[n] := A[i]; С++ s = 0; n = 1; for (int i = 0; i < 12; i++) { if (A[i] > A[n]) s += A[i] + i; else A[n] = A[i]; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=23917",
+    "externalAnswer": "202",
+    "expectedAnswer": "202",
+    "match": "exact",
+    "comparison": "Исходные значения массива, диапазон индексов, условия, порядок присваиваний и требуемая переменная совпадают. Полная самостоятельная трасса по Python и независимый разбор Си подтверждают ответ 202. Сверены также существенные шаги внешнего решения; текст объяснения написан самостоятельно.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 14, 13, 15, 8, 4, 12, 30, 21, 22, 16, 5, 9 соответственно, т. е. A[0] = 14, A[1] = 13 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 1 FOR i = 0 TO 11 IF A(i) > A(n) THEN s = s + A(i) + i ELSE A(n) = A(i) END IF NEXT i s = 0 n = 1 for i in range(12): if A[i] > A[n]: s += A[i] + i else: A[n] = A[i] Паскаль Алгоритмический язык s := 0; n := 1; for i := 0 to 11 do if A[i] > A[n] then s := s + A[i] + i else A[n] := A[i]; s := 0 n := 1 нц для i от 0 до 11 если A[i] > A[n] то s := s + A[i] + i иначе A[n] := A[i] все кц Си++ s = 0; n = 1; for (int i = 0; i < 12; i++) { if (A[i] > A[n]) s += A[i] + i; else A[n] = A[i]; }",
+    "externalTextSha256": "5d323bc6a7f9ebb30e8c6f91ecd4354a471388edd22433eca721057bb386c2c2"
+  },
+  "EGEINF9A4EA3": {
+    "sourceHash": "4e37cfc64d18c077b01fcd418eb9de2b009023d1ee519bd5946175216ebeecd1",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 5, 4, 7, 3, 9, 1, 8, 0, 6 соответственно, т.е. A[0] = 2, A[1] = 5 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) > A(9) THEN c = c + 1 t = A(i) A(i) = A(9) A(9) = t END IF NEXT i c = 0 for i in range(9): if A[i] > A[9]: c = c + 1 t = A[i] A[i] = A[9] A[9] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] > A[9] то c := с + 1 t := A[i] A[i] := A[9] A[9] := t все кц c := 0; for i := 0 to 8 do if A[i] > A[9] then begin c := c + 1; t := A[i]; A[i] := A[9]; A[9] := t; end; Си c = 0; for (i = 0; i < 9; i++) if (A[i] > A[9]) { c++; t = A[i]; A[i] = A[9]; A[9] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18447",
+    "externalAnswer": "5",
+    "expectedAnswer": "2",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 2. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т. е. A[0] = 5, A[1] = 8 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python N = 0 S = 0 FOR I = 1 TO 11 IF A(I) > A(N) THEN S = S + 1 T = A(I) A(I) = A(N) A(N) = t END IF NEXT I n = 0 s = 0 for i in range(1, 12): if A[i] > A[n]: s = s + 1 t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s:= 0; n:= 0; for i:=1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t; все кц С++ n = 0; s = 0; for (i = 1; i < 12; i++) { if (A[i] > A[n]) { s++; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "91498c15d3dbaf5621501f56c3115a26db624c292462f7bdbbd6ccdefd85e297",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose contains an extra i after the word unit. All language listings and the trace increment s by 1, not by i; answer 5. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF8A19A7": {
+    "sourceHash": "64cf025f568d81f8beb4532142cb2555bdd9245d36607f048a34ee07f8e1b502",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 9, 1, 2, 3, 4, 5, 6, 7, 8, 0 соответственно, т.е. A[0] = 9, A[1] = 1 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python s = 0 FOR j = 0 TO 8 IF A(j) < A(j+1) THEN s = s + 1 t = A(j) A(j) = A(j+1) A(j+1) = t END IF NEXT j s = 0 for j in range(9): if A[j] < A[j+1]: s = s + 1 t = A[j] A[j] = A[j+1] A[j+1] = t Алгоритмический язык Паскаль s := 0 нц для j от 0 до 8 если A[j] < A[j+1] то s := s + 1 t := A[j] A[j] := A[j+1] A[j+1] := t все кц s := 0; for j := 0 to 8 do if A[j] < A[j+1] then begin s := s + 1; t := A[j]; A[j] := A[j+1]; A[j+1] := t; end; Си s = 0; for (j = 0;j < 9;j++) if (A[j] < A[j+1]) { s++; t = A[j]; A[j] = A[j+1]; A[j+1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "7",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 7. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFF774CD": {
+    "sourceHash": "5b2702ce54beef4d613ea112241613dfbc0440d5fb389a85bce1795f395e1a34",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 1, 6, 7, 3, 10, 4, 8, 2, 0, 5, 9 соответственно, т.е. A[0] = 1, A[1] = 6 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python s = 0 FOR j = 0 TO 9 IF A(j) > A(j+1) THEN s = s + 1 t = A(j) A(j) = A(j+1) A(j+1) = t END IF NEXT j s = 0 for j in range(10): if A[j] > A[j+1]: s = s + 1 t = A[j] A[j] = A[j+1] A[j+1] = t Алгоритмический язык Паскаль s := 0 нц для j от 0 до 9 если A[j] > A[j+1] то s := s + 1 t := A[j] A[j] := A[j+1] A[j+1] := t все кц s := 0; for j := 0 to 9 do if A[j] > A[j+1] then begin s := s + 1; t := A[j]; A[j] := A[j+1]; A[j+1] := t; end; Си s = 0; for (j = 0; j < 10; j++) if (A[j] > A[j+1]) { s++; t = A[j]; A[j] = A[j+1]; A[j+1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13746",
+    "externalAnswer": "5",
+    "expectedAnswer": "7",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 7. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 0, 4, 6, 5, 1, 8, 2, 9, 7 соответственно, т. е. A[0] = 3, A[1] = 0 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования) Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) > A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] > A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] > A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] > A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] > A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "d404e5d53969313075e2fb65ae7fd6c6de17e3f4b2440b43e19616cd2d281782"
+  },
+  "EGEINF038CC9": {
+    "sourceHash": "f0fb436fd54a09dce8ed4dc0afdb0e5410801e85ce79ec87c4ccaac9fb325212",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 5, 6, 4, 7, 3, 2, 0, 1, 9, 8 соответственно, т.е. A[0] = 5, A[1] = 6 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) < A(9) THEN c = c + 1 t = A(i) A(i) = A(9) A(9) = t END IF NEXT i c = 0 for i in range(9): if A[i] < A[9]: c = c + 1 t = A[i] A[i] = A[9] A[9] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] < A[9] то c := с + 1 t := A[i] A[i] := A[9] A[9] := t все кц c := 0; for i := 0 to 8 do if A[i] < A[9] then begin c := c + 1; t := A[i]; A[i] := A[9]; A[9] := t; end; Си c = 0; for (i = 0;i < 9;i++) if (A[i] < A[9]) { c++; t = A[i]; A[i] = A[9]; A[9] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=9370",
+    "externalAnswer": "2",
+    "expectedAnswer": "5",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 5. Внешний контроль 2 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 7, 3, 8, 5, 0, 1, 2, 9, 6 соответственно, т. е. A[0] = 4, A[1] = 7 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования) . Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t ENDIF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := c + 1 t := A[i] A[i] := A[0] A[0] := t все кц Си++ c = 0; for (i = 1;i < 10;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "externalTextSha256": "2545fb65b749f4cfb2c784d9e0b05f3c47b1829b76cbb1735798956c635990b5",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The phrase that the program executes twice refers to the true branch. There are nine loop passes; exactly two comparisons trigger swaps. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF22DACD": {
+    "sourceHash": "f5110942efac00568e5987918ba4b37ef975590511825f2f8ec22b090843364d",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т.е. A[0] = 5, A[1] = 8 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 0 FOR i = 1 TO 11 IF A(i) > A(n) THEN s = s + 1 t = A(i) A(i) = A(n) A(n) = t END IF NEXT i s = 0 n = 0 for i in range(1,12): if A[i] > A[n]: s += 1 t = A[i] A[i] = A[n] A[n] = t Алгоритмический язык Паскаль s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t все кц s := 0; n := 0; for i := 1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; С++ s = 0; n = 0; for (int i = 1; i < 12; i++) if (A[i] > A[n]){ s++; t = A[i]; A[i] = A[n]; A[n] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18447",
+    "externalAnswer": "5",
+    "expectedAnswer": "5",
+    "match": "exact",
+    "comparison": "Исходные значения массива, диапазон индексов, условия, порядок присваиваний и требуемая переменная совпадают. Полная самостоятельная трасса по Python и независимый разбор Си подтверждают ответ 5. Сверены также существенные шаги внешнего решения; текст объяснения написан самостоятельно.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т. е. A[0] = 5, A[1] = 8 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python N = 0 S = 0 FOR I = 1 TO 11 IF A(I) > A(N) THEN S = S + 1 T = A(I) A(I) = A(N) A(N) = t END IF NEXT I n = 0 s = 0 for i in range(1, 12): if A[i] > A[n]: s = s + 1 t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s:= 0; n:= 0; for i:=1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t; все кц С++ n = 0; s = 0; for (i = 1; i < 12; i++) { if (A[i] > A[n]) { s++; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "91498c15d3dbaf5621501f56c3115a26db624c292462f7bdbbd6ccdefd85e297",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose contains an extra i after the word unit. All language listings and the trace increment s by 1, not by i; answer 5. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF237BC9": {
+    "sourceHash": "69967a14511558399688a8a1e4639ce58777af0df482c7cf7a882be7dafbf2b3",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 6, 3, 4, 8, 7, 9, 5, 2, 0, 1 соответственно, т.е. A[0] = 6, A[1] = 3 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t END IF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := с + 1 t := A[i] A[i] := A[0] A[0] := t все кц c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; Си c = 0; for (i = 1;i < 10;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=9370",
+    "externalAnswer": "2",
+    "expectedAnswer": "3",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 3. Внешний контроль 2 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 7, 3, 8, 5, 0, 1, 2, 9, 6 соответственно, т. е. A[0] = 4, A[1] = 7 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования) . Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t ENDIF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := c + 1 t := A[i] A[i] := A[0] A[0] := t все кц Си++ c = 0; for (i = 1;i < 10;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "externalTextSha256": "2545fb65b749f4cfb2c784d9e0b05f3c47b1829b76cbb1735798956c635990b5",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The phrase that the program executes twice refers to the true branch. There are nine loop passes; exactly two comparisons trigger swaps. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF50FFCF": {
+    "sourceHash": "c4e056f9058e4b08fab59d9c8ea8240aaa52e2a2372e31cf8d08318eb955ed2a",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов массива A[i] приведены в таблице. i 0 1 2 3 4 5 6 7 8 9 10 11 A[i] 53 17 33 12 49 8 3 20 2 19 7 22 Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик s = 0 FOR i = 1 TO 11 IF A(i - 1) \\ A(i) < 2 THEN s = s + A(i) ELSE A(i) = A(i) * i END IF NEXT i Python s = 0 for i in range(1, 12): if A[i - 1] // A[i] < 2: s += A[i] else: A[i] *= i Алгоритмический язык s := 0 нц для i от 1 до 11 если div(A[i - 1], A[i]) < 2 то s := s + A[i] иначе A[i] := A[i] * i все кц Паскаль s := 0; for i := 1 to 11 do if A[i - 1] div A[i] < 2 then s := s + A[i] else A[i] := A[i] * i; С++ s = 0; for (int i = 1; i < 12; i++) { if (A[i - 1] / A[i] < 2) s += A[i]; else A[i] *= i; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=26991",
+    "externalAnswer": "125",
+    "expectedAnswer": "121",
+    "match": "variant",
+    "comparison": "Сверены целочисленное деление соседних текущих элементов и выбор между прибавлением элемента и умножением его на индекс. Массив отличается. Все частные вычислены после предыдущих изменений массива; собственная полная трасса даёт 121, внешний контроль — 125.",
+    "reviewed": true,
+    "externalCondition": "Представленный ниже на пяти языках программирования фрагмент программы обрабатывает элементы одномерного целочисленного массива A с индексами от 0 до 11. Перед началом выполнения данного фрагмента эти элементы массива имели значения 5, 43, 20, 7, 13, 7, 29, 13, 2, 33, 15, 5 (т. е. A [0] = 5, A [1] = 43, ..., A [11] = 5). Определите значение переменной s после выполнения фрагмента Бейсик Python s = 0 FOR i = 1 TO 11 IF A(i-1) DIV A(i) < 2 THEN s = s + A(i) ELSE A(i) = A(i) * i END IF NEXT i s = 0 for i in range(1,12): if A[i - 1] // A[i] < 2: s += A[i] else: A[i] = A[i] * i Паскаль Алгоритмический язык s := 0; for i:=1 to 11 do begin if A[i - 1] div A[i] < 2 then s := s + A[i] else A[i] := A[i] * i; end; s := 0 нц для i от 1 до 11 если div(A[i-1],A[i]) < 2 то s := s + A[i] иначе A[i] := A[i] * i все кц С++ s = 0; for (i = 1; i < 12; ++i) { if (A[i-1] / A[i] < 2) s += A[i]; else A[i] = A[i] * i; }",
+    "externalTextSha256": "c2bd8129efd02568f1d7199304ade96e695e5786f36ebb35cbd632c828842e42",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The explanatory list skips the seventh ordinal and labels subsequent steps inconsistently. Recomputed i = 1..11; the numeric arrays and sum 43+13+7+29+33=125 are correct. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFCC32C1": {
+    "sourceHash": "0f6e92d2b2d93e77001d14378d5148b69e0015efdad83a5b71d96d34a5b70420",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 6, 5, 4, 7, 3, 2, 0, 1, 9, 8 соответственно, т.е. A[0] = 6, A[1] = 5 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) < A(9) THEN c = c + 1 t = A(i) A(i) = A(9) A(9) = t END IF NEXT i c = 0 for i in range(9): if A[i] < A[9]: c = c + 1 t = A[i] A[i] = A[9] A[9] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] < A[9] то c := с + 1 t := A[i] A[i] := A[9] A[9] := t все кц c := 0; for i := 0 to 8 do if A[i] < A[9] then begin c := c + 1; t := A[i]; A[i] := A[9]; A[9] := t; end; Си c = 0; for (i = 0; i < 9; i++) if (A[i] < A[9]) { c++; t = A[i]; A[i] = A[9]; A[9] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=9370",
+    "externalAnswer": "2",
+    "expectedAnswer": "6",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 6. Внешний контроль 2 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 7, 3, 8, 5, 0, 1, 2, 9, 6 соответственно, т. е. A[0] = 4, A[1] = 7 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования) . Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t ENDIF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := c + 1 t := A[i] A[i] := A[0] A[0] := t все кц Си++ c = 0; for (i = 1;i < 10;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "externalTextSha256": "2545fb65b749f4cfb2c784d9e0b05f3c47b1829b76cbb1735798956c635990b5",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The phrase that the program executes twice refers to the true branch. There are nine loop passes; exactly two comparisons trigger swaps. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF337BC0": {
+    "sourceHash": "b0f011287f3ffe4a4e32d1f7ea82ae884de9045fea6457640601f5c6642599ce",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 20, 19, 17, 41, 23, 12, 24, 16, 4, 13, 6, 15 соответственно, т.е. A[0] = 20, A[1] = 19 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 5 FOR i = 0 TO 11 IF A(i) <= A(n) THEN s = s + i t = A(i) A(i) = A(n) A(n) = t END IF NEXT i s = 0 n = 5 for i in range(12): if A[i] <= A[n]: s += i t = A[i] A[i] = A[n] A[n] = t Алгоритмический язык Паскаль s := 0 n := 5 нц для i от 0 до 11 если A[i] <= A[n] то s := s + i t := A[i] A[i] := A[n] A[n] := t все кц s := 0; n := 5; for i := 0 to 11 do if A[i] <= A[n] then begin s := s + i; t := A[i]; A[i] := A[n]; A[n] := t end; С++ s = 0; n = 5; for (int i = 0; i < 12; i++) if (A[i] <= A[n]){ s += i; t = A[i]; A[i] = A[n]; A[n] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=19068",
+    "externalAnswer": "16",
+    "expectedAnswer": "13",
+    "match": "variant",
+    "comparison": "Совпадают исходный массив, нестрогое сравнение, обмен с опорным элементом и суммирование индексов. В ФИПИ опорный индекс n = 5 вместо 0. Внешний пропуск s = 0 в версии Си разобран по другим языкам; ФИПИ задаёт s = 0 явно. Самостоятельная трасса учитывает все двенадцать проверок и даёт 13.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 20, 19, 17, 41, 23, 12, 24, 16, 4, 13, 6, 15 соответственно, т. е. A[0] = 20, A[1] = 19 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 0 FOR i = 0 TO 11 IF A(i) <= A(n) THEN s = s + i t = A(i) A(i) = A(n) A(n) = t END IF NEXT i s = 0 n = 0 for i in range(12): if A[i] <= A[n]: s += i t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s := 0; n := 0; for i := 0 to 11 do if A[i] <= A[n] then begin s := s + i; t := A[i]; A[i] := A[n]; A[n] := t end; s := 0 n := 0 нц для i от 0 до 11 если A[i] <= A[n] то s := s + i t := A[i] A[i] := A[n] A[n] := t все кц Си++ n = 0; for (int i = 0; i < 12; i++) if (A[i] <= A[n]){ s += i; t = A[i]; A[i] = A[n]; A[n] = t; }",
+    "externalTextSha256": "0f1776baffb9cb694068dc7aa59ae9743ef436000c4c74c87b7ae5775aab1039",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The C listing omits s = 0. Python, Basic, Pascal and the algorithmic listing all initialize s to 0. The external C control explicitly restores that documented initialization; FIPI has s = 0. Also i = 0 executes a self-swap and adds zero, so it need not appear among the changed arrays. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF470D96": {
+    "sourceHash": "090854c79cc799c4551813513f08f2cad2ba38e23d9cd9601ce5ca868dc5172e",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов массива A[i] приведены в таблице. i 0 1 2 3 4 5 6 7 8 9 10 11 A[i] 53 17 33 12 49 8 3 20 2 19 7 22 Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик s = 0 n = 2 FOR i = 1 TO 11 IF A(i - 1) \\ A(i) > n THEN s = s + A(i) ELSE A(i) = A(i) * i END IF NEXT i Python s = 0 n = 2 for i in range(1, 12): if A[i - 1] // A[i] > n: s += A[i] else: A[i] *= i Алгоритмический язык s := 0 n := 2 нц для i от 1 до 11 если div(A[i - 1], A[i]) > n то s := s + A[i] иначе A[i] := A[i] * i все кц Паскаль s := 0; n := 2; for i := 1 to 11 do if A[i - 1] div A[i] > n then s := s + A[i] else A[i] := A[i] * i; С++ s = 0; n = 2; for (int i = 1; i < 12; i++) { if (A[i - 1] / A[i] > n) s += A[i]; else A[i] *= i; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=26991",
+    "externalAnswer": "125",
+    "expectedAnswer": "46",
+    "match": "variant",
+    "comparison": "Сверены целочисленное деление соседних текущих элементов и выбор между прибавлением элемента и умножением его на индекс. Массив отличается; в ФИПИ сравнение больше n при n = 2, в источнике меньше 2. Все частные вычислены после предыдущих изменений массива; собственная полная трасса даёт 46, внешний контроль — 125.",
+    "reviewed": true,
+    "externalCondition": "Представленный ниже на пяти языках программирования фрагмент программы обрабатывает элементы одномерного целочисленного массива A с индексами от 0 до 11. Перед началом выполнения данного фрагмента эти элементы массива имели значения 5, 43, 20, 7, 13, 7, 29, 13, 2, 33, 15, 5 (т. е. A [0] = 5, A [1] = 43, ..., A [11] = 5). Определите значение переменной s после выполнения фрагмента Бейсик Python s = 0 FOR i = 1 TO 11 IF A(i-1) DIV A(i) < 2 THEN s = s + A(i) ELSE A(i) = A(i) * i END IF NEXT i s = 0 for i in range(1,12): if A[i - 1] // A[i] < 2: s += A[i] else: A[i] = A[i] * i Паскаль Алгоритмический язык s := 0; for i:=1 to 11 do begin if A[i - 1] div A[i] < 2 then s := s + A[i] else A[i] := A[i] * i; end; s := 0 нц для i от 1 до 11 если div(A[i-1],A[i]) < 2 то s := s + A[i] иначе A[i] := A[i] * i все кц С++ s = 0; for (i = 1; i < 12; ++i) { if (A[i-1] / A[i] < 2) s += A[i]; else A[i] = A[i] * i; }",
+    "externalTextSha256": "c2bd8129efd02568f1d7199304ade96e695e5786f36ebb35cbd632c828842e42",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The explanatory list skips the seventh ordinal and labels subsequent steps inconsistently. Recomputed i = 1..11; the numeric arrays and sum 43+13+7+29+33=125 are correct. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF2BF795": {
+    "sourceHash": "313bd7afcd61a312b825e498f703c9cbe4520e4c5189d43f1eb87810e4fddbef",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 20, 19, 17, 41, 15, 42, 24, 56, 4, 13 соответственно, т.е. A[0] = 20, A[1] = 19 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python s = 0 n = 4 FOR i = 0 TO 9 IF A(i) >= A(n) THEN s = s + A(i) MOD A(n) t = A(i) A(i) = A(n) A(n) = t END IF NEXT i s = 0 n = 4 for i in range(10): if A[i] >= A[n]: s += A[i] % A[n] t = A[i] A[i] = A[n] A[n] = t Алгоритмический язык Паскаль s := 0 n := 4 нц для i от 0 до 9 если A[i] >= A[n] то s := s + mod(A[i], A[n]) t := A[i] A[i] := A[n] A[n] := t все кц s := 0; n := 4; for i := 0 to 9 do if A[i] >= A[n] then begin s := s + A[i] mod A[n]; t := A[i]; A[i] := A[n]; A[n] := t end; С++ s = 0; n = 4; for (int i = 0; i < 10; i++) if (A[i] >= A[n]){ s += A[i] % A[n]; t = A[i]; A[i] = A[n]; A[n] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18798",
+    "externalAnswer": "4",
+    "expectedAnswer": "21",
+    "match": "variant",
+    "comparison": "Сверены вычисление остатка до обмена, прибавление к сумме и обновление опорного элемента. В ФИПИ n = 4, нестрогое сравнение и другие исходные числа, во внешнем примере n = 6 и строгое сравнение. Полная трасса ФИПИ, включая нулевые остатки при равенстве, независимо даёт 21.",
+    "reviewed": true,
+    "externalCondition": "Представленный ниже на пяти языках программирования фрагмент программы обрабатывает элементы одномерного целочисленного массива A с индексами от 0 до 9. Перед началом выполнения данного фрагмента эти элементы массива имели значения 2, 3, 5, 6, 10, 4, 8, 6, 12, 9 (т. е. A[0] = 2, A[1] = 3, …, A[9] = 9). Определите значение переменной s после выполнения фрагмента. Бейсик Python n = 6 s = 0 FOR i = 0 TO 9 IF A(i) > A(n) THEN s = s + (A(i) MOD A(n)) t = A(i) A(i) = A(n) A(n) = t END IF NEXT i n = 6 s = 0 for i in range(0,10): if A[i] > A[n]: s += A[i] % A[n] t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык n := 6; s := 0; for i:=0 to 9 do begin if A[i] > A[n] then begin s := s + (A[i] mod A[n]); t := A[i]; A[i] := A[n]; A[n] := t; end end; n := 6 s := 0 нц для i от 0 до 9 если A[i] > A[n] то s := s + mod(A[i], A[n]) t := A[i] A[i] := A[n] A[n] := t все кц С++ n = 6; s = 0; for (i = 0; i <= 9; ++i) { if (A[i] > A[n]) { s += A[i] % A[n]; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "ef8369e81c82a712e81cf36c9c9534ca47523b294ff20c9db77a023919991974"
+  },
+  "EGEINFA2EC96": {
+    "sourceHash": "633b8359cafa852f6f85c94cab5eb300bdb7046b3a773d1058d4e8a32ce1ee8f",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 10, 4, 9, 7, 8, 3, 5, 2, 1, 6, 0 соответственно, т.е. A[0] = 10, A[1] = 4 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 10 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,11): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 10 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц c := 0; for i := 1 to 10 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; Си c = 0; for (i = 1; i < 11; i++) if (A[i-1] < A[i]) { c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "5",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 5. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF325793": {
+    "sourceHash": "0030caa516ce5383a8b5e0d3f28d3fdd813d1cf2cd72deb580ceb2193bcb3f9e",
+    "fipiCondition": "Выберите правильный ответ. Значения двух массивов A[1..300] и B[1..300] задаются с помощью следующего фрагмента программы: Бейсик Паскаль Алгоритмический FOR n=1 TO 300 A(n)=100-n NEXT n FOR n=1 TO 300 B(n)=2*A(n)+1 NEXT n for n:=1 to 300 do A[n]:=100-n; for n:=1 to 300 do B[n]:=2*A[n]+1 нц для n от 1 до 300 A[n]=100-n кц нц для n от 1 до 300 B[n]=2*A[n]+1 кц Сколько элементов массива B будут иметь положительные значения? 1) 99 2) 100 3) 200 4) 201",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=3358",
+    "externalAnswer": "90",
+    "expectedAnswer": "2",
+    "match": "method",
+    "comparison": "Сверен метод подстановки формулы первого массива во второй и решения строгого неравенства положительности с учётом целых границ. Формулы источника отличаются: n(n − 10) вместо 201 − 2n. Для ФИПИ независимо получены индексы 1–100, число 100 и вариант 2; внешний ответ 90 не переносится.",
+    "reviewed": true,
+    "externalCondition": "Значения двух массивов A[1..100] и B[1..100] задаются с помощью следующего фрагмента программы: Бейсик Python FOR n = 1 TO 100 A(n) = n - 10 NEXT n FOR n = 1 TO 100 B(n) = A(n)*n; NEXT n for n in range(1, 101): A[n] = n - 10 for n in range(1, 101): B[n] = A[n]*n Паскаль Алгоритмический язык for n : = 1 to 100 do A[n] : = n - 10; for n : = 1 to 100 do begin B[n]:= A[n]*n; end; нц для n от 1 до 100 A[n] : = n - 10 кц нц для n от 1 до 100 B[n]:=A[n]*n кц Си++ for (n = 1; n <= 100; n++) { A[n] = n - 10; } for (n = 1; n <= 100; n++) { B[n] = A[n]*n; } Сколько элементов массива B будут иметь положительные значения? Примечание. Нуль является ни положительным, ни отрицательным числом.",
+    "externalTextSha256": "725340fff2e049ee5b50c731f158219bfa70e8d91d299f479031690bc2b1fdbf"
+  },
+  "EGEINF2BC7E7": {
+    "sourceHash": "27e8a4ecf8c31d20a1f31a2adef778f4c1a689f1d356665ad79eb8ccc0ec353a",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 9, 13, 10, 3, 1, 7, 0, 4, 5, 12 соответственно, т.е. A[0] = 9, A[1] = 13 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; Си c = 0; for (i = 1; i < 10; i++) if (A[i-1] < A[i]) { c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "6",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 6. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF2D6EE5": {
+    "sourceHash": "12fe9ae6c712c386436b557f13867b26127281d3e545363de89e6c01e2944d77",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s + A(i) - A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Алгоритмический язык Паскаль s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; Си s = 0; n=10; for (i = 0; i < n; i++) s = s + A[i] - A[i+1]; В начале выполнения этого фрагмента в массиве находились числа 10, 8, 7, 6, 5, 4, 3, 2, 9, 0, 1, т.е. A[0] = 10, A[1] = 8 и т.д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13365",
+    "externalAnswer": "27",
+    "expectedAnswer": "9",
+    "match": "variant",
+    "comparison": "Совпадают суммирование соседних разностей и диапазон i от 0 до 9. Исходные числа в массивах отличаются. Сверено сокращение всех внутренних элементов; по данным ФИПИ остаётся разность крайних значений 10 − 1 = 9. Дополнительно проверены все десять промежуточных сумм.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Ниже представлен записанный на разных языках программирования фрагмент этой программы. Бейсик Python s = 0 n = 10 FOR i = 0 TO n-1 s = s+A(i)-A(i+1) NEXT i s = 0 n = 10 for i in range(n): s = s + A[i] – A[i+1] Паскаль Алгоритмический язык s := 0; n := 10; for i:=0 to n-1 do begin s := s + A[i] - A[i+1]; end; s := 0 n := 10 нц для i от 0 до n-1 s := s + A[i] - A[i+1] кц Си++ s = 0; n = 10; for (i = 0; i < n; i++) { s = s + A[i] - A[i+1]; } В начале выполнения этого фрагмента в массиве находились числа 27, 17, 7, 0, 7, 17, 27, 17, 10, 7, 0, т. е. A[0] = 27, A[1] = 17 и т. д. Чему будет равно значение переменной s после выполнения данного фрагмента программы?",
+    "externalTextSha256": "fb64dbbce6fa7018b393a6602119a00424ecdd4ec62bcad498bb6ace56b7519d"
+  },
+  "EGEINF5395E9": {
+    "sourceHash": "64af2033445dd0b883c4de418d547981a88d0f4cc2970d5647afb06462b02189",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 7, 3, 8, 5, 0, 1, 2, 9, 6 соответственно, т.е. A[0] = 4, A[1] = 7 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; Си c = 0; for (i = 1; i < 10; i++) if (A[i-1] < A[i]) { c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "7",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 7. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFD7516C": {
+    "sourceHash": "9f4a3d9b14f4dde6cbc931d4f56d2e4394a1ea20b111eab8c81a6b1ea29bdc27",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 5, 4, 8, 7, 1, 0, 3, 9, 6 соответственно, т.е. A[0] = 2, A[1] = 5 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) > A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t END IF NEXT i c = 0 for i in range(1,10): if A[i] > A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i] > A[0] то c := с + 1 t := A[i] A[i] := A[0] A[0] := t все кц c := 0; for i := 1 to 9 do if A[i] > A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; Си c = 0; for (i = 1;i < 10;i++) if (A[i] > A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18447",
+    "externalAnswer": "5",
+    "expectedAnswer": "3",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 3. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т. е. A[0] = 5, A[1] = 8 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python N = 0 S = 0 FOR I = 1 TO 11 IF A(I) > A(N) THEN S = S + 1 T = A(I) A(I) = A(N) A(N) = t END IF NEXT I n = 0 s = 0 for i in range(1, 12): if A[i] > A[n]: s = s + 1 t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s:= 0; n:= 0; for i:=1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t; все кц С++ n = 0; s = 0; for (i = 1; i < 12; i++) { if (A[i] > A[n]) { s++; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "91498c15d3dbaf5621501f56c3115a26db624c292462f7bdbbd6ccdefd85e297",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose contains an extra i after the word unit. All language listings and the trace increment s by 1, not by i; answer 5. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFE3C466": {
+    "sourceHash": "5c715b3cecdd81f8b90ffb5a2ec015d3282d6918f0c66dfde11fdc75f7a14a7f",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 8, 4, 7, 5, 1, 0, 2, 9, 6 соответственно, т.е. A[0] = 3, A[1] = 8 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) > A(i+1) THEN c = c + 1 t = A(i) A(i) = A(i+1) A(i+1) = t END IF NEXT i c = 0 for i in range(9): if A[i] > A[i+1]: c = c + 1 t = A[i] A[i] = A[i+1] A[i+1] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] > A[i+1] то c := c + 1 t := A[i] A[i] := A[i+1] A[i+1] := t все кц c := 0; for i := 0 to 8 do if A[i] > A[i+1] then begin c := c + 1; t := A[i]; A[i] := A[i+1]; A[i+1] := t; end; Си c = 0; for (i = 0; i < 9; i++) if (A[i] > A[i+1]) { c++; t = A[i]; A[i] = A[i+1]; A[i+1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=13746",
+    "externalAnswer": "5",
+    "expectedAnswer": "7",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 7. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 3, 0, 4, 6, 5, 1, 8, 2, 9, 7 соответственно, т. е. A[0] = 3, A[1] = 0 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования) Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) > A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] > A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] > A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] > A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] > A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "d404e5d53969313075e2fb65ae7fd6c6de17e3f4b2440b43e19616cd2d281782"
+  },
+  "EGEINF07903D": {
+    "sourceHash": "988dc02b97202440e1c1f5a7d089b7cdc4025d12f23d595fdb0d1fc327792f23",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 8, 3, 4, 0, 7, 1, 2, 5, 9, 6 соответственно, т.е. A[0] = 8, A[1] = 3 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python s = 0 FOR j = 0 TO 8 IF A(j) < A(j+1) THEN s = s + 1 t = A(j) A(j) = A(j+1) A(j+1) = t END IF NEXT j s = 0 for j in range(9): if A[j] < A[j+1]: s = s + 1 t = A[j] A[j] = A[j+1] A[j+1] = t Алгоритмический язык Паскаль s := 0 нц для j от 0 до 8 если A[j] < A[j+1] то s := s + 1 t := A[j] A[j] := A[j+1] A[j+1] := t все кц s := 0; for j := 0 to 8 do if A[j] < A[j+1] then begin s := s + 1; t := A[j]; A[j] := A[j+1]; A[j+1] := t; end; Си s = 0; for (j = 0; j < 9; j++) if (A[j] < A[j+1]) { s++; t = A[j]; A[j] = A[j+1]; A[j+1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "7",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 7. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF68B331": {
+    "sourceHash": "87f3ebde30bda57d228ac17e0e70aa109988bb152b076ea45b3cd1048be73035",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 6, 8, 4, 3, 7, 9, 5, 2, 0, 1 соответственно, т.е. A[0] = 6, A[1] = 8 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t END IF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := с + 1 t := A[i] A[i] := A[0] A[0] := t все кц c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; Си c = 0; for (i = 1; i < 10; i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=9370",
+    "externalAnswer": "2",
+    "expectedAnswer": "4",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 4. Внешний контроль 2 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 4, 7, 3, 8, 5, 0, 1, 2, 9, 6 соответственно, т. е. A[0] = 4, A[1] = 7 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования) . Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i) < A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t ENDIF NEXT i c = 0 for i in range(1,10): if A[i] < A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i] < A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; c := 0 нц для i от 1 до 9 если A[i] < A[0] то c := c + 1 t := A[i] A[i] := A[0] A[0] := t все кц Си++ c = 0; for (i = 1;i < 10;i++) if (A[i] < A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "externalTextSha256": "2545fb65b749f4cfb2c784d9e0b05f3c47b1829b76cbb1735798956c635990b5",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The phrase that the program executes twice refers to the true branch. There are nine loop passes; exactly two comparisons trigger swaps. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINFBE2E8B": {
+    "sourceHash": "dcb5b015e3a175a9db03b0ffdc9efcad9eb73d2b0daabcd131d44fb719c7fed8",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 9, 5, 10, 3, 6, 7, 2, 1, 8, 0, 4 соответственно, т.е. A[0] = 9, A[1] = 5 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python s = 0 FOR j = 0 TO 9 IF A(j) < A(j+1) THEN s = s + 1 t = A(j) A(j) = A(j+1) A(j+1) = t END IF NEXT j s = 0 for j in range(10): if A[j] < A[j+1]: s = s + 1 t = A[j] A[j] = A[j+1] A[j+1] = t Алгоритмический язык Паскаль s := 0 нц для j от 0 до 9 если A[j] < A[j+1] то s := s + 1 t := A[j] A[j] := A[j+1] A[j+1] := t все кц s := 0; for j := 0 to 9 do if A[j] < A[j+1] then begin s := s + 1; t := A[j]; A[j] := A[j+1]; A[j+1] := t; end; Си s = 0; for (j = 0; j < 10; j++) if (A[j] < A[j+1]) { s++; t = A[j]; A[j] = A[j+1]; A[j+1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "5",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 5. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF1F9289": {
+    "sourceHash": "6c92986ac31f6d0c984547060b31c021d884ca70848a050b01fe44337de70e38",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 10, 8, 4, 3, 0, 7, 2, 1, 5, 9, 6 соответственно, т.е. A[0] = 10, A[1] = 8 и т.д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python s = 0 FOR j = 0 TO 9 IF A(j) < A(j+1) THEN s = s + 1 t = A(j) A(j) = A(j+1) A(j+1) = t END IF NEXT j s = 0 for j in range(10): if A[j] < A[j+1]: s = s + 1 t = A[j] A[j] = A[j+1] A[j+1] = t Алгоритмический язык Паскаль s := 0 нц для j от 0 до 9 если A[j] < A[j+1] то s := s + 1 t := A[j] A[j] := A[j+1] A[j+1] := t все кц s := 0; for j := 0 to 9 do if A[j] < A[j+1] then begin s := s + 1; t := A[j]; A[j] := A[j+1]; A[j+1] := t; end; Си s = 0; for (j = 0; j < 10 ; j++) if (A[j] < A[j+1]) { s++; t = A[j]; A[j] = A[j+1]; A[j+1] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=16046",
+    "externalAnswer": "7",
+    "expectedAnswer": "6",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 6. Внешний контроль 7 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 4, 3, 6, 3, 7, 8, 2, 9, 1 соответственно, т. е. A[0] = 2, A[1] = 4 и т. д. Определите значение переменной c после выполнения следующего фрагмента этой программы, записанного ниже на пяти языках программирования. Бейсик Python c = 0 FOR i = 1 TO 9 IF A(i-1) < A(i) THEN c = c + 1 t = A(i) A(i) = A(i-1) A(i-1) = t END IF NEXT i c = 0 for i in range(1,10): if A[i-1] < A[i]: c = c + 1 t = A[i] A[i] = A[i-1] A[i-1] = t Паскаль Алгоритмический язык c := 0; for i := 1 to 9 do if A[i-1] < A[i] then begin c := c + 1; t := A[i]; A[i] := A[i-1]; A[i-1] := t; end; c := 0 нц для i от 1 до 9 если A[i-1] < A[i] то c := c + 1 t := A[i] A[i] := A[i-1] A[i-1] := t все кц Си++ c = 0; for (int i = 1; i < 10; i++) { if (A[i-1] < A[i]){ c++; t = A[i]; A[i] = A[i-1]; A[i-1] = t; } }",
+    "externalTextSha256": "656323aa3b7819c2fd7557e3fc7384f336b1798047d0c47e7069749dc02475de",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose describes only the current element receiving the previous value. The program and full trace exchange both elements; independently checked seven exchanges. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF99C180": {
+    "sourceHash": "f25d0c3822c99421075b243388897f1470b2756df67a69d071f1daa98de1994e",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 10. Значения элементов равны 4, 2, 7, 5, 9, 1, 10, 0, 3, 8, 6 соответственно, т.е. A[0] = 4, A[1] = 2 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 1 TO 10 IF A(i) > A(0) THEN c = c + 1 t = A(i) A(i) = A(0) A(0) = t END IF NEXT i c = 0 for i in range(1,11): if A[i] > A[0]: c = c + 1 t = A[i] A[i] = A[0] A[0] = t Алгоритмический язык Паскаль c := 0 нц для i от 1 до 10 если A[i] > A[0] то c := с + 1 t := A[i] A[i] := A[0] A[0] := t все кц c := 0; for i := 1 to 10 do if A[i] > A[0] then begin c := c + 1; t := A[i]; A[i] := A[0]; A[0] := t; end; Си c = 0; for (i = 1; i < 11; i++) if (A[i] > A[0]) { c++; t = A[i]; A[i] = A[0]; A[0] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18447",
+    "externalAnswer": "5",
+    "expectedAnswer": "3",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 3. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т. е. A[0] = 5, A[1] = 8 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python N = 0 S = 0 FOR I = 1 TO 11 IF A(I) > A(N) THEN S = S + 1 T = A(I) A(I) = A(N) A(N) = t END IF NEXT I n = 0 s = 0 for i in range(1, 12): if A[i] > A[n]: s = s + 1 t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s:= 0; n:= 0; for i:=1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t; все кц С++ n = 0; s = 0; for (i = 1; i < 12; i++) { if (A[i] > A[n]) { s++; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "91498c15d3dbaf5621501f56c3115a26db624c292462f7bdbbd6ccdefd85e297",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose contains an extra i after the word unit. All language listings and the trace increment s by 1, not by i; answer 5. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  },
+  "EGEINF95BF89": {
+    "sourceHash": "1d8265fe3b69c47eb31cc13dcb19354c0a1cd439bc475dd3002e4c6bf3774a86",
+    "fipiCondition": "Впишите правильный ответ. В программе используется одномерный целочисленный массив A с индексами от 0 до 9. Значения элементов равны 2, 6, 4, 7, 3, 9, 1, 8, 0, 5 соответственно, т.е. A[0] = 2, A[1] = 6 и т.д. Определите значение переменной c после выполнения следующего фрагмента этой программы (записанного ниже на разных языках программирования). Бейсик Python c = 0 FOR i = 0 TO 8 IF A(i) > A(9) THEN c = c + 1 t = A(i) A(i) = A(9) A(9) = t END IF NEXT i c = 0 for i in range(9): if A[i] > A[9]: c = c + 1 t = A[i] A[i] = A[9] A[9] = t Алгоритмический язык Паскаль c := 0 нц для i от 0 до 8 если A[i] > A[9] то c := с + 1 t := A[i] A[i] := A[9] A[9] := t все кц c := 0; for i := 0 to 8 do if A[i] > A[9] then begin c := c + 1; t := A[i]; A[i] := A[9]; A[9] := t; end; Си c = 0; for (i = 0;i < 9;i++) if (A[i] > A[9]) { c++; t = A[i]; A[i] = A[9]; A[9] = t; }",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=18447",
+    "externalAnswer": "5",
+    "expectedAnswer": "3",
+    "match": "variant",
+    "comparison": "Сверен последовательный проход с условным обменом и увеличением счётчика на единицу. От исходного массива и положения сравниваемых элементов зависит каждый следующий шаг; в ФИПИ используются собственные значения и индексы. Полная трасса повторно проверена после каждого обмена, включая строгий знак сравнения и границы цикла; получен ответ 3. Внешний контроль 5 не подменяет расчёт ФИПИ.",
+    "reviewed": true,
+    "externalCondition": "В программе используется одномерный целочисленный массив A с индексами от 0 до 11. Значения элементов равны 5, 8, 7, 11, 10, 12, 9, 6, 4, 13, 3, 15 соответственно, т. е. A[0] = 5, A[1] = 8 и т. д. Определите значение переменной s после выполнения следующего фрагмента этой программы (записанного ниже на пяти языках программирования). Бейсик Python N = 0 S = 0 FOR I = 1 TO 11 IF A(I) > A(N) THEN S = S + 1 T = A(I) A(I) = A(N) A(N) = t END IF NEXT I n = 0 s = 0 for i in range(1, 12): if A[i] > A[n]: s = s + 1 t = A[i] A[i] = A[n] A[n] = t Паскаль Алгоритмический язык s:= 0; n:= 0; for i:=1 to 11 do if A[i] > A[n] then begin s := s + 1; t := A[i]; A[i] := A[n]; A[n] := t; end; s := 0 n := 0 нц для i от 1 до 11 если A[i] > A[n] то s := s + 1 t := A[i] A[i] := A[n] A[n] := t; все кц С++ n = 0; s = 0; for (i = 1; i < 12; i++) { if (A[i] > A[n]) { s++; t = A[i]; A[i] = A[n]; A[n] = t; } }",
+    "externalTextSha256": "91498c15d3dbaf5621501f56c3115a26db624c292462f7bdbbd6ccdefd85e297",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "The prose contains an extra i after the word unit. All language listings and the trace increment s by 1, not by i; answer 5. The complete independently calculated trace and the unchanged FIPI program determine the published answer; the incorrect external wording or listing fragment is not copied."
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "EGEINFB9BE47": {
+    "kind": "extremes-square",
+    "width": 5,
+    "select": "count"
+  },
+  "EGEINFB42173": {
+    "kind": "extremes-square",
+    "width": 5,
+    "select": "count"
+  },
+  "EGEINFE06AA0": {
+    "kind": "extremes-square",
+    "width": 5,
+    "select": "count"
+  },
+  "EGEINF03FCC2": {
+    "kind": "extremes-square",
+    "width": 5,
+    "select": "count"
+  },
+  "EGEINF4F0194": {
+    "kind": "extremes-square",
+    "width": 5,
+    "select": "count"
+  },
+  "EGEINF8E4395": {
+    "kind": "extremes-square",
+    "width": 5,
+    "select": "count"
+  },
+  "EGEINF90D64F": {
+    "kind": "two-pairs-single-mean-gt",
+    "width": 7,
+    "select": "count"
+  },
+  "EGEINFDF08FE": {
+    "kind": "distinct-twice-extreme-sum-le",
+    "width": 5,
+    "select": "count"
+  },
+  "EGEINF9EF0FE": {
+    "kind": "distinct-extreme-product",
+    "width": 5,
+    "select": "count"
+  },
+  "EGEINF82E1FA": {
+    "kind": "quad-equal-pairs",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINF0A616C": {
+    "kind": "quad-equal-pairs",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINF74ED34": {
+    "kind": "quad-equal-pairs",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINFEDBE37": {
+    "kind": "quad-equal-pairs",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINFE20F0A": {
+    "kind": "distinct-triple-extreme-sum-ge",
+    "width": 5,
+    "select": "count"
+  },
+  "EGEINF40F07C": {
+    "kind": "triple-square",
+    "width": 6,
+    "select": "count"
+  },
+  "EGEINF57DBBA": {
+    "kind": "two-pairs-max-single",
+    "width": 7,
+    "select": "count"
+  },
+  "EGEINFE7EB1F": {
+    "kind": "quad-one-pair",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINF163FA9": {
+    "kind": "quad-one-pair",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINF16B528": {
+    "kind": "two-pairs-mean-lt-max-single",
+    "width": 7,
+    "select": "first-index"
+  },
+  "EGEINF8FBE26": {
+    "kind": "two-pairs-single-mean-le-all",
+    "width": 7,
+    "select": "count"
+  },
+  "EGEINFC2ECD2": {
+    "kind": "quad-no-equal-pairs",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINF651C96": {
+    "kind": "quad-no-equal-pairs",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINFB7E261": {
+    "kind": "quad-no-equal-pairs",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINF475BA8": {
+    "kind": "triple-not-extreme",
+    "width": 7,
+    "select": "count"
+  },
+  "EGEINF52D2E1": {
+    "kind": "quad-distinct",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINF97883C": {
+    "kind": "quad-distinct",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINFB32E8E": {
+    "kind": "quad-distinct",
+    "width": 4,
+    "select": "count"
+  },
+  "EGEINF958FE2": {
+    "kind": "max-square",
+    "width": 3,
+    "select": "count"
+  },
+  "EGEINFC9738B": {
+    "kind": "max-square",
+    "width": 3,
+    "select": "count"
+  },
+  "EGEINFAAAD85": {
+    "kind": "triple-single-mean-ge",
+    "width": 7,
+    "select": "count"
+  },
+  "EGEINFF7E942": {
+    "kind": "delta",
+    "month": 5,
+    "hours": [
+      11,
+      12
+    ],
+    "direction": -1
+  },
+  "EGEINF6602F5": {
+    "kind": "day",
+    "month": 5,
+    "hours": [
+      11,
+      12
+    ],
+    "direction": 1
+  },
+  "EGEINF5FFD03": {
+    "kind": "day",
+    "month": 6,
+    "hours": [
+      9,
+      10
+    ],
+    "direction": -1
+  },
+  "EGEINF63A072": {
+    "kind": "delta",
+    "month": 6,
+    "hours": [
+      9,
+      10
+    ],
+    "direction": -1
+  },
+  "EGEINF749EB4": {
+    "kind": "day",
+    "month": 5,
+    "hours": [
+      11,
+      12
+    ],
+    "direction": -1
+  },
+  "EGEINF34A02C": {
+    "kind": "delta",
+    "month": 5,
+    "hours": [
+      11,
+      12
+    ],
+    "direction": 1
+  },
+  "EGEINF310856": {
+    "kind": "delta",
+    "month": 6,
+    "hours": [
+      9,
+      10
+    ],
+    "direction": 1
+  },
+  "EGEINF8A869F": {
+    "kind": "day",
+    "month": 6,
+    "hours": [
+      9,
+      10
+    ],
+    "direction": 1
+  },
+  "EGEINF4C4814": {
+    "kind": "daily-mean",
+    "month": 6,
+    "hours": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "minimum": true
+  },
+  "EGEINF8CD22D": {
+    "kind": "daily-mean",
+    "month": 6,
+    "hours": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "minimum": false
+  },
+  "EGEINF98BEC9": {
+    "kind": "maximum-minus-mean",
+    "months": [
+      4,
+      5
+    ],
+    "hours": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "EGEINFC466F7": {
+    "kind": "monthly-mean-difference",
+    "months": [
+      8,
+      11
+    ],
+    "column": 3
+  },
+  "EGEINF264608": {
+    "kind": "monthly-mean-difference",
+    "months": [
+      6,
+      3
+    ],
+    "column": 3
+  },
+  "EGEINF0AE210": {
+    "kind": "monthly-mean-difference",
+    "months": [
+      5,
+      2
+    ],
+    "column": 3
+  },
+  "EGEINF1013DD": {
+    "kind": "monthly-mean-difference",
+    "months": [
+      4,
+      1
+    ],
+    "column": 3
+  },
+  "EGEINF17A761": {
+    "kind": "monthly-mean-difference",
+    "months": [
+      7,
+      10
+    ],
+    "column": 3
+  },
+  "EGEINF34BD36": {
+    "kind": "monthly-extremes",
+    "months": [
+      9,
+      12
+    ],
+    "columns": [
+      1,
+      2
+    ]
+  }
+}

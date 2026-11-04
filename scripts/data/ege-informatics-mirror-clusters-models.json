@@ -1,0 +1,44 @@
+{
+  "EGEINFB5FB72": {
+    "kind": "center-sum-minmax",
+    "decimals": 7,
+    "clusters": [
+      2,
+      3
+    ],
+    "anomalies": [
+      0,
+      3
+    ],
+    "width": [
+      4.5,
+      5
+    ],
+    "height": 6,
+    "limits": [
+      1000,
+      10000
+    ]
+  },
+  "EGEINF76B8BD": {
+    "kind": "center-sum-minmax",
+    "decimals": 7,
+    "clusters": [
+      2,
+      3
+    ],
+    "anomalies": [
+      0,
+      3
+    ],
+    "width": [
+      4.5,
+      5
+    ],
+    "height": 6,
+    "limits": [
+      1000,
+      10000
+    ]
+  }
+}

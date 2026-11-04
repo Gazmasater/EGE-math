@@ -1,0 +1,193 @@
+{
+  "EGEINF45744A": {
+    "kind": "remainder-sum",
+    "window": 2,
+    "divisor": 15,
+    "extreme": "min",
+    "signed": false
+  },
+  "EGEINF7478FE": {
+    "kind": "remainder-sum",
+    "window": 2,
+    "divisor": 21,
+    "extreme": "max",
+    "signed": false
+  },
+  "EGEINF9C8813": {
+    "kind": "remainder-sum",
+    "window": 2,
+    "divisor": 18,
+    "extreme": "max",
+    "signed": false
+  },
+  "EGEINF38FB28": {
+    "kind": "remainder-sum",
+    "window": 2,
+    "divisor": 11,
+    "extreme": "min",
+    "signed": false
+  },
+  "EGEINF064AEA": {
+    "kind": "remainder-sum",
+    "window": 2,
+    "divisor": 14,
+    "extreme": "min",
+    "signed": false
+  },
+  "EGEINFB8744D": {
+    "kind": "remainder-any",
+    "window": 2,
+    "divisor": 111,
+    "extreme": "min",
+    "signed": false
+  },
+  "EGEINF133D72": {
+    "kind": "remainder-any",
+    "window": 2,
+    "divisor": 55,
+    "extreme": "min",
+    "signed": false
+  },
+  "EGEINF53A3A5": {
+    "kind": "remainder-any",
+    "window": 2,
+    "divisor": 11,
+    "extreme": "max",
+    "signed": false
+  },
+  "EGEINF8CC6CF": {
+    "kind": "remainder-any",
+    "window": 2,
+    "divisor": 20,
+    "extreme": "max",
+    "signed": false
+  },
+  "EGEINF212692": {
+    "kind": "remainder-any",
+    "window": 2,
+    "divisor": 117,
+    "extreme": "max",
+    "signed": false
+  },
+  "EGEINFCF2AF3": {
+    "kind": "digit-triples",
+    "window": 3,
+    "digits": 3,
+    "count": 2,
+    "ending": 21,
+    "comparison": "<=",
+    "signed": true,
+    "power": 1,
+    "extreme": "max"
+  },
+  "EGEINFF61272": {
+    "kind": "digit-triples",
+    "window": 3,
+    "digits": 2,
+    "count": "any",
+    "ending": 19,
+    "comparison": "<",
+    "signed": true,
+    "power": 1,
+    "extreme": "max"
+  },
+  "EGEINFBCC52D": {
+    "kind": "digit-triples",
+    "window": 3,
+    "digits": 2,
+    "count": 1,
+    "ending": 13,
+    "comparison": ">=",
+    "signed": false,
+    "power": 1,
+    "extreme": "max"
+  },
+  "EGEINF0C76DB": {
+    "kind": "digit-triples",
+    "window": 3,
+    "digits": 4,
+    "count": 1,
+    "ending": 15,
+    "comparison": ">=",
+    "signed": false,
+    "power": 1,
+    "extreme": "max"
+  },
+  "EGEINF1F0F94": {
+    "kind": "digit-triples",
+    "window": 3,
+    "digits": 2,
+    "count": 2,
+    "ending": 33,
+    "comparison": "<",
+    "signed": true,
+    "power": 2,
+    "extreme": "max"
+  },
+  "EGEINF446B6B": {
+    "kind": "digit-triples",
+    "window": 3,
+    "digits": 3,
+    "count": 1,
+    "ending": 17,
+    "comparison": "<",
+    "signed": true,
+    "power": 1,
+    "extreme": "max"
+  },
+  "EGEINFF3296A": {
+    "kind": "digit-triples",
+    "window": 3,
+    "digits": 3,
+    "count": "any",
+    "ending": 17,
+    "comparison": ">",
+    "signed": true,
+    "power": 1,
+    "extreme": "max"
+  },
+  "EGEINFCE3C83": {
+    "kind": "digit-triples",
+    "window": 3,
+    "digits": 3,
+    "count": 2,
+    "ending": 13,
+    "comparison": ">=",
+    "signed": false,
+    "power": 1,
+    "extreme": "max"
+  },
+  "EGEINF655816": {
+    "kind": "negative-pair",
+    "window": 2,
+    "divisor": 32,
+    "extreme": "max",
+    "signed": true
+  },
+  "EGEINFE1539C": {
+    "kind": "digit-pair",
+    "window": 2,
+    "digits": 3,
+    "count": "any",
+    "ending": 5,
+    "extreme": "max",
+    "signed": false
+  },
+  "EGEINF42698B": {
+    "kind": "digit-pair",
+    "window": 2,
+    "digits": 3,
+    "count": 1,
+    "ending": 5,
+    "extreme": "min",
+    "signed": false
+  },
+  "EGEINFE89C8A": {
+    "kind": "positive-multiple-bound",
+    "window": 2,
+    "divisor": 110,
+    "extreme": "max",
+    "absoluteAnswer": true,
+    "signed": true
+  }
+}

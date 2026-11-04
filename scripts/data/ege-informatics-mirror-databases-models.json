@@ -1,0 +1,459 @@
+{
+  "EGEINFF73FFB": {
+    "start": "2022-06-01",
+    "end": "2022-06-15",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Промышленный"
+    },
+    "goods": {
+      "names": [
+        "Суфле в шоколаде"
+      ]
+    },
+    "measure": "kilograms",
+    "operation": "Поступление"
+  },
+  "EGEINF110205": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Октябрьский"
+    },
+    "goods": {
+      "prefix": "Рис "
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINFAAF80B": {
+    "start": "2024-10-07",
+    "end": "2024-10-14",
+    "truncate": false,
+    "store": {
+      "field": "addressPrefix",
+      "value": "Широкая улица,"
+    },
+    "goods": {
+      "prefix": "Ряженка "
+    },
+    "operation": "Продажа",
+    "measure": "revenue"
+  },
+  "EGEINF407572": {
+    "start": "2023-08-09",
+    "end": "2023-08-20",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Октябрьский"
+    },
+    "goods": {
+      "prefix": "Карамель "
+    },
+    "operation": "Продажа",
+    "measure": "revenue"
+  },
+  "EGEINF9B0179": {
+    "start": "2023-08-09",
+    "end": "2023-08-20",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Прибрежный"
+    },
+    "goods": {
+      "prefix": "Карамель "
+    },
+    "operation": "Продажа",
+    "measure": "revenue"
+  },
+  "EGEINF576CB8": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Первомайский"
+    },
+    "goods": {
+      "names": [
+        "Крахмал картофельный"
+      ]
+    },
+    "measure": "kilograms",
+    "operation": "Поступление"
+  },
+  "EGEINFF17829": {
+    "start": "2022-06-01",
+    "end": "2022-06-15",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Заречный"
+    },
+    "goods": {
+      "names": [
+        "Клюква в сахаре"
+      ]
+    },
+    "operation": "Продажа",
+    "measure": "revenue"
+  },
+  "EGEINF929DD5": {
+    "start": "2023-09-07",
+    "end": "2023-09-22",
+    "truncate": true,
+    "store": {
+      "field": "addressPrefix",
+      "value": "Тургеневская,"
+    },
+    "goods": {
+      "prefix": "Шампунь для "
+    },
+    "measure": "litres",
+    "operation": "Продажа"
+  },
+  "EGEINF37FA59": {
+    "start": "2022-06-01",
+    "end": "2022-06-15",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Промышленный"
+    },
+    "goods": {
+      "names": [
+        "Антисептик для рук гель"
+      ]
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINF4CD2A9": {
+    "start": "2022-06-01",
+    "end": "2022-06-15",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Заречный"
+    },
+    "goods": {
+      "names": [
+        "Пряник тульский с начинкой"
+      ]
+    },
+    "operation": "both",
+    "measure": "netUnits"
+  },
+  "EGEINFB4A5AC": {
+    "start": "2022-06-01",
+    "end": "2022-06-15",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Промышленный"
+    },
+    "goods": {
+      "names": [
+        "Клюква в сахаре"
+      ]
+    },
+    "operation": "Продажа",
+    "measure": "revenue"
+  },
+  "EGEINFAF13C5": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Первомайский"
+    },
+    "goods": {
+      "names": [
+        "Сода пищевая"
+      ]
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINFB6D495": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Первомайский"
+    },
+    "goods": {
+      "prefix": "Макароны ",
+      "manufacturer": "Макаронная фабрика"
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINF2A2297": {
+    "start": "2022-06-01",
+    "end": "2022-06-15",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Заречный"
+    },
+    "goods": {
+      "names": [
+        "Салфетки косметические в коробке"
+      ]
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINF98DD9A": {
+    "start": "2023-08-10",
+    "end": "2023-08-20",
+    "truncate": true,
+    "store": {
+      "field": "addressPrefix",
+      "value": "ул. Металлургов"
+    },
+    "goods": {
+      "prefix": "Карамель "
+    },
+    "measure": "kilograms",
+    "operation": "Продажа"
+  },
+  "EGEINF0389EB": {
+    "start": "2022-06-01",
+    "end": "2022-06-15",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Центральный"
+    },
+    "goods": {
+      "names": [
+        "Салфетки косметические в коробке"
+      ]
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINF56FDE6": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Заречный"
+    },
+    "goods": {
+      "names": [
+        "Крахмал картофельный"
+      ]
+    },
+    "measure": "kilograms",
+    "operation": "Поступление"
+  },
+  "EGEINF3E5DE4": {
+    "start": "2023-09-07",
+    "end": "2023-09-22",
+    "truncate": true,
+    "store": {
+      "field": "addressPrefix",
+      "value": "просп. Мира,"
+    },
+    "goods": {
+      "prefix": "Шампунь для "
+    },
+    "measure": "litres",
+    "operation": "Продажа"
+  },
+  "EGEINF3864EE": {
+    "start": "2023-08-02",
+    "end": "2023-08-10",
+    "truncate": false,
+    "store": {
+      "field": "addressPrefix",
+      "value": "Луговая,"
+    },
+    "goods": {
+      "prefix": "Зефир "
+    },
+    "measure": "kilograms",
+    "operation": "Поступление"
+  },
+  "EGEINF8600ED": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Октябрьский"
+    },
+    "goods": {
+      "prefix": "Макароны ",
+      "manufacturer": "Макаронная фабрика"
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINF4CD46A": {
+    "start": "2022-06-01",
+    "end": "2022-06-15",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Промышленный"
+    },
+    "goods": {
+      "names": [
+        "Пряник тульский с начинкой"
+      ]
+    },
+    "operation": "both",
+    "measure": "netUnits"
+  },
+  "EGEINFF5FE67": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Октябрьский"
+    },
+    "goods": {
+      "names": [
+        "Паштет фермерский с грибами",
+        "Паштет из куриной печени"
+      ]
+    },
+    "measure": "kilograms",
+    "operation": "Поступление"
+  },
+  "EGEINF09166C": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Первомайский"
+    },
+    "goods": {
+      "names": [
+        "Яйцо диетическое"
+      ]
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINFD4976F": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Заречный"
+    },
+    "goods": {
+      "prefix": "Рис "
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINF923765": {
+    "start": "2021-08-02",
+    "end": "2021-08-14",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Центральный"
+    },
+    "goods": {
+      "names": [
+        "Суфле в шоколаде"
+      ]
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINF02143E": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Октябрьский"
+    },
+    "goods": {
+      "names": [
+        "Яйцо диетическое"
+      ]
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINFB5393D": {
+    "start": "2021-06-01",
+    "end": "2021-06-08",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Первомайский"
+    },
+    "goods": {
+      "prefix": "Рис "
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINF1CA281": {
+    "start": "2021-08-02",
+    "end": "2021-08-14",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Заречный"
+    },
+    "goods": {
+      "names": [
+        "Суфле в шоколаде"
+      ]
+    },
+    "operation": "both",
+    "measure": "netPackages"
+  },
+  "EGEINFD4A383": {
+    "start": "2024-10-05",
+    "end": "2024-10-14",
+    "truncate": false,
+    "store": {
+      "field": "district",
+      "value": "Нагорный"
+    },
+    "goods": {
+      "names": [
+        "Варенец термостатный"
+      ]
+    },
+    "operation": "Продажа",
+    "measure": "revenue"
+  },
+  "EGEINF583387": {
+    "start": "2023-08-02",
+    "end": "2023-08-10",
+    "truncate": false,
+    "store": {
+      "field": "addressPrefix",
+      "value": "просп. Революции,"
+    },
+    "goods": {
+      "prefix": "Зефир "
+    },
+    "measure": "kilograms",
+    "operation": "Поступление"
+  }
+}

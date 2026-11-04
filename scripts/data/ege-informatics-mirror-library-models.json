@@ -1,0 +1,331 @@
+{
+  "EGEINFD5BE4B": {
+    "terms": [
+      "ранен"
+    ],
+    "mode": "whole"
+  },
+  "EGEINFE3554C": {
+    "terms": [
+      "de"
+    ],
+    "mode": "all",
+    "part": 2,
+    "chapters": [
+      "IX"
+    ]
+  },
+  "EGEINFEBA2F3": {
+    "terms": [
+      "круг",
+      "Круг"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINFBF2E0E": {
+    "terms": [
+      "час",
+      "Час"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINFC8A009": {
+    "terms": [
+      "волн"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF59D97F": {
+    "terms": [
+      "час",
+      "часа"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF8B2678": {
+    "terms": [
+      "тон",
+      "Тон"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINF06D6B0": {
+    "terms": [
+      "чай",
+      "Чай"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINF093BB8": {
+    "terms": [
+      "во",
+      "Во"
+    ],
+    "mode": "embedded",
+    "part": 3,
+    "chapters": [
+      "IV",
+      "VI"
+    ]
+  },
+  "EGEINFF8F51A": {
+    "terms": [
+      "изредка"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF0A7C1C": {
+    "terms": [
+      "то",
+      "То"
+    ],
+    "mode": "embedded",
+    "part": 1,
+    "chapters": [
+      "XIII",
+      "XV"
+    ]
+  },
+  "EGEINF154C1F": {
+    "terms": [
+      "дом",
+      "Дом"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINF1DCD1C": {
+    "terms": [
+      "голос",
+      "Голос"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINFDE2926": {
+    "terms": [
+      "есть",
+      "Есть"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINFC3C2DE": {
+    "terms": [
+      "образ",
+      "Образ"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINF9362D2": {
+    "terms": [
+      "год",
+      "Год"
+    ],
+    "mode": "whole"
+  },
+  "EGEINFE3BDDD": {
+    "terms": [
+      "уже",
+      "Уже"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF9C6456": {
+    "terms": [
+      "дом"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF350E54": {
+    "terms": [
+      "раз",
+      "Раз"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINF2E66AE": {
+    "terms": [
+      "след",
+      "След"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINF93DEAB": {
+    "terms": [
+      "батюшка",
+      "Батюшка"
+    ],
+    "mode": "whole"
+  },
+  "EGEINFF1D0CC": {
+    "terms": [
+      "Мы"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF2011C7": {
+    "terms": [
+      "удар",
+      "Удар"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINFE7EEC9": {
+    "terms": [
+      "часто"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF86A2CD": {
+    "terms": [
+      "дух",
+      "Дух"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINF8F19C3": {
+    "terms": [
+      "его",
+      "Его"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINF239591": {
+    "terms": [
+      "Человек"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF0040E4": {
+    "terms": [
+      "Офицер"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF783CED": {
+    "terms": [
+      "хлеб",
+      "Хлеб"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF504BEE": {
+    "terms": [
+      "мой",
+      "Мой"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINFE460E4": {
+    "terms": [
+      "здесь"
+    ],
+    "mode": "whole"
+  },
+  "EGEINFE11AE0": {
+    "terms": [
+      "дух",
+      "Дух"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINFE86AE6": {
+    "terms": [
+      "шаг",
+      "Шаг"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINF35ADEF": {
+    "terms": [
+      "свет",
+      "Свет"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINF8E41ED": {
+    "terms": [
+      "род",
+      "Род"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINF1C0762": {
+    "terms": [
+      "труд",
+      "Труд"
+    ],
+    "mode": "embedded"
+  },
+  "EGEINF26006B": {
+    "terms": [
+      "солдат",
+      "Солдат"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF50F763": {
+    "terms": [
+      "да"
+    ],
+    "mode": "all",
+    "part": 2,
+    "chapters": [
+      "III"
+    ]
+  },
+  "EGEINF5CEB68": {
+    "terms": [
+      "солдаты"
+    ],
+    "mode": "whole"
+  },
+  "EGEINFADF16F": {
+    "terms": [
+      "он",
+      "Он"
+    ],
+    "mode": "embedded",
+    "part": 1,
+    "chapters": [
+      "VIII",
+      "IX"
+    ]
+  },
+  "EGEINF0CF934": {
+    "terms": [
+      "случай"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF672C3F": {
+    "terms": [
+      "ему"
+    ],
+    "mode": "whole"
+  },
+  "EGEINF659E38": {
+    "terms": [
+      "не",
+      "Не"
+    ],
+    "mode": "whole",
+    "part": 1,
+    "chapters": [
+      "I",
+      "II"
+    ]
+  },
+  "EGEINF0D8887": {
+    "terms": [
+      "игра",
+      "Игра"
+    ],
+    "mode": "embedded-words"
+  },
+  "EGEINF578B80": {
+    "terms": [
+      "был",
+      "Был"
+    ],
+    "mode": "whole"
+  }
+}
