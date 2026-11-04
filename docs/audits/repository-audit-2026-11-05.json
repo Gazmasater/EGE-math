@@ -16,7 +16,8 @@
     "Allow Python division inside complete program blocks while preserving mathematical fraction validation",
     "Use the selected read-only SQLite consistently across solution and equation audits and HTTP navigation audits",
     "Exclude only the generated table-scroll hint from hidden-condition browser failures",
-    "Provide npm start/test and a Linux/Windows GitHub Actions workflow"
+    "Provide npm start/test and a Linux/Windows GitHub Actions workflow",
+    "Preserve all FIPI snapshots and asset bytes against Windows core.autocrlf conversion"
   ],
   "validation": {
     "baselineTests": {"passed": 102, "failed": 0},
