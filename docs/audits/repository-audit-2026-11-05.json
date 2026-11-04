@@ -43,8 +43,8 @@
   },
   "limitations": [
     "No production deployment or production SQLite audit was performed",
-    "No successful live FIPI re-import or external attachment availability check was performed",
-    "The separately saved f69106b snapshot was not merged; its documented 32 unresolved informatics tasks still require primary evidence",
+    "No successful live FIPI re-import was performed during the technical audit. A later read-only source/attachment check is recorded in ege-informatics-source-recheck-2026-11-05.json",
+    "The separately saved f69106b snapshot was not merged. The later source check recovered six formerly unavailable archives; six solutions await calculation/review and 26 retain source/interpretation issues",
     "A complete independent mathematical review of all published solutions is outside this technical validation"
   ]
 }
