@@ -8,7 +8,8 @@ const { createHmac, timingSafeEqual, randomBytes, scryptSync } = require('node:c
 const { DatabaseSync } = require('node:sqlite');
 const {renderStudyRequest, validateStudyLead, openStudyLeads, renderStudyLeadsAdmin, createStudyLeadDelivery} = require('./lib/study-leads');
 const { conditionText } = require('./lib/seo-text');
-const { renderSolutionBlocks } = require('./lib/solution-blocks');
+const { renderSolutionBlocks, hasUnformattedDivision } = require('./lib/solution-blocks');
+const { HttpError, safeRedirectPath, readForm, createRateLimiter } = require('./lib/http-input');
 const { renderSolutionFileLink, serveSolutionFile } = require('./lib/solution-files');
 const { expandMathmlFences } = require('./lib/mathml-fences');
 const {restorePhysicsFigures} = require('./lib/physics-condition-figures');
@@ -1053,11 +1054,11 @@ function isAdmin(req) {
 }
 
 function adminSessionCookie(password) {
-  return `${ADMIN_SESSION_COOKIE}=${createAdminSession(password)}; Max-Age=${ADMIN_SESSION_TTL_SECONDS}; Path=/admin; HttpOnly; SameSite=Strict`;
+  return `${ADMIN_SESSION_COOKIE}=${createAdminSession(password)}; Max-Age=${ADMIN_SESSION_TTL_SECONDS}; Path=/admin; HttpOnly; Secure; SameSite=Strict`;
 }
 
 function expiredAdminSessionCookie() {
-  return `${ADMIN_SESSION_COOKIE}=; Max-Age=0; Path=/admin; HttpOnly; SameSite=Strict`;
+  return `${ADMIN_SESSION_COOKIE}=; Max-Age=0; Path=/admin; HttpOnly; Secure; SameSite=Strict`;
 }
 
 function normalizeUserText(value) {
@@ -1124,7 +1125,7 @@ function getCurrentUser(req) {
   const cookie = getCookie(req, USER_SESSION_COOKIE);
   if (!cookie) return null;
   const [rawId, rawExpiresAt, signature] = cookie.split('.');
-  if (!/^\d+$/.test(rawId) || !/^\d+$/.test(rawExpiresAt) || !signature || Number(rawExpiresAt) < Math.floor(Date.now() / 1000)) return null;
+  if (!/^\d+$/.test(rawId) || !Number.isSafeInteger(Number(rawId)) || !/^\d+$/.test(rawExpiresAt) || !Number.isSafeInteger(Number(rawExpiresAt)) || !signature || Number(rawExpiresAt) < Math.floor(Date.now() / 1000)) return null;
   const user = getUserById.get(Number(rawId));
   if (!user) return null;
   const payload = `${user.id}.${rawExpiresAt}`;
@@ -1148,32 +1149,18 @@ function serializeComment(comment) {
 }
 
 function safeNextPath(value, fallback = '/') {
-  const next = String(value || '').trim();
-  return next.startsWith('/') && !next.startsWith('//') && !next.includes('\\') ? next : fallback;
+  return safeRedirectPath(value, fallback);
 }
 
 function isTrustedOrigin(req) {
+  if (req.headers['sec-fetch-site'] === 'cross-site') return false;
   const origin = String(req.headers.origin || '');
   if (!origin) return true;
   const host = String(req.headers.host || '').replace(/[^A-Za-z0-9.:-]/g, '');
   return origin === SITE_ORIGIN || origin === `http://${host}` || origin === `https://${host}`;
 }
 
-const rateLimitWindows = new Map();
-function isRateLimited(req, action, limit, windowMs) {
-  const forwarded = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim();
-  const address = forwarded || req.socket.remoteAddress || 'unknown';
-  const key = `${action}:${address}`;
-  const now = Date.now();
-  const recent = (rateLimitWindows.get(key) || []).filter(time => time > now - windowMs);
-  if (recent.length >= limit) {
-    rateLimitWindows.set(key, recent);
-    return true;
-  }
-  recent.push(now);
-  rateLimitWindows.set(key, recent);
-  return false;
-}
+const isRateLimited = createRateLimiter();
 
 function addCommentForUser(taskId, user, rawBody) {
   const body = normalizeUserText(rawBody);
@@ -1193,24 +1180,6 @@ function addSiteFeedback(taskId, rawKind, rawBody) {
   if (body.length > MAX_FEEDBACK_LENGTH) return { error: `Сообщение не должно превышать ${MAX_FEEDBACK_LENGTH} символов.` };
   createFeedback.run(taskId, kind, body, new Date().toISOString());
   return {};
-}
-
-function readForm(req, maxBytes = 512 * 1024) {
-  return new Promise((resolve, reject) => {
-    const chunks = [];
-    let size = 0;
-    req.on('data', chunk => {
-      size += chunk.length;
-      if (size > maxBytes) {
-        reject(new Error('Размер формы не должен превышать 512 КБ.'));
-        req.destroy();
-        return;
-      }
-      chunks.push(chunk);
-    });
-    req.on('end', () => resolve(new URLSearchParams(Buffer.concat(chunks).toString('utf8'))));
-    req.on('error', reject);
-  });
 }
 
 async function verifyTurnstile(form) {
@@ -1262,7 +1231,7 @@ function renderTurnstileScript() {
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=egeTurnstileLoaded&render=explicit" async defer></script>`;
 }
 
-function renderAdminShell(title, content, privateData = false) {
+function renderAdminShell(title, content, privateData = true) {
   return `<!doctype html>
 <html lang="ru">
 <head>
@@ -1274,10 +1243,10 @@ function renderAdminShell(title, content, privateData = false) {
     * { box-sizing: border-box; }
     body { margin: 0; background: #f4f6f8; color: #243447; font: 16px/1.5 Arial, sans-serif; }
     main { max-width: 920px; margin: 0 auto; padding: 28px 20px 48px; }
-    .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+    .top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
     .top a { color: #183153; font-weight: 700; text-decoration: none; }
     .top form { margin: 0; }
-    button, input, textarea { font: inherit; }
+    button, input, textarea, select { font: inherit; }
     button { border: 0; border-radius: 6px; padding: 10px 14px; background: #183153; color: #fff; cursor: pointer; }
     button:hover { background: #254a79; }
     .card { margin-bottom: 18px; padding: 24px; border: 1px solid #d8e1eb; border-radius: 8px; background: #fff; box-shadow: 0 1px 7px #00000012; }
@@ -1285,7 +1254,8 @@ function renderAdminShell(title, content, privateData = false) {
     h1 { font-size: 28px; }
     h2 { font-size: 20px; }
     label { display: block; margin: 14px 0 6px; font-weight: 700; }
-    input[type="text"], input[type="password"], textarea { width: 100%; padding: 10px 12px; border: 1px solid #afbdcd; border-radius: 6px; color: #243447; }
+    input[type="text"], input[type="password"], textarea, select { width: 100%; padding: 10px 12px; border: 1px solid #afbdcd; border-radius: 6px; color: #243447; }
+    select { margin-bottom: 12px; }
     textarea { min-height: 240px; resize: vertical; line-height: 1.45; }
     .checkbox { display: flex; align-items: center; gap: 8px; font-weight: 400; }
     .checkbox input { width: auto; }
@@ -1329,7 +1299,6 @@ function renderAdminLogin(error = '') {
   return `<!doctype html>
 <html lang="ru">
 <head>
-  ${YANDEX_METRIKA_HEAD}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Вход администратора</title>
@@ -1345,7 +1314,6 @@ function renderAdminLogin(error = '') {
   </style>
 </head>
 <body>
-  ${YANDEX_METRIKA_NOSCRIPT}
   <form method="post" action="/admin/login">
     <h1>Вход для администратора</h1>
     ${message}
@@ -1380,6 +1348,14 @@ function renderAdminDashboard() {
         <label for="task">Номер задания</label>
         <input id="task" name="task" type="text" pattern="[A-Za-z0-9]{4,32}" placeholder="Например, 30ED04" required>
         <button type="submit">Открыть редактор</button>
+      </form>
+    </section>
+    <section class="card">
+      <h2>Обновление банка ФИПИ</h2>
+      <form method="post" action="/admin/update">
+        <label for="refresh-section">Раздел</label>
+        <select id="refresh-section" name="section"><option value="all">Все разделы</option>${PUBLIC_SECTIONS.map(section => `<option value="${section}">${escapeHtml(sectionInfo(section).name)}</option>`).join('')}</select>
+        <button type="submit">Обновить из ФИПИ</button>
       </form>
     </section>
     <section class="card">
@@ -3006,6 +2982,17 @@ async function cacheFipiAssets() {
   }
 }
 
+let refreshInProgress = false;
+
+function clearCatalogueCaches() {
+  cache.clear();
+  sourceCache.clear();
+  sourceEntriesCache.clear();
+  mathStatsCache.clear();
+  taskDirectoryPromise = null;
+  taskSearchIndexPromise = null;
+}
+
 async function refreshAll() {
   await refreshSection('mathematics');
   await refreshSection('stereometry');
@@ -3020,12 +3007,7 @@ async function refreshAll() {
   for (const section of Object.keys(OGE_BANKS)) await refreshSection(section);
   await cacheFipiAssets();
   await saveAddedHistory();
-  cache.clear();
-  sourceCache.clear();
-  sourceEntriesCache.clear();
-  mathStatsCache.clear();
-  taskDirectoryPromise = null;
-  taskSearchIndexPromise = null;
+  clearCatalogueCaches();
 }
 
 function renderAboutPage() {
@@ -3121,8 +3103,16 @@ function renderAboutPage() {
 
 http.createServer(async (req, res) => {
   try {
-    const requestUrl = new URL(req.url, `http://${req.headers.host}`);
+    let requestUrl;
+    try { requestUrl = new URL(req.url, `http://${req.headers.host}`); }
+    catch { throw new HttpError(400, 'Некорректный адрес запроса.'); }
     const pathname = requestUrl.pathname;
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    if (pathname.startsWith('/admin')) {
+      res.setHeader('cache-control', 'no-store');
+      res.setHeader('X-Frame-Options', 'DENY');
+      if (req.method === 'POST' && !isTrustedOrigin(req)) throw new HttpError(403, 'Недопустимый источник запроса.');
+    }
     if (serveAsset(req, res, pathname)) return;
     if (await serveSolutionFile(req, res, pathname, taskId => Boolean(getPublishedSolution.get(taskId)))) return;
     if (pathname === '/favicon.svg' || pathname === '/favicon.ico') {
@@ -3177,7 +3167,11 @@ http.createServer(async (req, res) => {
       return res.end(verificationHtml);
     }
     if (pathname.startsWith('/fipi/')) {
-      const relative = decodeURIComponent(pathname.slice('/fipi/'.length)).replaceAll('/', path.sep);
+      if (!['GET', 'HEAD'].includes(req.method)) { res.writeHead(405, {allow: 'GET, HEAD'}); return res.end(); }
+      let relative;
+      try { relative = decodeURIComponent(pathname.slice('/fipi/'.length)).replaceAll('/', path.sep); }
+      catch { throw new HttpError(400, 'Некорректный адрес ресурса.'); }
+      if (relative.includes('\0')) throw new HttpError(400, 'Некорректный адрес ресурса.');
       const assetPath = path.resolve(ASSET_ROOT, relative);
       if (!assetPath.startsWith(path.resolve(ASSET_ROOT) + path.sep)) {
         res.writeHead(403);
@@ -3526,6 +3520,10 @@ http.createServer(async (req, res) => {
         return res.end(renderAdminLogin());
       }
       if (req.method === 'POST') {
+        if (isRateLimited(req, 'admin-login', 10, 10 * 60 * 1000)) {
+          res.writeHead(429, { 'content-type': 'text/html; charset=utf-8' });
+          return res.end(renderAdminLogin('Слишком много попыток. Повторите позже.'));
+        }
         const form = await readForm(req);
         const turnstile = await verifyTurnstile(form);
         if (!turnstile.ok) {
@@ -3603,7 +3601,7 @@ http.createServer(async (req, res) => {
           res.writeHead(422, { 'content-type': 'text/plain; charset=utf-8' });
           return res.end('Введите текст решения.');
         }
-        if (answer.includes('/') || solution.includes('/')) {
+        if (answer.includes('/') || hasUnformattedDivision(solution)) {
           res.writeHead(422, { 'content-type': 'text/plain; charset=utf-8' });
           return res.end('Не используйте / для деления. Запишите дробь как ⟦числитель¦знаменатель⟧ — на странице она будет вертикальной.');
         }
@@ -3616,6 +3614,7 @@ http.createServer(async (req, res) => {
       return res.end();
     }
     if (pathname === '/about') {
+      if (req.method !== 'GET') { res.writeHead(405, {allow: 'GET'}); return res.end(); }
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(renderAboutPage());
     }
@@ -3667,17 +3666,28 @@ http.createServer(async (req, res) => {
     const section = PUBLIC_SECTIONS.includes(requestedSection)
       ? requestedSection
       : (routeSection || 'mathematics');
-    if (pathname === '/update' && req.method === 'POST') {
-      if (Object.hasOwn(OGE_BANKS, section)) {
-        await refreshSection(section);
-        await saveAddedHistory();
-        cache.clear(); sourceCache.clear(); taskDirectoryPromise = null; taskSearchIndexPromise = null;
-      } else await refreshAll();
-      res.writeHead(303, { location: `/added?section=${section}` });
-      return res.end();
-    }
-    if (pathname === '/update') {
-      res.writeHead(405, { allow: 'POST' });
+    if (pathname === '/update' || pathname === '/admin/update') {
+      if (req.method !== 'POST') { res.writeHead(405, {allow: 'POST'}); return res.end(); }
+      if (!isAdmin(req)) throw new HttpError(403, 'Для обновления банка нужно войти в административную панель.');
+      if (!isTrustedOrigin(req)) throw new HttpError(403, 'Недопустимый источник запроса.');
+      const form = await readForm(req, 8 * 1024);
+      const refreshSectionName = form.get('section') || requestUrl.searchParams.get('section') || 'all';
+      if (refreshSectionName !== 'all' && !PUBLIC_SECTIONS.includes(refreshSectionName)) throw new HttpError(400, 'Неизвестный раздел ФИПИ.');
+      if (refreshInProgress) throw new HttpError(409, 'Обновление банка уже выполняется.');
+      refreshInProgress = true;
+      try {
+        if (refreshSectionName === 'all') await refreshAll();
+        else {
+          await refreshSection(refreshSectionName);
+          if (!Object.hasOwn(OGE_BANKS, refreshSectionName)) await cacheFipiAssets();
+          await saveAddedHistory();
+        }
+      } finally {
+        // A later section can fail after earlier files were already replaced.
+        clearCatalogueCaches();
+        refreshInProgress = false;
+      }
+      res.writeHead(303, { location: `/added?section=${refreshSectionName === 'all' ? 'mathematics' : refreshSectionName}`, 'cache-control': 'no-store' });
       return res.end();
     }
     const publicPaths = new Set(['/added', '/physics/part-2', ...PUBLIC_SECTIONS.map(name => sectionInfo(name).path)]);
@@ -3685,6 +3695,7 @@ http.createServer(async (req, res) => {
       res.writeHead(404, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(renderNotFoundPage());
     }
+    if (req.method !== 'GET') { res.writeHead(405, {allow: 'GET'}); return res.end(); }
     const physicsTopic = section === 'physics' ? requestUrl.searchParams.get('topic') : '';
     const physicsPart = pathname === '/physics/part-2' ? 2 : 1;
     const mathTopic = section === 'mathematics' ? requestUrl.searchParams.get('topic') : '';
@@ -3717,10 +3728,13 @@ http.createServer(async (req, res) => {
     res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
     res.end(page);
   } catch (error) {
-    console.error('Request failed:', req.url?.split('?')[0], error);
+    if (!(error instanceof HttpError)) console.error('Request failed:', req.url?.split('?')[0], error);
+    if (res.destroyed) return;
     if (res.headersSent) return res.destroy();
-    res.writeHead(502, { 'content-type': 'text/html; charset=utf-8' });
-    res.end(`<h1>Не удалось загрузить задания ФИПИ</h1><pre>${String(error.message)}</pre>`);
+    const status = error instanceof HttpError ? error.status : 500;
+    const message = error instanceof HttpError ? error.message : 'Не удалось обработать запрос. Попробуйте позже.';
+    res.writeHead(status, { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store', ...(status === 413 ? {connection: 'close'} : {}) });
+    res.end(message);
   }
 }).listen(PORT, '127.0.0.1', async () => {
   console.log(`ЕГЭ и ОГЭ ФИПИ: http://localhost:${PORT}`);

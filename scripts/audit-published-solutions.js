@@ -3,9 +3,10 @@ const fs = require('node:fs');
 const { execFileSync } = require('node:child_process');
 const { DatabaseSync } = require('node:sqlite');
 const { collectEquationDefinitions } = require('./audit-equation-roots');
+const { hasUnformattedDivision } = require('../lib/solution-blocks');
+const { solutionDatabaseFile } = require('./lib/solution-database');
 
-const databaseArgument = process.argv.indexOf('--db');
-const databaseFile = databaseArgument < 0 ? path.join(__dirname, '..', 'storage', 'solutions.sqlite') : path.resolve(process.argv[databaseArgument + 1]);
+const databaseFile = solutionDatabaseFile();
 const db = new DatabaseSync(databaseFile, {readOnly: true});
 const parameterTaskIds = new Set(Array.from(
   new TextDecoder('windows-1251').decode(fs.readFileSync(path.join(__dirname, '..', 'parameters.raw.html')))
@@ -18,12 +19,13 @@ const rows = db.prepare(`
   WHERE published = 1
   ORDER BY task_id
 `).all();
+db.close();
 
 const errors = [];
 for (const row of rows) {
   if (!row.answer.trim()) errors.push(`${row.task_id}: не указан ответ.`);
   if (!row.solution.trim()) errors.push(`${row.task_id}: отсутствует текст решения.`);
-  if (row.answer.includes('/') || row.solution.includes('/')) {
+  if (row.answer.includes('/') || hasUnformattedDivision(row.solution)) {
     errors.push(`${row.task_id}: дробь записана через /. Используйте ⟦числитель¦знаменатель⟧.`);
   }
   if (/выражение после логарифма/i.test(row.solution)) {
@@ -110,7 +112,7 @@ for (const [taskId, requiredParts] of Object.entries(intervalProofChecks)) {
   }
 }
 
-const equationDefinitions = collectEquationDefinitions();
+const equationDefinitions = collectEquationDefinitions(new Map(rows.map(row => [row.task_id, row.answer])));
 const intervalEquationIds = new Set(equationDefinitions.map(definition => definition.taskId));
 const domainTaskIds = rows
   .filter(row => intervalEquationIds.has(row.task_id) && !parameterTaskIds.has(row.task_id) && /Область допустимых значений|ОДЗ/.test(row.solution))
@@ -193,4 +195,4 @@ if (errors.length) {
 }
 
 console.log(`Проверено опубликованных решений: ${rows.length}. Формат, SVG-схемы и контрольные формулировки корректны.`);
-execFileSync(process.execPath, [path.join(__dirname, 'audit-equation-roots.js')], { stdio: 'inherit' });
+execFileSync(process.execPath, [path.join(__dirname, 'audit-equation-roots.js'), '--db', databaseFile], { stdio: 'inherit' });

@@ -7,6 +7,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {spawn} = require('node:child_process');
 const {DatabaseSync} = require('node:sqlite');
+const {solutionDatabaseFile} = require('./lib/solution-database');
 const {readMathematicsCatalog} = require('./lib/mathematics-catalog');
 const {readPhysicsCatalog} = require('./lib/physics-catalog');
 const {topics, taskMatchesTopic} = require('../lib/physics-topics');
@@ -51,7 +52,7 @@ async function run() {
   const math = readMathematicsCatalog(root);
   const first = [...math.values()].filter(isFirstPartMathTask);
   const second = [...math.values()].filter(task => !isFirstPartMathTask(task));
-  const db = new DatabaseSync(path.join(root, 'storage/solutions.sqlite'), {readOnly: true});
+  const db = new DatabaseSync(solutionDatabaseFile(), {readOnly: true});
   const solutions = new Map(db.prepare('SELECT * FROM solutions WHERE published=1').all().map(row => [row.task_id, row]));
   db.close();
   const home = await catalog('/', []);

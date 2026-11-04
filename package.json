@@ -2,7 +2,11 @@
   "name": "ege-math",
   "private": true,
   "type": "commonjs",
+  "engines": { "node": ">=24.0.0" },
   "scripts": {
+    "start": "node server.js",
+    "test": "node --test scripts/*.test.js",
+    "test:http": "node --test scripts/http-input.test.js scripts/server-http.test.js",
     "audit:solutions": "node scripts/audit-published-solutions.js",
     "audit:physics": "npm run audit:physics:topics && node scripts/audit-statics.js && node scripts/audit-kinematics.js && node scripts/audit-dynamics.js && node scripts/audit-conservation.js && node scripts/audit-waves.js && node scripts/audit-thermal.js && node scripts/audit-electrodynamics.js && node scripts/audit-quantum.js && node scripts/audit-physics-completion.js",
     "audit:physics:topics": "node --test scripts/physics-topics.test.js && node scripts/audit-physics-topics.js",

@@ -1,0 +1,25 @@
+name: Checks
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm test
+      - run: node scripts/audit-mathematics-catalog.js
+      - run: node scripts/audit-physics-catalog.js
+      - run: node scripts/audit-oge-catalog.js oge
+      - run: node scripts/audit-oge-catalog.js oge-physics
+      - run: node scripts/audit-oge-catalog.js oge-informatics
+      - run: node scripts/audit-oge-catalog.js ege-informatics
