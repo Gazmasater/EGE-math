@@ -1,11 +1,11 @@
 {
-  "scope": "Текущие пометки по 32 ранее отложенным решениям: 13 опубликованы, 19 ожидают уточнения первоисточника.",
+  "scope": "Текущие пометки по 32 ранее отложенным решениям: 14 опубликованы, 18 ожидают уточнения первоисточника.",
   "basedOn": "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
   "sourceCheckedAt": "2026-11-04T22:10:57.632Z",
   "publicationBaseline": {
-    "published": 2456,
+    "published": 2457,
     "total": 2475,
-    "date": "2026-11-05T00:44:03.452476+00:00",
+    "date": "2026-11-05T01:45:14.652902+00:00",
     "liveDatabaseRecounted": true
   },
   "counts": {
@@ -13,9 +13,10 @@
     "publishedAfterSourceRecovery": 6,
     "publishedAfterManualFileReview": 7,
     "sourceRecoveredPendingSolutionVerification": 0,
-    "heldForSourceClarification": 19
+    "heldForSourceClarification": 18,
+    "publishedAfterManualStringReview": 1
   },
-  "publicationRequirement": "13 решений опубликованы после независимых расчётов, полного аудита и визуальных проверок. Остальные 19 не опубликованы.",
+  "publicationRequirement": "14 решений опубликованы после независимых расчётов, полного аудита и визуальных проверок. Остальные 18 не опубликованы.",
   "tasks": [
     {
       "id": "EGEINF64212F",
@@ -576,24 +577,27 @@
       "id": "EGEINFCE2CF3",
       "shortId": "CE2CF3",
       "historicalGroup": "wrong_attachment_format",
-      "status": "held",
-      "conditionSignature": "3bb69a7b81c2731b6b94179e04226d311015ac05501ea6825d947287e026fbb8",
+      "status": "published_verified",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
         "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
         "docs/audits/ege-informatics-remaining19-2026-11-05/python-review.json",
-        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json"
+        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json",
+        "docs/audits/ege-informatics-reviewed-string-2026-11-05.json"
       ],
-      "statusLabel": "Ожидается корректное вложение",
-      "note": "Алфавит ABCDU в условии не совпадает с ACDEF в файле. Весь архив идентичен сохранённому вложению 2F6892 с обратным порядком пары. Условные результаты 97 и 11 независимо проверены; окончательный ответ не выбран.",
-      "nextAction": "Корректное вложение CE2CF3 или авторское исправление алфавита и подтверждение файла.",
+      "statusLabel": "Опубликовано после ручной проверки файла",
+      "note": "Опубликовано по неизменённому файлу: 97. Расхождение алфавитов ABCDU/ACDEF объяснено в решении; общий критерий «согласная + гласная» применён к фактическим буквам. Независимые расчёты, полный аудит и отображение проверены. Это вычисленный ответ, не подтверждённый ключ ФИПИ.",
+      "nextAction": "Завершено; при исправлении первоисточника повторить расчёт.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/65EACC155F7992584CCD065E723BCDCC/img1_1661424753.zip",
         "sha256": "8fb58a8e1bb9b1b698033997d85f55ee4d2018e09c7cddabd6c42e386485b7b3",
         "integrity": "ZIP CRC passed"
       },
       "conditionalDraft": "docs/audits/ege-informatics-remaining19-2026-11-05/conditional-drafts.json",
-      "answer": null
+      "answer": "97",
+      "publishedSourceSignature": "ee2f1b6e4519cdd64271cf82d8ec6a76265304f17410faae872508f756c52358",
+      "historicalConditionSignature": "3bb69a7b81c2731b6b94179e04226d311015ac05501ea6825d947287e026fbb8",
+      "officialAnswerKeyClaimed": false
     },
     {
       "id": "EGEINF1F25B2",
@@ -889,8 +893,8 @@
       }
     }
   ],
-  "solutionCodeCommit": "683ebe545bf71ffe21577572a578c86292139ab4",
-  "solutionCodeBranch": "codex/publish-reviewed-robot-20261105",
+  "solutionCodeCommit": "ac1513ffa5d8d9ab2c3bfe800f4e43db7052b3ea",
+  "solutionCodeBranch": "codex/publish-reviewed-string-20261105",
   "conditionalDraftsReview": {
     "count": 14,
     "importChecks": 11,
@@ -900,5 +904,6 @@
     "publishedNew": 0,
     "robotDraftsPublishedAfterManualReview": 7
   },
-  "latestConditionalReview": "docs/audits/ege-informatics-remaining19-2026-11-05/README.md"
+  "latestConditionalReview": "docs/audits/ege-informatics-remaining19-2026-11-05/README.md",
+  "latestPublicationReview": "docs/audits/ege-informatics-reviewed-string-2026-11-05.json"
 }
