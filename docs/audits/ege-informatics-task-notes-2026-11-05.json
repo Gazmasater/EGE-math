@@ -167,16 +167,20 @@
       "status": "held",
       "conditionSignature": "a5a4673ba3a1bb370d11a21fcc8fb77b656599a2ff4e0fc2f3e77239f513b5c9",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 108, при верхней границе 100 в условии.",
-      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "note": "В исходной таблице Робота A1 = 108, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2794 1693. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
+      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0390B221E5A4A15A41374CBB996C719F/img1_1739452053.zip",
         "sha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": null,
+      "calculatedFileAnswer": "2794 1693",
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
     },
     {
       "id": "EGEINF77DB46",
@@ -185,16 +189,20 @@
       "status": "held",
       "conditionSignature": "c75cafdf8609ff61fcdc4584b023dd36e833ee1624b17803c9e86fe3d60e48a4",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 107, при верхней границе 100 в условии.",
-      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "note": "В исходной таблице Робота A1 = 107, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2766 1820. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
+      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/03D7347440FC865E4061FC6F52C292B8/img1_1739452037.zip",
         "sha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": null,
+      "calculatedFileAnswer": "2766 1820",
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
     },
     {
       "id": "EGEINFB4F848",
@@ -203,16 +211,20 @@
       "status": "held",
       "conditionSignature": "3e9ce2b248fa0405e9f22dbda55b7836a2678e182feb0c3f671cca30c74d5045",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 105, при верхней границе 100 в условии.",
-      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "note": "В исходной таблице Робота A1 = 105, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2852 1784. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
+      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/04F10FF773829C7A49316120AB88B35E/img1_1739451997.zip",
         "sha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": null,
+      "calculatedFileAnswer": "2852 1784",
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
     },
     {
       "id": "EGEINFE60642",
@@ -221,16 +233,20 @@
       "status": "held",
       "conditionSignature": "8f0cf3cc4bfde044e657d92debf4f6803ed1e795c64f64ce34f918e7857ec2af",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 102, при верхней границе 100 в условии.",
-      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "note": "В исходной таблице Робота A1 = 102, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2337 1275. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
+      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0C62DD3AA7B485CF48F63FC63DA9B332/img1_1739451859.zip",
         "sha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": null,
+      "calculatedFileAnswer": "2337 1275",
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
     },
     {
       "id": "EGEINF779E0A",
@@ -239,16 +255,20 @@
       "status": "held",
       "conditionSignature": "5def6faa6a333d0f35a726ab4ee9b8f3a03be8669b847eec4a1d9eb0b5852517",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 106, при верхней границе 100 в условии.",
-      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "note": "В исходной таблице Робота A1 = 106, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2391 1059. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
+      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/239B3C371E3195C54C4258A921FDE9E7/img1_1739452018.zip",
         "sha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": null,
+      "calculatedFileAnswer": "2391 1059",
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
     },
     {
       "id": "EGEINF34C97E",
@@ -257,16 +277,20 @@
       "status": "held",
       "conditionSignature": "faf5d08d1ffae1092b501a80d33918bb1319d8a4302fb0fac6052828f3c619b0",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 101, при верхней границе 100 в условии.",
-      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "note": "В исходной таблице Робота A1 = 101, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2691 1795. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
+      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3ECA0B321AF3AE7A4359D54119B17121/img1_1739451840.zip",
         "sha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": null,
+      "calculatedFileAnswer": "2691 1795",
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
     },
     {
       "id": "EGEINF72C252",
@@ -275,16 +299,20 @@
       "status": "held",
       "conditionSignature": "adb423b82c498b8fa6a8d5cc537702d325f1a6c8f8960bd66a547ab3d2e153aa",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 104, при верхней границе 100 в условии.",
-      "nextAction": "Получить исправленный первичный файл либо пояснение авторов к ограничению; не менять A1 и границу самостоятельно.",
+      "note": "В исходной таблице Робота A1 = 104, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2833 1944. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
+      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/836A66880AC8BF00421720E9DD5B8776/img1_1739451976.zip",
         "sha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "answer": null,
+      "calculatedFileAnswer": "2833 1944",
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
     },
     {
       "id": "EGEINF2F9ABA",
@@ -389,11 +417,18 @@
       "status": "held",
       "conditionSignature": "73e546557ee80b32f8b1b61e888f2ba912253eae2c2315308cdcc2843b38ca8c",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается исходная запись степени",
-      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Ранее найденные вторичные свидетельства не заменяют первичное подтверждение.",
-      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Ранее найденные вторичные свидетельства не заменяют первичное подтверждение. Перенос проверен: цифры в raw HTML и нормализованном условии одинаковы. Оба способа чтения независимо пересчитаны без округления; условный ответ при степени — А10.",
+      "nextAction": "Подтвердить авторское оформление скорости или первичный ключ; расчёты обоих вариантов и развёрнутый черновик уже готовы.",
+      "answer": null,
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/rate-conditional-drafts.json",
+      "conditionalAnswers": {
+        "literal": "А176158315/223",
+        "power": "А10"
+      }
     },
     {
       "id": "EGEINF5459A3",
@@ -402,11 +437,18 @@
       "status": "held",
       "conditionSignature": "5fb37b49aec4c703a1254fccd4f570e688b4a4d1d2ebe88e08d96240a6962822",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается исходная запись степени",
-      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Ранее найденные вторичные свидетельства не заменяют первичное подтверждение.",
-      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Ранее найденные вторичные свидетельства не заменяют первичное подтверждение. Перенос проверен: цифры в raw HTML и нормализованном условии одинаковы. Оба способа чтения независимо пересчитаны без округления; условный ответ при степени — Б15.",
+      "nextAction": "Подтвердить авторское оформление скорости или первичный ключ; расчёты обоих вариантов и развёрнутый черновик уже готовы.",
+      "answer": null,
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/rate-conditional-drafts.json",
+      "conditionalAnswers": {
+        "literal": "А1572738/7",
+        "power": "Б15"
+      }
     },
     {
       "id": "EGEINF502BCF",
@@ -415,11 +457,18 @@
       "status": "held",
       "conditionSignature": "8c1b97340afcbc3f01b5e47e969d28f36035eb4e7f07ebee0c50c6553de5013f",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается исходная запись степени",
-      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
-      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Перенос проверен: цифры в raw HTML и нормализованном условии одинаковы. Оба способа чтения независимо пересчитаны без округления; условный ответ при степени — Б3.",
+      "nextAction": "Подтвердить авторское оформление скорости или первичный ключ; расчёты обоих вариантов и развёрнутый черновик уже готовы.",
+      "answer": null,
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/rate-conditional-drafts.json",
+      "conditionalAnswers": {
+        "literal": "А25162509/221",
+        "power": "Б3"
+      }
     },
     {
       "id": "EGEINF47E49C",
@@ -428,11 +477,18 @@
       "status": "held",
       "conditionSignature": "9865f6e069624ed6caed2c42b0523480ff40529e6d2f6e226b3c554e0bb68989",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается исходная запись степени",
-      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
-      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Перенос проверен: цифры в raw HTML и нормализованном условии одинаковы. Оба способа чтения независимо пересчитаны без округления; условный ответ при степени — А57.",
+      "nextAction": "Подтвердить авторское оформление скорости или первичный ключ; расчёты обоих вариантов и развёрнутый черновик уже готовы.",
+      "answer": null,
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/rate-conditional-drafts.json",
+      "conditionalAnswers": {
+        "literal": "А18873543/55",
+        "power": "А57"
+      }
     },
     {
       "id": "EGEINF57579A",
@@ -441,11 +497,18 @@
       "status": "held",
       "conditionSignature": "0baa73a7cff5d3308efc31aa339bf9cb2b48ba83cb644a39ba92c87412e75be0",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается исходная запись степени",
-      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
-      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Перенос проверен: цифры в raw HTML и нормализованном условии одинаковы. Оба способа чтения независимо пересчитаны без округления; условный ответ при степени — А223.",
+      "nextAction": "Подтвердить авторское оформление скорости или первичный ключ; расчёты обоих вариантов и развёрнутый черновик уже готовы.",
+      "answer": null,
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/rate-conditional-drafts.json",
+      "conditionalAnswers": {
+        "literal": "А12582725/11",
+        "power": "А223"
+      }
     },
     {
       "id": "EGEINFBAE6EF",
@@ -454,11 +517,18 @@
       "status": "held",
       "conditionSignature": "2939929b99843b5a91b5cfb0e6287d61e63536aed5b932616e4c5d2858f97d99",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается исходная запись степени",
-      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
-      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Перенос проверен: цифры в raw HTML и нормализованном условии одинаковы. Оба способа чтения независимо пересчитаны без округления; условный ответ при степени — А5.",
+      "nextAction": "Подтвердить авторское оформление скорости или первичный ключ; расчёты обоих вариантов и развёрнутый черновик уже готовы.",
+      "answer": null,
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/rate-conditional-drafts.json",
+      "conditionalAnswers": {
+        "literal": "А167768815/223",
+        "power": "А5"
+      }
     },
     {
       "id": "EGEINF4CAD3D",
@@ -467,11 +537,18 @@
       "status": "held",
       "conditionSignature": "c9d4dbd668c4267d0aaf0b0d8c6045f2e9490db86a41343436432b2cb03c3f23",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается исходная запись степени",
-      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена.",
-      "nextAction": "Найти первичный оригинал или пояснение автора с точной записью скорости, затем пересчитать обе стратегии передачи."
+      "note": "В исходном HTML скорость записана обычными цифрами без разметки степени; авторская запись не подтверждена. Перенос проверен: цифры в raw HTML и нормализованном условии одинаковы. Оба способа чтения независимо пересчитаны без округления; условный ответ при степени — А82.",
+      "nextAction": "Подтвердить авторское оформление скорости или первичный ключ; расчёты обоих вариантов и развёрнутый черновик уже готовы.",
+      "answer": null,
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/rate-conditional-drafts.json",
+      "conditionalAnswers": {
+        "literal": "А25165054/55",
+        "power": "А82"
+      }
     },
     {
       "id": "EGEINFCE2CF3",
@@ -480,10 +557,11 @@
       "status": "held",
       "conditionSignature": "3bb69a7b81c2731b6b94179e04226d311015ac05501ea6825d947287e026fbb8",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается корректное вложение",
-      "note": "В условии алфавит ABCDU, в полученном файле — ACDEF.",
+      "note": "В условии алфавит ABCDU, в полученном файле — ACDEF. Привязка к исходной ссылке проверена; архив совпал с SHA-256 предыдущего официального скачивания.",
       "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/65EACC155F7992584CCD065E723BCDCC/img1_1661424753.zip",
@@ -498,10 +576,11 @@
       "status": "held",
       "conditionSignature": "85bacbfbf39f8b98527f427fbf5e8c1ec261df8a052e6bf738470439ba4995a3",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается корректное вложение",
-      "note": "Архив содержит буквенную строку 331_24.txt вместо размеров коробок.",
+      "note": "Архив содержит буквенную строку 331_24.txt вместо размеров коробок. Привязка к исходной ссылке проверена; архив совпал с SHA-256 предыдущего официального скачивания.",
       "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/D5BAB1F9E9A19541446F4819D1A37378/img1_1661424890.zip",
@@ -516,10 +595,11 @@
       "status": "held",
       "conditionSignature": "f55b941ae99b54c0b9610ed9c716c075a9fe484702f39aa31c859037adb8ed28",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается корректное вложение",
-      "note": "Вложены одномерные последовательности 307_27_A/B, отсутствуют требуемые пары «ряд, место».",
+      "note": "Вложены одномерные последовательности 307_27_A/B, отсутствуют требуемые пары «ряд, место». Привязка к исходной ссылке проверена; архив совпал с SHA-256 предыдущего официального скачивания.",
       "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/93951C18AC3D8B744125E97940F855B0/img1_1689856649.zip",
@@ -534,10 +614,11 @@
       "status": "held",
       "conditionSignature": "bd82a71981bb7af54e9d231b3a627d6cfea23d3c64fbec5a8df31ea74b3cc2f4",
       "evidence": [
-        "docs/audits/ege-informatics-source-recheck-2026-11-05.json"
+        "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
       ],
       "statusLabel": "Ожидается корректное вложение",
-      "note": "Вместо одного N в заголовках файлов стоят пары 100 113 и 1200000 12013; это формат с дополнительным параметром.",
+      "note": "Вместо одного N в заголовках файлов стоят пары 100 113 и 1200000 12013; это формат с дополнительным параметром. Привязка к исходной ссылке проверена; архив совпал с SHA-256 предыдущего официального скачивания.",
       "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/854E168600589BCA468E1694311F3BEF/img1_1661424780.zip",
@@ -623,5 +704,13 @@
     }
   ],
   "solutionCodeCommit": "db743c802a1ef1cac9d2094d7e768de82be47ce5",
-  "solutionCodeBranch": "codex/solve-six-restored-20261105"
+  "solutionCodeBranch": "codex/solve-six-restored-20261105",
+  "conditionalDraftsReview": {
+    "count": 14,
+    "importChecks": 11,
+    "report": "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+    "codeBranch": "codex/review-held-informatics-20261105",
+    "codeCommit": "3fbc82e928c41e06fda44bfb6ec4dc996ad35d47",
+    "publishedNew": 0
+  }
 }
