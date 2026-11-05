@@ -1,0 +1,162 @@
+{
+  "status": "ok",
+  "archiveAndMemberHashes": "all matched",
+  "independentAlgorithms": [
+    "JavaScript direct scan vs Python two heaps: every assignment",
+    "JavaScript linear character scan vs Python regular expression: maxima and positions"
+  ],
+  "arrivals": {
+    "290F15": {
+      "file-order": {
+        "answer": [
+          340,
+          53
+        ],
+        "lastStart": 999,
+        "traceSha256": "9c4013c264f5f3e977cd3711eaeadff5e7318345cc08c72b3da193a67a6163c2"
+      },
+      "end-ascending": {
+        "answer": [
+          344,
+          53
+        ],
+        "lastStart": 999,
+        "traceSha256": "69b8df34250a7bf84b1479ea5a105ef55dedf18def3716a55512d608a36ec43a"
+      },
+      "end-descending": {
+        "answer": [
+          333,
+          53
+        ],
+        "lastStart": 999,
+        "traceSha256": "00e48a64a25d521999d4c39a51d7f687ba29ab5b5ca4f7efd47af91a79e76029"
+      },
+      "single-tie-swap": {
+        "answer": [
+          339,
+          53
+        ],
+        "lastStart": 999,
+        "traceSha256": "8ed86b49518f1f2aefe811866520aea99f1ecde8091d00efbacf225062b144a7"
+      }
+    },
+    "B3C563": {
+      "file-order": {
+        "answer": [
+          361,
+          83
+        ],
+        "lastStart": 997,
+        "traceSha256": "42910b957aacd9cb003edd82b7d21dd98a01f44eb125ae9f0b0c2359691d2cf0"
+      },
+      "end-ascending": {
+        "answer": [
+          368,
+          83
+        ],
+        "lastStart": 997,
+        "traceSha256": "15f84d21df7cef25c2ecdd1e8ab6f56128c91689bf64778d69a99c1c90f1b6e4"
+      },
+      "end-descending": {
+        "answer": [
+          353,
+          83
+        ],
+        "lastStart": 997,
+        "traceSha256": "5d7c372f80ae1a54d9ffc57a39e76687021b84f4b6505c184a332365d9765b39"
+      },
+      "single-tie-swap": {
+        "answer": [
+          360,
+          83
+        ],
+        "lastStart": 997,
+        "traceSha256": "b631139b75236e0de7d7311b9f6016bcac695d3defe7ec1151816b6a47438213"
+      }
+    },
+    "A99635": {
+      "file-order": {
+        "answer": [
+          380,
+          133
+        ],
+        "lastStart": 999,
+        "traceSha256": "109ab0c3b13a993faee796b6b5581aeaaaa5e6b03e0d929957a69a3c9ba48eca"
+      },
+      "end-ascending": {
+        "answer": [
+          389,
+          133
+        ],
+        "lastStart": 999,
+        "traceSha256": "1c836ef1bde47ee370f441ca70db17650b4afe548c63aed618f4b8f78d92aa68"
+      },
+      "end-descending": {
+        "answer": [
+          378,
+          133
+        ],
+        "lastStart": 999,
+        "traceSha256": "2952d6dd9ff894fcbced42d73234f8f36cf6aa25689139215a8e6f11623e9066"
+      },
+      "single-tie-swap": {
+        "answer": [
+          379,
+          133
+        ],
+        "lastStart": 999,
+        "traceSha256": "37e50df82d85e6ce19ea8977053b32c7d094f9fd6e1c0c9589327f4ace748a1b"
+      }
+    },
+    "8ECB7C": {
+      "file-order": {
+        "answer": [
+          784,
+          3
+        ],
+        "lastStart": 1437,
+        "traceSha256": "827bb6bf51801b53689f70b3d7f43c0e955ef74438debf0f39fac9e36a0e0dee"
+      },
+      "end-ascending": {
+        "answer": [
+          793,
+          2
+        ],
+        "lastStart": 1437,
+        "traceSha256": "be2f3eea5cbfbc6f8e5956385b9aea16f62f95c978df49aa7e8c83dbd5527861"
+      },
+      "end-descending": {
+        "answer": [
+          774,
+          2
+        ],
+        "lastStart": 1437,
+        "traceSha256": "5dad82523c7922f2b7f1b5a3a562b4666c5aae915ca41abfeb2df622453076db"
+      },
+      "single-tie-swap": {
+        "answer": [
+          784,
+          2
+        ],
+        "lastStart": 1437,
+        "traceSha256": "523c60187b8d19d4bf070a471a543c7cc2fadbbc26f7c7b7efe15375a8510a13"
+      }
+    }
+  },
+  "pairs": {
+    "actualAlphabetCV": {
+      "pairs": 97,
+      "start": 1338333,
+      "end": 1338526,
+      "text": "FACADECACEDECEFEFEFACEDECADACEFEDEFECEDAFADEDADACADEFECACACACEDAFECADEFAFADEDEDECEFACADAFEDEFADAFEDACAFECEFECACACACADAFEFADECAFEFADACACECECAFECEDAFAFADADADEDEDECAFEDECECEDECAFECEFEDEDECACEFEDEDE"
+    },
+    "literalDeclaredSetsCV": {
+      "pairs": 11,
+      "start": 2009133,
+      "end": 2009154,
+      "text": "DADACADADACADADACADADA"
+    }
+  },
+  "attachmentFormatChecks": "all four discrepancies reproduced",
+  "publishedAnswersAdded": 0
+}

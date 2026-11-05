@@ -580,16 +580,20 @@
       "conditionSignature": "3bb69a7b81c2731b6b94179e04226d311015ac05501ea6825d947287e026fbb8",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/python-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json"
       ],
       "statusLabel": "Ожидается корректное вложение",
-      "note": "В условии алфавит ABCDU, в полученном файле — ACDEF. Привязка к исходной ссылке проверена; архив совпал с SHA-256 предыдущего официального скачивания.",
-      "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
+      "note": "Алфавит ABCDU в условии не совпадает с ACDEF в файле. Весь архив идентичен сохранённому вложению 2F6892 с обратным порядком пары. Условные результаты 97 и 11 независимо проверены; окончательный ответ не выбран.",
+      "nextAction": "Корректное вложение CE2CF3 или авторское исправление алфавита и подтверждение файла.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/65EACC155F7992584CCD065E723BCDCC/img1_1661424753.zip",
         "sha256": "8fb58a8e1bb9b1b698033997d85f55ee4d2018e09c7cddabd6c42e386485b7b3",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "conditionalDraft": "docs/audits/ege-informatics-remaining19-2026-11-05/conditional-drafts.json",
+      "answer": null
     },
     {
       "id": "EGEINF1F25B2",
@@ -599,16 +603,20 @@
       "conditionSignature": "85bacbfbf39f8b98527f427fbf5e8c1ec261df8a052e6bf738470439ba4995a3",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/python-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json"
       ],
       "statusLabel": "Ожидается корректное вложение",
-      "note": "Архив содержит буквенную строку 331_24.txt вместо размеров коробок. Привязка к исходной ссылке проверена; архив совпал с SHA-256 предыдущего официального скачивания.",
-      "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
+      "note": "В RAR с расширением ZIP буквенная строка вместо размеров коробок. Жадный алгоритм с разницей 13 доказан и сверен с полным перебором 500 малых наборов; пример с разницей 3 даёт 3 32. Основного числового ответа нет.",
+      "nextAction": "Таблица N целых размеров коробок, относящаяся именно к 1F25B2.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/D5BAB1F9E9A19541446F4819D1A37378/img1_1661424890.zip",
         "sha256": "72067e0865f7c01810001da5d9e45e62b6423b526b9649b6e7dc64b12be7e0b1",
         "integrity": "RAR integrity test passed (7-Zip)"
-      }
+      },
+      "conditionalDraft": "docs/audits/ege-informatics-remaining19-2026-11-05/conditional-drafts.json",
+      "answer": null
     },
     {
       "id": "EGEINF7F1EAA",
@@ -618,16 +626,20 @@
       "conditionSignature": "f55b941ae99b54c0b9610ed9c716c075a9fe484702f39aa31c859037adb8ed28",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/python-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json"
       ],
       "statusLabel": "Ожидается корректное вложение",
-      "note": "Вложены одномерные последовательности 307_27_A/B, отсутствуют требуемые пары «ряд, место». Привязка к исходной ссылке проверена; архив совпал с SHA-256 предыдущего официального скачивания.",
-      "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
+      "note": "В файлах одномерные последовательности вместо пар «ряд, место». Алгоритм разрыва 3 проверен на примере 50 65 и 1023 наборах занятых мест. Основного числового ответа нет.",
+      "nextAction": "Правильный файл с N парами «номер ряда, номер занятого места».",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/93951C18AC3D8B744125E97940F855B0/img1_1689856649.zip",
         "sha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "conditionalDraft": "docs/audits/ege-informatics-remaining19-2026-11-05/conditional-drafts.json",
+      "answer": null
     },
     {
       "id": "EGEINF327EB5",
@@ -637,16 +649,20 @@
       "conditionSignature": "bd82a71981bb7af54e9d231b3a627d6cfea23d3c64fbec5a8df31ea74b3cc2f4",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/python-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json"
       ],
       "statusLabel": "Ожидается корректное вложение",
-      "note": "Вместо одного N в заголовках файлов стоят пары 100 113 и 1200000 12013; это формат с дополнительным параметром. Привязка к исходной ссылке проверена; архив совпал с SHA-256 предыдущего официального скачивания.",
-      "nextAction": "Получить файл, соответствующий условию, либо первичное исправление условия; не подменять данные и не отбрасывать параметры.",
+      "note": "Заголовки 100 113 и 1200000 12013 содержат лишний неописанный параметр. Алгоритм взвешенной медианы доказан и сверен с перебором 500 малых наборов. В примере вместимость 96, в основном условии 44; ответы A/B не опубликованы.",
+      "nextAction": "Корректные файлы A/B с описанным форматом или авторское пояснение дополнительного параметра и подтверждение модели.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/854E168600589BCA468E1694311F3BEF/img1_1661424780.zip",
         "sha256": "e002ef198d3c8e5bcca138bb49a094f3974f83c10c4ae9302c292684e3dbe325",
         "integrity": "ZIP CRC passed"
-      }
+      },
+      "conditionalDraft": "docs/audits/ege-informatics-remaining19-2026-11-05/conditional-drafts.json",
+      "answer": null
     },
     {
       "id": "EGEINF290F15",
@@ -656,15 +672,52 @@
       "conditionSignature": "1efddb62b53eb39e615cb9e1eb2c7726e1208425baddcbb7905d733fa229a636",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md"
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/python-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json"
       ],
       "statusLabel": "Ожидается порядок равных заявок",
-      "note": "Допустимые порядки заявок с одинаковым временем поступления приводят к разным ответам; правило выбора порядка не задано.",
-      "nextAction": "Получить первичное правило обработки равновременных заявок, затем повторить расчёт и независимую проверку.",
+      "note": "Одна перестановка заявок в минуту 603 (строки 17 и 768) меняет результат с 340 53 на 339 53. Python и JavaScript совпали по каждой заявке. Условные числа не опубликованы.",
+      "nextAction": "Применимое авторское правило порядка равновременных заявок либо исправленный файл, исключающий зависимость ответа от этого порядка.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/5682B145452C9665458066C6752DD8DF/img1_1683032259.zip",
         "sha256": "9927bf5ce56c253fb6e9c997c5c8fb8d4cf02d11fb0176654df6cc28b1715e14",
         "integrity": "ZIP CRC passed"
+      },
+      "conditionalDraft": "docs/audits/ege-informatics-remaining19-2026-11-05/conditional-drafts.json",
+      "answer": null,
+      "singleSwapWitness": {
+        "minute": 603,
+        "requestIndices": [
+          15,
+          766
+        ],
+        "physicalFileLines": [
+          17,
+          768
+        ],
+        "requests": [
+          [
+            603,
+            909,
+            15
+          ],
+          [
+            603,
+            1070,
+            766
+          ]
+        ],
+        "firstChangedAssignment": {
+          "request": [
+            603,
+            909,
+            15
+          ],
+          "fileOrderCell": 41,
+          "swappedOrderCell": 0
+        },
+        "changedAssignments": 3
       }
     },
     {
@@ -675,15 +728,52 @@
       "conditionSignature": "f60802f7fdd71db09befb5a7c0ec05546af8648f463b241b87f71a772b7bbb72",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md"
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/python-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json"
       ],
       "statusLabel": "Ожидается порядок равных заявок",
-      "note": "Допустимые порядки заявок с одинаковым временем поступления приводят к разным ответам; правило выбора порядка не задано.",
-      "nextAction": "Получить первичное правило обработки равновременных заявок, затем повторить расчёт и независимую проверку.",
+      "note": "Одна перестановка заявок в минуту 616 (строки 839 и 913) меняет результат с 361 83 на 360 83. Python и JavaScript совпали по каждой заявке. Условные числа не опубликованы.",
+      "nextAction": "Применимое авторское правило порядка равновременных заявок либо исправленный файл, исключающий зависимость ответа от этого порядка.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/D4EAE892B00D81BF4013F48108F6272F/img1_1683033145.zip",
         "sha256": "e0d618aa4397b8fc56f6031ff6f0239197247ab757499f7919e95ac086d12aaa",
         "integrity": "ZIP CRC passed"
+      },
+      "conditionalDraft": "docs/audits/ege-informatics-remaining19-2026-11-05/conditional-drafts.json",
+      "answer": null,
+      "singleSwapWitness": {
+        "minute": 616,
+        "requestIndices": [
+          837,
+          911
+        ],
+        "physicalFileLines": [
+          839,
+          913
+        ],
+        "requests": [
+          [
+            616,
+            884,
+            837
+          ],
+          [
+            616,
+            1326,
+            911
+          ]
+        ],
+        "firstChangedAssignment": {
+          "request": [
+            616,
+            884,
+            837
+          ],
+          "fileOrderCell": 133,
+          "swappedOrderCell": 0
+        },
+        "changedAssignments": 3
       }
     },
     {
@@ -694,15 +784,52 @@
       "conditionSignature": "f53539bf4fd0d88bdd750c46425394d6799f372936983328e22592aa46e5273a",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md"
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/python-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json"
       ],
       "statusLabel": "Ожидается порядок равных заявок",
-      "note": "Допустимые порядки заявок с одинаковым временем поступления приводят к разным ответам; правило выбора порядка не задано.",
-      "nextAction": "Получить первичное правило обработки равновременных заявок, затем повторить расчёт и независимую проверку.",
+      "note": "Одна перестановка заявок в минуту 620 (строки 286 и 395) меняет результат с 380 133 на 379 133. Python и JavaScript совпали по каждой заявке. Условные числа не опубликованы.",
+      "nextAction": "Применимое авторское правило порядка равновременных заявок либо исправленный файл, исключающий зависимость ответа от этого порядка.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/E98BBD44378694B24A2702B0672CA462/img1_1683032983.zip",
         "sha256": "912078ede12ae777df99f5b6950539b11045abf0e35f8f08119d80792f767624",
         "integrity": "ZIP CRC passed"
+      },
+      "conditionalDraft": "docs/audits/ege-informatics-remaining19-2026-11-05/conditional-drafts.json",
+      "answer": null,
+      "singleSwapWitness": {
+        "minute": 620,
+        "requestIndices": [
+          284,
+          393
+        ],
+        "physicalFileLines": [
+          286,
+          395
+        ],
+        "requests": [
+          [
+            620,
+            893,
+            284
+          ],
+          [
+            620,
+            1302,
+            393
+          ]
+        ],
+        "firstChangedAssignment": {
+          "request": [
+            620,
+            893,
+            284
+          ],
+          "fileOrderCell": 132,
+          "swappedOrderCell": 0
+        },
+        "changedAssignments": 3
       }
     },
     {
@@ -713,15 +840,52 @@
       "conditionSignature": "58625a7848f1a4246beac052a88730411f78ddd4c738e4f2f793088b9faff8cc",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md"
+        "https://github.com/Gazmasater/EGE-math/blob/f69106ba1401246ca2637837134af8f34da8d45f/docs/PROJECT_CONTEXT.md",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/python-review.json",
+        "docs/audits/ege-informatics-remaining19-2026-11-05/independent-review.json"
       ],
       "statusLabel": "Ожидается порядок равных заявок",
-      "note": "Допустимые порядки заявок с одинаковым временем поступления приводят к разным ответам; правило выбора порядка не задано. В сохранённой проверке 23 порядка дали 18 разных ответов.",
-      "nextAction": "Получить первичное правило обработки равновременных заявок, затем повторить расчёт и независимую проверку.",
+      "note": "Одна перестановка заявок в минуту 3 (строки 531 и 871) меняет результат с 784 3 на 784 2. Python и JavaScript совпали по каждой заявке. Условные числа не опубликованы.",
+      "nextAction": "Применимое авторское правило порядка равновременных заявок либо исправленный файл, исключающий зависимость ответа от этого порядка.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3faac495abdc4e0291f99b15adbb44f8/img1_1760104253.zip",
         "sha256": "1c73f7b08af9839ded17a3a423379f8ffd16fd0fcd459865e961dc54be5c6521",
         "integrity": "ZIP CRC passed"
+      },
+      "conditionalDraft": "docs/audits/ege-informatics-remaining19-2026-11-05/conditional-drafts.json",
+      "answer": null,
+      "singleSwapWitness": {
+        "minute": 3,
+        "requestIndices": [
+          529,
+          869
+        ],
+        "physicalFileLines": [
+          531,
+          871
+        ],
+        "requests": [
+          [
+            3,
+            274,
+            529
+          ],
+          [
+            3,
+            1255,
+            869
+          ]
+        ],
+        "firstChangedAssignment": {
+          "request": [
+            3,
+            274,
+            529
+          ],
+          "fileOrderCell": 2,
+          "swappedOrderCell": 3
+        },
+        "changedAssignments": 12
       }
     }
   ],
@@ -735,5 +899,6 @@
     "codeCommit": "3fbc82e928c41e06fda44bfb6ec4dc996ad35d47",
     "publishedNew": 0,
     "robotDraftsPublishedAfterManualReview": 7
-  }
+  },
+  "latestConditionalReview": "docs/audits/ege-informatics-remaining19-2026-11-05/README.md"
 }
