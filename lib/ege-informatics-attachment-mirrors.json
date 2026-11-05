@@ -4257,5 +4257,68 @@
     "bytes": 19356,
     "officialArchive": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/c8733c22c0624c8a83f1ace65a5e6fba/img1_1786621900.zip",
     "review": "Оригинальный архив ФИПИ восстановлен и сохранён без изменения байтов; SHA-256 и состав участников сверены с официальным манифестом 05.11.2026. Полное условие прочитано, расчёты независимо проверены Python и JavaScript."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0390B221E5A4A15A41374CBB996C719F/img1_1739452053.zip": {
+    "taskId": "EGEINF79404A",
+    "localRelative": "docs/official-open/2026/EGEINF79404A.zip",
+    "sha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
+    "bytes": 33826,
+    "sourceKind": "official-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0390B221E5A4A15A41374CBB996C719F/img1_1739452053.zip",
+    "review": "Неизменённый официальный архив. Расхождение A1 с общей границей 100 явно разобрано; расчёт использует все исходные числа. ODS и XLSX совпали по каждой клетке и стене."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/03D7347440FC865E4061FC6F52C292B8/img1_1739452037.zip": {
+    "taskId": "EGEINF77DB46",
+    "localRelative": "docs/official-open/2026/EGEINF77DB46.zip",
+    "sha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
+    "bytes": 34432,
+    "sourceKind": "official-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/03D7347440FC865E4061FC6F52C292B8/img1_1739452037.zip",
+    "review": "Неизменённый официальный архив. Расхождение A1 с общей границей 100 явно разобрано; расчёт использует все исходные числа. ODS и XLSX совпали по каждой клетке и стене."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/04F10FF773829C7A49316120AB88B35E/img1_1739451997.zip": {
+    "taskId": "EGEINFB4F848",
+    "localRelative": "docs/official-open/2026/EGEINFB4F848.zip",
+    "sha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
+    "bytes": 34137,
+    "sourceKind": "official-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/04F10FF773829C7A49316120AB88B35E/img1_1739451997.zip",
+    "review": "Неизменённый официальный архив. Расхождение A1 с общей границей 100 явно разобрано; расчёт использует все исходные числа. ODS и XLSX совпали по каждой клетке и стене."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0C62DD3AA7B485CF48F63FC63DA9B332/img1_1739451859.zip": {
+    "taskId": "EGEINFE60642",
+    "localRelative": "docs/official-open/2026/EGEINFE60642.zip",
+    "sha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
+    "bytes": 33637,
+    "sourceKind": "official-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0C62DD3AA7B485CF48F63FC63DA9B332/img1_1739451859.zip",
+    "review": "Неизменённый официальный архив. Расхождение A1 с общей границей 100 явно разобрано; расчёт использует все исходные числа. ODS и XLSX совпали по каждой клетке и стене."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/239B3C371E3195C54C4258A921FDE9E7/img1_1739452018.zip": {
+    "taskId": "EGEINF779E0A",
+    "localRelative": "docs/official-open/2026/EGEINF779E0A.zip",
+    "sha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
+    "bytes": 33446,
+    "sourceKind": "official-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/239B3C371E3195C54C4258A921FDE9E7/img1_1739452018.zip",
+    "review": "Неизменённый официальный архив. Расхождение A1 с общей границей 100 явно разобрано; расчёт использует все исходные числа. ODS и XLSX совпали по каждой клетке и стене."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3ECA0B321AF3AE7A4359D54119B17121/img1_1739451840.zip": {
+    "taskId": "EGEINF34C97E",
+    "localRelative": "docs/official-open/2026/EGEINF34C97E.zip",
+    "sha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
+    "bytes": 36484,
+    "sourceKind": "official-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3ECA0B321AF3AE7A4359D54119B17121/img1_1739451840.zip",
+    "review": "Неизменённый официальный архив. Расхождение A1 с общей границей 100 явно разобрано; расчёт использует все исходные числа. ODS и XLSX совпали по каждой клетке и стене."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/836A66880AC8BF00421720E9DD5B8776/img1_1739451976.zip": {
+    "taskId": "EGEINF72C252",
+    "localRelative": "docs/official-open/2026/EGEINF72C252.zip",
+    "sha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
+    "bytes": 34132,
+    "sourceKind": "official-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/836A66880AC8BF00421720E9DD5B8776/img1_1739451976.zip",
+    "review": "Неизменённый официальный архив. Расхождение A1 с общей границей 100 явно разобрано; расчёт использует все исходные числа. ODS и XLSX совпали по каждой клетке и стене."
   }
 }

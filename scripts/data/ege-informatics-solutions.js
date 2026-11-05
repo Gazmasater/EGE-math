@@ -62,3 +62,5 @@ module.exports.push({name:'final-restored',topic:'all',subgroup:'restored-final'
 module.exports.push({name:'restored-game-links',topic:'type.games',subgroup:'restored-links',records:require('./ege-informatics-restored-game-links-records.json'),sources:require('./ege-informatics-restored-game-links-sources.json')});
 
 for (const [name, topic] of [['official-six-process', 'type.processes'], ['official-six-stars', 'type.large-data']]) module.exports.push({name, topic, subgroup: 'official-recovered-2026-11-05', records: require('./ege-informatics-' + name + '-records.json'), sources: require('./ege-informatics-' + name + '-sources.json')});
+
+module.exports.push({name:'reviewed-robot',topic:'type.robot-grid',subgroup:'reviewed-original-files',records:require('./ege-informatics-reviewed-robot-records.json'),sources:require('./ege-informatics-reviewed-robot-sources.json')});

@@ -13643,7 +13643,7 @@
       "rule": "array-analysis"
     },
     "EGEINF79404A": {
-      "sourceSignature": "a5a4673ba3a1bb370d11a21fcc8fb77b656599a2ff4e0fc2f3e77239f513b5c9",
+      "sourceSignature": "27b4d6381bf1675b135cb504e1e8d09cc6092aaa408625c8e2c95e9736e09acd",
       "sourceCodes": [
         "4.2",
         "4.3",
@@ -13660,7 +13660,7 @@
       "rule": "robot-grid"
     },
     "EGEINF77DB46": {
-      "sourceSignature": "c75cafdf8609ff61fcdc4584b023dd36e833ee1624b17803c9e86fe3d60e48a4",
+      "sourceSignature": "271ec1c4a6c46cb8f54af7fa1253b4aba6c8cd817896ec9319e973dccc131c60",
       "sourceCodes": [
         "4.2",
         "4.3",
@@ -13713,7 +13713,7 @@
       "rule": "information-volume"
     },
     "EGEINFB4F848": {
-      "sourceSignature": "3e9ce2b248fa0405e9f22dbda55b7836a2678e182feb0c3f671cca30c74d5045",
+      "sourceSignature": "07f21b63ae615fb0b8b497ae11208a452f613bc8ac8ac842026dda6fc188c912",
       "sourceCodes": [
         "4.2",
         "4.3",
@@ -14073,7 +14073,7 @@
       "rule": "graph-models"
     },
     "EGEINFE60642": {
-      "sourceSignature": "8f0cf3cc4bfde044e657d92debf4f6803ed1e795c64f64ce34f918e7857ec2af",
+      "sourceSignature": "a4b31b03568db6d99cd50f78c2f216566dc85f06987eb9a41c796e8af2b562a2",
       "sourceCodes": [
         "4.2",
         "4.3",
@@ -15286,7 +15286,7 @@
       "rule": "information-volume"
     },
     "EGEINF779E0A": {
-      "sourceSignature": "5def6faa6a333d0f35a726ab4ee9b8f3a03be8669b847eec4a1d9eb0b5852517",
+      "sourceSignature": "466dff731a84c9032af9a291added5b9b2b971fe8f0b75483911cbfe71a704fd",
       "sourceCodes": [
         "4.2",
         "4.3",
@@ -16596,7 +16596,7 @@
       "rule": "processes"
     },
     "EGEINF34C97E": {
-      "sourceSignature": "faf5d08d1ffae1092b501a80d33918bb1319d8a4302fb0fac6052828f3c619b0",
+      "sourceSignature": "901761e2bee9a83509634c3a438e8c73f47983e72b81260816e8c9ce0d858c18",
       "sourceCodes": [
         "4.2",
         "4.3",
@@ -20178,7 +20178,7 @@
       "rule": "executor-programs"
     },
     "EGEINF72C252": {
-      "sourceSignature": "adb423b82c498b8fa6a8d5cc537702d325f1a6c8f8960bd66a547ab3d2e153aa",
+      "sourceSignature": "5ba72a2b58d7b6677246ea182a7d792a17cadc04c9119e3562a5dc393110d437",
       "sourceCodes": [
         "4.2",
         "4.3",
