@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "checkedAt": "2026-11-05T01:03:49.559656+00:00",
+  "scope": "Eight offline conditional drafts and documentation; no publication",
+  "pythonRerun": "byte-identical to saved report",
+  "javascriptRerun": "byte-identical to saved report",
+  "archives": 8,
+  "arrivalSchedulesComparedPerRequest": 16,
+  "drafts": 8,
+  "nullAnswers": 8,
+  "liveReadOnlyCheck": {
+    "checkedAt": "2026-11-05T01:02:28.100989+00:00",
+    "mode": "SQLite read-only",
+    "counts": {
+      "allPublished": 12923,
+      "egeInformaticsPublished": 2456,
+      "users": 10,
+      "comments": 0,
+      "feedback": 0
+    },
+    "solutionsLogicalSha256": "41c224fdba7b648afaaf37953e5e42b25caddd112a38b8370081b484caa0635a",
+    "integrity": "ok"
+  },
+  "solutionsUnchangedDuringFinalSave": true,
+  "applicationOrRegistryEdits": false,
+  "freshSourceDownload": false,
+  "fullPublicationAuditRun": false,
+  "reason": "Only offline audit material and documentation changed; all eight drafts remain unpublished."
+}
