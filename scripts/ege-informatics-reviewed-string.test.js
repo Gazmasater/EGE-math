@@ -1,0 +1,20 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+test('Reviewed CE2CF3 keeps original file, discloses alphabet mismatch and preserves pair direction',()=>{
+  const {readOgeCatalog}=require('./lib/oge-catalog');
+  const {auditMirrorStrings}=require('./lib/audit-ege-informatics-mirror-strings');
+  const batch=require('./data/ege-informatics-solutions').find(b=>b.name==='mirror-strings');
+  const tasks=new Map(readOgeCatalog(undefined,'ege-informatics').tasks.map(t=>[t.id,t]));
+  const record=batch.records.find(r=>r.id==='EGEINFCE2CF3'),task=tasks.get(record.id),source=batch.sources[record.id];
+  assert.equal(auditMirrorStrings(task,record,source).answer,'97');
+  assert.match(record.solution,/перечислены A, B, C, D, U/);
+  assert.match(record.solution,/содержит A, C, D, E, F/);
+  assert.match(record.solution,/по неизменённому приложенному файлу/);
+  const other=batch.records.find(r=>r.id==='EGEINF2F6892');
+  assert.equal(auditMirrorStrings(tasks.get(other.id),other,batch.sources[other.id]).answer,'98');
+  assert.throws(()=>auditMirrorStrings(task,{...record,answer:'98'},source),/answer/);
+  assert.throws(()=>auditMirrorStrings(task,{...record,answer:'11'},source),/answer/);
+  assert.throws(()=>auditMirrorStrings({...task,fragment:task.fragment.replace('согласная + гласная','гласная + согласная')},record,source),/condition/);
+  assert.throws(()=>auditMirrorStrings(task,{...record,solution:record.solution.replace('Особенность','Исправление')},source),/explanation/);
+  assert.throws(()=>auditMirrorStrings(task,record,source,p=>Buffer.concat([fs.readFileSync(p),Buffer.from('A')])),/file/);
+});

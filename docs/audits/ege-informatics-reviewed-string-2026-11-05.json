@@ -1,0 +1,442 @@
+{
+  "status": "ok",
+  "completedAt": "2026-11-05T01:45:14.652902+00:00",
+  "published": 2457,
+  "total": 2475,
+  "remaining": 18,
+  "added": 1,
+  "totalPublishedSolutions": 12924,
+  "tasks": [
+    {
+      "id": "EGEINFCE2CF3",
+      "answer": "97",
+      "sourceSignature": "ee2f1b6e4519cdd64271cf82d8ec6a76265304f17410faae872508f756c52358"
+    }
+  ],
+  "decision": {
+    "primaryFileUnchanged": true,
+    "conditionUnchanged": true,
+    "description": "The general consonant + vowel operation is applied to actual file letters ACDEF. The listed ABCDU alphabet is inconsistent input metadata and is disclosed in the first solution paragraph. No character substitution or file correction is made.",
+    "historicalAlternative11": "The restricted [BCD][AU] pattern used letters from the inconsistent alphabet description and does not test the general consonant + vowel criterion for actual E/F characters.",
+    "sameFileAs2F6892": "Reusing the same byte-identical file for the reverse pair order is possible; the published 2F6892 answer remains 98.",
+    "officialAnswerKeyClaimed": false,
+    "primaryZip": "docs/audits/ege-informatics-remaining19-2026-11-05/inputs/CE2CF3.zip",
+    "archiveSha256": "8fb58a8e1bb9b1b698033997d85f55ee4d2018e09c7cddabd6c42e386485b7b3",
+    "member": "320_24.txt",
+    "freshOfficialDownload": "Timed out; this publication uses the preserved archive already verified against official bytes in the source recheck report.",
+    "previousOfficialVerification": "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+    "methodSource": "https://inf-ege.sdamgia.ru/problem?id=47228",
+    "methodSourceAnswer": "95 for a different ACDFO file; independently recalculated, not imported into our task.",
+    "additionalComparison": "https://openfipi.devinf.ru/tasks_ege/page/65 lists 97; third-party supporting evidence, not an official key."
+  },
+  "independentCalculation": {
+    "status": "ok",
+    "id": "EGEINFCE2CF3",
+    "answer": "97",
+    "characters": 4940515,
+    "alphabet": "ACDEF",
+    "textSha256": "9ae7f2413403526ecc8ce0d516ad853b3edc659abb71c17d4a2703b08e3acfbb",
+    "startOneBased": 1338333,
+    "endInclusive": 1338526,
+    "pairs": 97,
+    "witness": "FACADECACEDECEFEFEFACEDECADACEFEDEFECEDAFADEDADACADEFECACACACEDAFECADEFAFADEDEDECEFACADAFEDEFADAFEDACAFECEFECACACACADAFEFADECAFEFADACACECECAFECEDAFAFADADADEDEDECAFEDECECEDECAFECEFEDEDECACEFEDEDE",
+    "solutionProgramExecuted": true,
+    "previousStringRecordsPreserved": 33,
+    "previousMirrorsPreserved": 376,
+    "external": {
+      "url": "https://inf-ege.sdamgia.ru/problem?id=47228",
+      "fileSha256": "02ce3c7370741bea5f2bbc7faed0d77880b3445a658d28b373adec305946ddc0",
+      "alphabet": "ACDFO",
+      "answer": 95,
+      "match": "method only"
+    }
+  },
+  "sourcePreservation": {
+    "unchangedTasks": 2474,
+    "changedAttachmentTasks": [
+      "EGEINFCE2CF3"
+    ],
+    "conditionBodyUnchanged": true,
+    "originalMirrorsPreserved": 376,
+    "totalMirrors": 377,
+    "result": {
+      "answer": 97,
+      "start": 1338332,
+      "end": 1338526,
+      "length": 194
+    },
+    "solutionHash": "48b86708e7424743af25ede7270f6402f508906d8d6b1b21e4d4b5472e092b68"
+  },
+  "publication": {
+    "catalog": 2475,
+    "prepared": 2457,
+    "matches": {
+      "exact": 344,
+      "variant": 1340,
+      "method": 773
+    },
+    "changed": 1,
+    "published": 2457,
+    "remaining": 18,
+    "preserved": 12923,
+    "integrity": "ok",
+    "rejectedEdits": 51868,
+    "rejectedWrongAnswers": 4914,
+    "status": "ok"
+  },
+  "newTaskChecks": [
+    {
+      "id": "EGEINFCE2CF3",
+      "answer": "97",
+      "kind": "string-fragment",
+      "elements": 4940515,
+      "rejectedEdits": 32
+    }
+  ],
+  "previewHttp": {
+    "origin": "http://127.0.0.1:8914",
+    "checkedAt": "2026-11-05T01:28:42.520Z",
+    "solutions": 2457,
+    "cataloguePages": 433,
+    "status": "ok"
+  },
+  "previewBank": {
+    "section": "ege-informatics",
+    "catalogues": 85,
+    "catalogPages": 958,
+    "ogeTasks": 2475,
+    "existingTasks": 0,
+    "sitemapUrls": 16334,
+    "errors": 0
+  },
+  "publicHttp": {
+    "origin": "https://ege-fipi.ru",
+    "checkedAt": "2026-11-05T01:43:49.788Z",
+    "solutions": 2457,
+    "cataloguePages": 433,
+    "status": "ok"
+  },
+  "browser": {
+    "preview": {
+      "pages": 2,
+      "modals": 2,
+      "errors": 0
+    },
+    "public": {
+      "pages": 2,
+      "modals": 2,
+      "errors": 0
+    }
+  },
+  "tests": {
+    "passed": 204,
+    "failed": 0,
+    "logSha256": "c12e048c600bca9ac4bdd47c08cde3011c9f5e6d163a6e3a4b9a9d94b21adcf3",
+    "finalLabelFocusedTestPassed": 1,
+    "finalLabelTestLogSha256": "919191a2a6c54910dd4d2c162b7897527edd47f856df300f9fadb93767d818b8",
+    "note": "Full tests preceded the final answer-label normalization. The focused test and both full publication audits checked the final record."
+  },
+  "dataPreservation": {
+    "solutions": {
+      "before": 12923,
+      "after": 12924,
+      "preserved": true
+    },
+    "users": {
+      "before": 10,
+      "after": 10,
+      "preserved": true
+    },
+    "solution_comments": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "site_feedback": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "leads": 1,
+    "fipiFilesUnchanged": 25,
+    "integrity": "ok"
+  },
+  "backupVerification": {
+    "status": "ok",
+    "count": 4,
+    "backups": [
+      {
+        "file": "baseline-solutions.sqlite.gz",
+        "sha256": "0e4370eed5b5c653de8eca2f6cb00852eb4bed7a23f3865a6d47e9404a26549f",
+        "uncompressedSha256": "d8e1fbb78aff8836a230492d548275bb19ff7db4013f230d134637fc3dac0aaa",
+        "bytes": 74592256,
+        "integrity": "ok"
+      },
+      {
+        "file": "baseline-study-leads.sqlite.gz",
+        "sha256": "a6aa7dbe2670d1712f9b2f48e0803dd1683c328a09202c5f4ae2f72fe1fa7999",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-solutions.sqlite.gz",
+        "sha256": "0e4370eed5b5c653de8eca2f6cb00852eb4bed7a23f3865a6d47e9404a26549f",
+        "uncompressedSha256": "d8e1fbb78aff8836a230492d548275bb19ff7db4013f230d134637fc3dac0aaa",
+        "bytes": 74592256,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-study-leads.sqlite.gz",
+        "sha256": "a6aa7dbe2670d1712f9b2f48e0803dd1683c328a09202c5f4ae2f72fe1fa7999",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      }
+    ]
+  },
+  "downloads": {
+    "preview": {
+      "status": "ok",
+      "files": [
+        {
+          "url": "/fipi/ege-informatics/docs/restored-strings/EGEINFCE2CF3.txt",
+          "bytes": 4940516,
+          "sha256": "9ae7f2413403526ecc8ce0d516ad853b3edc659abb71c17d4a2703b08e3acfbb"
+        }
+      ]
+    },
+    "public": {
+      "status": "ok",
+      "files": [
+        {
+          "url": "/fipi/ege-informatics/docs/restored-strings/EGEINFCE2CF3.txt",
+          "bytes": 4940516,
+          "sha256": "9ae7f2413403526ecc8ce0d516ad853b3edc659abb71c17d4a2703b08e3acfbb"
+        }
+      ]
+    }
+  },
+  "visualReview": {
+    "preview": {
+      "status": "ok",
+      "reviewedAt": "2026-11-05T01:30:13.830570+00:00",
+      "fullPagesActuallyViewed": 2,
+      "modalsActuallyViewed": 2,
+      "scrolledTableEndsActuallyViewed": 1,
+      "primaryDownloadIconActuallyViewed": true,
+      "notes": "Complete desktop/mobile conditions and solutions reviewed using page contact sheets. Alphabet mismatch is explicit, answer 97 is visible, code indentation is preserved. Mobile code and the two-column table scroll internally; the table right edge was viewed separately. Modal controls are visible, no overlapping text or page overflow.",
+      "files": [
+        {
+          "file": "EGEINFCE2CF3-desktop-modal.png",
+          "sha256": "fa46790274c8d74d6f01d559fed01516a74a42ccbdce4aa22a51067b654eb960"
+        },
+        {
+          "file": "EGEINFCE2CF3-desktop.png",
+          "sha256": "d91d6f47d147af11b746816222f8bc86aabf72968f86a7a15df0a6731a747042"
+        },
+        {
+          "file": "EGEINFCE2CF3-mobile-modal.png",
+          "sha256": "966fd3ad1e40cb22c6d76785fc46ca886977102c1553bd0194ee2e4628a18e29"
+        },
+        {
+          "file": "EGEINFCE2CF3-mobile-solution-table-1-end.png",
+          "sha256": "455f154561e82360719358cbd9199e60fce126404709d57f22dce3ab57911eae"
+        },
+        {
+          "file": "EGEINFCE2CF3-mobile.png",
+          "sha256": "5f27676f4a43a240ee16420b2fd32eeb191a72d756a019d4818944ae21d58762"
+        }
+      ]
+    },
+    "public": {
+      "status": "ok",
+      "reviewedAt": "2026-11-05T01:44:57.059743+00:00",
+      "fullPagesActuallyViewed": 2,
+      "modalsActuallyViewed": 2,
+      "scrolledTableEndsActuallyViewed": 1,
+      "notes": "Public desktop/mobile full pages, both modals and the mobile table right edge actually viewed. All five screenshots also match the previously reviewed preview pixel-for-pixel. Answer 97 and the original alphabet discrepancy are visible; no layout defects found.",
+      "files": [
+        {
+          "file": "EGEINFCE2CF3-desktop-modal.png",
+          "sha256": "fa46790274c8d74d6f01d559fed01516a74a42ccbdce4aa22a51067b654eb960"
+        },
+        {
+          "file": "EGEINFCE2CF3-desktop.png",
+          "sha256": "d91d6f47d147af11b746816222f8bc86aabf72968f86a7a15df0a6731a747042"
+        },
+        {
+          "file": "EGEINFCE2CF3-mobile-modal.png",
+          "sha256": "966fd3ad1e40cb22c6d76785fc46ca886977102c1553bd0194ee2e4628a18e29"
+        },
+        {
+          "file": "EGEINFCE2CF3-mobile-solution-table-1-end.png",
+          "sha256": "455f154561e82360719358cbd9199e60fce126404709d57f22dce3ab57911eae"
+        },
+        {
+          "file": "EGEINFCE2CF3-mobile.png",
+          "sha256": "5f27676f4a43a240ee16420b2fd32eeb191a72d756a019d4818944ae21d58762"
+        }
+      ]
+    }
+  },
+  "pixelComparison": {
+    "status": "ok",
+    "compared": 5,
+    "identical": 5,
+    "files": [
+      {
+        "file": "EGEINFCE2CF3-desktop-modal.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          1280,
+          960
+        ],
+        "publicSize": [
+          1280,
+          960
+        ],
+        "publicSha256": "fa46790274c8d74d6f01d559fed01516a74a42ccbdce4aa22a51067b654eb960"
+      },
+      {
+        "file": "EGEINFCE2CF3-desktop.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          1280,
+          3693
+        ],
+        "publicSize": [
+          1280,
+          3693
+        ],
+        "publicSha256": "d91d6f47d147af11b746816222f8bc86aabf72968f86a7a15df0a6731a747042"
+      },
+      {
+        "file": "EGEINFCE2CF3-mobile-modal.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          390,
+          844
+        ],
+        "publicSize": [
+          390,
+          844
+        ],
+        "publicSha256": "966fd3ad1e40cb22c6d76785fc46ca886977102c1553bd0194ee2e4628a18e29"
+      },
+      {
+        "file": "EGEINFCE2CF3-mobile-solution-table-1-end.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          316,
+          181
+        ],
+        "publicSize": [
+          316,
+          181
+        ],
+        "publicSha256": "455f154561e82360719358cbd9199e60fce126404709d57f22dce3ab57911eae"
+      },
+      {
+        "file": "EGEINFCE2CF3-mobile.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          390,
+          6174
+        ],
+        "publicSize": [
+          390,
+          6174
+        ],
+        "publicSha256": "5f27676f4a43a240ee16420b2fd32eeb191a72d756a019d4818944ae21d58762"
+      }
+    ]
+  },
+  "cleanup": {
+    "status": "ok",
+    "temporaryFilesRemoved": [
+      "/root/ege-informatics-reviewed-string-20261105/temporary/baseline-solutions.sqlite",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/solutions.sqlite-wal",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/preview.swap",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/.local",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/com.google.Chrome.L3Rg5J",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/baseline-solutions.sqlite-wal",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/baseline-solutions.sqlite-shm",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/prepublish-solutions.sqlite-wal",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/baseline-study-leads.sqlite",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/backup-verification.sqlite-wal",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/solutions.sqlite-shm",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/study-leads.sqlite",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/prepublish-solutions.sqlite",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/solutions.sqlite",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/com.google.Chrome.Ii9NAC",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/backup-verification.sqlite-shm",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/prepublish-study-leads.sqlite",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/.config",
+      "/root/ege-informatics-reviewed-string-20261105/temporary/prepublish-solutions.sqlite-shm"
+    ],
+    "temporarySwapRemovedBytes": 536870912,
+    "preexistingSwapFilesPreserved": true,
+    "verifiedBackupArchivesRetained": 4,
+    "derivedContactSheetsRemoved": true,
+    "duplicatePublicScreenshotsRemoved": [
+      "EGEINFCE2CF3-desktop-modal.png",
+      "EGEINFCE2CF3-desktop.png",
+      "EGEINFCE2CF3-mobile-modal.png",
+      "EGEINFCE2CF3-mobile-solution-table-1-end.png",
+      "EGEINFCE2CF3-mobile.png"
+    ],
+    "previewScreenshotsRetained": true,
+    "freeIncreaseBytes": 763633664,
+    "freeBytesAfter": 2823516160
+  },
+  "remainingGroups": {
+    "wordBoundaries": 4,
+    "rateTypography": 7,
+    "wrongAttachments": 3,
+    "simultaneousArrivalOrder": 4
+  },
+  "remainingResearch": {
+    "checkedAt": "2026-11-05T01:20:07.720224+00:00",
+    "publicationCandidate": "EGEINFCE2CF3",
+    "research": [
+      {
+        "group": "rates",
+        "result": "Среди 52 задач сохранённой семьи Решу ЕГЭ нет точного совпадения полного набора параметров оставшихся семи задач. Найденные вузовские и школьные подборки не подтвердили их исходное оформление степени.",
+        "source": "https://inf-ege.sdamgia.ru/test?print=true&theme=252"
+      },
+      {
+        "group": "word-boundaries",
+        "result": "ФИПИ рекомендует обращать внимание на сложные слова. В примере 2024 года учёт дефисных сочетаний явно задан в условии; в четырёх наших старых задачах такого уточнения нет. Этот пример не считается ключом к ним.",
+        "sources": [
+          "https://doc.fipi.ru/ege/analiticheskie-i-metodicheskie-materialy/2024/inf_mr_2024.pdf",
+          "https://doc.fipi.ru/ege/analiticheskie-i-metodicheskie-materialy/2025/inf_mr_2025.pdf"
+        ]
+      },
+      {
+        "group": "arrivals",
+        "result": "Сторонний архив для 290F15 показывает 344 53 — вариант сортировки равных начал по окончанию. Это не дополняет первичное условие правилом; ранее доказанная зависимость от порядка сохраняется.",
+        "source": "https://openfipi.devinf.ru/task/290F15"
+      },
+      {
+        "group": "wrong-attachments",
+        "result": "На SilverTests прочитаны точные условия 1F25B2 и 7F1EAA. В полученном публичном HTML не найдены ссылки на ZIP/RAR/TXT с исправленными данными. Файлы 331_26 и 307_26 из других сохранённых задач имеют иные условия и форматы; их подстановка не обоснована.",
+        "sources": [
+          "https://silvertests.ru/CourseTask_B.aspx?id=54531&idcourse=50627",
+          "https://silvertests.ru/CourseTask_B.aspx?id=54566&idcourse=50627"
+        ]
+      }
+    ]
+  },
+  "localArtifacts": "/root/ege-informatics-reviewed-string-20261105",
+  "screenshotsInGit": false,
+  "reproduce": [
+    "node --test scripts/ege-informatics-reviewed-string.test.js",
+    "node scripts/audit-ege-informatics-solutions.js --report /tmp/ege-informatics-audit.json"
+  ]
+}

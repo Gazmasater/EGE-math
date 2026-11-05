@@ -175,5 +175,10 @@
   "EGEINF2B1F8E": {
     "kind": "expression",
     "digits": "0789"
+  },
+  "EGEINFCE2CF3": {
+    "kind": "pairs",
+    "first": "CDF",
+    "second": "AE"
   }
 }
