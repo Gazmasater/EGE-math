@@ -1,20 +1,21 @@
 {
-  "scope": "Текущие пометки по 32 ранее отложенным решениям: шесть опубликованы, 26 ожидают уточнения первоисточника.",
+  "scope": "Текущие пометки по 32 ранее отложенным решениям: 13 опубликованы, 19 ожидают уточнения первоисточника.",
   "basedOn": "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
   "sourceCheckedAt": "2026-11-04T22:10:57.632Z",
   "publicationBaseline": {
-    "published": 2449,
+    "published": 2456,
     "total": 2475,
-    "date": "2026-11-04T23:38:42.623175+00:00",
+    "date": "2026-11-05T00:44:03.452476+00:00",
     "liveDatabaseRecounted": true
   },
   "counts": {
     "total": 32,
     "publishedAfterSourceRecovery": 6,
+    "publishedAfterManualFileReview": 7,
     "sourceRecoveredPendingSolutionVerification": 0,
-    "heldForSourceClarification": 26
+    "heldForSourceClarification": 19
   },
-  "publicationRequirement": "Шесть восстановленных задач опубликованы после независимых расчётов, полного аудита и визуальных проверок. Остальные 26 не опубликованы.",
+  "publicationRequirement": "13 решений опубликованы после независимых расчётов, полного аудита и визуальных проверок. Остальные 19 не опубликованы.",
   "tasks": [
     {
       "id": "EGEINF64212F",
@@ -164,155 +165,176 @@
       "id": "EGEINF79404A",
       "shortId": "79404A",
       "historicalGroup": "contradictory_coin_bound",
-      "status": "held",
+      "status": "published_verified",
       "conditionSignature": "a5a4673ba3a1bb370d11a21fcc8fb77b656599a2ff4e0fc2f3e77239f513b5c9",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-reviewed-robot-2026-11-05.json"
       ],
-      "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 108, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2794 1693. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
-      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
+      "statusLabel": "Решение по неизменённому файлу опубликовано и проверено",
+      "note": "Опубликовано по исходному файлу: 2794 1693. Превышение границы 100 в A1 явно описано в решении; числа и стены сохранены. Независимые расчёты и полный аудит прошли. Это вычисленный ответ, не подтверждённый ключ ФИПИ.",
+      "nextAction": "Завершено; при исправлении первоисточника повторить расчёт.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0390B221E5A4A15A41374CBB996C719F/img1_1739452053.zip",
         "sha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
         "integrity": "ZIP CRC passed"
       },
-      "answer": null,
+      "answer": "2794 1693",
       "calculatedFileAnswer": "2794 1693",
-      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json",
+      "publishedAt": "2026-11-05T00:44:03.452476+00:00",
+      "publishedSourceSignature": "27b4d6381bf1675b135cb504e1e8d09cc6092aaa408625c8e2c95e9736e09acd"
     },
     {
       "id": "EGEINF77DB46",
       "shortId": "77DB46",
       "historicalGroup": "contradictory_coin_bound",
-      "status": "held",
+      "status": "published_verified",
       "conditionSignature": "c75cafdf8609ff61fcdc4584b023dd36e833ee1624b17803c9e86fe3d60e48a4",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-reviewed-robot-2026-11-05.json"
       ],
-      "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 107, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2766 1820. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
-      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
+      "statusLabel": "Решение по неизменённому файлу опубликовано и проверено",
+      "note": "Опубликовано по исходному файлу: 2766 1820. Превышение границы 100 в A1 явно описано в решении; числа и стены сохранены. Независимые расчёты и полный аудит прошли. Это вычисленный ответ, не подтверждённый ключ ФИПИ.",
+      "nextAction": "Завершено; при исправлении первоисточника повторить расчёт.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/03D7347440FC865E4061FC6F52C292B8/img1_1739452037.zip",
         "sha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
         "integrity": "ZIP CRC passed"
       },
-      "answer": null,
+      "answer": "2766 1820",
       "calculatedFileAnswer": "2766 1820",
-      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json",
+      "publishedAt": "2026-11-05T00:44:03.452476+00:00",
+      "publishedSourceSignature": "271ec1c4a6c46cb8f54af7fa1253b4aba6c8cd817896ec9319e973dccc131c60"
     },
     {
       "id": "EGEINFB4F848",
       "shortId": "B4F848",
       "historicalGroup": "contradictory_coin_bound",
-      "status": "held",
+      "status": "published_verified",
       "conditionSignature": "3e9ce2b248fa0405e9f22dbda55b7836a2678e182feb0c3f671cca30c74d5045",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-reviewed-robot-2026-11-05.json"
       ],
-      "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 105, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2852 1784. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
-      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
+      "statusLabel": "Решение по неизменённому файлу опубликовано и проверено",
+      "note": "Опубликовано по исходному файлу: 2852 1784. Превышение границы 100 в A1 явно описано в решении; числа и стены сохранены. Независимые расчёты и полный аудит прошли. Это вычисленный ответ, не подтверждённый ключ ФИПИ.",
+      "nextAction": "Завершено; при исправлении первоисточника повторить расчёт.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/04F10FF773829C7A49316120AB88B35E/img1_1739451997.zip",
         "sha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
         "integrity": "ZIP CRC passed"
       },
-      "answer": null,
+      "answer": "2852 1784",
       "calculatedFileAnswer": "2852 1784",
-      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json",
+      "publishedAt": "2026-11-05T00:44:03.452476+00:00",
+      "publishedSourceSignature": "07f21b63ae615fb0b8b497ae11208a452f613bc8ac8ac842026dda6fc188c912"
     },
     {
       "id": "EGEINFE60642",
       "shortId": "E60642",
       "historicalGroup": "contradictory_coin_bound",
-      "status": "held",
+      "status": "published_verified",
       "conditionSignature": "8f0cf3cc4bfde044e657d92debf4f6803ed1e795c64f64ce34f918e7857ec2af",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-reviewed-robot-2026-11-05.json"
       ],
-      "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 102, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2337 1275. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
-      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
+      "statusLabel": "Решение по неизменённому файлу опубликовано и проверено",
+      "note": "Опубликовано по исходному файлу: 2337 1275. Превышение границы 100 в A1 явно описано в решении; числа и стены сохранены. Независимые расчёты и полный аудит прошли. Это вычисленный ответ, не подтверждённый ключ ФИПИ.",
+      "nextAction": "Завершено; при исправлении первоисточника повторить расчёт.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0C62DD3AA7B485CF48F63FC63DA9B332/img1_1739451859.zip",
         "sha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
         "integrity": "ZIP CRC passed"
       },
-      "answer": null,
+      "answer": "2337 1275",
       "calculatedFileAnswer": "2337 1275",
-      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json",
+      "publishedAt": "2026-11-05T00:44:03.452476+00:00",
+      "publishedSourceSignature": "a4b31b03568db6d99cd50f78c2f216566dc85f06987eb9a41c796e8af2b562a2"
     },
     {
       "id": "EGEINF779E0A",
       "shortId": "779E0A",
       "historicalGroup": "contradictory_coin_bound",
-      "status": "held",
+      "status": "published_verified",
       "conditionSignature": "5def6faa6a333d0f35a726ab4ee9b8f3a03be8669b847eec4a1d9eb0b5852517",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-reviewed-robot-2026-11-05.json"
       ],
-      "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 106, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2391 1059. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
-      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
+      "statusLabel": "Решение по неизменённому файлу опубликовано и проверено",
+      "note": "Опубликовано по исходному файлу: 2391 1059. Превышение границы 100 в A1 явно описано в решении; числа и стены сохранены. Независимые расчёты и полный аудит прошли. Это вычисленный ответ, не подтверждённый ключ ФИПИ.",
+      "nextAction": "Завершено; при исправлении первоисточника повторить расчёт.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/239B3C371E3195C54C4258A921FDE9E7/img1_1739452018.zip",
         "sha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
         "integrity": "ZIP CRC passed"
       },
-      "answer": null,
+      "answer": "2391 1059",
       "calculatedFileAnswer": "2391 1059",
-      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json",
+      "publishedAt": "2026-11-05T00:44:03.452476+00:00",
+      "publishedSourceSignature": "466dff731a84c9032af9a291added5b9b2b971fe8f0b75483911cbfe71a704fd"
     },
     {
       "id": "EGEINF34C97E",
       "shortId": "34C97E",
       "historicalGroup": "contradictory_coin_bound",
-      "status": "held",
+      "status": "published_verified",
       "conditionSignature": "faf5d08d1ffae1092b501a80d33918bb1319d8a4302fb0fac6052828f3c619b0",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-reviewed-robot-2026-11-05.json"
       ],
-      "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 101, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2691 1795. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
-      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
+      "statusLabel": "Решение по неизменённому файлу опубликовано и проверено",
+      "note": "Опубликовано по исходному файлу: 2691 1795. Превышение границы 100 в A1 явно описано в решении; числа и стены сохранены. Независимые расчёты и полный аудит прошли. Это вычисленный ответ, не подтверждённый ключ ФИПИ.",
+      "nextAction": "Завершено; при исправлении первоисточника повторить расчёт.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3ECA0B321AF3AE7A4359D54119B17121/img1_1739451840.zip",
         "sha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
         "integrity": "ZIP CRC passed"
       },
-      "answer": null,
+      "answer": "2691 1795",
       "calculatedFileAnswer": "2691 1795",
-      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json",
+      "publishedAt": "2026-11-05T00:44:03.452476+00:00",
+      "publishedSourceSignature": "901761e2bee9a83509634c3a438e8c73f47983e72b81260816e8c9ce0d858c18"
     },
     {
       "id": "EGEINF72C252",
       "shortId": "72C252",
       "historicalGroup": "contradictory_coin_bound",
-      "status": "held",
+      "status": "published_verified",
       "conditionSignature": "adb423b82c498b8fa6a8d5cc537702d325f1a6c8f8960bd66a547ab3d2e153aa",
       "evidence": [
         "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
-        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json"
+        "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+        "docs/audits/ege-informatics-reviewed-robot-2026-11-05.json"
       ],
-      "statusLabel": "Ожидается разрешение противоречия",
-      "note": "В исходной таблице Робота A1 = 104, при верхней границе 100 в условии. Полный условный разбор по неизменённому файлу: 2833 1944. Python/JavaScript и ODS/XLSX согласованы; это не подтверждённый ключ ФИПИ.",
-      "nextAction": "Уточнить A1 или первичный ключ. При A1=x обе суммы сдвигаются на x−исходное A1; маршруты сохраняются. Черновик готов, публикация ожидает разрешения расхождения.",
+      "statusLabel": "Решение по неизменённому файлу опубликовано и проверено",
+      "note": "Опубликовано по исходному файлу: 2833 1944. Превышение границы 100 в A1 явно описано в решении; числа и стены сохранены. Независимые расчёты и полный аудит прошли. Это вычисленный ответ, не подтверждённый ключ ФИПИ.",
+      "nextAction": "Завершено; при исправлении первоисточника повторить расчёт.",
       "originalArchive": {
         "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/836A66880AC8BF00421720E9DD5B8776/img1_1739451976.zip",
         "sha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
         "integrity": "ZIP CRC passed"
       },
-      "answer": null,
+      "answer": "2833 1944",
       "calculatedFileAnswer": "2833 1944",
-      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json"
+      "conditionalDraft": "docs/audits/ege-informatics-transfer-review-2026-11-05/robot-conditional-drafts.json",
+      "publishedAt": "2026-11-05T00:44:03.452476+00:00",
+      "publishedSourceSignature": "5ba72a2b58d7b6677246ea182a7d792a17cadc04c9119e3562a5dc393110d437"
     },
     {
       "id": "EGEINF2F9ABA",
@@ -703,14 +725,15 @@
       }
     }
   ],
-  "solutionCodeCommit": "db743c802a1ef1cac9d2094d7e768de82be47ce5",
-  "solutionCodeBranch": "codex/solve-six-restored-20261105",
+  "solutionCodeCommit": "683ebe545bf71ffe21577572a578c86292139ab4",
+  "solutionCodeBranch": "codex/publish-reviewed-robot-20261105",
   "conditionalDraftsReview": {
     "count": 14,
     "importChecks": 11,
     "report": "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
     "codeBranch": "codex/review-held-informatics-20261105",
     "codeCommit": "3fbc82e928c41e06fda44bfb6ec4dc996ad35d47",
-    "publishedNew": 0
+    "publishedNew": 0,
+    "robotDraftsPublishedAfterManualReview": 7
   }
 }

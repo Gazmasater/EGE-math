@@ -1,0 +1,778 @@
+{
+  "status": "ok",
+  "completedAt": "2026-11-05T00:44:03.452476+00:00",
+  "published": 2456,
+  "total": 2475,
+  "remaining": 19,
+  "added": 7,
+  "totalPublishedSolutions": 12923,
+  "tasks": [
+    {
+      "id": "EGEINF79404A",
+      "answer": "2794 1693",
+      "sourceSignature": "27b4d6381bf1675b135cb504e1e8d09cc6092aaa408625c8e2c95e9736e09acd"
+    },
+    {
+      "id": "EGEINF77DB46",
+      "answer": "2766 1820",
+      "sourceSignature": "271ec1c4a6c46cb8f54af7fa1253b4aba6c8cd817896ec9319e973dccc131c60"
+    },
+    {
+      "id": "EGEINFB4F848",
+      "answer": "2852 1784",
+      "sourceSignature": "07f21b63ae615fb0b8b497ae11208a452f613bc8ac8ac842026dda6fc188c912"
+    },
+    {
+      "id": "EGEINFE60642",
+      "answer": "2337 1275",
+      "sourceSignature": "a4b31b03568db6d99cd50f78c2f216566dc85f06987eb9a41c796e8af2b562a2"
+    },
+    {
+      "id": "EGEINF779E0A",
+      "answer": "2391 1059",
+      "sourceSignature": "466dff731a84c9032af9a291added5b9b2b971fe8f0b75483911cbfe71a704fd"
+    },
+    {
+      "id": "EGEINF34C97E",
+      "answer": "2691 1795",
+      "sourceSignature": "901761e2bee9a83509634c3a438e8c73f47983e72b81260816e8c9ce0d858c18"
+    },
+    {
+      "id": "EGEINF72C252",
+      "answer": "2833 1944",
+      "sourceSignature": "5ba72a2b58d7b6677246ea182a7d792a17cadc04c9119e3562a5dc393110d437"
+    }
+  ],
+  "sourceReview": {
+    "status": "reviewed",
+    "primaryConditionTasks": 7,
+    "primaryIconsActuallyViewed": 7,
+    "primaryIconContactSheet": "primary-icons.png",
+    "independentFormats": [
+      "ODS",
+      "XLSX"
+    ],
+    "previousCalculationCertificate": "docs/audits/ege-informatics-transfer-review-2026-11-05/transfer-review.json",
+    "externalPagesRead": [
+      "https://inf-ege.sdamgia.ru/problem?id=47222",
+      "https://obrazavr.ru/ege/297202/"
+    ],
+    "externalFiles": [
+      {
+        "file": "obrazavr-297202.ods",
+        "A1": 108,
+        "gridIdenticalTo79404A": true,
+        "sha256": "9308db7a8b93dd60496f0d1fd2b251ea7d9eb7ffa4569ddef6d98bca168442f8"
+      },
+      {
+        "file": "sdamgia-47222.ods",
+        "A1": 27,
+        "gridIdenticalTo79404A": false,
+        "sha256": "8060667c3c1ed05404bff4ae2251aa0eb4bf59e90b9bc1b0c9b276831113d618"
+      }
+    ],
+    "externalCalculations": [
+      {
+        "file": "obrazavr-297202.ods",
+        "answer": "2794 1693",
+        "minimum": 1693,
+        "maximum": 2794,
+        "paths": 2680968250
+      },
+      {
+        "file": "sdamgia-47222.ods",
+        "answer": "1099 1026",
+        "minimum": 1026,
+        "maximum": 1099,
+        "paths": 9307882
+      }
+    ],
+    "decision": "Use unchanged primary archive data. Preserve and disclose original bound discrepancy. Do not claim an official answer key. Exact SHA-256 and fixed A1 values limit exception to seven reviewed instances.",
+    "tests": {
+      "passed": 203,
+      "failed": 0,
+      "logSha256": "3ce39a1b4cf2a1fe9908c458ada13ada9b43f1c0b27eedd8b65d878f001cb419"
+    }
+  },
+  "sourcePreservation": {
+    "unchangedTasks": 2468,
+    "changedAttachmentTasks": [
+      "EGEINF79404A",
+      "EGEINF77DB46",
+      "EGEINFB4F848",
+      "EGEINFE60642",
+      "EGEINF779E0A",
+      "EGEINF34C97E",
+      "EGEINF72C252"
+    ],
+    "conditionsUnchanged": true,
+    "originalMirrorsPreserved": 369,
+    "totalMirrors": 376
+  },
+  "publication": {
+    "catalog": 2475,
+    "prepared": 2456,
+    "matches": {
+      "exact": 344,
+      "variant": 1340,
+      "method": 772
+    },
+    "changed": 7,
+    "published": 2456,
+    "remaining": 19,
+    "preserved": 12916,
+    "integrity": "ok",
+    "rejectedEdits": 51836,
+    "rejectedWrongAnswers": 4912,
+    "status": "ok",
+    "newTaskChecks": [
+      {
+        "id": "EGEINF79404A",
+        "answer": "2794 1693",
+        "kind": "reviewed-original-robot-file",
+        "elements": 400,
+        "rejectedEdits": 49
+      },
+      {
+        "id": "EGEINF77DB46",
+        "answer": "2766 1820",
+        "kind": "reviewed-original-robot-file",
+        "elements": 400,
+        "rejectedEdits": 49
+      },
+      {
+        "id": "EGEINFB4F848",
+        "answer": "2852 1784",
+        "kind": "reviewed-original-robot-file",
+        "elements": 400,
+        "rejectedEdits": 49
+      },
+      {
+        "id": "EGEINFE60642",
+        "answer": "2337 1275",
+        "kind": "reviewed-original-robot-file",
+        "elements": 400,
+        "rejectedEdits": 49
+      },
+      {
+        "id": "EGEINF779E0A",
+        "answer": "2391 1059",
+        "kind": "reviewed-original-robot-file",
+        "elements": 400,
+        "rejectedEdits": 49
+      },
+      {
+        "id": "EGEINF34C97E",
+        "answer": "2691 1795",
+        "kind": "reviewed-original-robot-file",
+        "elements": 400,
+        "rejectedEdits": 49
+      },
+      {
+        "id": "EGEINF72C252",
+        "answer": "2833 1944",
+        "kind": "reviewed-original-robot-file",
+        "elements": 400,
+        "rejectedEdits": 49
+      }
+    ]
+  },
+  "previewHttp": {
+    "origin": "http://127.0.0.1:8913",
+    "checkedAt": "2026-11-05T00:22:48.138Z",
+    "solutions": 2456,
+    "cataloguePages": 433,
+    "status": "ok"
+  },
+  "previewBank": {
+    "section": "ege-informatics",
+    "catalogues": 85,
+    "catalogPages": 958,
+    "ogeTasks": 2475,
+    "existingTasks": 0,
+    "sitemapUrls": 16334,
+    "errors": 0
+  },
+  "publicHttp": {
+    "origin": "https://ege-fipi.ru",
+    "checkedAt": "2026-11-05T00:42:30.664Z",
+    "solutions": 2456,
+    "cataloguePages": 433,
+    "status": "ok"
+  },
+  "browser": {
+    "preview": {
+      "pages": 14,
+      "modals": 14,
+      "errors": 0
+    },
+    "public": {
+      "pages": 14,
+      "modals": 14,
+      "errors": 0
+    }
+  },
+  "tests": {
+    "passed": 203,
+    "failed": 0,
+    "logSha256": "3ce39a1b4cf2a1fe9908c458ada13ada9b43f1c0b27eedd8b65d878f001cb419"
+  },
+  "dataPreservation": {
+    "solutions": {
+      "before": 12916,
+      "after": 12923,
+      "preserved": true
+    },
+    "users": {
+      "before": 10,
+      "after": 10,
+      "preserved": true
+    },
+    "solution_comments": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "site_feedback": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "leads": 1,
+    "fipiFilesUnchanged": 25,
+    "integrity": "ok"
+  },
+  "backupVerification": {
+    "status": "ok",
+    "count": 4,
+    "backups": [
+      {
+        "file": "baseline-solutions.sqlite.gz",
+        "sha256": "772943f2fe0755500b337e3e3d15c9e02a05cd6efb46f421b5335bfba1f0ef50",
+        "uncompressedSha256": "aac157ee69f6697c6fb51663d1e341cdc00aea83d4a8612cbe68a087456c99fb",
+        "bytes": 74534912,
+        "integrity": "ok"
+      },
+      {
+        "file": "baseline-study-leads.sqlite.gz",
+        "sha256": "5f3c8dce7545c6eb8a5e56ab5de17bb7dc5b3ac935e972da0a6afdd135bea5d7",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-solutions.sqlite.gz",
+        "sha256": "772943f2fe0755500b337e3e3d15c9e02a05cd6efb46f421b5335bfba1f0ef50",
+        "uncompressedSha256": "aac157ee69f6697c6fb51663d1e341cdc00aea83d4a8612cbe68a087456c99fb",
+        "bytes": 74534912,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-study-leads.sqlite.gz",
+        "sha256": "5f3c8dce7545c6eb8a5e56ab5de17bb7dc5b3ac935e972da0a6afdd135bea5d7",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      }
+    ]
+  },
+  "cleanup": {
+    "status": "ok",
+    "temporaryFilesRemoved": [
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/baseline-solutions.sqlite",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/com.google.Chrome.4iaWQK",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/solutions.sqlite-wal",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/.local",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/baseline-solutions.sqlite-wal",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/baseline-solutions.sqlite-shm",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/com.google.Chrome.kKeWfa",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/prepublish-solutions.sqlite-wal",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/baseline-study-leads.sqlite",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/backup-verification.sqlite-wal",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/solutions.sqlite-shm",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/study-leads.sqlite",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/prepublish-solutions.sqlite",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/solutions.sqlite",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/backup-verification.sqlite-shm",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/prepublish-study-leads.sqlite",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/.config",
+      "/root/ege-informatics-reviewed-robot-20261105/temporary/prepublish-solutions.sqlite-shm"
+    ],
+    "temporarySwapRemovedBytes": 536870912,
+    "preexistingSwapFilesPreserved": true,
+    "verifiedBackupArchivesRetained": 4,
+    "derivedContactSheetsRemoved": true,
+    "duplicatePublicScreenshotsRemoved": [
+      "EGEINF34C97E-desktop-modal.png",
+      "EGEINF34C97E-desktop.png",
+      "EGEINF34C97E-mobile-modal.png",
+      "EGEINF34C97E-mobile-solution-table-3-end.png",
+      "EGEINF34C97E-mobile.png",
+      "EGEINF72C252-desktop-modal.png",
+      "EGEINF72C252-desktop.png",
+      "EGEINF72C252-mobile-modal.png",
+      "EGEINF72C252-mobile-solution-table-3-end.png",
+      "EGEINF72C252-mobile.png",
+      "EGEINF779E0A-desktop-modal.png",
+      "EGEINF779E0A-desktop.png",
+      "EGEINF779E0A-mobile-modal.png",
+      "EGEINF779E0A-mobile-solution-table-3-end.png",
+      "EGEINF779E0A-mobile.png",
+      "EGEINF77DB46-desktop-modal.png",
+      "EGEINF77DB46-desktop.png",
+      "EGEINF77DB46-mobile-modal.png",
+      "EGEINF77DB46-mobile-solution-table-3-end.png",
+      "EGEINF77DB46-mobile.png",
+      "EGEINF79404A-desktop-modal.png",
+      "EGEINF79404A-desktop.png",
+      "EGEINF79404A-mobile-modal.png",
+      "EGEINF79404A-mobile-solution-table-3-end.png",
+      "EGEINF79404A-mobile.png",
+      "EGEINFB4F848-desktop-modal.png",
+      "EGEINFB4F848-desktop.png",
+      "EGEINFB4F848-mobile-modal.png",
+      "EGEINFB4F848-mobile-solution-table-3-end.png",
+      "EGEINFB4F848-mobile.png",
+      "EGEINFE60642-desktop-modal.png",
+      "EGEINFE60642-desktop.png",
+      "EGEINFE60642-mobile-modal.png",
+      "EGEINFE60642-mobile-solution-table-3-end.png",
+      "EGEINFE60642-mobile.png"
+    ],
+    "previewScreenshotsRetained": true,
+    "freeIncreaseBytes": 786649088,
+    "freeBytesAfter": 2892726272
+  },
+  "localArtifacts": "/root/ege-informatics-reviewed-robot-20261105",
+  "screenshotsInGit": false,
+  "downloads": {
+    "preview": {
+      "status": "ok",
+      "files": [
+        {
+          "id": "EGEINF79404A",
+          "url": "http://127.0.0.1:8913/fipi/ege-informatics/docs/official-open/2026/EGEINF79404A.zip",
+          "bytes": 33826,
+          "sha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINF77DB46",
+          "url": "http://127.0.0.1:8913/fipi/ege-informatics/docs/official-open/2026/EGEINF77DB46.zip",
+          "bytes": 34432,
+          "sha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINFB4F848",
+          "url": "http://127.0.0.1:8913/fipi/ege-informatics/docs/official-open/2026/EGEINFB4F848.zip",
+          "bytes": 34137,
+          "sha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINFE60642",
+          "url": "http://127.0.0.1:8913/fipi/ege-informatics/docs/official-open/2026/EGEINFE60642.zip",
+          "bytes": 33637,
+          "sha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINF779E0A",
+          "url": "http://127.0.0.1:8913/fipi/ege-informatics/docs/official-open/2026/EGEINF779E0A.zip",
+          "bytes": 33446,
+          "sha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINF34C97E",
+          "url": "http://127.0.0.1:8913/fipi/ege-informatics/docs/official-open/2026/EGEINF34C97E.zip",
+          "bytes": 36484,
+          "sha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINF72C252",
+          "url": "http://127.0.0.1:8913/fipi/ege-informatics/docs/official-open/2026/EGEINF72C252.zip",
+          "bytes": 34132,
+          "sha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
+          "status": "ok"
+        }
+      ]
+    },
+    "public": {
+      "status": "ok",
+      "files": [
+        {
+          "id": "EGEINF79404A",
+          "url": "https://ege-fipi.ru/fipi/ege-informatics/docs/official-open/2026/EGEINF79404A.zip",
+          "bytes": 33826,
+          "sha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINF77DB46",
+          "url": "https://ege-fipi.ru/fipi/ege-informatics/docs/official-open/2026/EGEINF77DB46.zip",
+          "bytes": 34432,
+          "sha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINFB4F848",
+          "url": "https://ege-fipi.ru/fipi/ege-informatics/docs/official-open/2026/EGEINFB4F848.zip",
+          "bytes": 34137,
+          "sha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINFE60642",
+          "url": "https://ege-fipi.ru/fipi/ege-informatics/docs/official-open/2026/EGEINFE60642.zip",
+          "bytes": 33637,
+          "sha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINF779E0A",
+          "url": "https://ege-fipi.ru/fipi/ege-informatics/docs/official-open/2026/EGEINF779E0A.zip",
+          "bytes": 33446,
+          "sha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINF34C97E",
+          "url": "https://ege-fipi.ru/fipi/ege-informatics/docs/official-open/2026/EGEINF34C97E.zip",
+          "bytes": 36484,
+          "sha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
+          "status": "ok"
+        },
+        {
+          "id": "EGEINF72C252",
+          "url": "https://ege-fipi.ru/fipi/ege-informatics/docs/official-open/2026/EGEINF72C252.zip",
+          "bytes": 34132,
+          "sha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
+          "status": "ok"
+        }
+      ]
+    }
+  },
+  "visualReview": {
+    "preview": {
+      "status": "ok",
+      "reviewedAt": "2026-11-05T00:25:11.625491+00:00",
+      "fullPagesActuallyViewed": 14,
+      "modalsActuallyViewed": 14,
+      "scrolledTableEndsActuallyViewed": 7,
+      "primaryHtmlExampleTablesViewed": 7,
+      "notes": "All conditions, complete solutions, answer order, A1 disclosure, tables and modal controls reviewed at desktop/mobile widths. Wide route tables scroll horizontally on mobile; right ends reviewed separately. No overlaps or lost content.",
+      "files": [
+        {
+          "file": "EGEINF34C97E-desktop-modal.png",
+          "sha256": "91a61125ddb641b9a5a61264b4a403d9452b8c1f92bd782984df64730574874c"
+        },
+        {
+          "file": "EGEINF34C97E-desktop.png",
+          "sha256": "dcf996b751503b653fcef88032ca0fc502362f75267e692f4c014f00a4325f81"
+        },
+        {
+          "file": "EGEINF34C97E-mobile-modal.png",
+          "sha256": "7b39773f1c1ba23cc18f853ee4b2632702e28fc9d60ee1e6dd5e164d50d66ff5"
+        },
+        {
+          "file": "EGEINF34C97E-mobile-solution-table-3-end.png",
+          "sha256": "edf849be4a93f56ed4d6717a3087730162a276ce3617d8c84992a2168966f59b"
+        },
+        {
+          "file": "EGEINF34C97E-mobile.png",
+          "sha256": "1ec3362001f4f0e3d2eea7aa00a1782b81fcf7bb145ab75ad39e920dba8394e3"
+        },
+        {
+          "file": "EGEINF72C252-desktop-modal.png",
+          "sha256": "6821da5f43899f8a9466bc62d338dd59f1505b60908fbc4317add27ca64ed056"
+        },
+        {
+          "file": "EGEINF72C252-desktop.png",
+          "sha256": "50f64817d82ca8a210799ba582d214b6d46eb862571dd1165e3f1c9e6ede3a3b"
+        },
+        {
+          "file": "EGEINF72C252-mobile-modal.png",
+          "sha256": "73e51b3153533e6e2825081036565fbda71ac6f0b375cbdff4c76ccda0ec9f01"
+        },
+        {
+          "file": "EGEINF72C252-mobile-solution-table-3-end.png",
+          "sha256": "758d8b2458b31990c8e816210ac617a5fc023fc0267b9a3a236d61f64001da95"
+        },
+        {
+          "file": "EGEINF72C252-mobile.png",
+          "sha256": "1e341b4b1d29aa40f4c37ba51095018a89b0a82903546b664e90a3f16dd4438a"
+        },
+        {
+          "file": "EGEINF779E0A-desktop-modal.png",
+          "sha256": "3dc5189df7db749c776b46fa5ae760c2d0de6fe1cea4e3b4d2786f36f3214486"
+        },
+        {
+          "file": "EGEINF779E0A-desktop.png",
+          "sha256": "ba62a5f5b20f5a084e4f8ac1f2d8c512f6a27dee4d6b255c60f17438ac21db45"
+        },
+        {
+          "file": "EGEINF779E0A-mobile-modal.png",
+          "sha256": "491e018773520de9b77d4de1a87b50b91f98591f0fc58e2cf5e74ef031456dc1"
+        },
+        {
+          "file": "EGEINF779E0A-mobile-solution-table-3-end.png",
+          "sha256": "aecda7880e9d6650d583d51e4e5db3cdf82d57fffa045500802bbc32d76ad959"
+        },
+        {
+          "file": "EGEINF779E0A-mobile.png",
+          "sha256": "438bc004c4ef7123ef197370e6cf35df2e4b069451cfc2d748aa3db1f5584a31"
+        },
+        {
+          "file": "EGEINF77DB46-desktop-modal.png",
+          "sha256": "880973a0392fb90af67b1e15153c74b8d76f233850425c3d17e740c3e0a52c3e"
+        },
+        {
+          "file": "EGEINF77DB46-desktop.png",
+          "sha256": "5b7ae35a785a34f6261a707c394e1cfcf5b500155a6fec20aaf2046999d7ba23"
+        },
+        {
+          "file": "EGEINF77DB46-mobile-modal.png",
+          "sha256": "cefd4f8cf88fff1292326efa2c28680d9274ffa2c2859f7dab6b97dcf488ac20"
+        },
+        {
+          "file": "EGEINF77DB46-mobile-solution-table-3-end.png",
+          "sha256": "717ae1cdc102b74226dad212ba0cbbd076a6aebdcc58176e34d4077cc25c1a22"
+        },
+        {
+          "file": "EGEINF77DB46-mobile.png",
+          "sha256": "d3395310eac21a83b0fcdc8b499fad95b24c4de9b5d767b7a9d249ae9c020ce0"
+        },
+        {
+          "file": "EGEINF79404A-desktop-modal.png",
+          "sha256": "7c65f31f02512e662ef2fbdca2a803350adf6dd23ad80ce7a0ae6888a8bececf"
+        },
+        {
+          "file": "EGEINF79404A-desktop.png",
+          "sha256": "96591619a0a49c9199f9ceb2cee2372dd5f31fb9a7a2bc25397ce48772474e2b"
+        },
+        {
+          "file": "EGEINF79404A-mobile-modal.png",
+          "sha256": "00e7763d908cd6fe31b4ed116c108f371dca48c01d169be99c4bd8ff1ca9f16c"
+        },
+        {
+          "file": "EGEINF79404A-mobile-solution-table-3-end.png",
+          "sha256": "103986ff8c979fd720335905226b9d94d0d09071955226d3de1c7d41076d0a83"
+        },
+        {
+          "file": "EGEINF79404A-mobile.png",
+          "sha256": "e59bd311e6e325c3c0845b2b15416f82338129be557d0330907478e1184c9240"
+        },
+        {
+          "file": "EGEINFB4F848-desktop-modal.png",
+          "sha256": "6870cc09ba8b05b8b94702c9fc88a666e4177fc451d755e3a70fff1abcd3ca2e"
+        },
+        {
+          "file": "EGEINFB4F848-desktop.png",
+          "sha256": "2f340a38e7d7a208adb4011edb6db7ce6eacd70b7ba52b7167016bd4cbe76f3c"
+        },
+        {
+          "file": "EGEINFB4F848-mobile-modal.png",
+          "sha256": "7ff79737eb05096c31c6786416534112ab89a71f62822da3a9177c04669f1f7c"
+        },
+        {
+          "file": "EGEINFB4F848-mobile-solution-table-3-end.png",
+          "sha256": "9b357c2269f7497b2b2fa1478fefe04eb5a379be61dc5dc01911f3720b831b28"
+        },
+        {
+          "file": "EGEINFB4F848-mobile.png",
+          "sha256": "fe4eb2b701d34583db8a75c4f1ca9b6630ba94ee89076deb993d0e58043658e9"
+        },
+        {
+          "file": "EGEINFE60642-desktop-modal.png",
+          "sha256": "a64a15d512b33352501c77a0a7beedf3c914887b21a02ad684b0544a7b6a6855"
+        },
+        {
+          "file": "EGEINFE60642-desktop.png",
+          "sha256": "30cd250256c06bd5225f34b10a2099228a5f83ab86816b86162e60742e887464"
+        },
+        {
+          "file": "EGEINFE60642-mobile-modal.png",
+          "sha256": "bc05a7a199cdac9b418bf67dd296f06aa95b134f0f3ba64187ceffe3f89a384c"
+        },
+        {
+          "file": "EGEINFE60642-mobile-solution-table-3-end.png",
+          "sha256": "a1a879cd7a3248f5c5fa85ddb8cdfa13b8d946085729720193fe027a94d46457"
+        },
+        {
+          "file": "EGEINFE60642-mobile.png",
+          "sha256": "3fbb517059949e4c8896bdeee1e35c6908ef30301af0375f869d02d9f2601947"
+        }
+      ]
+    },
+    "public": {
+      "status": "ok",
+      "reviewedAt": "2026-11-05T00:43:37.629566+00:00",
+      "method": "All 35 public screenshots are pixel-identical to the actually visually reviewed preview screenshots.",
+      "pages": 14,
+      "modals": 14,
+      "scrolledTableEnds": 7,
+      "pixelComparison": "public-preview-pixel-comparison.json",
+      "previewReview": "preview-visual-review.json",
+      "files": [
+        {
+          "file": "EGEINF34C97E-desktop-modal.png",
+          "sha256": "91a61125ddb641b9a5a61264b4a403d9452b8c1f92bd782984df64730574874c"
+        },
+        {
+          "file": "EGEINF34C97E-desktop.png",
+          "sha256": "dcf996b751503b653fcef88032ca0fc502362f75267e692f4c014f00a4325f81"
+        },
+        {
+          "file": "EGEINF34C97E-mobile-modal.png",
+          "sha256": "7b39773f1c1ba23cc18f853ee4b2632702e28fc9d60ee1e6dd5e164d50d66ff5"
+        },
+        {
+          "file": "EGEINF34C97E-mobile-solution-table-3-end.png",
+          "sha256": "edf849be4a93f56ed4d6717a3087730162a276ce3617d8c84992a2168966f59b"
+        },
+        {
+          "file": "EGEINF34C97E-mobile.png",
+          "sha256": "1ec3362001f4f0e3d2eea7aa00a1782b81fcf7bb145ab75ad39e920dba8394e3"
+        },
+        {
+          "file": "EGEINF72C252-desktop-modal.png",
+          "sha256": "6821da5f43899f8a9466bc62d338dd59f1505b60908fbc4317add27ca64ed056"
+        },
+        {
+          "file": "EGEINF72C252-desktop.png",
+          "sha256": "50f64817d82ca8a210799ba582d214b6d46eb862571dd1165e3f1c9e6ede3a3b"
+        },
+        {
+          "file": "EGEINF72C252-mobile-modal.png",
+          "sha256": "73e51b3153533e6e2825081036565fbda71ac6f0b375cbdff4c76ccda0ec9f01"
+        },
+        {
+          "file": "EGEINF72C252-mobile-solution-table-3-end.png",
+          "sha256": "758d8b2458b31990c8e816210ac617a5fc023fc0267b9a3a236d61f64001da95"
+        },
+        {
+          "file": "EGEINF72C252-mobile.png",
+          "sha256": "1e341b4b1d29aa40f4c37ba51095018a89b0a82903546b664e90a3f16dd4438a"
+        },
+        {
+          "file": "EGEINF779E0A-desktop-modal.png",
+          "sha256": "3dc5189df7db749c776b46fa5ae760c2d0de6fe1cea4e3b4d2786f36f3214486"
+        },
+        {
+          "file": "EGEINF779E0A-desktop.png",
+          "sha256": "ba62a5f5b20f5a084e4f8ac1f2d8c512f6a27dee4d6b255c60f17438ac21db45"
+        },
+        {
+          "file": "EGEINF779E0A-mobile-modal.png",
+          "sha256": "491e018773520de9b77d4de1a87b50b91f98591f0fc58e2cf5e74ef031456dc1"
+        },
+        {
+          "file": "EGEINF779E0A-mobile-solution-table-3-end.png",
+          "sha256": "aecda7880e9d6650d583d51e4e5db3cdf82d57fffa045500802bbc32d76ad959"
+        },
+        {
+          "file": "EGEINF779E0A-mobile.png",
+          "sha256": "438bc004c4ef7123ef197370e6cf35df2e4b069451cfc2d748aa3db1f5584a31"
+        },
+        {
+          "file": "EGEINF77DB46-desktop-modal.png",
+          "sha256": "880973a0392fb90af67b1e15153c74b8d76f233850425c3d17e740c3e0a52c3e"
+        },
+        {
+          "file": "EGEINF77DB46-desktop.png",
+          "sha256": "5b7ae35a785a34f6261a707c394e1cfcf5b500155a6fec20aaf2046999d7ba23"
+        },
+        {
+          "file": "EGEINF77DB46-mobile-modal.png",
+          "sha256": "cefd4f8cf88fff1292326efa2c28680d9274ffa2c2859f7dab6b97dcf488ac20"
+        },
+        {
+          "file": "EGEINF77DB46-mobile-solution-table-3-end.png",
+          "sha256": "717ae1cdc102b74226dad212ba0cbbd076a6aebdcc58176e34d4077cc25c1a22"
+        },
+        {
+          "file": "EGEINF77DB46-mobile.png",
+          "sha256": "d3395310eac21a83b0fcdc8b499fad95b24c4de9b5d767b7a9d249ae9c020ce0"
+        },
+        {
+          "file": "EGEINF79404A-desktop-modal.png",
+          "sha256": "7c65f31f02512e662ef2fbdca2a803350adf6dd23ad80ce7a0ae6888a8bececf"
+        },
+        {
+          "file": "EGEINF79404A-desktop.png",
+          "sha256": "96591619a0a49c9199f9ceb2cee2372dd5f31fb9a7a2bc25397ce48772474e2b"
+        },
+        {
+          "file": "EGEINF79404A-mobile-modal.png",
+          "sha256": "00e7763d908cd6fe31b4ed116c108f371dca48c01d169be99c4bd8ff1ca9f16c"
+        },
+        {
+          "file": "EGEINF79404A-mobile-solution-table-3-end.png",
+          "sha256": "103986ff8c979fd720335905226b9d94d0d09071955226d3de1c7d41076d0a83"
+        },
+        {
+          "file": "EGEINF79404A-mobile.png",
+          "sha256": "e59bd311e6e325c3c0845b2b15416f82338129be557d0330907478e1184c9240"
+        },
+        {
+          "file": "EGEINFB4F848-desktop-modal.png",
+          "sha256": "6870cc09ba8b05b8b94702c9fc88a666e4177fc451d755e3a70fff1abcd3ca2e"
+        },
+        {
+          "file": "EGEINFB4F848-desktop.png",
+          "sha256": "2f340a38e7d7a208adb4011edb6db7ce6eacd70b7ba52b7167016bd4cbe76f3c"
+        },
+        {
+          "file": "EGEINFB4F848-mobile-modal.png",
+          "sha256": "7ff79737eb05096c31c6786416534112ab89a71f62822da3a9177c04669f1f7c"
+        },
+        {
+          "file": "EGEINFB4F848-mobile-solution-table-3-end.png",
+          "sha256": "9b357c2269f7497b2b2fa1478fefe04eb5a379be61dc5dc01911f3720b831b28"
+        },
+        {
+          "file": "EGEINFB4F848-mobile.png",
+          "sha256": "fe4eb2b701d34583db8a75c4f1ca9b6630ba94ee89076deb993d0e58043658e9"
+        },
+        {
+          "file": "EGEINFE60642-desktop-modal.png",
+          "sha256": "a64a15d512b33352501c77a0a7beedf3c914887b21a02ad684b0544a7b6a6855"
+        },
+        {
+          "file": "EGEINFE60642-desktop.png",
+          "sha256": "30cd250256c06bd5225f34b10a2099228a5f83ab86816b86162e60742e887464"
+        },
+        {
+          "file": "EGEINFE60642-mobile-modal.png",
+          "sha256": "bc05a7a199cdac9b418bf67dd296f06aa95b134f0f3ba64187ceffe3f89a384c"
+        },
+        {
+          "file": "EGEINFE60642-mobile-solution-table-3-end.png",
+          "sha256": "a1a879cd7a3248f5c5fa85ddb8cdfa13b8d946085729720193fe027a94d46457"
+        },
+        {
+          "file": "EGEINFE60642-mobile.png",
+          "sha256": "3fbb517059949e4c8896bdeee1e35c6908ef30301af0375f869d02d9f2601947"
+        }
+      ]
+    }
+  },
+  "interruptedPreview": {
+    "exitCode": 143,
+    "completedChecksRetained": [
+      "preview-insert.json",
+      "preview-format.log",
+      "preview-http.json",
+      "preview-browser/report.json",
+      "preview-visual-review.json"
+    ],
+    "incompleteCheck": "full-bank HTTP",
+    "incompleteCheckNotCountedAsPassed": true,
+    "observedProgress": 1000,
+    "restartScope": "full-bank HTTP only",
+    "note": "Combined shell stopped after approximately 15 minutes; exact SIGTERM issuer not established. No kernel OOM message observed."
+  }
+}
