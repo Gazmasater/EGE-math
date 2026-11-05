@@ -4331,5 +4331,14 @@
     "archiveSha256": "8fb58a8e1bb9b1b698033997d85f55ee4d2018e09c7cddabd6c42e386485b7b3",
     "member": "320_24.txt",
     "review": "Неизменённый TXT официального архива. В тексте условия заявлен ABCDU, фактически ACDEF; общее правило «согласная + гласная» применяется к буквам файла, расхождение явно раскрыто в решении."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/854E168600589BCA468E1694311F3BEF/img1_1661424780.zip": {
+    "taskId": "EGEINF327EB5",
+    "localRelative": "docs/restored-optimization/EGEINF327EB5.zip",
+    "sha256": "e002ef198d3c8e5bcca138bb49a094f3974f83c10c4ae9302c292684e3dbe325",
+    "bytes": 5207205,
+    "sourceKind": "official-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/854E168600589BCA468E1694311F3BEF/img1_1661424780.zip",
+    "review": "Неизменённый официальный архив. После N в заголовке есть дополнительное число, используемое в другой задаче 30C294. В 327EB5 задана стоимость доставки из всех пунктов без радиуса; поле явно разобрано как неиспользуемое. Все N пар данных, их порядок и вместимость 44 сохранены."
   }
 }

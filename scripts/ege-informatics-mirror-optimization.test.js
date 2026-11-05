@@ -5,7 +5,7 @@ test('300 independently brute-forced fixtures cover all ten optimization familie
  const kinds=new Set();for(const f of fixtures){kinds.add(f.model.kind);if(f.answer===null)assert.throws(()=>m.solve(f.data,f.model));else assert.equal(m.solve(f.data,f.model).answer,String(f.answer));}assert.equal(kinds.size,10);
  assert.equal(m.solve({N:3,K:1,columns:[[10000000,10000000,10000000]]},{kind:'gap-triple',operation:'max-product'}).answer,'1000000000000000000000');
 });
-test('all 29 source conditions bind extrema, direction, parity, capacities and modulus',()=>{
+test('all source conditions bind extrema, direction, parity, capacities and modulus',()=>{
  for(const [id,text]of Object.entries(conditions))assert.deepEqual(m.conditionModel(text),models[id]);
  for(const [id,from,to]of [
   ['EGEINF952F46','положительна и чётна','положительна и нечётна'],

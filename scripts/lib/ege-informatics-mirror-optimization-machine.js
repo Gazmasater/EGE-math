@@ -117,11 +117,16 @@ function compute(task,data,readFile=fs.readFileSync){
  const urls=[...task.fragment.matchAll(/class="fipi-attachment" href="([^"]+)"/g)].map(m=>m[1]);assert.deepEqual(urls,[data.url]);
  const file=path.resolve(root,data.url.slice(1).replace(/^fipi\//,'fipi-assets/'));assert.ok(file.startsWith(root+'/fipi-assets/ege-informatics/'));
  const bytes=readFile(file);assert.equal(sha(bytes),data.fileSha256);
- const key=JSON.stringify([data.fileSha256,data.model,data.members,data.certificates]);let result=cache.get(key);
+ if(data.reviewedHeaders!==undefined){
+  assert.equal(task.id,'EGEINF327EB5','header exception is task-specific');
+  assert.equal(data.fileSha256,'e002ef198d3c8e5bcca138bb49a094f3974f83c10c4ae9302c292684e3dbe325');
+  assert.deepEqual(data.reviewedHeaders,[[100,113],[1200000,12013]]);
+ }
+ const key=JSON.stringify([data.fileSha256,data.model,data.members,data.certificates,data.reviewedHeaders]);let result=cache.get(key);
  if(!result){
   const contents=unpack(bytes,data.members.map(m=>m.name)),files=[];
   for(let i=0;i<2;i++){
-   const content=contents[i],hash=sha(content);assert.equal(hash,data.members[i].sha256);const d=parse(content,data.model),certificate=data.certificates[i];
+   const content=contents[i],hash=sha(content);assert.equal(hash,data.members[i].sha256);const d=parse(content,data.model,data.reviewedHeaders?.[i]),certificate=data.certificates[i];
    const range=validate(d,data.model,certificate,hash),answer=solve(d,data.model).answer;verifyWitness(d,data.model,certificate);verifyExtra(d,data.model,certificate);assert.equal(answer,String(certificate.answer),'answer');
    files.push({letter:'AB'[i],N:d.N,answer,sha256:hash,...range});contents[i]=null;
   }

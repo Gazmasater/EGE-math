@@ -133,5 +133,9 @@
   "EGEINF549B82": {
     "kind": "choose-triples",
     "modulus": 109
+  },
+  "EGEINF327EB5": {
+    "kind": "linear-cost",
+    "capacity": 44
   }
 }

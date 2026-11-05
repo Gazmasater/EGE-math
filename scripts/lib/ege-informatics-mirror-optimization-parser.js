@@ -1,9 +1,24 @@
 'use strict';
 const assert=require('node:assert/strict');
-function parse(bytes,model){
+const {createHash}=require('node:crypto');
+// These two unchanged 327EB5 files also serve a radius task. Only their
+// reviewed headers may contain an unused field in the linear-cost task.
+const reviewedLinearHeaders={
+  '42a2f968e5c870317a40f7a894bc7c07b2645cd0cd0651f0dea6d09620b63575':[100,113],
+  '4f87d4686feb08ec16a14feaad68144124af1c6ea946d40700232a7e97aa8131':[1200000,12013]
+};
+function parse(bytes,model,reviewedHeader){
+  if(reviewedHeader!==undefined){
+    assert.equal(model.kind,'linear-cost','reviewed header requires linear cost');
+    const expected=reviewedLinearHeaders[createHash('sha256').update(bytes).digest('hex')];
+    assert.ok(expected,'unreviewed file header');
+    assert.deepEqual(reviewedHeader,expected,'changed reviewed header');
+    assert.deepEqual(bytes.subarray(0,bytes.indexOf(10)).toString().trim().split(/\s+/).map(Number),expected);
+  }
   let at=0;
   function next(){while(at<bytes.length&&bytes[at]<=32)at++;assert.ok(at<bytes.length,'missing integer');let sign=1;if(bytes[at]===45){sign=-1;at++;}let v=0,digits=0;while(at<bytes.length&&bytes[at]>=48&&bytes[at]<=57){v=v*10+bytes[at++]-48;digits++;}assert.ok(digits&&Number.isSafeInteger(v));assert.ok(at===bytes.length||bytes[at]<=32);return sign*v;}
   let N,K,M;if(model.kind.startsWith('gap-')){K=next();N=next();}else{N=next();if(model.kind==='radius-containers')M=next();}
+  if(reviewedHeader!==undefined)assert.deepEqual([N,next()],reviewedHeader);
   assert.ok(N>=1&&N<=10000000);const width=['linear-cost','radius-containers'].includes(model.kind)?2:model.kind==='choose-triples'?3:1;
   const columns=Array.from({length:width},()=>new Float64Array(N));
   for(let i=0;i<N;i++)for(const column of columns)column[i]=next();while(at<bytes.length&&bytes[at]<=32)at++;assert.equal(at,bytes.length);
