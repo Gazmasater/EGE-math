@@ -1,0 +1,501 @@
+{
+  "checkedAt": "2026-11-05T00:00:35.289238+00:00",
+  "scope": "Проверка переноса 11 условий и файлов; условные решения семи задач передачи данных и семи задач Робота.",
+  "importFindings": [
+    {
+      "id": "EGEINFEF0000",
+      "conditionSignature": "73e546557ee80b32f8b1b61e888f2ba912253eae2c2315308cdcc2843b38ca8c",
+      "rawPage": "ege-informatics-13.raw.html",
+      "rawPageSha256": "c07e2e98635518c71cd8e4ff03685a540771d375d7edc96569bdbaa03dc0cfa6",
+      "rawFragmentSha256": "c88e860892c5e37b1638d286fc2c73499c15f608787e0faa5464f0ecec4452aa",
+      "status": "unchanged_in_import",
+      "kind": "rate",
+      "literal": "223",
+      "rawSnippet": "корость передачи данных по каналу связи составляет 223 бит <br /> в секунду;</p> <p clas",
+      "normalizedSnippet": "корость передачи данных по каналу связи составляет 223 бит <br /> в секунду;</p> <p class=\"ListParagraph1401CxSpMiddle\" "
+    },
+    {
+      "id": "EGEINF5459A3",
+      "conditionSignature": "5fb37b49aec4c703a1254fccd4f570e688b4a4d1d2ebe88e08d96240a6962822",
+      "rawPage": "ege-informatics-17.raw.html",
+      "rawPageSha256": "269faf378cf68904bcb1c66369ceeca5c6a1341a189144028ef96d68c2c5f05b",
+      "rawFragmentSha256": "332baee43ffe3abf03d343e9c39ebbfe3c4797322e8026f4bcadd62317159b03",
+      "status": "unchanged_in_import",
+      "kind": "rate",
+      "literal": "224",
+      "rawSnippet": "корость передачи данных по каналу связи составляет 224 бит <br /> в секунду;</p> <p clas",
+      "normalizedSnippet": "корость передачи данных по каналу связи составляет 224 бит <br /> в секунду;</p> <p class=\"ListParagraph1401CxSpMiddle\" "
+    },
+    {
+      "id": "EGEINF502BCF",
+      "conditionSignature": "8c1b97340afcbc3f01b5e47e969d28f36035eb4e7f07ebee0c50c6553de5013f",
+      "rawPage": "ege-informatics-18.raw.html",
+      "rawPageSha256": "7a80a0aef12a50a65c7ef04439eb1ae02424f0ae8a331ac032132d4707bc7326",
+      "rawFragmentSha256": "85d629911c7db223915f85cdf91d5eb32630eb6cceb390d7bb8ebbf64e7f8c36",
+      "status": "unchanged_in_import",
+      "kind": "rate",
+      "literal": "221",
+      "rawSnippet": "корость передачи данных по каналу связи составляет 221 бит <br /> в секунду;</p> <p clas",
+      "normalizedSnippet": "корость передачи данных по каналу связи составляет 221 бит <br /> в секунду;</p> <p class=\"ListParagraph1401CxSpMiddle\" "
+    },
+    {
+      "id": "EGEINF47E49C",
+      "conditionSignature": "9865f6e069624ed6caed2c42b0523480ff40529e6d2f6e226b3c554e0bb68989",
+      "rawPage": "ege-informatics-18.raw.html",
+      "rawPageSha256": "7a80a0aef12a50a65c7ef04439eb1ae02424f0ae8a331ac032132d4707bc7326",
+      "rawFragmentSha256": "3525479e9c039433559d780fd2c914facdd3a1804e2033ee05f0de2b8e0c6d05",
+      "status": "unchanged_in_import",
+      "kind": "rate",
+      "literal": "220",
+      "rawSnippet": "корость передачи данных по каналу связи составляет 220 бит в секунду;</P>\r\n<P class=List",
+      "normalizedSnippet": "корость передачи данных по каналу связи составляет 220 бит в секунду;</P>\r\n<P class=ListParagraph1401CxSpMiddle>-&nbsp;&"
+    },
+    {
+      "id": "EGEINF57579A",
+      "conditionSignature": "0baa73a7cff5d3308efc31aa339bf9cb2b48ba83cb644a39ba92c87412e75be0",
+      "rawPage": "ege-informatics-19.raw.html",
+      "rawPageSha256": "660195753e914bd097fbae6151f11e40801f12f69b0f98f3a86fe985be0e16e4",
+      "rawFragmentSha256": "03c1e0c77400dd0b808a777b1e3229a2fd60854e929038f284041aa4ca44f9a7",
+      "status": "unchanged_in_import",
+      "kind": "rate",
+      "literal": "220",
+      "rawSnippet": "корость передачи данных по каналу связи составляет 220 бит в секунду;</P>\r\n<P class=List",
+      "normalizedSnippet": "корость передачи данных по каналу связи составляет 220 бит в секунду;</P>\r\n<P class=ListParagraph1401CxSpMiddle>-&nbsp;&"
+    },
+    {
+      "id": "EGEINFBAE6EF",
+      "conditionSignature": "2939929b99843b5a91b5cfb0e6287d61e63536aed5b932616e4c5d2858f97d99",
+      "rawPage": "ege-informatics-19.raw.html",
+      "rawPageSha256": "660195753e914bd097fbae6151f11e40801f12f69b0f98f3a86fe985be0e16e4",
+      "rawFragmentSha256": "0738fcd5bedb4e29af095221b8587531c53082b4858149cd72c169a577549dad",
+      "status": "unchanged_in_import",
+      "kind": "rate",
+      "literal": "223",
+      "rawSnippet": "корость передачи данных по каналу связи составляет 223 бит <br /> в секунду;</p> <p clas",
+      "normalizedSnippet": "корость передачи данных по каналу связи составляет 223 бит <br /> в секунду;</p> <p class=\"ListParagraph1401CxSpMiddle\" "
+    },
+    {
+      "id": "EGEINF4CAD3D",
+      "conditionSignature": "c9d4dbd668c4267d0aaf0b0d8c6045f2e9490db86a41343436432b2cb03c3f23",
+      "rawPage": "ege-informatics-20.raw.html",
+      "rawPageSha256": "109a1c65ea35bf707a385a1a4f6379813132a274cda569dbe0c5fb458979155c",
+      "rawFragmentSha256": "3d6e3e15abe57920b7ef438c0b040faf02f6c9d2e4a5bdf151ae8e1690f6dbaf",
+      "status": "unchanged_in_import",
+      "kind": "rate",
+      "literal": "220",
+      "rawSnippet": "корость передачи данных по каналу связи составляет 220 бит в секунду;</p> <p class=\"List",
+      "normalizedSnippet": "корость передачи данных по каналу связи составляет 220 бит в секунду;</p> <p class=\"ListParagraph1401CxSpMiddle\"><span>-"
+    },
+    {
+      "id": "EGEINFCE2CF3",
+      "conditionSignature": "3bb69a7b81c2731b6b94179e04226d311015ac05501ea6825d947287e026fbb8",
+      "rawPage": "ege-informatics-21.raw.html",
+      "rawPageSha256": "e35ca259476f9f251d59ba578dd53df280e3828e49f64eb754e12d0bb425e8ed",
+      "rawFragmentSha256": "0721fb22093573ca3562e683ce2573b606112208aa98951e69ea5d6a06dfb0a4",
+      "status": "unchanged_in_import",
+      "kind": "attachment",
+      "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/65EACC155F7992584CCD065E723BCDCC/img1_1661424753.zip",
+      "archiveSha256": "8fb58a8e1bb9b1b698033997d85f55ee4d2018e09c7cddabd6c42e386485b7b3",
+      "matchesPreviousOfficialDownload": true,
+      "files": [
+        {
+          "name": "320_24.txt",
+          "sha256": "9ae7f2413403526ecc8ce0d516ad853b3edc659abb71c17d4a2703b08e3acfbb",
+          "firstLine": "ADAFEDADEDECEDADEFADADAFACCCADEFADAFEFACFEACFFEDEDEDACACEEADAFEFEDADACFEFDFEAADEFADAAFADAFEFCAACADAF",
+          "lineCount": 1,
+          "fieldCountsFirstRows": [
+            1
+          ],
+          "alphabet": [
+            "A",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        }
+      ],
+      "contentIssue": {
+        "firstLines": {
+          "320_24.txt": "ADAFEDADEDECEDADEFADADAFACCCADEFADAFEFACFEACFFEDEDEDACACEEADAFEFEDADACFEFDFEAADE"
+        },
+        "expectedAlphabet": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "U"
+        ],
+        "actualAlphabet": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      }
+    },
+    {
+      "id": "EGEINF1F25B2",
+      "conditionSignature": "85bacbfbf39f8b98527f427fbf5e8c1ec261df8a052e6bf738470439ba4995a3",
+      "rawPage": "ege-informatics-22.raw.html",
+      "rawPageSha256": "d8b07076edca8023fc85734a1273ff6c5562d089c1215e4f0488631ae7eed18b",
+      "rawFragmentSha256": "f55c41eaaae15ad6be2dfa37a3416b1a7dcdf99559560b50d54f3692a84098c7",
+      "status": "unchanged_in_import",
+      "kind": "attachment",
+      "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/D5BAB1F9E9A19541446F4819D1A37378/img1_1661424890.zip",
+      "archiveSha256": "72067e0865f7c01810001da5d9e45e62b6423b526b9649b6e7dc64b12be7e0b1",
+      "matchesPreviousOfficialDownload": true,
+      "files": [
+        {
+          "name": "331_24.txt",
+          "sha256": "bb8017cda3fc4455ca719f3da1916568265ae27613ca9c810c0ff70a4d1840e1",
+          "firstLine": "DAADAFUFADADUCACUCUDAFUFUCACUCAFUDAFAFCFAFUDACAFAFAFUFAFAFACUCUCUDAFUDUCUDAFUDAACUDUDADADUCCDUFAFAFA",
+          "lineCount": 1,
+          "fieldCountsFirstRows": [
+            1
+          ],
+          "alphabet": null
+        }
+      ],
+      "contentIssue": {
+        "firstLines": {
+          "331_24.txt": "DAADAFUFADADUCACUCUDAFUFUCACUCAFUDAFAFCFAFUDACAFAFAFUFAFAFACUCUCUDAFUDUCUDAFUDAA"
+        }
+      }
+    },
+    {
+      "id": "EGEINF327EB5",
+      "conditionSignature": "bd82a71981bb7af54e9d231b3a627d6cfea23d3c64fbec5a8df31ea74b3cc2f4",
+      "rawPage": "ege-informatics-22.raw.html",
+      "rawPageSha256": "d8b07076edca8023fc85734a1273ff6c5562d089c1215e4f0488631ae7eed18b",
+      "rawFragmentSha256": "a4d3b7c96d2426a00f7637bd099f3cfd5aa76f8854da63207e1d0d4b56d8d011",
+      "status": "unchanged_in_import",
+      "kind": "attachment",
+      "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/854E168600589BCA468E1694311F3BEF/img1_1661424780.zip",
+      "archiveSha256": "e002ef198d3c8e5bcca138bb49a094f3974f83c10c4ae9302c292684e3dbe325",
+      "matchesPreviousOfficialDownload": true,
+      "files": [
+        {
+          "name": "320_27_A.txt",
+          "sha256": "42a2f968e5c870317a40f7a894bc7c07b2645cd0cd0651f0dea6d09620b63575",
+          "firstLine": "100 113",
+          "lineCount": 101,
+          "fieldCountsFirstRows": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "alphabet": null
+        },
+        {
+          "name": "320_27_B.txt",
+          "sha256": "4f87d4686feb08ec16a14feaad68144124af1c6ea946d40700232a7e97aa8131",
+          "firstLine": "1200000 12013",
+          "lineCount": 1200001,
+          "fieldCountsFirstRows": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "alphabet": null
+        }
+      ],
+      "contentIssue": {
+        "firstLines": {
+          "320_27_A.txt": "100 113",
+          "320_27_B.txt": "1200000 12013"
+        }
+      }
+    },
+    {
+      "id": "EGEINF7F1EAA",
+      "conditionSignature": "f55b941ae99b54c0b9610ed9c716c075a9fe484702f39aa31c859037adb8ed28",
+      "rawPage": "ege-informatics-23.raw.html",
+      "rawPageSha256": "a15ae59fa847a256530d81058f213432f8a5220cc0d2d9011dfe1faa221f09a8",
+      "rawFragmentSha256": "89c698caff2fc0721ff3c8d2ce1416d2c5c19ae32e2b1019943526114e621757",
+      "status": "unchanged_in_import",
+      "kind": "attachment",
+      "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/93951C18AC3D8B744125E97940F855B0/img1_1689856649.zip",
+      "archiveSha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4",
+      "matchesPreviousOfficialDownload": true,
+      "files": [
+        {
+          "name": "307_27_B.txt",
+          "sha256": "23a0e373f92ac5f2ffc771e5f9dbcaa0c2b06853b4f9eca01830464b07169c2e",
+          "firstLine": "1757523",
+          "lineCount": 1757524,
+          "fieldCountsFirstRows": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "alphabet": null
+        },
+        {
+          "name": "307_27_A.txt",
+          "sha256": "ff52a256b9678e16f86c15909f46e59f800b164a8892934229a3978dd20bd6aa",
+          "firstLine": "710",
+          "lineCount": 711,
+          "fieldCountsFirstRows": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "alphabet": null
+        }
+      ],
+      "contentIssue": {
+        "firstLines": {
+          "307_27_B.txt": "1757523",
+          "307_27_A.txt": "710"
+        }
+      }
+    }
+  ],
+  "robotCalculations": {
+    "EGEINF79404A": {
+      "minimum": 1693,
+      "maximum": 2794,
+      "paths": 2680968250,
+      "A1": 108,
+      "answerFromUnmodifiedFile": "2794 1693",
+      "answerIfA1IsX": {
+        "maximumConstant": 2686,
+        "minimumConstant": 1585,
+        "formula": "maximumConstant + x; minimumConstant + x",
+        "xRange": [
+          1,
+          100
+        ]
+      },
+      "outOfBoundCells": [
+        {
+          "cell": "A1",
+          "value": 108,
+          "declaredMaximum": 100
+        }
+      ],
+      "formatsAgree": true,
+      "cellsCompared": 400,
+      "archiveSha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
+      "fileHashes": {
+        "EGEINF79404A.xlsx": "080e11b738247d9f2eb8d6fe02dd6808b81a9e43d58498517865ea19a751cb37",
+        "EGEINF79404A.ods": "9308db7a8b93dd60496f0d1fd2b251ea7d9eb7ffa4569ddef6d98bca168442f8"
+      }
+    },
+    "EGEINF77DB46": {
+      "minimum": 1820,
+      "maximum": 2766,
+      "paths": 2677621971,
+      "A1": 107,
+      "answerFromUnmodifiedFile": "2766 1820",
+      "answerIfA1IsX": {
+        "maximumConstant": 2659,
+        "minimumConstant": 1713,
+        "formula": "maximumConstant + x; minimumConstant + x",
+        "xRange": [
+          1,
+          100
+        ]
+      },
+      "outOfBoundCells": [
+        {
+          "cell": "A1",
+          "value": 107,
+          "declaredMaximum": 100
+        }
+      ],
+      "formatsAgree": true,
+      "cellsCompared": 400,
+      "archiveSha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
+      "fileHashes": {
+        "EGEINF77DB46.xlsx": "c4b1ea69e2eab7e797e7b73191e9e08ccc2ea7ea34bf51dc29bfc70c1068a2a9",
+        "EGEINF77DB46.ods": "f72e291f8112ff7966cf5296550d1113815d85e068f56baa74622cacb7314f6f"
+      }
+    },
+    "EGEINFB4F848": {
+      "minimum": 1784,
+      "maximum": 2852,
+      "paths": 2680968250,
+      "A1": 105,
+      "answerFromUnmodifiedFile": "2852 1784",
+      "answerIfA1IsX": {
+        "maximumConstant": 2747,
+        "minimumConstant": 1679,
+        "formula": "maximumConstant + x; minimumConstant + x",
+        "xRange": [
+          1,
+          100
+        ]
+      },
+      "outOfBoundCells": [
+        {
+          "cell": "A1",
+          "value": 105,
+          "declaredMaximum": 100
+        }
+      ],
+      "formatsAgree": true,
+      "cellsCompared": 400,
+      "archiveSha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
+      "fileHashes": {
+        "EGEINFB4F848.xlsx": "57ede65e454595c94154398ac774d887a0f08a2695f577a60c8685993d1d94b8",
+        "EGEINFB4F848.ods": "48d5c13658a76ca3151df108b3bc3ece01c8fe48577b288061e6271eff45f425"
+      }
+    },
+    "EGEINFE60642": {
+      "minimum": 1275,
+      "maximum": 2337,
+      "paths": 2680968250,
+      "A1": 102,
+      "answerFromUnmodifiedFile": "2337 1275",
+      "answerIfA1IsX": {
+        "maximumConstant": 2235,
+        "minimumConstant": 1173,
+        "formula": "maximumConstant + x; minimumConstant + x",
+        "xRange": [
+          1,
+          100
+        ]
+      },
+      "outOfBoundCells": [
+        {
+          "cell": "A1",
+          "value": 102,
+          "declaredMaximum": 100
+        }
+      ],
+      "formatsAgree": true,
+      "cellsCompared": 400,
+      "archiveSha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
+      "fileHashes": {
+        "EGEINFE60642.xlsx": "0d5711f8fa421626f7af548cce77ac5efc9c5be3f20a84d97642ad737c266733",
+        "EGEINFE60642.ods": "89667b494bb657600255fa40c425f5f913044b18e136d264071eac54cb1f5e23"
+      }
+    },
+    "EGEINF779E0A": {
+      "minimum": 1059,
+      "maximum": 2391,
+      "paths": 2677621971,
+      "A1": 106,
+      "answerFromUnmodifiedFile": "2391 1059",
+      "answerIfA1IsX": {
+        "maximumConstant": 2285,
+        "minimumConstant": 953,
+        "formula": "maximumConstant + x; minimumConstant + x",
+        "xRange": [
+          1,
+          100
+        ]
+      },
+      "outOfBoundCells": [
+        {
+          "cell": "A1",
+          "value": 106,
+          "declaredMaximum": 100
+        }
+      ],
+      "formatsAgree": true,
+      "cellsCompared": 400,
+      "archiveSha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
+      "fileHashes": {
+        "EGEINF779E0A.xlsx": "7df3b7688b44a69f0307b1e1ecc3387c5d719198a0ed412694b82edabdeb0155",
+        "EGEINF779E0A.ods": "07ed62bd8dc62cbe8b6eb86a7073fbba02ea7a5f3ebea2f5df82101fe082abc4"
+      }
+    },
+    "EGEINF34C97E": {
+      "minimum": 1795,
+      "maximum": 2691,
+      "paths": 2680968250,
+      "A1": 101,
+      "answerFromUnmodifiedFile": "2691 1795",
+      "answerIfA1IsX": {
+        "maximumConstant": 2590,
+        "minimumConstant": 1694,
+        "formula": "maximumConstant + x; minimumConstant + x",
+        "xRange": [
+          1,
+          100
+        ]
+      },
+      "outOfBoundCells": [
+        {
+          "cell": "A1",
+          "value": 101,
+          "declaredMaximum": 100
+        }
+      ],
+      "formatsAgree": true,
+      "cellsCompared": 400,
+      "archiveSha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
+      "fileHashes": {
+        "EGEINF34C97E.xlsx": "9314d68d52a0cf9a7bb13d6cc59430e3209f74342a7a20ee5af804388061e221",
+        "EGEINF34C97E.ods": "20259f9fb1423ca1e935f69a8b91c72e7f71daf442ee94c940f3f111e69ef8c5"
+      }
+    },
+    "EGEINF72C252": {
+      "minimum": 1944,
+      "maximum": 2833,
+      "paths": 2680968250,
+      "A1": 104,
+      "answerFromUnmodifiedFile": "2833 1944",
+      "answerIfA1IsX": {
+        "maximumConstant": 2729,
+        "minimumConstant": 1840,
+        "formula": "maximumConstant + x; minimumConstant + x",
+        "xRange": [
+          1,
+          100
+        ]
+      },
+      "outOfBoundCells": [
+        {
+          "cell": "A1",
+          "value": 104,
+          "declaredMaximum": 100
+        }
+      ],
+      "formatsAgree": true,
+      "cellsCompared": 400,
+      "archiveSha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
+      "fileHashes": {
+        "EGEINF72C252.xlsx": "59ef33f50ca20f2e41636e05b796eb4af182410dbd48f39b0ca3a726326e65ee",
+        "EGEINF72C252.ods": "a78b7e4e54d50c0cc8c5eb10cd327d28a903b38eb0cdf8ad143ce96b14a7041c"
+      }
+    }
+  },
+  "counts": {
+    "importChecked": 11,
+    "robotConditionalDrafts": 7,
+    "rateConditionalDrafts": 7,
+    "publishedNew": 0
+  },
+  "networkCheck": {
+    "status": "connect_timeout",
+    "endpoint": "https://ege.fipi.ru/bank/questions.php",
+    "note": "Новая загрузка не состоялась. Сопоставление использует сохранённые raw HTML и официальный отчёт предыдущего успешного скачивания 2026-11-04T22:10:57.632Z."
+  },
+  "publicationDecision": "answer=null; черновики вне реестра публикации. Полнота переноса проверенных условий подтверждена; первичный ответ не подменяется условным расчётом.",
+  "previousOfficialReview": "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+  "publicationBaseline": {
+    "checkedAt": "2026-11-05T00:02:52.537289+00:00",
+    "publishedInformatics": 2449,
+    "publishedTotal": 12916,
+    "remaining": 26,
+    "readOnlyQuery": true
+  },
+  "verification": {
+    "python": "7 archives, 2800 cells, all walls, 14 optimal routes and 14 exact rate alternatives agree",
+    "javascript": "7 robot results and 700 counterfactual A1 values agree; 14 exact rate alternatives also independently checked",
+    "publishedCodeChanged": false
+  }
+}

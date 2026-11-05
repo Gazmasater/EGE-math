@@ -1,0 +1,324 @@
+[
+  {
+    "id": "EGEINF79404A",
+    "group": "contradictory_coin_bound",
+    "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0390B221E5A4A15A41374CBB996C719F/img1_1739452053.zip",
+    "status": 200,
+    "bytes": 33826,
+    "signature": "504b030414000000",
+    "sha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
+    "members": [
+      {
+        "name": "8_18.xls",
+        "bytes": 27648,
+        "sha256": "436bb4c616cb21ed19680c8d1b8afeaaf915c74aa918212d63a81894dee90566"
+      },
+      {
+        "name": "8_18.xlsx",
+        "bytes": 11115,
+        "sha256": "080e11b738247d9f2eb8d6fe02dd6808b81a9e43d58498517865ea19a751cb37"
+      },
+      {
+        "name": "8_18.ods",
+        "bytes": 22481,
+        "sha256": "9308db7a8b93dd60496f0d1fd2b251ea7d9eb7ffa4569ddef6d98bca168442f8"
+      }
+    ],
+    "integrity": "ZIP CRC passed",
+    "contentIssue": {
+      "cell": "A1",
+      "value": 108,
+      "conditionMaximum": 100
+    },
+    "localArchiveSha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
+    "localArchiveOrigin": "/root/ege-informatics-mirror-robot-20261103/archives/79404A_3.zip",
+    "extracted": [
+      {
+        "name": "8_18.xlsx",
+        "file": "EGEINF79404A.xlsx",
+        "sha256": "080e11b738247d9f2eb8d6fe02dd6808b81a9e43d58498517865ea19a751cb37"
+      },
+      {
+        "name": "8_18.ods",
+        "file": "EGEINF79404A.ods",
+        "sha256": "9308db7a8b93dd60496f0d1fd2b251ea7d9eb7ffa4569ddef6d98bca168442f8"
+      }
+    ]
+  },
+  {
+    "id": "EGEINF77DB46",
+    "group": "contradictory_coin_bound",
+    "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/03D7347440FC865E4061FC6F52C292B8/img1_1739452037.zip",
+    "status": 200,
+    "bytes": 34432,
+    "signature": "504b030414000000",
+    "sha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
+    "members": [
+      {
+        "name": "7_18.xls",
+        "bytes": 27648,
+        "sha256": "3d17e55ebf8acc8b9e76ce9e94af062771da9645dee60b40bdd3e0fd6f791e09"
+      },
+      {
+        "name": "7_18.xlsx",
+        "bytes": 11182,
+        "sha256": "c4b1ea69e2eab7e797e7b73191e9e08ccc2ea7ea34bf51dc29bfc70c1068a2a9"
+      },
+      {
+        "name": "7_18.ods",
+        "bytes": 23017,
+        "sha256": "f72e291f8112ff7966cf5296550d1113815d85e068f56baa74622cacb7314f6f"
+      }
+    ],
+    "integrity": "ZIP CRC passed",
+    "contentIssue": {
+      "cell": "A1",
+      "value": 107,
+      "conditionMaximum": 100
+    },
+    "localArchiveSha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
+    "localArchiveOrigin": "/root/ege-informatics-mirror-robot-20261103/archives/77DB46_3.zip",
+    "extracted": [
+      {
+        "name": "7_18.xlsx",
+        "file": "EGEINF77DB46.xlsx",
+        "sha256": "c4b1ea69e2eab7e797e7b73191e9e08ccc2ea7ea34bf51dc29bfc70c1068a2a9"
+      },
+      {
+        "name": "7_18.ods",
+        "file": "EGEINF77DB46.ods",
+        "sha256": "f72e291f8112ff7966cf5296550d1113815d85e068f56baa74622cacb7314f6f"
+      }
+    ]
+  },
+  {
+    "id": "EGEINFB4F848",
+    "group": "contradictory_coin_bound",
+    "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/04F10FF773829C7A49316120AB88B35E/img1_1739451997.zip",
+    "status": 200,
+    "bytes": 34137,
+    "signature": "504b030414000000",
+    "sha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
+    "members": [
+      {
+        "name": "5_18.xls",
+        "bytes": 27648,
+        "sha256": "48890732ca8f270b5d5f5497a7b678e551271a54a6a59d34ef51b7885ef60dab"
+      },
+      {
+        "name": "5_18.xlsx",
+        "bytes": 11152,
+        "sha256": "57ede65e454595c94154398ac774d887a0f08a2695f577a60c8685993d1d94b8"
+      },
+      {
+        "name": "5_18.ods",
+        "bytes": 22799,
+        "sha256": "48d5c13658a76ca3151df108b3bc3ece01c8fe48577b288061e6271eff45f425"
+      }
+    ],
+    "integrity": "ZIP CRC passed",
+    "contentIssue": {
+      "cell": "A1",
+      "value": 105,
+      "conditionMaximum": 100
+    },
+    "localArchiveSha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
+    "localArchiveOrigin": "/root/ege-informatics-mirror-robot-20261103/archives/B4F848_3.zip",
+    "extracted": [
+      {
+        "name": "5_18.xlsx",
+        "file": "EGEINFB4F848.xlsx",
+        "sha256": "57ede65e454595c94154398ac774d887a0f08a2695f577a60c8685993d1d94b8"
+      },
+      {
+        "name": "5_18.ods",
+        "file": "EGEINFB4F848.ods",
+        "sha256": "48d5c13658a76ca3151df108b3bc3ece01c8fe48577b288061e6271eff45f425"
+      }
+    ]
+  },
+  {
+    "id": "EGEINFE60642",
+    "group": "contradictory_coin_bound",
+    "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/0C62DD3AA7B485CF48F63FC63DA9B332/img1_1739451859.zip",
+    "status": 200,
+    "bytes": 33637,
+    "signature": "504b030414000000",
+    "sha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
+    "members": [
+      {
+        "name": "2_18.xlsx",
+        "bytes": 11150,
+        "sha256": "0d5711f8fa421626f7af548cce77ac5efc9c5be3f20a84d97642ad737c266733"
+      },
+      {
+        "name": "2_18.ods",
+        "bytes": 22201,
+        "sha256": "89667b494bb657600255fa40c425f5f913044b18e136d264071eac54cb1f5e23"
+      },
+      {
+        "name": "2_18.xls",
+        "bytes": 27648,
+        "sha256": "19588c4f9750f7434fc3a6bba8d1b80dc8131cff9821d5aa996701b82aa34cac"
+      }
+    ],
+    "integrity": "ZIP CRC passed",
+    "contentIssue": {
+      "cell": "A1",
+      "value": 102,
+      "conditionMaximum": 100
+    },
+    "localArchiveSha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
+    "localArchiveOrigin": "/root/ege-informatics-mirror-robot-20261103/archives/E60642_3.zip",
+    "extracted": [
+      {
+        "name": "2_18.xlsx",
+        "file": "EGEINFE60642.xlsx",
+        "sha256": "0d5711f8fa421626f7af548cce77ac5efc9c5be3f20a84d97642ad737c266733"
+      },
+      {
+        "name": "2_18.ods",
+        "file": "EGEINFE60642.ods",
+        "sha256": "89667b494bb657600255fa40c425f5f913044b18e136d264071eac54cb1f5e23"
+      }
+    ]
+  },
+  {
+    "id": "EGEINF779E0A",
+    "group": "contradictory_coin_bound",
+    "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/239B3C371E3195C54C4258A921FDE9E7/img1_1739452018.zip",
+    "status": 200,
+    "bytes": 33446,
+    "signature": "504b030414000000",
+    "sha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
+    "members": [
+      {
+        "name": "6_18.xlsx",
+        "bytes": 11191,
+        "sha256": "7df3b7688b44a69f0307b1e1ecc3387c5d719198a0ed412694b82edabdeb0155"
+      },
+      {
+        "name": "6_18.ods",
+        "bytes": 22020,
+        "sha256": "07ed62bd8dc62cbe8b6eb86a7073fbba02ea7a5f3ebea2f5df82101fe082abc4"
+      },
+      {
+        "name": "6_18.xls",
+        "bytes": 27648,
+        "sha256": "1dd0b002ec7550c376b6f56397a43ccb476b4027ebc1e9c723ddcac43ed9feaa"
+      }
+    ],
+    "integrity": "ZIP CRC passed",
+    "contentIssue": {
+      "cell": "A1",
+      "value": 106,
+      "conditionMaximum": 100
+    },
+    "localArchiveSha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
+    "localArchiveOrigin": "/root/ege-informatics-mirror-robot-20261103/archives/779E0A_3.zip",
+    "extracted": [
+      {
+        "name": "6_18.xlsx",
+        "file": "EGEINF779E0A.xlsx",
+        "sha256": "7df3b7688b44a69f0307b1e1ecc3387c5d719198a0ed412694b82edabdeb0155"
+      },
+      {
+        "name": "6_18.ods",
+        "file": "EGEINF779E0A.ods",
+        "sha256": "07ed62bd8dc62cbe8b6eb86a7073fbba02ea7a5f3ebea2f5df82101fe082abc4"
+      }
+    ]
+  },
+  {
+    "id": "EGEINF34C97E",
+    "group": "contradictory_coin_bound",
+    "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3ECA0B321AF3AE7A4359D54119B17121/img1_1739451840.zip",
+    "status": 200,
+    "bytes": 36484,
+    "signature": "504b030414000000",
+    "sha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
+    "members": [
+      {
+        "name": "1_18.xls",
+        "bytes": 30208,
+        "sha256": "844268008320457e5e0740d43b7e93e33767365ad8286b4aa015a33da11f51f2"
+      },
+      {
+        "name": "1_18.xlsx",
+        "bytes": 10213,
+        "sha256": "9314d68d52a0cf9a7bb13d6cc59430e3209f74342a7a20ee5af804388061e221"
+      },
+      {
+        "name": "1_18.ods",
+        "bytes": 22669,
+        "sha256": "20259f9fb1423ca1e935f69a8b91c72e7f71daf442ee94c940f3f111e69ef8c5"
+      }
+    ],
+    "integrity": "ZIP CRC passed",
+    "contentIssue": {
+      "cell": "A1",
+      "value": 101,
+      "conditionMaximum": 100
+    },
+    "localArchiveSha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
+    "localArchiveOrigin": "/root/ege-informatics-mirror-robot-20261103/archives/34C97E_3.zip",
+    "extracted": [
+      {
+        "name": "1_18.xlsx",
+        "file": "EGEINF34C97E.xlsx",
+        "sha256": "9314d68d52a0cf9a7bb13d6cc59430e3209f74342a7a20ee5af804388061e221"
+      },
+      {
+        "name": "1_18.ods",
+        "file": "EGEINF34C97E.ods",
+        "sha256": "20259f9fb1423ca1e935f69a8b91c72e7f71daf442ee94c940f3f111e69ef8c5"
+      }
+    ]
+  },
+  {
+    "id": "EGEINF72C252",
+    "group": "contradictory_coin_bound",
+    "url": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/836A66880AC8BF00421720E9DD5B8776/img1_1739451976.zip",
+    "status": 200,
+    "bytes": 34132,
+    "signature": "504b030414000000",
+    "sha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
+    "members": [
+      {
+        "name": "4_18.xlsx",
+        "bytes": 11120,
+        "sha256": "59ef33f50ca20f2e41636e05b796eb4af182410dbd48f39b0ca3a726326e65ee"
+      },
+      {
+        "name": "4_18.ods",
+        "bytes": 22836,
+        "sha256": "a78b7e4e54d50c0cc8c5eb10cd327d28a903b38eb0cdf8ad143ce96b14a7041c"
+      },
+      {
+        "name": "4_18.xls",
+        "bytes": 27648,
+        "sha256": "6c95a4894c6c061d49dfe3125c202a0d302230c5a2b8c1f309f8a82dd0f773d0"
+      }
+    ],
+    "integrity": "ZIP CRC passed",
+    "contentIssue": {
+      "cell": "A1",
+      "value": 104,
+      "conditionMaximum": 100
+    },
+    "localArchiveSha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
+    "localArchiveOrigin": "/root/ege-informatics-mirror-robot-20261103/archives/72C252_3.zip",
+    "extracted": [
+      {
+        "name": "4_18.xlsx",
+        "file": "EGEINF72C252.xlsx",
+        "sha256": "59ef33f50ca20f2e41636e05b796eb4af182410dbd48f39b0ca3a726326e65ee"
+      },
+      {
+        "name": "4_18.ods",
+        "file": "EGEINF72C252.ods",
+        "sha256": "a78b7e4e54d50c0cc8c5eb10cd327d28a903b38eb0cdf8ad143ce96b14a7041c"
+      }
+    ]
+  }
+]

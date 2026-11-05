@@ -1,0 +1,212 @@
+{
+  "EGEINF79404A": {
+    "minimum": 1693,
+    "maximum": 2794,
+    "paths": 2680968250,
+    "A1": 108,
+    "answerFromUnmodifiedFile": "2794 1693",
+    "answerIfA1IsX": {
+      "maximumConstant": 2686,
+      "minimumConstant": 1585,
+      "formula": "maximumConstant + x; minimumConstant + x",
+      "xRange": [
+        1,
+        100
+      ]
+    },
+    "outOfBoundCells": [
+      {
+        "cell": "A1",
+        "value": 108,
+        "declaredMaximum": 100
+      }
+    ],
+    "formatsAgree": true,
+    "cellsCompared": 400,
+    "archiveSha256": "3da52b38bff4df85a7584dc11b05f2e0b5841b2c39bb34deb31b817ebd514d0c",
+    "fileHashes": {
+      "EGEINF79404A.xlsx": "080e11b738247d9f2eb8d6fe02dd6808b81a9e43d58498517865ea19a751cb37",
+      "EGEINF79404A.ods": "9308db7a8b93dd60496f0d1fd2b251ea7d9eb7ffa4569ddef6d98bca168442f8"
+    }
+  },
+  "EGEINF77DB46": {
+    "minimum": 1820,
+    "maximum": 2766,
+    "paths": 2677621971,
+    "A1": 107,
+    "answerFromUnmodifiedFile": "2766 1820",
+    "answerIfA1IsX": {
+      "maximumConstant": 2659,
+      "minimumConstant": 1713,
+      "formula": "maximumConstant + x; minimumConstant + x",
+      "xRange": [
+        1,
+        100
+      ]
+    },
+    "outOfBoundCells": [
+      {
+        "cell": "A1",
+        "value": 107,
+        "declaredMaximum": 100
+      }
+    ],
+    "formatsAgree": true,
+    "cellsCompared": 400,
+    "archiveSha256": "03e43b35c9219ed63e8aa949045a82a680818c95e8251035b3cdccc814b4e776",
+    "fileHashes": {
+      "EGEINF77DB46.xlsx": "c4b1ea69e2eab7e797e7b73191e9e08ccc2ea7ea34bf51dc29bfc70c1068a2a9",
+      "EGEINF77DB46.ods": "f72e291f8112ff7966cf5296550d1113815d85e068f56baa74622cacb7314f6f"
+    }
+  },
+  "EGEINFB4F848": {
+    "minimum": 1784,
+    "maximum": 2852,
+    "paths": 2680968250,
+    "A1": 105,
+    "answerFromUnmodifiedFile": "2852 1784",
+    "answerIfA1IsX": {
+      "maximumConstant": 2747,
+      "minimumConstant": 1679,
+      "formula": "maximumConstant + x; minimumConstant + x",
+      "xRange": [
+        1,
+        100
+      ]
+    },
+    "outOfBoundCells": [
+      {
+        "cell": "A1",
+        "value": 105,
+        "declaredMaximum": 100
+      }
+    ],
+    "formatsAgree": true,
+    "cellsCompared": 400,
+    "archiveSha256": "6270405dfff6b69dd388f52ae02702d724df68af10950a4b7c05df3988208ba3",
+    "fileHashes": {
+      "EGEINFB4F848.xlsx": "57ede65e454595c94154398ac774d887a0f08a2695f577a60c8685993d1d94b8",
+      "EGEINFB4F848.ods": "48d5c13658a76ca3151df108b3bc3ece01c8fe48577b288061e6271eff45f425"
+    }
+  },
+  "EGEINFE60642": {
+    "minimum": 1275,
+    "maximum": 2337,
+    "paths": 2680968250,
+    "A1": 102,
+    "answerFromUnmodifiedFile": "2337 1275",
+    "answerIfA1IsX": {
+      "maximumConstant": 2235,
+      "minimumConstant": 1173,
+      "formula": "maximumConstant + x; minimumConstant + x",
+      "xRange": [
+        1,
+        100
+      ]
+    },
+    "outOfBoundCells": [
+      {
+        "cell": "A1",
+        "value": 102,
+        "declaredMaximum": 100
+      }
+    ],
+    "formatsAgree": true,
+    "cellsCompared": 400,
+    "archiveSha256": "036a6814799ede98ccced03772bbce69c249102940accfdbe2b545778ea10309",
+    "fileHashes": {
+      "EGEINFE60642.xlsx": "0d5711f8fa421626f7af548cce77ac5efc9c5be3f20a84d97642ad737c266733",
+      "EGEINFE60642.ods": "89667b494bb657600255fa40c425f5f913044b18e136d264071eac54cb1f5e23"
+    }
+  },
+  "EGEINF779E0A": {
+    "minimum": 1059,
+    "maximum": 2391,
+    "paths": 2677621971,
+    "A1": 106,
+    "answerFromUnmodifiedFile": "2391 1059",
+    "answerIfA1IsX": {
+      "maximumConstant": 2285,
+      "minimumConstant": 953,
+      "formula": "maximumConstant + x; minimumConstant + x",
+      "xRange": [
+        1,
+        100
+      ]
+    },
+    "outOfBoundCells": [
+      {
+        "cell": "A1",
+        "value": 106,
+        "declaredMaximum": 100
+      }
+    ],
+    "formatsAgree": true,
+    "cellsCompared": 400,
+    "archiveSha256": "08ebf75b027252c2787a11f4ba20df9b10f648a1d14f03989abf5c10a0f857ec",
+    "fileHashes": {
+      "EGEINF779E0A.xlsx": "7df3b7688b44a69f0307b1e1ecc3387c5d719198a0ed412694b82edabdeb0155",
+      "EGEINF779E0A.ods": "07ed62bd8dc62cbe8b6eb86a7073fbba02ea7a5f3ebea2f5df82101fe082abc4"
+    }
+  },
+  "EGEINF34C97E": {
+    "minimum": 1795,
+    "maximum": 2691,
+    "paths": 2680968250,
+    "A1": 101,
+    "answerFromUnmodifiedFile": "2691 1795",
+    "answerIfA1IsX": {
+      "maximumConstant": 2590,
+      "minimumConstant": 1694,
+      "formula": "maximumConstant + x; minimumConstant + x",
+      "xRange": [
+        1,
+        100
+      ]
+    },
+    "outOfBoundCells": [
+      {
+        "cell": "A1",
+        "value": 101,
+        "declaredMaximum": 100
+      }
+    ],
+    "formatsAgree": true,
+    "cellsCompared": 400,
+    "archiveSha256": "9bb77100c8efd32ffc329bfc8b0178ebf605fa4d60351027e5577b2ff0b9a6cc",
+    "fileHashes": {
+      "EGEINF34C97E.xlsx": "9314d68d52a0cf9a7bb13d6cc59430e3209f74342a7a20ee5af804388061e221",
+      "EGEINF34C97E.ods": "20259f9fb1423ca1e935f69a8b91c72e7f71daf442ee94c940f3f111e69ef8c5"
+    }
+  },
+  "EGEINF72C252": {
+    "minimum": 1944,
+    "maximum": 2833,
+    "paths": 2680968250,
+    "A1": 104,
+    "answerFromUnmodifiedFile": "2833 1944",
+    "answerIfA1IsX": {
+      "maximumConstant": 2729,
+      "minimumConstant": 1840,
+      "formula": "maximumConstant + x; minimumConstant + x",
+      "xRange": [
+        1,
+        100
+      ]
+    },
+    "outOfBoundCells": [
+      {
+        "cell": "A1",
+        "value": 104,
+        "declaredMaximum": 100
+      }
+    ],
+    "formatsAgree": true,
+    "cellsCompared": 400,
+    "archiveSha256": "f426a42641353a89905cfdaf61bdcedeb9d342fb36d22fc38e2bb5915d1245f8",
+    "fileHashes": {
+      "EGEINF72C252.xlsx": "59ef33f50ca20f2e41636e05b796eb4af182410dbd48f39b0ca3a726326e65ee",
+      "EGEINF72C252.ods": "a78b7e4e54d50c0cc8c5eb10cd327d28a903b38eb0cdf8ad143ce96b14a7041c"
+    }
+  }
+}

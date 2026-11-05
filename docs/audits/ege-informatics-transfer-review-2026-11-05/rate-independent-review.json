@@ -1,0 +1,7 @@
+{
+  "status": "ok",
+  "tasks": 7,
+  "alternatives": 14,
+  "method": "Independent JavaScript BigInt rational arithmetic",
+  "rounding": false
+}
