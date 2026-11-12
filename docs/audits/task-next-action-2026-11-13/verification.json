@@ -1,0 +1,32 @@
+{
+  "generated_at_moscow": "2026-11-13T01:45:40.306451+03:00",
+  "deployed_at_utc": "Thu 2026-11-12 22:41:28 UTC",
+  "unit_tests": 14,
+  "chrome_preview_pages": 24,
+  "chrome_public_pages": 24,
+  "webkit_preview_cases": 13,
+  "webkit_public_cases": 13,
+  "oge_checks": 6,
+  "errors": 0,
+  "unchanged_solution_hashes": 5,
+  "retained_old_assets": 4,
+  "goal": "next_task",
+  "goal_id": 663176354,
+  "parameter": "navigation_area",
+  "values": [
+    "top",
+    "after_solution",
+    "dialog"
+  ],
+  "old_placement_preserved": true,
+  "first_full_day_moscow": "2026-11-14",
+  "physical_iphone": false,
+  "real_ad_impressions": false,
+  "source_sha256": {
+    "server.js": "c8315d756f30c8576bef25e78e40364976e6bd40eabd717ad8f9d5349dda4df3",
+    "lib/catalogue-styles.js": "6f6ceb7d560a937ef845a3e133cb18052ab73058597f97855c09dff1c7c1f590",
+    "lib/analytics.js": "d1036ac8c7fd7444140457c2b3b7ec68e804624582a9583054f59bcb1f95c7e8",
+    "public/catalogue.js": "1f2b1f43d41226af034026eb913e208f6182e1a15e149b40e1f59750fba70c5e",
+    "public/site.css": "fab55f6772217ca0716c6465e85c87991d266e7b373f44bc2b3bb794e3b763e6"
+  }
+}

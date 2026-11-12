@@ -1,0 +1,85 @@
+{
+  "origin": "http://127.0.0.1:8877",
+  "checkedAt": "2026-11-12T22:30:29.311Z",
+  "pages": [],
+  "interactions": [
+    {
+      "width": 390,
+      "section": "oge",
+      "samePage": true,
+      "crossPage": true,
+      "filteredSearch": true,
+      "endOfSelection": true,
+      "pageGoal": true,
+      "backNoGoal": true,
+      "blockedCallback": true,
+      "doubleClick": true,
+      "position": {
+        "top": 82.296875,
+        "header": 70,
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "section": "oge-physics",
+      "samePage": true,
+      "crossPage": true,
+      "filteredSearch": true,
+      "endOfSelection": true,
+      "pageGoal": true,
+      "backNoGoal": true,
+      "blockedCallback": true,
+      "doubleClick": true,
+      "position": {
+        "top": 82.484375,
+        "header": 70,
+        "overflow": false
+      }
+    },
+    {
+      "width": 1280,
+      "section": "oge",
+      "samePage": true,
+      "crossPage": true,
+      "filteredSearch": true,
+      "endOfSelection": true,
+      "pageGoal": true,
+      "backNoGoal": true,
+      "blockedCallback": true,
+      "doubleClick": true,
+      "position": {
+        "top": 96.078125,
+        "header": 84,
+        "overflow": false
+      }
+    },
+    {
+      "width": 1280,
+      "section": "oge-physics",
+      "samePage": true,
+      "crossPage": true,
+      "filteredSearch": true,
+      "endOfSelection": true,
+      "pageGoal": true,
+      "backNoGoal": true,
+      "blockedCallback": true,
+      "doubleClick": true,
+      "position": {
+        "top": 96.21875,
+        "header": 84,
+        "overflow": false
+      }
+    },
+    {
+      "section": "oge",
+      "noJavaScript": true
+    },
+    {
+      "section": "oge-physics",
+      "noJavaScript": true
+    }
+  ],
+  "errors": [],
+  "status": "ok"
+}

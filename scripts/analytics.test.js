@@ -61,7 +61,8 @@ test('Repeated bootstrap does not replace helper or attach duplicate handlers', 
 test('Server-page navigation uses a distinct goal and navigates once with a missing or repeated callback', () => {
   for (const dataset of [
     {analyticsCataloguePageNext: '2', analyticsSection: 'oge'},
-    {analyticsNextTask: 'OGEPHYS123456', analyticsPlacement: 'oge_catalogue_dialog', analyticsSection: 'oge-physics'}
+    {analyticsNextTask: 'OGEPHYS123456', analyticsPlacement: 'oge_catalogue_dialog', analyticsSection: 'oge-physics'},
+    ...['top', 'after_solution', 'dialog'].map(area => ({analyticsNextTask: 'FDA042', analyticsNavigationArea: area}))
   ]) {
     const b = browser(), timers = [], navigated = [];
     b.context.setTimeout = fn => timers.push(fn);
@@ -72,7 +73,8 @@ test('Server-page navigation uses a distinct goal and navigates once with a miss
     b.click(event()); b.click(event());
     assert.equal(b.calls.length, 1, 'double click must not double count');
     assert.equal(b.calls[0][2], dataset.analyticsCataloguePageNext ? 'catalogue_page_next' : 'next_task');
-    assert.equal(b.calls[0][3].placement, dataset.analyticsCataloguePageNext ? 'oge_catalogue_page' : 'oge_catalogue_dialog');
+    assert.equal(b.calls[0][3].placement, dataset.analyticsCataloguePageNext ? 'oge_catalogue_page' : dataset.analyticsPlacement || 'task_page');
+    assert.equal(b.calls[0][3].navigation_area, dataset.analyticsNavigationArea);
     assert.equal(b.calls[0][3].section, dataset.analyticsSection);
     if (dataset.analyticsCataloguePageNext) assert.equal(b.calls[0][3].page, 2);
     timers[0](); b.calls[0][4](); b.calls[0][4]();

@@ -1,0 +1,54 @@
+{
+  "checked_at_utc": "2026-11-12T22:36:06.471619+00:00",
+  "pages": {
+    "/tasks/FDA042": {
+      "status": 200
+    },
+    "/oge": {
+      "status": 200
+    },
+    "/oge-physics": {
+      "status": 200
+    }
+  },
+  "assets": {
+    "/assets/catalogue-math.1c9e8706c6273e89.css": {
+      "sha256": "1c9e8706c6273e89397a770c1552ee32f4255522a36c842d7dbd538d850579f2",
+      "bytes": 32307
+    },
+    "/assets/catalogue.b7e74dd578f612cc.js": {
+      "sha256": "b7e74dd578f612ccd533712270e2d40b9458de5b956753cc6f7d655f516c555a",
+      "bytes": 34392
+    },
+    "/assets/site.30427b94c0a91db8.css": {
+      "sha256": "30427b94c0a91db82e6346fc05daaf839191d094d2855e7eb4506d3ab8b72845",
+      "bytes": 42858
+    },
+    "/assets/site.fc5cf85f05fa908b.js": {
+      "sha256": "fc5cf85f05fa908b411c736b712ffb09b82cddea03fa32730f768a4d81ce5f51",
+      "bytes": 5663
+    }
+  },
+  "solutions": {
+    "FDA042": {
+      "status": 200,
+      "content_sha256": "390103886f62817ebfed8e01797b457d379a76f78f31741f836287924dde2509"
+    },
+    "6EFCFF": {
+      "status": 200,
+      "content_sha256": "90cb05a375c5cc7b08291de2ba4568ea7b208bf0c68c8eb5932cd9f5db1a8e9c"
+    },
+    "6F97FE": {
+      "status": 200,
+      "content_sha256": "01d43bf0eea13a7d4962fd6a874a21647db9c4718535df25e6b06bb001e3d7bd"
+    },
+    "083006": {
+      "status": 200,
+      "content_sha256": "a7050a5a8ec669a45565ed8943b3e9ab57844f90e26e7d343decb31f452a2678"
+    },
+    "36135B": {
+      "status": 200,
+      "content_sha256": "a0fa2bfc8e353196dabfca8bf4aa36607ab245a6b46be38baada8d5a37ee9edf"
+    }
+  }
+}

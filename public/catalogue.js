@@ -221,16 +221,18 @@
         navigation.setAttribute('aria-label', 'Навигация после решения');
         const nextLink = document.createElement('a');
         nextLink.href = catalogue ? catalogueTaskUrl(nextIndex) : ogeNext ? ogeNext.href : '/tasks/' + nextTaskId;
+        nextLink.className = 'task-next-action';
+        nextLink.dataset.analyticsNavigationArea = 'dialog';
         if (catalogue) {
-          nextLink.className = 'catalogue-next-task';
+          nextLink.classList.add('catalogue-next-task');
           nextLink.addEventListener('click', function (event) {
             if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
-              window.egeAnalytics?.goal('next_task', {placement: 'catalogue_dialog', task_id: nextTaskId});
+              window.egeAnalytics?.goal('next_task', {placement: 'catalogue_dialog', task_id: nextTaskId, navigation_area: 'dialog'});
               return;
             }
             event.preventDefault();
             closeSolutionModal();
-            showCatalogueTask(nextIndex, {scroll: true, track: true, placement: 'catalogue_dialog', historyMode: 'push'});
+            showCatalogueTask(nextIndex, {scroll: true, track: true, placement: 'catalogue_dialog', navigationArea: 'dialog', historyMode: 'push'});
           });
         } else {
           nextLink.dataset.analyticsNextTask = nextTaskId;
@@ -247,7 +249,7 @@
               closeSolutionModal();
               history.pushState(null, '', ogeNext.href);
               revealOgeTask(nextTaskId);
-              window.egeAnalytics?.goal('next_task', {placement: 'oge_catalogue_dialog', section: pageConfig.ogeSection, task_id: nextTaskId});
+              window.egeAnalytics?.goal('next_task', {placement: 'oge_catalogue_dialog', section: pageConfig.ogeSection, task_id: nextTaskId, navigation_area: 'dialog'});
             });
           }
         }
@@ -491,14 +493,18 @@
       container.appendChild(label);
     }
 
-    function showCatalogueTask(index, {scroll = false, track = false, placement = 'catalogue', historyMode = 'replace'} = {}) {
+    function showCatalogueTask(index, {scroll = false, track = false, placement = 'catalogue', navigationArea, historyMode = 'replace'} = {}) {
       index = Math.max(0, Math.min(catalogue.total - 1, index));
       const previous = catalogueIndex;
       const id = catalogue.ids[index];
       const task = tasks.find(item => item.id.toUpperCase() === id);
       const targetUrl = catalogueTaskUrl(index);
       const countForward = callback => {
-        if (track && index > previous) window.egeAnalytics?.goal('next_task', {placement, page: index + 1, task_id: id}, callback);
+        if (track && index > previous) {
+          const params = {placement, page: index + 1, task_id: id};
+          if (navigationArea) params.navigation_area = navigationArea;
+          window.egeAnalytics?.goal('next_task', params, callback);
+        }
         else callback?.();
       };
       if (!task) {

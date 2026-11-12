@@ -108,6 +108,17 @@ async function run() {
       await navigate(route);
       if (route.startsWith('/tasks/')) {
         assert.equal(await evaluate("document.querySelectorAll('.task-sequence-pager--after-solution').length"), 1);
+        const action = await evaluate(`(() => {
+          const link = document.querySelector('.task-sequence-pager--after-solution .task-next-action');
+          const nav = link.closest('nav'), r = link.getBoundingClientRect(), nr = nav.getBoundingClientRect(), style = getComputedStyle(link);
+          return {height: r.height, width: r.width, navWidth: nr.width, background: style.backgroundColor, color: style.color,
+            first: nav.firstElementChild === link, area: link.dataset.analyticsNavigationArea,
+            topArea: document.querySelector('.task-sequence-pager:not(.task-sequence-pager--after-solution) [data-analytics-next-task]').dataset.analyticsNavigationArea};
+        })()`);
+        assert.ok(action.height >= 48, 'Next action is comfortable to tap');
+        assert.equal(action.background, 'rgb(24, 49, 83)'); assert.equal(action.color, 'rgb(255, 255, 255)');
+        assert.equal(action.first, true); assert.equal(action.area, 'after_solution'); assert.equal(action.topArea, 'top');
+        if (width < 600) assert.ok(action.width >= action.navWidth - 26, 'Next action fills the mobile navigation row');
       }
       await evaluate(`Promise.all(Array.from(document.images).filter(i=>i.getBoundingClientRect().height>0).map(i=>i.decode().catch(()=>false)))`);
       const info = await evaluate(`({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,
@@ -137,6 +148,17 @@ async function run() {
     }
   }
   report.checks.push('24 page/viewport checks: EGE and subject hubs, conditions, figures, static solution; no overflow, missing images or duplicate view goals');
+  for (const area of ['top', 'after_solution']) {
+    await navigate('/tasks/6F97FE'); await reset();
+    const selector = `[data-analytics-next-task][data-analytics-navigation-area="${area}"]`;
+    const next = await evaluate(`document.querySelector(${JSON.stringify(selector)}).getAttribute('href')`);
+    await click(selector);
+    await waitFor(`location.pathname === ${JSON.stringify(next)} && document.readyState === 'complete'`);
+    const forward = (await goals()).filter(g => g.name === 'next_task');
+    assert.equal(forward.length, 1); assert.equal(forward[0].params.placement, 'task_page');
+    assert.equal(forward[0].params.navigation_area, area);
+  }
+  report.checks.push('Top and after-solution next actions navigate once and preserve placement with a distinct navigation_area');
   await navigate('/tasks/6F97FE'); await reset();
   const nextPath = await evaluate("document.querySelector('[data-analytics-next-task]').getAttribute('href')");
   assert.equal(await evaluate("document.querySelector('.task-sequence-pager--after-solution [data-analytics-next-task]').getAttribute('href')"), nextPath);
@@ -152,6 +174,7 @@ async function run() {
   await click('.solution-modal [data-analytics-next-task]');
   await waitFor(`location.pathname === ${JSON.stringify(nextPath)} && document.readyState === 'complete'`);
   assert.equal(await count('next_task', 'task_page'), 1);
+  assert.equal((await goals()).find(g => g.name === 'next_task').params.navigation_area, 'dialog');
   report.checks.push('Next links after static solution and in dialog agree; dialog next navigation succeeds even without a Metrica callback');
 
   if (origin === 'http://127.0.0.1:8876') {

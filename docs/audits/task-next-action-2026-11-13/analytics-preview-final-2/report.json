@@ -1,0 +1,205 @@
+{
+  "origin": "http://127.0.0.1:8877",
+  "checkedAt": "2026-11-12T22:36:50.376Z",
+  "checks": [
+    "One counter init; failed solution=0; open/reopen=1 each; forward=1; back/resize=0",
+    "24 page/viewport checks: EGE and subject hubs, conditions, figures, static solution; no overflow, missing images or duplicate view goals",
+    "Top and after-solution next actions navigate once and preserve placement with a distinct navigation_area",
+    "Next links after static solution and in dialog agree; dialog next navigation succeeds even without a Metrica callback"
+  ],
+  "pages": [
+    {
+      "width": 360,
+      "route": "/ege",
+      "scrollWidth": 360,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 360,
+      "route": "/ege/math",
+      "scrollWidth": 360,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 360,
+      "route": "/ege/physics",
+      "scrollWidth": 360,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 360,
+      "route": "/tasks/6F97FE",
+      "scrollWidth": 360,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 360,
+      "route": "/tasks/083006",
+      "scrollWidth": 360,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 360,
+      "route": "/tasks/36135B",
+      "scrollWidth": 360,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 360,
+      "route": "/physics?topic=1.1#tasks",
+      "scrollWidth": 360,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 360,
+      "route": "/?topic=1.2#tasks",
+      "scrollWidth": 360,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 390,
+      "route": "/ege",
+      "scrollWidth": 390,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 390,
+      "route": "/ege/math",
+      "scrollWidth": 390,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 390,
+      "route": "/ege/physics",
+      "scrollWidth": 390,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 390,
+      "route": "/tasks/6F97FE",
+      "scrollWidth": 390,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 390,
+      "route": "/tasks/083006",
+      "scrollWidth": 390,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 390,
+      "route": "/tasks/36135B",
+      "scrollWidth": 390,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 390,
+      "route": "/physics?topic=1.1#tasks",
+      "scrollWidth": 390,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 390,
+      "route": "/?topic=1.2#tasks",
+      "scrollWidth": 390,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 1280,
+      "route": "/ege",
+      "scrollWidth": 1265,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 1280,
+      "route": "/ege/math",
+      "scrollWidth": 1265,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 1280,
+      "route": "/ege/physics",
+      "scrollWidth": 1265,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 1280,
+      "route": "/tasks/6F97FE",
+      "scrollWidth": 1265,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 1280,
+      "route": "/tasks/083006",
+      "scrollWidth": 1265,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 1280,
+      "route": "/tasks/36135B",
+      "scrollWidth": 1265,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 1280,
+      "route": "/physics?topic=1.1#tasks",
+      "scrollWidth": 1265,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    },
+    {
+      "width": 1280,
+      "route": "/?topic=1.2#tasks",
+      "scrollWidth": 1265,
+      "brokenImages": 0,
+      "initCount": 1,
+      "loading": false
+    }
+  ],
+  "errors": []
+}

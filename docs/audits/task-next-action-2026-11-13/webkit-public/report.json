@@ -1,0 +1,262 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "startedAt": "2026-11-12T22:43:37.865Z",
+  "cases": [
+    {
+      "width": 120.25,
+      "area": "top",
+      "href": "/tasks/638272",
+      "height": 42,
+      "navWidth": 343,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(24, 49, 83)",
+      "first": false,
+      "minHeight": "42px",
+      "display": "flex",
+      "className": "",
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "task_page",
+          "task_id": "638272",
+          "navigation_area": "top"
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 317,
+      "area": "after_solution",
+      "href": "/tasks/638272",
+      "height": 48,
+      "navWidth": 343,
+      "background": "rgb(24, 49, 83)",
+      "color": "rgb(255, 255, 255)",
+      "first": true,
+      "minHeight": "48px",
+      "display": "flex",
+      "className": "task-next-action",
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "task_page",
+          "task_id": "638272",
+          "navigation_area": "after_solution"
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 325,
+      "area": "dialog",
+      "href": "/tasks/638272",
+      "height": 48,
+      "navWidth": 351,
+      "background": "rgb(24, 49, 83)",
+      "color": "rgb(255, 255, 255)",
+      "first": true,
+      "minHeight": "48px",
+      "display": "flex",
+      "className": "task-next-action",
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "task_page",
+          "task_id": "638272",
+          "navigation_area": "dialog"
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 120.25,
+      "area": "top",
+      "href": "/tasks/638272",
+      "height": 42,
+      "navWidth": 358,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(24, 49, 83)",
+      "first": false,
+      "minHeight": "42px",
+      "display": "flex",
+      "className": "",
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "task_page",
+          "task_id": "638272",
+          "navigation_area": "top"
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 332,
+      "area": "after_solution",
+      "href": "/tasks/638272",
+      "height": 48,
+      "navWidth": 358,
+      "background": "rgb(24, 49, 83)",
+      "color": "rgb(255, 255, 255)",
+      "first": true,
+      "minHeight": "48px",
+      "display": "flex",
+      "className": "task-next-action",
+      "screenshot": "after_solution-390.jpg",
+      "doubleClick": true,
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "task_page",
+          "task_id": "638272",
+          "navigation_area": "after_solution"
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 340,
+      "area": "dialog",
+      "href": "/tasks/638272",
+      "height": 48,
+      "navWidth": 366,
+      "background": "rgb(24, 49, 83)",
+      "color": "rgb(255, 255, 255)",
+      "first": true,
+      "minHeight": "48px",
+      "display": "flex",
+      "className": "task-next-action",
+      "screenshot": "dialog-390.jpg",
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "task_page",
+          "task_id": "638272",
+          "navigation_area": "dialog"
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 120.25,
+      "area": "top",
+      "href": "/tasks/638272",
+      "height": 42,
+      "navWidth": 398,
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(24, 49, 83)",
+      "first": false,
+      "minHeight": "42px",
+      "display": "flex",
+      "className": "",
+      "keyboard": true,
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "task_page",
+          "task_id": "638272",
+          "navigation_area": "top"
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 372,
+      "area": "after_solution",
+      "href": "/tasks/638272",
+      "height": 48,
+      "navWidth": 398,
+      "background": "rgb(24, 49, 83)",
+      "color": "rgb(255, 255, 255)",
+      "first": true,
+      "minHeight": "48px",
+      "display": "flex",
+      "className": "task-next-action",
+      "keyboard": true,
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "task_page",
+          "task_id": "638272",
+          "navigation_area": "after_solution"
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 380,
+      "area": "dialog",
+      "href": "/tasks/638272",
+      "height": 48,
+      "navWidth": 406,
+      "background": "rgb(24, 49, 83)",
+      "color": "rgb(255, 255, 255)",
+      "first": true,
+      "minHeight": "48px",
+      "display": "flex",
+      "className": "task-next-action",
+      "keyboard": true,
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "task_page",
+          "task_id": "638272",
+          "navigation_area": "dialog"
+        }
+      },
+      "passed": true
+    },
+    {
+      "route": "/?topic=1.2#tasks",
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "catalogue_dialog",
+          "page": 2,
+          "task_id": "C1228A",
+          "navigation_area": "dialog"
+        }
+      },
+      "passed": true
+    },
+    {
+      "route": "/oge?topic=all",
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "oge_catalogue_dialog",
+          "section": "oge",
+          "task_id": "426640",
+          "navigation_area": "dialog"
+        }
+      },
+      "passed": true
+    },
+    {
+      "route": "/oge-physics?topic=all",
+      "goal": {
+        "name": "next_task",
+        "params": {
+          "placement": "oge_catalogue_dialog",
+          "section": "oge-physics",
+          "task_id": "OGEPHYS4BF745",
+          "navigation_area": "dialog"
+        }
+      },
+      "passed": true
+    },
+    {
+      "javascript": false,
+      "nextHref": "/tasks/638272",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "blockedWrites": 0,
+  "limitations": [
+    "Linux WebKit with iPhone profile; no physical iPhone or native Yandex Start",
+    "Analytics and real ads replaced; all production writes blocked; controlled 600px ad creative"
+  ],
+  "browserVersion": "26.0",
+  "finishedAt": "2026-11-12T22:44:21.871Z"
+}

@@ -2734,11 +2734,15 @@ function renderSearchPage(query, search) {
 
 function renderTaskNavigation(taskNavigation, afterSolution = false) {
   if (!taskNavigation) return '';
+  const next = taskNavigation.next
+    ? `<a${afterSolution ? ' class="task-next-action"' : ''} href="/tasks/${escapeHtml(taskNavigation.next)}" data-analytics-next-task="${escapeHtml(taskNavigation.next)}" data-analytics-navigation-area="${afterSolution ? 'after_solution' : 'top'}">${afterSolution ? 'Следующее задание →' : 'Следующее →'}</a>`
+    : '<span class="task-sequence-pager-disabled">Следующее →</span>';
   return `<nav class="task-sequence-pager${afterSolution ? ' task-sequence-pager--after-solution' : ''}" aria-label="${afterSolution ? 'Навигация после решения' : 'Навигация по заданиям раздела'}">
+    ${afterSolution ? next : ''}
     ${taskNavigation.previous ? `<a href="/tasks/${escapeHtml(taskNavigation.previous)}">← Предыдущее</a>` : '<span class="task-sequence-pager-disabled">← Предыдущее</span>'}
     <span class="task-sequence-pager-label">Задание ${taskNavigation.position} из ${taskNavigation.total}</span>
     <a href="${escapeHtml(taskNavigation.sectionPath)}">Все задания раздела</a>
-    ${taskNavigation.next ? `<a href="/tasks/${escapeHtml(taskNavigation.next)}" data-analytics-next-task="${escapeHtml(taskNavigation.next)}">Следующее →</a>` : '<span class="task-sequence-pager-disabled">Следующее →</span>'}
+    ${afterSolution ? '' : next}
   </nav>`;
 }
 

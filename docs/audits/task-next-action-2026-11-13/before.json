@@ -1,0 +1,12 @@
+{
+  "head": "d1b8bfef8650d9be4114aa415bc9fde7fc33c22d",
+  "source_sha256": {
+    "server.js": "1e93226c37aad81abb5f64941e6ee775c2d7d1ca33dbed24faeef4c083374cbb",
+    "lib/catalogue-styles.js": "97942e13866795f43b4db7acc985cbb87424d3b3f6cd39b4010046fac8dc2ef3",
+    "lib/analytics.js": "f4d62ceeef03dc44e6218cf62c11c473af48e31155d24f543df62cb3ee8cf2a2",
+    "public/catalogue.js": "b7e74dd578f612ccd533712270e2d40b9458de5b956753cc6f7d655f516c555a",
+    "scripts/analytics.test.js": "f0445775a28d0fb7429499e70001aff90f5f515223abdd9086e8260fb25e4d8b",
+    "scripts/check-analytics-pages.js": "c12e1e2c5e22875b70ee8ad1cb8f12d28b5ca8302a2ef142a2a5cf79661b3098",
+    "public/site.css": "30427b94c0a91db82e6346fc05daaf839191d094d2855e7eb4506d3ab8b72845"
+  }
+}

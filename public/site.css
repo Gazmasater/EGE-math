@@ -321,7 +321,6 @@ body:has(.seo-task-solution) .comments-widget,body:has(.about-card) .comments-wi
 .local-pager a{display:inline-flex;align-items:center;justify-content:center;min-width:38px;min-height:40px;padding:8px 11px;border:1px solid #b8c3d1;border-radius:6px;background:white;color:#183153;text-decoration:none;font:14px Arial,sans-serif}
 .local-pager a.active{background:#183153;color:white}
 .solution-task-link{display:inline-block}
-.catalogue-next-task{min-height:44px!important}
 .catalogue-complete{padding:16px;background:#e9f5ec;border-radius:8px}
 @media(max-width:600px){.catalogue-search{padding:12px}.catalogue-guide nav{gap:5px 14px}.catalogue-guide nav a{min-height:36px}.local-pager button,.local-pager a{min-height:44px}}
 
