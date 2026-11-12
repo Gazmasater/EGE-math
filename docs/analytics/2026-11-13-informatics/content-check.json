@@ -1,0 +1,28 @@
+{
+  "/ege-informatics?topic=all": {
+    "subtitle": "ФИПИ · ЕГЭ · все форматы ответа · 2475 заданий"
+  },
+  "/oge-informatics?topic=all": {
+    "subtitle": "ФИПИ · ОГЭ · все форматы ответа · 1585 заданий"
+  },
+  "/?topic=all": {
+    "subtitle": "ФИПИ · первая часть · краткий ответ · 673 заданий"
+  },
+  "/physics?topic=all": {
+    "subtitle": "ФИПИ · первая часть · краткие ответы, выбор и соответствия · 1806 заданий"
+  },
+  "/oge?topic=all": {
+    "subtitle": "ФИПИ · ОГЭ · все форматы ответа · 3884 заданий"
+  },
+  "/oge-physics?topic=all": {
+    "subtitle": "ФИПИ · ОГЭ · все форматы ответа · 1506 заданий"
+  },
+  "sitemap": {
+    "all_urls": 16334,
+    "ege_info_tasks": 2475,
+    "oge_info_tasks": 1585,
+    "ege_info_catalogue_urls": 940,
+    "oge_info_catalogue_urls": 556
+  },
+  "checked_at_utc": "2026-11-12T23:47:13.835113+00:00"
+}

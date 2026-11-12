@@ -1,0 +1,72 @@
+[
+  {
+    "path": "/ege-informatics",
+    "status": 200,
+    "title": "ЕГЭ по информатике — банк заданий ФИПИ",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/ege-informatics"
+  },
+  {
+    "path": "/ege-informatics?topic=type.graph-models",
+    "status": 200,
+    "title": "Графы, таблицы и маршруты — ЕГЭ по информатике",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/ege-informatics?topic=type.graph-models"
+  },
+  {
+    "path": "/ege-informatics?topic=type.truth-tables",
+    "status": 200,
+    "title": "Таблицы истинности — ЕГЭ по информатике",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/ege-informatics?topic=type.truth-tables"
+  },
+  {
+    "path": "/ege-informatics?topic=type.databases",
+    "status": 200,
+    "title": "Поиск и отбор данных в таблицах — ЕГЭ по информатике",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/ege-informatics?topic=type.databases"
+  },
+  {
+    "path": "/oge-informatics",
+    "status": 200,
+    "title": "ОГЭ по информатике — банк заданий ФИПИ",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/oge-informatics"
+  },
+  {
+    "path": "/oge-informatics?topic=type.1",
+    "status": 200,
+    "title": "Объём текста и кодировки — ОГЭ по информатике",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/oge-informatics?topic=type.1"
+  },
+  {
+    "path": "/oge-informatics?topic=type.2",
+    "status": 200,
+    "title": "Кодирование и декодирование — ОГЭ по информатике",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/oge-informatics?topic=type.2"
+  },
+  {
+    "path": "/oge-informatics?topic=type.3",
+    "status": 200,
+    "title": "Логические выражения — ОГЭ по информатике",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/oge-informatics?topic=type.3"
+  },
+  {
+    "path": "/tasks/EGEINF48F84F",
+    "status": 200,
+    "title": "48F84F — IP-адреса, маски и адреса файлов: ответ и решение | ЕГЭ по информатике",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/tasks/EGEINF48F84F"
+  },
+  {
+    "path": "/tasks/OGEINF4A5F46",
+    "status": 200,
+    "title": "4A5F46 — Команды числового исполнителя: ответ и решение | ОГЭ по информатике",
+    "robots": "index,follow",
+    "canonical": "https://ege-fipi.ru/tasks/OGEINF4A5F46"
+  }
+]

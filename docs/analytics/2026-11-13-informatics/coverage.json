@@ -1,0 +1,17 @@
+{
+  "ege_informatics": {
+    "in_sitemap": 2475,
+    "published_in_source": 2473,
+    "missing_solutions": [
+      "EGEINF1F25B2",
+      "EGEINF7F1EAA"
+    ],
+    "orphan_published_records": 0
+  },
+  "oge_informatics": {
+    "in_sitemap": 1585,
+    "published_in_source": 1585,
+    "missing_solutions": [],
+    "orphan_published_records": 0
+  }
+}

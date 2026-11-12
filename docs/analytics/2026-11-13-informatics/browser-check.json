@@ -1,0 +1,83 @@
+{
+  "method": "Metrica stub; actual analytics, ads and writes blocked",
+  "pages": [
+    {
+      "path": "/ege-informatics",
+      "status": 200,
+      "inits": [
+        {
+          "id": 112561663,
+          "technical": "technical"
+        }
+      ],
+      "helper": true,
+      "h1": "ЕГЭ по информатике — банк заданий ФИПИ",
+      "errors": []
+    },
+    {
+      "path": "/ege-informatics?topic=all",
+      "status": 200,
+      "inits": [
+        {
+          "id": 112561663,
+          "technical": "technical"
+        }
+      ],
+      "helper": true,
+      "h1": "Все задания — ЕГЭ по информатике",
+      "errors": []
+    },
+    {
+      "path": "/oge-informatics",
+      "status": 200,
+      "inits": [
+        {
+          "id": 112561663,
+          "technical": "technical"
+        }
+      ],
+      "helper": true,
+      "h1": "ОГЭ по информатике — банк заданий ФИПИ",
+      "errors": []
+    },
+    {
+      "path": "/oge-informatics?topic=all",
+      "status": 200,
+      "inits": [
+        {
+          "id": 112561663,
+          "technical": "technical"
+        }
+      ],
+      "helper": true,
+      "h1": "Все задания — ОГЭ по информатике",
+      "errors": []
+    },
+    {
+      "path": "/tasks/EGEINF48F84F",
+      "status": 200,
+      "inits": [
+        {
+          "id": 112561663,
+          "technical": "technical"
+        }
+      ],
+      "helper": true,
+      "h1": "Задание EGEINF48F84F IP-адреса, маски и адреса файлов",
+      "errors": []
+    },
+    {
+      "path": "/tasks/OGEINF4A5F46",
+      "status": 200,
+      "inits": [
+        {
+          "id": 112561663,
+          "technical": "technical"
+        }
+      ],
+      "helper": true,
+      "h1": "Задание OGEINF4A5F46 Команды числового исполнителя",
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+import datetime as dt
+import html
+import json
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+ROOT = Path(__file__).resolve().parent
+reports = {p.stem: json.loads(p.read_text()) for p in (ROOT / 'reports').glob('*.json')}
+def total(name): return reports[name]['totals']
+def visits(name): return total(name)[0]
+groups = ['ege_catalogue', 'oge_catalogue', 'ege_tasks', 'oge_tasks']
+for period in ['week', 'month']:
+    for source in ['all', 'organic']:
+        assert sum(visits(period + '_' + g + '_' + source) for g in groups) == visits(period + '_combined_' + source)
+    for g in ['ege_catalogue', 'oge_catalogue']:
+        assert visits(period + '_' + g + '_bare') + visits(period + '_' + g + '_query') == visits(period + '_' + g + '_all')
+    assert visits(period + '_combined_all') + visits(period + '_info_via_internal_navigation') == visits(period + '_any_info_visit')
+    assert visits(period + '_combined_all') == visits(period + '_broad_entrances')
+browser = json.loads((ROOT / 'browser-check.json').read_text())
+assert len(browser['pages']) == 6
+assert all(len(p['inits']) == 1 and p['inits'][0]['id'] == 112561663 and not p['errors'] for p in browser['pages'])
+errors = [name for name, r in reports.items() if 'totals' not in r]
+sampled = [name for name, r in reports.items() if r.get('sampled')]
+assert not errors and not sampled
+summary = dict(generated_at_moscow=dt.datetime.now(ZoneInfo('Europe/Moscow')).isoformat(),
+               reports=len(reports), errors=errors, sampled=sampled,
+               sample_shares=sorted(set(r.get('sample_share') for r in reports.values())),
+               periods={'week': ['2026-11-06', '2026-11-12'], 'month': ['2026-10-16', '2026-11-12']},
+               entrances={p: {g: dict(all=visits(p + '_' + g + '_all'), organic=visits(p + '_' + g + '_organic'))
+                              for g in groups + ['combined']} for p in ['week', 'month']},
+               catalogue_comparison={p: {s: dict(all=visits(p + '_' + s + '_catalogues_all'),
+                                                organic=visits(p + '_' + s + '_catalogues_organic'))
+                                        for s in ['math', 'physics', 'informatics']} for p in ['week', 'month']},
+               browser_pages=6, additive_checks='passed: route groups, bare/query URLs, entrance/internal visit split')
+(ROOT / 'analysis.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n')
+coverage = json.loads((ROOT / 'coverage.json').read_text())
+proposal = {
+    'status': 'proposal_only_not_published',
+    'reason': 'Catalogue metadata and introductions understate already published solution coverage; cause of total search gap is not established',
+    'ege': {'path': '/ege-informatics', 'old_title': 'ЕГЭ по информатике — банк заданий ФИПИ',
+            'proposed_title': 'ЕГЭ по информатике — задания ФИПИ с ответами и подробными решениями',
+            'available_solutions': coverage['ege_informatics']['published_in_source'], 'tasks': coverage['ege_informatics']['in_sitemap']},
+    'oge': {'path': '/oge-informatics', 'old_title': 'ОГЭ по информатике — банк заданий ФИПИ',
+            'proposed_title': 'ОГЭ по информатике — задания ФИПИ с ответами и подробными решениями',
+            'available_solutions': coverage['oge_informatics']['published_in_source'], 'tasks': coverage['oge_informatics']['in_sitemap']},
+    'scope': ['Update catalogue title/description/intro to reflect actual solution coverage',
+              'Display dynamic published-solution counts on existing topic pages',
+              'Update outdated general-site copy about informatics being conditions/images/files only'],
+    'constraints': ['Do not claim all EGE tasks have solutions: two are unpublished',
+                    'Existing topic pages already exist; no duplicate keyword pages',
+                    'No evidence of Yandex index coverage or positions without fresh Webmaster data']}
+(ROOT / 'proposal.json').write_text(json.dumps(proposal, ensure_ascii=False, indent=2) + '\n')
+
+rows = ''
+for title, key in [('Каталог ЕГЭ', 'ege_catalogue'), ('Каталог ОГЭ', 'oge_catalogue'),
+                   ('Задания /tasks/EGEINF…', 'ege_tasks'), ('Задания /tasks/OGEINF…', 'oge_tasks')]:
+    w, m = summary['entrances']['week'][key], summary['entrances']['month'][key]
+    rows += '<tr><th>' + title + '</th><td>' + str(round(w['all'])) + '</td><td>' + str(round(w['organic'])) + '</td><td>' + str(round(m['all'])) + '</td><td>' + str(round(m['organic'])) + '</td></tr>'
+comparison = ''
+for title, key in [('Математика', 'math'), ('Физика', 'physics'), ('Информатика', 'informatics')]:
+    w, m = summary['catalogue_comparison']['week'][key], summary['catalogue_comparison']['month'][key]
+    comparison += '<tr><th>' + title + '</th><td>' + str(round(w['organic'])) + '</td><td>' + str(round(m['organic'])) + '</td></tr>'
+report = '''<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Информатика: входы и поисковый разрыв</title><style>body{font:16px/1.55 system-ui,sans-serif;max-width:1020px;margin:36px auto;padding:0 20px;background:#fafcfd;color:#173148}h1{line-height:1.2}h2{margin-top:2em}.lead{padding:18px;background:#e7f0f8;border-radius:10px}table{border-collapse:collapse;width:100%;background:#fff}td,th{padding:10px;border-bottom:1px solid #dbe4eb;text-align:left}.table{overflow:auto}code{overflow-wrap:anywhere}li{margin:8px 0}a{color:#1358a1}</style><h1>Информатика: входы есть, поискового трафика мало</h1><p>Счётчик 112561663, ege-fipi.ru. Полные московские 6–12 ноября и 16 октября–12 ноября 2026. Распознанные роботы, HeadlessChrome и traffic_kind=technical исключены. Последнее окно — 28 дней, а не календарный месяц.</p><p class="lead"><strong>За неделю: 49 входов на информатику, 12 из поиска.</strong> Разрыв с другими предметами подтверждён на одинаковом срезе каталогов: математика 695 поисковых входов, физика 278, информатика 10. Это в 69,5 и 27,8 раза меньше соответственно. Причину всего разрыва по Метрике установить нельзя.</p><h2>Сравнение поисковых входов в каталоги</h2><div class="table"><table><thead><tr><th>Предмет</th><th>6–12 ноября</th><th>16 октября–12 ноября</th></tr></thead><tbody>'''
+report += comparison + '''</tbody></table></div><p>Отдельные задания исключены для всех предметов. Математика включает главную (каталог первой части), /math, /ege/math, /oge и восемь разделов второй части. Физика — /ege/physics, /physics, /physics/part-2, /oge-physics. Информатика — два своих каталога. Параметры ?topic=… входят в соответствующий путь. Это не полное сравнение всего предметного трафика по заданиям: шестизначные ID математики и физики здесь не классифицировались.</p><h2>Все входы по информатике</h2><div class="table"><table><thead><tr><th>Группа</th><th>7 дней: все</th><th>7 дней: поиск</th><th>28 дней: все</th><th>28 дней: поиск</th></tr></thead><tbody>'''
+report += rows + '''</tbody></table></div><p>Итого за неделю 49 входов (44 посетителя), из них 12 поисковых (11 посетителей); за 28 дней 126 входов, 38 поисковых. У каталогов 38 входов за неделю: только восемь на адреса без параметров, ещё 30 на варианты с параметрами. Отдельные задания дали 11 входов. Ещё восемь визитов дошли до информатики после другой страницы входа: всего посещение информатики было в 57 визитах, это не 57 входов.</p><h2>Почему список мог выглядеть пустым</h2><ul><li>Точный адрес без параметров пропускает ?topic=… и другие варианты. Полный путь и путь без параметров различаются — <a href="https://yandex.ru/support/metrica/ru/reports/report-general">описание группировок Метрики</a>.</li><li>Поиск в URL по русскому слову не совпадает с латинским informatics. Задания находятся на /tasks/EGEINF… и /tasks/OGEINF…, без полного слова informatics.</li><li>Детализация API по поисковым фразам вернула ноль строк, totals — 12 поисковых визитов за неделю и 38 за 28 дней, contains_sensitive_data=true. Малые строки могут скрываться; это не ноль визитов — <a href="https://yandex.com/dev/metrika/ru/faq">FAQ API</a>. Это наблюдение об API, а не установленная причина вида вашего кабинета.</li><li>Внутренний просмотр информатики после другой страницы не становится страницей входа. Такие визиты отдельно проверены через <a href="https://yandex.ru/dev/metrika/ru/stat/segmentation">EXISTS по просмотрам</a>.</li></ul><p>Конкретный период/отчёт/фильтр пользователя не получен; причина его пустого списка остаётся предположением. Сегодня 13 ноября — неполный день: в раннем срезе есть один вход на ЕГЭ-информатику, его нельзя сравнивать с целой неделей.</p><h2>Исправимый SEO-недочёт</h2><p>В sitemap 2475 заданий ЕГЭ и 1585 ОГЭ; с опубликованными решениями совпадают 2473 и 1585 соответственно. Каталоги при этом называются «банк заданий ФИПИ», а вступление и общий FAQ акцентируют условия, рисунки и файлы. В отличие от математических каталогов наличие готовых разборов не выделено. На проверенных темах тоже отсутствует акцент на решениях в title. Это наблюдаемый недостаток подачи, а не доказанная причина всего поискового разрыва.</p><p>Первый предложенный шаг: обновить title/description/вступления каталогов и тем, показать фактические динамические количества разборов, актуализировать общие описания информатики. Новые дублирующие страницы по темам не требуются: существующие подборки уже есть. Для ЕГЭ нельзя обещать решения всех 2475 задач — две остаются без опубликованного разбора. <a href="proposal.json">Конкретные предлагаемые заголовки и границы изменения</a>.</p><h2>Что проверено и что неизвестно</h2><ul><li>Шесть публичных URL: HTML содержит ровно один счётчик 112561663; браузер подтверждает один init и отсутствие ошибок JavaScript. Настоящая аналитика, реклама и записи при этом блокировались/подменялись.</li><li>10 SEO-адресов вернули HTTP 200, index,follow и ожидаемый canonical. robots.txt разрешает каталоги; sitemap содержит все 4060 заданий информатики. Наличие в sitemap не доказывает включение в индекс.</li><li>Внешний поиск находит отдельные страницы информатики; это не измерение полноты индекса, позиций или показов Яндекса.</li><li>Management API оставляет code_status=CS_ERR_UNKNOWN. Причина метастатуса не установлена; успешную автоматическую проверку установки по нему не утверждаем. Наличие данных и runtime-init проверены независимо.</li><li>Без свежего Вебмастера не разделить индексацию, позиции, CTR, спрос и возраст страниц. Нельзя утверждать, что один новый title устранит разрыв.</li></ul><p>Проверка только читала данные. Сайт, счётчик, цели, базы и рекламные настройки не изменялись. Предложение SEO пока не опубликовано. Секреты, контакты и идентификаторы посетителей в артефакты не включены.</p><p><a href="analysis.json">Расчёты</a> · <a href="coverage.json">Покрытие решениями</a> · <a href="seo-check.json">SEO-проверка</a> · <a href="browser-check.json">Инициализация счётчика</a></p></html>'''
+(ROOT / 'report.html').write_text(report + '\n')
+print(json.dumps(summary, ensure_ascii=False, indent=2))

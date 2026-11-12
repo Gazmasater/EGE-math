@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/ege-informatics",
+    "status": 200,
+    "url": "https://ege-fipi.ru/ege-informatics",
+    "counter_ids": [
+      "112561663"
+    ],
+    "counter_script": 1,
+    "canonical": "https://ege-fipi.ru/ege-informatics"
+  },
+  {
+    "path": "/ege-informatics?topic=all",
+    "status": 200,
+    "url": "https://ege-fipi.ru/ege-informatics?topic=all",
+    "counter_ids": [
+      "112561663"
+    ],
+    "counter_script": 1,
+    "canonical": "https://ege-fipi.ru/ege-informatics?topic=all"
+  },
+  {
+    "path": "/oge-informatics",
+    "status": 200,
+    "url": "https://ege-fipi.ru/oge-informatics",
+    "counter_ids": [
+      "112561663"
+    ],
+    "counter_script": 1,
+    "canonical": "https://ege-fipi.ru/oge-informatics"
+  },
+  {
+    "path": "/oge-informatics?topic=all",
+    "status": 200,
+    "url": "https://ege-fipi.ru/oge-informatics?topic=all",
+    "counter_ids": [
+      "112561663"
+    ],
+    "counter_script": 1,
+    "canonical": "https://ege-fipi.ru/oge-informatics?topic=all"
+  },
+  {
+    "path": "/tasks/EGEINF48F84F",
+    "status": 200,
+    "url": "https://ege-fipi.ru/tasks/EGEINF48F84F",
+    "counter_ids": [
+      "112561663"
+    ],
+    "counter_script": 1,
+    "canonical": "https://ege-fipi.ru/tasks/EGEINF48F84F"
+  },
+  {
+    "path": "/tasks/OGEINF4A5F46",
+    "status": 200,
+    "url": "https://ege-fipi.ru/tasks/OGEINF4A5F46",
+    "counter_ids": [
+      "112561663"
+    ],
+    "counter_script": 1,
+    "canonical": "https://ege-fipi.ru/tasks/OGEINF4A5F46"
+  }
+]

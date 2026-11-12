@@ -1,0 +1,97 @@
+{
+  "generated_at_moscow": "2026-11-13T02:54:17.523158+03:00",
+  "reports": 67,
+  "errors": [],
+  "sampled": [],
+  "sample_shares": [
+    1.0
+  ],
+  "periods": {
+    "week": [
+      "2026-11-06",
+      "2026-11-12"
+    ],
+    "month": [
+      "2026-10-16",
+      "2026-11-12"
+    ]
+  },
+  "entrances": {
+    "week": {
+      "ege_catalogue": {
+        "all": 21.0,
+        "organic": 8.0
+      },
+      "oge_catalogue": {
+        "all": 17.0,
+        "organic": 2.0
+      },
+      "ege_tasks": {
+        "all": 9.0,
+        "organic": 1.0
+      },
+      "oge_tasks": {
+        "all": 2.0,
+        "organic": 1.0
+      },
+      "combined": {
+        "all": 49.0,
+        "organic": 12.0
+      }
+    },
+    "month": {
+      "ege_catalogue": {
+        "all": 65.0,
+        "organic": 28.0
+      },
+      "oge_catalogue": {
+        "all": 44.0,
+        "organic": 8.0
+      },
+      "ege_tasks": {
+        "all": 12.0,
+        "organic": 1.0
+      },
+      "oge_tasks": {
+        "all": 5.0,
+        "organic": 1.0
+      },
+      "combined": {
+        "all": 126.0,
+        "organic": 38.0
+      }
+    }
+  },
+  "catalogue_comparison": {
+    "week": {
+      "math": {
+        "all": 947.0,
+        "organic": 695.0
+      },
+      "physics": {
+        "all": 505.0,
+        "organic": 278.0
+      },
+      "informatics": {
+        "all": 38.0,
+        "organic": 10.0
+      }
+    },
+    "month": {
+      "math": {
+        "all": 3438.0,
+        "organic": 2571.0
+      },
+      "physics": {
+        "all": 1777.0,
+        "organic": 1062.0
+      },
+      "informatics": {
+        "all": 109.0,
+        "organic": 36.0
+      }
+    }
+  },
+  "browser_pages": 6,
+  "additive_checks": "passed: route groups, bare/query URLs, entrance/internal visit split"
+}

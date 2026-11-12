@@ -1,0 +1,30 @@
+{
+  "counter": 112561663,
+  "periods": {
+    "week": [
+      "2026-11-06",
+      "2026-11-12"
+    ],
+    "month": [
+      "2026-10-16",
+      "2026-11-12"
+    ]
+  },
+  "metrics": [
+    "ym:s:visits",
+    "ym:s:users",
+    "ym:s:pageviews",
+    "ym:s:bounceRate"
+  ],
+  "public_filter": "ym:s:isRobot=='No' AND NOT (ym:s:isRobot=='Yes' OR ym:s:browser=='204' OR (ym:s:paramsLevel1=='traffic_kind' AND ym:s:paramsLevel2=='technical'))",
+  "groups": {
+    "ege_catalogue": "ym:s:startURLPath=='/ege-informatics'",
+    "oge_catalogue": "ym:s:startURLPath=='/oge-informatics'",
+    "ege_tasks": "ym:s:startURLPath=~'^/tasks/(EGEINF|egeinf)'",
+    "oge_tasks": "ym:s:startURLPath=~'^/tasks/(OGEINF|ogeinf)'"
+  },
+  "reports": 49,
+  "errors": [],
+  "sampled": [],
+  "finished_at_moscow": "2026-11-13T02:39:41.567411+03:00"
+}

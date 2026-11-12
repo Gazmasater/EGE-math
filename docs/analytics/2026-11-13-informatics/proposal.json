@@ -1,0 +1,28 @@
+{
+  "status": "proposal_only_not_published",
+  "reason": "Catalogue metadata and introductions understate already published solution coverage; cause of total search gap is not established",
+  "ege": {
+    "path": "/ege-informatics",
+    "old_title": "ЕГЭ по информатике — банк заданий ФИПИ",
+    "proposed_title": "ЕГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+    "available_solutions": 2473,
+    "tasks": 2475
+  },
+  "oge": {
+    "path": "/oge-informatics",
+    "old_title": "ОГЭ по информатике — банк заданий ФИПИ",
+    "proposed_title": "ОГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+    "available_solutions": 1585,
+    "tasks": 1585
+  },
+  "scope": [
+    "Update catalogue title/description/intro to reflect actual solution coverage",
+    "Display dynamic published-solution counts on existing topic pages",
+    "Update outdated general-site copy about informatics being conditions/images/files only"
+  ],
+  "constraints": [
+    "Do not claim all EGE tasks have solutions: two are unpublished",
+    "Existing topic pages already exist; no duplicate keyword pages",
+    "No evidence of Yandex index coverage or positions without fresh Webmaster data"
+  ]
+}

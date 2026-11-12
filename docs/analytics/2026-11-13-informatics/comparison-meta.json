@@ -1,0 +1,10 @@
+{
+  "reports": 12,
+  "filters": {
+    "math_catalogues": "ym:s:startURLPath=.('/','/math','/ege/math','/oge','/equations','/inequalities','/stereometry','/planimetry','/parameters','/optimal','/numbers','/finance')",
+    "physics_catalogues": "ym:s:startURLPath=.('/ege/physics','/physics','/physics/part-2','/oge-physics')",
+    "informatics_catalogues": "ym:s:startURLPath=.('/ege-informatics','/oge-informatics')"
+  },
+  "scope": "Catalogue and subject hub entry pages; individual tasks excluded for every subject",
+  "errors": []
+}
