@@ -1,0 +1,94 @@
+TAP version 13
+# Subtest: Registration marker is anonymous, short lived and consumed only once across reloads
+ok 1 - Registration marker is anonymous, short lived and consumed only once across reloads
+  ---
+  duration_ms: 18.882926
+  type: 'test'
+  ...
+# Subtest: No goal on registration page view, failed registration or invalid marker
+ok 2 - No goal on registration page view, failed registration or invalid marker
+  ---
+  duration_ms: 7.955031
+  type: 'test'
+  ...
+# Subtest: Blocked storage and blocked counter do not break the page
+ok 3 - Blocked storage and blocked counter do not break the page
+  ---
+  duration_ms: 2.26127
+  type: 'test'
+  ...
+# Subtest: Technical traffic is tagged while ordinary visits remain public
+ok 4 - Technical traffic is tagged while ordinary visits remain public
+  ---
+  duration_ms: 13.831041
+  type: 'test'
+  ...
+# Subtest: Repeated bootstrap does not replace helper or attach duplicate handlers
+ok 5 - Repeated bootstrap does not replace helper or attach duplicate handlers
+  ---
+  duration_ms: 5.847964
+  type: 'test'
+  ...
+# Subtest: Server-page navigation uses a distinct goal and navigates once with a missing or repeated callback
+ok 6 - Server-page navigation uses a distinct goal and navigates once with a missing or repeated callback
+  ---
+  duration_ms: 10.843711
+  type: 'test'
+  ...
+# Subtest: Modified links retain native navigation; back links and handled in-page transitions do not count again
+ok 7 - Modified links retain native navigation; back links and handled in-page transitions do not count again
+  ---
+  duration_ms: 1.528372
+  type: 'test'
+  ...
+# Subtest: All conditions remain reachable exactly once across server pages
+ok 8 - All conditions remain reachable exactly once across server pages
+  ---
+  duration_ms: 7.451846
+  type: 'test'
+  ...
+# Subtest: Query state survives pagination and is safely encoded in local URLs
+ok 9 - Query state survives pagination and is safely encoded in local URLs
+  ---
+  duration_ms: 1.220723
+  type: 'test'
+  ...
+# Subtest: Catalogue search matches IDs and all condition terms, not scripts or task metadata
+ok 10 - Catalogue search matches IDs and all condition terms, not scripts or task metadata
+  ---
+  duration_ms: 17.301149
+  type: 'test'
+  ...
+# Subtest: Immutable URLs identify their bytes; GET, HEAD and validators agree
+ok 11 - Immutable URLs identify their bytes; GET, HEAD and validators agree
+  ---
+  duration_ms: 12.728244
+  type: 'test'
+  ...
+# Subtest: Legacy URLs revalidate; invalid paths never expose project files
+ok 12 - Legacy URLs revalidate; invalid paths never expose project files
+  ---
+  duration_ms: 1.167006
+  type: 'test'
+  ...
+# Subtest: All banks share the same legacy resources; source bytes and icon URLs are preserved
+ok 13 - All banks share the same legacy resources; source bytes and icon URLs are preserved
+  ---
+  duration_ms: 15.941802
+  type: 'test'
+  ...
+# Subtest: A version retained on disk remains available after a new release
+ok 14 - A version retained on disk remains available after a new release
+  ---
+  duration_ms: 0.998666
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1135.18618

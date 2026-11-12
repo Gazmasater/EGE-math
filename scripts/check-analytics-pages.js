@@ -108,6 +108,16 @@ async function run() {
       await navigate(route);
       if (route.startsWith('/tasks/')) {
         assert.equal(await evaluate("document.querySelectorAll('.task-sequence-pager--after-solution').length"), 1);
+        const firstScreen = await evaluate(`(() => {
+          const condition = document.querySelector('.qblock').getBoundingClientRect();
+          const promo = document.querySelector('.prep-banner').getBoundingClientRect();
+          const action = document.querySelector('.task-heading .task-solution-jump');
+          return {conditionY: condition.y, conditionBottom: condition.bottom, promoY: promo.y,
+            actionColor: getComputedStyle(action).backgroundColor, adCount: document.querySelectorAll('[data-site-ad]').length};
+        })()`);
+        assert.ok(firstScreen.conditionY < Math.min(width === 1280 ? 860 : 744, 600), 'Condition starts on the first screen');
+        assert.ok(firstScreen.promoY > firstScreen.conditionBottom, 'Promotion follows the task');
+        assert.equal(firstScreen.actionColor, 'rgb(24, 49, 83)'); assert.equal(firstScreen.adCount, 1);
         const action = await evaluate(`(() => {
           const link = document.querySelector('.task-sequence-pager--after-solution .task-next-action');
           const nav = link.closest('nav'), r = link.getBoundingClientRect(), nr = nav.getBoundingClientRect(), style = getComputedStyle(link);

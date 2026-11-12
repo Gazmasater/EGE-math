@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.matchMedia('(min-width: 901px)').addEventListener('change', () => closeMenus());
 });
 
-// One inline banner after the introduction. Never start automatic placements.
+// One inline banner at the location chosen by the server. Never start automatic placements.
 document.addEventListener('DOMContentLoaded', () => {
   const ad = document.querySelector('[data-site-ad]');
   if (!ad) return;

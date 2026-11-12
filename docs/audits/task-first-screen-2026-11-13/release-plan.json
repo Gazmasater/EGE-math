@@ -1,0 +1,52 @@
+{
+  "solutions": {
+    "FDA042": {
+      "status": 200,
+      "sha256": "390103886f62817ebfed8e01797b457d379a76f78f31741f836287924dde2509"
+    },
+    "6F97FE": {
+      "status": 200,
+      "sha256": "01d43bf0eea13a7d4962fd6a874a21647db9c4718535df25e6b06bb001e3d7bd"
+    },
+    "083006": {
+      "status": 200,
+      "sha256": "a7050a5a8ec669a45565ed8943b3e9ab57844f90e26e7d343decb31f452a2678"
+    },
+    "36135B": {
+      "status": 200,
+      "sha256": "a0fa2bfc8e353196dabfca8bf4aa36607ab245a6b46be38baada8d5a37ee9edf"
+    },
+    "C0261C": {
+      "status": 200,
+      "sha256": "8cf75cf846d00b45bc9776286da3213cf920677c8b5d0fbdfa9535efc9d7acda"
+    },
+    "45B944": {
+      "status": 200,
+      "sha256": "f17ad1de5de6453aea17d724ac940bdd598b69b8cb6e4bf7d60e0f321df3f2bd"
+    },
+    "OGEPHYS4D1B4F": {
+      "status": 200,
+      "sha256": "1af88aaa42f8394cfd0179d343765e1d200d8411e2c67cdb66497300b83e9bb4"
+    },
+    "EGEINF48F84F": {
+      "status": 200,
+      "sha256": "31686119bd6f1a92ee47684181cff587d065503b3cda0fcdd898b369a061c86c"
+    },
+    "OGEINF4A5F46": {
+      "status": 200,
+      "sha256": "61c4e2278a93e1f1a79d98633c6f04fad000c968194d3d74c642543de3bdd068"
+    },
+    "EGEINF1F25B2": {
+      "status": 404
+    }
+  },
+  "assets": {
+    "/assets/catalogue-math.c99e1e57c5e1efe6.css": "c99e1e57c5e1efe6f8ccef9c08bc42ce326b1109616f5c46756337d83fa1873e",
+    "/assets/fipi-ui.ca75b645c6c17c2b.css": "ca75b645c6c17c2b66c1858e8d4e3b131762ee5b4d69048e2c767d35677afe37",
+    "/assets/catalogue.1f2b1f43d41226af.js": "1f2b1f43d41226af034026eb913e208f6182e1a15e149b40e1f59750fba70c5e",
+    "/assets/fipi-base.43b3488f0aaa4510.css": "43b3488f0aaa4510372779470f79ad23d87433e3f22fa5f15f699d9e8d7a97ec",
+    "/assets/fipi-utils.1356e9f547af222e.js": "1356e9f547af222e58f83267286eea2bb6573e9e2f7bbb1a0149c08fd9173a2b",
+    "/assets/site.074535a8650ecf37.js": "074535a8650ecf373229829f25ee07f835549ccc390868589744c6eefe041ea6",
+    "/assets/site.a533665571b066db.css": "a533665571b066dbadb949b72de67495a0821cdfe636116aa64248e1e27e5a64"
+  }
+}

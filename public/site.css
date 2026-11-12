@@ -347,6 +347,31 @@ body:has(.seo-task-solution) .comments-widget,body:has(.about-card) .comments-wi
 @media(max-width:700px){.visitor-updates{padding:18px 15px;margin:20px 0}.visitor-updates-heading{flex-direction:column;gap:8px;margin-bottom:14px}.visitor-updates h2{font-size:21px}.visitor-updates-list{grid-template-columns:minmax(0,1fr)}.visitor-updates-list>li{padding:15px}.visitor-update-top{gap:7px}.visitor-updates time{padding:0}}
 @media print{.visitor-updates{display:none!important}}
 
+/* Task pages put the condition and solution action ahead of supporting blocks. */
+body[data-task-page] .seo-breadcrumbs{margin-bottom:12px;overflow-x:auto;scrollbar-width:none}
+body[data-task-page] .seo-breadcrumbs ol{flex-wrap:nowrap;white-space:nowrap;width:max-content;max-width:none}
+.task-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px;margin:0 0 16px;padding:22px 24px;border:1px solid #d8e3ef;border-radius:16px;background:linear-gradient(115deg,#fff,#eef5fc)}
+.task-heading .task-heading-eyebrow{margin:0;color:#3c5b78;font:700 11px/1.5 var(--ui-font);letter-spacing:.5px;text-transform:uppercase}
+.task-heading-eyebrow span{color:#73869a;font-weight:500}
+.task-heading h1{margin:6px 0 0;font:750 27px/1.2 var(--ui-font);letter-spacing:-.6px}
+.task-heading-id,.task-heading-topic{display:block}
+.task-heading-topic{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:7px;font:600 16px/1.4 var(--ui-font);letter-spacing:0}
+.task-heading-topic a{color:#3c5b78;text-decoration:none}
+.task-heading-topic a:hover{text-decoration:underline}
+.task-heading-actions{display:grid;gap:7px;text-align:center}
+.task-heading .task-heading-action{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;margin:0;padding:13px 20px;border:1px solid #183153;border-radius:9px;background:#183153;color:#fff;font:700 14px/1.4 var(--ui-font);text-decoration:none}
+.task-heading .task-heading-action:hover{border-color:#254a79;background:#254a79;color:#fff}
+.task-heading-action .ui-icon{width:18px;height:18px;transform:rotate(90deg)}
+.task-heading .task-heading-note{color:#5b6f83;font:400 11px/1.4 var(--ui-font)}
+.task-heading a:focus-visible{outline:3px solid #3b82c4;outline-offset:3px}
+body[data-task-page] .task-sequence-pager--top{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);max-width:480px;margin:0 auto 16px;padding:0;gap:8px;background:transparent;box-shadow:none}
+body[data-task-page] .task-sequence-pager--top>a,body[data-task-page] .task-sequence-pager--top>span{min-height:44px;margin:0;padding:8px 10px;font-size:13px;line-height:1.3}
+body[data-task-page] .task-sequence-pager--top .task-sequence-pager-label{padding:8px 0;white-space:nowrap}
+.task-condition-title{margin:0 0 8px;color:#3c5b78;font:700 15px/1.4 var(--ui-font)}
+body[data-task-page] .qblock{border-radius:14px;box-shadow:0 3px 18px #1831530a}
+body[data-task-page] .seo-task-solution h2[id]{scroll-margin-top:96px}
+@media(max-width:620px){.task-heading{grid-template-columns:minmax(0,1fr);gap:16px;padding:18px;margin-bottom:14px}.task-heading h1{font-size:24px}.task-heading-topic{font-size:15px;margin-top:6px}.task-heading-actions{gap:6px}.task-heading .task-heading-action{width:100%}body[data-task-page] .task-sequence-pager--top{margin-bottom:14px}.task-condition-title{font-size:14px}}
+
 /* Contact form in the former Telegram banner position. */
 .study-request{scroll-margin-top:90px;display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;margin:30px 0;padding:32px;border:1px solid #d1e1ee;border-radius:16px;background:#edf4f9;color:var(--ui-ink);font:400 15px/1.65 var(--ui-font);white-space:normal}
 .study-request *{box-sizing:border-box}.study-request-copy,.study-request-body{min-width:0}

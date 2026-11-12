@@ -14,7 +14,7 @@ const { expandMathmlFences } = require('./lib/mathml-fences');
 const {restorePhysicsFigures} = require('./lib/physics-condition-figures');
 const {restoreOgePhysicsFigures} = require('./lib/oge-physics-condition-figures');
 const { ANALYTICS_SCRIPT, registrationAnalyticsCookie } = require('./lib/analytics');
-const {UI_HEAD, renderSiteHeader, renderSiteFooter, renderSiteAd, insertSiteAd, renderStudyHero, renderSubjectSwitch, renderStudyBenefits, renderStudyGuide, renderStudyFaq} = require('./lib/site-ui');
+const {UI_HEAD, renderSiteHeader, renderSiteFooter, renderSiteAd, insertSiteAd, renderTaskHeading, renderStudyHero, renderSubjectSwitch, renderStudyBenefits, renderStudyGuide, renderStudyFaq} = require('./lib/site-ui');
 const {renderVisitorUpdates} = require('./lib/visitor-updates');
 const {egeSubjectContent} = require('./lib/ege-subject-content');
 const {PHYSICS_TOPICS, physicsTopicInfo, physicsClassification, taskMatchesTopic, taskPhysicsTopic} = require('./lib/physics-topics');
@@ -2252,7 +2252,11 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const uiSubject = isOge ? section : isPhysics ? 'physics' : 'math';
   const header = renderSiteHeader({subject: isSearch ? '' : uiSubject, pathname: seoPathname, searchQuery: seoOverride?.searchQuery,
     searchPath: isOge ? ogeConfig.path : '/search', searchTopic: isOge ? 'all' : ''});
-  const pageHeading = isLandingCatalogue ? renderStudyHero({subject: uiSubject,
+  const pageHeading = taskIdFromPath ? renderTaskHeading({taskId: taskIdFromPath,
+    subject: seoOverride?.taskDetails?.subject || baseTitle,
+    topic: seoOverride?.taskDetails?.topic || baseTitle,
+    topicPath: taskNavigation?.sectionPath || sectionPath, hasSolution: hasTaskSolution})
+    : isLandingCatalogue ? renderStudyHero({subject: uiSubject,
     solved: seoOverride?.catalogueSolved || 0, types: isPhysics ? PHYSICS_TASK_TYPES.length : MATH_TASK_TYPES.length,
     sampleAnswer: getPublishedSolution.get(isPhysics ? '8A3445' : '6D1598')?.answer || ''}) + (uiSubject === 'math' ? renderVisitorUpdates() : '') + renderSiteAd() + renderStudyBenefits()
     : `<section class="page-heading"><h1>${escapeHtml(headerTitle)}</h1><p>${escapeHtml(subtitle)}</p>
@@ -2260,7 +2264,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
         ${isSelectedMathCatalogue || isSelectedPhysicsCatalogue ? '<a class="catalogue-task-jump" href="#tasks">Начать решать ↓</a>' : ''}
         ${hasTaskSolution ? `<a class="task-solution-jump" href="#solution-${escapeHtml(taskIdFromPath)}">Открыть решение ↓</a>` : ''}
         ${taskIdFromPath ? `<a class="task-feedback-jump" href="#feedback" data-feedback-modal-open data-task-id="${escapeHtml(taskIdFromPath)}">Ошибка или пожелание</a>` : ''}
-      </div>` : ''}</section>${taskIdFromPath ? renderVisitorUpdates(taskIdFromPath) : ''}${isSearch ? '' : renderSiteAd()}`;
+      </div>` : ''}</section>${isSearch ? '' : renderSiteAd()}`;
   const taskPager = renderTaskNavigation(taskNavigation);
   const physicsTopicMenu = isPhysics && isPhysicsCatalogue && !onlyAdded && !isSearch
     ? (physicsPart === 2 ? renderPhysicsSecondPartMenu(physicsTopic?.code || '', physicsStats.counts, physicsStats.total, physicsStats.unclassified)
@@ -2289,10 +2293,10 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .replace(/<link\b(?=[^>]*\brel\s*=\s*["'](?:shortcut\s+)?icon["'])[^>]*>\s*/gi, '')
     .replace(/<title>[\s\S]*?<\/title>/i, () => pageTitle)
     .replace('</head>', () => `${loadingGuard}${localStyle}${pageSeo}${UI_HEAD}${useCataloguePager ? `<script defer src="${assetUrl('catalogue.js')}"></script>` : ''}</head>`)
-    .replace(/<body([^>]*)>/i, (_, attributes) => `<body${attributes}>${YANDEX_METRIKA_NOSCRIPT}${header}${seoOverride?.breadcrumbs ? renderBreadcrumbs(seoOverride.breadcrumbs) : ''}${pageHeading}${taskPager}${isLandingCatalogue ? renderSubjectSwitch(uiSubject) : ''}${mathTopicMenu}${physicsTopicMenu}${isLandingCatalogue ? '' : seoOverride?.intro || ''}${catalogue && !catalogue.total ? `<div id="tasks"></div>${renderCataloguePages(catalogue, 'top')}` : ''}${!isLandingCatalogue && !isSearch ? renderCommentsWidget({ inlineOnMobile: section === 'oge' }) : ''}${renderFeedbackModal()}`)
+    .replace(/<body([^>]*)>/i, (_, attributes) => `<body${attributes}${taskIdFromPath ? ' data-task-page' : ''}>${YANDEX_METRIKA_NOSCRIPT}${header}${seoOverride?.breadcrumbs ? renderBreadcrumbs(seoOverride.breadcrumbs) : ''}${pageHeading}${taskPager}${isLandingCatalogue ? renderSubjectSwitch(uiSubject) : ''}${mathTopicMenu}${physicsTopicMenu}${isLandingCatalogue || taskIdFromPath ? '' : seoOverride?.intro || ''}${catalogue && !catalogue.total ? `<div id="tasks"></div>${renderCataloguePages(catalogue, 'top')}` : ''}${!isLandingCatalogue && !isSearch && !taskIdFromPath ? renderCommentsWidget({ inlineOnMobile: section === 'oge' }) : ''}${renderFeedbackModal()}`)
     .replace(/<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"][^>]*>/i, match =>
-      `${catalogue || isSelectedMathCatalogue || isSelectedPhysicsCatalogue ? `<div id="tasks" class="catalogue-task-start">${renderCataloguePages(catalogue, 'top')}</div>` : ''}${match}`)
-    .replace('</body>', `${isLandingCatalogue ? renderStudyGuide({subject: uiSubject}) + renderStudyFaq() : ''}${!taskIdFromPath ? banner : ''}${renderCataloguePages(catalogue, 'bottom')}<div id="site-end"></div>${renderSiteFooter()}${catalogue ? `<script id="catalogue-data" type="application/json">${JSON.stringify(catalogue).replace(/</g, '\\u003c')}</script>` : ''}${pagerScript}${renderTurnstileScript()}</body>`);
+      `${taskIdFromPath ? '<h2 class="task-condition-title" id="task-condition">Условие задачи</h2>' : ''}${catalogue || isSelectedMathCatalogue || isSelectedPhysicsCatalogue ? `<div id="tasks" class="catalogue-task-start">${renderCataloguePages(catalogue, 'top')}</div>` : ''}${match}`)
+    .replace('</body>', `${isLandingCatalogue ? renderStudyGuide({subject: uiSubject}) + renderStudyFaq() : ''}${!taskIdFromPath ? banner : ''}${renderCataloguePages(catalogue, 'bottom')}${taskIdFromPath ? seoOverride?.intro || '' : ''}<div id="site-end"></div>${renderSiteFooter()}${catalogue ? `<script id="catalogue-data" type="application/json">${JSON.stringify(catalogue).replace(/</g, '\\u003c')}</script>` : ''}${pagerScript}${renderTurnstileScript()}</body>`);
 }
 
 async function loadSourceHtml(section) {
@@ -2737,11 +2741,11 @@ function renderTaskNavigation(taskNavigation, afterSolution = false) {
   const next = taskNavigation.next
     ? `<a${afterSolution ? ' class="task-next-action"' : ''} href="/tasks/${escapeHtml(taskNavigation.next)}" data-analytics-next-task="${escapeHtml(taskNavigation.next)}" data-analytics-navigation-area="${afterSolution ? 'after_solution' : 'top'}">${afterSolution ? 'Следующее задание →' : 'Следующее →'}</a>`
     : '<span class="task-sequence-pager-disabled">Следующее →</span>';
-  return `<nav class="task-sequence-pager${afterSolution ? ' task-sequence-pager--after-solution' : ''}" aria-label="${afterSolution ? 'Навигация после решения' : 'Навигация по заданиям раздела'}">
+  return `<nav class="task-sequence-pager${afterSolution ? ' task-sequence-pager--after-solution' : ' task-sequence-pager--top'}" aria-label="${afterSolution ? 'Навигация после решения' : 'Навигация по заданиям раздела'}">
     ${afterSolution ? next : ''}
     ${taskNavigation.previous ? `<a href="/tasks/${escapeHtml(taskNavigation.previous)}">← Предыдущее</a>` : '<span class="task-sequence-pager-disabled">← Предыдущее</span>'}
-    <span class="task-sequence-pager-label">Задание ${taskNavigation.position} из ${taskNavigation.total}</span>
-    <a href="${escapeHtml(taskNavigation.sectionPath)}">Все задания раздела</a>
+    <span class="task-sequence-pager-label">${afterSolution ? 'Задание ' : ''}${taskNavigation.position} из ${taskNavigation.total}</span>
+    ${afterSolution ? `<a href="${escapeHtml(taskNavigation.sectionPath)}">Все задания раздела</a>` : ''}
     ${afterSolution ? '' : next}
   </nav>`;
 }
@@ -2852,6 +2856,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     type: 'article',
     structuredData,
     taskNavigation,
+    taskDetails: {subject, topic: topicName},
     breadcrumbs,
     ogeStats: oge || undefined,
     serverCatalogue: Boolean(oge),
@@ -2870,7 +2875,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     ? renderCommentSection(entry.taskId, user, commentNotice)
     : renderUnavailableCommentSection(entry.taskId);
   const feedback = renderFeedbackSection(entry.taskId, feedbackNotice);
-  return page.replace('<div id="site-end"></div>', () => `${solution}${renderTaskNavigation(taskNavigation, true)}${feedback}${comments}`);
+  return page.replace('<div id="site-end"></div>', () => `${solution}${renderTaskNavigation(taskNavigation, true)}${renderVisitorUpdates(entry.taskId)}${renderSiteAd()}${feedback}${comments}`);
 }
 
 async function renderSitemap() {

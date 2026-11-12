@@ -1,0 +1,140 @@
+[
+  {
+    "url": "/tasks/FDA042",
+    "title": "FDA042 — Уравнения: ответ и решение | ЕГЭ по математике, профиль",
+    "items": [
+      {
+        "cls": "page-heading",
+        "y": 121,
+        "height": 215
+      },
+      {
+        "cls": "prep-banner",
+        "y": 356,
+        "height": 579
+      },
+      {
+        "cls": "site-ad",
+        "y": 0,
+        "height": 0
+      },
+      {
+        "cls": "task-sequence-pager",
+        "y": 955,
+        "height": 111
+      },
+      {
+        "cls": "qblock hide-form",
+        "y": 1084,
+        "height": 317
+      },
+      {
+        "cls": "solution-controls has-published-solution",
+        "y": 1244,
+        "height": 143
+      },
+      {
+        "cls": "task-header-panel",
+        "y": 1401,
+        "height": 95
+      },
+      {
+        "cls": "task-sequence-pager task-sequence-pager--after-solution",
+        "y": 2710,
+        "height": 166
+      }
+    ]
+  },
+  {
+    "url": "/tasks/083006",
+    "title": "083006 — Кинематика: ответ и решение | ЕГЭ по физике",
+    "items": [
+      {
+        "cls": "page-heading",
+        "y": 144,
+        "height": 215
+      },
+      {
+        "cls": "prep-banner",
+        "y": 379,
+        "height": 579
+      },
+      {
+        "cls": "site-ad",
+        "y": 0,
+        "height": 0
+      },
+      {
+        "cls": "task-sequence-pager",
+        "y": 978,
+        "height": 117
+      },
+      {
+        "cls": "qblock hide-form",
+        "y": 1113,
+        "height": 376
+      },
+      {
+        "cls": "solution-controls has-published-solution",
+        "y": 1332,
+        "height": 143
+      },
+      {
+        "cls": "task-header-panel",
+        "y": 1489,
+        "height": 95
+      },
+      {
+        "cls": "task-sequence-pager task-sequence-pager--after-solution",
+        "y": 3083,
+        "height": 172
+      }
+    ]
+  },
+  {
+    "url": "/tasks/36135B",
+    "title": "36135B — Статика: ответ и решение | ЕГЭ по физике",
+    "items": [
+      {
+        "cls": "page-heading",
+        "y": 144,
+        "height": 185
+      },
+      {
+        "cls": "prep-banner",
+        "y": 349,
+        "height": 579
+      },
+      {
+        "cls": "site-ad",
+        "y": 0,
+        "height": 0
+      },
+      {
+        "cls": "task-sequence-pager",
+        "y": 948,
+        "height": 117
+      },
+      {
+        "cls": "qblock hide-form",
+        "y": 1083,
+        "height": 623
+      },
+      {
+        "cls": "solution-controls has-published-solution",
+        "y": 1549,
+        "height": 143
+      },
+      {
+        "cls": "task-header-panel",
+        "y": 1706,
+        "height": 95
+      },
+      {
+        "cls": "task-sequence-pager task-sequence-pager--after-solution",
+        "y": 3467,
+        "height": 172
+      }
+    ]
+  }
+]

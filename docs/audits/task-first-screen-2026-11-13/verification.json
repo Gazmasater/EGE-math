@@ -1,0 +1,29 @@
+{
+  "generated_at_moscow": "2026-11-13T02:28:18.000982+03:00",
+  "service_start_utc": "Thu 2026-11-12 23:23:16 UTC",
+  "baseline_cases": 10,
+  "first_screen_checks": {
+    "chromium-preview": 24,
+    "chromium-public": 24,
+    "webkit-preview": 13,
+    "webkit-public": 13
+  },
+  "analytics_pages": 24,
+  "unit_tests": 14,
+  "errors": 0,
+  "reference_viewport": "390x844",
+  "reference_condition_before_y": 1084,
+  "reference_condition_after_y": 419.28125,
+  "content_and_seo_hashes_preserved": true,
+  "api_statuses_and_hashes_preserved": 10,
+  "retained_assets": 4,
+  "physical_iphone": false,
+  "real_ads": false,
+  "database_edits": false,
+  "source_sha256": {
+    "server.js": "059ab132ff44fc6754bb20cc8d36a7709a28aebf1f18006febf1e34f157d1b5e",
+    "lib/site-ui.js": "8d3017780b2e7217e2a0428bf782fb6c589fc429c5d24e1dec29f1cddc4e7863",
+    "public/site.css": "a533665571b066dbadb949b72de67495a0821cdfe636116aa64248e1e27e5a64",
+    "public/site.js": "074535a8650ecf373229829f25ee07f835549ccc390868589744c6eefe041ea6"
+  }
+}
