@@ -1,0 +1,13 @@
+{
+  "reports": 85,
+  "errors": [],
+  "sampled": [],
+  "sample_shares": [
+    1.0
+  ],
+  "data_lags": [
+    0
+  ],
+  "privacy_limited_reports": 83,
+  "additive_totals": "passed: daily, Safari/other, organic/nonorganic; users not additive"
+}
