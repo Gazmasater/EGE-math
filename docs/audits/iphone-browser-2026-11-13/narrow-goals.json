@@ -1,0 +1,800 @@
+{
+  "startedAt": "2026-11-12T22:16:45.550Z",
+  "cases": [
+    {
+      "engine": "chromium",
+      "mode": "empty",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "headerSearch": true,
+      "end": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1009,
+        "pageWidth": 375,
+        "modalScroll": 765,
+        "modalHeight": 1432,
+        "modalClient": 667,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "afterClose": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1009,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 375,
+        "height": 520,
+        "pageY": 1009,
+        "pageWidth": 375,
+        "modalScroll": 912,
+        "modalHeight": 1432,
+        "modalClient": 520,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 1033,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "portrait": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1033,
+        "pageWidth": 375,
+        "modalScroll": 765,
+        "modalHeight": 1432,
+        "modalClient": 667,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "screenshot": "screens/narrow-goals-chromium-empty-375-end.jpg",
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 375,
+        "height": 667,
+        "pageY": 0,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 375,
+        "height": 667,
+        "pageY": 0,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 2
+      },
+      "goals": [
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "next_task",
+          "params": {
+            "placement": "task_page",
+            "task_id": "638272"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "task_page",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "delayed",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "headerSearch": true,
+      "end": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1665,
+        "pageWidth": 375,
+        "modalScroll": 765,
+        "modalHeight": 1432,
+        "modalClient": 667,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "afterClose": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1665,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 375,
+        "height": 520,
+        "pageY": 1665,
+        "pageWidth": 375,
+        "modalScroll": 912,
+        "modalHeight": 1432,
+        "modalClient": 520,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 1689,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "portrait": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1689,
+        "pageWidth": 375,
+        "modalScroll": 765,
+        "modalHeight": 1432,
+        "modalClient": 667,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "screenshot": "screens/narrow-goals-chromium-delayed-375-end.jpg",
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 375,
+        "height": 667,
+        "pageY": 0,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 375,
+        "height": 667,
+        "pageY": 0,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 2
+      },
+      "goals": [
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "task_page",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "next_task",
+          "params": {
+            "placement": "task_page",
+            "task_id": "638272"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "mode": "empty",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "headerSearch": true,
+      "end": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1034,
+        "pageWidth": 375,
+        "modalScroll": 745,
+        "modalHeight": 1412,
+        "modalClient": 667,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "afterClose": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1034,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 375,
+        "height": 520,
+        "pageY": 1034,
+        "pageWidth": 375,
+        "modalScroll": 892,
+        "modalHeight": 1412,
+        "modalClient": 520,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 1034,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "portrait": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1034,
+        "pageWidth": 375,
+        "modalScroll": 745,
+        "modalHeight": 1412,
+        "modalClient": 667,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "screenshot": "screens/narrow-goals-webkit-empty-375-end.jpg",
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 375,
+        "height": 667,
+        "pageY": 0,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "idle"
+      },
+      "afterBack": {
+        "width": 375,
+        "height": 667,
+        "pageY": 0,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 2
+      },
+      "goals": [
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "task_page",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "next_task",
+          "params": {
+            "placement": "task_page",
+            "task_id": "638272"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "mode": "delayed",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "headerSearch": true,
+      "end": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1140,
+        "pageWidth": 375,
+        "modalScroll": 745,
+        "modalHeight": 1412,
+        "modalClient": 667,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "afterClose": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1140,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 375,
+        "height": 520,
+        "pageY": 1690,
+        "pageWidth": 375,
+        "modalScroll": 892,
+        "modalHeight": 1412,
+        "modalClient": 520,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 1690,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "portrait": {
+        "width": 375,
+        "height": 667,
+        "pageY": 1690,
+        "pageWidth": 375,
+        "modalScroll": 745,
+        "modalHeight": 1412,
+        "modalClient": 667,
+        "close": {
+          "x": 325,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "screenshot": "screens/narrow-goals-webkit-delayed-375-end.jpg",
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 375,
+        "height": 667,
+        "pageY": 0,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 375,
+        "height": 667,
+        "pageY": 0,
+        "pageWidth": 375,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 2
+      },
+      "goals": [
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "task_page",
+            "task_id": "FDA042"
+          }
+        },
+        {
+          "event": "next_task",
+          "params": {
+            "placement": "task_page",
+            "task_id": "638272"
+          }
+        },
+        {
+          "event": "solution_open",
+          "params": {
+            "placement": "dialog",
+            "task_id": "FDA042"
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "note": "375px viewport, analytics stub; goal counts are test instrumentation, not real Metrica requests",
+  "finishedAt": "2026-11-12T22:17:28.316Z"
+}

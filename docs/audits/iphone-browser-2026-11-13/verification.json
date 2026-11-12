@@ -1,0 +1,27 @@
+{
+  "generated_at_utc": "2026-11-12T22:20:14.760719+00:00",
+  "cases": 28,
+  "errors": 0,
+  "base_commit": "d1948d2eb9091f5e75506761a9150857d59d8520",
+  "app_source_matches_base_commit": true,
+  "playwright_version": "1.56.1",
+  "chromium_version": "152.0.7977.82",
+  "webkit_version": "26.0",
+  "physical_iphone": false,
+  "native_yandex_start": false,
+  "real_ad_impressions": false,
+  "source_or_database_changes": false,
+  "close_button_accessible_all_cases": true,
+  "close_document_scroll_delta_all_cases": 0,
+  "production_write_attempts": 0,
+  "metrics_requests": "stubbed; external requests blocked",
+  "next_task_once_per_forward_action": true,
+  "goal_note": "solution_open supports dialog and inline task_page placements; they are separate reaches, not extra solved tasks",
+  "source_sha256": {
+    "server.js": "1e93226c37aad81abb5f64941e6ee775c2d7d1ca33dbed24faeef4c083374cbb",
+    "public/catalogue.js": "b7e74dd578f612ccd533712270e2d40b9458de5b956753cc6f7d655f516c555a",
+    "public/site.js": "fc5cf85f05fa908b411c736b712ffb09b82cddea03fa32730f768a4d81ce5f51",
+    "lib/catalogue-styles.js": "97942e13866795f43b4db7acc985cbb87424d3b3f6cd39b4010046fac8dc2ef3",
+    "lib/analytics.js": "f4d62ceeef03dc44e6218cf62c11c473af48e31155d24f543df62cb3ee8cf2a2"
+  }
+}

@@ -1,0 +1,1512 @@
+{
+  "startedAt": "2026-11-12T22:09:25.456Z",
+  "origin": "https://ege-fipi.ru",
+  "label": "baseline",
+  "cases": [
+    {
+      "engine": "chromium",
+      "mode": "empty",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "headerSearch": true,
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 898,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 898,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 390,
+        "height": 520,
+        "pageY": 898,
+        "pageWidth": 390,
+        "modalScroll": 926,
+        "modalHeight": 1446,
+        "modalClient": 520,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 922,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "portrait": {
+        "width": 390,
+        "height": 844,
+        "pageY": 922,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "screenshot": "screens/baseline-chromium-empty-390-end.jpg",
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 2
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "empty",
+      "route": "/tasks/6EFCFF",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1160,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 844,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6EFCFF",
+        "loading": false,
+        "adState": "empty"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1160,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6EFCFF",
+        "loading": false,
+        "adState": "empty"
+      },
+      "closeScrollDelta": 0,
+      "nextHref": "/tasks/6A10FC",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6A10FC",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6EFCFF",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 7
+        },
+        "solutionRequests": 4
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "empty",
+      "route": "/oge?topic=all",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1293,
+        "pageWidth": 390,
+        "modalScroll": 292,
+        "modalHeight": 1136,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q45B944",
+        "loading": false,
+        "adState": "empty"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1293,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q45B944",
+        "loading": false,
+        "adState": "empty"
+      },
+      "closeScrollDelta": 0,
+      "nextHref": "/oge?topic=all#q426640",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1817,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q45B944",
+        "loading": false,
+        "adState": "empty"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 8
+        },
+        "solutionRequests": 5
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "filled",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "headerSearch": true,
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1554,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1554,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 390,
+        "height": 520,
+        "pageY": 1554,
+        "pageWidth": 390,
+        "modalScroll": 926,
+        "modalHeight": 1446,
+        "modalClient": 520,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 1578,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "portrait": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1578,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 2
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "filled",
+      "route": "/tasks/6EFCFF",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1816,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 844,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6EFCFF",
+        "loading": false,
+        "adState": "ready"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1816,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6EFCFF",
+        "loading": false,
+        "adState": "ready"
+      },
+      "closeScrollDelta": 0,
+      "nextHref": "/tasks/6A10FC",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6A10FC",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6EFCFF",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 7
+        },
+        "solutionRequests": 4
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "filled",
+      "route": "/oge?topic=all",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1949,
+        "pageWidth": 390,
+        "modalScroll": 292,
+        "modalHeight": 1136,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q45B944",
+        "loading": false,
+        "adState": "ready"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1949,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q45B944",
+        "loading": false,
+        "adState": "ready"
+      },
+      "closeScrollDelta": 0,
+      "nextHref": "/oge?topic=all#q426640",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 2473,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q45B944",
+        "loading": false,
+        "adState": "ready"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 8
+        },
+        "solutionRequests": 5
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "delayed",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "headerSearch": true,
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1004,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1004,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 390,
+        "height": 520,
+        "pageY": 1554,
+        "pageWidth": 390,
+        "modalScroll": 926,
+        "modalHeight": 1446,
+        "modalClient": 520,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 1578,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "portrait": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1578,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "ready"
+      },
+      "screenshot": "screens/baseline-chromium-delayed-390-end.jpg",
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 2
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "delayed",
+      "route": "/tasks/6EFCFF",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1816,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 844,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6EFCFF",
+        "loading": false,
+        "adState": "ready"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1816,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6EFCFF",
+        "loading": false,
+        "adState": "ready"
+      },
+      "closeScrollDelta": 0,
+      "nextHref": "/tasks/6A10FC",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6A10FC",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q6EFCFF",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 7
+        },
+        "solutionRequests": 4
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "delayed",
+      "route": "/oge?topic=all",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1949,
+        "pageWidth": 390,
+        "modalScroll": 292,
+        "modalHeight": 1136,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q45B944",
+        "loading": false,
+        "adState": "ready"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1949,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q45B944",
+        "loading": false,
+        "adState": "ready"
+      },
+      "closeScrollDelta": 0,
+      "nextHref": "/oge?topic=all#q426640",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 2473,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q45B944",
+        "loading": false,
+        "adState": "ready"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 8
+        },
+        "solutionRequests": 5
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "loader-error",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "headerSearch": true,
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 898,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 898,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 390,
+        "height": 520,
+        "pageY": 898,
+        "pageWidth": 390,
+        "modalScroll": 926,
+        "modalHeight": 1446,
+        "modalClient": 520,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 922,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "portrait": {
+        "width": 390,
+        "height": 844,
+        "pageY": 922,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 2
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "slow-api",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "headerSearch": true,
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 498,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 498,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 390,
+        "height": 520,
+        "pageY": 498,
+        "pageWidth": 390,
+        "modalScroll": 926,
+        "modalHeight": 1446,
+        "modalClient": 520,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 522,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "portrait": {
+        "width": 390,
+        "height": 844,
+        "pageY": 522,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 2
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "mode": "api-error",
+      "route": "/tasks/FDA042",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "headerSearch": true,
+      "apiRetry": true,
+      "end": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1004,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "afterClose": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1004,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "closeScrollDelta": 0,
+      "shortViewport": {
+        "width": 390,
+        "height": 520,
+        "pageY": 1004,
+        "pageWidth": 390,
+        "modalScroll": 926,
+        "modalHeight": 1446,
+        "modalClient": 520,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "landscape": {
+        "width": 844,
+        "height": 390,
+        "pageY": 1028,
+        "pageWidth": 844,
+        "modalScroll": 0,
+        "modalHeight": 390,
+        "modalClient": 390,
+        "close": {
+          "x": 764,
+          "y": 38,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "hidden",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "portrait": {
+        "width": 390,
+        "height": 844,
+        "pageY": 1028,
+        "pageWidth": 390,
+        "modalScroll": 602,
+        "modalHeight": 1446,
+        "modalClient": 844,
+        "close": {
+          "x": 340,
+          "y": 12,
+          "width": 38,
+          "height": 38,
+          "accessible": true
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "empty"
+      },
+      "nextHref": "/tasks/638272",
+      "afterNext": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "q638272",
+        "loading": false,
+        "adState": "loading"
+      },
+      "afterBack": {
+        "width": 390,
+        "height": 844,
+        "pageY": 0,
+        "pageWidth": 390,
+        "modalScroll": 0,
+        "modalHeight": 0,
+        "modalClient": 0,
+        "close": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "accessible": false
+        },
+        "dialogOverflow": "visible",
+        "visibleTask": "qFDA042",
+        "loading": false,
+        "adState": "loading"
+      },
+      "network": {
+        "blockedWrites": 0,
+        "blockedExternal": {
+          "mc.yandex.ru": 4
+        },
+        "solutionRequests": 3
+      },
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Linux WebKit with iPhone profile, not physical iOS or the Yandex Start native application",
+    "Real ad SDK/impressions and analytics blocked; controlled ad rendering, errors and timing",
+    "Viewport resize simulates available space, not the native dynamic address bar; no physical gestures"
+  ],
+  "chromiumVersion": "152.0.7977.82",
+  "finishedAt": "2026-11-12T22:10:44.436Z"
+}
