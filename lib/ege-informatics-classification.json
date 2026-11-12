@@ -3707,7 +3707,7 @@
       "rule": "number-transform"
     },
     "EGEINF2F9ABA": {
-      "sourceSignature": "5d5bcdfe7acc919471b21959d461e75e07ba7fd76455f21f109224df67040d2b",
+      "sourceSignature": "3e08164a80b9a0e4bc69dc87ed0af28ec4f893ff67b52bbc70addbd7623979e9",
       "sourceCodes": [
         "4.5",
         "4.6"
@@ -4781,7 +4781,7 @@
       "rule": "program-analysis"
     },
     "EGEINF671119": {
-      "sourceSignature": "7c51fa70f6ceb8aff032b868a2b60abf4d08b0325104eb78fcc5bce0c41e7a3d",
+      "sourceSignature": "be245d005180cc7fc266575d3bf7bdcd1217f97c130a5aa14205fbbdcdcaf24e",
       "sourceCodes": [
         "4.5",
         "4.6"
@@ -8763,7 +8763,7 @@
       "rule": "recursion"
     },
     "EGEINFE4A3C2": {
-      "sourceSignature": "560695e9b59a1c7e227e6788a7aa2eac3fb3b1fd4e60f478da145df8a90dd2f5",
+      "sourceSignature": "fc50a61b2839d6ab2a8ad472b8fc4b1344269dd3c243d8f6f4c4afb5333d2302",
       "sourceCodes": [
         "4.5",
         "4.6"
@@ -10850,7 +10850,7 @@
       "rule": "truth-tables"
     },
     "EGEINF870FE9": {
-      "sourceSignature": "6cd60e16e3559c8bf4a41fde86d79bb2b2fbb103643c77683a07b6ad50912721",
+      "sourceSignature": "e6a566ef25472a78a6bd1004d9067bcfb36910ae556d459a6fa9d70a1dbe31bd",
       "sourceCodes": [
         "4.5",
         "4.6"
@@ -26915,7 +26915,7 @@
       "rule": "games"
     },
     "EGEINF8ECB7C": {
-      "sourceSignature": "58625a7848f1a4246beac052a88730411f78ddd4c738e4f2f793088b9faff8cc",
+      "sourceSignature": "31dc237d64681f589af7aeb23dbe483834e134fa818479bbb50ace8c91c5c607",
       "sourceCodes": [
         "3.10"
       ],
@@ -27322,7 +27322,7 @@
       "rule": "large-data"
     },
     "EGEINF290F15": {
-      "sourceSignature": "1efddb62b53eb39e615cb9e1eb2c7726e1208425baddcbb7905d733fa229a636",
+      "sourceSignature": "fcb3742a987d1009e28d62de930719f6b7b146f9df7cba202d8dc96eb8c849b6",
       "sourceCodes": [
         "3.10"
       ],
@@ -29462,7 +29462,7 @@
       "rule": "strings"
     },
     "EGEINFB3C563": {
-      "sourceSignature": "f60802f7fdd71db09befb5a7c0ec05546af8648f463b241b87f71a772b7bbb72",
+      "sourceSignature": "e88c5fdf4a362d39cd2dbee008e751479669a8c6cc6fd745b6ac1507f541bf05",
       "sourceCodes": [
         "3.10"
       ],
@@ -29739,7 +29739,7 @@
       "rule": "strings"
     },
     "EGEINFA99635": {
-      "sourceSignature": "f53539bf4fd0d88bdd750c46425394d6799f372936983328e22592aa46e5273a",
+      "sourceSignature": "0b17e52674f0e18c46da0128adeb95ce59b8e7e38ceb25fa2050b95c5c1aa132",
       "sourceCodes": [
         "3.10"
       ],

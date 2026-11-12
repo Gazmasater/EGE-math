@@ -1393,5 +1393,141 @@
         }
       ]
     }
+  },
+  "EGEINF2F9ABA": {
+    "sourceHash": "3e08164a80b9a0e4bc69dc87ed0af28ec4f893ff67b52bbc70addbd7623979e9",
+    "fipiCondition": "Впишите правильный ответ. Текст романа М.А. Булгакова «Собачье сердце» представлен в виде файлов различных форматов. Откройте один из файлов и определите, сколько раз встречается в тексте слово «вот» со строчной буквы. Слова с сочетанием букв «вот», такие как «живот», «вотчина» и другие, учитывать не следует. В ответе запишите только число. Скачать файл задания (ODT, ФИПИ)",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=47214",
+    "externalAnswer": "45",
+    "expectedAnswer": "38",
+    "comparison": "Полный сохранённый разбор 47214 прочитан: поиск отдельного слова с учётом регистра. Там другое произведение и слово теперь, ответ 45. Собственный файл и слово пересчитаны независимо; внешний ответ не переносится.",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Ручная методическая проверка локальных данных: для этой задачи принят явно описанный в решении поиск LibreOffice Writer с дефисом как границей. Реальный поиск Writer и независимые Python/JavaScript совпадают по неизменённым ODT. Альтернативный подсчёт сложных слов указан в замечании и не скрыт. Это вычисленный результат выбранного способа поиска, а не полученный официальный ключ. Пользователь поручил продолжать по уже скопированным условиям без нового подключения к ФИПИ."
+    },
+    "primaryProvenance": {
+      "kind": "third-party-preserved-fipi",
+      "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/9C61DF660D2C8B354AE248B33278E84D/img1_1620723389.rar",
+      "mirrorUrl": "https://ege.braintent.ru/assets/2F9ABA_2.rar",
+      "mappingGitBlob": "7173ffb4f6e555dc0fe632a6a4365fe2178dd62b",
+      "archiveSha256": "9189af75fcf7631cbddceb346aeecfccb02e7b702021b384b934cfea0781868f",
+      "member": "10.odt",
+      "fileSha256": "fd94df759b6da8f2ba898c50be91d8684e9df3cbe4cd2e19a44db92ac2fc3a29"
+    },
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Полное локальное условие прочитано. Исходных изображений в этих четырёх карточках нет; вложение доступно по текстовой ссылке.",
+      "files": []
+    },
+    "searchConvention": {
+      "application": "LibreOffice Writer",
+      "hyphens": "boundary",
+      "alternativeAnswer": 34,
+      "writerEvidence": "docs/audits/ege-informatics-remaining-2026-11-04/writer-search-results.json"
+    }
+  },
+  "EGEINF671119": {
+    "sourceHash": "be245d005180cc7fc266575d3bf7bdcd1217f97c130a5aa14205fbbdcdcaf24e",
+    "fipiCondition": "Впишите правильный ответ. Текст романа Александра Грина «Бегущая по волнам» представлен в виде файлов различных форматов. Откройте один из файлов и определите, сколько раз встречается в тексте слово «два» со строчной буквы. Слова с сочетанием букв «два», такие как «дважды», «едва» и другие, учитывать не следует. В ответе запишите только число. Скачать файл задания (ODT, ФИПИ)",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=47214",
+    "externalAnswer": "45",
+    "expectedAnswer": "37",
+    "comparison": "Полный сохранённый разбор 47214 прочитан: поиск отдельного слова с учётом регистра. Там другое произведение и слово теперь, ответ 45. Собственный файл и слово пересчитаны независимо; внешний ответ не переносится.",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Ручная методическая проверка локальных данных: для этой задачи принят явно описанный в решении поиск LibreOffice Writer с дефисом как границей. Реальный поиск Writer и независимые Python/JavaScript совпадают по неизменённым ODT. Альтернативный подсчёт сложных слов указан в замечании и не скрыт. Это вычисленный результат выбранного способа поиска, а не полученный официальный ключ. Пользователь поручил продолжать по уже скопированным условиям без нового подключения к ФИПИ."
+    },
+    "primaryProvenance": {
+      "kind": "third-party-preserved-fipi",
+      "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/B1B9F727D81E89DD4C69DE63B1A63994/img1_1620723192.rar",
+      "mirrorUrl": "https://ege.braintent.ru/assets/671119_2.rar",
+      "mappingGitBlob": "7173ffb4f6e555dc0fe632a6a4365fe2178dd62b",
+      "archiveSha256": "491e49730e0d0211aca953346ba3d748c0252030fa377bb4820771e21ab2f58a",
+      "member": "10.odt",
+      "fileSha256": "9609fe58c77a66661c872936f9a2b5a42dcd1bcd327daf68bf9fe987bf4be5fa"
+    },
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Полное локальное условие прочитано. Исходных изображений в этих четырёх карточках нет; вложение доступно по текстовой ссылке.",
+      "files": []
+    },
+    "searchConvention": {
+      "application": "LibreOffice Writer",
+      "hyphens": "boundary",
+      "alternativeAnswer": 35,
+      "writerEvidence": "docs/audits/ege-informatics-remaining-2026-11-04/writer-search-results.json"
+    }
+  },
+  "EGEINF870FE9": {
+    "sourceHash": "e6a566ef25472a78a6bd1004d9067bcfb36910ae556d459a6fa9d70a1dbe31bd",
+    "fipiCondition": "Впишите правильный ответ. Текст романа М.А. Булгакова «Собачье сердце» представлен в виде файлов различных форматов. Откройте один из файлов и определите, сколько раз встречаются в тексте слова с сочетанием букв «куда», например «откуда», «кудахтать». Отдельные слова «куда» и «Куда» учитывать не следует. В ответе запишите только число. Скачать файл задания (ODT, ФИПИ)",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=57417",
+    "externalAnswer": "42",
+    "expectedAnswer": "11",
+    "comparison": "Полный сохранённый разбор 57417 прочитан: все вхождения минус отдельные слова, оба регистра. Там другое произведение и сочетание вечер, 58 − 16 = 42. Метод применён к собственному неизменённому ODT; внешний ответ не переносится.",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Ручная методическая проверка локальных данных: для этой задачи принят явно описанный в решении поиск LibreOffice Writer с дефисом как границей. Реальный поиск Writer и независимые Python/JavaScript совпадают по неизменённым ODT. Альтернативный подсчёт сложных слов указан в замечании и не скрыт. Это вычисленный результат выбранного способа поиска, а не полученный официальный ключ. Пользователь поручил продолжать по уже скопированным условиям без нового подключения к ФИПИ."
+    },
+    "primaryProvenance": {
+      "kind": "third-party-preserved-fipi",
+      "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/EA07A802BEFA9A4D4CEE5E0983486224/img1_1620723352.rar",
+      "mirrorUrl": "https://ege.braintent.ru/assets/870FE9_2.rar",
+      "mappingGitBlob": "7173ffb4f6e555dc0fe632a6a4365fe2178dd62b",
+      "archiveSha256": "9189af75fcf7631cbddceb346aeecfccb02e7b702021b384b934cfea0781868f",
+      "member": "10.odt",
+      "fileSha256": "fd94df759b6da8f2ba898c50be91d8684e9df3cbe4cd2e19a44db92ac2fc3a29"
+    },
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Полное локальное условие прочитано. Исходных изображений в этих четырёх карточках нет; вложение доступно по текстовой ссылке.",
+      "files": []
+    },
+    "searchConvention": {
+      "application": "LibreOffice Writer",
+      "hyphens": "boundary",
+      "alternativeAnswer": 15,
+      "writerEvidence": "docs/audits/ege-informatics-remaining-2026-11-04/writer-search-results.json"
+    }
+  },
+  "EGEINFE4A3C2": {
+    "sourceHash": "fc50a61b2839d6ab2a8ad472b8fc4b1344269dd3c243d8f6f4c4afb5333d2302",
+    "fipiCondition": "Впишите правильный ответ. Текст романа Александра Грина «Бегущая по волнам» представлен в виде файлов различных форматов. Откройте один из файлов и определите, сколько раз встречаются в тексте слова с сочетанием букв «два», например «Дважды», «едва», «двадцать». Отдельные слова «два» и «Два» учитывать не следует. В ответе запишите только число. Скачать файл задания (ODT, ФИПИ)",
+    "reviewed": true,
+    "match": "method",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=57417",
+    "externalAnswer": "42",
+    "expectedAnswer": "52",
+    "comparison": "Полный сохранённый разбор 57417 прочитан: все вхождения минус отдельные слова, оба регистра. Там другое произведение и сочетание вечер, 58 − 16 = 42. Метод применён к собственному неизменённому ODT; внешний ответ не переносится.",
+    "discrepancy": {
+      "status": "resolved",
+      "resolution": "Ручная методическая проверка локальных данных: для этой задачи принят явно описанный в решении поиск LibreOffice Writer с дефисом как границей. Реальный поиск Writer и независимые Python/JavaScript совпадают по неизменённым ODT. Альтернативный подсчёт сложных слов указан в замечании и не скрыт. Это вычисленный результат выбранного способа поиска, а не полученный официальный ключ. Пользователь поручил продолжать по уже скопированным условиям без нового подключения к ФИПИ."
+    },
+    "primaryProvenance": {
+      "kind": "third-party-preserved-fipi",
+      "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/8A7106F691E9B3F04ECAC821FA275650/img1_1620723198.rar",
+      "mirrorUrl": "https://ege.braintent.ru/assets/E4A3C2_2.rar",
+      "mappingGitBlob": "7173ffb4f6e555dc0fe632a6a4365fe2178dd62b",
+      "archiveSha256": "491e49730e0d0211aca953346ba3d748c0252030fa377bb4820771e21ab2f58a",
+      "member": "10.odt",
+      "fileSha256": "9609fe58c77a66661c872936f9a2b5a42dcd1bcd327daf68bf9fe987bf4be5fa"
+    },
+    "primaryImageReview": {
+      "reviewed": true,
+      "note": "Полное локальное условие прочитано. Исходных изображений в этих четырёх карточках нет; вложение доступно по текстовой ссылке.",
+      "files": []
+    },
+    "searchConvention": {
+      "application": "LibreOffice Writer",
+      "hyphens": "boundary",
+      "alternativeAnswer": 54,
+      "writerEvidence": "docs/audits/ege-informatics-remaining-2026-11-04/writer-search-results.json"
+    }
   }
 }

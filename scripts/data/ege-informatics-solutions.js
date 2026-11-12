@@ -64,3 +64,5 @@ module.exports.push({name:'restored-game-links',topic:'type.games',subgroup:'res
 for (const [name, topic] of [['official-six-process', 'type.processes'], ['official-six-stars', 'type.large-data']]) module.exports.push({name, topic, subgroup: 'official-recovered-2026-11-05', records: require('./ege-informatics-' + name + '-records.json'), sources: require('./ege-informatics-' + name + '-sources.json')});
 
 module.exports.push({name:'reviewed-robot',topic:'type.robot-grid',subgroup:'reviewed-original-files',records:require('./ege-informatics-reviewed-robot-records.json'),sources:require('./ege-informatics-reviewed-robot-sources.json')});
+
+module.exports.push({name:'interpretations',topic:'all',subgroup:'explicit-conditional-answers',records:require('./ege-informatics-interpretations-records.json'),sources:require('./ege-informatics-interpretations-sources.json')});

@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "boxesBruteForceCases": 500,
+  "seatOccupancySubsets": 1023,
+  "primarySeatExample": [
+    50,
+    65
+  ],
+  "incorrectMembersRejected": [
+    {
+      "task": "1F25B2",
+      "archiveSha256": "72067e0865f7c01810001da5d9e45e62b6423b526b9649b6e7dc64b12be7e0b1",
+      "member": "331_24.txt",
+      "memberSha256": "bb8017cda3fc4455ca719f3da1916568265ae27613ca9c810c0ff70a4d1840e1",
+      "rejectedReason": "Нужны целые числа; приложенный буквенный текст не подходит"
+    },
+    {
+      "task": "7F1EAA",
+      "archiveSha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4",
+      "member": "307_27_B.txt",
+      "memberSha256": "23a0e373f92ac5f2ffc771e5f9dbcaa0c2b06853b4f9eca01830464b07169c2e",
+      "rejectedReason": "Первая строка должна содержать N от 1 до 10000"
+    },
+    {
+      "task": "7F1EAA",
+      "archiveSha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4",
+      "member": "307_27_A.txt",
+      "memberSha256": "ff52a256b9678e16f86c15909f46e59f800b164a8892934229a3978dd20bd6aa",
+      "rejectedReason": "Нужны N пар «номер ряда, номер занятого места»"
+    }
+  ],
+  "correctInputFound": false,
+  "localCandidateWarning": "331_26.txt and 307_26.txt belong to other tasks and were not substituted",
+  "secondaryPagesRead": [
+    {
+      "url": "https://silvertests.ru/CourseTask_B.aspx?id=54531&idcourse=50627",
+      "outcome": "matching condition, no public attachment link"
+    },
+    {
+      "url": "https://silvertests.ru/CourseTask_B.aspx?id=54566&idcourse=50627",
+      "outcome": "matching condition, no public attachment link"
+    }
+  ]
+}

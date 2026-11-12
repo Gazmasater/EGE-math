@@ -4340,5 +4340,93 @@
     "sourceKind": "official-fipi",
     "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/854E168600589BCA468E1694311F3BEF/img1_1661424780.zip",
     "review": "Неизменённый официальный архив. После N в заголовке есть дополнительное число, используемое в другой задаче 30C294. В 327EB5 задана стоимость доставки из всех пунктов без радиуса; поле явно разобрано как неиспользуемое. Все N пар данных, их порядок и вместимость 44 сохранены."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/9C61DF660D2C8B354AE248B33278E84D/img1_1620723389.rar": {
+    "taskId": "EGEINF2F9ABA",
+    "localRelative": "docs/restored-library/EGEINF2F9ABA.odt",
+    "sha256": "fd94df759b6da8f2ba898c50be91d8684e9df3cbe4cd2e19a44db92ac2fc3a29",
+    "bytes": 133776,
+    "sourceKind": "third-party-preserved-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/9C61DF660D2C8B354AE248B33278E84D/img1_1620723389.rar",
+    "mirrorUrl": "https://ege.braintent.ru/assets/2F9ABA_2.rar",
+    "archiveSha256": "9189af75fcf7631cbddceb346aeecfccb02e7b702021b384b934cfea0781868f",
+    "member": "10.odt",
+    "review": "Ранее сохранённое вложение по точному URL задания; ODT не изменён. Результат воспроизводит поиск LibreOffice Writer с дефисом как границей слова."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/B1B9F727D81E89DD4C69DE63B1A63994/img1_1620723192.rar": {
+    "taskId": "EGEINF671119",
+    "localRelative": "docs/restored-library/EGEINF671119.odt",
+    "sha256": "9609fe58c77a66661c872936f9a2b5a42dcd1bcd327daf68bf9fe987bf4be5fa",
+    "bytes": 277982,
+    "sourceKind": "third-party-preserved-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/B1B9F727D81E89DD4C69DE63B1A63994/img1_1620723192.rar",
+    "mirrorUrl": "https://ege.braintent.ru/assets/671119_2.rar",
+    "archiveSha256": "491e49730e0d0211aca953346ba3d748c0252030fa377bb4820771e21ab2f58a",
+    "member": "10.odt",
+    "review": "Ранее сохранённое вложение по точному URL задания; ODT не изменён. Результат воспроизводит поиск LibreOffice Writer с дефисом как границей слова."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/EA07A802BEFA9A4D4CEE5E0983486224/img1_1620723352.rar": {
+    "taskId": "EGEINF870FE9",
+    "localRelative": "docs/restored-library/EGEINF870FE9.odt",
+    "sha256": "fd94df759b6da8f2ba898c50be91d8684e9df3cbe4cd2e19a44db92ac2fc3a29",
+    "bytes": 133776,
+    "sourceKind": "third-party-preserved-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/EA07A802BEFA9A4D4CEE5E0983486224/img1_1620723352.rar",
+    "mirrorUrl": "https://ege.braintent.ru/assets/870FE9_2.rar",
+    "archiveSha256": "9189af75fcf7631cbddceb346aeecfccb02e7b702021b384b934cfea0781868f",
+    "member": "10.odt",
+    "review": "Ранее сохранённое вложение по точному URL задания; ODT не изменён. Результат воспроизводит поиск LibreOffice Writer с дефисом как границей слова."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/8A7106F691E9B3F04ECAC821FA275650/img1_1620723198.rar": {
+    "taskId": "EGEINFE4A3C2",
+    "localRelative": "docs/restored-library/EGEINFE4A3C2.odt",
+    "sha256": "9609fe58c77a66661c872936f9a2b5a42dcd1bcd327daf68bf9fe987bf4be5fa",
+    "bytes": 277982,
+    "sourceKind": "third-party-preserved-fipi",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/8A7106F691E9B3F04ECAC821FA275650/img1_1620723198.rar",
+    "mirrorUrl": "https://ege.braintent.ru/assets/E4A3C2_2.rar",
+    "archiveSha256": "491e49730e0d0211aca953346ba3d748c0252030fa377bb4820771e21ab2f58a",
+    "member": "10.odt",
+    "review": "Ранее сохранённое вложение по точному URL задания; ODT не изменён. Результат воспроизводит поиск LibreOffice Writer с дефисом как границей слова."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/5682B145452C9665458066C6752DD8DF/img1_1683032259.zip": {
+    "taskId": "EGEINF290F15",
+    "localRelative": "docs/restored-sorting/EGEINF290F15.zip",
+    "sha256": "9927bf5ce56c253fb6e9c997c5c8fb8d4cf02d11fb0176654df6cc28b1715e14",
+    "bytes": 4157,
+    "sourceKind": "official-preserved",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/5682B145452C9665458066C6752DD8DF/img1_1683032259.zip",
+    "member": "1_26.txt",
+    "review": "Неизменённый локальный архив, ранее сверенный с официальными байтами. Порядок одновременных заявок указан в условном ответе."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/D4EAE892B00D81BF4013F48108F6272F/img1_1683033145.zip": {
+    "taskId": "EGEINFB3C563",
+    "localRelative": "docs/restored-sorting/EGEINFB3C563.zip",
+    "sha256": "e0d618aa4397b8fc56f6031ff6f0239197247ab757499f7919e95ac086d12aaa",
+    "bytes": 4109,
+    "sourceKind": "official-preserved",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/D4EAE892B00D81BF4013F48108F6272F/img1_1683033145.zip",
+    "member": "3_26.txt",
+    "review": "Неизменённый локальный архив, ранее сверенный с официальными байтами. Порядок одновременных заявок указан в условном ответе."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/E98BBD44378694B24A2702B0672CA462/img1_1683032983.zip": {
+    "taskId": "EGEINFA99635",
+    "localRelative": "docs/restored-sorting/EGEINFA99635.zip",
+    "sha256": "912078ede12ae777df99f5b6950539b11045abf0e35f8f08119d80792f767624",
+    "bytes": 4113,
+    "sourceKind": "official-preserved",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/E98BBD44378694B24A2702B0672CA462/img1_1683032983.zip",
+    "member": "2_26.txt",
+    "review": "Неизменённый локальный архив, ранее сверенный с официальными байтами. Порядок одновременных заявок указан в условном ответе."
+  },
+  "docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3faac495abdc4e0291f99b15adbb44f8/img1_1760104253.zip": {
+    "taskId": "EGEINF8ECB7C",
+    "localRelative": "docs/restored-sorting/EGEINF8ECB7C.zip",
+    "sha256": "1c73f7b08af9839ded17a3a423379f8ffd16fd0fcd459865e961dc54be5c6521",
+    "bytes": 4276,
+    "sourceKind": "official-preserved",
+    "originalUrl": "https://ege.fipi.ru/docs/B9ACA5BBB2E19E434CD6BEC25284C67F/questions/3faac495abdc4e0291f99b15adbb44f8/img1_1760104253.zip",
+    "member": "4_26.txt",
+    "review": "Неизменённый локальный архив, ранее сверенный с официальными байтами. Порядок одновременных заявок указан в условном ответе."
   }
 }

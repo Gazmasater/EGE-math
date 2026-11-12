@@ -1,0 +1,242 @@
+{
+  "status": "ok",
+  "completedAt": "2026-11-05T22:21:14.731844+00:00",
+  "published": 2462,
+  "totalTasks": 2475,
+  "remaining": 13,
+  "totalSolutions": 12929,
+  "newAnswers": {
+    "EGEINF2F9ABA": "38",
+    "EGEINF671119": "37",
+    "EGEINF870FE9": "11",
+    "EGEINFE4A3C2": "52"
+  },
+  "searchConvention": "LibreOffice Writer whole-word search treats hyphen as a boundary; alternatives disclosed in solutions",
+  "officialAnswerKeyClaimed": false,
+  "newFipiRequests": 0,
+  "tests": {
+    "passed": 206,
+    "failed": 0
+  },
+  "subjectAudit": {
+    "catalog": 2475,
+    "prepared": 2462,
+    "matches": {
+      "exact": 344,
+      "variant": 1340,
+      "method": 778
+    },
+    "changed": 4,
+    "published": 2462,
+    "remaining": 13,
+    "preserved": 12925,
+    "integrity": "ok",
+    "rejectedEdits": 51965,
+    "rejectedWrongAnswers": 4924,
+    "status": "ok"
+  },
+  "publication": {
+    "status": "ok",
+    "changed": 4,
+    "published": 2462,
+    "remaining": 13,
+    "preserved": 12925,
+    "totalSolutions": 12929,
+    "integrity": "ok",
+    "calculationAudit": "preview-insert.json",
+    "publicationMethod": "insert exactly four verified preview rows; validate all 2462 records and preserve all existing rows in transaction"
+  },
+  "publicHttp": {
+    "origin": "https://ege-fipi.ru",
+    "checkedAt": "2026-11-05T22:20:24.821Z",
+    "solutions": 2462,
+    "cataloguePages": 433,
+    "status": "ok"
+  },
+  "bankHttp": {
+    "section": "ege-informatics",
+    "catalogues": 85,
+    "catalogPages": 958,
+    "ogeTasks": 2475,
+    "existingTasks": 0,
+    "sitemapUrls": 16334,
+    "errors": 0
+  },
+  "publicBrowser": {
+    "pages": 8,
+    "modals": 8,
+    "errors": 0
+  },
+  "preservation": {
+    "solutions": {
+      "before": 12925,
+      "after": 12929,
+      "preserved": true
+    },
+    "users": {
+      "before": 10,
+      "after": 10,
+      "preserved": true
+    },
+    "solution_comments": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "site_feedback": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "leads": 1,
+    "fipiFilesUnchanged": 25,
+    "integrity": "ok"
+  },
+  "backups": {
+    "status": "ok",
+    "count": 4,
+    "backups": [
+      {
+        "file": "baseline-solutions.sqlite.gz",
+        "sha256": "f9c34db366781ab885729a45e0bb38269e138a9ebd49e362c6c62f5062e1c606",
+        "uncompressedSha256": "cf640955a2cdbb7d70ae1c6e607641afd3e0f1b3ec03bf3cbdb8254cd5347c80",
+        "bytes": 74604544,
+        "integrity": "ok"
+      },
+      {
+        "file": "baseline-study-leads.sqlite.gz",
+        "sha256": "0507be3d905319d6140cee1b5062bd32f5cf751b11ae34b2d63adc72f1d10173",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-solutions.sqlite.gz",
+        "sha256": "f9c34db366781ab885729a45e0bb38269e138a9ebd49e362c6c62f5062e1c606",
+        "uncompressedSha256": "cf640955a2cdbb7d70ae1c6e607641afd3e0f1b3ec03bf3cbdb8254cd5347c80",
+        "bytes": 74604544,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-study-leads.sqlite.gz",
+        "sha256": "0507be3d905319d6140cee1b5062bd32f5cf751b11ae34b2d63adc72f1d10173",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      }
+    ]
+  },
+  "sourcePreservation": {
+    "unchangedOtherConditions": 2471,
+    "newMirrors": 4,
+    "previousMirrors": 378,
+    "totalMirrors": 382,
+    "previousLibraryRecordsPreserved": 45,
+    "answers": {
+      "EGEINF2F9ABA": 38,
+      "EGEINF671119": 37,
+      "EGEINF870FE9": 11,
+      "EGEINFE4A3C2": 52
+    },
+    "newFipiRequests": 0
+  },
+  "localArtifacts": "/root/ege-informatics-word-final-20261105",
+  "verificationCommand": "python3 docs/audits/ege-informatics-word-final-2026-11-05/verify.py",
+  "pending": {
+    "rateNotation": [
+      "EF0000",
+      "5459A3",
+      "502BCF",
+      "47E49C",
+      "57579A",
+      "BAE6EF",
+      "4CAD3D"
+    ],
+    "simultaneousArrivalOrder": [
+      "290F15",
+      "B3C563",
+      "A99635",
+      "8ECB7C"
+    ],
+    "wrongAttachments": [
+      "1F25B2",
+      "7F1EAA"
+    ]
+  },
+  "interruptedCheck": {
+    "exitCode": 143,
+    "stage": "preview full-bank HTTP audit",
+    "completedStagesPreserved": [
+      "206 tests",
+      "full subject calculation",
+      "all-solution format",
+      "2462 solution API/SSR + 433 catalogues",
+      "8 pages and 8 modals browser checks",
+      "manual visual review",
+      "4 downloads"
+    ],
+    "action": "restarted only unfinished full-bank HTTP audit; cause not established"
+  },
+  "cleanup": {
+    "status": "ok",
+    "removedTemporaryDatabases": [
+      {
+        "name": "baseline-solutions.sqlite",
+        "bytes": 74604544
+      },
+      {
+        "name": "baseline-solutions.sqlite-wal",
+        "bytes": 0
+      },
+      {
+        "name": "baseline-solutions.sqlite-shm",
+        "bytes": 32768
+      },
+      {
+        "name": "baseline-study-leads.sqlite",
+        "bytes": 12288
+      },
+      {
+        "name": "solutions.sqlite",
+        "bytes": 74620928
+      },
+      {
+        "name": "solutions.sqlite-wal",
+        "bytes": 0
+      },
+      {
+        "name": "solutions.sqlite-shm",
+        "bytes": 32768
+      },
+      {
+        "name": "study-leads.sqlite",
+        "bytes": 12288
+      },
+      {
+        "name": "prepublish-solutions.sqlite",
+        "bytes": 74604544
+      },
+      {
+        "name": "prepublish-solutions.sqlite-wal",
+        "bytes": 0
+      },
+      {
+        "name": "prepublish-solutions.sqlite-shm",
+        "bytes": 32768
+      },
+      {
+        "name": "prepublish-study-leads.sqlite",
+        "bytes": 12288
+      },
+      {
+        "name": "publication-rehearsal.sqlite",
+        "bytes": 74620928
+      }
+    ],
+    "freedBytes": 298586112,
+    "verifiedBackupArchivesRetained": 4,
+    "screenshotsRetained": true,
+    "swapChanged": false
+  },
+  "reviewedSourceFileCount": 2995
+}

@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-11-05T23:39:40.215707+00:00",
+  "user_clarification": "Исходные переписаны на сервере",
+  "scope": "Read-only local server search. No network requests or publication. Exact ID/GUID search also repeated with ignored files included.",
+  "project": "/root/projects/ege-math",
+  "archive_containers_inspected": 518,
+  "archive_listing_errors": 0,
+  "schema_compatible_text_copies": 47,
+  "schema_compatible_unique_datasets": 17,
+  "schema_note": "Compatible layout alone does not establish attribution. These are other tasks, demos or analogues; none establishes correct data for the two target IDs.",
+  "additional_exact_matches_in_ignored_files": [],
+  "located_inputs": [
+    {
+      "id": "1F25B2",
+      "path": "/root/projects/ege-math/docs/audits/ege-informatics-remaining19-2026-11-05/inputs/1F25B2.zip",
+      "sha256": "72067e0865f7c01810001da5d9e45e62b6423b526b9649b6e7dc64b12be7e0b1",
+      "status": "Present on server; content mismatches the task input schema."
+    },
+    {
+      "id": "7F1EAA",
+      "path": "/root/projects/ege-math/docs/audits/ege-informatics-remaining19-2026-11-05/inputs/7F1EAA.zip",
+      "sha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4",
+      "status": "Present on server; content mismatches the task input schema."
+    }
+  ],
+  "work_directory": "/root/ege-informatics-server-inputs-20261105",
+  "pending_clarification": "Still no path identifying any separate rewritten data; user asked to continue.",
+  "continued_content_review": {
+    "text_archive_members_checked": 335,
+    "compatible_copies": 51,
+    "unique_numeric_datasets": 22,
+    "additional_numeric_datasets": 5,
+    "additional_dataset_task_ids": [
+      "B1238C",
+      "9F4BD8",
+      "48B0C6",
+      "1D695E",
+      "072D53"
+    ],
+    "encoding_fallback_cases": 18,
+    "unresolved_read_errors": 0,
+    "target_input_recovered": false,
+    "temporary_checkout": "/tmp/ege-main-description-20261104 contains byte-identical copies of both known mismatched archives",
+    "git_history": "Saved Git objects for both exact source GUID directories contain image assets, no different numeric attachments",
+    "details": "/root/ege-informatics-server-inputs-20261105/archive-content-candidates.json"
+  }
+}

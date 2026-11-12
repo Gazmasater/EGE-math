@@ -327,5 +327,35 @@
       "Был"
     ],
     "mode": "whole"
+  },
+  "EGEINF2F9ABA": {
+    "terms": [
+      "вот"
+    ],
+    "mode": "whole",
+    "hyphens": "boundary"
+  },
+  "EGEINF671119": {
+    "terms": [
+      "два"
+    ],
+    "mode": "whole",
+    "hyphens": "boundary"
+  },
+  "EGEINF870FE9": {
+    "terms": [
+      "куда",
+      "Куда"
+    ],
+    "mode": "embedded-words",
+    "hyphens": "boundary"
+  },
+  "EGEINFE4A3C2": {
+    "terms": [
+      "два",
+      "Два"
+    ],
+    "mode": "embedded-words",
+    "hyphens": "boundary"
   }
 }

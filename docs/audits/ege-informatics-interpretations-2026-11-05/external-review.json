@@ -1,0 +1,28 @@
+{
+  "57433": {
+    "url": "https://inf-ege.sdamgia.ru/problem?id=57433",
+    "fullSolutionRead": true,
+    "fileUrl": "https://inf-ege.sdamgia.ru/get_file?id=132434",
+    "downloadSha256": "4ff2edbdd235c089292322771faa5eecd22859b4b1340f68b5a3fcd3d9d1a2bf",
+    "bytes": 9346,
+    "format": "plain TXT despite local historical .zip name",
+    "sameAs": "290F15 / 1_26.txt",
+    "externalAnswer": "344 53",
+    "order": "start ascending, then end ascending",
+    "scope": "The displayed sorting is reproduced; the FIPI wording itself does not prescribe tie order."
+  },
+  "7376": {
+    "url": "https://inf-ege.sdamgia.ru/problem?id=7376",
+    "fullSolutionRead": true,
+    "savedCollectionSha256": "d8f4b6b2bfca65631a07f99a92873cf077943411b8d1f92e48e5aaa6b6aa56aa",
+    "parameters": {
+      "megabytes": 40,
+      "ratePower": 23,
+      "percent": 30,
+      "pack": 10,
+      "unpack": 1
+    },
+    "independentAnswer": "А17",
+    "scope": "method only; different parameters, no proof of an exponent in our saved source"
+  }
+}

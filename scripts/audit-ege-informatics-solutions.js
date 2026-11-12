@@ -43,6 +43,7 @@ auditors['final-writing'] = require('./lib/audit-ege-informatics-final-writing')
 auditors['inline-databases'] = require('./lib/audit-ege-informatics-inline-databases').auditInlineDatabases;
 auditors['archive-transfer'] = require('./lib/audit-ege-informatics-archive-transfer').auditArchiveTransfer;
 auditors['inline-spreadsheets'] = require('./lib/audit-ege-informatics-inline-spreadsheets').auditInlineSpreadsheets;
+auditors.interpretations = require('./lib/audit-ege-informatics-interpretations').auditInterpretations;
 auditors['archive-repair'] = require('./lib/audit-ege-informatics-archive-repair').auditArchiveRepair;
 auditors['recovered-sequences'] = require('./lib/audit-ege-informatics-recovered-sequences').auditRecoveredSequences;
 auditors['recovered-spreadsheet'] = require('./lib/audit-ege-informatics-recovered-spreadsheet').auditRecoveredSpreadsheet;
@@ -84,7 +85,12 @@ for (const batch of batches) {
   const topicTasks = tasks.filter(t => ogeTaskMatchesTopic(t, batch.topic, 'ege-informatics'));
   let selected = topicTasks;
   if (batch.subgroup) {
-    if (batch.name === 'media-transfer') {
+    if (batch.name === 'interpretations') {
+      assert.equal(batch.subgroup, 'explicit-conditional-answers');
+      const ids = ['EGEINFEF0000','EGEINF5459A3','EGEINF502BCF','EGEINF47E49C','EGEINF57579A','EGEINFBAE6EF','EGEINF4CAD3D','EGEINF290F15','EGEINFB3C563','EGEINFA99635','EGEINF8ECB7C'];
+      selected = topicTasks.filter(t => ids.includes(t.id));
+      assert.equal(selected.length, 11);
+    } else if (batch.name === 'media-transfer') {
       assert.equal(batch.subgroup, 'non-archive', 'Unknown media subgroup');
       // The archive conditions still require a separate review of their rates.
       selected = topicTasks.filter(t => !conditionText(t.fragment).includes('архиватор'));
@@ -168,7 +174,7 @@ for (const batch of batches) {
       assert.equal(selected.length, 2);
     } else if (batch.name === 'mirror-library') {
       assert.equal(batch.subgroup, 'restored-library');
-      const selectedIds = ["EGEINFD5BE4B", "EGEINFE3554C", "EGEINFEBA2F3", "EGEINFBF2E0E", "EGEINFC8A009", "EGEINF59D97F", "EGEINF8B2678", "EGEINF06D6B0", "EGEINF093BB8", "EGEINFF8F51A", "EGEINF0A7C1C", "EGEINF154C1F", "EGEINF1DCD1C", "EGEINFDE2926", "EGEINFC3C2DE", "EGEINF9362D2", "EGEINFE3BDDD", "EGEINF9C6456", "EGEINF350E54", "EGEINF2E66AE", "EGEINF93DEAB", "EGEINFF1D0CC", "EGEINF2011C7", "EGEINFE7EEC9", "EGEINF86A2CD", "EGEINF8F19C3", "EGEINF239591", "EGEINF0040E4", "EGEINF783CED", "EGEINF504BEE", "EGEINFE460E4", "EGEINFE11AE0", "EGEINFE86AE6", "EGEINF35ADEF", "EGEINF8E41ED", "EGEINF1C0762", "EGEINF26006B", "EGEINF50F763", "EGEINF5CEB68", "EGEINFADF16F", "EGEINF0CF934", "EGEINF672C3F", "EGEINF659E38", "EGEINF0D8887", "EGEINF578B80"];
+      const selectedIds = ["EGEINF2F9ABA", "EGEINF671119", "EGEINF870FE9", "EGEINFE4A3C2", "EGEINFD5BE4B", "EGEINFE3554C", "EGEINFEBA2F3", "EGEINFBF2E0E", "EGEINFC8A009", "EGEINF59D97F", "EGEINF8B2678", "EGEINF06D6B0", "EGEINF093BB8", "EGEINFF8F51A", "EGEINF0A7C1C", "EGEINF154C1F", "EGEINF1DCD1C", "EGEINFDE2926", "EGEINFC3C2DE", "EGEINF9362D2", "EGEINFE3BDDD", "EGEINF9C6456", "EGEINF350E54", "EGEINF2E66AE", "EGEINF93DEAB", "EGEINFF1D0CC", "EGEINF2011C7", "EGEINFE7EEC9", "EGEINF86A2CD", "EGEINF8F19C3", "EGEINF239591", "EGEINF0040E4", "EGEINF783CED", "EGEINF504BEE", "EGEINFE460E4", "EGEINFE11AE0", "EGEINFE86AE6", "EGEINF35ADEF", "EGEINF8E41ED", "EGEINF1C0762", "EGEINF26006B", "EGEINF50F763", "EGEINF5CEB68", "EGEINFADF16F", "EGEINF0CF934", "EGEINF672C3F", "EGEINF659E38", "EGEINF0D8887", "EGEINF578B80"];
       selected = topicTasks.filter(t => selectedIds.includes(t.id));
       assert.equal(selected.length, selectedIds.length);
     } else if (batch.name === 'mirror-robot') {
@@ -311,7 +317,7 @@ for (const batch of batches) {
         require('./lib/ege-informatics-plane-machine').auditPrimaryImage(task, source, root);
       } else if (batch.name === 'graph-models') {
         require('./lib/ege-informatics-graph-models-machine').auditPrimaryImage(task, source, root);
-      } else if (['number-sequence', 'recovered-sequences', 'recovered-documents', 'local-documents', 'final-restored', 'mirror-optimization', 'mirror-clusters', 'mirror-databases', 'mirror-sorting', 'mirror-sequences', 'mirror-processes', 'mirror-strings', 'mirror-spreadsheets', 'reviewed-robot', 'mirror-robot', 'mirror-library', 'recovered-clusters'].includes(batch.name)) {
+      } else if (['interpretations', 'number-sequence', 'recovered-sequences', 'recovered-documents', 'local-documents', 'final-restored', 'mirror-optimization', 'mirror-clusters', 'mirror-databases', 'mirror-sorting', 'mirror-sequences', 'mirror-processes', 'mirror-strings', 'mirror-spreadsheets', 'reviewed-robot', 'mirror-robot', 'mirror-library', 'recovered-clusters'].includes(batch.name)) {
         require('./lib/ege-informatics-number-sequence-machine').auditPrimaryImage(task, source, root);
       } else if (['strings', 'recovered-strings'].includes(batch.name)) {
         require('./lib/ege-informatics-string-files-machine').auditPrimaryImage(task, source, root);
@@ -335,7 +341,7 @@ for (const batch of batches) {
     const prose = batch.name === 'debugging'
       ? record.solution.replace(/^```(?:python|pascal)\n[\s\S]*?\n```[ \t]*(?:\n|$)/gmu, '')
       : record.solution;
-    if (['logic', 'program-analysis', 'plane-executors', 'games', 'number-sequence', 'strings', 'sorting', 'spreadsheets', 'robot-grid', 'databases', 'processes', 'write-program', 'array-writing', 'pair-writing', 'final-writing', 'inline-databases', 'archive-transfer', 'inline-spreadsheets', 'archive-repair', 'recovered-sequences', 'recovered-spreadsheet', 'recovered-strings', 'recovered-documents', 'local-documents', 'final-restored', 'mirror-optimization', 'mirror-clusters', 'mirror-databases', 'mirror-sorting', 'mirror-sequences', 'mirror-processes', 'mirror-strings', 'mirror-spreadsheets', 'reviewed-robot', 'mirror-robot', 'mirror-library', 'recovered-processes', 'recovered-nesting', 'recovered-clusters', 'recovered-databases', 'recovered-2022-document', 'recovered-2022-pairs', 'recovered-2022-trees', 'recovered-2022-circle', 'linked-games', 'restored-game-links', 'official-six-process', 'official-six-stars', 'recovered-2021-temperature', 'recovered-2021-document', 'recovered-2021-robot', 'recovered-2021-triples', 'recovered-2021-containers', 'recovered-2021-string', 'official-demos-spreadsheet', 'official-demos-document', 'official-demos-string', 'official-demos-sequence', 'official-demos-boxes'].includes(batch.name)) {
+    if (['interpretations', 'logic', 'program-analysis', 'plane-executors', 'games', 'number-sequence', 'strings', 'sorting', 'spreadsheets', 'robot-grid', 'databases', 'processes', 'write-program', 'array-writing', 'pair-writing', 'final-writing', 'inline-databases', 'archive-transfer', 'inline-spreadsheets', 'archive-repair', 'recovered-sequences', 'recovered-spreadsheet', 'recovered-strings', 'recovered-documents', 'local-documents', 'final-restored', 'mirror-optimization', 'mirror-clusters', 'mirror-databases', 'mirror-sorting', 'mirror-sequences', 'mirror-processes', 'mirror-strings', 'mirror-spreadsheets', 'reviewed-robot', 'mirror-robot', 'mirror-library', 'recovered-processes', 'recovered-nesting', 'recovered-clusters', 'recovered-databases', 'recovered-2022-document', 'recovered-2022-pairs', 'recovered-2022-trees', 'recovered-2022-circle', 'linked-games', 'restored-game-links', 'official-six-process', 'official-six-stars', 'recovered-2021-temperature', 'recovered-2021-document', 'recovered-2021-robot', 'recovered-2021-triples', 'recovered-2021-containers', 'recovered-2021-string', 'official-demos-spreadsheet', 'official-demos-document', 'official-demos-string', 'official-demos-sequence', 'official-demos-boxes'].includes(batch.name)) {
       // Comparisons, including Python <= and >=, are escaped by the server.
       // Require spaces around them so they cannot be authored HTML tags.
       assert.ok(!/[<>]/u.test(record.answer));
@@ -361,7 +367,7 @@ for (const batch of batches) {
           : batch.name === 'logic' ? (record.answer === 'А' ? 'В' : 'А') : [...record.answer].reverse().join('');
     assert.ok(wrongAnswer);
     assert.throws(() => audit(task, { ...record, answer: wrongAnswer }), /answer/u);
-    if (['information-volume', 'numeral-systems', 'media-transfer', 'string-executors', 'array-analysis', 'divisors', 'debugging', 'truth-tables', 'logic', 'program-analysis', 'graph-paths', 'plane-executors', 'graph-models', 'games', 'number-sequence', 'strings', 'sorting', 'spreadsheets', 'robot-grid', 'databases', 'processes', 'write-program', 'array-writing', 'pair-writing', 'final-writing', 'inline-databases', 'archive-transfer', 'inline-spreadsheets', 'archive-repair', 'recovered-sequences', 'recovered-spreadsheet', 'recovered-strings', 'recovered-documents', 'local-documents', 'final-restored', 'mirror-optimization', 'mirror-clusters', 'mirror-databases', 'mirror-sorting', 'mirror-sequences', 'mirror-processes', 'mirror-strings', 'mirror-spreadsheets', 'reviewed-robot', 'mirror-robot', 'mirror-library', 'recovered-processes', 'recovered-nesting', 'recovered-clusters', 'recovered-databases', 'recovered-2022-document', 'recovered-2022-pairs', 'recovered-2022-trees', 'recovered-2022-circle', 'linked-games', 'restored-game-links', 'official-six-process', 'official-six-stars', 'recovered-2021-temperature', 'recovered-2021-document', 'recovered-2021-robot', 'recovered-2021-triples', 'recovered-2021-containers', 'recovered-2021-string', 'official-demos-spreadsheet', 'official-demos-document', 'official-demos-string', 'official-demos-sequence', 'official-demos-boxes'].includes(batch.name)) {
+    if (['interpretations', 'information-volume', 'numeral-systems', 'media-transfer', 'string-executors', 'array-analysis', 'divisors', 'debugging', 'truth-tables', 'logic', 'program-analysis', 'graph-paths', 'plane-executors', 'graph-models', 'games', 'number-sequence', 'strings', 'sorting', 'spreadsheets', 'robot-grid', 'databases', 'processes', 'write-program', 'array-writing', 'pair-writing', 'final-writing', 'inline-databases', 'archive-transfer', 'inline-spreadsheets', 'archive-repair', 'recovered-sequences', 'recovered-spreadsheet', 'recovered-strings', 'recovered-documents', 'local-documents', 'final-restored', 'mirror-optimization', 'mirror-clusters', 'mirror-databases', 'mirror-sorting', 'mirror-sequences', 'mirror-processes', 'mirror-strings', 'mirror-spreadsheets', 'reviewed-robot', 'mirror-robot', 'mirror-library', 'recovered-processes', 'recovered-nesting', 'recovered-clusters', 'recovered-databases', 'recovered-2022-document', 'recovered-2022-pairs', 'recovered-2022-trees', 'recovered-2022-circle', 'linked-games', 'restored-game-links', 'official-six-process', 'official-six-stars', 'recovered-2021-temperature', 'recovered-2021-document', 'recovered-2021-robot', 'recovered-2021-triples', 'recovered-2021-containers', 'recovered-2021-string', 'official-demos-spreadsheet', 'official-demos-document', 'official-demos-string', 'official-demos-sequence', 'official-demos-boxes'].includes(batch.name)) {
       checked.rejectedEdits = 0;
       for (const line of new Set(checked.lines)) {
         const corrupted = /\d/u.test(line)

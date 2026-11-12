@@ -1,0 +1,231 @@
+{
+  "checked_at": "2026-11-05T23:34:57.612538+00:00",
+  "status": "missing_correct_input_data",
+  "new_published_solutions": 0,
+  "published_explanations": 2473,
+  "total_informatics_tasks": 2475,
+  "count_caveat": "Includes 11 explicitly conditional explanations published previously.",
+  "total_published_solutions": 12940,
+  "archives": [
+    {
+      "task": "1F25B2",
+      "url": "https://gdzotvet.ru/images/informatika/ege26f/1F25B2.zip",
+      "bytes": 1284318,
+      "sha256": "72067e0865f7c01810001da5d9e45e62b6423b526b9649b6e7dc64b12be7e0b1",
+      "matches_preserved_attachment": true,
+      "members": [
+        {
+          "name": "331_24.txt",
+          "bytes": 4961173,
+          "sha256": "bb8017cda3fc4455ca719f3da1916568265ae27613ca9c810c0ff70a4d1840e1",
+          "rejected_by_solver": "Нужны целые числа; приложенный буквенный текст не подходит"
+        }
+      ]
+    },
+    {
+      "task": "7F1EAA",
+      "url": "https://gdzotvet.ru/images/informatika/ege26f/7F1EAA.zip",
+      "bytes": 1417186,
+      "sha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4",
+      "matches_preserved_attachment": true,
+      "members": [
+        {
+          "name": "307_27_B.txt",
+          "bytes": 6948242,
+          "sha256": "23a0e373f92ac5f2ffc771e5f9dbcaa0c2b06853b4f9eca01830464b07169c2e",
+          "rejected_by_solver": "Первая строка должна содержать N от 1 до 10000"
+        },
+        {
+          "name": "307_27_A.txt",
+          "bytes": 3506,
+          "sha256": "ff52a256b9678e16f86c15909f46e59f800b164a8892934229a3978dd20bd6aa",
+          "rejected_by_solver": "Нужны N пар «номер ряда, номер занятого места»"
+        }
+      ]
+    }
+  ],
+  "teacher_report": {
+    "url": "https://t.me/devinf_ru/571",
+    "posted_at": "2026-10-20T07:09:40+00:00",
+    "finding": "Author independently reports task 27 data attached to task 26, ID 7F1EAA.",
+    "subsequent_public_posts_checked": [
+      "devinf_ru/572",
+      "devinf_ru/573",
+      "devinf_ru/574",
+      "devinf_ru/575"
+    ],
+    "correction_found_in_checked_posts": false,
+    "limit": "No assertion about private replies, comments, or unpublished corrections."
+  },
+  "wayback": [
+    {
+      "id": "1F25B2",
+      "url": "https://web.archive.org/cdx/search/cdx?url=ege.fipi.ru%2Fdocs%2FB9ACA5BBB2E19E434CD6BEC25284C67F%2Fquestions%2FD5BAB1F9E9A19541446F4819D1A37378%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&fl=timestamp%2Coriginal%2Cmimetype%2Cdigest",
+      "status": 200,
+      "bytes": 3,
+      "preview": "[]\n"
+    },
+    {
+      "id": "7F1EAA",
+      "url": "https://web.archive.org/cdx/search/cdx?url=ege.fipi.ru%2Fdocs%2FB9ACA5BBB2E19E434CD6BEC25284C67F%2Fquestions%2F93951C18AC3D8B744125E97940F855B0%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&fl=timestamp%2Coriginal%2Cmimetype%2Cdigest",
+      "status": 200,
+      "bytes": 3,
+      "preview": "[]\n"
+    }
+  ],
+  "unavailable_sources": [
+    {
+      "name": "devinf-box",
+      "url": "https://openfipi.devinf.ru/task/1F25B2",
+      "error": "HTTPSConnectionPool(host='openfipi.devinf.ru', port=443): Max retries exceeded with url: /task/1F25B2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f2023f25840>, 'Connection to openfipi.devinf.ru timed out. (connect timeout=30)'))"
+    },
+    {
+      "name": "devinf-seat",
+      "url": "https://openfipi.devinf.ru/task/7F1EAA",
+      "error": "HTTPSConnectionPool(host='openfipi.devinf.ru', port=443): Max retries exceeded with url: /task/7F1EAA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f2023f25c90>, 'Connection to openfipi.devinf.ru timed out. (connect timeout=30)'))"
+    }
+  ],
+  "local_mapping_review": "Exact source URL, GUID and short ID all identify the preserved mismatched archives; no alternate exact match in saved rematch report.",
+  "synthetic_nonuniqueness_witnesses": [
+    {
+      "task": "1F25B2",
+      "purpose": "Synthetic witnesses, NOT original task data",
+      "examples": [
+        {
+          "input": "5\n43\n40\n32\n40\n30\n",
+          "answer": [
+            2,
+            30
+          ]
+        },
+        {
+          "input": "5\n56\n53\n45\n53\n43\n",
+          "answer": [
+            2,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "task": "7F1EAA",
+      "purpose": "Synthetic witnesses, NOT original task data",
+      "examples": [
+        {
+          "input": "7\n40 3\n40 6\n60 33\n50 125\n50 128\n50 64\n50 67\n",
+          "answer": [
+            50,
+            65
+          ]
+        },
+        {
+          "input": "7\n41 3\n41 6\n61 33\n51 125\n51 128\n51 64\n51 67\n",
+          "answer": [
+            51,
+            65
+          ]
+        }
+      ]
+    }
+  ],
+  "public_state": [
+    {
+      "url": "https://ege-fipi.ru/tasks/EGEINF1F25B2",
+      "status": 200,
+      "bytes": 70984,
+      "body": null
+    },
+    {
+      "url": "https://ege-fipi.ru/tasks/EGEINF7F1EAA",
+      "status": 200,
+      "bytes": 69407,
+      "body": null
+    },
+    {
+      "url": "https://ege-fipi.ru/api/solutions/EGEINF1F25B2",
+      "status": 404,
+      "bytes": 64,
+      "body": {
+        "error": "Решение ещё не опубликовано."
+      }
+    },
+    {
+      "url": "https://ege-fipi.ru/api/solutions/EGEINF7F1EAA",
+      "status": 404,
+      "bytes": 64,
+      "body": {
+        "error": "Решение ещё не опубликовано."
+      }
+    }
+  ],
+  "solver": "docs/audits/ege-informatics-interpretations-2026-11-05/missing-input-solvers.py",
+  "work_directory": "/root/ege-informatics-last-two-20261105",
+  "evidence_files": {
+    "api-EGEINF1F25B2.txt": {
+      "bytes": 64,
+      "sha256": "511332d326da416e19b227c00ca228c252b8205a75974d70b6fcdbd3dd979ae7"
+    },
+    "api-EGEINF7F1EAA.txt": {
+      "bytes": 64,
+      "sha256": "511332d326da416e19b227c00ca228c252b8205a75974d70b6fcdbd3dd979ae7"
+    },
+    "fetches-second.json": {
+      "bytes": 658,
+      "sha256": "6c048b53c8a7408dbc677ec0b6547d6e8cda70e0fb82221524565d906c6dbc8f"
+    },
+    "fetches.json": {
+      "bytes": 1213,
+      "sha256": "6100dbae21a48a925c1fecf6a4be56d801619c5ef481ab1b45b9de58b03ecab7"
+    },
+    "gdz-1F25B2.zip": {
+      "bytes": 1284318,
+      "sha256": "72067e0865f7c01810001da5d9e45e62b6423b526b9649b6e7dc64b12be7e0b1"
+    },
+    "gdz-7F1EAA.zip": {
+      "bytes": 1417186,
+      "sha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4"
+    },
+    "gdz.html": {
+      "bytes": 156042,
+      "sha256": "9bf636136844e8a3ef473a1aaf2b1442e01333242d5fb0e46d8bf98a789d64f9"
+    },
+    "public-state.json": {
+      "bytes": 630,
+      "sha256": "25f86a91dff671ae5813e88fab0ae834379870c74bee87f3975cdfb59f124cf0"
+    },
+    "task-EGEINF1F25B2.txt": {
+      "bytes": 70984,
+      "sha256": "a49c544fbbd31614d0548cf6a587356cef271d3fa1f83c975618fa0175677615"
+    },
+    "task-EGEINF7F1EAA.txt": {
+      "bytes": 69407,
+      "sha256": "e1d12a91a1df7e394170180f95112a47c2f5ac478c8af13d1f7f2d754cef597e"
+    },
+    "telegram-recent.html": {
+      "bytes": 120156,
+      "sha256": "8378957a88dd46bc3907a2d38edc766ee4d270a44646c64c036bfc0b5f1bb3a3"
+    },
+    "telegram.html": {
+      "bytes": 22511,
+      "sha256": "140b48b2b0ee3df35f015b1b7fe4db61773c5a5aabd47ec2489b3e8b94ff6078"
+    },
+    "verify.py": {
+      "bytes": 6421,
+      "sha256": "4b9297ae93ea83097067f2bbc5640efd76f2c13e137c868d7c6db9378db22174"
+    },
+    "wayback-1F25B2.txt": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "wayback-7F1EAA.txt": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "wayback-fetches.json": {
+      "bytes": 694,
+      "sha256": "51a9c98d63ea61a323e650db1962e6a5350a4206ee7c4535696a0510ce118c76"
+    }
+  },
+  "decision": "Keep both numerical answers unpublished. Need correctly attributed numeric input, not another task with a similar statement.",
+  "validation_scope": "Archive equality, rejection of all three invalid members, four nonuniqueness examples, read-only database counts and two public pages/APIs. Previous full publication tests were not rerun."
+}

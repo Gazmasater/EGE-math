@@ -1,0 +1,618 @@
+{
+  "status": "ok",
+  "completedAt": "2026-11-05T21:47:42.514692+00:00",
+  "verifiedImplementationCommit": "bc240f77fd2697cf13e68b55f9733a5bd11c0542",
+  "published": 2458,
+  "total": 2475,
+  "remaining": 17,
+  "added": 1,
+  "totalPublishedSolutions": 12925,
+  "tasks": [
+    {
+      "id": "EGEINF327EB5",
+      "answer": "161619 18586868584232",
+      "sourceSignature": "6ce8154d8a8d4e01348c078e4f9610e2910738544d23cae5f177ff8755895028"
+    }
+  ],
+  "decision": {
+    "primaryFileUnchanged": true,
+    "conditionBodyUnchanged": true,
+    "description": "All 100 and 1200000 coordinate/tube pairs are valid and present. The first header field matches the actual row count. The second header field is read separately and disclosed in the first solution paragraph. The stated task minimizes delivery cost from all points with capacity 44, so this extra field does not enter its cost function. No source bytes or data pairs are corrected.",
+    "sameFileAs30C294": "The complete ZIP is byte-identical to the radius task 30C294, where the extra header is M and capacity is 30. Its different objective and radius constraint are not transferred. Its existing answer 264 27140 is preserved and checked.",
+    "officialAnswerKeyClaimed": false,
+    "primaryZip": "docs/audits/ege-informatics-remaining19-2026-11-05/inputs/327EB5.zip",
+    "archiveSha256": "e002ef198d3c8e5bcca138bb49a094f3974f83c10c4ae9302c292684e3dbe325",
+    "members": [
+      "320_27_A.txt",
+      "320_27_B.txt"
+    ],
+    "freshOfficialDownload": false,
+    "previousOfficialVerification": "docs/audits/ege-informatics-source-recheck-2026-11-05.json",
+    "parserException": "Restricted to task 327EB5, exact archive hash, exact two member hashes and exact reviewed headers. Default parsing remains strict. Negative tests reject altered headers, bytes, task, condition and answer.",
+    "methodSource": "https://inf-ege.sdamgia.ru/problem?id=47231",
+    "methodSourceAnswer": "51063 5634689219329 for capacity 36 and different files; independently recalculated, not imported."
+  },
+  "pythonCalculation": {
+    "status": "ok",
+    "id": "EGEINF327EB5",
+    "answer": "161619 18586868584232",
+    "method": "Independent weighted median with exact integer cost; exhaustive check of all 100 possible sites for A",
+    "certificates": [
+      {
+        "N": 100,
+        "kind": "linear-cost",
+        "answer": 161619,
+        "capacity": 44,
+        "header": [
+          100,
+          113
+        ],
+        "point": 447,
+        "row": 53,
+        "totalContainers": 629,
+        "leftContainers": 309,
+        "rightContainers": 311,
+        "centerContainers": 9,
+        "letter": "A",
+        "member": "320_27_A.txt",
+        "sha256": "42a2f968e5c870317a40f7a894bc7c07b2645cd0cd0651f0dea6d09620b63575",
+        "neighborCosts": {
+          "52": 161663,
+          "54": 161668
+        },
+        "bruteForceMinimum": 161619,
+        "firstPosition": 4,
+        "lastPosition": 988,
+        "minimumTubes": 4,
+        "maximumTubes": 493,
+        "strictlyIncreasingPositions": true,
+        "rowsHaveTwoNumbers": true
+      },
+      {
+        "N": 1200000,
+        "kind": "linear-cost",
+        "answer": 18586868584232,
+        "capacity": 44,
+        "header": [
+          1200000,
+          12013
+        ],
+        "point": 4993664,
+        "row": 600140,
+        "totalContainers": 7437422,
+        "leftContainers": 3718710,
+        "rightContainers": 3718710,
+        "centerContainers": 2,
+        "letter": "B",
+        "member": "320_27_B.txt",
+        "sha256": "4f87d4686feb08ec16a14feaad68144124af1c6ea946d40700232a7e97aa8131",
+        "neighborCosts": {
+          "600139": 18586868584248,
+          "600141": 18586868584242
+        },
+        "bruteForceMinimum": null,
+        "firstPosition": 11,
+        "lastPosition": 9999997,
+        "minimumTubes": 1,
+        "maximumTubes": 501,
+        "strictlyIncreasingPositions": true,
+        "rowsHaveTwoNumbers": true
+      }
+    ]
+  },
+  "independentCalculation": {
+    "status": "ok",
+    "method": "Independent JavaScript BigInt sweep evaluates cost at every allowed site",
+    "answer": "161619 18586868584232",
+    "files": [
+      {
+        "member": "320_27_A.txt",
+        "N": 100,
+        "answer": "161619",
+        "row": 53,
+        "point": 447,
+        "minimumTies": 1,
+        "initialCost": "301192"
+      },
+      {
+        "member": "320_27_B.txt",
+        "N": 1200000,
+        "answer": "18586868584232",
+        "row": 600140,
+        "point": 4993664,
+        "minimumTies": 1,
+        "initialCost": "37168048169280"
+      }
+    ]
+  },
+  "solutionProgram": {
+    "status": "ok",
+    "answer": "161619 18586868584232",
+    "method": "executed exact Python code extracted from solution"
+  },
+  "externalMethodReview": {
+    "status": "ok",
+    "checkedAt": "2026-11-05T08:37:48.971336+00:00",
+    "url": "https://inf-ege.sdamgia.ru/problem?id=47231",
+    "pageAndAllThreeSolutionsRead": true,
+    "filesReusedFromVerifiedEarlierDownload": true,
+    "files": [
+      {
+        "file": "47231-data-1.txt.gz",
+        "sha256": "a980d232f5f1aa46acf9343338d85037e07fd0790775d173626209a131bc63d6",
+        "rows": 100,
+        "capacity": 36,
+        "answer": "51063",
+        "optimalCoordinate": 563
+      },
+      {
+        "file": "47231-data-2.txt.gz",
+        "sha256": "5f0727260c8e8ec18ff78e6bc8a0e4bc340ead0557cec42161081df58293cee4",
+        "rows": 1100000,
+        "capacity": 36,
+        "answer": "5634689219329",
+        "optimalCoordinate": 4995521
+      }
+    ],
+    "ownTaskCapacity": 44,
+    "ownTaskUsesDifferentFiles": true,
+    "methodComparison": "Weighted median and linear cost transition minimize the same sum of weighted absolute distances. External numerical answer is not transferred."
+  },
+  "sourcePreservation": {
+    "unchangedTaskSignatures": 2474,
+    "changedAttachmentTasks": [
+      "EGEINF327EB5"
+    ],
+    "conditionBodyUnchanged": true,
+    "originalMirrorsPreserved": 377,
+    "totalMirrors": 378,
+    "previousOptimizationRecordsPreserved": 29,
+    "sourceHash": "6ce8154d8a8d4e01348c078e4f9610e2910738544d23cae5f177ff8755895028",
+    "solutionHash": "0d4d3e7007bba2a84a278e6a8586498edd79591f9ca59da372ae891c581b41fe",
+    "archiveSha256": "e002ef198d3c8e5bcca138bb49a094f3974f83c10c4ae9302c292684e3dbe325",
+    "crossLinkedTask": "EGEINF30C294",
+    "unchangedClassificationEntries": 2474,
+    "classificationMetadataUnchanged": true
+  },
+  "oldRecordsPreserved": {
+    "status": "ok",
+    "files": [
+      {
+        "file": "scripts/data/ege-informatics-mirror-optimization-models.json",
+        "preservedOldEntries": 29
+      },
+      {
+        "file": "scripts/data/ege-informatics-mirror-optimization-condition-texts.json",
+        "preservedOldEntries": 29
+      },
+      {
+        "file": "scripts/data/ege-informatics-mirror-optimization-proofs.json",
+        "preservedOldEntries": 29
+      },
+      {
+        "file": "scripts/data/ege-informatics-mirror-optimization-sources.json",
+        "preservedOldEntries": 29
+      },
+      {
+        "file": "scripts/data/ege-informatics-mirror-optimization-records.json",
+        "preservedOldEntries": 29
+      }
+    ]
+  },
+  "publication": {
+    "catalog": 2475,
+    "prepared": 2458,
+    "matches": {
+      "exact": 344,
+      "variant": 1340,
+      "method": 774
+    },
+    "changed": 1,
+    "published": 2458,
+    "remaining": 17,
+    "preserved": 12924,
+    "integrity": "ok",
+    "rejectedEdits": 51918,
+    "rejectedWrongAnswers": 4916,
+    "status": "ok"
+  },
+  "newTaskChecks": [
+    {
+      "id": "EGEINF327EB5",
+      "answer": "161619 18586868584232",
+      "kind": "large-data-optimization",
+      "files": 2,
+      "rejectedEdits": 50
+    }
+  ],
+  "previewHttp": {
+    "origin": "http://127.0.0.1:8915",
+    "checkedAt": "2026-11-05T08:57:23.469Z",
+    "solutions": 2458,
+    "cataloguePages": 433,
+    "status": "ok"
+  },
+  "previewBank": {
+    "section": "ege-informatics",
+    "catalogues": 85,
+    "catalogPages": 958,
+    "ogeTasks": 2475,
+    "existingTasks": 0,
+    "sitemapUrls": 16334,
+    "errors": 0
+  },
+  "publicHttp": {
+    "origin": "https://ege-fipi.ru",
+    "checkedAt": "2026-11-05T09:13:17.906Z",
+    "solutions": 2458,
+    "cataloguePages": 433,
+    "status": "ok"
+  },
+  "browser": {
+    "preview": {
+      "pages": 2,
+      "modals": 2,
+      "errors": 0
+    },
+    "public": {
+      "pages": 2,
+      "modals": 2,
+      "errors": 0
+    }
+  },
+  "tests": {
+    "passed": 206,
+    "failed": 0,
+    "logSha256": "3a6244842fadf16ac64b750027150766438a42ee44580d2087b71761ff3421fc"
+  },
+  "dataPreservation": {
+    "solutions": {
+      "before": 12924,
+      "after": 12925,
+      "preserved": true
+    },
+    "users": {
+      "before": 10,
+      "after": 10,
+      "preserved": true
+    },
+    "solution_comments": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "site_feedback": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "leads": 1,
+    "fipiFilesUnchanged": 25,
+    "integrity": "ok"
+  },
+  "backupVerification": {
+    "status": "ok",
+    "count": 4,
+    "backups": [
+      {
+        "file": "baseline-solutions.sqlite.gz",
+        "sha256": "7f5a8636534985f60f0a4b914f3dbeab838342dce727bf143d5db188c07d0255",
+        "uncompressedSha256": "935a24d8a8c7f47bc929c34ef6496f54e8a90508dd424d9016d5dbd516344ebe",
+        "bytes": 74596352,
+        "integrity": "ok"
+      },
+      {
+        "file": "baseline-study-leads.sqlite.gz",
+        "sha256": "0f55f10d1a3123c92bc3fc485277205c43fbc9ed1c0c21597153a11d49f27328",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-solutions.sqlite.gz",
+        "sha256": "7f5a8636534985f60f0a4b914f3dbeab838342dce727bf143d5db188c07d0255",
+        "uncompressedSha256": "935a24d8a8c7f47bc929c34ef6496f54e8a90508dd424d9016d5dbd516344ebe",
+        "bytes": 74596352,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-study-leads.sqlite.gz",
+        "sha256": "0f55f10d1a3123c92bc3fc485277205c43fbc9ed1c0c21597153a11d49f27328",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      }
+    ]
+  },
+  "downloads": {
+    "preview": {
+      "status": "ok",
+      "files": [
+        {
+          "url": "/fipi/ege-informatics/docs/restored-optimization/EGEINF327EB5.zip",
+          "bytes": 5207205,
+          "sha256": "e002ef198d3c8e5bcca138bb49a094f3974f83c10c4ae9302c292684e3dbe325"
+        }
+      ]
+    },
+    "public": {
+      "status": "ok",
+      "files": [
+        {
+          "url": "/fipi/ege-informatics/docs/restored-optimization/EGEINF327EB5.zip",
+          "bytes": 5207205,
+          "sha256": "e002ef198d3c8e5bcca138bb49a094f3974f83c10c4ae9302c292684e3dbe325"
+        }
+      ]
+    }
+  },
+  "visualReview": {
+    "preview": {
+      "status": "ok",
+      "reviewedAt": "2026-11-05T08:59:01.447164+00:00",
+      "fullPagesActuallyViewed": 2,
+      "modalsActuallyViewed": 2,
+      "scrolledTableEndsActuallyViewed": 1,
+      "primaryDownloadIconActuallyViewed": true,
+      "notes": "Complete desktop/mobile conditions and solution actually viewed via full-page sheets, both modal screenshots and the mobile table right edge. Extra header field disclosure and capacity 44 are visible; vertical fractions render correctly. Program indentation is preserved and horizontally scrollable. All three table columns, eight data rows and both answer numbers are accessible. No overlapping text or page overflow found.",
+      "files": [
+        {
+          "file": "EGEINF327EB5-desktop-modal.png",
+          "sha256": "43e9eb7257efa47da8a20634734fa91c8104253421a7b5c0494ffe65817e2f7c"
+        },
+        {
+          "file": "EGEINF327EB5-desktop.png",
+          "sha256": "603b0e1a60981d75077c69b6afb34d27011a84999bf47370c62ac362e604e20b"
+        },
+        {
+          "file": "EGEINF327EB5-mobile-modal.png",
+          "sha256": "a914da2055e1de8ce01a29a7675ef9af087d192a5e68d8b41838d96cc89a2c1c"
+        },
+        {
+          "file": "EGEINF327EB5-mobile-solution-table-1-end.png",
+          "sha256": "b23c5bb3e3da6191080840b336be3c1c2fc852ed205711a6f8a7fc37ea759035"
+        },
+        {
+          "file": "EGEINF327EB5-mobile.png",
+          "sha256": "7b7439856109ad107f00cc0c69c25ed768a5efd4642d60611db68ec2ac04da62"
+        }
+      ]
+    },
+    "public": {
+      "status": "ok",
+      "reviewedAt": "2026-11-05T21:47:25.110459+00:00",
+      "fullPagesActuallyViewed": 2,
+      "modalsActuallyViewed": 2,
+      "scrolledTableEndsActuallyViewed": 1,
+      "notes": "Reviewed both full-page contact sheets, both public modal images and mobile final table column. Public full-page PNGs are byte-identical to the viewed preview images. Condition, header discrepancy disclosure, capacity 44, vertical fractions, proof, code, both result columns and answers are legible without overlapping text; code and result table have horizontal scrolling on mobile. API reread successfully.",
+      "publicFullPagesComparedToViewedPreview": true,
+      "files": [
+        {
+          "file": "EGEINF327EB5-desktop-modal.png",
+          "pixelsEqual": true,
+          "differenceBox": null,
+          "previewSize": [
+            1280,
+            960
+          ],
+          "publicSize": [
+            1280,
+            960
+          ],
+          "publicSha256": "43e9eb7257efa47da8a20634734fa91c8104253421a7b5c0494ffe65817e2f7c"
+        },
+        {
+          "file": "EGEINF327EB5-desktop.png",
+          "pixelsEqual": true,
+          "differenceBox": null,
+          "previewSize": [
+            1280,
+            5454
+          ],
+          "publicSize": [
+            1280,
+            5454
+          ],
+          "publicSha256": "603b0e1a60981d75077c69b6afb34d27011a84999bf47370c62ac362e604e20b"
+        },
+        {
+          "file": "EGEINF327EB5-mobile-modal.png",
+          "pixelsEqual": true,
+          "differenceBox": null,
+          "previewSize": [
+            390,
+            844
+          ],
+          "publicSize": [
+            390,
+            844
+          ],
+          "publicSha256": "a914da2055e1de8ce01a29a7675ef9af087d192a5e68d8b41838d96cc89a2c1c"
+        },
+        {
+          "file": "EGEINF327EB5-mobile-solution-table-1-end.png",
+          "pixelsEqual": true,
+          "differenceBox": null,
+          "previewSize": [
+            316,
+            325
+          ],
+          "publicSize": [
+            316,
+            325
+          ],
+          "publicSha256": "b23c5bb3e3da6191080840b336be3c1c2fc852ed205711a6f8a7fc37ea759035"
+        },
+        {
+          "file": "EGEINF327EB5-mobile.png",
+          "pixelsEqual": true,
+          "differenceBox": null,
+          "previewSize": [
+            390,
+            9116
+          ],
+          "publicSize": [
+            390,
+            9116
+          ],
+          "publicSha256": "7b7439856109ad107f00cc0c69c25ed768a5efd4642d60611db68ec2ac04da62"
+        }
+      ]
+    }
+  },
+  "pixelComparison": {
+    "status": "ok",
+    "compared": 5,
+    "identical": 5,
+    "files": [
+      {
+        "file": "EGEINF327EB5-desktop-modal.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          1280,
+          960
+        ],
+        "publicSize": [
+          1280,
+          960
+        ],
+        "publicSha256": "43e9eb7257efa47da8a20634734fa91c8104253421a7b5c0494ffe65817e2f7c"
+      },
+      {
+        "file": "EGEINF327EB5-desktop.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          1280,
+          5454
+        ],
+        "publicSize": [
+          1280,
+          5454
+        ],
+        "publicSha256": "603b0e1a60981d75077c69b6afb34d27011a84999bf47370c62ac362e604e20b"
+      },
+      {
+        "file": "EGEINF327EB5-mobile-modal.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          390,
+          844
+        ],
+        "publicSize": [
+          390,
+          844
+        ],
+        "publicSha256": "a914da2055e1de8ce01a29a7675ef9af087d192a5e68d8b41838d96cc89a2c1c"
+      },
+      {
+        "file": "EGEINF327EB5-mobile-solution-table-1-end.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          316,
+          325
+        ],
+        "publicSize": [
+          316,
+          325
+        ],
+        "publicSha256": "b23c5bb3e3da6191080840b336be3c1c2fc852ed205711a6f8a7fc37ea759035"
+      },
+      {
+        "file": "EGEINF327EB5-mobile.png",
+        "pixelsEqual": true,
+        "differenceBox": null,
+        "previewSize": [
+          390,
+          9116
+        ],
+        "publicSize": [
+          390,
+          9116
+        ],
+        "publicSha256": "7b7439856109ad107f00cc0c69c25ed768a5efd4642d60611db68ec2ac04da62"
+      }
+    ]
+  },
+  "cleanup": {
+    "status": "ok",
+    "temporaryFilesRemoved": [
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/baseline-solutions.sqlite",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/solutions.sqlite-wal",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/preview.swap",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/320_27_A.txt",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/.local",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/baseline-solutions.sqlite-wal",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/baseline-solutions.sqlite-shm",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/prepublish-solutions.sqlite-wal",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/com.google.Chrome.kFdudL",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/baseline-study-leads.sqlite",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/backup-verification.sqlite-wal",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/com.google.Chrome.E3Fmh9",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/solutions.sqlite-shm",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/study-leads.sqlite",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/prepublish-solutions.sqlite",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/solutions.sqlite",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/backup-verification.sqlite-shm",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/prepublish-study-leads.sqlite",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/.config",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/prepublish-solutions.sqlite-shm",
+      "/root/ege-informatics-reviewed-laboratory-20261105/temporary/320_27_B.txt"
+    ],
+    "temporarySwapRemovedBytes": 536870912,
+    "preexistingSwapFilesPreserved": true,
+    "verifiedBackupArchivesRetained": 4,
+    "derivedContactSheetsRemoved": true,
+    "duplicatePublicScreenshotsRemoved": [
+      "EGEINF327EB5-desktop-modal.png",
+      "EGEINF327EB5-desktop.png",
+      "EGEINF327EB5-mobile-modal.png",
+      "EGEINF327EB5-mobile-solution-table-1-end.png",
+      "EGEINF327EB5-mobile.png"
+    ],
+    "previewScreenshotsRetained": true,
+    "freeIncreaseBytes": 780234752,
+    "freeBytesAfter": 1943003136
+  },
+  "remainingGroups": {
+    "wordBoundaries": 4,
+    "rateTypography": 7,
+    "wrongAttachments": 2,
+    "simultaneousArrivalOrder": 4
+  },
+  "remainingResearch": {
+    "status": "no_new_matching_source",
+    "taskIds": [
+      "1F25B2",
+      "7F1EAA"
+    ],
+    "searchQueries": [
+      "\"1F25B2\" файл коробки",
+      "\"7F1EAA\" файл",
+      "site.inf-ege.sdamgia.ru \"коробки\" \"13\" \"26\""
+    ],
+    "findings": [
+      "Exact ID search did not yield a verified replacement attachment. The matching Reshai pages returned HTTP errors when opened; no inaccessible content was inferred.",
+      "The accessible search results for SDAM include 47230 with gap 3 and other box variants. Those conditions and attachments cannot establish the file for gap 13 in 1F25B2."
+    ],
+    "heldTasksUnchanged": true,
+    "accessibleSearchResult": "https://inf-ege.sdamgia.ru/test?id=19677491&num=true&pdf=h&print=true&td=&tt=",
+    "wordBoundaryPrimaryReview": {
+      "urls": [
+        "https://doc.fipi.ru/navigator-podgotovki/navigator-ege/2025/Inf_4_tehnologii.pdf",
+        "https://doc.fipi.ru/ege/analiticheskie-i-metodicheskie-materialy/2026/inf_mr_2026.pdf"
+      ],
+      "finding": "The navigator lists all four task IDs and general text-processor search skills but no answer keys or hyphen rule. Search within the 2026 method recommendations found no explicit hyphen guidance. Rules for counting words in Russian-language essays are outside this task scope and were not transferred.",
+      "primaryClarificationFound": false
+    }
+  },
+  "localArtifacts": "/root/ege-informatics-reviewed-laboratory-20261105",
+  "screenshotsInGit": false,
+  "reproduce": [
+    "node --test scripts/ege-informatics-reviewed-laboratory.test.js",
+    "node scripts/audit-ege-informatics-solutions.js --report /tmp/ege-informatics-audit.json"
+  ]
+}

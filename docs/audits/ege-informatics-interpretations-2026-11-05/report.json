@@ -1,0 +1,288 @@
+{
+  "status": "ok",
+  "completedAt": "2026-11-05T23:27:29.296429+00:00",
+  "publishedExplanations": 2473,
+  "totalTasks": 2475,
+  "withoutNumericSolution": 2,
+  "newConditionalExplanations": 11,
+  "totalSolutions": 12940,
+  "newAnswers": {
+    "EGEINFEF0000": "При v = 223: А⟦176158315¦223⟧; при v = 2²³: А10",
+    "EGEINF5459A3": "При v = 224: А⟦1572738¦7⟧; при v = 2²⁴: Б15",
+    "EGEINF502BCF": "При v = 221: А⟦25162509¦221⟧; при v = 2²¹: Б3",
+    "EGEINF47E49C": "При v = 220: А⟦18873543¦55⟧; при v = 2²⁰: А57",
+    "EGEINF57579A": "При v = 220: А⟦12582725¦11⟧; при v = 2²⁰: А223",
+    "EGEINFBAE6EF": "При v = 223: А⟦167768815¦223⟧; при v = 2²³: А5",
+    "EGEINF4CAD3D": "При v = 220: А⟦25165054¦55⟧; при v = 2²⁰: А82",
+    "EGEINF290F15": "При сортировке по началу и окончанию: 344 53",
+    "EGEINFB3C563": "При сортировке по началу и окончанию: 368 83",
+    "EGEINFA99635": "При сортировке по началу и окончанию: 389 133",
+    "EGEINF8ECB7C": "При сортировке по началу и окончанию: 793 2"
+  },
+  "officialAnswerKeyClaimed": false,
+  "userConfirmedAnInterpretation": false,
+  "newFipiRequests": 0,
+  "tests": {
+    "passed": 210,
+    "failed": 0
+  },
+  "independentCalculation": {
+    "rateCases": 14,
+    "arrivalTraces": 8,
+    "displayedPrograms": 4
+  },
+  "subjectAudit": {
+    "catalog": 2475,
+    "prepared": 2473,
+    "matches": {
+      "exact": 344,
+      "variant": 1340,
+      "method": 789
+    },
+    "changed": 11,
+    "published": 2473,
+    "remaining": 2,
+    "preserved": 12929,
+    "integrity": "ok",
+    "rejectedEdits": 52182,
+    "rejectedWrongAnswers": 4946,
+    "status": "ok"
+  },
+  "publication": {
+    "status": "ok",
+    "changed": 11,
+    "published": 2473,
+    "remaining": 2,
+    "preserved": 12929,
+    "totalSolutions": 12940,
+    "integrity": "ok",
+    "calculationAudit": "preview-insert.json",
+    "publicationMethod": "insert exactly eleven verified preview rows; validate all 2473 records and preserve all existing rows in transaction"
+  },
+  "publicHttp": {
+    "origin": "https://ege-fipi.ru",
+    "checkedAt": "2026-11-05T23:26:00.025Z",
+    "solutions": 2473,
+    "cataloguePages": 433,
+    "status": "ok"
+  },
+  "bankHttp": {
+    "section": "ege-informatics",
+    "catalogues": 85,
+    "catalogPages": 958,
+    "ogeTasks": 2475,
+    "existingTasks": 0,
+    "sitemapUrls": 16334,
+    "errors": 0
+  },
+  "publicBrowser": {
+    "pages": 22,
+    "modals": 22,
+    "errors": 0
+  },
+  "preservation": {
+    "solutions": {
+      "before": 12929,
+      "after": 12940,
+      "preserved": true
+    },
+    "users": {
+      "before": 10,
+      "after": 10,
+      "preserved": true
+    },
+    "solution_comments": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "site_feedback": {
+      "before": 0,
+      "after": 0,
+      "preserved": true
+    },
+    "leads": 1,
+    "fipiFilesUnchanged": 25,
+    "integrity": "ok"
+  },
+  "backups": {
+    "status": "ok",
+    "count": 4,
+    "backups": [
+      {
+        "file": "baseline-solutions.sqlite.gz",
+        "sha256": "52c58de86cd21b5d3ec02e19dc96a30b215e59b98c8db441d8dadeb4862306ee",
+        "uncompressedSha256": "cf23ae8da491f60604146f59186023e25c6872f3d512e434a64452521ca45da7",
+        "bytes": 74620928,
+        "integrity": "ok"
+      },
+      {
+        "file": "baseline-study-leads.sqlite.gz",
+        "sha256": "7d089a3e398942a397ed574655bc9dd3e50cde13f90c391aea0048f994a09d0c",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-solutions.sqlite.gz",
+        "sha256": "52c58de86cd21b5d3ec02e19dc96a30b215e59b98c8db441d8dadeb4862306ee",
+        "uncompressedSha256": "cf23ae8da491f60604146f59186023e25c6872f3d512e434a64452521ca45da7",
+        "bytes": 74620928,
+        "integrity": "ok"
+      },
+      {
+        "file": "prepublish-study-leads.sqlite.gz",
+        "sha256": "7d089a3e398942a397ed574655bc9dd3e50cde13f90c391aea0048f994a09d0c",
+        "uncompressedSha256": "8e6cc9463666732d04c12bb13157d2cdd830c405b515f26f56ba9eb1beb5511d",
+        "bytes": 12288,
+        "integrity": "ok"
+      }
+    ]
+  },
+  "sourcePreservation": {
+    "unchangedOtherConditions": 2471,
+    "newMirrors": 4,
+    "previousMirrors": 382,
+    "totalMirrors": 386,
+    "rawConditionCorrections": 0,
+    "conditionalAnswers": 11,
+    "answers": {
+      "EGEINFEF0000": "При v = 223: А⟦176158315¦223⟧; при v = 2²³: А10",
+      "EGEINF5459A3": "При v = 224: А⟦1572738¦7⟧; при v = 2²⁴: Б15",
+      "EGEINF502BCF": "При v = 221: А⟦25162509¦221⟧; при v = 2²¹: Б3",
+      "EGEINF47E49C": "При v = 220: А⟦18873543¦55⟧; при v = 2²⁰: А57",
+      "EGEINF57579A": "При v = 220: А⟦12582725¦11⟧; при v = 2²⁰: А223",
+      "EGEINFBAE6EF": "При v = 223: А⟦167768815¦223⟧; при v = 2²³: А5",
+      "EGEINF4CAD3D": "При v = 220: А⟦25165054¦55⟧; при v = 2²⁰: А82",
+      "EGEINF290F15": "При сортировке по началу и окончанию: 344 53",
+      "EGEINFB3C563": "При сортировке по началу и окончанию: 368 83",
+      "EGEINFA99635": "При сортировке по началу и окончанию: 389 133",
+      "EGEINF8ECB7C": "При сортировке по началу и окончанию: 793 2"
+    }
+  },
+  "reviewedFiles": 3005,
+  "localArtifacts": "/root/ege-informatics-interpretations-20261105",
+  "remaining": [
+    "1F25B2",
+    "7F1EAA"
+  ],
+  "missingInputSolvers": {
+    "status": "ok",
+    "boxesBruteForceCases": 500,
+    "seatOccupancySubsets": 1023,
+    "primarySeatExample": [
+      50,
+      65
+    ],
+    "incorrectMembersRejected": [
+      {
+        "task": "1F25B2",
+        "archiveSha256": "72067e0865f7c01810001da5d9e45e62b6423b526b9649b6e7dc64b12be7e0b1",
+        "member": "331_24.txt",
+        "memberSha256": "bb8017cda3fc4455ca719f3da1916568265ae27613ca9c810c0ff70a4d1840e1",
+        "rejectedReason": "Нужны целые числа; приложенный буквенный текст не подходит"
+      },
+      {
+        "task": "7F1EAA",
+        "archiveSha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4",
+        "member": "307_27_B.txt",
+        "memberSha256": "23a0e373f92ac5f2ffc771e5f9dbcaa0c2b06853b4f9eca01830464b07169c2e",
+        "rejectedReason": "Первая строка должна содержать N от 1 до 10000"
+      },
+      {
+        "task": "7F1EAA",
+        "archiveSha256": "f0233d98b9d7739609b3b8d920af74b165c59efa2fd8de5c0c87022a656bf7c4",
+        "member": "307_27_A.txt",
+        "memberSha256": "ff52a256b9678e16f86c15909f46e59f800b164a8892934229a3978dd20bd6aa",
+        "rejectedReason": "Нужны N пар «номер ряда, номер занятого места»"
+      }
+    ],
+    "correctInputFound": false,
+    "localCandidateWarning": "331_26.txt and 307_26.txt belong to other tasks and were not substituted",
+    "secondaryPagesRead": [
+      {
+        "url": "https://silvertests.ru/CourseTask_B.aspx?id=54531&idcourse=50627",
+        "outcome": "matching condition, no public attachment link"
+      },
+      {
+        "url": "https://silvertests.ru/CourseTask_B.aspx?id=54566&idcourse=50627",
+        "outcome": "matching condition, no public attachment link"
+      }
+    ]
+  },
+  "verificationCommand": "python3 docs/audits/ege-informatics-interpretations-2026-11-05/verify.py",
+  "interruptedCheck": {
+    "stage": "preview API/SSR audit",
+    "exitCode": 143,
+    "signal": "SIGTERM",
+    "cause": "not established",
+    "time": "2026-11-05T23:14:36.372308+00:00",
+    "previewServerStillActive": true,
+    "restartScope": "only unfinished HTTP audit, run as a transient systemd service"
+  },
+  "cleanup": {
+    "status": "ok",
+    "deletedTemporaryFiles": [
+      {
+        "name": "baseline-solutions.sqlite",
+        "bytes": 74620928
+      },
+      {
+        "name": "baseline-solutions.sqlite-shm",
+        "bytes": 32768
+      },
+      {
+        "name": "baseline-solutions.sqlite-wal",
+        "bytes": 0
+      },
+      {
+        "name": "baseline-study-leads.sqlite",
+        "bytes": 12288
+      },
+      {
+        "name": "prepublish-solutions.sqlite",
+        "bytes": 74620928
+      },
+      {
+        "name": "prepublish-solutions.sqlite-shm",
+        "bytes": 32768
+      },
+      {
+        "name": "prepublish-solutions.sqlite-wal",
+        "bytes": 0
+      },
+      {
+        "name": "prepublish-study-leads.sqlite",
+        "bytes": 12288
+      },
+      {
+        "name": "publication-rehearsal.sqlite",
+        "bytes": 74674176
+      },
+      {
+        "name": "solutions.sqlite",
+        "bytes": 74674176
+      },
+      {
+        "name": "solutions.sqlite-shm",
+        "bytes": 32768
+      },
+      {
+        "name": "solutions.sqlite-wal",
+        "bytes": 0
+      },
+      {
+        "name": "study-leads.sqlite",
+        "bytes": 12288
+      }
+    ],
+    "bytesFreed": 298725376,
+    "backupsPreserved": 4,
+    "screenshotsPreserved": true,
+    "existingSwapUntouched": true,
+    "previewStopped": true,
+    "remainingTemporaryEntries": [],
+    "browserTemporaryDirectoriesRemoved": true,
+    "verificationSidecarsRemoved": true
+  }
+}

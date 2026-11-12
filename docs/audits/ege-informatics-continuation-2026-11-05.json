@@ -1,0 +1,307 @@
+{
+  "status": "checked_no_new_publishable_answer",
+  "checkedAt": "2026-11-05T21:50:16.701851+00:00",
+  "published": 2458,
+  "total": 2475,
+  "remaining": 17,
+  "newSolutionsInsertedThisContinuation": 0,
+  "priorPublicationCompleted": "EGEINF327EB5",
+  "liveApiMatchesDatabase": true,
+  "research": {
+    "officialAccess": [
+      {
+        "url": "https://ege.fipi.ru/lib/t3utils.js?v=2.04",
+        "error": "HTTPSConnectionPool(host='ege.fipi.ru', port=443): Max retries exceeded with url: /lib/t3utils.js?v=2.04 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7faf4523dea0>, 'Connection to ege.fipi.ru timed out. (connect timeout=8)'))"
+      },
+      {
+        "url": "https://ege.fipi.ru/bank/index.php?proj=B9ACA5BBB2E19E434CD6BEC25284C67F",
+        "error": "HTTPSConnectionPool(host='ege.fipi.ru', port=443): Max retries exceeded with url: /bank/index.php?proj=B9ACA5BBB2E19E434CD6BEC25284C67F (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7faf4523d8d0>, 'Connection to ege.fipi.ru timed out. (connect timeout=8)'))"
+      }
+    ],
+    "rateComparison": {
+      "source": "https://inf-ege.sdamgia.ru/test?extra_id=212&filter=all&print=true&ttest=10",
+      "savedHtmlSha256": "d8f4b6b2bfca65631a07f99a92873cf077943411b8d1f92e48e5aaa6b6aa56aa",
+      "scope": "Automated candidate comparison of parsed parameter tuples, not exhaustive identification of all external variants. Three near examples were read in full.",
+      "tasks": [
+        {
+          "id": "EGEINFEF0000",
+          "parameters": [
+            30,
+            23,
+            30,
+            10,
+            1
+          ],
+          "exactParameterMatches": [],
+          "nearestCandidates": [
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=7376",
+              "parameters": [
+                40,
+                23,
+                30,
+                10,
+                1
+              ]
+            },
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=2426",
+              "parameters": [
+                10,
+                18,
+                30,
+                7,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EGEINF5459A3",
+          "parameters": [
+            12,
+            24,
+            50,
+            13,
+            5
+          ],
+          "exactParameterMatches": [],
+          "nearestCandidates": [
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=5462",
+              "parameters": [
+                12,
+                21,
+                75,
+                13,
+                3
+              ]
+            },
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=5910",
+              "parameters": [
+                12,
+                21,
+                25,
+                13,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EGEINF502BCF",
+          "parameters": [
+            10,
+            21,
+            70,
+            11,
+            4
+          ],
+          "exactParameterMatches": [],
+          "nearestCandidates": [
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=5878",
+              "parameters": [
+                10,
+                21,
+                80,
+                12,
+                3
+              ]
+            },
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=6310",
+              "parameters": [
+                10,
+                23,
+                70,
+                15,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EGEINF47E49C",
+          "parameters": [
+            12,
+            20,
+            25,
+            12,
+            3
+          ],
+          "exactParameterMatches": [],
+          "nearestCandidates": [
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=6581",
+              "parameters": [
+                30,
+                20,
+                25,
+                12,
+                3
+              ]
+            },
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=4696",
+              "parameters": [
+                12,
+                20,
+                25,
+                22,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EGEINF57579A",
+          "parameters": [
+            40,
+            20,
+            25,
+            13,
+            4
+          ],
+          "exactParameterMatches": [],
+          "nearestCandidates": [
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=4696",
+              "parameters": [
+                12,
+                20,
+                25,
+                22,
+                2
+              ]
+            },
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=4728",
+              "parameters": [
+                20,
+                20,
+                25,
+                18,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EGEINFBAE6EF",
+          "parameters": [
+            40,
+            23,
+            50,
+            10,
+            5
+          ],
+          "exactParameterMatches": [],
+          "nearestCandidates": [
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=7376",
+              "parameters": [
+                40,
+                23,
+                30,
+                10,
+                1
+              ]
+            },
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=6342",
+              "parameters": [
+                20,
+                23,
+                50,
+                15,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EGEINF4CAD3D",
+          "parameters": [
+            16,
+            20,
+            25,
+            11,
+            3
+          ],
+          "exactParameterMatches": [],
+          "nearestCandidates": [
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=6008",
+              "parameters": [
+                16,
+                21,
+                25,
+                12,
+                3
+              ]
+            },
+            {
+              "url": "https://inf-ege.sdamgia.ru/problem?id=6505",
+              "parameters": [
+                20,
+                20,
+                25,
+                11,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "fullyReadNearExamples": [
+        "https://inf-ege.sdamgia.ru/problem?id=7376",
+        "https://inf-ege.sdamgia.ru/problem?id=6581",
+        "https://inf-ege.sdamgia.ru/problem?id=6897"
+      ],
+      "finding": "The read examples confirm the method but use different parameters and do not establish the missing typography of the seven FIPI conditions."
+    },
+    "wordSearch": {
+      "url": "https://informatics-in-school.ru/search-heart/",
+      "searchResult": "Search result associates 2F9ABA with a Writer result of 38. Full page fetch timed out; attachment equivalence and authorial FIPI rule were not verified.",
+      "decision": "Lead retained; not used as a primary key or publication clearance."
+    },
+    "rejectedRoundingLead": {
+      "url": "https://reshai.online/ege/subjects/informatics/tasks/4cAD3D",
+      "fullPageStatus": 403,
+      "searchResult": "The indexed hint advises rounding the time difference to a whole number, although the saved FIPI condition provides no rounding rule.",
+      "literalDifferenceSeconds": "25165054/55",
+      "powerOfTwoDifferenceSeconds": 82,
+      "decision": "Does not resolve the missing exponent; answer not imported."
+    }
+  },
+  "remainingGroups": {
+    "wordBoundaries": [
+      "2F9ABA",
+      "671119",
+      "870FE9",
+      "E4A3C2"
+    ],
+    "rateTypography": [
+      "EF0000",
+      "5459A3",
+      "502BCF",
+      "47E49C",
+      "57579A",
+      "BAE6EF",
+      "4CAD3D"
+    ],
+    "wrongAttachments": [
+      "1F25B2",
+      "7F1EAA"
+    ],
+    "simultaneousArrivalOrder": [
+      "290F15",
+      "B3C563",
+      "A99635",
+      "8ECB7C"
+    ]
+  },
+  "localArtifacts": "/root/ege-informatics-continue-20261105"
+}

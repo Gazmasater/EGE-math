@@ -1,0 +1,212 @@
+{
+  "status": "ok",
+  "tasks": {
+    "EGEINFEF0000": {
+      "literal": {
+        "speedBitsPerSecond": 223,
+        "secondsA": "75499925/223",
+        "secondsB": "251658240/223",
+        "faster": "А",
+        "differenceSeconds": "176158315/223",
+        "conditionalAnswer": "А176158315/223"
+      },
+      "power": {
+        "speedBitsPerSecond": 8388608,
+        "secondsA": "20",
+        "secondsB": "30",
+        "faster": "А",
+        "differenceSeconds": "10",
+        "conditionalAnswer": "А10"
+      }
+    },
+    "EGEINF5459A3": {
+      "literal": {
+        "speedBitsPerSecond": 224,
+        "secondsA": "1572990/7",
+        "secondsB": "3145728/7",
+        "faster": "А",
+        "differenceSeconds": "1572738/7",
+        "conditionalAnswer": "А1572738/7"
+      },
+      "power": {
+        "speedBitsPerSecond": 16777216,
+        "secondsA": "21",
+        "secondsB": "6",
+        "faster": "Б",
+        "differenceSeconds": "15",
+        "conditionalAnswer": "Б15"
+      }
+    },
+    "EGEINF502BCF": {
+      "literal": {
+        "speedBitsPerSecond": 221,
+        "secondsA": "58723571/221",
+        "secondsB": "83886080/221",
+        "faster": "А",
+        "differenceSeconds": "25162509/221",
+        "conditionalAnswer": "А25162509/221"
+      },
+      "power": {
+        "speedBitsPerSecond": 2097152,
+        "secondsA": "43",
+        "secondsB": "40",
+        "faster": "Б",
+        "differenceSeconds": "3",
+        "conditionalAnswer": "Б3"
+      }
+    },
+    "EGEINF47E49C": {
+      "literal": {
+        "speedBitsPerSecond": 220,
+        "secondsA": "6292281/55",
+        "secondsB": "25165824/55",
+        "faster": "А",
+        "differenceSeconds": "18873543/55",
+        "conditionalAnswer": "А18873543/55"
+      },
+      "power": {
+        "speedBitsPerSecond": 1048576,
+        "secondsA": "39",
+        "secondsB": "96",
+        "faster": "А",
+        "differenceSeconds": "57",
+        "conditionalAnswer": "А57"
+      }
+    },
+    "EGEINF57579A": {
+      "literal": {
+        "speedBitsPerSecond": 220,
+        "secondsA": "4194491/11",
+        "secondsB": "16777216/11",
+        "faster": "А",
+        "differenceSeconds": "12582725/11",
+        "conditionalAnswer": "А12582725/11"
+      },
+      "power": {
+        "speedBitsPerSecond": 1048576,
+        "secondsA": "97",
+        "secondsB": "320",
+        "faster": "А",
+        "differenceSeconds": "223",
+        "conditionalAnswer": "А223"
+      }
+    },
+    "EGEINFBAE6EF": {
+      "literal": {
+        "speedBitsPerSecond": 223,
+        "secondsA": "167775505/223",
+        "secondsB": "335544320/223",
+        "faster": "А",
+        "differenceSeconds": "167768815/223",
+        "conditionalAnswer": "А167768815/223"
+      },
+      "power": {
+        "speedBitsPerSecond": 8388608,
+        "secondsA": "35",
+        "secondsB": "40",
+        "faster": "А",
+        "differenceSeconds": "5",
+        "conditionalAnswer": "А5"
+      }
+    },
+    "EGEINF4CAD3D": {
+      "literal": {
+        "speedBitsPerSecond": 220,
+        "secondsA": "8389378/55",
+        "secondsB": "33554432/55",
+        "faster": "А",
+        "differenceSeconds": "25165054/55",
+        "conditionalAnswer": "А25165054/55"
+      },
+      "power": {
+        "speedBitsPerSecond": 1048576,
+        "secondsA": "46",
+        "secondsB": "128",
+        "faster": "А",
+        "differenceSeconds": "82",
+        "conditionalAnswer": "А82"
+      }
+    },
+    "EGEINF290F15": {
+      "end-ascending": {
+        "answer": [
+          344,
+          53
+        ],
+        "lastStart": 999,
+        "traceSha256": "69b8df34250a7bf84b1479ea5a105ef55dedf18def3716a55512d608a36ec43a"
+      },
+      "file-order": {
+        "answer": [
+          340,
+          53
+        ],
+        "lastStart": 999,
+        "traceSha256": "9c4013c264f5f3e977cd3711eaeadff5e7318345cc08c72b3da193a67a6163c2"
+      },
+      "displayedProgram": "344 53"
+    },
+    "EGEINFB3C563": {
+      "end-ascending": {
+        "answer": [
+          368,
+          83
+        ],
+        "lastStart": 997,
+        "traceSha256": "15f84d21df7cef25c2ecdd1e8ab6f56128c91689bf64778d69a99c1c90f1b6e4"
+      },
+      "file-order": {
+        "answer": [
+          361,
+          83
+        ],
+        "lastStart": 997,
+        "traceSha256": "42910b957aacd9cb003edd82b7d21dd98a01f44eb125ae9f0b0c2359691d2cf0"
+      },
+      "displayedProgram": "368 83"
+    },
+    "EGEINFA99635": {
+      "end-ascending": {
+        "answer": [
+          389,
+          133
+        ],
+        "lastStart": 999,
+        "traceSha256": "1c836ef1bde47ee370f441ca70db17650b4afe548c63aed618f4b8f78d92aa68"
+      },
+      "file-order": {
+        "answer": [
+          380,
+          133
+        ],
+        "lastStart": 999,
+        "traceSha256": "109ab0c3b13a993faee796b6b5581aeaaaa5e6b03e0d929957a69a3c9ba48eca"
+      },
+      "displayedProgram": "389 133"
+    },
+    "EGEINF8ECB7C": {
+      "end-ascending": {
+        "answer": [
+          793,
+          2
+        ],
+        "lastStart": 1437,
+        "traceSha256": "be2f3eea5cbfbc6f8e5956385b9aea16f62f95c978df49aa7e8c83dbd5527861"
+      },
+      "file-order": {
+        "answer": [
+          784,
+          3
+        ],
+        "lastStart": 1437,
+        "traceSha256": "827bb6bf51801b53689f70b3d7f43c0e955ef74438debf0f39fac9e36a0e0dee"
+      },
+      "displayedProgram": "793 2"
+    }
+  },
+  "rateAlgorithms": "Python Fraction vs JavaScript BigInt",
+  "arrivalAlgorithms": "Python two heaps vs JavaScript direct scan, every assignment",
+  "displayedProgramsExecuted": 4,
+  "external57433MatchesRecordedDownloadHash": true,
+  "external7376Recalculated": "А17"
+}
