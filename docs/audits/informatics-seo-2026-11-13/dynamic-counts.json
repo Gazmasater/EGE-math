@@ -1,0 +1,7 @@
+{
+  "scope": "isolated preview database only",
+  "checks": [
+    "Root and filtered-selection counts update immediately without restart",
+    "Preview publication state restored; root counts match the source snapshot"
+  ]
+}

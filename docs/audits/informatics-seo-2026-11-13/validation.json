@@ -1,0 +1,25 @@
+{
+  "recorded_at_utc": "2026-11-13T00:14:21.936204+00:00",
+  "published_at_utc": "2026-11-13T00:11:38+00:00",
+  "published_at_moscow": "2026-11-13T03:11:38+03:00",
+  "service": [
+    "MainPID=1598822",
+    "ExecMainStartTimestamp=Fri 2026-11-13 00:11:38 UTC",
+    "ActiveState=active"
+  ],
+  "preview_catalogues": 330,
+  "public_catalogues": 16,
+  "preview_browser_pages": 20,
+  "public_browser_pages": 8,
+  "unit_tests_passed": 54,
+  "solutions_unchanged": true,
+  "source_sha256": {
+    "server.js": "0b4e3ef3de51847e6de99b4863d4c518d9c68ce37533cd7003ca7e178bfcdada",
+    "lib/site-ui.js": "d90976ceeb37a465d403fbee2520fe7ecb70b77403cd62532c3625efa5263d20"
+  },
+  "limitations": [
+    "Phone emulation in Chrome Linux; no physical iPhone",
+    "External ads/analytics blocked in browser checks; write requests blocked",
+    "No new search visibility or ranking evidence; SEO effect not measured"
+  ]
+}

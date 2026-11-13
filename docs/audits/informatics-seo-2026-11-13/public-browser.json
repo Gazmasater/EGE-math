@@ -1,0 +1,84 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "checkedAt": "2026-11-13T00:12:09.216Z",
+  "pages": [
+    {
+      "route": "/ege-informatics",
+      "width": 390,
+      "title": "ЕГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+      "h1": 1,
+      "overflow": false,
+      "heading": "ЕГЭ по информатике — задания ФИПИ с ответами и подробными решениямиФИПИ · ЕГЭ · заданий: 2475 · готовых разборов: 2473",
+      "inits": 1
+    },
+    {
+      "route": "/oge-informatics",
+      "width": 390,
+      "title": "ОГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+      "h1": 1,
+      "overflow": false,
+      "heading": "ОГЭ по информатике — задания ФИПИ с ответами и подробными решениямиФИПИ · ОГЭ · заданий: 1585 · готовых разборов: 1585",
+      "inits": 1
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models",
+      "width": 390,
+      "title": "Графы, таблицы и маршруты — ЕГЭ по информатике — ответы и решения",
+      "h1": 1,
+      "overflow": false,
+      "heading": "Графы, таблицы и маршруты — ЕГЭ по информатике — ответы и решенияФИПИ · ЕГЭ · заданий: 175 · готовых разборов: 175",
+      "inits": 1
+    },
+    {
+      "route": "/oge-informatics?topic=type.1",
+      "width": 390,
+      "title": "Объём текста и кодировки — ОГЭ по информатике — ответы и решения",
+      "h1": 1,
+      "overflow": false,
+      "heading": "Объём текста и кодировки — ОГЭ по информатике — ответы и решенияФИПИ · ОГЭ · заданий: 79 · готовых разборов: 79",
+      "inits": 1
+    },
+    {
+      "route": "/ege",
+      "width": 390,
+      "title": "ЕГЭ — задания ФИПИ по математике, физике и информатике",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "title": "О проекте — задания ЕГЭ и ОГЭ по математике и физике",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1
+    },
+    {
+      "route": "/ege-informatics",
+      "width": 390,
+      "javascript": false,
+      "countsServerRendered": true
+    },
+    {
+      "route": "/oge-informatics?topic=type.1",
+      "width": 390,
+      "javascript": false,
+      "countsServerRendered": true
+    }
+  ],
+  "interactions": [
+    {
+      "width": 390,
+      "topic": true,
+      "solutionOpenClose": true,
+      "pagination": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Chrome Linux phone emulation; no physical iPhone",
+    "External analytics and ads blocked; all writes blocked"
+  ],
+  "browserVersion": "152.0.7977.82"
+}

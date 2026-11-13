@@ -1,0 +1,2485 @@
+{
+  "origin": "http://127.0.0.1:8889",
+  "checkedAt": "2026-11-13T00:07:44.548Z",
+  "catalogues": [
+    {
+      "route": "/ege-informatics",
+      "title": "ЕГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+      "total": 2475,
+      "solved": 2473,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=all",
+      "title": "Все задания — ЕГЭ по информатике — ответы и решения",
+      "total": 2475,
+      "solved": 2473,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=2",
+      "title": "Все задания — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 2475,
+      "solved": 2473,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=207",
+      "title": "Все задания — ЕГЭ по информатике — ответы и решения — страница 207",
+      "total": 2475,
+      "solved": 2473,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=practical",
+      "title": "Задания с общим условием — ЕГЭ по информатике — ответы и решения",
+      "total": 133,
+      "solved": 133,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=practical&page=2",
+      "title": "Задания с общим условием — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 133,
+      "solved": 133,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=practical&page=12",
+      "title": "Задания с общим условием — ЕГЭ по информатике — ответы и решения — страница 12",
+      "total": 133,
+      "solved": 133,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models",
+      "title": "Графы, таблицы и маршруты — ЕГЭ по информатике — ответы и решения",
+      "total": 175,
+      "solved": 175,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models&page=2",
+      "title": "Графы, таблицы и маршруты — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 175,
+      "solved": 175,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models&page=15",
+      "title": "Графы, таблицы и маршруты — ЕГЭ по информатике — ответы и решения — страница 15",
+      "total": 175,
+      "solved": 175,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.truth-tables",
+      "title": "Таблицы истинности — ЕГЭ по информатике — ответы и решения",
+      "total": 108,
+      "solved": 108,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.truth-tables&page=2",
+      "title": "Таблицы истинности — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 108,
+      "solved": 108,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.truth-tables&page=9",
+      "title": "Таблицы истинности — ЕГЭ по информатике — ответы и решения — страница 9",
+      "total": 108,
+      "solved": 108,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.databases",
+      "title": "Поиск и отбор данных в таблицах — ЕГЭ по информатике — ответы и решения",
+      "total": 84,
+      "solved": 84,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.databases&page=2",
+      "title": "Поиск и отбор данных в таблицах — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 84,
+      "solved": 84,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.databases&page=7",
+      "title": "Поиск и отбор данных в таблицах — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 84,
+      "solved": 84,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.codes",
+      "title": "Однозначное кодирование и условие Фано — ЕГЭ по информатике — ответы и решения",
+      "total": 76,
+      "solved": 76,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.codes&page=2",
+      "title": "Однозначное кодирование и условие Фано — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 76,
+      "solved": 76,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.codes&page=7",
+      "title": "Однозначное кодирование и условие Фано — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 76,
+      "solved": 76,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-transform",
+      "title": "Преобразование записи числа — ЕГЭ по информатике — ответы и решения",
+      "total": 75,
+      "solved": 75,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-transform&page=2",
+      "title": "Преобразование записи числа — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 75,
+      "solved": 75,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-transform&page=7",
+      "title": "Преобразование записи числа — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 75,
+      "solved": 75,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.plane-executors",
+      "title": "Черепаха, Чертёжник и Робот — ЕГЭ по информатике — ответы и решения",
+      "total": 50,
+      "solved": 50,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.plane-executors&page=2",
+      "title": "Черепаха, Чертёжник и Робот — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 50,
+      "solved": 50,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.plane-executors&page=5",
+      "title": "Черепаха, Чертёжник и Робот — ЕГЭ по информатике — ответы и решения — страница 5",
+      "total": 50,
+      "solved": 50,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.media-transfer",
+      "title": "Изображения, звук и передача файлов — ЕГЭ по информатике — ответы и решения",
+      "total": 133,
+      "solved": 133,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.media-transfer&page=2",
+      "title": "Изображения, звук и передача файлов — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 133,
+      "solved": 133,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.media-transfer&page=12",
+      "title": "Изображения, звук и передача файлов — ЕГЭ по информатике — ответы и решения — страница 12",
+      "total": 133,
+      "solved": 133,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.combinatorics",
+      "title": "Подсчёт слов и последовательностей — ЕГЭ по информатике — ответы и решения",
+      "total": 81,
+      "solved": 81,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.combinatorics&page=2",
+      "title": "Подсчёт слов и последовательностей — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 81,
+      "solved": 81,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.combinatorics&page=7",
+      "title": "Подсчёт слов и последовательностей — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 81,
+      "solved": 81,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.spreadsheets",
+      "title": "Электронные таблицы и формулы — ЕГЭ по информатике — ответы и решения",
+      "total": 100,
+      "solved": 100,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.spreadsheets&page=2",
+      "title": "Электронные таблицы и формулы — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 100,
+      "solved": 100,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.spreadsheets&page=9",
+      "title": "Электронные таблицы и формулы — ЕГЭ по информатике — ответы и решения — страница 9",
+      "total": 100,
+      "solved": 100,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.networks",
+      "title": "IP-адреса, маски и адреса файлов — ЕГЭ по информатике — ответы и решения",
+      "total": 54,
+      "solved": 54,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.networks&page=2",
+      "title": "IP-адреса, маски и адреса файлов — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 54,
+      "solved": 54,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.networks&page=5",
+      "title": "IP-адреса, маски и адреса файлов — ЕГЭ по информатике — ответы и решения — страница 5",
+      "total": 54,
+      "solved": 54,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.information-volume",
+      "title": "Объём информации, пароли и кодировки — ЕГЭ по информатике — ответы и решения",
+      "total": 135,
+      "solved": 135,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.information-volume&page=2",
+      "title": "Объём информации, пароли и кодировки — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 135,
+      "solved": 135,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.information-volume&page=12",
+      "title": "Объём информации, пароли и кодировки — ЕГЭ по информатике — ответы и решения — страница 12",
+      "total": 135,
+      "solved": 135,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.string-executors",
+      "title": "Редактор и машина Тьюринга — ЕГЭ по информатике — ответы и решения",
+      "total": 66,
+      "solved": 66,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.string-executors&page=2",
+      "title": "Редактор и машина Тьюринга — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 66,
+      "solved": 66,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.string-executors&page=6",
+      "title": "Редактор и машина Тьюринга — ЕГЭ по информатике — ответы и решения — страница 6",
+      "total": 66,
+      "solved": 66,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.executor-programs",
+      "title": "Подсчёт программ исполнителя — ЕГЭ по информатике — ответы и решения",
+      "total": 74,
+      "solved": 74,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.executor-programs&page=2",
+      "title": "Подсчёт программ исполнителя — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 74,
+      "solved": 74,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.executor-programs&page=7",
+      "title": "Подсчёт программ исполнителя — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 74,
+      "solved": 74,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.numeral-systems",
+      "title": "Системы счисления и арифметика — ЕГЭ по информатике — ответы и решения",
+      "total": 114,
+      "solved": 114,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.numeral-systems&page=2",
+      "title": "Системы счисления и арифметика — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 114,
+      "solved": 114,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.numeral-systems&page=10",
+      "title": "Системы счисления и арифметика — ЕГЭ по информатике — ответы и решения — страница 10",
+      "total": 114,
+      "solved": 114,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.logic",
+      "title": "Логические выражения и уравнения — ЕГЭ по информатике — ответы и решения",
+      "total": 123,
+      "solved": 123,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.logic&page=2",
+      "title": "Логические выражения и уравнения — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 123,
+      "solved": 123,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.logic&page=11",
+      "title": "Логические выражения и уравнения — ЕГЭ по информатике — ответы и решения — страница 11",
+      "total": 123,
+      "solved": 123,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.recursion",
+      "title": "Рекурсия и рекуррентные зависимости — ЕГЭ по информатике — ответы и решения",
+      "total": 74,
+      "solved": 74,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.recursion&page=2",
+      "title": "Рекурсия и рекуррентные зависимости — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 74,
+      "solved": 74,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.recursion&page=7",
+      "title": "Рекурсия и рекуррентные зависимости — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 74,
+      "solved": 74,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-sequence",
+      "title": "Пары и тройки в числовых данных — ЕГЭ по информатике — ответы и решения",
+      "total": 37,
+      "solved": 37,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-sequence&page=2",
+      "title": "Пары и тройки в числовых данных — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 37,
+      "solved": 37,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-sequence&page=4",
+      "title": "Пары и тройки в числовых данных — ЕГЭ по информатике — ответы и решения — страница 4",
+      "total": 37,
+      "solved": 37,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.robot-grid",
+      "title": "Оптимальный маршрут по клетчатому полю — ЕГЭ по информатике — ответы и решения",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.robot-grid&page=2",
+      "title": "Оптимальный маршрут по клетчатому полю — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.robot-grid&page=6",
+      "title": "Оптимальный маршрут по клетчатому полю — ЕГЭ по информатике — ответы и решения — страница 6",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.games",
+      "title": "Игры и выигрышные стратегии — ЕГЭ по информатике — ответы и решения",
+      "total": 167,
+      "solved": 167,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.games&page=2",
+      "title": "Игры и выигрышные стратегии — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 167,
+      "solved": 167,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.games&page=14",
+      "title": "Игры и выигрышные стратегии — ЕГЭ по информатике — ответы и решения — страница 14",
+      "total": 167,
+      "solved": 167,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.processes",
+      "title": "Параллельные вычисления — ЕГЭ по информатике — ответы и решения",
+      "total": 40,
+      "solved": 40,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.processes&page=2",
+      "title": "Параллельные вычисления — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 40,
+      "solved": 40,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.processes&page=4",
+      "title": "Параллельные вычисления — ЕГЭ по информатике — ответы и решения — страница 4",
+      "total": 40,
+      "solved": 40,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-paths",
+      "title": "Подсчёт путей в графе — ЕГЭ по информатике — ответы и решения",
+      "total": 38,
+      "solved": 38,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-paths&page=2",
+      "title": "Подсчёт путей в графе — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 38,
+      "solved": 38,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-paths&page=4",
+      "title": "Подсчёт путей в графе — ЕГЭ по информатике — ответы и решения — страница 4",
+      "total": 38,
+      "solved": 38,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.strings",
+      "title": "Обработка текстового файла — ЕГЭ по информатике — ответы и решения",
+      "total": 49,
+      "solved": 49,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.strings&page=2",
+      "title": "Обработка текстового файла — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 49,
+      "solved": 49,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.strings&page=5",
+      "title": "Обработка текстового файла — ЕГЭ по информатике — ответы и решения — страница 5",
+      "total": 49,
+      "solved": 49,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.divisors",
+      "title": "Делители, маски и отбор чисел — ЕГЭ по информатике — ответы и решения",
+      "total": 43,
+      "solved": 43,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.divisors&page=2",
+      "title": "Делители, маски и отбор чисел — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 43,
+      "solved": 43,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.divisors&page=4",
+      "title": "Делители, маски и отбор чисел — ЕГЭ по информатике — ответы и решения — страница 4",
+      "total": 43,
+      "solved": 43,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.sorting",
+      "title": "Сортировка, отбор и моделирование — ЕГЭ по информатике — ответы и решения",
+      "total": 45,
+      "solved": 43,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.sorting&page=2",
+      "title": "Сортировка, отбор и моделирование — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 45,
+      "solved": 43,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.sorting&page=4",
+      "title": "Сортировка, отбор и моделирование — ЕГЭ по информатике — ответы и решения — страница 4",
+      "total": 45,
+      "solved": 43,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.large-data",
+      "title": "Эффективная обработка данных и кластеры — ЕГЭ по информатике — ответы и решения",
+      "total": 45,
+      "solved": 45,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.large-data&page=2",
+      "title": "Эффективная обработка данных и кластеры — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 45,
+      "solved": 45,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.large-data&page=4",
+      "title": "Эффективная обработка данных и кластеры — ЕГЭ по информатике — ответы и решения — страница 4",
+      "total": 45,
+      "solved": 45,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.text-search",
+      "title": "Поиск в текстовом документе — ЕГЭ по информатике — ответы и решения",
+      "total": 67,
+      "solved": 67,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.text-search&page=2",
+      "title": "Поиск в текстовом документе — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 67,
+      "solved": 67,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.text-search&page=6",
+      "title": "Поиск в текстовом документе — ЕГЭ по информатике — ответы и решения — страница 6",
+      "total": 67,
+      "solved": 67,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.file-system",
+      "title": "Файлы и каталоги — ЕГЭ по информатике — ответы и решения",
+      "total": 4,
+      "solved": 4,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.search-queries",
+      "title": "Поисковые запросы и множества — ЕГЭ по информатике — ответы и решения",
+      "total": 33,
+      "solved": 33,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.search-queries&page=2",
+      "title": "Поисковые запросы и множества — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 33,
+      "solved": 33,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.search-queries&page=3",
+      "title": "Поисковые запросы и множества — ЕГЭ по информатике — ответы и решения — страница 3",
+      "total": 33,
+      "solved": 33,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-executors",
+      "title": "Составление команд исполнителя — ЕГЭ по информатике — ответы и решения",
+      "total": 4,
+      "solved": 4,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.program-analysis",
+      "title": "Выполнение и анализ программы — ЕГЭ по информатике — ответы и решения",
+      "total": 145,
+      "solved": 145,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.program-analysis&page=2",
+      "title": "Выполнение и анализ программы — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 145,
+      "solved": 145,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.program-analysis&page=13",
+      "title": "Выполнение и анализ программы — ЕГЭ по информатике — ответы и решения — страница 13",
+      "total": 145,
+      "solved": 145,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.array-analysis",
+      "title": "Анализ алгоритмов с массивами — ЕГЭ по информатике — ответы и решения",
+      "total": 62,
+      "solved": 62,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.array-analysis&page=2",
+      "title": "Анализ алгоритмов с массивами — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 62,
+      "solved": 62,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.array-analysis&page=6",
+      "title": "Анализ алгоритмов с массивами — ЕГЭ по информатике — ответы и решения — страница 6",
+      "total": 62,
+      "solved": 62,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.debugging",
+      "title": "Поиск ошибок в программе — ЕГЭ по информатике — ответы и решения",
+      "total": 27,
+      "solved": 27,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.debugging&page=2",
+      "title": "Поиск ошибок в программе — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 27,
+      "solved": 27,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.debugging&page=3",
+      "title": "Поиск ошибок в программе — ЕГЭ по информатике — ответы и решения — страница 3",
+      "total": 27,
+      "solved": 27,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.write-program",
+      "title": "Самостоятельное написание алгоритма — ЕГЭ по информатике — ответы и решения",
+      "total": 86,
+      "solved": 86,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.write-program&page=2",
+      "title": "Самостоятельное написание алгоритма — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 86,
+      "solved": 86,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.write-program&page=8",
+      "title": "Самостоятельное написание алгоритма — ЕГЭ по информатике — ответы и решения — страница 8",
+      "total": 86,
+      "solved": 86,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1",
+      "title": "Цифровая грамотность — ЕГЭ по информатике — ответы и решения",
+      "total": 211,
+      "solved": 211,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1&page=2",
+      "title": "Цифровая грамотность — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 211,
+      "solved": 211,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1&page=18",
+      "title": "Цифровая грамотность — ЕГЭ по информатике — ответы и решения — страница 18",
+      "total": 211,
+      "solved": 211,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.1",
+      "title": "Основные тенденции развития компьютерных технологий. Параллельные вычисления. Многопроцессорные системы. Распределённые вычислительные системы и обработка больших данных — ЕГЭ по информатике — ответы и решения",
+      "total": 40,
+      "solved": 40,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.1&page=2",
+      "title": "Основные тенденции развития компьютерных технологий. Параллельные вычисления. Многопроцессорные системы. Распределённые вычислительные системы и обработка больших данных — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 40,
+      "solved": 40,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.1&page=4",
+      "title": "Основные тенденции развития компьютерных технологий. Параллельные вычисления. Многопроцессорные системы. Распределённые вычислительные системы и обработка больших данных — ЕГЭ по информатике — ответы и решения — страница 4",
+      "total": 40,
+      "solved": 40,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.2",
+      "title": "Принципы построения и аппаратные компоненты компьютерных сетей. Сетевые протоколы. Сеть Интернет. Адресация в сети Интернет. Протоколы стека TCP/IP. Система доменных имён. Разделение IP-сети на подсети с помощью масок подсетей — ЕГЭ по информатике — ответы и решения",
+      "total": 87,
+      "solved": 87,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.2&page=2",
+      "title": "Принципы построения и аппаратные компоненты компьютерных сетей. Сетевые протоколы. Сеть Интернет. Адресация в сети Интернет. Протоколы стека TCP/IP. Система доменных имён. Разделение IP-сети на подсети с помощью масок подсетей — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 87,
+      "solved": 87,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.2&page=8",
+      "title": "Принципы построения и аппаратные компоненты компьютерных сетей. Сетевые протоколы. Сеть Интернет. Адресация в сети Интернет. Протоколы стека TCP/IP. Система доменных имён. Разделение IP-сети на подсети с помощью масок подсетей — ЕГЭ по информатике — ответы и решения — страница 8",
+      "total": 87,
+      "solved": 87,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.3",
+      "title": "Файловая система. Поиск в файловой системе. Принципы размещения и именования файлов в долговременной памяти. Шаблоны для описания групп файлов — ЕГЭ по информатике — ответы и решения",
+      "total": 4,
+      "solved": 4,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.4",
+      "title": "Скорость передачи данных. Зависимость времени передачи от информационного объёма данных и характеристик канала связи — ЕГЭ по информатике — ответы и решения",
+      "total": 80,
+      "solved": 80,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.4&page=2",
+      "title": "Скорость передачи данных. Зависимость времени передачи от информационного объёма данных и характеристик канала связи — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 80,
+      "solved": 80,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.4&page=7",
+      "title": "Скорость передачи данных. Зависимость времени передачи от информационного объёма данных и характеристик канала связи — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 80,
+      "solved": 80,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.5",
+      "title": "Шифрование данных. Симметричные и несимметричные шифры. Шифры простой замены. Шифр Цезаря. Шифр Виженера. Алгоритм шифрования RSA — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=1.6",
+      "title": "Коды, позволяющие обнаруживать и исправлять ошибки, возникающие при передаче данных. Расстояние Хэмминга. Кодирование с повторением битов. Коды Хэмминга — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2",
+      "title": "Теоретические основы информатики — ЕГЭ по информатике — ответы и решения",
+      "total": 1127,
+      "solved": 1127,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2&page=2",
+      "title": "Теоретические основы информатики — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 1127,
+      "solved": 1127,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2&page=94",
+      "title": "Теоретические основы информатики — ЕГЭ по информатике — ответы и решения — страница 94",
+      "total": 1127,
+      "solved": 1127,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.1",
+      "title": "Двоичное кодирование. Равномерные и неравномерные коды. Декодирование сообщений, записанных с помощью неравномерных кодов. Условие Фано. Построение однозначно декодируемых кодов с помощью дерева — ЕГЭ по информатике — ответы и решения",
+      "total": 76,
+      "solved": 76,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.1&page=2",
+      "title": "Двоичное кодирование. Равномерные и неравномерные коды. Декодирование сообщений, записанных с помощью неравномерных кодов. Условие Фано. Построение однозначно декодируемых кодов с помощью дерева — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 76,
+      "solved": 76,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.1&page=7",
+      "title": "Двоичное кодирование. Равномерные и неравномерные коды. Декодирование сообщений, записанных с помощью неравномерных кодов. Условие Фано. Построение однозначно декодируемых кодов с помощью дерева — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 76,
+      "solved": 76,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.2",
+      "title": "Теоретические подходы к оценке количества информации. Единицы измерения количества информации. Алфавитный подход к оценке количества информации. Закон аддитивности информации. Формула Хартли. Информация и вероятность. Формула Шеннона — ЕГЭ по информатике — ответы и решения",
+      "total": 216,
+      "solved": 216,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.2&page=2",
+      "title": "Теоретические подходы к оценке количества информации. Единицы измерения количества информации. Алфавитный подход к оценке количества информации. Закон аддитивности информации. Формула Хартли. Информация и вероятность. Формула Шеннона — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 216,
+      "solved": 216,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.2&page=18",
+      "title": "Теоретические подходы к оценке количества информации. Единицы измерения количества информации. Алфавитный подход к оценке количества информации. Закон аддитивности информации. Формула Хартли. Информация и вероятность. Формула Шеннона — ЕГЭ по информатике — ответы и решения — страница 18",
+      "total": 216,
+      "solved": 216,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.3",
+      "title": "Системы счисления. Развёрнутая запись целых и дробных чисел в позиционной системе счисления. Свойства позиционной записи числа: количество цифр в записи, признак делимости числа на основание системы счисления. Алгоритм перевода целого числа из P-ичной системы счисления в десятичную. Алгоритм перевода конечной P-ичной дроби в десятичную. Алгоритм перевода целого числа из десятичной системы счисления в P-ичную. Перевод конечной десятичной дроби в P-ичную. Двоичная, восьмеричная и шестнадцатеричная системы счисления, связь между ними. Арифметические операции в позиционных системах счисления — ЕГЭ по информатике — ответы и решения",
+      "total": 114,
+      "solved": 114,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.3&page=2",
+      "title": "Системы счисления. Развёрнутая запись целых и дробных чисел в позиционной системе счисления. Свойства позиционной записи числа: количество цифр в записи, признак делимости числа на основание системы счисления. Алгоритм перевода целого числа из P-ичной системы счисления в десятичную. Алгоритм перевода конечной P-ичной дроби в десятичную. Алгоритм перевода целого числа из десятичной системы счисления в P-ичную. Перевод конечной десятичной дроби в P-ичную. Двоичная, восьмеричная и шестнадцатеричная системы счисления, связь между ними. Арифметические операции в позиционных системах счисления — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 114,
+      "solved": 114,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.3&page=10",
+      "title": "Системы счисления. Развёрнутая запись целых и дробных чисел в позиционной системе счисления. Свойства позиционной записи числа: количество цифр в записи, признак делимости числа на основание системы счисления. Алгоритм перевода целого числа из P-ичной системы счисления в десятичную. Алгоритм перевода конечной P-ичной дроби в десятичную. Алгоритм перевода целого числа из десятичной системы счисления в P-ичную. Перевод конечной десятичной дроби в P-ичную. Двоичная, восьмеричная и шестнадцатеричная системы счисления, связь между ними. Арифметические операции в позиционных системах счисления — ЕГЭ по информатике — ответы и решения — страница 10",
+      "total": 114,
+      "solved": 114,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.4",
+      "title": "Троичная уравновешенная система счисления. Двоично-десятичная система счисления — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.5",
+      "title": "Кодирование текстов. Кодировка ASCII. Однобайтные кодировки. Стандарт UNICODE. Кодировка UTF-8. Определение информационного объёма текстовых сообщений — ЕГЭ по информатике — ответы и решения",
+      "total": 135,
+      "solved": 135,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.5&page=2",
+      "title": "Кодирование текстов. Кодировка ASCII. Однобайтные кодировки. Стандарт UNICODE. Кодировка UTF-8. Определение информационного объёма текстовых сообщений — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 135,
+      "solved": 135,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.5&page=12",
+      "title": "Кодирование текстов. Кодировка ASCII. Однобайтные кодировки. Стандарт UNICODE. Кодировка UTF-8. Определение информационного объёма текстовых сообщений — ЕГЭ по информатике — ответы и решения — страница 12",
+      "total": 135,
+      "solved": 135,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.6",
+      "title": "Кодирование изображений. Оценка информационного объёма графических данных при заданных разрешении и глубине кодирования цвета. Цветовые модели. Кодирование звука. Оценка информационного объёма звуковых данных при заданных частоте дискретизации и разрядности кодирования — ЕГЭ по информатике — ответы и решения",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.6&page=2",
+      "title": "Кодирование изображений. Оценка информационного объёма графических данных при заданных разрешении и глубине кодирования цвета. Цветовые модели. Кодирование звука. Оценка информационного объёма звуковых данных при заданных частоте дискретизации и разрядности кодирования — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.6&page=7",
+      "title": "Кодирование изображений. Оценка информационного объёма графических данных при заданных разрешении и глубине кодирования цвета. Цветовые модели. Кодирование звука. Оценка информационного объёма звуковых данных при заданных частоте дискретизации и разрядности кодирования — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.7",
+      "title": "Алгебра логики. Понятие высказывания. Высказывательные формы (предикаты). Кванторы существования и всеобщности. Логические операции. Таблицы истинности. Логические выражения. Логические тождества. Логические операции и операции над множествами. Законы алгебры логики. Эквивалентные преобразования логических выражений. Логические уравнения и системы уравнений. Логические функции. Зависимость количества возможных логических функций от количества аргументов. Канонические формы логических выражений — ЕГЭ по информатике — ответы и решения",
+      "total": 264,
+      "solved": 264,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.7&page=2",
+      "title": "Алгебра логики. Понятие высказывания. Высказывательные формы (предикаты). Кванторы существования и всеобщности. Логические операции. Таблицы истинности. Логические выражения. Логические тождества. Логические операции и операции над множествами. Законы алгебры логики. Эквивалентные преобразования логических выражений. Логические уравнения и системы уравнений. Логические функции. Зависимость количества возможных логических функций от количества аргументов. Канонические формы логических выражений — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 264,
+      "solved": 264,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.7&page=22",
+      "title": "Алгебра логики. Понятие высказывания. Высказывательные формы (предикаты). Кванторы существования и всеобщности. Логические операции. Таблицы истинности. Логические выражения. Логические тождества. Логические операции и операции над множествами. Законы алгебры логики. Эквивалентные преобразования логических выражений. Логические уравнения и системы уравнений. Логические функции. Зависимость количества возможных логических функций от количества аргументов. Канонические формы логических выражений — ЕГЭ по информатике — ответы и решения — страница 22",
+      "total": 264,
+      "solved": 264,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.8",
+      "title": "Совершенные дизъюнктивные конъюнктивные нормальные формы, алгоритмы их построения по таблице истинности — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.9",
+      "title": "Логические элементы в составе компьютера. Триггер. Сумматор. Многоразрядный сумматор. Построение схем на логических элементах по заданному логическому выражению. Запись логического выражения по логической схеме — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.10",
+      "title": "Модели и моделирование. Цели моделирования. Адекватность модели моделируемому объекту или процессу. Формализация прикладных задач. Представление результатов моделирования в виде, удобном для восприятия человеком. Графическое представление данных (схемы, таблицы, графики). — ЕГЭ по информатике — ответы и решения",
+      "total": 175,
+      "solved": 175,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.10&page=2",
+      "title": "Модели и моделирование. Цели моделирования. Адекватность модели моделируемому объекту или процессу. Формализация прикладных задач. Представление результатов моделирования в виде, удобном для восприятия человеком. Графическое представление данных (схемы, таблицы, графики). — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 175,
+      "solved": 175,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.10&page=15",
+      "title": "Модели и моделирование. Цели моделирования. Адекватность модели моделируемому объекту или процессу. Формализация прикладных задач. Представление результатов моделирования в виде, удобном для восприятия человеком. Графическое представление данных (схемы, таблицы, графики). — ЕГЭ по информатике — ответы и решения — страница 15",
+      "total": 175,
+      "solved": 175,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.11",
+      "title": "Представление целых чисел в памяти компьютера. Ограниченность диапазона чисел при ограничении количества разрядов. Переполнение разрядной сетки. Беззнаковые и знаковые данные. Знаковый бит. Двоичный дополнительный код отрицательных чисел.Побитовые логические операции. Логический, арифметический и циклический сдвиги. Шифрование с помощью побитовой операции «исключающее ИЛИ» — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.12",
+      "title": "Представление вещественных чисел в памяти компьютера. Значащая часть и порядок числа. Диапазон значений вещественных чисел. Проблемы хранения вещественных чисел, связанные с ограничением количества разрядов. Выполнение операций с вещественными числами, накопление ошибок при вычислениях — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.13",
+      "title": "Графы. Основные понятия. Виды графов. Описание графов с помощью матриц смежности, весовых матриц, списков смежности. Решение алгоритмических задач, связанных с анализом графов (построение оптимального пути между вершинами графа, определение количества различных путей между вершинами ориентированного ациклического графа) — ЕГЭ по информатике — ответы и решения",
+      "total": 213,
+      "solved": 213,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.13&page=2",
+      "title": "Графы. Основные понятия. Виды графов. Описание графов с помощью матриц смежности, весовых матриц, списков смежности. Решение алгоритмических задач, связанных с анализом графов (построение оптимального пути между вершинами графа, определение количества различных путей между вершинами ориентированного ациклического графа) — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 213,
+      "solved": 213,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.13&page=18",
+      "title": "Графы. Основные понятия. Виды графов. Описание графов с помощью матриц смежности, весовых матриц, списков смежности. Решение алгоритмических задач, связанных с анализом графов (построение оптимального пути между вершинами графа, определение количества различных путей между вершинами ориентированного ациклического графа) — ЕГЭ по информатике — ответы и решения — страница 18",
+      "total": 213,
+      "solved": 213,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.14",
+      "title": "Деревья. Бинарное дерево. Деревья поиска. Способы обхода дерева. Представление арифметических выражений в виде дерева. Использование графов и деревьев при описании объектов и процессов окружающего мира — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.15",
+      "title": "Дискретные игры двух игроков с полной информацией. Построение дерева перебора вариантов, описание стратегии игры в табличной форме. Выигрышные и проигрышные позиции. Выигрышные стратегии — ЕГЭ по информатике — ответы и решения",
+      "total": 167,
+      "solved": 167,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.15&page=2",
+      "title": "Дискретные игры двух игроков с полной информацией. Построение дерева перебора вариантов, описание стратегии игры в табличной форме. Выигрышные и проигрышные позиции. Выигрышные стратегии — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 167,
+      "solved": 167,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.15&page=14",
+      "title": "Дискретные игры двух игроков с полной информацией. Построение дерева перебора вариантов, описание стратегии игры в табличной форме. Выигрышные и проигрышные позиции. Выигрышные стратегии — ЕГЭ по информатике — ответы и решения — страница 14",
+      "total": 167,
+      "solved": 167,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=2.16",
+      "title": "Средства искусственного интеллекта. Идентификация и поиск изображений, распознавание лиц. Использование методов искусственного интеллекта в обучающих системах. Использование методов искусственного интеллекта в робототехнике. Интернет вещей. Нейронные сети — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3",
+      "title": "Алгоритмы и программирование — ЕГЭ по информатике — ответы и решения",
+      "total": 943,
+      "solved": 941,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3&page=2",
+      "title": "Алгоритмы и программирование — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 943,
+      "solved": 941,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3&page=79",
+      "title": "Алгоритмы и программирование — ЕГЭ по информатике — ответы и решения — страница 79",
+      "total": 943,
+      "solved": 941,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.1",
+      "title": "Формализация понятия алгоритма. Машина Тьюринга как универсальная модель вычислений — ЕГЭ по информатике — ответы и решения",
+      "total": 6,
+      "solved": 6,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.2",
+      "title": "Оценка сложности вычислений. Время работы и объём используемой памяти, их зависимость от размера исходных данных. Оценка асимптотической сложности алгоритмов. Алгоритмы полиномиальной сложности. Переборные алгоритмы. Примеры различных алгоритмов решения одной задачи, которые имеют различную сложность — ЕГЭ по информатике — ответы и решения",
+      "total": 32,
+      "solved": 32,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.2&page=2",
+      "title": "Оценка сложности вычислений. Время работы и объём используемой памяти, их зависимость от размера исходных данных. Оценка асимптотической сложности алгоритмов. Алгоритмы полиномиальной сложности. Переборные алгоритмы. Примеры различных алгоритмов решения одной задачи, которые имеют различную сложность — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 32,
+      "solved": 32,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.2&page=3",
+      "title": "Оценка сложности вычислений. Время работы и объём используемой памяти, их зависимость от размера исходных данных. Оценка асимптотической сложности алгоритмов. Алгоритмы полиномиальной сложности. Переборные алгоритмы. Примеры различных алгоритмов решения одной задачи, которые имеют различную сложность — ЕГЭ по информатике — ответы и решения — страница 3",
+      "total": 32,
+      "solved": 32,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.3",
+      "title": "Определение возможных результатов работы простейших алгоритмов управления исполнителями и вычислительных алгоритмов. Определение исходных данных, при которых алгоритм может дать требуемый результат — ЕГЭ по информатике — ответы и решения",
+      "total": 414,
+      "solved": 414,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.3&page=2",
+      "title": "Определение возможных результатов работы простейших алгоритмов управления исполнителями и вычислительных алгоритмов. Определение исходных данных, при которых алгоритм может дать требуемый результат — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 414,
+      "solved": 414,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.3&page=35",
+      "title": "Определение возможных результатов работы простейших алгоритмов управления исполнителями и вычислительных алгоритмов. Определение исходных данных, при которых алгоритм может дать требуемый результат — ЕГЭ по информатике — ответы и решения — страница 35",
+      "total": 414,
+      "solved": 414,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.4",
+      "title": "Алгоритмы обработки натуральных чисел, записанных в позиционных системах счисления: разбиение записи числа на отдельные цифры, нахождение суммы и произведения цифр, нахождение максимальной (минимальной) цифры. Представление числа в виде набора простых сомножителей. Алгоритм быстрого возведения в степень. Поиск простых чисел в заданном диапазоне с помощью алгоритма «решето Эратосфена» — ЕГЭ по информатике — ответы и решения",
+      "total": 43,
+      "solved": 43,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.4&page=2",
+      "title": "Алгоритмы обработки натуральных чисел, записанных в позиционных системах счисления: разбиение записи числа на отдельные цифры, нахождение суммы и произведения цифр, нахождение максимальной (минимальной) цифры. Представление числа в виде набора простых сомножителей. Алгоритм быстрого возведения в степень. Поиск простых чисел в заданном диапазоне с помощью алгоритма «решето Эратосфена» — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 43,
+      "solved": 43,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.4&page=4",
+      "title": "Алгоритмы обработки натуральных чисел, записанных в позиционных системах счисления: разбиение записи числа на отдельные цифры, нахождение суммы и произведения цифр, нахождение максимальной (минимальной) цифры. Представление числа в виде набора простых сомножителей. Алгоритм быстрого возведения в степень. Поиск простых чисел в заданном диапазоне с помощью алгоритма «решето Эратосфена» — ЕГЭ по информатике — ответы и решения — страница 4",
+      "total": 43,
+      "solved": 43,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.5",
+      "title": "Многоразрядные целые числа, задачи длинной арифметики — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.6",
+      "title": "Язык программирования (Паскаль, Python, Java, C++, C#). Типы данных: целочисленные, вещественные, символьные, логические. Ветвления. Сложные условия. Циклы с условием. Циклы по переменной. Обработка данных, хранящихся в файлах. Текстовые и двоичные файлы. Файловые переменные (файловые указатели). Чтение из файла. Запись в файл. Разбиение задачи на подзадачи. Подпрограммы (процедуры и функции). Использование стандартной библиотеки языка программирования — ЕГЭ по информатике — ответы и решения",
+      "total": 113,
+      "solved": 113,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.6&page=2",
+      "title": "Язык программирования (Паскаль, Python, Java, C++, C#). Типы данных: целочисленные, вещественные, символьные, логические. Ветвления. Сложные условия. Циклы с условием. Циклы по переменной. Обработка данных, хранящихся в файлах. Текстовые и двоичные файлы. Файловые переменные (файловые указатели). Чтение из файла. Запись в файл. Разбиение задачи на подзадачи. Подпрограммы (процедуры и функции). Использование стандартной библиотеки языка программирования — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 113,
+      "solved": 113,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.6&page=10",
+      "title": "Язык программирования (Паскаль, Python, Java, C++, C#). Типы данных: целочисленные, вещественные, символьные, логические. Ветвления. Сложные условия. Циклы с условием. Циклы по переменной. Обработка данных, хранящихся в файлах. Текстовые и двоичные файлы. Файловые переменные (файловые указатели). Чтение из файла. Запись в файл. Разбиение задачи на подзадачи. Подпрограммы (процедуры и функции). Использование стандартной библиотеки языка программирования — ЕГЭ по информатике — ответы и решения — страница 10",
+      "total": 113,
+      "solved": 113,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.7",
+      "title": "Рекурсия. Рекурсивные процедуры и функции. Использование стека для организации рекурсивных вызовов — ЕГЭ по информатике — ответы и решения",
+      "total": 74,
+      "solved": 74,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.7&page=2",
+      "title": "Рекурсия. Рекурсивные процедуры и функции. Использование стека для организации рекурсивных вызовов — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 74,
+      "solved": 74,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.7&page=7",
+      "title": "Рекурсия. Рекурсивные процедуры и функции. Использование стека для организации рекурсивных вызовов — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 74,
+      "solved": 74,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.8",
+      "title": "Численные методы. Точное и приближённое решения задачи. Численное решение уравнений с помощью подбора параметра. Численные методы решения уравнений: метод перебора, метод половинного деления. Приближённое вычисление длин кривых. Вычисление площадей фигур с помощью численных методов (метод прямоугольников, метод трапеций). Поиск максимума (минимума) функции одной переменной методом половинного деления — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.9",
+      "title": "Обработка символьных данных. Встроенные функции языка программирования для обработки символьных строк. Алгоритмы обработки символьных строк: подсчёт количества появлений символа в строке, разбиение строки на слова по пробельным символам, поиск подстроки внутри данной строки, замена найденной подстроки на другую строку. Генерация всех слов в некотором алфавите, удовлетворяющих заданным ограничениям. Преобразование числа в символьную строку и обратно — ЕГЭ по информатике — ответы и решения",
+      "total": 118,
+      "solved": 118,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.9&page=2",
+      "title": "Обработка символьных данных. Встроенные функции языка программирования для обработки символьных строк. Алгоритмы обработки символьных строк: подсчёт количества появлений символа в строке, разбиение строки на слова по пробельным символам, поиск подстроки внутри данной строки, замена найденной подстроки на другую строку. Генерация всех слов в некотором алфавите, удовлетворяющих заданным ограничениям. Преобразование числа в символьную строку и обратно — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 118,
+      "solved": 118,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.9&page=10",
+      "title": "Обработка символьных данных. Встроенные функции языка программирования для обработки символьных строк. Алгоритмы обработки символьных строк: подсчёт количества появлений символа в строке, разбиение строки на слова по пробельным символам, поиск подстроки внутри данной строки, замена найденной подстроки на другую строку. Генерация всех слов в некотором алфавите, удовлетворяющих заданным ограничениям. Преобразование числа в символьную строку и обратно — ЕГЭ по информатике — ответы и решения — страница 10",
+      "total": 118,
+      "solved": 118,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.10",
+      "title": "Массивы и последовательности чисел. Вычисление обобщённых характеристик элементов массива или числовой последовательности (суммы, произведения, среднего арифметического, минимального и максимального элементов, количества элементов, удовлетворяющих заданному условию). Линейный поиск заданного значения в массиве. Алгоритмы работы с элементами массива с однократным просмотром массива. Сортировка одномерного массива. Простые методы сортировки (метод пузырька, метод выбора, сортировка вставками). Сортировка слиянием. Быстрая сортировка массива (алгоритм QuickSort). Двоичный поиск в отсортированном массиве — ЕГЭ по информатике — ответы и решения",
+      "total": 250,
+      "solved": 248,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.10&page=2",
+      "title": "Массивы и последовательности чисел. Вычисление обобщённых характеристик элементов массива или числовой последовательности (суммы, произведения, среднего арифметического, минимального и максимального элементов, количества элементов, удовлетворяющих заданному условию). Линейный поиск заданного значения в массиве. Алгоритмы работы с элементами массива с однократным просмотром массива. Сортировка одномерного массива. Простые методы сортировки (метод пузырька, метод выбора, сортировка вставками). Сортировка слиянием. Быстрая сортировка массива (алгоритм QuickSort). Двоичный поиск в отсортированном массиве — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 250,
+      "solved": 248,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.10&page=21",
+      "title": "Массивы и последовательности чисел. Вычисление обобщённых характеристик элементов массива или числовой последовательности (суммы, произведения, среднего арифметического, минимального и максимального элементов, количества элементов, удовлетворяющих заданному условию). Линейный поиск заданного значения в массиве. Алгоритмы работы с элементами массива с однократным просмотром массива. Сортировка одномерного массива. Простые методы сортировки (метод пузырька, метод выбора, сортировка вставками). Сортировка слиянием. Быстрая сортировка массива (алгоритм QuickSort). Двоичный поиск в отсортированном массиве — ЕГЭ по информатике — ответы и решения — страница 21",
+      "total": 250,
+      "solved": 248,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.11",
+      "title": "Двумерные массивы (матрицы). Алгоритмы обработки двумерных массивов: заполнение двумерного числового массива по заданным правилам, поиск элемента в двумерном массиве, вычисление максимума (минимума) и суммы элементов двумерного массива, перестановка строк и столбцов двумерного массива — ЕГЭ по информатике — ответы и решения",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.11&page=2",
+      "title": "Двумерные массивы (матрицы). Алгоритмы обработки двумерных массивов: заполнение двумерного числового массива по заданным правилам, поиск элемента в двумерном массиве, вычисление максимума (минимума) и суммы элементов двумерного массива, перестановка строк и столбцов двумерного массива — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.11&page=6",
+      "title": "Двумерные массивы (матрицы). Алгоритмы обработки двумерных массивов: заполнение двумерного числового массива по заданным правилам, поиск элемента в двумерном массиве, вычисление максимума (минимума) и суммы элементов двумерного массива, перестановка строк и столбцов двумерного массива — ЕГЭ по информатике — ответы и решения — страница 6",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.12",
+      "title": "Словари (ассоциативные массивы, отображения). Хэш-таблицы. Построение алфавитно-частотного словаря для заданного текста — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.13",
+      "title": "Стеки. Анализ правильности скобочного выражения. Вычисление арифметического выражения, записанного в постфиксной форме. Очереди. Использование очереди для временного хранения данных — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.14",
+      "title": "Алгоритмы на графах. Построение минимального остовного дерева взвешенного связного неориентированного графа. Количество различных путей между вершинами ориентированного ациклического графа. Алгоритм Дейкстры — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.15",
+      "title": "Деревья. Реализация дерева с помощью ссылочных структур. Двоичные (бинарные) деревья. Построение дерева для заданного арифметического выражения. Рекурсивные алгоритмы обхода дерева. Использование стека и очереди для обхода дерева — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.16",
+      "title": "Динамическое программирование как метод решения задач с сохранением промежуточных результатов. Задачи, решаемые с помощью динамического программирования: вычисление рекурсивных функций, подсчёт количества вариантов, задачи оптимизации — ЕГЭ по информатике — ответы и решения",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.16&page=2",
+      "title": "Динамическое программирование как метод решения задач с сохранением промежуточных результатов. Задачи, решаемые с помощью динамического программирования: вычисление рекурсивных функций, подсчёт количества вариантов, задачи оптимизации — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.16&page=6",
+      "title": "Динамическое программирование как метод решения задач с сохранением промежуточных результатов. Задачи, решаемые с помощью динамического программирования: вычисление рекурсивных функций, подсчёт количества вариантов, задачи оптимизации — ЕГЭ по информатике — ответы и решения — страница 6",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=3.17",
+      "title": "Понятие об объектно-ориентированном программировании. Объекты и классы. Свойства и методы объектов. Объектно-ориентированный анализ. Разработка программ на основе объектно-ориентированного подхода. Инкапсуляция, наследование, полиморфизм — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4",
+      "title": "Информационные технологии — ЕГЭ по информатике — ответы и решения",
+      "total": 325,
+      "solved": 325,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4&page=2",
+      "title": "Информационные технологии — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 325,
+      "solved": 325,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4&page=28",
+      "title": "Информационные технологии — ЕГЭ по информатике — ответы и решения — страница 28",
+      "total": 325,
+      "solved": 325,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.1",
+      "title": "Анализ данных. Основные задачи анализа данных: прогнозирование, классификация, кластеризация, анализ отклонений. Последовательность решения задач анализа данных: сбор первичных данных, очистка и оценка качества данных, выбор и/или построение модели, преобразование данных, визуализация данных, интерпретация результатов. Программные средства и интернет-сервисы для обработки и представления данных. Большие данные. Машинное обучение — ЕГЭ по информатике — ответы и решения",
+      "total": 13,
+      "solved": 13,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.1&page=2",
+      "title": "Анализ данных. Основные задачи анализа данных: прогнозирование, классификация, кластеризация, анализ отклонений. Последовательность решения задач анализа данных: сбор первичных данных, очистка и оценка качества данных, выбор и/или построение модели, преобразование данных, визуализация данных, интерпретация результатов. Программные средства и интернет-сервисы для обработки и представления данных. Большие данные. Машинное обучение — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 13,
+      "solved": 13,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.2",
+      "title": "Анализ данных с помощью электронных таблиц. Вычисление суммы, среднего арифметического, наибольшего (наименьшего) значения диапазона. Вычисление коэффициента корреляции двух рядов данных. Построение столбчатых, линейчатых и круговых диаграмм. Построение графиков функций. Подбор линии тренда, решение задач прогнозирования. Решение задач оптимизации с помощью электронных таблиц — ЕГЭ по информатике — ответы и решения",
+      "total": 161,
+      "solved": 161,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.2&page=2",
+      "title": "Анализ данных с помощью электронных таблиц. Вычисление суммы, среднего арифметического, наибольшего (наименьшего) значения диапазона. Вычисление коэффициента корреляции двух рядов данных. Построение столбчатых, линейчатых и круговых диаграмм. Построение графиков функций. Подбор линии тренда, решение задач прогнозирования. Решение задач оптимизации с помощью электронных таблиц — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 161,
+      "solved": 161,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.2&page=14",
+      "title": "Анализ данных с помощью электронных таблиц. Вычисление суммы, среднего арифметического, наибольшего (наименьшего) значения диапазона. Вычисление коэффициента корреляции двух рядов данных. Построение столбчатых, линейчатых и круговых диаграмм. Построение графиков функций. Подбор линии тренда, решение задач прогнозирования. Решение задач оптимизации с помощью электронных таблиц — ЕГЭ по информатике — ответы и решения — страница 14",
+      "total": 161,
+      "solved": 161,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.3",
+      "title": "Дискретизация при математическом моделировании непрерывных процессов. Моделирование движения. Моделирование биологических систем. Математические модели в экономике. Вычислительные эксперименты с моделями. Обработка результатов эксперимента. Метод наименьших квадратов. Оценка числовых параметров моделируемых объектов и процессов. Восстановление зависимостей по результатам эксперимента — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.4",
+      "title": "Вероятностные модели. Методы Монте-Карло. Имитационное моделирование. Системы массового обслуживания — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.5",
+      "title": "Табличные (реляционные) базы данных. Таблица – представление сведений об однотипных объектах. Поле, запись. Ключ таблицы. Работа с готовой базой данных. Заполнение базы данных. Поиск, сортировка и фильтрация данных. Запросы на выборку данных. Запросы с параметрами. Вычисляемые поля в запросах. Многотабличные базы данных. Типы связей между таблицами. Внешний ключ. Целостность базы данных. Запросы к многотабличным базам данных — ЕГЭ по информатике — ответы и решения",
+      "total": 84,
+      "solved": 84,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.5&page=2",
+      "title": "Табличные (реляционные) базы данных. Таблица – представление сведений об однотипных объектах. Поле, запись. Ключ таблицы. Работа с готовой базой данных. Заполнение базы данных. Поиск, сортировка и фильтрация данных. Запросы на выборку данных. Запросы с параметрами. Вычисляемые поля в запросах. Многотабличные базы данных. Типы связей между таблицами. Внешний ключ. Целостность базы данных. Запросы к многотабличным базам данных — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 84,
+      "solved": 84,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.5&page=7",
+      "title": "Табличные (реляционные) базы данных. Таблица – представление сведений об однотипных объектах. Поле, запись. Ключ таблицы. Работа с готовой базой данных. Заполнение базы данных. Поиск, сортировка и фильтрация данных. Запросы на выборку данных. Запросы с параметрами. Вычисляемые поля в запросах. Многотабличные базы данных. Типы связей между таблицами. Внешний ключ. Целостность базы данных. Запросы к многотабличным базам данных — ЕГЭ по информатике — ответы и решения — страница 7",
+      "total": 84,
+      "solved": 84,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.6",
+      "title": "Текстовый процессор. Средства поиска и автозамены в текстовом процессоре. Структурированные текстовые документы. Сноски, оглавление. Правила цитирования источников и оформления библиографических ссылок — ЕГЭ по информатике — ответы и решения",
+      "total": 67,
+      "solved": 67,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.6&page=2",
+      "title": "Текстовый процессор. Средства поиска и автозамены в текстовом процессоре. Структурированные текстовые документы. Сноски, оглавление. Правила цитирования источников и оформления библиографических ссылок — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 67,
+      "solved": 67,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=4.6&page=6",
+      "title": "Текстовый процессор. Средства поиска и автозамены в текстовом процессоре. Структурированные текстовые документы. Сноски, оглавление. Правила цитирования источников и оформления библиографических ссылок — ЕГЭ по информатике — ответы и решения — страница 6",
+      "total": 67,
+      "solved": 67,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=unclassified",
+      "title": "Без указанной темы КЭС — ЕГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=all&q=48F84F",
+      "title": "Все задания — ЕГЭ по информатике — поиск: 48F84F",
+      "total": 1,
+      "solved": 1,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics",
+      "title": "ОГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+      "total": 1585,
+      "solved": 1585,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=all",
+      "title": "Все задания — ОГЭ по информатике — ответы и решения",
+      "total": 1585,
+      "solved": 1585,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=2",
+      "title": "Все задания — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 1585,
+      "solved": 1585,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=133",
+      "title": "Все задания — ОГЭ по информатике — ответы и решения — страница 133",
+      "total": 1585,
+      "solved": 1585,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=practical",
+      "title": "Задания с общим условием — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.1",
+      "title": "Объём текста и кодировки — ОГЭ по информатике — ответы и решения",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.1&page=2",
+      "title": "Объём текста и кодировки — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.1&page=7",
+      "title": "Объём текста и кодировки — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.2",
+      "title": "Кодирование и декодирование — ОГЭ по информатике — ответы и решения",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.2&page=2",
+      "title": "Кодирование и декодирование — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.2&page=7",
+      "title": "Кодирование и декодирование — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.3",
+      "title": "Логические выражения — ОГЭ по информатике — ответы и решения",
+      "total": 85,
+      "solved": 85,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.3&page=2",
+      "title": "Логические выражения — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 85,
+      "solved": 85,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.3&page=8",
+      "title": "Логические выражения — ОГЭ по информатике — ответы и решения — страница 8",
+      "total": 85,
+      "solved": 85,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.4",
+      "title": "Кратчайший путь по таблице дорог — ОГЭ по информатике — ответы и решения",
+      "total": 91,
+      "solved": 91,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.4&page=2",
+      "title": "Кратчайший путь по таблице дорог — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 91,
+      "solved": 91,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.4&page=8",
+      "title": "Кратчайший путь по таблице дорог — ОГЭ по информатике — ответы и решения — страница 8",
+      "total": 91,
+      "solved": 91,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.5",
+      "title": "Команды числового исполнителя — ОГЭ по информатике — ответы и решения",
+      "total": 103,
+      "solved": 103,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.5&page=2",
+      "title": "Команды числового исполнителя — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 103,
+      "solved": 103,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.5&page=9",
+      "title": "Команды числового исполнителя — ОГЭ по информатике — ответы и решения — страница 9",
+      "total": 103,
+      "solved": 103,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.6",
+      "title": "Анализ программы с ветвлением — ОГЭ по информатике — ответы и решения",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.6&page=2",
+      "title": "Анализ программы с ветвлением — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.6&page=7",
+      "title": "Анализ программы с ветвлением — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.7",
+      "title": "Адреса файлов в Интернете — ОГЭ по информатике — ответы и решения",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.7&page=2",
+      "title": "Адреса файлов в Интернете — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.7&page=7",
+      "title": "Адреса файлов в Интернете — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.8",
+      "title": "Поисковые запросы и множества — ОГЭ по информатике — ответы и решения",
+      "total": 80,
+      "solved": 80,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.8&page=2",
+      "title": "Поисковые запросы и множества — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 80,
+      "solved": 80,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.8&page=7",
+      "title": "Поисковые запросы и множества — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 80,
+      "solved": 80,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.9",
+      "title": "Количество путей в графе — ОГЭ по информатике — ответы и решения",
+      "total": 85,
+      "solved": 85,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.9&page=2",
+      "title": "Количество путей в графе — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 85,
+      "solved": 85,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.9&page=8",
+      "title": "Количество путей в графе — ОГЭ по информатике — ответы и решения — страница 8",
+      "total": 85,
+      "solved": 85,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.10",
+      "title": "Системы счисления — ОГЭ по информатике — ответы и решения",
+      "total": 150,
+      "solved": 150,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.10&page=2",
+      "title": "Системы счисления — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 150,
+      "solved": 150,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.10&page=13",
+      "title": "Системы счисления — ОГЭ по информатике — ответы и решения — страница 13",
+      "total": 150,
+      "solved": 150,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.11",
+      "title": "Поиск в текстах и документах — ОГЭ по информатике — ответы и решения",
+      "total": 66,
+      "solved": 66,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.11&page=2",
+      "title": "Поиск в текстах и документах — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 66,
+      "solved": 66,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.11&page=6",
+      "title": "Поиск в текстах и документах — ОГЭ по информатике — ответы и решения — страница 6",
+      "total": 66,
+      "solved": 66,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.12",
+      "title": "Поиск и подсчёт файлов — ОГЭ по информатике — ответы и решения",
+      "total": 160,
+      "solved": 160,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.12&page=2",
+      "title": "Поиск и подсчёт файлов — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 160,
+      "solved": 160,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.12&page=14",
+      "title": "Поиск и подсчёт файлов — ОГЭ по информатике — ответы и решения — страница 14",
+      "total": 160,
+      "solved": 160,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.13",
+      "title": "Презентации и текстовые документы — ОГЭ по информатике — ответы и решения",
+      "total": 120,
+      "solved": 120,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.13&page=2",
+      "title": "Презентации и текстовые документы — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 120,
+      "solved": 120,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.13&page=10",
+      "title": "Презентации и текстовые документы — ОГЭ по информатике — ответы и решения — страница 10",
+      "total": 120,
+      "solved": 120,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.14",
+      "title": "Обработка данных в таблицах — ОГЭ по информатике — ответы и решения",
+      "total": 86,
+      "solved": 86,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.14&page=2",
+      "title": "Обработка данных в таблицах — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 86,
+      "solved": 86,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.14&page=8",
+      "title": "Обработка данных в таблицах — ОГЭ по информатике — ответы и решения — страница 8",
+      "total": 86,
+      "solved": 86,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.15",
+      "title": "Алгоритмы для Робота — ОГЭ по информатике — ответы и решения",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.15&page=2",
+      "title": "Алгоритмы для Робота — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.15&page=7",
+      "title": "Алгоритмы для Робота — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.16",
+      "title": "Написание программы — ОГЭ по информатике — ответы и решения",
+      "total": 170,
+      "solved": 170,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.16&page=2",
+      "title": "Написание программы — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 170,
+      "solved": 170,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.16&page=15",
+      "title": "Написание программы — ОГЭ по информатике — ответы и решения — страница 15",
+      "total": 170,
+      "solved": 170,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=1",
+      "title": "Цифровая грамотность — ОГЭ по информатике — ответы и решения",
+      "total": 385,
+      "solved": 385,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=1&page=2",
+      "title": "Цифровая грамотность — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 385,
+      "solved": 385,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=1&page=33",
+      "title": "Цифровая грамотность — ОГЭ по информатике — ответы и решения — страница 33",
+      "total": 385,
+      "solved": 385,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=1.1",
+      "title": "Файлы и папки (каталоги). Принципы построения файловых систем. Полное имя файла (папки). Путь к файлу (папке). Работа с файлами и каталогами средствами операционной системы: создание, копирование, перемещение, переименование и удаление файлов и папок (каталогов). Типы файлов. Свойства файлов. Файловый менеджер. Поиск файлов средствами операционной системы — ОГЭ по информатике — ответы и решения",
+      "total": 226,
+      "solved": 226,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=1.1&page=2",
+      "title": "Файлы и папки (каталоги). Принципы построения файловых систем. Полное имя файла (папки). Путь к файлу (папке). Работа с файлами и каталогами средствами операционной системы: создание, копирование, перемещение, переименование и удаление файлов и папок (каталогов). Типы файлов. Свойства файлов. Файловый менеджер. Поиск файлов средствами операционной системы — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 226,
+      "solved": 226,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=1.1&page=19",
+      "title": "Файлы и папки (каталоги). Принципы построения файловых систем. Полное имя файла (папки). Путь к файлу (папке). Работа с файлами и каталогами средствами операционной системы: создание, копирование, перемещение, переименование и удаление файлов и папок (каталогов). Типы файлов. Свойства файлов. Файловый менеджер. Поиск файлов средствами операционной системы — ОГЭ по информатике — ответы и решения — страница 19",
+      "total": 226,
+      "solved": 226,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=1.2",
+      "title": "Объединение компьютеров в сеть. Сеть Интернет. Веб-страница, веб-сайт. Структура адресов веб-ресурсов. Браузер. Поисковые системы. Поиск информации по ключевым словам и по изображению. Достоверность информации, полученной из Интернета. IP-адреса узлов. Сетевое хранение данных — ОГЭ по информатике — ответы и решения",
+      "total": 159,
+      "solved": 159,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=1.2&page=2",
+      "title": "Объединение компьютеров в сеть. Сеть Интернет. Веб-страница, веб-сайт. Структура адресов веб-ресурсов. Браузер. Поисковые системы. Поиск информации по ключевым словам и по изображению. Достоверность информации, полученной из Интернета. IP-адреса узлов. Сетевое хранение данных — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 159,
+      "solved": 159,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=1.2&page=14",
+      "title": "Объединение компьютеров в сеть. Сеть Интернет. Веб-страница, веб-сайт. Структура адресов веб-ресурсов. Браузер. Поисковые системы. Поиск информации по ключевым словам и по изображению. Достоверность информации, полученной из Интернета. IP-адреса узлов. Сетевое хранение данных — ОГЭ по информатике — ответы и решения — страница 14",
+      "total": 159,
+      "solved": 159,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2",
+      "title": "Теоретические основы информатики — ОГЭ по информатике — ответы и решения",
+      "total": 567,
+      "solved": 567,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2&page=2",
+      "title": "Теоретические основы информатики — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 567,
+      "solved": 567,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2&page=48",
+      "title": "Теоретические основы информатики — ОГЭ по информатике — ответы и решения — страница 48",
+      "total": 567,
+      "solved": 567,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.1",
+      "title": "Дискретность данных. Возможность описания непрерывных объектов и процессов с помощью дискретных данных. Символ. Алфавит. Мощность алфавита. Двоичный алфавит. Количество всевозможных слов (кодовых комбинаций) фиксированной длины в двоичном алфавите. Преобразование любого алфавита к двоичному. Количество различных слов фиксированной длины в алфавите определённой мощности. Кодирование символов одного алфавита с помощью кодовых слов в другом алфавите, кодовая таблица, декодирование. Кодирование текстов. Равномерный код. Неравномерный код. Кодировка ASCII. Восьмибитные кодировки. Понятие о кодировках UNICODE. Декодирование сообщений с использованием равномерного и неравномерного кода. Информационный объём текста — ОГЭ по информатике — ответы и решения",
+      "total": 156,
+      "solved": 156,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.1&page=2",
+      "title": "Дискретность данных. Возможность описания непрерывных объектов и процессов с помощью дискретных данных. Символ. Алфавит. Мощность алфавита. Двоичный алфавит. Количество всевозможных слов (кодовых комбинаций) фиксированной длины в двоичном алфавите. Преобразование любого алфавита к двоичному. Количество различных слов фиксированной длины в алфавите определённой мощности. Кодирование символов одного алфавита с помощью кодовых слов в другом алфавите, кодовая таблица, декодирование. Кодирование текстов. Равномерный код. Неравномерный код. Кодировка ASCII. Восьмибитные кодировки. Понятие о кодировках UNICODE. Декодирование сообщений с использованием равномерного и неравномерного кода. Информационный объём текста — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 156,
+      "solved": 156,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.1&page=13",
+      "title": "Дискретность данных. Возможность описания непрерывных объектов и процессов с помощью дискретных данных. Символ. Алфавит. Мощность алфавита. Двоичный алфавит. Количество всевозможных слов (кодовых комбинаций) фиксированной длины в двоичном алфавите. Преобразование любого алфавита к двоичному. Количество различных слов фиксированной длины в алфавите определённой мощности. Кодирование символов одного алфавита с помощью кодовых слов в другом алфавите, кодовая таблица, декодирование. Кодирование текстов. Равномерный код. Неравномерный код. Кодировка ASCII. Восьмибитные кодировки. Понятие о кодировках UNICODE. Декодирование сообщений с использованием равномерного и неравномерного кода. Информационный объём текста — ОГЭ по информатике — ответы и решения — страница 13",
+      "total": 156,
+      "solved": 156,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.2",
+      "title": "Информационный объём данных. Бит – минимальная единица количества информации – двоичный разряд. Единицы измерения информационного объёма данных. Бит, байт, килобайт, мегабайт, гигабайт. Скорость передачи данных. Единицы скорости передачи данных — ОГЭ по информатике — ответы и решения",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.2&page=2",
+      "title": "Информационный объём данных. Бит – минимальная единица количества информации – двоичный разряд. Единицы измерения информационного объёма данных. Бит, байт, килобайт, мегабайт, гигабайт. Скорость передачи данных. Единицы скорости передачи данных — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.2&page=7",
+      "title": "Информационный объём данных. Бит – минимальная единица количества информации – двоичный разряд. Единицы измерения информационного объёма данных. Бит, байт, килобайт, мегабайт, гигабайт. Скорость передачи данных. Единицы скорости передачи данных — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.3",
+      "title": "Кодирование цвета. Цветовые модели. Модель RGB. Глубина кодирования. Палитра. Растровое и векторное представление изображений. Пиксель. Оценка информационного объёма графических данных для растрового изображения — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.4",
+      "title": "Кодирование звука. Разрядность и частота записи. Количество каналов записи. Оценка количественных параметров, связанных с представлением и хранением звуковых файлов — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.5",
+      "title": "Непозиционные и позиционные системы счисления. Алфавит. Основание. Развёрнутая форма записи числа. Перевод в десятичную систему чисел, записанных в других системах счисления. Римская система счисления — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.6",
+      "title": "Двоичная система счисления. Перевод целых чисел в пределах от 0 до 1024 в двоичную систему счисления. Восьмеричная система счисления. Перевод чисел из восьмеричной системы в двоичную и десятичную системы и обратно. Шестнадцатеричная система счисления. Перевод чисел из шестнадцатеричной системы в двоичную, восьмеричную и десятичную системы и обратно. Арифметические операции в двоичной системе счисления — ОГЭ по информатике — ответы и решения",
+      "total": 150,
+      "solved": 150,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.6&page=2",
+      "title": "Двоичная система счисления. Перевод целых чисел в пределах от 0 до 1024 в двоичную систему счисления. Восьмеричная система счисления. Перевод чисел из восьмеричной системы в двоичную и десятичную системы и обратно. Шестнадцатеричная система счисления. Перевод чисел из шестнадцатеричной системы в двоичную, восьмеричную и десятичную системы и обратно. Арифметические операции в двоичной системе счисления — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 150,
+      "solved": 150,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.6&page=13",
+      "title": "Двоичная система счисления. Перевод целых чисел в пределах от 0 до 1024 в двоичную систему счисления. Восьмеричная система счисления. Перевод чисел из восьмеричной системы в двоичную и десятичную системы и обратно. Шестнадцатеричная система счисления. Перевод чисел из шестнадцатеричной системы в двоичную, восьмеричную и десятичную системы и обратно. Арифметические операции в двоичной системе счисления — ОГЭ по информатике — ответы и решения — страница 13",
+      "total": 150,
+      "solved": 150,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.7",
+      "title": "Логические высказывания. Логические значения высказываний. Элементарные и составные высказывания. Логические операции: «и» (конъюнкция, логическое умножение), «или» (дизъюнкция, логическое сложение), «не» (логическое отрицание). Приоритет логических операций. Определение истинности составного высказывания, если известны значения истинности входящих в него элементарных высказываний. Логические выражения. Правила записи логических выражений. Построение таблиц истинности логических выражений — ОГЭ по информатике — ответы и решения",
+      "total": 85,
+      "solved": 85,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.7&page=2",
+      "title": "Логические высказывания. Логические значения высказываний. Элементарные и составные высказывания. Логические операции: «и» (конъюнкция, логическое умножение), «или» (дизъюнкция, логическое сложение), «не» (логическое отрицание). Приоритет логических операций. Определение истинности составного высказывания, если известны значения истинности входящих в него элементарных высказываний. Логические выражения. Правила записи логических выражений. Построение таблиц истинности логических выражений — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 85,
+      "solved": 85,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.7&page=8",
+      "title": "Логические высказывания. Логические значения высказываний. Элементарные и составные высказывания. Логические операции: «и» (конъюнкция, логическое умножение), «или» (дизъюнкция, логическое сложение), «не» (логическое отрицание). Приоритет логических операций. Определение истинности составного высказывания, если известны значения истинности входящих в него элементарных высказываний. Логические выражения. Правила записи логических выражений. Построение таблиц истинности логических выражений — ОГЭ по информатике — ответы и решения — страница 8",
+      "total": 85,
+      "solved": 85,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.8",
+      "title": "Логические элементы. Знакомство с логическими основами компьютера — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.9",
+      "title": "Непрерывные и дискретные модели. Имитационные модели. Игровые модели. Оценка адекватности модели моделируемому объекту и целям моделирования — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.10",
+      "title": "Табличные модели. Таблица как представление отношения. Базы данных. Отбор в таблице строк, удовлетворяющих заданному условию — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.11",
+      "title": "Граф. Вершина, ребро, путь. Ориентированные и неориентированные графы. Длина (вес) ребра. Весовая матрица графа. Длина пути между вершинами графа. Поиск оптимального пути в графе. Начальная вершина (источник) и конечная вершина (сток) в ориентированном графе. Вычисление количества путей в направленном ациклическом графе — ОГЭ по информатике — ответы и решения",
+      "total": 176,
+      "solved": 176,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.11&page=2",
+      "title": "Граф. Вершина, ребро, путь. Ориентированные и неориентированные графы. Длина (вес) ребра. Весовая матрица графа. Длина пути между вершинами графа. Поиск оптимального пути в графе. Начальная вершина (источник) и конечная вершина (сток) в ориентированном графе. Вычисление количества путей в направленном ациклическом графе — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 176,
+      "solved": 176,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.11&page=15",
+      "title": "Граф. Вершина, ребро, путь. Ориентированные и неориентированные графы. Длина (вес) ребра. Весовая матрица графа. Длина пути между вершинами графа. Поиск оптимального пути в графе. Начальная вершина (источник) и конечная вершина (сток) в ориентированном графе. Вычисление количества путей в направленном ациклическом графе — ОГЭ по информатике — ответы и решения — страница 15",
+      "total": 176,
+      "solved": 176,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=2.12",
+      "title": "Дерево. Корень, вершина (узел), лист, ребро (дуга) дерева. Высота дерева. Поддерево. Примеры использования деревьев. Перебор вариантов с помощью дерева — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3",
+      "title": "Алгоритмы и программирование — ОГЭ по информатике — ответы и решения",
+      "total": 427,
+      "solved": 427,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3&page=2",
+      "title": "Алгоритмы и программирование — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 427,
+      "solved": 427,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3&page=36",
+      "title": "Алгоритмы и программирование — ОГЭ по информатике — ответы и решения — страница 36",
+      "total": 427,
+      "solved": 427,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.1",
+      "title": "Свойства алгоритма. Способы записи алгоритма (словесный, в виде блок-схемы, программа). Составление алгоритмов и программ с использованием ветвлений, циклов и вспомогательных алгоритмов для управления исполнителем Робот или другими исполнителями, такими как Черепашка, Чертёжник и другими. Выполнение алгоритмов вручную и на компьютере — ОГЭ по информатике — ответы и решения",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.1&page=2",
+      "title": "Свойства алгоритма. Способы записи алгоритма (словесный, в виде блок-схемы, программа). Составление алгоритмов и программ с использованием ветвлений, циклов и вспомогательных алгоритмов для управления исполнителем Робот или другими исполнителями, такими как Черепашка, Чертёжник и другими. Выполнение алгоритмов вручную и на компьютере — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.1&page=7",
+      "title": "Свойства алгоритма. Способы записи алгоритма (словесный, в виде блок-схемы, программа). Составление алгоритмов и программ с использованием ветвлений, циклов и вспомогательных алгоритмов для управления исполнителем Робот или другими исполнителями, такими как Черепашка, Чертёжник и другими. Выполнение алгоритмов вручную и на компьютере — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 77,
+      "solved": 77,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.2",
+      "title": "Язык программирования (Python, C++, Паскаль, Java, C#, Школьный Алгоритмический Язык). Система программирования: редактор текста программ, транслятор, отладчик. Переменная: тип, имя, значение. Целые, вещественные и символьные переменные. Оператор присваивания. Арифметические выражения и порядок их вычисления. Операции с целыми числами: целочисленное деление, остаток от деления. Ветвления. Составные условия (запись логических выражений на изучаемом языке программирования). Нахождение минимума и максимума из двух, трёх и четырёх чисел. Решение квадратного уравнения, имеющего вещественные корни. Цикл с условием. Алгоритм Евклида для нахождения наибольшего общего делителя двух натуральных чисел. Разбиение записи натурального числа в позиционной системе с основанием, меньшим или равным 10, на отдельные цифры. Цикл с переменной. Алгоритмы проверки делимости одного целого числа на другое, проверки натурального числа на простоту — ОГЭ по информатике — ответы и решения",
+      "total": 78,
+      "solved": 78,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.2&page=2",
+      "title": "Язык программирования (Python, C++, Паскаль, Java, C#, Школьный Алгоритмический Язык). Система программирования: редактор текста программ, транслятор, отладчик. Переменная: тип, имя, значение. Целые, вещественные и символьные переменные. Оператор присваивания. Арифметические выражения и порядок их вычисления. Операции с целыми числами: целочисленное деление, остаток от деления. Ветвления. Составные условия (запись логических выражений на изучаемом языке программирования). Нахождение минимума и максимума из двух, трёх и четырёх чисел. Решение квадратного уравнения, имеющего вещественные корни. Цикл с условием. Алгоритм Евклида для нахождения наибольшего общего делителя двух натуральных чисел. Разбиение записи натурального числа в позиционной системе с основанием, меньшим или равным 10, на отдельные цифры. Цикл с переменной. Алгоритмы проверки делимости одного целого числа на другое, проверки натурального числа на простоту — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 78,
+      "solved": 78,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.2&page=7",
+      "title": "Язык программирования (Python, C++, Паскаль, Java, C#, Школьный Алгоритмический Язык). Система программирования: редактор текста программ, транслятор, отладчик. Переменная: тип, имя, значение. Целые, вещественные и символьные переменные. Оператор присваивания. Арифметические выражения и порядок их вычисления. Операции с целыми числами: целочисленное деление, остаток от деления. Ветвления. Составные условия (запись логических выражений на изучаемом языке программирования). Нахождение минимума и максимума из двух, трёх и четырёх чисел. Решение квадратного уравнения, имеющего вещественные корни. Цикл с условием. Алгоритм Евклида для нахождения наибольшего общего делителя двух натуральных чисел. Разбиение записи натурального числа в позиционной системе с основанием, меньшим или равным 10, на отдельные цифры. Цикл с переменной. Алгоритмы проверки делимости одного целого числа на другое, проверки натурального числа на простоту — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 78,
+      "solved": 78,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.3",
+      "title": "Обработка символьных данных. Символьные (строковые) переменные. Посимвольная обработка строк. Подсчёт частоты появления символа в строке. Встроенные функции для обработки строк — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.4",
+      "title": "Определение возможных результатов работы алгоритма при данном множестве входных данных, определение возможных входных данных, приводящих к данному результату — ОГЭ по информатике — ответы и решения",
+      "total": 103,
+      "solved": 103,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.4&page=2",
+      "title": "Определение возможных результатов работы алгоритма при данном множестве входных данных, определение возможных входных данных, приводящих к данному результату — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 103,
+      "solved": 103,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.4&page=9",
+      "title": "Определение возможных результатов работы алгоритма при данном множестве входных данных, определение возможных входных данных, приводящих к данному результату — ОГЭ по информатике — ответы и решения — страница 9",
+      "total": 103,
+      "solved": 103,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.5",
+      "title": "Табличные величины (массивы). Одномерные массивы. Составление и отладка программ, реализующих типовые алгоритмы обработки одномерных числовых массивов, на одном из языков программирования (Python, C++, Паскаль, Java, C#, Школьный Алгоритмический Язык): заполнение числового массива случайными числами, в соответствии с формулой или путём ввода чисел, нахождение суммы элементов массива, линейный поиск заданного значения в массиве, подсчёт элементов массива, удовлетворяющих заданному условию, нахождение минимального (максимального) элемента массива. Сортировка массива. Обработка потока данных: вычисление количества, суммы, среднего арифметического, минимального и максимального значения элементов последовательности, удовлетворяющих заданному условию — ОГЭ по информатике — ответы и решения",
+      "total": 169,
+      "solved": 169,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.5&page=2",
+      "title": "Табличные величины (массивы). Одномерные массивы. Составление и отладка программ, реализующих типовые алгоритмы обработки одномерных числовых массивов, на одном из языков программирования (Python, C++, Паскаль, Java, C#, Школьный Алгоритмический Язык): заполнение числового массива случайными числами, в соответствии с формулой или путём ввода чисел, нахождение суммы элементов массива, линейный поиск заданного значения в массиве, подсчёт элементов массива, удовлетворяющих заданному условию, нахождение минимального (максимального) элемента массива. Сортировка массива. Обработка потока данных: вычисление количества, суммы, среднего арифметического, минимального и максимального значения элементов последовательности, удовлетворяющих заданному условию — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 169,
+      "solved": 169,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.5&page=15",
+      "title": "Табличные величины (массивы). Одномерные массивы. Составление и отладка программ, реализующих типовые алгоритмы обработки одномерных числовых массивов, на одном из языков программирования (Python, C++, Паскаль, Java, C#, Школьный Алгоритмический Язык): заполнение числового массива случайными числами, в соответствии с формулой или путём ввода чисел, нахождение суммы элементов массива, линейный поиск заданного значения в массиве, подсчёт элементов массива, удовлетворяющих заданному условию, нахождение минимального (максимального) элемента массива. Сортировка массива. Обработка потока данных: вычисление количества, суммы, среднего арифметического, минимального и максимального значения элементов последовательности, удовлетворяющих заданному условию — ОГЭ по информатике — ответы и решения — страница 15",
+      "total": 169,
+      "solved": 169,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=3.6",
+      "title": "Управление. Сигнал. Обратная связь. Получение сигналов от цифровых датчиков (касания, расстояния, света, звука и другого). Примеры использования принципа обратной связи в системах управления техническими устройствами с помощью датчиков, в том числе в робототехнике — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4",
+      "title": "Информационные технологии — ОГЭ по информатике — ответы и решения",
+      "total": 206,
+      "solved": 206,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4&page=2",
+      "title": "Информационные технологии — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 206,
+      "solved": 206,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4&page=18",
+      "title": "Информационные технологии — ОГЭ по информатике — ответы и решения — страница 18",
+      "total": 206,
+      "solved": 206,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.1",
+      "title": "Текстовые документы и их структурные элементы (страница, абзац, строка, слово, символ). Текстовый процессор – инструмент создания, редактирования и форматирования текстов. Правила набора текста. Редактирование текста. Свойства символов. Шрифт. Типы шрифтов (рубленые, с засечками, моноширинные). Полужирное и курсивное начертание. Свойства абзацев: границы, абзацный отступ, интервал, выравнивание. Параметры страницы. Стилевое форматирование. Структурирование информации с помощью списков и таблиц. Многоуровневые списки. Добавление таблиц в текстовые документы. Вставка изображений в текстовые документы. Обтекание изображений текстом. Включение в текстовый документ диаграмм, формул, нумерации страниц, колонтитулов, ссылок и других элементов — ОГЭ по информатике — ответы и решения",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.1&page=2",
+      "title": "Текстовые документы и их структурные элементы (страница, абзац, строка, слово, символ). Текстовый процессор – инструмент создания, редактирования и форматирования текстов. Правила набора текста. Редактирование текста. Свойства символов. Шрифт. Типы шрифтов (рубленые, с засечками, моноширинные). Полужирное и курсивное начертание. Свойства абзацев: границы, абзацный отступ, интервал, выравнивание. Параметры страницы. Стилевое форматирование. Структурирование информации с помощью списков и таблиц. Многоуровневые списки. Добавление таблиц в текстовые документы. Вставка изображений в текстовые документы. Обтекание изображений текстом. Включение в текстовый документ диаграмм, формул, нумерации страниц, колонтитулов, ссылок и других элементов — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.1&page=6",
+      "title": "Текстовые документы и их структурные элементы (страница, абзац, строка, слово, символ). Текстовый процессор – инструмент создания, редактирования и форматирования текстов. Правила набора текста. Редактирование текста. Свойства символов. Шрифт. Типы шрифтов (рубленые, с засечками, моноширинные). Полужирное и курсивное начертание. Свойства абзацев: границы, абзацный отступ, интервал, выравнивание. Параметры страницы. Стилевое форматирование. Структурирование информации с помощью списков и таблиц. Многоуровневые списки. Добавление таблиц в текстовые документы. Вставка изображений в текстовые документы. Обтекание изображений текстом. Включение в текстовый документ диаграмм, формул, нумерации страниц, колонтитулов, ссылок и других элементов — ОГЭ по информатике — ответы и решения — страница 6",
+      "total": 61,
+      "solved": 61,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.2",
+      "title": "Растровые рисунки. Использование графических примитивов. Операции редактирования графических объектов, в том числе цифровых фотографий: изменение размера, обрезка, поворот, отражение, работа с областями (выделение, копирование, заливка цветом), коррекция цвета, яркости и контрастности. Векторная графика. Создание векторных рисунков встроенными средствами текстового процессора или других программ (приложений). Добавление векторных рисунков в документы — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.3",
+      "title": "Подготовка мультимедийных презентаций. Слайд. Добавление на слайд текста и изображений. Работа с несколькими слайдами. Добавление на слайд аудиовизуальных данных. Анимация. Гиперссылки — ОГЭ по информатике — ответы и решения",
+      "total": 59,
+      "solved": 59,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.3&page=2",
+      "title": "Подготовка мультимедийных презентаций. Слайд. Добавление на слайд текста и изображений. Работа с несколькими слайдами. Добавление на слайд аудиовизуальных данных. Анимация. Гиперссылки — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 59,
+      "solved": 59,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.3&page=5",
+      "title": "Подготовка мультимедийных презентаций. Слайд. Добавление на слайд текста и изображений. Работа с несколькими слайдами. Добавление на слайд аудиовизуальных данных. Анимация. Гиперссылки — ОГЭ по информатике — ответы и решения — страница 5",
+      "total": 59,
+      "solved": 59,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.4",
+      "title": "Типы данных в ячейках электронной таблицы. Редактирование и форматирование таблиц. Встроенные функции для поиска максимума, минимума, суммы и среднего арифметического. Сортировка данных в выделенном диапазоне. Построение диаграмм (гистограмма, круговая диаграмма, точечная диаграмма). Выбор типа диаграммы. Преобразование формул при копировании. Относительная, абсолютная и смешанная адресация — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.5",
+      "title": "Условные вычисления в электронных таблицах. Суммирование и подсчёт значений, отвечающих заданному условию. Обработка больших наборов данных. Численное моделирование в электронных таблицах — ОГЭ по информатике — ответы и решения",
+      "total": 86,
+      "solved": 86,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.5&page=2",
+      "title": "Условные вычисления в электронных таблицах. Суммирование и подсчёт значений, отвечающих заданному условию. Обработка больших наборов данных. Численное моделирование в электронных таблицах — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 86,
+      "solved": 86,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=4.5&page=8",
+      "title": "Условные вычисления в электронных таблицах. Суммирование и подсчёт значений, отвечающих заданному условию. Обработка больших наборов данных. Численное моделирование в электронных таблицах — ОГЭ по информатике — ответы и решения — страница 8",
+      "total": 86,
+      "solved": 86,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=unclassified",
+      "title": "Без указанной темы КЭС — ОГЭ по информатике",
+      "total": 0,
+      "solved": 0,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=all&q=4A5F46",
+      "title": "Все задания — ОГЭ по информатике — поиск: 4A5F46",
+      "total": 1,
+      "solved": 1,
+      "robots": "noindex,follow"
+    }
+  ],
+  "edgeCases": [
+    {
+      "route": "/ege-informatics?topic=unknown",
+      "status": 404
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=0",
+      "status": 404
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=99999",
+      "status": 404
+    },
+    {
+      "route": "/ege-informatics?page=2",
+      "status": 404
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=1",
+      "status": 301
+    },
+    {
+      "route": "/added?section=ege-informatics",
+      "status": 200,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=unknown",
+      "status": 404
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=0",
+      "status": 404
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=99999",
+      "status": 404
+    },
+    {
+      "route": "/oge-informatics?page=2",
+      "status": 404
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=1",
+      "status": 301
+    },
+    {
+      "route": "/added?section=oge-informatics",
+      "status": 200,
+      "robots": "noindex,follow"
+    }
+  ],
+  "baseline": [
+    {
+      "route": "/ege-informatics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge-informatics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege-informatics?topic=all",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge-informatics?topic=all",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge-informatics?topic=type.1",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/math",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege/physics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge-physics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/FDA042",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF48F84F",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/OGEINF4A5F46",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF1F25B2",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF7F1EAA",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/FDA042",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF48F84F",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/OGEINF4A5F46",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF1F25B2",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF7F1EAA",
+      "status": 404,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "sitemap": {
+    "urls": 16334,
+    "unchanged": true
+  }
+}

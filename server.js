@@ -81,8 +81,8 @@ const SECTION_INFO = {
   physics: { name: 'Физика', path: '/physics', topic: 'физике', description: 'Первая часть ЕГЭ по физике: задания ФИПИ по учебным типам, числовые ответы, выбор вариантов и соответствия.' },
   oge: { name: 'ОГЭ — математика', path: '/oge', topic: 'математике ОГЭ', description: 'Задания ОГЭ по математике из открытого банка ФИПИ: числа, алгебра, уравнения, функции, геометрия, вероятность и статистика.' },
   'oge-physics': { name: 'ОГЭ — физика', path: '/oge-physics', topic: 'физике ОГЭ', description: 'Задания ОГЭ по физике из открытого банка ФИПИ: механические, тепловые, электромагнитные и квантовые явления.' },
-  'ege-informatics': { name: 'ЕГЭ — информатика', path: '/ege-informatics', topic: 'информатике ЕГЭ', description: 'Задания ЕГЭ по информатике из открытого банка ФИПИ: информация, логика, алгоритмы, программирование и обработка данных.' },
-  'oge-informatics': { name: 'ОГЭ — информатика', path: '/oge-informatics', topic: 'информатике ОГЭ', description: 'Задания ОГЭ по информатике из открытого банка ФИПИ: цифровая грамотность, теоретические основы информатики, алгоритмы и программирование, информационные технологии.' }
+  'ege-informatics': { name: 'ЕГЭ — информатика', path: '/ege-informatics', topic: 'информатике ЕГЭ', description: 'Задания ЕГЭ по информатике из открытого банка ФИПИ с ответами и подробными решениями: логика, алгоритмы, программирование и обработка данных.' },
+  'oge-informatics': { name: 'ОГЭ — информатика', path: '/oge-informatics', topic: 'информатике ОГЭ', description: 'Задания ОГЭ по информатике из открытого банка ФИПИ с ответами и подробными решениями: кодирование, логика, алгоритмы, программирование и информационные технологии.' }
 };
 const MATH_TOPICS = [
   { code: '1', name: 'Числа и вычисления', children: [
@@ -642,8 +642,8 @@ async function renderEgeHubPage() {
       </section>
     <section class="subject-card" id="informatics" aria-labelledby="informatics-title">
       <h2 id="informatics-title"><a href="/ege-informatics">Информатика</a></h2>
-      <p class="subject-stats">${ogeCatalog(informaticsHtml, 'ege-informatics').total} заданий ФИПИ</p>
-      <p>Условия, рисунки и файлы для практики. Типы задач и темы информатики.</p>
+      <p class="subject-stats">${stats(informaticsHtml)}</p>
+      <p>Задания ФИПИ с ответами и подробными решениями. Логика, алгоритмы, программирование и обработка данных; исходные рисунки и файлы для практики.</p>
       <a class="part-link" href="/ege-informatics">Выбрать тип задания →</a>
     </section>
     </div>
@@ -2165,7 +2165,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
       : (physicsTopic ? `${physicsTopic.name} — ${physicsPartName} часть ЕГЭ по физике` : `ЕГЭ по физике — ${physicsPartName} часть`))
     : `${baseTitle} — задания второй части`));
   const subtitle = isOge
-    ? `ФИПИ · ${ogeConfig.exam} · все форматы ответа · ${seoOverride?.ogeStats?.total || 0} заданий`
+    ? (seoOverride?.subtitle || `ФИПИ · ${ogeConfig.exam} · все форматы ответа · ${seoOverride?.ogeStats?.total || 0} заданий`)
     : isSearch
     ? 'Поиск по номеру и тексту условий открытого банка ФИПИ'
     : taskIdFromPath ? 'Открытый банк ФИПИ · условие и решение задания'
@@ -2439,12 +2439,21 @@ async function loadOgeQuestions(onlyAdded, options = {}, section = 'oge') {
   const pages = Math.max(1, Math.ceil(selected.length / OGE_PAGE_SIZE));
   if (page > pages || (!onlyAdded && !topicCode && page !== 1)) return null;
   const visible = selected.slice((page - 1) * OGE_PAGE_SIZE, page * OGE_PAGE_SIZE);
-  const baseName = onlyAdded ? `Добавленные задания ${bank.exam} по ${bank.subject}` : topic ? `${topic.name} — ${bank.exam} по ${bank.subject}` : `${bank.exam} по ${bank.subject} — банк заданий ФИПИ`;
-  const title = `${baseName}${page > 1 ? ` — страница ${page}` : ''}${query ? ` — поиск: ${query}` : ''}`;
+  const isInformatics = section.endsWith('-informatics');
+  // Count the entire selection, not just the current page, against published IDs.
+  const countedTasks = topic || onlyAdded ? selected : catalog.tasks;
+  const published = isInformatics ? new Set(listPublishedSolutionIds.all().map(row => row.task_id)) : null;
+  const solved = isInformatics ? countedTasks.filter(task => published.has(task.id)).length : 0;
+  const solutionPhrase = solved ? ' с ответами и подробными решениями' : '';
+  const baseName = onlyAdded ? `Добавленные задания ${bank.exam} по ${bank.subject}` : topic ? `${topic.name} — ${bank.exam} по ${bank.subject}`
+    : isInformatics ? `${bank.exam} по ${bank.subject} — задания ФИПИ${solutionPhrase}` : `${bank.exam} по ${bank.subject} — банк заданий ФИПИ`;
+  const title = `${baseName}${isInformatics && topic && solved && !query && !onlyAdded ? ' — ответы и решения' : ''}${page > 1 ? ` — страница ${page}` : ''}${query ? ` — поиск: ${query}` : ''}`;
   const pathname = ogeCataloguePath({ topic: topicCode, page, query, added: onlyAdded, section });
   const breadcrumbs = [{ name: 'Главная', path: '/' }, { name: bank.name, path: bank.path }];
   if (topic) breadcrumbs.push({ name: topic.name, path: ogeCataloguePath({ topic: topicCode, section }) });
-  const description = `${baseName}. ${topic || onlyAdded ? selected.length : catalog.total} заданий из открытого банка ФИПИ для подготовки в ${bank.exam === 'ЕГЭ' ? '11' : '9'} классе.${page > 1 ? ` Страница ${page} из ${pages}.` : ''}`;
+  const description = isInformatics
+    ? `${topic ? `${topic.name}. ` : ''}Задания ${bank.exam} по информатике из банка ФИПИ${solutionPhrase} для подготовки в ${bank.exam === 'ЕГЭ' ? '11' : '9'} классе. Заданий: ${countedTasks.length}; готовых разборов: ${solved}.${page > 1 ? ` Страница ${page} из ${pages}.` : ''}`
+    : `${baseName}. ${topic || onlyAdded ? selected.length : catalog.total} заданий из открытого банка ФИПИ для подготовки в ${bank.exam === 'ЕГЭ' ? '11' : '9'} классе.${page > 1 ? ` Страница ${page} из ${pages}.` : ''}`;
   const pager = topic || onlyAdded ? renderOgePager({ topic: topicCode, page, query, added: onlyAdded, total: selected.length, section }) : '';
   const html = taskDocument(sourceHtml, visible.map(task => task.fragment).join(''));
   const queryForm = topic || onlyAdded ? `<form class="site-search-form" action="${onlyAdded ? '/added' : bank.path}" method="get" role="search">
@@ -2453,11 +2462,13 @@ async function loadOgeQuestions(onlyAdded, options = {}, section = 'oge') {
   </form>` : '';
   const result = decorate(html, section, onlyAdded ? added[section] : null, {
     title, heading: title, description, pathname, breadcrumbs,
+    subtitle: isInformatics ? `ФИПИ · ${bank.exam} · заданий: ${countedTasks.length} · готовых разборов: ${solved}` : undefined,
     ogeStats: catalog, serverCatalogue: true, disableCataloguePager: !topic && !onlyAdded,
     ogeNavigation: ogeTaskNavigation(selected, {topic: topicCode, page, query, added: onlyAdded, section}),
     robots: query || onlyAdded || (topic && !selected.length) ? 'noindex,follow' : 'index,follow',
     intro: `${onlyAdded ? '' : topic ? `<details class="oge-topic-switcher"><summary>Выбрать другую тему</summary>${renderOgeTopicMenu(topicCode, catalog, section)}</details>` : renderOgeTopicMenu(topicCode, catalog, section)}<section class="catalog-summary"><p>${escapeHtml(description)}</p>
       ${!topic && !onlyAdded ? `<p>Условия и рисунки сохранены из <a href="${bank.origin}/bank/index.php?proj=${bank.project}" target="_blank" rel="noopener noreferrer">открытого банка ФИПИ</a>. Выберите тему или откройте все задания.</p>` : ''}
+      ${isInformatics && solved ? '<p>Попробуйте решить задание самостоятельно, затем откройте решение: в нём доступны ответ и пошаговый разбор. Задания с готовым решением отмечены в каталоге; исходные условия, рисунки и ссылки на файлы сохранены.</p>' : ''}
       ${topic?.sources ? `<p>Сопоставление по проверяемому навыку: ${topic.sources.map((href, index) => `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">«Решу ${bank.exam}»${topic.sources.length > 1 ? ` (${index + 1})` : ''}</a>`).join(', ')}. Обозначение «Д» относится к дополнительным заданиям.</p>` : ''}</section>${queryForm}${pager}
       <style>.oge-pager a { padding: 7px 11px; border: 1px solid #b8c8da; border-radius: 5px; color: #1769aa; background: white; text-decoration: none; }.oge-pager [aria-current] { padding: 7px 11px; border-radius: 5px; background: #1769aa; color: white; }</style>`,
     structuredData: { '@context': 'https://schema.org', '@graph': [
@@ -3116,7 +3127,7 @@ function renderAboutPage() {
       <p>ЕГЭ и ОГЭ ФИПИ помогает самостоятельно готовиться к обоим экзаменам по математике, физике и информатике: выбирать нужную тему, пробовать свои силы и закреплять знания. Все опубликованные материалы доступны бесплатно и без регистрации.</p>
       <p>Каталог математики ЕГЭ содержит задания первой части с кратким ответом, распределённые по типам и темам. Задания второй части с развёрнутым ответом собраны в отдельных разделах верхнего меню.</p>
       <p>Каталог физики ЕГЭ содержит задания первой части: числовые ответы, выбор вариантов и соответствия, сгруппированные по типам. Задачи второй части с развёрнутым ответом доступны через отдельные пункты меню физики.</p>
-      <p>Для ОГЭ открыты отдельные банки по <a href="/oge">математике</a>, <a href="/oge-physics">физике</a> и <a href="/oge-informatics">информатике</a> с выбором тем и поиском. В информатике доступны условия, рисунки и файлы практических заданий ФИПИ. Задания с готовым разбором отмечены в каталоге. В ОГЭ по математике опубликованы подробные решения ко всем 3884 заданиям банка ФИПИ. Для ЕГЭ также открыт <a href="/ege-informatics">банк по информатике</a> с условиями, рисунками и файлами. Подробные решения ЕГЭ опубликованы по математике и физике.</p>
+      <p>Для ОГЭ открыты отдельные банки по <a href="/oge">математике</a>, <a href="/oge-physics">физике</a> и <a href="/oge-informatics">информатике</a> с выбором тем и поиском. В информатике ЕГЭ и ОГЭ опубликованы ответы и подробные решения, сохранены исходные условия, рисунки и ссылки на файлы практических заданий ФИПИ. Готовые разборы отмечены в каталогах; их актуальное количество указано в каждой подборке. В ОГЭ по математике опубликованы подробные решения ко всем 3884 заданиям банка ФИПИ. Для ЕГЭ доступны задания и подробные решения по математике, физике и <a href="/ege-informatics">информатике</a>.</p>
       <p>Это независимый учебный проект. Условия взяты из открытого банка ФИПИ, а решения и пояснения подготовлены для сайта.</p>
       <a class="study-button" href="/ege#subjects">Выбрать предмет ЕГЭ →</a>
     </section>

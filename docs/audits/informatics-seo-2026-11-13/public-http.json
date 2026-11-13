@@ -1,0 +1,288 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "quick": true,
+  "checkedAt": "2026-11-13T00:11:46.648Z",
+  "catalogues": [
+    {
+      "route": "/ege-informatics",
+      "title": "ЕГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+      "total": 2475,
+      "solved": 2473,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=all",
+      "title": "Все задания — ЕГЭ по информатике — ответы и решения",
+      "total": 2475,
+      "solved": 2473,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=2",
+      "title": "Все задания — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 2475,
+      "solved": 2473,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=207",
+      "title": "Все задания — ЕГЭ по информатике — ответы и решения — страница 207",
+      "total": 2475,
+      "solved": 2473,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models",
+      "title": "Графы, таблицы и маршруты — ЕГЭ по информатике — ответы и решения",
+      "total": 175,
+      "solved": 175,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models&page=2",
+      "title": "Графы, таблицы и маршруты — ЕГЭ по информатике — ответы и решения — страница 2",
+      "total": 175,
+      "solved": 175,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models&page=15",
+      "title": "Графы, таблицы и маршруты — ЕГЭ по информатике — ответы и решения — страница 15",
+      "total": 175,
+      "solved": 175,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/ege-informatics?topic=all&q=48F84F",
+      "title": "Все задания — ЕГЭ по информатике — поиск: 48F84F",
+      "total": 1,
+      "solved": 1,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics",
+      "title": "ОГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+      "total": 1585,
+      "solved": 1585,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=all",
+      "title": "Все задания — ОГЭ по информатике — ответы и решения",
+      "total": 1585,
+      "solved": 1585,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=2",
+      "title": "Все задания — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 1585,
+      "solved": 1585,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=133",
+      "title": "Все задания — ОГЭ по информатике — ответы и решения — страница 133",
+      "total": 1585,
+      "solved": 1585,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.1",
+      "title": "Объём текста и кодировки — ОГЭ по информатике — ответы и решения",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.1&page=2",
+      "title": "Объём текста и кодировки — ОГЭ по информатике — ответы и решения — страница 2",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=type.1&page=7",
+      "title": "Объём текста и кодировки — ОГЭ по информатике — ответы и решения — страница 7",
+      "total": 79,
+      "solved": 79,
+      "robots": "index,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=all&q=4A5F46",
+      "title": "Все задания — ОГЭ по информатике — поиск: 4A5F46",
+      "total": 1,
+      "solved": 1,
+      "robots": "noindex,follow"
+    }
+  ],
+  "edgeCases": [
+    {
+      "route": "/ege-informatics?topic=unknown",
+      "status": 404
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=0",
+      "status": 404
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=99999",
+      "status": 404
+    },
+    {
+      "route": "/ege-informatics?page=2",
+      "status": 404
+    },
+    {
+      "route": "/ege-informatics?topic=all&page=1",
+      "status": 301
+    },
+    {
+      "route": "/added?section=ege-informatics",
+      "status": 200,
+      "robots": "noindex,follow"
+    },
+    {
+      "route": "/oge-informatics?topic=unknown",
+      "status": 404
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=0",
+      "status": 404
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=99999",
+      "status": 404
+    },
+    {
+      "route": "/oge-informatics?page=2",
+      "status": 404
+    },
+    {
+      "route": "/oge-informatics?topic=all&page=1",
+      "status": 301
+    },
+    {
+      "route": "/added?section=oge-informatics",
+      "status": 200,
+      "robots": "noindex,follow"
+    }
+  ],
+  "baseline": [
+    {
+      "route": "/ege-informatics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge-informatics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege-informatics?topic=all",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge-informatics?topic=all",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge-informatics?topic=type.1",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/math",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege/physics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge-physics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/FDA042",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF48F84F",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/OGEINF4A5F46",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF1F25B2",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF7F1EAA",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/FDA042",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF48F84F",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/OGEINF4A5F46",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF1F25B2",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF7F1EAA",
+      "status": 404,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "sitemap": {
+    "urls": 16334,
+    "unchanged": true
+  }
+}
