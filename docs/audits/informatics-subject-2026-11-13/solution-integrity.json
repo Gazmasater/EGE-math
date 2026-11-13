@@ -1,0 +1,11 @@
+{
+  "solutions_unchanged": true,
+  "before": {
+    "rows": 12940,
+    "sha256": "10a62a8d41bfd8c2ec2a7a491a27bf2ca53585fd6d72727844a9b2cc4ffd8290"
+  },
+  "after": {
+    "rows": 12940,
+    "sha256": "10a62a8d41bfd8c2ec2a7a491a27bf2ca53585fd6d72727844a9b2cc4ffd8290"
+  }
+}

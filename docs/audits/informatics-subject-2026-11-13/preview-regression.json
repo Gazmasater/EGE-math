@@ -1,0 +1,139 @@
+{
+  "origin": "http://127.0.0.1:8889",
+  "checkedAt": "2026-11-13T00:30:37.306Z",
+  "baseline": [
+    {
+      "route": "/ege",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege/math",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege/physics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege-informatics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/oge-informatics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/math",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/physics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/FDA042",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF4D2E4A",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF48F84F",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/OGEINF4A5F46",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF1F25B2",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/tasks/EGEINF7F1EAA",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/FDA042",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF4D2E4A",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF48F84F",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/OGEINF4A5F46",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF1F25B2",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "route": "/api/solutions/EGEINF7F1EAA",
+      "status": 404,
+      "passed": true
+    }
+  ],
+  "routes": [
+    {
+      "route": "/ege/informatics",
+      "status": 200
+    },
+    {
+      "route": "/ege/informatics/?utm_source=audit",
+      "status": 301
+    },
+    {
+      "route": "/ege/unknown",
+      "status": 404
+    }
+  ],
+  "errors": [],
+  "sitemap": {
+    "before": 16334,
+    "after": 16335,
+    "added": [
+      "/ege/informatics"
+    ],
+    "removed": []
+  }
+}

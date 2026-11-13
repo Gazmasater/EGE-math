@@ -1,0 +1,55 @@
+{
+  "published_at_utc": "2026-11-13T00:31:31+00:00",
+  "published_at_moscow": "2026-11-13T03:31:31+03:00",
+  "recorded_at_utc": "2026-11-13T00:34:56.528133+00:00",
+  "route": "/ege/informatics",
+  "service": [
+    "MainPID=1601225",
+    "ExecMainStartTimestamp=Fri 2026-11-13 00:31:31 UTC",
+    "ActiveState=active"
+  ],
+  "source_sha256": {
+    "server.js": "22561b467ddac724c667c74eb0b3f5212e3f428aa253f1a1166940307002c4c0",
+    "lib/site-ui.js": "780c54f8af24fa3855905c7e0a163cb893a9bbbd320420676285ccd92086b13b",
+    "lib/ege-subject-content.js": "73d6b9d20129a1f39e90ce51e5b9ba08c241ef3e66110d04c80af13651c9212c"
+  },
+  "unit_tests_passed": 54,
+  "subject_audit": {
+    "subjects": [
+      {
+        "route": "/ege/math",
+        "tasks": 1148,
+        "groups": 20
+      },
+      {
+        "route": "/ege/physics",
+        "tasks": 2344,
+        "groups": 25
+      },
+      {
+        "route": "/ege/informatics",
+        "tasks": 2475,
+        "groups": 33
+      }
+    ],
+    "catalogues": 78,
+    "examples": 78,
+    "errors": []
+  },
+  "preview_browser_pages": 19,
+  "public_browser_pages": 9,
+  "sitemap": {
+    "before": 16334,
+    "after": 16335,
+    "added": [
+      "/ege/informatics"
+    ],
+    "removed": []
+  },
+  "solutions_unchanged": true,
+  "limitations": [
+    "Chrome Linux phone emulation, not a physical iPhone",
+    "External analytics and ads blocked; no write requests in browser checks",
+    "No causal search-traffic or ranking improvement established"
+  ]
+}

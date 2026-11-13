@@ -588,7 +588,7 @@ function renderExamPage({title, description, pathname, breadcrumbs, items, conte
 </head>
 <body class="exam-page">
   ${YANDEX_METRIKA_NOSCRIPT}
-  ${renderSiteHeader({pathname, subject: pathname === '/ege/physics' ? 'physics' : pathname === '/ege/math' ? 'math' : ''})}
+  ${renderSiteHeader({pathname, subject: pathname === '/ege/physics' ? 'physics' : pathname === '/ege/math' ? 'math' : pathname === '/ege/informatics' ? 'ege-informatics' : ''})}
   <main>
     ${renderBreadcrumbs(breadcrumbs)}
     ${insertSiteAd(content).replace('</section>', `</section>${pathname === '/ege' || pathname === '/ege/math' ? renderVisitorUpdates() : ''}`)}
@@ -597,7 +597,7 @@ function renderExamPage({title, description, pathname, breadcrumbs, items, conte
       <div class="exam-search-row"><input id="exam-search-query" name="q" type="search" placeholder="Номер ФИПИ или текст условия" required><button type="submit">Найти</button></div>
     </form>
     ${faq || renderStudyFaq()}
-    ${renderStudyRequest('ЕГЭ', pathname.includes('physics') ? 'физика' : 'математика')}
+    ${renderStudyRequest('ЕГЭ', pathname.includes('physics') ? 'физика' : pathname.includes('informatics') ? 'информатика' : 'математика')}
     ${renderSiteFooter()}
   </main>
 </body>
@@ -613,11 +613,11 @@ async function renderEgeHubPage() {
     const ids = [...new Set(sourceTaskEntries(html).map(task => task.id))];
     return `${ids.length} заданий · ${ids.filter(id => published.has(id)).length} решений`;
   };
-  const allIds = new Set([...sourceTaskEntries(mathHtml), ...sourceTaskEntries(physicsHtml)].map(task => task.id));
+  const allIds = new Set([...sourceTaskEntries(mathHtml), ...sourceTaskEntries(physicsHtml), ...sourceTaskEntries(informaticsHtml)].map(task => task.id));
   const solved = [...allIds].filter(id => published.has(id)).length;
   const breadcrumbs = [{name: 'ЕГЭ', path: '/ege'}];
   return renderExamPage({title, description, pathname: '/ege', breadcrumbs,
-    items: [{name: 'ЕГЭ по математике: профильный уровень', path: '/ege/math'}, {name: 'ЕГЭ по физике', path: '/ege/physics'}, {name: 'ЕГЭ по информатике', path: '/ege-informatics'}],
+    items: [{name: 'ЕГЭ по математике: профильный уровень', path: '/ege/math'}, {name: 'ЕГЭ по физике', path: '/ege/physics'}, {name: 'ЕГЭ по информатике', path: '/ege/informatics'}],
     content: `${renderStudyHero({hub: true, solved, sampleAnswer: getPublishedSolution.get('6D1598')?.answer || ''})}
     ${renderStudyBenefits()}
     <div class="subject-choice-heading" id="subjects"><h2>С какого предмета начнём?</h2><p>Выберите предмет, затем часть экзамена и нужную тему.</p></div>
@@ -641,9 +641,10 @@ async function renderEgeHubPage() {
         <div class="subject-topics">${PHYSICS_TOPICS.map(group => `<a href="/physics/part-2?topic=${group.code}#tasks">${escapeHtml(group.name)}</a>`).join('')}<a href="/physics/part-2#tasks">Вся вторая часть</a></div>
       </section>
     <section class="subject-card" id="informatics" aria-labelledby="informatics-title">
-      <h2 id="informatics-title"><a href="/ege-informatics">Информатика</a></h2>
+      <h2 id="informatics-title"><a href="/ege/informatics">Информатика</a></h2>
       <p class="subject-stats">${stats(informaticsHtml)}</p>
       <p>Задания ФИПИ с ответами и подробными решениями. Логика, алгоритмы, программирование и обработка данных; исходные рисунки и файлы для практики.</p>
+      <a class="subject-overview-link" href="/ege/informatics">ЕГЭ по информатике: подготовка по темам →</a>
       <a class="part-link" href="/ege-informatics">Выбрать тип задания →</a>
     </section>
     </div>
@@ -653,6 +654,7 @@ async function renderEgeHubPage() {
 }
 
 async function renderEgeSubjectPage(subject) {
+  if (subject === 'informatics') return renderInformaticsSubjectPage();
   const isPhysics = subject === 'physics';
   const pathname = isPhysics ? '/ege/physics' : '/ege/math';
   const subjectName = isPhysics ? 'Физика' : 'Математика';
@@ -730,6 +732,46 @@ async function renderEgeSubjectPage(subject) {
       </ol>
     </section>
   `});
+}
+
+async function renderInformaticsSubjectPage() {
+  const section = 'ege-informatics';
+  const bank = ogeBank(section);
+  const {tasks} = ogeCatalog(await loadSourceHtml(section), section);
+  const published = new Set(listPublishedSolutionIds.all().map(row => row.task_id));
+  const solvedCount = entries => entries.filter(task => published.has(task.id)).length;
+  const stats = entries => `Заданий: ${entries.length} · С решениями: ${solvedCount(entries)}`;
+  const groups = bank.types.map(type => ({name: type.name, path: ogeCataloguePath({topic: type.code, section}),
+    tasks: tasks.filter(task => ogeTaskMatchesTopic(task, type.code, section))})).filter(group => group.tasks.length);
+  const subjectContent = egeSubjectContent('informatics', {total: tasks.length, solved: solvedCount(tasks)});
+  const cards = groups.map(group => {
+    const example = group.tasks.find(task => published.has(task.id));
+    return `<article class="topic-card"><h3><a href="${escapeHtml(group.path)}">${escapeHtml(group.name)}</a></h3>
+      <p>${stats(group.tasks)}</p>
+      ${example ? `<a class="topic-example" href="/tasks/${example.id}#solution-${example.id}">Пример с решением: ${escapeHtml(ogeSourceTaskId(example.id, section))} →</a>` : '<p>Условия для самостоятельной подготовки</p>'}
+    </article>`;
+  }).join('');
+  return renderExamPage({...subjectContent, pathname: '/ege/informatics',
+    breadcrumbs: [{name: 'ЕГЭ', path: '/ege'}, {name: 'Информатика', path: '/ege/informatics'}], items: groups,
+    content: `<section class="exam-intro" aria-labelledby="subject-title">
+      <p class="study-eyebrow"><span></span>Информатика · задания открытого банка ФИПИ</p>
+      <h1 id="subject-title">${escapeHtml(subjectContent.heading)}</h1><p>${subjectContent.lead}</p>
+      <p>Задания и опубликованные решения — бесплатно и без регистрации.</p>
+      <p class="subject-stats">${stats(tasks)}</p>
+      <nav class="subject-jumps" aria-label="Навигация по подготовке"><a href="#informatics-topics">Выбрать тему →</a><a href="/ege-informatics?topic=all">Все задания</a><a href="#preparation">С чего начать</a><a href="#study-guide">Как пользоваться решениями</a></nav>
+    </section>
+    ${subjectContent.preparation}
+    <section class="subject-section" id="informatics-topics" aria-labelledby="informatics-topics-title">
+      <h2 id="informatics-topics-title">Темы и типы заданий</h2>
+      <p>Выберите навык для тренировки. В каждой карточке указаны количество заданий и опубликованных решений, а также пример с готовым разбором.</p>
+      <p><a href="/ege-informatics">Открыть каталог с разделами и темами ФИПИ →</a></p>
+      <div class="topic-grid">${cards}</div>
+    </section>
+    <section class="subject-section" id="study-guide" aria-labelledby="study-guide-title">
+      <h2 id="study-guide-title">Как пользоваться решениями</h2>
+      <ol class="subject-guide"><li>Выберите тему или найдите задание по номеру ФИПИ через поиск ниже.</li><li>Прочитайте условие, проверьте рисунки и приложенные файлы, если они есть. Запишите собственный ход решения.</li><li>Откройте разбор и сравните рассуждения, промежуточные значения и ответ. При работе с программой проверьте её на небольшом примере.</li><li>Перейдите к следующему заданию той же темы и попробуйте применить метод самостоятельно.</li></ol>
+    </section>`
+  });
 }
 
 async function renderMathHubPage() {
@@ -2449,7 +2491,9 @@ async function loadOgeQuestions(onlyAdded, options = {}, section = 'oge') {
     : isInformatics ? `${bank.exam} по ${bank.subject} — задания ФИПИ${solutionPhrase}` : `${bank.exam} по ${bank.subject} — банк заданий ФИПИ`;
   const title = `${baseName}${isInformatics && topic && solved && !query && !onlyAdded ? ' — ответы и решения' : ''}${page > 1 ? ` — страница ${page}` : ''}${query ? ` — поиск: ${query}` : ''}`;
   const pathname = ogeCataloguePath({ topic: topicCode, page, query, added: onlyAdded, section });
-  const breadcrumbs = [{ name: 'Главная', path: '/' }, { name: bank.name, path: bank.path }];
+  const breadcrumbs = section === 'ege-informatics'
+    ? [{name: 'ЕГЭ', path: '/ege'}, {name: 'Информатика', path: '/ege/informatics'}, {name: 'Каталог заданий', path: bank.path}]
+    : [{ name: 'Главная', path: '/' }, { name: bank.name, path: bank.path }];
   if (topic) breadcrumbs.push({ name: topic.name, path: ogeCataloguePath({ topic: topicCode, section }) });
   const description = isInformatics
     ? `${topic ? `${topic.name}. ` : ''}Задания ${bank.exam} по информатике из банка ФИПИ${solutionPhrase} для подготовки в ${bank.exam === 'ЕГЭ' ? '11' : '9'} классе. Заданий: ${countedTasks.length}; готовых разборов: ${solved}.${page > 1 ? ` Страница ${page} из ${pages}.` : ''}`
@@ -2812,7 +2856,9 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
   const description = prefix + excerpt + suffix;
   let breadcrumbs;
   if (oge) {
-    breadcrumbs = [{name: bank.name, path: bank.path}];
+    breadcrumbs = entry.section === 'ege-informatics'
+      ? [{name: 'ЕГЭ', path: '/ege'}, {name: 'Информатика', path: '/ege/informatics'}, {name: 'Каталог заданий', path: bank.path}]
+      : [{name: bank.name, path: bank.path}];
     if (topic) breadcrumbs.push({name: topic.name, path: ogeCataloguePath({topic: topic.code, section: entry.section})});
     breadcrumbs.push({name: `Задание ${displayTaskId}`, path: pathname});
   } else {
@@ -2908,6 +2954,7 @@ async function renderSitemap() {
     { pathname: '/ege', priority: '1.0' },
     { pathname: '/ege/math', priority: '0.95' },
     { pathname: '/ege/physics', priority: '0.95' },
+    { pathname: '/ege/informatics', priority: '0.95' },
     { pathname: '/math', priority: '0.95' },
     ...sectionPaths.map(pathname => ({ pathname, priority: pathname === '/' ? '1.0' : '0.9' })),
     { pathname: '/?topic=all', priority: '0.9' },
@@ -3127,7 +3174,7 @@ function renderAboutPage() {
       <p>ЕГЭ и ОГЭ ФИПИ помогает самостоятельно готовиться к обоим экзаменам по математике, физике и информатике: выбирать нужную тему, пробовать свои силы и закреплять знания. Все опубликованные материалы доступны бесплатно и без регистрации.</p>
       <p>Каталог математики ЕГЭ содержит задания первой части с кратким ответом, распределённые по типам и темам. Задания второй части с развёрнутым ответом собраны в отдельных разделах верхнего меню.</p>
       <p>Каталог физики ЕГЭ содержит задания первой части: числовые ответы, выбор вариантов и соответствия, сгруппированные по типам. Задачи второй части с развёрнутым ответом доступны через отдельные пункты меню физики.</p>
-      <p>Для ОГЭ открыты отдельные банки по <a href="/oge">математике</a>, <a href="/oge-physics">физике</a> и <a href="/oge-informatics">информатике</a> с выбором тем и поиском. В информатике ЕГЭ и ОГЭ опубликованы ответы и подробные решения, сохранены исходные условия, рисунки и ссылки на файлы практических заданий ФИПИ. Готовые разборы отмечены в каталогах; их актуальное количество указано в каждой подборке. В ОГЭ по математике опубликованы подробные решения ко всем 3884 заданиям банка ФИПИ. Для ЕГЭ доступны задания и подробные решения по математике, физике и <a href="/ege-informatics">информатике</a>.</p>
+      <p>Для ОГЭ открыты отдельные банки по <a href="/oge">математике</a>, <a href="/oge-physics">физике</a> и <a href="/oge-informatics">информатике</a> с выбором тем и поиском. В информатике ЕГЭ и ОГЭ опубликованы ответы и подробные решения, сохранены исходные условия, рисунки и ссылки на файлы практических заданий ФИПИ. Готовые разборы отмечены в каталогах; их актуальное количество указано в каждой подборке. В ОГЭ по математике опубликованы подробные решения ко всем 3884 заданиям банка ФИПИ. Для ЕГЭ доступны задания и подробные решения по математике, физике и <a href="/ege/informatics">информатике</a>.</p>
       <p>Это независимый учебный проект. Условия взяты из открытого банка ФИПИ, а решения и пояснения подготовлены для сайта.</p>
       <a class="study-button" href="/ege#subjects">Выбрать предмет ЕГЭ →</a>
     </section>
@@ -3641,7 +3688,7 @@ http.createServer(async (req, res) => {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       return res.end(renderAboutPage());
     }
-    if (['/ege', '/ege/', '/ege/math', '/ege/math/', '/ege/physics', '/ege/physics/'].includes(pathname)) {
+    if (['/ege', '/ege/', '/ege/math', '/ege/math/', '/ege/physics', '/ege/physics/', '/ege/informatics', '/ege/informatics/'].includes(pathname)) {
       if (req.method !== 'GET') {
         res.writeHead(405, { allow: 'GET' });
         return res.end();

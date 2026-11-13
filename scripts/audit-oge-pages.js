@@ -82,7 +82,8 @@ async function main() {
       assert.deepEqual(resource.about.slice(1).map(item => item.name), ogeTopicCodes(task, section).map(code => ogeTopicInfo(code, section).name), `${url}: проверенные темы в разметке страницы`);
       const breadcrumb = data.find(item => item['@type'] === 'BreadcrumbList');
       const firstTopic = ogeTopicCodes(task, section)[0];
-      assert.equal(breadcrumb.itemListElement[1].item, canonicalOrigin + ogeCataloguePath({topic: firstTopic}), `${url}: переход в основную тему`);
+      assert.ok(breadcrumb.itemListElement.some(item => item.item === canonicalOrigin + ogeCataloguePath({topic: firstTopic})), `${url}: переход в основную тему`);
+      if (section === 'ege-informatics') assert.ok(breadcrumb.itemListElement.some(item => item.item === canonicalOrigin + '/ege/informatics'), `${url}: обзор предмета`);
       assert.ok(result.html.includes(assetUrl(`catalogue-${section}.css`)), `${url}: стили банка ОГЭ`);
       const attachmentUrls = [...task.fragment.matchAll(/class="fipi-attachment" href="([^"]+)"/g)].map(match => match[1]);
       for (const href of attachmentUrls) assert.ok(result.html.includes(`href="${href}"`), `${url}: файл задания доступен без JavaScript`);

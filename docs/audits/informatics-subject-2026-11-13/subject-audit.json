@@ -1,0 +1,495 @@
+{
+  "origin": "http://127.0.0.1:8889",
+  "checkedAt": "2026-11-13T00:27:25.432Z",
+  "subjects": [
+    {
+      "route": "/ege/math",
+      "tasks": 1148,
+      "groups": 20
+    },
+    {
+      "route": "/ege/physics",
+      "tasks": 2344,
+      "groups": 25
+    },
+    {
+      "route": "/ege/informatics",
+      "tasks": 2475,
+      "groups": 33
+    }
+  ],
+  "catalogs": [
+    {
+      "route": "/?topic=plane#tasks",
+      "tasks": 58,
+      "solved": 58
+    },
+    {
+      "route": "/?topic=vectors#tasks",
+      "tasks": 31,
+      "solved": 31
+    },
+    {
+      "route": "/?topic=solid#tasks",
+      "tasks": 57,
+      "solved": 57
+    },
+    {
+      "route": "/?topic=probability-basic#tasks",
+      "tasks": 57,
+      "solved": 57
+    },
+    {
+      "route": "/?topic=probability-compound#tasks",
+      "tasks": 53,
+      "solved": 53
+    },
+    {
+      "route": "/?topic=basic-equations#tasks",
+      "tasks": 54,
+      "solved": 54
+    },
+    {
+      "route": "/?topic=expressions#tasks",
+      "tasks": 60,
+      "solved": 60
+    },
+    {
+      "route": "/?topic=derivative#tasks",
+      "tasks": 56,
+      "solved": 56
+    },
+    {
+      "route": "/?topic=applied#tasks",
+      "tasks": 58,
+      "solved": 58
+    },
+    {
+      "route": "/?topic=word-problems#tasks",
+      "tasks": 62,
+      "solved": 62
+    },
+    {
+      "route": "/?topic=graphs#tasks",
+      "tasks": 58,
+      "solved": 58
+    },
+    {
+      "route": "/?topic=function-study#tasks",
+      "tasks": 69,
+      "solved": 69
+    },
+    {
+      "route": "/stereometry",
+      "tasks": 66,
+      "solved": 66
+    },
+    {
+      "route": "/planimetry",
+      "tasks": 75,
+      "solved": 75
+    },
+    {
+      "route": "/parameters",
+      "tasks": 70,
+      "solved": 70
+    },
+    {
+      "route": "/equations",
+      "tasks": 67,
+      "solved": 67
+    },
+    {
+      "route": "/inequalities",
+      "tasks": 71,
+      "solved": 71
+    },
+    {
+      "route": "/optimal",
+      "tasks": 2,
+      "solved": 2
+    },
+    {
+      "route": "/numbers",
+      "tasks": 60,
+      "solved": 60
+    },
+    {
+      "route": "/finance",
+      "tasks": 64,
+      "solved": 64
+    },
+    {
+      "route": "/physics?topic=kinematics#tasks",
+      "tasks": 73,
+      "solved": 73
+    },
+    {
+      "route": "/physics?topic=dynamics#tasks",
+      "tasks": 75,
+      "solved": 75
+    },
+    {
+      "route": "/physics?topic=conservation#tasks",
+      "tasks": 83,
+      "solved": 83
+    },
+    {
+      "route": "/physics?topic=statics-waves#tasks",
+      "tasks": 75,
+      "solved": 75
+    },
+    {
+      "route": "/physics?topic=mechanics-analysis#tasks",
+      "tasks": 76,
+      "solved": 76
+    },
+    {
+      "route": "/physics?topic=mechanics-change#tasks",
+      "tasks": 125,
+      "solved": 125
+    },
+    {
+      "route": "/physics?topic=molecular#tasks",
+      "tasks": 109,
+      "solved": 109
+    },
+    {
+      "route": "/physics?topic=thermodynamics#tasks",
+      "tasks": 116,
+      "solved": 116
+    },
+    {
+      "route": "/physics?topic=thermal-analysis#tasks",
+      "tasks": 75,
+      "solved": 75
+    },
+    {
+      "route": "/physics?topic=thermal-change#tasks",
+      "tasks": 77,
+      "solved": 77
+    },
+    {
+      "route": "/physics?topic=electricity#tasks",
+      "tasks": 100,
+      "solved": 100
+    },
+    {
+      "route": "/physics?topic=magnetism#tasks",
+      "tasks": 80,
+      "solved": 80
+    },
+    {
+      "route": "/physics?topic=optics-waves#tasks",
+      "tasks": 80,
+      "solved": 80
+    },
+    {
+      "route": "/physics?topic=electro-analysis#tasks",
+      "tasks": 77,
+      "solved": 77
+    },
+    {
+      "route": "/physics?topic=electro-change#tasks",
+      "tasks": 119,
+      "solved": 119
+    },
+    {
+      "route": "/physics?topic=quantum#tasks",
+      "tasks": 131,
+      "solved": 131
+    },
+    {
+      "route": "/physics?topic=quantum-change#tasks",
+      "tasks": 72,
+      "solved": 72
+    },
+    {
+      "route": "/physics?topic=laws#tasks",
+      "tasks": 67,
+      "solved": 67
+    },
+    {
+      "route": "/physics?topic=measurement#tasks",
+      "tasks": 76,
+      "solved": 76
+    },
+    {
+      "route": "/physics?topic=experiment#tasks",
+      "tasks": 76,
+      "solved": 76
+    },
+    {
+      "route": "/physics?topic=astronomy#tasks",
+      "tasks": 44,
+      "solved": 44
+    },
+    {
+      "route": "/physics/part-2?topic=1#tasks",
+      "tasks": 142,
+      "solved": 142
+    },
+    {
+      "route": "/physics/part-2?topic=2#tasks",
+      "tasks": 140,
+      "solved": 140
+    },
+    {
+      "route": "/physics/part-2?topic=3#tasks",
+      "tasks": 213,
+      "solved": 213
+    },
+    {
+      "route": "/physics/part-2?topic=4#tasks",
+      "tasks": 49,
+      "solved": 49
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models",
+      "tasks": 175,
+      "solved": 175
+    },
+    {
+      "route": "/ege-informatics?topic=type.truth-tables",
+      "tasks": 108,
+      "solved": 108
+    },
+    {
+      "route": "/ege-informatics?topic=type.databases",
+      "tasks": 84,
+      "solved": 84
+    },
+    {
+      "route": "/ege-informatics?topic=type.codes",
+      "tasks": 76,
+      "solved": 76
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-transform",
+      "tasks": 75,
+      "solved": 75
+    },
+    {
+      "route": "/ege-informatics?topic=type.plane-executors",
+      "tasks": 50,
+      "solved": 50
+    },
+    {
+      "route": "/ege-informatics?topic=type.media-transfer",
+      "tasks": 133,
+      "solved": 133
+    },
+    {
+      "route": "/ege-informatics?topic=type.combinatorics",
+      "tasks": 81,
+      "solved": 81
+    },
+    {
+      "route": "/ege-informatics?topic=type.spreadsheets",
+      "tasks": 100,
+      "solved": 100
+    },
+    {
+      "route": "/ege-informatics?topic=type.networks",
+      "tasks": 54,
+      "solved": 54
+    },
+    {
+      "route": "/ege-informatics?topic=type.information-volume",
+      "tasks": 135,
+      "solved": 135
+    },
+    {
+      "route": "/ege-informatics?topic=type.string-executors",
+      "tasks": 66,
+      "solved": 66
+    },
+    {
+      "route": "/ege-informatics?topic=type.executor-programs",
+      "tasks": 74,
+      "solved": 74
+    },
+    {
+      "route": "/ege-informatics?topic=type.numeral-systems",
+      "tasks": 114,
+      "solved": 114
+    },
+    {
+      "route": "/ege-informatics?topic=type.logic",
+      "tasks": 123,
+      "solved": 123
+    },
+    {
+      "route": "/ege-informatics?topic=type.recursion",
+      "tasks": 74,
+      "solved": 74
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-sequence",
+      "tasks": 37,
+      "solved": 37
+    },
+    {
+      "route": "/ege-informatics?topic=type.robot-grid",
+      "tasks": 61,
+      "solved": 61
+    },
+    {
+      "route": "/ege-informatics?topic=type.games",
+      "tasks": 167,
+      "solved": 167
+    },
+    {
+      "route": "/ege-informatics?topic=type.processes",
+      "tasks": 40,
+      "solved": 40
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-paths",
+      "tasks": 38,
+      "solved": 38
+    },
+    {
+      "route": "/ege-informatics?topic=type.strings",
+      "tasks": 49,
+      "solved": 49
+    },
+    {
+      "route": "/ege-informatics?topic=type.divisors",
+      "tasks": 43,
+      "solved": 43
+    },
+    {
+      "route": "/ege-informatics?topic=type.sorting",
+      "tasks": 45,
+      "solved": 43
+    },
+    {
+      "route": "/ege-informatics?topic=type.large-data",
+      "tasks": 45,
+      "solved": 45
+    },
+    {
+      "route": "/ege-informatics?topic=type.text-search",
+      "tasks": 67,
+      "solved": 67
+    },
+    {
+      "route": "/ege-informatics?topic=type.file-system",
+      "tasks": 4,
+      "solved": 4
+    },
+    {
+      "route": "/ege-informatics?topic=type.search-queries",
+      "tasks": 33,
+      "solved": 33
+    },
+    {
+      "route": "/ege-informatics?topic=type.number-executors",
+      "tasks": 4,
+      "solved": 4
+    },
+    {
+      "route": "/ege-informatics?topic=type.program-analysis",
+      "tasks": 145,
+      "solved": 145
+    },
+    {
+      "route": "/ege-informatics?topic=type.array-analysis",
+      "tasks": 62,
+      "solved": 62
+    },
+    {
+      "route": "/ege-informatics?topic=type.debugging",
+      "tasks": 27,
+      "solved": 27
+    },
+    {
+      "route": "/ege-informatics?topic=type.write-program",
+      "tasks": 86,
+      "solved": 86
+    }
+  ],
+  "examples": [
+    "A33A46",
+    "40B442",
+    "91BE4D",
+    "75244F",
+    "8B6F73",
+    "4CBD4E",
+    "2D494A",
+    "71BC43",
+    "71114A",
+    "6D1598",
+    "DA4F4F",
+    "47384A",
+    "30ED04",
+    "AA7FF7",
+    "8D6C09",
+    "FDA042",
+    "6F97FE",
+    "E1812B",
+    "30D64C",
+    "D9AF4A",
+    "008243",
+    "BA974A",
+    "B02B49",
+    "C36A4C",
+    "EEB001",
+    "11254B",
+    "0A3E4F",
+    "4EF342",
+    "430072",
+    "F5A444",
+    "404345",
+    "C0DF4F",
+    "468FFB",
+    "7D9E2D",
+    "4EAC46",
+    "4C2E4A",
+    "7D7448",
+    "0FDA4F",
+    "474F4B",
+    "17F546",
+    "CE0949",
+    "E24F06",
+    "FBCEF2",
+    "27B52F",
+    "179F0F",
+    "EGEINF4D2E4A",
+    "EGEINFB60549",
+    "EGEINFFDF14C",
+    "EGEINF734D40",
+    "EGEINF5AC24E",
+    "EGEINFF4EBF3",
+    "EGEINF439C49",
+    "EGEINFFBDD40",
+    "EGEINFF7E942",
+    "EGEINF48F84F",
+    "EGEINFA30AF5",
+    "EGEINF7B7249",
+    "EGEINF24EE48",
+    "EGEINFADDC40",
+    "EGEINF6C7D42",
+    "EGEINFF7CF49",
+    "EGEINF8C5A88",
+    "EGEINFEAAB4F",
+    "EGEINFA347B2",
+    "EGEINFFE814D",
+    "EGEINF0F204A",
+    "EGEINF6AB929",
+    "EGEINF64F31F",
+    "EGEINF41E442",
+    "EGEINFC22345",
+    "EGEINFD5BE4B",
+    "EGEINFBC4219",
+    "EGEINF95F274",
+    "EGEINFF68808",
+    "EGEINF5AE347",
+    "EGEINF454C49",
+    "EGEINFC629FB",
+    "EGEINF876CF0"
+  ],
+  "errors": [],
+  "sitemapUrls": 16335
+}

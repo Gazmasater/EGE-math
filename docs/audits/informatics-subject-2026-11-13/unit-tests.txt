@@ -1,0 +1,334 @@
+TAP version 13
+# Subtest: Registration marker is anonymous, short lived and consumed only once across reloads
+ok 1 - Registration marker is anonymous, short lived and consumed only once across reloads
+  ---
+  duration_ms: 74.669459
+  type: 'test'
+  ...
+# Subtest: No goal on registration page view, failed registration or invalid marker
+ok 2 - No goal on registration page view, failed registration or invalid marker
+  ---
+  duration_ms: 14.578422
+  type: 'test'
+  ...
+# Subtest: Blocked storage and blocked counter do not break the page
+ok 3 - Blocked storage and blocked counter do not break the page
+  ---
+  duration_ms: 5.131162
+  type: 'test'
+  ...
+# Subtest: Technical traffic is tagged while ordinary visits remain public
+ok 4 - Technical traffic is tagged while ordinary visits remain public
+  ---
+  duration_ms: 12.282145
+  type: 'test'
+  ...
+# Subtest: Repeated bootstrap does not replace helper or attach duplicate handlers
+ok 5 - Repeated bootstrap does not replace helper or attach duplicate handlers
+  ---
+  duration_ms: 1.496312
+  type: 'test'
+  ...
+# Subtest: Server-page navigation uses a distinct goal and navigates once with a missing or repeated callback
+ok 6 - Server-page navigation uses a distinct goal and navigates once with a missing or repeated callback
+  ---
+  duration_ms: 88.735555
+  type: 'test'
+  ...
+# Subtest: Modified links retain native navigation; back links and handled in-page transitions do not count again
+ok 7 - Modified links retain native navigation; back links and handled in-page transitions do not count again
+  ---
+  duration_ms: 3.622558
+  type: 'test'
+  ...
+# Subtest: All conditions remain reachable exactly once across server pages
+ok 8 - All conditions remain reachable exactly once across server pages
+  ---
+  duration_ms: 8.644022
+  type: 'test'
+  ...
+# Subtest: Query state survives pagination and is safely encoded in local URLs
+ok 9 - Query state survives pagination and is safely encoded in local URLs
+  ---
+  duration_ms: 3.564429
+  type: 'test'
+  ...
+# Subtest: Catalogue search matches IDs and all condition terms, not scripts or task metadata
+ok 10 - Catalogue search matches IDs and all condition terms, not scripts or task metadata
+  ---
+  duration_ms: 12.186604
+  type: 'test'
+  ...
+# Subtest: EGE informatics has complete, disjoint, signed study families
+ok 11 - EGE informatics has complete, disjoint, signed study families
+  ---
+  duration_ms: 2166.183781
+  type: 'test'
+  ...
+# Subtest: Task meaning distinguishes ambiguous words, old metadata and input formats
+ok 12 - Task meaning distinguishes ambiguous words, old metadata and input formats
+  ---
+  duration_ms: 0.839085
+  type: 'test'
+  ...
+# Subtest: Programming memory limits do not become information-volume questions
+ok 13 - Programming memory limits do not become information-volume questions
+  ---
+  duration_ms: 39.68728
+  type: 'test'
+  ...
+# Subtest: EGE source origin and namespace cannot point into OGE
+ok 14 - EGE source origin and namespace cannot point into OGE
+  ---
+  duration_ms: 1307.008983
+  type: 'test'
+  ...
+# Subtest: Restored attachments require exact original conditions and preserve unrelated tasks
+ok 15 - Restored attachments require exact original conditions and preserve unrelated tasks
+  ---
+  duration_ms: 1.840087
+  type: 'test'
+  ...
+# Subtest: Changed conditions lose their reviewed classification
+ok 16 - Changed conditions lose their reviewed classification
+  ---
+  duration_ms: 0.353253
+  type: 'test'
+  ...
+# Subtest: Only reviewed damaged operators are restored, with original source guards
+ok 17 - Only reviewed damaged operators are restored, with original source guards
+  ---
+  duration_ms: 16.449035
+  type: 'test'
+  ...
+# Subtest: Next task preserves family across page boundaries
+ok 18 - Next task preserves family across page boundaries
+  ---
+  duration_ms: 16.645278
+  type: 'test'
+  ...
+# Subtest: Grouped games retain the common condition and independent question
+ok 19 - Grouped games retain the common condition and independent question
+  ---
+  duration_ms: 858.078028
+  type: 'test'
+  ...
+# Subtest: Only the reviewed stray angle is removed to recover the original database question
+ok 20 - Only the reviewed stray angle is removed to recover the original database question
+  ---
+  duration_ms: 8.357674
+  type: 'test'
+  ...
+# Subtest: Продолжение ОГЭ сохраняет выборку и банк на границе серверных страниц
+ok 21 - Продолжение ОГЭ сохраняет выборку и банк на границе серверных страниц
+  ---
+  duration_ms: 33.769834
+  type: 'test'
+  ...
+# Subtest: КЭС ОГЭ берётся из свойств задания, включая родительские коды 7 и 8
+ok 22 - КЭС ОГЭ берётся из свойств задания, включая родительские коды 7 и 8
+  ---
+  duration_ms: 9.866462
+  type: 'test'
+  ...
+# Subtest: Вложенные и смешанные КЭС не теряют задания и не удваивают счётчики
+ok 23 - Вложенные и смешанные КЭС не теряют задания и не удваивают счётчики
+  ---
+  duration_ms: 1.354464
+  type: 'test'
+  ...
+# Subtest: Пагинация сохраняет тему и поиск; первая страница имеет базовый URL
+ok 24 - Пагинация сохраняет тему и поиск; первая страница имеет базовый URL
+  ---
+  duration_ms: 0.448059
+  type: 'test'
+  ...
+# Subtest: Ошибочные страницы не округляются и не превращаются в первую страницу
+ok 25 - Ошибочные страницы не округляются и не превращаются в первую страницу
+  ---
+  duration_ms: 0.420466
+  type: 'test'
+  ...
+# Subtest: Общее условие прикреплено к каждому вопросу блока и не попадает в предыдущий
+ok 26 - Общее условие прикреплено к каждому вопросу блока и не попадает в предыдущий
+  ---
+  duration_ms: 6.598194
+  type: 'test'
+  ...
+# Subtest: Рисунок ФИПИ доступен без JavaScript и берётся из первого аргумента
+ok 27 - Рисунок ФИПИ доступен без JavaScript и берётся из первого аргумента
+  ---
+  duration_ms: 1.012235
+  type: 'test'
+  ...
+# Subtest: Физика ОГЭ имеет собственные темы КЭС, включая двузначные подтемы
+ok 28 - Физика ОГЭ имеет собственные темы КЭС, включая двузначные подтемы
+  ---
+  duration_ms: 4.752741
+  type: 'test'
+  ...
+# Subtest: Одинаковые исходные номера разных банков не смешивают страницы и решения
+ok 29 - Одинаковые исходные номера разных банков не смешивают страницы и решения
+  ---
+  duration_ms: 0.7832
+  type: 'test'
+  ...
+# Subtest: Путь каталога и ресурсы физики не используют математический банк
+ok 30 - Путь каталога и ресурсы физики не используют математический банк
+  ---
+  duration_ms: 0.920122
+  type: 'test'
+  ...
+# Subtest: Информатика: отдельные ID, темы и ссылки файлов без JavaScript
+ok 31 - Информатика: отдельные ID, темы и ссылки файлов без JavaScript
+  ---
+  duration_ms: 1.164195
+  type: 'test'
+  ...
+# Subtest: Every imported condition has one reviewed family; counts form a partition
+ok 32 - Every imported condition has one reviewed family; counts form a partition
+  ---
+  duration_ms: 281.13596
+  type: 'test'
+  ...
+# Subtest: Identical FIPI KES codes do not merge distinct task families
+ok 33 - Identical FIPI KES codes do not merge distinct task families
+  ---
+  duration_ms: 0.452805
+  type: 'test'
+  ...
+# Subtest: Reviewed topics follow the skill while original KES remain intact
+ok 34 - Reviewed topics follow the skill while original KES remain intact
+  ---
+  duration_ms: 0.414095
+  type: 'test'
+  ...
+# Subtest: A changed condition cannot retain a previously reviewed type
+ok 35 - A changed condition cannot retain a previously reviewed type
+  ---
+  duration_ms: 0.41408
+  type: 'test'
+  ...
+# Subtest: Next task stays in the selected family across a page boundary
+ok 36 - Next task stays in the selected family across a page boundary
+  ---
+  duration_ms: 9.887859
+  type: 'test'
+  ...
+# Subtest: Период полураспада доступен в своей теме, исходный КЭС сохранён
+ok 37 - Период полураспада доступен в своей теме, исходный КЭС сохранён
+  ---
+  duration_ms: 16.659536
+  type: 'test'
+  ...
+# Subtest: Неверный вариант ответа не превращает расширение рельсов в вынужденные колебания
+ok 38 - Неверный вариант ответа не превращает расширение рельсов в вынужденные колебания
+  ---
+  duration_ms: 8.880829
+  type: 'test'
+  ...
+# Subtest: Электрический подъёмник не попадает в тепловые двигатели
+ok 39 - Электрический подъёмник не попадает в тепловые двигатели
+  ---
+  duration_ms: 0.525705
+  type: 'test'
+  ...
+# Subtest: Маятник отделён от волн и звука
+ok 40 - Маятник отделён от волн и звука
+  ---
+  duration_ms: 0.466299
+  type: 'test'
+  ...
+# Subtest: Общий текст о молнии не подменяет вопрос о распространении звука
+ok 41 - Общий текст о молнии не подменяет вопрос о распространении звука
+  ---
+  duration_ms: 0.313494
+  type: 'test'
+  ...
+# Subtest: Задача на приборы не теряет две предметные темы
+ok 42 - Задача на приборы не теряет две предметные темы
+  ---
+  duration_ms: 0.959365
+  type: 'test'
+  ...
+# Subtest: Конкретные навыки математики не теряются за общим кодом
+ok 43 - Конкретные навыки математики не теряются за общим кодом
+  ---
+  duration_ms: 0.72895
+  type: 'test'
+  ...
+# Subtest: Кубическое уравнение сохраняет тему преобразования многочленов
+ok 44 - Кубическое уравнение сохраняет тему преобразования многочленов
+  ---
+  duration_ms: 0.277005
+  type: 'test'
+  ...
+# Subtest: График линейной функции сохраняет навык чтения декартовых координат
+ok 45 - График линейной функции сохраняет навык чтения декартовых координат
+  ---
+  duration_ms: 0.745908
+  type: 'test'
+  ...
+# Subtest: Старая проверка не применяется к изменённому условию или рисунку
+ok 46 - Старая проверка не применяется к изменённому условию или рисунку
+  ---
+  duration_ms: 0.983245
+  type: 'test'
+  ...
+# Subtest: ФИПИ: именованные, числовые и повторно экранированные символы
+ok 47 - ФИПИ: именованные, числовые и повторно экранированные символы
+  ---
+  duration_ms: 2.13984
+  type: 'test'
+  ...
+# Subtest: Условие без метаданных, служебного текста и содержимого скриптов
+ok 48 - Условие без метаданных, служебного текста и содержимого скриптов
+  ---
+  duration_ms: 8.046708
+  type: 'test'
+  ...
+# Subtest: Вложенные формулы сохраняют степени, знаменатель и область корня
+ok 49 - Вложенные формулы сохраняют степени, знаменатель и область корня
+  ---
+  duration_ms: 7.448831
+  type: 'test'
+  ...
+# Subtest: Пустой индекс MathML не сдвигает степень: квадрат скорости F4CD91
+ok 50 - Пустой индекс MathML не сдвигает степень: квадрат скорости F4CD91
+  ---
+  duration_ms: 0.555998
+  type: 'test'
+  ...
+# Subtest: Immutable URLs identify their bytes; GET, HEAD and validators agree
+ok 51 - Immutable URLs identify their bytes; GET, HEAD and validators agree
+  ---
+  duration_ms: 13.064191
+  type: 'test'
+  ...
+# Subtest: Legacy URLs revalidate; invalid paths never expose project files
+ok 52 - Legacy URLs revalidate; invalid paths never expose project files
+  ---
+  duration_ms: 6.722002
+  type: 'test'
+  ...
+# Subtest: All banks share the same legacy resources; source bytes and icon URLs are preserved
+ok 53 - All banks share the same legacy resources; source bytes and icon URLs are preserved
+  ---
+  duration_ms: 20.982755
+  type: 'test'
+  ...
+# Subtest: A version retained on disk remains available after a new release
+ok 54 - A version retained on disk remains available after a new release
+  ---
+  duration_ms: 9.392129
+  type: 'test'
+  ...
+1..54
+# tests 54
+# suites 0
+# pass 54
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 15096.649671

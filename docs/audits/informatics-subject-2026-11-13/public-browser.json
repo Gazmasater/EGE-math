@@ -1,0 +1,109 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "checkedAt": "2026-11-13T00:31:48.004Z",
+  "pages": [
+    {
+      "route": "/ege/informatics",
+      "width": 390,
+      "title": "ЕГЭ по информатике — подготовка, задания и решения",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1,
+      "cards": 33,
+      "selectedSubject": "информатика"
+    },
+    {
+      "route": "/ege/math",
+      "width": 390,
+      "title": "ЕГЭ по математике, профиль — задания с решениями",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1,
+      "cards": 20,
+      "selectedSubject": "математика"
+    },
+    {
+      "route": "/ege/physics",
+      "width": 390,
+      "title": "ЕГЭ по физике — задания с ответами и решениями",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1,
+      "cards": 25,
+      "selectedSubject": "физика"
+    },
+    {
+      "route": "/ege",
+      "width": 390,
+      "title": "ЕГЭ — задания ФИПИ по математике, физике и информатике",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1,
+      "cards": 0,
+      "selectedSubject": "математика"
+    },
+    {
+      "route": "/ege-informatics",
+      "width": 390,
+      "title": "ЕГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1,
+      "cards": 0,
+      "selectedSubject": "информатика"
+    },
+    {
+      "route": "/ege-informatics?topic=type.graph-models",
+      "width": 390,
+      "title": "Графы, таблицы и маршруты — ЕГЭ по информатике — ответы и решения",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1,
+      "cards": 0,
+      "selectedSubject": "информатика"
+    },
+    {
+      "route": "/tasks/EGEINF4D2E4A",
+      "width": 390,
+      "title": "4D2E4A — Графы, таблицы и маршруты: ответ и решение | ЕГЭ по информатике",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1,
+      "cards": 0
+    },
+    {
+      "route": "/oge-informatics",
+      "width": 390,
+      "title": "ОГЭ по информатике — задания ФИПИ с ответами и подробными решениями",
+      "h1": 1,
+      "overflow": false,
+      "inits": 1,
+      "cards": 0,
+      "selectedSubject": "информатика"
+    },
+    {
+      "route": "/ege/informatics",
+      "width": 390,
+      "javascript": false,
+      "serverRenderedCards": 33,
+      "navigation": true
+    }
+  ],
+  "interactions": [
+    {
+      "width": 390,
+      "hubFromEge": true,
+      "topic": true,
+      "task": true,
+      "backToSubject": true,
+      "publishedExample": true,
+      "solutionOpenGoal": 1
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Chrome Linux emulation; not a physical iPhone",
+    "External analytics and ads and all writes blocked"
+  ],
+  "browserVersion": "152.0.7977.82"
+}

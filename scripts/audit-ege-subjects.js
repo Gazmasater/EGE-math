@@ -1,5 +1,5 @@
 const {readOgeCatalog} = require('./lib/oge-catalog');
-const {OGE_BANKS} = require('../lib/oge-catalog');
+const {OGE_BANKS, OGE_PAGE_SIZE} = require('../lib/oge-catalog');
 const {readCataloguePages} = require('./lib/catalogue-pages');
 // Check subject landing pages against the real catalogs and published solutions.
 const assert = require('node:assert/strict');
@@ -21,20 +21,39 @@ async function get(route) {
   assert.equal(response.status, 200, route);
   return response.text();
 }
+async function readInformaticsPages(route, total) {
+  const ids = [];
+  const pages = Math.max(1, Math.ceil(total / OGE_PAGE_SIZE));
+  for (let page = 1; page <= pages; page++) {
+    const pagePath = route + (page > 1 ? `&page=${page}` : '');
+    const html = await get(pagePath), chunk = idsIn(html);
+    assert.ok(html.includes(`rel="canonical" href="${canonical + pagePath.replaceAll('&', '&amp;')}"`), pagePath + ': canonical');
+    const list = graph(html).find(item => item['@type'] === 'CollectionPage').mainEntity;
+    assert.equal(list.numberOfItems, total, pagePath + ': complete group count');
+    assert.deepEqual(list.itemListElement.map(item => item.position), chunk.map((_, index) => (page - 1) * OGE_PAGE_SIZE + index + 1));
+    assert.deepEqual(list.itemListElement.map(item => item.url), chunk.map(id => canonical + '/tasks/' + id));
+    assert.equal(chunk.length, Math.min(OGE_PAGE_SIZE, total - (page - 1) * OGE_PAGE_SIZE));
+    ids.push(...chunk);
+  }
+  assert.equal(ids.length, new Set(ids).size, route + ': unique tasks across pages');
+  return {ids, pages};
+}
 async function run() {
-  const db = new DatabaseSync(path.join(root, 'storage/solutions.sqlite'), {readOnly: true});
+  const db = new DatabaseSync(process.env.EGE_SOLUTIONS_DB || path.join(root, 'storage/solutions.sqlite'), {readOnly: true});
   const solutions = new Map(db.prepare('SELECT * FROM solutions WHERE published=1').all().map(row => [row.task_id, row]));
   db.close();
   const math = readMathematicsCatalog(root);
   const physics = readPhysicsCatalog(root, {allAnswerTypes: true});
+  const informatics = new Map(readOgeCatalog(root, 'ege-informatics').tasks.map(task => [task.id, task]));
   const hub = await get('/ege');
   assert.deepEqual(graph(hub).find(item => item['@type'] === 'CollectionPage').mainEntity.itemListElement.map(item => item.url),
-    [canonical + '/ege/math', canonical + '/ege/physics', canonical + '/ege-informatics']);
-  for (const [subject, name, source] of [['math', 'математике', math], ['physics', 'физике', physics]]) {
+    [canonical + '/ege/math', canonical + '/ege/physics', canonical + '/ege/informatics']);
+  const onlyInformatics = process.env.SUBJECT_AUDIT_ONLY === 'informatics';
+  for (const [subject, name, source] of [['math', 'математике', math], ['physics', 'физике', physics], ['informatics', 'информатике', informatics]].filter(([subject]) => !onlyInformatics || subject === 'informatics')) {
     const route = '/ege/' + subject, html = await get(route), data = graph(html);
     assert.equal((html.match(/<h1\b/g) || []).length, 1, route + ': H1');
-    assert.ok(html.includes(subject === 'math' ? '>ЕГЭ по математике: профильный уровень</h1>' : '>ЕГЭ по физике: задания и подготовка</h1>'));
-    assert.ok(html.includes(`Подготовка к ${subject === 'math' ? 'профильному ЕГЭ по математике' : 'ЕГЭ по физике'}: ${source.size} заданий ФИПИ`));
+    assert.ok(html.includes(subject === 'math' ? '>ЕГЭ по математике: профильный уровень</h1>' : subject === 'physics' ? '>ЕГЭ по физике: задания и подготовка</h1>' : '>ЕГЭ по информатике: задания и подготовка</h1>'));
+    assert.ok(html.includes(`Подготовка к ${subject === 'math' ? 'профильному ЕГЭ по математике' : 'ЕГЭ по ' + name}: ${source.size} заданий ФИПИ`));
     assert.equal((html.match(/id="study-faq-title"/g) || []).length, 1, route + ': one subject FAQ');
     assert.ok(html.includes('id="preparation"'), route + ': preparation route is server rendered');
     assert.ok(html.includes('https://fipi.ru/ege/demoversii-specifikacii-kodifikatory'), route + ': official exam materials');
@@ -42,6 +61,10 @@ async function run() {
     const preparation = html.match(/<section class="subject-section subject-preparation"[\s\S]*?<\/section>/)?.[0];
     assert.ok(preparation, route + ': preparation section');
     for (const match of preparation.matchAll(/href="([^"]+)"/g)) {
+      if (match[1].startsWith('#')) {
+        assert.ok(html.includes(`id="${match[1].slice(1)}"`), match[1] + ': local preparation section');
+        continue;
+      }
       const destination = await get(match[1].split('#')[0]);
       assert.ok(idsIn(destination).length > 0, match[1] + ': preparation link has tasks');
     }
@@ -56,7 +79,7 @@ async function run() {
     for (const card of cards) {
       const link = card.match(/<h3><a href="([^"]+)"/)[1];
       const expected = card.match(/Заданий: (\d+) · С решениями: (\d+)/).slice(1).map(Number);
-      const {ids} = await readCataloguePages(get, link.split('#')[0]);
+      const {ids} = subject === 'informatics' ? await readInformaticsPages(link, expected[0]) : await readCataloguePages(get, link.split('#')[0]);
       assert.equal(ids.length, expected[0], link + ': task count');
       assert.equal(ids.filter(id => solutions.has(id)).length, expected[1], link + ': solution count');
       assert.equal(ids.length, new Set(ids).size, link + ': unique tasks');
@@ -91,7 +114,7 @@ async function run() {
   assert.ok(physicsPage.match(/<meta name="description" content="([^"]*)"/)?.[1].includes(`${firstSolved} ответов и подробных решений`));
   const sitemap = await get('/sitemap.xml'), urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1].replaceAll('&amp;', '&'));
   assert.equal(urls.length, new Set(urls).size);
-  for (const route of ['/ege', '/ege/math', '/ege/physics', '/math', '/', '/physics', '/physics/part-2']) assert.ok(urls.includes(canonical + route));
+  for (const route of ['/ege', '/ege/math', '/ege/physics', '/ege/informatics', '/math', '/', '/physics', '/physics/part-2']) assert.ok(urls.includes(canonical + route));
   assert.deepEqual(urls.filter(url => url.includes('/tasks/')).map(url => url.split('/').at(-1)).sort(), [...math.keys(), ...physics.keys(), ...Object.keys(OGE_BANKS).flatMap(section => readOgeCatalog(root, section).tasks.map(task => task.id))].sort());
   assert.equal((await fetch(origin + '/ege/unknown')).status, 404);
   report.sitemapUrls = urls.length;
