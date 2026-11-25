@@ -12,3 +12,16 @@ fipi-assets/oge-informatics/docs/**/*.rar
 
 # Content-addressed assets are generated at server startup. Retain old versions.
 public/cache/
+
+# Local tooling, environments and temporary diagnostics; keep original FIPI inputs.
+node_modules/
+.env
+.env.*
+!.env.example
+coverage/
+*.tmp
+*.swp
+*.swo
+/*.sqlite
+/*.sqlite-*
+/*.db
