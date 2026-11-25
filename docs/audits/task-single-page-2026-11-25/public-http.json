@@ -1,0 +1,164 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "checks": [
+    {
+      "name": "/tasks/2AF210_single_hop_redirect",
+      "ok": true
+    },
+    {
+      "name": "/tasks/2af210_single_hop_redirect",
+      "ok": true
+    },
+    {
+      "name": "/tasks/2AF210?ref=old%20link_single_hop_redirect",
+      "ok": true
+    },
+    {
+      "name": "search_2AF210_direct_primary",
+      "ok": true
+    },
+    {
+      "name": "search_534193_direct_primary",
+      "ok": true
+    },
+    {
+      "name": "search_2af210_direct_primary",
+      "ok": true
+    },
+    {
+      "name": "search_2AF-210_direct_primary",
+      "ok": true
+    },
+    {
+      "name": "primary_self_canonical",
+      "ok": true
+    },
+    {
+      "name": "both_fipi_ids_visible",
+      "ok": true
+    },
+    {
+      "name": "old_solution_anchor",
+      "ok": true
+    },
+    {
+      "name": "one_resource_two_original_identifiers",
+      "ok": true
+    },
+    {
+      "name": "catalogue_original_id_link_2AF210",
+      "ok": true
+    },
+    {
+      "name": "catalogue_original_id_link_534193",
+      "ok": true
+    },
+    {
+      "name": "sequence_B49143",
+      "ok": true
+    },
+    {
+      "name": "sequence_76B3AA",
+      "ok": true
+    },
+    {
+      "name": "sequence_C0F0B7",
+      "ok": true
+    },
+    {
+      "name": "sequence_534193",
+      "ok": true
+    },
+    {
+      "name": "sequence_4E0320",
+      "ok": true
+    },
+    {
+      "name": "sequence_9FF053",
+      "ok": true
+    },
+    {
+      "name": "sequence_1B5C9A",
+      "ok": true
+    },
+    {
+      "name": "text_search_one_result_for_pair",
+      "ok": true
+    },
+    {
+      "name": "text_search_displays_both_ids",
+      "ok": true
+    },
+    {
+      "name": "/tasks/C0F0B7_only_navigation_changed",
+      "ok": true
+    },
+    {
+      "name": "/tasks/4E0320_only_navigation_changed",
+      "ok": true
+    },
+    {
+      "name": "/tasks/1B5C9A_only_navigation_changed",
+      "ok": true
+    },
+    {
+      "name": "/tasks/1A3704_unchanged",
+      "ok": true
+    },
+    {
+      "name": "/_unchanged",
+      "ok": true
+    },
+    {
+      "name": "/ege/math_unchanged",
+      "ok": true
+    },
+    {
+      "name": "/oge_unchanged",
+      "ok": true
+    },
+    {
+      "name": "/physics_unchanged",
+      "ok": true
+    },
+    {
+      "name": "/ege/physics_unchanged",
+      "ok": true
+    },
+    {
+      "name": "/api/solutions/2AF210_unchanged",
+      "ok": true
+    },
+    {
+      "name": "/api/solutions/534193_unchanged",
+      "ok": true
+    },
+    {
+      "name": "/robots.txt_unchanged",
+      "ok": true
+    },
+    {
+      "name": "/sitemap.xml_unchanged",
+      "ok": true
+    },
+    {
+      "name": "api_original_id_2AF210",
+      "ok": true
+    },
+    {
+      "name": "api_original_id_534193",
+      "ok": true
+    }
+  ],
+  "passed": 37,
+  "expected_sequence": [
+    "B49143",
+    "76B3AA",
+    "C0F0B7",
+    "534193",
+    "4E0320",
+    "9FF053",
+    "1B5C9A"
+  ],
+  "failed": []
+}

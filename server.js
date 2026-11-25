@@ -8,6 +8,7 @@ const { createHmac, timingSafeEqual, randomBytes, scryptSync } = require('node:c
 const { DatabaseSync } = require('node:sqlite');
 const {renderStudyRequest, validateStudyLead, openStudyLeads, renderStudyLeadsAdmin, createStudyLeadDelivery} = require('./lib/study-leads');
 const { conditionText } = require('./lib/seo-text');
+const {reviewedTaskTarget, reviewedTaskIds, reviewedCanonicalId} = require('./lib/task-canonical');
 const { renderSolutionBlocks } = require('./lib/solution-blocks');
 const { renderSolutionFileLink, serveSolutionFile } = require('./lib/solution-files');
 const { expandMathmlFences } = require('./lib/mathml-fences');
@@ -17,6 +18,7 @@ const { ANALYTICS_SCRIPT, registrationAnalyticsCookie } = require('./lib/analyti
 const {UI_HEAD, renderSiteHeader, renderSiteFooter, renderSiteAd, insertSiteAd, renderTaskHeading, renderStudyHero, renderSubjectSwitch, renderStudyBenefits, renderStudyGuide, renderStudyFaq} = require('./lib/site-ui');
 const {renderVisitorUpdates} = require('./lib/visitor-updates');
 const {egeSubjectContent} = require('./lib/ege-subject-content');
+const {renderOgeMathStart, OGE_MATH_START_STYLE} = require('./lib/oge-math-start');
 const {PHYSICS_TOPICS, physicsTopicInfo, physicsClassification, taskMatchesTopic, taskPhysicsTopic} = require('./lib/physics-topics');
 const {MATH_TASK_TYPES, mathTaskTypeInfo, isFirstPartMathTask, mathTaskAssignment, mathTaskType} = require('./lib/math-task-types');
 const {PHYSICS_TASK_TYPES, physicsTaskPart, physicsTaskTypeInfo, physicsTaskType, firstPartPhysicsMatches} = require('./lib/physics-task-types');
@@ -1024,8 +1026,8 @@ function renderStructuredData(data) {
   return `<script type="application/ld+json">${json}</script>`;
 }
 
-function renderSeoMetadata({ title, description, pathname, robots = 'index,follow', structuredData = null, type = 'website' }) {
-  const url = absoluteUrl(pathname);
+function renderSeoMetadata({ title, description, pathname, canonicalPathname = pathname, robots = 'index,follow', structuredData = null, type = 'website' }) {
+  const url = absoluteUrl(canonicalPathname);
   return `
   ${SITE_ICON_HEAD}
   <meta name="description" content="${escapeHtml(description)}">
@@ -1620,8 +1622,9 @@ function renderPrivacyPage(user = null) {
     </section>`, user);
 }
 
-function renderCommentSection(taskId, user, notice = '') {
-  const comments = listCommentsForTask.all(taskId);
+function renderCommentSection(taskId, user, notice = '', sourceIds = [taskId]) {
+  const comments = [...new Set(sourceIds)].flatMap(id => listCommentsForTask.all(id))
+    .sort((a, b) => a.created_at.localeCompare(b.created_at) || a.id - b.id);
   const items = comments.map(comment => {
     const deletion = user && comment.user_id === user.id
       ? `<form class="solution-comment-delete-form" method="post" action="/account/comments/${encodeURIComponent(comment.id)}/delete">
@@ -2288,6 +2291,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     ? ''
     : '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">';
   const headerTitle = seoOverride?.heading || title;
+  const isOgeMathCatalogue = section === 'oge' && !onlyAdded && !taskIdFromPath;
   const isLandingCatalogue = !onlyAdded && !isSearch && (
     (isMathematics && isMathCatalogue && !mathTopic)
     || (isPhysics && isPhysicsCatalogue && physicsPart === 1 && !physicsTopic));
@@ -2297,7 +2301,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
   const pageHeading = taskIdFromPath ? renderTaskHeading({taskId: taskIdFromPath,
     subject: seoOverride?.taskDetails?.subject || baseTitle,
     topic: seoOverride?.taskDetails?.topic || baseTitle,
-    topicPath: taskNavigation?.sectionPath || sectionPath, hasSolution: hasTaskSolution})
+    topicPath: taskNavigation?.sectionPath || sectionPath, hasSolution: hasTaskSolution, sourceIds: seoOverride?.taskDetails?.sourceIds || []})
     : isLandingCatalogue ? renderStudyHero({subject: uiSubject,
     solved: seoOverride?.catalogueSolved || 0, types: isPhysics ? PHYSICS_TASK_TYPES.length : MATH_TASK_TYPES.length,
     sampleAnswer: getPublishedSolution.get(isPhysics ? '8A3445' : '6D1598')?.answer || ''}) + (uiSubject === 'math' ? renderVisitorUpdates() : '') + renderSiteAd() + renderStudyBenefits()
@@ -2306,7 +2310,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
         ${isSelectedMathCatalogue || isSelectedPhysicsCatalogue ? '<a class="catalogue-task-jump" href="#tasks">Начать решать ↓</a>' : ''}
         ${hasTaskSolution ? `<a class="task-solution-jump" href="#solution-${escapeHtml(taskIdFromPath)}">Открыть решение ↓</a>` : ''}
         ${taskIdFromPath ? `<a class="task-feedback-jump" href="#feedback" data-feedback-modal-open data-task-id="${escapeHtml(taskIdFromPath)}">Ошибка или пожелание</a>` : ''}
-      </div>` : ''}</section>${isSearch ? '' : renderSiteAd()}`;
+      </div>` : ''}</section>${isSearch || isOgeMathCatalogue ? '' : renderSiteAd()}`;
   const taskPager = renderTaskNavigation(taskNavigation);
   const physicsTopicMenu = isPhysics && isPhysicsCatalogue && !onlyAdded && !isSearch
     ? (physicsPart === 2 ? renderPhysicsSecondPartMenu(physicsTopic?.code || '', physicsStats.counts, physicsStats.total, physicsStats.unclassified)
@@ -2338,7 +2342,7 @@ function decorate(html, section, onlyAdded = null, seoOverride = null) {
     .replace(/<body([^>]*)>/i, (_, attributes) => `<body${attributes}${taskIdFromPath ? ' data-task-page' : ''}>${YANDEX_METRIKA_NOSCRIPT}${header}${seoOverride?.breadcrumbs ? renderBreadcrumbs(seoOverride.breadcrumbs) : ''}${pageHeading}${taskPager}${isLandingCatalogue ? renderSubjectSwitch(uiSubject) : ''}${mathTopicMenu}${physicsTopicMenu}${isLandingCatalogue || taskIdFromPath ? '' : seoOverride?.intro || ''}${catalogue && !catalogue.total ? `<div id="tasks"></div>${renderCataloguePages(catalogue, 'top')}` : ''}${!isLandingCatalogue && !isSearch && !taskIdFromPath ? renderCommentsWidget({ inlineOnMobile: section === 'oge' }) : ''}${renderFeedbackModal()}`)
     .replace(/<div\s+class=['"][^'"]*\bqblock\b[^'"]*['"][^>]*>/i, match =>
       `${taskIdFromPath ? '<h2 class="task-condition-title" id="task-condition">Условие задачи</h2>' : ''}${catalogue || isSelectedMathCatalogue || isSelectedPhysicsCatalogue ? `<div id="tasks" class="catalogue-task-start">${renderCataloguePages(catalogue, 'top')}</div>` : ''}${match}`)
-    .replace('</body>', `${isLandingCatalogue ? renderStudyGuide({subject: uiSubject}) + renderStudyFaq() : ''}${!taskIdFromPath ? banner : ''}${renderCataloguePages(catalogue, 'bottom')}${taskIdFromPath ? seoOverride?.intro || '' : ''}<div id="site-end"></div>${renderSiteFooter()}${catalogue ? `<script id="catalogue-data" type="application/json">${JSON.stringify(catalogue).replace(/</g, '\\u003c')}</script>` : ''}${pagerScript}${renderTurnstileScript()}</body>`);
+    .replace('</body>', `${isLandingCatalogue ? renderStudyGuide({subject: uiSubject}) + renderStudyFaq() : ''}${isOgeMathCatalogue ? renderSiteAd() : ''}${!taskIdFromPath ? banner : ''}${renderCataloguePages(catalogue, 'bottom')}${taskIdFromPath ? seoOverride?.intro || '' : ''}<div id="site-end"></div>${renderSiteFooter()}${catalogue ? `<script id="catalogue-data" type="application/json">${JSON.stringify(catalogue).replace(/</g, '\\u003c')}</script>` : ''}${pagerScript}${renderTurnstileScript()}</body>`);
 }
 
 async function loadSourceHtml(section) {
@@ -2482,22 +2486,41 @@ async function loadOgeQuestions(onlyAdded, options = {}, section = 'oge') {
   if (page > pages || (!onlyAdded && !topicCode && page !== 1)) return null;
   const visible = selected.slice((page - 1) * OGE_PAGE_SIZE, page * OGE_PAGE_SIZE);
   const isInformatics = section.endsWith('-informatics');
+  const hasSolutionSummary = isInformatics || section === 'oge';
   // Count the entire selection, not just the current page, against published IDs.
   const countedTasks = topic || onlyAdded ? selected : catalog.tasks;
-  const published = isInformatics ? new Set(listPublishedSolutionIds.all().map(row => row.task_id)) : null;
-  const solved = isInformatics ? countedTasks.filter(task => published.has(task.id)).length : 0;
+  const published = hasSolutionSummary ? new Set(listPublishedSolutionIds.all().map(row => row.task_id)) : null;
+  const solved = hasSolutionSummary ? countedTasks.filter(task => published.has(task.id)).length : 0;
   const solutionPhrase = solved ? ' с ответами и подробными решениями' : '';
   const baseName = onlyAdded ? `Добавленные задания ${bank.exam} по ${bank.subject}` : topic ? `${topic.name} — ${bank.exam} по ${bank.subject}`
-    : isInformatics ? `${bank.exam} по ${bank.subject} — задания ФИПИ${solutionPhrase}` : `${bank.exam} по ${bank.subject} — банк заданий ФИПИ`;
-  const title = `${baseName}${isInformatics && topic && solved && !query && !onlyAdded ? ' — ответы и решения' : ''}${page > 1 ? ` — страница ${page}` : ''}${query ? ` — поиск: ${query}` : ''}`;
+    : hasSolutionSummary ? `${bank.exam} по ${bank.subject} — задания ФИПИ${solutionPhrase}` : `${bank.exam} по ${bank.subject} — банк заданий ФИПИ`;
+  const title = `${baseName}${hasSolutionSummary && topic && solved && !query && !onlyAdded ? ' — ответы и решения' : ''}${page > 1 ? ` — страница ${page}` : ''}${query ? ` — поиск: ${query}` : ''}`;
   const pathname = ogeCataloguePath({ topic: topicCode, page, query, added: onlyAdded, section });
   const breadcrumbs = section === 'ege-informatics'
     ? [{name: 'ЕГЭ', path: '/ege'}, {name: 'Информатика', path: '/ege/informatics'}, {name: 'Каталог заданий', path: bank.path}]
     : [{ name: 'Главная', path: '/' }, { name: bank.name, path: bank.path }];
   if (topic) breadcrumbs.push({ name: topic.name, path: ogeCataloguePath({ topic: topicCode, section }) });
-  const description = isInformatics
-    ? `${topic ? `${topic.name}. ` : ''}Задания ${bank.exam} по информатике из банка ФИПИ${solutionPhrase} для подготовки в ${bank.exam === 'ЕГЭ' ? '11' : '9'} классе. Заданий: ${countedTasks.length}; готовых разборов: ${solved}.${page > 1 ? ` Страница ${page} из ${pages}.` : ''}`
+  const description = hasSolutionSummary
+    ? `${topic ? `${topic.name}. ` : ''}Задания ${bank.exam} по ${bank.subject} из банка ФИПИ${solutionPhrase} для подготовки в ${bank.exam === 'ЕГЭ' ? '11' : '9'} классе. Заданий: ${countedTasks.length}; готовых разборов: ${solved}.${page > 1 ? ` Страница ${page} из ${pages}.` : ''}`
     : `${baseName}. ${topic || onlyAdded ? selected.length : catalog.total} заданий из открытого банка ФИПИ для подготовки в ${bank.exam === 'ЕГЭ' ? '11' : '9'} классе.${page > 1 ? ` Страница ${page} из ${pages}.` : ''}`;
+  const visibleDescription = section === 'oge' && solved
+    ? 'Сначала попробуйте решить задание самостоятельно, затем откройте ответ и пошаговый разбор.'
+    : description;
+  const isOgeMathHub = section === 'oge' && !topicCode && !onlyAdded;
+  const practice = isOgeMathHub ? renderOgeMathStart({
+    catalog, published, escapeHtml,
+    conditionHtml: task => {
+      // The selected short examples have a single condition cell, no nested tables.
+      const cell = task.fragment.match(/<td\b[^>]*class=['"]cell_0['"][^>]*>([\s\S]*?)<\/td>/i)?.[1];
+      return cell && !/<table\b/i.test(cell) ? normalizeFipiHtml(cell, bank.assetPrefix, true) : '';
+    },
+    solutionHtml: (id, name) => renderPublishedSolution(id, name)
+      .replace('class="seo-task-solution"', 'class="oge-example-solution"')
+      .replaceAll(`solution-${id}`, `oge-example-solution-${id}`)
+      .replace('<h2 ', '<h4 ').replace('</h2>', '</h4>'),
+    matchesTopic: (task, code) => ogeTaskMatchesTopic(task, code, section),
+    topicUrl: (code, index = 0, id = '') => ogeCataloguePath({topic: code, page: Math.floor(index / OGE_PAGE_SIZE) + 1, section}) + (id ? '#q' + id : '#tasks')
+  }) : null;
   const pager = topic || onlyAdded ? renderOgePager({ topic: topicCode, page, query, added: onlyAdded, total: selected.length, section }) : '';
   const html = taskDocument(sourceHtml, visible.map(task => task.fragment).join(''));
   const queryForm = topic || onlyAdded ? `<form class="site-search-form" action="${onlyAdded ? '/added' : bank.path}" method="get" role="search">
@@ -2505,24 +2528,24 @@ async function loadOgeQuestions(onlyAdded, options = {}, section = 'oge') {
     <label class="visually-hidden" for="oge-query">Поиск в подборке ${bank.exam}</label><input id="oge-query" name="q" type="search" value="${escapeHtml(query)}" placeholder="Поиск в этой подборке по номеру или условию"><button type="submit">Найти в подборке</button>
   </form>` : '';
   const result = decorate(html, section, onlyAdded ? added[section] : null, {
-    title, heading: title, description, pathname, breadcrumbs,
-    subtitle: isInformatics ? `ФИПИ · ${bank.exam} · заданий: ${countedTasks.length} · готовых разборов: ${solved}` : undefined,
+    title, heading: isOgeMathHub && solved ? 'ОГЭ по математике: задания с решениями' : title, description, pathname, breadcrumbs,
+    subtitle: hasSolutionSummary ? `ФИПИ · ${bank.exam} · заданий: ${countedTasks.length} · готовых разборов: ${solved}` : undefined,
     ogeStats: catalog, serverCatalogue: true, disableCataloguePager: !topic && !onlyAdded,
     ogeNavigation: ogeTaskNavigation(selected, {topic: topicCode, page, query, added: onlyAdded, section}),
     robots: query || onlyAdded || (topic && !selected.length) ? 'noindex,follow' : 'index,follow',
-    intro: `${onlyAdded ? '' : topic ? `<details class="oge-topic-switcher"><summary>Выбрать другую тему</summary>${renderOgeTopicMenu(topicCode, catalog, section)}</details>` : renderOgeTopicMenu(topicCode, catalog, section)}<section class="catalog-summary"><p>${escapeHtml(description)}</p>
+    intro: `${practice ? OGE_MATH_START_STYLE + practice.start : ''}${onlyAdded ? '' : topic ? `<details class="oge-topic-switcher"><summary>Выбрать другую тему</summary>${renderOgeTopicMenu(topicCode, catalog, section)}</details>` : renderOgeTopicMenu(topicCode, catalog, section)}${practice?.examples || ''}<section class="catalog-summary"><p>${escapeHtml(visibleDescription)}</p>
       ${!topic && !onlyAdded ? `<p>Условия и рисунки сохранены из <a href="${bank.origin}/bank/index.php?proj=${bank.project}" target="_blank" rel="noopener noreferrer">открытого банка ФИПИ</a>. Выберите тему или откройте все задания.</p>` : ''}
       ${isInformatics && solved ? '<p>Попробуйте решить задание самостоятельно, затем откройте решение: в нём доступны ответ и пошаговый разбор. Задания с готовым решением отмечены в каталоге; исходные условия, рисунки и ссылки на файлы сохранены.</p>' : ''}
       ${topic?.sources ? `<p>Сопоставление по проверяемому навыку: ${topic.sources.map((href, index) => `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">«Решу ${bank.exam}»${topic.sources.length > 1 ? ` (${index + 1})` : ''}</a>`).join(', ')}. Обозначение «Д» относится к дополнительным заданиям.</p>` : ''}</section>${queryForm}${pager}
       <style>.oge-pager a { padding: 7px 11px; border: 1px solid #b8c8da; border-radius: 5px; color: #1769aa; background: white; text-decoration: none; }.oge-pager [aria-current] { padding: 7px 11px; border-radius: 5px; background: #1769aa; color: white; }</style>`,
     structuredData: { '@context': 'https://schema.org', '@graph': [
       { '@type': 'CollectionPage', name: title, description, url: absoluteUrl(pathname), inLanguage: 'ru',
-        mainEntity: { '@type': 'ItemList', numberOfItems: selected.length, itemListElement: visible.map((task, index) => ({
+        mainEntity: { '@type': 'ItemList', numberOfItems: practice ? catalog.total : selected.length, itemListElement: (practice ? practice.items : visible).map((task, index) => ({
           '@type': 'ListItem', position: (page - 1) * OGE_PAGE_SIZE + index + 1, name: `Задание ${task.sourceId}`, url: absoluteUrl(`/tasks/${task.id}`)
         })) } }, breadcrumbData(breadcrumbs)
     ] }
   });
-  return result.replace('</body>', `${pager}</body>`);
+  return result.replace('</body>', `${pager}${practice?.script || ''}</body>`);
 }
 
 function renderCatalogueGuide(section, topicCode, fallback) {
@@ -2753,7 +2776,20 @@ async function searchTasks(query) {
       preview: truncateText(task.text, 280)
     };
   }).filter(Boolean).sort((left, right) => right.score - left.score || left.taskId.localeCompare(right.taskId));
-  return { query: normalized, total: matches.length, items: matches.slice(0, 50) };
+  const pages = new Map();
+  for (const task of matches) {
+    let result = task;
+    if (reviewedTaskIds(task.taskId).length > 1) {
+      const sourceHtml = await loadSourceHtml(task.section);
+      const primaryId = taskCanonicalId(task, sourceHtml);
+      const primary = index.find(item => item.taskId === primaryId) || task;
+      result = {...primary, score: task.score, preview: truncateText(primary.text, 280),
+        sourceTaskIds: taskSourceIds(primary, sourceHtml)};
+    }
+    if (!pages.has(result.taskId)) pages.set(result.taskId, result);
+  }
+  const results = [...pages.values()];
+  return { query: normalized, total: results.length, items: results.slice(0, 50) };
 }
 
 function renderSearchPage(query, search) {
@@ -2765,7 +2801,7 @@ function renderSearchPage(query, search) {
       ? `<p class="search-summary">Найдено: ${search.total} ${plural}${search.total > search.items.length ? '. Показаны первые 50.' : '.'}</p>`
       : '<p class="search-summary">Ничего не найдено. Попробуйте номер задания или другие слова из условия.</p>');
   const results = search.items.length
-    ? `<ol class="search-results">${search.items.map(task => `<li><a href="/tasks/${escapeHtml(task.taskId)}"><strong>${escapeHtml(task.taskId)} · ${escapeHtml(sectionInfo(task.section).name)}</strong><span>${escapeHtml(task.preview)}</span></a></li>`).join('')}</ol>`
+    ? `<ol class="search-results">${search.items.map(task => `<li><a href="/tasks/${escapeHtml(task.taskId)}"><strong>${escapeHtml((task.sourceTaskIds || [task.taskId]).join(', '))} · ${escapeHtml(sectionInfo(task.section).name)}</strong><span>${escapeHtml(task.preview)}</span></a></li>`).join('')}</ol>`
     : '';
   const title = hasQuery ? `Поиск: ${query} — ЕГЭ и ОГЭ` : 'Поиск заданий ЕГЭ и ОГЭ: математика и физика';
   const body = `<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>${escapeHtml(title)}</title></head><body class="questions-container"><main class="search-page" aria-labelledby="search-title">
@@ -2805,7 +2841,7 @@ function renderTaskNavigation(taskNavigation, afterSolution = false) {
   </nav>`;
 }
 
-function renderPublishedSolution(taskId, topicName = '') {
+function renderPublishedSolution(taskId, topicName = '', sourceIds = []) {
   const solution = getPublishedSolution.get(taskId);
   if (!solution) return '';
   const answer = solution.answer ? `<p><strong>Ответ:</strong> ${renderMathText(solution.answer)}</p>` : '';
@@ -2813,11 +2849,29 @@ function renderPublishedSolution(taskId, topicName = '') {
     ? `<figure><img src="data:image/svg+xml;base64,${Buffer.from(solution.diagram_svg).toString('base64')}" alt="${escapeHtml(`${topicName ? topicName + ': ' : ''}схема решения задания ${taskId}`)}">${solution.diagram_caption ? `<figcaption>Обозначения: ${renderMathText(solution.diagram_caption)}</figcaption>` : ''}</figure>`
     : '';
   return `<section class="seo-task-solution" aria-labelledby="solution-${escapeHtml(taskId)}">
-    <h2 id="solution-${escapeHtml(taskId)}">Решение задания ${escapeHtml(taskId)}</h2>
+    <h2 id="solution-${escapeHtml(taskId)}">${sourceIds.filter(id => id !== taskId).map(id => `<span id="solution-${escapeHtml(id)}" aria-hidden="true"></span>`).join('')}Решение задания ${escapeHtml(taskId)}</h2>
     ${answer}
     <div class="formatted-solution">${renderMathSolution(solution.solution)}${renderSolutionFileLink(taskId)}</div>
     ${diagram}
   </section>`;
+}
+
+function taskCanonicalId(entry, sourceHtml, fragment = null) {
+  const targetId = reviewedTaskTarget(entry.taskId);
+  if (!targetId) return entry.taskId;
+  const solution = getPublishedSolution.get(entry.taskId);
+  const targetSolution = getPublishedSolution.get(targetId);
+  return reviewedCanonicalId(entry.taskId, {
+    fragment: fragment || extractTaskFragment(sourceHtml, entry.sourceTaskId || entry.taskId),
+    solution: solution && {...solution, published: 1},
+    targetFragment: extractTaskFragment(sourceHtml, targetId),
+    targetSolution: targetSolution && {...targetSolution, published: 1}
+  });
+}
+
+function taskSourceIds(entry, sourceHtml) {
+  return reviewedTaskIds(entry.taskId).filter(id => taskCanonicalId(
+    {...entry, taskId: id, sourceTaskId: id}, sourceHtml) === entry.taskId);
 }
 
 function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feedbackNotice = '') {
@@ -2844,6 +2898,8 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
   const taskTopics = oge ? ogeTopics : classification?.topicCodes.map(physicsTopicInfo).filter(Boolean) || [];
   const publishedSolution = getPublishedSolution.get(entry.taskId);
   const hasPublishedSolution = Boolean(publishedSolution);
+  const canonicalPathname = `/tasks/${taskCanonicalId(entry, sourceHtml, fragment)}`;
+  const sourceTaskIds = taskSourceIds(entry, sourceHtml);
   const topicName = ogeType?.name || (physicsType ? `${physicsType.groupName ? physicsType.groupName + ': ' : ''}${physicsType.name}`
     : topic?.name || (mathType ? `${mathType.groupName ? mathType.groupName + ': ' : ''}${mathType.name}` : info.name));
   const subject = oge ? `${bank.exam} по ${bank.subject}` : entry.section === 'physics' ? 'ЕГЭ по физике' : 'ЕГЭ по математике, профиль';
@@ -2881,7 +2937,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
         isAccessibleForFree: true,
         educationalLevel: bank?.exam === 'ОГЭ' ? 'Основное общее образование, 9 класс' : 'Среднее общее образование',
         learningResourceType: 'Экзаменационное задание',
-        identifier: entry.taskId,
+        identifier: sourceTaskIds.length > 1 ? sourceTaskIds : entry.taskId,
         about: [{ '@type': 'Thing', name: info.name }, ...taskTopics.map(item => ({ '@type': 'Thing', name: item.name }))],
         text: condition,
         ...(publishedSolution ? {dateModified: publishedSolution.updated_at} : {}),
@@ -2890,11 +2946,12 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
       breadcrumbData(breadcrumbs)
     ]
   };
-  const sectionTasks = (oge ? oge.tasks.filter(task => !(ogeType || topic) || ogeTaskMatchesTopic(task, (ogeType || topic).code, entry.section)).map(task => task.id)
+  const sectionTasks = [...new Set((oge ? oge.tasks.filter(task => !(ogeType || topic) || ogeTaskMatchesTopic(task, (ogeType || topic).code, entry.section)).map(task => task.id)
     : sourceTask ? catalog.tasks.filter(task => taskMatchesPhysicsCatalogTopic(task, physicsCode, physicsPart)).map(task => task.id)
     : Array.from(taskIds(mathType ? filterMathTopicHtml(sourceHtml, mathType.group || mathType.code) : sourceHtml)))
     .map(normalizeTaskId)
-    .filter(isValidTaskId);
+    .filter(isValidTaskId)
+    .map(taskId => taskCanonicalId({...entry, taskId, sourceTaskId: taskId}, sourceHtml)))];
   const taskPosition = sectionTasks.indexOf(entry.taskId);
   const taskNavigation = {
     previous: taskPosition > 0 ? sectionTasks[taskPosition - 1] : '',
@@ -2910,10 +2967,11 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     heading: `Задание ${entry.taskId}: ${topicName}`,
     description,
     pathname,
+    canonicalPathname,
     type: 'article',
     structuredData,
     taskNavigation,
-    taskDetails: {subject, topic: topicName},
+    taskDetails: {subject, topic: topicName, sourceIds: sourceTaskIds},
     breadcrumbs,
     ogeStats: oge || undefined,
     serverCatalogue: Boolean(oge),
@@ -2927,9 +2985,9 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
       ? `<section class="catalog-summary physics-task-topics"><p>Темы сайта: ${taskTopics.map((item, index) => `<a href="${physicsPart === 2 ? '/physics/part-2' : '/physics'}?topic=${item.code}#tasks">${escapeHtml(item.name)}</a>${index === 0 ? ' (основная)' : ''}`).join('; ')}.</p><p>Исходные метки ФИПИ сохранены в свойствах задания.</p></section>`
       : ''
   });
-  const solution = publishedSolution ? renderPublishedSolution(entry.taskId, topicName) : '';
+  const solution = publishedSolution ? renderPublishedSolution(entry.taskId, topicName, sourceTaskIds) : '';
   const comments = publishedSolution
-    ? renderCommentSection(entry.taskId, user, commentNotice)
+    ? renderCommentSection(entry.taskId, user, commentNotice, sourceTaskIds)
     : renderUnavailableCommentSection(entry.taskId);
   const feedback = renderFeedbackSection(entry.taskId, feedbackNotice);
   return page.replace('<div id="site-end"></div>', () => `${solution}${renderTaskNavigation(taskNavigation, true)}${renderVisitorUpdates(entry.taskId)}${renderSiteAd()}${feedback}${comments}`);
@@ -2964,7 +3022,11 @@ async function renderSitemap() {
     { pathname: '/physics/part-2', priority: '0.9' },
     { pathname: '/about', priority: '0.5' }
   ];
-  const tasks = await getTaskDirectory();
+  const tasks = [];
+  for (const entry of await getTaskDirectory()) {
+    if (!reviewedTaskTarget(entry.taskId)
+      || taskCanonicalId(entry, await loadSourceHtml(entry.section)) === entry.taskId) tasks.push(entry);
+  }
   const topicPages = catalog.topics.filter(topic => catalog.counts[topic.code] > 0).map(topic => ({
     pathname: `/physics?topic=${topic.code}`, priority: '0.8',
     updatedAt: catalog.tasks.filter(task => taskMatchesPhysicsCatalogTopic(task, topic.code)).map(task => publishedDates.get(task.id)).filter(Boolean).sort().at(-1)
@@ -3515,15 +3577,18 @@ http.createServer(async (req, res) => {
         res.writeHead(404, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
         return res.end(renderNotFoundPage());
       }
-      if (taskPageMatch[1] !== taskId) {
-        res.writeHead(301, {location: `/tasks/${taskId}${requestUrl.search}`, 'cache-control': 'public, max-age=3600'});
+      const sourceHtml = await loadSourceHtml(task.section);
+      const pageId = taskCanonicalId(task, sourceHtml);
+      if (taskPageMatch[1] !== pageId) {
+        res.writeHead(301, {location: `/tasks/${pageId}${requestUrl.search}`,
+          'cache-control': pageId !== taskId ? 'no-store' : 'public, max-age=3600'});
         return res.end();
       }
       const commentStatus = requestUrl.searchParams.get('comment');
       const feedbackStatus = requestUrl.searchParams.get('feedback');
       const taskPage = renderTaskPage(
         task,
-        await loadSourceHtml(task.section),
+        sourceHtml,
         getCurrentUser(req),
         commentStatus === 'created' || commentStatus === 'deleted' || commentStatus === 'error' ? commentStatus : '',
         feedbackStatus === 'created' || feedbackStatus === 'rate' || feedbackStatus === 'captcha' || feedbackStatus === 'error' ? feedbackStatus : ''
@@ -3718,7 +3783,7 @@ http.createServer(async (req, res) => {
       const search = await searchTasks(query);
       const requestedTaskId = query.replace(/[\s-]+/g, '').toUpperCase();
       const exactTask = isValidTaskId(requestedTaskId)
-        ? search.items.find((task) => task.taskId === requestedTaskId)
+        ? search.items.find((task) => task.taskId === requestedTaskId || task.sourceTaskIds?.includes(requestedTaskId))
         : undefined;
       // A number in the search box is an address, not a text query: open the
       // task immediately so the visitor sees the answer and full solution.

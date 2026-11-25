@@ -1,0 +1,844 @@
+{
+  "origin": "http://127.0.0.1:8891",
+  "label": "preview",
+  "at": "2026-11-19T15:55:00.575Z",
+  "catalogues": [
+    {
+      "route": "/oge",
+      "total": 3884,
+      "solved": 3884,
+      "page": 1,
+      "visible": 0
+    },
+    {
+      "route": "/oge?topic=all",
+      "total": 3884,
+      "solved": 3884,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=all&page=2",
+      "total": 3884,
+      "solved": 3884,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=all&page=324",
+      "total": 3884,
+      "solved": 3884,
+      "page": 324,
+      "visible": 8
+    },
+    {
+      "route": "/oge?topic=practical",
+      "total": 359,
+      "solved": 359,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=practical&page=2",
+      "total": 359,
+      "solved": 359,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=practical&page=30",
+      "total": 359,
+      "solved": 359,
+      "page": 30,
+      "visible": 11
+    },
+    {
+      "route": "/oge?topic=1",
+      "total": 247,
+      "solved": 247,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1&page=2",
+      "total": 247,
+      "solved": 247,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1&page=21",
+      "total": 247,
+      "solved": 247,
+      "page": 21,
+      "visible": 7
+    },
+    {
+      "route": "/oge?topic=1.1",
+      "total": 0,
+      "solved": 0,
+      "page": 1,
+      "visible": 0
+    },
+    {
+      "route": "/oge?topic=1.2",
+      "total": 122,
+      "solved": 122,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1.2&page=2",
+      "total": 122,
+      "solved": 122,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1.2&page=11",
+      "total": 122,
+      "solved": 122,
+      "page": 11,
+      "visible": 2
+    },
+    {
+      "route": "/oge?topic=1.3",
+      "total": 121,
+      "solved": 121,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1.3&page=2",
+      "total": 121,
+      "solved": 121,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1.3&page=11",
+      "total": 121,
+      "solved": 121,
+      "page": 11,
+      "visible": 1
+    },
+    {
+      "route": "/oge?topic=1.4",
+      "total": 67,
+      "solved": 67,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1.4&page=2",
+      "total": 67,
+      "solved": 67,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1.4&page=6",
+      "total": 67,
+      "solved": 67,
+      "page": 6,
+      "visible": 7
+    },
+    {
+      "route": "/oge?topic=1.5",
+      "total": 17,
+      "solved": 17,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1.5&page=2",
+      "total": 17,
+      "solved": 17,
+      "page": 2,
+      "visible": 5
+    },
+    {
+      "route": "/oge?topic=2",
+      "total": 700,
+      "solved": 700,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2&page=2",
+      "total": 700,
+      "solved": 700,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2&page=59",
+      "total": 700,
+      "solved": 700,
+      "page": 59,
+      "visible": 4
+    },
+    {
+      "route": "/oge?topic=2.1",
+      "total": 185,
+      "solved": 185,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.1&page=2",
+      "total": 185,
+      "solved": 185,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.1&page=16",
+      "total": 185,
+      "solved": 185,
+      "page": 16,
+      "visible": 5
+    },
+    {
+      "route": "/oge?topic=2.2",
+      "total": 210,
+      "solved": 210,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.2&page=2",
+      "total": 210,
+      "solved": 210,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.2&page=18",
+      "total": 210,
+      "solved": 210,
+      "page": 18,
+      "visible": 6
+    },
+    {
+      "route": "/oge?topic=2.3",
+      "total": 30,
+      "solved": 30,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.3&page=2",
+      "total": 30,
+      "solved": 30,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.3&page=3",
+      "total": 30,
+      "solved": 30,
+      "page": 3,
+      "visible": 6
+    },
+    {
+      "route": "/oge?topic=2.4",
+      "total": 137,
+      "solved": 137,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.4&page=2",
+      "total": 137,
+      "solved": 137,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.4&page=12",
+      "total": 137,
+      "solved": 137,
+      "page": 12,
+      "visible": 5
+    },
+    {
+      "route": "/oge?topic=2.5",
+      "total": 218,
+      "solved": 218,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.5&page=2",
+      "total": 218,
+      "solved": 218,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=2.5&page=19",
+      "total": 218,
+      "solved": 218,
+      "page": 19,
+      "visible": 2
+    },
+    {
+      "route": "/oge?topic=3",
+      "total": 980,
+      "solved": 980,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=3&page=2",
+      "total": 980,
+      "solved": 980,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=3&page=82",
+      "total": 980,
+      "solved": 980,
+      "page": 82,
+      "visible": 8
+    },
+    {
+      "route": "/oge?topic=3.1",
+      "total": 221,
+      "solved": 221,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=3.1&page=2",
+      "total": 221,
+      "solved": 221,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=3.1&page=19",
+      "total": 221,
+      "solved": 221,
+      "page": 19,
+      "visible": 5
+    },
+    {
+      "route": "/oge?topic=3.2",
+      "total": 210,
+      "solved": 210,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=3.2&page=2",
+      "total": 210,
+      "solved": 210,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=3.2&page=18",
+      "total": 210,
+      "solved": 210,
+      "page": 18,
+      "visible": 6
+    },
+    {
+      "route": "/oge?topic=3.3",
+      "total": 549,
+      "solved": 549,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=3.3&page=2",
+      "total": 549,
+      "solved": 549,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=3.3&page=46",
+      "total": 549,
+      "solved": 549,
+      "page": 46,
+      "visible": 9
+    },
+    {
+      "route": "/oge?topic=4",
+      "total": 110,
+      "solved": 110,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=4&page=2",
+      "total": 110,
+      "solved": 110,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=4&page=10",
+      "total": 110,
+      "solved": 110,
+      "page": 10,
+      "visible": 2
+    },
+    {
+      "route": "/oge?topic=4.1",
+      "total": 0,
+      "solved": 0,
+      "page": 1,
+      "visible": 0
+    },
+    {
+      "route": "/oge?topic=4.2",
+      "total": 110,
+      "solved": 110,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=4.2&page=2",
+      "total": 110,
+      "solved": 110,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=4.2&page=10",
+      "total": 110,
+      "solved": 110,
+      "page": 10,
+      "visible": 2
+    },
+    {
+      "route": "/oge?topic=5",
+      "total": 258,
+      "solved": 258,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=5&page=2",
+      "total": 258,
+      "solved": 258,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=5&page=22",
+      "total": 258,
+      "solved": 258,
+      "page": 22,
+      "visible": 6
+    },
+    {
+      "route": "/oge?topic=5.1",
+      "total": 258,
+      "solved": 258,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=5.1&page=2",
+      "total": 258,
+      "solved": 258,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=5.1&page=22",
+      "total": 258,
+      "solved": 258,
+      "page": 22,
+      "visible": 6
+    },
+    {
+      "route": "/oge?topic=6",
+      "total": 178,
+      "solved": 178,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=6&page=2",
+      "total": 178,
+      "solved": 178,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=6&page=15",
+      "total": 178,
+      "solved": 178,
+      "page": 15,
+      "visible": 10
+    },
+    {
+      "route": "/oge?topic=6.1",
+      "total": 152,
+      "solved": 152,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=6.1&page=2",
+      "total": 152,
+      "solved": 152,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=6.1&page=13",
+      "total": 152,
+      "solved": 152,
+      "page": 13,
+      "visible": 8
+    },
+    {
+      "route": "/oge?topic=6.2",
+      "total": 26,
+      "solved": 26,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=6.2&page=2",
+      "total": 26,
+      "solved": 26,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=6.2&page=3",
+      "total": 26,
+      "solved": 26,
+      "page": 3,
+      "visible": 2
+    },
+    {
+      "route": "/oge?topic=7",
+      "total": 1556,
+      "solved": 1556,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7&page=2",
+      "total": 1556,
+      "solved": 1556,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7&page=130",
+      "total": 1556,
+      "solved": 1556,
+      "page": 130,
+      "visible": 8
+    },
+    {
+      "route": "/oge?topic=7.1",
+      "total": 180,
+      "solved": 180,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.1&page=2",
+      "total": 180,
+      "solved": 180,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.1&page=15",
+      "total": 180,
+      "solved": 180,
+      "page": 15,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.2",
+      "total": 632,
+      "solved": 632,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.2&page=2",
+      "total": 632,
+      "solved": 632,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.2&page=53",
+      "total": 632,
+      "solved": 632,
+      "page": 53,
+      "visible": 8
+    },
+    {
+      "route": "/oge?topic=7.3",
+      "total": 599,
+      "solved": 599,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.3&page=2",
+      "total": 599,
+      "solved": 599,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.3&page=50",
+      "total": 599,
+      "solved": 599,
+      "page": 50,
+      "visible": 11
+    },
+    {
+      "route": "/oge?topic=7.4",
+      "total": 511,
+      "solved": 511,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.4&page=2",
+      "total": 511,
+      "solved": 511,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.4&page=43",
+      "total": 511,
+      "solved": 511,
+      "page": 43,
+      "visible": 7
+    },
+    {
+      "route": "/oge?topic=7.5",
+      "total": 774,
+      "solved": 774,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.5&page=2",
+      "total": 774,
+      "solved": 774,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=7.5&page=65",
+      "total": 774,
+      "solved": 774,
+      "page": 65,
+      "visible": 6
+    },
+    {
+      "route": "/oge?topic=7.6",
+      "total": 0,
+      "solved": 0,
+      "page": 1,
+      "visible": 0
+    },
+    {
+      "route": "/oge?topic=8",
+      "total": 211,
+      "solved": 211,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=8&page=2",
+      "total": 211,
+      "solved": 211,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=8&page=18",
+      "total": 211,
+      "solved": 211,
+      "page": 18,
+      "visible": 7
+    },
+    {
+      "route": "/oge?topic=8.1",
+      "total": 0,
+      "solved": 0,
+      "page": 1,
+      "visible": 0
+    },
+    {
+      "route": "/oge?topic=8.2",
+      "total": 211,
+      "solved": 211,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=8.2&page=2",
+      "total": 211,
+      "solved": 211,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=8.2&page=18",
+      "total": 211,
+      "solved": 211,
+      "page": 18,
+      "visible": 7
+    },
+    {
+      "route": "/oge?topic=8.3",
+      "total": 2,
+      "solved": 2,
+      "page": 1,
+      "visible": 2
+    },
+    {
+      "route": "/oge?topic=8.4",
+      "total": 40,
+      "solved": 40,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=8.4&page=2",
+      "total": 40,
+      "solved": 40,
+      "page": 2,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=8.4&page=4",
+      "total": 40,
+      "solved": 40,
+      "page": 4,
+      "visible": 4
+    },
+    {
+      "route": "/oge?topic=8.5",
+      "total": 0,
+      "solved": 0,
+      "page": 1,
+      "visible": 0
+    },
+    {
+      "route": "/oge?topic=unclassified",
+      "total": 0,
+      "solved": 0,
+      "page": 1,
+      "visible": 0
+    },
+    {
+      "route": "/oge?topic=all&q=45B944",
+      "total": 1,
+      "solved": 1,
+      "page": 1,
+      "visible": 1
+    },
+    {
+      "route": "/oge?topic=all&q=doesnotexist",
+      "total": 0,
+      "solved": 0,
+      "page": 1,
+      "visible": 0
+    }
+  ],
+  "edgeCases": [
+    {
+      "route": "/oge?topic=unknown",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=0",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=01",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=-1",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=1.5",
+      "status": 404
+    },
+    {
+      "route": "/oge?page=2",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=9999",
+      "status": 404
+    },
+    {
+      "route": "/oge/",
+      "status": 404,
+      "preservedFromProduction": true
+    },
+    {
+      "route": "/oge/?topic=1.2",
+      "status": 404,
+      "preservedFromProduction": true
+    },
+    {
+      "route": "/oge?topic=all&page=1",
+      "status": 301
+    },
+    {
+      "route": "/oge",
+      "method": "POST",
+      "status": 200,
+      "preservedFromOriginalHandler": true
+    },
+    {
+      "route": "query injection",
+      "escaped": true
+    }
+  ],
+  "unchanged": [
+    "/",
+    "/?topic=1.2",
+    "/ege",
+    "/ege/math",
+    "/ege/physics",
+    "/ege/informatics",
+    "/physics",
+    "/physics?topic=1.1",
+    "/oge-physics",
+    "/oge-physics?topic=1.1",
+    "/ege-informatics",
+    "/ege-informatics?topic=type.codes",
+    "/oge-informatics",
+    "/oge-informatics?topic=type.1",
+    "/about",
+    "/tasks/FDA042",
+    "/tasks/083006",
+    "/tasks/EGEINF5E7141",
+    "/tasks/OGEINF44E848",
+    "/api/solutions/FDA042",
+    "/api/solutions/EGEINF5E7141",
+    "/api/solutions/OGEINF44E848",
+    "/sitemap.xml",
+    "/robots.txt"
+  ],
+  "errors": []
+}

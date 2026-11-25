@@ -1,0 +1,13 @@
+{
+  "deployed_utc": "2026-11-25T18:24:15.171926+00:00",
+  "service": "NRestarts=0\nActiveState=active\nSubState=running\nActiveEnterTimestamp=Wed 2026-11-25 18:23:49 UTC\n",
+  "files": {
+    "server.js": "8ee5a8d63fb0c262ed9b41bbc78626039f84783b2db7fc0f3520dc9d50e74c55",
+    "package.json": "ab3e91657e9615f22035ca1c39a7dc713184a458c29818f08c198aa4f0bc8400",
+    "lib/site-ui.js": "35230f2c2f7beb616c394017845d17f59aa503621c7320948e79f16ffd57e887",
+    "lib/task-canonical.js": "7a5cb3824465fe539bfa66beffb6974b77c886bec774ace4bb5f1dd56e0d628d",
+    "scripts/task-canonical.test.js": "bb965244c31d5e720a08bb980d56d65752987bee23a90e996dbe53d4245b8079",
+    "scripts/check-task-identity.js": "30617c4fd0cd8d08cd9b7eb8762627181b89738c42950928002524690284e2ef"
+  },
+  "source_matches_preview": true
+}

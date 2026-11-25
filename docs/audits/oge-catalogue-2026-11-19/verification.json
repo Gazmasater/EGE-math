@@ -1,0 +1,66 @@
+{
+  "completed_utc": "2026-11-19T16:00:20.828046+00:00",
+  "published_url": "https://ege-fipi.ru/oge",
+  "source_sha256": "e933c92ed50cb08f983620b891228339eebc423826081c68da79d388ffb42dfe",
+  "unit_tests": 40,
+  "unit_failures": 0,
+  "preview_catalogue_variants": 108,
+  "preview_edges": 12,
+  "preview_unchanged_routes": 24,
+  "public_catalogue_variants": 7,
+  "public_unchanged_routes": 24,
+  "browser_preview_pages": 20,
+  "browser_public_pages": 20,
+  "browser_public_flows": 3,
+  "analytics_pages": 24,
+  "integrity": {
+    "solution_rows": 12940,
+    "solutions_sha256": "7520f3dbbc23890af00313d420f9006c821036e197e52e43ebc34ae59970777f",
+    "unchanged_solutions": true,
+    "integrity_check": "ok",
+    "raw_files": 147,
+    "raw_unchanged": true
+  },
+  "positions": {
+    "/oge": {
+      "menu_y_before": 852.046875,
+      "menu_y_after": 262.859375,
+      "first_task_y_before": null,
+      "first_task_y_after": null
+    },
+    "/oge?topic=1.2": {
+      "menu_y_before": 1028.671875,
+      "menu_y_after": 439.484375,
+      "first_task_y_before": 1394.65625,
+      "first_task_y_after": 762.59375
+    }
+  },
+  "recrawl_confirmed": 0,
+  "recrawl_unconfirmed": 8,
+  "recrawl_http": 504,
+  "preview_stopped": true,
+  "removed_temporary_databases": [
+    {
+      "file": "preview.sqlite-wal",
+      "bytes": 24752
+    },
+    {
+      "file": "preview.sqlite-shm",
+      "bytes": 32768
+    },
+    {
+      "file": "preview.sqlite",
+      "bytes": 74682368
+    },
+    {
+      "file": "preview-leads.sqlite",
+      "bytes": 12288
+    }
+  ],
+  "limitations": [
+    "Chrome Linux phone emulation; no physical iPhone",
+    "Real ads/analytics blocked in browser checks; no real form submissions",
+    "No causal traffic/revenue effect measured",
+    "Yandex recrawl POST returned 504 for all eight approved URLs; queue acceptance unconfirmed"
+  ]
+}

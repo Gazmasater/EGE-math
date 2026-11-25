@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-11-24T00:34:55.743653+00:00",
+  "checks": [
+    {
+      "name": "Existing relevant unit tests",
+      "ok": true
+    },
+    {
+      "name": "Preview/public: 13 user flows each at 320/390/1280 and no JS",
+      "ok": true
+    },
+    {
+      "name": "Preview/public: 23 HTTP comparisons each; 22 unchanged routes",
+      "ok": true
+    },
+    {
+      "name": "Published-only examples and live counts on isolated database",
+      "ok": true
+    },
+    {
+      "name": "All 12940 solution rows, raw conditions and shared assets preserved",
+      "ok": true
+    },
+    {
+      "name": "Source files match tested release",
+      "ok": true
+    },
+    {
+      "name": "20 LOW_QUALITY/control pairs have conditions and published answers/solutions",
+      "ok": true
+    }
+  ],
+  "passed": 7,
+  "failed": [],
+  "limits": [
+    "Chrome Linux with phone emulation, not real iPhone/Safari",
+    "Metrika/ad requests and all browser writes blocked",
+    "20-pair content comparison is structural, not independent mathematical verification",
+    "Search effect not measured; Webmaster search statistics available only through 20.11"
+  ]
+}

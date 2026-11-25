@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-11-19T15:56:58.659164+00:00",
+  "source_sha256": "e933c92ed50cb08f983620b891228339eebc423826081c68da79d388ffb42dfe",
+  "checks_passed": true,
+  "service": "ege-math.service",
+  "public_http": 200,
+  "first_public_check_utc": "2026-11-19T15:57:13.175444+00:00",
+  "root_counts": [
+    3884,
+    3884
+  ],
+  "topics_before_promotion": true
+}

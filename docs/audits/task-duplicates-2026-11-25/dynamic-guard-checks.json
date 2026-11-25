@@ -1,0 +1,14 @@
+[
+  {
+    "changed_target_restores_self_canonical": true
+  },
+  {
+    "changed_target_restores_alias_in_sitemap": true
+  },
+  {
+    "restored_target_reactivates_reviewed_canonical": true
+  },
+  {
+    "restored_target_removes_alias_from_sitemap": true
+  }
+]

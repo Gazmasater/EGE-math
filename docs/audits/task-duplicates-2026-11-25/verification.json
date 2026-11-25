@@ -1,0 +1,18 @@
+{
+  "unit_command": "node --test scripts/task-canonical.test.js scripts/seo-text.test.js scripts/catalogue.test.js scripts/analytics.test.js",
+  "preview_http": 50,
+  "public_http": 50,
+  "preview_browser_pages": 8,
+  "public_browser_pages": 8,
+  "preview_dynamic_guard_checks": 4,
+  "all_solution_rows_preserved": 12940,
+  "raw_files_preserved": 147,
+  "deployment_matches_preview": true,
+  "recrawl_accepted": false,
+  "recrawl_http_status": 504,
+  "queue_before_count": 86,
+  "queue_after_count": 86,
+  "matching_pair_tasks_after": 0,
+  "unit_tests_passed": 19,
+  "unit_tests_failed": 0
+}

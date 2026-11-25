@@ -1,0 +1,66 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "pages": [
+    {
+      "width": 390,
+      "path": "/tasks/534193",
+      "bothOriginalIds": true,
+      "solutionPreserved": true
+    },
+    {
+      "width": 1280,
+      "path": "/tasks/534193",
+      "bothOriginalIds": true,
+      "solutionPreserved": true
+    }
+  ],
+  "flows": [
+    {
+      "width": 390,
+      "oldSolutionLinkPreserved": true
+    },
+    {
+      "width": 390,
+      "catalogueOriginalId": "2AF210",
+      "commonPage": true
+    },
+    {
+      "width": 390,
+      "catalogueOriginalId": "534193",
+      "commonPage": true
+    },
+    {
+      "width": 390,
+      "searchByEitherId": true,
+      "nextTask": "/tasks/4E0320"
+    },
+    {
+      "width": 1280,
+      "oldSolutionLinkPreserved": true
+    },
+    {
+      "width": 1280,
+      "catalogueOriginalId": "2AF210",
+      "commonPage": true
+    },
+    {
+      "width": 1280,
+      "catalogueOriginalId": "534193",
+      "commonPage": true
+    },
+    {
+      "width": 1280,
+      "searchByEitherId": true,
+      "nextTask": "/tasks/4E0320"
+    },
+    {
+      "javascript": false,
+      "redirectAndBothIds": true
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "Chrome Linux with phone emulation",
+    "Real analytics, advertisements and writes blocked"
+  ]
+}

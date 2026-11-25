@@ -1,0 +1,144 @@
+{
+  "origin": "http://127.0.0.1:8892",
+  "pages": [
+    {
+      "path": "/oge",
+      "status": 200,
+      "changed": true,
+      "sha256": "c63012872ef6b16966663a785cbb1f4749480ccf30341750e6d4e522bc87f8a6"
+    },
+    {
+      "path": "/oge?topic=all",
+      "status": 200,
+      "changed": false,
+      "sha256": "814d2bf35ed12b9c5c974a377975c3c20107c45c3fe276354a5b0bcbe3f498a1"
+    },
+    {
+      "path": "/oge?topic=1.2",
+      "status": 200,
+      "changed": false,
+      "sha256": "5632fcdebb4810c0f395a295b19976ad025e3ba4a9797fdc2c8c8d8bfd354940"
+    },
+    {
+      "path": "/oge?topic=3.1",
+      "status": 200,
+      "changed": false,
+      "sha256": "ccf4713cb74256638548328cda5c92124067645899526217f42f028e5ea71965"
+    },
+    {
+      "path": "/oge?topic=8.2",
+      "status": 200,
+      "changed": false,
+      "sha256": "9513431c6bd97dd673e3a9076d67378a265a78ed4a83b7d9296f402d160b5cb6"
+    },
+    {
+      "path": "/oge?topic=all&page=2",
+      "status": 200,
+      "changed": false,
+      "sha256": "9296a91209c63e843f01a8b2cd2f6b485a7e561585f429fa720ae133d122a909"
+    },
+    {
+      "path": "/oge?topic=1.1",
+      "status": 200,
+      "changed": false,
+      "sha256": "84c276c3db69ec9f637a65829babe5e2ae017c50e0509d70a104e6f011819105"
+    },
+    {
+      "path": "/oge?topic=all&q=nothing987xyz",
+      "status": 200,
+      "changed": false,
+      "sha256": "f34994d2be45c9a33e2e5c376adf157f737041cf62c268ded47519cbb2b50fa5"
+    },
+    {
+      "path": "/ege/math",
+      "status": 200,
+      "changed": false,
+      "sha256": "f992963a67e65c4db0164c59758d2b953513bdae3f019c0e110eee015899d4ea"
+    },
+    {
+      "path": "/ege/physics",
+      "status": 200,
+      "changed": false,
+      "sha256": "5744980d350066d0b634f3168c6d2dbf27d709cb1b13f6220a7b437b66429a3b"
+    },
+    {
+      "path": "/ege/informatics",
+      "status": 200,
+      "changed": false,
+      "sha256": "4dfd0a7d3248fe9e4081cb0f0d6414c5035cca43a84eb1698982abb5db17f34a"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "changed": false,
+      "sha256": "d86a0ba42e433447aa0d10f6a8f4343cba256751cc8131cb4432c073bea5d08f"
+    },
+    {
+      "path": "/physics",
+      "status": 200,
+      "changed": false,
+      "sha256": "2ea58e425efcd35e0554741f272e64f59ac198350be767c5c6095ecec79822ab"
+    },
+    {
+      "path": "/oge-physics",
+      "status": 200,
+      "changed": false,
+      "sha256": "04b1be807a59eb1ffd0ec37d1607ad6f90b90349479db5f1fba16cc1da56bdd8"
+    },
+    {
+      "path": "/oge-informatics",
+      "status": 200,
+      "changed": false,
+      "sha256": "8be9f7e9f17b26f8f1477ab9bd2233435ec1c79b75996f14cf295d6dc870e4c7"
+    },
+    {
+      "path": "/ege-informatics",
+      "status": 200,
+      "changed": false,
+      "sha256": "0bde26227ab665d62340ec78ab43313565a2419f59887981ec5ed6e2bfba5a46"
+    },
+    {
+      "path": "/added?section=oge",
+      "status": 200,
+      "changed": false,
+      "sha256": "1577146dbe44b6bbffacd2f93b404d8f7a513ad29c85285978099f30e583d0d8"
+    },
+    {
+      "path": "/tasks/097E41",
+      "status": 200,
+      "changed": false,
+      "sha256": "1afa2ad67cbf5f1f16940d81255f4a5c6ae83e7392a3ed487894e5f8d5e9b184"
+    },
+    {
+      "path": "/tasks/AEA848",
+      "status": 200,
+      "changed": false,
+      "sha256": "814f644996f980cefea226ac5aa5c35608b58da79382e07fa84020fc03960e78"
+    },
+    {
+      "path": "/tasks/46334D",
+      "status": 200,
+      "changed": false,
+      "sha256": "dcfad8c64d391e7b1d35585cd3be09c93654db67ac53f95f9a2a5c03c4384d51"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "changed": false,
+      "sha256": "879ce9a99461cc790605acfb36fcdd7d6a3d283bd84ef87dff2b2a706aebd89b"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "changed": false,
+      "sha256": "ab7172ef1d3f58ba6502648cd9596dd6722bd3cd4387b242dff782f7e5a62b26"
+    },
+    {
+      "path": "/api/solutions/097E41",
+      "status": 200,
+      "changed": false,
+      "sha256": "0d5c60e118bf5adef1daad009859e300a2266e7a6c5374ca9f8709093660727b"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,22 @@
+{
+  "unit_tests_passed": 19,
+  "preview_http_checks": 37,
+  "public_http_checks": 37,
+  "read_only_identity_checks_each": 9,
+  "browser_flows_each": 9,
+  "browser_widths": [
+    390,
+    1280
+  ],
+  "preview_dynamic_guard_and_discussion_checks": 7,
+  "solution_rows_preserved": 12940,
+  "raw_files_preserved": 147,
+  "sources_match_preview": true,
+  "original_fipi_ids": [
+    "534193",
+    "2AF210"
+  ],
+  "primary_url": "https://ege-fipi.ru/tasks/534193",
+  "alias_http_status": 301,
+  "preview_stopped": true
+}

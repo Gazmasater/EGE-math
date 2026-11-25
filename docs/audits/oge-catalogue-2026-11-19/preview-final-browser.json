@@ -1,0 +1,788 @@
+{
+  "origin": "http://127.0.0.1:8891",
+  "label": "preview-final",
+  "at": "2026-11-19T15:49:30.707Z",
+  "pages": [
+    {
+      "width": 320,
+      "route": "/oge",
+      "title": "ОГЭ по математике — задания ФИПИ с ответами и подробными решениями",
+      "h1": 1,
+      "heading": "ОГЭ по математике — задания ФИПИ с ответами и подробными решениями\n\nФИПИ · ОГЭ · заданий: 3884 · готовых разборов: 3884",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 121,
+        "width": 288,
+        "height": 220.828125,
+        "bottom": 341.828125
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 341.828125,
+        "width": 288,
+        "height": 830.25,
+        "bottom": 1172.078125
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 320,
+      "route": "/oge?topic=all",
+      "title": "Все задания — ОГЭ по математике — ответы и решения",
+      "h1": 1,
+      "heading": "Все задания — ОГЭ по математике — ответы и решения\n\nФИПИ · ОГЭ · заданий: 3884 · готовых разборов: 3884",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 121,
+        "width": 288,
+        "height": 161.046875,
+        "bottom": 282.046875
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 329,
+        "width": 288,
+        "height": 830.25,
+        "bottom": 1159.25
+      },
+      "firstTaskBox": {
+        "x": 16,
+        "y": 723.546875,
+        "width": 288,
+        "height": 669.5,
+        "bottom": 1393.046875
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 320,
+      "route": "/oge?topic=1.2",
+      "title": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения",
+      "h1": 1,
+      "heading": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения\n\nФИПИ · ОГЭ · заданий: 122 · готовых разборов: 122",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 161,
+        "width": 288,
+        "height": 310.5,
+        "bottom": 471.5
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 518.453125,
+        "width": 288,
+        "height": 1321.921875,
+        "bottom": 1840.375
+      },
+      "firstTaskBox": {
+        "x": 16,
+        "y": 913,
+        "width": 288,
+        "height": 546.125,
+        "bottom": 1459.125
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 320,
+      "route": "/oge?topic=1.2&page=2",
+      "title": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения — страница 2",
+      "h1": 1,
+      "heading": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения — страница 2\n\nФИПИ · ОГЭ · заданий: 122 · готовых разборов: 122",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 161,
+        "width": 288,
+        "height": 340.390625,
+        "bottom": 501.390625
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 548.34375,
+        "width": 288,
+        "height": 1321.921875,
+        "bottom": 1870.265625
+      },
+      "firstTaskBox": {
+        "x": 16,
+        "y": 942.890625,
+        "width": 288,
+        "height": 356.9375,
+        "bottom": 1299.828125
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 320,
+      "route": "/oge?topic=1.1",
+      "title": "Натуральные и целые числа. Признаки делимости целых чисел — ОГЭ по математике",
+      "h1": 1,
+      "heading": "Натуральные и целые числа. Признаки делимости целых чисел — ОГЭ по математике\n\nФИПИ · ОГЭ · заданий: 0 · готовых разборов: 0",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 161,
+        "width": 288,
+        "height": 220.828125,
+        "bottom": 381.828125
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 428.78125,
+        "width": 288,
+        "height": 1321.921875,
+        "bottom": 1750.703125
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 320,
+      "route": "/oge?topic=all&q=doesnotexist",
+      "title": "Все задания — ОГЭ по математике — поиск: doesnotexist",
+      "h1": 1,
+      "heading": "Все задания — ОГЭ по математике — поиск: doesnotexist\n\nФИПИ · ОГЭ · заданий: 0 · готовых разборов: 0",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 121,
+        "width": 288,
+        "height": 161.046875,
+        "bottom": 282.046875
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 329,
+        "width": 288,
+        "height": 830.25,
+        "bottom": 1159.25
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 390,
+      "route": "/oge",
+      "title": "ОГЭ по математике — задания ФИПИ с ответами и подробными решениями",
+      "h1": 1,
+      "heading": "ОГЭ по математике — задания ФИПИ с ответами и подробными решениями\n\nФИПИ · ОГЭ · заданий: 3884 · готовых разборов: 3884",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 121,
+        "width": 358,
+        "height": 141.859375,
+        "bottom": 262.859375
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 262.859375,
+        "width": 358,
+        "height": 754.046875,
+        "bottom": 1016.90625
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 390,
+      "route": "/oge?topic=all",
+      "title": "Все задания — ОГЭ по математике — ответы и решения",
+      "h1": 1,
+      "heading": "Все задания — ОГЭ по математике — ответы и решения\n\nФИПИ · ОГЭ · заданий: 3884 · готовых разборов: 3884",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 121,
+        "width": 358,
+        "height": 141.859375,
+        "bottom": 262.859375
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 309.8125,
+        "width": 358,
+        "height": 754.046875,
+        "bottom": 1063.859375
+      },
+      "firstTaskBox": {
+        "x": 16,
+        "y": 632.921875,
+        "width": 358,
+        "height": 574.1875,
+        "bottom": 1207.109375
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 390,
+      "route": "/oge?topic=1.2",
+      "title": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения",
+      "h1": 1,
+      "heading": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения\n\nФИПИ · ОГЭ · заданий: 122 · готовых разборов: 122",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 161,
+        "width": 358,
+        "height": 231.53125,
+        "bottom": 392.53125
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 439.484375,
+        "width": 358,
+        "height": 1186.828125,
+        "bottom": 1626.3125
+      },
+      "firstTaskBox": {
+        "x": 16,
+        "y": 762.59375,
+        "width": 358,
+        "height": 484.421875,
+        "bottom": 1247.015625
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 390,
+      "route": "/oge?topic=1.2&page=2",
+      "title": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения — страница 2",
+      "h1": 1,
+      "heading": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения — страница 2\n\nФИПИ · ОГЭ · заданий: 122 · готовых разборов: 122",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 161,
+        "width": 358,
+        "height": 261.421875,
+        "bottom": 422.421875
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 469.375,
+        "width": 358,
+        "height": 1186.828125,
+        "bottom": 1656.203125
+      },
+      "firstTaskBox": {
+        "x": 16,
+        "y": 842.484375,
+        "width": 358,
+        "height": 311.9375,
+        "bottom": 1154.421875
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 390,
+      "route": "/oge?topic=1.1",
+      "title": "Натуральные и целые числа. Признаки делимости целых чисел — ОГЭ по математике",
+      "h1": 1,
+      "heading": "Натуральные и целые числа. Признаки делимости целых чисел — ОГЭ по математике\n\nФИПИ · ОГЭ · заданий: 0 · готовых разборов: 0",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 144,
+        "width": 358,
+        "height": 171.75,
+        "bottom": 315.75
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 362.703125,
+        "width": 358,
+        "height": 1186.828125,
+        "bottom": 1549.53125
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 390,
+      "route": "/oge?topic=all&q=doesnotexist",
+      "title": "Все задания — ОГЭ по математике — поиск: doesnotexist",
+      "h1": 1,
+      "heading": "Все задания — ОГЭ по математике — поиск: doesnotexist\n\nФИПИ · ОГЭ · заданий: 0 · готовых разборов: 0",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 121,
+        "width": 358,
+        "height": 141.859375,
+        "bottom": 262.859375
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 309.8125,
+        "width": 358,
+        "height": 754.046875,
+        "bottom": 1063.859375
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 1280,
+      "route": "/oge",
+      "title": "ОГЭ по математике — задания ФИПИ с ответами и подробными решениями",
+      "h1": 1,
+      "heading": "ОГЭ по математике — задания ФИПИ с ответами и подробными решениями\n\nФИПИ · ОГЭ · заданий: 3884 · готовых разборов: 3884",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 64,
+        "y": 145.1875,
+        "width": 1152,
+        "height": 133.578125,
+        "bottom": 278.765625
+      },
+      "menuBox": {
+        "x": 64,
+        "y": 278.765625,
+        "width": 1152,
+        "height": 377,
+        "bottom": 655.765625
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 1280,
+      "route": "/oge?topic=all",
+      "title": "Все задания — ОГЭ по математике — ответы и решения",
+      "h1": 1,
+      "heading": "Все задания — ОГЭ по математике — ответы и решения\n\nФИПИ · ОГЭ · заданий: 3884 · готовых разборов: 3884",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 64,
+        "y": 145.1875,
+        "width": 1152,
+        "height": 97.1875,
+        "bottom": 242.375
+      },
+      "menuBox": {
+        "x": 64,
+        "y": 289.328125,
+        "width": 1152,
+        "height": 377,
+        "bottom": 666.328125
+      },
+      "firstTaskBox": {
+        "x": 64,
+        "y": 499.5625,
+        "width": 1152,
+        "height": 295.515625,
+        "bottom": 795.078125
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 1280,
+      "route": "/oge?topic=1.2",
+      "title": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения",
+      "h1": 1,
+      "heading": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения\n\nФИПИ · ОГЭ · заданий: 122 · готовых разборов: 122",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 64,
+        "y": 145.1875,
+        "width": 1152,
+        "height": 133.578125,
+        "bottom": 278.765625
+      },
+      "menuBox": {
+        "x": 64,
+        "y": 325.71875,
+        "width": 1152,
+        "height": 790.28125,
+        "bottom": 1116
+      },
+      "firstTaskBox": {
+        "x": 64,
+        "y": 535.953125,
+        "width": 1152,
+        "height": 420.03125,
+        "bottom": 955.984375
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 1280,
+      "route": "/oge?topic=1.2&page=2",
+      "title": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения — страница 2",
+      "h1": 1,
+      "heading": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике — ответы и решения — страница 2\n\nФИПИ · ОГЭ · заданий: 122 · готовых разборов: 122",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 64,
+        "y": 145.1875,
+        "width": 1152,
+        "height": 169.96875,
+        "bottom": 315.15625
+      },
+      "menuBox": {
+        "x": 64,
+        "y": 362.109375,
+        "width": 1152,
+        "height": 790.28125,
+        "bottom": 1152.390625
+      },
+      "firstTaskBox": {
+        "x": 64,
+        "y": 572.34375,
+        "width": 1152,
+        "height": 236.125,
+        "bottom": 808.46875
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 1280,
+      "route": "/oge?topic=1.1",
+      "title": "Натуральные и целые числа. Признаки делимости целых чисел — ОГЭ по математике",
+      "h1": 1,
+      "heading": "Натуральные и целые числа. Признаки делимости целых чисел — ОГЭ по математике\n\nФИПИ · ОГЭ · заданий: 0 · готовых разборов: 0",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 64,
+        "y": 145.1875,
+        "width": 1152,
+        "height": 133.578125,
+        "bottom": 278.765625
+      },
+      "menuBox": {
+        "x": 64,
+        "y": 325.71875,
+        "width": 1152,
+        "height": 790.28125,
+        "bottom": 1116
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 260,
+        "y": 821.390625,
+        "width": 760,
+        "height": 70,
+        "bottom": 891.390625
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 1280,
+      "route": "/oge?topic=all&q=doesnotexist",
+      "title": "Все задания — ОГЭ по математике — поиск: doesnotexist",
+      "h1": 1,
+      "heading": "Все задания — ОГЭ по математике — поиск: doesnotexist\n\nФИПИ · ОГЭ · заданий: 0 · готовых разборов: 0",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 64,
+        "y": 145.1875,
+        "width": 1152,
+        "height": 97.1875,
+        "bottom": 242.375
+      },
+      "menuBox": {
+        "x": 64,
+        "y": 289.328125,
+        "width": 1152,
+        "height": 377,
+        "bottom": 666.328125
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 260,
+        "y": 763.5625,
+        "width": 760,
+        "height": 70,
+        "bottom": 833.5625
+      },
+      "menuBeforeAd": true,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 390,
+      "route": "/oge",
+      "javascript": false,
+      "serverCounts": true
+    },
+    {
+      "width": 390,
+      "route": "/oge?topic=1.2",
+      "javascript": false,
+      "serverCounts": true
+    }
+  ],
+  "flows": [
+    {
+      "width": 320,
+      "rootToTopic": true,
+      "solutionModal": true,
+      "pagination": true,
+      "taskPage": true,
+      "solutionAnchor": true
+    },
+    {
+      "width": 390,
+      "rootToTopic": true,
+      "solutionModal": true,
+      "pagination": true,
+      "taskPage": true,
+      "solutionAnchor": true
+    },
+    {
+      "width": 1280,
+      "rootToTopic": true,
+      "solutionModal": true,
+      "pagination": true,
+      "taskPage": true,
+      "solutionAnchor": true
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "Chrome Linux with phone emulation",
+    "Analytics, ad network and writes blocked"
+  ]
+}

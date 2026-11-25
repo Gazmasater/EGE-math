@@ -1,0 +1,13 @@
+{
+  "scope": "isolated preview.sqlite only",
+  "task": "F77141",
+  "root_before": [
+    3884,
+    3884
+  ],
+  "checks": [
+    "Root counts reflect changed publication without restart",
+    "A one-task selection with no published solution reports zero and does not promise a solution",
+    "Publication state restored and verified"
+  ]
+}

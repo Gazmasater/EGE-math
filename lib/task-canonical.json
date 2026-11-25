@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-25",
+  "groups": [
+    {
+      "canonicalId": "534193",
+      "aliases": [
+        "2AF210"
+      ],
+      "subject": "ЕГЭ физика",
+      "reason": "Identical condition, answer, solution and diagram; diagram differs only by the displayed task ID. Canonical target occurs in the 2026-11-25 accessible search list.",
+      "evidence": {
+        "2AF210": {
+          "conditionSha256": "3469cd2501db32b5d2c19bb40f1d3d67af17823f75847a0e4ff894a9beea02ab",
+          "solutionSha256": "fd4222cbf46741f154c98a0a5b690b3b3b0dd7f7279cbab521d0320718420633"
+        },
+        "534193": {
+          "conditionSha256": "be22d7d1e31a7bd0b73d76c6a3654cdb0af6b95bda871083e5e6540d3765017b",
+          "solutionSha256": "7163f62df41449293718dbf95038a07e18fba3fd7dac22b83af8616a2fed032b"
+        }
+      }
+    }
+  ]
+}

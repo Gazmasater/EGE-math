@@ -1,0 +1,177 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "label": "baseline",
+  "at": "2026-11-19T15:42:55.370Z",
+  "pages": [
+    {
+      "width": 390,
+      "route": "/oge",
+      "title": "ОГЭ по математике — банк заданий ФИПИ",
+      "h1": 1,
+      "heading": "ОГЭ по математике — банк заданий ФИПИ\n\nФИПИ · ОГЭ · все форматы ответа · 3884 заданий",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 121,
+        "width": 358,
+        "height": 111.96875,
+        "bottom": 232.96875
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 852.046875,
+        "width": 358,
+        "height": 754.046875,
+        "bottom": 1606.09375
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": false,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 390,
+      "route": "/oge?topic=1.2",
+      "title": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике",
+      "h1": 1,
+      "heading": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике\n\nФИПИ · ОГЭ · все форматы ответа · 3884 заданий",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 16,
+        "y": 161,
+        "width": 358,
+        "height": 201.640625,
+        "bottom": 362.640625
+      },
+      "menuBox": {
+        "x": 16,
+        "y": 1028.671875,
+        "width": 358,
+        "height": 1186.828125,
+        "bottom": 2215.5
+      },
+      "firstTaskBox": {
+        "x": 16,
+        "y": 1394.65625,
+        "width": 358,
+        "height": 484.421875,
+        "bottom": 1879.078125
+      },
+      "adBox": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "menuBeforeAd": false,
+      "allTasksBeforeAd": false,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 1280,
+      "route": "/oge",
+      "title": "ОГЭ по математике — банк заданий ФИПИ",
+      "h1": 1,
+      "heading": "ОГЭ по математике — банк заданий ФИПИ\n\nФИПИ · ОГЭ · все форматы ответа · 3884 заданий",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 64,
+        "y": 145.1875,
+        "width": 1152,
+        "height": 97.1875,
+        "bottom": 242.375
+      },
+      "menuBox": {
+        "x": 64,
+        "y": 632.375,
+        "width": 1152,
+        "height": 377,
+        "bottom": 1009.375
+      },
+      "firstTaskBox": null,
+      "adBox": {
+        "x": 260,
+        "y": 534.375,
+        "width": 760,
+        "height": 70,
+        "bottom": 604.375
+      },
+      "menuBeforeAd": false,
+      "allTasksBeforeAd": true,
+      "tasks": 0,
+      "themeLinks": 34,
+      "countersVisible": true
+    },
+    {
+      "width": 1280,
+      "route": "/oge?topic=1.2",
+      "title": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике",
+      "h1": 1,
+      "heading": "Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби — ОГЭ по математике\n\nФИПИ · ОГЭ · все форматы ответа · 3884 заданий",
+      "overflow": false,
+      "inits": 1,
+      "ads": 1,
+      "preparationBanners": 1,
+      "headingBox": {
+        "x": 64,
+        "y": 145.1875,
+        "width": 1152,
+        "height": 133.578125,
+        "bottom": 278.765625
+      },
+      "menuBox": {
+        "x": 64,
+        "y": 715.71875,
+        "width": 1152,
+        "height": 790.28125,
+        "bottom": 1506
+      },
+      "firstTaskBox": {
+        "x": 64,
+        "y": 947.390625,
+        "width": 1152,
+        "height": 420.03125,
+        "bottom": 1367.421875
+      },
+      "adBox": {
+        "x": 260,
+        "y": 570.765625,
+        "width": 760,
+        "height": 70,
+        "bottom": 640.765625
+      },
+      "menuBeforeAd": false,
+      "allTasksBeforeAd": false,
+      "tasks": 12,
+      "themeLinks": 34,
+      "countersVisible": true
+    }
+  ],
+  "flows": [],
+  "errors": [],
+  "limits": [
+    "Chrome Linux with phone emulation",
+    "Analytics, ad network and writes blocked"
+  ]
+}

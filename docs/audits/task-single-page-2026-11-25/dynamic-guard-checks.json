@@ -1,0 +1,30 @@
+[
+  {
+    "name": "both_original_id_discussions_visible",
+    "ok": true
+  },
+  {
+    "name": "changed_content_restores_alias_page",
+    "ok": true
+  },
+  {
+    "name": "changed_content_does_not_merge_ids_or_discussions",
+    "ok": true
+  },
+  {
+    "name": "changed_content_restores_alias_sitemap_entry",
+    "ok": true
+  },
+  {
+    "name": "changed_content_restores_separate_search_results",
+    "ok": true
+  },
+  {
+    "name": "restored_review_reactivates_redirect",
+    "ok": true
+  },
+  {
+    "name": "restored_review_merges_ids_and_discussion",
+    "ok": true
+  }
+]

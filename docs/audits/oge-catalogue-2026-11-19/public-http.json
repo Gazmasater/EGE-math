@@ -1,0 +1,137 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "label": "public",
+  "at": "2026-11-19T15:57:22.795Z",
+  "catalogues": [
+    {
+      "route": "/oge",
+      "total": 3884,
+      "solved": 3884,
+      "page": 1,
+      "visible": 0
+    },
+    {
+      "route": "/oge?topic=all",
+      "total": 3884,
+      "solved": 3884,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1.2",
+      "total": 122,
+      "solved": 122,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=1.1",
+      "total": 0,
+      "solved": 0,
+      "page": 1,
+      "visible": 0
+    },
+    {
+      "route": "/oge?topic=7.2",
+      "total": 632,
+      "solved": 632,
+      "page": 1,
+      "visible": 12
+    },
+    {
+      "route": "/oge?topic=all&q=45B944",
+      "total": 1,
+      "solved": 1,
+      "page": 1,
+      "visible": 1
+    },
+    {
+      "route": "/oge?topic=all&q=doesnotexist",
+      "total": 0,
+      "solved": 0,
+      "page": 1,
+      "visible": 0
+    }
+  ],
+  "edgeCases": [
+    {
+      "route": "/oge?topic=unknown",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=0",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=01",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=-1",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=1.5",
+      "status": 404
+    },
+    {
+      "route": "/oge?page=2",
+      "status": 404
+    },
+    {
+      "route": "/oge?topic=all&page=9999",
+      "status": 404
+    },
+    {
+      "route": "/oge/",
+      "status": 404,
+      "preservedFromProduction": true
+    },
+    {
+      "route": "/oge/?topic=1.2",
+      "status": 404,
+      "preservedFromProduction": true
+    },
+    {
+      "route": "/oge?topic=all&page=1",
+      "status": 301
+    },
+    {
+      "route": "/oge",
+      "method": "POST",
+      "status": 200,
+      "preservedFromOriginalHandler": true
+    },
+    {
+      "route": "query injection",
+      "escaped": true
+    }
+  ],
+  "unchanged": [
+    "/",
+    "/?topic=1.2",
+    "/ege",
+    "/ege/math",
+    "/ege/physics",
+    "/ege/informatics",
+    "/physics",
+    "/physics?topic=1.1",
+    "/oge-physics",
+    "/oge-physics?topic=1.1",
+    "/ege-informatics",
+    "/ege-informatics?topic=type.codes",
+    "/oge-informatics",
+    "/oge-informatics?topic=type.1",
+    "/about",
+    "/tasks/FDA042",
+    "/tasks/083006",
+    "/tasks/EGEINF5E7141",
+    "/tasks/OGEINF44E848",
+    "/api/solutions/FDA042",
+    "/api/solutions/EGEINF5E7141",
+    "/api/solutions/OGEINF44E848",
+    "/sitemap.xml",
+    "/robots.txt"
+  ],
+  "errors": []
+}

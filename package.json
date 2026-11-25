@@ -108,6 +108,9 @@
     "audit:ege-informatics:solutions": "node scripts/audit-ege-informatics-solutions.js",
     "publish:ege-informatics:solutions": "node scripts/audit-ege-informatics-solutions.js --apply",
     "audit:ege-informatics:solution-pages": "INFORMATICS_SECTION=ege-informatics node scripts/audit-oge-informatics-solution-pages.js",
-    "check:ege-informatics:solutions": "INFORMATICS_SECTION=ege-informatics node scripts/check-oge-informatics-solutions.js"
+    "check:ege-informatics:solutions": "INFORMATICS_SECTION=ege-informatics node scripts/check-oge-informatics-solutions.js",
+    "test:task-canonical": "node --test scripts/task-canonical.test.js",
+    "audit:task-canonical": "node scripts/audit-task-canonical.js",
+    "check:task-identity": "node scripts/check-task-identity.js"
   }
 }

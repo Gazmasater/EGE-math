@@ -1,0 +1,150 @@
+{
+  "origin": "https://ege-fipi.ru",
+  "label": "public",
+  "at": "2026-11-24T00:32:16.561Z",
+  "pages": [
+    {
+      "width": 320,
+      "path": "/oge",
+      "overflow": false,
+      "inits": 1,
+      "h1": 1,
+      "examples": 3,
+      "closed": true,
+      "cta": {
+        "x": 16,
+        "y": 252.15625,
+        "width": 288,
+        "height": 47.421875,
+        "bottom": 299.578125
+      },
+      "menu": {
+        "x": 16,
+        "y": 583.578125,
+        "width": 288,
+        "height": 830.25,
+        "bottom": 1413.828125
+      },
+      "ads": 1,
+      "quick": 5
+    },
+    {
+      "width": 390,
+      "path": "/oge",
+      "overflow": false,
+      "inits": 1,
+      "h1": 1,
+      "examples": 3,
+      "closed": true,
+      "cta": {
+        "x": 16,
+        "y": 232.96875,
+        "width": 358,
+        "height": 47.421875,
+        "bottom": 280.390625
+      },
+      "menu": {
+        "x": 16,
+        "y": 514.390625,
+        "width": 358,
+        "height": 754.046875,
+        "bottom": 1268.4375
+      },
+      "ads": 1,
+      "quick": 5
+    },
+    {
+      "width": 1280,
+      "path": "/oge",
+      "overflow": false,
+      "inits": 1,
+      "h1": 1,
+      "examples": 3,
+      "closed": true,
+      "cta": {
+        "x": 64,
+        "y": 242.375,
+        "width": 177.640625,
+        "height": 47.421875,
+        "bottom": 289.796875
+      },
+      "menu": {
+        "x": 64,
+        "y": 373.796875,
+        "width": 1152,
+        "height": 377,
+        "bottom": 750.796875
+      },
+      "ads": 1,
+      "quick": 5
+    }
+  ],
+  "flows": [
+    {
+      "width": 320,
+      "name": "Example → published solution → next task in topic",
+      "href": "/oge?topic=1.2#q711640",
+      "worksWithoutCounterCallback": true
+    },
+    {
+      "width": 320,
+      "name": "Start → all tasks"
+    },
+    {
+      "width": 320,
+      "name": "Quick topic → solution dialog → next task",
+      "href": "/oge?topic=3.1#qAEA848"
+    },
+    {
+      "width": 320,
+      "name": "Standalone task → solution → next task"
+    },
+    {
+      "width": 390,
+      "name": "Example → published solution → next task in topic",
+      "href": "/oge?topic=1.2#q711640",
+      "worksWithoutCounterCallback": true
+    },
+    {
+      "width": 390,
+      "name": "Start → all tasks"
+    },
+    {
+      "width": 390,
+      "name": "Quick topic → solution dialog → next task",
+      "href": "/oge?topic=3.1#qAEA848"
+    },
+    {
+      "width": 390,
+      "name": "Standalone task → solution → next task"
+    },
+    {
+      "width": 1280,
+      "name": "Example → published solution → next task in topic",
+      "href": "/oge?topic=1.2#q711640",
+      "worksWithoutCounterCallback": true
+    },
+    {
+      "width": 1280,
+      "name": "Start → all tasks"
+    },
+    {
+      "width": 1280,
+      "name": "Quick topic → solution dialog → next task",
+      "href": "/oge?topic=3.1#qAEA848"
+    },
+    {
+      "width": 1280,
+      "name": "Standalone task → solution → next task"
+    },
+    {
+      "width": 390,
+      "name": "Native solution and topic continuation without JavaScript"
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "Chrome Linux; phone and iPhone emulation, not hardware Safari",
+    "External analytics/ad requests and all writes blocked"
+  ]
+}
