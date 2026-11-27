@@ -1,0 +1,24 @@
+[
+  {
+    "ids": [
+      "83E501",
+      "77BC78"
+    ],
+    "equivalentConditionStructure": true,
+    "sha256": [
+      "4aa47e8aaf17f5944bb5ae0ff73338a674496fe2fa1d9de724ae500f88b28322",
+      "4aa47e8aaf17f5944bb5ae0ff73338a674496fe2fa1d9de724ae500f88b28322"
+    ]
+  },
+  {
+    "ids": [
+      "1506BA",
+      "6F5EF4"
+    ],
+    "equivalentConditionStructure": true,
+    "sha256": [
+      "f2827a3c2e2ad7ad56bed6824f94d5a3a98503727e371602a9186979c9e4560d",
+      "f2827a3c2e2ad7ad56bed6824f94d5a3a98503727e371602a9186979c9e4560d"
+    ]
+  }
+]

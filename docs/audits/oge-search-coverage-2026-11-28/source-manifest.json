@@ -1,0 +1,27 @@
+[
+  {
+    "file": "local.json",
+    "sha256": "ecd7842c51e6fef2f5ad1f7166af579068e5886f145c4b3616bc5319e3d8eaad",
+    "bytes": 10530019
+  },
+  {
+    "file": "http.json",
+    "sha256": "c0104436c712dfd6baaf5e23c81053f2644146040d4bb5e842c9b6b4e7fb03f5",
+    "bytes": 2611713
+  },
+  {
+    "file": "search-snapshot.json",
+    "sha256": "cb886b2244a481187c288d316625575251eb21abdd13a64371ea889c5db33c92",
+    "bytes": 1623816
+  },
+  {
+    "file": "logs.json",
+    "sha256": "929205233d42dc69027074fa82d30c4e70a264c0597e759f6469edeeac8e9b1b",
+    "bytes": 257615
+  },
+  {
+    "file": "pair-review-structure.json",
+    "sha256": "52c61a7c1814077d50fc3739c62e5488a6c45d717ad9a4d3ac38617d1a091e2f",
+    "bytes": 545
+  }
+]

@@ -1,0 +1,948 @@
+{
+  "generatedUtc": "2026-11-27T22:41:42.454048+00:00",
+  "scope": "Read-only continuation: OGE task discoverability, actual bot delivery, published-solution exclusions and duplicate evidence.",
+  "banks": [
+    {
+      "bank": "oge",
+      "currentTasks": 3884,
+      "presentInAvailableSamples": 11,
+      "recentBot200UniqueTasks": 924,
+      "recentCrawledAbsentFromAvailableSamples": 917
+    },
+    {
+      "bank": "oge-physics",
+      "currentTasks": 1506,
+      "presentInAvailableSamples": 25,
+      "recentBot200UniqueTasks": 345,
+      "recentCrawledAbsentFromAvailableSamples": 342
+    },
+    {
+      "bank": "oge-informatics",
+      "currentTasks": 1585,
+      "presentInAvailableSamples": 2,
+      "recentBot200UniqueTasks": 323,
+      "recentCrawledAbsentFromAvailableSamples": 321
+    },
+    {
+      "bank": "ege-informatics",
+      "currentTasks": 2475,
+      "presentInAvailableSamples": 10,
+      "recentBot200UniqueTasks": 538,
+      "recentCrawledAbsentFromAvailableSamples": 533
+    },
+    {
+      "bank": "ege-physics",
+      "currentTasks": 2344,
+      "presentInAvailableSamples": 1990,
+      "recentBot200UniqueTasks": 529,
+      "recentCrawledAbsentFromAvailableSamples": 67
+    },
+    {
+      "bank": "ege-math",
+      "currentTasks": 1148,
+      "presentInAvailableSamples": 1029,
+      "recentBot200UniqueTasks": 424,
+      "recentCrawledAbsentFromAvailableSamples": 35
+    }
+  ],
+  "oge": {
+    "tasks": 3884,
+    "published": 3884,
+    "presentInAvailableSamples": 11,
+    "recentBot200UniqueTasks": 924,
+    "recentBot200Requests": 1035,
+    "recentCrawledAbsentFromAvailableSamples": 917,
+    "latestAvailableExcluded": 57,
+    "exclusionsAfterPublished": 57,
+    "excludedWithRecentVerifiedBot200": 19
+  },
+  "cohorts": {
+    "originalImproperFractionFamily": [
+      {
+        "taskId": "F1F841",
+        "publishedAt": "2026-10-10T22:00:48.342Z",
+        "conditionHash": "ce77e4fca39c34eab4cf46271bc4323c63941c08ba0834140988caa8d49f1cb9",
+        "imageHashes": [
+          "aa4d71536f7b6d255cf8fb2a25c10aacfe4654fcac0ca1aa438b0d67a8e4bbda"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": null,
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1",
+          "/tasks/F1F841"
+        ]
+      },
+      {
+        "taskId": "7C7947",
+        "publishedAt": "2026-10-10T22:00:48.382Z",
+        "conditionHash": "3302b96ce74c42baac0c766a8e729315e0c3a8d4a9fc2e308f44e80b3ee91bcd",
+        "imageHashes": [
+          "accc16ec48436f3ee9fd22178ac8c9f27e6f3a6634778429baf788c67ac0d54b"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": {
+          "url": "https://ege-fipi.ru/tasks/7C7947",
+          "title": "7C7947 — Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби: ответ и решение | ОГЭ по математике",
+          "event_date": "2026-11-13T00:00:00.000+03:00",
+          "last_access": "2026-10-26T00:00:00.000+03:00",
+          "event": "REMOVED_FROM_SEARCH",
+          "excluded_url_status": "LOW_QUALITY",
+          "bad_http_status": null,
+          "target_url": null
+        },
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1",
+          "/tasks/7C7947"
+        ]
+      },
+      {
+        "taskId": "8D164C",
+        "publishedAt": "2026-10-10T22:00:48.427Z",
+        "conditionHash": "43774f357d836f996f0d80faf2425c039074b122e28aa50359ad84040209804e",
+        "imageHashes": [
+          "2a88d40b268e64c652b86d6e401b3ea57daf8dc6a286ed2f7055e7f74fab1037"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": {
+          "url": "https://ege-fipi.ru/tasks/8D164C",
+          "title": "8D164C — Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби: ответ и решение | ОГЭ по математике",
+          "event_date": "2026-11-13T00:00:00.000+03:00",
+          "last_access": "2026-11-04T00:00:00.000+03:00",
+          "event": "REMOVED_FROM_SEARCH",
+          "excluded_url_status": "LOW_QUALITY",
+          "bad_http_status": null,
+          "target_url": null
+        },
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1.2",
+          "/tasks/8D164C"
+        ]
+      },
+      {
+        "taskId": "DC38F4",
+        "publishedAt": "2026-10-10T22:00:48.442Z",
+        "conditionHash": "a628ca231fea0ba543a1fae028f7489a3f8621b45cd6e42b9bad66a849ea91f2",
+        "imageHashes": [
+          "6327b09a8f4971449b42695457f4a7b3e0ea4e9a7e5af16b87973a775ef79c88"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": {
+          "url": "https://ege-fipi.ru/tasks/DC38F4",
+          "title": "DC38F4 — Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби: ответ и решение | ОГЭ по математике",
+          "event_date": "2026-11-13T00:00:00.000+03:00",
+          "last_access": "2026-11-04T00:00:00.000+03:00",
+          "event": "REMOVED_FROM_SEARCH",
+          "excluded_url_status": "LOW_QUALITY",
+          "bad_http_status": null,
+          "target_url": null
+        },
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=6.1",
+          "/tasks/DC38F4"
+        ]
+      },
+      {
+        "taskId": "EFB5F8",
+        "publishedAt": "2026-10-10T22:00:48.473Z",
+        "conditionHash": "979967625336090abb33dfc84fb62ccaf222f00bdf63ce60a7fc2fc115f95184",
+        "imageHashes": [
+          "2eab56c6045f689656345c6b4eda424363678447956fb3d2468b4262ee8b5503"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": null,
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1.2",
+          "/oge?topic=1.2&page=2",
+          "/tasks/EFB5F8"
+        ]
+      },
+      {
+        "taskId": "98CD7C",
+        "publishedAt": "2026-10-10T22:00:48.535Z",
+        "conditionHash": "2476114f4d000ee3dc4fd10d929c02e276972a458bf8512d7785d582dfc7f611",
+        "imageHashes": [
+          "c848747aeca4dc924bc4ba0bf575b4cf458882abc06e696b7950af80b1842d41"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": null,
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1.2",
+          "/oge?topic=1.2&page=2",
+          "/oge?topic=1.2&page=3",
+          "/tasks/98CD7C"
+        ]
+      },
+      {
+        "taskId": "69B952",
+        "publishedAt": "2026-10-10T22:00:48.787Z",
+        "conditionHash": "9cb17cb2a416f3d32c0a909c98d4e70a8c7f25905219530de9338b6790affdc3",
+        "imageHashes": [
+          "fb946964839c80145e6989e102471535dbcff8dbfd1ff92e79c15a6ca8ffe5d1"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": null,
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1.2",
+          "/oge?topic=1.2&page=2",
+          "/oge?topic=1.2&page=3",
+          "/oge?topic=1.2&page=4",
+          "/oge?topic=1.2&page=5",
+          "/oge?topic=1.2&page=6",
+          "/tasks/69B952"
+        ]
+      },
+      {
+        "taskId": "97DD9C",
+        "publishedAt": "2026-10-10T22:00:48.935Z",
+        "conditionHash": "79acf74eb367a71baeaeb8c8630d40a7adbdff628abfa88953884d701f4680ba",
+        "imageHashes": [
+          "1f52f50ee26b4815ae1781a5ce7469d8365a3dbc01ef29222742d0aecd16d19c"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": null,
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1.2",
+          "/oge?topic=1.2&page=11",
+          "/oge?topic=1.2&page=10",
+          "/oge?topic=1.2&page=9",
+          "/oge?topic=1.2&page=8",
+          "/tasks/97DD9C"
+        ]
+      },
+      {
+        "taskId": "AEE26C",
+        "publishedAt": "2026-10-10T22:00:48.972Z",
+        "conditionHash": "c21e4565d2601cf7a8eac3733790e9e87e4a16a1fe8c94bc851526f1d4aded3f",
+        "imageHashes": [
+          "c46235b776695cadbb52242ccf4dca36a81b118a33d8318da6123e19cf0f0a18"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": null,
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1",
+          "/oge?topic=1&page=21",
+          "/oge?topic=1&page=20",
+          "/oge?topic=1&page=19",
+          "/tasks/AEE26C"
+        ]
+      },
+      {
+        "taskId": "7A5F3E",
+        "publishedAt": "2026-10-10T22:00:48.990Z",
+        "conditionHash": "93c0d7876385c82660d2e0396e23d74db639304f9ed5ac852cf17a2056e8e242",
+        "imageHashes": [
+          "07e34644f04d25293383cae5a2b9d1fbce2d36392681763f4d10811db0f0c505"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": true,
+        "lastAvailableEvent": null,
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1.2",
+          "/oge?topic=1.2&page=11",
+          "/oge?topic=1.2&page=10",
+          "/tasks/7A5F3E"
+        ]
+      },
+      {
+        "taskId": "7C3782",
+        "publishedAt": "2026-10-10T22:00:49.007Z",
+        "conditionHash": "4892a52182775544105140793eecf54d28a65e688af3f8a2ce8680fcbfb45b93",
+        "imageHashes": [
+          "3e5bacad8545d4d693c96aaaaec3dcf09c20e7972ab043592418af1f9e97e76c"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": null,
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=6",
+          "/oge?topic=6&page=15",
+          "/tasks/7C3782"
+        ]
+      },
+      {
+        "taskId": "60DA89",
+        "publishedAt": "2026-10-10T22:00:49.025Z",
+        "conditionHash": "8fc8124833acfafdfa67d613951016b7c8cab102ee02efc907252a81284f9ad1",
+        "imageHashes": [
+          "08a9b5f4610e36782d9c47d69c09045a15368646778c1b63d670c459130d2326"
+        ],
+        "inAvailableSamples": false,
+        "recentBot200": false,
+        "lastAvailableEvent": null,
+        "shortestCapturedPath": [
+          "/oge",
+          "/oge?topic=1",
+          "/oge?topic=1&page=21",
+          "/tasks/60DA89"
+        ]
+      }
+    ],
+    "expandedNumberLineTasks": 37,
+    "fractionTasks": 27,
+    "sqrtTasks": 10,
+    "expandedCohortApiRows": 0,
+    "queryWindow": [
+      "2026-11-09",
+      "2026-11-22"
+    ],
+    "comparisonF2CF43": {
+      "IMPRESSIONS": 2.0,
+      "CLICKS": 0.0
+    }
+  },
+  "F1F841": {
+    "path": [
+      "/oge",
+      "/oge?topic=1",
+      "/tasks/F1F841"
+    ],
+    "existingTitle": "F1F841 — Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби: ответ и решение | ОГЭ по математике",
+    "existingH1": [
+      "Задание F1F841\n        Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби"
+    ],
+    "existingDescription": "F1F841. ОГЭ по математике. Обыкновенные и десятичные дроби, проценты, бесконечные периодические дроби. Выберите правильный ответ. Одно из чисел (55) ÷ (19), (64) ÷ (19), (72) ÷… Ответ и подробное решение.",
+    "sameGenericTopicHeadingExistsOnSearchSampleControl": true,
+    "duplicate": false,
+    "draftTitle": "F1F841 — Какая дробь отмечена на числовой прямой? Ответ и решение | ОГЭ",
+    "draftOnly": true
+  },
+  "http": {
+    "pages": 188,
+    "taskPages": 48,
+    "completeTopic12Pages": 11,
+    "completeTopic12Tasks": 122,
+    "all200": true
+  },
+  "duplicates": {
+    "textGroups": 53,
+    "textMembers": 464,
+    "conditionAndImageGroups": 2,
+    "conditionAndImageMembers": 4,
+    "exactSolutionGroups": 41,
+    "exactSolutionMembers": 95,
+    "pairs": [
+      {
+        "ids": [
+          "83E501",
+          "77BC78"
+        ],
+        "equivalentConditionStructure": true,
+        "sha256": [
+          "4aa47e8aaf17f5944bb5ae0ff73338a674496fe2fa1d9de724ae500f88b28322",
+          "4aa47e8aaf17f5944bb5ae0ff73338a674496fe2fa1d9de724ae500f88b28322"
+        ]
+      },
+      {
+        "ids": [
+          "1506BA",
+          "6F5EF4"
+        ],
+        "equivalentConditionStructure": true,
+        "sha256": [
+          "f2827a3c2e2ad7ad56bed6824f94d5a3a98503727e371602a9186979c9e4560d",
+          "f2827a3c2e2ad7ad56bed6824f94d5a3a98503727e371602a9186979c9e4560d"
+        ]
+      }
+    ],
+    "warning": "Matching plain text is not proof of duplicate mathematical tasks: figures and MathML must be compared. The two pairs do not explain the broad coverage gap."
+  },
+  "latestAvailableExclusions": [
+    {
+      "taskId": "02AAF8",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.258Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "152506",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.557Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "166F42",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-01T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:12:15.161Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "23D305",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.239Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "244745",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-01T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:12:15.225Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "27B2F1",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.275Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "286CF5",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.292Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "289E4B",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-01T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:12:15.193Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "2FC11A",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-26T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.681Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "30344D",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.195Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "37B64D",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T22:00:48.411Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "37EB4D",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:12:15.414Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "3A0009",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.576Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "4318F0",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.238Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "4AD6B2",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-05T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.637Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "642C12",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-05T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.700Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "663C78",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-05T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.619Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "696950",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.382Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "69EC44",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.173Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "6CC2D0",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.348Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "6D0827",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.314Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "6F944F",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-02T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T22:13:11.873Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "73D345",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-03T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T22:00:48.396Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "7C7947",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-26T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T22:00:48.382Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "7C8727",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.298Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "86FCF3",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.208Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "8B0E46",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.218Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "8C2242",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.512Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "8D164C",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T22:00:48.427Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "8EE344",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T23:09:08.710Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "9937FD",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-26T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.309Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "9BFC49",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-02T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T22:13:11.631Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "A09B46",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T17:26:33.345Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "A2285A",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.365Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "A61940",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-01T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T23:09:08.646Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "A79C42",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-01T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T23:09:08.662Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "AA42D3",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-26T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.719Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "AEA848",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.117Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "B011A1",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.399Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "C79348",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T23:09:08.679Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "CA994A",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.135Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "CF1C7A",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-05T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.600Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "D2D94B",
+      "eventDate": "2026-11-22T00:00:00.000+03:00",
+      "lastAccess": "2026-11-11T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T12:00:49.414Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "D2DF4D",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-01T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:12:15.321Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "D32446",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-01T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T23:09:08.604Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "D4F24A",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-01T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T23:09:08.574Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "DC38F4",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T22:00:48.442Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "E1C4BF",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-05T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.662Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "EA4046",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T00:32:49.154Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "EBD148",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.486Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "ED0F47",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T23:09:08.694Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "F4404E",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-23T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:12:15.130Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "F5A849",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-23T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:12:15.092Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    },
+    {
+      "taskId": "F7E600",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-11-04T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-11T01:38:36.536Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "F89C42",
+      "eventDate": "2026-11-22T00:00:00.000+03:00",
+      "lastAccess": "2026-11-13T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T23:09:08.434Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "FD331C",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.273Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": false
+    },
+    {
+      "taskId": "FFD2DB",
+      "eventDate": "2026-11-13T00:00:00.000+03:00",
+      "lastAccess": "2026-10-25T00:00:00.000+03:00",
+      "reason": "LOW_QUALITY",
+      "publishedAt": "2026-10-10T19:41:03.332Z",
+      "accessAfterPublished": true,
+      "recentVerifiedBot200": true
+    }
+  ],
+  "freshWebmasterReports": 41,
+  "freshBoundaries": {
+    "insearch_00000": {
+      "checkedUtc": "2026-11-27T22:34:23.015283+00:00",
+      "sameDataAsEarlierSnapshot": true,
+      "count": 4132
+    },
+    "events_00000": {
+      "checkedUtc": "2026-11-27T22:34:23.372044+00:00",
+      "sameDataAsEarlierSnapshot": true,
+      "count": 1402
+    }
+  },
+  "evidence": {
+    "snapshotSource": "/root/ege-diagnostics-20261128/raw-webmaster",
+    "searchRows": 4132,
+    "uniqueSearchUrls": 3769,
+    "eventRows": 1143,
+    "logStart": "2026-11-25T00:00:11+00:00",
+    "logEnd": "2026-11-27T22:35:00+00:00",
+    "httpSnapshots": "html/",
+    "localExport": "local.json"
+  },
+  "limitations": [
+    "Список поиска и журнал содержат разнородные даты и не отражают синхронное текущее состояние индекса. 11 из 3884 — охват доступной выгрузки, а не измеренная текущая доля индексации.",
+    "Заново получены только первые страницы и счётчики списков поиска/событий; совпадение ответов не доказывает актуальность каждой старой строки.",
+    "37 свежих адресных аналитических отчётов заканчиваются 22 ноября; отсутствие строк не устанавливает текущую причину исключения.",
+    "Обход подтверждён только сохранёнными логами 25–27 ноября: в них нет Host, проверка прямого и обратного DNS выполнена сейчас. Ответ 200 не устанавливает включение в поиск или его дату.",
+    "188 HTTP-проверок подтверждают текущие ответы сервера, но не раскрывают HTML-копию в индексе. Все 3884 решения проверены локально, а не 3884 запросами к сайту.",
+    "Общие названия тем есть и у страниц из доступного списка поиска. Их роль в исключении остаётся гипотезой; уточнение заголовков не гарантирует включение.",
+    "Для F1F841 нет адресного события исключения. Причины 57 других задач нельзя переносить на неё. Причинная связь старых исключений с недавним спадом входов в каталоги не установлена."
+  ],
+  "priorities": [
+    {
+      "priority": 1,
+      "action": "Получить текущий адресный статус и версию в индексе для F1F841, 7C7947, 8D164C, DC38F4 и контроля F2CF43 в Вебмастере; сохранить время и точную причину.",
+      "reason": "Доступные индексные списки и отчёты запросов отстают от фактических недавних обращений робота."
+    },
+    {
+      "priority": 2,
+      "action": "Подготовить ограниченное сравнение сопоставимых групп с конкретными title/H1 для 12 задач о неправильной дроби на числовой прямой, сохраняя условия, решения и URL.",
+      "reason": "Сейчас метаданные описывают широкую тему дробей, а вопрос требует определить дробь по точке на прямой. Это проверяемая гипотеза, а не установленная причина."
+    },
+    {
+      "priority": 3,
+      "action": "Отдельно рассмотреть две пары с одинаковыми условиями, рисунками и решениями перед выбором основного адреса.",
+      "reason": "Учебное содержимое совпадает у 83E501/77BC78 и 1506BA/6F5EF4. Речь только о четырёх страницах."
+    },
+    {
+      "priority": 4,
+      "action": "Перед будущей публикацией записать исходный срез и дату подтверждённого обхода; затем сравнивать одинаковые окна запросов и неизменный набор URL.",
+      "reason": "Различать получение страницы, включение, показы и клики; одновременная правка всех страниц лишит сравнение проверяемого контроля."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://yandex.ru/support/webmaster/ru/site-indexing/low-demand",
+      "use": "LOW_QUALITY or low demand is a per-page automatic selection decision; accessible content does not ensure inclusion."
+    },
+    {
+      "url": "https://yandex.ru/support/webmaster/ru/robot-workings/canonical",
+      "use": "Canonical is a recommendation for equivalent pages, not a general remedy for distinct task variants."
+    }
+  ]
+}
