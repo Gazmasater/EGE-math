@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily OGE title comparison through December 31, 2026
+
+[Timer]
+OnCalendar=2026-11-28..30 06:15:00 UTC
+OnCalendar=2026-12-* 06:15:00 UTC
+Persistent=true
+Unit=ege-oge-title-pilot.service
+
+[Install]
+WantedBy=timers.target

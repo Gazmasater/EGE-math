@@ -1,0 +1,16 @@
+[Unit]
+Description=Record OGE title pilot observations and November search losses
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/projects/ege-math
+ExecStart=/usr/bin/python3 -B /root/projects/ege-math/docs/audits/oge-title-pilot-2026-11-28/measure.py /root/ege-oge-titles-20261128/measurements
+UMask=0077
+Nice=10
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/root/ege-oge-titles-20261128/measurements
+PrivateTmp=true
+TimeoutStartSec=15min

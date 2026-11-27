@@ -1,0 +1,382 @@
+{
+  "metrikaVisits": {
+    "exact_root": [
+      173.0,
+      29.0
+    ],
+    "exact_all": [
+      120.0,
+      36.0
+    ],
+    "exact_root_mobile": [
+      114.0,
+      22.0
+    ],
+    "exact_root_desktop": [
+      53.0,
+      7.0
+    ],
+    "section": [
+      320.0,
+      84.0
+    ]
+  },
+  "metrikaPeriods": [
+    [
+      "2026-11-16",
+      "2026-11-20"
+    ],
+    [
+      "2026-11-23",
+      "2026-11-27"
+    ]
+  ],
+  "queryWindow": [
+    "2026-11-09",
+    "2026-11-22"
+  ],
+  "byQuery": [
+    {
+      "query": "фипи огэ математика 9 класс",
+      "device": "ALL",
+      "path": "/oge",
+      "days": {
+        "2026-11-15": {
+          "CTR": 5.0,
+          "IMPRESSIONS": 1016.0,
+          "POSITION": 6.5,
+          "CLICKS": 51.0
+        },
+        "2026-11-22": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 93.0,
+          "POSITION": 8.7,
+          "CLICKS": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика 9 класс",
+      "device": "ALL",
+      "path": "/oge?topic=all",
+      "days": {
+        "2026-11-15": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 13.0,
+          "POSITION": 4.9,
+          "CLICKS": 0.0
+        },
+        "2026-11-22": {
+          "CTR": 5.6,
+          "IMPRESSIONS": 53.0,
+          "POSITION": 5.9,
+          "CLICKS": 3.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика 9 класс",
+      "device": "DESKTOP",
+      "path": "/oge",
+      "days": {
+        "2026-11-15": {
+          "CLICKS": 3.0,
+          "POSITION": 8.3,
+          "IMPRESSIONS": 495.0,
+          "CTR": 0.6
+        },
+        "2026-11-22": {
+          "CLICKS": 0.0,
+          "POSITION": 9.1,
+          "IMPRESSIONS": 14.0,
+          "CTR": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика 9 класс",
+      "device": "DESKTOP",
+      "path": "/oge?topic=all",
+      "days": {
+        "2026-11-15": {
+          "CLICKS": 0.0,
+          "POSITION": 5.0,
+          "IMPRESSIONS": 12.0,
+          "CTR": 0.0
+        },
+        "2026-11-22": {
+          "CLICKS": 0.0,
+          "POSITION": 6.4,
+          "IMPRESSIONS": 20.0,
+          "CTR": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика 9 класс",
+      "device": "MOBILE",
+      "path": "/oge",
+      "days": {
+        "2026-11-15": {
+          "CTR": 9.1,
+          "IMPRESSIONS": 516.0,
+          "POSITION": 4.8,
+          "CLICKS": 47.0
+        },
+        "2026-11-22": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 77.0,
+          "POSITION": 8.6,
+          "CLICKS": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика 9 класс",
+      "device": "MOBILE",
+      "path": "/oge?topic=all",
+      "days": {
+        "2026-11-15": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 1.0,
+          "POSITION": 4.0,
+          "CLICKS": 0.0
+        },
+        "2026-11-22": {
+          "CTR": 9.0,
+          "IMPRESSIONS": 33.0,
+          "POSITION": 5.7,
+          "CLICKS": 3.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика открытый банк",
+      "device": "ALL",
+      "path": "/oge",
+      "days": {
+        "2026-11-15": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 8.0,
+          "POSITION": 6.6,
+          "CLICKS": 0.0
+        },
+        "2026-11-22": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 4.0,
+          "POSITION": 7.0,
+          "CLICKS": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика открытый банк",
+      "device": "ALL",
+      "path": "/oge?topic=all",
+      "days": {
+        "2026-11-15": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 0.0,
+          "CLICKS": 0.0
+        },
+        "2026-11-22": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 0.0,
+          "CLICKS": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика открытый банк",
+      "device": "DESKTOP",
+      "path": "/oge",
+      "days": {
+        "2026-11-15": {
+          "CLICKS": 0.0,
+          "POSITION": 8.0,
+          "IMPRESSIONS": 3.0,
+          "CTR": 0.0
+        },
+        "2026-11-22": {
+          "CLICKS": 0.0,
+          "POSITION": 7.0,
+          "IMPRESSIONS": 1.0,
+          "CTR": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика открытый банк",
+      "device": "DESKTOP",
+      "path": "/oge?topic=all",
+      "days": {
+        "2026-11-15": {
+          "CLICKS": 0.0,
+          "IMPRESSIONS": 0.0,
+          "CTR": 0.0
+        },
+        "2026-11-22": {
+          "CLICKS": 0.0,
+          "IMPRESSIONS": 0.0,
+          "CTR": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика открытый банк",
+      "device": "MOBILE",
+      "path": "/oge",
+      "days": {
+        "2026-11-15": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 5.0,
+          "POSITION": 5.8,
+          "CLICKS": 0.0
+        },
+        "2026-11-22": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 3.0,
+          "POSITION": 7.0,
+          "CLICKS": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика открытый банк",
+      "device": "MOBILE",
+      "path": "/oge?topic=all",
+      "days": {
+        "2026-11-15": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 0.0,
+          "CLICKS": 0.0
+        },
+        "2026-11-22": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 0.0,
+          "CLICKS": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика",
+      "device": "ALL",
+      "path": "/oge?topic=all",
+      "days": {
+        "2026-11-15": {
+          "CLICKS": 8.0,
+          "POSITION": 5.7,
+          "IMPRESSIONS": 342.0,
+          "CTR": 2.3
+        },
+        "2026-11-22": {
+          "CLICKS": 3.0,
+          "POSITION": 7.2,
+          "IMPRESSIONS": 253.0,
+          "CTR": 1.1
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика",
+      "device": "ALL",
+      "path": "/oge",
+      "days": {
+        "2026-11-15": {
+          "CLICKS": 9.0,
+          "POSITION": 6.6,
+          "IMPRESSIONS": 389.0,
+          "CTR": 2.3
+        },
+        "2026-11-22": {
+          "CLICKS": 1.0,
+          "POSITION": 8.0,
+          "IMPRESSIONS": 126.0,
+          "CTR": 0.7
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика",
+      "device": "DESKTOP",
+      "path": "/oge?topic=all",
+      "days": {
+        "2026-11-15": {
+          "CTR": 2.1,
+          "IMPRESSIONS": 141.0,
+          "POSITION": 5.7,
+          "CLICKS": 3.0
+        },
+        "2026-11-22": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 78.0,
+          "POSITION": 6.9,
+          "CLICKS": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика",
+      "device": "DESKTOP",
+      "path": "/oge",
+      "days": {
+        "2026-11-15": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 61.0,
+          "POSITION": 7.8,
+          "CLICKS": 0.0
+        },
+        "2026-11-22": {
+          "CTR": 0.0,
+          "IMPRESSIONS": 33.0,
+          "POSITION": 8.1,
+          "CLICKS": 0.0
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика",
+      "device": "MOBILE",
+      "path": "/oge?topic=all",
+      "days": {
+        "2026-11-15": {
+          "CLICKS": 5.0,
+          "POSITION": 5.8,
+          "IMPRESSIONS": 190.0,
+          "CTR": 2.6
+        },
+        "2026-11-22": {
+          "CLICKS": 3.0,
+          "POSITION": 7.4,
+          "IMPRESSIONS": 170.0,
+          "CTR": 1.7
+        }
+      }
+    },
+    {
+      "query": "фипи огэ математика",
+      "device": "MOBILE",
+      "path": "/oge",
+      "days": {
+        "2026-11-15": {
+          "CLICKS": 8.0,
+          "POSITION": 6.3,
+          "IMPRESSIONS": 318.0,
+          "CTR": 2.5
+        },
+        "2026-11-22": {
+          "CLICKS": 1.0,
+          "POSITION": 8.0,
+          "IMPRESSIONS": 87.0,
+          "CTR": 1.1
+        }
+      }
+    }
+  ],
+  "baseExportDatesThrough": "2026-11-25",
+  "baseExportAttempts": [
+    504,
+    504
+  ],
+  "freeQuotaRemaining": 100
+}

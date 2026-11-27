@@ -2874,6 +2874,17 @@ function taskSourceIds(entry, sourceHtml) {
     {...entry, taskId: id, sourceTaskId: id}, sourceHtml) === entry.taskId);
 }
 
+// Fixed treatment group for the OGE title comparison started on 28 November 2026.
+const fractionTitlePilotIds = new Set(['F1F841', '8D164C', '98CD7C', '69B952', 'AEE26C', '60DA89']);
+
+function fractionPilotHeading(entry, condition) {
+  if (entry.section !== 'oge' || !fractionTitlePilotIds.has(entry.taskId)) return '';
+  const prompt = condition.match(/Одно из чисел (.+?) отмечено на числовой прямой точкой [AА]\. Какое это число\?/u);
+  if (!prompt) return '';
+  const fractions = prompt[1].match(/^\(\d+\) ÷ \((\d+)\), \(\d+\) ÷ \(\1\), \(\d+\) ÷ \(\1\) и \(\d+\) ÷ \(\1\)$/u);
+  return fractions ? `Какая дробь со знаменателем ${fractions[1]} отмечена на числовой прямой?` : '';
+}
+
 function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feedbackNotice = '') {
   const bank = Object.hasOwn(OGE_BANKS, entry.section) ? ogeBank(entry.section) : null;
   const oge = bank ? ogeCatalog(sourceHtml, entry.section) : null;
@@ -2904,7 +2915,10 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     : topic?.name || (mathType ? `${mathType.groupName ? mathType.groupName + ': ' : ''}${mathType.name}` : info.name));
   const subject = oge ? `${bank.exam} по ${bank.subject}` : entry.section === 'physics' ? 'ЕГЭ по физике' : 'ЕГЭ по математике, профиль';
   const displayTaskId = ogeTask?.sourceId || entry.taskId;
-  const title = `${displayTaskId} — ${topicName}: ${hasPublishedSolution ? 'ответ и решение' : 'условие'} | ${subject}`;
+  const pilotHeading = hasPublishedSolution ? fractionPilotHeading(entry, condition) : '';
+  const title = pilotHeading
+    ? `${displayTaskId} — ${pilotHeading} | ОГЭ`
+    : `${displayTaskId} — ${topicName}: ${hasPublishedSolution ? 'ответ и решение' : 'условие'} | ${subject}`;
   const prefix = `${displayTaskId}. ${subject}. ${topicName}. `;
   const suffix = hasPublishedSolution ? ' Ответ и подробное решение.' : ' Задание из банка ФИПИ.';
   let excerpt = truncateText(condition, Math.max(50, 209 - prefix.length - suffix.length)).replace(/[.,;:!?]+…$/, '…');
@@ -2971,7 +2985,7 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
     type: 'article',
     structuredData,
     taskNavigation,
-    taskDetails: {subject, topic: topicName, sourceIds: sourceTaskIds},
+    taskDetails: {subject, topic: pilotHeading || topicName, sourceIds: sourceTaskIds},
     breadcrumbs,
     ogeStats: oge || undefined,
     serverCatalogue: Boolean(oge),
