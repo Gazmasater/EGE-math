@@ -1,0 +1,46 @@
+{
+  "verifiedUtc": "2026-11-27T23:34:56+00:00",
+  "origin": "https://ege-fipi.ru",
+  "scope": "ОГЭ по математике. 890 страниц с общим заголовком из 917 задач, обойдённых Яндексом 25–27 ноября и отсутствовавших в доступной выборке поиска.",
+  "cohortSize": 917,
+  "cohortUpdatedPreviously": 26,
+  "cohortUpdatedNow": 890,
+  "cohortControlId": "7A5F3E",
+  "reviewedHeadingsInBank": 975,
+  "currentBankSize": 3884,
+  "comparedPublicPages": 982,
+  "comparisonPagesOutsideChange": 92,
+  "allNewPagesSelfCanonicalIndexFollow": true,
+  "verifiedHeadingFields": [
+    "title",
+    "h1",
+    "og:title",
+    "twitter:title",
+    "LearningResource.name"
+  ],
+  "comparedBeforeAndAfter": [
+    "condition HTML",
+    "solution HTML",
+    "solution API",
+    "canonical",
+    "robots",
+    "description",
+    "remaining LearningResource attributes",
+    "topic and task navigation links"
+  ],
+  "distinctSourceImagesVerified": 619,
+  "browserTaskIds": [
+    "001035",
+    "011F7A",
+    "F92250",
+    "5820CD",
+    "3C2809",
+    "096CD4",
+    "131EDB"
+  ],
+  "browserWidths": [
+    390,
+    1280
+  ],
+  "pagesCsvSha256": "b43ccde52df68995a64e75ce9d1587a8555f30b9fa9093b55943b956ee3f3694"
+}
