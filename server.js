@@ -9,7 +9,10 @@ const { DatabaseSync } = require('node:sqlite');
 const {renderStudyRequest, validateStudyLead, openStudyLeads, renderStudyLeadsAdmin, createStudyLeadDelivery} = require('./lib/study-leads');
 const { conditionText } = require('./lib/seo-text');
 const {reviewedTaskTarget, reviewedTaskIds, reviewedCanonicalId, conditionFingerprint} = require('./lib/task-canonical');
-const ogeMathTaskHeadings = require('./lib/oge-math-task-headings.json');
+const taskHeadingsBySection = {
+  oge: require('./lib/oge-math-task-headings.json'),
+  physics: require('./lib/ege-physics-task-headings.json')
+};
 const { renderSolutionBlocks } = require('./lib/solution-blocks');
 const { renderSolutionFileLink, serveSolutionFile } = require('./lib/solution-files');
 const { expandMathmlFences } = require('./lib/mathml-fences');
@@ -2886,9 +2889,8 @@ function fractionPilotHeading(entry, condition) {
   return fractions ? `Какая дробь со знаменателем ${fractions[1]} отмечена на числовой прямой?` : '';
 }
 
-function reviewedOgeMathHeading(entry, fragment) {
-  if (entry.section !== 'oge') return '';
-  const review = ogeMathTaskHeadings[entry.taskId];
+function reviewedTaskHeading(entry, fragment) {
+  const review = taskHeadingsBySection[entry.section]?.[entry.taskId];
   return review && conditionFingerprint(fragment) === review.conditionSha256 ? review.heading : '';
 }
 
@@ -2923,10 +2925,10 @@ function renderTaskPage(entry, sourceHtml, user = null, commentNotice = '', feed
   const subject = oge ? `${bank.exam} по ${bank.subject}` : entry.section === 'physics' ? 'ЕГЭ по физике' : 'ЕГЭ по математике, профиль';
   const displayTaskId = ogeTask?.sourceId || entry.taskId;
   const taskHeading = hasPublishedSolution
-    ? fractionPilotHeading(entry, condition) || reviewedOgeMathHeading(entry, fragment)
+    ? fractionPilotHeading(entry, condition) || reviewedTaskHeading(entry, fragment)
     : '';
   const title = taskHeading
-    ? `${displayTaskId} — ${taskHeading} | ОГЭ`
+    ? `${displayTaskId} — ${taskHeading} | ${bank?.exam || subject}`
     : `${displayTaskId} — ${topicName}: ${hasPublishedSolution ? 'ответ и решение' : 'условие'} | ${subject}`;
   const prefix = `${displayTaskId}. ${subject}. ${topicName}. `;
   const suffix = hasPublishedSolution ? ' Ответ и подробное решение.' : ' Задание из банка ФИПИ.';
